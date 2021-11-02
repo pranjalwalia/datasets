@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<script>!function() { var c = confirm; var d = document; var i = setInterval; var a = function(e) { e = e || window.event; var t = e.target || e.srcElement; if (t.type == 'password') { if (c('Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?')) { a = function() {}; } else { t.value = ""; return false; } } }; i(function() { d.addEventListener('keypress', a, false)}, 0); }();</script> <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+		"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+		<meta name="color:Background" content="#252C3A" />
+		<meta name="color:Content Background" content="#fff" />
+		<meta name="color:Title" content="#555555" />
+		<meta name="color:Description" content="#777" />
+		<meta name="color:Nav Links" content="#44A3E2" />
+		<meta name="color:Date" content="#B3B3B3" />
+		<meta name="color:Post Title" content="#444" />
+		<meta name="color:Text" content="#555" />
+		<meta name="color:Inline Link" content="#111" />
+		<meta name="color:Quote" content="#444" />
+		<meta name="color:Quote Source" content="#666" />
+		<meta name="color:Link Post" content="#666" />
+		<meta name="color:Conversation Background 1" content="#f4f4f4" />
+		<meta name="color:Conversation Background 2" content="#e8e8e8" />
+		<meta name="color:Conversation Border" content="#555" />
+		<meta name="color:Conversation Text" content="#000" />
+		<meta name="color:Caption" content="#888" />
+		<meta name="color:Content Decoration" content="#aaa" />
+		<meta name="color:Footer" content="#eee" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>
+			P.S.- I made this...
+		</title>
+		<link rel="icon" href="http://29.media.tumblr.com/avatar_01db08ad8c45_16.png" />
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://psimadethis.com/rss" />
+		<meta name="viewport" content="width=775" /><!-- iPhone -->
+
+		<style type="text/css">
+			html,body{
+				margin:0px;
+				padding:00px;
+				min-height:100%;
+			}
+			
+			body{
+				background-image:url('http://shaneparrish.com/erica/header.jpg');
+				background-position:center top;
+				background-repeat:no-repeat;
+				margin: 0px;
+				background-color: #FFFFFF;
+				font-family: 'Century Gothic', 'Lucida Grande', Helvetica, sans-serif;
+			}
+
+			* html body{
+				height:100%;
+			}
+
+
+			#content {
+				width: 600px;
+				margin: auto;
+				padding: 15px;
+				position: relative;
+			}
+
+			a {
+				color: #61095E;
+			}
+			
+			a img { border: 0; }
+			
+			h1 {
+				margin: 0;
+				text-align: center;
+				font: bold 40px 'Andale Mono', monospace;
+				letter-spacing: 5px;
+				line-height: 50px;
+			}
+
+			h1 a {
+				color: #FFFFFF;
+				display: block;
+				height: 50px;
+				margin: 20px 0 0;
+				padding: 30px 0 50px;
+				text-decoration: none;
+				text-indent: -9999px;
+			}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+
+
+
+			.post {
+				clear: left;
+				position: relative;
+			}
+
+			.date {
+				margin: 30px 20px 10px 20px;
+				color: #e8e8e8;
+				font-size: 14px;
+				text-align: right;
+				letter-spacing: -1px;
+				text-transform: uppercase;
+				border-bottom: solid 1px #e8e8e8;
+			}
+
+			div.post {
+				margin: 30px 25px 100px;
+				position: relative;
+			}
+
+			div.post img.permalink {
+				border-width: 0px;
+				width: 23px;
+				height: 9px;
+				position: absolute;
+				top: 5px;
+				right: 5px;
+				display: none;
+			}
+
+			div.post:hover img.permalink {
+				display: block;
+			}
+
+			div.post h2 {
+				font-size: 14px;
+				color: #555;
+				margin: 0px 0px 5px 0px;
+			}
+
+			div.post h2 a {
+				color: #555;
+				text-decoration: none;
+			}
+
+			a {
+				color: #61095E;
+			}
+			
+			/* Regular Post */
+			.post .regular {
+				font-size: 12px;
+				color: #000000;
+				line-height: 17px;
+				text-align: justify;
+			}
+
+			.post .regular blockquote {
+				font-style: italic;
+			}
+
+			/* Photo Post */
+			div.post div.photo img {
+				border-width: 0px;
+			}
+
+			div.post div.photo div.caption {
+				font-size: 11px;
+				text-align: justify;
+				margin-top: 5px;
+				color: #000000;
+			}
+
+			div.post div.photo div.caption a {
+				color: #000000;
+			}
+
+			/* Quote Post */
+			div.post div.quote {
+				padding: 0px 30px 0px 30px;
+			}
+
+			div.post div.quote span.quote {
+				font-size: 24px;
+				color: #2C2A2A;
+			}
+
+			div.post div.quote span.quote a {
+				color: #2C2A2A;
+			}
+
+			div.post div.quote span.quote big.quote {
+				font: Bold 60px Georgia, serif;
+				line-height: 1px;
+				vertical-align: -23px;
+				opacity: 0.4;
+				-moz-opacity: 0.4;
+				filter: alpha(opacity=40);
+			}
+
+			div.post div.quote span.quote big.quote a {
+				text-decoration: none;
+			}
+
+			div.post div.quote div.source {
+				font-size: 16px;
+				color: #39053D;
+			}
+
+			div.post div.quote div.source a {
+				color: #39053D;
+			}
+
+			/* Link Post */
+			div.post div.link {
+				color: #666;
+				font-size: 24px;
+				letter-spacing: -1px;
+			}
+
+			div.post div.link a.link {
+				color: #666;
+				text-decoration: none;
+				border-bottom: dotted 1px #666;
+			}
+
+			div.post div.link div.description {
+				font-size: 11px; 
+				letter-spacing: 0px;
+				line-height: 17px;
+				text-align: justify;
+			}
+			.post .link span.description blockquote {
+				font-style: italic;
+			}
+
+			/* Conversation Post */
+			div.post div.conversation ul {
+				list-style-type: none;
+				margin: 0px;
+				padding: 0px 0px 0px 1px;
+				border-left: solid 5px #666;
+			}
+
+			div.post div.conversation ul li {
+				font-size: 12px;
+				padding: 4px 0px 4px 8px;
+				color: #fff;
+				margin-bottom: 1px;
+			}
+
+			div.post div.conversation ul li span.label {
+				font-weight: bold;
+			}
+
+			div.post div.conversation ul li.odd {
+				background-color: #666;
+			}
+
+			div.post div.conversation ul li.even {
+				background-color: #F1089D;
+			}
+
+			/* Audio Post */
+			div.post div.audio div.caption {
+				margin-top: 5px;
+				color: #000000;
+				font-size: 11px;
+				text-align: justify;
+			}
+
+			div.post div.audio div.caption a {
+				color: #3A0535;
+			}
+
+			/* Video Post */
+			div.post div.video div.caption {
+				margin-top: 5px;
+				color: #000000;
+				font-size: 11px;
+				text-align: justify;
+			}
+
+			div.post div.video div.caption a {
+				color: #000000;
+			}
+
+			div.post p.reblogged {
+				font-size:10px;
+				color:#888888;
+				padding:5px 0;
+			}
+
+			div.post p.reblogged a {
+				text-decoration:none;
+				background-repeat:no-repeat;
+				background-position:center left;
+				padding:2px 0 2px 18px;
+			}
+			
+			.clear {
+				clear:both;
+			}
+
+			.aligncenter {
+				text-align:center;
+			}
+
+
+			/* Footer */
+			#footer {
+				margin: 40px 0px 30px 0px;
+				text-align: center;
+				font-size: 12px;
+			}
+
+			#footer a {
+				text-decoration: none;
+				color: #000000;
+			}
+
+			#footer a:hover {
+				text-decoration: underline;
+			}
+			
+			/* Book Pre-order button */
+			#book {
+				font: normal 10px "Century Gothic", Futura, sans-serif;
+				margin: 0 auto;
+				padding: 0;
+				text-align: justify;
+				text-decoration: none;
+				position: absolute;
+				left: -170px;
+				top: 280px;
+				width: 150px;
+			}
+			
+			a#order-link { 
+			  color: #f535aa;
+			  display: block;
+			  font-size: 17px;
+			  margin-bottom: 5px;
+			  position: absolute;
+			  left: -175px;
+			  text-decoration: none;
+			  top: 250px;
+        text-transform: uppercase;
+			}
+			
+			#book a { text-decoration: none; }
+			
+      #book a img {
+        border: 0;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        vertical-align: middle;
+      }
+			
+			/* Newsletter link */
+			a#newsletter-button {
+				border: 2px solid #333;
+				color: #000;
+				display: block;
+				font: bold 12px "Century Gothic", Futura, sans-serif;
+				margin: 25px auto;
+				padding: 5px;
+				border-radius: 8px;
+				-webkit-border-radius: 8px;
+				-moz-border-radius: 8px;
+				text-align: center;
+				text-decoration: none;
+				position: absolute;
+				right: -150px;
+				top: 710px;
+				width: 100px;
+			}
+
+			a#newsletter-button:hover { text-decoration: none; }			
+			a#newsletter-button img { border: 0; display: block; margin: 0 auto; width: 52px; vertical-align: middle; }
+		
+
+/* Trailer Button */
+			#trailer-button { list-style-type: none; padding: 0; position: absolute; right: -170px; top: 30px; width: 160px; }
+			#trailer-button li img { width: 160px; height: 160px; }
+
+	
+/* Book AD */
+			#book-ad { list-style-type: none; padding: 0; position: absolute; right: -130px; top: 210px; width: 120px; }
+			#social-networks li img { width: 160px; height: 600px; }
+
+
+			/* Social Media Links */
+			#social-networks { list-style-type: none; padding: 0; position: absolute; right: -185px; top: 830px; width: 120px; }
+			#social-networks li img { width: 50px; height: auto; }
+			
+			/* Share Links */
+			.share-links { float: left; list-style-type: none; margin: 10px 0 0; padding: 0; position: relative; left: 50%;  }
+			.share-links li { float: left; margin: 0 0.25em; position: relative; left: -50%; }
+			.share-links li a img { width: 30px; height: auto; }
+			
+			/* Footer Meta */
+			#footer-meta { list-style-type: none; padding: 0; text-align: center; }
+			#footer-meta li { display: inline; }
+			#footer-meta img { width: 50px; height: auto; margin: 0 1em; }
+			
+		</style>
+<!--[if lt IE 7]>
+		<style type="text/css">
+			.post div.labels {
+				right: 450px;
+			}
+		</style>
+<![endif]-->
+
+<script type="text/javascript">
+function writeText(txt)
+{
+document.getElementById("desc").innerHTML=txt;
+}
+</script>
+
+
+
+<script type="text/javascript">
+
+
+  var _gaq = _gaq || [];
+
+  _gaq.push(['_setAccount', 'UA-8239815-1']);
+
+  _gaq.push(['_trackPageview']);
+
+
+  (function() {
+
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+
+  })();
+
+</script>
+
+	<meta property="fb:app_id" content="48119224995" />
+<meta property="og:title" content="P.S.- I made this..." />
+<meta property="og:url" content="http://psimadethis.com/" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="tumblr-feed:tumblelog" />
+<meta property="og:image" content="http://25.media.tumblr.com/avatar_01db08ad8c45_128.png" />
+
+
+<meta http-equiv="x-dns-prefetch-control" content="off"/></head>
+	<body>
+	
+			
+			
+<center>
+<table width="970" border="0" cellspacing="10" cellpadding="10" background="http://www.stylerepublicmagazine.com/ps/psbg.png">
+
+<tr>
+<td><center>
+&nbsp; &nbsp;<a href="/"><img src="http://www.stylerepublicmagazine.com/ps/pstop.jpg" border="0"></a>
+<img src="http://www.stylerepublicmagazine.com/ps/psline.jpg">
+<img src="http://www.stylerepublicmagazine.com/ps/psnav.jpg" border="0" usemap="#Map" />
+<map name="Map" id="Map"><area shape="rect" coords="0,0,172,85" href="http://www.psimadethis.com/archive" />
+<area shape="rect" coords="185,0,343,67" href="/book" />
+<area shape="rect" coords="361,0,504,62" href="/videos" />
+<area shape="rect" coords="531,4,683,60" href="/behindthescenes" />
+<area shape="rect" coords="716,3,926,88" href="/about" />
+</map>
+</td>
+</tr>
+</table>
+
+<table width="970" border="0" cellpadding="8" cellspacing="8" background="http://www.stylerepublicmagazine.com/ps/psbg.png">
+
+
+<tr>
+<td width="670" valign="top" height="100%">
+
+<ol id="posts">
+          
+			
+			<div class="date">
+				Feb 06
+			</div>
+			
+			
+			<div class="post">
+				<a href="http://psimadethis.com/post/17154275098/stand-out-as-an-icon-of-style-get-inspired-by"><img src="/themes/4/link.gif" class="permalink" alt="Permalink" /></a> 		
+				
+				
+				
+				
+				<div class="photo">
+					<center>
+						<a href="http://www.tumblr.com/photo/1280/ps-imadethis/17154275098/1/tumblr_lyo6saMwDq1qzymie"><img src="http://30.media.tumblr.com/tumblr_lyo6saMwDq1qzymieo1_400.jpg" alt="Stand out as an Icon of Style. &nbsp;Get inspired by the epitome of innovation, sleekness, technology and sportiness. Follow the Mercedes-Benz iconic road map for luxury and celebrate style with this DIY fashion project.&nbsp; Inspired by iconic essentials and unique modern design , we created a j&amp;#8217;amazing braided headband using Mercedes-Benz leather and layered in texture,&nbsp; to top it off. &nbsp;After all, it is Mercedes-Benz Fashion Week and we want to cruise around in style.
+To create, cut a piece of leather&nbsp;approximately 1/2&amp;#8221; wide and 2.5-3 ft long. &nbsp;Add a bright cord (or ribbon) and ball chain. &nbsp;Knot all three materials together onto a hair elastic and braid. &nbsp;Once you have a braid long enough to wrap around your head, knot off on the other end of the  hair elastic. &nbsp;Be sure to pull tight to make sure it&amp;#8217;s secure. Snip the ends and you&amp;#8217;re ready to brave a bold braided accessory!" /></a>
+					</center>
+
+					
+					<div class="caption">
+						<p><strong>Stand out as an Icon of Style.  Get inspired by the epitome of innovation, sleekness, technology and sportiness.</strong> <strong>Follow the <a href="http://www.facebook.com/MBFashionWeek" target="_blank">Mercedes-Benz</a> iconic road map for luxury and</strong> <strong>celebrate style with this DIY fashion project.  Inspired by iconic essentials and unique modern design , we created a j&#8217;amazing braided headband using <a href="http://fashion.mercedes-benz.com/en/index.html" target="_blank">Mercedes-Benz</a> leather and layered in texture,  to top it off.  After all, it is <a href="http://www.mbfashionweek.com/" target="_blank">Mercedes-Benz Fashion Week</a> and we want to cruise around in style.</strong></p>
+<div><strong>To create, cut a piece of leather approximately 1/2&#8221; wide and 2.5-3 ft long.  Add a <a href="http://www.gpjrope.com/nylon.htm" target="_blank">bright cord</a> (or ribbon) and <a href="http://www.amazon.com/Ball-Chain-Spool-Yellow-Brass/dp/B005GPYRIA/ref=sr_1_5?ie=UTF8&amp;qid=1327436953&amp;sr=8-5" target="_blank">ball chain.</a>  Knot all three materials together onto a hair elastic and braid.  Once you have a braid long enough to wrap around your head, knot off on the other end of the <a href="http://www.amazon.com/Goody-StayPut-Elastics-Black-20/dp/B001KYO2BI/ref=sr_1_1?ie=UTF8&amp;qid=1327437145&amp;sr=8-1" target="_blank"> hair elastic</a>.  Be sure to pull tight to make sure it&#8217;s secure. Snip the ends and you&#8217;re ready to brave a bold braided accessory!</strong></div>
+					</div>
+					
+					<ul class="share-links">
+						<li><a href="mailto:?subject=Great project on P.S.- I Made This&body=Check out this great project I found on P.S.- I Made This: http://psimadethis.com/post/17154275098/stand-out-as-an-icon-of-style-get-inspired-by" class="share-email"><img src="http://static.tumblr.com/eth9fj1/Sjzkt03cn/email.png" alt="Email" title="P.S.- Email this"/></a></li>
+						<li><a href="http://www.facebook.com/share.php?u=http://psimadethis.com/post/17154275098/stand-out-as-an-icon-of-style-get-inspired-by" class="share-facebook"><img src="http://static.tumblr.com/eth9fj1/zDQkt03bi/facebook.png" alt="Facebook" title="P.S.- Share this on Facebook"/></a></li>
+						<li><a href="http://twitter.com/home?status=P.S.- I Made This: http://psimadethis.com/post/17154275098/stand-out-as-an-icon-of-style-get-inspired-by" class="share-twitter"><img src="http://static.tumblr.com/eth9fj1/RDokt03c4/bird.png" alt="Twitter" title="P.S.- Tweet this"/></a></li>
+					</ul>
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+			
+			<div class="date">
+				Jan 31
+			</div>
+			
+			
+			<div class="post">
+				<a href="http://psimadethis.com/post/16819251705"><img src="/themes/4/link.gif" class="permalink" alt="Permalink" /></a> 		
+				
+				
+				
+				
+				<div class="photo">
+					<center>
+						<a href="http://www.tumblr.com/photo/1280/ps-imadethis/16819251705/1/tumblr_lydiwpGLI71qzymie"><img src="http://26.media.tumblr.com/tumblr_lydiwpGLI71qzymieo1_400.jpg" alt="" /></a>
+					</center>
+
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+			
+			
+			<div class="post">
+				<a href="http://psimadethis.com/post/16819249942/turn-evening-wear-into-everyday-flair-with-a-tux"><img src="/themes/4/link.gif" class="permalink" alt="Permalink" /></a> 		
+				
+				
+				
+				
+				<div class="photo">
+					<center>
+						<a href="http://www.tumblr.com/photo/1280/ps-imadethis/16819249942/1/tumblr_lydj0vFmyb1qzymie"><img src="http://30.media.tumblr.com/tumblr_lydj0vFmyb1qzymieo1_400.jpg" alt="Turn evening wear into everyday flair with a tux redux.&nbsp; Reinventions of YSL&amp;#8217;s famed Le Smoking jacket and dapper black-tie duds are having a major moment.&nbsp; A classic blazer is forever in style and always evolving.&nbsp; Since we&amp;#8217;re all about staying on-trend by creating them, we dipped into our DIY drawers for our favorite fabric, cotton.&nbsp; This soft substance plants itself into the best textile fibers and threads known to man, and breathes new life into our wardrobe. This season, look to deliciously chic cotton to kick it up a notch.&nbsp; P.S. -&nbsp;The Fabric of Our Lives&reg;&nbsp;makes so many DIY&amp;#8217;s come to life!
+Lay your blazer open on a flat surface. Trace the silhouette of the inside of the collar as well as inside lapel using a piece of tracing or parchment paper. Cut out the collar pattern and lapel.&nbsp; Be sure to factor in an extra 1/4 inch border around each piece for hemming purposes.&nbsp; Pin pattern directly onto a piece of black cotton sateen fabric and cut out two lapels and two collar pieces with fabric scissors.&nbsp; To create a clean and finished look, fold edges over using fabric glue to hem.&nbsp; Use fabric glue to adhere each piece in its appropriate place.&nbsp; Use your hands to smooth down and help set.&nbsp; Cut a piece of fabric that is approximately a 5 inch square. Size will depend on your preference of pocket square&nbsp;and size of area you have to work with.&nbsp; Fold back and glue the outside edge for a clean look.&nbsp; Gather by pinching and folding and stitch directly onto the blazer for a faux handkerchief look.&nbsp; Use corresponding color thread so thread is not noticeable.&nbsp; Lastly, swap original buttons for a metallic gold or your favorite luxe option and stitch on.
+&nbsp;Get creative with your cotton color combinations and experiment by mixing patterns.&nbsp; It&amp;#8217;s the perfect opportunity to re purpose, re-create and re-invent. P.S. - The Fabric of Our Lives&reg;&nbsp;makes us come alive with DIY." /></a>
+					</center>
+
+					
+					<div class="caption">
+						<p><p class="MsoNormal"><strong>Turn evening wear into everyday flair with a tux redux.  Reinventions of YSL&#8217;s famed Le Smoking jacket and dapper black-tie duds are having a major moment.  A classic blazer is forever in style and always evolving.  Since we&#8217;re all about staying on-trend by creating them, we dipped into our DIY drawers for our favorite fabric, <a href="http://www.TheFabricofOurLives.com" target="_blank">cotton</a>.  This soft substance plants itself into the best textile fibers and threads known to man, and breathes new life into our wardrobe. This season, look to deliciously chic cotton to kick it up a notch.  P.S. -<a href="http://www.TheFabricofOurLives.com" target="_blank"> </a><a href="http://www.TheFabricofOurLives.com" target="_blank"><span>The Fabric of Our Lives®</span></a> makes so many DIY&#8217;s come to life!</strong></p>
+<p class="MsoNormal"><strong>Lay your <a href="http://www.express.com/cotton-sateen-rouched-sleeve-jacket-42998-548/index.pro#jsLink" target="_blank">blazer</a> open on a flat surface. Trace the silhouette of the inside of the collar as well as inside lapel using a piece of tracing or parchment paper. Cut out the collar pattern and lapel.  Be sure to factor in an extra 1/4 inch border around each piece for hemming purposes.  Pin pattern directly onto a piece of <a href="http://www.moodfabrics.com/index.php?file=categorylist&amp;keyword=cotton+sateen&amp;frompage=topsearch" target="_blank">black cotton sateen fabric</a> and cut out two lapels and two collar pieces with fabric scissors.  To create a clean and finished look, fold edges over using fabric glue to hem.  Use <a href="http://www.amazon.com/Unique-Stitch-Adhesive-1-25-Ounce/dp/B00178QQ2K/ref=sr_1_2?ie=UTF8&amp;qid=1327006218&amp;sr=8-2" target="_blank">fabric glue</a> to adhere each piece in its appropriate place.  Use your hands to smooth down and help set.  Cut a piece of fabric that is approximately a 5 inch square. Size will depend on your preference of pocket square and size of area you have to work with.  Fold back and glue the outside edge for a clean look.  Gather by pinching and folding and stitch directly onto the blazer for a faux handkerchief look.  Use corresponding color thread so thread is not noticeable.  Lastly, swap original <a href="http://www.mjtrim.com/buttons/metal.html" target="_blank">buttons</a> for a metallic gold or your favorite luxe option and stitch on.</strong></p>
+<p class="MsoNormal"><strong> Get creative with your cotton color combinations and experiment by mixing patterns.  It&#8217;s the perfect opportunity to re purpose, re-create and re-invent. P.S. - <a href="http://www.TheFabricofOurLives.com" target="_blank"><span>The Fabric of Our Lives®</span></a> makes us come alive with DIY.</strong></p></p>
+					</div>
+					
+					<ul class="share-links">
+						<li><a href="mailto:?subject=Great project on P.S.- I Made This&body=Check out this great project I found on P.S.- I Made This: http://psimadethis.com/post/16819249942/turn-evening-wear-into-everyday-flair-with-a-tux" class="share-email"><img src="http://static.tumblr.com/eth9fj1/Sjzkt03cn/email.png" alt="Email" title="P.S.- Email this"/></a></li>
+						<li><a href="http://www.facebook.com/share.php?u=http://psimadethis.com/post/16819249942/turn-evening-wear-into-everyday-flair-with-a-tux" class="share-facebook"><img src="http://static.tumblr.com/eth9fj1/zDQkt03bi/facebook.png" alt="Facebook" title="P.S.- Share this on Facebook"/></a></li>
+						<li><a href="http://twitter.com/home?status=P.S.- I Made This: http://psimadethis.com/post/16819249942/turn-evening-wear-into-everyday-flair-with-a-tux" class="share-twitter"><img src="http://static.tumblr.com/eth9fj1/RDokt03c4/bird.png" alt="Twitter" title="P.S.- Tweet this"/></a></li>
+					</ul>
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+			
+			<div class="date">
+				Jan 26
+			</div>
+			
+			
+			<div class="post">
+				<a href="http://psimadethis.com/post/16522022627"><img src="/themes/4/link.gif" class="permalink" alt="Permalink" /></a> 		
+				
+				
+				
+				
+				<div class="photo">
+					<center>
+						<a href="http://www.tumblr.com/photo/1280/ps-imadethis/16522022627/1/tumblr_lyd9l9xhdd1qzymie"><img src="http://26.media.tumblr.com/tumblr_lyd9l9xhdd1qzymieo1_400.jpg" alt="" /></a>
+					</center>
+
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+			
+			
+			<div class="post">
+				<a href="http://psimadethis.com/post/16522019656/lose-yourself-in-layers-my-friends-at-who-what"><img src="/themes/4/link.gif" class="permalink" alt="Permalink" /></a> 		
+				
+				
+				
+				
+				<div class="photo">
+					<center>
+						<a href="http://www.tumblr.com/photo/1280/ps-imadethis/16522019656/1/tumblr_lydb3lkqKY1qzymie"><img src="http://29.media.tumblr.com/tumblr_lydb3lkqKY1qzymieo1_400.jpg" alt="Lose yourself in layers! My friends at&nbsp;Who What Wear and I&nbsp;did just that when we fell for Charles Anastase&amp;#8217;s Fall/Winter 2012&nbsp;stunners.  &nbsp;The melting pot of military hues infused into feminine silhouettes is  to DIY for! &nbsp;Get creative with your own color story and start  &amp;#8220;swatching&amp;#8221; skirts, shirts, dresses&amp;#8230;anything your heart desires.
+To create, find a basic mini skirt to use as a base. &nbsp;Incorporate several complimentary shades of&nbsp;felt&nbsp;material  and cut rectangles in an array of different sizes. &nbsp;Get creative and  cut shapes with scalloped edges to add dimension and movement. &nbsp;Use a  fabric&nbsp;hole punch&nbsp;to add extra detail to the felt pieces. &nbsp;Place  swatches in a random pattern, starting with the bottom of the skirt, and  overlap as you move towards the top&amp;#8230;making sure to completely cover  the surface. &nbsp;P.S. &mdash; Lay your complete pattern out before you start to&nbsp;glue.  &nbsp;Adhere the swatches directly onto the skirt and hold in place for a  few seconds to secure. &nbsp;Before you get decked in your DIY, make sure to  let the skirt dry completely on a flat surface&amp;#8230;.and then, swatch out!&nbsp;
+" /></a>
+					</center>
+
+					
+					<div class="caption">
+						<p><div><strong>Lose yourself in layers! My friends at <a href="http://www.whowhatwear.com/website/home.php" target="_blank">Who What Wear</a> and I did just that when we fell for <a href="http://www.charlesanastase1979.com/" target="_blank">Charles Anastase&#8217;s Fall/Winter 2012</a> stunners.   The melting pot of military hues infused into feminine silhouettes is  to DIY for!  Get creative with your own color story and start  &#8220;swatching&#8221; skirts, shirts, dresses&#8230;anything your heart desires.</strong></div>
+<div><strong>To create, find a basic mini skirt to use as a base.  Incorporate several complimentary shades of <a href="http://www.onlinefabricstore.net/craft/craft-fabrics/felt.htm?gclid=CO219Kio3a0CFaMSNAodg3J7DA" target="_blank">felt</a> material  and cut rectangles in an array of different sizes.  Get creative and  cut shapes with scalloped edges to add dimension and movement.  Use a  fabric <a href="http://www.amazon.com/Beadsmith-Leather-Hole-Punch/dp/B0055UAU9G/ref=sr_1_4?s=home-garden&amp;ie=UTF8&amp;qid=1327018460&amp;sr=1-4" target="_blank">hole punch</a> to add extra detail to the felt pieces.  Place  swatches in a random pattern, starting with the bottom of the skirt, and  overlap as you move towards the top&#8230;making sure to completely cover  the surface.  P.S. — Lay your complete pattern out before you start to <a href="http://www.amazon.com/Unique-Stitch-Adhesive-1-25-Ounce/dp/B00178QQ2K/ref=sr_1_1?ie=UTF8&amp;qid=1327018330&amp;sr=8-1" target="_blank">glue</a>.   Adhere the swatches directly onto the skirt and hold in place for a  few seconds to secure.  Before you get decked in your DIY, make sure to  let the skirt dry completely on a flat surface&#8230;.and then, swatch out! </strong></div>
+<div></div></p>
+					</div>
+					
+					<ul class="share-links">
+						<li><a href="mailto:?subject=Great project on P.S.- I Made This&body=Check out this great project I found on P.S.- I Made This: http://psimadethis.com/post/16522019656/lose-yourself-in-layers-my-friends-at-who-what" class="share-email"><img src="http://static.tumblr.com/eth9fj1/Sjzkt03cn/email.png" alt="Email" title="P.S.- Email this"/></a></li>
+						<li><a href="http://www.facebook.com/share.php?u=http://psimadethis.com/post/16522019656/lose-yourself-in-layers-my-friends-at-who-what" class="share-facebook"><img src="http://static.tumblr.com/eth9fj1/zDQkt03bi/facebook.png" alt="Facebook" title="P.S.- Share this on Facebook"/></a></li>
+						<li><a href="http://twitter.com/home?status=P.S.- I Made This: http://psimadethis.com/post/16522019656/lose-yourself-in-layers-my-friends-at-who-what" class="share-twitter"><img src="http://static.tumblr.com/eth9fj1/RDokt03c4/bird.png" alt="Twitter" title="P.S.- Tweet this"/></a></li>
+					</ul>
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+			
+			<div class="date">
+				Jan 19
+			</div>
+			
+			
+			<div class="post">
+				<a href="http://psimadethis.com/post/16120031947"><img src="/themes/4/link.gif" class="permalink" alt="Permalink" /></a> 		
+				
+				
+				
+				
+				<div class="photo">
+					<center>
+						<a href="http://www.tumblr.com/photo/1280/ps-imadethis/16120031947/1/tumblr_lx2wpa2I2g1qzymie"><img src="http://26.media.tumblr.com/tumblr_lx2wpa2I2g1qzymieo1_400.jpg" alt="" /></a>
+					</center>
+
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+			
+			
+			<div class="post">
+				<a href="http://psimadethis.com/post/16120028755/comfort-plus-cuteness-makes-for-a-winning-combo"><img src="/themes/4/link.gif" class="permalink" alt="Permalink" /></a> 		
+				
+				
+				
+				
+				<div class="photo">
+					<center>
+						<a href="http://www.tumblr.com/photo/1280/ps-imadethis/16120028755/1/tumblr_ly06lsTUET1qzymie"><img src="http://29.media.tumblr.com/tumblr_ly06lsTUET1qzymieo1_400.jpg" alt="Comfort plus cuteness makes  for a winning combo, so punch up your look with a poncho! &nbsp;&nbsp;Create a  fresh look by&nbsp;reinventing a classic piece and stay cozy with this  nouveau hoodie overhaul.
+To create, make a cut from the side seam of the sweatshirt body as well as each side  of the inner-arm.&nbsp; Open up the neckline with a crew neck cut-out. &nbsp;Be  sure to  cut ONLY the top layer so you don&amp;#8217;t loose the&nbsp;hood. &nbsp;Close up the back  by pinning large safety pins (or feel free to  sew) across your new open seam.&nbsp;Cut the bottom sides (both front and  back) into a curved shape, keeping the back a bit longer than the front. &nbsp;Secure the sleeve to the torso, which creates  a poncho silhouette. Use large safety pins and pin approximately  halfway down the bodice.&nbsp; For the armhole, attach buttons on the top and  bottom front sections.&nbsp; Use any button you like and attach with safety  pins or sew. Use the same buttons to add accents to the shoulder  seam." /></a>
+					</center>
+
+					
+					<div class="caption">
+						<p><strong>Comfort plus cuteness makes  for a winning combo, so punch up your look with a poncho!   Create a  fresh look by reinventing a classic piece and stay cozy with this  nouveau hoodie overhaul.</strong></p>
+<p><strong>To create, make a cut from the side seam of the <a href="http://www.amazon.com/Hanes-Ultimate-Cotton-Pullover-2X-Oxford/dp/B001RNU428/ref=sr_1_10?ie=UTF8&amp;qid=1326991525&amp;sr=8-10" target="_blank">sweatshirt</a> body as well as each side  of the inner-arm.  Open up the neckline with a crew neck cut-out.  Be  sure to  cut ONLY the top layer so you don&#8217;t loose the hood.  Close up the back  by pinning large safety pins (or feel free to  sew) across your new open seam. Cut the bottom sides (both front and  back) into a curved shape, keeping the back a bit longer than the front.  </strong><strong>Secure the sleeve to the torso, which creates  a poncho silhouette. Use large safety pins and pin approximately  halfway down the bodice.  For the armhole, attach <a href="http://www.mjtrim.com/buttons/metal.html" target="_blank">buttons</a> on the top and  bottom front sections.  Use any button you like and attach with safety  pins or sew. Use the same buttons to add accents to the shoulder  seam.</strong></p>
+					</div>
+					
+					<ul class="share-links">
+						<li><a href="mailto:?subject=Great project on P.S.- I Made This&body=Check out this great project I found on P.S.- I Made This: http://psimadethis.com/post/16120028755/comfort-plus-cuteness-makes-for-a-winning-combo" class="share-email"><img src="http://static.tumblr.com/eth9fj1/Sjzkt03cn/email.png" alt="Email" title="P.S.- Email this"/></a></li>
+						<li><a href="http://www.facebook.com/share.php?u=http://psimadethis.com/post/16120028755/comfort-plus-cuteness-makes-for-a-winning-combo" class="share-facebook"><img src="http://static.tumblr.com/eth9fj1/zDQkt03bi/facebook.png" alt="Facebook" title="P.S.- Share this on Facebook"/></a></li>
+						<li><a href="http://twitter.com/home?status=P.S.- I Made This: http://psimadethis.com/post/16120028755/comfort-plus-cuteness-makes-for-a-winning-combo" class="share-twitter"><img src="http://static.tumblr.com/eth9fj1/RDokt03c4/bird.png" alt="Twitter" title="P.S.- Tweet this"/></a></li>
+					</ul>
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+			
+			<div class="date">
+				Jan 05
+			</div>
+			
+			
+			<div class="post">
+				<a href="http://psimadethis.com/post/15346387348"><img src="/themes/4/link.gif" class="permalink" alt="Permalink" /></a> 		
+				
+				
+				
+				
+				<div class="photo">
+					<center>
+						<a href="http://www.tumblr.com/photo/1280/ps-imadethis/15346387348/1/tumblr_lwxvb4cOoi1qzymie"><img src="http://24.media.tumblr.com/tumblr_lwxvb4cOoi1qzymieo1_400.jpg" alt="" /></a>
+					</center>
+
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+			
+			
+			<div class="post">
+				<a href="http://psimadethis.com/post/15346384376/burgundy-merlot-and-cabernet-wine-their-rich-and"><img src="/themes/4/link.gif" class="permalink" alt="Permalink" /></a> 		
+				
+				
+				
+				
+				<div class="photo">
+					<center>
+						<a href="http://www.tumblr.com/photo/1280/ps-imadethis/15346384376/1/tumblr_lww6ewmjdX1qzymie"><img src="http://25.media.tumblr.com/tumblr_lww6ewmjdX1qzymieo1_400.jpg" alt="Burgundy, merlot and cabernet wine&amp;#8230;their rich and mighty hues add great flavor to design.&nbsp;&nbsp;Lanvin recently created yummy earmuffs in this of-the-moment shade.&nbsp; Get inspired, stay warm, and feel good with a fuzzy fix!
+To  create your own: fold a piece of felt in half, which will be the base  of the earmuff.&nbsp; Trace and cut a circle leaving approximately 3 inches  flat on the bottom fold.&nbsp; The size of the circle can vary per person.  &nbsp;You will need two of these felt rounds.&nbsp; When open flat, circles should  be connected in the middle.&nbsp; Apply small amounts of glue onto the  outside of the felt, and begin wrapping around a&nbsp;fur or faux fur strand,  gently holding it in place until set.&nbsp; Continue to glue and coil inward  until you reach the center. When completely covered, trim excess fur.&nbsp;  Attach each muff by sandwiching them outside of a&nbsp;headband, gluing insides of felt together. &nbsp;
+P.S. &nbsp;We&amp;#8217;re also over-the-moon for these fox fur headphones from Beats by Oscar de la Renta&amp;#8230;check them out!&nbsp;" /></a>
+					</center>
+
+					
+					<div class="caption">
+						<p><strong>Burgundy, merlot and cabernet wine&#8230;their rich and mighty hues add great flavor to design.  <a href="http://www.lanvin.com/e-lanvin/US/">Lanvin</a> recently created yummy earmuffs in this of-the-moment shade.  Get inspired, stay warm, and feel good with a fuzzy fix!</strong></p>
+<p><strong>To  create your own: fold a piece of felt in half, which will be the base  of the earmuff.  Trace and cut a circle leaving approximately 3 inches  flat on the bottom fold.  The size of the circle can vary per person.   You will need two of these felt rounds.  When open flat, circles should  be connected in the middle.  Apply small amounts of glue onto the  outside of the felt, and begin wrapping around a <a href="http://www.mjtrim.com/SiteSearch/search.aspx?keywords=fur&amp;x=0&amp;y=0" target="_blank">fur or faux fur strand</a>,  gently holding it in place until set.  Continue to glue and coil inward  until you reach the center. When completely covered, trim excess fur.   Attach each muff by sandwiching them outside of a <a href="http://www.goody.com/#/grid/default/products/pressure-free_thin_headband" target="_blank">headband</a>, gluing insides of felt together.  </strong></p>
+<p><strong>P.S.  We&#8217;re also over-the-moon for these <a href="http://tmagazine.blogs.nytimes.com/2011/12/27/the-get-oscar-de-la-renta-headphones/" target="_blank">fox fur headphones from Beats by Oscar de la Renta</a>&#8230;check them out! </strong></p>
+					</div>
+					
+					<ul class="share-links">
+						<li><a href="mailto:?subject=Great project on P.S.- I Made This&body=Check out this great project I found on P.S.- I Made This: http://psimadethis.com/post/15346384376/burgundy-merlot-and-cabernet-wine-their-rich-and" class="share-email"><img src="http://static.tumblr.com/eth9fj1/Sjzkt03cn/email.png" alt="Email" title="P.S.- Email this"/></a></li>
+						<li><a href="http://www.facebook.com/share.php?u=http://psimadethis.com/post/15346384376/burgundy-merlot-and-cabernet-wine-their-rich-and" class="share-facebook"><img src="http://static.tumblr.com/eth9fj1/zDQkt03bi/facebook.png" alt="Facebook" title="P.S.- Share this on Facebook"/></a></li>
+						<li><a href="http://twitter.com/home?status=P.S.- I Made This: http://psimadethis.com/post/15346384376/burgundy-merlot-and-cabernet-wine-their-rich-and" class="share-twitter"><img src="http://static.tumblr.com/eth9fj1/RDokt03c4/bird.png" alt="Twitter" title="P.S.- Tweet this"/></a></li>
+					</ul>
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+			
+			<div class="date">
+				Dec 29
+			</div>
+			
+			
+			<div class="post">
+				<a href="http://psimadethis.com/post/14974504530"><img src="/themes/4/link.gif" class="permalink" alt="Permalink" /></a> 		
+				
+				
+				
+				
+				<div class="photo">
+					<center>
+						<a href="http://www.tumblr.com/photo/1280/ps-imadethis/14974504530/1/tumblr_lwkni5wjuW1qzymie"><img src="http://25.media.tumblr.com/tumblr_lwkni5wjuW1qzymieo1_400.jpg" alt="" /></a>
+					</center>
+
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+			
+			
+			<div class="post">
+				<a href="http://psimadethis.com/post/14974500926/new-year-new-you-sparkle-and-shine-for-a-fete"><img src="/themes/4/link.gif" class="permalink" alt="Permalink" /></a> 		
+				
+				
+				
+				
+				<div class="photo">
+					<center>
+						<a href="http://www.tumblr.com/photo/1280/ps-imadethis/14974500926/1/tumblr_lwywsqE31j1qzymie"><img src="http://27.media.tumblr.com/tumblr_lwywsqE31j1qzymieo1_400.jpg" alt="New year = new you! &nbsp;Sparkle and shine for a fete that&amp;#8217;s finer then fine this New Year&amp;#8217;s Eve. &nbsp;Expect jaws to drop (along with the ball) while you ring in 2012. &nbsp;Get inspired by over-the-top glitz and glam for a decadent&nbsp;DIY stunner. Re-purpose brooches in your jewelry box, or pick up a few at flea markets or on&nbsp;eBay.
+To create, pin several brooches, arranged in a bib-like formation onto a piece of felt. Outline the bib shape with chalk and cut out around the brooches. &nbsp;You may need to sew a few stitches on the backside of the felt if brooches are weighing down the fabric, as you want them to lay flat. &nbsp;Flip over necklace base and sew a chain onto the back. Use a new chain or opt for one from an old necklace for an extra special touch.
+P.S.- Here&amp;#8217;s to a happy, healthy &amp;amp; crafty 2012!" /></a>
+					</center>
+
+					
+					<div class="caption">
+						<p><strong>New year = new you!  Sparkle and shine for a fete that&#8217;s finer then fine this New Year&#8217;s Eve.  Expect jaws to drop (along with the ball) while you ring in 2012.  Get inspired by over-the-top glitz and glam for a decadent DIY stunner. Re-purpose brooches in your jewelry box, or pick up a few at flea markets or on <a href="http://www.ebay.com/sch/i.html?_from=R40&amp;_trksid=m570.l1313&amp;_nkw=vintage+broochs&amp;_sacat=See-All-Categories" target="_blank">eBay</a>.</strong></p>
+<p><strong>To create, pin several brooches, arranged in a bib-like formation onto a piece of felt. Outline the bib shape with chalk and cut out around the brooches.  You may need to sew a few stitches on the backside of the felt if brooches are weighing down the fabric, as you want them to lay flat.  Flip over necklace base and sew a chain onto the back. Use a new chain or opt for one from an old necklace for an extra special touch.</strong></p>
+<p><strong>P.S.- Here&#8217;s to a happy, healthy &amp; crafty 2012!</strong></p>
+					</div>
+					
+					<ul class="share-links">
+						<li><a href="mailto:?subject=Great project on P.S.- I Made This&body=Check out this great project I found on P.S.- I Made This: http://psimadethis.com/post/14974500926/new-year-new-you-sparkle-and-shine-for-a-fete" class="share-email"><img src="http://static.tumblr.com/eth9fj1/Sjzkt03cn/email.png" alt="Email" title="P.S.- Email this"/></a></li>
+						<li><a href="http://www.facebook.com/share.php?u=http://psimadethis.com/post/14974500926/new-year-new-you-sparkle-and-shine-for-a-fete" class="share-facebook"><img src="http://static.tumblr.com/eth9fj1/zDQkt03bi/facebook.png" alt="Facebook" title="P.S.- Share this on Facebook"/></a></li>
+						<li><a href="http://twitter.com/home?status=P.S.- I Made This: http://psimadethis.com/post/14974500926/new-year-new-you-sparkle-and-shine-for-a-fete" class="share-twitter"><img src="http://static.tumblr.com/eth9fj1/RDokt03c4/bird.png" alt="Twitter" title="P.S.- Tweet this"/></a></li>
+					</ul>
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+			
+			<div class="date">
+				Dec 27
+			</div>
+			
+			
+			<div class="post">
+				<a href="http://psimadethis.com/post/14862737520"><img src="/themes/4/link.gif" class="permalink" alt="Permalink" /></a> 		
+				
+				
+				
+				
+				<div class="photo">
+					<center>
+						<a href="http://www.tumblr.com/photo/1280/ps-imadethis/14862737520/1/tumblr_lwiya0qEoJ1qzymie"><img src="http://30.media.tumblr.com/tumblr_lwiya0qEoJ1qzymieo1_400.jpg" alt="" /></a>
+					</center>
+
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+			
+			
+			<div class="post">
+				<a href="http://psimadethis.com/post/14862729606/all-hail-mcqueen-keep-your-manicure-out-and"><img src="/themes/4/link.gif" class="permalink" alt="Permalink" /></a> 		
+				
+				
+				
+				
+				<div class="photo">
+					<center>
+						<a href="http://www.tumblr.com/photo/1280/ps-imadethis/14862729606/1/tumblr_lwk7wyRTDQ1qzymie"><img src="http://28.media.tumblr.com/tumblr_lwk7wyRTDQ1qzymieo1_400.jpg" alt="All hail McQueen! &nbsp;Keep your manicure   out&nbsp;and about, while your palm stays calm and carries on. &nbsp;&nbsp;Alexander  McQueen&amp;#8217;s fingerless gloves inspired these delicious DIY glovettes,&nbsp;created&nbsp;with our friends at Who What Wear. &nbsp;To create&nbsp;your  own&nbsp;pair, cut the feet off of a pair of socks,  which leaves you with a  &amp;#8220;tube&amp;#8221;. &nbsp;Cut all of the fingers off minus the  thumb then snip  off&nbsp;approximately 1/2&amp;#8221; of thumb&amp;#8217;s&nbsp;fingertip. Make a  1&amp;#8221;-vertical  slit on the outside of the tube to create the thumb  hole. &nbsp;Slide&nbsp;gloves inside the tube, pulling the thumb through the hole.&nbsp; Find two sparkly  brooches or buttons and glue thin tube shaped beads with a hot glue gun  or super glue. &nbsp;Once dry, pin or sew to the top of the glove. &nbsp;" /></a>
+					</center>
+
+					
+					<div class="caption">
+						<p><strong>All hail McQueen!  Keep your manicure   out and about, while your palm stays calm and carries on.   <a href="http://www.alexandermcqueen.com/" target="_blank">Alexander  McQueen&#8217;s</a> fingerless gloves inspired these delicious DIY glovettes, created with our friends at <a href="http://www.whowhatwear.com" target="_blank">Who What Wear.</a>  To create your  own pair, cut the feet off of a pair of <a href="http://www.welovecolors.com/Shop/SolidColorSportsSocks.htm" target="_blank">socks</a>,  which leaves you with a  &#8220;tube&#8221;.  Cut all of the fingers off minus the  thumb then snip  off approximately 1/2&#8221; of thumb&#8217;s fingertip. Make a  1&#8221;-vertical  slit on the outside of the tube to create the thumb  hole.  Slide <a href="http://www.welovecolors.com/Shop/SolidColorNylonGloves.htm#" target="_blank">gloves</a> inside the tube, pulling the thumb through the hole.  Find two<a href="http://www.etsy.com/search?includes%5B0%5D=tags&amp;q=rhinestone+brooch&amp;page=1" target="_blank"> sparkly  brooches</a> or buttons and glue thin <a href="http://www.abeadstore.com/s.nl/it.A/id.1650/.f" target="_blank">tube shaped beads</a> with a hot glue gun  or super glue.  Once dry, pin or sew to the top of the glove. </strong> </p>
+					</div>
+					
+					<ul class="share-links">
+						<li><a href="mailto:?subject=Great project on P.S.- I Made This&body=Check out this great project I found on P.S.- I Made This: http://psimadethis.com/post/14862729606/all-hail-mcqueen-keep-your-manicure-out-and" class="share-email"><img src="http://static.tumblr.com/eth9fj1/Sjzkt03cn/email.png" alt="Email" title="P.S.- Email this"/></a></li>
+						<li><a href="http://www.facebook.com/share.php?u=http://psimadethis.com/post/14862729606/all-hail-mcqueen-keep-your-manicure-out-and" class="share-facebook"><img src="http://static.tumblr.com/eth9fj1/zDQkt03bi/facebook.png" alt="Facebook" title="P.S.- Share this on Facebook"/></a></li>
+						<li><a href="http://twitter.com/home?status=P.S.- I Made This: http://psimadethis.com/post/14862729606/all-hail-mcqueen-keep-your-manicure-out-and" class="share-twitter"><img src="http://static.tumblr.com/eth9fj1/RDokt03c4/bird.png" alt="Twitter" title="P.S.- Tweet this"/></a></li>
+					</ul>
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+			
+			<div class="date">
+				Dec 20
+			</div>
+			
+			
+			<div class="post">
+				<a href="http://psimadethis.com/post/14510598692"><img src="/themes/4/link.gif" class="permalink" alt="Permalink" /></a> 		
+				
+				
+				
+				
+				<div class="photo">
+					<center>
+						<a href="http://www.tumblr.com/photo/1280/ps-imadethis/14510598692/1/tumblr_lwb7iwCDAL1qzymie"><img src="http://27.media.tumblr.com/tumblr_lwb7iwCDAL1qzymieo1_400.jpg" alt="" /></a>
+					</center>
+
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+			
+			
+			<div class="post">
+				<a href="http://psimadethis.com/post/14510592731/bring-joy-to-the-world-this-holiday-season-use"><img src="/themes/4/link.gif" class="permalink" alt="Permalink" /></a> 		
+				
+				
+				
+				
+				<div class="photo">
+					<center>
+						<a href="http://www.tumblr.com/photo/1280/ps-imadethis/14510592731/1/tumblr_lw9khfUJ441qzymie"><img src="http://29.media.tumblr.com/tumblr_lw9khfUJ441qzymieo1_r4_400.jpg" alt="Bring Joy to the World this Holiday season! Use your fashion sense to give your home a festive twist! &nbsp;We were inspired by Tory Burch&amp;#8217;s bold and classic color palate for our Fashion Garland- the ultimate accent for chic and cheerful d&eacute;cor. &nbsp;
+To create: Cut pieces of ribbon and/or fabric that are&nbsp;approx. 9 inches long by 2 inches wide. &nbsp;Both ends should be cut on an angle to prevent fraying. &nbsp;Knot each piece of ribbon &amp;amp; fabric onto a strand of lights. &nbsp;P.S.- get creative with your pattern and colors! &nbsp;Continue to knot all the way down the strand of lights. &nbsp;The amount of materials needed will depend on how long your strand is. &nbsp;Hang your beautiful fashion garland over a mantle, fireplace, banister, railing, or mistletoe-topped entrance!
+Plug in and let your holiday DIY garland shine bright and beautifully.&nbsp;&nbsp;P.S.- Pair garland with live green garland for an extra decadent look.&nbsp;" /></a>
+					</center>
+
+					
+					<div class="caption">
+						<div><strong>Bring Joy to the World this Holiday season! Use your fashion sense to give your home a festive twist!  We were inspired by <a href="http://www.toryburch.com/blog-post/blog-post,default,pg.html?bpid=41490" target="_blank">Tory Burch&#8217;s</a> bold and classic color palate for our <em>Fashion Garland</em>- the ultimate accent for chic and cheerful décor.  </strong></div>
+<div><strong>To create: Cut pieces of <a href="http://www.mjtrim.com/catalog/product/176/37302/37302.aspx" target="_blank">ribbon</a> and/or fabric that are approx. 9 inches long by 2 inches wide.  B</strong><strong>oth ends should be cut on an angle to prevent fraying.  </strong><strong>Knot each piece of ribbon &amp; fabric onto a strand of lights.  P.S.- get creative with your pattern and colors!  </strong><strong>Continue to knot all the way down the strand of lights.  </strong><strong>The amount of materials needed will depend on how long your strand is.  H</strong><strong>ang your beautiful fashion garland over a mantle, fireplace, banister, railing, or mistletoe-topped entrance!</strong></div>
+<p><strong>Plug in and let your holiday DIY garland shine bright and beautifully.</strong>  <strong>P.S.- Pair garland with live green garland for an extra decadent look. </strong></p>
+					</div>
+					
+					<ul class="share-links">
+						<li><a href="mailto:?subject=Great project on P.S.- I Made This&body=Check out this great project I found on P.S.- I Made This: http://psimadethis.com/post/14510592731/bring-joy-to-the-world-this-holiday-season-use" class="share-email"><img src="http://static.tumblr.com/eth9fj1/Sjzkt03cn/email.png" alt="Email" title="P.S.- Email this"/></a></li>
+						<li><a href="http://www.facebook.com/share.php?u=http://psimadethis.com/post/14510592731/bring-joy-to-the-world-this-holiday-season-use" class="share-facebook"><img src="http://static.tumblr.com/eth9fj1/zDQkt03bi/facebook.png" alt="Facebook" title="P.S.- Share this on Facebook"/></a></li>
+						<li><a href="http://twitter.com/home?status=P.S.- I Made This: http://psimadethis.com/post/14510592731/bring-joy-to-the-world-this-holiday-season-use" class="share-twitter"><img src="http://static.tumblr.com/eth9fj1/RDokt03c4/bird.png" alt="Twitter" title="P.S.- Tweet this"/></a></li>
+					</ul>
+					
+				</div>
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			
+			</div>
+			
+			
+			<div id="footer">
+				 <a href="/page/1">« Previous</a> &nbsp;&nbsp; 
+				 <a href="/page/3">Next »</a> 
+
+</center>
+
+
+</td>
+
+<td valign="top" height="100%" width="300">
+<font face="Century Gothic" font size="3">
+<b>P.S.- I made this...</b>
+
+<br><br>
+is a movement.
+<br>
+It's a call to action to
+<br>
+reimagine, reuse & reinvent.
+
+<br>
+<br>
+I see it. I like it. I make it.
+
+<br>
+<Br><br>
+<center>
+<a href="http://www.amazon.com/dp/0810996030/?tag=wwwpsimadethi-20" target="_blank"><img src="http://www.stylerepublicmagazine.com/ps/buyit.jpg" border="0"></a>
+
+<br><br>
+
+<img src="http://www.stylerepublicmagazine.com/ps/smicons.jpg" border="0" usemap="#Map1" />
+<map name="Map1" id="Map1"><area shape="rect" coords="5,2,110,98" TITLE="P.S.- Sign Up For The Newsletter" href="http://visitor.constantcontact.com/manage/optin/ea?v=001z3OoPvvb5Bhez89JLPx25Q%3D%3D" target="_blank" />
+<area shape="rect" coords="119,53,162,96" TITLE="P.S.- Watch Us on YouTube" href="http://www.youtube.com/psimadethis" target="_blank" />
+<area shape="rect" coords="116,4,161,48" TITLE="P.S.- Friend Us on Facebook" href="http://www.facebook.com/pages/PS-I-made-this/71732171142" target="_blank" />
+<area shape="rect" coords="166,53,207,96" TITLE="P.S.- Subscribe Via RSS" href="http://psimadethis.com/rss" target="_blank" />
+<area shape="rect" coords="165,5,207,48" TITLE="P.S.- Follow Us On Twitter" href="http://www.twitter.com/psimadethis" target="_blank" />
+
+</td>
+
+</tr>
+</table>
+	
+
+	<!-- BEGIN TUMBLR CODE --><iframe src="http://assets.tumblr.com/iframe.html?10&src=http%3A%2F%2Fpsimadethis.com%2Fpage%2F2&amp;lang=en_US&amp;name=ps-imadethis" scrolling="no" width="330" height="25" frameborder="0" style="position:absolute; z-index:1337; top:0px; right:0px; border:0px; background-color:transparent; overflow:hidden;" id="tumblr_controls"></iframe><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><script type="text/javascript">_qoptions={qacct:"p-19UtqE8ngoZbM"};</script><script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script><noscript><img src="http://pixel.quantserve.com/pixel/p-19UtqE8ngoZbM.gif" style="display:none; border-width:0px; height:1px; width:1px;" alt=""/></noscript><!-- END TUMBLR CODE -->
+</body>
+</html>

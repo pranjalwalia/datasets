@@ -1,0 +1,520 @@
+
+<!DOCTYPE html> 
+<html lang="en" 
+	xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:fb="http://www.facebook.com/2008/fbml">
+
+	<head>
+		<meta charset="UTF-8" />
+	    <meta http-equiv="Content-Style-Type" content="text/css" />
+	    <meta http-equiv="Content-Script-Type" content="text/javascript" />		
+		<meta name="google-site-verification" content="FwmnoHT3ChO4CpPE_YWLe8_p4dCumqZa24ym0XuJtx8" />
+		<meta name="y_key" content="899a699d691bea1c" />
+		<meta name="msvalidate.01" content="F400BB55E016228CAAEB794367652816" />
+		<meta http-equiv="imagetoolbar" content="no" />
+        <meta name="description" content="DIY projects, how-tos, and inspiration from the workshops and minds of geeks, makers, and hackers @ the Make: Magazine blog" />
+	    <meta name="robots" content="all" />
+		<title>Make: Online |   Codebox: Explore Recursion with Processing</title>
+		<link rel="shortcut icon" href="http://cdn.makezine.com/make/blogs/blog.makezine.com/favicon.ico" />
+		<link rel="pingback" href="http://blog.makezine.com/xmlrpc.php" />
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.makezine.com/feed" />
+		<link rel="stylesheet" type="text/css" media="all" href="http://blog.makezine.com/wp-content-svn/themes/MakeZine/style.css" />
+		
+						
+		
+			
+		<meta property="og:title" content="Codebox: Explore Recursion with Processing" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="http://blog.makezine.com/archive/2011/05/codebox-explore-recursion-with-processing.html" />
+		<meta property="fb:admins" content="712115840,690836447,34600017,804811257" />
+ 		<meta property="og:image" content="http://cdn.makezine.com/make/blogs/blog.makezine.com/upload/2010/09/MZ_Codebox.gif"/>		
+		<meta property="og:description" content="Recursion is an important programming technique that lends itself to a variety of areas, not least of which is creating interesting visual images. In brief, recursion is a technique for breaking a com" />
+				<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+GS_googleAddAdSenseService("ca-pub-1711976718738240");
+GS_googleEnableAllServices();
+</script>
+<script type='text/javascript'>
+GA_googleAddSlot("ca-pub-1711976718738240", "mz_blog_227x92");
+GA_googleAddSlot("ca-pub-1711976718738240", "mz_blog_300x250");
+GA_googleAddSlot("ca-pub-1711976718738240", "mz_blog_728x90");
+GA_googleAddSlot("ca-pub-1711976718738240", "mz_blog_600x250");
+GA_googleAddSlot("ca-pub-1711976718738240", "mz_blog_500x320_FMSpotlight");
+GA_googleAddSlot("ca-pub-1711976718738240", "mz_hackerspace_125x125");
+</script>
+<script type='text/javascript'>
+GA_googleFetchAds();
+</script>		<link rel="alternate" type="application/rss+xml" title="Make: Online &raquo; Codebox: Explore Recursion with Processing Comments Feed" href="http://blog.makezine.com/archive/2011/05/codebox-explore-recursion-with-processing.html/feed" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.makezine.com/xmlrpc.php?rsd" />
+<link rel='index' title='Make: Online' href='http://blog.makezine.com' />
+<link rel='start' title='Pneumatic Antenna Launchers' href='http://blog.makezine.com/archive/2008/02/pneumatic-antenna-launche.html' />
+<link rel='prev' title='How-To: Detail Sander From Disposable Electric Toothbrush' href='http://blog.makezine.com/archive/2011/05/how-to-detail-sander-from-disposable-electric-toothbrush.html' />
+<link rel='next' title='Public Libraries, 3D Printing, FabLabs and Hackerspaces' href='http://blog.makezine.com/archive/2011/05/public-libraries-3d-printing-fablabs-and-hackerspaces.html' />
+<link rel='canonical' href='http://blog.makezine.com/archive/2011/05/codebox-explore-recursion-with-processing.html' />
+<link rel='shortlink' href='http://blog.makezine.com/?p=96480' />
+<script src='http://blog.makezine.com/?dm=2055bc3eb9580ac8d23229deb996112e&amp;action=load&amp;blogid=1&amp;siteid=1&amp;t=238096661&amp;back=http%3A%2F%2Fblog.makezine.com%2Farchive%2F2011%2F05%2Fcodebox-explore-recursion-with-processing.html' type='text/javascript'></script><link rel="stylesheet" href="http://disqus.com/stylesheets/makecomments/disqus.css?v=2.0" type="text/css" media="screen" />		
+
+
+	</head>
+	
+	<body id="blog">
+	<div id="page">
+		<div id="header">
+			<div class="adbanner" style="float: left; width: 728px;">
+				<!-- mz_blog_728x90 -->
+<script type="text/javascript">
+GA_googleFillSlot('mz_blog_728x90');
+</script>
+			</div>
+			
+			<div style="float:right; margin-top:20px;">
+				<!-- mz_blog_227x92 -->
+<script type="text/javascript">
+GA_googleFillSlot('mz_blog_227x92');
+</script>
+			</div>
+						
+			<h1><a href="http://www.makezine.com/">Make:</a></h1>
+			<p>Technology on Your Time</p>
+		
+						<ul id="account">
+			<!-- RSS feed  -->
+			<li><a href="http://blog.makezine.com/feed/rss"><img src="http://cdn.makezine.com/make/blogs/common/feed.gif" alt="RSS Feed" width="12" height="12" style="display: inline; margin-right: 3px;" align="left" />RSS for makezine</a></li>
+			</ul>
+						
+
+			<div id="search"> 
+				<form action="http://www.google.com/cse" id="searchbox_008032414425079535247:kplxrakvu20"> 
+				  <input type="hidden" name="cx" value="008032414425079535247:kplxrakvu20" /> 
+				  <input type="text" name="q" size="25" /> 
+				  <input type="submit" name="sa" value="Search" /> 
+				</form> 
+				<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_008032414425079535247%3Akplxrakvu20&lang=en"></script> 
+			</div><!-- #search -->
+			<ul id="topnav"> 
+			  <li class="b1"><em><a href="http://blog.makezine.com/">Blog</a></em></li> 
+			  <li class="b2"><a href="http://makezine.com/magazine/">MAKE Magazine</a></li> 
+			  <li class="b7"><a href="http://makezine.com/podcast/">Videos/Podcasts</a></li> 
+			  <li class="b3"><a href="http://makeprojects.com/">Projects</a></li> 
+			  <li class="b4"><a href="http://makezine.com/community/">Forum/Community</a></li> 
+			  <li class="b5"><a href="http://makershed.com/?Click=19208">Maker Shed Store</a></li> 
+			</ul> 
+		<link rel="alternate" type="application/rss+xml" title="Make: Online &raquo; Codebox: Explore Recursion with Processing Comments Feed" href="http://blog.makezine.com/archive/2011/05/codebox-explore-recursion-with-processing.html/feed" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.makezine.com/xmlrpc.php?rsd" />
+<link rel='index' title='Make: Online' href='http://blog.makezine.com' />
+<link rel='start' title='Pneumatic Antenna Launchers' href='http://blog.makezine.com/archive/2008/02/pneumatic-antenna-launche.html' />
+<link rel='prev' title='How-To: Detail Sander From Disposable Electric Toothbrush' href='http://blog.makezine.com/archive/2011/05/how-to-detail-sander-from-disposable-electric-toothbrush.html' />
+<link rel='next' title='Public Libraries, 3D Printing, FabLabs and Hackerspaces' href='http://blog.makezine.com/archive/2011/05/public-libraries-3d-printing-fablabs-and-hackerspaces.html' />
+<link rel='canonical' href='http://blog.makezine.com/archive/2011/05/codebox-explore-recursion-with-processing.html' />
+<link rel='shortlink' href='http://blog.makezine.com/?p=96480' />
+<script src='http://blog.makezine.com/?dm=2055bc3eb9580ac8d23229deb996112e&amp;action=load&amp;blogid=1&amp;siteid=1&amp;t=1449530343&amp;back=http%3A%2F%2Fblog.makezine.com%2Farchive%2F2011%2F05%2Fcodebox-explore-recursion-with-processing.html' type='text/javascript'></script><link rel="stylesheet" href="http://disqus.com/stylesheets/makecomments/disqus.css?v=2.0" type="text/css" media="screen" />		
+		</div><!--#header-->
+		
+<div id="secondary">
+<div id="rail">
+
+<div class="rail_content"><a href="http://makezine.com/live/"><img src="http://cdn.makezine.com/make/26/MakeLive_OnAirNow_LightOn.gif"></a></div>
+	<!-- SOCIAL -->
+<div class="rail_header"><h2 class="rail">Follow MAKE</h2></div>
+<div class="rail_content" style="border:1px solid #079afa; background-color:#f5f5f5;"> 
+	<div class="connect">
+		<ul>
+			<li class="connect-left"><a href="http://blog.makezine.com/feed/rss" target="_blank"><img src="http://cdn.makezine.com/make/blogs/common/icons/icon_rss.gif" width="28" height="28" alt="RSS Icon" align="middle" /> <b>RSS</b> feed</a></li>
+			<li class="connect-right"><a href="http://www.youtube.com/user/makemagazine" target="_blank"><img src="http://cdn.makezine.com/make/blogs/common/icons/icon_youtube.gif" width="26" height="26" alt="YouTube Icon" align="middle" style="padding:1px;" /> <b>YOUTUBE</b> channel </a></li>
+			<li class="connect-left"><a href="http://www.stumbleupon.com/discover/makezine/" target="_blank"><img src="http://cdn.makezine.com/make/blogs/common/icons/icon_stumble.gif" width="28" height="28" alt="StumbleUpon Icon" align="middle" /> <b>STUMBLE</b>UPON </a></li> 
+			<li class="connect-right"><a href="http://makezine.com/newsletter/subscribe/" target="_blank"><img src="http://cdn.makezine.com/make/blogs/common/icons/icon_email.gif" width="28" height="28" alt="RSS con" align="middle" /> <b>MONTHLY</b> Newsletter</a></li> 
+			<li class="connect-left"><a href="http://twitter.com/make" target="_blank"><img src="http://cdn.makezine.com/make/blogs/common/icons/icon_twitter.gif" width="28" height="28" alt="Twitter Icon" align="middle" /> <b>TWITTER</b></a></li>
+			<li class="connect-right"><a href="http://www.feedblitz.com/f/?Sub=150060" target="_blank"><img src="http://cdn.makezine.com/make/blogs/common/icons/icon_email.gif" width="28" height="28" alt="RSS Icon" align="middle" /> <b>DAILY</b> Email</a></li>
+			<li class="connect-left"><a href="http://facebook.com/makemagazine" target="_blank"><img src="http://cdn.makezine.com/make/blogs/common/icons/icon_facebook.gif" width="28" height="28" alt="Facebook Icon" align="middle" /> <b>FACEBOOK</b></a></li> 
+			<li class="connect-right"><a href="http://makezine.com/cs/user/create/link?x-t=suggest.form" target="_blank"><img src="http://cdn.makezine.com/make/blogs/common/icons/icon_email.gif" width="28" height="28" alt="Email Icon" align="middle" /> <b>SUGGEST</b> a Site </a></li>
+			<li class="connect-left"><a href="http://www.flickr.com/groups/make/" target="_blank"><img src="http://cdn.makezine.com/make/blogs/common/icons/icon_flickr.gif" width="28" height="28" alt="Flickr Icon" align="middle" /> <b>FLICKR</b> pool</a></li>
+			<li class="connect-right"><a href="http://makezine.com/go/homepromo1_05/" target="_blank"><img src="http://cdn.makezine.com/make/blogs/common/icons/icon_chevron_big.gif" width="28" height="28" alt="RSS Icon" align="middle" /> <b>SUBSCRIBE</b> to Magazine</a></li> 
+			<br class="clear"/>
+			</ul><!-- connect --> 
+	</div>
+</div><!-- .rail_content-->
+
+
+<!-- ADS -->
+<div class="rail_content">
+	<div class="ad mediads" style="margin-top: 0px;">
+	<!-- mz_blog_300x250 -->
+<script type="text/javascript">
+GA_googleFillSlot('mz_blog_300x250');
+</script>
+	</div>
+</div><!-- .rail_content --> 
+
+<!-- DotD -->
+<div class="rail_header"><h2 class="rail">Maker Shed Deal of the Day!</h2></div>
+<div id="dotd">
+<a href="http://feedproxy.google.com/~r/oreilly/make/dealoftheday/~3/JzSTQn8Z02M/ProductDetails.asp">Count down to Maker Faire with the Day Counter kit</a><br /><a href="http://feedproxy.google.com/~r/oreilly/make/dealoftheday/~3/JzSTQn8Z02M/ProductDetails.asp">    
+<img src="http://www.makershed.com/v/vspfiles/assets/images/mkwd04_small.jpg" alt="Count down to Maker Faire with the Day Counter kit" width="174px" style="width: 174px; border: 1px solid #ccc; margin: 0 10px 10px 0;" /> 
+<br />
+
+
+    </a><span class="descriptor"></span> Save $5 with coupon code COUNT<a href="http://www.makershed.com/?Click=50592" target="_blank"><img src="http://makezine.com/images/ads/shed_standard.gif" alt="Maker Shed: Cool Kits, Tools, and Toys" /></a>
+</div>
+<div class="rail_content">			<div class="textwidget"><iframe src="http://makerfaire.com/bayarea/2011/button/" width="300" height="250" frameborder="0" ></iframe>
+
+<span style="font-weight:bold; margin-left: 20px;">Add this badge to your website! Copy the text below:</span>
+<br />
+<textarea name="embedcode">&lt;iframe src="http://makerfaire.com/bayarea/2011/button/" width="300" height="250" frameborder="0" &gt;&lt;/iframe&gt;</textarea>
+</div>
+		</div><div class="rail_content"><div style="rail_header"><h2 class="rail">Special Sections &amp; Features</h2></div>
+	<ul class='xoxo blogroll'>
+<li><a href="http://makeprojects.com" title="A How-To Projects Community for Makers" target="_blank"><img src="http://cdn.makezine.com/make/blogs/blog.makezine.com/upload/2010/07/MZ_MakeProjectsLibrary-RR.gif"  alt="Make : Projects A How-To Projects Community for Makers"  title="A How-To Projects Community for Makers" /></a>
+A How-To Projects Community for Makers</li>
+<li><a href="http://blog.makezine.com/arduino" title="All You Need to Start with Arduino and Then Some"><img src="http://cdn.makezine.com/make/arduino/Arduino_banner_335x60.gif"  alt="Make: Arduino All You Need to Start with Arduino and Then Some"  title="All You Need to Start with Arduino and Then Some" /></a>
+All You Need to Start with Arduino and Then Some</li>
+<li><a href="http://blog.makezine.com/archive/kids/" title="Maker Kids Projects and Ideas"><img src="http://cdn.makezine.com/make/blogs/blog.makezine.com/upload/2010/06/july_is_for_kids/MZ_Kids-RR.gif"  alt="Make: Kids Maker Kids Projects and Ideas"  title="Maker Kids Projects and Ideas" /></a>
+Maker Kids Projects and Ideas</li>
+<li><a href="http://makezine.com/live" title="Our Bi-Weekly Streaming Show &amp; Tell" target="_blank"><img src="http://cdn.makezine.com/make/campaigns/live/MakeLive-DK-RightRail-335x60.jpg"  alt="Make: Live Our Bi-Weekly Streaming Show &amp; Tell"  title="Our Bi-Weekly Streaming Show &amp; Tell" /></a>
+Our Bi-Weekly Streaming Show &amp; Tell</li>
+<li><a href="http://makerfaire-blog.eventbrite.com/" title="On Sale Now!" target="_blank"><img src="http://cdn.makezine.com/make/makerfaire/bayarea/2011/mfba11_banner_ad_335x72.gif"  alt="MakerFaire: Bay Area On Sale Now!"  title="On Sale Now!" /></a>
+On Sale Now!</li>
+
+	</ul>
+</div>
+<div class="rail_content"><div style="rail_header"><h2 class="rail">Make: Videos</h2></div>			<div class="textwidget"><iframe title="YouTube video player" width="328" height="215" src="http://www.youtube.com/embed/XED1bK5mxJM?rel=0&showinfo=1" frameborder="0" allowfullscreen></iframe></div>
+		</div>
+<!--COMMENTS-->
+<div class="rail_header"><h2 class="rail">Recent Comments</h2></div>
+	<div class="rail_content">
+		<script type="text/javascript" src="http://makecomments.disqus.com/combination_widget.js?num_items=5&hide_mods=0&color=blue&default_tab=recent&excerpt_length=200"></script><a href="http://disqus.com/">Powered by Disqus</a>
+	</div>
+
+<!--WARNING-->
+<div class="rail_content"> 
+<a href="http://makezine.com/warning/"><img src="http://cdn.makezine.com/make/blog/pleasereadmakers.gif" height="104" width="303" border="0" hspace="4" vspace="4" alt="Important please read" /></a> 
+<div class="banner_text"><a href="http://makezine.com/warning/">Before you begin a project, please read this important information &raquo;</a></div>
+</div><!-- .rail_content --> 
+
+
+	</div> <!-- #rail -->
+</div><!-- #secondary --> 		<div id="main">
+
+<script type="text/javascript" src="http://blog.makezine.com/wp-content-svn/themes/MakeZine/js/sharing.js"></script> 
+
+	<ul id="blognav" class="cleared">
+	<li class="blognav1">&nbsp;  <a href="http://blog.makezine.com/archive/2011/05/how-to-detail-sander-from-disposable-electric-toothbrush.html" rel="prev">How-To: Detail Sander From Disposable Electric Toothbrush</a> </li>
+	<li class="blognav2"><a href="http://blog.makezine.com">Main</a></li>
+	<li class="blognav3">&nbsp; <a href="http://blog.makezine.com/archive/2011/05/public-libraries-3d-printing-fablabs-and-hackerspaces.html" rel="next">Public Libraries, 3D Printing, FabLabs and Hackerspaces</a></li>
+	</ul>
+	
+				<div id="post-96480" class="post-96480 post type-post hentry category-arduino tag-codebox tag-processing">
+					<div class="asset-header">
+						<h2>Codebox: Explore Recursion with Processing</h2>
+					</div>
+
+					<div class="entry-content">
+						<div style="align: right;"><a href="http://blog.makezine.com/tag/codebox"><img src="http://cdn.makezine.com/make/blogs/blog.makezine.com/upload/2010/09/MZ_Codebox.gif" width="600" height="70" alt="MZ_Codebox.gif"/></a></div>
+<p><img src="http://cdn.makezine.com/make/blogs/blog.makezine.com/2011/05/ano_051111_montage.png" width="600px"></p>
+<p>
+Recursion is an important programming technique that lends itself to a variety of areas, not least of which is creating interesting visual images. In brief, recursion is a technique for breaking a complex problem into smaller and simpler versions of itself (this is called the &#8220;recursive step&#8221;) until the problem is trivial to solve (this trivial case is called the &#8220;base case&#8221;).   This Codebox a variety of sketches that will help you explore this fun and interesting technique using simple geometrical concepts.</p>
+<p>
+Many artists have used recursive themes in their work, particularly <a href="http://en.wikipedia.org/wiki/M._C._Escher">M.C. Escher</a> and <a href="http://en.wikipedia.org/wiki/Ren%C3%A9_Magritte">Rene Magritte</a>. This first sketch shows how to create images in the style of <a href="http://en.wikipedia.org/wiki/Piet_Mondrian">Piet Mondrian</a>, who is best known for his compositions of colorful rectangles. </p>
+<p>
+<span id="more-96480"></span></p>
+<p>The following program uses recursion to creates a faux-Mondrian. The base case is simple: all you do is draw a filled rectangle with a thick black border; the rectangle&#8217;s color is selected from a small set of primary colors (red, white, yellow, etc). The recursive step is to break this rectangle (and all subsequent rectangles) into 4 smaller rectangles by selecting a random point in its interior.  The following figure should give you an idea of how it works:</p>
+<p>
+<img src="http://cdn.makezine.com/make/blogs/blog.makezine.com/2011/05/ano_051111_mondarian_process.png" width="600px"></p>
+<p>
+The output will look something like this:</p>
+<p>
+<img src="http://cdn.makezine.com/make/blogs/blog.makezine.com/2011/05/ano_051111_mondarian_montage.png" width="600px"/><br />
+Finally, here&#8217;s the sketch, <a href="https://github.com/odewahn/codebox_recursion_examples/raw/master/mondrian.pde">mondrian.pde</a>:</p>
+<p>
+<object data="https://github.com/odewahn/codebox_recursion_examples/raw/master/mondrian.pde" type="text/plain" width="600" style="height: 600px; background-color: #cccccc"></object></p>
+<p>
+The <i>piet()</i> function is the heart of the program, and illustrates how most recursive programs work.  Here it is:</p>
+<p><pre>
+<code>
+// Draw a Mondrian-inspired image using recursion
+void piet(int x0, int y0, int x1, int y1, int N) {
+ if (N == 0) {
+    // Base case -- draw a colorful rectangle with a thick black border
+    int sw = 3; //this is the stroke width for the rectangle's border
+    color c[] = { #ff0000, #00ff00, #0000ff, #ffff00, #ffffff}; //Mondrian color palatte
+    fill(c[int(random(c.length))]);
+    strokeWeight(sw);
+    rect (x0,y0,x1-x0-sw,y1-y0-sw);
+ } else {
+    //Recursive step -- break the current rectangle into 4 new random rectangles
+    int i = int(random(x0,x1));
+    int j = int(random(y0,y1));
+    piet(x0,y0,i,j,N-1); // upper left rectangle
+    piet(i,y0,x1,j,N-1); // upper right rectangle
+    piet(x0,j,i,y1,N-1); // lower left rectangle
+    piet(i,j,x1,y1,N-1); // lower right rectangle
+ }
+}
+</code>
+</pre>
+<p>
+The function accepts 5 arguments: the coordinates of the upper left hand corner of a rectangle (x0 and y0), the coordinates of the lower right hand corner (x1 and x2), and the current recursive depth (N).  The function does two basic things.  First, it tests to see if it&#8217;s reached the &#8220;base case,&#8221; when N = 0.  If so, then all it does is draw a rectangle that is randomly colored from the basic Mondrian palette of colors (red, greed, blue, yellow, and white).  If it&#8217;s not the base case, then it selects a random point (i,j) inside the current rectangle, and then calls <i>piet()</i> 4 more times, passing in the various coordinates that form the 4 new interior rectangles. This &#8220;divide and conquer&#8221; approach of having a function that calls itself is the hallmark of recursion.  </p>
+<p>
+Simple recursive processes are often used to create natural looking objects.  For example, we can create a natural looking plant using the following simple recursive process where each &#8220;plant&#8221; begins as a straight line. This line is replaced with a new &#8220;branch&#8221; that consists of the original line plus 3-4 new alternating branches. (The exact number of branches is determined by a variable you can set). This same process is applied recursively for each new branch, up to a depth you specify. The following figure illustrates the basic idea:</p>
+<p>
+<img src="http://cdn.makezine.com/make/blogs/blog.makezine.com/2011/05/ano_051111_plant_process_1.png" width="600px"/></p>
+<p>
+Lines are represented as vectors. A vector consists of an origin point defined by the variables x and y, a length defined by the variable r, and an angle defined by the variable theta. The following figure shows how these variables are related: </p>
+<p>
+<img src="http://cdn.makezine.com/make/blogs/blog.makezine.com/2011/05/ano_051111_plant_process_2.png" width="600px"></p>
+<p>
+This figure illustrates a few of the simple &#8220;plants&#8221; created with this basic process:</p>
+<p>
+<img src="http://cdn.makezine.com/make/blogs/blog.makezine.com/2011/05/ano_051111_plant_montage.png" width="600px"></p>
+<p>
+Here&#8217;s the sketch, <a href="https://github.com/odewahn/codebox_recursion_examples/raw/master/plant.pde">plant.pde</a>:</p>
+<p>
+<object data="https://github.com/odewahn/codebox_recursion_examples/raw/master/plant.pde" type="text/plain" width="600" style="height: 600px; background-color: #cccccc"></object></p>
+<p>
+Finally, I&#8217;d be remiss without showing the Snowflake curve, one of the best known recursive figures.  The base case is a simple triangle. Each edge is then replaced by a new set of 4 line segments that are 1/3 the length of the original line. You then repeatedly replace each of these new segments with a new 4-line segment (this recursive step). The following figure should give you the basic idea of the process:</p>
+<p>
+<img src="http://cdn.makezine.com/make/blogs/blog.makezine.com/2011/05/ano_051111_snowflake_process.png" width="600px"></p>
+<p>
+The results look like this:</p>
+<p>
+<img src="http://cdn.makezine.com/make/blogs/blog.makezine.com/2011/05/ano_051111_snowflake_montage.png" width="600px"></p>
+<p>
+Here&#8217;s the sketch, <a href="https://github.com/odewahn/codebox_recursion_examples/raw/master/snowflake.pde">snowflake.pde</a>.  Note that you&#8217;ll need to have the controlP5 contributed library to change the recursive depth (often referred to as N) to see how it affects the image. (Unfortunately, I had to limit the maximum recursive depth to 6, rather than infinity, since the library does not currently support slidebars that extend beyond your monitor screen and into the far reaches of the known universe.)</p>
+<p>
+<object data="https://github.com/odewahn/codebox_recursion_examples/raw/master/snowflake.pde" type="text/plain" width="600" style="height: 600px; background-color: #cccccc"></object></p>
+<p><strong>More:</strong><br />
+Check out all of the <a href="http://blog.makezine.com/tag/codebox">Codebox</a> columns</p>
+<p><strong>In the Maker Shed:</strong></p>
+<p><a href="http://www.makershed.com"><img src="http://blog.craftzine.com/makershedsmall.jpg" height="45" width="200" alt="Makershedsmall" /></a></br></p>
+<div style="align: right;"><img src="http://cdn.makezine.com/make/blogs/blog.makezine.com/upload/2010/09/our_latest_make_book--getting_start/processingCover.jpg"  width="193" height="300" alt="processingCover.jpg"/></div>
+<p><a href="http://www.makershed.com/ProductDetails.asp?ProductCode=9781449379803&#038;Click=37845&#038;Click=37845">Getting Started with Processing</a><br />
+Learn computer programming the easy way with Processing, a simple language that lets you use code to create drawings, animation, and interactive graphics. Programming courses usually start with theory,but this book lets you jump right into creative and fun projects.  It&#8217;s ideal for anyone who wants to learn basic programming, and serves as a simple introduction to graphics for people with some programming skills. </p>
+						
+					</div><!-- .entry-content -->
+					
+					<!-- SOCIAL MEDIA :: include sharing.js -->
+					<div class="asset-meta">
+<p class="authoruserpic"><img alt='' src='http://1.gravatar.com/avatar/773bee658f13bf94f7b9ac96e27c7bc7?s=50&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D50&amp;r=G' class='avatar avatar-50 photo' height='50' width='50' /></p> 
+	<span style="float:left;max-width:550px;">
+		<p class="nfo">Posted by <a href="http://blog.makezine.com/archive/author/andrew_odewahn_1/" title="Posts by Andrew Odewahn">Andrew Odewahn</a> &nbsp;&nbsp;|&nbsp;&nbsp; Wednesday May 11th, 2011 2:30 PM </p>
+		<p class="nfo">Categories: <a href="http://blog.makezine.com/archive/category/arduino" title="View all posts in Arduino" rel="category tag">Arduino</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+		<a href="http://blog.makezine.com/archive/2011/05/codebox-explore-recursion-with-processing.html">Permalink</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="javascript:sendEntry();">Email</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="http://blog.makezine.com/archive/2011/05/codebox-explore-recursion-with-processing.html#comments">Comments (<span class="dsq-postid" rel="96480 http://blog.makezine.com/?p=96480">View Comments</span>)</a> </p>
+	</span>
+		
+		<!-- begin social buttons -->
+	<div class="social-media">
+		<ul class="socialmedia-count">
+			<li><a class="twitter-share-button" href="http://twitter.com/share" data-counturl="http://blog.makezine.com/archive/2011/05/codebox-explore-recursion-with-processing.html" data-count="horizontal" data-lang="en" data-via="make" data-text="Codebox: Explore Recursion with Processing" data-url="http://blog.makezine.com/archive/2011/05/codebox-explore-recursion-with-processing.html">Tweet</a>
+			</li>
+		
+			<li><script src="http://www.stumbleupon.com/hostedbadge.php?s=1&r=http%3A%2F%2Fblog.makezine.com%2Farchive%2F2011%2F05%2Fcodebox-explore-recursion-with-processing.html"></script></li>
+		
+			<li>
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fblog.makezine.com%2Farchive%2F2011%2F05%2Fcodebox-explore-recursion-with-processing.html&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;height=21&amp;width=90" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:96px; height: 21px;" allowTransparency="true"></iframe>
+			</li>
+		</p> <!-- end social buttons -->
+</ul>
+</div><!-- .social-media-->
+</div><!--.asset-media-->
+
+<div style="clear:both"></div> 
+				</div><!-- #post-## -->
+
+				
+<div id="disqus_thread">
+					<div id="dsq-content">
+			<ul id="dsq-comments">
+					<li id="dsq-comment-180820">
+					<div id="dsq-comment-header-180820" class="dsq-comment-header">
+						<cite id="dsq-cite-180820">
+	http://weblogs.asp.net/bleroy							<span id="dsq-author-user-180820">Bertrand Le Roy</span>
+							</cite>
+					</div>
+					<div id="dsq-comment-body-180820" class="dsq-comment-body">
+						<div id="dsq-comment-message-180820" class="dsq-comment-message"><p>Wow, Mondrian, folks, not Mondarian.</p>
+</div>
+					</div>
+				</li>
+					<li id="dsq-comment-180825">
+					<div id="dsq-comment-header-180825" class="dsq-comment-header">
+						<cite id="dsq-cite-180825">
+	http://twitter.com/odewahn							<span id="dsq-author-user-180825">Andrew Odewahn</span>
+							</cite>
+					</div>
+					<div id="dsq-comment-body-180825" class="dsq-comment-body">
+						<div id="dsq-comment-message-180825" class="dsq-comment-message"><p>Yikes!  Just fixed that.</p>
+</div>
+					</div>
+				</li>
+				</ul>
+		</div>
+	</div>
+
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+	var disqus_url = 'http://blog.makezine.com/archive/2011/05/codebox-explore-recursion-with-processing.html ';
+	var disqus_identifier = '96480 http://blog.makezine.com/?p=96480';
+	var disqus_container_id = 'disqus_thread';
+	var disqus_domain = 'disqus.com';
+	var disqus_shortname = 'makecomments';
+	var disqus_title = "Codebox: Explore Recursion with Processing";
+		var disqus_config = function () {
+	    var config = this; // Access to the config object
+
+	    /* 
+	       All currently supported events:
+	        * preData — fires just before we request for initial data
+	        * preInit - fires after we get initial data but before we load any dependencies
+	        * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+	        * afterRender - fires when template is rendered but before we show it
+	        * onReady - everything is done
+	     */
+
+		config.callbacks.preData.push(function() {
+			// clear out the container (its filled for SEO/legacy purposes)
+			document.getElementById(disqus_container_id).innerHTML = '';
+		});
+				config.callbacks.onReady.push(function() {
+			// sync comments in the background so we don't block the page
+			DISQUS.request.get('?cf_action=sync_comments&post_id=96480');
+		});
+					};
+	var facebookXdReceiverPath = 'http://blog.makezine.com/wp-content-svn/plugins/disqus-comment-system/xd_receiver.htm';
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+	var DsqLocal = {
+		'trackbacks': [
+		],
+		'trackback_url': "http:\/\/blog.makezine.com\/archive\/2011\/05\/codebox-explore-recursion-with-processing.html\/trackback"	};
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+	var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+	dsq.async = true;
+	dsq.src = 'http://' + disqus_shortname + '.' + disqus_domain + '/embed.js?pname=wordpress&pver=2.61';
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+				<div id="comments-open-footer">
+<p>Make: Online has a &quot;be nice&quot; commenting policy. Don't say anything here you wouldn't say to a person's face. We will use our discretion in removing comments we find offensive, spammy, self-promotional, or mean-spirited. See more on our <a href="http://makezine.com/comments/">Maker Community Guidelines</a> page.</p>
+				<div style="background-color: #eee; border:1pt solid #eee; padding: 12px; height: 230px; margin: 20px 0px;">
+					<a href="https://www.pubservice.com/MK/Subnew.aspx?PC=MK&PK=M6BLG3"><img src="http://makezine.com/images/covers/current.jpg" alt="Subscribe to MAKE!" border="0" hspace="10" align="left" /></a><a href="https://www.pubservice.com/MK/Subnew.aspx?PC=MK&PK=M6BLG3" class="mccomm" style="font-size: 18px; font-weight: bold; text-decoration: none;">Subscribe to MAKE Magazine!</a>
+				    <p class="big mccomm">Subscribe today, save 42% and get web access to MAKE free.  MAKE Digital Edition is available only to subscribers.</p>
+				
+				    <p class="big mcshop">$34.95 / 1 year<br />
+				    (4 Quarterly Issues)</p>
+				
+				     <p class="button mcshop"><a class="mcshop" href="https://www.pubservice.com/MK/Subnew.aspx?PC=MK&PK=M6BLG3">Subscribe now</a></p>
+				
+				</div>
+
+
+<!-- end content area -->
+
+		</div><!-- #main -->
+	<span class="space"> </span>
+	
+	<hr class="clear" />
+
+	<div id="footer">
+
+		
+		<!-- Start Quantcast tag -->
+		<script type='text/javascript' src='http://secure.quantserve.com/quant.js'></script>
+		<script type='text/javascript'>
+		_qacct='p-c0y51yWFFvFCY';quantserve();</script>
+		<noscript>
+		<img src='http://secure.quantserve.com/pixel/p-c0y51yWFFvFCY.gif' style='display: none' height='1' width='1'></noscript>
+		<!-- End Quantcast tag -->
+		
+		<br /><br />
+		
+		<script type='text/javascript'><!--
+		google_ad_client = 'pub-1711976718738240';
+		/* footer */
+		google_ad_slot = '0548117936';
+		google_ad_width = 468;
+		google_ad_height = 60;
+		//-->
+		</script>
+		<script type='text/javascript' src='http://pagead2.googlesyndication.com/pagead/show_ads.js'>
+		</script>		
+		<br /><br />
+		
+		<p><a href="http://makezine.com/help/">Help</a> |
+		<a href="http://makezine.com/submissions.csp">Write for MAKE</a> | 
+		<a href="http://makezine.com/contact.csp">Contact Us</a> | 
+		<a href="http://www.makezine.com/go/subscribe2make">Subscribe</a> | 
+		<a href="http://makezine.com/advertise/">Advertise with Us</a> | 
+		<a href="http://www.oreillynet.com/pub/a/mediakit/privacy.html">Privacy Policy</a>| 
+		<a href="http://makezine.com/about/">About MAKE</a> | 
+		<a href="http://makezine.com/faq/">FAQ</a></p>
+		
+		<p class="nfo">&#169; 2011 <a href="http://www.oreilly.com/" style="margin-right: 20px;">O'Reilly Media, Inc.</a> 
+		webmaster@makezine.com<br />
+		All trademarks and registered trademarks appearing on makezine.com are the property of their respective owners.</p>
+		
+	</div><!-- #footer -->
+
+
+</div>
+</div>
+
+  <!-- asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet -->
+  <script>
+   var _gaq = [['_setAccount', 'UA-51157-1'], ['_trackPageview']];
+   (function(d, t) {
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.async = true;
+    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g, s);
+   })(document, 'script');
+  </script>
+
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.5'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=3.0.5'></script>
+<script type='text/javascript' src='http://static.evernote.com/noteit.js?ver=3.0.5'></script>
+<script type='text/javascript' src='http://platform.twitter.com/widgets.js?ver=3.0.5'></script>
+	<script type="text/javascript">
+	// <![CDATA[
+		var disqus_shortname = 'makecomments';
+		var disqus_domain = 'disqus.com';
+		(function () {
+			var nodes = document.getElementsByTagName('span');
+			for (var i = 0, url; i < nodes.length; i++) {
+				if (nodes[i].className.indexOf('dsq-postid') != -1) {
+					nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+					url = nodes[i].parentNode.href.split('#', 1);
+					if (url.length == 1) url = url[0];
+					else url = url[1]
+					nodes[i].parentNode.href = url + '#disqus_thread';
+				}
+			}
+			var s = document.createElement('script'); s.async = true;
+			s.type = 'text/javascript';
+			s.src = 'http://' + disqus_domain + '/forums/' + disqus_shortname + '/count.js';
+			(document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+		}());
+	//]]>
+	</script>
+<!-- #page -->
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using memcached
+Database Caching 8/12 queries in 0.019 seconds using memcached
+Object Caching 342/350 objects using memcached
+
+Served from: blog.makezine.com @ 2011-05-12 01:12:20 -->

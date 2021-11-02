@@ -1,0 +1,1039 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" dir="ltr" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<meta name="robots" content="index, follow">
+
+<span style="display: none;"></span>
+
+<title>Football Blog | Football News - Soccerlens.com</title>
+
+<link rel="shortcut icon" href="http://soccerlens.com/wp-content/themes/soccerlens2010/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="http://soccerlens.com/wp-content/themes/soccerlens2010/style.css" type="text/css" media="screen" />
+
+<!--[if lte IE 7]>
+<link rel="stylesheet" type="text/css" href="http://soccerlens.com/wp-content/themes/soccerlens2010/ie.css" />
+<![endif]-->
+
+
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://feeds.feedburner.com/soccerlens" />
+<link rel="pingback" href="http://soccerlens.com/xmlrpc.php" />
+
+
+<script src="http://soccerlens.com/wp-content/themes/soccerlens2010/scripts/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="http://soccerlens.com/wp-content/themes/soccerlens2010/scripts/superfish.js" type="text/javascript"></script>
+<script src="http://soccerlens.com/wp-content/themes/soccerlens2010/scripts/jquery.jcarousel.min.js" type="text/javascript"></script>
+<script src="http://soccerlens.com/wp-content/themes/soccerlens2010/scripts/jquery.cycle.min.js" type="text/javascript"></script>
+<script src="http://soccerlens.com/wp-content/themes/soccerlens2010/scripts/jquery.tabSlideOut.v1.3.js" type="text/javascript"></script>
+
+	
+<script type="text/javascript"> 
+jQuery(document).ready(function() { 
+   	jQuery('#nav ul').superfish({
+   	 delay: 500,
+   	 hoverClass: 'sfhover',
+   	 animation:  {opacity:'show',height:'show'},
+   	 autoArrows: false,
+	 dropShadows: false     
+   	 }); 
+}); 
+
+function mycarousel_initCallback(carousel) {
+    jQuery('#featured_slider_controller a').bind('click', function() {
+        carousel.scroll(jQuery.jcarousel.intval(jQuery(this).find('img').attr("alt")));
+        return false;
+    });
+};
+
+jQuery(document).ready(function() {
+    jQuery('#featured_slider').jcarousel({
+    auto: 5,
+    scroll: 1,
+    buttonNextHTML: null,
+    buttonPrevHTML: null,
+    initCallback: mycarousel_initCallback,
+    wrap: 'circular'
+    });
+});
+
+jQuery(document).ready(function() {
+    jQuery('#featured_slider_controller').jcarousel({
+    scroll: 6
+    });
+});
+
+jQuery('#newsticker_slider').cycle({ 
+	next: '#newsticker_next',
+	prev: '#newsticker_prev',
+	speed: 500
+});
+
+jQuery(document).ready(function(){
+	jQuery('div.slide-out-div').removeClass('hide');
+	jQuery('.slide-out-div').tabSlideOut({
+		tabHandle: '.handle',                     //class of the element that will become your tab
+		pathToTabImage: '', //path to the image for the tab //Optionally can 	be set using css
+		imageHeight: '220px',                     //height of tab image           //Optionally can be set using css
+		imageWidth: '36px',                       //width of tab image            //Optionally can be set using css
+		tabLocation: 'left',                      //side of screen where tab lives, top, right, bottom, or left
+		speed: 300,                               //speed of animation
+		action: 'click',                          //options: 'click' or 'hover', action to trigger animation
+		topPos: '250px',                          //position from the top/ use if tabLocation is left or right
+		leftPos: '20px',                          //position from left/ use if tabLocation is bottom or top
+		fixedPosition: true                      //options: true makes it stick(fixed position) on scroll
+	});
+	jQuery('.handle').click(function(){
+      jQuery(this).toggleClass('out')
+    });
+});
+
+jQuery(document).ready(function() {
+	jQuery('div#newsticker_slider').removeClass('hide');
+});
+
+</script>
+
+<link rel='stylesheet' href='http://soccerlens.com/wp-content/mu-plugins/affiliate/library/public/style.css' type='text/css'
+	media='all' />
+<link rel='stylesheet' id='wp-email-css'  href='http://soccerlens.com/wp-content/plugins/wp-email/email-css.css?ver=2.50' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://soccerlens.com/wp-content/plugins/contact-form-7/styles.css?ver=2.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://soccerlens.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<script type='text/javascript' src='http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/en_US?ver=0.4'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://soccerlens.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://soccerlens.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Soccerlens.com' href='http://soccerlens.com/' />
+<meta name="generator" content="WordPress 3.0.1" />
+
+<!-- All in One SEO Pack 1.6.13.2 by Michael Torbert of Semper Fi Web Design[448,486] -->
+<meta name="description" content="Soccerlens.com is a football blog dedicated to bringing you the latest football news from around the world of football." />
+<meta name="keywords" content="Football, Football News, Football Blog" />
+<link rel="canonical" href="http://soccerlens.com/" />
+<!-- /all in one seo pack -->
+<script type="text/javascript" src="http://soccerlens.com/wp-content/plugins/audio-player/assets/audio-player.js?ver=2.0.4.1"></script>
+<script type="text/javascript">AudioPlayer.setup("http://soccerlens.com/wp-content/plugins/audio-player/assets/player.swf?ver=2.0.4.1", {width:"290",animation:"yes",encode:"yes",initialvolume:"100",remaining:"no",noinfo:"no",buffer:"5",checkpolicy:"no",rtl:"no",bg:"E5E5E5",text:"333333",leftbg:"CCCCCC",lefticon:"333333",volslider:"666666",voltrack:"FFFFFF",rightbg:"B4B4B4",rightbghover:"999999",righticon:"333333",righticonhover:"FFFFFF",track:"FFFFFF",loader:"009900",border:"CCCCCC",tracker:"DDDDDD",skip:"666666",pagebg:"FFFFFF",transparentpagebg:"yes"});</script>
+<script type="text/javascript">
+//<![CDATA[
+var _wpcf7 = { cached: 1 };
+//]]>
+</script>
+<meta property='fb:app_id' content='173242236251' />
+<meta property="og:site_name" content="Soccerlens.com" />
+<meta property='og:url' content='http://soccerlens.com' />
+<link rel="stylesheet" type="text/css" href="http://soccerlens.com/wp-content/plugins/upprev-nytimes-style-next-post-jquery-animated-fly-in-button/upprev_flyout.css" />
+    <script type="text/javascript" language="javascript" src="http://soccerlens.com/wp-content/plugins/upprev-nytimes-style-next-post-jquery-animated-fly-in-button/upprev_js.php"></script>
+<script type='text/javascript' src='http://ads.footballmedia.com/www/delivery/spcjs.php?id=1'></script>
+
+<script src="http://www.footballmedia.com/tracking/soccerlens.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div id="preheader">
+<div id="preheader_inner">
+	<ul id="preheader_signin">
+		<li><a href="http://soccerlens.com/wp-login.php">Log in</a></li>
+		<li><a href="http://soccerlens.com/wp-login.php?action=register">Register</a></li>
+	</ul>
+	<ul id="preheader_subscribe">
+		<li class="title">Subscribe</li>
+		<li><a href="http://soccerlens.com/twitter"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/subscribe_twitter.gif"></a></li>
+		<li><a href="http://soccerlens.com/facebook"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/subscribe_facebook.gif "></a></li>
+		<li><a href="http://www.youtube.com/user/soccerlens"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/subscribe_youtube.gif"></a></li>
+		<li><a href="http://feeds.feedburner.com/soccerlens"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/subscribe_rss.gif"></a></li>
+		<li><a href="http://soccerlens.com/3upfront/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/subscribe_podcast.gif"></a></li>
+		<li><a href="http://soccerlens.com/subscribe/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/subscribe_more.gif"></a></li>
+	</ul>
+</div>
+</div>
+<div id="header-container">
+
+<div id="header">
+
+	<h1 id="sitetitle">Soccerlens.com</h1>
+
+	<div id="logo-container">
+		<div id="logo">
+		
+					<a href="http://soccerlens.com">
+		
+							<img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/logo_sl.png" title="Soccerlens" alt="Soccerlens" />
+				<style>
+					.menu-item-home a {	background: url(http://soccerlens.com/wp-content/themes/soccerlens2010/images/top-menu-hover-first-btn-bg.png) left top no-repeat;
+}
+				</style>
+					</a>
+		</div>
+	</div>
+	<div id="header_ad">
+		<script type='text/javascript'><!--// <![CDATA[
+    OA_show(10);
+// ]]> --></script><noscript><a target='_blank' href='http://ads.footballmedia.com/www/delivery/ck.php?n=7c5e576'><img border='0' alt='' src='http://ads.footballmedia.com/www/delivery/avw.php?zoneid=10&amp;n=7c5e576' /></a></noscript>
+	</div>
+
+
+</div>
+
+
+<div id="navnews">
+	<div id="nav">	
+		<ul id="menu-nav" "sf-js-enabled"><li id="menu-item-first" id="menu-item-57802" class="menu-item menu-item-type-custom menu-item-home menu-item-57802"><a href="http://soccerlens.com">Blog</a></li>
+<li id="menu-item-54244" class="menu-item menu-item-type-custom menu-item-54244"><a href="http://www.soccerlens.com/shirts">Football Shirts</a></li>
+<li id="menu-item-61822" class="menu-item menu-item-type-custom menu-item-61822"><a href="http://soccerlensawards.com">Soccerlens Awards</a></li>
+<li id="menu-item-54836" class="menu-item menu-item-type-custom menu-item-54836"><a href="http://fantasy.soccerlens.com">Fantasy Football</a></li>
+<li id="menu-item-54243" class="menu-item menu-item-type-custom menu-item-54243"><a href="http://www.soccerlens.com/babes">Babes</a></li>
+<li id="menu-item-54246" class="menu-item menu-item-type-custom menu-item-54246"><a href="http://www.soccerlens.com/games">Games</a></li>
+<li id="menu-item-54247" class="menu-item menu-item-type-custom menu-item-54247"><a>Extra</a>
+<ul class="sub-menu">
+	<li id="menu-item-55689" class="menu-item menu-item-type-custom menu-item-55689"><a href="http://soccerlens.com/videos/">Videos</a></li>
+	<li id="menu-item-55691" class="menu-item menu-item-type-custom menu-item-55691"><a href="http://soccerlens.com/stats/">Stats</a></li>
+	<li id="menu-item-55690" class="menu-item menu-item-type-custom menu-item-55690"><a href="http://soccerlens.com/write/">Write</a></li>
+	<li id="menu-item-58311" class="menu-item menu-item-type-custom menu-item-58311"><a href="http://soccerlens.com/tracker/">Tracker</a></li>
+</ul>
+</li>
+<li id="menu-item-54248" class="menu-item menu-item-type-custom menu-item-54248"><a href="http://www.soccerlens.com/contact">Contact</a></li>
+</ul>	</div>
+	
+<div style="display: none;">
+<ul id="menu-nav-1" class="sf-js-enabled"><li id="menu-item-first" class="menu-item menu-item-type-custom"><a href="http://soccerlens.com">Blog</a></li><li class="menu-item menu-item-type-custom menu-item-home menu-item-57802"><a href="http://soccerlens.com">Blog</a></li>
+<li class="menu-item menu-item-type-custom menu-item-54244"><a href="http://www.soccerlens.com/shirts">Football Shirts</a></li>
+<li class="menu-item menu-item-type-custom menu-item-61822"><a href="http://soccerlensawards.com">Soccerlens Awards</a></li>
+<li class="menu-item menu-item-type-custom menu-item-54836"><a href="http://fantasy.soccerlens.com">Fantasy Football</a></li>
+<li class="menu-item menu-item-type-custom menu-item-54243"><a href="http://www.soccerlens.com/babes">Babes</a></li>
+<li class="menu-item menu-item-type-custom menu-item-54246"><a href="http://www.soccerlens.com/games">Games</a></li>
+<li class="menu-item menu-item-type-custom menu-item-54247"><a>Extra</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-custom menu-item-55689"><a href="http://soccerlens.com/videos/">Videos</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-55691"><a href="http://soccerlens.com/stats/">Stats</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-55690"><a href="http://soccerlens.com/write/">Write</a></li>
+	<li class="menu-item menu-item-type-custom menu-item-58311"><a href="http://soccerlens.com/tracker/">Tracker</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-54248"><a href="http://www.soccerlens.com/contact">Contact</a></li>
+</ul></div>
+
+
+
+
+	<div id="newsticker">
+	<div id="newsticker_title"> <a id="newsticker_prev" href="#"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/news-ticker-previous-btn.gif" alt="Prev"></a> <a id="newsticker_next" href="#"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/news-ticker-next-btn.gif" alt="Prev"></a> Latest News:</div>
+		<div id="newsticker_slider" class="hide">
+			<div><a href="http://soccerlens.com/can-manchester-united-beat-arsenal-and-chelsea/69059/" rel="bookmark" title="Permanent Link to Can Manchester United beat Arsenal and Chelsea?" style="text-decoration:none;">Can Manchester United beat Arsenal and Chelsea?</a></div>
+			<div><a href="http://soccerlens.com/highest-football-club-wages/69045/" rel="bookmark" title="Permanent Link to Highest Football Club Wages" style="text-decoration:none;">Highest Football Club Wages</a></div>
+			<div><a href="http://soccerlens.com/best-paid-footballers-country/69042/" rel="bookmark" title="Permanent Link to Best Paid Footballers By Country" style="text-decoration:none;">Best Paid Footballers By Country</a></div>
+			<div><a href="http://soccerlens.com/what-mourinho-learned-from-5-0-at-nou-camp/69030/" rel="bookmark" title="Permanent Link to What Mourinho learned from 5-0 at Nou Camp" style="text-decoration:none;">What Mourinho learned from 5-0 at Nou Camp</a></div>
+			<div><a href="http://soccerlens.com/shirts/stoke-city-20112012-away-shirt/8781/" rel="bookmark" title="Permanent Link to adidas gives a sneak peak of 11/12 Stoke away shirt" style="text-decoration:none;">adidas gives a sneak peak of 11/12 Stoke away shirt</a></div>
+			<div><a href="http://soccerlens.com/shirts/bayern-munich-and-adidas-extend-partnership-to-2020/8775/" rel="bookmark" title="Permanent Link to Bayern Munich and adidas extend partnership to 2020" style="text-decoration:none;">Bayern Munich and adidas extend partnership to 2020</a></div>
+			<div><a href="http://soccerlens.com/wesley-sneijder-%e2%80%93-a-perfect-fit-for-manchester-united/68993/" rel="bookmark" title="Permanent Link to Wesley Sneijder – A Perfect Fit For Manchester United?" style="text-decoration:none;">Wesley Sneijder – A Perfect Fit For Manchester United?</a></div>
+			<div><a href="http://soccerlens.com/manchester-united-everton/37268/" rel="bookmark" title="Permanent Link to Manchester United hope to beat Everton and secure Premier League title" style="text-decoration:none;">Manchester United hope to beat Everton and secure Premier League title</a></div>
+			<div><a href="http://soccerlens.com/babes/manchester-city-wags/" rel="bookmark" title="Permanent Link to Manchester City WAGs" style="text-decoration:none;">Manchester City WAGs</a></div>
+			<div><a href="http://soccerlens.com/manchester-uniteds-midfield-mess-why-wont-fergie-sort-it/68959/" rel="bookmark" title="Permanent Link to Manchester United&#8217;s Midfield Mess: Why Won&#8217;t Fergie Sort It?" style="text-decoration:none;">Manchester United&#8217;s Midfield Mess: Why Won&#8217;t Fergie Sort It?</a></div>
+		</div>
+	
+		
+		</div>
+	
+	<div id="navsearch">
+	
+					<form action="http://soccerlens.com/search" id="cse-search-box">
+			<div>
+				<input type="hidden" name="cx" value="014086728379207434001:csxwb962jyc" />
+				<input type="hidden" name="cof" value="FORID:11" />
+				<input type="hidden" name="ie" value="UTF-8" />
+				<input id="s" type="text" name="q" size="31" />
+				<input type="image" src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/submit-btn-small.gif" value="Submit" id="searchsubmit" type="submit" name="sa"/>
+			</div>
+			</form>
+			<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&lang=en"></script>
+			</div>
+	
+</div>
+
+</div>
+
+
+<div id="page-container">
+
+<div id="page-bottom-bg-container">
+
+<div id="page">
+
+<div id="content" class="narrowcolumn">
+
+
+<div class="box-wide-topbar">
+<h3>Featured Posts</h3>
+</div>
+<div class="box-wide" id="featured_slider">
+	<ul>
+			<li>
+			  <a href="http://soccerlens.com/arsenal-tottenham/36120/" title="Tottenham and Arsenal look to put pressure on Man City and Man Utd"><img src="http://soccerlens.com/files/2009/10/arsenal-tottenham.gif" alt="Tottenham and Arsenal look to put pressure on Man City and Man Utd" class="thumbnail featured_slider attachment-post-thumbnail" /></a>				<div class="slide_text">
+				<h2 id="post-36120">Tottenham and Arsenal look to put pressure on Man City and Man Utd</h2>
+				<p>The North London Derby takes centre stage tonight as Arsenal make the short trip to White Hart Lane to face Tottenham Hotspur in the Premier League. It is a huge gamin.</p>
+				<a class="readarticle" href="http://soccerlens.com/arsenal-tottenham/36120/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+			</div>
+		</li>
+			<li>
+			  <a href="http://soccerlens.com/pele-sports-giveaway/68779/" title="Pelé Sports Giveaway &#8211; Win Great Gear with Soccerlens"><img src="http://soccerlens.com/files/2011/04/pelé_jacket_pele_sports-275x195.jpg" alt="Pelé Sports Giveaway &#8211; Win Great Gear with Soccerlens" class="thumbnail featured_slider attachment-post-thumbnail" /></a>				<div class="slide_text">
+				<h2 id="post-68779">Pelé Sports Giveaway &#8211; Win Great Gear with Soccerlens</h2>
+				<p>Earlier this week we introduced you to Pelé Sports and the story behind the new football brand. We&#8217;ve teamed up with the wonderful people over at Pelé Sports...</p>
+				<a class="readarticle" href="http://soccerlens.com/pele-sports-giveaway/68779/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+			</div>
+		</li>
+			<li>
+			  <a href="http://soccerlens.com/pele-sports-brand/67511/" title="Pelé Sports &#8211; Style, Innovation and Quality"><img src="http://soccerlens.com/files/2011/03/pele_bicycle_kick-275x195.jpg" alt="Pelé Bicycle Kick" class="thumbnail featured_slider attachment-post-thumbnail" /></a>				<div class="slide_text">
+				<h2 id="post-67511">Pelé Sports &#8211; Style, Innovation and Quality</h2>
+				<p>A sense of nostalgia sets in when thinking of Pelé, arguably the best footballer of all times, and the one that gave &#8220;Futebol bonito&#8221; to Brazil and to t...</p>
+				<a class="readarticle" href="http://soccerlens.com/pele-sports-brand/67511/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+			</div>
+		</li>
+			<li>
+			  <a href="http://soccerlens.com/real-madrid-1-1-barcelona-catalans-close-in-on-the-title-but-mourinhos-men-rejuvenated/68836/" title="Real Madrid 1-1 Barcelona: Catalans Close in on the Title, But Mourinho&#8217;s Men Rejuvenated"><img src="http://soccerlens.com/files/2011/04/Real-Barca-275x195.jpg" alt="Real Madrid 1-1 Barcelona: Catalans Close in on the Title, But Mourinho&#8217;s Men Rejuvenated" class="thumbnail featured_slider attachment-post-thumbnail" /></a>				<div class="slide_text">
+				<h2 id="post-68836">Real Madrid 1-1 Barcelona: Catalans Close in on the Title, But Mourinho&#8217;s Men Rejuvenated</h2>
+				<p>Barcelona practically wrapped up La Liga with a 1-1 draw at the Bernabeu, but there were few celebrations fron Pep Guardiola's men as Real Madrid appear to have gainos.</p>
+				<a class="readarticle" href="http://soccerlens.com/real-madrid-1-1-barcelona-catalans-close-in-on-the-title-but-mourinhos-men-rejuvenated/68836/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+			</div>
+		</li>
+			<li>
+			  <a href="http://soccerlens.com/arsenal-liverpool/36407/" title="Arsenal to close gap to Manchester United with a 2-1 win over Liverpool"><img src="http://soccerlens.com/files/2009/10/arsenal-liverpool.jpg" alt="Arsenal v Liverpool" class="thumbnail featured_slider attachment-post-thumbnail" /></a>				<div class="slide_text">
+				<h2 id="post-36407">Arsenal to close gap to Manchester United with a 2-1 win over Liverpool</h2>
+				<p>Liverpool travel to North London on Sunday afternoon on the back of an impressive 3-0 victory against Manchester City on Monday night. That win saw £35 million striue.</p>
+				<a class="readarticle" href="http://soccerlens.com/arsenal-liverpool/36407/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+			</div>
+		</li>
+			<li>
+			  <a href="http://soccerlens.com/manchester-united-manchester-city/39493/" title="Berbatov to Fire Manchester United into Another FA Cup Final"><img src="http://soccerlens.com/files/2011/02/dimitar-berbatov-275x195.jpg" alt="Berbatov to Fire Manchester United into Another FA Cup Final" class="thumbnail featured_slider attachment-post-thumbnail" /></a>				<div class="slide_text">
+				<h2 id="post-39493">Berbatov to Fire Manchester United into Another FA Cup Final</h2>
+				<p>The first FA Cup Semi-final on Saturday evening will see over 65,000 Mancunians descend on Wembley for a Manchester derby 200 miles south of its usual location. It wer.</p>
+				<a class="readarticle" href="http://soccerlens.com/manchester-united-manchester-city/39493/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+			</div>
+		</li>
+			<li>
+			  <a href="http://soccerlens.com/scoring-stats-does-the-importance-of-one-player-vary-between-divisions/68723/" title="Scoring Stats &#8211; Does the importance of the &#8216;go-to&#8217; footballer vary between divisions?"><img src="http://soccerlens.com/files/2011/04/adel-taarabt-415x275-275x195.jpg" alt="Adel Taarabt has been crucial for QPR this term.  Will this form carry over to the Premiership?" class="thumbnail featured_slider attachment-post-thumbnail" /></a>				<div class="slide_text">
+				<h2 id="post-68723">Scoring Stats &#8211; Does the importance of the &#8216;go-to&#8217; footballer vary between divisions?</h2>
+				<p>When first examining scoring stats, we found there were big differences between how reliant individual leagues were across Europe on one player.  After some more di...</p>
+				<a class="readarticle" href="http://soccerlens.com/scoring-stats-does-the-importance-of-one-player-vary-between-divisions/68723/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+			</div>
+		</li>
+			<li>
+			  <a href="http://soccerlens.com/did-roman-abramovich-miss-a-trick-last-summer-by-not-acquiring-raul/68706/" title="Did Roman Abramovich miss a trick last summer by not acquiring Raul?"><img src="http://soccerlens.com/files/2011/04/Raul-2-275x195.jpg" alt="Did Roman Abramovich miss a trick last summer by not acquiring Raul?" class="thumbnail featured_slider attachment-post-thumbnail" /></a>				<div class="slide_text">
+				<h2 id="post-68706">Did Roman Abramovich miss a trick last summer by not acquiring Raul?</h2>
+				<p>The European great who now adorns the blue of Schalke has transferred his Champions League pedigree over to The Miners who are now sitting proudly in the last four o...</p>
+				<a class="readarticle" href="http://soccerlens.com/did-roman-abramovich-miss-a-trick-last-summer-by-not-acquiring-raul/68706/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+			</div>
+		</li>
+			<li>
+			  <a href="http://soccerlens.com/stat-attack-messi-beats-ronaldo-in-every-single-competition/68662/" title="Stat Attack: Messi beats Ronaldo in every single competition"><img src="http://soccerlens.com/files/2011/04/ronaldo-messi-275x195.jpg" alt="Stat Attack: Messi beats Ronaldo in every single competition" class="thumbnail featured_slider attachment-post-thumbnail" /></a>				<div class="slide_text">
+				<h2 id="post-68662">Stat Attack: Messi beats Ronaldo in every single competition</h2>
+				<p>Castrol Performance data shows that Lionel Messi has been involved in more goals than Cristiano Ronaldo in the top five European leagues this season. Both have surpa...</p>
+				<a class="readarticle" href="http://soccerlens.com/stat-attack-messi-beats-ronaldo-in-every-single-competition/68662/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+			</div>
+		</li>
+			<li>
+			  <a href="http://soccerlens.com/tottenham-vs-real-madrid-in-fives/68693/" title="Tottenham vs Real Madrid in Fives"><img src="http://soccerlens.com/files/2011/04/Real-Tottenham-275x195.jpg" alt="Tottenham vs Real Madrid in Fives" class="thumbnail featured_slider attachment-post-thumbnail" /></a>				<div class="slide_text">
+				<h2 id="post-68693">Tottenham vs Real Madrid in Fives</h2>
+				<p>A quick look at Real's 1-0 win at White Hart Lane through lists of five: things we learned, the best moments, and the best and worst players on the night</p>
+				<a class="readarticle" href="http://soccerlens.com/tottenham-vs-real-madrid-in-fives/68693/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+			</div>
+		</li>
+			<li>
+			  <a href="http://soccerlens.com/why-kroenke-doesnt-need-arsenal-money-for-takeover/68611/" title="Why Kroenke doesn&#8217;t need Arsenal&#8217;s money for takeover"><img src="http://soccerlens.com/files/2011/04/emirates-stadium-275x195.jpg" alt="Why Kroenke doesn&#8217;t need Arsenal&#8217;s money for takeover" class="thumbnail featured_slider attachment-post-thumbnail" /></a>				<div class="slide_text">
+				<h2 id="post-68611">Why Kroenke doesn&#8217;t need Arsenal&#8217;s money for takeover</h2>
+				<p>The Arsenal takeover by Stan Kroenke has people wondering if this is going to turn Arsenal into the next Manchester United off the pitch (i.e. debt). It&#8217;s a le...</p>
+				<a class="readarticle" href="http://soccerlens.com/why-kroenke-doesnt-need-arsenal-money-for-takeover/68611/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+			</div>
+		</li>
+			<li>
+			  <a href="http://soccerlens.com/the-fa-admit-rooney-ban-was-media-driven/68605/" title="The FA Admit Rooney Ban Was Media Driven"><img src="http://soccerlens.com/files/2011/04/Rooney-275x195.jpg" alt="The FA Admit Rooney Ban Was Media Driven" class="thumbnail featured_slider attachment-post-thumbnail" /></a>				<div class="slide_text">
+				<h2 id="post-68605">The FA Admit Rooney Ban Was Media Driven</h2>
+				<p>This article does not condone Rooney&#8217;s behavior, and it especially does not condone swearing at match officials. Having said that, the governing authorities ha...</p>
+				<a class="readarticle" href="http://soccerlens.com/the-fa-admit-rooney-ban-was-media-driven/68605/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+			</div>
+		</li>
+			<li>
+			  <a href="http://soccerlens.com/football-transfer-trends-in-2010/68398/" title="Football Transfer Trends in 2010"><img src="http://soccerlens.com/files/2011/04/moneyball-275x195.jpg" alt="Football Transfer Trends in 2010" class="thumbnail featured_slider attachment-post-thumbnail" /></a>				<div class="slide_text">
+				<h2 id="post-68398">Football Transfer Trends in 2010</h2>
+				<p>The 2010 Global Player Migration Report (published by Professional Football Players Observatory &#038; SoccerAssociation.com) reveals several interesting facts on fo...</p>
+				<a class="readarticle" href="http://soccerlens.com/football-transfer-trends-in-2010/68398/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+			</div>
+		</li>
+			<li>
+			  <a href="http://soccerlens.com/real-madrid-tottenham/68032/" title="Tottenham must shackle Ozil to beat Real Madrid"><img src="http://soccerlens.com/files/2011/04/Ronaldo-e-Ozil-275x195.jpg" alt="Tottenham must shackle Ozil to beat Real Madrid" class="thumbnail featured_slider attachment-post-thumbnail" /></a>				<div class="slide_text">
+				<h2 id="post-68032">Tottenham must shackle Ozil to beat Real Madrid</h2>
+				<p>Tottenham must contain the creative threat posed by Mesut Özil if they are to avoid a repeat of their heavy defeat at the Bernabeú.
+
+The German midfielder set uns.</p>
+				<a class="readarticle" href="http://soccerlens.com/real-madrid-tottenham/68032/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+			</div>
+		</li>
+		</ul>
+
+</div>
+
+<div class="box-wide" id="featured_slider_controller">
+	<ul>
+			<li><a href="#"><img src="http://soccerlens.com/files/2009/10/arsenal-tottenham-150x150.gif" alt="1" /></a>
+		</li>
+			<li><a href="#"><img src="http://soccerlens.com/files/2011/04/pelé_jacket_pele_sports-130x130.jpg" alt="2" /></a>
+		</li>
+			<li><a href="#"><img src="http://soccerlens.com/files/2011/03/pele_bicycle_kick-130x130.jpg" alt="3" /></a>
+		</li>
+			<li><a href="#"><img src="http://soccerlens.com/files/2011/04/Real-Barca-130x130.jpg" alt="4" /></a>
+		</li>
+			<li><a href="#"><img src="http://soccerlens.com/files/2009/10/arsenal-liverpool-150x150.jpg" alt="5" /></a>
+		</li>
+			<li><a href="#"><img src="http://soccerlens.com/files/2011/02/dimitar-berbatov-130x130.jpg" alt="6" /></a>
+		</li>
+			<li><a href="#"><img src="http://soccerlens.com/files/2011/04/adel-taarabt-415x275-130x130.jpg" alt="7" /></a>
+		</li>
+			<li><a href="#"><img src="http://soccerlens.com/files/2011/04/Raul-2-130x130.jpg" alt="8" /></a>
+		</li>
+			<li><a href="#"><img src="http://soccerlens.com/files/2011/04/ronaldo-messi-130x130.jpg" alt="9" /></a>
+		</li>
+			<li><a href="#"><img src="http://soccerlens.com/files/2011/04/Real-Tottenham-130x130.jpg" alt="10" /></a>
+		</li>
+			<li><a href="#"><img src="http://soccerlens.com/files/2011/04/emirates-stadium-130x130.jpg" alt="11" /></a>
+		</li>
+			<li><a href="#"><img src="http://soccerlens.com/files/2011/04/Rooney-130x130.jpg" alt="12" /></a>
+		</li>
+			<li><a href="#"><img src="http://soccerlens.com/files/2011/04/moneyball-130x130.jpg" alt="13" /></a>
+		</li>
+			<li><a href="#"><img src="http://soccerlens.com/files/2011/04/Ronaldo-e-Ozil-130x130.jpg" alt="14" /></a>
+		</li>
+		<ul>
+</div>
+
+
+<div class="box-wide-topbar">
+		<h3>Latest Posts</h3>
+	</div>
+
+<div class="box-wide">
+
+		
+		
+		<div class="post shortpost">
+				                
+                <h2 id="post-69059"><a href="http://soccerlens.com/can-manchester-united-beat-arsenal-and-chelsea/69059/" rel="bookmark" title="Permanent Link to Can Manchester United beat Arsenal and Chelsea?" style="text-decoration:none;">Can Manchester United beat Arsenal and Chelsea?</a></h2>
+                
+                <div class="post_meta">By <a href="http://soccerlens.com/author/afrazali/" title="Posts by Afraz Ali">Afraz Ali</a> on April 23rd, 2011.&nbsp;<a href="http://soccerlens.com/can-manchester-united-beat-arsenal-and-chelsea/69059/#comments" title="Comment on Can Manchester United beat Arsenal and Chelsea?">3 Comments</a></div>
+				
+                <a href="http://soccerlens.com/can-manchester-united-beat-arsenal-and-chelsea/69059/" title="Can Manchester United beat Arsenal and Chelsea?"><img src="http://soccerlens.com/files/2011/04/Sir-Alex-Ferguson-Manchester-United-Everton-P_2588833-130x130.jpg" alt="Can Manchester United beat Arsenal and Chelsea?" class="thumbnail attachment-post-thumbnail" /></a>                <p>Sir Alex Ferguson has challenged his players to win a record 19th English title by beating their closest title rivals Sir Alex Ferguson was speaking after the Red Devils opened up a nine point gap at the summit of the Premier League table on Saturday lunchtime by beating Everton 1-0 at Old Trafford in a&#8230;</p>
+                
+                <div class="post_actions">
+					<div class="post_read">
+						<a class="readarticle" href="http://soccerlens.com/can-manchester-united-beat-arsenal-and-chelsea/69059/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+					</div>
+					<div class="post_share">
+						 
+
+<a href="http://twitter.com/share" class="twitter-share-button" data-text="Can Manchester United beat Arsenal and Chelsea?" data-url="http://soccerlens.com/can-manchester-united-beat-arsenal-and-chelsea/69059/" data-count="horizontal" data-via="soccerlens" >Tweet</a>
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>						<iframe src="http://www.facebook.com/plugins/like.php?href=http://soccerlens.com/can-manchester-united-beat-arsenal-and-chelsea/69059/&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+					</div>
+                </div>
+
+			</div>
+
+		
+		<div class="post shortpost">
+				                
+                <h2 id="post-69045"><a href="http://soccerlens.com/highest-football-club-wages/69045/" rel="bookmark" title="Permanent Link to Highest Football Club Wages" style="text-decoration:none;">Highest Football Club Wages</a></h2>
+                
+                <div class="post_meta">By <a href="http://soccerlens.com/author/ggw/" title="Posts by Ahmed Umair">Ahmed Umair</a> on April 23rd, 2011.&nbsp;<a href="http://soccerlens.com/highest-football-club-wages/69045/#respond" title="Comment on Highest Football Club Wages"></a></div>
+				
+                <a href="http://soccerlens.com/highest-football-club-wages/69045/" title="Highest Football Club Wages"><img src="http://soccerlens.com/files/2011/04/barca-130x130.jpg" alt="Highest Football Club Wages" class="thumbnail attachment-post-thumbnail" /></a>                <p>Player transfer fees and their larger than life wage bills are a common topic of discussion for a football fan of today. From Wayne Rooney threatening to quit to oil-rich owners going on shopping sprees, the footballers have now become spoilt and they now know that their high demands will be met at their current club or&#8230;</p>
+                
+                <div class="post_actions">
+					<div class="post_read">
+						<a class="readarticle" href="http://soccerlens.com/highest-football-club-wages/69045/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+					</div>
+					<div class="post_share">
+						 
+
+<a href="http://twitter.com/share" class="twitter-share-button" data-text="Highest Football Club Wages" data-url="http://soccerlens.com/highest-football-club-wages/69045/" data-count="horizontal" data-via="soccerlens" >Tweet</a>
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>						<iframe src="http://www.facebook.com/plugins/like.php?href=http://soccerlens.com/highest-football-club-wages/69045/&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+					</div>
+                </div>
+
+			</div>
+
+		
+		<div class="post shortpost">
+				                
+                <h2 id="post-69042"><a href="http://soccerlens.com/best-paid-footballers-country/69042/" rel="bookmark" title="Permanent Link to Best Paid Footballers By Country" style="text-decoration:none;">Best Paid Footballers By Country</a></h2>
+                
+                <div class="post_meta">By <a href="http://soccerlens.com/author/ggw/" title="Posts by Ahmed Umair">Ahmed Umair</a> on April 23rd, 2011.&nbsp;<a href="http://soccerlens.com/best-paid-footballers-country/69042/#respond" title="Comment on Best Paid Footballers By Country"></a></div>
+				
+                <a href="http://soccerlens.com/best-paid-footballers-country/69042/" title="Best Paid Footballers By Country"><img src="http://soccerlens.com/files/2011/04/cristiano-ronaldo1-130x130.jpg" alt="Best Paid Footballers By Country" class="thumbnail attachment-post-thumbnail" /></a>                <p>Football players are among the best paid athletes in the world at the moment and rightly so too. After all, football is the most popular game in the world and even though NBA has more money involved in it, football has a much larger following as a whole. Here, we have compiled a list of&#8230;</p>
+                
+                <div class="post_actions">
+					<div class="post_read">
+						<a class="readarticle" href="http://soccerlens.com/best-paid-footballers-country/69042/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+					</div>
+					<div class="post_share">
+						 
+
+<a href="http://twitter.com/share" class="twitter-share-button" data-text="Best Paid Footballers By Country" data-url="http://soccerlens.com/best-paid-footballers-country/69042/" data-count="horizontal" data-via="soccerlens" >Tweet</a>
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>						<iframe src="http://www.facebook.com/plugins/like.php?href=http://soccerlens.com/best-paid-footballers-country/69042/&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+					</div>
+                </div>
+
+			</div>
+
+		
+		<div class="post shortpost">
+				                
+                <h2 id="post-69030"><a href="http://soccerlens.com/what-mourinho-learned-from-5-0-at-nou-camp/69030/" rel="bookmark" title="Permanent Link to What Mourinho learned from 5-0 at Nou Camp" style="text-decoration:none;">What Mourinho learned from 5-0 at Nou Camp</a></h2>
+                
+                <div class="post_meta">By <a href="http://soccerlens.com/author/ggw/" title="Posts by Ahmed Umair">Ahmed Umair</a> on April 23rd, 2011.&nbsp;<a href="http://soccerlens.com/what-mourinho-learned-from-5-0-at-nou-camp/69030/#comments" title="Comment on What Mourinho learned from 5-0 at Nou Camp">2 Comments</a></div>
+				
+                <a href="http://soccerlens.com/what-mourinho-learned-from-5-0-at-nou-camp/69030/" title="What Mourinho learned from 5-0 at Nou Camp"><img src="http://soccerlens.com/files/2011/04/pepe-xavi-130x130.jpg" alt="What Mourinho learned from 5-0 at Nou Camp" class="thumbnail attachment-post-thumbnail" /></a>                <p>El Clasico is probably the most watched football derby in the world. Nowhere in the world so much is put on the line. If you think Chelsea and Manchester City have the most expensive players and the biggest wage budget, you should really take a look at the numbers Real Madrid and Barcelona spend. Without&#8230;</p>
+                
+                <div class="post_actions">
+					<div class="post_read">
+						<a class="readarticle" href="http://soccerlens.com/what-mourinho-learned-from-5-0-at-nou-camp/69030/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+					</div>
+					<div class="post_share">
+						 
+
+<a href="http://twitter.com/share" class="twitter-share-button" data-text="What Mourinho learned from 5-0 at Nou Camp" data-url="http://soccerlens.com/what-mourinho-learned-from-5-0-at-nou-camp/69030/" data-count="horizontal" data-via="soccerlens" >Tweet</a>
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>						<iframe src="http://www.facebook.com/plugins/like.php?href=http://soccerlens.com/what-mourinho-learned-from-5-0-at-nou-camp/69030/&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+					</div>
+                </div>
+
+			</div>
+
+		
+		<div class="post shortpost">
+				                
+                <h2 id="post-68993"><a href="http://soccerlens.com/wesley-sneijder-%e2%80%93-a-perfect-fit-for-manchester-united/68993/" rel="bookmark" title="Permanent Link to Wesley Sneijder – A Perfect Fit For Manchester United?" style="text-decoration:none;">Wesley Sneijder – A Perfect Fit For Manchester United?</a></h2>
+                
+                <div class="post_meta">By <a href="http://soccerlens.com/author/ryandonovan/" title="Posts by ryandunny">ryandunny</a> on April 23rd, 2011.&nbsp;<a href="http://soccerlens.com/wesley-sneijder-%e2%80%93-a-perfect-fit-for-manchester-united/68993/#respond" title="Comment on Wesley Sneijder – A Perfect Fit For Manchester United?"></a></div>
+				
+                <a href="http://soccerlens.com/wesley-sneijder-%e2%80%93-a-perfect-fit-for-manchester-united/68993/" title="Wesley Sneijder – A Perfect Fit For Manchester United?"><img src="http://soccerlens.com/files/2011/04/Wesley-Sneijder-Inter-Milan-130x130.jpg" alt="Wesley Sneijder – A Perfect Fit For Manchester United?" class="thumbnail attachment-post-thumbnail" /></a>                <p>Wesley Sneijder is a name that is constantly linked to Manchester United. While transfer rumors are notoriously untrustworthy, this Sneijder rumors keeps floating to the surface. All the signs are there to suggest this one has some truth in this. United were reported to have a 35 million pound bid rejected last summer for the&#8230;</p>
+                
+                <div class="post_actions">
+					<div class="post_read">
+						<a class="readarticle" href="http://soccerlens.com/wesley-sneijder-%e2%80%93-a-perfect-fit-for-manchester-united/68993/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+					</div>
+					<div class="post_share">
+						 
+
+<a href="http://twitter.com/share" class="twitter-share-button" data-text="Wesley Sneijder – A Perfect Fit For Manchester United?" data-url="http://soccerlens.com/wesley-sneijder-%e2%80%93-a-perfect-fit-for-manchester-united/68993/" data-count="horizontal" data-via="soccerlens" >Tweet</a>
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>						<iframe src="http://www.facebook.com/plugins/like.php?href=http://soccerlens.com/wesley-sneijder-%e2%80%93-a-perfect-fit-for-manchester-united/68993/&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+					</div>
+                </div>
+
+			</div>
+
+		
+		<div class="post shortpost">
+				                
+                <h2 id="post-37268"><a href="http://soccerlens.com/manchester-united-everton/37268/" rel="bookmark" title="Permanent Link to Manchester United hope to beat Everton and secure Premier League title" style="text-decoration:none;">Manchester United hope to beat Everton and secure Premier League title</a></h2>
+                
+                <div class="post_meta">By <a href="http://soccerlens.com/author/afrazali/" title="Posts by Afraz Ali">Afraz Ali</a> on April 23rd, 2011.</div>
+				
+                <a href="http://soccerlens.com/manchester-united-everton/37268/" title="Manchester United hope to beat Everton and secure Premier League title"><img src="http://soccerlens.com/files/2009/11/rooney-punches-corner-flag-150x150.jpg" alt="Wayne Rooney Punches Corner Flag" class="thumbnail attachment-post-thumbnail" /></a>                <p>Manchester United enter in to a pivotal phase of their season on Saturday when in-form Everton visit Old Trafford. The Red Devils are fully aware that outcomes of the upcoming five fixtures in both the premier league and Europe may well decide their destiny this season. United face Schalke in the UEFA Champions league two-legged&#8230;</p>
+                
+                <div class="post_actions">
+					<div class="post_read">
+						<a class="readarticle" href="http://soccerlens.com/manchester-united-everton/37268/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+					</div>
+					<div class="post_share">
+						 
+
+<a href="http://twitter.com/share" class="twitter-share-button" data-text="Manchester United hope to beat Everton and secure Premier League title" data-url="http://soccerlens.com/manchester-united-everton/37268/" data-count="horizontal" data-via="soccerlens" >Tweet</a>
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>						<iframe src="http://www.facebook.com/plugins/like.php?href=http://soccerlens.com/manchester-united-everton/37268/&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+					</div>
+                </div>
+
+			</div>
+
+		
+		<div class="post shortpost">
+				                
+                <h2 id="post-68959"><a href="http://soccerlens.com/manchester-uniteds-midfield-mess-why-wont-fergie-sort-it/68959/" rel="bookmark" title="Permanent Link to Manchester United&#8217;s Midfield Mess: Why Won&#8217;t Fergie Sort It?" style="text-decoration:none;">Manchester United&#8217;s Midfield Mess: Why Won&#8217;t Fergie Sort It?</a></h2>
+                
+                <div class="post_meta">By <a href="http://soccerlens.com/author/redben/" title="Posts by Red Ben">Red Ben</a> on April 22nd, 2011.&nbsp;<a href="http://soccerlens.com/manchester-uniteds-midfield-mess-why-wont-fergie-sort-it/68959/#comments" title="Comment on Manchester United&#8217;s Midfield Mess: Why Won&#8217;t Fergie Sort It?">2 Comments</a></div>
+				
+                <a href="http://soccerlens.com/manchester-uniteds-midfield-mess-why-wont-fergie-sort-it/68959/" title="Manchester United&#8217;s Midfield Mess: Why Won&#8217;t Fergie Sort It?"><img src="http://soccerlens.com/files/2011/04/owen-hargreaves-130x130.jpg" alt="Manchester United&#8217;s Midfield Mess: Why Won&#8217;t Fergie Sort It?" class="thumbnail attachment-post-thumbnail" /></a>                <p>Most pundits will agree that, if there is one area on the pitch in which Manchester United most need to reinforce, it is in the middle of the park. Even apart from the enforced replacement of Paul Scholes which looks increasingly necessary with every passing week, the quality required to be a truly great team&#8230;</p>
+                
+                <div class="post_actions">
+					<div class="post_read">
+						<a class="readarticle" href="http://soccerlens.com/manchester-uniteds-midfield-mess-why-wont-fergie-sort-it/68959/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+					</div>
+					<div class="post_share">
+						 
+
+<a href="http://twitter.com/share" class="twitter-share-button" data-text="Manchester United&#8217;s Midfield Mess: Why Won&#8217;t Fergie Sort It?" data-url="http://soccerlens.com/manchester-uniteds-midfield-mess-why-wont-fergie-sort-it/68959/" data-count="horizontal" data-via="soccerlens" >Tweet</a>
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>						<iframe src="http://www.facebook.com/plugins/like.php?href=http://soccerlens.com/manchester-uniteds-midfield-mess-why-wont-fergie-sort-it/68959/&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+					</div>
+                </div>
+
+			</div>
+
+		
+		<div class="post shortpost">
+				                
+                <h2 id="post-68966"><a href="http://soccerlens.com/manchester-united-must-spend-for-ferguson-to-retire-on-top/68966/" rel="bookmark" title="Permanent Link to Manchester United must spend for Ferguson to retire on top" style="text-decoration:none;">Manchester United must spend for Ferguson to retire on top</a></h2>
+                
+                <div class="post_meta">By <a href="http://soccerlens.com/author/mattwood040/" title="Posts by mattwood040">mattwood040</a> on April 22nd, 2011.&nbsp;<a href="http://soccerlens.com/manchester-united-must-spend-for-ferguson-to-retire-on-top/68966/#respond" title="Comment on Manchester United must spend for Ferguson to retire on top"></a></div>
+				
+                <a href="http://soccerlens.com/manchester-united-must-spend-for-ferguson-to-retire-on-top/68966/" title="Manchester United must spend for Ferguson to retire on top"><img src="http://soccerlens.com/files/2011/04/SAF-130x130.gif" alt="Manchester United must spend for Ferguson to retire on top" class="thumbnail attachment-post-thumbnail" /></a>                <p>Sir Alex Ferguson has spent most of the last twenty years at the top of English football.  In order to retire there, no matter when that day comes, he&#8217;ll need to spend.</p>
+                
+                <div class="post_actions">
+					<div class="post_read">
+						<a class="readarticle" href="http://soccerlens.com/manchester-united-must-spend-for-ferguson-to-retire-on-top/68966/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+					</div>
+					<div class="post_share">
+						 
+
+<a href="http://twitter.com/share" class="twitter-share-button" data-text="Manchester United must spend for Ferguson to retire on top" data-url="http://soccerlens.com/manchester-united-must-spend-for-ferguson-to-retire-on-top/68966/" data-count="horizontal" data-via="soccerlens" >Tweet</a>
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>						<iframe src="http://www.facebook.com/plugins/like.php?href=http://soccerlens.com/manchester-united-must-spend-for-ferguson-to-retire-on-top/68966/&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+					</div>
+                </div>
+
+			</div>
+
+		
+		<div class="post shortpost">
+				                
+                <h2 id="post-68935"><a href="http://soccerlens.com/ahead-of-the-arsenal-tottenham-game-a-brief-look-at-why-fa-doesnt-get-football-governance/68935/" rel="bookmark" title="Permanent Link to Ahead of the Arsenal &#8211; Tottenham game: a brief look at why FA doesn&#8217;t get football governance" style="text-decoration:none;">Ahead of the Arsenal &#8211; Tottenham game: a brief look at why FA doesn&#8217;t get football governance</a></h2>
+                
+                <div class="post_meta">By <a href="http://soccerlens.com/author/admin-2/" title="Posts by Ahmed Bilal">Ahmed Bilal</a> on April 20th, 2011.&nbsp;<a href="http://soccerlens.com/ahead-of-the-arsenal-tottenham-game-a-brief-look-at-why-fa-doesnt-get-football-governance/68935/#respond" title="Comment on Ahead of the Arsenal &#8211; Tottenham game: a brief look at why FA doesn&#8217;t get football governance"></a></div>
+				
+                                <p>Ahead of tonight&#8217;s North London derby and in light of the &#8216;Y-word debate&#8217;, it&#8217;s worth pointing out that you can&#8217;t simply pick and choose what&#8217;s acceptable and what&#8217;s not acceptable to say in a footballing context. It&#8217;s inconsistent, lacks moral judgment, and by kowtowing to whatever fascinates the public consciousness for the time being it&#8217;s&#8230;</p>
+                
+                <div class="post_actions">
+					<div class="post_read">
+						<a class="readarticle" href="http://soccerlens.com/ahead-of-the-arsenal-tottenham-game-a-brief-look-at-why-fa-doesnt-get-football-governance/68935/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+					</div>
+					<div class="post_share">
+						 
+
+<a href="http://twitter.com/share" class="twitter-share-button" data-text="Ahead of the Arsenal &#8211; Tottenham game: a brief look at why FA doesn&#8217;t get football governance" data-url="http://soccerlens.com/ahead-of-the-arsenal-tottenham-game-a-brief-look-at-why-fa-doesnt-get-football-governance/68935/" data-count="horizontal" data-via="soccerlens" >Tweet</a>
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>						<iframe src="http://www.facebook.com/plugins/like.php?href=http://soccerlens.com/ahead-of-the-arsenal-tottenham-game-a-brief-look-at-why-fa-doesnt-get-football-governance/68935/&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+					</div>
+                </div>
+
+			</div>
+
+		
+		<div class="post shortpost">
+				                
+                <h2 id="post-36120"><a href="http://soccerlens.com/arsenal-tottenham/36120/" rel="bookmark" title="Permanent Link to Tottenham and Arsenal look to put pressure on Man City and Man Utd" style="text-decoration:none;">Tottenham and Arsenal look to put pressure on Man City and Man Utd</a></h2>
+                
+                <div class="post_meta">By <a href="http://soccerlens.com/author/ajclark15/" title="Posts by Andrew Clark">Andrew Clark</a> on April 20th, 2011.</div>
+				
+                <img src="http://soccerlens.com/files/2009/10/arsenal-tottenham-150x150.gif" alt="Tottenham and Arsenal look to put pressure on Man City and Man Utd" class="thumbnail attachment-post-thumbnail" />                <p>The North London Derby takes centre stage tonight as Arsenal make the short trip to White Hart Lane to face Tottenham Hotspur in the Premier League. It is a huge game for both sides as Arsenal look to close the gap on leaders Manchester United to four points while Tottenham Hotspur have the chance to move level on points with Manchester City in fourth spot with a win.</p>
+                
+                <div class="post_actions">
+					<div class="post_read">
+						<a class="readarticle" href="http://soccerlens.com/arsenal-tottenham/36120/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/readarticle.gif" alt="Read More" style="height: 21px; width: 111px;"></a>
+					</div>
+					<div class="post_share">
+						 
+
+<a href="http://twitter.com/share" class="twitter-share-button" data-text="Tottenham and Arsenal look to put pressure on Man City and Man Utd" data-url="http://soccerlens.com/arsenal-tottenham/36120/" data-count="horizontal" data-via="soccerlens" >Tweet</a>
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>						<iframe src="http://www.facebook.com/plugins/like.php?href=http://soccerlens.com/arsenal-tottenham/36120/&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+					</div>
+                </div>
+
+			</div>
+
+		
+		<div class="navigation">
+			<div class='wp-pagenavi'>
+<span class='current'>1</span><a href='http://soccerlens.com/page/2/' class='page larger'>2</a><a href='http://soccerlens.com/page/3/' class='page larger'>3</a><a href='http://soccerlens.com/page/4/' class='page larger'>4</a><a href='http://soccerlens.com/page/5/' class='page larger'>5</a><a href="http://soccerlens.com/page/2/" class="nextpostslink">»</a><a href='http://soccerlens.com/page/10/' class='larger page'>10</a><a href='http://soccerlens.com/page/20/' class='larger page'>20</a><a href='http://soccerlens.com/page/30/' class='larger page'>30</a><span class='extend'>...</span><a href='http://soccerlens.com/page/913/' class='last'>Last »</a>
+</div>		</div>
+
+
+	<div style="text-align: center; margin-top: 10px; margin-bottom: 10px;">
+	    <script type='text/javascript'><!--// <![CDATA[
+    OA_show(11);
+// ]]> --></script><noscript><a target='_blank' href='http://ads.footballmedia.com/www/delivery/ck.php?n=6448fb3'><img border='0' alt='' src='http://ads.footballmedia.com/www/delivery/avw.php?zoneid=11&amp;n=6448fb3' /></a></noscript>
+
+	</div>
+
+	
+</div>
+</div>
+
+
+<div id="sidebar">
+
+	<div class="sidebox_topbar">		
+		<h3>Sponsors</h3>
+	</div>
+	<div class="sidebox" style="text-align: center">
+	<div class="textwidget" style="text-align: center">
+	    <script type='text/javascript'><!--// <![CDATA[
+OA_show(7);
+// ]]> --></script><noscript><a target='_blank' href='http://ads.footballmedia.com/www/delivery/ck.php?n=d5b1ae4'><img border='0' alt='' src='http://ads.footballmedia.com/www/delivery/avw.php?zoneid=7&amp;n=d5b1ae4' /></a></noscript>		</br />
+	    <a href="http://www.soccerbetting.info/">
+	<img src="http://soccerlens.com/files1/sbi.jpg" alt="soccer betting" style="margin:7px 6px;">
+</a>
+
+<a href="http://footballsuperstars.com">
+	<img src = "http://soccerlens.com/files1/football_manager_games.jpg" alt = "football manager games" style="margin:7px 6px;">
+</a>
+
+<a href="http://www.onlinefootballmanager.co.uk/welcome.asp?ref=soccerlens">
+	<img src="http://soccerlens.com/files1/125x125_ofm.gif" alt="online football manager" style="margin:7px 6px;">
+</a>
+
+<a href="http://www.tigertech.net/referral/soccerlens.com">
+	<img src="http://www.tigertech.net/referimages/hosted-by-tigertech-125x125.png" alt="TigerTech" style="margin:7px 6px;">
+</a>
+
+<!-- <a href="http://soccerlens.com/write/">
+	<img src="http://soccerlens.com/files1/write_for_SL.gif" alt="Write for Soccerlens.com" style="margin:7px 6px;">
+</a>-->		<p><a href="http://soccerlens.com/advertise/"><strong>Advertise here</strong></a></p>
+	</div>
+	</div>
+
+	<div class="sidebox_topbar">
+<h3>Media</h3>		
+	</div>
+	<div class="sidebox" style="text-align: center">
+		<a href="http://www.yardbarker.com/"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/yardbarker_120x50.gif" style="width: 120px; height: 50px; margin: 6px 3px;"></a>
+		<a href="http://www.newsnow.co.uk/nn/Soccerlens"><img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/newsnow_120x50.gif" style="width: 120px; height: 50px; margin: 6px 3px;"></a>
+	</div>
+
+<div class="sidebox_topbar"><h3>Soccerlens on Facebook</h3></div><div class="sidebox">			<div class="textwidget"><iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsoccerlens&amp;width=292&amp;connections=10&amp;stream=false&amp;header=false&amp;height=255" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:255px;" allowTransparency="true"></iframe></div>
+		</div><div class="sidebox_topbar"><h3>Popular in Search</h3></div><div class="sidebox">			<div class="textwidget"><script src="http://publishing.kalooga.com/overviewWidget?publisherId=947&widgetId=6445"> </script></div>
+		</div>
+<div class="sidebox_topbar">		
+	<h3>Write for SL</h3>
+</div>
+<div class="sidebox" style="text-align: center; padding: 6px 0;">
+	<a href="http://soccerlens.com/write/"><img src="http://soccerlens.com/files1/writeforSL_300x150.gif" border=0 alt="" width=300 height=150></a> 
+</div>  
+
+	<div class="sidebox_topbar">		
+		<h3>Sponsors</h3>
+	</div>
+	<div class="sidebox" style="text-align: center">
+	<div class="textwidget" style="text-align: center">
+	    <script type='text/javascript'><!--// <![CDATA[
+    OA_show(308);
+// ]]> --></script><noscript><a target='_blank' href='http://ads.footballmedia.com/www/delivery/ck.php?n=62a1530'><img border='0' alt='' src='http://ads.footballmedia.com/www/delivery/avw.php?zoneid=308&amp;n=62a1530' /></a></noscript>		</br />
+	</div>
+	</div>
+
+<div style="margin-bottom: 10px; overflow: hidden;">
+	<div style="float:left; margin-right: 10px;"> 
+		<script type='text/javascript'><!--// <![CDATA[
+
+OA_show(12);
+ 
+// ]]> --></script><noscript><a target='_blank' href='http://ads.footballmedia.com/www/delivery/ck.php?n=61de1a3'><img border='0' alt='' src='http://ads.footballmedia.com/www/delivery/avw.php?zoneid=12&amp;n=61de1a3' /></a></noscript> 
+	</div>
+	<div style="float:left;"> 
+		<script type='text/javascript'><!--// <![CDATA[
+ 
+    OA_show(13);
+ 
+// ]]> --></script><noscript><a target='_blank' href='http://ads.footballmedia.com/www/delivery/ck.php?n=3f3c38a'><img border='0' alt='' src='http://ads.footballmedia.com/www/delivery/avw.php?zoneid=13&amp;n=3f3c38a' /></a></noscript> 
+	</div>
+</div>
+
+	<div class="sidebox_topbar">		
+		<h3>Live Football</h3>
+	</div>
+	<div class="sidebox">
+	<div class="textwidget">
+		<a href="http://soccerlens.com/watch-live-football-online/13164/">Watch live football</a> online and never miss another game.
+	</div>
+	</div>
+
+<div style="text-align: center">
+<script type='text/javascript'><!--// <![CDATA[
+    OA_show(307);
+// ]]> --></script><noscript><a target='_blank' href='http://ads.footballmedia.com/www/delivery/ck.php?n=f3ecd67'><img border='0' alt='' src='http://ads.footballmedia.com/www/delivery/avw.php?zoneid=307&amp;n=f3ecd67' /></a></noscript>
+</div>
+
+<div style="text-align: center">
+	<script type='text/javascript'><!--// <![CDATA[
+    	OA_show(22);
+	// ]]> --></script><noscript><a target='_blank' href='http://ads.footballmedia.com/www/delivery/ck.php?n=02e5b2a'><img border='0' alt='' src='http://ads.footballmedia.com/www/delivery/avw.php?zoneid=22&amp;n=02e5b2a' /></a></noscript>
+</div>
+
+
+</div>
+
+<div style="clear:both;"></div>
+
+
+
+<hr />
+
+	<div class="box-full-topbar">
+	<h3>Partners</h3>
+	</div>
+
+	<div class="box-full" style="height: 75px;">
+	<img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/partners/11kicks.png" alt="11 Kicks" style="margin-right: 60px; margin-left:30px;">
+	<img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/partners/fm.png" alt="Football Media" style="margin-right: 60px;">
+	<img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/partners/fox.png" alt="Fox Networks" style="margin-right: 60px;">
+	<img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/partners/hi-media.png" alt="Hi Media" style="margin-right: 60px;">
+	<img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/partners/microsoft.png" alt="Microsoft" style="margin-right: 60px;">
+	<img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/partners/yardbarker.png" alt="YardBarker" style="margin-right: 20px;">
+
+	</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+
+<div id="footer-container">
+
+	<div id="footer-columns-container">
+
+		<div id="footer-columns">
+			<div id="footer-column">
+						<h4 class="noimg">About</h4>
+			<p>Welcome to Soccerlens &#8211; a website bringing you the best in football news. Soccerlens is your frame &#8211; your lens &#8211; into how football can and should be &#8211; for the fans and for the <a href="http://soccerlens.com/tags/general/players/">players</a>. </p>
+<p>Socerlens was started in 2006 by Ahmed Bilal and rapidly grew to becoming the #1 football blog online. It is now the leading independent football blog and attracts millions of football fans every month.</p>			</div>
+
+			<div id="footer-column">
+			<h4 style="background-image: url(http://soccerlens.com/wp-content/themes/soccerlens2010/images/footericon_sl.gif);"><a href="http://soccerlens.com">Soccerlens</a></h4>
+			<ul>
+					<li><a href='http://soccerlens.com/can-manchester-united-beat-arsenal-and-chelsea/69059/' title='Can Manchester United beat Arsenal and Chelsea?'>Can Manchester United beat Arsenal and Chelsea?</a></li>
+	<li><a href='http://soccerlens.com/highest-football-club-wages/69045/' title='Highest Football Club Wages'>Highest Football Club Wages</a></li>
+	<li><a href='http://soccerlens.com/best-paid-footballers-country/69042/' title='Best Paid Footballers By Country'>Best Paid Footballers By Country</a></li>
+			</ul>
+			 
+			</div>
+
+			<div id="footer-column">
+			<h4 style="background-image: url(http://soccerlens.com/wp-content/themes/soccerlens2010/images/footericon_shirts.gif);"><a href="http://soccerlens.com/shirts">Soccerlens Shirts</a></h4>
+			<ul>
+					<li><a href='http://soccerlens.com/shirts/stoke-city-20112012-away-shirt/8781/' title='adidas gives a sneak peak of 11/12 Stoke away shirt'>adidas gives a sneak peak of 11/12 Stoke away shirt</a></li>
+	<li><a href='http://soccerlens.com/shirts/bayern-munich-and-adidas-extend-partnership-to-2020/8775/' title='Bayern Munich and adidas extend partnership to 2020'>Bayern Munich and adidas extend partnership to 2020</a></li>
+	<li><a href='http://soccerlens.com/shirts/wolfsburg-20122013-home-shirt/8771/' title='14-year-old kid&#8217;s design to be Wolfsburg 2012/2013 home shirt'>14-year-old kid&#8217;s design to be Wolfsburg 2012/2013 home shirt</a></li>
+			</ul>
+			 
+			</div>
+
+			<div id="footer-column" class="last">
+			<h4 style="background-image: url(http://soccerlens.com/wp-content/themes/soccerlens2010/images/footericon_babes.gif);"><a href="http://soccerlens.com/babes">Soccerlens Babes</a></h4>
+			<ul>
+					<li><a href='http://soccerlens.com/babes/manchester-city-wags/' title='Manchester City WAGs'>Manchester City WAGs</a></li>
+	<li><a href='http://soccerlens.com/babes/sergio-romero-likes-it-dirty/' title='Sergio Romero likes it dirty'>Sergio Romero likes it dirty</a></li>
+	<li><a href='http://soccerlens.com/babes/inter-milan-babes/' title='Inter Milan Babes'>Inter Milan Babes</a></li>
+ 
+			</ul>
+			</div>
+
+			<div style="clear:both; height: 12px;"></div>
+
+		<div id="footer-columns">
+			<div id="footer-column">
+			<h4 class="noimg">Links</h4>
+			<ul>
+				<li><a href="http://soccerlens.com/football-gifts/17868/" title="Football Gifts">Football Gifts</a></li>
+<li><a href="http://soccerlens.com/training/" title="Football Training">Football Training</a></li>
+<li><a href="http://soccerlens.com/tags/columns/football-transfers/" title="Transfer News | Transfer Rumours">Football Transfers</a></li>
+<li><a href="http://soccerlens.com/wallpapers/" title="Football Wallpapers">Football Wallpapers</a></li>
+			</ul>
+			</div>
+
+			<div id="footer-column">
+			<h4 style="background-image: url(http://soccerlens.com/wp-content/themes/soccerlens2010/images/footericon_games.gif);"><a href="http://soccerlens.com/games">Soccerlens Games</a></h4>
+			<ul>
+					<li><a href='http://soccerlens.com/games/top-5-facebook-soccer-games/' title='Top 5 Facebook Soccer Games'>Top 5 Facebook Soccer Games</a></li>
+	<li><a href='http://soccerlens.com/games/spotflick-review/' title='Spotflick Review: The iPhone app that every football lover must have!'>Spotflick Review: The iPhone app that every football lover must have!</a></li>
+	<li><a href='http://soccerlens.com/games/football-identity-review/' title='Football Identity &#8211; The Social Football Game'>Football Identity &#8211; The Social Football Game</a></li>
+ 
+			</ul>
+			</div>
+
+			<div id="footer-column">
+			<h4 style="background-image: url(http://soccerlens.com/wp-content/themes/soccerlens2010/images/footericon_3up.gif);"><a href="http://soccerlens.com/3upfront">3 Up Front</a></h4>
+			<ul>
+					<li><a href='http://soccerlens.com/3upfront/28/' title='3 UP FRONT: Arsenal&#8217;s Wembley expectations, United and City&#8217;s future plus Boys who should be Men'>3 UP FRONT: Arsenal&#8217;s Wembley expectations, United and City&#8217;s future plus Boys who should be Men</a></li>
+	<li><a href='http://soccerlens.com/3upfront/27/' title='3 UP FRONT: Arsenal and Tottenham&#8217;s Champions League delight, Chelsea, United and more&#8230;'>3 UP FRONT: Arsenal and Tottenham&#8217;s Champions League delight, Chelsea, United and more&#8230;</a></li>
+	<li><a href='http://soccerlens.com/3upfront/26/' title='3 UP FRONT: Liverpool&#8217;s tactical genius, another Arsenal collapse and England chat'>3 UP FRONT: Liverpool&#8217;s tactical genius, another Arsenal collapse and England chat</a></li>
+ 
+			</ul>
+			</div>
+
+			<div id="footer-column" class="last">
+			<h4 style="background-image: url(http://soccerlens.com/wp-content/themes/soccerlens2010/images/footericon_awards.gif);"><a href="http://soccerlensawards.com">Soccerlens Awards</a></h4>
+			<ul>				
+								<li> <a href='http://soccerlensawards.com/2010-wrap/'> 2010 Editors’ Picks &amp; SLA Review</a> </li>
+								<li> <a href='http://soccerlensawards.com/2010-winners/'> The 2010 Soccerlens Awards Winners</a> </li>
+								<li> <a href='http://soccerlensawards.com/football-shirt-culture-interview/'> Football Shirt Culture Interview</a> </li>
+							</ul>
+			</div>
+
+			<div style="clear:both;"></div>
+
+		</div>
+
+	</div>
+
+<div style="clear:both;"></div>
+
+<div id="footer-copyright-container">
+
+<div id="footer-copyright">
+
+<div style="float:left; text-align:left; line-height:25px;">
+Developed by <a href="http://www.footballmedia.com/" target="_blank" style="background: url(http://soccerlens.com/wp-content/themes/soccerlens2010/images/fm_logo.gif) no-repeat; padding-left: 19px; margin-left: 3px;">Football Media</a> | <a href="http://soccerlens.com/archives">Archives</a> | All Content is under Copyright Protection
+</div>
+
+
+<div style="float:right; text-align:right; line-height:25px;">
+ &copy; 2006-2011 Soccerlens - Football News
+</div>
+
+
+</div>
+
+</div>
+
+</div>
+</div>
+		<script>
+function sl_get_cookie ( cookie_name )
+{
+  var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
+
+  if ( results )
+    return ( unescape ( results[2] ) );
+  else
+    return null;
+}
+//alert('geoip says '+sl_get_cookie('geo_country'));
+switch(sl_get_cookie('geo_country'))
+{
+case 'GB':
+		//alert('GB Script');
+
+default:
+		//alert('Default Script');
+		break;
+}
+</script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-8308523-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+})();
+</script>
+<script type="text/javascript">
+FB_RequireFeatures(["XFBML"], function() {
+  	FB.init("f8072e75e062830c49039bba158d4763", "http://soccerlens.com/?xd_receiver=1", {"permsToRequestOnConnect":"email"});
+});
+</script>
+
+
+
+        
+<div class="slide-out-div hide">
+	<a class="handle in" href="">Content</a>
+	<img src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/subbox-logo.png" alt="SoccerLens" /><br />
+	Soccerlens offers a free weekly newsletter with:
+	<ul>
+	    <li>The top stories, gossip and analysis</li>
+	   	<li>Exclusive photos, videos and interviews</li>
+	   	<li>Competitions and prizes for readers</li>
+	</ul>
+	Soccerlens is read by over 1,000,000 readers each month - come join the community!<br /><br />
+    
+    <!-- AWeber Web Form Generator 3.0 -->
+	<form method="post" class="af-form-wrapper" action="http://www.aweber.com/scripts/addlead.pl"  >
+		<div style="display: none;">
+			<input type="hidden" name="meta_web_form_id" value="1539319584" />
+			<input type="hidden" name="meta_split_id" value="" />
+			<input type="hidden" name="listname" value="soccerlens" />
+			<input type="hidden" name="redirect" value="http://www.aweber.com/thankyou-coi.htm?m=text" id="redirect_03247ee95d8f4d47ff73af56d7cd8bd6" />
+			<input type="hidden" name="meta_adtracking" value="Newsletter" />
+			<input type="hidden" name="meta_message" value="1" />
+			<input type="hidden" name="meta_required" value="email" />
+			<input type="hidden" name="meta_forward_vars" value="" />
+			<input type="hidden" name="meta_tooltip" value="" />
+		</div>
+		<div id="af-form-1539319584" class="af-form">
+			<div id="af-body-1539319584" class="af-body af-standards">
+				<div class="af-element">
+					<div class="af-textWrap">
+						<input class="text" type="text" name="email" value="Enter your email address" id="slide-out_email" />
+					</div>
+					<div class="af-clear">
+					</div>
+				</div>
+				<div class="af-element buttonContainer">
+					<input id="slide-out_submit" name="submit" class="submit" type="image" alt="Submit" src="http://soccerlens.com/wp-content/themes/soccerlens2010/images/submit-btn.gif" />
+					<div class="af-clear">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="display: none;">
+			<img src="http://forms.aweber.com/form/displays.htm?id=jKzMnMyMnKwcLA==" alt="" />
+		</div>
+	</form>
+	<script type="text/javascript">
+    <!--
+    (function() {
+        var IE = /*@cc_on!@*/false;
+        if (!IE) { return; }
+        if (document.compatMode && document.compatMode == 'BackCompat') {
+            if (document.getElementById("af-form-1539319584")) {
+                document.getElementById("af-form-1539319584").className = 'af-form af-quirksMode';
+            }
+            if (document.getElementById("af-body-1539319584")) {
+                document.getElementById("af-body-1539319584").className = "af-body inline af-quirksMode";
+            }
+            if (document.getElementById("af-header-1539319584")) {
+                document.getElementById("af-header-1539319584").className = "af-header af-quirksMode";
+            }
+            if (document.getElementById("af-footer-1539319584")) {
+                document.getElementById("af-footer-1539319584").className = "af-footer af-quirksMode";
+            }
+        }
+    })();
+    -->
+	</script>
+	<!-- /AWeber Web Form Generator 3.0 -->	
+
+</div>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+<!-- 
+var sc_project=1417270; 
+var sc_invisible=0; 
+var sc_partition=11; 
+var sc_security="a09c8ffe"; 
+//-->
+</script>
+<script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
+<!-- End of StatCounter Code -->
+
+<script src="http://network.yardbarker.com/network/ybn_pixel/407" type="text/javascript"></script> <noscript></noscript>
+<script type="text/javascript" src="http://tcr.tynt.com/javascripts/Tracer.js?user=bly19Ir7mr3Ppqacn9QLxW&s=40"></script>
+<script type='text/javascript'><!--// <![CDATA[
+    OA_show(406);
+// ]]> --></script><noscript><a target='_blank' href='http://ads.footballmedia.com/www/delivery/ck.php?n=a657ee9'><img border='0' alt='' src='http://ads.footballmedia.com/www/delivery/avw.php?zoneid=406&amp;n=a657ee9' /></a></noscript>
+<!-- 256 queries. 1.850 seconds. -->
+
+</div>
+
+</body>
+</html>
+<!-- Dynamic page generated in 1.847 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2011-04-24 06:51:26 -->
+<!-- super cache -->

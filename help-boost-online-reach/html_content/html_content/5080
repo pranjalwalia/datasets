@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+   <title>Eat for Eight Bucks: Perfect Roast Chicken with Pomegranate Jus | Serious Eats : Recipes</title>
+    <meta name="description" content="Thomas Keller is not exactly known for recipe shortcuts, so when the man tells me that it takes two ingredients and minimal involvement to roast a chicken, I take notice. I first took notice a year ago, and it's been..." />
+    <meta name="keywords" content="Serious Eats, food, media, recipes, news, chicken, Eat for Eight Bucks, pomegranate" />
+
+<!-- [2] including mt.js here -->
+    <script src="http://static.seriouseats.com/recipes/js/mt.js" type="text/javascript"></script>
+
+	<script src="http://static.seriouseats.com/js/jquery.min.js"></script>
+	<script src="http://static.seriouseats.com/js/jquery.tools.scroll.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://static.seriouseats.com/js/jquery.color.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://static.seriouseats.com/serious_eats/js/mt-site.js" type="text/javascript"></script>
+	<script src="http://static.seriouseats.com/js/jquery.accordion.min.js" type="text/javascript"></script>
+	<script src="http://static.seriouseats.com/js/accordion.js" type="text/javascript"></script>
+	<script src="http://static.seriouseats.com/js/new-home.js" type="text/javascript"></script>
+	<script type="text/javascript">
+var field_stars = new Array();
+function star_over(field, rating, on, off) {
+	for (var i = 1; i <= rating; i++) {
+		var star = document.getElementById(field + '_' + i);
+		star.src = on;
+	}
+	for (var i = rating + 1; i <= field_stars[field]; i++) {
+		var star = document.getElementById(field + '_' + i);
+		star.src = off;	
+	}
+}
+function star_out(field, rating, on, off) {
+	var val = document.getElementById(field).value;
+	if (val) {
+		val = parseInt(val);
+	} else {
+		val = 0;
+	}
+	for (var i = 1; i <= val; i++) {
+		var star = document.getElementById(field + '_' + i);
+		star.src = on;
+	}
+	for (var i = val + 1; i <= field_stars[field]; i++) {
+		var star = document.getElementById(field + '_' + i);
+		star.src = off;
+	}
+}
+function star_click(field, rating) {
+	document.getElementById(field).value = rating;
+}
+</script>
+
+    <script src="http://static.seriouseats.com/js/mobileRedirect.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/generalV2.css?v=20100728" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/global-masthead.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/print.css" media="print" />
+
+	<!--[if gte IE 7]>
+	  <link rel="stylesheet" href="http://static.seriouseats.com/css/ie7.css" type="text/css" media="screen" charset="utf-8" />
+	<![endif]-->
+	<!--[if lt IE 7]>
+	  <link rel="stylesheet" href="http://static.seriouseats.com/css/ie6.css" type="text/css" media="screen" charset="utf-8" />
+	<![endif]-->
+
+	<meta name="copyright" content="Serious Eats 2010" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="false" />
+	<meta name="robots" content="all" />
+        <meta property="fb:page_id" content="168926019255" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="alternate" type="application/atom+xml" title="Serious Eats" href="http://feeds.seriouseats.com/seriouseatsfeaturesvideos" />
+
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    $(document).ready(function() {
+        mtUpdateScores();
+    });
+    //mtAttachEvent('load', mtUpdateScores);
+    mtAttachEvent('usersignin', mtUpdateScores);
+    /* ]]> */
+    </script>
+
+
+
+  
+
+	<link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/recipeHeaders.css" />    
+    
+    <link rel="alternate" type="application/atom+xml" title="Serious Eats: Recipes" href="http://feeds.feedburner.com/seriouseats/recipes" />
+    <script type="text/javascript" src="http://static.seriouseats.com/js/individualPost.js?v=022408"></script>
+
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+	$("#emailThis").one("click", function(){
+		frames['emailIframe'].location.href = "http://www.seriouseats.com/cgi-bin/mte//plugins/SendEntry/mt-send-entry.cgi?__mode=create&entry_id=39746";
+		return false;	
+	});
+});	
+//-->
+</script>
+
+
+
+<script type="text/javascript">
+       federated_media_section = "-For-Recipes-Index";
+    </script>
+
+
+<script src="http://static.seriouseats.com/js/date.js" type="text/javascript"></script>
+<script src="http://www.seriouseats.com/js/pagination.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  $.get('http://www.seriouseats.com/recipes/2009/02/eat-for-eight-bucks-perfect-roast-chicken-with-pomegranate-jus-recipe-comments.js?' + new Date().getTime());
+  var numCommentsPerPage = 100;
+  //100;
+
+  // For printing comments with Recipe posts   
+  var recipeCommentsToInclude = new Array(); 
+  var jumpToTopOfComments = true;   
+
+function handlePaginationClick(page_index, pagination_container) {
+    var max_num = Math.min((page_index+1) * numCommentsPerPage, numComments);
+    var commentContent = '';
+    var commentRange = '';
+    var regex = new RegExp("\n", "g"); 
+    if ((max_num < numComments) || (max_num > numCommentsPerPage)) {
+         commentRange += "(" + (page_index*numCommentsPerPage + 1) + " - " + max_num + ") of ";
+    }
+
+    for (var i = page_index*numCommentsPerPage;i < max_num;i++) {
+        commentContent += '<a name="' + commentJSON[i]["comment_id"] + '"></a>';
+    	if (i%2) {
+    		commentContent += '<div class="comment yellow">';
+    	} else {
+    		commentContent += '<div class="comment green">';
+    	}
+        commentContent += '<div class="comment-body">';
+        
+ 	      commentContent += '<div class="recipe-comment-checkbox"><input type="checkbox" name="include-comment" class="include-comment" value="' + commentJSON[i]["comment_id"] + '"';
+ 	      // check to see if this comment is in the recipeCommentsToInclude array
+ 	      if ((jQuery.inArray((commentJSON[i]["comment_id"]), recipeCommentsToInclude)) >= 0) {
+ 	      	commentContent += 'checked ';
+ 	      }
+ 	      commentContent += '/></div>';
+              if (commentJSON[i]["star_rating"] && (commentJSON[i]["star_rating"] > 0))
+              {
+                   var ratingImg = '<img src="http://static.seriouseats.com/imagesV2/se-rating-on.png">';
+                   commentContent += '<div class="rater"><p>Recipe rating:</p><div class="unit-rating">';
+                   for (var j=0; j < commentJSON[i]["star_rating"]; j++) {
+                        commentContent += ratingImg;
+                   }
+                   commentContent += '</div></div>';
+              }
+              commentContent += '<div class="comment-content"><p>' + commentJSON[i]["text"].replace(regex, "<br />") + '</p></div><div class="comment-body-bottom"></div></div><p class="commenter postFooter"><a href="http://www.seriouseats.com/user/profile/' + commentJSON[i]["author_username"] + '">' + commentJSON[i]["author_nickname"] + '</a> at <a href="http://www.seriouseats.com/recipes/2009/02/eat-for-eight-bucks-perfect-roast-chicken-with-pomegranate-jus-recipe.html#' + commentJSON[i]["comment_id"] + '">';
+        
+ 		
+ 		var date = commentJSON[i]["created_on"];
+ 		
+ 		var commentDate = new Date(date.substr(0,4), date.substr(4,2)-1, date.substr(6,2), date.substr(8,2), date.substr(10,2), date.substr(12,2));
+ 		
+ 		commentContent += commentDate.toString("h:mmtt on MM/dd/yy") + '</a></p></div>'; 		
+    }
+    $('#commentRange').html(commentRange);
+    $('#commentSection').html(commentContent);
+    
+        // Recipe post - checked comments for printing
+    $('input[name$="include-comment"]').change(function() {
+        if ($(this).is(':checked')) { 
+        	var arrayIndex = (jQuery.inArray($(this).attr('value'), recipeCommentsToInclude));
+        	if (arrayIndex < 0) {
+        		recipeCommentsToInclude.push($(this).attr('value'));
+        		comments_list = recipeCommentsToInclude.join();
+        	}
+        }
+        else {
+            var arrayIndex = (jQuery.inArray($(this).attr('value'), recipeCommentsToInclude));
+            if (arrayIndex >= 0) {
+        		recipeCommentsToInclude.splice(arrayIndex,1);
+        		comments_list = recipeCommentsToInclude.join();
+        	}
+        }
+	});
+
+        if (jumpToTopOfComments) {
+             document.getElementById('comments').scrollIntoView();
+	}
+    return false;
+}
+
+$(document).ready(function()
+{
+     // alert (numComments);
+     if (numComments > 0) {
+          var commentCount = numComments + " Comment";
+          if (numComments > 1) {
+              commentCount += "s";
+          }
+      } else {
+          var commentCount = "Post a Comment";
+      }
+      
+
+            var commentCountText = '<a href="http://www.seriouseats.com/recipes/2009/02/eat-for-eight-bucks-perfect-roast-chicken-with-pomegranate-jus-recipe.html#comments"  class="commentCount">';
+             commentCountText += commentCount + '</a>';               
+
+
+        $("#postFooterCommentCount").html(commentCountText);
+        if($(".entryCommentCount").length > 0) {
+            $(".entryCommentCount").each(function() {
+                 $(this).html(commentCount);
+            });
+        }
+       
+        jumpToTopOfComments = false;
+	$(".pagination").pagination(numComments, {
+          	items_per_page:numCommentsPerPage,
+          	num_edge_entries:1,
+                num_display_entries:9,
+                next_show_always:false,
+                prev_show_always:false,
+                link_to:"#comments",
+        	callback:handlePaginationClick
+        });
+
+        if (numComments <= numCommentsPerPage) {
+             $(".pagination").hide();
+        }
+        jumpToTopOfComments = true;
+});
+</script>
+
+    
+</head>
+    
+<body id="recipes">
+
+
+
+<div id="topAdSpace">
+	<!-- FM Leaderboard 728x90 Top of Page Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/2385'></script>
+        <!-- FM Leaderboard 728x90 Top of Page Zone -->
+</div>
+<div id="container">
+
+<div class="clearfix familyTabs" id="RE">
+    <ul> <!-- class="fmenu" id="familyLinks" -->
+        <li><a href="http://www.seriouseats.com/" id="seTab" class="">Serious Eats</a></li>
+        <li><a href="http://slice.seriouseats.com" id="sliceTab" class="">Slice</a></li>
+        <li><a href="http://aht.seriouseats.com" id="ahtTab" class="">A Hamburger Today</a></li>
+        <li><a href="http://newyork.seriouseats.com/" id="senyTab" class="">New York</a></li>
+        <li><a href="http://photograzing.seriouseats.com" id="photoTab" class="">Photograzing</a></li>
+        <li><a href="http://www.seriouseats.com/talk/" id="talkTab" class="">Talk</a></li>
+        <li><a href="http://www.seriouseats.com/recipes/" id="recipesTab" class="active">Recipes</a></li>
+    </ul>
+    <p id="banner-twitter"><a href="http://twitter.com/seriouseats">Follow us on Twitter!</a></p>
+    <div class="widget-sign-in widget">
+    <div id="signin-widget-content" class="widget-content"></div>
+</div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+function mtUpdateSignInWidget(u) {
+    var separator = '&nbsp;&nbsp;|&nbsp;&nbsp;';
+    var el = document.getElementById('signin-widget-content');
+    var content = '';
+    // alert (document.URL);
+    //alert (encodeURIComponent(document.URL));
+    if (!el) return;
+    if (u) {
+        if (u && u.is_authenticated) {
+            user = u;
+            mtSaveUser();
+        } else {
+            // user really isn't logged in; so let's do this!
+            return mtSignIn();
+        }
+    } else {
+        u = mtGetUser();
+    }
+    if (u && u.name) {
+        var url;
+		content += '<div id="login-tab" class="loggedIn"><div id="login-tab-inner">';
+        if (u.is_authenticated) {
+            if (u.is_author) {
+
+				url = 'http://www.seriouseats.com/user/profile/'; 
+
+
+            } else {
+                url = u.url;
+            }
+        } else if (u.url) {
+            url = u.url;
+        } else {
+            url = null;
+        }
+        if (url)
+            content += '<p><strong><a href="' + url + '">' + u.name + '</a></strong></p>';
+        else
+            content += '<p><strong>' + u.name + '</strong></p>';
+        if (u.is_author)
+            content += '<p><a href="http://www.seriouseats.com/cgi-bin/mte/mt-cp.cgi?__mode=edit&blog_id=34&return_to=' + encodeURIComponent(document.URL) + '">Account</a>';
+        
+        content += ' | <a href="javascript:void(0)" onclick="return mtSignOutOnClick()">Log out</a>.';
+        
+		content += '</div></div><div class="clearer"><!-- --></div>'
+    } else if (u && u.is_banned) {
+        content = 'You do not have permission to sign in to this blog.';
+    } else {
+		content = '<div id="login-tab" class="notLoggedIn"><div id="login-tab-inner"><a onclick="return mtSignInOnClick(\'login-tab-inner\')" href="javascript:void(0)" id="login-link">log in</a></div></div><div class="clearer"><!-- --></div>'
+    }
+    //alert ("content is: " + content);
+    el.innerHTML = content;
+}
+mtAttachEvent('usersignin', mtUpdateSignInWidget);
+mtUpdateSignInWidget();
+/* ]]> */
+</script>
+<script type="text/javascript">
+//mtAttachEvent('load', mtUpdateScores);
+//mtAttachEvent('usersignin', mtUpdateScores);
+</script>
+
+ 
+</div><!-- close familyNav -->
+
+<div id="header" class="RE-header">
+    <div id="topHeader">
+        <h1 id="logo" title="Serious Eats home"><a href="http://www.seriouseats.com/recipes/">Serious Eats - seriouseats.com</a></h1>    
+        <div id="skybox1" class="skybox">
+            <div class="dropshadow2">
+                <div class="innerbox">        
+                    <div class="skyboxBite"><!-- --></div>
+                    <div class="skybox-thumb">
+	<img src="http://www.seriouseats.com/images/20100215-bowl-and-whisk-thumb-220x132.jpg" alt="" />
+</div>
+<div class="skybox-text">
+	<p><a href="http://www.seriouseats.com/how-to/?ref=skybox1" class="linksrc">Techniques</a></p>
+	<p><a href="http://www.seriouseats.com/how-to/?ref=skybox1" class="linktitle">How-tos, Tips, Tricks</a></p>             
+</div>
+                </div>
+            </div>
+        </div><!--/#skybox1 -->
+        <div id="skybox2" class="skybox">
+            <div class="dropshadow2">
+                <div class="innerbox">
+                    <div class="skyboxBite"><!-- --></div>
+                    <div class="skybox-thumb">
+	<img src="http://www.seriouseats.com/images/201101-skybox-dinner-tonight-220x132.jpg" alt="" />
+</div>
+<div class="skybox-text">
+	<p><a href="http://www.seriouseats.com/recipes/dinner_tonight/?ref=skybox3" class="linksrc">A Daily Suppertime Recipe</a></p>
+	<p><a href="http://www.seriouseats.com/recipes/dinner_tonight/?ref=skybox3" class="linktitle">Dinner Tonight</a></p>
+</div>
+                </div>
+            </div>
+        </div><!--/#skybox2 -->
+        <div id="skybox3" class="skybox">
+            <div class="dropshadow2">
+                <div class="innerbox">
+                
+                <div class="skybox-thumb">
+	<img src="http://www.seriouseats.com/images/201101-skybox-food-lab-220x132.jpg" alt="" />
+</div>
+<div class="skybox-text">
+	<p><a href="http://www.seriouseats.com/the-food-lab/?ref=skybox3" class="linksrc">Unraveling the Science of Cooking</a></p>
+	<p><a href="http://www.seriouseats.com/the-food-lab/?ref=skybox3" class="linktitle">The Food Lab</a></p>
+</div>
+                
+                </div>
+            </div>
+        </div><!--/#skybox3-->
+    </div><!--/#topHeader -->
+
+    
+
+
+
+
+<div id="newNavBar" class="clearfix">
+            <ul id="navNew">
+                <li>
+                    <a href="#" id="nav-rec-cat" class="nav-item nav-menu">Browse by Category</a>
+                    <div class="navFlyout recipe-flyout" id="nav-rec-cat-flyout">
+                        <h3>Browse by Category</h3>
+                        <form method="get" action="http://www.seriouseats.com/cgi-bin/mte/mt-search.cgi" id="filter-search">
+                        <input type="hidden" name="IncludeBlogs" value="34" />
+                        
+                        <table cellspacing="0" class="rec-cat-col">
+                            <tr>
+                                <th>Course</th>
+                                <th>Main Ingredient</th>
+                                <th>Type of Dish</th>
+                                <th>Dietary/Lifestyle</th>
+                            </tr>
+                            <tr>
+                                <td><label for="flyout-01"><input type="checkbox" id="flyout-01" name="category" value="appetizers-and-hors-doeuvres" /> Appetizer</label></td>
+                                <td><label for="flyout-02"><input type="checkbox" id="flyout-02" name="category" value="beef" /> Beef</label></td>
+                                <td><label for="flyout-03"><input type="checkbox" id="flyout-03" name="category" value="breads" /> Breads</label></td>
+                                <td><label for="flyout-04"><input type="checkbox" id="flyout-04" name="category" value="eat-for-eight-bucks" /> Cheap</label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="flyout-05"><input type="checkbox" id="flyout-05" name="category" value="breakfast-and-brunch" /> Breakfast and Brunch</label></td>
+                                <td><label for="flyout-06"><input type="checkbox" id="flyout-06" name="category" value="poultry" /> Poultry</label></td>
+                                <td><label for="flyout-07"><input type="checkbox" id="flyout-07" name="category" value="condiments-and-sauces" /> Condiments and Sauces</label></td>
+                                <td><label for="flyout-08"><input type="checkbox" id="flyout-08" name="category" value="gluten-free" /> Gluten-free</label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="flyout-09"><input type="checkbox" id="flyout-09" name="category" value="mains" /> Mains</label></td>
+                                <td><label for="flyout-10"><input type="checkbox" id="flyout-10" name="category" value="lamb" /> Lamb</label></td>
+                                <td class="drinks-all"><label for="flyout-11"><input type="checkbox" id="flyout-11" name="category" value="drinks" /> Drinks</label></td>
+                                <td><label for="flyout-12"><input type="checkbox" id="flyout-12" name="category" value="grilling" /> Grilling</label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="flyout-13"><input type="checkbox" id="flyout-13" name="category" value="sides" /> Sides</label></td>
+                                <td><label for="flyout-14"><input type="checkbox" id="flyout-14" name="category" value="pork" /> Pork</label></td>
+                                <td class="drinks-sub"><label for="flyout-15"><input type="checkbox" id="flyout-15" name="category" value="cocktails" /> Cocktails</label></td>
+                                <td><label for="flyout-16"><input type="checkbox" id="flyout-16" name="category" value="vegetarian" /> Vegetarian</label></td>
+                            </tr>
+                            <tr>
+                                <td><label for="flyout-17"><input type="checkbox" id="flyout-17" name="category" value="desserts" /> Desserts</label></td>
+                                <td><label for="flyout-18"><input type="checkbox" id="flyout-18" name="category" value="eggs" /> Eggs</label></td>
+                                <td class="drinks-sub"><label for="flyout-19"><input type="checkbox" id="flyout-19" name="category" value="non-alcoholic" /> Non-Alcoholic</label></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><label for="flyout-20"><input type="checkbox" id="flyout-20" name="category" value="cheese" /> Cheese</label></td>
+                                <td class="drinks-sub"><label for="flyout-21"><input type="checkbox" id="flyout-21" name="category" value="other_drinks" /> Other Drinks</label></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><label for="flyout-22"><input type="checkbox" id="flyout-22" name="category" value="seafood" /> Seafood</label></td>
+                                <td><label for="flyout-23"><input type="checkbox" id="flyout-23" name="category" value="salads" /> Salads</label</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td><label for="flyout-24"><input type="checkbox" id="flyout-24" name="category" value="pasta-and-grains" /> Pasta and Grains</label></td>
+                                <td><label for="flyout-25"><input type="checkbox" id="flyout-25" name="category" value="sandwiches" /> Sandwiches</label></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td><label for="flyout-26"><input type="checkbox" id="flyout-26" name="category" value="soups" /> Soups</label></td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                        <div class="button-row">
+                            <div class="nav-rec-cat-keywords">
+                                <label for="nav-rec-cat-string">Keywords:</label> <input type="text" id="nav-rec-cat-string" name="search" />
+                            </div>
+                            <input type="image" src="/imagesV2/banner/btn-Show-Matching-Recipes.png" name="sa" value="Show Matching Recipes" id="filter-search-submit" />
+                        </div>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" id="nav-rec-col" class="nav-item nav-menu">Browse by Column</a>
+                    <div class="navFlyout recipe-flyout" id="nav-rec-col-flyout">
+                        <h3>Browse by Column</h3>
+                        
+                        
+                            
+                                <div class="recipe-flyout-column">
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/baking_with_dorie/">Baking With Dorie</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/bread_baking/">Bread Baking</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/cakespy/">Cakespy</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/classic-cookbooks/">Classic Cookbooks</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/cocktail_concoctions/">Cocktail Concoctions</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/cook-the-book/">Cook the Book</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/crisper-whisperer/">Crisper Whisperer</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/dinner_tonight/">Dinner Tonight</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/eat-for-eight-bucks/">Eat for Eight Bucks</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/edible_diy/">Edible DIY</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/french-in-a-flash/">French in a Flash</a></p>
+                                
+                            
+                                </div>
+                                
+                            
+                        
+                            
+                                <div class="recipe-flyout-column">
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/gluten-free-tuesday/">Gluten-Free Tuesday</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/healthy-and-delicious/">Healthy and Delicious</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/meat-lite/">Meat Lite</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/sack-lunch/">Sack Lunch</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/serious_chocolate/">Serious Chocolate</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/essentials/">Serious Eats Essentials</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/serious_heat/">Serious Heat</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/seriously-asian/">Seriously Asian</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/seriously-italian/">Seriously Italian</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/seriously-meatless/">Seriously Meatless</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/seriously_scandinavian/">Seriously Scandinavian</a></p>
+                                
+                            
+                                </div>
+                                
+                            
+                        
+                            
+                                <div class="recipe-flyout-column">
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/sunday-brunch/">Sunday Brunch</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/sunday-supper/">Sunday Supper</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/tastes_of_the_mediterranean/">Tastes of the Mediterranean</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/the_burger_lab/">The Burger Lab</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/cartoon-kitchen/">The Cartoon Kitchen</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/the_food_lab/">The Food Lab</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/the-nasty-bits/">The Nasty Bits</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/the-pizza-lab/">The Pizza Lab</a></p>
+                                
+                            
+                        
+                            
+                                <p><a href="http://www.seriouseats.com/recipes/columns/the-secret-ingredient/">The Secret Ingredient</a></p>
+                                
+                            
+                        
+                    </div>
+                </li>
+            </ul>
+            <div id="search">
+                <form id="SearchForm" method="get" action="http://www.seriouseats.com/cgi-bin/mte/mt-search.cgi">
+                    <input type="hidden" id="IncludeBlogs" name="IncludeBlogs" value="34" />
+                    <input type="hidden" name="limit" value="20" />
+                    <input id="searchBox" class="query" name="search" value="" />
+                    <!-- <input type="image" value="search" src="/imagesV2/buttons/search.png" width="62" height="24" border="0" alt="search" id="searchButton" name="sa"> -->
+                    <input type="image" src="http://static.seriouseats.com/imagesV2/btn-find-recipe.png" width="112" height="33" alt="Find Recipe" id="searchButton" name="sa" />
+                </form>
+            </div><!--/#search-->
+            <div class="clearer"><!-- --></div>
+        </div><!--/#navBar -->
+
+
+</div><!-- close header -->
+
+<div id="content" class="">
+<div id="threeColumn1" style="width:610px">
+    <div class="individualPost hrecipe">
+        <div class="tools" id="blogTools">
+            <p class="left"><a href="http://www.seriouseats.com/recipes/forrecipesindex/">-For-Recipes-Index</a></p>
+            <ul id="share" class="right">
+                <li id="shareParent">Share:</li>
+                <li><a title="Send to Reddit" href="http://reddit.com/submit?url=http://www.seriouseats.com/recipes/2009/02/eat-for-eight-bucks-perfect-roast-chicken-with-pomegranate-jus-recipe.html&title=Eat for Eight Bucks: Perfect Roast Chicken with Pomegranate Jus"><img src="http://static.seriouseats.com/imagesV2/transparent.gif" class="icon icon-redd" alt="Send to Reddit" /></a></li>
+                <li><a title="Send to StumbleUpon" href="http://www.stumbleupon.com/submit?url=http://www.seriouseats.com/recipes/2009/02/eat-for-eight-bucks-perfect-roast-chicken-with-pomegranate-jus-recipe.html&title=Eat for Eight Bucks: Perfect Roast Chicken with Pomegranate Jus"><img src="http://static.seriouseats.com/imagesV2/transparent.gif" class="icon icon-stum" alt="Send to StumbleUpon" /></a></li>
+                <li><a title="Send to Facebook" href="http://www.facebook.com/share.php?u=http://www.seriouseats.com/recipes/2009/02/eat-for-eight-bucks-perfect-roast-chicken-with-pomegranate-jus-recipe.html" ><img src="http://static.seriouseats.com/imagesV2/transparent.gif" class="icon icon-face" alt="Send to Facebook" /></a></li>
+                <li><a title="Send to del.icio.us" href="http://del.icio.us/post?url=http://www.seriouseats.com/recipes/2009/02/eat-for-eight-bucks-perfect-roast-chicken-with-pomegranate-jus-recipe.html&amp;title=Eat for Eight Bucks: Perfect Roast Chicken with Pomegranate Jus"><img src="http://static.seriouseats.com/imagesV2/transparent.gif" class="icon icon-deli" alt="Send to del.icio.us" /></a></li>
+                <li><a title="Send to digg" href="http://digg.com/submit?phase=2&url=http://www.seriouseats.com/recipes/2009/02/eat-for-eight-bucks-perfect-roast-chicken-with-pomegranate-jus-recipe.html&amp;title=Eat for Eight Bucks: Perfect Roast Chicken with Pomegranate Jus"><img src="http://static.seriouseats.com/imagesV2/transparent.gif" class="icon icon-digg" alt="Send to digg" /></a></li>
+            </ul><!-- close share  postTools-->
+            <ul id="recipe-post-tools" class="right">
+                <li id="print-recipe" class="">
+                    <a href="http://www.seriouseats.com/recipes/2009/02/print/eat-for-eight-bucks-perfect-roast-chicken-with-pomegranate-jus-recipe.html" title="Print" class="print-link">Print</a>
+                    <div id="print-recipe-flyout" class="recipe-tools-flyout">
+                        <form id="print-recipe-form">
+                            <input type="hidden" name="__mode" value="print_page" />
+                            <input type="hidden" name="entry_id" value="39746" />  
+                            <label for="full-no-photos"><input type="radio" name="recipe-print-option" id="full-no-photos" value="full-no-photos" /> Full Page no photos</label>
+                            <label for="full-photos"><input type="radio" name="recipe-print-option" id="full-photos" value="full-photos" /> Full page with photos</label>
+                            <label for="print-shopping-list"><input type="radio" name="recipe-print-option" id="print-shopping-list" value="shopping-list" /> Shopping list (ingredients only)</label>
+                            <label for="include-comments"><input type="checkbox" id="include-comments" name="include-comments" /> Include selected comments</label>
+                            <div class="buttons-row">
+                                <input type="image" class="btn-input" src="http://static.seriouseats.com/imagesV2/btn-Print-blue.png" alt="Print" value="Print" /> 
+                                <a href="#" class="close">cancel</a>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </li>
+                <li id="email-recipe">
+                    <a href="#" id="emailThis" title="Email This" class="email-link">Email</a>
+                    <div id="email-recipe-flyout" class="recipe-tools-flyout">
+                        <div id="email-recipe-user-message"></div>
+                        <form method="post" action="http://www.seriouseats.com/cgi-bin/mte/mt-cp.cgi" id="emailThis-form">
+                            <input type="hidden" name="__mode" value="send_entry" />
+                            <input type="hidden" name="entry_id" value="39746" />                            
+                            <div class="fields">                            
+                                <label for="text"><input type="radio" name="recipe-email-option" id="entire-text" value="full" /> Entire text of recipe</label>
+                                <label for="ingredients"><input type="radio" name="recipe-email-option" id="email-shopping-list" value="ingredients" /> Shopping list (ingredients only)</label>
+                                <label for="recipe-link"><input type="radio" name="recipe-email-option" id="recipe-link" value="link" /> Link to recipe</label>
+                                <label for="email-recipe-recipient">Recipient e-mail:</label>
+                                <input type="text" class="text-input" id="email-recipe-recipient" name="to" />
+                                <label for="recipe-recipient-is-me"><input type="checkbox" id="recipe-recipient-is-me" name="recipe-recipient-is-me" /> This is me</label>
+                                <label for="email-recipe-sender">Your e-mail (if different from recipient):</label>
+                                <input type="text" class="text-input" id="email-recipe-sender" name="from" />
+                                <textarea cols="40" rows="5" name="msg" id="email-recipe-text"></textarea>
+                            </div>        
+                            <div class="captcha"></div>                
+                            <div class="buttons-row">
+                                <input type="image" class="btn-input" src="http://static.seriouseats.com/imagesV2/btn-Send-blue.png" alt="Send" value="Send" />  
+                                <a href="#" class="close">cancel</a>
+                            </div>
+                        </form>
+                    </div>
+                
+                </li>
+            </ul>
+            <div class="clearer"></div>
+
+        </div><!-- close blogTools -->  
+        <div class="indPost-recipe-title">
+            
+               
+            
+               
+            
+               
+                  
+                      
+                  
+               
+            
+               
+                  
+                      
+                  
+               
+            
+               
+                  
+                      
+                  
+               
+            
+               
+                  
+                      
+                  
+               
+            
+            <span class="item"><h2 class="fn">Eat for Eight Bucks: Perfect Roast Chicken with Pomegranate Jus</h2></span>
+                        
+                <div class="recipe-image-small">
+                    <img src="http://www.seriouseats.com/recipes/assets_c/2009/09/20090212-roastchicken-8bucks-thumb-90xauto-2028.jpg" alt="20090212-roastchicken-8bucks.jpg" />
+                    <div class="recipe-zoom"><!-- --></div>
+                </div>
+                <div class="recipe-image-large">
+                    <img src="http://www.seriouseats.com/recipes/need_to_know/20090212-roastchicken-8bucks.jpg" alt="20090212-roastchicken-8bucks.jpg" class="photo" />
+                    <div class="recipe-zoom"><!-- --></div>
+                </div>
+            
+            
+        </div>
+        <div class="recipe-byline">
+            <div class="recipe-author left">
+                <p>Posted by <a href="http://www.seriouseats.com/user/profile/Michele Humes"><span class="author">Michele Humes</span></a>, <span id="postFooterCommentCount"><a href="http://www.seriouseats.com/recipes/2009/02/eat-for-eight-bucks-perfect-roast-chicken-with-pomegranate-jus-recipe.html#comments" class="commentCount">Post a Comment</a></span></p>
+                <p><span class="published">February 12, 2009<span class="value-title" title="2009-02-12"></span> at  3:45 PM</span></p>
+            </div>
+            <div class="recipe-feedback right">
+                <div class="recipe-fave-count">
+                    <span class="entry-scoring">
+                        <a href="javascript:void(0)" onclick="return mtScore(39746)" id="scoring-id-39746" class="scoring favorite">Favorite this!</a> &nbsp;(<span id="scoring-score-39746" class="scoring-score">14</span>)
+                    </span>                  
+                </div>                
+                
+                <div class="rater">
+                    <p>rated:</p>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="recipe-tags">
+            <p>Tags: <a href="/tags/recipes/chicken">chicken</a>, <a href="/tags/recipes/Eat for Eight Bucks">Eat for Eight Bucks</a>, <a href="/tags/recipes/pomegranate">pomegranate</a></p>
+        </div>
+        
+        
+        
+        <div class="recipe-original-post">
+        <p>This Recipe Appears In: </p>
+        
+            <p><a href="http://www.seriouseats.com/2010/03/look-whos-talkin-comments-quips-and-tips-we-h-2.html">Look Who's Talkin': Comments, Quips, and Tips We Have Known and Loved</a></p>
+        
+            <p><a href="http://www.seriouseats.com/2009/04/passover-pesach-recipes.html">Passover Recipes</a></p>
+        
+            <p><a href="http://www.seriouseats.com/2009/02/tasty-10-20090214.html">This Week's Tasty 10</a></p>
+        
+        </div>
+        
+        
+        
+        <div id="entry-text" class="summary">
+            <p><strong>Thomas Keller</strong> is not exactly known for recipe shortcuts, so when the man <a href="http://www.seriouseats.com/2007/02/thomas-kellers-favorite-simple.html">tells me</a> that it takes two ingredients and minimal involvement to roast a chicken, I take notice.</p>
+
+<p>I first took notice a year ago, and it's been perfect roast chicken ever since. I salt the bird like a blizzard, put it in a blazing hot oven, and <em>leave it alone</em>. No basting, no fussing&mdash;no stuffing, even. Which leaves me free to do other things, like make a nice bed of <strong>bacon-y winter greens</strong> on which to serve the roast chicken, and a <strong>sweet-and-sour pomegranate jus</strong> to drizzle over it.</p>
+
+<p>If you celebrate that sort of thing (which, I confess, I do), this might make an elegant and inexpensive Valentine's Day supper. </p>
+
+<p><img alt="20090212pom_molasses.jpg" src="http://www.seriouseats.com/recipes/images/20090212pom_molasses.jpg" width="500" height="322" /></p>
+
+<p>Since it's a special occasion, I'm breaking the bank just this once. In any case, the extra $3 I spent on a bottle of <strong>pomegranate molasses</strong> is a pretty sound investment. Imported from Egypt or Lebanon, the sticky pomegranate reduction has the multi-layered intensity of an aged balsamic vinegar and the price tag of a pint of beer. You'll find it in Middle Eastern grocery stores, and you'll use it in <a href="http://www.seriouseats.com/recipes/2008/12/new-years-brunch-mache-salad-with-pomegranate.html">dressings</a> and marinades for months to come.  </p>
+
+<p>The dish can be prepared without pomegranate molasses, but it does add a complex dimension to the roasting juices, and <strong>pairs exceptionally well with the earthy, metallic greens</strong>. </p>
+
+<h4>Shopping List</h4>
+
+<p><small>Note: Items bought in large quantities, like the bacon, have been pro-rated for cost. Ingredients a cook can reasonably be expected to have on hand are considered "Pantry Items" and are not factored into recipe cost.</small></p>
+
+<p>One 3-pound chicken - $4.54<br />
+Pomegranate molasses - $2.95<br />
+Medium bunch of kale, or other leafy greens (about 3/4 pound) - $0.75<br />
+2 ounces bacon - $1 (total cost of item $4)<br />
+Small carrot and onion - $0.74</p>
+
+<p><strong>Pantry Items:</strong><br />
+Coarse kosher salt, garlic, flour, butter, sugar, vegetable oil, black pepper</p>
+
+<h4>Total Cost:</h4>
+
+<p>$9.98</p>
+
+<p><img alt="20090212platedchicken.jpg" src="http://www.seriouseats.com/recipes/images/20090212platedchicken.jpg" width="500" height="311" /></p>
+
+<h4>Perfect Roast Chicken with Pomegranate Jus</h4>
+
+<p>When I was an exchange student in France, I learned to love my roast chicken as the French do, dispensing with floury gravies and using just the thin, highly seasoned juices from the roasting pan. If you like your jus a little closer to a gravy in consistency, make a <em>beurre manié</em> (a paste of equal parts room-temperature, unsalted butter and all-purpose flour) and drop it into the simmering liquid a little at a time. It will thicken as it cooks. </p>
+            
+        </div>
+        
+        
+        
+        
+        <div class="ingredients">
+            <div class="ingredients-header">
+                <h2>Ingredients</h2>
+                <p></p>
+            </div>
+            
+            
+            <div class="ingredients-section">
+                <ul>
+                    
+                    <li><span class="ingredient">One 2-3 pound chicken</span></li>
+                    
+                    <li><span class="ingredient">Coarse kosher salt</span></li>
+                    
+                    <li><span class="ingredient">1 tablespoon vegetable oil</span></li>
+                    
+                    <li><span class="ingredient">Small carrot, coarsely chopped</span></li>
+                    
+                    <li><span class="ingredient">Small onion, coarsely chopped</span></li>
+                    
+                    <li><span class="ingredient">2 cups water</span></li>
+                    
+                    <li><span class="ingredient">1 tablespoon pomegranate molasses, or more to taste</span></li>
+                    
+                    <li><span class="ingredient">1 teaspoon sugar, or more to taste</span></li>
+                    
+                    <li><span class="ingredient">Salt and freshly ground black pepper</span></li>
+                    
+                    <li><span class="ingredient">3/4 pound leafy greens, tough stems and center ribs discarded, sliced in 1/2-inch ribbons</span></li>
+                    
+                    <li><span class="ingredient">2 strips bacon, chopped</span></li>
+                    
+                    <li><span class="ingredient">3 cloves garlic, chopped</span></li>
+                    
+                    <li><span class="ingredient">1 cup water</span></li>
+                    
+                    <li><span class="ingredient">1 tablespoon unsalted butter</span></li>
+                    
+                    <li><span class="ingredient">Salt and freshly ground black pepper</span></li>
+                    
+                </ul>
+            </div>
+            
+        </div><!--/ingredients-->
+        <div class="procedure">
+            <div class="procedure-header">
+                <h2>Procedures</h2>
+            </div>
+            
+            <ol class="procedure-steps instructions">
+                
+                
+                    <li class="instruction">
+                        <div class="procedure-number checked">1</div>
+                        
+                        <div class="procedure-text">
+                            <p><p>Preheat oven to 450°F. Rinse chicken and pat dry. Trim excess fat and discard. Remove wing tips and reserve with chicken neck.   </p></p>
+                        </div>
+                        
+                        
+                    </li>
+                    
+                
+                    <li class="instruction">
+                        <div class="procedure-number">2</div>
+                        
+                        <div class="procedure-text">
+                            <p><p>Salt chicken liberally and evenly on every side. Place in roasting pan and roast, uncovered, for 40-50 minutes, until crisp and golden. To check doneness, pierce the thickest part of the chicken thigh with a skewer and make sure that the juices run clear. </p></p>
+                        </div>
+                        
+                        
+                    </li>
+                    
+                
+                    <li class="instruction">
+                        <div class="procedure-number">3</div>
+                        
+                        <div class="procedure-text">
+                            <p><p>Once the chicken is in the oven, heat the oil in a large saucepan and cook the onion, carrot, and reserved chicken trimmings until very well browned. Add water and simmer gently until chicken is ready.</p></p>
+                        </div>
+                        
+                        
+                    </li>
+                    
+                
+                    <li class="instruction">
+                        <div class="procedure-number">4</div>
+                        
+                        <div class="procedure-text">
+                            <p><p>Remove chicken from oven and allow to rest. Meanwhile, strain the simmering liquid through a chinois or fine-mesh sieve. Return strained liquid to saucepan. Add pomegranate molasses, sugar, and juices from roasting pan, including any crusty brown bits. Reduce by half over high heat. Adjust seasoning, adding more pomegranate molasses or sugar if sweeter or sharper taste is desired.</p></p>
+                        </div>
+                        
+                        
+                    </li>
+                    
+                
+                    <li class="instruction">
+                        <div class="procedure-number">5</div>
+                        
+                        <div class="procedure-text">
+                            <p><p>Quarter chicken and serve 1-2 pieces per person on bed of sautéed greens, drizzled with pomegranate jus. </p></p>
+                        </div>
+                        
+                        
+                    </li>
+                    
+                
+                    <li class="instruction">
+                        <div class="procedure-number">6</div>
+                        
+                        <div class="procedure-text">
+                            <p><h4>Sautéed Winter Greens with Bacon</h4></p>
+                        </div>
+                        
+                        
+                    </li>
+                    
+                
+                    <li class="instruction">
+                        <div class="procedure-number">7</div>
+                        
+                        <div class="procedure-text">
+                            <p><p>I used kale, but you could substitute Swiss chard or collard greens.</p></p>
+                        </div>
+                        
+                        
+                    </li>
+                    
+                
+                    <li class="instruction">
+                        <div class="procedure-number">8</div>
+                        
+                        <div class="procedure-text">
+                            <p><p>In a large, lidded sauté pan, heat the bacon over medium heat until beginning to crisp. </p></p>
+                        </div>
+                        
+                        
+                    </li>
+                    
+                
+                    <li class="instruction">
+                        <div class="procedure-number">9</div>
+                        
+                        <div class="procedure-text">
+                            <p><p>Add the garlic and sauté until lightly golden, about 30 seconds.</p></p>
+                        </div>
+                        
+                        
+                    </li>
+                    
+                
+                    <li class="instruction">
+                        <div class="procedure-number">10</div>
+                        
+                        <div class="procedure-text">
+                            <p><p>Add greens and cook, stirring frequently, until bright green and softened. Add water and simmer, partially covered, until greens are tender and liquid has evaporated, 6 to 10 minutes. </p></p>
+                        </div>
+                        
+                        
+                    </li>
+                    
+                
+                    <li class="instruction">
+                        <div class="procedure-number">11</div>
+                        
+                        <div class="procedure-text">
+                            <p><p>Season to taste with salt and pepper. Just before serving, stir in butter to coat. </p></p>
+                        </div>
+                        
+                        
+                    </li>
+                    
+                
+            </ol>
+        </div><!--procedure-->
+
+    <div id="more-with-author" class="yellow-module">
+        <h2>Browse More Related Recipes</h2>
+        
+            <div class="home-column-excerpt">
+                <div class="thumb-100x90">
+                
+                    <img src="http://www.seriouseats.com/recipes/assets_c/2011/02/20110202-135800-eat-for-eight-bucks-maple-mustard-chicken-potatoes-thumb-90x90-139295.jpg" alt="Eat for Eight Bucks: Maple-Mustard Baked Chicken Thighs with Potato Wedges" />
+                
+                </div>
+                <h3><a href="http://www.seriouseats.com/recipes/2011/02/eat-for-eight-maple-mustard-baked-chicken-thigh-recipe.html?ref=related" onClick="pageTracker._trackEvent('Recipes_Individual_Pages', 'Related_Link', 'http://www.seriouseats.com/recipes/2011/02/eat-for-eight-maple-mustard-baked-chicken-thigh-recipe.html']);">Eat for Eight Bucks: Maple-Mustard Baked Chicken Thighs with Potato Wedges</a></h3>
+                <p><a href="http://www.seriouseats.com/recipes/2011/02/eat-for-eight-maple-mustard-baked-chicken-thigh-recipe.html#comments" class="comment-count">8 comments</a></p>
+            </div>
+        
+            <div class="home-column-excerpt">
+                <div class="thumb-100x90">
+                
+                    <img src="http://www.seriouseats.com/recipes/assets_c/2010/08/20100810pouleauriz_big-thumb-90x90-104898.jpg" alt="Eat for Eight Bucks: Poule au Riz" />
+                
+                </div>
+                <h3><a href="http://www.seriouseats.com/recipes/2010/08/eat-for-eight-bucks-poule-au-riz-chicken-and-rice-recipe.html?ref=related" onClick="pageTracker._trackEvent('Recipes_Individual_Pages', 'Related_Link', 'http://www.seriouseats.com/recipes/2010/08/eat-for-eight-bucks-poule-au-riz-chicken-and-rice-recipe.html']);">Eat for Eight Bucks: Poule au Riz</a></h3>
+                <p><a href="http://www.seriouseats.com/recipes/2010/08/eat-for-eight-bucks-poule-au-riz-chicken-and-rice-recipe.html#comments" class="comment-count">2 comments</a></p>
+            </div>
+        
+        <div style="clear:both;"><!-- --></div>
+    </div><!--/#home-latest-columns-->
+
+        <h2 class="double-lined">Related Videos:</h2>
+        <!--5min DeepSeed -->
+<script type="text/javascript" src="http://pshared.5min.com/Scripts/ThumbSeed2.js?sid=773&amp;textLocation=1&amp;thumbnailSize=0&amp;width=615&amp;height=200&amp;displayHeader=false&amp;textFGColor=%23216C9D&amp;textFGColor_MO=%23FFFFFF&amp;textBGColor=transparent&amp;textBGColor_MO=%23226C9D&amp;fallback=149489756,149458726,149489742,149432633&amp;categories=6&amp;ht=_self&amp;directUrl=http://videos.seriouseats.com/[VIDEOID]"></script>
+    	<!--5min DeepSeed -->
+    </div><!--/individualPost-->
+
+<div id="comments">  
+					
+						
+						
+<h4 class="body"><span id="commentRange"></span>
+<span class="entryCommentCount">Comments are loading... </span>:</h4>
+
+					
+					
+	
+		
+        <div id="commentPagination" class="pagination">
+        </div>
+        <div style="clear:both;"></div>
+		<div id="commentSection" style="padding-top:10px;padding-bottom:10px;">
+		</div>
+        <div id="bottomCommentPagination" class="pagination"></div>
+        <div style="clear:both;"></div>
+        
+    </div><!--/comments-->
+
+<div id="adStrip">
+<script type="text/javascript"><!--
+google_ad_client = "pub-8758429631178774";
+/* 468x60 Recipes, created 9/16/10 */
+google_ad_slot = "9653640317";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+				</div><!-- close adStrip -->
+
+    <div id="add">
+		<script type="text/javascript">
+	// already defined in masthead:	user = getCommenterName();//
+	user = mtGetUser()
+	if (user && user.is_authenticated) {
+			document.write("");
+		} else {
+			document.write("<div class=\"commentGuidelines\"><h3>Hello Eater!</h3><p>To start talking, please <a href=\"javascript:void(0)\" onclick=\"return mtSignInOnClick('signin-widget-content')\">log in</a> or <a href=\"http://www.seriouseats.com/cgi-bin/mte/mt-cp.cgi?__mode=register&blog_id=34&return_to=" + encodeURIComponent('http://www.seriouseats.com/welcome/') + "\">sign up at Serious Eats</a> &mdash; it's fast and free!</p></div>");
+		}
+		</script>
+	</div>
+
+    <h4 class="body">20 comments:</h4> 
+<div id="post-comment">
+    <a name="commentform"></a>
+    <div class="formSection">
+        <form method="post" action="http://www.seriouseats.com/cgi-bin/mte/mt-comments.cgi" name="comments_form" id="comments_form">
+            <input name="post" value="post" type="hidden" />
+            <input name="static" value="1" type="hidden" />
+            <input name="blog_id" value="34" type="hidden" />
+            <input name="entry_id" value="39746" type="hidden" />
+            <input type="hidden" name="fieldday" value="1" />
+            <textarea id="addComment" rows="5" cols="60" name="text" class="formText"></textarea>
+            
+            <div class="rater">
+                <p><strong>Add a rating with your comment:</strong></p>
+                <script type="text/javascript">
+field_stars['star_rating'] = 5;
+</script>
+<img src="http://www.seriouseats.com/imagesV2/se-rating-off.png" name="star_rating_1" id="star_rating_1" onmouseover="star_over('star_rating', 1, 'http://www.seriouseats.com/imagesV2/se-rating-on.png', 'http://www.seriouseats.com/imagesV2/se-rating-off.png')" onmouseout="star_out('star_rating', 1, 'http://www.seriouseats.com/imagesV2/se-rating-on.png', 'http://www.seriouseats.com/imagesV2/se-rating-off.png')" onclick="star_click('star_rating', 1, 'http://www.seriouseats.com/imagesV2/se-rating-on.png', 'http://www.seriouseats.com/imagesV2/se-rating-off.png')" /><img src="http://www.seriouseats.com/imagesV2/se-rating-off.png" name="star_rating_2" id="star_rating_2" onmouseover="star_over('star_rating', 2, 'http://www.seriouseats.com/imagesV2/se-rating-on.png', 'http://www.seriouseats.com/imagesV2/se-rating-off.png')" onmouseout="star_out('star_rating', 2, 'http://www.seriouseats.com/imagesV2/se-rating-on.png', 'http://www.seriouseats.com/imagesV2/se-rating-off.png')" onclick="star_click('star_rating', 2, 'http://www.seriouseats.com/imagesV2/se-rating-on.png', 'http://www.seriouseats.com/imagesV2/se-rating-off.png')" /><img src="http://www.seriouseats.com/imagesV2/se-rating-off.png" name="star_rating_3" id="star_rating_3" onmouseover="star_over('star_rating', 3, 'http://www.seriouseats.com/imagesV2/se-rating-on.png', 'http://www.seriouseats.com/imagesV2/se-rating-off.png')" onmouseout="star_out('star_rating', 3, 'http://www.seriouseats.com/imagesV2/se-rating-on.png', 'http://www.seriouseats.com/imagesV2/se-rating-off.png')" onclick="star_click('star_rating', 3, 'http://www.seriouseats.com/imagesV2/se-rating-on.png', 'http://www.seriouseats.com/imagesV2/se-rating-off.png')" /><img src="http://www.seriouseats.com/imagesV2/se-rating-off.png" name="star_rating_4" id="star_rating_4" onmouseover="star_over('star_rating', 4, 'http://www.seriouseats.com/imagesV2/se-rating-on.png', 'http://www.seriouseats.com/imagesV2/se-rating-off.png')" onmouseout="star_out('star_rating', 4, 'http://www.seriouseats.com/imagesV2/se-rating-on.png', 'http://www.seriouseats.com/imagesV2/se-rating-off.png')" onclick="star_click('star_rating', 4, 'http://www.seriouseats.com/imagesV2/se-rating-on.png', 'http://www.seriouseats.com/imagesV2/se-rating-off.png')" /><img src="http://www.seriouseats.com/imagesV2/se-rating-off.png" name="star_rating_5" id="star_rating_5" onmouseover="star_over('star_rating', 5, 'http://www.seriouseats.com/imagesV2/se-rating-on.png', 'http://www.seriouseats.com/imagesV2/se-rating-off.png')" onmouseout="star_out('star_rating', 5, 'http://www.seriouseats.com/imagesV2/se-rating-on.png', 'http://www.seriouseats.com/imagesV2/se-rating-off.png')" onclick="star_click('star_rating', 5, 'http://www.seriouseats.com/imagesV2/se-rating-on.png', 'http://www.seriouseats.com/imagesV2/se-rating-off.png')" /><input type="hidden" name="star_rating" id="star_rating" value="" />
+            </div>
+            
+            <div style="float: left;"><p class="requirements">Comments can take up to a minute to appear - please be patient!</p></div>
+            <div style="float: right;" class="formCommentPreview">
+            <input value="Post a Comment!" name="post" id="comment-post" class="formButton" type="submit">
+            </div><div class="clearer"></div>
+        </form>
+    </div><!--/formSection-->
+</div><!--/post-comment-->
+
+<script type="text/javascript">
+	 if (!user || !user.is_authenticated) { document.getElementById("post-comment").style.display = 'none'; }
+ </script>
+
+    
+</div><!--/#threeColumn1-->
+<div id="threeColumn2">
+
+<div id="top-comm-recipes">
+    <div id="top-comm-recipes-header">
+        <h2>Top Community Recipes</h2>
+        <div id="top-comm-rec-talk"><!-- --></div>
+    </div>
+    
+    
+        <div class="home-column-excerpt">
+            <h3><a href="http://www.seriouseats.com/talk/2010/07/boiled-water-recipe.html">Boiled Water Recipe</a></h3>
+            <p class="byline">By <a href="http://www.seriouseats.com/user/profile/Adam Kuban">Adam Kuban</a> | <a href="http://www.seriouseats.com/talk/2010/07/boiled-water-recipe.html#comments" class="comment-count">172 comments</a></p>
+        </div>
+    
+        <div class="home-column-excerpt">
+            <h3><a href="http://www.seriouseats.com/talk/2011/01/my-husband-is-not-a-vegerarian.html">My Husband is not a Vegetarian</a></h3>
+            <p class="byline">By <a href="http://www.seriouseats.com/user/profile/sharonrouco">sharonrouco</a> | <a href="http://www.seriouseats.com/talk/2011/01/my-husband-is-not-a-vegerarian.html#comments" class="comment-count">109 comments</a></p>
+        </div>
+    
+        <div class="home-column-excerpt">
+            <h3><a href="http://www.seriouseats.com/talk/2010/10/risotto---how-do-you-cook-your-risotto.html">Risotto - How do you cook your risotto?</a></h3>
+            <p class="byline">By <a href="http://www.seriouseats.com/user/profile/Eatmania">Karl@Eatmania</a> | <a href="http://www.seriouseats.com/talk/2010/10/risotto---how-do-you-cook-your-risotto.html#comments" class="comment-count">65 comments</a></p>
+        </div>
+    
+</div><!--/#top-comm-recipes-->
+
+
+    <!-- SQUARE AD SPACE -->
+    <div id="featuredRight2Columns" class="indEntrySquare">
+		<div class="indEntrySquareAd" id="BIGBOX">
+			<!-- FM 300x250 ATF- Main Site Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/2386'></script>
+                       <!-- FM 300x250 ATF- Main Site Zone -->
+		</div>		
+	</div><!-- close featuredRight2Columns -->
+    <!-- /SQUARE AD SPACE -->
+    
+    <div id="recipe-email-signup">
+<form action="http://www.seriouseats.com/cgi-bin/mte/plugins/ProfileMail/profilemail.cgi" enctype="multipart/form-data" id="profile_edit_recipes" method="post">
+    <input type="hidden" name="name" value="" />
+    <input type="hidden" name="__mode" value="save">
+    <input type="hidden" name="blog_id" value="31">
+    <input type="hidden" name="serious_eats_recipe_newsletter" id="profile_field_serious_eats_recipe_newsletter" value="1" />
+    <label for="recipe-email-signup-email">Get our weekly recipe roundup.</label>
+    <input type="text" class="text-input" id="recipe-email-signup-email" name="email" /> <input type="image" src="http://static.seriouseats.com/imagesV2/btn-Subscribe-blue.png" alt="Subscribe" value="Subscribe" />
+</form>
+    </div>
+    <div id="recent-on-se-module" class="yellow-module">
+        <h2>Recent Posts on Serious Eats</h2>
+        
+            <div class="home-column-excerpt">
+                <h3><a href="http://www.seriouseats.com/2011/02/crop-freezes-in-mexico-affect-grocery-prices.html">Crop Freezes in Mexico Affect Grocery Prices in the U.S.</a></h3>
+                <p><a href="http://www.seriouseats.com/user/profile/Leah Douglas">Leah Douglas</a></p>
+                <p><a href="http://www.seriouseats.com/2011/02/crop-freezes-in-mexico-affect-grocery-prices.html#comments" class="comment-count">Post a comment</a></p>
+                <div class="thumb-100x90">
+                
+                    <img src="http://www.seriouseats.com/assets_c/2011/02/20110220-tomatoplant-thumb-90x90-141734.jpg" alt="Crop Freezes in Mexico Affect Grocery Prices in the U.S." />
+                
+                </div>
+            </div>
+        
+            <div class="home-column-excerpt">
+                <h3><a href="http://www.seriouseats.com/2011/02/fresh-food-on-tv-weekday-edition-20110221.html">Fresh Food On TV: Weekday Edition</a></h3>
+                <p><a href="http://www.seriouseats.com/user/profile/Chris Crowley">Chris Crowley</a></p>
+                <p><a href="http://www.seriouseats.com/2011/02/fresh-food-on-tv-weekday-edition-20110221.html#comments" class="comment-count">Post a comment</a></p>
+                <div class="thumb-100x90">
+                
+                    <img src="http://www.seriouseats.com/assets_c/2009/09/nomtv-thumb-90x90-47250.png" alt="Fresh Food On TV: Weekday Edition" />
+                
+                </div>
+            </div>
+        
+            <div class="home-column-excerpt">
+                <h3><a href="http://www.seriouseats.com/2011/02/snapshots-from-germany-bread-bakeries-organic.html">Snapshots from Germany: Bread Bakeries</a></h3>
+                <p><a href="http://www.seriouseats.com/user/profile/steen_hanssen">Steen Bjørn Hanssen</a></p>
+                <p><a href="http://www.seriouseats.com/2011/02/snapshots-from-germany-bread-bakeries-organic.html#comments" class="comment-count">1 comment</a></p>
+                <div class="thumb-100x90">
+                
+                    <img src="http://www.seriouseats.com/assets_c/2011/02/20110221_German_Bread2-thumb-90x90-141439.jpg" alt="Snapshots from Germany: Bread Bakeries" />
+                
+                </div>
+            </div>
+        
+    </div><!--/#home-latest-columns-->
+
+   <!-- sidebar cooking.com module -->
+    <div id="home-store" class="home-right-link">
+		<div class="home-right-link-img">
+			<a href="http://www.cooking.com/aff/adredir.asp?CCAID=CBSEPTPH&Redir=%2Fseriouseats"><img src="http://www.seriouseats.com/images/mixer-thumb.jpg" alt="" /></a>
+		</div>
+		<div class="home-right-link-txt">
+			<h2><a href="http://www.cooking.com/aff/adredir.asp?CCAID=CBSEPTPH&Redir=%2Fseriouseats">Serious Eats Store!</a></h2>
+		</div>
+		<a href="http://www.cooking.com/aff/adredir.asp?CCAID=CBSEPTPH&Redir=%2Fseriouseats" id="cooking-com-link"><img src="http://www.seriouseats.com/imagesV3/txt-Powered-by-Cooking-com.png" alt="Powered by Cooking.com" /></a>
+</div>
+
+<div>
+   	<script type="text/javascript" src="http://www.cooking.com/seriouseats/widget/seriouseats.js"></script>
+	<script type="text/javascript">startwidget300x500_TopRated("");</script>
+</div><!--/#cooking.com widget-->
+    <!-- /sidebar cooking.com module -->
+
+</div><!--/#threeColumn2-->
+</div><!--content-->
+
+<div id="bottomBucket" class="feature">
+
+	<div class="bbColumn" id="bbColumn1">
+
+		
+
+			<p class="linksrc"><a href="http://www.seriouseats.com/?ref=se-bb1" class="serious_eats_post" rel="nofollow">From Serious Eats</a></p>
+
+			<a href="http://www.seriouseats.com/2010/06/what-are-the-best-chocolate-chips-brands-for-baking-cookies.html?ref=se-bb1" rel="nofollow"><img src="http://www.seriouseats.com/images/20100631-chocolatechips-thumbnail.jpg" alt="Taste Test: The Best Chocolate Chips for Chocolate Chip Cookies" width="175" /></a>
+
+			<h4><a href="http://www.seriouseats.com/2010/06/what-are-the-best-chocolate-chips-brands-for-baking-cookies.html?ref=se-bb1" rel="nofollow">Taste Test: The Best Chocolate Chips for Chocolate Chip Cookies</a></h4>
+
+		
+
+	</div><!-- close bbColumn1 -->
+
+
+	<div class="bbColumn" id="bbColumn2">
+
+		
+
+			<p class="linksrc"><a href="http://www.seriouseats.com/?ref=se-bb2" class="serious_eats_post" rel="nofollow">From Serious Eats</a></p>
+
+			<a href="http://www.seriouseats.com/2010/06/inside-the-serious-eats-office.html?ref=se-bb2" rel="nofollow"><img src="http://www.seriouseats.com/images/20100616-tour-office-thumbnail.jpg" alt="A Tour of Serious Eats Headquarters" width="175" /></a>
+
+			<h4><a href="http://www.seriouseats.com/2010/06/inside-the-serious-eats-office.html?ref=se-bb2" rel="nofollow">A Tour of Serious Eats Headquarters</a></h4>
+
+		
+
+	</div><!-- close bbColumn2 -->
+
+
+
+	<div class="bbColumn" id="bbColumn3">
+
+		
+
+			<p class="linksrc"><a href="http://www.seriouseats.com/?ref=se-bb3" class="serious_eats_post" rel="nofollow">From Serious Eats</a></p>
+
+			<a href="http://www.seriouseats.com/2011/02/30-course-modernist-cuisine-dinner-nathan-myhrvold-cooking-lab-seattle-bellevue-wa.html?ref=se-bb3" rel="nofollow"><img src="http://www.seriouseats.com/images/20110217-modernist-thumbnail.jpg" alt="Photos of the 30-Course Dinner at the Modernist Cuisine's Cooking Lab" width="175" /></a>
+
+			<h4><a href="http://www.seriouseats.com/2011/02/30-course-modernist-cuisine-dinner-nathan-myhrvold-cooking-lab-seattle-bellevue-wa.html?ref=se-bb3" rel="nofollow">Photos of the 30-Course Dinner at the Modernist Cuisine's Cooking Lab</a></h4>
+
+		
+
+	</div><!-- close bbColumn3 -->
+
+
+
+	<div class="bbColumn" id="bbColumn4">
+
+		
+
+			<p class="linksrc"><a href="http://www.seriouseats.com/?ref=se-bb4" class="serious_eats_post" rel="nofollow">From Serious Eats</a></p>
+
+			<a href="http://www.seriouseats.com/2011/02/what-is-the-best-dark-chocolate-bars-brands-taste-test.html?ref=se-bb4" rel="nofollow"><img src="http://www.seriouseats.com/images/20110217-dark-chocolate-thumbnail.jpg" alt="Taste Test: Dark Chocolate" width="175" /></a>
+
+			<h4><a href="http://www.seriouseats.com/2011/02/what-is-the-best-dark-chocolate-bars-brands-taste-test.html?ref=se-bb4" rel="nofollow">Taste Test: Dark Chocolate</a></h4>
+
+		
+
+	</div><!-- close bbColumn4 -->
+
+</div><!-- /bottom bucket -->
+
+<div id="footer" class="shortFooter">
+
+	<div id="footerColumn1" class="footer-column">
+		<h3 id="h-still-hungry">Still Hungry?</h3>
+		<ul>	
+			<li><a href="/?ref=footer">Home</a></li>
+			<li><a href="/talk/?ref=footer">Talk</a></li>
+			<li><a href="/recipes/?ref=footer">Recipes</a></li>
+			<li><a href="/eating_out/?ref=footer">Eating Out</a></li>
+			<li><a href="http://videos.seriouseats.com/?ref=footer">Videos</a></li>
+			<li><a href="/columns/?ref=footer">Columns</a></li>
+		</ul>
+	</div><!-- close footerColumn1 -->
+		
+	<div id="footerColumn2" class="footer-column">
+	   <h3 id="h-delivery">Delivery</h3>
+		<p>Subscribe to our email newsletters so you don't miss anything delicious!</p>
+
+   		<form action="http://www.seriouseats.com/cgi-bin/mte/plugins/ProfileMail/profilemail.cgi" enctype="multipart/form-data" id="profile_edit" method="post">
+   		    <input type="hidden" name="__mode" value="save">
+   		    <input type="hidden" name="blog_id" value="30">
+   			<input value="Your Email Address:" type="text" name="email" class="short" onblur="if(this.value==''){this.style.color=''; this.form.reset()}" onfocus="this.value = ''; this.style.color = '#000';" />
+   			<div class="formField">
+   				<input type="checkbox" name="serious_eats_weekly_newsletter" id="serious_eats_weekly_newsletter"  /><label for="serious_eats_weekly_newsletter"> Weekly Newsletter</label>
+   		 		<br />
+   				<input type="hidden" name="name" value="" />
+   				<input type="checkbox" name="serious_eats_recipe_newsletter" id="serious_eats_recipe_newsletter"  /><label for="serious_eats_recipe_newsletter"> Recipe Newsletter</label>
+   				<br />
+   				<input type="checkbox" name="serious_eats_new_york_newsletter" id="serious_eats_new_york_newsletter"  /><label for="serious_eats_new_york_newsletter"> New York Newsletter</label>
+   			</div>
+   			<input type="image" value="Subscribe" src="http://seriouseats.com/imagesV2/buttons/subscribe.png" width="82" height="24" border="0" alt="subscribe" />
+   		</form>
+
+
+
+	</div><!-- close footerColumn2 -->
+		
+	<div id="footerColumn3" class="footer-column">
+		<h3 id="h-kiss-the-chef">Kiss the Chef</h3>
+		<ul>	
+			<li><a href="/about/?ref=footer">About Us</a></li>
+			<li><a href="/contact/?ref=footer">Contact Us</a></li>
+			<li><a href="/advertise/?ref=footer">Advertise with Us</a></li>
+		</ul>
+		<h3 id="h-family-style">Family Style</h3>
+		<ul>
+			<li><a href="http://www.sliceny.com/?ref=sefooter">Slice</a></li>
+			<li><a href="http://www.ahamburgertoday.com/?ref=sefooter">A Hamburger Today</a></li>
+			<li><a href="http://newyork.seriouseats.com/?ref=sefooter">Serious Eats: New York</a></li>
+			<li><a href="http://photograzing.seriouseats.com/?ref=sefooter">Photograzing</a></li>
+		</ul>
+	</div><!-- close footerColumn3 -->
+
+	<div id="footerColumn4" class="footer-column">
+			<h3 id="h-feed-yourself">Feed Yourself</h3>
+			<p>Subscribe to our feeds:</p>
+			<p><a href="http://feeds.feedburner.com/seriouseatsfeaturesvideos">Serious Eats</a>, <a href="http://feeds.feedburner.com/seriouseatstalk">Talk</a>, <a href="http://feeds.feedburner.com/seriouseats/recipes">Recipes</a></p>
+			<br />
+			<p>Subscribe by email:</p>
+			<p><a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=595294&amp;loc=en_US">All of Serious Eats</a></p>
+	</div><!-- close footerColumn4 --><div class="clearer"></div>
+
+	<a href="http://twitter.com/seriouseats" id="footer-twitter">Follow us on Twitter!</a>
+
+</div><!-- close footer div -->
+
+
+
+<!-- footer links module -->
+<div id="footerLinks">
+<ul>
+<li><a href="http://www.seriouseats.com/faq/">FAQ</a></li>
+<li><a href="http://www.seriouseats.com/advertise/">Advertise</a></li>
+<li><a href="http://www.seriouseats.com/sitemap/">Sitemap</a></li>
+<li><a href="http://www.seriouseats.com/terms/">Terms of Use</a></li>
+<li><a href="http://www.seriouseats.com/privacy/">Privacy Policy</a></li>
+<li>&copy; 2006-2011</li>
+</ul>
+</div>
+<!-- /footer links module -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js'; type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-962456-1");
+pageTracker._setDomainName(".seriouseats.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<script type="text/javascript">
+function recordOutboundLink(link, category, action, outgoingPageviewLink) {
+  try {
+    pageTracker._trackEvent(category, action, outgoingPageviewLink);
+    pageTracker._trackPageview(outgoingPageviewLink);
+    setTimeout('document.location = "' + link.href + '"', 100)
+  }catch(err){}
+}
+</script>
+
+<!-- Start Amazon Impression Reporting Script -->
+<script type="text/javascript" src="http://www.assoc-amazon.com/s/impression-counter?tag=serieats-20&o=1"></script>
+<noscript><img src="http://www.assoc-amazon.com/s/noscript?tag=serieats-20" alt="" /></noscript>
+<!-- End Amazon Impression Reporting Script -->
+
+<!-- FM Tracking Pixel -->
+<script type='text/javascript' src='http://static.fmpub.net/site/seriouseats'></script>
+<!-- FM Tracking Pixel -->
+
+<!-- chartbeat -->
+<script type="text/javascript">
+var cbjspath = "static.chartbeat.com/js/chartbeat.js?uid=2384&domain=seriouseats.com";
+var cbjsprotocol = (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://");
+document.write(unescape("%3Cscript src='"+cbjsprotocol+cbjspath+"' type='text/javascript'%3E%3C/script%3E"))
+</script>
+<!-- chartbeat -->
+
+<!-- Addthis -->
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=seriouseats"></script>
+<!-- Addthis -->
+
+<!-- SkimLinks -->
+<script type="text/javascript" src="http://s.skimresources.com/js/3781X630295.skimlinks.js"></script>
+<!-- SkimLinks -->
+
+<!-- FM Custom Video Egg Zone Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/3947'></script>
+<!-- FM Custom Video Egg Zone Zone -->
+
+</div><!-- close container div -->
+
+</body>
+</html>

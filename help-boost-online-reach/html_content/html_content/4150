@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" dir="ltr" lang="en-US">
+<![endif]-->
+<!--[if (gt IE 6) | (!IE)]><!-->
+<html dir="ltr" lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<title>Slow Cooker Chicken and Dumplings | Feral Kitchen</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://feralkitchen.com/wp-content/themes/coraline/style.css" />
+<link rel="pingback" href="http://feralkitchen.com/xmlrpc.php" />
+<script type="text/javascript">
+//<![CDATA[
+var BrowserDetect = {
+init: function () {
+this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
+this.version = this.searchVersion(navigator.userAgent)|| this.searchVersion(navigator.appVersion)|| "an unknown version";
+this.OS = this.searchString(this.dataOS) || "an unknown OS";
+},
+searchString: function (data) {
+for (var i=0;i<data.length;i++)	{
+        var dataString = data[i].string;
+        var dataProp = data[i].prop;
+        this.versionSearchString = data[i].versionSearch || data[i].identity;
+        if (dataString) {if (dataString.indexOf(data[i].subString) != -1)
+                return data[i].identity;}
+        else if (dataProp){return data[i].identity;}
+}
+},
+searchVersion: function (dataString) {
+var index = dataString.indexOf(this.versionSearchString);
+if (index == -1) return;
+return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
+},
+dataBrowser: [
+        {string: navigator.userAgent,subString: "Chrome",identity: "Chrome"},
+        {string: navigator.userAgent,subString: "OmniWeb",versionSearch: "OmniWeb/",identity: "OmniWeb"},
+        {string: navigator.vendor,subString: "Apple",identity: "Safari",versionSearch: "Version"},
+        {prop: window.opera,identity: "Opera"},
+        {string: navigator.vendor,subString: "iCab",identity: "iCab"},
+        {string: navigator.vendor,subString: "KDE",identity: "Konqueror"},
+        {string: navigator.userAgent,subString: "Firefox",identity: "Firefox"},
+        {string: navigator.vendor,subString: "Camino",identity: "Camino"},
+        {string: navigator.userAgent,subString: "Netscape",identity: "Netscape"},
+        {string: navigator.userAgent,subString: "MSIE",identity: "Explorer",versionSearch: "MSIE"},
+        {string: navigator.userAgent,subString: "Gecko",identity: "Mozilla",versionSearch: "rv"},
+        {string: navigator.userAgent,subString: "Mozilla",identity: "Netscape",versionSearch: "Mozilla"}],
+dataOS:[{string: navigator.platform,subString: "Win",identity: "Windows"},
+        {string: navigator.platform,subString: "Mac",identity: "Mac"},
+        {string: navigator.userAgent,subString: "iPhone",identity: "iPhone/iPod"},
+        {string: navigator.platform,subString: "Linux",identity: "Linux"}]
+};
+BrowserDetect.init();
+
+function bookMark(theurl, thetitle, browser){
+    switch(browser){
+        case "Firefox":
+            window.sidebar.addPanel(thetitle, theurl,"");
+            break;
+        case "Explorer":
+            window.external.AddFavorite( theurl, thetitle);
+            break;
+        case "Chrome":
+        case "Safari":
+        case "Opera":
+        case "Netscape":
+            switch(BrowserDetect.OS){
+            case "Windows":
+            case "Linux":
+            alert('press ctrl+D to bookmark this page');
+            break;
+            case "Mac":
+                alert('press cmd+D to bookmark this page');
+            break;
+            }
+            break;
+    }
+}
+//]]>
+</script>
+                        <style type="text/css" media="screen" >
+                                .socialwrap li.icon_text a img, .socialwrap li.iconOnly a img, .followwrap li.icon_text a img, .followwrap li.iconOnly a img{border-width:0 !important;background-color:none;}#follow.right {width:32px;position:fixed; right:0; top:100px;background-color:#878787;padding:10px 0;font-family:impact,charcoal,arial, helvetica,sans-serif;-moz-border-radius-topleft: 5px;-webkit-border-top-left-radius:5px;-moz-border-radius-bottomleft:5px;-webkit-border-bottom-left-radius:5px;border:2px solid #fff;border-right-width:0}#follow.right ul {padding:0; margin:0; list-style-type:none !important;font-size:24px;color:black;}
+#follow.right ul li {padding-bottom:10px;list-style-type:none !important;padding-left:4px;padding-right:4px}
+#follow img{border:none;}#follow.right ul li.follow {margin:0 4px;}
+#follow.right ul li.follow img {border-width:0;display:block;overflow:hidden; background:transparent url(http://feralkitchen.com/wp-content/plugins/share-and-follow/images/impact/follow-right.png) no-repeat -0px 0px;height:79px;width:20px;}
+#follow.right ul li a {display:block;}
+#follow.right ul li.follow span, #follow ul li a span {display:none}.share {margin:0 3px 3px 0;}
+.phat span {display:inline;}
+ul.row li {float:left;list-style-type:none;}
+li.iconOnly a span.head {display:none}
+#follow.left ul.size16 li.follow{margin:0px auto !important}
+li.icon_text a {padding-left:0;margin-right:3px}
+li.text_only a {background-image:none !important;padding-left:0;}
+li.text_only a img {display:none;}
+li.icon_text a span{background-image:none !important;padding-left:0 !important; }
+li.iconOnly a span.head {display:none}
+ul.socialwrap li {margin:0 3px 3px 0 !important;}
+ul.socialwrap li a {text-decoration:none;}ul.row li {float:left;line-height:auto !important;}
+ul.row li a img {padding:0}.size16 li a,.size24 li a,.size32 li a, .size48 li a, .size60 li a {display:block}ul.socialwrap {list-style-type:none !important;margin:0; padding:0;text-indent:0 !important;}
+ul.socialwrap li {list-style-type:none !important;background-image:none;padding:0;list-style-image:none !important;}
+ul.followwrap {list-style-type:none !important;margin:0; padding:0}
+ul.followwrap li {margin-right:3px;margin-bottom:3px;list-style-type:none !important;}
+#follow.right ul.followwrap li, #follow.left ul.followwrap li {margin-right:0px;margin-bottom:0px;}
+.shareinpost {clear:both;padding-top:0px}.shareinpost ul.socialwrap {list-style-type:none !important;margin:0 !important; padding:0 !important}
+.shareinpost ul.socialwrap li {padding-left:0 !important;background-image:none !important;margin-left:0 !important;list-style-type:none !important;text-indent:0 !important}
+.socialwrap li.icon_text a img, .socialwrap li.iconOnly a img{border-width:0}ul.followrap li {list-style-type:none;list-style-image:none !important;}
+div.clean {clear:left;}
+div.display_none {display:none;}
+                        </style>
+                                                <style type="text/css" media="print" >
+                                body {background: white;font-size: 12pt;color:black;}
+ * {background-image:none;}
+ #wrapper, #content {width: auto;margin: 0 5%;padding: 0;border: 0;float: none !important;color: black;background: transparent none;}
+ a { text-decoration : underline; color : #0000ff; }
+#menu, #navigation, #navi, .menu {display:none}
+                        </style>
+                        <link rel="image_src" href="http://www.gravatar.com/avatar/187442291ab193b1021833a9d9b611d5?default=&amp;size=110.jpg" /> 
+<link rel="alternate" type="application/rss+xml" title="Feral Kitchen &raquo; Feed" href="http://feralkitchen.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feral Kitchen &raquo; Comments Feed" href="http://feralkitchen.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feral Kitchen &raquo; Slow Cooker Chicken and Dumplings Comments Feed" href="http://feralkitchen.com/2011/10/16/slow-cooker-chicken-and-dumplings/feed/" />
+<link rel='stylesheet' id='feedreading_style-css'  href='http://feralkitchen.com/wp-content/plugins/feed-reading-blogroll/css/feedreading_blogroll.css?ver=1.5.7' type='text/css' media='all' />
+<link rel='stylesheet' id='A2A_SHARE_SAVE-css'  href='http://feralkitchen.com/wp-content/plugins/add-to-any/addtoany.min.css?ver=1.3' type='text/css' media='all' />
+<script type='text/javascript' src='http://feralkitchen.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://feralkitchen.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<script type='text/javascript' src='http://feralkitchen.com/wp-includes/js/jquery/jquery.js?ver=1.6.1'></script>
+<script type='text/javascript' src='http://feralkitchen.com/wp-content/feedreading_blogroll.js?ver=1.5.7'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://feralkitchen.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://feralkitchen.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Feral Kitchen' href='http://feralkitchen.com/' />
+<link rel='start' title='Indonesian Turkey Burgers' href='http://feralkitchen.com/2011/07/15/indonesian-turkey-burgers/' />
+<link rel='prev' title='Lime Currant Cookies' href='http://feralkitchen.com/2011/10/16/lime-currant-cookies/' />
+<link rel='canonical' href='http://feralkitchen.com/2011/10/16/slow-cooker-chicken-and-dumplings/' />
+<link rel='shortlink' href='http://wp.me/p1HvuA-iO' />
+
+<script type="text/javascript"><!--
+var a2a_config=a2a_config||{},wpa2a={done:false,html_done:false,script_ready:false,script_load:function(){var a=document.createElement('script'),s=document.getElementsByTagName('script')[0];a.type='text/javascript';a.async=true;a.src='http://static.addtoany.com/menu/page.js';s.parentNode.insertBefore(a,s);wpa2a.script_load=function(){};},script_onready:function(){if(a2a.type=='page'){wpa2a.script_ready=true;if(wpa2a.html_done)wpa2a.init();}},init:function(){for(var i=0,el,target,targets=wpa2a.targets,length=targets.length;i<length;i++){el=document.getElementById('wpa2a_'+(i+1));target=targets[i];a2a_config.linkname=target.title;a2a_config.linkurl=target.url;if(el)a2a.init('page',{target:el});wpa2a.done=true;}}};a2a_config.tracking_callback=['ready',wpa2a.script_onready];
+//--></script>
+<style type="text/css">
+ul.scfw_16px li, ul.scfw_24px li, ul.scfw_32px li, ul.scfw_16px li a, ul.scfw_24px li a, ul.scfw_32px li a {
+	display:inline !important;
+	float:none !important;
+	border:0 !important;
+	background:transparent none !important;
+	margin:0 !important;
+	padding:0 !important;
+}
+ul.scfw_16px li {
+	margin:0 2px 0 0 !important;
+}
+ul.scfw_24px li {
+	margin:0 3px 0 0 !important;
+}
+ul.scfw_32px li {
+	margin:0 5px 0 0 !important;
+}
+ul.scfw_text_img li:before, ul.scfw_16px li:before, ul.scfw_24px li:before, ul.scfw_32px li:before {
+	content:none !important;
+}
+.scfw img {
+	float:none !important;
+}
+</style>	
+	<!--[if IE]>
+<style type="text/css">
+.addtoany_list a img{filter:alpha(opacity=70)}
+.addtoany_list a:hover img,.addtoany_list a.addtoany_share_save img{filter:alpha(opacity=100)}
+</style>
+<![endif]-->
+</head>
+
+<body class="single single-post postid-1166 single-format-standard two-column content-sidebar">
+<div id="container" class="hfeed">
+	<div id="header">
+		<div id="masthead" role="banner">
+						<div id="site-title">
+				<span>
+					<a href="http://feralkitchen.com/" title="Feral Kitchen" rel="home">Feral Kitchen</a>
+				</span>
+			</div>
+			<div id="site-description">An untamed and instinctive culinary point of view.</div>
+		</div><!-- #masthead -->
+
+		<div id="access" role="navigation">
+		  			<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+						<div class="menu-header"><ul id="menu-recipes" class="menu"></ul></div>		</div><!-- #access -->
+
+		<div id="branding">
+						<a href="http://feralkitchen.com/">
+									<img src="http://feralkitchen.com/wp-content/uploads/2011/07/cropped-P1011917.jpg" width="990" height="180" alt="" />
+							</a>
+					</div><!-- #branding -->
+	</div><!-- #header -->
+
+	<div id="content-box">
+
+		<div id="content-container">
+			<div id="content" role="main">
+
+			
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="http://feralkitchen.com/2011/10/16/lime-currant-cookies/" rel="prev"><span class="meta-nav">&larr;</span> Lime Currant Cookies</a></div>
+					<div class="nav-next"></div>
+				</div><!-- #nav-above -->
+
+				<div id="post-1166" class="post-1166 post type-post status-publish format-standard hentry category-poultry-eggs category-soup">
+					<h1 class="entry-title">Slow Cooker Chicken and Dumplings</h1>
+
+					<div class="entry-meta">
+						<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://feralkitchen.com/2011/10/16/slow-cooker-chicken-and-dumplings/" title="8:27 pm" rel="bookmark"><span class="entry-date">October 16, 2011</span></a> <span class="byline"><span class="meta-sep">by</span> <span class="author vcard"><a class="url fn n" href="http://feralkitchen.com/author/tessamia/" title="View all posts by Tessa">Tessa</a></span></span><span class="comments-link"><span class="meta-sep">|</span> <a href="http://feralkitchen.com/2011/10/16/slow-cooker-chicken-and-dumplings/#respond" title="Comment on Slow Cooker Chicken and Dumplings">Leave a comment</a></span>
+											</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<p><a href="http://feralkitchen.com/wp-content/uploads/2011/10/SlowCookerChickenandDumplingsFeralKitchen520.jpg"><img class="alignleft size-full wp-image-1213" title="SlowCookerChickenandDumplings" src="http://feralkitchen.com/wp-content/uploads/2011/10/SlowCookerChickenandDumplingsFeralKitchen520.jpg" alt="" width="520" height="520" /></a></p>
+<p><strong> Slow Cooker Chicken and Dumplings</strong></p>
+<p>Last weekend when my son came home from school for a short visit, I bought him a slow cooker to help with the chore of cooking for himself while studying all day at the Honors College.  He skyped me the other day and in the middle of our conversation I asked him how was the slow cooker?  He promptly said, &#8220;Mom, I have never cooked anything in one of those before&#8221;&#8230;  First , I thought to myself, I thought he knew how but I as I think back, I have not used my slow cooker for at least two years.  I guess it is time to dust it off!</p>
+<p>Well, here&#8217;s a easy recipe for Slow Cooker Chicken and Dumplings.  I know that this is not my usual style of cooking but, as all you moms know, you gotta take care of your cubs first.  So, G&#8230;  here you go!  Love you! &#8211; Mom</p>
+<p>And, for the rest of you&#8230; I hope you try this simple and tasty recipe for Slow Cooker Chicken and Dumplings.   Enjoy! &#8211; Tessa</p>
+<p><strong>Ingredients:</strong></p>
+<ul>
+<li>4 large boneless skinless chicken thighs</li>
+<li>1 potato</li>
+<li>3 carrots</li>
+<li>3 celery stalks</li>
+<li>1 onion</li>
+<li>3 cups chicken broth</li>
+<li>1/3 cup flour</li>
+<li>1 can cream of mushroom soup</li>
+<li>2 tsp garlic paste</li>
+<li>1 tsp seasoning salt</li>
+<li>1/2 tsp dry thyme</li>
+<li>1/2 tsp dry tarragon</li>
+<li>1/8 tsp. white pepper</li>
+<li>2 cups biscuit mix</li>
+<li>2/3 cup milk</li>
+<li>garnish with fresh chopped parsley or chives</li>
+</ul>
+<p>Begin by chopping the potato, carrot, celery and onion into even sized pieces.  Put vegetables in slow cooker, toss to mix.  Trim fat from the chicken thighs and cut into 1&#8243; sized pieces.  Add to the top of the vegetables in the slow cooker.</p>
+<p>Be sure to wash your hand and workspace well after prepping the chicken.  If you don&#8217;t, you might be at home sick instead of in class where you belong&#8230;</p>
+<p>Now go grab a mixing bowl and a whisk.  Whisk together the chicken stock, flour, cream of mushroom soup, garlic paste, seasoning salt, thyme, tarragon, and white pepper.  Pour sauce over the chicken in the slow cooker, cover and turn on low.</p>
+<p><a href="http://feralkitchen.com/wp-content/uploads/2011/10/LowandSlow520.jpg"><img class="alignleft size-full wp-image-1175" title="LowandSlow520" src="http://feralkitchen.com/wp-content/uploads/2011/10/LowandSlow520.jpg" alt="" width="520" height="520" /></a></p>
+<p>Go study for about 8 hours.  If you put it on high, it will take about 4-5 hours.</p>
+<p>8 hours later (or 4-5 depending on if the cooker is on high), be sure to check the chicken to make sure that it is done.  Taste the stew, and correct your seasonings.  You may need to add more salt, maybe not.  Turn the slow cooker up to high.  Grab another bowl and mix together the biscuit mix and 2/3 cup of milk.  Drop the dumplings by spoonful on the stew.  Toss on some fresh chopped parsley for color.  Cook covered for 30 minutes or until the dumplings are cooked through.  Makes about 6 servings.</p>
+<p>A couple of notes:  this recipe can be halved if you want to cook less and it can also be doubled if you want to make more.</p>
+<div class='shareinpost'><ul class="socialwrap row"><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://delicious.com/post?url=http%3A%2F%2Fferalkitchen.com%2F2011%2F10%2F16%2Fslow-cooker-chicken-and-dumplings%2F&amp;title=Slow+Cooker+Chicken+and+Dumplings" title="Bookmark this post : Slow Cooker Chicken and Dumplings on Delicious" ><img src="http://feralkitchen.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://feralkitchen.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-198px 0px" class="image-32" width="32" alt="delicious"/> <span class="head">Bookmark on Delicious</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://digg.com/submit?url=http%3A%2F%2Fferalkitchen.com%2F2011%2F10%2F16%2Fslow-cooker-chicken-and-dumplings%2F&amp;title=Slow+Cooker+Chicken+and+Dumplings&amp;bodytext=%0D%0A%0D%0A%C2%A0Slow+Cooker+Chicken+and+Dumplings%0D%0A%0D%0ALast+weekend+when+my+son+came+home+from+school+for+a+short+visit%2C+I+bought+him+a+slow+cooker+to+help+with+the+chore+of+cooking+for+himself+while+studying+all+day+at+the+Honors+College.%C2%A0+He+skyped+me+the+other+day+and+in+the+middle+of+our+conversation+I+asked+him+how+was+the+s" title="Digg this post : Slow Cooker Chicken and Dumplings" ><img src="http://feralkitchen.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://feralkitchen.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-264px 0px" class="image-32" width="32" alt="digg"/> <span class="head">Digg this post</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fferalkitchen.com%2F2011%2F10%2F16%2Fslow-cooker-chicken-and-dumplings%2F&amp;t=Slow+Cooker+Chicken+and+Dumplings" title="Recommend this post : Slow Cooker Chicken and Dumplings on Facebook" ><img src="http://feralkitchen.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://feralkitchen.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-363px 0px" class="image-32" width="32" alt="facebook"/> <span class="head">Recommend on Facebook</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.reddit.com/submit?url=http%3A%2F%2Fferalkitchen.com%2F2011%2F10%2F16%2Fslow-cooker-chicken-and-dumplings%2F&amp;title=Slow+Cooker+Chicken+and+Dumplings" title="Share this post : Slow Cooker Chicken and Dumplings on Reddit" ><img src="http://feralkitchen.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://feralkitchen.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1419px 0px" class="image-32" width="32" alt="reddit"/> <span class="head">share via Reddit</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fferalkitchen.com%2F2011%2F10%2F16%2Fslow-cooker-chicken-and-dumplings%2F&amp;title=Slow+Cooker+Chicken+and+Dumplings" title="Share this post : Slow Cooker Chicken and Dumplings with Stumblers" ><img src="http://feralkitchen.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://feralkitchen.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1617px 0px" class="image-32" width="32" alt="stumble"/> <span class="head">Share with Stumblers</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.tumblr.com/share?v=3&amp;u=http%3A%2F%2Fferalkitchen.com%2F2011%2F10%2F16%2Fslow-cooker-chicken-and-dumplings%2F&amp;t=Slow+Cooker+Chicken+and+Dumplings" title="Tumblr. this post : Slow Cooker Chicken and Dumplings " ><img src="http://feralkitchen.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://feralkitchen.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1716px 0px" class="image-32" width="32" alt="tumblr"/> <span class="head">Tumblr it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://twitter.com/home/?status=http%3A%2F%2Fferalkitchen.com%2F2011%2F10%2F16%2Fslow-cooker-chicken-and-dumplings%2F" title="Tweet this post : Slow Cooker Chicken and Dumplings on Twitter" ><img src="http://feralkitchen.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://feralkitchen.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1749px 0px" class="image-32"  width="32"  alt="twitter"/> <span class="head">Tweet about it</span></a></li><li class="iconOnly"><a rel="_self" href="http://feralkitchen.com/2011/10/16/slow-cooker-chicken-and-dumplings/feed" title="Follow this post : Slow Cooker Chicken and Dumplings comments"><img src="http://feralkitchen.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32"  width="32" style="background: transparent url(http://feralkitchen.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1452px 0px" class="image-32"  alt="rss" /> <span class="head">Subscribe to the comments on this post</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.print();" title="Print this post : Slow Cooker Chicken and Dumplings for reading later" ><img src="http://feralkitchen.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://feralkitchen.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1386px 0px" class="image-32" width="32" alt="print"/> <span class="head">Print for later</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.bookMark('http%3A%2F%2Fferalkitchen.com%2F2011%2F10%2F16%2Fslow-cooker-chicken-and-dumplings%2F', 'Slow+Cooker+Chicken+and+Dumplings', BrowserDetect.browser);" title="Bookmark this post : Slow Cooker Chicken and Dumplings" ><img src="http://feralkitchen.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://feralkitchen.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-99px 0px" class="image-32" width="32" alt="bookmark"/> <span class="head">Bookmark in Browser</span></a></li><li class="iconOnly"><a rel="_self" href="mailto:?subject=Feral%20Kitchen%20:%20Slow%20Cooker%20Chicken%20and%20Dumplings&amp;body=Here%20is%20a%20link%20to%20a%20site%20that%20I%20really%20like.%20%20It%20has%20really%20unique%20recipes%20and%20nice%20food%20photos.%20%20I%20hope%20that%20you%20enjoy%20it!%20%20http://feralkitchen.com/2011/10/16/slow-cooker-chicken-and-dumplings/" title="Tell a friend about this post : Slow Cooker Chicken and Dumplings "><img src="http://feralkitchen.com/wp-content/plugins/share-and-follow/images/blank.gif" height="32"  width="32" style="background: transparent url(http://feralkitchen.com/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-330px 0px" class="image-32"  alt="email" /> <span class="head">Tell a friend</span></a></li></ul><div class="clean"></div> </div><div class="addtoany_share_save_container"><div class="a2a_kit a2a_target addtoany_list" id="wpa2a_1"><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save"><img src="http://feralkitchen.com/wp-content/plugins/add-to-any/share_save_171_16.png" width="171" height="16" alt="Share"/></a></div>
+<script type="text/javascript"><!--
+wpa2a.script_load();
+//--></script>
+</div>											</div><!-- .entry-content -->
+
+					<div class="entry-info">
+						This entry was posted in <a href="http://feralkitchen.com/category/poultry-eggs/" title="View all posts in Poultry, Eggs" rel="category tag">Poultry, Eggs</a>, <a href="http://feralkitchen.com/category/soup/" title="View all posts in Soup" rel="category tag">Soup</a>. Bookmark the <a href="http://feralkitchen.com/2011/10/16/slow-cooker-chicken-and-dumplings/" title="Permalink to Slow Cooker Chicken and Dumplings" rel="bookmark">permalink</a>.											</div><!-- .entry-info -->
+				</div><!-- #post-## -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="http://feralkitchen.com/2011/10/16/lime-currant-cookies/" rel="prev"><span class="meta-nav">&larr;</span> Lime Currant Cookies</a></div>
+					<div class="nav-next"></div>
+				</div><!-- #nav-below -->
+
+				
+<div id="comments">
+	
+	
+	
+	
+									<div id="respond">
+				<h3 id="reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2011/10/16/slow-cooker-chicken-and-dumplings/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://feralkitchen.com/wp-comments-post.php" method="post" id="commentform">
+																			<p class="comment-notes">Your email address will not be published. Required fields are marked <span class="required">*</span></p>							<p class="comment-form-author"><label for="author">Name</label> <span class="required">*</span><input id="author" name="author" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-email"><label for="email">Email</label> <span class="required">*</span><input id="email" name="email" type="text" value="" size="30" aria-required='true' /></p>
+<p class="comment-form-url"><label for="url">Website</label><input id="url" name="url" type="text" value="" size="30" /></p>
+												<p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>						<p class="form-allowed-tags">You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:  <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>						<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='1166' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+											</form>
+							</div><!-- #respond -->
+						
+</div><!-- #comments -->
+			
+			</div><!-- #content -->
+		</div><!-- #content-container -->
+
+
+		
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+			<li id="text-3" class="widget-container widget_text"><h3 class="widget-title">About me</h3>			<div class="textwidget">Hey there!  I'm Tessa.  Welcome to Feral Kitchen.  I'm a "follow the rules" accountant by day and a fearless food Blogger by night.  I am all about preparing everyday exotic dishes and using fresh local  ingredients.  I hope that you enjoy your visit!</div>
+		</li><li id="a2a_share_save_widget-3" class="widget-container widget_a2a_share_save_widget"><h3 class="widget-title">Like my recipe?  Share it!</h3><div class="a2a_kit a2a_target addtoany_list" id="wpa2a_2"><a class="a2a_dd addtoany_share_save" href="http://www.addtoany.com/share_save"><img src="http://feralkitchen.com/wp-content/plugins/add-to-any/share_save_171_16.png" width="171" height="16" alt="Share"/></a></div></li><li id="categories-5" class="widget-container widget_categories"><h3 class="widget-title">Recipes</h3>		<ul>
+	<li class="cat-item cat-item-10"><a href="http://feralkitchen.com/category/appetizers/" title="View all posts filed under Appetizers">Appetizers</a> (6)
+</li>
+	<li class="cat-item cat-item-89"><a href="http://feralkitchen.com/category/asian/" title="View all posts filed under Asian">Asian</a> (6)
+</li>
+	<li class="cat-item cat-item-13"><a href="http://feralkitchen.com/category/beef/" title="View all posts filed under Beef">Beef</a> (5)
+</li>
+	<li class="cat-item cat-item-121"><a href="http://feralkitchen.com/category/beverages-and-drinks/" title="View all posts filed under Beverages and Drinks">Beverages and Drinks</a> (1)
+</li>
+	<li class="cat-item cat-item-28"><a href="http://feralkitchen.com/category/bread/" title="View all posts filed under Bread">Bread</a> (4)
+</li>
+	<li class="cat-item cat-item-78"><a href="http://feralkitchen.com/category/breakfast/" title="View all posts filed under Breakfast">Breakfast</a> (2)
+</li>
+	<li class="cat-item cat-item-9"><a href="http://feralkitchen.com/category/burgers/" title="View all posts filed under Burgers">Burgers</a> (2)
+</li>
+	<li class="cat-item cat-item-122"><a href="http://feralkitchen.com/category/cookies/" title="View all posts filed under Cookies">Cookies</a> (4)
+</li>
+	<li class="cat-item cat-item-36"><a href="http://feralkitchen.com/category/dessert/" title="View all posts filed under Dessert">Dessert</a> (5)
+</li>
+	<li class="cat-item cat-item-40"><a href="http://feralkitchen.com/category/family-recipe/" title="View all posts filed under Family Recipe">Family Recipe</a> (18)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://feralkitchen.com/category/indonesian/" title="View all posts filed under Indonesian">Indonesian</a> (13)
+</li>
+	<li class="cat-item cat-item-35"><a href="http://feralkitchen.com/category/pasta/" title="View all posts filed under Pasta">Pasta</a> (1)
+</li>
+	<li class="cat-item cat-item-12"><a href="http://feralkitchen.com/category/pork/" title="View all posts filed under Pork">Pork</a> (3)
+</li>
+	<li class="cat-item cat-item-6"><a href="http://feralkitchen.com/category/poultry-eggs/" title="View all posts filed under Poultry, Eggs">Poultry, Eggs</a> (11)
+</li>
+	<li class="cat-item cat-item-33"><a href="http://feralkitchen.com/category/rice/" title="View all posts filed under Rice">Rice</a> (1)
+</li>
+	<li class="cat-item cat-item-104"><a href="http://feralkitchen.com/category/salad/" title="View all posts filed under Salad">Salad</a> (2)
+</li>
+	<li class="cat-item cat-item-11"><a href="http://feralkitchen.com/category/sandwiches/" title="View all posts filed under Sandwiches">Sandwiches</a> (4)
+</li>
+	<li class="cat-item cat-item-83"><a href="http://feralkitchen.com/category/sauce/" title="View all posts filed under Sauce">Sauce</a> (2)
+</li>
+	<li class="cat-item cat-item-14"><a href="http://feralkitchen.com/category/seafood/" title="View all posts filed under Seafood, Fish">Seafood, Fish</a> (3)
+</li>
+	<li class="cat-item cat-item-64"><a href="http://feralkitchen.com/category/soup/" title="View all posts filed under Soup">Soup</a> (6)
+</li>
+	<li class="cat-item cat-item-95"><a href="http://feralkitchen.com/category/vegetables/" title="View all posts filed under Vegetables">Vegetables</a> (5)
+</li>
+	<li class="cat-item cat-item-90"><a href="http://feralkitchen.com/category/vegetarian/" title="View all posts filed under Vegetarian">Vegetarian</a> (5)
+</li>
+		</ul>
+</li><li id="search-4" class="widget-container widget_search"><h3 class="widget-title">Search</h3><form role="search" method="get" id="searchform" action="http://feralkitchen.com/" >
+	<div><label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" value="" name="s" id="s" />
+	<input type="submit" id="searchsubmit" value="Search" />
+	</div>
+	</form></li>		<li id="recent-posts-3" class="widget-container widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+				<li><a href="http://feralkitchen.com/2011/10/16/slow-cooker-chicken-and-dumplings/" title="Slow Cooker Chicken and Dumplings">Slow Cooker Chicken and Dumplings</a></li>
+				<li><a href="http://feralkitchen.com/2011/10/16/lime-currant-cookies/" title="Lime Currant Cookies">Lime Currant Cookies</a></li>
+				<li><a href="http://feralkitchen.com/2011/10/14/vermicelli-soup-with-meatballs-vermicellisoep-met-balletjes/" title="Vermicelli Soup with Meatballs (Vermicellisoep Met Balletjes)">Vermicelli Soup with Meatballs (Vermicellisoep Met Balletjes)</a></li>
+				<li><a href="http://feralkitchen.com/2011/10/09/dark-chocolate-espresso-cookies/" title="Dark Chocolate Espresso Cookies">Dark Chocolate Espresso Cookies</a></li>
+				<li><a href="http://feralkitchen.com/2011/10/06/cranberry-oatmeal-cookies/" title="Cranberry Oatmeal Cookies">Cranberry Oatmeal Cookies</a></li>
+				</ul>
+		</li><li id="text-4" class="widget-container widget_text">			<div class="textwidget"><script type="text/javascript" src="http://feedjit.com/serve/?vv=954&amp;tft=3&amp;dd=0&amp;wid=a750c91bb0bafaf8&amp;pid=0&amp;proid=0&amp;bc=FFFFFF&amp;tc=000000&amp;brd1=012B6B&amp;lnk=135D9E&amp;hc=FFFFFF&amp;hfc=2853A8&amp;btn=C99700&amp;ww=200&amp;went=10"></script><noscript><a href="http://feedjit.com/">Feedjit Live Blog Stats</a></noscript></div>
+		</li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+		
+			</div><!-- #content-box -->
+
+	<div id="footer" role="contentinfo">
+		
+
+			<div id="footer-widget-area" role="complementary">
+
+							<div id="first" class="widget-area">
+					<ul class="xoxo">
+						<li id="archives-3" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href='http://feralkitchen.com/2011/10/' title='October 2011'>October 2011</a></li>
+	<li><a href='http://feralkitchen.com/2011/09/' title='September 2011'>September 2011</a></li>
+	<li><a href='http://feralkitchen.com/2011/08/' title='August 2011'>August 2011</a></li>
+	<li><a href='http://feralkitchen.com/2011/07/' title='July 2011'>July 2011</a></li>
+		</ul>
+</li>					</ul>
+				</div><!-- #first .widget-area -->
+			
+			
+			
+			
+			</div><!-- #footer-widget-area -->
+		<div id="colophon">
+			Theme: Coraline by <a href="http://automattic.com/">Automattic</a> <span class="generator-link"><a href="http://wordpress.org/" title="A Semantic Personal Publishing Platform" rel="generator">Proudly powered by WordPress.</a></span>
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #container -->
+
+<div id="follow" class="right"><ul class="tab down"><li class="follow"><img src="http://feralkitchen.com/wp-content/plugins/share-and-follow/images/blank.gif"  alt="follow:"/><span>follow:</span></li><li class="iconOnly"><a rel="nofollow me" target="_blank" href="http://feralkitchen.com/feed/rss/" title="RSS" ><img src="http://feralkitchen.com/wp-content/plugins/share-and-follow/images/blank.gif" height="24"  width="24" style="background: transparent url(http://feralkitchen.com/wp-content/plugins/share-and-follow/default/24/sprite-24.png) no-repeat;padding:0;margin:0;height:24px;width:24px;background-position:-1100px 0px"  alt="RSS"/> <span class="head">RSS</span></a></li></ul></div>
+<script type="text/javascript"><!--
+wpa2a.targets=[
+{title:'Slow Cooker Chicken and Dumplings',url:'http://feralkitchen.com/2011/10/16/slow-cooker-chicken-and-dumplings/'},
+{title:document.title,url:location.href}];
+wpa2a.html_done=true;if(wpa2a.script_ready&&!wpa2a.done)wpa2a.init();wpa2a.script_load();
+//--></script>
+<p id="statsbywpslimstat" style="text-align:center"><a href="http://www.duechiacchiere.it/wp-slimstat" title="A simple but powerful web analytics plugin for Wordpress"><img src="http://feralkitchen.com/wp-content/plugins/wp-slimstat/images/wp-slimstat-antipixel.png" width="80" height="15" alt="WP SlimStat"/></a></p><script type='text/javascript'>slimstat_tid='1567f';slimstat_path='http://feralkitchen.com/wp-slimstat';slimstat_blog_id='0';slimstat_session_id='a0c9f6e57d8aa92ef4141d62c6566108';</script><script type='text/javascript' src='http://feralkitchen.com/wp-content/plugins/wp-slimstat/wp-slimstat.js'></script>
+<!--stats_footer_test--><script src="http://stats.wordpress.com/e-201141.js" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({blog:'25145500',v:'ext',post:'1166'});
+var load_cmc = function(){linktracker_init(25145500,1166,2);};
+if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+else load_cmc();
+</script>
+</body>
+</html>

@@ -1,0 +1,1899 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+        <head>
+            <script type="text/javascript">
+        if (((document.domain.indexOf("smh.com.au") != -1) || (document.domain.indexOf("theage.com.au") != -1) ||
+                (document.domain.indexOf("watoday.com.au") != -1) ||
+                (document.domain.indexOf("brisbanetimes.com.au") != -1) ||
+                (document.domain.indexOf("businessday.com.au") != -1)) && (isSmartPhone()) &&
+                (document.cookie.indexOf("iphone_redirect=false") == -1)) {
+            var currentLocation = document.location.href;
+            if (currentLocation.indexOf("www.") != -1) {
+                currentLocation = currentLocation.replace("www.", "m.");
+                window.location = currentLocation;
+            }
+        }
+
+        /**
+         * Returns a <code>Boolean</code> indicating whether or not the user agent represents a smart phone.
+         *
+         * @return True if the user agent represents a smart phone; otherwise false.
+         */
+        function isSmartPhone() {
+            var userAgent = navigator.userAgent
+            return ((matchesSmartPhoneUserAgentRegularExpressions(userAgent)) &&
+                    (!matchesTabletUserAgentRegularExpressions(userAgent)));
+        }
+
+        /**
+         * Returns a <code>Boolean</code> indicating whether or not the specified user agent represents a smart phone.
+         * If any of the regular expressions are updated then they should be updated in
+         * <code>SmartPhoneHelper.java</code>.
+         *
+         * @param userAgent User agent to test.
+         * @return True if the user agent represents a smart phone; otherwise false.
+         */
+        function matchesSmartPhoneUserAgentRegularExpressions(userAgent) {
+            var smartPhoneUserAgentRegularExpressions = ["^Mozilla/5.0.*iPhone.*", "^Mozilla/5.0.*iPod.*",
+                "^Mozilla/5.0.*Android [1-2].*", "^Mozilla/5.0.*SymbianOS/9.*", "^Mozilla/5.0.*Symbian/3.*",
+                "^Mozilla/5.0.*Mobile Safari/.*5[2-3][0-9].*", ".*Dolfin/[1-2].[0-9].*"];
+            if ((userAgent) && (userAgent.length > 0)) {
+                var index = 0;
+                for (; index < smartPhoneUserAgentRegularExpressions.length; index++) {
+                    if (userAgent.match(smartPhoneUserAgentRegularExpressions[index])) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+        /**
+         * Returns a <code>Boolean</code> indicating whether or not the specified user agent represents a tablet. If any
+         * of the regular expressions are updated then they should be updated in <code>SmartPhoneHelper.java</code>.
+         *
+         * @param userAgent User agent to test.
+         * @return True if the user agent represents a tablet; otherwise false.
+         */
+        function matchesTabletUserAgentRegularExpressions(userAgent) {
+            var tableUserAgentRegularExpressions = ["^Mozilla/5.0.*iPad.*", "^Mozilla/5.0.*GT-P1000.*"];
+            if ((userAgent) && (userAgent.length > 0)) {
+                var index = 0;
+                for (; index < tableUserAgentRegularExpressions.length; index++) {
+                    if (userAgent.match(tableUserAgentRegularExpressions[index])) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+    </script>
+
+            <title>Hi Dad, it's me and I'm 65</title>
+        <meta http-equiv="content-language" content="en" />
+<meta http-equiv="imagetoolbar" content="no" />
+    <meta name="robots" content="noarchive,noodp" />
+<meta name="robots" content="ACAP allow-index" />
+<meta name="robots" content="ACAP allow-follow" />
+<meta name="robots" content="ACAP disallow-preserve" />
+<meta name="robots" content="ACAP allow-present prohibited-modification=annotation" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+<meta name="application-name" content="The Age" />
+<meta name="msapplication-tooltip" content="Open The Age" />
+<meta name="msapplication-starturl" content="http://www.theage.com.au" />
+
+    <meta name="msapplication-task" content="name=National;action-uri=http://www.theage.com.au/national;icon-uri=http://www.theage.com.au/favicon.ico;" />
+    <meta name="msapplication-task" content="name=World;action-uri=http://www.theage.com.au/world;icon-uri=http://www.theage.com.au/favicon.ico;" />
+    <meta name="msapplication-task" content="name=Sport;action-uri=http://www.theage.com.au/sport;icon-uri=http://www.theage.com.au/favicon.ico;" />
+    <meta name="msapplication-task" content="name=Weather;action-uri=http://www.theage.com.au/weather;icon-uri=http://www.theage.com.au/favicon.ico;" />
+        
+
+                <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.theage.com.au/common/media-common-1.0/css/output/common.skin.news_min.css" />
+
+            <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.theage.com.au/common/media-common-1.0/css/output/common.skin.age_min.css" />
+
+            <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.theage.com.au/common/media-common-1.0/css/output/common.skin.world_min.css" />
+
+            <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.theage.com.au/common/media-common-1.0/css/output/skin.promotions_min.css" />
+
+        <link rel="alternate stylesheet" type="text/css" media="screen" title="High contrast" href="http://resources.theage.com.au/common/media-common-1.0/css/output/common.skin.low.vision.news_min.css" />
+
+
+    </head>
+    <body class="theage world" >
+        <script type="text/javascript">
+// <![CDATA[
+	document.body.className += " scriptable";
+// ]]>
+</script>
+
+        <a class="skipLink" href="#nav">Skip to navigation</a>
+<a class="skipLink" href="#content">Skip to content</a>
+<a class="skipLink" href="http://www.theage.com.au/siteguide/accessibility">Help using this website - Accessibility statement</a>
+
+        <div class="wrap cfix">
+            <div id="adspot-1x10" class="">
+<script type="text/javascript">
+    function getAdCookie(name) {
+        var regex = new RegExp(name + "=(.*?)(; |&|$)", "gi");
+        var value = regex.exec(document.cookie);
+        if (value && value.length == 3) {
+           value = value[1];
+        } else {
+            value = "";
+        }
+        return value;
+    }
+    function getFrameDocument(fr) {
+        var doc = fr.contentWindow || fr.contentDocument;
+        if (doc && doc.document) {
+            doc = doc.document;
+        }
+        return doc;
+    }
+    function closeDoc(doc) {
+        doc.close();
+    }
+
+    function isIE()
+    {
+      return /msie/i.test(navigator.userAgent) && !/opera/i.test(navigator.userAgent);
+    }
+
+    function renderIFAd(holderID, adID, srcUrl, width, height, hash) {
+        document.dcdAdsAA.push(holderID);
+        document.getElementById(holderID).hash = hash;
+        document.dcdAdsR.push(adID);
+        document.write('<iframe id="' + adID + '" src="' + srcUrl + '" width="' + width +
+                '" height="' + height + '" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0"><\/iframe>');
+    }
+
+    function renderJIFAd(holderID, adID, srcUrl, width, height, hash) {
+        document.dcdAdsAA.push(holderID);
+        document.getElementById(holderID).hash = hash;
+        document.dcdAdsR.push(adID);
+        document.write('<iframe id="' + adID +'" src="javascript: ;" width="' + width +
+                '" height="' + height + '" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0"><\/iframe>');
+        var body = '<html><head></head><body><scr' + 'ipt src="' + srcUrl + '"></sc' + 'ript></body></html>';
+        var fr = document.getElementById(adID);
+        fr.hash = hash;
+        fr.body = body;
+        var doc = getFrameDocument(fr);
+        doc.open();
+        doc.write(body);
+        setTimeout(function() {closeDoc(getFrameDocument(document.getElementById(adID)))}, 2000);
+    }
+
+    function renderJAd(holderID, adID, srcUrl, hash) {
+        document.dcdAdsAA.push(holderID);
+        document.getElementById(holderID).hash = hash;
+        document.dcdAdsH.push(holderID);
+        document.dcdAdsI.push(adID);
+        document.dcdAdsU.push(srcUrl);
+    }
+
+    function er_showAd() {
+        var regex = new RegExp("externalReferrer=(.*?)(; |&|$)", "gi");
+        var value = regex.exec(document.cookie);
+        if (value && value.length == 3) {
+           var externalReferrer = value[1];
+           return (!FD.isInternalReferrer() || ((externalReferrer) && (externalReferrer > 0)));
+        }
+        return false;
+    }
+
+    function checkAds(checkStrings) {
+        var cs = checkStrings.split(",");
+        for (var i=0;i< document.dcdAdsAA.length; i++) {
+            var cAd = document.getElementById(document.dcdAdsAA[i]);
+            for (var j=0; j<cs.length; j++) {
+                var c = cs[j].trim();
+                if (c.length > 0 && cAd.innerHTML.indexOf(c)>0) {
+                    document.dcdAdsAI.push(cAd.hash);
+                }
+            }
+        }
+        //Check iframes
+        if (!ie && document.dcdAdsR) {
+            for (var i=0;i< document.dcdAdsR.length; i++) {
+                var fr = document.getElementById(document.dcdAdsR[i]);
+                if (fr) {
+                    var doc = getFrameDocument(fr);
+                    for (var j=0; j<cs.length; j++) {
+                        var c = cs[j].trim();
+                        if (c.length > 0 && doc.body.innerHTML.indexOf(c)>0) {
+                            document.dcdAdsAI.push(fr.hash);
+                        }
+                    }
+                }
+            }
+        }
+
+        if (document.dcdAdsAI.length > 0) {
+            var pingServerUrl = "/action/pingServerAction?i="
+            var sep = "";
+            for (var i=0;i< document.dcdAdsAI.length; i++) {
+                pingServerUrl += sep + document.dcdAdsAI[i];
+                sep = ",";
+            }
+            var xmlHttp = null;
+            try
+            {
+                xmlHttp = new XMLHttpRequest();
+            }   catch(e)             {
+                try
+                {
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHttp");
+                } catch(e) {
+                    xmlHttp = null;
+                }
+            }
+            if (xmlHttp != null) {
+                xmlHttp.open( "GET", pingServerUrl, true);
+                xmlHttp.send( null );
+            }
+        }
+    }
+
+    function initAds(log) {
+        for (var i=0;i< document.dcdAdsU.length; i++) {
+            var shadowHolder = document.getElementById("adShD" + i);
+            if (shadowHolder) {
+                while (shadowHolder.childNodes.length > 0) {
+                    var child = shadowHolder.childNodes[0];
+                    shadowHolder.removeChild(child);
+                    document.getElementById(document.dcdAdsH[i]).appendChild(child);
+                }
+            }
+        }
+        if (er_showAd()) {
+            for (var i=0;i< document.dcdAdsE.length; i++) {
+                var erAd = document.getElementById(document.dcdAdsEH[i]);
+                erAd.className = document.dcdAdsEC[i];
+                erAd.appendChild(document.dcdAdsE[i]);
+            }
+        }
+        if (log) {
+            console.log(document.igCount + "/" + document.tCount);
+        }
+    }
+
+    document.refreshAds = function rAds(adID) {
+		if (document.dcdAdsR) {
+            for (var i=0;i< document.dcdAdsR.length; i++) {
+                var fr = document.getElementById(document.dcdAdsR[i]);
+                if (fr) {
+                    if (!ie) {
+                        if (!adID || adID =="*" || fr.parentNode.id==adID ) {
+                            var doc = getFrameDocument(fr);
+                            doc.open();
+                            doc.write(fr.body);
+                            setTimeout(function() {closeDoc(getFrameDocument(document.getElementById(fr.id)))}, 2000);
+                        }
+                    } else {
+                        fr.src = fr.src;    
+                    }
+                }
+            }
+        }
+    }
+    var ie = isIE();
+    if(ie && typeof String.prototype.trim !== 'function') {
+      String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g, '');
+      }
+    }
+    document.dcdAdsH = new Array();
+    document.dcdAdsI = new Array();
+    document.dcdAdsU = new Array();
+    document.dcdAdsR = new Array();
+    document.dcdAdsEH = new Array();
+    document.dcdAdsE = new Array();
+    document.dcdAdsEC = new Array();
+    document.dcdAdsAA = new Array();
+    document.dcdAdsAI = new Array();
+
+    document.igCount = 0;
+    document.tCount = 0;
+    var dcOrd = Math.floor(100000000*Math.random());
+    document.dcAdsCParams = "";
+
+    var savValue = getAdCookie("sav");
+    if (savValue != null && savValue.length > 2) {
+        document.dcAdsCParams = savValue + ";";
+    }
+</script></div>
+            <!-- nN-whiteStrip -->
+<div class="nN-whiteStrip">
+    <ul class="linksLeft" id="nN-whiteStrip-linksLeft">
+    <li id="whiteStrip-time"><em>8:30PM</em> Wednesday Apr 06, 2011</li>
+    <li id="whiteStrip-users" class="online last">    928
+ online now</li>
+            <li class="last"><a href="http://www.theage.com.au/todays-paper" title="See today's paper">See today's paper</a></li>
+
+</ul>
+    <a class="logo" href="http://www.fairfaxdigital.com.au/" onclick="linktop(this);">Fairfax Digital</a>
+        <ul class="linksRight">
+        
+<li><a href="http://www.theage.com.au" onclick="trackCode(this, 'ws-top');">The Age</a></li>
+            <li><a href="http://www.domain.com.au/" onclick="linktop(this);">Domain</a></li>
+            <li><a href="http://www.drive.com.au/" onclick="linktop(this);">Drive</a></li>
+            <li><a href="http://mycareer.com.au/" onclick="linktop(this);">MyCareer</a></li>
+            <li><a href="http://www.rsvp.com.au/" onclick="linktop(this);">RSVP</a></li>
+            <li><a href="https://membercentre.fairfax.com.au/NewsletterSubscription.aspx" onclick="linktop(this);">Newsletters</a></li>
+            <li class="hasDropdown last"><a href="javascript:;">More</a>
+                <ul>
+                        <li><a href="http://www.essentialbaby.com.au/" onclick="linktop(this);">Essential Baby</a></li>
+                        <li><a href="http://www.stayz.com.au/" onclick="linktop(this);">Stayz</a></li>
+                        <li><a href="http://www.investsmart.com.au/" onclick="linktop(this);">InvestSMART</a></li>
+                        <li><a href="http://www.tradingroom.com.au" onclick="linktop(this);">Trading Room</a></li>
+                        <li><a href="http://www.weatherzone.com.au/" onclick="linktop(this);">Weatherzone</a></li>
+                    <li class="last"><a onclick="linktop(this);" href="http://www.fairfax.com.au/">More sites &raquo;</a></li>
+                </ul>
+            </li>
+    </ul>
+
+</div>
+<!-- End: nN-whiteStrip -->
+
+
+<!-- Header (class according to new HTML5 element 'header'; was 'masthead') (scope: network-wide) -->
+<div class="header span-24">
+    <div id="adspot-728x90,468x60-pos-1" class="ad">
+        <script>
+            renderJAd("adspot-728x90,468x60-pos-1", "dcAd-2", 'http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;pos=1;' + document.dcAdsCParams +'sz=728x90,468x60;tile=2;ord=' + dcOrd + '?', -2012795292);
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.news/world;cat=world;ctype=article;pos=1;sz=728x90,468x60;tile=2;ord=8.8589384E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.news/world;cat=world;ctype=article;pos=1;sz=728x90,468x60;tile=2;ord=8.8589384E7?' border="0" alt="">
+            </a>
+        </noscript>
+</div>
+    <p class="mh-logo"><a href="http://www.theage.com.au" title="The Age">The Age</a></p>
+            <h2><a href="http://www.theage.com.au/world" title="World">World</a></h2>
+        <!-- Navigation (scope: network-wide) -->
+    <ul id="nav" role="navigation" >
+
+
+        
+
+
+
+
+
+
+
+                <li>
+                    <a href="http://www.theage.com.au/national/multimedia" title="Multimedia">Multimedia</a>
+
+
+                    </li>
+
+
+
+
+
+
+
+
+                <li>
+                    <a href="http://www.theage.com.au/national/photography" title="Photos">Photos</a>
+
+
+                    </li>
+
+
+
+
+
+
+
+
+                <li>
+                    <a href="http://www.theage.com.au/investigations" title="Investigations">Investigations</a>
+
+
+                    </li>
+
+
+
+
+
+
+
+
+                <li>
+                    <a href="http://www.theage.com.au/oddspot" title="OddSpot">OddSpot</a>
+
+
+                    </li>
+
+
+
+
+
+
+
+
+                <li>
+                    <a href="http://www.theage.com.au/blogs" title="Blog Central">Blog Central</a>
+
+
+                    </li>
+
+
+    </ul>
+    <!-- End module Navigation -->
+
+        <p class="breadcrumb">
+        <span>You are here:</span>
+                <a href="http://www.theage.com.au">
+            Home
+                </a>
+                <a href="http://www.theage.com.au/world">
+            World
+                </a>
+                <a href="http://www.theage.com.au/world/hi-dad-its-me-and-im-65-20100903-14ubj.html">
+            Article
+                </a>
+    </p>
+
+        <div class="cN-searchBox cfix">
+    <form action="http://www.theage.com.au/execute_search.html" method="get">
+        <h2>Search age:</h2>
+        <label for="search">
+            <input type="text" name="text" id="search" value='Search here...' onfocus="this.value='';" />
+        </label>
+        <h3>Search in:</h3>
+        <ul id="ddown" class="ddown">
+            <li><a class="selected" href="#">theage.com.au</a>
+                <div class="srch-wrap">
+					<div></div>
+                    <ul class="cfix">
+                            <li class="first"><a href="#">theage.com.au</a></li>
+                            <li><a href="#">Web</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <input type="hidden" name="ss" value="theage.com.au" />
+        <input type="submit" class="btnSubmit" value="Search" />
+    </form>
+    </div>
+
+</div>
+<!-- End component: Header -->
+
+            
+            
+            <div id="adspot-940x20-pos-1" class="ad adPageTop">
+</div>            
+            <div id="content" class="span-16">
+                <h1 class="cN-headingPage prepend-5 span-11 last">
+                    Hi Dad, it's me and I'm 65
+                </h1>
+                <div class="push-0 span-11 last">
+                        <!-- cT-storyDetails -->
+<div class="cT-storyDetails cfix">
+            <h5>
+                Henry Samuel, Paris
+            </h5>
+    <cite>September 4, 2010</cite>
+    <ul>
+    
+    </ul>
+</div>
+<div class="ad adSpot-textBox" id="googleAds">
+</div>
+<BOD>
+    <div class="articleBody">
+                
+            <p>THE son of a former American soldier who had an affair with a French farmer's daughter during World War II has finally tracked down his father in Texas after 60 years.</p>
+            <p>Michel Frett, 65, a retired Peugeot employee, had almost given up hope of finding his father, who had fought in the Vosges region of eastern France in 1944.</p>
+            <p>At one stage, William Francis Benson's regiment was stationed near a French farm in the area, where he had a brief encounter with Gabrielle, the farmer's daughter.</p>
+                <div id="adspot-300x250-pos-3" class="hidden">
+                    <small>Advertisement: Story continues below</small>
+                <script type="text/javascript">
+                    var erA = document.createElement('iframe');
+                    erA.setAttribute("id", "dcAd-1-4");
+                    erA.setAttribute("src", "http://ad-apac.doubleclick.net/adi/onl.age.news/world;cat=world;ctype=article;pos=3;" + document.dcAdsCParams +"sz=300x250;tile=4;ord=" + dcOrd + "?");
+                    erA.setAttribute("width", "300");
+                    erA.setAttribute("height", "250");
+                    erA.setAttribute("scrolling", "no");
+                    erA.setAttribute("marginheight", "0");
+                    erA.setAttribute("marginwidth", "0");
+                    erA.setAttribute("allowtransparency", "true");
+                    erA.setAttribute("frameborder", "0");
+                    erA.frameBorder = 0;
+                    document.dcdAdsE.push(erA);
+                    document.dcdAdsEH.push("adspot-300x250-pos-3");
+                    document.dcdAdsEC.push("ad adCentred");
+                    document.dcdAdsR.push("dcAd-1-4");
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-4" src="http://ad-apac.doubleclick.net/adi/onl.age.news/world;cat=world;ctype=article;pos=3;sz=300x250;tile=4;ord=8.8589384E7?"
+                        width='300'
+                        height='250'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+</div>
+            <p>He returned home leaving no address, and with no idea that Gabrielle had become pregnant.</p>
+            <p>Mr Frett's mother remembered that his military identity plate read ''Bill Benson, Corsicana, Texas''. Aged 10, Mr Frett sent a letter with only those words as an address, and which read: ''I've known that I have an American dad since I was very young. I would like to meet him.'' His letter received no response.</p>
+            <p>After years of fruitless searches, he gave an interview to a local French newspaper in June recounting his wish to meet his father.</p>
+            <p>A Frenchwoman who had been to Miami 10 years earlier read the article and decided to help.</p>
+            <p>She contacted the war veterans' society and even the Pentagon, but with no luck. Then, finally, she tracked down a court clerk in Austin, Texas, who knew a Rebecca Benson, who turned out to be Mr Benson's daughter.</p>
+            <p>Ms Benson said that her father was still alive, but remained guarded about the possibility that he had a half-French son, and asked for him to undergo a DNA test.</p>
+            <p>However, when she received a photo of her half-brother, she realised he was the image of her father.</p>
+            <p>The next week Mr Frett took a plane to Texas to Mr Benson's retirement home.</p>
+            <p>On his arrival Mr Benson looked into his eyes for a minute, then exclaimed: ''OK. This one is a Benson.'' </p>
+            <p>TELEGRAPH</p>
+            <p />
+    </div>
+    <!-- articleBody -->
+</BOD>
+
+
+
+
+
+
+
+                    
+                    <div id="moreGoogleAds" class="ad adSpot-textBox"></div><!-- id:moreGoogleAds -->
+                    
+                    
+                </div><!-- class:push-0 span-11 last -->
+                <div class="sidebar span-5">
+                    
+                    <div class="cT-socialCommenting accessibleSocialComment">
+        <h3>Join the conversation</h3>
+        <p class="tellFriends">
+            You're the only person reading this now.
+            <a href="javascript:;">Tell your friends</a>
+        </p>
+        <ul>
+            <li class="facebook"><a href="http://www.facebook.com/share.php?u=http://www.theage.com.au/world/hi-dad-its-me-and-im-65-20100903-14ubj.html" rel="nofollow" data-facebookSocialLink="true" data-assetUrl="http://www.theage.com.au/world/hi-dad-its-me-and-im-65-20100903-14ubj.html">Add to Facebook</a></li>
+            <li class="email"><a href="/action/emailToFriend?id=1905535" title="Email to a friend" rel="nofollow" data-emailSocialLink="true" data-emailUrl="/action/emailToFriend?id=1905535">Email this story</a></li>
+        </ul>
+        <p class="twitter">
+            <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="theage">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+        </p>
+</div>
+                    <div id="emptyAdspot-180x150"></div>
+                    
+                    
+                            <div class="cN-linkList">
+        <h3>Top World articles</h3>
+        <ol>
+                    <li class="first">
+                <a href="http://www.theage.com.au/world/loudmouth-singer-set-to-rule-haiti-20110405-1d2tv.html" title="Loud-mouth singer set to rule Haiti" style="">Loud-mouth singer set to rule Haiti</a>
+                </li>
+                    <li>
+                <a href="http://www.theage.com.au/world/two-held-in-uk-phonehacking-probe-20110406-1d33k.html" title="Two held in UK phone-hacking probe" style="">Two held in UK phone-hacking probe</a>
+                </li>
+                    <li>
+                <a href="http://www.theage.com.au/world/berlusconi-to-stay-away-as-underage-sex-trial-begins-in-milan-20110405-1d2u8.html" title="Berlusconi to stay away as under-age sex trial begins in Milan" style="">Berlusconi to stay away as under-age sex trial begins in Milan</a>
+                </li>
+                    <li>
+                <a href="http://www.theage.com.au/world/porter-puts-cleaner-in-students-soup-chef-20110405-1d2v6.html" title="Porter puts cleaner in students' soup: chef" style="">Porter puts cleaner in students' soup: chef</a>
+                </li>
+                    <li>
+                <a href="http://www.theage.com.au/world/police-find-more-bodies-20110405-1d2tt.html" title="Police find more bodies" style="">Police find more bodies</a>
+                </li>
+                <li class="last"><a href="http://www.theage.com.au/world">More World articles</a></li>
+        </ol>
+    </div>
+
+
+
+                    
+                        
+                    <div class="cT-storyTools cfix">
+	<h3 class="cT-strapHeading">Story Tools</h3>
+    <ul class="accessibleStoryTools">
+        <li class="facebook"><a href="http://www.facebook.com/share.php?u=http://www.theage.com.au/world/hi-dad-its-me-and-im-65-20100903-14ubj.html" rel="nofollow" data-facebookSocialLink="true" data-assetUrl="http://www.theage.com.au/world/hi-dad-its-me-and-im-65-20100903-14ubj.html">Share on Facebook</a></li>
+		<li class="email"><a href="/action/emailToFriend?id=1905535" title="Email to a friend" rel="nofollow" data-emailSocialLink="true" data-emailUrl="/action/emailToFriend?id=1905535">Email this story</a></li>
+		<li class="print"><a href="/action/printArticle?id=1905535" title="Print this story" rel="nofollow" data-printSocialLink="true" data-printUrl="/action/printArticle?id=1905535">Print this story</a></li>
+	</ul>
+    <div id="adspot-180x44" class="ad">
+        <script>
+            renderJAd("adspot-180x44", "dcAd-5", 'http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;' + document.dcAdsCParams +'sz=180x44;tile=5;ord=' + dcOrd + '?', 1860452779);
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.news/world;cat=world;ctype=article;sz=180x44;tile=5;ord=8.8589384E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.news/world;cat=world;ctype=article;sz=180x44;tile=5;ord=8.8589384E7?' border="0" alt="">
+            </a>
+        </noscript>
+</div>
+</div><!-- class:cT-storyTools cfix -->
+                    <div class="cT-storyTools cfix">
+    <h3 class="cT-strapHeading">The Age Jobs</h3>
+    <div data-jobsBrand="age" data-jobsSkew="generic">
+        <div id="adspot-180x60-pos-1" class="ad">
+        <script>
+            renderJAd("adspot-180x60-pos-1", "dcAd-6", 'http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;pos=1;' + document.dcAdsCParams +'sz=180x60;tile=6;ord=' + dcOrd + '?', -1949249775);
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.news/world;cat=world;ctype=article;pos=1;sz=180x60;tile=6;ord=8.8589384E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.news/world;cat=world;ctype=article;pos=1;sz=180x60;tile=6;ord=8.8589384E7?' border="0" alt="">
+            </a>
+        </noscript>
+</div>
+        <div id="adspot-180x60-pos-2" class="ad">
+        <script>
+            renderJAd("adspot-180x60-pos-2", "dcAd-7", 'http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;pos=2;' + document.dcAdsCParams +'sz=180x60;tile=7;ord=' + dcOrd + '?', 1501245681);
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.news/world;cat=world;ctype=article;pos=2;sz=180x60;tile=7;ord=8.8589384E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.news/world;cat=world;ctype=article;pos=2;sz=180x60;tile=7;ord=8.8589384E7?' border="0" alt="">
+            </a>
+        </noscript>
+</div>
+        <div id="adspot-180x60-pos-3" class="ad">
+        <script>
+            renderJAd("adspot-180x60-pos-3", "dcAd-8", 'http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;pos=3;' + document.dcAdsCParams +'sz=180x60;tile=8;ord=' + dcOrd + '?', 656773841);
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.news/world;cat=world;ctype=article;pos=3;sz=180x60;tile=8;ord=8.8589384E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.news/world;cat=world;ctype=article;pos=3;sz=180x60;tile=8;ord=8.8589384E7?' border="0" alt="">
+            </a>
+        </noscript>
+</div>
+        <div id="adspot-180x60-pos-4" class="ad">
+        <script>
+            renderJAd("adspot-180x60-pos-4", "dcAd-9", 'http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;pos=4;' + document.dcAdsCParams +'sz=180x60;tile=9;ord=' + dcOrd + '?', -187697999);
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.news/world;cat=world;ctype=article;pos=4;sz=180x60;tile=9;ord=8.8589384E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.news/world;cat=world;ctype=article;pos=4;sz=180x60;tile=9;ord=8.8589384E7?' border="0" alt="">
+            </a>
+        </noscript>
+</div>
+        <div id="adspot-180x85" class="ad">
+        <script>
+            renderJAd("adspot-180x85", "dcAd-10", 'http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;' + document.dcAdsCParams +'sz=180x85;tile=10;ord=' + dcOrd + '?', -1249894470);
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.news/world;cat=world;ctype=article;sz=180x85;tile=10;ord=8.8589384E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.news/world;cat=world;ctype=article;sz=180x85;tile=10;ord=8.8589384E7?' border="0" alt="">
+            </a>
+        </noscript>
+</div>
+    </div>
+</div><!-- class:cT-storyTools cfix -->
+                </div><!-- class:sidebar span-5 -->
+                <div class="span-16 last">
+                    
+                    
+                    
+                    
+                </div><!-- class:span-16 last -->
+            </div><!-- id:content -->
+            <div class="aside span-8 last">
+                
+                <div id="adspot-300x600,300x250-pos-1" class="ad">
+            <small>Advertisement</small>
+        <script>
+            renderJAd("adspot-300x600,300x250-pos-1", "dcAd-11", 'http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;pos=1;' + document.dcAdsCParams +'sz=300x600,300x250;tile=11;ord=' + dcOrd + '?', -857673495);
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.news/world;cat=world;ctype=article;pos=1;sz=300x600,300x250;tile=11;ord=8.8589384E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.news/world;cat=world;ctype=article;pos=1;sz=300x600,300x250;tile=11;ord=8.8589384E7?' border="0" alt="">
+            </a>
+        </noscript>
+</div>
+                <!--@List: shared: false name: The Age World Content Page RHS Text List -->
+<!--/@List-->
+                    <!-- cN-tabBox -->
+    <!-- UI NOTE: Javascript requires ids on the <ul> and all <li>.
+                  If JS is enabled it removes the 'accessibleTab' class.
+                  If JS is disabled style in an accessible way using that class.
+    -->
+    <ul id="cN-tabBox1" class="cN-tabBox accessibleTab cS-latestArticlesVideos">
+            <li class="tab1  selected">
+                <h4><a href="#">Latest Video</a></h4><!--TODO change this from H4 as it conficts with video headline-->
+                <div class="cfix">
+        <div class="cS-latestVideo">
+        <h3>World News Video <a href="http://media.theage.com.au/world/world-news">More video</a></h3>
+        <div class="media-video" id="video-player-latest">
+            <div id="video-player-latest-player" class="videoWrap">
+                    <a href="http://media.theage.com.au/world/world-news/libyan-rebel-forces-recruit-trainees-2291228.html" class="play-video" title="Libyan rebel forces recruit trainees">
+        <img src="http://images.theage.com.au/2011/04/06/2291227/75820_widenative-408x264.jpg" width="300" height="170" alt="Thumbnail image for video asset."/>
+            <span class="size-lrg">
+                    Click to play video
+            </span>
+    </a>
+
+            </div><!-- id:video-player-latest-player -->
+            <div class="fdVideoWof accessibleWof">
+                <h4>Libyan rebel forces recruit trainees</h4>
+                <p>Libyan rebel forces are training new recruits in hope of increasing their numbers against Muammar Gaddafi's troops.</p>
+            </div><!-- class:fdVideoWof accessibleWof -->
+            <ul class="span-5">
+                    <li>
+                                <a class="play-video" href="http://media.theage.com.au/world/world-news/goat-carcass-sport-thrive-in-tajikistan-2291531.html" title="Goat carcass sport thrive in Tajikistan"><img src="http://images.theage.com.au/2011/04/06/2291530/75832_widenative-92x52.jpg" width="92" height="52" alt="Thumbnail image for video asset." /><span class="size-sml">Click to play video</span></a>
+
+                        <p><a href="http://media.theage.com.au/world/world-news/goat-carcass-sport-thrive-in-tajikistan-2291531.html">Goat carcass sport thrive in Tajikistan</a></p>
+                    </li>
+                    <li>
+                                <a class="play-video" href="http://media.theage.com.au/world/world-news/us-government-shutdown-nears-2291236.html" title="US government shutdown nears"><img src="http://images.theage.com.au/2011/04/06/2291235/75822_widenative-92x52.jpg" width="92" height="52" alt="Thumbnail image for video asset." /><span class="size-sml">Click to play video</span></a>
+
+                        <p><a href="http://media.theage.com.au/world/world-news/us-government-shutdown-nears-2291236.html">US government shutdown nears</a></p>
+                    </li>
+                    <li>
+                                <a class="play-video" href="http://media.theage.com.au/world/world-news/uk-seeks-fresh-start-with-pakistan-2291232.html" title="UK seeks fresh start with Pakistan"><img src="http://images.theage.com.au/2011/04/06/2291231/75819_widenative-92x52.jpg" width="92" height="52" alt="Thumbnail image for video asset." /><span class="size-sml">Click to play video</span></a>
+
+                        <p><a href="http://media.theage.com.au/world/world-news/uk-seeks-fresh-start-with-pakistan-2291232.html">UK seeks fresh start with Pakistan</a></p>
+                    </li>
+            </ul>
+        </div><!-- id:video-player-latest -->
+    </div><!-- class:cS-latestVideo -->
+
+</div><!-- class:cfix -->
+            </li>
+    </ul>
+
+<div id="adspot-300x125" class="ad">
+            <small>Advertisement</small>
+        <script>
+            renderJAd("adspot-300x125", "dcAd-12", 'http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;' + document.dcAdsCParams +'sz=300x125;tile=12;ord=' + dcOrd + '?', 594710809);
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.news/world;cat=world;ctype=article;sz=300x125;tile=12;ord=8.8589384E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.news/world;cat=world;ctype=article;sz=300x125;tile=12;ord=8.8589384E7?' border="0" alt="">
+            </a>
+        </noscript>
+</div>
+
+
+                <div id="adspot-149x170" class="ad adSpot-twin cfix">
+                    <small>Featured advertisers</small>
+                <script type="text/javascript">
+                    if (ie) {
+                        renderIFAd("adspot-149x170", "dcAd-1-13", "http://ad-apac.doubleclick.net/adi/onl.age.news/world;cat=world;ctype=article;" + document.dcAdsCParams + "pos=1;sz=149x170;tile=13;ord=" + dcOrd + "?", 149, 170, 2061390957);
+                    } else {
+                        renderJIFAd("adspot-149x170","dcAd-1-13", "http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;" + document.dcAdsCParams + "pos=1;sz=149x170;tile=13;ord=" + dcOrd + "?", 149, 170, 2061390957);
+                    }
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-13" src="http://ad-apac.doubleclick.net/adi/onl.age.news/world;cat=world;ctype=article;pos=1;sz=149x170;tile=13;ord=8.8589384E7?"
+                        width='149'
+                        height='170'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+                <script type="text/javascript">
+                    if (ie) {
+                        renderIFAd("adspot-149x170", "dcAd-2-14", "http://ad-apac.doubleclick.net/adi/onl.age.news/world;cat=world;ctype=article;" + document.dcAdsCParams + "pos=2;sz=149x170;tile=14;ord=" + dcOrd + "?", 149, 170, -2022225395);
+                    } else {
+                        renderJIFAd("adspot-149x170","dcAd-2-14", "http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;" + document.dcAdsCParams + "pos=2;sz=149x170;tile=14;ord=" + dcOrd + "?", 149, 170, -2022225395);
+                    }
+                </script>
+            <noscript>
+                <iframe id="dcAd-2-14" src="http://ad-apac.doubleclick.net/adi/onl.age.news/world;cat=world;ctype=article;pos=2;sz=149x170;tile=14;ord=8.8589384E7?"
+                        width='149'
+                        height='170'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+</div>
+                <!-- START digihub js  -->
+<script type="text/javascript">//<![CDATA[
+	// source: http://snippets.dzone.com/posts/show/2630
+	function removeClass(objElement, strClass) {
+	   // if there is a class
+	   if ( objElement.className ) {
+		  // the classes are just a space separated list, so first get the list
+		  var arrList = objElement.className.split(' ');
+		  // get uppercase class for comparison purposes
+		  var strClassUpper = strClass.toUpperCase();
+		  // find all instances and remove them
+		  for ( var i = 0; i < arrList.length; i++ ) {
+			 // if class found
+			 if ( arrList[i].toUpperCase() == strClassUpper ) {
+				// remove array item
+				arrList.splice(i, 1);
+				// decrement loop counter as we have adjusted the array's contents
+				i--;
+			 }
+		  }
+		  // assign modified class name attribute
+		  objElement.className = arrList.join(' ');
+	   }
+	}
+
+
+	function get_random_number(elemsLength) {
+	  var number = parseInt(elemsLength);
+	  var ranNum= Math.floor(Math.random()*number);
+	  return ranNum;
+	}
+	
+	function random_select(ulID, classname) {
+	  var elems = select_child_elements_by_classname(ulID, classname);
+	  var whichElem = get_random_number(elems.length);
+	  for(var i = 0; i < elems.length; i++) {
+//		elems[i].className.replace(/selected$/, '');
+		removeClass(elems[i], "selected"); 		// UI NOTE: Replaced with function due to malfunction of 'replace' method
+	  }
+	  elems[whichElem].className += ' selected';
+	}
+	
+	function select_child_elements_by_classname(ulID, classname) {
+	  var ulEl = document.getElementById(ulID);
+	  var elemsarr = ulEl.getElementsByTagName('li');
+	  var elems = Array();
+	  for(var i = 0; i < elemsarr.length; i++){
+		if (elemsarr[i].className.match(classname)) {
+		  elems.push(elemsarr[i]);
+		}
+	  }
+	  return elems;
+	}
+	
+	function navigateSmallDigihubBlock(ulID, prev, next) {
+	  var selectedSet = false;
+	  var nextEl = '';
+	  var elems = select_child_elements_by_classname(ulID, 'tab');
+	  while (selectedSet == false) {
+		for(var i = 0; i < elems.length; i++){
+		  var class_array = elems[i].className.split(' ');
+		  if (class_array[1] == 'selected') {
+			elems[i].className = class_array[0];
+			if (prev == true) {
+			  var nextEl = i-1;
+			  if (nextEl == -1) {
+				nextEl = elems.length - 1;
+			  }
+			}
+			if (next == true) {
+			  var nextEl = i+1;
+			  if (nextEl == elems.length) {
+				nextEl = 0;
+			  }
+			}
+		  }
+		  if (i === nextEl) {
+			elems[i].className += ' selected';
+			selectedSet = true;
+			break;
+		  }
+		}
+	  }
+	}
+	
+	window.onload = function() {
+          var dh = $("digiHub");
+          if (dh) {
+	    dh.className.replace(/accessibleTab$/, '');
+          }
+
+
+	  random_select('digiHub', 'tab');
+	  interval = setInterval("navigateSmallDigihubBlock('digiHub', false, true)", 7500 );
+	};
+//]]></script>
+<!-- END digihub js  -->
+
+
+<!-- START digihub external_export_small  -->
+<ul id="digiHub" class="digiHub cN-tabBox smallDigiHubTabBox accessibleTab">
+  <li class="tab1 selected">
+    <h4><a href="javascript:;">Blogs</a></h4>
+    <div class="cfix">
+      <h3>Latest Blogs</h3>
+      <div class="wof first">
+        <h5><a href="http://digihub.theage.com.au/node/2032">Are you a fan of the "Coffice"?</a></h5>
+        <p><cite>April 5th</cite> How much time do you spend working in cafes?
+
+The idea of  ...</p>
+      </div>
+      <div class="lastDiv cfix">
+        <a href="http://digihub.theage.com.au/blog" class="more">More blogs</a>
+        <span><a href="javascript:;" class="prev" onclick="navigateSmallDigihubBlock('digiHub', true, false);">&laquo; Prev</a> | <a href="javascript:;" class="next" onclick="navigateSmallDigihubBlock('digiHub', false, true);">Next &raquo;</a></span>
+      </div>
+    </div>
+  </li>
+  <li class="tab2">
+    <h4><a href="javascript:;">Comments</a></h4>
+    <div class="cfix">
+      <h3>Latest Comments</h3>
+      <ul>
+        <li><h5><a href="http://digihub.theage.com.au/node/1367">Is Bing better than Google?</a></h5>
+            I am being slowly won over to the Bing camp. 
+
+One new feature  ...        </li>
+      </ul>
+      <div class="lastDiv cfix">
+        <a href="http://digihub.theage.com.au/forum" class="more">More comments</a>
+        <span><a href="javascript:;" class="prev" onclick="navigateSmallDigihubBlock('digiHub', true, false);">&laquo; Prev</a> | <a href="javascript:;" class="next" onclick="navigateSmallDigihubBlock('digiHub', false, true);">Next &raquo;</a></span>
+      </div>
+    </div>
+  </li>
+  <li class="tab3">
+    <h4><a href="javascript:;">Latest</a></h4>
+    <div class="cfix">
+      <h3>Featured Products</h3>
+      <div class="cfix">
+        <h5><a href="http://digihub.theage.com.au/node/1959">U36JC</a></h5>
+        <a href="http://digihub.theage.com.au/node/1959"><img src="http://www.theage.com.au/images/files/products/thumbnails/U36JC 90.jpg" width="90" height="60" alt="U36JC" /></a>
+        <p>The first 19mm thin laptop with Intel standard voltage CPU in the world
+
+Ultra  ...</p>
+      </div>
+      <div class="lastDiv cfix">
+        <a href="http://digihub.theage.com.au/products" class="more">More products</a>
+        <span><a href="javascript:;" class="prev" onclick="navigateSmallDigihubBlock('digiHub', true, false);">&laquo; Prev</a> | <a href="javascript:;" class="next" onclick="navigateSmallDigihubBlock('digiHub', false, true);">Next &raquo;</a></span>
+      </div>
+    </div>
+  </li>
+  <li class="tab4">
+    <h4><a href="javascript:;">News</a></h4>
+    <div class="cfix">
+      <h3>Latest News</h3>
+      <div class="wof first">
+
+        <h5><a href="http://digihub.theage.com.au/node/1999">Intel Teams with will.i.am, Black Eyed Peas  ...</a></h5>
+        <p><cite>February 2nd</cite>  He’s best known for being a multi-platinum music  ...</p>
+      </div>
+      <div class="lastDiv cfix">
+        <a href="http://digihub.theage.com.au/news" class="more">More news</a>
+        <span><a href="javascript:;" class="prev" onclick="navigateSmallDigihubBlock('digiHub', true, false);">&laquo; Prev</a> | <a href="javascript:;" class="next" onclick="navigateSmallDigihubBlock('digiHub', false, true);">Next &raquo;</a></span>
+
+      </div>
+    </div>
+  </li>
+</ul>
+<!-- END digihub external_export_small  -->
+
+
+
+
+<h3 class="cN-headerRich headerMozo">Special offers <span id="adSpot-sponsor2" class="ad"><a href="http://mozo.com.au/">Powered by Mozo</a></span></h3>
+<iframe src="http://mozo-widgets.f2.com.au/widgets/multiwidget3/TA/FM-NEWS" width="300" height="257" class="iframeMozo" scrolling="no" frameborder="0">
+    <!-- UI NOTE: Make iframed content accessible: -->
+    <a href="http://mozo-widgets.f2.com.au/widgets/multiwidget3/TA/FM-NEWS">View these special offers by Mozo.</a>
+</iframe>
+
+
+                <div id="adspot-295x60" class="ad ">
+                    <small>Sponsored links</small>
+                <script type="text/javascript">
+                    if (ie) {
+                        renderIFAd("adspot-295x60", "dcAd-1-15", "http://ad-apac.doubleclick.net/adi/onl.age.news/world;cat=world;ctype=article;" + document.dcAdsCParams + "pos=1;sz=295x60;tile=15;ord=" + dcOrd + "?", 295, 60, -515914577);
+                    } else {
+                        renderJIFAd("adspot-295x60","dcAd-1-15", "http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;" + document.dcAdsCParams + "pos=1;sz=295x60;tile=15;ord=" + dcOrd + "?", 295, 60, -515914577);
+                    }
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-15" src="http://ad-apac.doubleclick.net/adi/onl.age.news/world;cat=world;ctype=article;pos=1;sz=295x60;tile=15;ord=8.8589384E7?"
+                        width='295'
+                        height='60'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+                <script type="text/javascript">
+                    if (ie) {
+                        renderIFAd("adspot-295x60", "dcAd-2-16", "http://ad-apac.doubleclick.net/adi/onl.age.news/world;cat=world;ctype=article;" + document.dcAdsCParams + "pos=2;sz=295x60;tile=16;ord=" + dcOrd + "?", 295, 60, -924738771);
+                    } else {
+                        renderJIFAd("adspot-295x60","dcAd-2-16", "http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;" + document.dcAdsCParams + "pos=2;sz=295x60;tile=16;ord=" + dcOrd + "?", 295, 60, -924738771);
+                    }
+                </script>
+            <noscript>
+                <iframe id="dcAd-2-16" src="http://ad-apac.doubleclick.net/adi/onl.age.news/world;cat=world;ctype=article;pos=2;sz=295x60;tile=16;ord=8.8589384E7?"
+                        width='295'
+                        height='60'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+                <script type="text/javascript">
+                    if (ie) {
+                        renderIFAd("adspot-295x60", "dcAd-3-17", "http://ad-apac.doubleclick.net/adi/onl.age.news/world;cat=world;ctype=article;" + document.dcAdsCParams + "pos=3;sz=295x60;tile=17;ord=" + dcOrd + "?", 295, 60, -1333562965);
+                    } else {
+                        renderJIFAd("adspot-295x60","dcAd-3-17", "http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;" + document.dcAdsCParams + "pos=3;sz=295x60;tile=17;ord=" + dcOrd + "?", 295, 60, -1333562965);
+                    }
+                </script>
+            <noscript>
+                <iframe id="dcAd-3-17" src="http://ad-apac.doubleclick.net/adi/onl.age.news/world;cat=world;ctype=article;pos=3;sz=295x60;tile=17;ord=8.8589384E7?"
+                        width='295'
+                        height='60'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+</div>
+                <div id="adspot-1x4" class="ad">
+                    <small>Advertisement</small>
+                <script type="text/javascript">
+                    if (ie) {
+                        renderIFAd("adspot-1x4", "dcAd-1-18", "http://ad-apac.doubleclick.net/adi/onl.age.news/world;cat=world;ctype=article;" + document.dcAdsCParams + "sz=1x4;tile=18;ord=" + dcOrd + "?", 300, 150, -1392763594);
+                    } else {
+                        renderJIFAd("adspot-1x4","dcAd-1-18", "http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;" + document.dcAdsCParams + "sz=1x4;tile=18;ord=" + dcOrd + "?", 300, 150, -1392763594);
+                    }
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-18" src="http://ad-apac.doubleclick.net/adi/onl.age.news/world;cat=world;ctype=article;sz=1x4;tile=18;ord=8.8589384E7?"
+                        width='300'
+                        height='150'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+</div>
+                <div id="adspot-300x250-pos-2" class="ad">
+                    <small>Advertisement</small>
+                <script type="text/javascript">
+                    if (ie) {
+                        renderIFAd("adspot-300x250-pos-2", "dcAd-1-19", "http://ad-apac.doubleclick.net/adi/onl.age.news/world;cat=world;ctype=article;pos=2;" + document.dcAdsCParams + "sz=300x250;tile=19;ord=" + dcOrd + "?", 300, 250, -800487768);
+                    } else {
+                        renderJIFAd("adspot-300x250-pos-2","dcAd-1-19", "http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;pos=2;" + document.dcAdsCParams + "sz=300x250;tile=19;ord=" + dcOrd + "?", 300, 250, -800487768);
+                    }
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-19" src="http://ad-apac.doubleclick.net/adi/onl.age.news/world;cat=world;ctype=article;pos=2;sz=300x250;tile=19;ord=8.8589384E7?"
+                        width='300'
+                        height='250'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+</div>
+                
+                
+            </div>
+            <!-- Footer fN-footerNetwork (class according to new HTML5 element 'footer'; scope: network-wide) -->
+<div class="footer span-24">
+    
+    <script type="text/javascript">
+    function trackOmnitureClick(anchor, identifier, trackInTransit) {
+        var hash = "";
+        var hashIndex = anchor.href.indexOf("#");
+        if (hashIndex > -1) {
+            hash = anchor.href.substring(hashIndex);
+            anchor.href = anchor.href.substring(0, hashIndex);
+        }
+        if (anchor.href.indexOf("s_rid") > -1) {
+            // Remove any s_rid's
+            anchor.href = anchor.href.replace(/[\??|&?]s_rid=(.*)/i, "");
+        }
+        if (anchor.href.indexOf("s_cid") > -1) {
+            // Strip any s_cid's
+            anchor.href = anchor.href.replace(/[\??|&?]s_cid=(.*)/i, "");
+        }
+        var query = (anchor.href.indexOf("?") > -1) ? "&" : "?";
+        anchor.href += query + "s_rid=" + identifier;
+        if (hashIndex > -1) {
+            anchor.href += hash;
+        }
+        if (trackInTransit) {
+            var s = s_gi(s_account);
+            s.usePlugins = false;
+            s.linkTrackVars = 'eVar10';
+            s.eVar10 = s.getValOnce(identifier, "s_eVar10", 0);
+            s.tl(anchor, 'o', 'trackOmnitureClick');
+            s.usePlugins = true;
+        }
+        return true;
+    }
+</script>
+
+<div class="c5 classifieds cfix">
+
+                  <div class="s1 cDomain">
+                      <h2><a title="Real Estate" onclick="trackOmnitureClick(this,'age:rainbowstrip:box1:campaign2:label:cre_rainbow');" href="http://www.domain.com.au">Real Estate</a></h2>
+                                <div class="puff">
+                                        <a href="http://www.commercialrealestate.com.au" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:content1:06-04:cre_rainbow');" ><img src="http://images.theage.com.au/2011/04/06/2290482/cre_rainbow-172x115.jpg" width="172" alt="Invest in commercial real estate"/></a>
+
+                                    <h5><a href="http://www.commercialrealestate.com.au" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:box1:campaign2:content2:06-04:cre_rainbow:investincommercialrealestate');" title="investincommercialrealestate">Invest in commercial real estate</a></h5>
+                                </div>
+                                <ul>
+                                    <li class="lDomain"><a href="http://www.domain.com.au" onclick="trackOmnitureClick(this,'age:rainbowstrip:box1:campaign2:logo:06-04:cre_rainbow');">Domain.com.au</a></li>
+                               <li><a href="http://www.domain.com.au/?mode=buy" onclick="trackOmnitureClick(this,'age:rainbowstrip:box1:campaign2:bullet1:20-01:cre_rainbow:buyrealestate');">Buy real estate</a></li>
+                               <li><a href="http://www.domain.com.au/iphoneapp" onclick="trackOmnitureClick(this,'age:rainbowstrip:box1:campaign2:bullet2:06-04:cre_rainbow:getdomainsfreeiphoneapp');">Get Domain's FREE iPhone App</a></li>
+                               <li><a href="http://www.domain.com.au/Public/ContentDisplay.aspx?contentid=home_alerts" onclick="trackOmnitureClick(this,'age:rainbowstrip:box1:campaign2:bullet3:06-04:cre_rainbow:dontmissthelatestlistings');">Don't miss the latest listings</a></li>
+                      </ul>
+                  </div>
+                  <div class="s2 cMycareer">
+                      <h2><a title="Jobs" onclick="trackOmnitureClick(this,'age:rainbowstrip:box2:campaign2:label:iphoneapp');" href="http://www.mycareer.com.au">Jobs</a></h2>
+                                <div class="puff">
+                                        <a href="http://content.mycareer.com.au/iphone.aspx" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:content1:06-04:iphoneapp');" ><img src="http://images.theage.com.au/2011/04/06/2290498/iphoneapp-172x115.jpg" width="172" alt="FREE MyCareer iPhone app"/></a>
+
+                                    <h5><a href="http://content.mycareer.com.au/iphone.aspx" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:box2:campaign2:content2:06-04:iphoneapp:freemycareeriphoneapp');" title="freemycareeriphoneapp">FREE MyCareer iPhone app</a></h5>
+                                </div>
+                                <ul>
+                                    <li class="lMycareer"><a href="http://www.mycareer.com.au" onclick="trackOmnitureClick(this,'age:rainbowstrip:box2:campaign2:logo:06-04:iphoneapp');">Mycareer.com.au</a></li>
+                               <li><a href="http://content.mycareer.com.au/advice-research/graduate/try-it-for-size.aspx" onclick="trackOmnitureClick(this,'age:rainbowstrip:box2:campaign2:bullet1:06-04:iphoneapp:tryitonforsize');">Try it on for size</a></li>
+                               <li><a href="http://courses.mycareer.com.au/" onclick="trackOmnitureClick(this,'age:rainbowstrip:box2:campaign2:bullet2:06-04:iphoneapp:mycareereducationcentre');">MyCareer Education Centre</a></li>
+                               <li><a href="http://content.mycareer.com.au/advice-research/search/heavy-heart.aspx" onclick="trackOmnitureClick(this,'age:rainbowstrip:box2:campaign2:bullet3:06-04:iphoneapp:moretoofferthanyouthink');">More to offer than you think</a></li>
+                      </ul>
+                  </div>
+                  <div class="s3 cTheVine">
+                      <h2><a title="TheVine" onclick="trackOmnitureClick(this,'age:rainbowstrip:box3:campaign3:label:mother daughter duos');" href="http://www.thevine.com.au">TheVine</a></h2>
+                                <div class="puff">
+                                        <a href="http://www.thevine.com.au/blog/laurenburvill/ten-stylish-mother-daughter-duos20110406.aspx" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:content1:06-04:mother daughter duos');" ><img src="http://images.theage.com.au/2011/04/06/2291395/Mother%20daughter%20duos-172x115.jpg" width="172" alt="Mother daughter duos"/></a>
+
+                                    <h5><a href="http://www.thevine.com.au/blog/laurenburvill/ten-stylish-mother-daughter-duos20110406.aspx" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:box3:campaign3:content2:06-04:mother daughter duos:motherdaughterduos');" title="motherdaughterduos">Mother daughter duos</a></h5>
+                                </div>
+                                <ul>
+                                    <li class="lTheVine"><a href="http://www.thevine.com.au" onclick="trackOmnitureClick(this,'age:rainbowstrip:box3:campaign3:logo:06-04:mother daughter duos');">Thevine.com.au</a></li>
+                               <li><a href="http://www.thevine.com.au/entertainment/" onclick="trackOmnitureClick(this,'age:rainbowstrip:box3:campaign3:bullet1:08-09:mother daughter duos:entertainment&celebritynews');">Entertainment & celebrity news</a></li>
+                               <li><a href="http://www.thevine.com.au/sport/" onclick="trackOmnitureClick(this,'age:rainbowstrip:box3:campaign3:bullet2:17-01:mother daughter duos:weirdandwonderfulworldofsport');">Weird and wonderful world of sport</a></li>
+                               <li><a href="http://www.thevine.com.au/gig-guide/" onclick="trackOmnitureClick(this,'age:rainbowstrip:box3:campaign3:bullet3:09-12:mother daughter duos:musicfestivalsandsideshows');">Music festivals and sideshows</a></li>
+                      </ul>
+                  </div>
+                  <div class="s4 cAPM">
+                      <h2><a title="Property" onclick="trackOmnitureClick(this,'age:rainbowstrip:box4:campaign2:label:kidsspying');" href="http://www.apm.com.au">Property</a></h2>
+                                <div class="puff">
+                                        <a href="http://www.homepriceguide.com.au/Products/Product.aspx?ProductID=5" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:content1:06-04:kidsspying');" ><img src="http://images.theage.com.au/2010/07/08/1681543/kidsspying-172x115.gif" width="172" alt="APM kids spying on neighbours"/></a>
+
+                                    <h5><a href="http://www.homepriceguide.com.au/Products/Product.aspx?ProductID=5" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:box4:campaign2:content2:06-04:kidsspying:whatareyourneighboursreallyupto?');" title="whatareyourneighboursreallyupto?">What are your neighbours really up to?</a></h5>
+                                </div>
+                                <ul>
+                                    <li class="lAPM"><a href="http://www.apm.com.au" onclick="trackOmnitureClick(this,'age:rainbowstrip:box4:campaign2:logo:06-04:kidsspying');">Apm.com.au</a></li>
+                               <li><a href="http://www.homepriceguide.com.au/?s_rid=rainbowstrip:newsletter1" onclick="trackOmnitureClick(this,'age:rainbowstrip:box4:campaign2:bullet1:06-04:kidsspying:freepropertynewsletter');">FREE property newsletter</a></li>
+                               <li><a href="http://www.homepriceguide.com.au/Products/Product.aspx?ProductID=12&Audience=Buyers&s_rid=rainbowstrip:lastsold" onclick="trackOmnitureClick(this,'age:rainbowstrip:box4:campaign2:bullet2:11-10:kidsspying:getthelastsoldpricesms');">Get the last sold price SMS</a></li>
+                               <li><a href="http://www.homepriceguide.com.au/Products/Product.aspx?ProductID=7&s_rid=rainbowstrip:estimatehomevalue" onclick="trackOmnitureClick(this,'age:rainbowstrip:box4:campaign2:bullet3:27-01:kidsspying:estimatehomevalue');">Estimate home value</a></li>
+                      </ul>
+                  </div>
+                  <div class="s5 cRsvp">
+                      <h2><a title="Dating" onclick="trackOmnitureClick(this,'age:rainbowstrip:box5:campaign1:label:1_young_lady_laptop');" href="http://www.rsvp.com.au">Dating</a></h2>
+                                <div class="puff">
+                                        <a href="http://www.rsvp.com.au/search/fullSearchAction.jsp?o=true&x6=135&a1=28&a2=" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:content1:03-03:1_young_lady_laptop');" ><img src="http://images.theage.com.au/2011/03/03/2212742/1_young_lady_laptop-172x115.gif" width="172" alt="RSVP beautiful young lady"/></a>
+
+                                    <h5><a href="http://www.rsvp.com.au/search/fullSearchAction.jsp?o=true&x6=135&a1=28&a2=" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:box5:campaign1:content2:03-03:1_young_lady_laptop:chattowomenrightnow!');" title="chattowomenrightnow!">Chat to Women Right Now!</a></h5>
+                                </div>
+                                <ul>
+                                    <li class="lRsvp"><a href="http://www.rsvp.com.au" onclick="trackOmnitureClick(this,'age:rainbowstrip:box5:campaign1:logo:03-03:1_young_lady_laptop');">Rsvp.com.au</a></li>
+                               <li><a href="http://www.rsvp.com.au/search/fullSearchAction.jsp?lo=Melbourne+City,+VIC&lo=Melbourne+East,+VIC&lo=Melbourne+West,+VIC&lh=area&x6=135&a1=28&a2=40" onclick="trackOmnitureClick(this,'age:rainbowstrip:box5:campaign1:bullet1:20-09:1_young_lady_laptop:meetmelbournewomen');">Meet Melbourne Women</a></li>
+                               <li><a href="http://www.rsvp.com.au" onclick="trackOmnitureClick(this,'age:rainbowstrip:box5:campaign1:bullet2:06-01:1_young_lady_laptop:onlinedating');">Online Dating</a></li>
+                               <li><a href="http://www.rsvp.com.au/foyer/index5.jsp" onclick="trackOmnitureClick(this,'age:rainbowstrip:box5:campaign1:bullet3:01-10:1_young_lady_laptop:tryonlinedatingforfree');">Try online dating for free</a></li>
+                      </ul>
+                  </div>
+
+</div>
+
+
+    <div class="fN-affiliateStrip">
+    <h2>Compare and Save</h2>
+    <ul>
+        <li ><a href="http://broadband.theage.com.au/broadband" onclick="trackOmnitureClick(this, 'age:affiliatestrip:link')">Broadband</a></li>
+        <li ><a href="http://theage.goswitch.com.au" onclick="trackOmnitureClick(this, 'age:affiliatestrip:link')">Energy</a></li>
+        <li ><a href="http://mobile-phones.theage.com.au/MobilePhones" onclick="trackOmnitureClick(this, 'age:affiliatestrip:link')">Mobile</a></li>
+        <li ><a href="http://compare.theage.com.au/home-loans" onclick="trackOmnitureClick(this, 'age:affiliatestrip:link')">Home Loans</a></li>
+        <li class="last"><a href="http://compare.theage.com.au/home-loans" onclick="trackOmnitureClick(this, 'age:affiliatestrip:link')">Savings Accounts</a></li>
+</ul>
+
+    <span></span>
+        <div class="one">
+            <h3><a href="http://compare.theage.com.au/credit-cards/rewards" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content0')">Triple Qantas Points!</a></h3>
+                <a href="http://compare.theage.com.au/credit-cards/rewards" rel="nofollow" onclick="trackOmnitureClick(this,'age:affiliatestrip:content0:nabgoldqantasncs');" ><img src="http://images.theage.com.au/2011/04/06/2291492/NABGoldQantasNCS-60x50.gif" width="60" alt="NABGoldQantasNCS"/></a>
+
+            <p><a href="http://compare.theage.com.au/credit-cards/rewards" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content0')">Get triple Qantas points until September + Free QFF membership!</a></p>
+            <span></span>
+            <p class="links"><a href="http://compare.theage.com.au/credit-cards/rewards" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content0')">Compare all Credit Cards</a></p>
+    </div>
+    <div class="two">
+            <h3><a href="http://compare.theage.com.au/home-loans" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content1')">Your dream home loan?</a></h3>
+                <a href="http://compare.theage.com.au/home-loans" rel="nofollow" onclick="trackOmnitureClick(this,'age:affiliatestrip:content1:682homeloanpinkncs');" ><img src="http://images.theage.com.au/2011/04/06/2291490/682homeloanpinkNCS-60x50.gif" width="60" alt="682homeloanpinkNCS"/></a>
+
+            <p><a href="http://compare.theage.com.au/home-loans" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content1')">An amazing rate which only gets better with age. Check it out now >>></a></p>
+            <span></span>
+            <p class="links"><a href="http://compare.theage.com.au/home-loans" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content1')">Compare all Home Loans</a></p>
+    </div>
+    <div class="three">
+            <h3><a href="http://compare.theage.com.au/term-deposits" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content2')">Term Deposits</a></h3>
+                <a href="http://compare.theage.com.au/term-deposits" rel="nofollow" onclick="trackOmnitureClick(this,'age:affiliatestrip:content2:700redtd-ncs-');" ><img src="http://images.theage.com.au/2011/04/04/2280897/700RedTD-NCS--60x50.gif" width="60" alt="700RedTD-NCS-"/></a>
+
+            <p><a href="http://compare.theage.com.au/term-deposits" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content2')">That's one whopping rate! Take a look >>></a></p>
+            <span></span>
+            <p class="links"><a href="http://compare.theage.com.au/term-deposits" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content2')">Compare all Term Deposits</a></p>
+    </div>
+    <div class="four">
+            <h3><a href="http://broadband.theage.com.au/broadband" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content3')">Go Wireless at Home</a></h3>
+                <a href="http://broadband.theage.com.au/broadband" rel="nofollow" onclick="trackOmnitureClick(this,'age:affiliatestrip:content3:bband_60x50_modem4');" ><img src="http://images.theage.com.au/2011/04/06/2291161/bband_60x50_modem4-60x50.gif" width="60" alt="bband_60x50_modem4"/></a>
+
+            <p><a href="http://broadband.theage.com.au/broadband" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content3')">Compare home broadband plans</a></p>
+            <span></span>
+            <p class="links"><a href="http://broadband.theage.com.au/Broadband/Speed-Test" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content3')">Compare Broadband Plans</a></p>
+    </div>
+    <div class="five">
+            <h3><a href="http://mobile-phones.theage.com.au/MobilePhones" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content4')">3 Months Free Deals</a></h3>
+                <a href="http://mobile-phones.theage.com.au/MobilePhones" rel="nofollow" onclick="trackOmnitureClick(this,'age:affiliatestrip:content4:mobile_60x50_3mth_desirez-1-');" ><img src="http://images.theage.com.au/2011/04/06/2291163/mobile_60x50_3mth_desirez-1--60x50.gif" width="60" alt="mobile_60x50_3mth_desirez-1-"/></a>
+
+            <p><a href="http://mobile-phones.theage.com.au/MobilePhones" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content4')">Hot new handsets available with 3 Months Free</a></p>
+            <span></span>
+            <p class="links"><a href="http://mobile-phones.theage.com.au/MobilePhones" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content4')">Compare Mobile Phones</a></p>
+    </div>
+
+</div>
+
+            
+<!-- Reader's most viewed -->
+<div class="c5 top5 cfix">
+    <h2 class="cfix">Readers' most viewed</h2>
+
+            <div class="s1 lBT">
+                <a href="http://www.brisbanetimes.com.au">Most viewed articles on Brisbane Times</a>
+                <h5>Top 5 <a href="http://www.brisbanetimes.com.au/world">World</a> articles</h5>
+    <ol>
+            <li><a href="http://www.brisbanetimes.com.au/world/father-held-after-his-12yearold-daughter-gives-birth-20110406-1d37x.html" title="Father held after his 12-year-old daughter gives birth" style="">Father held after his 12-year-old daughter gives birth</a></li>
+            <li><a href="http://www.brisbanetimes.com.au/world/rape-victim-becomes-a-heroine-of-the-revolution-20110405-1d2xc.html" title="Rape victim becomes a heroine of the revolution" style="">Rape victim becomes a heroine of the revolution</a></li>
+            <li><a href="http://www.brisbanetimes.com.au/world/aircraft-wreckage-found-but-questions-remain-over-bodies-20110405-1d2xu.html" title="Aircraft wreckage found but questions remain over bodies" style="">Aircraft wreckage found but questions remain over bodies</a></li>
+            <li><a href="http://www.brisbanetimes.com.au/world/two-held-in-uk-phonehacking-probe-20110406-1d33k.html" title="Two held in UK phone-hacking probe" style="">Two held in UK phone-hacking probe</a></li>
+            <li><a href="http://www.brisbanetimes.com.au/world/gbagbo-bunkered-in-basement-as-he-negotiates-ivory-coast-exit-20110406-1d35o.html" title="Gbagbo bunkered in basement as he negotiates Ivory Coast exit" style="">Gbagbo bunkered in basement as he negotiates Ivory Coast exit</a></li>
+    </ol>
+
+            </div>
+            <div class="s2 lWAToday">
+                <a href="http://www.watoday.com.au">Most viewed articles on WA Today</a>
+                <h5>Top 5 <a href="http://www.watoday.com.au/world">World</a> articles</h5>
+    <ol>
+            <li><a href="http://www.watoday.com.au/world/anorexics-targeted-by-superskinny-porn-sites-20110406-1d3l4.html" title="Anorexics targeted by super-skinny porn sites " style="">Anorexics targeted by super-skinny porn sites </a></li>
+            <li><a href="http://www.watoday.com.au/world/father-held-after-his-12yearold-daughter-gives-birth-20110406-1d37x.html" title="Father held after his 12-year-old daughter gives birth" style="">Father held after his 12-year-old daughter gives birth</a></li>
+            <li><a href="http://www.watoday.com.au/world/aircraft-wreckage-found-but-questions-remain-over-bodies-20110405-1d2xu.html" title="Aircraft wreckage found but questions remain over bodies" style="">Aircraft wreckage found but questions remain over bodies</a></li>
+            <li><a href="http://www.watoday.com.au/world/rape-victim-becomes-a-heroine-of-the-revolution-20110405-1d2xc.html" title="Rape victim becomes a heroine of the revolution" style="">Rape victim becomes a heroine of the revolution</a></li>
+            <li><a href="http://www.watoday.com.au/world/as-kate-knows-girls-are-the-best-bullies-20110406-1d3zv.html" title="As Kate knows, girls are the best bullies" style="">As Kate knows, girls are the best bullies</a></li>
+    </ol>
+
+            </div>
+            <div class="s3 lSmh">
+                <a href="http://www.smh.com.au">Most viewed articles on The Sydney Morning Herald</a>
+                <h5>Top 5 <a href="http://www.smh.com.au/world">World</a> articles</h5>
+    <ol>
+            <li><a href="http://www.smh.com.au/world/father-held-after-his-12yearold-daughter-gives-birth-20110406-1d37x.html" title="Father held after his 12-year-old daughter gives birth" style="">Father held after his 12-year-old daughter gives birth</a></li>
+            <li><a href="http://www.smh.com.au/world/schoolgirl-14-charged-with-adultery-report-20110406-1d373.html" title="Schoolgirl, 14, charged with adultery: report" style="">Schoolgirl, 14, charged with adultery: report</a></li>
+            <li><a href="http://www.smh.com.au/world/as-kate-knows-girls-are-the-best-bullies-20110406-1d3zv.html" title="As Kate knows, girls are the best bullies" style="">As Kate knows, girls are the best bullies</a></li>
+            <li><a href="http://www.smh.com.au/world/rape-victim-becomes-a-heroine-of-the-revolution-20110405-1d2xc.html" title="Rape victim becomes a heroine of the revolution" style="">Rape victim becomes a heroine of the revolution</a></li>
+            <li><a href="http://www.smh.com.au/world/gbagbo-bunkered-in-basement-as-he-negotiates-ivory-coast-exit-20110406-1d35o.html" title="Gbagbo bunkered in basement as he negotiates Ivory Coast exit" style="">Gbagbo bunkered in basement as he negotiates Ivory Coast exit</a></li>
+    </ol>
+
+            </div>
+            <div class="s4 lAge">
+                <a href="http://www.theage.com.au">Most viewed articles on The Age</a>
+                <h5>Top 5 <a href="http://www.theage.com.au/world">World</a> articles</h5>
+    <ol>
+            <li><a href="http://www.theage.com.au/world/loudmouth-singer-set-to-rule-haiti-20110405-1d2tv.html" title="Loud-mouth singer set to rule Haiti" style="">Loud-mouth singer set to rule Haiti</a></li>
+            <li><a href="http://www.theage.com.au/world/two-held-in-uk-phonehacking-probe-20110406-1d33k.html" title="Two held in UK phone-hacking probe" style="">Two held in UK phone-hacking probe</a></li>
+            <li><a href="http://www.theage.com.au/world/berlusconi-to-stay-away-as-underage-sex-trial-begins-in-milan-20110405-1d2u8.html" title="Berlusconi to stay away as under-age sex trial begins in Milan" style="">Berlusconi to stay away as under-age sex trial begins in Milan</a></li>
+            <li><a href="http://www.theage.com.au/world/porter-puts-cleaner-in-students-soup-chef-20110405-1d2v6.html" title="Porter puts cleaner in students' soup: chef" style="">Porter puts cleaner in students' soup: chef</a></li>
+            <li><a href="http://www.theage.com.au/world/police-find-more-bodies-20110405-1d2tt.html" title="Police find more bodies" style="">Police find more bodies</a></li>
+    </ol>
+
+            </div>
+            <div class="s5">
+                <h5>Videos</h5>
+    <ol>
+            <li><a href="http://media.theage.com.au/national/national-news/sion-college-marked-photos-for-changes-2291012.html" title="Sion College 'marked photos for changes'" style="">Sion College 'marked photos for changes'</a></li>
+            <li><a href="http://media.theage.com.au/frankston-man-bashed-to-death-2290523.html" title="Frankston man bashed to death" style="">Frankston man bashed to death</a></li>
+            <li><a href="http://media.theage.com.au/national/national-news/social-media-2289621.html" title="Social media" style="">Social media</a></li>
+            <li><a href="http://media.theage.com.au/entertainment/the-guide/breakfast-hosts-in-disaster-zones-2287971.html" title="Breakfast hosts in disaster zones" style="">Breakfast hosts in disaster zones</a></li>
+            <li><a href="http://media.theage.com.au/lifestyle/essentials/the-impassioned-response-to-art-2290859.html" title="The impassioned response to art" style="">The impassioned response to art</a></li>
+    </ol>
+
+            </div>
+</div>
+   
+
+        <div id="adspot-728x90,468x60-pos-2" class="ad">
+        <script>
+            renderJAd("adspot-728x90,468x60-pos-2", "dcAd-20", 'http://ad-apac.doubleclick.net/adj/onl.age.news/world;cat=world;ctype=article;pos=2;' + document.dcAdsCParams +'sz=728x90,468x60;tile=20;ord=' + dcOrd + '?', -1305498173);
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.news/world;cat=world;ctype=article;pos=2;sz=728x90,468x60;tile=20;ord=8.8589384E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.news/world;cat=world;ctype=article;pos=2;sz=728x90,468x60;tile=20;ord=8.8589384E7?' border="0" alt="">
+            </a>
+        </noscript>
+</div>
+    <!-- Footer section links -->
+    <ul class="fSectionLinks cfix">
+            <li ><a href="http://www.theage.com.au/" title="The Age Home">The Age Home</a></li>
+            <li ><a href="http://www.theage.com.au/victoria" title="Victoria">Victoria</a></li>
+            <li ><a href="http://www.theage.com.au/national" title="National">National</a></li>
+            <li ><a href="http://www.theage.com.au/world" title="World">World</a></li>
+            <li ><a href="http://www.theage.com.au/environment" title="Environment">Environment</a></li>
+            <li ><a href="http://www.theage.com.au/opinion" title="Opinion">Opinion</a></li>
+            <li ><a href="http://www.theage.com.au/business" title="Business">Business</a></li>
+            <li ><a href="http://www.theage.com.au/technology" title="Technology">Technology</a></li>
+            <li ><a href="http://www.theage.com.au/digital-life" title="Digital Life">Digital Life</a></li>
+            <li ><a href="http://www.theage.com.au/entertainment/" title="Entertainment">Entertainment</a></li>
+            <li ><a href="http://www.theage.com.au/lifestyle" title="Life &amp; Style">Life &amp; Style</a></li>
+            <li ><a href="http://www.theage.com.au/travel" title="Travel">Travel</a></li>
+            <li ><a href="http://www.theage.com.au/drive" title="Cars">Cars</a></li>
+            <li ><a href="http://www.theage.com.au/executive-style" title="Exec Style">Exec Style</a></li>
+            <li ><a href="http://www.theage.com.au/sport" title="Sport">Sport</a></li>
+            <li class="last"><a href="http://www.theage.com.au/weather/" title="Weather">Weather</a></li>
+    </ul>
+
+    <!-- Footer masthead links and copyright -->
+<div class="fMastheadLinks cfix">
+        <ul class="span-4 cfix">
+        <li class="first"><h5>The Age</h5></li>
+            <li><a href="http://www.theage.com.au/siteguide/" title="Sitemap">Sitemap</a></li>
+            <li><a href="http://about.theage.com.au/" title="About Us">About Us</a></li>
+            <li><a href="http://www.theage.com.au/support/" title="Contact Us">Contact Us</a></li>
+            <li><a href="http://www.fairfax.com.au/privacy" title="Privacy">Privacy</a></li>
+            <li><a href="http://www.fairfax.com.au/conditions" title="Conditions">Conditions</a></li>
+            <li><a href="http://www.adcentre.com.au/fairfax-digital-network.aspx" title="Advertise with Us">Advertise with Us</a></li>
+            <li><a href="http://www.fairfaxphotos.com" title="Photo Sales">Photo Sales</a></li>
+            <li><a href="http://www.goodguides.com.au/" title="Good Food Guide">Good Food Guide</a></li>
+    </ul>
+
+        <ul class="span-4 cfix">
+        <li class="first"><h5>Products & Services</h5></li>
+            <li><a href="http://www.theage.com.au/am/" title="AM Today">AM Today</a></li>
+            <li><a href="http://newsstore.theage.com.au/apps/newsSearch.ac?/index.html" title="Last 8 days">Last 8 days</a></li>
+            <li><a class="vision" href="#" title="High Contrast">High Contrast</a></li>
+            <li><a href="http://www.theage.com.au/text/" title="Text">Text</a></li>
+            <li><a href="http://subscribers.theage.com.au/index.asp" title="Newspaper subscription">Newspaper subscription</a></li>
+            <li><a href="http://www.theageshop.com.au/" title="Shop">Shop</a></li>
+            <li><a href="http://www.fairfaxevents.com.au/" title="Events">Events</a></li>
+            <li><a href="http://www.advantate.com.au" title="SEO">SEO</a></li>
+            <li><a href="http://www.theage.com.au/siteguide/accessibility" title="Help using this website">Help using this website</a></li>
+    </ul>
+
+        <ul class="span-4 cfix">
+        <li class="first"><h5>Connect</h5></li>
+            <li><a href="http://mobile.fairfax.com.au/age" title="Mobile">Mobile</a></li>
+            <li><a href="http://www.theage.com.au/newsletters/subscription.html" title="Newsletters">Newsletters</a></li>
+            <li><a href="http://www.theage.com.au/rssheadlines" title="RSS">RSS</a></li>
+            <li><a href="http://twitter.com/theage" title="Twitter">Twitter</a></li>
+            <li><a href="http://www.facebook.com/theageAustralia" title="Facebook">Facebook</a></li>
+    </ul>
+
+        <ul class="span-4 cfix">
+        <li class="first"><h5>Classifieds</h5></li>
+            <li><a href="http://www.stayz.com.au/" title="Accommodation">Accommodation</a></li>
+            <li><a href="http://www.drive.com.au/" title="Cars">Cars</a></li>
+            <li><a href="http://www.rsvp.com.au/" title="Dating">Dating</a></li>
+            <li><a href="http://mycareer.com.au/" title="Jobs">Jobs</a></li>
+            <li><a href="http://www.domain.com.au/" title="Real Estate">Real Estate</a></li>
+            <li><a href="http://apm.com.au/" title="Property Price Data">Property Price Data</a></li>
+            <li><a href="http://tributes.theage.com.au/" title="Tributes & Celebrations">Tributes & Celebrations</a></li>
+            <li><a href="http://classifieds.fairfax.com.au/advertise/index.html" title="Place an ad">Place an ad</a></li>
+    </ul>
+
+</div>
+<!-- This comment fixes IE6's logo problem. Might be temporary until we've got content below this point -->
+    <div class="nN-footerLinks">
+	<a href="http://www.fairfaxdigital.com.au" class="logo">Fairfax Media</a>
+	<div>
+        <h3>Our Sites</h3>
+    <ul>
+            <li class="first">
+                <a title="The Sydney Morning Herald" href="http://www.smh.com.au/">The Sydney Morning Herald</a>
+            </li>
+            <li>
+                <a title="The Age" href="http://www.theage.com.au/">The Age</a>
+            </li>
+            <li>
+                <a title="MyCareer" href="http://mycareer.com.au/">MyCareer</a>
+            </li>
+            <li>
+                <a title="Domain" href="http://www.domain.com.au/">Domain</a>
+            </li>
+            <li>
+                <a title="Drive" href="http://www.drive.com.au/">Drive</a>
+            </li>
+            <li>
+                <a title="RSVP" href="http://www.rsvp.com.au/">RSVP</a>
+            </li>
+            <li>
+                <a title="Essential Baby" href="http://www.essentialbaby.com.au/">Essential Baby</a>
+            </li>
+            <li>
+                <a title="InvestSMART" href="http://www.investsmart.com.au/">InvestSMART</a>
+            </li>
+            <li>
+                <a title="APM" href="http://apm.com.au/">APM</a>
+            </li>
+            <li>
+                <a title="Stayz" href="http://www.stayz.com.au/">Stayz</a>
+            </li>
+            <li>
+                <a title="Weatherzone" href="http://www.weatherzone.com.au/">Weatherzone</a>
+            </li>
+            <li>
+                <a title="The Vine" href="http://www.thevine.com.au/">The Vine</a>
+            </li>
+    </ul>
+
+        <h3>Our Partners</h3>
+    <ul>
+            <li class="first">
+                <a title="Business" href="http://www.business.com.au/">Business</a>
+            </li>
+            <li>
+                <a title="Canberra" href="http://www.canberra.com.au/">Canberra</a>
+            </li>
+            <li>
+                <a title="Darwin" href="http://www.darwin.com.au/">Darwin</a>
+            </li>
+            <li>
+                <a title="Fitness" href="http://www.fitness.com.au/">Fitness</a>
+            </li>
+            <li>
+                <a title="Homebuilders" href="http://www.homebuilders.com.au/">Homebuilders</a>
+            </li>
+            <li>
+                <a title="Lawyers" href="http://www.lawyers.com.au/">Lawyers</a>
+            </li>
+            <li>
+                <a title="Mechanics" href="http://www.mechanics.com.au/">Mechanics</a>
+            </li>
+            <li>
+                <a title="Perth" href="http://www.perth.com.au/">Perth</a>
+            </li>
+            <li>
+                <a title="Wedding" href="http://www.wedding.com.au/">Wedding</a>
+            </li>
+            <li>
+                <a title="Wine" href="http://www.wine.com.au/">Wine</a>
+            </li>
+    </ul>
+
+    </div>
+    <cite>Copyright &copy; 2011 Fairfax Media</cite>
+</div>
+                                                
+
+
+    <div class="Kampyle" data-brandName="theage" data-staticResource="http://resources.theage.com.au" data-kampyleSiteCode="8954894" data-kampyleFormId="43614"></div>
+
+</div>
+<!-- End fN-footerNetwork -->
+            <div id="adspot-1x1" class="ad">
+</div>
+            <div id="adspot-1x11" class="ad">
+</div>
+        </div><!-- class:wrap cfix -->
+                <script type="text/javascript" src="http://resources.theage.com.au/common/media-common-1.0/js/fdjsf/output/fd_min.js"></script>
+
+                <script type="text/javascript" src="http://resources.theage.com.au/common/media-common-1.0/js/fdjsf/output/fd.google_min.js"></script>
+
+                <script type="text/javascript" src="http://resources.theage.com.au/common/media-common-1.0/js/fdjsf/output/fd.registrars_min.js"></script>
+
+                <script type="text/javascript" src="http://resources.theage.com.au/common/media-common-1.0/js/fdjsf/output/fd.videoplayer_min.js"></script>
+
+        <script type="text/javascript">
+    /**
+     * Kills the flash in flash ad that has been loaded.
+     */
+    function killAd() {
+        FD.trigger("FDVideoPlayerFlashAdCompleted");
+    }
+    /**
+     * Pauses the video players content clip.
+     */
+    function pauseContent() {
+        FD.trigger("FDVideoPlayerFlashAdPause");
+    }
+    /**
+     * Plays the video players content clip.
+     */
+    function playContent() {
+        FD.trigger("FDVideoPlayerFlashAdPlay");
+    }
+    /**
+     * Kills the flash in flash ad that has completed, and plays the video players content clip.
+     */
+    function videoComplete() {
+        FD.trigger("FDVideoPlayerFlashAdCompleted");
+        FD.trigger("FDVideoPlayerFlashAdPlay");
+    }
+    /**
+     * Loads explosive flash ad with the specified url.
+     *
+     * @param url URL of the explosive flash ad.
+     * @param width Width of the explosive flash ad.
+     * @param height Height of the explosive flash ad.
+     */
+    function loadExplosion(url, width, height) {
+        if ((url) && (width) && (height)) {
+            new FD.VideoPlayerFlashInFlashAdHelper({
+                height: height,
+                url: url,
+                width: width
+            });
+        } else if (url) {
+            new FD.VideoPlayerFlashInFlashAdHelper({
+                url: url
+            });
+        }
+    }
+    /**
+     * Closes the explosive flash ad.
+     */
+    function closeExplosion() {
+        FD.trigger("FDVideoPlayerFlashAdCompleted");
+        FD.trigger("FDVideoPlayerFlashAdPlay");
+    }
+    /**
+     * Replaces specified companion ad with specified image and click through url.
+     *
+     * @param companionAdId Identifier of the <code>div</code> that contains the companion ad to replace.
+     * @param imageUrl URL of the image to use as the companion ad.
+     * @param linkUrl URL of the click through for the companion ad.
+     */
+    function replaceCompanionAd(companionAdId, imageUrl, linkUrl) {
+        new FD.VideoPlayerCompanionAdHelper({
+            companionAdId: companionAdId,
+            imageUrl: imageUrl,
+            linkUrl: linkUrl
+        });
+    }
+</script>
+        <script type="text/javascript">
+    function getGoogleAdChannel(showAboveArticle) {
+        var googleAdChannel = "World";
+        if (showAboveArticle) {
+            googleAdChannel += " abovearticle";
+        }
+        return googleAdChannel;
+    }
+    function google_ad_request_done(google_ads) {
+        var googleAd = new FD.GoogleAd({
+                adBlockTitle: "Ads by Google",
+                maximumAdsInBlock: 3,
+                checkExternalReferrer: true,
+                split: 1,
+            googleAds: google_ads,
+            googleAdsId: "googleAds",
+            moreGoogleAdsId: "moreGoogleAds"
+        });
+        googleAd.insertGoogleAds();
+    }
+    var google_ad_client = "ca-fairfax-age_js";
+    var google_ad_channel = "National";
+        if (!FD.isInternalReferrer()) {
+            google_ad_channel = getGoogleAdChannel(true);
+        }
+    var google_ad_output = "js";
+    var google_max_num_ads = "4";
+    var google_ad_type = "text";
+    var google_encoding = "utf8";
+    var google_safe = "high";
+    var google_ad_section = "default";
+</script>
+<!-- The JavaScript returned from the following page uses the parameter values assigned above to populate an array of
+ad objects. Once that array has been populated, the JavaScript will call the google_ad_request_done function to display
+the ads. -->
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script> 
+        <script type="text/javascript">
+    FD.register(function() {
+        
+    });
+</script>
+        <script type="text/javascript">
+    FD.register(function() {
+                (function() {
+        FD.VideoPlayers.push(new FD.VideoPlayer({
+            "adServerUrl": "http://ad-apac.doubleclick.net/pfadx/vid.age/news/worldnews;channel=news;show=worldnews;ctype=rhs;cat3=reuters;sz=4x1;dcmt=text/html;ord=385494",
+            "assetId": 2291228,
+            "bitRateImageUrl": "http://resources.theage.com.au/common/media-common-1.0/images/media_62k.gif?rand=",
+            "id": "video-player-latest",
+            "mainVideo": {
+    "bitRates": [
+            100,
+            1000,
+            28,
+            300
+    ],
+    "clips": {
+                "100": "rtmp://mediastream.f2.com.au/ondemand/mp4:flash/media/2011/04/06/75820/75820_2.flv",
+                "1000": "rtmp://mediastream.f2.com.au/ondemand/mp4:flash/media/2011/04/06/75820/75820_4.flv",
+                "28": "rtmp://mediastream.f2.com.au/ondemand/mp4:flash/media/2011/04/06/75820/75820_2.flv",
+                "300": "rtmp://mediastream.f2.com.au/ondemand/mp4:flash/media/2011/04/06/75820/75820_3.flv"
+    },
+    "clipDuration": "00:00",
+    "clipId": "2291228",
+    "instreamAdBreaks": [
+    ],
+    "nielsen": {
+    "brand": "age",
+        "ou1": "news",
+        "ou2": "World",
+
+
+    "vc": "vc-age-News-article_rhs-World_News-World_News-Reuters_Dean_Lawry-75820-Rebel_forces_recruit_trainees-00:00"
+},
+    "omniture": {
+    "account": "f2ntheage",
+    "assetId": "2291228",
+    "channel": "News",
+    "contentType": "video",
+    "context": "article_rhs",
+    "headline": "Libyan rebel forces recruit trainees",
+    "masthead": "age",
+        "milestones": "25,50,75",
+        "seconds": "",
+    "show": "World_News"
+}
+},
+                "playerType": "article_rhs",
+            "playerId": "video-player-latest-player",
+            "playerUrl": "http://resources.theage.com.au/common/media-common-1.0/swf/flowplayer/flowplayer.commercial-3.2.6.swf"
+        }, {
+            "canvas": {
+                "backgroundColor": "#000000",
+                "backgroundGradient": "none"
+            },
+            "clip": {
+                "ads": [],
+                    "provider": "rtmp",
+                "scaling": "fit"
+            },
+                "width": 300,
+                "height": 170,
+            "key": ["#@bf031429ed9f0dfe904", "#@53c3da205e97d481958", "#@abcecd558f4a4d77890", "#@723b85c8a619907ae87", "#@d92898b5d9ad99b3409", "#@a88e92c0bb52808f85d", "#@a43fc3099cb4a6144d7", "#@4b734d76f34621ab328", "#@658810cc83406a698ce"],
+            "plugins": {
+                "akamai": {
+                    "rtmpStreamServers": ["mediastream.f2.com.au", "tv.f2.com.au"],
+                    "url": "http://resources.theage.com.au/common/media-common-1.0/swf/flowplayer/flowplayer.akamai-3.2.2.swf"
+                },
+                "advertisementLabel": {
+                    "backgroundColor": "rgba(20, 20, 20, 0.5)",
+                    "backgroundGradient": "none",
+                    "border": "none",
+                    "display": "none",
+                    "height": 24,
+                    "style": {
+                        "body": {
+                            "color": "#ffffff",
+                            "textAlign": "center"
+                        }
+                    },
+                    top: 0,
+                    "url": "http://resources.theage.com.au/common/media-common-1.0/swf/flowplayer/flowplayer.content-3.2.0.swf"
+                },
+                "controls": {
+                        "fullscreen": false,
+                    "url": "http://resources.theage.com.au/common/media-common-1.0/swf/flowplayer/flowplayer.controls-3.2.3.swf"
+                },
+                "dfp": {
+                    "linearAdLabel": {
+                        "advertisementLabel": "advertisementLabel",
+                        "content": "Advertisement : Your video will resume in {time-left} seconds.",
+                        "type": "top"
+                    },
+                    "onAdFinished": function(event) {
+                        FD.trigger("FDVideoPlayerAdFinished");
+                    },
+                    "onAdLoaded": function(event) {
+                        var videoPlayer = $f("video-player-latest-player");
+                        if ((event) && (event.ad) && (event.ad.type == "flash") && (videoPlayer)) {
+                            if ((event.request) && (event.request.adTagUrl) &&
+                                ((event.request.adTagUrl.indexOf("show=localexperts") > -1) || (event.request.adTagUrl.indexOf("show=economicupdate") > -1) ||
+                                (event.request.adTagUrl.indexOf("show=homebuyinghappiness") > -1) || (event.request.adTagUrl.indexOf("show=domain") > -1))) {
+                            } else {
+                                FD.trigger("FDVideoPlayerFlashAdLoaded");
+                            }
+                        }
+                    },
+                    "onCustomAdEvent": function(event) {
+                        var videoPlayer = $f("video-player-latest-player");
+                        if ((event) && (event.name == "killAd") && (videoPlayer)) {
+                            FD.trigger("FDVideoPlayerFlashAdCompleted");
+                        } else if ((event) && (event.name == "pauseContent") && (videoPlayer)) {
+                            FD.trigger("FDVideoPlayerFlashAdPause");
+                        } else if ((event) && (event.name == "playContent") && (videoPlayer)) {
+                            FD.trigger("FDVideoPlayerFlashAdPlay");
+                        } else if ((event) && (event.name == "videoComplete") && (videoPlayer)) {
+                            FD.trigger("FDVideoPlayerFlashAdCompleted");
+                            FD.trigger("FDVideoPlayerFlashAdPlay");
+                        }
+                    },
+                    "onAdStart": function(event) {
+                        FD.trigger("FDVideoPlayerAdStarted");
+                    },
+                    "url": "http://resources.theage.com.au/common/media-common-1.0/swf/flowplayer/dfp/flowplayer.dfp-theage.com.au-1.6.swf"
+                },
+                "rtmp": {
+                    "url": "http://resources.theage.com.au/common/media-common-1.0/swf/flowplayer/flowplayer.rtmp-3.2.1.swf"
+                }
+            }
+        }));
+     })();
+
+
+    });
+</script>
+            <div class="hidden" id="adShD0">
+        <script type="text/javascript">
+            if (0 < document.dcdAdsU.length) {
+                document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[0] + '" src="' + document.dcdAdsU[0] + '"><\/scr' + 'ipt>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD1">
+        <script type="text/javascript">
+            if (1 < document.dcdAdsU.length) {
+                document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[1] + '" src="' + document.dcdAdsU[1] + '"><\/scr' + 'ipt>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD2">
+        <script type="text/javascript">
+            if (2 < document.dcdAdsU.length) {
+                document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[2] + '" src="' + document.dcdAdsU[2] + '"><\/scr' + 'ipt>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD3">
+        <script type="text/javascript">
+            if (3 < document.dcdAdsU.length) {
+                document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[3] + '" src="' + document.dcdAdsU[3] + '"><\/scr' + 'ipt>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD4">
+        <script type="text/javascript">
+            if (4 < document.dcdAdsU.length) {
+                document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[4] + '" src="' + document.dcdAdsU[4] + '"><\/scr' + 'ipt>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD5">
+        <script type="text/javascript">
+            if (5 < document.dcdAdsU.length) {
+                document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[5] + '" src="' + document.dcdAdsU[5] + '"><\/scr' + 'ipt>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD6">
+        <script type="text/javascript">
+            if (6 < document.dcdAdsU.length) {
+                document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[6] + '" src="' + document.dcdAdsU[6] + '"><\/scr' + 'ipt>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD7">
+        <script type="text/javascript">
+            if (7 < document.dcdAdsU.length) {
+                document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[7] + '" src="' + document.dcdAdsU[7] + '"><\/scr' + 'ipt>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD8">
+        <script type="text/javascript">
+            if (8 < document.dcdAdsU.length) {
+                document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[8] + '" src="' + document.dcdAdsU[8] + '"><\/scr' + 'ipt>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD9">
+        <script type="text/javascript">
+            if (9 < document.dcdAdsU.length) {
+                document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[9] + '" src="' + document.dcdAdsU[9] + '"><\/scr' + 'ipt>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD10">
+        <script type="text/javascript">
+            if (10 < document.dcdAdsU.length) {
+                document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[10] + '" src="' + document.dcdAdsU[10] + '"><\/scr' + 'ipt>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD11">
+        <script type="text/javascript">
+            if (11 < document.dcdAdsU.length) {
+                document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[11] + '" src="' + document.dcdAdsU[11] + '"><\/scr' + 'ipt>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD12">
+        <script type="text/javascript">
+            if (12 < document.dcdAdsU.length) {
+                document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[12] + '" src="' + document.dcdAdsU[12] + '"><\/scr' + 'ipt>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD13">
+        <script type="text/javascript">
+            if (13 < document.dcdAdsU.length) {
+                document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[13] + '" src="' + document.dcdAdsU[13] + '"><\/scr' + 'ipt>');
+            }
+        </script>
+    </div>
+<script type="text/javascript">
+    window.setTimeout('initAds(false)', 1);
+    window.setTimeout('checkAds("817-grey.gif")', 10000);
+</script>
+
+
+		<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2009 Nielsen Online -->
+<script type="text/javascript" src="//secure-au.imrworldwide.com/v60.js"></script>
+<script type="text/javascript">
+    var pvar = {cid:"f2", content:"TheAge-world-story-print", server:"secure-au"};
+    var trac = nol_t(pvar);
+    trac.record().post();
+</script>
+<noscript>
+    <div>
+        <img src="//secure-au.imrworldwide.com/cgi-bin/m?ci=f2&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt=""/>
+    </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+<!-- Start SiteCatalyst code version: H.20.2. -->
+<!-- Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
+        <script type="text/javascript" src="http://resources.theage.com.au/common/media-common-1.0/js/fdjsf/output/fd.omniture.theage_min.js"></script>
+
+<script type="text/javascript">
+    s.pageName="age:article:world:hi dad, it's me and i'm 65";
+    s.server="";
+    s.channel="world";
+    s.pageType="";
+            s.prop3="age:world";
+            s.prop2="paper";
+            s.prop1="world:hi dad, it's me and i'm 65";
+            s.prop5="1905535";
+            s.prop4="dcds:common templates";
+            s.prop13="henry samuel, paris";
+    s.campaign="";
+    s.state="";
+    s.zip="";
+    s.events="event1";
+    s.products="";
+    s.purchaseID="";
+    s.hier1="world|hi dad, it's me and i'm 65";
+    var s_code=s.t();
+    if (s_code) {
+        document.write(s_code);
+    }
+</script>
+<script type="text/javascript">
+    if (navigator.appVersion.indexOf("MSIE") >= 0) {
+        document.write(unescape("%3C") + "\!-" + "-");
+    }
+</script>
+<noscript>
+    <img src="http://f2ntheage.112.2O7.net/b/ss/f2ntheage/1/H.20.2--NS/0?[AQB]&cdp=3&[AQE]" width="1" height="1" border="0" alt=""/>
+</noscript>
+<!-- End SiteCatalyst code version: H.20.2. -->
+    <script type="text/javascript">
+	if (window["FD"]) {
+		/**
+		 * Updates the white strip with the new time and number of users.
+		 *
+		 * @param data Date to extract new time and number of users from.
+		 * @private
+		 */
+		function updateWhiteStrip(data) {
+			var response = $.parseJSON(data);
+			var whiteStripTimeElement = $("whiteStrip-time");
+			if ((whiteStripTimeElement) && (whiteStripTimeElement.length > 0)) {
+				whiteStripTimeElement.empty();
+				whiteStripTimeElement.html(response.time);
+			}
+			var whiteStripPeopleElement = $("whiteStrip-users");
+			if ((whiteStripPeopleElement) && (whiteStripPeopleElement.length > 0)) {
+				whiteStripPeopleElement.empty();
+				whiteStripPeopleElement.html(response.people + " online now");
+			}
+		}
+		/**
+		 * Initiates the client side asset view tracking component (self executing).
+		 */
+		(function() {
+			FD.pingServerWithSuccessCallback("1905535", "Article", "World", updateWhiteStrip);
+		})();
+	}
+</script>
+
+        <script type="text/javascript" src="http://secure-au.imrworldwide.com/cgi-bin/j?ci=rj0068-mcdonalds&amp;se=1&amp;te=0"></script>
+		
+        <!-- remove 1/4/11 ed-7899 -->
+        <script type="text/javascript" src="//secure-au.imrworldwide.com/survey/survey-launch.js?rj0063-homepage"></script>
+    </body>
+</html>

@@ -1,0 +1,215 @@
+<!--no issue number--><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="cs" xml:lang="cs">
+<head>
+    <title>This Magnificent Life</title>
+    <link rel="stylesheet" href="styles/magazine.css" type="text/css" media="all"/>
+    <style type="text/css"> table { horizontal-align: center; } </style>
+    <script type="text/javascript" src="includes/swfobject.js"></script>
+    <script type="text/javascript" src="lib/jquery-1.4.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.qtip-1.0.0-rc3.min.js"></script>
+    <script type="text/javascript" src="lib/base.js"></script>
+	  <script type="text/javascript" src="includes/common.js"></script>
+<script type="text/javascript">
+function showMore() { try { document.getElementById("extraContent").style.display = 'table-row'; } catch (e) { document.getElementById("extraContent").style.display = 'inline'; } };
+function hideMore() { document.getElementById("extraContent").style.display = 'none'; };
+function highlightMenu() {
+  var pid = "fashion";
+  try {
+	  var navObj = document.getElementById("menu_"+pid);
+	  if(navObj) {
+		 setOpacity(navObj, 0.5);
+	  }
+  }
+  catch (ex) {};
+}
+function setOpacity(obj, v) {
+	if(obj.style) {
+		with(obj.style) {
+			opacity = v;
+			filter = " alpha(opacity=" + (v*100) + ")";
+		}
+	};
+};
+</script>
+<style type="text/css">
+    div#template_body {
+        width: 876px;
+        margin: auto;
+        background-image: url('images/body_background.jpg');
+        background-position: center;
+        background-repeat: repeat-y;
+        text-align: center;
+    }
+    
+    body {
+        font-size: 11px;
+        font-family: Verdana;
+    }
+
+    tr {
+        vertical-align: top;
+    }
+    
+    td {
+        font-size: 11px;
+    }
+#template_body table tr,
+#template_body table tr td {
+        margin: 0 !important;
+        padding: 0 !important;
+}
+    
+    label { display: inline-block; width: 25%; }
+</style>
+</head>
+<body onload="highlightMenu()">
+        <!-- Start Header -->
+    <div id="header">
+        <!--table cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td id="head01"><a href="/index.php"><img src="images/heading_01.png" style="vertical-align: bottom;" /></a><a href="http://www.tmlfreesubscription.com" target="_blank"><img src="images/heading_02.png" class="downFew" /></a><a href="http://www.surveymonkey.com/s.aspx?sm=CXrZC_2bTrMuQebqbY3eSiWQ_3d_3d" target="_blank"><img src="images/heading_03.png" class="downFew" /></a><a href="http://blog.thismagnificentlife.com.au/?page_id=2587"><img src="images/heading_04.png" class="downFew" /></a><img src="images/heading_05.png" class="downFew" /></td>
+            </tr>
+            <tr>
+                <td><a href="/index.php"><img src="images/heading_06.png" /></a><img src="images/heading_07.png" /><a href="/archive.php"><img src="images/heading_08.png" /></a><img src="images/heading_10.png" /><img src="images/heading_11.png" /><a href="/contents.php"><img src="images/heading_12.png" /></a><img src="images/heading_13.png" /></td>
+            </tr>
+        </table-->
+        <img src="/images/header.png" alt="TML Header" usemap="#headerNav" />
+        <map name="headerNav" id="headerNav2">
+            <area shape="rect" coords="49,60,338,153" href="/" target="_self" alt="This Magnificent Life" />
+            <area shape="rect" coords="353,79,601,121" href="http://www.tmlfreesubscription.com/" target="_blank" alt="Become A TML Regular" />
+            <area shape="rect" coords="612,121,711,138" href="/" target="_self" alt="Front Cover" />
+            <area shape="rect" coords="718,121,796,138" href="/contents.php" target="_self" alt="Contents" />
+            <area shape="rect" coords="619,84,802,118" href="/magazine.php?pid=food" target="_self" alt="Turn The Page" />
+        </map>
+    </div>
+    <!-- End Header -->
+    
+        <!-- Start Menu -->
+    <div id="menu">
+        <table border="0" cellpadding="0" cellspacing="0" align="center">
+            <tr>
+                <td><a href="magazine.php?pid=art"><img src="images/menu_01.png" id="menu_art" alt="Art &amp; The Arts" /></a></td>
+                <td><a href="magazine.php?pid=tech"><img src="images/menu_02.png" alt="Aviation &amp; Technology" id="menu_tech" /></a></td>
+                <td><a href="magazine.php?pid=auto"><img src="images/menu_03.png" alt="Automobiles &amp; Collectables" id="menu_auto" /></a></td>
+                <td><a href="magazine.php?pid=boat"><img src="images/menu_04.png" id="menu_boat" /></a></td>
+                <td><a href="magazine.php?pid=fashion"><img src="images/menu_05.png" id="menu_fashion" /></a></td>
+                <td><a href="magazine.php?pid=food"><img src="images/menu_06.png" id="menu_food" /></a></td>
+                <td><a href="magazine.php?pid=jewellery"><img src="images/menu_07.png" id="menu_jewellery" /></a></td>
+                <td><a href="magazine.php?pid=lifestyle"><img src="images/menu_08.png" id="menu_lifestyle" /></a></td>
+                <td><a href="magazine.php?pid=pens"><img src="images/menu_09.png" id="menu_pens" /></a></td>
+                <td><a href="magazine.php?pid=travel"><img src="images/menu_10.png" id="menu_travel" /></a></td>
+                <td><a href="magazine.php?pid=wine"><img src="images/menu_11.png" id="menu_wine" /></a></td>
+            </tr>
+        </table>
+        <br/>
+    </div>
+    <!-- End Menu --><style>
+    div#template_body {
+        width: 876px;
+        margin: 0;
+        background-image: url('images/body_background.jpg');
+        background-position: center;
+        background-repeat: repeat-y;
+        margin-left: auto; margin-right: auto;
+    }
+    
+    body, td {
+        font-family:Verdana;
+        font-size: 11px;
+        text-align: center;
+    }
+    
+    td {
+        vertical-align: top;
+        text-align: left;
+    }
+
+</style>
+<div id="template_body">
+    <table border="0" cellspacing="0" cellpadding="0" width="728" align="center">
+        <tr>
+            <td colspan="3"><img src="articleImage.php?ArticleID=482&amp;ImageNumber=1" width="728" style="vertical-align: bottom;" /></td>
+        </tr>
+        <tr>
+            <td width="137" rowspan="3"><img src="articleImage.php?ArticleID=482&amp;ImageNumber=2" width="531" /></td>
+            <td width="15" rowspan="3">&nbsp;</td>
+            <td width="182">    <img src="authorImage.php?ID=22" style="max-width: 50px; max-height: 50px; float: left; margin: 5px;" /> By <a href="" target="_blank">Liz Boyer</a><br/><br/>
+    
+    The recently released, 'Masters of Fashion Illustration' is a collection of some of the finest art ever created in the name of fashion. This beautiful book describes and showcases the often colorful lives and stunning work of the greatest 20th century fashion illustrators as chosen by the discerning eye of one of world's finest contemporary fashion artists, David Downton.<br/>&nbsp;&nbsp;
+In the introduction, Downton recollects the moment he first experienced fashion nirvana at his first couture show (one of Gianni Versace's last) in Paris in 1996. Those were the days when Naomi, Kate and Linda owned the runways and provided illustrators like the author with countless opportunities to let the outside world a brief and intimate glimpse into the world of couture.&#8203;<br/>&nbsp;&nbsp;
+Downton makes no claims of impartiality in  his comprehensive selection of "super draughtsmen (who) ... told not just the story of the dress, describing the time, the place and the woman...				<table cellpadding="0" cellspacing="0" border="0" id="articleFunctions">
+					<tr>
+											<td><a href="#more" onclick="showMore();"><img src="images/read_more.jpg" alt="read more" /></a></td>
+											<td><a href="#commentsDisplay"><img src="images/comments.jpg" alt="comments" /></a></td>
+											<td><a href="http://www.youtube.com/watch?v=Obrj3gG-rO0"><img src="images/play_video.jpg" alt="play video" /></a></td>
+										</tr>
+					<tr>
+											<td style=""><a href="#more" onclick="showMore();">read more</a></td>
+											<td style=""><a href="#commentsDisplay">comments</a></td>
+											<td style=""><a href="http://www.youtube.com/watch?v=Obrj3gG-rO0">video</a></td>
+										</tr>
+				</table>
+			</td>
+        </tr>
+        <tr>
+            <td height="15">&nbsp;</td>
+        </tr>
+        <tr>
+            <td width="182"></td>
+        </tr>
+        <tr height="15"><td colspan="3">&nbsp;</td></tr>
+        <tr id="extraContent" style="display: none;"><td cellpadding="5" colspan="3"><a name="more" /><p style="padding: 10px;"> with an economy and flair that photography, however striking, could never match".<br/>&nbsp;&nbsp;
+'Masters of Fashion Illustration' details the careers of Downton's favorite artists including Belle Epoque artist Giovanni Boldini to the genesis of American advertising in Chicago with JC Leyendecker's powerful images of the Arrow Collar Man. Downton chronicles the prolific and romantic illustrators including Etienne Drian and Erte. Erte's 240 Harpers Bazaar covers defined the Art Deco period with his "rigorous graphic simplicity".<br/>&nbsp;&nbsp;
+He details the golden age of fashion illustration - pre-WW2 telling the story of unquestionably the most influential fashion artist, Carl Erickson who was known simply as 'Eric'. Then later when great photographers like Avedon and Penn dominated the fashion bibles, illustration responded with artists who did what photography couldn't - Coby Whitmore, Bob Peak and Andy Warhol. Downton also showcases the striking images of Tony Viramontes and Antonio Lopez who defined '70's and '80's fashion (especially Halston) with artistry that ushered in the last golden age of fashion illustration.<br/>&nbsp;&nbsp;
+Downton is interviewed by Tony Glenville in the book and he describes his journey as a fashion illustrator which included making portraits of some of the world's most beautiful women including Cate Blanchett, Catherine Deneuve, Erin O'Connor and Dita Von Teese.  He also tells Glenville of the little known facts that came to light as he researched 'Masters'. Rene Bouche painted portraits of many celebrated identities including JFK, Marcel Vertes won two Oscars and Bob Peak was known as the 'Father of the modern movie poster'. <br/>&nbsp;&nbsp;
+This book chronicles the very best fashion artists and some of the mesmerizing illustrations have not been seen since they were first published, and some are reproduced here for the first time. The 36 page portfolio of Downton's own work demonstrates his striking economy of line, spontaneity and natural ability with the human form. 'Masters of Fashion Illustration' is a must-have for bibliophiles, fashionista&#8203;s and art lovers alike. &#8203;<br/>&nbsp;&nbsp;
+At the end of the interview, Tony Glenville asks David Downton, "I was going to ask you whether you think of yourself as a 'master of fashion illustration'? The exceedingly humble Downton just says "Well, no, but I am hopeful.  Quite a few fashion illustrators worked into their eighties, their nineties even, so there is time". <br/>&nbsp;&nbsp;
+Masters of Fashion Illustration is published by Laurence King and is available at Laurence King and Amazon   (<a href="http://www.laurenceking.com">here</a> and <a href="http://www.amazon.com/s/ref=nb_sb_ss_i_0_45?url=search-alias%3Dstripbooks&field-keywords=masters+of+fashion+illustration+david+downton&sprefix=masters+of+fashion+illustration+david+downton">here</a> )</p><p><a href="#top" onclick="hideMore();">Back to the Top</a></p></td></tr>
+        <tr>
+            <td colspan="3" align="center">
+                <!-- ROS -->
+<div id="ad_banner36_728">
+                    <a href="/adclick.php?id=36&amp;f=%2Fmagazine.php%3Fpid%3Dfashion" target="_blank"><img src="/adcreative/L-A-Banner-Ad_1.jpg" style="border: 0; width: 728px; height: 90px;" /></a>
+                </div>            </td>
+        </tr>
+    </table>
+	<div id="commentsDisplay">
+		<h2>COMMENTS</h2><p><span class="quotemark"><img src="images/comment_left.png" style="padding-right: 5px;" />  </span><span class="comment">Everyone has a camera in their phone and flaky snaps are everywhere. How gorgeous to see artists rendering humans so beautifully and individually.</span><span class="quotemark"><img src="images/comment_right.png" style="padding-left: 5px;" /></span></p><p>&nbsp;</p><p><span class="quotemark"><img src="images/comment_left.png" style="padding-right: 5px;" />  </span><span class="comment">If David Downton would have been alive 400 years ago, today he would have been considered a Great Master. Magnificent work!</span><span class="quotemark"><img src="images/comment_right.png" style="padding-left: 5px;" /></span></p><p>&nbsp;</p><p><span class="quotemark"><img src="images/comment_left.png" style="padding-right: 5px;" />  </span><span class="comment">This is beautiful. What an amazing artist. Thank you for bringing this book to my attention.  Marie</span><span class="quotemark"><img src="images/comment_right.png" style="padding-left: 5px;" /></span></p><p>&nbsp;</p><div id="addCommentBox">
+	<div id="closeCommentBox"><a href="javascript:closeCommentBox();">close</a></div>
+		<div id="commentBoxContent">
+		<h2>Add Your Comments:</h2>
+			<form  method="post">
+				<p>Please share your thoughts on this article.</p>
+				<p>We need your email only for confirmation. Your comment remains anonymous and we do not retain your email address...</p>
+				<p>Email Address: <input type="text" name="txtEmail" id="txtEmail" maxlength="70" /></p>
+				<p>Add your comment:</p>
+				<p><textarea rows="5" cols="50" name="txtComment" id="txtComment"></textarea></p>
+				<p>&nbsp;</p>
+				<input type="hidden" name="ArticleID" id="ArticleID" value="482" />
+				<p><input type="button" onClick="sumbitComment()" value="submit" /></p>
+				
+			</form>
+		</div>
+</div>
+
+<a href="javascript:showAddCommentBox(482);" id="addComment">add comment</a>	</div>
+</div>    <!-- Start Footer -->
+    
+	    <div id="facbook" style="background-image: url(images/body_background.jpg); background-repeat: repeat-y; width: 876px; margin: auto; text-align: left; vertical-align: middle; clear: both; padding-top: 10px;">
+        <span style="display: inline-block; width: 500px; text-align: left; margin-left: 80px;"><a href="legal.php?pid=copyright">&copy; TML 2009</a></span>
+        <a class="a2a_dd" href="http://www.addtoany.com/share_save?linkname=This%20Magnificent%20Life&amp;linkurl=http://www.thismagnificentlife.com.au/tml/permaLink.php?ArticleID=482"><img src="http://static.addtoany.com/buttons/share_save_171_16.png" width="171" height="16" border="0" alt="Share/Save/Bookmark"/></a><script type="text/javascript">a2a_linkname="This Magnificent Life";a2a_linkurl="http://www.thismagnificentlife.com.au/tml/permaLink.php?ArticleID=482";</script><script type="text/javascript" src="http://static.addtoany.com/menu/page.js"></script>
+    </div>
+        <div id="footer">
+        <a href="legal.php"><img src="images/footer_custserv.jpg" /></a><a href="legal.php?pid=privacy"><img src="images/footer_privacy.jpg" /></a><a href="#"><img src="images/footer_about.jpg" /></a><a href="#"><img src="images/footer_contact.jpg" /></a><img src="images/footer_space.jpg" /><a href="contents.php"><img src="images/footer_contents.jpg" /></a>
+    </div>
+    <!-- End Footer --><script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8694081-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Acidity and Alkalinity - Balancing Your PH</title>
+<!-- external style sheets-->
+<link href="../style/new-style.css" rel="stylesheet" type="text/css" />
+<!--end external style sheets-->
+
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<!--Window Popup-->
+<script type="text/javascript"><!--  
+/* Script by: www.jtricks.com 
+ * Version: 20100515 
+ * Latest version: 
+ * www.jtricks.com/javascript/window/box.html 
+ */  
+// Moves the box object to be directly beneath an object.  
+function move_box(an, box)  
+{  
+    var cleft = 10;  
+    var ctop = 0;  
+    var obj = an;  
+  
+    while (obj.offsetParent)  
+    {  
+        cleft += obj.offsetLeft;  
+        ctop += obj.offsetTop;  
+        obj = obj.offsetParent;  
+    }  
+  
+    box.style.center = cleft + '%';  
+  
+    ctop += an.offsetHeight + 8;  
+  
+    // Handle Internet Explorer body margins,  
+    // which affect normal document, but not  
+    // absolute-positioned stuff.  
+    if (document.body.currentStyle &&  
+        document.body.currentStyle['marginTop'])  
+    {  
+        ctop += parseInt(  
+            document.body.currentStyle['marginTop']);  
+    }  
+  
+    box.style.top = ctop + 'px';  
+}  
+  
+// Shows a box if it wasn't shown yet or is hidden  
+// or hides it if it is currently shown  
+function show_hide_box(an, width, height, borderStyle)  
+{  
+    var href = an.href;  
+    var boxdiv = document.getElementById(href);  
+  
+    if (boxdiv != null)  
+    {  
+        if (boxdiv.style.display=='none')  
+        {  
+            // Show existing box, move it  
+            // if document changed layout  
+            move_box(an, boxdiv);  
+            boxdiv.style.display='block';  
+  
+            bringToFront(boxdiv);  
+  
+            // Workaround for Konqueror/Safari  
+            if (!boxdiv.contents.contentWindow)  
+                boxdiv.contents.src = href;  
+        }  
+        else  
+            // Hide currently shown box.  
+            boxdiv.style.display='none';  
+        return false;  
+    }  
+  
+    // Create box object through DOM  
+    boxdiv = document.createElement('div');  
+  
+    // Assign id equalling to the document it will show  
+    boxdiv.setAttribute('id', href);  
+  
+    boxdiv.style.display = 'block';  
+    boxdiv.style.position = 'absolute';  
+    boxdiv.style.width = width + 'px';  
+    boxdiv.style.height = height + 'px';  
+    boxdiv.style.border = borderStyle;  
+    boxdiv.style.textAlign = 'right';  
+    boxdiv.style.padding = '4px';  
+    boxdiv.style.background = '#FFFFFF';  
+    document.body.appendChild(boxdiv);  
+    bringToFront(boxdiv);  
+  
+    var offset = 0;  
+  
+    // Remove the following code if 'Close' hyperlink  
+    // is not needed.  
+    var close_href = document.createElement('a');  
+    close_href.href = 'javascript:void(0);';  
+    close_href.onclick = function()  
+        { show_hide_box(an, width, height, borderStyle); }  
+    close_href.appendChild(document.createTextNode('Close'));  
+    boxdiv.appendChild(close_href);  
+    offset = close_href.offsetHeight;  
+    // End of 'Close' hyperlink code.  
+  
+    var contents = document.createElement('iframe');  
+    //contents.scrolling = 'no';  
+    contents.overflowX = 'hidden';  
+    contents.overflowY = 'scroll';  
+    contents.frameBorder = '0';  
+    contents.style.width = width + 'px';  
+    contents.style.height = (height - offset) + 'px';  
+  
+    boxdiv.contents = contents;  
+    boxdiv.appendChild(contents);  
+  
+    move_box(an, boxdiv);  
+  
+    if (contents.contentWindow)  
+        contents.contentWindow.document.location.replace(  
+            href);  
+    else  
+        contents.src = href;  
+  
+    // The script has successfully shown the box,  
+    // prevent hyperlink navigation.  
+    return false;  
+}  
+  
+function getAbsoluteDivs()  
+{  
+    var arr = new Array();  
+    var all_divs = document.body.getElementsByTagName("DIV");  
+    var j = 0;  
+  
+    for (i = 0; i < all_divs.length; i++)  
+        if (all_divs.item(i).style.position=='absolute')  
+        {  
+            arr[j] = all_divs.item(i);  
+            j++;  
+        }  
+  
+    return arr;  
+}  
+  
+function bringToFront(obj)  
+{  
+    if (!document.getElementsByTagName)  
+        return;  
+  
+
+
+    var divs = getAbsoluteDivs();  
+    var max_index = 0;  
+    var cur_index;  
+  
+    // Compute the maximal z-index of  
+    // other absolute-positioned divs  
+    for (i = 0; i < divs.length; i++)  
+    {  
+        var item = divs[i];  
+        if (item == obj ||  
+            item.style.zIndex == '')  
+            continue;  
+  
+        cur_index = parseInt(item.style.zIndex);  
+        if (max_index < cur_index)  
+        {  
+            max_index = cur_index;  
+        }  
+    }  
+  
+    obj.style.zIndex = max_index + 100;  
+}  
+  
+//--></script>  
+<!--END Window Popup-->
+
+</script>
+
+<!--Window Popup-->
+<script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+	newwindow=window.open(url,'name','top=100,left=900,height=600,width=370');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+// -->
+</script>
+<!--internal style sheets--> 
+<style type="text/css"> 
+#mainimage{
+	height:auto;
+	width:auto;
+	top: 50px;
+	left:0px;
+	position:absolute;
+	z-index:1
+}
+#title{
+	position:absolute;
+	top:305px;
+	left:385px;
+	height:auto;
+	width:auto;
+	z-index:2;
+	font-size:40px;
+}
+#subtitle{
+	position:absolute;
+	top:402px;
+	left:42px;
+	height:auto;
+	width:auto;
+	z-index:2;
+	font-size:40px;
+}
+#text{
+	position:absolute;
+	top:80px;
+	right:30px;
+	height:auto;
+	width:300px;
+	z-index:2; 
+	text-align:justify;
+}
+</style>
+<!--end internal style sheets-->
+</head>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9106422-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><body>
+<!--menu-->
+<div id="full-banner">
+<!-- Serving Code 7.9.5 for [Zone] Banner both [Any Dimension] -->
+<script type="text/javascript" src="http://g.adspeed.net/ad.php?do=js&zid=24742&wd=-1&ht=-1&target=_blank"></script>
+<!-- End -->
+</div><div id="Menu"> 
+ <table width="900" border="0">
+  <tr>
+    <td width="240"> 
+    
+   <div class="breadcrumb">
+  <span class="left"></span>
+  <ul>
+    <li><a href="../index.php">Home</a></li>
+    <li><a href="../info/archives.php">Archives</a></li>
+    <li><a href="../blog/current.php">Blog</a></li>
+    <li><a href="../info/contact-us.php">Contact Us</a></li>
+  </ul>
+  <span class="right"></span>
+</div>  </td>
+     <td>
+      <!--add facebook button here-->
+      
+<iframe src="http://www.facebook.com/plugins/like.php?href=http://www.organiclifestylemagazine.com/issue-4/acidity-alkalinity-ph.php&amp;layout=standard&amp;show_faces=false&amp;width=390&amp;action=like&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:390px; height:23px;" allowTransparency="true"></iframe>
+      
+      
+      </td>
+  <td align="right">
+	<form action="../sphider-OLM/search.php" method="get">
+ 
+<input type="text" name="query" id="query" size="20" value="" action="include/js_suggest/suggest.php" columns="2" autocomplete="off" delay="1500">	
+  
+ 
+<input type="submit" value="Search">
+ 
+<input type="hidden" name="search" value="1"> 
+	</form>	   
+ </td>
+  </tr>
+</table>
+<!--end menu-->
+</div>
+<!--end menu-->
+
+ 
+<!--magazine-->
+
+<div id="inhalt">
+<div id="window" > 		
+
+<!--begin page 1-->
+   	  	<div id=win[0] class=hidden>
+   <div id="page">
+   		
+        <div id="title">  <strong> Alkalinity</strong></div>
+        <div id="subtitle">  <strong>Acidity</strong>  </div>
+        <div id="mainimage">  <img src="../Images/issue-4/acid-alkaline.jpg" width="555" height="500" alt="PH Balance" />  </div>
+        <div id="text">
+     &nbsp;&nbsp;     All of the cells in our body require the proper pH balance to  function at an optimal level. If our body is acidic or too alkaline, chemical  reactions including enzyme activity, cellular repair, and cellular reproduction  are inhibited. Raymond Francis writes, &ldquo;On the pH scale, 7 is neutral; 0 to 7  is acidic, and 7 to 14 is alkaline. The normal pH inside a cell is 7.4, which  is slightly alkaline. Maintaining normal pH in the fluid inside the cell as  well as the other body fluids is crucial for keeping the body systems  functioning normally.&rdquo; <br />
+  &nbsp;&nbsp; While most of the body  can still operate, however poorly, outside of the optimum pH zone, blood  cannot. Dr. Shillington writes, &ldquo;Your blood operates between 7.3 and 7.5 on the  alkaline side of this pH scale. If it goes out of this range, you&rsquo;re dead!&rdquo;<br />
+  &nbsp;&nbsp; Fast foods and processed  foods are highly acidic. So how do we survive eating a Big Mac and a Coke? Our  bodies pull alkalizing minerals&mdash;calcium, sodium, potassium, and magnesium from  soft tissues, organs, glands, and bones to neutralize the acid and return our  blood to the proper pH balance. If we continually eat a diet high in acidic  foods, chronic acidosis will result. &ldquo;Eventually, as time goes by, your body  will leech your teeth and bones of their much needed calcium to balance this  out-of-whack situation,&rdquo; writes Dr. Shillington. &ldquo;This is the &lsquo;cause&rsquo; behind  arthritis, 
+  <img src="../Images/every-issue/justify.png" width="273" height="1" />  </div>
+   
+   <!--page turn buttons-->   
+ <div id="previousbutton"><a href="coconut-oil.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Previous Page','','../Images/every-issue/buttons/previous_article_down.png',1)"><img src="../Images/every-issue/buttons/previous_article.png" alt="Previous Page" name="Previous Page" width="34" height="155" border="0" id="Previous Page" /></a></div>
+	<!--previous page above, next page below-->
+ <div id="nextbutton"><a href="javascript:showID('win[1]');" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Next Page','','../Images/every-issue/buttons/next_article_down.png',1)"><img src="../Images/every-issue/buttons/next_article.png" alt="Next Page" name="Next Page" width="34" height="155" border="0" id="Next Page" /></a></div>
+<!--end page turn buttons -->
+</div></div>		
+<!--end page 1-->
+
+<!--begin page 2-->          
+        <div id=win[1] class=hidden>
+   <div id="page">
+ 
+ 	<div id="column1"> bone loss, tooth decay, liver and kidney failure, and a multitude of  other diseases too numerous to  mention.&nbsp; According to my up-to-date  research, every disease has some connection to an acid/alkaline  imbalance.&rdquo;<br />
+  &nbsp;&nbsp; The typical American diet is very high in protein. Most meat  eaten is not organic and the animals are not fed their natural foods. Cows&rsquo;  main diet staple is grass, but we proudly hail the &ldquo;best choice meat&rdquo; as &ldquo;grain  fed.&rdquo;&nbsp; Grains are not the natural diet of  cows. When they eat grains, their bodies become acidic and they are more likely  to become ill. They are then shot full of antibiotics (in addition to hormones) and we eat meat which is more acidic  than nature intended. <br />
+  &nbsp;&nbsp; In addition, our industrial society pollutes water, feeds us  chemical laden foods sprayed with poisons, wraps and stores foods in toxic  plastic and Styrofoam, and encourages us to eat fast foods and processed foods.  Is it any wonder chronic illnesses and devastating disease has reached epidemic  proportions? <br />
+  &nbsp;&nbsp; Though the belief that chronic  acidosis is the cause of chronic illness or the basis for much of our disease  today is not upheld by mainstream conventional medicine, conventional medicine  does agree that acid diets pull calcium from bones and that alkaline diets help  prevent osteoporosis, kidney stones, and age-related waste of  <img src="../Images/every-issue/justify.png" width="273" height="1" />
+     
+      </div>
+	<div id="column2">  muscle mass. <br />
+&nbsp;&nbsp; When you think about  acidity of foods, you may immediately think of citric acid in oranges, lemons,  and limes. Citrus fruits are acidic, but they turn alkaline when digested. The  same is true for tomatoes. It doesn&rsquo;t matter whether a food is acidic or  alkaline. What matters is how it is chemically  metabolized in the body. You may search through books on the subject and through sites on the  Internet to find lists ranking foods on the pH scale.  Unfortunately, the lists are not comprehensive nor are they in  agreement, but they all do say to increase fruits and  vegetables. <br />
+  &nbsp;&nbsp; So how do you use this  new information? How can you find out if your body is acidic? You can test your  pH using the same test strips you might have used in high school chemistry  class or to test the pH in your aquarium. Some recommend testing both saliva  and urine. Raymond Francis recommends measuring your first morning urine before  you eat. &ldquo;This test offers an indicator of your cellular pH and can be used to  monitor changes as you work to normalize your pH. First morning urine should be  in the range of 6.5 to 7.5. If readings fall below 6.5, you are too acidic.  Occasional readings above 7.5 are normal, but consistent readings above 7.5 are  an indication of tissue  </div>
+  	<div id="column3">  
+    
+    breakdown, and a pH over 8.0 is a serious matter.&rdquo; <br />
+  &nbsp;&nbsp; What&rsquo;s the easy way to  make sure your body is not too acidic or alkaline? How do you make sure your  body has the right amount of omega 3s and omega 6s? How do you make sure your  food has just the right amount of vitamins and minerals? How do you decrease  the number of toxins you ingest? How do you rid your body of all virtually all  disease and illness? Does it seem overwhelming? It&rsquo;s not. It&rsquo;s simple. Eat more  raw, fresh, organic foods!
+     <img src="../Images/every-issue/icons/olm.png" width="20" height="11" /> <br />
+     
+     
+     <img src="../Images/issue-4/kid-fruits-veggies.jpg" width="199" height="274" alt="Eat more Fruits and Vegetables" />
+   </div> 
+ 
+    
+   <div id="green_header"><div id="green-title">Acidity and Alkalinity - Balancing Your PH</div><div id="green-olm">Issue 4 | September 2008</div></div>  
+    <div id="footer_copyright">Copyright &copy; 2008 Organic Lifestyle Magazine</div><div id="footer"><a href="../info/subscribe.php" onclick="window.open(this.href,'','resizable=yes,location=no,menubar=no,scrollbars=yes,status=no,toolbar=no,fullscreen=no,dependent=no,width=750,height=500,left=150,top=150,status'); return false">Subscribe for Free</a> | <a href="../../info/contact-us.php" onclick="window.open(this.href,'','resizable=no,location=no,menubar=no,scrollbars=no,status=no,toolbar=no,fullscreen=no,dependent=no,width=1050,height=auto,left=200,top=200,status'); return false">Contact Us</a></div><div id="footer_pagenumber" align="right">pg ##</div>
+    
+<!--page turn buttons-->   
+ <div id="previousbutton"><a href="javascript:showID('win[0]');" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('previous page2','','../Images/every-issue/buttons/previous_article_down.png',1)"><img src="../Images/every-issue/buttons/previous_article.png" alt="Previous Page" name="previous page2" width="34" height="155" border="0" id="previous page2" /></a></div>
+	<!--previous page above, next page below-->
+ <div id="nextbutton"><a href="javascript:showID('win[2]');" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('next page2','','../Images/every-issue/buttons/next_article_down.png',1)"><img src="../Images/every-issue/buttons/next_article.png" alt="Next Page" name="next page2" width="34" height="155" border="0" id="next page2" /></a></div>
+<!--end page turn buttons -->
+</div></div>		
+<!--end page 2-->
+
+<!--begin page 3-->          
+        <div id=win[2] class=hidden>
+   <div id="page">
+
+     
+<!-- Serving Code 7.9.5 for [Zone] Full Page both [Any Dimension] -->
+<script type="text/javascript" src="http://g.adspeed.net/ad.php?do=js&zid=24741&wd=-1&ht=-1&target=_blank"></script>
+<!-- End --> 
+     
+<!--page turn buttons-->   
+ <div id="previousbutton"><a href="javascript:showID('win[1]');" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('previouspage3','','../Images/every-issue/buttons/previous_article_down.png',1)"><img src="../Images/every-issue/buttons/previous_article.png" alt="Previous Page" name="previouspage3" width="34" height="155" border="0" id="previouspage3" /></a></div>
+	<!--previous page above, next page below-->
+ <div id="nextbutton"><a href="olive-oil-scandal.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('nextpage3','','../Images/every-issue/buttons/next_article_down.png',1)"><img src="../Images/every-issue/buttons/next_article.png" alt="Next Page" name="nextpage3" width="34" height="155" border="0" id="nextpage3" /></a></div>
+<!--end page turn buttons -->
+</div></div>		
+<!--end page 3-->
+
+ 
+<!--pages script-->
+<script>
+function showID(it) {
+  var item = document.getElementById(it);
+   document.getElementById('win[0]').className='hidden'
+   document.getElementById('win[1]').className='hidden'
+   document.getElementById('win[2]').className='hidden'
+   
+  item.className='unhidden';
+}
+showID('win[0]');
+</script>
+
+<style>
+.hidden {
+    display         : none;
+}
+.unhidden {
+    display         : block;
+}
+</style></div>
+<!--end pages script--><!--google adsense-->
+<div id="adsense">
+<script type="text/javascript"><!--
+google_ad_client = "pub-9272042679772685";
+/* 728x15, created 8/1/09 */
+google_ad_slot = "4255959342";
+google_ad_width = 900;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<!--end adsense--> <!--socail media-->
+<div id="socialmedia"><table width="900" cellpadding="1">
+   <td>&nbsp;</td>
+  <!--SU--><td><script src="http://www.stumbleupon.com/hostedbadge.php?s=1"></script></td>
+  <!--digg--><td><script src="http://widgets.digg.com/buttons.js" type="text/javascript"></script><a class="DiggThisButton DiggCompact"></a> </td>
+  <!--facebook--><td><a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php">Share</a><script
+src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script> </td>
+  <!--Google Buzz--><td><a title="Post on Google Buzz" class="google-buzz-button" href="http://www.google.com/buzz/post" data-button-style="small-count"></a>
+<script type="text/javascript" src="http://www.google.com/buzz/api/button.js"></script></td>
+  <!--tweetme--><td><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="OrganicLife" data-related="Green_Lifestyle:Sister Publication">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></td>
+    
+    <td><div class="follow-us">Follow Us!</div></td>
+    <!--Follow Us-->
+    
+    <td width="46"><a href="http://www.facebook.com/organiclifestyle" target="_blank"><img src="../Images/every-issue/buttons/facebook-32x32.png" width="32" height="32" alt="facebook" /></a></td> 
+    <td width="46"><a href="http://www.twitter.com/OrganicLife" target="_blank"><img src="../Images/every-issue/buttons/twitter-32x32.png" alt="Follow jmichaeledwards on Twitter" width="32" height="32"/></a></td> 
+    <td width="46"><a href="http://digg.com/OrganicLife" target="_blank"><img src="../Images/every-issue/buttons/digg-32x32.png" width="32" height="32" alt="Digg" /></a></td> 
+    <td width="46"><a href="../info/pick-subscription.php" onclick="window.open
+(this.href,'','resizable=no,location=no,menubar=no,scrollbars=no,status=no,toolbar=no,fullscreen=no,dependent=no,width=610,height=
+500,left=200,top=200,status'); return false"><img src="../Images/every-issue/buttons/email-32x32.png" width="32" height="32" 
+alt="Subscribe via Email" /></a></td>
+    <td width="46"><a href="../subscribe.rss" onclick="window.open
+(this.href,'','location=no,status=no,scrollbars=yes,dependent=no,width=1050,height=700,left=20,top=20,status'); return false"><img 
+src="../Images/every-issue/buttons/feed-32x32.png" width="32" height="32" alt="RSS Feed" /></a></td> </tr>
+</table>
+</div>
+<!--end socail media-->
+<div id="letterboard-ad"> 
+<!-- Serving Code 7.9.5 for [Zone] Leaderboard both [Any Dimension] -->
+<script type="text/javascript" src="http://g.adspeed.net/ad.php?do=js&zid=24745&wd=-1&ht=-1&target=_blank"></script>
+<!-- End -->
+</div> <!-- Disqus commenting-->
+<div id="Comenting">
+<div id="Comenting-disqus">
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/organiclifestyle/embed.js"></script><noscript><a href="http://organiclifestyle.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<div id="Comenting-facebook">
+
+<script src=
+"http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" 
+type="text/javascript"></script>
+
+<fb:comments></fb:comments>
+
+<script type="text/javascript">
+FB.init("8c3892298c95340654f6b9c5f064ebfa", "<path from web root>/xd_receiver.htm");
+</script>
+</div>
+<!-- end Disqus commenting--></div>
+<!--side menu-->
+<div id="mag-menu">
+<a href="cover.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('cover','','../Images/every-issue/buttons/cover-side-down-menu.png',1)"><img src="../Images/every-issue/buttons/cover-side-menu.png" alt="Cover" name="cover" width="34" height="155" border="0" id="cover" /></a>
+<br />
+<a href="contents.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('contents','','../Images/every-issue/buttons/contents-side-down-menu.png',1)"><img src="../Images/every-issue/buttons/contents-side-menu.png" alt="Contents" name="contents" width="34" height="155" border="0" id="contents" /></a>
+<br />
+
+<a href="../info/subscribe.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1','','../Images/every-issue/buttons/subscribe-side-down-menu.png',1)" onclick="window.open(this.href,'','resizable=yes,location=no,menubar=no,scrollbars=yes,status=no,toolbar=no,fullscreen=no,dependent=no,width=620,height=500,left=150,top=150,status'); return false"><img src="../Images/every-issue/buttons/subscribe-side-menu.png" alt="Subscribe" name="Image1" width="34" height="155" border="0" id="Image1" /></a>
+<br />
+
+<a href="contributors.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('contributors','','../Images/every-issue/buttons/contributors-side-menu-down.png',1)"><img src="../Images/every-issue/buttons/contributors-side-menu.png" alt="Contributors" name="contributors" width="34" height="155" border="0" id="contributors" /></a></div>
+<!--end side menu-->
+
+<div id="facebook-recomendations">
+
+ <a href="../includes/facebook-recomendations.php" onclick="return show_hide_box(this, 340, 540, '2px solid')"> <img src="../Images/every-issue/icons/facebook-recomendations.png" alt="facebook recomendations" width="45" height="157" align="middle" /></a>
+
+</div>
+
+<div id="facebook-fanpage-popup">
+
+ <a href="../includes/facebook-fanpage.php" onclick="return show_hide_box(this, 340, 540, '2px solid')"> <img src="../Images/every-issue/icons/fan-page-popup.png" alt="facebook Fan Page" width="45" height="157" align="middle" /></a>
+
+</div>
+
+<div id="twitter-feed-popup">
+
+<a href="../includes/twitter-tweets.php" onclick="return popitup('../includes/twitter-tweets.php')"> <img src="../Images/every-issue/icons/twitter-feed.png" alt="twitter feed" width="45" height="157" align="middle" /></a>
+
+</div><!-- Start Quantcast tag -->
+<script type="text/javascript">
+_qoptions={
+qacct:"p-471uxSyc6t6XI"
+};
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-471uxSyc6t6XI.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast tag -->
+</body>
+</html>

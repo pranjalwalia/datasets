@@ -1,0 +1,1562 @@
+<!-- select sum(sl.total) as count, sl.storyID, s.title, s.date_start, s.type, so.name as source
+                from story s left join source so on so.sourceID = s.sourceID, story_log sl
+               where s.storyID = sl.storyID
+                        and s.date_start >= '2011-04-17 00:00:01'
+                     and s.date_start <= '2011-04-24 23:59:59'
+                     and s.public = 1
+                     and s.type != 'wire'
+            group by sl.storyID
+            order by count desc
+               limit 10 | array (
+  0 => 
+  array (
+    'count' => '100,066',
+    'storyID' => '150715',
+    'title' => 'The Public Overwhelmingly Wants It: Why Is Taxing the Rich So Hard?',
+    'date_start' => '2011-04-23 00:00:01',
+    'type' => 'story',
+    'source' => 'AlterNet',
+    'author' => 'Alyssa Battistoni',
+    'coverage' => 
+    array (
+      'name' => 'Economy',
+      'url' => 'economy',
+    ),
+  ),
+  1 => 
+  array (
+    'count' => '84,653',
+    'storyID' => '150691',
+    'title' => 'We\'re #1 -- Ten Depressing Ways America Is Exceptional',
+    'date_start' => '2011-04-20 16:00:01',
+    'type' => 'story',
+    'source' => 'On the Commons',
+    'author' => 'David Morris',
+    'coverage' => 
+    array (
+      'name' => 'News &amp; Politics',
+      'url' => 'news',
+    ),
+  ),
+  2 => 
+  array (
+    'count' => '64,320',
+    'storyID' => '150646',
+    'title' => 'Yes, the Latest Right-Wing Paean to Sociopath Ayn Rand Is Really, Really Awful',
+    'date_start' => '2011-04-18 10:00:01',
+    'type' => 'story',
+    'source' => 'AlterNet',
+    'author' => 'Brad Reed',
+    'coverage' => 
+    array (
+      'name' => 'Media',
+      'url' => 'media',
+    ),
+  ),
+  3 => 
+  array (
+    'count' => '53,834',
+    'storyID' => '150697',
+    'title' => 'Chomsky: Is the World Too Big to Fail? The Contours of Global Order',
+    'date_start' => '2011-04-21 09:00:01',
+    'type' => 'story',
+    'source' => 'Tomdispatch.com',
+    'author' => 'Noam Chomsky',
+    'coverage' => 
+    array (
+      'name' => 'World',
+      'url' => 'world',
+    ),
+  ),
+  4 => 
+  array (
+    'count' => '52,626',
+    'storyID' => '150664',
+    'title' => 'How the GOP Is Committing Political Suicide With Ryan\'s Extremist Budget Plan ',
+    'date_start' => '2011-04-18 16:00:01',
+    'type' => 'story',
+    'source' => 'AlterNet',
+    'author' => 'Joshua Holland',
+    'coverage' => 
+    array (
+      'name' => 'Economy',
+      'url' => 'economy',
+    ),
+  ),
+  5 => 
+  array (
+    'count' => '47,948',
+    'storyID' => '150685',
+    'title' => 'If Walmart Paid its 1.4 Million U.S. Workers a Living Wage, it Would Result in Almost No Pain for the Average Customer',
+    'date_start' => '2011-04-20 15:00:01',
+    'type' => 'story',
+    'source' => 'AlterNet',
+    'author' => 'Joshua Holland',
+    'coverage' => 
+    array (
+      'name' => 'Economy',
+      'url' => 'economy',
+    ),
+  ),
+  6 => 
+  array (
+    'count' => '47,923',
+    'storyID' => '150642',
+    'title' => 'Glenn Greenwald: Why Do We Assume Obama\'s Actually Trying to Enact a Progressive Agenda?',
+    'date_start' => '2011-04-17 16:00:01',
+    'type' => 'story',
+    'source' => 'Salon',
+    'author' => 'Glenn Greenwald',
+    'coverage' => 
+    array (
+      'name' => 'News &amp; Politics',
+      'url' => 'news',
+    ),
+  ),
+  7 => 
+  array (
+    'count' => '47,052',
+    'storyID' => '150672',
+    'title' => 'The Tea Party Propaganda Factory You Probably Don\'t Know About',
+    'date_start' => '2011-04-19 16:00:01',
+    'type' => 'story',
+    'source' => 'AlterNet',
+    'author' => 'David Rosen',
+    'coverage' => 
+    array (
+      'name' => ' Tea Party and the Right',
+      'url' => 'teaparty',
+    ),
+  ),
+  8 => 
+  array (
+    'count' => '46,629',
+    'storyID' => '150638',
+    'title' => '\'Am I Going to Have to Kill You?\': The Horrific Ways Abusive Debt Collectors Threaten and Harass Their Victims',
+    'date_start' => '2011-04-17 10:00:01',
+    'type' => 'story',
+    'source' => 'AlterNet',
+    'author' => 'Alex Henderson',
+    'coverage' => 
+    array (
+      'name' => 'Economy',
+      'url' => 'economy',
+    ),
+  ),
+  9 => 
+  array (
+    'count' => '45,161',
+    'storyID' => '150667',
+    'title' => 'Imperial Decline: How Does It Feel to Be Inside a Dying Empire?',
+    'date_start' => '2011-04-19 10:00:01',
+    'type' => 'story',
+    'source' => 'Tomdispatch.com',
+    'author' => 'Tom Engelhardt',
+    'coverage' => 
+    array (
+      'name' => 'World',
+      'url' => 'world',
+    ),
+  ),
+) --><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+      
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="keywords" content="AlterNet.org, Independent Media, Alternative News, Media Activism, The Drug War" />
+      
+      <meta property="fb:page_id" content="17108852506" />
+      
+                <title>Big Pharma Set to Take Over Medical Marijuana Market | Drugs | AlterNet</title>
+          <meta name="title" content="Big Pharma Set to Take Over Medical Marijuana Market | Drugs" />
+          <meta name="description" content="Meanwhile, state-licensed medical marijuana dispensaries that provide relief for thousands of Americans are under attack by other federal agencies." />
+          <meta name="author" content="David Edwards"/>
+          <meta name="source" content="Raw Story"/>
+          <link rel="alternate" type="application/atom+xml" href="http://feeds.feedblitz.com/alternet_drugs" title="AlterNet.org Drugs">
+          <link rel="alternate" type="application/atom+xml" href="http://feeds.feedblitz.com/alternet_all" title="All AlterNet Headlines">
+            
+      <link rel="image_src" type="image/jpeg" href="http://images.alternet.org/images/site/logo_2.jpg" />
+                                        
+      <!-- start: chartbeat code-->              
+
+                <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+            <!-- START: STYLESHEETS -->
+
+            
+          <!-- main stylesheets -->
+          
+          <style type="text/css">@import url("http://files.alternet.org/css/master3.6.css");</style>
+          <style type="text/css">@import url("http://files.alternet.org/css/blogads2_v5.min.css");</style>
+                                   
+          <!-- style sheets to increase/ decrease text size -->
+
+          <link rel="alternate stylesheet" title="text-small" class="text-size" href="http://files.alternet.org/css/text-small.css" type="text/css" media="screen, projection" />
+          <link rel="alternate stylesheet" title="text-medium" class="text-size" href="http://files.alternet.org/css/text-medium.css" type="text/css" media="screen, projection" />
+          <link rel="alternate stylesheet" title="text-large" class="text-size" href="http://files.alternet.org/css/text-large.css" type="text/css" media="screen, projection" />
+          
+          <!-- ie6 stylesheet -->
+
+          <!--[if IE 6]><style type="text/css">@import url("http://c0573252.cdn.cloudfiles.rackspacecloud.com/IE6.1.0.css");</style><![endif]-->
+          <!--[if IE 7]><style type="text/css">@import url("http://c0573252.cdn.cloudfiles.rackspacecloud.com/IE7.1.1.css");</style><![endif]-->
+      
+          <!-- splash page stylesheet ( if needed ) -->  
+
+          
+             
+                  
+          <script type="text/javascript" src="http://files.alternet.org/js/jquery-1.4.2.js"></script>
+          
+                    
+          <script type="text/javascript" src="http://files.alternet.org/js/application_min.js"></script>
+          
+          
+          <!--ad code for interstitial ad-->
+          <script language="JavaScript" src="http://partner.googleadservices.com/gampad/google_service.js"></script>
+          <script language="JavaScript">
+              GS_googleAddAdSenseService("ca-pub-2202292528164382");
+              GS_googleEnableAllServices();
+          </script>
+          <script language="JavaScript">                                               
+              GA_googleAddSlot("ca-pub-2202292528164382", "interstitial-controller");
+              GA_googleAddSlot("ca-pub-2202292528164382", "pop-under-controller");
+              //GA_googleAddSlot("ca-pub-2202292528164382", "Pop_Over_Controller");
+              GA_googleFetchAds();
+          </script>
+          <!--end ad code-->
+        
+          
+          
+                              
+           
+          
+          
+                                            
+          
+             
+      
+      <!--preload list style images -->
+      <script type="text/javascript">
+          <!--
+          pic1= new Image(5,10); 
+          pic1.src="https://images.alternet.org/images/site/arrow_economy_hover.gif"; 
+
+          pic2= new Image(5,10); 
+          pic2.src="https://images.alternet.org/images/site/arrow_environment_hover.gif"; 
+
+            pic3= new Image(5,10); 
+            pic3.src="https://images.alternet.org/images/site/arrow_investigations_hover.gif"; 
+
+            pic4= new Image(5,10); 
+            pic4.src="https://images.alternet.org/images/site/arrow_living_hover.gif"; 
+
+            pic5= new Image(5,10); 
+            pic5.src="https://images.alternet.org/images/site/arrow_media_hover.gif";
+
+            pic6= new Image(5,10); 
+            pic6.src="https://images.alternet.org/images/site/arrow_news_hover.gif";
+
+            pic7= new Image(5,10); 
+            pic7.src="https://images.alternet.org/images/site/arrow_rights_hover.gif";
+
+            pic8= new Image(5,10); 
+            pic8.src="https://images.alternet.org/images/site/arrow_vision_hover.gif";
+
+            pic9= new Image(5,10); 
+            pic9.src="https://images.alternet.org/images/site/arrow_world_hover.gif";
+
+            pic10= new Image(5,10); 
+            pic10.src="https://images.alternet.org/images/site/arrow.gif";
+            //-->
+      </script>
+          
+    </head>
+    
+    <body>
+                  
+        <div id='topad' style='background-color: #fff; width: 728px; height: 90px; margin: 0px auto;'></div>          
+        <div id="wing_topbar_div" style="display: none; z-index: 1;"></div>
+          
+        <div id="root_header">
+              
+              <div class="container">
+              
+                  <div class="subscribe">
+                      <span>
+                          <form method="post" action="/newsletter/subscribe/"  class="main_email_subscribe">
+                              <input type="hidden" name="group[]" value="26450" />
+                              <input type="hidden" name="refcode" value="HOME_"  />
+                              <input type="text" name="email" value="E-mail address" onfocus="if (this.value == 'E-mail address') this.value = '';" size="24" style="width:110px;" class="searcha" />
+                              <input type="image" src="http://images.alternet.org/images/site/submit_arrow_yellow.jpg" border="0" alt="Submit Form">
+                          </form>
+                      </span>
+                      <ul id="social">
+                          <li class="twitter"><a href="http://twitter.com/AlterNet"><img src="http://images.alternet.org/images/site/spacer.gif" width="22px" height="20px" border="0" alt="follow AlterNet on twitter"></a></li>
+                          <li class="facebook"><a href="http://www.facebook.com/pages/AlterNet/17108852506"><img src="http://images.alternet.org/images/site/spacer.gif" width="22px" height="20px" border="0" alt="be an AlterNet facebook fan"></a></li>
+                          <li class="rss"><a href="http://feeds.feedblitz.com/alternet_drugs"><img src="http://images.alternet.org/images/site/spacer.gif" width="22px" border="0" alt="subscribe to our rss" height="20px"></a></li>
+                      </ul>
+                  </div>
+                  
+              </div>
+              
+                            <div id="banner" class='banner_living'>
+                
+                  <div id="banner_container">
+                  
+                      <div class="logo"><a href="/"><span class="story_tools_text">AlterNet.org</span></a></div>
+
+                      <!-- org nav-->
+
+                      <div class="org_nav">
+                          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                          <span><a href="/">HOME</a></span>
+                          <span><a href="http://blogs.alternet.org/about/">ABOUT</a></span>
+                          <span><a href="/feedback/">CONTACT</a></span>
+                          <span><a href="http://blogs.alternet.org/advertise/">ADVERTISE</a></span>
+                          <span><a href="https://www.alternet.org/donate/">DONATE</a></span>
+                          <span><a href="http://blogs.alternet.org/wp-admin/">LOGIN</a></span>
+                      </div>
+                      
+                      <div class="banner_search">
+                          <span> SEARCH: </span>
+                      </div>
+                      
+                      <div class="banner_search_box">
+                          <span>
+                              <form action="http://www.alternet.org/search/search_results.html">
+                                  <input type="hidden" name="cx" value="000785083761953554347:o4hm7xdztnc" />
+                                  <input type="hidden" name="cof" value="FORID:10" />
+                                  <input type="hidden" name="ie" value="UTF-8" />
+                                  <input type="text" name="q" class="searcha" size="17" />
+                                  <input type="image" src="http://images.alternet.org/images/site/submit_arrow_yellow.jpg" border="0" alt="Submit Form">
+                              </form>
+                          </span>
+                      </div>
+
+                      <ul id="nav"> 
+    <li class='news'><span>News & Politics</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/news/'>NEWS &AMP; POLITICS</a></li>        		</ul>
+           	    </li>
+    <li class='world'><span>World</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/world/'>WORLD</a></li>        		</ul>
+           	    </li>
+    <li class='economy'><span>Economy</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/economy/'>ECONOMY</a></li>        		</ul>
+           	    </li>
+    <li class='rights'><span>Rights</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/rights/'>CIVIL LIBERTIES</a></li><li><a href='/reproductivejustice/'>GENDER</a></li><li><a href='/immigration/'>IMMIGRATION</a></li>        		</ul>
+           	    </li>
+    <li class='environment'><span>Environment</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/environment/'>ENVIRONMENT</a></li><li><a href='/food/'>FOOD</a></li><li><a href='/water/'>WATER</a></li>        		</ul>
+           	    </li>
+    <li class='media'><span>Media & Culture</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/books/'>BOOKS</a></li><li><a href='/culture/'>CULTURE</a></li><li><a href='/media/'>MEDIA</a></li>        		</ul>
+           	    </li>
+    <li class='living'><span>Living</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/belief/'>BELIEF</a></li><li><a href='/drugs/'>DRUGS</a></li><li><a href='/food/'>FOOD</a></li><li><a href='/health/'>PERSONAL HEALTH</a></li><li><a href='/sex/'>SEX &AMP; RELATIONSHIPS</a></li>        		</ul>
+           	    </li>
+    <li class='vision'><span>Vision</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/vision/'>VISION</a></li>        		</ul>
+           	    </li>
+    <li class='investigations'><span>Investigations</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/investigations/'>INVESTIGATIONS</a></li>        		</ul>
+           	    </li>
+</ul>
+
+                  
+                  </div>                 
+              </div> 
+              <div class="banner_shadow_outer_container"></div>
+
+              <div class="banner_shadow_container"></div>
+
+        </div> 
+        
+        <!-- start: body -->
+        <div id="body_main">
+
+<!-- DEFAULT ARTICLE PAGE -->  
+<div class='main_left_column'>
+
+    <!-- start: coverage header bar -->
+    
+    <div class='coverage_header_bar_living'>
+        <span class="white"> &nbsp; DRUGS &nbsp;</span>
+    </div>
+     
+    <div class="living story-body-container">
+    
+        <!-- start: byline -->
+        
+        <div class="byline">
+            
+            <a class="living" href="http://rawstory.com/">Raw Story</a>                
+                             / <em>By</em>
+                                    <em><a class="living" href="/authors/10875/" title="View all stories by David Edwards">David Edwards</a></em>
+                                                                
+        </div>
+        
+        
+        <div class="story_comments">
+            <span class="small">
+                <img src="http://images.alternet.org/images/site/talk_box_living.jpg" alt="comments_image" border="0">
+                <a class='living comments_link' href="#disqus_thread" dsqid="alternet-150698">-</a>
+            </span>
+        </div>
+        
+                   
+        <!-- start: headline -->
+        <div class="headline">
+            <h1>Big Pharma Set to Take Over Medical Marijuana Market</h1>
+        </div>
+        <!-- end: headline -->
+                                  
+        <!-- start: teaser -->
+                <div class="teaser">
+            Meanwhile, state-licensed medical marijuana dispensaries that provide relief for thousands of Americans are under attack by other federal agencies.        </div>
+                <!-- end: teaser -->
+
+        <!-- START BODY -->
+        <div id="the_body" class="body_living">
+        
+                            
+                                    <div style='float: left;font-family:Georgia, Arial, Sans-Serif;'><em>April 21, 2011</em> &nbsp;| &nbsp; </div>
+                                    
+                <div class="story_images_top">&nbsp;</div>
+                <div class='article_insert_container'>
+                    <div class='insert_border_top'><small>Advertisement</small></div>
+                    <div id='run_of_site_billboard' class='insert_advertisement'></div>
+                    <div class='insert_border_bottom'>&nbsp;</div>
+                </div>
+            
+                                                        
+            <p name='paragraph1' id='paragraph1'>Just as the federal government is clamping down on medical marijuana  dispensaries, the Federal Drug Administration (FDA) may be set to give  Big Pharma the clearance to take over the market.</p><p name='paragraph2' id='paragraph2'>In 2007, GW Pharmaceuticals <a href="http://www.gwpharm.com/Cannabinoid%20Research%20Collaboration.aspx">announced</a>  that it partnered with Otsuka to bring &quot;Sativex&quot; -- or liquefied  marijuana -- to the U.S. The companies recently completed Phase II  efficacy and safety trials testing and began <a href="http://www.gwpharm.com/Sativex%20Enters%20Phase%20III%20Clinical%20Programme%20In%20Cancer%20Pain.aspx">discussion with the FDA</a> for Phase III testing. Phase III is generally thought to be the final step before the drug can be marketed in the U.S.</p><p name='paragraph3' id='paragraph3'>&quot;GW Pharmaceuticals plc (AIM: GWP) today announces the initiation of  the Phase III clinical trials programme of Sativex in the treatment of  pain in patients with advanced cancer, who experience inadequate  analgesia during optimized chronic opioid therapy,&quot; GW said in a  statement. &quot;This indication represents the initial target indication for  Sativex in the United States.&quot;</p><p name='paragraph4' id='paragraph4'>Sativex is the brand name for a drug derived from cannabis sativa.  It's an extract from the whole plant cannabis, not a synthetic compound.  Even GW <a href="http://www.gwpharm.com/uploads/spc-doc.pdf">defines the drug</a> (.pdf) as marijuana.</p><p name='paragraph5' id='paragraph5'>Yet as the FDA is poised to approve the drug for Big Pharma,  state-licensed medical marijuana dispensaries that provide relief for  thousands of Americans are under attack by other federal agencies.</p><p name='paragraph6' id='paragraph6'>Lynette Shaw, the owner and founder of Marin Alliance for Medical Marijuana (MAMM) in Fairfax, California, <a href="http://www.rawstory.com/rs/2011/03/18/every-dispensary-in-the-nation-could-be-shut-by-irs-med-marijuana-seller-warns/">was stunned</a>  when the IRS audited her 2008 and 2009 tax returns and disallowed the  foundation's business deductions, then demanded millions of dollars in  back taxes.</p><p name='paragraph7' id='paragraph7'>The IRS pursued her under &sect; 280E of the federal tax code, which  states that no business deductions will be allowed for companies  &quot;trafficking in controlled substances&quot;.</p><p name='paragraph8' id='paragraph8'>Shaw is now <a href="http://www.rawstory.com/rs/2011/03/18/every-dispensary-in-the-nation-could-be-shut-by-irs-med-marijuana-seller-warns/">suing the IRS</a> to prevent them from destroying the entire medical marijuana industry.</p><p name='paragraph9' id='paragraph9'>Last week, the Justice Department even <a href="http://www.rawstory.com/rs/2011/04/15/obama-admin-threatens-to-prosecute-state-employees-who-license-medical-marijuana-dispensaries/">threatened to prosecute</a> state employees who license medical marijuana dispensaries.</p><p name='paragraph10' id='paragraph10'>As a result, Washington state Gov. Chris Gregoire (D) said she would  veto a bill that would have allowed the state to license growers.</p><p name='paragraph11' id='paragraph11'>In February, marijuana advocacy group <a href="http://www.rawstory.com/rs/2011/02/23/dea-to-legalize-marijuana-only-for-big-pharma-group-claims/">NORML warned</a> that the Drug Enforcement Administration (DEA) intended to legalize marijuana for Big Pharma only.</p><p name='paragraph12' id='paragraph12'>&quot;The DEA's intent is to expand the federal government's schedule III  listing to include pharmaceutical products containing naturally derived  formations of THC while simultaneously maintain existing criminal  prohibitions on the plant itself,&quot; Paul Armentano, the deputy director  of the National Organization for the Reform of Marijuana Laws (NORML),  wrote at <a href="http://www.alternet.org/drugs/150009?page=1">AlterNet</a>.</p><p name='paragraph13' id='paragraph13'>h/t: <a href="http://www.americanindependent.com/179457/is-big-pharma-set-to-corner-the-american-market-on-medical-marijuana">The American Independent</a></p><div class='paging_options'><div class='pager_right'><ul><li><b>1</b></li></ul></div><div class='pager_left'><a href='?page=entire'>View as a single page</a></div>
+                            <div style='clear: both; height: 1px;'>&nbsp;</div></div>
+                
+                                
+        </div>
+        <!-- END BODY -->
+         
+          
+        <div class="big_story_tools_bottom_container">
+            
+            <div class="redditit">
+                <a href="http://www.reddit.com/submit" onclick="window.location = 'http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"><img src="http://images.alternet.org/images/site/reddit.gif" alt="submit to reddit" border="0"></a>
+            </div>
+            <div class="diggthis">
+                <a class="DiggThisButton DiggLarge" href="http://digg.com/submit?url=http%3A//www.alternet.org/drugs/150698/big_pharma_set_to_take_over_medical_marijuana_market/&amp;title=Big Pharma Set to Take Over Medical Marijuana Market"><span style="display:none;">Meanwhile, state-licensed medical marijuana dispensaries that provide relief for thousands of Americans are under attack by other federal agencies.</span></a>
+            </div>
+            
+            <div id='bstb_stumbleupon' class="stumblebutton"></div>
+            
+            <div id='bstb_tweetmeme' class="tweetmeme-sharer"></div>
+            
+            <div class="facebook-sharer">
+                <a name="fb_share" type="box_count" href="http://www.facebook.com/sharer.php?u=http://www.alternet.org/drugs/150698/big_pharma_set_to_take_over_medical_marijuana_market/&t=Big Pharma Set to Take Over Medical Marijuana Market">Share</a>
+            </div>
+            <div class="talk_box">
+                <a onmouseover="document.big_talk_box.src='http://images.alternet.org/images/site/big_talk_box_hover.jpg'" onmouseout="document.big_talk_box.src='http://images.alternet.org/images/site/big_talk_box_living.jpg'" href="http://www.alternet.org/drugs/150698/big_pharma_set_to_take_over_medical_marijuana_market/comments/" ><img src="http://images.alternet.org/images/site/big_talk_box_living.jpg" name="big_talk_box" border="0"></a><br />
+                <span class="small"><a class='living comments_link'  href="#disqus_thread" dsqid="alternet-150698">-</a></span>
+            </div>
+            
+        </div>    
+            
+        
+        <!-- story tools bottom -->
+        <div class="story_tools_bottom">
+            <div class="text-size">
+                <ul><li class="text-small"><a onclick="setActiveStyleSheet('text-small'); return false;" title="Smaller text size" href="#">A</a></li><li class="text-medium"><a onclick="setActiveStyleSheet('text-medium'); return false;" title="Normal text size" href="#">A</a></li><li class="last text-large"><a onclick="setActiveStyleSheet('text-large'); return false;" title="Larger text size" href="#">A</a></li></ul>
+            </div>
+            <div class="story_tools_email">
+                <a href="/module/email/?storyID=150698" title="Email this story to a friend" onclick="window.open('/module/email/?storyID=150698','email150698','width=420,height=240,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=no,menubar=no,status=yes'); return false"><span class="story_tools_text">Email</span></a>
+            </div>
+            <div class="story_tools_print">
+                <a href="/module/printversion/150698" title="Print-friendly version" onclick="window.open('/module/printversion/150698','print150698','width=600,height=400,scrollbars=yes,resizable=yes,toolbar=yes,directories=yes,location=no,menubar=yes,status=yes'); return false"><span class="story_tools_text">Print</span></a>
+            </div>
+            <div class="story_tools_share">
+                <a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=markristaino"><span class="story_tools_text">Share</span></a>
+            </div>
+            <div class="story_tools_social_buttons"></div>
+        </div>
+        
+          
+        <!-- newsletter subscribe -->
+                <div class="bottom_subscribe">
+            LIKED THIS ARTICLE? <font style="color:#CA8500;">JOIN OUR EMAIL LIST</font><br />
+            <em><font style="font-family:georgia;">Stay up to date with the latest Drugs headlines via email</font></em><br />
+            <div class="signup">
+                <form method="post" action="/newsletter/subscribe/"  >
+                    <input type="hidden" name="group[]" value="26450" />
+                    <input type="hidden" name="refcode" value="HOME_drugs"  />
+                    <input type="text" name="email" value="E-mail address" onfocus="if (this.value == 'E-mail address') this.value = '';" size="24" style="width:110px;" class="searcha" />
+                    <input type="image" src="http://images.alternet.org/images/site/submit_arrow_yellow.jpg" border="0" alt="Submit Form">
+                </form>
+            </div>
+        </div>
+                
+        <div class='outbrain'>
+        
+            <script type="text/JavaScript">
+            
+                var OB_permalink= 'http://www.alternet.org/drugs/150698/big_pharma_set_to_take_over_medical_marijuana_market/';
+                var OB_Template="Alternet";
+                var OB_widgetId= 'AR_1';
+                var OB_langJS ='http://widgets.outbrain.com/lang_en.js';
+                if ( typeof(OB_Script)!='undefined' )
+                    OutbrainStart();
+                else {
+                    var OB_Script = true;
+                    var str = "<script src='http://widgets.outbrain.com/outbrainWidget.js'; type='text/javascript'></"+"script>";
+                    document.write(str);
+                }
+            
+            </script>
+        
+        </div>
+            
+        <!-- if tagged posts -->
+                <div class="tags">
+            <em>See more stories tagged with:</em> <a class="living" href="/tags/drugs/">drugs</a>, <a class="living" href="/tags/marijuana/">marijuana</a>, <a class="living" href="/tags/pot/">pot</a>        </div>
+                
+        <!-- comment page link -->
+        <div style='margin: 15px 0px;'>
+            <a href="http://www.alternet.org/drugs/150698/big_pharma_set_to_take_over_medical_marijuana_market/comments/"><img src='http://images.alternet.org/images/buttons/button_jointhediscussion.gif' style='border: 0px;'></a>
+        </div>
+        
+        <!-- start: top stories -->
+<div id="todays_stories" style="border-top: 1px solid #A9A9A9; margin: 15px 5px 5px 0px; padding-top: 15px; background-image: url('http://www.alternet.org/images/site/article_top_stories.gif')">
+            <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="/economy/150715/the_public_overwhelmingly_wants_it%3A_why_is_taxing_the_rich_so_hard"><img src="http://images.alternet.org/images/managed/storyimages_1303516202_screenshot20110422at4.49.17pm.jpg_640x433_95x68" alt="" width="95" height="67" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="economy"><li style='width: 400px !important;'><span><a href="/economy/150715/the_public_overwhelmingly_wants_it%3A_why_is_taxing_the_rich_so_hard">ECONOMY</a> &nbsp;</span></li></ul></div>  
+        <a href="/economy/150715/the_public_overwhelmingly_wants_it%3A_why_is_taxing_the_rich_so_hard"><h2 class="economy"><a href="/economy/150715/the_public_overwhelmingly_wants_it%3A_why_is_taxing_the_rich_so_hard">The Public Overwhelmingly Wants It: Why Is Taxing the Rich So Hard?</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="/news/150681/how_the_koch_brothers_indoctrinate_their_employees_with_right-wing_anti-worker_propaganda"><img src="http://images.alternet.org/images/managed/storyimages_1303330456_3120167403dc8d13a41a.jpg_640x640_95x68" alt="" width="95" height="67" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="news"><li style='width: 400px !important;'><span><a href="/news/150681/how_the_koch_brothers_indoctrinate_their_employees_with_right-wing_anti-worker_propaganda">NEWS &AMP; POLITICS</a> &nbsp;</span></li></ul></div>  
+        <a href="/news/150681/how_the_koch_brothers_indoctrinate_their_employees_with_right-wing_anti-worker_propaganda"><h2 class="news"><a href="/news/150681/how_the_koch_brothers_indoctrinate_their_employees_with_right-wing_anti-worker_propaganda">How the Koch Brothers Indoctrinate Their Employees with Right-Wing Anti-Worker Propaganda</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="/story/150709/madness%3A_right-wingers_are_serious_about_trying_to_undermine_child_labor_laws"><img src="http://images.alternet.org/images/managed/storyimages_1303422379_breakerboys.jpg_640x444_95x68" alt="" width="95" height="67" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="no_coverage"><li style='width: 400px !important;'><span><a href="/story/150709/madness%3A_right-wingers_are_serious_about_trying_to_undermine_child_labor_laws"></a> &nbsp;</span></li></ul></div>  
+        <a href="/story/150709/madness%3A_right-wingers_are_serious_about_trying_to_undermine_child_labor_laws"><h2 class="no_coverage"><a href="/story/150709/madness%3A_right-wingers_are_serious_about_trying_to_undermine_child_labor_laws">Madness: Right-Wingers Are Serious About Trying to Undermine Child Labor Laws</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="/food/150706/michael_pollan%3A_it%27s_not_so_much_what_we_eat%2C_as_how_we_eat_it"><img src="http://images.alternet.org/images/managed/storyteaser_pollan350.jpg_95x68" alt="" width="95" height="68" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="living"><li style='width: 400px !important;'><span><a href="/food/150706/michael_pollan%3A_it%27s_not_so_much_what_we_eat%2C_as_how_we_eat_it">FOOD</a> &nbsp;</span></li></ul></div>  
+        <a href="/food/150706/michael_pollan%3A_it%27s_not_so_much_what_we_eat%2C_as_how_we_eat_it"><h2 class="living"><a href="/food/150706/michael_pollan%3A_it%27s_not_so_much_what_we_eat%2C_as_how_we_eat_it">Michael Pollan: It's Not So Much What We Eat, As How We Eat It</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="http://www.alternet.org/newsandviews/article/569425/study%3A_most_americans_want_wealth_distribution_similar_to_sweden"><img src="http://images.alternet.org/images/managed/storyteaser_money5551220.jpg_95x68" alt="" width="95" height="68" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="no_coverage"><li style='width: 400px !important;'><span><a href="http://www.alternet.org/newsandviews/article/569425/study%3A_most_americans_want_wealth_distribution_similar_to_sweden">Hot News and Views</a> &nbsp;</span></li></ul></div>  
+        <a href="http://www.alternet.org/newsandviews/article/569425/study%3A_most_americans_want_wealth_distribution_similar_to_sweden"><h2 class="no_coverage"><a href="http://www.alternet.org/newsandviews/article/569425/study%3A_most_americans_want_wealth_distribution_similar_to_sweden">Study: Most Americans Want Wealth Distribution Similar to Sweden</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="http://www.alternet.org/newsandviews/article/569426/4_reasons_obama_should_not_%22triangulate%22"><img src="http://images.alternet.org/images/managed/blogteaser_obamahalo1.jpg_95x68" alt="" width="95" height="68" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="no_coverage"><li style='width: 400px !important;'><span><a href="http://www.alternet.org/newsandviews/article/569426/4_reasons_obama_should_not_%22triangulate%22">Hot News and Views</a> &nbsp;</span></li></ul></div>  
+        <a href="http://www.alternet.org/newsandviews/article/569426/4_reasons_obama_should_not_%22triangulate%22"><h2 class="no_coverage"><a href="http://www.alternet.org/newsandviews/article/569426/4_reasons_obama_should_not_%22triangulate%22">4 Reasons Obama Should Not "Triangulate"</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="/sex/150717/what_do_you_do_when_your_best_friend_is_dating_someone_who_is_obviously_going_to_ruin_his_or_her_life"><img src="http://images.alternet.org/images/managed/storyimages_1303517802_screenshot20110422at5.16.06pm.jpg_640x477_95x68" alt="" width="95" height="67" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="living"><li style='width: 400px !important;'><span><a href="/sex/150717/what_do_you_do_when_your_best_friend_is_dating_someone_who_is_obviously_going_to_ruin_his_or_her_life">SEX &AMP; RELATIONSHIPS</a> &nbsp;</span></li></ul></div>  
+        <a href="/sex/150717/what_do_you_do_when_your_best_friend_is_dating_someone_who_is_obviously_going_to_ruin_his_or_her_life"><h2 class="living"><a href="/sex/150717/what_do_you_do_when_your_best_friend_is_dating_someone_who_is_obviously_going_to_ruin_his_or_her_life">What Do You Do When Your Best Friend Is Dating Someone Who Is Obviously Going to Ruin His or Her Life?</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="/health/150656/how_big_pharma%27s_deceptive_advertising_helps_addict_patients%2C_screw_over_doctors_and_jack_up_insurance_rates"><img src="http://images.alternet.org/images/managed/storyteaser_pharma_1236874853.jpg_95x68" alt="" width="95" height="68" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="living"><li style='width: 400px !important;'><span><a href="/health/150656/how_big_pharma%27s_deceptive_advertising_helps_addict_patients%2C_screw_over_doctors_and_jack_up_insurance_rates">PERSONAL HEALTH</a> &nbsp;</span></li></ul></div>  
+        <a href="/health/150656/how_big_pharma%27s_deceptive_advertising_helps_addict_patients%2C_screw_over_doctors_and_jack_up_insurance_rates"><h2 class="living"><a href="/health/150656/how_big_pharma%27s_deceptive_advertising_helps_addict_patients%2C_screw_over_doctors_and_jack_up_insurance_rates">How Big Pharma's Deceptive Advertising Helps Addict Patients, Screw Over Doctors and Jack Up Insurance Rates</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="/world/150716/exposed_literary_fraud_reveals_lengths_americans_take_to_deceive_themselves_to_justify_war_and_intervention"><img src="http://images.alternet.org/images/managed/blogteaser_afgh.jpg_95x68" alt="" width="95" height="68" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="world"><li style='width: 400px !important;'><span><a href="/world/150716/exposed_literary_fraud_reveals_lengths_americans_take_to_deceive_themselves_to_justify_war_and_intervention">WORLD</a> &nbsp;</span></li></ul></div>  
+        <a href="/world/150716/exposed_literary_fraud_reveals_lengths_americans_take_to_deceive_themselves_to_justify_war_and_intervention"><h2 class="world"><a href="/world/150716/exposed_literary_fraud_reveals_lengths_americans_take_to_deceive_themselves_to_justify_war_and_intervention">Exposed Literary Fraud Reveals Lengths Americans Take to Deceive Themselves to Justify War and Intervention</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="/world/150654/tribal_plate_tectonics%3A_the_supposed_christian-muslim_vendetta_in_west_africa_is_a_front_for_a_much_simpler_story"><img src="http://images.alternet.org/images/managed/storyimages_1303159838_screenshot20110418at1.49.52pm.jpg_640x532_95x68" alt="" width="95" height="67" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="world"><li style='width: 400px !important;'><span><a href="/world/150654/tribal_plate_tectonics%3A_the_supposed_christian-muslim_vendetta_in_west_africa_is_a_front_for_a_much_simpler_story">WORLD</a> &nbsp;</span></li></ul></div>  
+        <a href="/world/150654/tribal_plate_tectonics%3A_the_supposed_christian-muslim_vendetta_in_west_africa_is_a_front_for_a_much_simpler_story"><h2 class="world"><a href="/world/150654/tribal_plate_tectonics%3A_the_supposed_christian-muslim_vendetta_in_west_africa_is_a_front_for_a_much_simpler_story">Tribal Plate Tectonics: The Supposed Christian-Muslim Vendetta in West Africa Is a Front for a Much Simpler Story</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="/environment/150661/vision%3A_watching_the_nuclear_disaster_in_japan_from_nevada%27s_nuke-free%2C_earthquake-prone_yucca_mountain"><img src="http://images.alternet.org/images/managed/storyteaser_d41db314e7f299df3d6acec215a9a0061.jpg_95x68" alt="" width="95" height="68" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="environment"><li style='width: 400px !important;'><span><a href="/environment/150661/vision%3A_watching_the_nuclear_disaster_in_japan_from_nevada%27s_nuke-free%2C_earthquake-prone_yucca_mountain">ENVIRONMENT</a> &nbsp;</span></li></ul></div>  
+        <a href="/environment/150661/vision%3A_watching_the_nuclear_disaster_in_japan_from_nevada%27s_nuke-free%2C_earthquake-prone_yucca_mountain"><h2 class="environment"><a href="/environment/150661/vision%3A_watching_the_nuclear_disaster_in_japan_from_nevada%27s_nuke-free%2C_earthquake-prone_yucca_mountain">Vision: Watching the Nuclear Disaster in Japan from Nevada's Nuke-Free, Earthquake-Prone Yucca Mountain</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                </div>             
+    </div>         
+            
+    <!-- START: INSERTS COLUMN -->
+    <div id='coverage_insert_container'>
+        
+        <div class="article_tools_top"></div>
+        
+        <div class="story_tools_email_top">
+            <a href="/module/email/?storyID=150698" title="Email this story to a friend" onclick="window.open('/module/email/?storyID=150698','email150698','width=420,height=240,scrollbars=yes,resizable=yes,toolbar=no,directories=no,location=no,menubar=no,status=yes'); return false"><span class="story_tools_text">Email</span></a>
+        </div>
+        
+        <div class="story_tools_print_top">
+            <a href="/module/printversion/150698" title="Print-friendly version" onclick="window.open('/module/printversion/150698','print150698','width=600,height=400,scrollbars=yes,resizable=yes,toolbar=yes,directories=yes,location=no,menubar=yes,status=yes'); return false"><span class="story_tools_text">Print</span></a>
+        </div>
+        
+        <div class="text_size">
+            <ul><li class="text-small"><a onclick="setActiveStyleSheet('text-small'); return false;" title="Smaller text size" href="#">A</a></li><li class="text-medium"><a onclick="setActiveStyleSheet('text-medium'); return false;" title="Normal text size" href="#">A</a></li><li class="last text-large"><a onclick="setActiveStyleSheet('text-large'); return false;" title="Larger text size" href="#">A</a></li></ul>
+        </div>
+        
+        <div class="share_top"></div>
+        
+        <div class="story_tools_social_buttons_top">
+            
+            <div class="facebook-sharer-top">
+                <a name="fb_share" type="box_count" href="http://www.facebook.com/sharer.php?u=http://www.alternet.org/drugs/150698/big_pharma_set_to_take_over_medical_marijuana_market/&t=Big Pharma Set to Take Over Medical Marijuana Market">Share</a>
+            </div>
+            
+            <div id='sttb_tweetmeme' class="tweetmeme-sharer-top"></div>
+                     
+            <div  id='sttb_stumbleupon' class="stumblebutton-top"></div>
+
+            <div class="redditit-top">
+                <a href="http://www.reddit.com/submit" onclick="window.location = 'http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"><img src="http://images.alternet.org/images/site/reddit.gif" alt="submit to reddit" border="0"></a>
+            </div>
+            
+            <div class="diggthis-top">
+                <a class="DiggThisButton DiggMedium" href="http://digg.com/submit?url=http%3A//www.alternet.org/drugs/150698/big_pharma_set_to_take_over_medical_marijuana_market/&amp;title=Big Pharma Set to Take Over Medical Marijuana Market"><span style="display:none;">Meanwhile, state-licensed medical marijuana dispensaries that provide relief for thousands of Americans are under attack by other federal agencies.</span></a>
+            </div>
+            
+            <div class="googlebuzz-top">
+                <a title="Post on Google Buzz" class="google-buzz-button" href="http://www.google.com/buzz/post" data-button-style="normal-count" data-url="http://www.alternet.org/drugs/150698/big_pharma_set_to_take_over_medical_marijuana_market/" data-imageurl="/images/managed/storyimages_picture5_1271195003.jpg_310x220"></a>
+            </div>
+            
+        </div>
+        
+        <div class='first_insert'><div id="progressive_wire_story">
+    <div class='banner_living' style="height:5px;"></div>
+	<div class="title">PROGRESSIVE WIRE</div>
+    <div style='border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin: 5px; height: 1px;'>&nbsp;</div> 
+	<div style='margin: 5px 5px 0px 10px;'>
+	 
+    	        
+        	<div class="progressive_wire_article_view">
+         	     
+              
+            	<a class='living' href='/rss/breaking_news/569211/black_legislators__on_frontline_against_az-style_immigration_bills/'><b>Black Legislators</b>  on Frontline Against AZ-Style Immigration Bills</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='living' href='/rss/breaking_news/569065/koran-burning_preacher__terry_jones_briefly_jailed_in_michigan/'><b>Koran-Burning Preacher</b>  Terry Jones Briefly Jailed In Michigan</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='living' href='/rss/breaking_news/569385/undocumented_immigrants__paid_%2411.2_billion_in_taxes_while_ge_paid_nothing/'><b>Undocumented Immigrants</b>  Paid $11.2 Billion In Taxes While GE Paid Nothing</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='living' href='/rss/breaking_news/569051/arizona_ends_legislative__session_with_several_laws_limiting_abortion_access%2C_funding/'><b>Arizona ends legislative</b>  session with several laws limiting abortion access, funding</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='living' href='/rss/breaking_news/569145/bloodiest_day_yet__of_syrian_protests/'><b>Bloodiest Day Yet</b>  of Syrian Protests</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='living' href='/rss/breaking_news/568986/breaking%3A_anti-sharia__bill_sponsors_are_kind_of_clueless/'><b>BREAKING: Anti-Sharia</b>  Bill Sponsors Are Kind of Clueless</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='living' href='/rss/breaking_news/568207/koch_bros._tell__their_50%2C000_employees_how_to_vote/'><b>Koch Bros. Tell</b>  Their 50,000 Employees How to Vote</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='living' href='/rss/breaking_news/568450/u.s._drones_join__fight_to_oust_libya%27s_gadhafi/'><b>U.S. Drones Join</b>  Fight To Oust Libya's Gadhafi</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='living' href='/rss/breaking_news/568888/arizona_welcomes__official_tea_party_flag/'><b>Arizona Welcomes</b>  Official Tea Party Flag</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='living' href='/rss/breaking_news/568749/obama_on_manning%3A__%E2%80%9Che_broke_the_law%E2%80%9D_%E2%80%93_so_much_for_that_trial/'><b>Obama on Manning:</b>  “He Broke the Law” – So Much for That Trial?</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+                    <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div> 
+               
+                	
+	</div>
+    
+    <div class='banner_living' style='margin: 5px 0px; height: 2px;'>&nbsp;</div>
+    
+    <div class="more_living" style='text-align: right;'><a href="/rss/breaking_news/"><span class="story_tools_text">MORE</span></a></div>
+    
+</div></div>
+
+        <div id='ads_insert_container' class='insert'></div>
+                      
+        <div class="alternet_originals">
+                     
+                        <div class="coverage_overlay">
+                <a href='/drugs/150684/inside_americas_almost_legal_marijuana_industry'><img border="0" src='http://images.alternet.org/images/managed/storyimages_1303332605_screenshot20110420at1.49.17pm.jpg_640x484_150x107' width="150" class="photo" height="106" align="left" style="margin: 0px 10px 3px 0px;"></a><h5><ul class="living"><li><a href="/drugs/150684/inside_americas_almost_legal_marijuana_industry">DRUGS</a></li></ul></h5>
+            </div>
+            <h2 class="living"><a href="/drugs/150684/inside_americas_almost_legal_marijuana_industry">Inside America's Almost Legal Marijuana Industry</a></h2>  
+                        <div class="coverage_overlay">
+                <a href='/drugs/150678/the_nations_worst_pretend_marijuana_law_would_defy_montana_voters'><img border="0" src='http://images.alternet.org/images/managed/storyimages_picture5_1271195003.jpg_150x107' width="150" class="photo" height="107" align="left" style="margin: 0px 10px 3px 0px;"></a><h5><ul class="living"><li><a href="/drugs/150678/the_nations_worst_pretend_marijuana_law_would_defy_montana_voters">DRUGS</a></li></ul></h5>
+            </div>
+            <h2 class="living"><a href="/drugs/150678/the_nations_worst_pretend_marijuana_law_would_defy_montana_voters">The Nation's Worst "Pretend" Marijuana Law Would Defy Montana Voters</a></h2>  
+                        <div class="coverage_overlay">
+                <a href='/drugs/150671/420_time_to_have_fun__and_to_end_marijuana_prohibition'><img border="0" src='http://images.alternet.org/images/managed/storyteaser_pot_1240424038.jpg_150x107' width="150" class="photo" height="107" align="left" style="margin: 0px 10px 3px 0px;"></a><h5><ul class="living"><li><a href="/drugs/150671/420_time_to_have_fun__and_to_end_marijuana_prohibition">DRUGS</a></li></ul></h5>
+            </div>
+            <h2 class="living"><a href="/drugs/150671/420_time_to_have_fun__and_to_end_marijuana_prohibition">4/20: Time to Have Fun – and to End Marijuana Prohibition!</a></h2>  
+                        <div class="coverage_overlay">
+                <a href='/drugs/150583/by_huge_margins_voters_want_drug_penalties_reduced'><img border="0" src='http://images.alternet.org/images/managed/storyimages_picture9_1277272623.jpg_150x107' width="150" class="photo" height="107" align="left" style="margin: 0px 10px 3px 0px;"></a><h5><ul class="living"><li><a href="/drugs/150583/by_huge_margins_voters_want_drug_penalties_reduced">DRUGS</a></li></ul></h5>
+            </div>
+            <h2 class="living"><a href="/drugs/150583/by_huge_margins_voters_want_drug_penalties_reduced">By Huge Margins, Voters Want Drug Penalties Reduced</a></h2>  
+                        <div class="coverage_overlay">
+                <a href='/drugs/150560/the_midwest_proves_fertile_ground_for_marijuana_reform_despite_rabid_republican_agenda'><img border="0" src='http://images.alternet.org/images/managed/storyimages_1302468306_screenshot20110410at1.39.23pm.jpg_640x464_150x107' width="150" class="photo" height="106" align="left" style="margin: 0px 10px 3px 0px;"></a><h5><ul class="living"><li><a href="/drugs/150560/the_midwest_proves_fertile_ground_for_marijuana_reform_despite_rabid_republican_agenda">DRUGS</a></li></ul></h5>
+            </div>
+            <h2 class="living"><a href="/drugs/150560/the_midwest_proves_fertile_ground_for_marijuana_reform_despite_rabid_republican_agenda">The Midwest Proves Fertile Ground for Marijuana Reform, Despite Rabid Republican Agenda</a></h2>  
+                            </div>
+            
+        <div id='ads_insert2_container' class='insert'><link rel="stylesheet" type="text/css" href="http://cache.blogads.com/516157807/feed.css" />
+<script language="javascript" src="http://cache.blogads.com/516157807/feed.js"></script></div>
+             
+    </div>
+    <!-- END: INSERTS COLUMN -->
+        
+    <div style="clear:both;"><img src="http://images.alternet.org/images/site/spacer.gif" /></div>
+    
+    <!-- COMMENT COUNT JS ONLY NEEDED ON ARTICLE PAGE -->
+    
+    <script type="text/javascript">
+    
+    
+        // Disqus comment count js
+        (function() {
+            var links = document.getElementsByTagName('a');
+            var query = '?';
+            for(var i = 0; i < links.length; i++) {
+                var dsqid = links[i].getAttribute('dsqid');
+                if(dsqid) {
+                    query += 'dsqid' + i + '=' + dsqid + '&';
+                }
+            }
+            document.write('<script charset="utf-8" type="text/javascript" src="http://alternet.disqus.com/get_num_replies_from_dsqid.js' + query + '"></' + 'script>');
+            
+            // retarget disqus comment url to go to comment page
+            $(".comments_link").click(function () { 
+                window.location.replace("http://www.alternet.org/drugs/150698/big_pharma_set_to_take_over_medical_marijuana_market/comments/");
+            });
+            
+        })();
+        
+        // Digg Button JS
+        
+        (function() {
+            var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+            s.type = 'text/javascript';
+            s.src = 'http://widgets.digg.com/buttons.js';
+            s1.parentNode.insertBefore(s, s1);
+        })();
+    
+    
+    </script>
+    
+    <!-- ADDTHIS BUTTON ONLY ON ARTICLE PAGE -->
+    
+    <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=markristaino"></script>
+
+    <!-- FB SHARE BUTTON ONLY ON ARTICLE PAGE -->
+     
+    <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+                          
+    <!-- GOOGLE BUZZ BUTTON ONLY ON ARTICLE PAGE -->
+    
+    <script type="text/javascript" src="http://www.google.com/buzz/api/button.js"></script>
+            
+</div>
+
+         
+         
+                  
+<!-- START: RIGHT COLUMN -->
+<div class='main_right_column'>
+
+
+    <!-- start: top right ad -->
+    <div class="premium-container">
+        <div id="premium"></div>
+        <div class="rightadnote">Advertisement</div>
+    </div>
+    
+        
+    <!-- start: tabs -->
+    <div id='tabs_cluster' style='width: 300px; margin-left: 5px;'>  
+        
+        <div class='tab_container' onclick="activate_tab('read')">
+            <div class='tab_on' id='tab_read' >
+                <div class='tab_border'><span class="story_tools_text">Most Read</span></div>
+            </div>
+        </div>
+                                                                                                                                                                                                                     
+        <div class='tab_container' onclick="activate_tab('emailed')">
+            <div id='tab_emailed' class='tab_off'>
+                <div class='tab_border'><span class="story_tools_text">Most Emailed</span></div>
+            </div>
+        </div>
+                                                                                                                                                                                                                     
+        <div class='tab_container' onclick="activate_tab('discussed'); load_most_disqus('tab_content_discussed', '270');">
+            <div id='tab_discussed' class='tab_off'>
+                <div class='tab_border'><span class="story_tools_text">Most Discussed</span></div>
+            </div>
+        </div>
+                                                                                                                                                                                                                     
+        <div class='tab_container' onclick="activate_tab('reddit'); load_reddit('tab_content_reddit', '270');">
+                <div id='tab_reddit' class='tab_off'>
+                    <div class='tab_border'><span class="story_tools_text">On REDDIT</span></div>
+                </div>
+            </div>
+                                                                                                                       
+        <div class='tab_container' onclick="activate_tab('digg'); load_digg('tab_content_digg', '270');"> 
+                <div id='tab_digg' class='tab_off'>
+                    <div class='tab_border'><span class="story_tools_text">On DIGG</span></div>
+                </div>
+            </div>
+            
+        <div style='clear: both; height: 1px;'>&nbsp;</div>
+            
+        <div id='tabs_content_container' style='margin: -2px 0px 0px; background: #eaeaea; border: 1px solid #fff;'>
+                                                                                        
+                <div id='tabs_content' class="article" style='margin: 2px; padding: 10px; border: 1px solid #fff;'>
+                
+                    <div id='tab_content_read' style='display: block;'>
+                                            <ol style='margin: 0px;'>
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/economy/150715/the_public_overwhelmingly_wants_it%3A_why_is_taxing_the_rich_so_hard/">The Public Overwhelmingly Wants It: Why Is Taxing the Rich So Hard?</a>
+                                <br /><span class='author'>Alyssa Battistoni</span>, </span><span class='source'>AlterNet</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/news/150691/we%27re_%231_--_ten_depressing_ways_america_is_exceptional/">We're #1 -- Ten Depressing Ways America Is Exceptional</a>
+                                <br /><span class='author'>David Morris</span>, </span><span class='source'>On the Commons</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/media/150646/yes%2C_the_latest_right-wing_paean_to_sociopath_ayn_rand_is_really%2C_really_awful/">Yes, the Latest Right-Wing Paean to Sociopath Ayn Rand Is Really, Really Awful</a>
+                                <br /><span class='author'>Brad Reed</span>, </span><span class='source'>AlterNet</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/world/150697/chomsky%3A_is_the_world_too_big_to_fail_the_contours_of_global_order/">Chomsky: Is the World Too Big to Fail? The Contours of Global Order</a>
+                                <br /><span class='author'>Noam Chomsky</span>, </span><span class='source'>Tomdispatch.com</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/economy/150664/how_the_gop_is_committing_political_suicide_with_ryan%27s_extremist_budget_plan_/">How the GOP Is Committing Political Suicide With Ryan's Extremist Budget Plan </a>
+                                <br /><span class='author'>Joshua Holland</span>, </span><span class='source'>AlterNet</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/economy/150685/if_walmart_paid_its_1.4_million_u.s._workers_a_living_wage%2C_it_would_result_in_almost_no_pain_for_the_average_customer/">If Walmart Paid its 1.4 Million U.S. Workers a Living Wage, it Would Result in Almost No Pain for the Average Customer</a>
+                                <br /><span class='author'>Joshua Holland</span>, </span><span class='source'>AlterNet</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/news/150642/glenn_greenwald%3A_why_do_we_assume_obama%27s_actually_trying_to_enact_a_progressive_agenda/">Glenn Greenwald: Why Do We Assume Obama's Actually Trying to Enact a Progressive Agenda?</a>
+                                <br /><span class='author'>Glenn Greenwald</span>, </span><span class='source'>Salon</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/teaparty/150672/the_tea_party_propaganda_factory_you_probably_don%27t_know_about/">The Tea Party Propaganda Factory You Probably Don't Know About</a>
+                                <br /><span class='author'>David Rosen</span>, </span><span class='source'>AlterNet</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/economy/150638/%27am_i_going_to_have_to_kill_you%27%3A_the_horrific_ways_abusive_debt_collectors_threaten_and_harass_their_victims/">'Am I Going to Have to Kill You?': The Horrific Ways Abusive Debt Collectors Threaten and Harass Their Victims</a>
+                                <br /><span class='author'>Alex Henderson</span>, </span><span class='source'>AlterNet</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/world/150667/imperial_decline%3A_how_does_it_feel_to_be_inside_a_dying_empire/">Imperial Decline: How Does It Feel to Be Inside a Dying Empire?</a>
+                                <br /><span class='author'>Tom Engelhardt</span>, </span><span class='source'>Tomdispatch.com</span></div>
+                            </li>                       
+                                                </ol>
+                                        </div>
+                   
+                    <div id='tab_content_emailed' style='display: none;'>
+                                            <ol style='margin: 0px;'>  
+                                                    <li>
+                                <div class='title'><a href="/news/150691/we%27re_%231_--_ten_depressing_ways_america_is_exceptional/">We're #1 -- Ten Depressing Ways America Is Exceptional</a>
+                                <br /><span class='author'>503&nbsp;emails sent</a> since April 20, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/news/150642/glenn_greenwald%3A_why_do_we_assume_obama%27s_actually_trying_to_enact_a_progressive_agenda/">Glenn Greenwald: Why Do We Assume Obama's Actually Trying to Enact a Progressive Agenda?</a>
+                                <br /><span class='author'>290&nbsp;emails sent</a> since April 17, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/world/150697/chomsky%3A_is_the_world_too_big_to_fail_the_contours_of_global_order/">Chomsky: Is the World Too Big to Fail? The Contours of Global Order</a>
+                                <br /><span class='author'>266&nbsp;emails sent</a> since April 21, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/world/150667/imperial_decline%3A_how_does_it_feel_to_be_inside_a_dying_empire/">Imperial Decline: How Does It Feel to Be Inside a Dying Empire?</a>
+                                <br /><span class='author'>221&nbsp;emails sent</a> since April 19, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/economy/150673/how_you_can_have_a_billion-dollar_income_in_america_and_pay_no_taxes/">How You Can Have a Billion-Dollar Income in America and Pay No Taxes</a>
+                                <br /><span class='author'>205&nbsp;emails sent</a> since April 20, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/media/150646/yes%2C_the_latest_right-wing_paean_to_sociopath_ayn_rand_is_really%2C_really_awful/">Yes, the Latest Right-Wing Paean to Sociopath Ayn Rand Is Really, Really Awful</a>
+                                <br /><span class='author'>192&nbsp;emails sent</a> since April 18, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/economy/150664/how_the_gop_is_committing_political_suicide_with_ryan%27s_extremist_budget_plan_/">How the GOP Is Committing Political Suicide With Ryan's Extremist Budget Plan </a>
+                                <br /><span class='author'>157&nbsp;emails sent</a> since April 18, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/teaparty/150672/the_tea_party_propaganda_factory_you_probably_don%27t_know_about/">The Tea Party Propaganda Factory You Probably Don't Know About</a>
+                                <br /><span class='author'>157&nbsp;emails sent</a> since April 19, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/news/150645/obama_returns_to_his_moral_vision%3A_democrats_read_carefully%21/">Obama Returns to his Moral Vision: Democrats Read Carefully!</a>
+                                <br /><span class='author'>150&nbsp;emails sent</a> since April 18, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/economy/150715/the_public_overwhelmingly_wants_it%3A_why_is_taxing_the_rich_so_hard/">The Public Overwhelmingly Wants It: Why Is Taxing the Rich So Hard?</a>
+                                <br /><span class='author'>146&nbsp;emails sent</a> since April 23, 2011.</span></div>
+                            </li>                       
+                                                </ol>
+                        <div><span class="small"><a href="/email/">More Most Emailed Stories&nbsp;&#187;</a></div>
+                                        </div>
+                    
+                    <div id='tab_content_discussed' style='display: none;'>   
+                                        </div>
+                         
+                    <div id='tab_content_reddit' style='display: none;'>
+                        <div style='margin: 10px 0px;'>loading reddit content ..</div>
+                    </div>
+                    
+                    <div id='tab_content_digg' style='display: none;'> 
+                        <div style='margin: 10px 0px;'>loading digg content ..</div>
+                    </div>
+                         
+                </div> 
+            
+    </div>       
+    <!-- end: tabs -->
+    </div>
+        
+    <!-- start: middle right ad -->
+    <div id='premium2_container' style='margin: 10px 5px 0px 5px; width: 300px; height: 250px; background: #333;'>
+        <div id="premium2"></div>
+        <div class="rightadnote">Advertisement</div>
+    </div>
+    
+               
+            
+    
+        
+    
+    <!-- start: facebook like box -->
+    <div id='facebook_like_box' style="margin: 10px 0 0 5px;">&nbsp;</div>  
+    
+                      
+    <!-- start: blogs --> 
+    <div style='min-height: 100px; margin-left: 5px;'><div style='min-height: 100px; margin-left: 5px; margin-top: 20px;'>                                              
+    <a href="http://blogs.alternet.org/speakeasy/" onmouseover="document.recommended_blog_header.src='http://c0573252.cdn.cloudfiles.rackspacecloud.com/blog_recommended_blog_hover.jpg'" onmouseout="document.recommended_blog_header.src='http://c0573252.cdn.cloudfiles.rackspacecloud.com/blog_recommended_blog.jpg'">
+        <img src='http://c0573252.cdn.cloudfiles.rackspacecloud.com/blog_recommended_blog.jpg' style='margin: 5px 0px; border: 0px;' name='recommended_blog_header'>
+    </a>
+                              
+      
+
+            
+        
+            <div style='margin: 10px 0px 0px 0px; '>
+        
+                                
+                <div class="test_blog_teaser" style="margin: 10px 0px 0px 0px;">
+                                            <img src='http://images.alternet.org/images/avatars/64863.jpg' width='40' height='40' style='float: left; border: 1px solid #ccc;'>
+                                        
+                    <div class='blog_title_coverage' style="width: 80%;float: right;">   
+                    	                        	<div><a class="living" href='http://blogs.alternet.org/speakeasy/2011/04/24/what-would-abbie-hoffman-do-to-stop-the-koch-brothers/'>
+                    	         
+                    		What would Abbie Hoffman do to stop the Koch brothers?</a>
+                    </div>
+
+                 		<div class="blog_author" style="color:#565451;">Robert Greenwald</div>                    	<div class="blog_author" style="color:#565451;">Brave New Films</div>                   </div>                             
+                
+                   <div style='clear: both; height: 10px; border-bottom: 1px solid #ccc; opacity:0.4; filter:alpha(opacity=40);'>&nbsp;</div>
+               </div>
+ 
+                     
+            </div>
+            
+            
+        
+            <div style='margin: 10px 0px 0px 0px; '>
+        
+                                
+                <div class="test_blog_teaser" style="margin: 10px 0px 0px 0px;">
+                                            <img src='http://images.alternet.org/images/avatars/65062.jpg' width='40' height='40' style='float: left; border: 1px solid #ccc;'>
+                                        
+                    <div class='blog_title_coverage' style="width: 80%;float: right;">   
+                    	                        	<div><a class="living" href='http://blogs.alternet.org/speakeasy/2011/04/24/reverend-billy%e2%80%99s-exoduseaster-sermon/'>
+                    	         
+                    		Reverend Billy’s Exodus/Easter Sermon</a>
+                    </div>
+
+                 		<div class="blog_author" style="color:#565451;">Reverend Billy Talen</div>                    	                   </div>                             
+                
+                   <div style='clear: both; height: 10px; border-bottom: 1px solid #ccc; opacity:0.4; filter:alpha(opacity=40);'>&nbsp;</div>
+               </div>
+ 
+                     
+            </div>
+            
+            
+        
+            <div style='margin: 10px 0px 0px 0px; '>
+        
+                                
+                <div class="test_blog_teaser" style="margin: 10px 0px 0px 0px;">
+                                            <img src='http://images.alternet.org/images/avatars/65106.jpg' width='40' height='40' style='float: left; border: 1px solid #ccc;'>
+                                        
+                    <div class='blog_title_coverage' style="width: 80%;float: right;">   
+                    	                        	<div><a class="living" href='http://blogs.alternet.org/speakeasy/2011/04/22/the-empty-pulpit-the-obama-problem/'>
+                    	         
+                    		The Empty Pulpit: The Obama Problem</a>
+                    </div>
+
+                 		<div class="blog_author" style="color:#565451;">Tikkun Daily</div>                    	                   </div>                             
+                
+                   <div style='clear: both; height: 10px; border-bottom: 1px solid #ccc; opacity:0.4; filter:alpha(opacity=40);'>&nbsp;</div>
+               </div>
+ 
+                     
+            </div>
+            
+            
+        
+            <div style='margin: 10px 0px 0px 0px; '>
+        
+                                
+                <div class="test_blog_teaser" style="margin: 10px 0px 0px 0px;">
+                                            <img src='http://images.alternet.org/images/avatars/64116.jpg' width='40' height='40' style='float: left; border: 1px solid #ccc;'>
+                                        
+                    <div class='blog_title_coverage' style="width: 80%;float: right;">   
+                    	                        	<div><a class="living" href='http://blogs.alternet.org/speakeasy/2011/04/22/obamas-israel-policy-a-bad-sad-joke/'>
+                    	         
+                    		Obama’s Israel Policy: A Bad, Sad Joke</a>
+                    </div>
+
+                 		<div class="blog_author" style="color:#565451;">Ira Chernus</div>                    	                   </div>                             
+                
+                   <div style='clear: both; height: 10px; border-bottom: 1px solid #ccc; opacity:0.4; filter:alpha(opacity=40);'>&nbsp;</div>
+               </div>
+ 
+                     
+            </div>
+            
+            
+        
+            <div style='margin: 10px 0px 0px 0px; '>
+        
+                                
+                <div class="test_blog_teaser" style="margin: 10px 0px 0px 0px;">
+                                            <img src='http://blogs.alternet.org/wp-content/avatars/default.jpg' width='40' height='40' style='float: left; border: 1px solid #ccc;'>
+                                        
+                    <div class='blog_title_coverage' style="width: 80%;float: right;">   
+                    	                        	<div><a class="living" href='http://blogs.alternet.org/speakeasy/2011/04/22/would-this-video-make-you-stop-eating-beef-futures-traders-think-so/'>
+                    	         
+                    		Would This Video Make You Stop Eating Beef? Futures Traders Think So</a>
+                    </div>
+
+                 		<div class="blog_author" style="color:#565451;">Martha Rosenberg</div>                    	                   </div>                             
+                
+                   <div style='clear: both; height: 10px; border-bottom: 1px solid #ccc; opacity:0.4; filter:alpha(opacity=40);'>&nbsp;</div>
+               </div>
+ 
+                     
+            </div>
+            
+            
+        
+            <div style='margin: 10px 0px 0px 0px; '>
+        
+                                
+                <div class="test_blog_teaser" style="margin: 10px 0px 0px 0px;">
+                                            <img src='http://images.alternet.org/images/avatars/69272.jpg' width='40' height='40' style='float: left; border: 1px solid #ccc;'>
+                                        
+                    <div class='blog_title_coverage' style="width: 80%;float: right;">   
+                    	                        	<div><a class="living" href='http://blogs.alternet.org/speakeasy/2011/04/22/anti-gay-group-lies-about-encounter-with-pro-gay-group-member/'>
+                    	         
+                    		Anti-gay group lies about encounter with pro-gay group member</a>
+                    </div>
+
+                 		<div class="blog_author" style="color:#565451;">alvinmcewen</div>                    	                   </div>                             
+                
+                   <div style='clear: both; height: 10px; border-bottom: 1px solid #ccc; opacity:0.4; filter:alpha(opacity=40);'>&nbsp;</div>
+               </div>
+ 
+                     
+            </div>
+            
+            
+        
+            <div style='margin: 10px 0px 0px 0px; '>
+        
+                                
+                <div class="test_blog_teaser" style="margin: 10px 0px 0px 0px;">
+                                            <img src='http://images.alternet.org/images/avatars/65809.jpg' width='40' height='40' style='float: left; border: 1px solid #ccc;'>
+                                        
+                    <div class='blog_title_coverage' style="width: 80%;float: right;">   
+                    	                        	<div><a class="living" href='http://blogs.alternet.org/speakeasy/2011/04/21/some-notes-on-being-a-working-class-black-guy-teaching-whiteness-studies-to-young-earnest-college-students/'>
+                    	         
+                    		Some Notes on Being a Working Class Black Guy Teaching Whiteness Studies to Young Earnest College Students</a>
+                    </div>
+
+                 		<div class="blog_author" style="color:#565451;">Chauncey DeVega</div>                    	                   </div>                             
+                
+                   <div style='clear: both; height: 10px; border-bottom: 1px solid #ccc; opacity:0.4; filter:alpha(opacity=40);'>&nbsp;</div>
+               </div>
+ 
+                     
+            </div>
+            
+            
+        
+            <div style='margin: 10px 0px 0px 0px; '>
+        
+                                
+                <div class="test_blog_teaser" style="margin: 10px 0px 0px 0px;">
+                                            <img src='http://images.alternet.org/images/avatars/65062.jpg' width='40' height='40' style='float: left; border: 1px solid #ccc;'>
+                                        
+                    <div class='blog_title_coverage' style="width: 80%;float: right;">   
+                    	                        	<div><a class="living" href='http://blogs.alternet.org/speakeasy/2011/04/20/after-the-hot-holy-day/'>
+                    	         
+                    		After The Hot Holy Day</a>
+                    </div>
+
+                 		<div class="blog_author" style="color:#565451;">Reverend Billy Talen</div>                    	                   </div>                             
+                
+                   <div style='clear: both; height: 10px; border-bottom: 1px solid #ccc; opacity:0.4; filter:alpha(opacity=40);'>&nbsp;</div>
+               </div>
+ 
+                     
+            </div>
+            
+            
+        
+            <div style='margin: 10px 0px 0px 0px; '>
+        
+                                
+                <div class="test_blog_teaser" style="margin: 10px 0px 0px 0px;">
+                                            <img src='http://images.alternet.org/images/avatars/64541.jpg' width='40' height='40' style='float: left; border: 1px solid #ccc;'>
+                                        
+                    <div class='blog_title_coverage' style="width: 80%;float: right;">   
+                    	                        	<div><a class="living" href='http://blogs.alternet.org/speakeasy/2011/04/20/us-lack-of-investment-is-destabilizing-the-world/'>
+                    	         
+                    		US Lack of Investment is Destabilizing the World</a>
+                    </div>
+
+                 		<div class="blog_author" style="color:#565451;">lauraflanders</div>                    	                   </div>                             
+                
+                   <div style='clear: both; height: 10px; border-bottom: 1px solid #ccc; opacity:0.4; filter:alpha(opacity=40);'>&nbsp;</div>
+               </div>
+ 
+                     
+            </div>
+            
+            
+        
+            <div style='margin: 10px 0px 0px 0px; '>
+        
+                                
+                <div class="test_blog_teaser" style="margin: 10px 0px 0px 0px;">
+                                            <img src='http://images.alternet.org/images/avatars/64358.jpg' width='40' height='40' style='float: left; border: 1px solid #ccc;'>
+                                        
+                    <div class='blog_title_coverage' style="width: 80%;float: right;">   
+                    	                        	<div><a class="living" href='http://blogs.alternet.org/speakeasy/2011/04/20/one-year-after-bp-oil-spill-communities-lead-while-congress-fails/'>
+                    	         
+                    		One Year After BP Oil Spill: Communities Lead While Congress Fails</a>
+                    </div>
+
+                 		<div class="blog_author" style="color:#565451;">Green For All</div>                    	                   </div>                             
+                
+                   <div style='clear: both; height: 10px; border-bottom: 1px solid #ccc; opacity:0.4; filter:alpha(opacity=40);'>&nbsp;</div>
+               </div>
+ 
+                     
+            </div>
+            
+                          
+                 
+        
+    <div style='margin-top: 10px; margin-bottom: 20px;'>
+    	<div class="more_living" style='float: right;'><a href="http://blogs.alternet.org/speakeasy/"><span class="story_tools_text">MORE</span></a></div>
+        
+        <div style='clear: both; height: 1px;'>&nbsp;</div>
+        
+    </div>
+                    
+</div></div>
+    
+        
+    <div style='clear: both; height: 10px;'>&nbsp;</div>
+    
+        
+        
+        
+    <!-- include upcoming on dig -->    
+    <!-- start: upcoming on digg -->                                  
+<div style='min-height: 100px; margin-left: 5px; margin-top: 25px;'>
+    <div><img src="http://images.alternet.org/images/site/alternet_upcoming_on_digg_with_bg.gif"/></div>
+    <div id='digg_upcoming_content' style='min-height: 50px;'>loading ...</div>
+    <div style="margin-top: 10px; margin-bottom: 25px; padding: 5px 0px; border-top: 1px solid #ccc; border-bottom: 4px solid #ccc; line-height: 16px;">
+        <div class="small" style="float: right; border-left: 1px solid #ccc; padding-left: 5px;"><img src="http://images.alternet.org/images/site/spacer.gif"/></div>                                                                                                                         
+        <div class="small" style="float: left; border-right: 1px solid #ccc; padding-right: 5px; font-family: Arial,Sans-Serif,Georgia; color #333; font-size: 10px; font-weight: bold;">POWERED BY DIGG'S USERS</div>     
+        <div class="small" style="float: left; padding-left: 5px; font-family: Arial,Sans-Serif,Georgia; font-size: 10px; font-weight: bold;"><a href='http://digg.com/tour?OTC-widget'>ABOUT DIGG</a></div>
+        <div class='clear: both;'>&nbsp;</div>
+    </div>
+</div>    
+        
+</div>
+
+<div style="clear:both;"><img src="http://images.alternet.org/images/site/spacer.gif" /></div>
+       
+<!-- JAVASCRIPT -->
+
+<!-- ADS -->
+
+<script type="text/javascript">
+
+                             
+    $(function(){
+
+        var page_type = 'article';
+        var str = '';
+        
+        if( page_type == 'comments' ){
+            
+            // comments page specific ads goes here
+                                  
+            if( is_object( $('#topad') ) ){
+                str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_Comments_728&profile=ca-pub-5155643920455169' class='topad' width='728' height='90' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+                $('#topad').append( str );
+            }
+            
+            //CHANGE AD
+            //if( is_object( $('#premium') ) ){
+            //    str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_Comments_300&profile=ca-pub-5155643920455169' width='300' height='250' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+            //    $('#premium').append( str );
+            //}
+            
+            if( is_object( $('#premium2') ) ){
+                str = "<iframe src='http://files.alternet.org/givememygfp.php?code=Alternet_300&profile=ca-pub-5155643920455169' width='300' height='250' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+                $('#premium2').append( str );
+            }
+            
+            if( is_object( $('#story_comment_slot1') ) ){ 
+                str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_Comments_300&profile=ca-pub-5155643920455169' width='300' height='250' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+                $('#story_comment_slot1').append( str );
+            }
+            
+            if( is_object( $('#story_comment_slot2') ) ){
+                str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_Comments_300&profile=ca-pub-5155643920455169' width='300' height='250' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+                $('#story_comment_slot2').append( str );
+            }
+            
+        }
+        
+        else if( page_type == 'article' ){
+        
+            // article page specific ads goes here
+                                  
+            if( is_object( $('#topad') ) ){
+                str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_News_728&profile=ca-pub-5155643920455169' class='topad' width='728' height='90' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+                $('#topad').append( str );
+            }
+        
+            if( is_object( $('#premium') ) ){
+                str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_News_300&profile=ca-pub-5155643920455169' width='300' height='250' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+                $('#premium').append( str );
+            }
+            
+            if( is_object( $('#premium2') ) ){
+                str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_News_300&profile=ca-pub-5155643920455169' width='300' height='250' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+                $('#premium2').append( str );
+            }
+            
+            //CHANGE AD
+            //if( is_object( $('#insert_advertisement') ) ){
+            //    str = "<iframe src='http://files.alternet.org/givememygfp.php?code=Alternet_300&profile=ca-pub-5155643920455169' width='300' height='250' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+            //    $('#insert_advertisement').append( str );
+            //}
+                                         
+            if( is_object( $('#run_of_site_billboard') ) ){ 
+                str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_News_300&profile=ca-pub-5155643920455169' width='300' height='250' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+                $('#run_of_site_billboard').append( str );
+            }
+            
+            if( is_object( $('#ads_insert_container') ) ){ 
+                str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_ROS_160&profile=ca-pub-5155643920455169' width='160' height='600' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+                $('#ads_insert_container').append( str );
+            }
+            
+            //BLOG AD
+            //if( is_object( $('#ads_insert2_container') ) ){ 
+            //    str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_ROS_160&profile=ca-pub-5155643920455169' width='160' height='600' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+            //    $('#ads_insert2_container').append( str );
+            //}
+            
+            // article tools
+            
+            var page_url = 'http://www.alternet.org/drugs/150698/big_pharma_set_to_take_over_medical_marijuana_market';
+            
+            if( is_object( $('#sttb_tweetmeme') ) ){ 
+                str = "<iframe src='http://files.alternet.org/givememystorytools.php?tool_code=tweetmeme&page_url="+page_url+"' width='50' height='70' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #ccc;'></iframe>";
+                $('#sttb_tweetmeme').append( str );
+            }
+            
+            if( is_object( $('#sttb_stumbleupon') ) ){ 
+                str = "<iframe src='http://files.alternet.org/givememystorytools.php?tool_code=stumbleupon&page_url="+page_url+"' width='50' height='70' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #ccc;'></iframe>";
+                $('#sttb_stumbleupon').append( str );
+            }
+            
+            if( is_object( $('#bstb_tweetmeme') ) ){ 
+                str = "<iframe src='http://files.alternet.org/givememystorytools.php?tool_code=tweetmeme&page_url="+page_url+"' width='50' height='70' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #ccc;'></iframe>";
+                $('#bstb_tweetmeme').append( str );
+            }
+             
+            if( is_object( $('#bstb_stumbleupon') ) ){ 
+                str = "<iframe src='http://files.alternet.org/givememystorytools.php?tool_code=stumbleupon&page_url="+page_url+"' width='50' height='70' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #ccc;'></iframe>";
+                $('#bstb_stumbleupon').append( str );
+            }
+            
+        }
+        
+        // other page loads
+        
+        load_digg_upcoming();
+                                    
+    });
+                        
+
+</script>
+
+<div style="clear:both;"><img src="http://images.alternet.org/images/site/spacer.gif" /></div></div>
+        <!-- end: body -->
+        
+        
+        <!-- start: footer -->
+        <div id="root_footer" style='height: 300px;'>
+            <div class="break_container">
+                <div class="break"></div>
+                <div id='btf_ad_slot' style='width: 728px; margin: 10px auto 0px auto;'></div>
+                <ul id="footer"> 
+    <li class='news'><a href="/news/"><span class="story_tools_text">News & Politics</span></a>
+        	        		<ul>
+            		<li><a href='/news/'>NEWS &AMP; POLITICS</a></li>        		</ul>
+           	    </li>
+    <li class='world'><a href="/world/"><span class="story_tools_text">World</span></a>
+        	        		<ul>
+            		<li><a href='/world/'>WORLD</a></li>        		</ul>
+           	    </li>
+    <li class='economy'><a href="/economy/"><span class="story_tools_text">Economy</span></a>
+        	        		<ul>
+            		<li><a href='/economy/'>ECONOMY</a></li>        		</ul>
+           	    </li>
+    <li class='rights'><a href="/rights/"><span class="story_tools_text">Rights</span></a>
+        	        		<ul>
+            		<li><a href='/rights/'>CIVIL LIBERTIES</a></li><li><a href='/reproductivejustice/'>GENDER</a></li><li><a href='/immigration/'>IMMIGRATION</a></li>        		</ul>
+           	    </li>
+    <li class='environment'><a href="/environment/"><span class="story_tools_text">Environment</span></a>
+        	        		<ul>
+            		<li><a href='/environment/'>ENVIRONMENT</a></li><li><a href='/food/'>FOOD</a></li><li><a href='/water/'>WATER</a></li>        		</ul>
+           	    </li>
+    <li class='media'><a href="/media/"><span class="story_tools_text">Media & Culture</span></a>
+        	        		<ul>
+            		<li><a href='/books/'>BOOKS</a></li><li><a href='/culture/'>CULTURE</a></li><li><a href='/media/'>MEDIA</a></li>        		</ul>
+           	    </li>
+    <li class='living'><a href="/living/"><span class="story_tools_text">Living</span></a>
+        	        		<ul>
+            		<li><a href='/belief/'>BELIEF</a></li><li><a href='/drugs/'>DRUGS</a></li><li><a href='/food/'>FOOD</a></li><li><a href='/health/'>PERSONAL HEALTH</a></li><li><a href='/sex/'>SEX &AMP; RELATIONSHIPS</a></li>        		</ul>
+           	    </li>
+    <li class='vision'><a href="/vision/"><span class="story_tools_text">Vision</span></a>
+        	        		<ul>
+            		<li><a href='/vision/'>VISION</a></li>        		</ul>
+           	    </li>
+    <li class='investigations'><a href="/investigations/"><span class="story_tools_text">Investigations</span></a>
+        	        		<ul>
+            		<li><a href='/investigations/'>INVESTIGATIONS</a></li>        		</ul>
+           	    </li>
+</ul>
+
+            </div>
+        </div>
+
+        <div id="root_subfooter">
+            <div class="left"></div>
+            <div class="middle_left">
+                <ul>
+                    <li class="column1"><a href="http://blogs.alternet.org/about/">THE CASE FOR ALTERNET</a></li>
+                    <li class="column1"><a href="http://blogs.alternet.org/about/">OUR MISSION</a></li>
+                    <li class="column1"><a href="http://blogs.alternet.org/staff/">WHO WE ARE</a></li>
+                    <li class="column1"><a href="http://blogs.alternet.org/the-independent-media-institute/">ABOUT IMI</a></li>
+                    <li class="column1"><a href="http://blogs.alternet.org/alternets-supporting-foundations/">OUR FOUNDATIONS</a></li>
+                    <li class="column2 reset"><a href="http://blogs.alternet.org/press-information/">PRESS INFORMATION</a></li>
+                    <li class="column2"><a href="http://blogs.alternet.org/writer-guidelines/">WRITER GUIDELINES</a></li>
+                    <li class="column2"><a href="http://blogs.alternet.org/privacy-policy/">PRIVACY POLICY</a></li>
+                    <li class="column2"><a href="http://blogs.alternet.org/advertise/">ADVERTISE ON ALTERNET</a></li>
+                    <li class="column2"><a href="/feedback/">CONTACT US</a></li>
+                    <li class="column3 reset"><a href="https://www.alternet.org/donate/">DONATE</a></li>
+                    <li class="column3"><a href="/module/feed/mobile/">MOBILE</a></li>
+                    <li class="column3"><a href="http://blogs.alternet.org/alternet-signup.php">REGISTER</a></li>
+                    <li class="column3"><a href="http://blogs.alternet.org/wp-admin.php">LOGIN</a></li>
+                    <li class="column3"><a href="#">&nbsp;</a></li>
+                </ul>
+            </div>
+            <div class="middle_right">
+                <ul>
+                    <li class="rss"><a href="http://feeds.feedblitz.com/alternet"><span class="story_tools_text">RSS</span></a></li>
+                    <li class="facebook"><a href="http://www.facebook.com/pages/AlterNet/17108852506"><span class="story_tools_text">Facebook</span></a></li>
+                    <li class="twitter"><a href="http://twitter.com/AlterNet"><span class="story_tools_text">Twitter</span></a></li>
+                </ul>
+            </div>
+            <div class="right"></div>
+        </div>
+        <!-- end: footer -->
+                  
+
+                    
+                        <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+            <script type="text/javascript">_qacct="p-44Kjy7lrEDP7I";quantserve();</script>
+            <noscript><img src="http://pixel.quantserve.com/pixel/p-44Kjy7lrEDP7I.gif" style="display: none" height="1" width="1" alt="Quantcast"/></noscript>
+                                    
+                        <script type="text/javascript">
+                var cbjspath = "static.chartbeat.com/js/chartbeat.js?uid=848&domain=alternet.org";
+                var cbjsprotocol = (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://");
+                document.write(unescape("%3Cscript src='"+cbjsprotocol+cbjspath+"' type='text/javascript'%3E%3C/script%3E"))
+            </script>               
+                        
+                        <script type="text/javascript">
+            
+                function load_reddit( div_name, width ){
+                    if( is_object( $( '#' + div_name ) ) ){
+                        $( '#' + div_name ).html( "<iframe src='http://files.alternet.org/givememydigg.php?code=reddit&width="+width+"' width='"+width+"' height='600' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #ccc;'></iframe>" );
+                    }                                      
+                }
+                function load_digg( div_name, width ){
+                    if( is_object( $( '#' + div_name ) ) ){
+                        $( '#' + div_name ).html( "<iframe src='http://files.alternet.org/givememydigg.php?code=tabs&width="+width+"' width='"+width+"' height='450' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #ccc;'></iframe>" );
+                    }
+                }
+                function load_digg_upcoming(){
+                    //if( is_object( $('#digg_upcoming_content') ) ){
+                    //    $('#digg_upcoming_content').html( "<iframe src='files.alternet.org/givememydigg.php?code=upcoming&width=310' width='300' height='160' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #ccc;'></iframe>" );
+                    //}
+                }
+                function load_most_disqus( div_name, width ){
+                    if( is_object( $( '#' + div_name ) ) ){
+                        $( '#' + div_name ).html( "<iframe src='http://files.alternet.org/givememydigg.php?code=most_disqus&width="+width+"' width='"+width+"' height='700' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #ccc;'></iframe>" );
+                    }
+                }
+            
+            </script>
+                                 
+                        <script type="text/javascript">
+            
+                $(function(){
+                    if( is_object( $('#facebook_like_box') ) ){
+                        $('#facebook_like_box').append( "<iframe id='facebook_like_box_frame' src='http://www.facebook.com/plugins/likebox.php?id=17108852506&amp;width=300&amp;connections=10&amp;stream=false&amp;header=false&amp;height=280' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:300px; height:280px;' allowTransparency='true'></iframe>" );
+                    }
+                });
+            
+            </script>
+                                                                      
+            
+                        <script type="text/javascript">
+            
+                $(function(){
+                    if( is_object( $('#btf_ad_slot') ) ){
+                        $('#btf_ad_slot').append( "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_728_BTF&profile=ca-pub-5155643920455169' class='topad' width='728' height='90' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>" );
+                    }
+                });
+            
+            </script>
+                        
+                        <script type="text/javascript">
+            
+                var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+                document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+            
+            </script>
+                                    
+            <script type="text/javascript">
+            
+                try {
+                    var pageTracker = _gat._getTracker("UA-289449-1");
+                    pageTracker._setDomainName(".alternet.org");
+                    pageTracker._trackPageview();
+                } catch(err) {}
+            
+            </script>
+            
+            <script language="JavaScript">
+                GA_googleFillSlot( "pop-under-controller" );
+                //GA_googleFillSlotWithSize("ca-pub-2202292528164382", "Pop_Over_Controller", 1, 1);
+                //GA_googleFillSlot( "Pop_Over_Controller" );
+            </script>
+                        
+            
+    </body>
+    
+</html>[w2]

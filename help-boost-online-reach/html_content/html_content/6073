@@ -1,0 +1,1284 @@
+
+<!DOCTYPE html PUBLIC"-//W3C//DTD XHTML 1.0 Strict//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Health24 - South Africa's premier health and wellness site, provides world-class information and interactive tools for a healthy lifestyle</title>
+
+<meta name="Keywords" content="HEALTH24,wellness,health,medical,medication,lifestyle,disease,fitness,exercise,diet,nutrition,sex,balance,expert,forum," />
+ 
+
+<meta name="description" content="Health24 - South Africa's premier health and wellness site, provides world-class information and interactive tools for a healthy lifestyle." />
+
+<meta name="google-site-verification" content="Kv0haAtDPlMO2hyBs219yFNY77pmSuOAvCtItBpjZak" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+
+<link href="/stylesheets/css/clear.css" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/css/master.css" rel="stylesheet" type="text/css" />
+
+<!--[if IE 6]> 
+<link href="/stylesheets/css/ie6.css" type="text/css" rel="stylesheet">
+<![endif]-->
+
+<!--[if IE 7]> 
+<link href="/stylesheets/css/ie7.css" type="text/css" rel="stylesheet">
+<![endif]-->
+<script type="text/javascript" language="JavaScript" src="/javascript/scripts/mootools-1.2-core.js"></script>
+<script type="text/javascript" language="JavaScript" src="/javascript/scripts/mootools-1.2-more.js"></script>
+<script type="text/javascript" language="JavaScript" src="/javascript/scripts/dropmenu.js"></script>
+<script type="text/javascript" language="JavaScript" src="/javascript/scripts/multi-tabs.js"></script>
+<script language="javascript" src="/javascript/general.js"></script>
+<script language="JavaScript" src="/javascript/scripts/AC_Macromedia.js"></script>
+<script language="JavaScript" src="/javascript/scripts/AC_RunActiveContent.js"></script>
+
+<script type="text/javascript">
+
+ /* -- Tabbed div boxes --*/
+	var defaultTabId ="tablink0";
+	// how long it takes for the menu to revert to the default tab (milliseconds)
+	var defaultTabTime = 1200;
+
+window.addEvent('domready', function() {
+	var tabs = new SimpleTabs('tabbed_box', {
+		selector: 'h4',
+		show:6
+	});
+	
+	new SimpleTabs('tabbed_box2', {
+		selector: 'h4'
+	});
+	
+	new SimpleTabs('tabbed_box3', {
+		selector: 'h4'
+	});
+	
+	new SimpleTabs('tabbed_box4', {
+		selector: 'h4'
+	});
+});
+
+/* -- Sets unique classes for tabs (your body box and last tabs) -- */
+
+window.addEvent('domready', function() {
+$$('a:title(head)').setProperty('class','head_tab');
+$$('a:title(chest)').setProperty('class','chest_tab');
+$$('a:title(abdomen)').setProperty('class','abdomen_tab');
+$$('a:title(pelvis)').setProperty('class','pelvis_tab');
+$$('a:title(legs)').setProperty('class','legs_tab');
+$$('a:title(skin)').setProperty('class','skin_tab');
+$$('a:title(general)').setProperty('class','general_tab');
+$$('a:title(fitness)','a:title(bestrated)').setProperty('class','last_tab');
+
+$$('a:title(tool5)').setProperty('class','last_tab');
+});
+
+/* -- clear form elements on click --*/
+
+function clearDefault(el) {
+  if (el.defaultValue==el.value) el.value = ""
+}
+
+/* -- capture clicks from flash focus for nielsens --*/
+
+function track_location(src, dest, ispopup, isbank) {if (dest=='') {return;} var url=dest; if (ispopup){options = 'location=yes,resizable=yes,height=500,width=780,screeny=0,screenx=0,left=0,top=0,scrollbars=yes,toolbar=yes,menu=yes';      if (isbank) {options += ',status=yes';}   winpop = window.open(url,'',options); if (winpop.focus){setTimeout('winpop.focus();',250);} if (window._rsEvent){_rsEvent(url);} return;} else{if( window._rsEvent ){_rsEvent(url);} window.location.href = url;return;}}
+
+</script>
+<!-- Start of DClick Header -->
+<!-- Site: "P4306.sa.24.com.health24"-->
+ 
+<!--Chartbeat date var-->
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+
+
+<script language="JavaScript" type="text/javascript">
+var za24_AdBaseURL = 'http://ad.za.doubleclick.net/adj/'; 
+var za24_AdSite = 'P4306.sa.24.com.health24'; 
+var za24_PageUrl = location.href.substring(); 
+var za24_FirstAd = 1; 
+var za24_TileSeq = 0; 
+var za24_AdSize = new Array();
+var za24_AdPositionNo = new Array();
+
+var za24_regexp=/.*[0-9]_(.*),.*/g;
+var za24_match=za24_regexp.test(za24_PageUrl);
+if (za24_match) {
+  za24_ArticleParam=';artid='+za24_PageUrl.replace(za24_regexp,'$1'); 
+} else {
+	za24_ArticleParam=';artid='
+}
+
+za24_AdSize[1]='728x90'; za24_AdPositionNo[1]='1'; 
+za24_AdSize[2]='468x60'; za24_AdPositionNo[2]='2'; 
+za24_AdSize[3]='468x60'; za24_AdPositionNo[3]='3'; 
+za24_AdSize[4]='300x250'; za24_AdPositionNo[4]='2'; 
+za24_AdSize[5]='300x250'; za24_AdPositionNo[5]='3'; 
+za24_AdSize[6]='160x600'; za24_AdPositionNo[6]='4'; 
+za24_AdSize[7]='300x200'; za24_AdPositionNo[7]='4'; 
+
+ord=Math.random()*10000000000000000; 
+
+function DisplayDCAd(Size,PosNo,KwPair,za24_AdZone) {
+	if (PosNo=='') {
+	  PosNo='1';
+	}
+	for (var i = 1; i < za24_AdSize.length; i++) {
+		if ((za24_AdSize[i]==Size) && (za24_AdPositionNo[i]==PosNo)) {
+
+			DFP='';
+			za24_TileSeq=za24_TileSeq+1;
+			if (za24_FirstAd==1) {
+				za24_FirstAd=0;
+				DFP=';dcopt=ist';
+			}
+			
+			document.write("<scr" + "ipt language='JavaScript' src='" + za24_AdBaseURL + za24_AdSite + za24_AdZone + ';sz=' + Size + ';posno=1;kw=' + KwPair + za24_ArticleParam + DFP + ';tile=' + za24_TileSeq + ';ord=' + ord +"?'><\/scri" + "pt>")		
+
+			break;
+		}
+	}
+}
+</script>
+<!-- End of DClick Header -->
+<script language="JavaScript">
+function srchHealth() {
+    redir = "http://search.health24.com/search?s=HLT&ref=HTH&"
+    + "q=" + goFind.search.value
+  	window.location.href = redir
+	return false;
+}
+</script>
+<script type="text/javascript">
+	//<input name="emailAddress" type="text" value="email address" class="email" />
+	try
+	{
+		window.addEvent('domready', function() {
+		$$('input[name=emailAddress]').addEvent('click', function(){
+ 				(this).setProperty('value','');
+			})
+		})
+	}
+	catch(err){}
+</script>
+</head>
+<style type="text/css">
+<!--
+.style1 {
+	color: #FF0000;
+	font-weight: bold;
+}
+-->
+</style>
+<script src="/javascript/scripts/swfobject.js" language="javascript"></script>
+<body> 
+<!-- BEGIN EFFECTIVE MEASURE CODE -->
+<!-- COPYRIGHT EFFECTIVE MEASURE -->
+<script type="text/javascript">
+(function(){
+  var em = document.createElement('script');em.type='text/javascript';em.async=true;
+  em.src=('https:'==document.location.protocol?'https://za-ssl':'http://za-cdn')+'.effectivemeasure.net/em.js';
+  var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(em,s);
+})();
+</script>
+<noscript>
+<img src="//za.effectivemeasure.net/em_image" alt="" style="position:absolute;left:-5px;"/>
+</noscript>
+<!-- END EFFECTIVE MEASURE CODE -->
+<div id="pre_wrap">
+<div class="leaderboard">
+	<div class="advertisement">
+<script language="javascript">DisplayDCAd('728x90','1','','/homepage');</script><br />
+	</div>
+advertisement
+</div>
+<div id="main_wrapper" class=" relative">
+  <div id="header">
+    <div class="menudrop left" id="dropdown">
+      <ul style="float:left;width:650px">
+        <li><a href="http://www.24.com/">24.com Home</a></li>
+        <li><a href="http://blogs.health24.com/">Blogs</a></li>
+        <li><a href="http://albums.24.com/">Albums</a></li>
+        <li><a href="http://www.dealfish.co.za">Classifieds</a></li>
+        <li><a href="http://www.24.com/" rel="dropmenu1" class="droplist"><strong>24.com sites&nbsp; <img src="/images/site/frontpage/images/drop-arrow.gif" style="display:inline"/></strong></a></li>
+        <!--[if IE]>
+			<li style="border:none;"><a href="#" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.health24.com');">Make 			Health24.com your homepage</a></li>
+		<![endif]-->	
+      </ul>
+		<ul style="float:right;width:300px;padding-right:0pt;margin-right:2px;text-align:right;line-height:12px">
+        	<li><a href="http://www.health24.com/about/Newsletter/13-697.asp" target="_blank">Subscribe to our newsletters</a></li>
+        	<li><a href="http://www.health24.com/competitions/default.asp" target="_blank">Win!</a></li>
+      </ul>      <div class="clr"></div>
+    </div>
+    <div id="dropmenu1" class="dropmenudiv">        
+	    <a href="http://www.24.com/games">24games</a>
+    	<a href="http://www.ancestry24.co.za/">Ancestry24</a> 
+        <a href="http://www.careers24.com/">Jobs</a> 
+        <a href="http://www.channel24.co.za">Channel24</a>
+        <a href="http://www.fin24.co.za">Fin24</a>  
+        <a href="http://www.food24.com">Food24</a>
+        <a href="http://www.gotravel24.com/">GoTravel24</a>
+        <a href="/">Health24</a> 
+        <a href="http://www.kalahari.net">Kalahari.net</a> 
+        <a href="http://mobile.24.com/">Mobile</a> 
+        <a href="http://www.news24.com" title="Breaking South African News">News24</a> 
+        <a href="http://www.nuus24.com/Content">Nuus24</a> 
+        <a href="http://www.parent24.co.za">Parent24</a>
+        <a href="http://www.property24.com">Property24</a>
+        <a href="http://www.sport24.co.za/">Sport24</a>
+        <a href="http://weather.news24.com">Weather24</a> 
+        <a href="http://www.wheels24.co.za">Wheels24</a> 
+        <a href="http://www.women24.com" class="bottom_item">Women24</a></div>
+    <script type="text/javascript">cssdropdown.startdropdown("dropdown")</script>
+	
+    <div class="header_box clr relative"> <a href="/"> <img src="/images/site/frontpage/images/header_logo.png" id="health24Logo" class="absolute logo" alt="Health24" /> </a>
+			<div class="header_story1 absolute"><h4 class="darkblue bold"><a href="/medical/Condition_centres/777-792-1461-2874,62482.asp">Rush-hour zen</a></h4><p>Unstick traffic jams, cut pollution, save on petrol and bust stress with this technique.       </p></div><div class="header_story2 absolute"><h4 class="darkblue bold"><a href="/tools/Slideshows/1891-4704-4789,62456.asp">Girl to woman</a></h4><p>Check out this slideshow to see all the changes that happen during puberty. </p></div>
+      <div class="searchbox absolute">
+      	   <form name="goFind" method="get" action="http://search.health24.com/search">
+  		 <input type="hidden" name="complete" value="checkbox">
+         <input type="hidden" name="s" value="HLT">
+         <input type="hidden" name="ref" value="HTH">
+  		  <input type="text" name="q" class="search_field absolute">
+ 		  <input src="/images/site/frontpage/images/topbar_searchbtn.gif" class="srchbut absolute" type="image" align="middle" onClick="javascript: return srchHealth();">
+	  </form>
+
+      </div>
+<div class="widget absolute">
+	<ul class="bold">
+	<li class="win">
+    	
+        <!--a href="http://ad.doubleclick.net/clk;236113314;14949877;m?http://www.health24.com/competitions/hills/competition02.asp">- Pet food worth R1500!</a>
+        <br/-->
+        <!--a href="http://ad.doubleclick.net/clk;239025622;14949877;t?http://lexpharmhealthcare.co.za/newsletter.asp" target="_blank">- A weekend away for 4!</a>
+	<br/-->
+    <a href="http://ad.doubleclick.net/clk;238951387;14949877;i?http://www.health24.com/competitions/servd/Competition.asp">- Healthy food delivery</a>
+    
+    </li>
+
+	</ul>
+	<!--div class="mobile-widget"-->
+		<!--a href="http://m.news24.com/Health24/"><img src="/images/h24mobile.gif" width="161" height="47" border="0" alt="" /></a-->
+        
+        <!--START BUTTON ROTATOR-->
+		<script type="text/javascript">
+
+    function fnHide(){
+      setInterval("fnHide2()", 5000);
+    }
+    function fnHide2(){
+      var theDivA;
+	  var theDivB;
+	  theDivA = document.getElementById("mobile-widgetA");
+	  theDivB = document.getElementById("mobile-widgetB");
+	  if(theDivA.style.display != "none")
+       {
+            theDivA.style.display = "none";
+            theDivB.style.display = "";
+       }
+       else
+       {
+            theDivA.style.display = "";
+            theDivB.style.display = "none";
+       }
+    }
+
+</script>
+<div id="mobile-widgetA" class="mobile-widget">
+
+<a href="http://www.facebook.com/Health24" target="_blank" title="Follow Health24 on Facebook"><img src="/images/rotator/FaceBook_48x48.png" width="32" height="32" alt="Follow Health24 on Facebook" border="0" style="padding: 0 5px 8px 0;"></a>
+<a href="http://twitter.com/Health24com" target="_blank" title="Follow Health24 on Twitter"><img src="/images/rotator/Twitter_48x48.png" width="32" height="32" alt="Follow Health24 on Twitter" border="0" style="padding: 0 5px 8px 0;"></a>
+<a href="http://www.health24.com/health24RSSFeed/" target="_blank" title="Subscribe to Health24's RSS Feeds"><img src="/images/rotator/Feed_48x48.png" width="32" height="32" alt="Subscribe to Health24's RSS Feeds" border="0" style="padding: 0 20px 8px 0;"></a>
+
+</div>
+
+<div id="mobile-widgetB" class="mobile-widget" style="display:none;">
+<a href="http://m.news24.com/Health24/" target="_blank" title="Visit Health24's New Mobile site!"><img src="/images/h24mobile.gif" width="161" height="47" alt="" border="0"></a>
+</div>
+<script type="text/javascript">fnHide();</script>
+
+<!--STOP BUTTON ROTATOR-->
+
+	<!--/div-->
+    
+    
+    
+    
+</div>
+    </div>
+  </div>
+  <!-- XXXXXXXXXXXXXXXXXXXXXXXXXX navigation XXXXXXXXXXXXXXXXXXXXXXXXXX -->
+ 
+
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+
+sfHover = function() {
+	var sfEls = document.getElementById("health_nav").getElementsByTagName("LI");
+	for (var i=0; i<sfEls.length; i++) {
+		sfEls[i].onmouseover=function() {
+			this.className+=" sfhover";
+		}
+		sfEls[i].onmouseout=function() {
+			this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+		}
+	}
+}
+if (window.attachEvent) window.attachEvent("onload", sfHover);
+
+//--><!]]></script>
+
+  <div id="nav_wrap">
+    <ul id="health_nav">
+    
+<li><a href="/news/1.asp">Health News</a>
+<ul class="nav1column">
+<li><a href="/news/1.asp">Latest News</a></li>
+<li><a href="/news/Special_Report/1-4581.asp">Special Reports</a></li>
+<li><a href="/news/Columnists/1-4618.asp">Columnists</a></li>
+<li><a href="/news/Events/1-3949.asp">Events</a></li>
+<li><a href="/experts/979.asp">Experts</a></li>
+<li><a href="http://ad.doubleclick.net/clk;220699954;14949877;i?http://www.health24.com/medical/Condition_centres/777-792-2002-4590.asp">Press Office: Selfmed</a></li>
+<li><a href="http://ad.doubleclick.net/clk;229128024;14949877;s?http://www.health24.com/medical/Condition_centres/777-792-2002-2432.asp">Press Office: Momentum Health</a></li>
+<li><a href="http://ad.doubleclick.net/clk;238457343;14949877;b?http://www.health24.com/medical/Condition_centres/777-792-2002-4637.asp">
+                Press Office: Medihelp</a></li>
+</ul>
+</li>
+    
+<li><a href="/medical/Condition_centres/777-792.asp">Conditions A-Z</a>
+<ul class="nav4column">
+<li><a href="/medical/Condition_centres/777-792-796.asp">Acne</a></li>
+<li><a href="/medical/Condition_centres/777-792-4382.asp">ADHD</a></li>
+<li><a href="/medical/Condition_centres/777-792-797.asp">Allergies</a></li>
+<li><a href="/medical/Condition_centres/777-792-798.asp">Alzheimer&#39;s</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,13441.asp">Anxiety</a></li>
+<li><a href="/medical/Condition_centres/777-792-816.asp">Arthritis</a></li>
+<li><a href="/medical/Condition_centres/777-792-800.asp">Asthma</a></li>
+<li><a href="/medical/Condition_centres/777-792-1078.asp">Backache</a></li>
+<li><a href="/medical/Condition_centres/777-792-801.asp">Breast Health</a></li>
+<li><a href="/medical/Condition_centres/777-792-802.asp">Cancer</a></li>
+<li><a href="/medical/Condition_centres/777-792-4101.asp">Cervical Cancer</a></li>
+<li><a href="/medical/Condition_centres/777-792-804.asp">Cholesterol</a></li>
+<li><a href="/medical/Condition_centres/777-792-805.asp">COPD</a></li>
+<li><a href="/medical/Condition_centres/777-792-4705.asp">Cough</a></li>
+<li><a href="/medical/Condition_centres/777-792-807.asp">Depression</a></li>
+<li><a href="/medical/Condition_centres/777-792-808.asp">Diabetes</a></li>
+<li><a href="/medical/Condition_centres/777-792-4351.asp">Digestive Health</a></li>
+<li><a href="/medical/Condition_centres/777-792-809.asp">Epilepsy</a></li>
+<li><a href="/medical/Condition_centres/777-792-1446.asp">Erectile Dysfunction</a></li>
+<li><a href="/medical/Condition_centres/777-792-810.asp">Eye Health</a></li>
+<li><a href="/medical/Condition_centres/777-792-2215.asp">Feet</a></li>
+<li><a href="/medical/Condition_centres/777-792-811.asp">Flu & Colds</a></li>
+<li><a href="/medical/Condition_centres/777-792-1077.asp">Headache & Migraine</a></li>
+<li><a href="/medical/Condition_centres/777-792-806.asp">Hearing Problems</a></li>
+<li><a href="/medical/Condition_centres/777-792-812.asp">Heart Health</a></li>
+<li><a href="/medical/Condition_centres/777-792-813.asp">Heartburn</a></li>
+<li><a href="/medical/Condition_centres/777-792-814.asp">HIV/Aids</a></li>
+<li><a href="/medical/Condition_centres/777-792-815.asp">Hypertension</a></li>
+<li><a href="/medical/Condition_centres/777-792-819.asp">Menopause</a></li>
+<li><a href="/medical/Condition_centres/777-792-4732.asp">Menstruation</a></li>
+<li><a href="/medical/Condition_centres/777-792-2207.asp">Osteoporosis</a></li>
+<li><a href="/medical/Condition_centres/777-792-820.asp">Pain</a></li>
+<li><a href="/medical/Head2Toe/777-778-783,11928.asp">PMS</a></li>
+<li><a href="/medical/Condition_centres/777-792-821.asp">Prostate</a></li>
+<li><a href="/medical/Condition_centres/777-792-4402.asp">Sinusitis</a></li>
+<li><a href="/medical/Condition_centres/777-792-3529.asp">Sleep Problems</a></li>
+<li><a href="/sex/STIs/1253-1258.asp">STI</a></li>
+<li><a href="/medical/Condition_centres/777-792-3728.asp">Stress</a></li>
+<li><a href="/medical/Condition_centres/777-792-822.asp">Stroke</a></li>
+<li><a href="/medical/Condition_centres/777-792-4259.asp">Tired Legs</a></li>
+<li><a href="/medical/Condition_centres/777-792.asp"><b>See all Conditions</b></a></li>
+</ul>
+</li>
+    
+<li><a href="/medical/777.asp">Your Body</a>
+<ul class="nav5column">
+<li><a href="/medical/Head2Toe/777-778-781,54947.asp">Hair loss for men</a></li>
+<li><a href="/Woman/Beautiful_and_healthy/711-3505-3678,30312.asp">Hair loss for women</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,56869.asp">Anaemia</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,21036.asp">Athlete's foot</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,12736.asp">Bedwetting</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,12365.asp">Burns</a></li>
+<li><a href="/antiageing/Cellulite/3685-4303.asp">Cellulite</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,12554.asp">Cold sores</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,12720.asp">Colic</a></li>
+<li><a href="/medical/Head2Toe/777-778-783,12220.asp">Constipation</a></li>
+<li><a href="/medical/Condition_centres/777-792-4705.asp">Cough</a></li>
+<li><a href="/medical/Head2Toe/777-778-780,25929.asp">Cuts &amp; Wounds</a></li>
+<li><a href="/Woman/Common_conditions/711-712,11914.asp">Cystitis</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,11811.asp">Dandruff</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,18491.asp">Dehydration</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,11814.asp">Diarrhoea</a></li>
+<li><a href="/medical/Head2Toe/777-778-780,35568.asp">Dry skin</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,11943.asp">Dysmenorrhoea</a></li>
+<li><a href="/medical/Symptoms/777-4194,44500.asp">Earache </a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,23023.asp">Endometriosis</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,11818.asp">Eczema</a></li>
+<li><a href="/medical/Symptoms/777-4194,44199.asp">Fatigue</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,49331.asp">Female infertility</a></li>
+<li><a href="/Woman/Common_conditions/711-712-3496,52704.asp">Female organ prolapse</a></li>
+<li><a href="/medical/Symptoms/777-4194,44200.asp">Fever</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,11830.asp">Gout</a></li>
+<li><a href="/medical/Head2Toe/777-778-783,11833.asp">Haemorrhoids</a></li>
+<li><a href="/medical/Focus_centres/777-2268-4472.asp">Hangover</a></li>
+<li><a href="/medical/Head2Toe/777-778-781,11855.asp">Head lice</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,12372.asp">Heavy Uterine bleeding</a></li>
+<li><a href="/medical/Head2Toe/777-778-780,12369.asp">Insect bites</a></li>
+<li><a href="/medical/Head2Toe/777-778-783,11937.asp">IBS</a></li>
+<li><a href="/Man/Common_conditions/748-770-3429,48539.asp">Itching</a></li>
+<li><a href="/child/Baby_centre/833-849-876,24139.asp">Nappy rash</a></li>
+<li><a href="/medical/Symptoms/777-4194,44208.asp">Nausea & vomiting</a></li>
+<li><a href="/medical/Condition_centres/777-792-817-3951,48346.asp">OAB</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,11845.asp">Overactive Thryroid</a></li>
+<li><a href="/medical/Head2Toe/777-778-783,11928.asp">PMS</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,11880.asp">Psoriasis</a></li>
+<li><a href="/medical/Diseases_A_to_Z/777-4198,11881.asp">Restless Leg Syndrome</a></li>
+<li><a href="/medical/Head2Toe/777-778-780,11825.asp">Ringworm</a></li>
+<li><a href="/medical/Head2Toe/777-778-780,43330.asp">Rosacea</a></li>
+<li><a href="/medical/Head2Toe/777-778-780,11886.asp">Scabies</a></li>
+<li><a href="/medical/Head2Toe/777-778-781,11891.asp">Sore throat</a></li>
+<li><a href="/child/Baby_centre/833-849-878,24150.asp">Teething</a></li>
+<li><a href="/medical/Head2Toe/777-778-783,12416.asp">Urinary incontinence</a></li>
+<li><a href="/medical/Head2Toe/777-778-783,11944.asp">Vaginal infections</a></li>
+<li><a href="/medical/Head2Toe/777-778-780,11933.asp">Warts</a></li>
+<li><a href="/medical/Head2Toe/777-778-783,18679.asp">Worms</a></li>
+<li><a href="/medical/777.asp"><b>See more</b></a></li>
+
+</ul>
+</li>
+  <li>
+<a href="/medical/Focus_centres/777-2268.asp">Focus</a>
+<ul class="nav2column">
+<li><a href="/medical/Focus_centres/777-2268-2757.asp">Afrikaans</a></li>
+<li><a href="/medical/Focus_centres/777-2268-4236.asp">Contraception</a></li>
+<li><a href="/medical/Condition_centres/777-792-1461.asp">Environmental</a></li>
+<li><a href="/medical/Condition_centres/777-792-2557.asp">First Aid Techniques</a></li>
+<li><a href="/medical/Focus_centres/777-2268-3852.asp">Healthy Workplace</a></li>
+<li><a href="/medical/MedsYou/777-786.asp">Meds &amp; You</a></li>
+<li><a href="/medical/Focus_centres/777-2268-4757.asp">Medical Money</a></li>
+<li><a href="/medical/Condition_centres/777-792-4732.asp">Menstruation</a></li>
+<li><a href="/medical/Focus_centres/777-2268-2552.asp">Pet Health</a></li>
+<li><a href="/medical/Condition_centres/777-792-1952.asp">Stop Smoking</a></li>
+<li><a href="/medical/Focus_centres/777-2268-4463.asp">Street Drugs</a></li>
+<li><a href="/medical/Focus_centres/777-2268-3749.asp">Sun</a></li>
+<li><a href="/medical/Condition_centres/777-792-824.asp">Travel Health</a></li>
+</ul>
+</li>          
+<li>
+<a href="#">Lifestyle</a>
+<ul class="nav2column">
+<li><a href="/man/748.asp">Men's health</a></li>
+<li><a href="/healthy_home/546.asp">Healthy home</a></li>
+<li><a href="/woman/711.asp">Women's health</a></li>
+<li><a href="/natural/17.asp">Natural health</a></li>
+<li><a href="/teens/735.asp">Teens</a></li>
+<li><a href="/journey/3277.asp">Pregnancy</a></li>
+<li><a href="/medical/Condition_centres/777-792-3000.asp">Oral health</a></li>
+<li><a href="/child/833.asp">Parenting</a></li>
+<li><a href="/medical/Condition_centres/777-792-3728.asp">Stress</a></li>
+<li><a href="/antiageing/3685.asp">Anti-ageing</a></li>
+<li><a href="/mind/1284.asp">Mental health</a></li>
+<li><a href="/medical/Condition_centres/777-792-823.asp">Skin care</a></li>
+<li><a href="/medical/Focus_centres/777-2268-4472.asp">Detox</a></li>
+</ul>
+</li>
+
+<li>
+<a href="/dietnfood/15.asp">Diet &amp; Nutrition</a>
+<ul class="nav2column">
+<li><a href="/dietnfood/15.asp">Overview</a></li>
+<li><a href="/dietnfood/Weight_Centre/15-51-90.asp">Are you overweight? </a></li>
+<li><a href="/dietnfood/The_immune_system/15-3853.asp">Boost your immunity</a></li>
+<li><a href="/dietnfood/Diabetic_diet/15-4650.asp">Diabetic diet</a></li>
+<li><a href="/dietnfood/Weight_Centre/15-51-2961.asp">Diet Detective</a></li>
+<li><a href="/dietnfood/Healthy_diets/15-4673.asp">Eating plans</a></li>
+<li><a href="/dietnfood/Diet_basics/15-1168-1174.asp">Glycaemic index (GI)</a></li>
+<li><a href="/dietnfood/Healthy_diets/15-4673.asp">Healthy diets</a></li>
+<li><a href="/dietnfood/Healthy_foods/15-18.asp">Healthy foods</a></li>
+<li><a href="/dietnfood/Probiotics/15-1940.asp">Probiotics</a></li>
+<li><a href="/dietnfood/Top_10_foods/15-3528.asp">Top 10 foods</a></li>
+<li><a href="/dietnfood/Weight_Centre/15-51.asp">Weight loss</a></li>
+<li><a href="/dietnfood/Whats_in_food/15-47.asp">Vitamins/Minerals Guide</a></li>
+<li><a href="/experts/DietDoc/979-1002.asp">DietDoc</a></li>
+</ul>
+</li>	
+
+<li>
+<a href="/fitness/16.asp">Fitness</a>
+<ul class="nav3column">
+<li><a href="/fitness/16.asp">Overview</a></li>
+<li><a href="/fitness/Specific_Sports/16-2175-2181.asp">Running</a></li>
+<!-- <li><a href="/fitness/Science_of_Sport/16-3901.asp">Science of Sport</a></li> -->
+<li><a href="/fitness/Exercise_gear/16-479.asp">Gear & equipment</a></li>
+<li><a href="/fitness/Getting_started/16-474.asp">Get Started!</a></li>
+<li><a href="/fitness/Specific_Sports/16-2175-2182.asp">Cycling</a></li>
+<li><a href="/fitness/In_the_gym/16-526.asp">In the gym</a></li>
+<li><a href="/fitness/How_we_get_fit/16-4092.asp">How we get fit</a></li>
+<li><a href="/fitness/Dancing/16-4622.asp">Dancing</a></li>
+<li><a href="/fitness/Stretching/16-1372.asp">Stretching</a></li>
+<li><a href="/fitness/Exercises/16-1339.asp">Exercise How-To's</a></li>
+<li><a href="/fitness/Specific_Sports/16-2175-2187.asp">Yoga</a></li>
+<li><a href="/fitness/Lifestages/16-480.asp">Life stages</a></li>
+<!-- <li><a href="/fitness/Spar_10km_race/16-4121.asp">Spar 10km Challenge</a></li> -->
+<!-- <li><a href="/fitness/Best_bods/16-2420.asp">Best bods</a></li> -->
+<li><a href="/fitness/Programmes/16-1347.asp">Workout Programmes</a></li>
+<li><a href="/fitness/Specific_Sports/16-2175.asp">Specific sports</a></li>
+<!-- <li><a href="/fitness/Lose_weight_with_Elna/16-4221.asp">Flab fighter</a></li> -->
+<li><a href="/fitness/Sports_injuries/16-3404.asp">Sports injuries</a></li>
+<li><a href="/experts/FitnessDoc/979-996.asp">FitnessDoc</a></li>
+<li><a href="/fitness/Cardio/16-1371.asp">Cardio</a></li>
+<li><a href="/dietnfood/Weight_Centre/15-51-90.asp">BMI Calculator</a></li>
+<li><a href="/videos/fitness/default.asp">Fitness videos</a></li>
+<li><a href="/fitness/Diet_Supplements/16-481.asp">Nutrition</a></li>
+</ul>
+</li>
+
+<li>
+<a href="http://www.health24.com/sex/1253.asp">Sex</a>
+<ul class="nav2column">
+<li><a href="/sex/1253.asp">Overview</a></li>
+<li><a href="/sex/Abuse/1253-1272.asp">Abuse</a></li>
+<li><a href="/sex/Basics/1253-1265.asp">Body basics</a></li>
+<li><a href="/sex/Contraception/1253-1266.asp">Contraception</a></li>
+<li><a href="/sex/Relationships/1253-1259.asp">Relationships</a></li>
+<li><a href="/sex/Gay_lesbian_bisexual_issues/1253-2462.asp">Gay, lesbian & bisexual</a></li>
+<li><a href="/sex/Alternative_practices/1253-3502.asp">Alternative practices</a></li>
+<li><a href="/sex/Tips_techniques/1253-1254.asp">Tips & techniques</a></li>
+<li><a href="/sex/Gourmet_sex/1253-2443.asp">Gourmet sex</a></li>
+<li><a href="/sex/Sex_toys/1253-2616.asp">Sex aids</a></li>
+<li><a href="/sex/Sex_and_your_child/1253-2439.asp">Sex and your child</a></li>
+<li><a href="/sex/Sexual_diversity/1253-2444.asp">Sexual diversity</a></li>
+<li><a href="/sex/Sexual_myths/1253-2447.asp">Sexual myths</a></li>
+<li><a href="/sex/Problems/1253-1264.asp">Sexual obstacles</a></li>
+<li><a href="/sex/STIs/1253-1258.asp">STIs and safer sex</a></li>
+<li><a href="/sex/Graphics/1253-3258.asp">Graphics</a></li>
+<li><a href="/sex/SexEtc/1253-2427.asp">Videos</a></li>
+<li><a href="/experts/Sexologist/979-982.asp">Sexologist</a></li>
+</ul>
+</li>
+
+<li><a href="/experts/979.asp">Experts</a>
+<ul class="nav3column">
+<li><a href="/experts/ADD_ADHD_Expert/979-4122.asp">ADD/ADHD Expert</a></li>
+<li><a href="/experts/Addictions_expert/979-4688.asp ">Addictions experts</a></li>
+<li><a href="/experts/Anti_aging_expert/979-3872.asp">Anti-ageing expert</a></li>
+<li><a href="/experts/ChiroDoc/979-1177.asp">ChiroDoc</a></li>
+<li><a href="/experts/CyberDoc/979-980.asp">CyberDoc</a></li>
+<li><a href="/experts/CyberShrink/979-984.asp">CyberShrink</a></li>
+<li><a href="/experts/CyberVet/979-994.asp">CyberVet</a></li>
+<li><a href="/experts/Dental_expert/979-1941.asp">Dental expert</a></li>
+<li><a href="/experts/DietDoc/979-1002.asp">DietDoc</a></li>
+<li><a href="/experts/Eating_Disorders_and_Obesity_Expert/979-4659.asp">Eating Disorders expert</a></li>
+<li><a href="/experts/ENT_Expert/979-4453.asp">ENT Expert</a></li>
+<li><a href="/experts/Fertility_expert/979-2865.asp">Fertility expert</a></li>
+<li><a href="/experts/FitnessDoc/979-996.asp">FitnessDoc</a></li>
+<li><a href="/experts/GynaeDoc/979-981.asp">GynaeDoc</a></li>
+<li><a href="/experts/Headache/979-1273.asp">Headache expert</a></li>
+<li><a href="/experts/Healthy_Bones/979-1789.asp">Healthy Bones</a></li>
+<li><a href="/experts/Hearing_Care/979-1076.asp">Hearing Care</a></li>
+<li><a href="/experts/Natural_Expert/979-993.asp">Natural health</a></li>
+<li><a href="/experts/Paediatrician/979-987.asp">Paediatrician</a></li>
+<li><a href="/experts/Pharmacist/979-985.asp">Pharmacist</a></li>
+<li><a href="/experts/Sexologist/979-982.asp">Sexologist</a></li>
+<li><a href="/experts/Sleep_Expert/979-4284.asp">Sleep Expert</a></li>
+<li><a href="/experts/Sport_Nutrition/979-998.asp">Sports Nutrition</a></li>
+<li><a href="/experts/Teen_Health_Expert/979-1080.asp">Teen Expert</a></li>
+<li><a href="/experts/Vital_Vitamin_Expert/979-4381.asp">Vital Vitamin Expert</a></li>
+<li><a href="/experts/979.asp"><b>See all Experts</b></a></li>
+</ul>
+</li>
+
+<li><a href="/talk/2282.asp">Community</a>
+<ul class="nav2column">
+<li><a href="/Talk/HIV_Expert/2282-990.asp">HIV Peer Forum</a></li>
+<li><a href="http://blogs.health24.com/heather" target="_blank">Editors Blog</a></li>
+<li><a href="/Talk/Pregnancy_chatline/2282-2708.asp">Pregnancy chatline</a></li>
+<li><a href="/Talk/Parenting_corner/2282-2077.asp">Parenting chatline</a></li>
+<li><a href="/Talk/Step_Parenting_Support/2282-3884.asp">Step Parenting Support</a></li>
+<li><a href="http://blogs.health24.com/DietEd" target="_blank">DietEd Blog</a></li>
+<li><a href="/Talk/ADHD_support/2282-2943.asp">ADHD support</a></li>
+<li><a href="http://blogs.health24.com/fitnesseditor" target="_blank">FitnessEd Blog</a></li>
+<li><a href="/Talk/Mental_health/2282-2160.asp">CyberShrink Annex</a></li>
+<li><a href="http://blogs.health24.com/healthed" target="_blank">HealthEd Blog</a></li>
+<li><a href="/Talk/Man_Talk/2282-3305.asp">Man talk</a></li>
+<li><a href="/Talk/Erectile_dysfunction/2282-2161.asp">Erectile dysfunction</a></li>
+<li><a href="http://blogs.health24.com/dinxspinal" target="_blank">Lunar Raves</a></li> 
+<li><a href="/Talk/Fitness_training/2282-2158.asp">Fitness training</a></li>
+<li><a href="http://blogs.health24.com/bipolarjourney" target="_blank"> A Bipolar Journey</a></li> 
+<li><a href="/Talk/Healthy_eating/2282-2896.asp">Healthy eating</a></li> 
+<li><a href="http://blogs.health24.com/TantricTeacherAtLarge" target="_blank">TantricTeacherAtLarge</a></li> 
+<li><a href="/Talk/Sexual_abuse/2282-2162.asp">Sexual abuse</a></li> 
+<li><a href="http://blogs.health24.com/allrounder" target="_blank">The Life Quest</a></li>
+<li><a href="/talk/2282.asp"><b>See all Forums</b></a></li>
+<li><a href="http://blogs.health24.com" target="_blank"><b>See all Blogs</b></a></li>
+
+</ul>
+</li>
+
+<li><a href="/tools/">Tests &amp; Tools</a>
+<ul class="nav2column">
+<li><a href="/tools/bloodalcohol/start.asp">Blood-alcohol test</a></li>
+<li><a href="javascript:void(openWindow('/dietnfood/Weight_Centre/15-51-90.asp','700','600','1'))">BMI Calculator</a></li>
+<li><a href="javascript:void(openWindow('/dietnfood/tools/burnometer.asp','700','600','1'))">Burn-O-meter</a></li>
+<li><a href="javascript:void(openWindow('/dietnfood/tools/caloriecounter.asp','700','600','1'))">Calorie Counter</a></li>
+<li><a href="/tools/cost_of_smoking/start.asp?step=1">Cost of Smoking tool</a></li>
+<li><a href="/tools/registration/">Detox Tool</a></li>
+<li><a href="javascript:void(openWindow('/fitness/calcs/flex.asp','700','600','1'))">Flexibility Test</a></li>
+<li><a href="javascript:void(openWindow('/dietnfood/tools/giIndex.asp','700','600','1'))">Glycaemic index tool</a></li>
+<li><a href="/graphics/3561.asp">Graphics/slide shows</a></li>
+<li><a href="/tools/groceries/default.asp">Grocery tool</a></li>
+<li><a href="javascript:void(openWindow('/dietnfood/Great_diet_guides/15-3089-3242.asp','700','500','1'))">How to measure height</a></li>
+<li><a href="/tools/life_expectancy/default.asp">Life Expectancy tool</a></li>
+<li><a href="/tools/Quizzes/1891-1892.asp">Quizzes</a></li>
+<li><a href="/tools/registration/">Reminders</a></li>
+<li><a href="javascript:void(openWindow('/fitness/calcs/step.asp','700','600','1'))">Endurance step test</a></li>
+<li><a href="/tools/"><b>See all Tests &amp; Tools</b></a>
+</ul>
+</li>
+
+<li>
+<a href="/medical/Condition_centres/777-792-2002.asp">Medical Schemes</a>
+<ul class="nav1column">
+<li><a href="/medical/Condition_centres/777-792-2002.asp">Overview</a></li>
+<li><a href="http://ad.doubleclick.net/clk;220699954;14949877;i?http://www.health24.com/medical/Condition_centres/777-792-2002-4590.asp">Selfmed</a></li>
+<li><a href="http://ad.doubleclick.net/clk;220700778;14949877;v?http://www.selfmed.co.za/contact_request.aspx?pg=contact_request.aspx&src=Health24&cmp=SponsorshipLink&utm_source=Media24Health24&utm_medium=link&utm_content=&utm_campaign=Sponsorship">Get a Selfmed quote</a></li>
+<li><a href="http://ad.doubleclick.net/clk;229128024;14949877;s?http://www.health24.com/medical/Condition_centres/777-792-2002-2432.asp">Momentum Health</a></li>
+<li><a href="http://ad.doubleclick.net/clk;229127635;14949877;z?http://www.momentum.co.za/wps/portal/momentum/!ut/?WCM_PORTLET=PC_7_RS8OBHJQ6NJPE0IGA7MO7T2UB1_WCM&WCM_GLOBAL_CONTEXT=/wps/wcm/connect/momentum/campaigns/momentum-health/womens-health">Get a Momentum Health quote</a></li>
+
+
+<li><a href="http://ad.doubleclick.net/clk;238457622;14949877;b?https://www.medihelp.co.za/advert.aspx?i=176">Get a Medihelp quote</a></li>
+
+<!--li><a href="http://ad.doubleclick.net/clk;234945104;38187638;p?http://www.clicks.co.za/MedicalAid.aspx">Clicks Pharmacy</a></li-->
+
+</ul>
+</li>
+<li>
+<a href="/competitions/" class="last">Win!</a> <!-- add last class to remove divider -->
+<ul class="nav1column last_item">
+<li><a href="/competitions/">Competitions</a></li>
+<li><a href="/competitions/?action=win">Previous winners</a></li>
+</ul>
+</li>
+
+</ul>
+</div>
+  
+  <!-- XXXXXXXXXXXXXXXXXXXXXXXXXX navigation end XXXXXXXXXXXXXXXXXXXXXXXXXX -->
+  
+   <div class="div_horz clr">&nbsp;</div> <!-- ################### -->
+   
+  <div class="col644 left" id="flashfocus">
+	<script language="JavaScript">AC_FL_RunContent ("id", "Health_Billboard", "minversion", "8,0,0,0", "bgcolor", "FFFFFF", "wmode", "transparent", "menu", "false", "movie", "Health_Billboard", "src", "/swf/health24_Billboard?billboardXmlPath=/images/site/frontpage/Health_Billboard.xml", "width", "623", "height", "230", "name", "Health_Billboard");</script>
+  </div> 
+  <div class="div_column left">&nbsp;</div> <!-- ## Column Divider ## -->
+  <div class="col300 left"><script language="javascript">DisplayDCAd('300x250','2','','/homepage');</script>
+  	<div class="advert_txt">advertisement</div>
+  </div>
+  
+  <div class="div_horz clr">&nbsp;</div> <!-- ################### -->
+  
+  <div class="col280 left" id="news_headlines">
+  
+  	<h1 class="darkgreen bold">News Headlines</h1>
+		<h2 class="darkblue bold"><a href="/news/Mind_Psychology/1-930,62445.asp">Teens need to know they &#39;matter&#39;</a></h2><p>Adolescents who believe they matter to their families are less likely to threaten or engage in violence against family members.</p><ul><li><a href="/news/Mind_Psychology/1-930,62449.asp">TV breakups can be distressing</a></li><li><a href="/news/Genetics/1-916,62498.asp">Gene sequencing, faster and cheaper</a></li><li><a href="/news/Man/1-926,62495.asp">Longer ring finger= more attractive</a></li><li><a href="/news/Mind_Psychology/1-930,62453.asp">Bipolar mood swings predictable</a></li><li><a href="/news/Sexuality/1-944,62443.asp">Penis can be enlarged without an op</a></li><li><a href="/news/HIV_AIDS/1-920,62444.asp">AFSA opposes paid sterilisation</a></li><li><a href="/news/Cancer/1-898,62440.asp">Ovarian cancer starts elsewhere</a></li><li><a href="/news/Other/1-934,62439.asp">MJ’s doctor changes his story</a></li></ul>	
+        
+     <!--<span class="block right more_news">
+		<a href="#">more news</a>
+	</span>-->
+	
+	<div class="left xtralink">
+		<a href="/news/1.asp">More news</a>
+	</div>
+	
+  </div> 
+  <a name="editors" id="editors"></a>
+  <div class="col364 left relative" id="your_body">
+  	<h1 class="darkgreen bold">Your Body</h1>
+	
+	
+	<div id="tabbed_box" class="relative">
+			
+		<h4 title="head" id="head">Head</h4>
+		
+			<div class="show_body_box absolute tabbed_content" >
+			<div class="col1 left">
+			<ul>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-4382.asp">ADHD</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-796.asp">Acne</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-797.asp">Allergy</a>
+				<!--<li /><a href="http://www.health24.com/Woman/Common_conditions/711-712-3492,44481.asp">Alopecia</a>-->
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-798.asp">Alzheimer's</a>
+				<li /><a href="http://www.health24.com/mind/Anxiety/1284-1295.asp">Anxiety</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-781,12554.asp">Cold sores</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-781,11803.asp">Colds</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-781,11811.asp">Dandruff</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-807.asp">Depression</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-781,11817.asp">Ear canal inf.</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-809.asp">Epilepsy</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-810.asp">Eye</a>
+			</ul>	
+			</div>
+			<div class="col2 left">
+			<ul>	
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-811.asp">Flu</a>
+                <li /><a href="http://www.health24.com/medical/Head2Toe/777-778-781,54947.asp"> Hair loss for men</a>
+                <li /><a href="http://www.health24.com/medical/Head2Toe/777-778-781,12537.asp">Halitosis</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-1077.asp">Headache &amp; Migraine</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-781,11855.asp">Headlice</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-806.asp">Hearing</a>
+				<li /><a href="http://www.health24.com/medical/Diseases_A_to_Z/777-4198,11848.asp">Hyperthyroidism</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-3000.asp">Oral</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-4402.asp">Sinusitis</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-781,11891.asp">Sore throat</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-822.asp">Stroke</a>
+				<li /><a href="#">Teething (babies)</a>
+				
+			</ul>	
+			</div>
+		</div>
+		
+		<h4 title="chest">Chest</h4>
+		
+		<div class="show_body_box absolute tabbed_content" >
+			<div class="col1 left">
+			<ul>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-800.asp">Asthma</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-801.asp">Breast conditions</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-805.asp">COPD</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-782,17945.asp">Cough</a>
+			</ul>	
+			</div>
+			<div class="col2 left">
+			<ul>
+            	<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-812.asp">Heart</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-815.asp">Hypertension</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-1952.asp">Stop smoking</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-3990.asp">TB</a>
+            </ul>
+			</div>
+		</div>
+		
+		<h4 title="abdomen">Abdomen</h4>
+		
+			<div class="show_body_box absolute tabbed_content" >
+			<div class="col1 left">
+			<ul>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-1078.asp">Backache</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-803.asp">Cholera</a>
+                <li /><a href="http://www.health24.com/medical/Head2Toe/777-778-785,12720.asp">Colic (babies)</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-783,12220.asp">Constipation</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-783,11814.asp">Diarrhoea</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-4351.asp">
+Digestive health</a>
+                <li /><a href="http://www.health24.com/medical/Head2Toe/777-778-783,12721.asp">Flatulence</a>
+				
+				
+			</ul>	
+			</div>
+			<div class="col2 left">
+			<ul>
+            <li /><a href="http://www.health24.com/medical/Head2Toe/777-778-783,17890.asp">Gastro</a>
+            <li /><a href="http://www.health24.com/medical/Condition_centres/777-792-813.asp">Heartburn</a>
+            	<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-785,12301.asp">Hepatitis B</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-783,11937.asp">IBS</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-817.asp">Kidney failure</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-783,11868.asp">Nausea &amp; vomiting</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-783,18679.asp">Worms</a>
+            </ul>
+			</div>
+		</div>
+		
+		<h4 title="pelvis">Pelvis</h4>
+		
+			<div class="show_body_box absolute tabbed_content" >
+			<div class="col1 left">
+			<ul>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-4101.asp">Cervical cancer</a>
+				<li /><a href="http://www.health24.com/sex/Contraception/1253-1266.asp">Contraception</a>
+				<li /><a href="http://www.health24.com/Woman/Common_conditions/711-712,11914.asp">Cystitis</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-783,11943.asp">Dysmenorrhoea</a>
+				<li /><a href="http://www.health24.com/medical/Diseases_A_to_Z/777-4198,23023.asp">Endometriosis</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-1446.asp">Erectile dysfunction</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-4036.asp">Genital warts</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-783,11833.asp">Haemorrhoids</a>
+				<li /><a href="http://www.health24.com/medical/Diseases_A_to_Z/777-4198,12372.asp">Heavy periods</a>
+				<li /><a href="http://www.health24.com/Woman/Common_conditions/711-712,18032.asp">Menstrual problems</a>
+                <li /><a href="http://www.health24.com/medical/Head2Toe/777-778-783,52704.asp">Pelvic organ prolapse</a>
+    		</ul>	
+			</div>
+			<div class="col2 left">
+			<ul>
+     			<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-4093.asp">Human papilloma virus</a>	
+            	<li /><a href="http://www.health24.com/medical/Diseases_A_to_Z/777-4198,49331.asp">Infertility</a>
+            	<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-819.asp">Menopause</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-785,11866.asp">Nappy rash (babies)</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-821.asp">Prostate</a>
+				<li /><a href="http://www.health24.com/medical/Diseases_A_to_Z/777-4198,12416.asp">Urinary incontinence</a>
+				<!--<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-783,12355.asp">Thrush</a>-->				
+				<li />
+				<a href="http://www.health24.com/medical/Head2Toe/777-778-783,11944.asp">Vaginal discharge</a>				
+			</ul>	
+			</div>
+		</div>
+		
+		<h4 title="legs">Legs</h4>
+		
+			<div class="show_body_box absolute tabbed_content" >
+			<div class="col1 left">
+			<ul>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-816.asp">Arthritis</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-784,21036.asp">Athlete's foot</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-784,12659.asp">Cellulite</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-824-1860,13186.asp">DVT</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-2215.asp">Feet</a>
+				</ul>	
+			</div>
+			<div class="col2 left">
+			<ul>	
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-784,11830.asp">Gout</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-4259.asp">Leg health</a>
+                        <li /><a href="http://www.health24.com/medical/Condition_centres/777-792-4259-4260,11881.asp">Restless legs syndrome</a>
+                        <li /><a href="http://www.health24.com/medical/Condition_centres/777-792-4259-4460.asp">Tired legs</a>
+                        <li /><a href="http://www.health24.com/medical/Condition_centres/777-792-4259-4260,11927.asp">Varicose Veins</a>
+			</ul>	
+			</div>
+		</div>
+		
+		<h4 title="skin">Skin</h4>
+		
+			<div class="show_body_box absolute tabbed_content" >
+			<div class="col1 left">
+			<ul>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-796.asp">Acne</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-784,21036.asp">Athlete's foot</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-780,12365.asp">Burns</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-780,25929.asp">Cuts, wounds and abrasions</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-780,35568.asp">Dry skin</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-780,11818.asp">Eczema</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-780,12369.asp">Insect bites</a>
+				<li /><a href="http://admin.health24.com/Man/Common_conditions/748-770-3429,48539.asp">Itching</a>
+			</ul>	
+			</div>
+			<div class="col2 left">
+			<ul>	
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-779,14873.asp">Porphyria</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-823-1838,11880.asp">Psoriasis</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-780,11825.asp">Ringworm</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-780,43330.asp">Rosacea</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-780,11886.asp">Scabies</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-780,11935.asp">Shingles</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-823.asp">Skin</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-780,11933.asp">Warts</a>
+			</ul>	
+			</div>
+		</div>
+		
+		<h4 title="general">General</h4>
+		
+			<div class="show_body_box absolute tabbed_content" >
+			<div class="col1 left">
+			<ul>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-4382.asp">ADHD</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-797.asp">Allergy</a>
+				<li /><a href="http://www.health24.com/medical/Diseases_A_to_Z/777-4198,56869.asp">Anaemia</a>
+				<li/><a href="http://www.health24.com/medical/Condition_centres/777-792-799.asp">Anaesthesia</a> 
+                <li /><a href="http://www.health24.com/medical/Condition_centres/777-792-816.asp">Arthritis</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-802.asp">Cancer</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-804.asp">Cholesterol</a>
+                <li /><a href="http://www.health24.com/medical/Diseases_A_to_Z/777-4198,18491.asp">Dehydration</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-808.asp">Diabetes</a>
+                <li /><a href="http://www.health24.com/medical/Condition_centres/777-792-1461.asp">Enviro Health</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-779,13200.asp">Fatigue</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-779,13189.asp">Fever</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-1987.asp">Genetics</a>
+                <li /><a href="/medical/Head2Toe/777-778-781,11811.asp">Dandruff</a>
+				
+			</ul>	
+			</div>
+			<div class="col2 left">
+			<ul>	
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-814.asp">HIV</a>
+                <li /><a href="http://www.health24.com/dietnfood/The_immune_system/15-3853.asp">Immune system</a>
+                <li /><a href="http://www.health24.com/medical/Condition_centres/777-792-818.asp">Malaria</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-819.asp">Menopause</a>
+				<li /><a href="http://www.health24.com/dietnfood/Weight_Centre/15-51-2954.asp">Obesity</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-2207.asp">Osteoporosis</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-820.asp">Pain</a>
+                <li /><a href="http://www.health24.com/medical/Condition_centres/777-792-4394.asp">Palliative Care</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-783,11928.asp">PMS</a>
+				<li /><a href="http://www.health24.com/medical/Head2Toe/777-778-779,14873.asp">Porphyria</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-3529.asp">Sleep</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-3728.asp">Stress</a>
+				<li /><a href="http://www.health24.com/medical/Condition_centres/777-792-824.asp">Travel health</a>				
+			</ul>	
+			</div>
+		</div>
+	
+	</div>	
+  </div> 
+  <div class="div_column left">&nbsp;</div> <!-- ## Column Divider ## -->
+  <div class="col300 left" id="editors_choice">
+  	<h1 class="darkgreen bold">Editor's Choice</h1>
+    <div class="relative" id="tabbed_box2">
+     <h4 title="man" id="man">man</h4><div class="show_editor_box absolute lightgreen_bg tabbed_content"><ul><li/><div class="number inline">1</div> <a href="/Man/Your_Sexuality/748-4420-4425,61892.asp" rel="nofollow">The healthy sperm diet</a><li/><div class="number inline">2</div> <a href="/Man/Your_Sexuality/748-4420-4422,61240.asp" rel="nofollow">6 Myths about Period Sex</a><li/><div class="number inline">3</div> <a href="/Man/Your_Sexuality/748-4420-4425,62041.asp" rel="nofollow">When orgasms make you sick</a><li/><div class="number inline">4</div> <a href="/Man/Your_Life/748-4421-4442,61117.asp" rel="nofollow">You’ve got to be joking Ms. Ref!</a><li/><div class="number inline">5</div> <a href="/Man/Your_Health/748-4418-959,61760.asp" rel="nofollow">Nocturia keeping you awake?</a><li/><div class="number inline">6</div> <a href="/Man/Your_Life/748-4421-4442,61554.asp" rel="nofollow">Why men fight in bars</a><li class="last" /><div class="number inline">7</div> <a href="/Man/Your_Sexuality/748-4420-4422,61343.asp" rel="nofollow">Condom dos and don’ts</a></ul></div><h4 title="woman" id="woman">woman</h4><div class="show_editor_box absolute lightgreen_bg tabbed_content"><ul><li/><div class="number inline">1</div> <a href="http://www.health24.com/Woman/Your_partner_women/711-3578-3580,13152.asp" rel="nofollow">Are you a relationship junkie?</a><li/><div class="number inline">2</div> <a href="http://www.health24.com/Woman/General/711-3633-3647,19907.asp" rel="nofollow">Slash your medical costs</a><li/><div class="number inline">3</div> <a href="http://www.health24.com/Woman/Your_partner_women/711-3578-3584,31451.asp" rel="nofollow">10 dangers to a marriage</a><li/><div class="number inline">4</div> <a href="http://www.health24.com/Woman/Safety_and_security/711-3621,41308.asp" rel="nofollow">Trapped in your fortress?</a><li/><div class="number inline">5</div> <a href="http://www.health24.com/Woman/Top_questions/711-714,23300.asp" rel="nofollow">Dealing with period pain</a><li/><div class="number inline">6</div> <a href="http://www.health24.com/Woman/Beautiful_and_healthy/711-3505-3680,20509.asp" rel="nofollow">What your body is telling you</a><li class="last" /><div class="number inline">7</div> <a href="http://www.health24.com/Woman/Medical_women/711-3538-3546,30192.asp" rel="nofollow">Using the wrong painkillers?</a></ul></div><h4 title="child" id="child">child</h4><div class="show_editor_box absolute lightgreen_bg tabbed_content"><ul><li/><div class="number inline">1</div> <a href="/child/School/833-856,21824.asp" rel="nofollow">Bullying, a serious business</a><li/><div class="number inline">2</div> <a href="/child/Nutrition/833-855,24118.asp" rel="nofollow">Planning healthy snacks</a><li/><div class="number inline">3</div> <a href="/child/ADHD/833-3442,18836.asp" rel="nofollow">Homework and the child with ADHD</a><li/><div class="number inline">4</div> <a href="http://www.health24.com/child/Nutrition/833-855,12925.asp " rel="nofollow">What should your child eat?</a><li/><div class="number inline">5</div> <a href="/child/Difficult_issues/833-861,50806.asp" rel="nofollow">Binge drinking may damage brains</a><li/><div class="number inline">6</div> <a href="/child/First_aid/833-848,30225.asp" rel="nofollow">Latest CPR guidelines</a><li class="last" /><div class="number inline">7</div> <a href="/child/Difficult_issues/833-861,41985.asp" rel="nofollow">The choking game</a></ul></div><h4 title="diet" id="diet">diet</h4><div class="show_editor_box absolute lightgreen_bg tabbed_content"><ul><li/><div class="number inline">1</div> <a href="http://www.health24.com/dietnfood/General/15-742,61821.asp" rel="nofollow">Junkie food</a><li/><div class="number inline">2</div> <a href="http://www.health24.com/tools/Slideshows/1891-4704-4772,61785.asp" rel="nofollow">10 salty food culprits</a><li/><div class="number inline">3</div> <a href="http://www.health24.com/dietnfood/Diet_basics/15-1168-1173,61872.asp" rel="nofollow">Choline: neglected nutrient</a><li/><div class="number inline">4</div> <a href="http://www.health24.com/natural/Go_organic/17-673,61404.asp" rel="nofollow">Free-range, organic: confused?</a><li/><div class="number inline">5</div> <a href="http://www.health24.com/natural/Detox_centre/17-4728,61310.asp" rel="nofollow">Detox: nutritional support</a><li/><div class="number inline">6</div> <a href="http://www.health24.com/dietnfood/Diet_basics/15-1168-1173,61666.asp" rel="nofollow">Hidden veggies can help you slim</a><li class="last" /><div class="number inline">7</div> <a href="http://www.health24.com/dietnfood/Weight_Centre/15-51-2968-2972,19325.asp" rel="nofollow">Weight loss: will you succeed?</a></ul></div><h4 title="fitness" id="fitness">fitness</h4><div class="show_editor_box absolute lightgreen_bg tabbed_content"><ul><li/><div class="number inline">1</div> <a href="http://www.health24.com/fitness/FitnessDoc_articles/16-4596,60576.asp" rel="nofollow">Power Balance bracelet scam</a><li/><div class="number inline">2</div> <a href="http://www.health24.com/fitness/General/16-4634,60677.asp" rel="nofollow">Kickstart your exercise plan</a><li/><div class="number inline">3</div> <a href="http://www.health24.com/fitness/General/16-4634,60575.asp" rel="nofollow">Home gym fails</a><li/><div class="number inline">4</div> <a href="http://www.health24.com/fitness/In_the_gym/16-526,60179.asp" rel="nofollow">When bench presses go bad</a><li/><div class="number inline">5</div> <a href="http://www.health24.com/fitness/Specific_Sports/16-2175-2182-2278,59833.asp" rel="nofollow">Funniest bicycle disasters</a><li/><div class="number inline">6</div> <a href="http://www.health24.com/fitness/Specific_Sports/16-2175-2181-2277,54636.asp" rel="nofollow">Trail running 101</a><li class="last" /><div class="number inline">7</div> <a href="http://www.health24.com/fitness/Diet_Supplements/16-481-512,21402.asp" rel="nofollow">Carbo-loading for runners</a></ul></div>
+     </div>
+     <a href="http://www.virginactive.co.za/stories" target="_blank">	<img src="/images/site/frontpage/images/virgin_feb2010.gif" border="0" style="padding-top:205px;"/></a>
+ </div>
+    <div class="div_horz clr">&nbsp;</div> <!-- ################### --> 
+  <div class="col954 left" id="carousel">
+		<div class="panel left"><h5>Cough Centre</h5><a href="http://www.health24.com/medical/Condition_centres/777-792-4705.asp"><img src="http://www.health24.com/images/site/frontpage/showcase/Take-your-medicine-iStock170x80.jpg" border="none" /></a><p>Learn more about the causes and treatment of <a href="http://www.health24.com/medical/Condition_centres/777-792-4705.asp" class="main_link">cough</a> in children and adults.</p></div><div class="panel left"><h5>cardiologist</h5><a href="http://www.health24.com/news/Special_Report/1-4581-4643,62194.asp"><img src="http://www.health24.com/images/site/frontpage/showcase/Heart_Health_iStock170x80.jpg" border="none" /></a><p>Heart disease is the number one killer in South Africa. The <a href="http://www.health24.com/news/Special_Report/1-4581-4643,62194.asp
+"class="main_link">Cardiologist</a> answers all your questions.
+</p></div><div class="panel left"><h5>healthy workplace</h5><a href="http://www.health24.com/medical/Focus_centres/777-2268-3852.asp"><img src="http://www.health24.com/images/site/frontpage/showcase/Business-yoga-iStock170x80.jpg" border="none" /></a><p>Want to know more about workplace health and wellness? Get the latest news on workplace safety, health, and behaviour <a href="http://www.health24.com/medical/Focus_centres/777-2268-3852.asp" class="main_link">here</a>.</p></div><div class="panel left"><h5>medical schemes</h5><a href="http://www.health24.com/medical/Condition_centres/777-792-2002.asp"><img src="http://www.health24.com/images/site/frontpage/showcase/medicalscheme_istock170x80.jpg" border="none" /></a><p>Learn more about medical schemes and how to choose the best scheme for you and the rest of your family <a href=" http://www.health24.com/medical/Condition_centres/777-792-2002.asp " class="main_link">here</a>.</p></div><div class="panel last left"><h5>quizzes</h5><a href="http://www.health24.com/tools/"><img src="http://www.health24.com/images/site/frontpage/showcase/Woman-using-computer-iStock170x80.jpg" border="none" /></a><p>These quizzes and tools cover health, diet, emotional and fitness issues. Just be warned: they can be addictive. Get them <a href="http://www.health24.com/tools/" class="main_link">all right here.</a></p></div>
+  </div>
+  
+  <div class="div_horz clr">&nbsp;</div> <!-- ################### -->
+   
+   <div class="col644 left" id="leftcolumn">
+   
+   	<div class="mediumgrey_bg ad468"><script language="javascript">DisplayDCAd('468x60','3','','/homepage');</script><br /><div class="advert_txt">advertisement</div></div>
+	<div class="div_horz clr">&nbsp;</div> <!-- ################### -->
+	
+	<!-- ## Experts ## -->
+	
+	<div id="experts" class="">
+		<h1 class="darkgreen bold">Ask our Experts</h1>
+			<div class="row left"><div class="item left"><img src="/experts/images/cyberdoc.jpg" class="left" /><h2 class="bold"><a href="/experts/CyberDoc/979-980.asp">CyberDoc</a></h2>From acne to allergies – just ask CyberDoc. </div><div class="item left"><img src="/experts/images/SASHA.jpg" class="left" /><h2 class="bold"><a href="/experts/Sexologist/979-982.asp">Sexologist</a></h2>Get the bare facts on sex questions.</div><div class="item left"><img src="/experts/images/cybershrink.gif" class="left" /><h2 class="bold"><a href="/experts/CyberShrink/979-984.asp">CyberShrink</a></h2>Insomnia, depression, life crisis – CyberShrink&#39;s right here.</div></div><div class="row left"><div class="item left"><img src="/experts/images/pharmacist.gif" class="left" /><h2 class="bold"><a href="/experts/Pharmacist/979-985.asp">Pharmacist</a></h2>Any questions about medication? Ask our Pharmacy Expert.</div><div class="item left"><img src="/experts/images/dietdoc.gif" class="left" /><h2 class="bold"><a href="/experts/DietDoc/979-1002.asp">DietDoc</a></h2>All your food and diet questions answered.</div><div class="item left"><img src="/experts/images/gynaedoc.gif" class="left" /><h2 class="bold"><a href="/experts/GynaeDoc/979-981.asp">GynaeDoc</a></h2>There&#39;s nothing you can&#39;t ask GynaeDoc.</div></div><div class="row left"><div class="item left"><img src="/experts/images/VitalVitaminExpertPic.jpg" class="left" /><h2 class="bold"><a href="/experts/Vital_Vitamin_Expert/979-4381.asp">Vital Vitamin Expert</a></h2>Ask about supplements preventing illness and promoting good health.</div><div class="item left"><img src="/experts/images/Heart_Health_iStock64x51.bmp" class="left" /><h2 class="bold"><a href="/experts/Cardiologist/979-4781.asp">Cardiologist</a></h2>Cardiologist</div><div class="item left"><img src="/experts/images/paediatrician.gif" class="left" /><h2 class="bold"><a href="/experts/Paediatrician/979-987.asp">Paediatrician</a></h2>Here for you and your kids.</div></div>
+		<div class="left clr xtralink"><a href="http://www.health24.com/experts/979.asp">See all 40 experts</a></div>
+	</div>
+	
+	<div class="div_horz clr">&nbsp;</div> <!-- ################### -->
+	
+	<!-- ## Forums and Blogs ## -->
+	
+	<div id="forumblog" class="">
+		<h1 class="darkgreen bold">Forums and Blogs</h1>
+			<div class="comments left"><p class="darkblue bold"><a href="http://www.health24.com/experts/Sleep_Expert/979-4284.asp?ForumID=237&PostID=2573346">&quot;For the past few months I wake up at 3:30 in the morning. Please help.&quot;</a></p></div><div class="comments left"><p class="darkblue bold"><a href="http://www.health24.com/experts/CyberShrink/979-984.asp?ForumID=7&PostID=2572346">&quot;I&#39;m not afraid of the dark, but what&#39;s out in the dark. I can&#39;t shake this phobia.&quot;</a></p></div><div class="comments left"><p class="darkblue bold"><a href="http://www.health24.com/experts/Paediatrician/979-987.asp?ForumID=72&PostID=2575492">&quot;My son has 2 gall stones. How does a 3-year-old get gallstones?&quot;</a></p></div><div class="comments left"><p class="darkblue bold"><a href="http://www.health24.com/experts/Eating_Disorders_and_Obesity_Expert/979-4659.asp?ForumID=280&PostID=2564274">&quot;I&#39;ve battled bulimia and anorexia for ten years, it feels like I&#39;m spinning out of control.&quot;</a></p></div>		
+		<div class="left clr xtralink"><a href="http://www.health24.com/talk/2282.asp">See other forum posts</a></div>
+	</div>
+	
+<div class="div_horz clr">&nbsp;</div> <!-- ################### -->
+	
+	
+	<div id="video" class="col318 left">
+		<h1 class="darkgreen bold">Video</h1>
+		<div class="white_bg wrap left"><img src="/images/site/frontpage/video/situps_video130x100x1.jpg" class="left" /><span class="block left videohead"><h3 class="darkblue bold"><a href="http://www.health24.com/videos/fitness/default.asp">FITNESS VIDEOS</a></h3></span><p class="clr">In these quick videos, we have isolated the zones, identified the best exercises for each zone, and made the moves crystal clear. <a href="http://www.health24.com/videos/fitness/default.asp">Watch the video</a></p></div>	
+       <div class="left clr xtralink"><a href="#">Video page</a></div>	
+	</div>
+	
+	<div id="toolbox" class="col318 left">
+		<h1 class="darkgreen bold">Toolbox</h1>
+		
+		<!--<img src="/images/site/frontpage/images/toolbox_flash.png" />-->
+			<div class="tool_holder left relative" id="tabbed_box4">
+			
+			<h4 title="tool1" id="tool1">Calorie Counter</h4>
+			
+			<div class="absolute toolinfo tabbed_content">
+			Calculate how many calories you consumed today
+			<br />
+			<input name="submit" type="button" value="try it" class="btn" onclick="javascript:void(openWindow('/dietnfood/tools/caloriecounter.asp','700','600','1'))" />
+			</div>
+			
+			<h4 title="tool2" id="tool2">BMI Calculator</h4>
+			
+			<div class="absolute toolinfo tabbed_content">
+			Calculate your bmi today
+			<br />
+			<input name="submit" type="button" value="try it" class="btn" onclick="javascript:void(openWindow('/dietnfood/Weight_Centre/15-51-90.asp','700','600','1'))" />
+			</div>
+			
+			<h4 title="tool3" id="tool3">Flexibility Test</h4>
+			
+			<div class="absolute toolinfo tabbed_content">
+			Test your flexibility by doing these stretches
+			<br />
+			<input name="submit" type="button" value="try it" class="btn"  onclick="javascript:void(openWindow('/fitness/calcs/flex.asp','700','600','1'))"/>
+			</div>
+			
+			<h4 title="tool4" id="tool4">Burn-O-meter</h4>
+			
+			<div class="absolute toolinfo tabbed_content">
+			Calculate the amount of calories you burned while exercising
+			<br />
+			<input name="submit" type="button" value="try it" class="btn" onclick="javascript:void(openWindow('/dietnfood/tools/burnometer.asp','700','600','1'))" />
+			</div>
+			
+			<h4 title="tool5" id="tool5">Healthy weight</h4>
+			
+			<div class="absolute toolinfo tabbed_content">
+			Calculate your healthy weight
+			<br />
+			<input name="submit" type="button" value="try it" class="btn" onclick="javascript:void(openWindow('/dietnfood/Weight_Centre/15-51-93.asp','700','600','1'))"/>
+			</div>
+			
+				
+			</div>
+		
+		<div class="left clr xtralink"><a href="/tools/">Tools page</a></div>	
+	</div>
+	
+<div class="div_horz clr">&nbsp;</div> <!-- ################### -->
+<div id="shortcuts">
+  <!--## Shortcuts ## -->
+  <h5>Health centre shortcuts</h5>
+  <div class="alpha inline bold">A</div>
+  <a href="http://www.health24.com/medical/Condition_centres/777-792-4382.asp">ADD/ADHD</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Condition_centres/777-792-797.asp">Allergies</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Condition_centres/777-792-798.asp">Alzheimer's Disease</a> &nbsp;|&nbsp; <a href="http://www.health24.com/mind/Anxiety/1284-1295.asp">Anxiety Disorders</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Condition_centres/777-792-816.asp">Arthritis</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Condition_centres/777-792-800.asp">Asthma</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Condition_centres/777-792-1078.asp">Back Pain</a>
+  <div class="alpha inline  bold">B</div>
+  <a href="#">Balance</a> &nbsp;|&nbsp; <a href="http://www.health24.com/mind/Psychology_A_Z/1284-1307,22986.asp">Bipolar Disorder</a>
+  <div class="alpha inline  bold">C</div>
+  <a href="http://www.health24.com/medical/Condition_centres/777-792-802.asp">Cancer</a>&nbsp;|&nbsp;<a href="http://www.health24.com/medical/Condition_centres/777-792-804.asp"> Cholesterol</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Condition_centres/777-792-811.asp">Cold &amp; Flu</a>
+  <div class="alpha inline  bold">D</div>
+  <a href="http://www.health24.com/medical/Condition_centres/777-792-3000.asp">Dental Health</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Condition_centres/777-792-807.asp">Depression</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Condition_centres/777-792-808.asp">Diabetes</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Condition_centres/777-792-808.asp">Diet &amp; Weight Loss</a>
+  <div class="alpha inline  bold">F</div>
+  <a href="http://www.health24.com/fitness/16.asp">Fitness</a> &nbsp;|&nbsp; <a href="http://www.health24.com/dietnfood/15.asp">Food &amp; Cooking</a>
+  <div class="alpha inline  bold">G</div>
+  <a href="#">Genital</a>
+  <div class="alpha inline  bold">H</div>
+  <a href="http://www.health24.com/medical/Condition_centres/777-792-814-1756,11827.asp">Herpes</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Condition_centres/777-792-812.asp">Heart Health</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Condition_centres/777-792-813.asp">Heartburn/GORD</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Condition_centres/777-792-815.asp">Hypertension</a>
+  <div class="alpha inline  bold">I</div>
+  <a href="http://www.health24.com/medical/Head2Toe/777-778-783,11937.asp">IBS</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Head2Toe/777-778-783,12416.asp">Incontinence</a> &nbsp;|&nbsp;
+  <div class="alpha inline  bold">M</div>
+  <a href="http://www.health24.com/medical/Condition_centres/777-792-819.asp">Menopause</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Condition_centres/777-792-819.asp">Migraines</a>
+  <div class="alpha inline  bold">O</div>
+  <a href="http://www.health24.com/medical/Condition_centres/777-792-2207.asp">Osteoporosis</a>
+  <div class="alpha inline  bold">P</div>
+  <a href="http://www.health24.com/child/833.asp">Parenting</a> &nbsp;|&nbsp; <a href="http://www.health24.com/journey/3277.asp">Pregnancy</a>
+  <div class="alpha inline  bold">S</div>
+  <a href="http://www.health24.com/sex/1253.asp">Sex &amp; Relationships</a> &nbsp;|&nbsp; <a href="#">Sexual Conditions </a> &nbsp;|&nbsp; <a href="#">Skin &amp; Beauty </a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Condition_centres/777-792-823.asp">Skin Problems</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Condition_centres/777-792-3529.asp">Sleep Disorders</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/Condition_centres/777-792-822.asp">Stroke</a> &nbsp;|&nbsp; <a href="http://www.health24.com/medical/777.asp">All Health Topics</a> </div>
+
+</div> 
+   
+   <div class="div_column left">&nbsp;</div> <!-- ## Column Divider ## -->
+   
+   <div class="col300 left lightmediumgrey_bg" id="rightcolumn"> <!-- ## Right column ## -->
+  
+   <!--a href="http://www.virginactive.co.za/stories" target="_blank">	<img src="/images/site/frontpage/images/virgin_feb2010.gif" border="0" /></a-->
+    
+    <div id="read_box" class="clr">
+	<div class="relative" id="tabbed_box3"><h4 title="mostread" id="mostread">most read</h4><div class="show_read_box absolute white_bg tabbed_content" ><ul><li /><div class="number inline">1</div> <a href="http://www.health24.com/fitness/Programmes/16-1347-2100-2106-2156-2109.asp" rel="nofollow">SLIDESHOW: from boy to man</a><li /><div class="number inline">2</div> <a href="http://www.health24.com/medical/Condition_centres/777-792-1461-1671,42312.asp" rel="nofollow">Annoy a vegetarian</a><li /><div class="number inline">3</div> <a href="http://www.health24.com/tools/Quizzes/1891-1892,68.asp" rel="nofollow">QUIZ: why are you so tired?</a><li /><div class="number inline">4</div> <a href="http://www.health24.com/Man/Your_Mind/748-4419-4426,58187.asp" rel="nofollow">6 myths men believe</a><li /><div class="number inline">5</div> <a href="http://www.health24.com/Woman/The_homefront/711-3623,62207.asp" rel="nofollow">For sale: 12 home disasters</a><li /><div class="number inline">6</div> <a href="http://www.health24.com/medical/Condition_centres/777-792-1952-1535.asp" rel="nofollow">Stop smoking FAQ</a><li /><div class="number inline">7</div> <a href="http://www.health24.com/medical/Condition_centres/777-792-1461-1671,42312.asp" rel="nofollow">The world of dreams</a><li /><div class="number inline">8</div> <a href="http://www.health24.com/news/Columnists/1-4618-4619,62383.asp" rel="nofollow">5000 miles from my home</a><li /><div class="number inline">9</div> <a href="http://www.health24.com/medical/Condition_centres/777-792-802-1627,43979.asp" rel="nofollow">16 ways to avoid cancer</a><li class="last" /><div class="number10 inline">10</div> <a href="http://www.health24.com/medical/Condition_centres/777-792-3529-3791,26075.asp" rel="nofollow">17 sleep facts</a></ul></div><h4 title="mostcomment" id="mostcomment">most commented</h4><div class="show_read_box absolute white_bg tabbed_content" ><ul><li /><div class="number inline">1</div> <a href="http://www.health24.com/dietnfood/DietDocs_articles/15-1871,62133.asp" rel="nofollow">Do vegan diets endanger child health?</a><li /><div class="number inline">2</div> <a href="http://www.health24.com/medical/Condition_centres/777-792-1461-1671,42312.asp" rel="nofollow">How to annoy a vegetarian</a><li /><div class="number inline">3</div> <a href="http://www.health24.com/teens/Your_body/735-1433-1436,18301.asp" rel="nofollow">Early signs of pregnancy</a><li /><div class="number inline">4</div> <a href="http://www.health24.com/news/Columnists/1-4618-4641,61870.asp" rel="nofollow">Why the Japanese are so calm </a><li /><div class="number inline">5</div> <a href="http://www.health24.com/news/Columnists/1-4618-4621,53648.asp" rel="nofollow">Rape: a national shame</a><li /><div class="number inline">6</div> <a href="http://www.health24.com/news/Columnists/1-4618-4619,62383.asp" rel="nofollow">5000 miles from my home</a><li /><div class="number inline">7</div> <a href="http://www.health24.com/dietnfood/Weight_Centre/15-51-2968-2972,62192.asp" rel="nofollow">My weight loss struggle</a><li /><div class="number inline">8</div> <a href="http://www.health24.com/dietnfood/DietDocs_articles/15-1871,59139.asp" rel="nofollow">No more sibutramine - what now?</a><li /><div class="number inline">9</div> <a href="http://www.health24.com/news/Columnists/1-4618-4641,62031.asp" rel="nofollow">Proteas: all choked up  </a><li class="last" /><div class="number10 inline">10</div> <a href="http://www.health24.com/medical/Condition_centres/777-792-814-1768,61985.asp" rel="nofollow">Gay and HIV not a punishment from God</a></ul></div><h4 title="bestrated" id="bestrated">best rated</h4><div class="show_read_box absolute white_bg tabbed_content" ><ul><li /><div class="number inline">1</div> <a href="/news/Columnists/1-4618-4619,62383.asp" rel="nofollow">5000 miles from my home</a><li /><div class="number inline">2</div> <a href="/dietnfood/Weight_Centre/15-51-2968-2972,62192.asp" rel="nofollow">My weight loss struggle</a><li /><div class="number inline">3</div> <a href="/Woman/The_homefront/711-3623,62207.asp" rel="nofollow">For sale: 12 home disasters</a><li /><div class="number inline">4</div> <a href="/news/Columnists/1-4618-4641,61870.asp" rel="nofollow">Why the Japanese are so calm </a><li /><div class="number inline">5</div> <a href="/news/Columnists/1-4618-4619,61944.asp" rel="nofollow">The end of the world</a><li /><div class="number inline">6</div> <a href="/Woman/General/711-3633-3635,30455.asp" rel="nofollow">45 best health tips ever</a><li /><div class="number inline">7</div> <a href="/news/Columnists/1-4618-4621,53648.asp" rel="nofollow">Rape: a national shame</a><li /><div class="number inline">8</div> <a href="/medical/Condition_centres/777-792-808-1536,62042.asp" rel="nofollow">Bongi Ngema-Zuma: a heart for diabetes </a><li /><div class="number inline">9</div> <a href="/news/Special_Report/1-4581-4643,62048.asp" rel="nofollow">9 Sex questions</a><li class="last" /><div class="number10 inline">10</div> <a href="/medical/Condition_centres/777-792-1461-1671,42312.asp" rel="nofollow">How to annoy a vegetarian</a></ul></div></div>
+	</div>
+	
+	
+
+    <div class="div_horz clr abovepoll">&nbsp;</div> <!-- ################### -->
+	 
+	<div id="poll" class="left">
+		<div class="lightblue_bg poll">
+		<h3 class="darkblue bold">Weekly Poll</h3>
+      
+           
+           <p class="bold">Would you pay for <a href="http://www.health24.com/medical/Focus_centres/777-2268-2552-2587,62326.asp" class="main_link">pet insurance</a>?</p>
+	
+                    <form name="frmPoll" action="/tools/poll/h.poll.asp" target="pollWindow" method="post">
+                        <input type="hidden" name="PollID" value="323">
+                        <input type="hidden" name="AnswerID" value="">
+	
+	    				<span class="block"><input name="lblpoll" type="radio" value="1448" />I already have pet insurance</span>
+	
+	    				<span class="block"><input name="lblpoll" type="radio" value="1449" />Considering what vets charge, it&#39;s a good idea</span>
+	
+	    				<span class="block"><input name="lblpoll" type="radio" value="1450" />I&#39;m not sure – what do they cover?</span>
+	
+	    				<span class="block"><input name="lblpoll" type="radio" value="1451" />It&#39;s a rip-off – there are too many exclusions</span>
+	
+	    				<span class="block"><input name="lblpoll" type="radio" value="1452" />What is pet insurance?</span>
+	
+                    <button onClick="javascript:doPoll('','lblpoll')" value="submit" class="btn"><img src="/images/buttons/submit_2008.jpg"></button>
+                    </form>
+	
+		</div>
+	</div>
+	<script language="javascript">DisplayDCAd('300x200','4','','/homepage');</script>
+	
+<div class="div_horz">&nbsp;</div>
+
+
+<div class="div_horz">&nbsp;</div>
+
+
+<div id="getquote" class="left clr">
+		<h5 class="bold">Get a Quote</h5>
+		<p>Looking for a medical scheme? Get a quote today</p>
+		<div class="lightmediumgrey_bg icons left">
+			<span class="left"><img src="http://www.health24.com/images/site/frontpage/images/selfmed_icon.gif" /><a href="http://ad.doubleclick.net/clk;220700778;14949877;v?http://www.selfmed.co.za/contact_request.aspx?pg=contact_request.aspx&src=Health24&cmp=SponsorshipLink&utm_source=Media24Health24&utm_medium=link&utm_content=&utm_campaign=Sponsorship" target="_blank"> Selfmed</a></span>
+            
+			
+             
+            <span class="left">
+            	<img src="/images/sponsors/Momentum_iconOct2010.jpg" />
+                <a href="http://ad.doubleclick.net/clk;229127699;14949877;j?http://www.momentum.co.za/wps/portal/momentum/!ut/?WCM_PORTLET=PC_7_RS8OBHJQ6NJPE0IGA7MO7T2UB1_WCM&WCM_GLOBAL_CONTEXT=/wps/wcm/connect/momentum/campaigns/momentum-health/womens-health" target="_blank">omentum Health</a>			</span>		
+                
+                
+                <span class="left">
+            	<img src="/images/sponsors/medihelp/sponsorlogo.png" />
+                <a href="http://ad.doubleclick.net/clk;238457622;14949877;b?https://www.medihelp.co.za/advert.aspx?i=176" target="_blank">Medihelp</a>
+			</span>
+                
+                
+                </div>
+</div>
+
+
+
+<div id="sponsored_links" class="left">
+  <h3 class="bold">Sponsored links</h3>
+  <div class="icons left">
+    <div class="left sponsor_img"><img src="/images/buttons/DD_logo.png" /></div>
+    <div class="sponsor_txt"><a href="http://ad.doubleclick.net/clk;235385230;14949877;t?http://www.dialdirect.co.za/?vdn=15925">&nbsp;Insurance</a></div>
+    <div class="left sponsor_img"><img src="/images/buttons/1life_icon.gif" /></div>
+    <div class="sponsor_txt"><a href="http://ad.doubleclick.net/clk;234104743;14950480;y?http://www.1lifedirect.co.za/equote.asp?VDN=1453">Life Insurance</a></div>
+    
+    <!--<div class="left sponsor_img"><img src="/images/buttons/ffw_logo.jpg" /></div>
+    <div class="sponsor_txt"><a href="http://ad.doubleclick.net/clk;221775161;14950480;c?http://www.firstforwomen.co.za/equote.asp?vdn=6737">Insurance for Women</a></div>-->
+    
+    <div class="left sponsor_img"><img src="/images/site/frontpage/images/selfmed_icon.gif" width="25" height="25"/></div>
+    <div class="sponsor_txt"><a href="http://ad.doubleclick.net/clk;220546344;14949877;s?http://www.selfmed.co.za/selfmedin.aspx?pg=contact_request.aspx&src=Health24&cmp=tenant&utm_source=Media24Health&utm_medium=link&utm_content=&utm_campaign=MedicalAid">Selfmed Med Aid</a></div>
+    
+    <!--div class="left sponsor_img"><img src="/images/buttons/nicorette_icon.png" /></div>
+    <div class="sponsor_txt"><a href="http://ad.doubleclick.net/clk;221528358;14949877;y?http://www.nicorette.co.za/">Stop Smoking</a>
+    </div-->
+    
+    <!--div class="left sponsor_img"><img src="/images/buttons/icon_natrodale.gif" /></div>
+    <div class="sponsor_txt"><a href="http://ad.doubleclick.net/clk;218024329;17388037;h?http://www.milkthistle.co.za/">Restore your Balance</a>
+    </div-->
+    
+    <div class="left sponsor_img"><img src="/images/buttons/specSponsoredLink.jpg" /></div>
+    <div class="sponsor_txt"><a href="http://ad.doubleclick.net/clk;221958944;14949877;g?http://www.specsavers.co.za/offers_climateeyes.aspx">Spec-Savers</a>
+    </div>
+    
+    <div class="left sponsor_img"><img src="/images/sponsors/love2meet/icon.gif" /></div>
+    <div class="sponsor_txt"><a href="http://www.love2meet.co.za/s/">Love 2 Meet</a>
+    </div>
+    
+    <div class="left sponsor_img"><img src="/images/sponsors/Momentum_iconOct2010.jpg" /></div>
+    <div class="sponsor_txt"><a href="http://ad.doubleclick.net/clk;229128065;14949877;x?http://ad.doubleclick.net/clk;229128135;14949877;v?http://www.momentum.co.za/wps/portal/momentum/!ut/?WCM_PORTLET=PC_7_RS8OBHJQ6NJPE0IGA7MO7T2UB1_WCM&WCM_GLOBAL_CONTEXT=/wps/wcm/connect/momentum/campaigns/momentum-health/womens-health">omentum Health</a>
+    </div>
+    
+    <!--div class="left sponsor_img"><img src="/images/sponsors/clicks/clickslogo25x25.gif" /></div>
+    <div class="sponsor_txt"><a href="http://ad.doubleclick.net/clk;234945104;38187638;p?http://www.clicks.co.za/MedicalAid.aspx">Clicks Pharmacy</a>
+    </div-->
+    
+    
+    
+    <div class="left sponsor_img"><img src="/images/sponsors/clicks/fight-flu-25-x-25.png" /></div>
+   <div class="sponsor_txt"><a href="http://ad.doubleclick.net/clk;235073395;14950480;h?http://www.clicks.co.za/Campaigns/Flu2011/index.html">Fight the flu</a>
+    </div>
+    
+    
+    
+    <div class="left sponsor_img"><img src="/images/sponsors/medihelp/sponsorlogo.png" /></div>
+   <div class="sponsor_txt"><a href="http://ad.doubleclick.net/clk;238459397;14949877;m?https://www.medihelp.co.za/advert.aspx?i=175">Medihelp</a>
+    </div>
+    <!--div class="left sponsor_img"><img src="/images/site/frontpage/images/bestfoodsecrets.jpg" width="25" height="25"/></div>
+    <div class="sponsor_txt"><a href="http://ad.doubleclick.net/clk;234682349;14949877;d?http://this.content.served.by.adshuffle.com/p/kl/46/799/r/12/4/8/ast0k3n/cj_K_lW0d4-RmeriHwbMVuW_Z2t_mnKW/click.txt">"Flat Belly" Veggies</a></div-->
+    
+    
+  </div>
+</div>
+
+<script language="javascript">DisplayDCAd('300x200','4','','/homepage');</script><br/>
+	
+	
+	<!--div class="adimg"><a href="http://www.health24.com/you_pulse/3937.asp"><img src="/images/_ads/pulse/PulsePolsAd_Dec_290x90.gif" width="290" height="90" border="0" /></a></div-->
+   </div>
+ 
+ 
+ <div class="div_horz clr">&nbsp;</div> <!-- ################### -->
+	<div id="footer" class="col954"> <!-- ## Footer ## -->
+		<div class="lightgrey_bg quicklinks left">
+		
+			<div class="item left">
+				<img src="/images/site/frontpage/images/email_icon.png" alt="Email Newsletter" class="left" />
+				<h5 class="darkblue bold"><a href="http://www.health24.com/about/Newsletter/13-697.asp">Email Newsletters</a></h5>
+				<p>You choose what you want.</p>
+			</div>
+            
+			
+			<div class="item left">
+				<img src="/images/site/frontpage/images/rss_icon.png" alt="Email Newsletter" class="left" />
+				<h5 class="darkblue bold"><a href="http://www.health24.com/health24RSSFeed/">RSS Feeds</a></h5>
+				<p>News delivered really simply.</p>
+			</div>
+			
+			
+			<div class="item left">
+				<img src="/images/site/frontpage/images/blog_icon.png" alt="Email Newsletter" class="left" />
+				<h5 class="darkblue bold"><a href="http://healthblogs.24.com/">Blogs</a></h5>
+				<p>Your opinion on  you, me and everyone.</p>
+			</div>
+			<div class="item left last">
+				<!--<img src="/images/site/frontpage/images/mobile_icon.png" alt="Email Newsletter" class="left" />-->
+				<h5 class="darkblue bold">&nbsp;</h5>
+				<p>&nbsp;</p>
+			</div>
+			
+		</div>
+		<div class="lightblue_bg footer clr relative">
+			<div class="absolute logo_24com"><a href="#"><img src="/images/site/frontpage/images/24com_logo.png" alt="www.24.com" /></a></div>
+			<div class="absolute copyright darkblue">
+				<span class="copytxt block bold">&copy; Health24 2000-2011. All rights reserved</span>
+				<a href="http://www.health24.com/about/Disclaimer/13-701.asp">Legal Notice</a> &nbsp;|&nbsp; <a href="http://www.thespacestation.co.za/ChannelInfo.aspx?channel_id=6">Advertise on Health24</a> &nbsp;|&nbsp; <a href="http://www.health24.com/about/Contact_us/13-704.asp">Contact us</a> &nbsp;|&nbsp; <a href="http://www.health24.com/about/Take_a_tour/13-706.asp">Take a tour</a>
+			</div>
+			<div class="absolute logo_honcode">
+				<a href="https://www.healthonnet.org/HONcode/Conduct.html?HONConduct564544" onclick="window.open(this.href); return false;" > <img src="http://www.HONcode.ch/HONcode/Seal/HONConduct564544_s1.gif" class="left" width="43" height="60" style="border:0px" title="This website is certified by Health On the Net Foundation. Click to verify." alt="This website is certified by Health On the Net Foundation. Click to verify." /></a>
+				<p>This site complies with the <a href="http://www.healthonnet.org/HONcode/Conduct.html" onclick="window.open(this.href); return false;"> HONcode standard for trustworthy health</a> information: <a href="https://www.healthonnet.org/HONcode/Conduct.html?HONConduct564544" onclick="window.open(this.href); return false;">verify here</a>.</p>
+			</div>
+			<div class="absolute logo_opa">
+				<a href="http://www.opa.org.za"><img src="/images/site/frontpage/images/opam_logo.png" alt="online publishers association member" /></a>
+			</div>
+		</div>
+	</div>  
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript">
+_uacct = "UA-294533-1";
+urchinTracker();
+</script>
+
+
+<!-- START Nielsen//NetRatings SiteCensus V5.2 -->
+<!-- COPYRIGHT 2006 Nielsen//NetRatings -->
+<script type="text/javascript">
+ var _rsCI="za-media24";  /* client ID */ 
+ var _rsCG="0";  /* content group */ 
+ var _rsDN="//secure-za.imrworldwide.com/";  /* data node */ 
+ var _rsCC=0;  /* to turn on whether to check for existing cookie, 0=off 1=on */ 
+ var _rsSE=1;  /* to turn on surveys, 0=off 1=on */ 
+ var _rsSM=1.0;  /* maxumum survey rate, 1.0=100% */ 
+</script>
+<script type="text/javascript" src="//secure-za.imrworldwide.com/v52.js"></script>
+<noscript>
+ <img src="http://secure-za.imrworldwide.com/cgi-bin/m?ci=za-media24&amp;cg=0" alt=""/>
+</noscript>
+<!-- END Nielsen//NetRatings SiteCensus V5.2 -->
+
+
+
+<!--Chartbeat Tracking code-->
+<script type="text/javascript">
+var _sf_async_config={uid:8959,domain:"health24.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+       "static.chartbeat.com/js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script>
+
+
+</div>
+
+</div>
+</div>
+<script type="text/javascript" src="http://j.clickdensity.com/cr.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+  var clickdensity_siteID = 12740;
+  var clickdensity_keyElement = 'health24Logo';
+//]]>
+</script>
+</body>
+</html>

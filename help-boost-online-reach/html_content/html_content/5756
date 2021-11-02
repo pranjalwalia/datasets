@@ -1,0 +1,460 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	 
+	<!-- Meta Data -->
+		<meta name="generator" content="Simple PHP Blog" />
+	<link rel="alternate" type="application/rss+xml" title="Get RSS 2.0 Feed" href="rss.php" />
+	<link rel="alternate" type="application/rdf+xml" title="Get RDF 1.0 Feed" href="rdf.php" />
+	<link rel="alternate" type="application/atom+xml" title="Get Atom 0.3 Feed" href="atom.php" />
+	
+	<!-- Meta Data -->
+	<!-- http://dublincore.org/documents/dces/ -->
+	<meta name="dc.title"       content="Politics - Political Jokes Humor And Satire" />
+	<meta name="author"         content="Resources For Attorneys politicaljokes@resourcesforattorneys.com" />
+	<meta name="dc.creator"     content="Resources For Attorneys politicaljokes@resourcesforattorneys.com" />
+	<meta name="dc.subject"     content="political jokes,politics,political,jokes,joke,humor,satire" />
+	<meta name="keywords"       content="political jokes,politics,political,jokes,joke,humor,satire" />
+	<meta name="dc.description" content="Have some laughs and fun at the expense of our politicians at Politics - Political Jokes Humor And satire" />
+	<meta name="description"    content="Have some laughs and fun at the expense of our politicians at Politics - Political Jokes Humor And satire" />
+	<meta name="dc.type"        content="weblog" />
+	<meta name="dc.type"        content="blog" />
+	<meta name="resource-type"  content="document" />
+	<meta name="dc.format"      scheme="IMT" content="text/html" />
+	<meta name="dc.source"      scheme="URI" content="http://politicaljokes.resourcesforattorneys.com/index.php" />
+	<meta name="dc.language"    scheme="RFC1766" content="Array" />
+	<meta name="dc.coverage"    content="global" />
+	<meta name="distribution"   content="GLOBAL" /> 
+	<meta name="dc.rights"      content="Copyright Resources For Attorneys" />
+	<meta name="copyright"      content="Copyright Resources For Attorneys" />
+	
+	<!-- Robots -->
+	<meta name="robots" content="ALL,INDEX,FOLLOW,ARCHIVE" />
+	<meta name="revisit-after" content="7 days" />
+	
+	<!-- Fav Icon -->
+	<link rel="shortcut icon" href="interface/favicon.ico" />
+	
+	<link rel="stylesheet" type="text/css" href="themes/modern/style.css" />
+	<style type="text/css">
+  /* OVERRIDE COLORS */
+
+  /* GENERAL SETTINGS */
+  body {
+    background-color: #F7F7F7;
+    color: #000000;
+  }
+
+  hr  
+  {
+    color: #E6E6E6;
+    background-color: #E6E6E6;
+  }
+  
+  /* TYPEOGRAPHY */
+  
+  a:link, a:visited { color: #000000; }
+  a:hover { color: #829FD9; }
+  a:active { color: #0000FF; }
+  
+  pre {
+    width: 480px;
+    border-color: #E6E6E6;
+  }
+  
+  /* HEADERS */
+  
+  h1, h2, h3, h4, h5, h6 {
+    /* color: #999999; */
+  }
+  
+  blockquote {
+    color: #000000;
+    border-color: #E6E6E6;
+  }
+  
+  /* LAYOUT / PLACEMENT */
+  
+  #page {
+    background-color: #FFFFFF;
+    border-color: #CCCCCC;
+  }
+  
+  #popup {
+    background-color: #FFFFFF;
+    border-color: #CCCCCC;
+  }
+  
+  #header {
+    border-color: #CCCCCC;
+  }
+  
+  #title {
+    color: #000000;
+    border-color: #CCCCCC;
+    background-color: #F2F2F2;
+  }
+  
+  #footer {
+    color: #000000;
+    border-color: #CCCCCC;
+    background: #F2F2F2;
+  }
+  
+  /* CONTENT */
+  
+  /* REGULAR ENTRY */
+  #content .entry .blog_title
+  {
+    border-color: #CCCCCC;
+    color: #000000;
+    background-color: #F2F2F2;
+  }
+  
+  #content .entry .blog_body
+  {
+    border-color: #CCCCCC;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+
+  #content .entry .blog_body_solid  {
+    border-color: #CCCCCC;
+    color: #000000;
+    background-color: #CCCCCC;
+  }
+  
+  #content .entry .blog_comment
+  {
+    border-color: #CCCCCC;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+  
+  #content .entry .blog_date,
+  #content .static .blog_date,
+  #content .comment .blog_date
+  {
+    color: #999999;
+  }
+  
+  /* STATIC ENTRY */
+  #content .static .blog_title
+  {
+    border-color: #95958C;
+    color: #666661;
+    background-color: #BEBEB5;
+  }
+  
+  #content .static .blog_body
+  {
+    border-color: #95958C;
+    color: #4F4F48;
+    background-color: #F2F2EB;
+  }
+  
+  #content .static .blog_comment
+  {
+    border-color: #95958C;
+    color: #4F4F48;
+    background-color: #F2F2EB;
+  }
+  
+  /* COMMENT ENTRY */
+  #content .comment .blog_title
+  {
+    border-color: #95958C;
+    color: #666661;
+    background-color: #BEBEB5;
+  }
+  
+  #content .comment .blog_body
+  {
+    border-color: #95958C;
+    color: #4F4F48;
+    background-color: #F2F2EB;
+  }
+  
+  #content .comment .blog_comment
+  {
+    border-color: #95958C;
+    color: #4F4F48;
+    background-color: #F2F2EB;
+  }
+  
+  /* SIDEBAR */
+  
+  #sidebar {
+    border-color: #E6E6E6;
+    background-color: #FFFFFF;
+  }
+  
+  #sidebar .menu_body a:link { color: #0000FF; }
+  #sidebar .menu_body a:visited { color: #0000FF; }
+  #sidebar .menu_body a:hover { color: #829FD9; }
+  #sidebar .menu_body a:active { color: #000000; }
+  
+  #sidebar .menu_title {
+    border-color: #CCCCCC;
+    color: #000000;
+    background-color: #F2F2F2;
+  }
+  
+  #sidebar .menu_body {
+    border-color: #CCCCCC;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+</style>
+	
+<script type="text/javascript">
+	<!--
+	// BLOG SETTINGS
+	var blogSettings = Array();
+	blogSettings['theme'] = 'modern';
+	blogSettings['img_path'] = 'themes/modern/images/';
+	blogSettings['content_width'] = 550;
+	blogSettings['menu_width'] = 200;
+	-->
+</script>
+	<script language="javascript" src="scripts/sb_javascript.js" type="text/javascript"></script>
+	
+	<title>Politics - Political Jokes Humor And Satire - Democrats versus Republicans</title>    <style type="text/css">@import "addto/addto.css";
+</style>
+</head>
+	    <body>
+    
+<P>
+<center><a href="http://www.nationallawyersdirectory.com" target="noframes"><img src="http://www.resourcesforattorneys.com/national-lawyers-directory.jpg" width="468" height="60"></a><br />
+National <a href="http://www.nationallawyersdirectory.com" target="noframes">Lawyers</a> Directory</center>         
+
+
+<P>	
+    
+<center><script type="text/javascript"><!--
+google_ad_client = "pub-9363496469772843";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_channel ="";
+google_ad_type = "text";
+google_color_border = "ffffff";
+google_color_bg = "ffffff";
+google_color_link = "0000FF";
+google_color_url = "0000FF";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></center><br />
+
+      <div id="page">
+        <div id="header"><img src="themes/modern/images/header750x100.jpg" alt="" border="0" /></div>
+        <div id="title">Politics - Political Jokes Humor And Satire</div>        <div id="innerpage">
+          <div id="content">
+            
+<!-- BLOG ENTRY BEGIN -->
+<div class="entry">
+
+<!-- BLOG TITLE BEGIN -->
+<div class="blog_title">Democrats versus Republicans<a name="entry080201-211235">&nbsp;</a><br />
+</div>
+<!-- BLOG TITLE END -->
+
+<!-- BLOG BODY BEGIN -->
+<div class="blog_body">
+	<div class="blog_date">Friday, February 1, 2008, 09:12 PM - <a href="index.php?category=2">General</a><br />Posted by Administrator</div>
+		1. Democrats buy most of the books that have been banned somewhere. Republicans form censorship committees and read them as a group.<br /><br />2. Republicans consume three-fourths of all the rutabaga produced in this country. The remainder is thrown out.<br /><br />3. Republicans usually wear hats and always clean their paint brushes. <br /><br />4. Democrats give their worn-out clothes to those less fortunate. Republicans wear theirs.<br /><br />5. Republicans employ exterminators. Democrats step on the bugs.<br /><br />6. Democrats name their children after currently-popular sports figures, politicians, and entertainers. Republican children are named after their parents or grandparents, according to where the money is.<br /><br />7. Democrats keep trying to cut down on smoking but are not successful. Neither are Republicans.<br /><br />8. Republicans tend to keep their shades drawn, although there is seldom any reason why they should. Democrats ought to, but don&#039;t.<br /><br />9. Republicans study the financial pages of the newspaper. Democrats put them in the bottom of the bird cage.<br /><br />10. Most of the stuff alongside the road has been thrown out of car windows by Democrats.<br /><br />11. Republicans raise dahlias, Dalmatians, and eyebrows. Democrats raise Airedales, kids, and taxes.<br /><br />12. Democrats eat the fish they catch. Republicans hang them on the wall.<br /><br />13. Republican boys date Democratic girls. They plan to marry Republican girls, but feel that they&#039;re entitled to a little fun first.<br /><br />14. Democrats make plans and then do something else. Republicans follow the plans their grandfathers made.<br /><br />15. Republicans sleep in twin beds--some even in separate rooms. That is why there are more Democrats.<br clear="all" />
+	</div>
+<!-- BLOG BODY END -->
+
+<!-- BLOG FOOTER BEGIN -->
+
+	<div class="blog_comment"><a href="comments.php?y=08&amp;m=02&amp;entry=entry080201-211235"><img src="themes/modern/images/box_add.png" alt="" width="14" height="14" align="top"/> add comment </a>
+ ( 131 views )
+</div>
+
+<!-- BLOG FOOTER END -->
+</div>
+
+<!-- BLOG ENTRY END -->
+<br /><center><b><span><a href="index.php?m=09&amp;y=08&amp;d=14&amp;entry=entry080914-192801">&#60;&#60;First&#32;&#32;</a></span><span><a href="index.php?m=02&amp;y=08&amp;d=04&amp;entry=entry080204-232335"> &#60;Back&#32;&#32;</a></span>  <span><a href="index.php?m=02&amp;y=08&amp;d=01&amp;entry=entry080201-211040">Next&#62;&#32;&#32;</a></span> <span><a href="index.php?m=01&amp;y=08&amp;d=01&amp;entry=entry080126-000624">&#32;&#32;Last&#62;&#62;</a></span></b></center><br />          </div>
+          <div id="sidebar">
+          
+          <!-- Search Google -->
+<center>
+<style type="text/css">
+@import url(http://www.google.com/cse/api/branding.css);
+</style>
+<div class="cse-branding-left" style="background-color:#ffffff;color:#000000">
+  <div class="cse-branding-form">
+    <form action="http://www.google.com/cse" id="cse-search-box" target="_blank">
+      <div>
+        <input type="hidden" name="cx" value="partner-pub-9363496469772843:fr341lytykq" />
+        <input type="hidden" name="ie" value="ISO-8859-1" />
+        <input type="text" name="q" size="26" />
+        <input type="submit" name="sa" value="Search" />
+      </div>
+    </form>
+  </div>
+  <div class="cse-branding-logo">
+    <img src="http://www.google.com/images/poweredby_transparent/poweredby_FFFFFF.gif" alt="Google" />
+  </div>
+  <div class="cse-branding-text">
+    Custom Search
+  </div>
+</div>
+</center>
+<!-- Search Google -->	
+          
+<br />
+
+
+<!-- SIDEBAR MENU BEGIN -->
+
+<!-- SEARCH -->
+<div class="menu_title">
+	<a id="linkSidebarSearch" href="javascript:toggleBlock('SidebarSearch');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Search this Site</a>
+</div>
+<div id="toggleSidebarSearch" class="menu_body">
+	<form method="get" action="search.php"><input type="text" size="16" name="q" />&nbsp;<input type="submit" value="Go" /></form>
+</div>
+<br />
+
+<!-- LINKS -->
+<div class="menu_title">
+Links
+</div>
+<div class="menu_body">
+	<a href="index.php">Home</a><br /><a href="contact.php">Contact Me</a><br /><a href="http://animaljokes.resourcesforattorneys.com/index.php" target="_blank">Animal Jokes and Humor</a><br /><a href="http://barjokes.resourcesforattorneys.com/index.php" target="_blank">Bar Jokes and Humor</a><br /><a href="http://blondjokes.informationresourcenetwork.com/index.php" target="_blank">Blonde Jokes and Humor</a><br /><a href="http://lifestyle.resourcesforattorneys.com/campingjokes.html" target="_blank">Camping Jokes and Humor</a><br /><a href="http://computerjokes.searchenginedirectory.net/index.php" target="_blank">Computer Jokes and Humor</a><br /><a href="http://lifestyle.resourcesforattorneys.com/datingjokes.html" target="_blank">Dating Jokes and Humor</a><br /><a href="http://doctorjokes.resourcesforattorneys.com/index.php" target="_blank">Doctor Jokes Humor and Satire</a><br /><a href="http://stupidcrooks.criminallawlawyer.net/index.php" target="_blank">Dumb Crooks Stories and Jokes</a><br /><a href="http://lifestyle.resourcesforattorneys.com/fishingjokes.html" target="_blank">Fishing Jokes and Humor</a><br /><a href="http://genderjokes.resourcesforattorneys.com/index.php" target="_blank">Gender Jokes and Humor</a><br /><a href="http://lifestyle.resourcesforattorneys.com/golfjokes.html" target="_blank">Golf Jokes and Humor</a><br /><a href="http://lifestyle.resourcesforattorneys.com/jokeindex.html" target="_blank">Humor and Jokes</a><br /><a href="http://www.resourcesforattorneys.com/lawyerjokesdirectory.html" target="_blank">Lawyer Jokes and Humor</a><br /><a href="http://www.californiapersonalinjuryattorneys.us/legalhumor/index.php" target="_blank">Legal Jokes and Humor</a><br /><a href="http://militaryjokes.informationresourcenetwork.com/index.php" target="_blank">Military Jokes and Humor</a><br /><a href="http://officejokes.resourcesforattorneys.com/index.php" target="_blank">Office Jokes and Humor</a><br /><a href="http://policejokes.resourcesforattorneys.com/index.php" target="_blank">Police Jokes and Humor</a><br /><a href="http://realestatejokes.nationalrealtorsdirectory.com/index.php" target="_blank">Real Estate Jokes and Humor</a><br /><a href="http://redneckjokes.informationresourcenetwork.com/index.php" target="_blank">Redneck Jokes and Humor</a><br /><a href="http://schooljokes.informationresourcenetwork.com/index.php" target="_blank">School Jokes and Humor</a><br /><a href="http://sportsjokes.resourcesforattorneys.com/index.php" target="_blank">Sports Jokes and Humor</a><br /><a href="http://traveljokes.resourcesforattorneys.com/index.php" target="_blank">Travel Jokes and Humor</a><br /><a href="http://www.resourcesforattorneys.com/reversedirectories.html" target="_blank">Free Reverse Directory</a><br /><a href="http://www.informationresourcenetwork.com/index.php" target="_blank">Knowledge Is Power</a><br /><a href="http://www.resourcesforattorneys.com" target="_blank">Legal Resources</a><br /><a href="http://travel.resourcesforattorneys.com/mexico/index.php" target="_blank">Mexico Travel Destinations</a><br /><a href="http://forums.resourcesforattorneys.com/index.php" target="_blank">Political Legal and Lifestyle Forums</a><br /><a href="http://www.usacitydirectories.com/travelamerica/index.php" target="_blank">Travel America</a><br /><a href="http://travel.resourcesforattorneys.com/index.php" target="_blank">Travel Destinations</a><br /><a href="http://traveleurope.findairlines.net/index.php" target="_blank">Travel Europe</a><br /><hr /><a href="login.php">Login</a>
+</div>
+<br />
+
+<!-- RANDOM ENTRY -->
+<div class="menu_title">
+	<a id="linkSidebarRandomEntry" href="javascript:toggleBlock('SidebarRandomEntry');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> </a>
+</div>
+<div id="toggleSidebarRandomEntry" class="menu_body">
+	<a href="index.php?entry=entry080321-153340">Campaigning</a>
+</div>
+<br />
+
+<!-- CATEGORIES -->
+<div class="menu_title">
+	<a id="linkSidebarCategories" href="javascript:toggleBlock('SidebarCategories');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Categories</a>
+</div>
+<div id="toggleSidebarCategories" class="menu_body">
+	<a href="index.php?d=14&amp;m=09&amp;y=08&amp;category=10">Conservative</a><br />
+<a href="index.php?d=14&amp;m=09&amp;y=08&amp;category=1">Democrat</a><br />
+&nbsp;&nbsp;&nbsp;<a href="index.php?d=14&amp;m=09&amp;y=08&amp;category=6">Al Gore</a><br />
+&nbsp;&nbsp;&nbsp;<a href="index.php?d=14&amp;m=09&amp;y=08&amp;category=7">Barack Obama</a><br />
+&nbsp;&nbsp;&nbsp;<a href="index.php?d=14&amp;m=09&amp;y=08&amp;category=4">Bill Clinton</a><br />
+&nbsp;&nbsp;&nbsp;<a href="index.php?d=14&amp;m=09&amp;y=08&amp;category=8">Hillary Clinton</a><br />
+<a href="index.php?d=14&amp;m=09&amp;y=08&amp;category=2">General</a><br />
+<a href="index.php?d=14&amp;m=09&amp;y=08&amp;category=9">Liberal</a><br />
+<a href="index.php?d=14&amp;m=09&amp;y=08&amp;category=3">Republican</a><br />
+&nbsp;&nbsp;&nbsp;<a href="index.php?d=14&amp;m=09&amp;y=08&amp;category=5">George Bush</a>
+
+</div>
+<br />
+
+<!-- ARCHIVE TREE -->
+<div class="menu_title">
+	<a id="linkSidebarArchives" href="javascript:toggleBlock('SidebarArchives');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Archives</a>
+</div>
+<div id="toggleSidebarArchives" class="menu_body">
+	<a href="archives.php">View Archives</a><br />
+<div id="archive_tree_menu"><ul><li>
+2008
+<ul>
+<li>
+<a href="index.php?m=09&amp;y=08">September</a>
+<ul>
+<li>
+<a href="index.php?m=09&amp;y=08&amp;entry=entry080914-192801">Career Test</a><br />
+<b>09/14/08</b></li>
+<li>
+<a href="index.php?m=09&amp;y=08&amp;entry=entry080914-192036">Impossible Task</a><br />
+<b>09/14/08</b></li>
+<li>
+<a href="index.php?m=09&amp;y=08&amp;entry=entry080914-191329">How Government Works</a><br />
+<b>09/14/08</b></li>
+<li>
+<a href="index.php?m=09&amp;y=08&amp;entry=entry080910-204350">Standards</a><br />
+<b>09/10/08</b></li>
+<li>
+<a href="index.php?m=09&amp;y=08&amp;entry=entry080910-204041">Bill Clinton Tries To Get Into Heaven</a><br />
+<b>09/10/08</b></li>
+<li>
+<a href="index.php?m=09&amp;y=08&amp;entry=entry080910-203302">Right To Vote</a><br />
+<b>09/10/08</b></li>
+<li>
+<a href="index.php?m=09&amp;y=08&amp;entry=entry080910-203100">Fishing For The Presidency</a><br />
+<b>09/10/08</b></li>
+<li>
+<a href="index.php?m=09&amp;y=08&amp;entry=entry080910-202701">Why Some People Will Vote For Barack Obama</a><br />
+<b>09/10/08</b></li>
+<li>
+<a href="index.php?m=09&amp;y=08&amp;entry=entry080904-120903">Rules Politicians Live By</a><br />
+<b>09/04/08</b></li>
+
+</ul>
+</li>
+<li>
+<a href="index.php?m=05&amp;y=08">May</a>
+</li>
+<li>
+<a href="index.php?m=04&amp;y=08">April</a>
+</li>
+<li>
+<a href="index.php?m=03&amp;y=08">March</a>
+</li>
+<li>
+<a href="index.php?m=02&amp;y=08">February</a>
+</li>
+<li>
+<a href="index.php?m=01&amp;y=08">January</a>
+</li>
+
+</ul>
+</li>
+</ul></div>
+</div>
+<br />
+
+<!-- RECENT ENTRIES -->
+<div class="menu_title">
+	<a id="linkSidebarRecentEntries" href="javascript:toggleBlock('SidebarRecentEntries');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Most Recent Entries</a>
+</div>
+<div id="toggleSidebarRecentEntries" class="menu_body">
+	<a href="http://politicaljokes.resourcesforattorneys.com/index.php?entry=entry080914-192801">Career Test</a><br /><a href="http://politicaljokes.resourcesforattorneys.com/index.php?entry=entry080914-192036">Impossible Task</a><br /><a href="http://politicaljokes.resourcesforattorneys.com/index.php?entry=entry080914-191329">How Government Works</a><br /><a href="http://politicaljokes.resourcesforattorneys.com/index.php?entry=entry080910-204350">Standards</a><br /><a href="http://politicaljokes.resourcesforattorneys.com/index.php?entry=entry080910-204041">Bill Clinton Tries To Get Into Heaven</a><br /><a href="http://politicaljokes.resourcesforattorneys.com/index.php?entry=entry080910-203302">Right To Vote</a><br /><a href="http://politicaljokes.resourcesforattorneys.com/index.php?entry=entry080910-203100">Fishing For The Presidency</a><br /><a href="http://politicaljokes.resourcesforattorneys.com/index.php?entry=entry080910-202701">Why Some People Will Vote For Barack Obama</a><br /><a href="http://politicaljokes.resourcesforattorneys.com/index.php?entry=entry080904-120903">Rules Politicians Live By</a><br /><a href="http://politicaljokes.resourcesforattorneys.com/index.php?entry=entry080524-204433">Obama Quips #2</a><br />
+</div>
+<br />
+
+<!-- RECENT COMMENTS -->
+<div class="menu_title">
+	<a id="linkSidebarRecentComments" href="javascript:toggleBlock('SidebarRecentComments');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Most Recent Comments</a>
+</div>
+<div id="toggleSidebarRecentComments" class="menu_body">
+	<a href="comments.php?y=08&amp;m=09&amp;entry=entry080914-192801">Betty Iona</a><br />Sunday, January 29, 2012, 04:07 AM<br />I agree with all of you. This joke is...<p />
+</div>
+<br />
+<p /><div align="center">
+<a href="http://sourceforge.net/projects/sphpblog/"><img style="margin-bottom: 5px;" src="interface/button_sphpblog.png" alt="Powered by Simple PHP Blog" title="Powered by Simple PHP Blog" border="0" /></a> <a href="rss.php"><img style="margin-bottom: 5px;" src="interface/button_rss20.png" alt="Get RSS 2.0 Feed" title="Get RSS 2.0 Feed" border="0" /></a><br /><a href="http://php.net/"><img style="margin-bottom: 5px;" src="interface/button_php.png" alt="Powered by PHP 5.1.6" title="Powered by PHP 5.1.6" border="0" /></a> <a href="atom.php"><img style="margin-bottom: 5px;" src="interface/button_atom03.png" alt="Get Atom 0.3 Feed" title="Get Atom 0.3 Feed" border="0" /></a><br /><img style="margin-bottom: 5px;" src="interface/button_txt.png" alt="Powered by Plain text files" title="Powered by Plain Text Files" border="0" /> <a href="rdf.php"><img style="margin-bottom: 5px;" src="interface/button_rdf10.png" alt="Get RDF 1.0 Feed" title="Get RDF 1.0 Feed" border="0" /></a><br /></div>
+<center>
+<!-- AddThis Button BEGIN -->
+<a href="http://www.addthis.com/bookmark.php" onClick="window.open('http://www.addthis.com/bookmark.php?wt=nw&pub=lawstud&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no,screenX=200,screenY=100,left=200,top=100'); return false;" title="Bookmark and Share" target="_blank"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" border="0" alt="Bookmark and Share" /></a>
+<!-- AddThis Button END -->		
+
+<br />
+
+</td></tr></table></center>
+										</div>
+        </div>
+        <div id="footer">
+          Some people think that anything political is a joke. Have some laughs and fun at the expense of our politicians at Politics - Political Jokes And Humor. - Page Generated in 0.2 seconds        </div>
+      </div>
+    </body>
+    </html>

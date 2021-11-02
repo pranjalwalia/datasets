@@ -1,0 +1,748 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-
+transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<SCRIPT LANGUAGE="JAVASCRIPT" src="http://www.projectfoodie.com/includes/js/pre-pf.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Project Foodie</title>
+<meta name="description" content="Recipe Search: Find and access over 100,0000 recipes from over 20 magazines, cookbooks, newspapers, and TV including Bon Appétit, Fine Cooking, Food &amp;amp; Wine, Food Network, Martha Stewart Living, Everyday with Rachael Ray and more." />
+<meta name="keywords" content="recipe search, recipe finder, browse recipes, search, magazine recipes, cooking, magazines, newspapers, cookbooks, gourmet, bon appetite, recipe box, food network" />
+<meta name="Generator" content="Joomla! - Copyright (C) 2005 - 2006 Open Source Matters. All rights reserved." />
+<meta name="robots" content="index, follow" />
+<script type="text/javascript">
+var xajaxRequestUri="http://www.projectfoodie.com/xajax.index.php";
+var xajaxDebug=false;
+var xajaxStatusMessages=true;
+var xajaxWaitCursor=true;
+var xajaxDefinedGet=0;
+var xajaxDefinedPost=1;
+var xajaxLoaded=false;
+function xajax_pollSubmit(){return xajax.call("pollSubmit", arguments, 1);}
+function xajax_saveHealthyRating(){return xajax.call("saveHealthyRating", arguments, 1);}
+function xajax_saveHealthyComment(){return xajax.call("saveHealthyComment", arguments, 1);}
+function xajax_saveUserRating(){return xajax.call("saveUserRating", arguments, 1);}
+function xajax_addUserComment(){return xajax.call("addUserComment", arguments, 1);}
+function xajax_saveUserComment(){return xajax.call("saveUserComment", arguments, 1);}
+function xajax_showAllComments(){return xajax.call("showAllComments", arguments, 1);}
+function xajax_hidePartialComments(){return xajax.call("hidePartialComments", arguments, 1);}
+function xajax_cancelUserCommentEdit(){return xajax.call("cancelUserCommentEdit", arguments, 1);}
+function xajax_saveUserNotes(){return xajax.call("saveUserNotes", arguments, 1);}
+function xajax_editUserNotes(){return xajax.call("editUserNotes", arguments, 1);}
+function xajax_cancelUserNotesEdit(){return xajax.call("cancelUserNotesEdit", arguments, 1);}
+function xajax_hideUserNotesEdit(){return xajax.call("hideUserNotesEdit", arguments, 1);}
+function xajax_trackRecipeFromList(){return xajax.call("trackRecipeFromList", arguments, 1);}
+function xajax_untrackRecipeFromList(){return xajax.call("untrackRecipeFromList", arguments, 1);}
+function xajax_showRecipeTags(){return xajax.call("showRecipeTags", arguments, 1);}
+function xajax_deleteTag(){return xajax.call("deleteTag", arguments, 1);}
+function xajax_editTags(){return xajax.call("editTags", arguments, 1);}
+function xajax_closeEditTags(){return xajax.call("closeEditTags", arguments, 1);}
+function xajax_addUserTagEvent(){return xajax.call("addUserTagEvent", arguments, 1);}
+function xajax_renameUserTag(){return xajax.call("renameUserTag", arguments, 1);}
+function xajax_onPublicationSelect(){return xajax.call("onPublicationSelect", arguments, 1);}
+function xajax_onSourceSelect(){return xajax.call("onSourceSelect", arguments, 1);}
+function xajax_onYearSelect(){return xajax.call("onYearSelect", arguments, 1);}
+function xajax_onBrowseRecipes(){return xajax.call("onBrowseRecipes", arguments, 1);}
+function xajax_onLoad(){return xajax.call("onLoad", arguments, 1);}
+function xajax_filterToggle(){return xajax.call("filterToggle", arguments, 1);}
+function xajax_filterGroupDisplay(){return xajax.call("filterGroupDisplay", arguments, 1);}
+function xajax_showDiv(){return xajax.call("showDiv", arguments, 1);}
+function xajax_hideDiv(){return xajax.call("hideDiv", arguments, 1);}
+function xajax_showShareRecipe(){return xajax.call("showShareRecipe", arguments, 1);}
+function xajax_shareRecipeByEmail(){return xajax.call("shareRecipeByEmail", arguments, 1);}
+function xajax_userEditing(){return xajax.call("userEditing", arguments, 1);}
+function xajax_userEditingNotes(){return xajax.call("userEditingNotes", arguments, 1);}
+function xajax_toggleDivs(){return xajax.call("toggleDivs", arguments, 1);}
+function xajax_sortByTitle(){return xajax.call("sortByTitle", arguments, 1);}
+function xajax_showIssue(){return xajax.call("showIssue", arguments, 1);}
+function xajax_doSearch(){return xajax.call("doSearch", arguments, 1);}
+function xajax_removeIngr(){return xajax.call("removeIngr", arguments, 1);}
+function xajax_addIngr(){return xajax.call("addIngr", arguments, 1);}
+function xajax_tweetEvent(){return xajax.call("tweetEvent", arguments, 1);}
+	</script>
+<base href="http://www.projectfoodie.com/" />
+	<link rel="shortcut icon" href="http://www.projectfoodie.com/images/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="http://www.projectfoodie.com/templates/pf/css/template_css-min.css"/><link rel="alternate" type="application/rss+xml" title="Project Foodie RSS" href="http://www.projectfoodie.com/feed"></head>
+<body class="outertable" style="margin-top: 0px" onload="pf_onLoad()">
+
+       <table class="outertable" align="center">
+         <tr><td valign="center" align="center"> 
+             <div style="align:center;padding-top:2px"><table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td valign="middle">
+		<table cellpadding="0" cellspacing="0" class="moduletable">
+		<tr>
+		   <td>
+		   <!-- Begin Adify tag for "LeaderBoard" Ad Space (728x90) ID #1000001633407 Platefull -->
+<script type="text/javascript">
+	sr_adspace_id = 1000001633407;
+	sr_adspace_width = 728;
+	sr_adspace_height = 90;
+	sr_ad_new_window = true;
+	sr_adspace_type = "graphic";
+</script>
+<script type="text/javascript" src="http://ad.afy11.net/srad.js?azId=1000001633407">
+</script>
+<!-- End Adify tag for "LeaderBoard" Ad Space (728x90) ID #1000001633407 -->			</td>
+			    		</tr>
+		</table>
+		</td>
+</tr>
+</table>
+</div>
+</td></tr>
+<tr><td>
+    <table class="innertable" width="885px" cellpadding="0" cellspacing="0">
+        <tr><td colspan="2" align="center" >
+            <div class="nohover">
+    <a href="http://www.projectfoodie.com" ><img src="http://www.projectfoodie.com/templates/pf/images/Header.jpg" border=0></a>
+</div>
+            </td>
+        </tr>
+        <tr><td class="MenuBar" colspan="2">
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td valign="middle">
+		<table cellpadding="0" cellspacing="0" class="moduletablesw-menu">
+		<tr>
+		   <td>
+		   
+<!--swMenuFree4.0 transmenu by http://www.swonline.biz-->
+
+<style type='text/css'>
+<!--
+.transMenu {
+ position:absolute ; 
+ overflow:hidden; 
+ left:-1000px; 
+ top:-1000px; 
+}
+.transMenu .content {
+ position:absolute  ; 
+}
+.transMenu .items {
+ border: 0px solid #B4CF44 ; 
+ position:relative ; 
+ left:0px; top:0px; 
+ z-index:2; 
+}
+.transMenu  td
+{
+ padding: 5px 5px 5px 5px !important;  
+ font-size: 14px !important ; 
+ font-family: Verdana, Arial, Helvetica, sans-serif !important ; 
+ text-align: left !important ; 
+ font-weight: normal !important ; 
+ color: #000000 !important ; 
+} 
+#subwrap 
+{ 
+ text-align: left ; 
+}
+.transMenu  .item.hover td
+{ 
+ color: #FFFFFF !important ; 
+}
+.transMenu .item { 
+ text-decoration: none ; 
+ cursor:pointer; 
+ cursor:hand; 
+}
+.transMenu .background {
+ background-color: #B4CF44 !important ; 
+ position:absolute ; 
+ left:0px; top:0px; 
+ z-index:1; 
+ opacity:0.95; 
+ filter:alpha(opacity=95) 
+}
+.transMenu .shadowRight { 
+ position:absolute ; 
+ z-index:3; 
+ top:3px; width:2px; 
+ opacity:0.95; 
+ filter:alpha(opacity=95)
+}
+.transMenu .shadowBottom { 
+ position:absolute ; 
+ z-index:1; 
+ left:3px; height:2px; 
+ opacity:0.95; 
+ filter:alpha(opacity=95)
+}
+.transMenu .item.hover {
+ background-color: #B4CF44 !important ; 
+}
+.transMenu .item img { 
+ margin-left:10px !important ; 
+}
+table.menu {
+ top: 0px; 
+ left: 0px; 
+ position:relative ; 
+ margin:-2px !important ; 
+ border: 0px solid #B4CF44 ; 
+ z-index: 1; 
+}
+table.menu a{
+ margin:0px !important ; 
+ padding: 2px 10px 2px 10px  !important ; 
+ display:block !important; 
+ position:relative !important ; 
+}
+div.menu a,
+div.menu a:visited,
+div.menu a:link {
+ font-size: 14px !important ; 
+ font-family: Verdana, Arial, Helvetica, sans-serif !important ; 
+ text-align: center !important ; 
+  font-weight: bold !important ; min-width: 40px !important ; color: #000000 !important ; 
+ text-decoration: none !important ; 
+ margin-bottom:0px !important ; 
+ display:block !important; 
+ white-space:nowrap ; 
+}
+div.menu td {
+ border-bottom: 2px solid #B4CF44 ; 
+ border-top: 2px solid #B4CF44 ; 
+ border-left: 2px solid #B4CF44 ; 
+ background-color: #B4CF44 !important ; 
+} 
+div.menu td.last {
+ border-right: 2px solid #B4CF44 ; 
+} 
+#trans-active a{
+ color: #FFFFFF !important ; 
+  font-weight: bold !important ;  font-size: 17px !important ;background-image: url("/templates/pf/images/menu-image.jpg") !important ;  background-repeat: no-repeat !important ;  background-position: center !important ; background-color: #B4CF44 !important ; 
+} 
+#menu a.hover   { 
+ color: #FFFFFF !important ; 
+background-image: url("http://www.projectfoodie.com/templates/pf/images/menu-image.jpg") !important ;  background-repeat: no-repeat !important ;  background-position: center !important ; background-color: #B4CF44 !important ; 
+}
+#menu span {
+ display:none; 
+}
+
+-->
+</style>
+<div id="wrap" class="menu" align="center">
+<table cellspacing="0" cellpadding="0" id="menu" class="menu" > 
+<tr> 
+<td id='trans-active'> 
+<a id="menu1" href="http://www.projectfoodie.com/" >Home</a>
+</td> 
+<td> 
+<a id="menu45" href="http://www.projectfoodie.com/project-foodie-blog/" >blog</a>
+</td> 
+<td> 
+<a id="menu136" href="http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&amp;action=source&amp;id=0" >recipes</a>
+</td> 
+<td> 
+<a id="menu98" >articles</a>
+</td> 
+<td class="last"> 
+<a id="menu134" >about us</a>
+</td> 
+</tr> 
+</table></div> 
+<div id="subwrap"> 
+<script type="text/javascript">
+<!--
+if (TransMenu.isSupported()) {
+var ms = new TransMenuSet(TransMenu.direction.down, 0,0, TransMenu.reference.bottomLeft);
+var menu136 = ms.addMenu(document.getElementById("menu136"));
+ menu136.addItem("Magazines", "javascript:void(0);", "3");
+var menu194 = menu136.addMenu(menu136.items[0],0,0);
+menu194.addItem("Better Homes and Gardens", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=480", "0");
+menu194.addItem("Bon Appétit", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=3", "0");
+menu194.addItem("Coastal Living", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=452", "0");
+menu194.addItem("Cooks Illustrated", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=227", "0");
+menu194.addItem("Cooking Light", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=1", "0");
+menu194.addItem("Cottage Living", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=465", "0");
+menu194.addItem("EatingWell", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=317", "0");
+menu194.addItem("Every Day with Rachael Ray", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=478", "0");
+menu194.addItem("Everyday Food", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=487", "0");
+menu194.addItem("Fine Cooking", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=463", "0");
+menu194.addItem("Food &amp; Wine", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=165", "0");
+menu194.addItem("Food Network Magazine", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=529", "0");
+menu194.addItem("Gourmet", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=2", "0");
+menu194.addItem("Health", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=464", "0");
+menu194.addItem("La Cucina Italiana", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=494", "0");
+menu194.addItem("Martha Stewart Living", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=493", "0");
+menu194.addItem("Real Simple", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=459", "0");
+menu194.addItem("Saveur", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=276", "0");
+menu194.addItem("Southern Living", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=458", "0");
+menu194.addItem("Sunset", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=451", "0");
+menu194.addItem("Vegetarian Times", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=469", "0");
+menu136.addItem("Cookbooks", "http://www.projectfoodie.com/cookbooks", "0");
+menu136.addItem("Newspapers", "javascript:void(0);", "3");
+var menu193 = menu136.addMenu(menu136.items[2],0,0);
+menu193.addItem("Boston Globe", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=479", "0");
+menu193.addItem("Mercury News", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=280", "0");
+menu193.addItem("Monterey County Herald", "http://www.projectfoodie.com/index2.php?option=com_pfrecipetracker&action=source&id=432", "0");
+menu193.addItem("Washington Post", "http://www.projectfoodie.com/recipes/washington-post/index", "0");
+menu136.addItem("Cooking Channel", "javascript:void(0);", "3");
+var menu278 = menu136.addMenu(menu136.items[3],0,0);
+menu278.addItem("A-E", "javascript:void(0);", "3");
+var menu279 = menu278.addMenu(menu278.items[0],0,0);
+menu279.addItem("At the Table With...", "http://www.projectfoodie.com/recipes/at-the-table-with.../index", "0");
+menu279.addItem("Bill\'s Food", "http://www.projectfoodie.com/recipes/bills-food/index", "0");
+menu279.addItem("Bill\'s Holiday", "http://www.projectfoodie.com/recipes/bills-holiday/index", "0");
+menu279.addItem("Bitchin\' Kitchen", "http://www.projectfoodie.com/recipes/bitchin-kitchen/index", "0");
+menu279.addItem("Brunch at Bobby\'s", "http://www.projectfoodie.com/recipes/brunch-at-bobbys/index", "0");
+menu279.addItem("Caribbean Food Made Easy", "http://www.projectfoodie.com/recipes/caribbean-food-made-easy/index", "0");
+menu279.addItem("Chuck\'s Day Off", "http://www.projectfoodie.com/recipes/chucks-day-off/index", "0");
+menu279.addItem("Cook Like an Iron Chef", "http://www.projectfoodie.com/recipes/cook-like-an-iron-chef/index", "0");
+menu279.addItem("David Rocco\'s Dolce Vita", "http://www.projectfoodie.com/recipes/david-roccos-dolce-vita/index", "0");
+menu279.addItem("Drink Up", "http://www.projectfoodie.com/recipes/drink-up/index", "0");
+menu279.addItem("Everyday Exotic", "http://www.projectfoodie.com/recipes/everyday-exotic/index", "0");
+menu278.addItem("F-Z", "javascript:void(0);", "3");
+var menu293 = menu278.addMenu(menu278.items[1],0,0);
+menu293.addItem("Food(ography)", "http://www.projectfoodie.com/recipes/food(ography)/index", "0");
+menu293.addItem("French Food at Home", "http://www.projectfoodie.com/recipes/french-food-at-home/index", "0");
+menu293.addItem("Fresh Food Fast With Emeril Lagasse", "http://www.projectfoodie.com/recipes/fresh-food-fast-with-emeril-lagasse/index", "0");
+menu293.addItem("Good Deal with Dave Lieberman", "http://www.projectfoodie.com/recipes/good-deal-with-dave-lieberman/index", "0");
+menu293.addItem("Indian Food Made Easy", "http://www.projectfoodie.com/recipes/indian-food-made-easy/index", "0");
+menu293.addItem("Kelsey\'s Essentials", "http://www.projectfoodie.com/recipes/kelseys-essentials/index", "0");
+menu293.addItem("Luke Nguyen\'s Vietnam", "http://www.projectfoodie.com/recipes/luke-nguyens-vietnam/index", "0");
+menu293.addItem("Melting Pot", "http://www.projectfoodie.com/recipes/melting-pot/index", "0");
+menu293.addItem("Nigella Lawson", "http://www.projectfoodie.com/recipes/nigella-lawson/index", "0");
+menu293.addItem("Rachael Ray\'s Week in a Day", "http://www.projectfoodie.com/recipes/rachael-rays-week-in-a-day/index", "0");
+menu293.addItem("Rachel Allen: Bake!", "http://www.projectfoodie.com/recipes/rachel-allen:-bake!/index", "0");
+menu293.addItem("Spice Goddess", "http://www.projectfoodie.com/recipes/spice-goddess/index", "0");
+menu136.addItem("Food Network", "javascript:void(0);", "3");
+var menu220 = menu136.addMenu(menu136.items[4],0,0);
+menu220.addItem("A-E", "javascript:void(0);", "3");
+var menu203 = menu220.addMenu(menu220.items[0],0,0);
+menu203.addItem("$40 A Day", "http://www.projectfoodie.com/recipes/$40-a-day/index", "0");
+menu203.addItem("30 Minute Meals", "http://www.projectfoodie.com/recipes/30-minute-meals/index", "0");
+menu203.addItem("5 Ingredient Fix", "http://www.projectfoodie.com/recipes/5-ingredient-fix/index", "0");
+menu203.addItem("All-American Festivals", "http://www.projectfoodie.com/recipes/all-american-festivals/index", "0");
+menu203.addItem("Aarti Party", "http://www.projectfoodie.com/recipes/aarti-party/index", "0");
+menu203.addItem("Ask Aida", "http://www.projectfoodie.com/recipes/ask-aida/index", "0");
+menu203.addItem("Barefoot Contessa", "http://www.projectfoodie.com/recipes/barefoot-contessa/index", "0");
+menu203.addItem("Bbq With Bobby Flay", "http://www.projectfoodie.com/recipes/bbq-with-bobby-flay/index", "0");
+menu203.addItem("Behind The Bash", "http://www.projectfoodie.com/recipes/behind-the-bash/index", "0");
+menu203.addItem("Big Daddys House", "http://www.projectfoodie.com/recipes/big-daddys-house/index", "0");
+menu203.addItem("Boy Meets Grill", "http://www.projectfoodie.com/recipes/boy-meets-grill/index", "0");
+menu203.addItem("Chic And Easy", "http://www.projectfoodie.com/recipes/chic-and-easy/index", "0");
+menu203.addItem("Cooking For Real", "http://www.projectfoodie.com/recipes/cooking-for-real/index", "0");
+menu203.addItem("Cupcake Wars", "http://www.projectfoodie.com/recipes/cupcake-wars/index", "0");
+menu203.addItem("Diners, Drive-Ins And Dives", "http://www.projectfoodie.com/recipes/diners-drive-ins-and-dives/index", "0");
+menu203.addItem("Dinner: Impossible", "http://www.projectfoodie.com/dinner-impossible/index", "0");
+menu203.addItem("Down Home With The Neelys", "http://www.projectfoodie.com/recipes/down-home-with-the-neelys/index", "0");
+menu203.addItem("Easy Entertaining With Michael Chiarello", "http://www.projectfoodie.com/recipes/easy-entertaining-with-michael-chiarello/index", "0");
+menu203.addItem("Emeril Live", "http://www.projectfoodie.com/recipes/emeril-live/index", "0");
+menu203.addItem("Everyday Italian", "http://www.projectfoodie.com/recipes/everyday-italian/index", "0");
+menu203.addItem("Unique Eats", "http://www.projectfoodie.com/recipes/unique-eats/index", "0");
+menu220.addItem("F-N", "javascript:void(0);", "3");
+var menu222 = menu220.addMenu(menu220.items[1],0,0);
+menu222.addItem("Food Network Challenge", "http://www.projectfoodie.com/recipes/food-network-challenge/index", "0");
+menu222.addItem("Food Network Magazine", "http://www.projectfoodie.com/recipes/food-network-magazine/index", "0");
+menu222.addItem("Food Network Specials", "http://www.projectfoodie.com/recipes/food-network-specials/index", "0");
+menu222.addItem("Giada At Home", "http://www.projectfoodie.com/recipes/giada-at-home/index", "0");
+menu222.addItem("Giadas Weekend Getaways", "http://www.projectfoodie.com/recipes/giadas-weekend-getaways/index", "0");
+menu222.addItem("Good Deal With Dave Lieberman", "http://www.projectfoodie.com/recipes/good-deal-with-dave-lieberman/index", "0");
+menu222.addItem("Good Eats", "http://www.projectfoodie.com/recipes/good-eats/index", "0");
+menu222.addItem("Grill It! With Bobby Flay", "http://www.projectfoodie.com/recipes/grill-it-with-bobby-flay/index", "0");
+menu222.addItem("Guy Off The Hook", "http://www.projectfoodie.com/recipes/guy-off-the-hook/index", "0");
+menu222.addItem("Guy\'s Big Bite", "http://www.projectfoodie.com/recipes/guys-big-bite/index", "0");
+menu222.addItem("Ham on the Street", "http://www.projectfoodie.com/recipes/ham-on-the-street/index", "0");
+menu222.addItem("Healthy Appetite With Ellie Krieger", "http://www.projectfoodie.com/recipes/healthy-appetite-with-ellie-krieger/index", "0");
+menu222.addItem("How To Boil Water", "http://www.projectfoodie.com/recipes/how-to-boil-water/index", "0");
+menu222.addItem("Inside Dish", "http://www.projectfoodie.com/recipes/inside-dish/index", "0");
+menu222.addItem("Jamie At Home", "http://www.projectfoodie.com/recipes/jamie-at-home/index", "0");
+menu222.addItem("Molto Mario", "http://www.projectfoodie.com/recipes/molto-mario/index", "0");
+menu222.addItem("Mexian Made Easy", "http://www.projectfoodie.com/recipes/mexican-made-easy/index", "0");
+menu222.addItem("Nigella Bites", "http://www.projectfoodie.com/recipes/nigella-bites/index", "0");
+menu222.addItem("Nigella Express", "http://www.projectfoodie.com/recipes/nigella-express/index", "0");
+menu222.addItem("Nigella Feasts", "http://www.projectfoodie.com/recipes/nigella-feasts/index", "0");
+menu222.addItem("Nigella Kitchen", "http://www.projectfoodie.com/recipes/nigella-kitchen/index", "0");
+menu220.addItem("P-Z", "javascript:void(0);", "3");
+var menu241 = menu220.addMenu(menu220.items[2],0,0);
+menu241.addItem("Party Line With The Hearty Boys", "http://www.projectfoodie.com/recipes/party-line-with-the-hearty-boys/index", "0");
+menu241.addItem("Paula\'s Best Dishes", "http://www.projectfoodie.com/recipes/paulas-best-dishes/index", "0");
+menu241.addItem("Paula\'s Home Cooking", "http://www.projectfoodie.com/recipes/paulas-home-cooking/index", "0");
+menu241.addItem("Paula\'s Party", "http://www.projectfoodie.com/recipes/paulas-party/index", "0");
+menu241.addItem("Private Chefs of Beverly Hills", "http://www.projectfoodie.com/recipes/private-chefs-of-beverly-hills/index", "0");
+menu241.addItem("Quick Fix Meals With Robin Miller", "http://www.projectfoodie.com/recipes/quick-fix-meals-with-robin-miller/index", "0");
+menu241.addItem("Rachael Ray\'s Tasty Travels", "http://www.projectfoodie.com/recipes/rachael-rays-tasty-travels/index", "0");
+menu241.addItem("Rachael\'s Vacation", "http://www.projectfoodie.com/recipes/rachaels-vacation/index", "0");
+menu241.addItem("Rescue Chef", "http://www.projectfoodie.com/recipes/rescue-chef/index", "0");
+menu241.addItem("Sandra&#039;s Money Saving Meals", "http://www.projectfoodie.com/recipes/sandras-money-saving-meals/index", "0");
+menu241.addItem("Sara\'s Secrets", "http://www.projectfoodie.com/recipes/saras-secrets/index", "0");
+menu241.addItem("Secrets Of A Restaurant Chef", "http://www.projectfoodie.com/recipes/secrets-of-a-restaurant-chef/index", "0");
+menu241.addItem("Semi-Homemade Cooking With Sandra Lee", "http://www.projectfoodie.com/recipes/semi-homemade-cooking-with-sandra-lee/index", "0");
+menu241.addItem("Simply Delicioso With Ingrid Hoffmann", "http://www.projectfoodie.com/recipes/simply-delicioso-with-ingrid-hoffmann/index", "0");
+menu241.addItem("Spice &amp;amp; Easy", "http://www.projectfoodie.com/recipes/spice-and-easy/index", "0");
+menu241.addItem("Sugar Rush", "http://www.projectfoodie.com/recipes/sugar-rush/index", "0");
+menu241.addItem("Ten Dollar Dinners with Melissa D&#039;arabian", "http://www.projectfoodie.com/recipes/ten-dollar-dinners-with-melissa-darabian/index", "0");
+menu241.addItem("The Cooking Loft", "http://www.projectfoodie.com/recipes/the-cooking-loft/index", "0");
+menu241.addItem("The Essence of Emeril", "http://www.projectfoodie.com/recipes/the-essence-of-emeril/index", "0");
+menu241.addItem("The Next Food Network Star", "http://www.projectfoodie.com/recipes/the-next-food-network-star/index", "0");
+menu241.addItem("Throwdown With Bobby Flay", "http://www.projectfoodie.com/recipes/throwdown-with-bobby-flay/index", "0");
+menu241.addItem("Tyler\'s Ultimate", "http://www.projectfoodie.com/recipes/tylers-ultimate/index", "0");
+menu241.addItem("Ultimate Recipe Showdown", "http://www.projectfoodie.com/recipes/ultimate-recipe-showdown/index", "0");
+menu241.addItem("Unwrapped", "http://www.projectfoodie.com/recipes/unwrapped/index", "0");
+menu241.addItem("Viva Daisy!", "http://www.projectfoodie.com/recipes/viva-daisy!/index", "0");
+menu241.addItem("What Would Brian Boitano Make?", "http://www.projectfoodie.com/recipes/what-would-brian-boitano-make/index", "0");
+menu241.addItem("Worst Cooks in America", "http://www.projectfoodie.com/recipes/worst-cooks-in-america/index", "0");
+menu136.addItem("On our plate", "http://www.projectfoodie.com/on-our-plate/on-our-plate/", "0");
+var menu98 = ms.addMenu(document.getElementById("menu98"));
+ menu98.addItem("Blog", "http://www.projectfoodie.com/blog/", "0");
+menu98.addItem("ChefLife", "http://www.projectfoodie.com/cheflife/cheflife/", "0");
+menu98.addItem("Cookbook Spotlights", "http://www.projectfoodie.com/spotlights/cookbooks/", "0");
+menu98.addItem("From the Chef", "http://www.projectfoodie.com/from-the-.../chef/", "0");
+menu98.addItem("News & Notable", "http://www.projectfoodie.com/news/", "0");
+menu98.addItem("Wine &amp; Spirits", "http://www.projectfoodie.com/wine-and-spirits", "0");
+menu98.addItem("Archives", "javascript:void(0);", "3");
+var menu167 = menu98.addMenu(menu98.items[6],0,0);
+menu167.addItem("Cooking 101", "http://www.projectfoodie.com/learn/cooking-101/", "0");
+menu167.addItem("Contests", "http://www.projectfoodie.com/contests/cookbook-giveaway-contest/", "0");
+menu167.addItem("From the ...", "javascript:void(0);", "3");
+var menu107 = menu167.addMenu(menu167.items[2],0,0);
+menu107.addItem("From the Butcher", "http://www.projectfoodie.com/from-the-.../butcher/", "0");
+menu107.addItem("From the Cheesemonger", "http://www.projectfoodie.com/from-the-.../cheese-monger/", "0");
+menu107.addItem("From the Coffee Roaster", "http://www.projectfoodie.com/from-the-.../roaster/", "0");
+menu107.addItem("From the Gardener", "http://www.projectfoodie.com/from-the-.../garden/", "0");
+menu107.addItem("From the Fishmonger", "http://www.projectfoodie.com/from-the-.../fish-monger/", "0");
+menu107.addItem("From the Flavorist", "http://www.projectfoodie.com/from-the-.../seasoner/", "0");
+menu107.addItem("From the Nutritionist", "http://www.projectfoodie.com/from-the-.../nutritionist/", "0");
+menu107.addItem("From the Tea Taster", "http://www.projectfoodie.com/from-the-.../tea-taster/", "0");
+menu107.addItem("From the Vintner", "http://www.projectfoodie.com/from-the-.../vintner/", "0");
+menu167.addItem("Language of the Kitchen", "http://www.projectfoodie.com/learn/language-of-the-kitchen/", "0");
+menu167.addItem("Newsletters", "http://www.projectfoodie.com/newsletters/", "0");
+menu167.addItem("Recipe Spotlights", "http://www.projectfoodie.com/recipe-spotlights.html", "0");
+var menu115 = menu167.addMenu(menu167.items[5],0,0);
+menu115.addItem("Bed & Breakfasts", "http://www.projectfoodie.com/spotlights/bed--breakfasts/", "0");
+menu115.addItem("Restaurants", "http://www.projectfoodie.com/spotlights/restaurants/", "0");
+menu115.addItem("Wineries", "http://www.projectfoodie.com/spotlights/wineries/", "0");
+var menu134 = ms.addMenu(document.getElementById("menu134"));
+ menu134.addItem("What is Project Foodie?", "http://www.projectfoodie.com/what-is-project-foodie.html", "0");
+menu134.addItem("Team Project Foodie", "http://www.projectfoodie.com/team-project-foodie.html", "0");
+menu134.addItem("Media Kit", "http://www.projectfoodie.com/media-kit.html", "0");
+var menu264 = menu134.addMenu(menu134.items[2],0,0);
+menu264.addItem("Press Releases", "http://www.projectfoodie.com/press-releases", "0");
+menu134.addItem("Add Recipe Widget", "http://www.projectfoodie.com/add-recipe-widget.html", "0");
+menu134.addItem("Foodie Links", "http://www.projectfoodie.com/foodie-links.html", "0");
+menu134.addItem("Recipe Box FAQ", "http://www.projectfoodie.com/recipe-box.html", "0");
+menu134.addItem("Contact Us", "http://www.projectfoodie.com/contact-us/", "0");
+menu134.addItem("How to Contribute Content", "http://www.projectfoodie.com/how-to-participate.html", "0");
+menu134.addItem("Site Index", "http://www.projectfoodie.com/site-index.html", "0");
+function init() {
+if (TransMenu.isSupported()) {
+TransMenu.initialize();
+document.getElementById("menu1").onmouseover = function() {
+ms.hideCurrent();
+this.className = "hover";
+}
+document.getElementById("menu1").onmouseout = function() { this.className = ""; }
+document.getElementById("menu45").onmouseover = function() {
+ms.hideCurrent();
+this.className = "hover";
+}
+document.getElementById("menu45").onmouseout = function() { this.className = ""; }
+menu136.onactivate = function() {document.getElementById("menu136").className = "hover"; };
+ menu136.ondeactivate = function() {document.getElementById("menu136").className = ""; };
+ menu98.onactivate = function() {document.getElementById("menu98").className = "hover"; };
+ menu98.ondeactivate = function() {document.getElementById("menu98").className = ""; };
+ menu134.onactivate = function() {document.getElementById("menu134").className = "hover"; };
+ menu134.ondeactivate = function() {document.getElementById("menu134").className = ""; };
+ }}
+TransMenu.spacerGif = "http://www.projectfoodie.com/modules/mod_swmenufree/images/transmenu/x.gif";
+TransMenu.dingbatOn = "http://www.projectfoodie.com/modules/mod_swmenufree/images/transmenu/submenu-on.gif";
+TransMenu.dingbatOff = "http://www.projectfoodie.com/modules/mod_swmenufree/images/transmenu/submenu-off.gif"; 
+TransMenu.sub_indicator = true; 
+TransMenu.menuPadding = 0;
+TransMenu.itemPadding = 0;
+TransMenu.shadowSize = 2;
+TransMenu.shadowOffset = 3;
+TransMenu.shadowColor = "#888";
+TransMenu.shadowPng = "http://www.projectfoodie.com/modules/mod_swmenufree/images/transmenu/grey-40.png";
+TransMenu.backgroundColor = "#B4CF44";
+TransMenu.backgroundPng = "http://www.projectfoodie.com/modules/mod_swmenufree/images/transmenu/white-90.png";
+TransMenu.hideDelay = 600;
+TransMenu.slideTime = 300;
+TransMenu.selecthack = 0;
+TransMenu.renderAll();
+if ( typeof window.addEventListener != "undefined" )
+window.addEventListener( "load", init, false );
+else if ( typeof window.attachEvent != "undefined" ) {
+window.attachEvent( "onload", init);
+}else{
+if ( window.onload != null ) {
+var oldOnload = window.onload;
+window.onload = function ( e ) {
+oldOnload( e );
+init();
+}
+}else
+window.onload = init();
+}
+}
+-->
+</script>
+</div>
+
+<!--End swMenuFree menu module-->
+			</td>
+			    		</tr>
+		</table>
+		</td>
+<td valign="middle" align="right">
+		<table cellpadding="0" cellspacing="0" class="moduletableHeader">
+		<tr>
+		   <td>
+		   <div class="mod_login"><form action="http://www.projectfoodie.com/component/option,com_comprofiler/Itemid,0/task,login/" method="post" id="mod_loginformHeader" style="margin:0px;">
+&nbsp;
+<input type="text" name="username" id="mod_login_usernameHeader" class="inputboxHeader" size="10" alt="Username" value="Username" onfocus="if (this.value=='Username') this.value=''" onblur="if(this.value=='') { this.value='Username'; return false; }" title="Username" />&nbsp;
+&nbsp;<span><input type="password" name="passwd" id="mod_login_passwordHeader" class="inputboxHeader" size="10" alt="Password" value="paswww" onfocus="if (this.value=='paswww') this.value=''" onblur="if(this.value=='') { this.value='paswww'; return false; }" title="Password" /></span>&nbsp;
+<input type="hidden" name="op2" value="login" />
+<input type="hidden" name="lang" value="english" />
+<input type="hidden" name="force_session" value="1" />
+<input type="hidden" name="return" value="B:aHR0cDovL3d3dy5wcm9qZWN0Zm9vZGllLmNvbS9pbmRleC5waHA/b3B0aW9uPWNvbV9mcm9udHBhZ2UmYW1wO0l0ZW1pZD0x" />
+<input type="hidden" name="message" value="0" />
+<input type="hidden" name="loginfrom" value="loginmodule" />
+<input type="hidden" name="cbsecuritym3" value="cbm_1f053fa6_5c0e04d4_964c7b8656d3ff4627122713693bb1ef" />
+<input type="hidden" name="j1b73577d8030e6b5be16d313632ce40a" value="1" />
+<input type="hidden" name="remember" value="yes" /><input type="submit" name="Submit" class="buttonHeader" value="Login" />&nbsp;&nbsp;
+<a href="http://www.projectfoodie.com/component/option,com_comprofiler/Itemid,0/task,lostPassword/" class="mod_loginHeader">Forgot password?</a>&nbsp;|&nbsp;<span id="mod_login_noaccountHeader"><a href="http://www.projectfoodie.com/component/option,com_comprofiler/Itemid,0/task,registers/" class="mod_loginHeader">Register</a></span>
+</form></div>
+			</td>
+			    		</tr>
+		</table>
+		</td>
+<td valign="middle">
+		<table cellpadding="0" cellspacing="0" class="moduletable">
+		<tr>
+		   <td>
+		   <span style="font-size:8pt"><a href="http://twitter.com/projectfoodie"><img border="0" align="texttop" src="/images/twitter-icon.jpg"></a>  <a href="http://www.facebook.com/pages/Project-Foodie/43749519916"><img border="0" align="texttop" src="/images/fb-icon.jpg"></a> <a href="article-subscribe.html"><img border="0" align="texttop" src="/images/rss-icon.jpg"></a></span>			</td>
+			    		</tr>
+		</table>
+		</td>
+</tr>
+</table>
+            </td>
+        </tr>
+
+        <tr><td colspan="2">
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td valign="middle">
+		<table cellpadding="0" cellspacing="0" class="moduletable">
+		<tr>
+		   <td>
+		   <table width="100%"><tr valign="top"><tr><td colspan="3"><div class="pfheader"><div id="pfrecipesources" style="display:none;"><div class="pfheadertitle-small"><p>RECIPES BY PUBLICATION </p><span style="white-space: nowrap"><a href="recipes/all-you">All You</a></span> | <span style="white-space: nowrap"><a href="recipes/better-homes-and-gardens">Better Homes &amp; Gardens</a></span> | <span style="white-space: nowrap"><a href="recipes/bon-appetit">Bon App&eacute;tit</a></span> | <span style="white-space: nowrap"><a href="recipes/coastal-living">Coastal Living</a></span> | <span style="white-space: nowrap"><a href="recipes/cooking-light">Cooking Light</a></span> | <span style="white-space: nowrap"><a href="recipes/cooks-illustrated">Cooks Illustrated</a></span> | <span style="white-space: nowrap"><a href="recipes/cottage-living">Cottage Living</a></span> | <span style="white-space: nowrap"><a href="recipes/eatingwell">EatingWell</a></span> | <span style="white-space: nowrap"><a href="recipes/every-day-with-rachael-ray">Every Day with Rachael Ray</a></span> | <span style="white-space: nowrap"><a href="recipes/everyday-food">Everyday Food</a></span> | <span style="white-space: nowrap"><a href="recipes/fine-cooking">Fine Cooking</a></span> | <span style="white-space: nowrap"><a href="recipes/food-and-wine">Food &amp; Wine</a></span> | <span style="white-space: nowrap"><a href="recipes/food-network-magazine">Food Network Magazine</a></span> | <span style="white-space: nowrap"><a href="recipes/gourmet">Gourmet</a></span> | <span style="white-space: nowrap"><a href="recipes/health">Health</a></span> | <span style="white-space: nowrap"><a href="recipes/la-cucina-italiana">La Cucina Italiana</a></span> | <span style="white-space: nowrap"><a href="recipes/martha-stewart-living">Martha Stewart Living</a></span> | <span style="white-space: nowrap"><a href="recipes/real-simple">Real Simple</a></span> | <span style="white-space: nowrap"><a href="recipes/saveur">Saveur</a></span> | <span style="white-space: nowrap"><a href="recipes/southern-living">Southern Living</a></span> | <span style="white-space: nowrap"><a href="recipes/sunset">Sunset</a></span> | <span style="white-space: nowrap"><a href="recipes/vegetarian-times">Vegetarian Times</a></span> | <span style="white-space: nowrap"><a href="recipes/boston-globe">Boston Globe</a></span> | <span style="white-space: nowrap"><a href="recipes/mercury-news">Mercury News</a></span> | <span style="white-space: nowrap"><a href="recipes/monterey-county-herald">Monterey County Herald</a></span> | <span style="white-space: nowrap"><a href="recipes/washington-post">Washington Post</a></span><span style="white-space: nowrap"> | <a href="publisher/food-network/index">Food Network</a> </span> | <span style="white-space: nowrap"><a href="cookbooks">Cookbooks</a></span><span style="white-space: nowrap"> | <a href="publisher/cooking-channel/index">Cooking Channel</a> </span> | <span style="white-space: nowrap"><a href="cookbooks">Cookbooks</a></span></p></div></div></div><div id="pf-recipebrowser" style="display:none"><div class="pfheadertitle" ><P>RECIPES BY ISSUE</P><div class="pfrecipesearch" ><form id="pf-browseRecipesForm" action="index2.php" method="get"><p><span style="white-space: nowrap"><LABEL FOR="Type">From </label> <SELECT id="pubBrowseSelect" NAME="Type" onchange="xajax_onPublicationSelect( this.value )"><OPTION SELECTED VALUE="Magazine">Magazines<OPTION VALUE="Newspaper">Newspapers<OPTION VALUE="FoodNetwork">Food Network<OPTION VALUE="CookingChannel">Cooking Channel<OPTION VALUE="Cookbook">Cookbooks</select></span> <span id="browseYear-Cookbooks"></span><span id="browseSource"><span style="white-space: nowrap"><LABEL FOR="Source"> Name </label> <SELECT NAME="srcID" onchange="xajax_onSourceSelect(this.value, 'Magazine')" > Source <OPTION VALUE="724" >All You<OPTION VALUE="480" >Better Homes &amp; Gardens<OPTION VALUE="3" >Bon App&eacute;tit<OPTION VALUE="452" >Coastal Living<OPTION VALUE="1" >Cooking Light<OPTION SELECTED VALUE="227" >Cooks Illustrated<OPTION VALUE="465" >Cottage Living<OPTION VALUE="317" >EatingWell<OPTION VALUE="478" >Every Day with Rachael Ray<OPTION VALUE="487" >Everyday Food<OPTION VALUE="463" >Fine Cooking<OPTION VALUE="165" >Food &amp; Wine<OPTION VALUE="529" >Food Network Magazine<OPTION VALUE="2" >Gourmet<OPTION VALUE="464" >Health<OPTION VALUE="494" >La Cucina Italiana<OPTION VALUE="493" >Martha Stewart Living<OPTION VALUE="459" >Real Simple<OPTION VALUE="276" >Saveur<OPTION VALUE="458" >Southern Living<OPTION VALUE="451" >Sunset<OPTION VALUE="469" >Vegetarian Times<OPTION VALUE="all" >all</select></span> </span><span id="browseYear"><span style="white-space: nowrap"><LABEL FOR="Year"> Year </label>  <SELECT NAME="year" onchange="xajax_onYearSelect(227, this.value, 'Magazine')"> Year <OPTION  SELECTED VALUE="2011">2011<OPTION VALUE="2010">2010<OPTION VALUE="2009">2009<OPTION VALUE="2008">2008<OPTION VALUE="2007">2007<OPTION VALUE="2006">2006<OPTION VALUE="2005">2005<OPTION VALUE="2004">2004<OPTION VALUE="2003">2003<OPTION VALUE="2002">2002<OPTION VALUE="2001">2001<OPTION VALUE="2000">2000<OPTION VALUE="1999">1999<OPTION VALUE="1998">1998<OPTION VALUE="1997">1997<OPTION VALUE="1996">1996<OPTION VALUE="1995">1995<OPTION VALUE="1994">1994<OPTION VALUE="1993">1993<OPTION VALUE="all" )">all</select></span> </span><span style="white-space: nowrap"><span id="browseMonth"><span style="white-space: nowrap"><LABEL FOR="Month"> Month </label>  <SELECT NAME="month"> Month <OPTION  SELECTED VALUE="march/april">March/April<OPTION VALUE="january/february">January/February<OPTION VALUE="all">all</select></span> </span><span id="browseGo"><button class="button" type="button" onclick="xajax_onBrowseRecipes( xajax.getFormValues('pf-browseRecipesForm'))">Go</button></span></span></p></form></div></div></div></td></tr><tr valign="top"><td colspan="3" align="center"><div class="pfheadertitle"><P>SEARCH 100,000+ RECIPES FROM MAGAZINES, NEWSPAPERS, TV, &AMP; COOKBOOKS</P></div></td></tr><tr valign="top"><td><span class="myrecipebox"><a href="index2.php?option=com_pfrecipetracker&action=tracked"><img style="border:0;padding-left:0px" src="images/buttons/myrecipebox.jpg"></a></span></td><td><div class="pfheaderbox-left"><div class="top-left"></div><div class="top-right"></div>
+	              <div class="inside">
+                      <div class="nogaps"><table width="100%"><tr valign="top"><td width="35%"><div class="module" style="margin-top:0px;padding-bottom:0px"><h2 style="font-size:12pt; margin-top:0px; margin-bottom:0px">RECIPE SEARCH</h2></div></td><td align="right" style="margin-right:5px; padding:0px"><span><a href="/recipe-box.html">Tell me more about Project Foodie recipe search</a></span></td></tr></table><table width="100%"><tr valign="top"><td><div class="pfrecipesearch" ><form id="pfrecipesearchForm" action="index2.php" method="get" ">
+	<input type="hidden" name="option" value="com_pfrecipetracker" />
+	<input type="hidden" name="ss" value="0" />
+	<input type="hidden" name="action" value="search"/> <p style="text-align:left"><span style="white-space: nowrap"><input name="searchword" type="text" value="enter recipe title words and/or publication title" size="40" id="searchword" onclick="this.value='';" onfocus="this.select()" onblur="this.value=!this.value?'enter recipe title words and/or publication title':this.value;" onKeyPress="return searchSubmitEnter(xajax.getFormValues('pfrecipesearchForm'), event)" /><img style="vertical-align:middle" class="pfrecipedisplayimg" style="border:0" src="images/buttons/search.jpg" onmouseover="this.src='images/buttons/search-hover.jpg';" onmouseout="this.src='images/buttons/search.jpg';" onclick="onSearch( xajax.getFormValues('pfrecipesearchForm'))"></span><span style="display:none" id="ingrSearchNum">1</span><div id="input-ingr0" style="display:"><input name="ingr0" type="text" value="and/or enter ingredient" size="30" id="ingr0" onclick="(this.value=='and/or enter ingredient')?this.value='':this.value=this.value;" onfocus="this.select()" onblur="this.value=!this.value?'and/or enter ingredient':this.value;"  onKeyPress="return searchSubmitEnter(xajax.getFormValues('pfrecipesearchForm'), event)" /><span class="pfingrlink" id="del-ingr0" onclick="removeIngr(0)" style="display:none">X</span><span class="pfingrlink" id="add-ingr0" onclick="addIngr('ingr0', 'ingr1') ">add&nbsp;another&nbsp;ingredient</span></div><div id="input-ingr1" style="display:none"><input name="ingr1" type="text" value="and/or enter ingredient" size="30" id="ingr1" onclick="(this.value=='and/or enter ingredient')?this.value='':this.value=this.value;" onfocus="this.select()" onblur="this.value=!this.value?'and/or enter ingredient':this.value;"  onKeyPress="return searchSubmitEnter(xajax.getFormValues('pfrecipesearchForm'), event)" /><span class="pfingrlink" id="del-ingr1" onclick="removeIngr(1)" style="display:none">X</span><span class="pfingrlink" id="add-ingr1" onclick="addIngr('ingr1', 'ingr2') ">add&nbsp;another&nbsp;ingredient</span></div><div id="input-ingr2" style="display:none"><input name="ingr2" type="text" value="and/or enter ingredient" size="30" id="ingr2" onclick="(this.value=='and/or enter ingredient')?this.value='':this.value=this.value;" onfocus="this.select()" onblur="this.value=!this.value?'and/or enter ingredient':this.value;"  onKeyPress="return searchSubmitEnter(xajax.getFormValues('pfrecipesearchForm'), event)" /><span class="pfingrlink" id="del-ingr2" onclick="removeIngr(2)" style="display:none">X</span><span class="pfingrlink" id="add-ingr2" onclick="addIngr('ingr2', 'ingr3') ">add&nbsp;another&nbsp;ingredient</span></div><div id="input-ingr3" style="display:none"><input name="ingr3" type="text" value="and/or enter ingredient" size="30" id="ingr3" onclick="(this.value=='and/or enter ingredient')?this.value='':this.value=this.value;" onfocus="this.select()" onblur="this.value=!this.value?'and/or enter ingredient':this.value;"  onKeyPress="return searchSubmitEnter(xajax.getFormValues('pfrecipesearchForm'), event)" /><span class="pfingrlink" id="del-ingr3" onclick="removeIngr(3)" style="display:none">X</span><span class="pfingrlink" id="add-ingr3" onclick="addIngr('ingr3', 'ingr4') ">add&nbsp;another&nbsp;ingredient</span></div><div id="input-ingr4" style="display:none"><input name="ingr4" type="text" value="and/or enter ingredient" size="30" id="ingr4" onclick="(this.value=='and/or enter ingredient')?this.value='':this.value=this.value;" onfocus="this.select()" onblur="this.value=!this.value?'and/or enter ingredient':this.value;" onKeyPress="return searchSubmitEnter(xajax.getFormValues('pfrecipesearchForm'), event)" /><span class="pfingrlink" id="del-ingr4" onclick="removeIngr(4)" style="display:none">X</span><span class="pfingrlink" id="add-ingr4" style="display:none" onclick="addIngr('ingr4', 'ingr5') ">add&nbsp;another&nbsp;ingredient</span></div></p><span></span></form></p></div></td><td style="width:90px"><div class="pfheadertitle"><p style="text-align:left"><em>-&nbsp;or&nbsp;-</em></p></div></td><td align="left"><div class="pfrecipesearch" ><form action="index2.php" method="get">
+	<input type="hidden" name="option" value="com_pfrecipetracker" />
+	<input type="hidden" name="action" value="spin" /><input type="image" style="vertical-align:middle" class="pfrecipedisplayimg" style="border:0" src="images/buttons/surprise.jpg" onmouseover="this.src='images/buttons/surprise-hover.jpg';" onmouseout="this.src='images/buttons/surprise.jpg';" onclick="this.submit()"></p></form></p></div></td></tr><tr><td align="center"><p id="pfrecipesources-showMore" class="pflink" onclick="xajax_showDiv('pfrecipesources', 'pfrecipesources-showMore', 'pfrecipesources-showLess')">browse recipes by publication</p><p id="pfrecipesources-showLess" class="pflink" style="display:none" onclick="xajax_hideDiv('pfrecipesources', 'pfrecipesources-showMore', 'pfrecipesources-showLess')">close by browse recipes publication</p></td><td colspan="2" align="center"><p id="pf-showBrowser" class="pflink" onclick="xajax_showDiv('pf-recipebrowser', 'pf-showBrowser', 'pf-hideBrowser')">browse recipes  by issue</p><p id="pf-hideBrowser" class="pflink" style="display:none"  onclick="xajax_hideDiv('pf-recipebrowser', 'pf-showBrowser', 'pf-hideBrowser')">close browse recipes by issue</p></td></tr></td></tr></table></div></div>
+	              <div class="bottom-left"></div><div class="bottom-right"></div>
+	               <div class="bottom-space"></div></div></td><td width="150px" rowspan="8" ><div class="pfheaderline"></div><div class="pfheadertitle-small"><table><tr align="cleft"><td><div class="module"><h2 style="font-size:12pt">Like Us?</h2><h3 style="font-size:10pt">SPREAD THE WORD!</h3></div><iframe src="http://www.facebook.com/widgets/like.php?href=http://www.projectfoodie.com&amp;layout=standard&amp; show_faces=false&amp; width=165&amp; action=like&amp; colorscheme=light&amp; height=60" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:165px; height:60px;" allowTransparency="true"></iframe></td></tr></table><form id="pf-cover-form" style="margin:0"><input id="pf-cover-form-id" type="hidden" name="id" value="6"/></form><table><tr align="center" style="padding-top:15px;margin-bottom:10px"></td></tr></table></div></p></div></tr><tr><td colspan="3"><div class="pfheader"><div class="tagcloud" align="center"><table style="width:100%"><tbody><tr><td align=center valign=center style="padding-right:5pt"><a href="recipes/tag/" style='font-size:94.576271186441%;'></a> <a href="recipes/tag/holidaybaking" style='font-size:86.949152542373%;'>HolidayBaking</a> <a href="recipes/tag/bars" style='font-size:91.186440677966%;'>bars</a> <a href="recipes/tag/bass" style='font-size:70.847457627119%;'>bass</a> <a href="recipes/tag/beef" style='font-size:118.30508474576%;'>beef</a> <a href="recipes/tag/biscuits" style='font-size:81.864406779661%;'>biscuits</a> <a href="recipes/tag/bread" style='font-size:113.22033898305%;'>bread</a> <a href="recipes/tag/breakfast" style='font-size:110.67796610169%;'>breakfast</a> <a href="recipes/tag/cake" style='font-size:114.06779661017%;'>cake</a> <a href="recipes/tag/clams" style='font-size:81.016949152542%;'>clams</a> <a href="recipes/tag/cookies" style='font-size:111.52542372881%;'>cookies</a> <a href="recipes/tag/crab" style='font-size:98.813559322034%;'>crab</a> <a href="recipes/tag/cupcakes" style='font-size:89.491525423729%;'>cupcakes</a> <a href="recipes/tag/dip" style='font-size:95.423728813559%;'>dip</a> <a href="recipes/tag/dressing" style='font-size:99.661016949153%;'>dressing</a> <a href="recipes/tag/drinks" style='font-size:116.61016949153%;'>drinks</a> <a href="recipes/tag/duck" style='font-size:86.101694915254%;'>duck</a> <a href="recipes/tag/eggs" style='font-size:108.13559322034%;'>eggs</a> <a href="recipes/tag/frosting" style='font-size:84.406779661017%;'>frosting</a> <a href="recipes/tag/frozen" style='font-size:103.05084745763%;'>frozen</a> <a href="recipes/tag/halibut" style='font-size:80.169491525424%;'>halibut</a> <a href="recipes/tag/halloween" style='font-size:78.474576271186%;'>halloween</a> <a href="recipes/tag/ham" style='font-size:92.881355932203%;'>ham</a> <a href="recipes/tag/ice-cream" style='font-size:88.64406779661%;'>ice cream</a> <a href="recipes/tag/lamb" style='font-size:104.74576271186%;'>lamb</a> <a href="recipes/tag/lasagna" style='font-size:82.71186440678%;'>lasagna</a> <a href="recipes/tag/lobster" style='font-size:83.559322033898%;'>lobster</a> <a href="recipes/tag/misc" style='font-size:105.59322033898%;'>misc</a> <a href="recipes/tag/muffins" style='font-size:90.338983050847%;'>muffins</a> <a href="recipes/tag/mussels" style='font-size:77.627118644068%;'>mussels</a> <a href="recipes/tag/nuts" style='font-size:108.98305084746%;'>nuts</a> <a href="recipes/tag/oysters" style='font-size:71.694915254237%;'>oysters</a> <a href="recipes/tag/pie" style='font-size:109.83050847458%;'>pie</a> <a href="recipes/tag/pizza" style='font-size:102.20338983051%;'>pizza</a> <a href="recipes/tag/pork" style='font-size:115.76271186441%;'>pork</a> <a href="recipes/tag/poultry" style='font-size:75.932203389831%;'>poultry</a> <a href="recipes/tag/pudding" style='font-size:100.50847457627%;'>pudding</a> <a href="recipes/tag/rolls" style='font-size:73.389830508475%;'>rolls</a> <a href="recipes/tag/salmon" style='font-size:107.28813559322%;'>salmon</a> <a href="recipes/tag/salsa" style='font-size:96.271186440678%;'>salsa</a> <a href="recipes/tag/sandwiches" style='font-size:114.91525423729%;'>sandwiches</a> <a href="recipes/tag/sauce" style='font-size:117.45762711864%;'>sauce</a> <a href="recipes/tag/sausage" style='font-size:103.89830508475%;'>sausage</a> <a href="recipes/tag/scallops" style='font-size:93.728813559322%;'>scallops</a> <a href="recipes/tag/scones" style='font-size:74.237288135593%;'>scones</a> <a href="recipes/tag/shrimp" style='font-size:112.37288135593%;'>shrimp</a> <a href="recipes/tag/snacks" style='font-size:87.796610169492%;'>snacks</a> <a href="recipes/tag/sorbet" style='font-size:76.779661016949%;'>sorbet</a> <a href="recipes/tag/soup" style='font-size:119.15254237288%;'>soup</a> <a href="recipes/tag/st-patricks-day" style='font-size:79.322033898305%;'>st-patricks-day</a> <a href="recipes/tag/stew" style='font-size:97.118644067797%;'>stew</a> <a href="recipes/tag/thanksgiving" style='font-size:101.35593220339%;'>thanksgiving</a> <a href="recipes/tag/trout" style='font-size:70%;'>trout</a> <a href="recipes/tag/try" style='font-size:92.033898305085%;'>try</a> <a href="recipes/tag/tuna" style='font-size:97.966101694915%;'>tuna</a> <a href="recipes/tag/turkey" style='font-size:106.4406779661%;'>turkey</a> <a href="recipes/tag/valentines-day" style='font-size:75.084745762712%;'>valentines-day</a> <a href="recipes/tag/veal" style='font-size:85.254237288136%;'>veal</a> <a href="recipes/tag/vietnamese" style='font-size:72.542372881356%;'>vietnamese</a> </td> </tr> </tbody></table></div></div></div></tr></table><div class="pfheaderline"></div>			</td>
+			    		</tr>
+		</table>
+		</td>
+</tr>
+</table>
+            </td>
+        </tr>
+
+        <tr><td colspan="2">
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+<tr>
+<td valign="middle">
+		<table cellpadding="0" cellspacing="0" class="moduletable">
+		<tr>
+		   <td>
+		   <div class="module"><h2>Recipes</h2><div class="moduleGraphicTop"></div><div class="moduleGraphicBottom"></div><h3>RECENTLY ADDED, COMMENTED, RATED, SAVED AND TAGGED</h3></a><table><tr valign="top"><td width="14.285714285714%" style="padding:4px"><p class="moduleCenter"><a href="http://www.projectfoodie.com/recipes/moroccan-spiced-lamb-burgers-with-beet-red-onion-and-orange-salsa-5232.html"><img style="border:0pt;margin-bottom:5px" src="http://www.projectfoodie.com/images/recipes/5/5232-thumb.jpg"></a></p><p style="font-size:8pt"><a style="color:#585858" href="http://www.projectfoodie.com/recipes/moroccan-spiced-lamb-burgers-with-beet-red-onion-and-orange-salsa-5232.html"><strong>Moroccan-Spiced Lamb Burgers with Beet, Red Onion, and Orange Salsa</strong></a> from Bon App&eacute;tit<em> - 5 stars</em></p></td><td width="14.285714285714%" style="padding:4px"><p class="moduleCenter"><a href="http://www.projectfoodie.com/recipes/bass-with-herbed-rice-and-coconut-vegetable-chowder-110221.html"><img style="border:0pt;margin-bottom:5px" src="http://www.projectfoodie.com/images/recipes/110/110221-thumb.jpg"></a></p><p style="font-size:8pt"><a style="color:#585858" href="http://www.projectfoodie.com/recipes/bass-with-herbed-rice-and-coconut-vegetable-chowder-110221.html"><strong>Bass With Herbed Rice and Coconut-Vegetable Chowder</strong></a> from Bon App&eacute;tit<em> - 5 stars</em></p></td><td width="14.285714285714%" style="padding:4px"><p class="moduleCenter"><a href="http://www.projectfoodie.com/recipes/mocha-chocolate-fudge-103100.html"><img style="border:0pt;margin-bottom:5px" src="http://www.projectfoodie.com/images/recipes/103/103100-thumb.jpg"></a></p><p style="font-size:8pt"><a style="color:#585858" href="http://www.projectfoodie.com/recipes/mocha-chocolate-fudge-103100.html"><strong>Mocha-Chocolate Fudge</strong></a> from Fine Cooking</p></td><td width="14.285714285714%" style="padding:4px"><p class="moduleCenter"><a href="http://www.projectfoodie.com/recipes/stuffed-beef-in-tomato-sauce-(involtini-in-sugo)-104500.html"><img style="border:0pt;margin-bottom:5px" src="http://www.projectfoodie.com/images/recipes/104/104500-thumb.jpg"></a></p><p style="font-size:8pt"><a style="color:#585858" href="http://www.projectfoodie.com/recipes/stuffed-beef-in-tomato-sauce-(involtini-in-sugo)-104500.html"><strong>Stuffed Beef In Tomato Sauce (Involtini In Sugo)</strong></a> from Saveur</p></td><td width="14.285714285714%" style="padding:4px"><p class="moduleCenter"><a href="http://www.projectfoodie.com/recipes/artichoke-bottoms-with-shrimp-lemon-butter-and-herbed-breadcrumbs-105054.html"><img style="border:0pt;margin-bottom:5px" src="http://www.projectfoodie.com/images/recipes/105/105054-thumb.jpg"></a></p><p style="font-size:8pt"><a style="color:#585858" href="http://www.projectfoodie.com/recipes/artichoke-bottoms-with-shrimp-lemon-butter-and-herbed-breadcrumbs-105054.html"><strong>Artichoke Bottoms with Shrimp, Lemon Butter, and Herbed Breadcrumbs</strong></a> from Fine Cooking</p></td><td width="14.285714285714%" style="padding:4px"><p class="moduleCenter"><a href="http://www.projectfoodie.com/recipes/cannoli-cream-banana-parfaits-113814.html"><img style="border:0pt;margin-bottom:5px" src="http://www.projectfoodie.com/images/recipes/113/113814-thumb.jpg"></a></p><p style="font-size:8pt"><a style="color:#585858" href="http://www.projectfoodie.com/recipes/cannoli-cream-banana-parfaits-113814.html"><strong>Cannoli Cream Banana Parfaits</strong></a> from Every Day with Rachael Ray</p></td><td width="14.285714285714%" style="padding:4px"><p class="moduleCenter"><a href="http://www.projectfoodie.com/recipes/cashew-pesto-pasta-115941.html"><img style="border:0pt;margin-bottom:5px" src="http://www.projectfoodie.com/images/recipes/115/115941-thumb.jpg"></a></p><p style="font-size:8pt"><a style="color:#585858" href="http://www.projectfoodie.com/recipes/cashew-pesto-pasta-115941.html"><strong>Cashew-Pesto Pasta</strong></a> from Every Day with Rachael Ray</p></td></tr></tr><td colspan="7"><p class="pflink"><a href="browse/recipes">show me more recipes >> </a></p></table><div class="module"><h2>Magazines</h2><div class="moduleGraphicTop"></div><div class="moduleGraphicBottom"></div><h3>RECENTLY ADDED ISSUES</h3></a><table style="padding-left:10px" width="100%"><tr width="100%"><td width="14.285714285714%"><a class="nohover" href="recipes/bon-appetit/2011/march"><img style="border:0; height:120px; margin-bottom:0px" src="/images/issues/9/9393.jpg"/></a></span></td><td width="14.285714285714%"><a class="nohover" href="recipes/coastal-living/2011/february"><img style="border:0; height:120px; margin-bottom:0px" src="/images/issues/9/9363.jpg"/></a></span></td><td width="14.285714285714%"><a class="nohover" href="recipes/sunset/2011/february"><img style="border:0; height:120px; margin-bottom:0px" src="/images/issues/9/9356.jpg"/></a></span></td><td width="14.285714285714%"><a class="nohover" href="recipes/sunset/2011/january"><img style="border:0; height:120px; margin-bottom:0px" src="/images/issues/9/9348.jpg"/></a></span></td><td width="14.285714285714%"><a class="nohover" href="recipes/everyday-food/2011/january/february"><img style="border:0; height:120px; margin-bottom:0px" src="/images/issues/9/9333.jpg"/></a></span></td><td width="14.285714285714%"><a class="nohover" href="recipes/everyday-food/2010/december"><img style="border:0; height:120px; margin-bottom:0px" src="/images/issues/9/9302.jpg"/></a></span></td><td width="14.285714285714%"><a class="nohover" href="recipes/bon-appetit/2011/february"><img style="border:0; height:120px; margin-bottom:0px" src="/images/issues/9/9276.jpg"/></a></span></td></tr><td colspan="7"><p class="pflink"><a href="browse/magazines">show me more magazine issues >> </a></p></tr></table><div class="module" style="padding-bottom:0px"><h2>Cookbooks</h2><div class="moduleGraphicTop"></div><div class="moduleGraphicBottom"></div><h3>RECIPES TO TRY</h3></a><table style="padding-left:4px" width="100%"><tr width="100%"><td><a class="nohover" href="recipes/macarons:-authentic-french-cookie-recipes-from-the-macaron-cafe"><img style="border:0; margin-bottom:0px" src="/images/sources/1/1063.jpg"/></a></span></td><td><a class="nohover" href="recipes/mr.-sundays-soups"><img style="border:0; margin-bottom:0px" src="/images/sources/1/1048.jpg"/></a></span></td><td><a class="nohover" href="recipes/sausage:-recipes-for-making-and-cooking-with-homemade-sausage"><img style="border:0; margin-bottom:0px" src="/images/sources/1/1047.jpg"/></a></span></td><td><a class="nohover" href="recipes/gourmet-vegetarian-slow-cooker"><img style="border:0; margin-bottom:0px" src="/images/sources/1/1044.jpg"/></a></span></td><td><a class="nohover" href="recipes/gluten-free-girl-and-the-chef"><img style="border:0; margin-bottom:0px" src="/images/sources/1/1023.jpg"/></a></span></td><td><a class="nohover" href="recipes/heart-of-the-artichoke-and-other-kitchen-journeys"><img style="border:0; margin-bottom:0px" src="/images/sources/1/1015.jpg"/></a></span></td><td><a class="nohover" href="recipes/gifts-cooks-love"><img style="border:0; margin-bottom:0px" src="/images/sources/1/1013.jpg"/></a></span></td></tr><td colspan="7"><p class="pflink"><a href="browse/cookbooks">show me more cookbooks with recipes to try >> </a></p></tr></table>
+
+
+
+
+			</td>
+			    </div>		</tr>
+		</table>
+		</td>
+</tr>
+</table>
+            </td>
+        </tr>
+
+	          <tr valign="top" style="vertical-align:top"><td style="padding-left:5px; valign="top">
+            <table><tr><td class="LeftColumn" valign="top">
+              		<table cellpadding="0" cellspacing="0" class="moduletable">
+		<tr>
+		   <td>
+		   <div class="module"><div class="moduleLargeWrapper"><h2>Foodie Fodder</h2><div class="moduleLargeGraphicTop"></div></div><div class="moduleLargeGraphicBottom"></div><h3>RECENT ARTICLES, COOKBOOK REVIEWS &AMP; MORE</h3><h1></h1></div><table><tr><td width="50%" valign="top" style="padding-right:10px; padding-left:0px; border-right:1pt solid #B4CF33" ><table><tr><td><div class="pfmostrecent"><div style="padding-top:0px"><p><h5 style="text-align:center; font-size:14pt;display:inline">March into the Kitchen</h5><p style="font-size:8pt"><em> by <a href=".html" style="font-size:8pt">Team Project Foodie</a></em></p></div><p style="padding-bottom:5pt"> <p style="padding-bottom:5pt"><img align="right" src="http://www.projectfoodie.com/images/stories/daily/1889.jpg">As we eagerly await the end of frigid temperatures, hunkering down in a kitchen warmed by a hot oven remains a favorite pastime for many.&nbsp; </p><p style="padding-bottom:5pt">That&#39;s why this month&#39;s cookbook choices include plenty of ideas for making the most of your oven, especially baking homemade bread and dozens of irresistible cookies.&nbsp; To spice things up a bit (and conserve energy!) we&#39;ve also included some guidelines for &quot;clean living&quot;, and a kick of heat that has absolutely nothing...</div></td></tr></table></td><td width="50%" valign="top" style="padding-left:10px"><table><tr><td><div class="pfmostrecent"><div style="padding-top:0px"><p><h5 style="text-align:center; font-size:14pt;display:inline">Life, on the Line</h5><p style="font-size:8pt"><em> by <a href="CarolynJung.html" style="font-size:8pt">Carolyn Jung</a></em></p></div><p style="padding-bottom:5pt"> <p style="padding-bottom:5pt"><a href="http://www.amazon.com/gp/product/1592406017?ie=UTF8&amp;tag=projfood-20&amp;linkCode=as2&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1592406017"><img align="right" src="http://www.projectfoodie.com/images/stories/daily/1888.jpg"></a>When Chef Grant Achatz opened his acclaimed restaurant, Alinea, in Chicago, he named it for the paragraph mark to symbolize how his cuisine there would represent a &ldquo;new train of thought&rsquo;&rsquo; never before experienced in fine-dining.</p><p style="padding-bottom:5pt">Little did he know that exact same philosophy also would help save his life a few years later, when he battled stage 4 squamous cell carcinoma. There is no stage 5.</p><p style="padding-bottom:5pt">No doubt you&rsquo;re familiar with Achatz&rsquo;s stunning story, which has been...</div></td></tr></table></td></tr><tr align="bottom"><td><table class="contentfooter" width="95%"><tr><td align="right"><p><a class="continuereading" href="index.php?option=com_content&amp;task=view&amp;id=1889&Itemid=122">continue reading &gt; </a></p></td><tr><td><div class="chicklets"><table><tr><td><span class="help" onmouseover="return overlib('Stumble It!', CAPTION, 'Stumble', BELOW, RIGHT)" onmouseout="return nd();";><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1889%26amp%3BItemid%3D122&title=March+into+the+Kitchen" target=_blank rel="nofollow"><img src="http://www.projectfoodie.com/images/stumble.gif" border="0"></a></span></td><td><span class="help" onmouseover="return overlib('Share on Facebook', CAPTION, 'Facebook', BELOW, RIGHT)" onmouseout="return nd();";><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1889%26amp%3BItemid%3D122" target=_blank rel="nofollow"><img src="http://www.projectfoodie.com/images/fb-thumb.jpg" border="0"></a></span></td><td><span class="help" onmouseover="return overlib('Digg This!', CAPTION, 'Digg', BELOW, RIGHT)" onmouseout="return nd();";><a href="http://digg.com/submit?url=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1889%26amp%3BItemid%3D122&title=March+into+the+Kitchen" target=_blank rel="nofollow"><img src="http://www.projectfoodie.com/images/digg-thumb.gif" border="0"></a></span></td><td><span class="help" onmouseover="return overlib('Bookmark using any bookmark manager', CAPTION, 'Add This', BELOW, RIGHT)" onmouseout="return nd();";><a href="http://www.addthis.com/bookmark.php?pub=projectfoodie&url=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1889%26amp%3BItemid%3D122&title=March+into+the+Kitchen" target=_blank rel="nofollow"><img src="http://www.projectfoodie.com/images/sm-plus.gif" border="0"></a></span></td></tr></table><iframe src="http://www.facebook.com/widgets/like.php?href=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1889%26amp%3BItemid%3D122&amp;layout=standard&amp;show_faces=false&amp;width=300&amp;action=like&amp;colorscheme=light&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:35px;" allowTransparency="true"></iframe></div><a name="comment-1889" title="comment-1889"></a></td></tr></tr><tr><td><div class="postcomment"><a href="index.php?option=com_content&task=view&id=1889&Itemid=122#comment-1889">post a comment</a></div></td></tr></table></div></td><td><table class="contentfooter" width="95%"><tr><td align="right"><p><a class="continuereading" href="index.php?option=com_content&amp;task=view&amp;id=1888&Itemid=122">continue reading &gt; </a></p></td><tr><td><div class="chicklets"><table><tr><td><span class="help" onmouseover="return overlib('Stumble It!', CAPTION, 'Stumble', BELOW, RIGHT)" onmouseout="return nd();";><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1888%26amp%3BItemid%3D122&title=Life%2C+on+the+Line" target=_blank rel="nofollow"><img src="http://www.projectfoodie.com/images/stumble.gif" border="0"></a></span></td><td><span class="help" onmouseover="return overlib('Share on Facebook', CAPTION, 'Facebook', BELOW, RIGHT)" onmouseout="return nd();";><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1888%26amp%3BItemid%3D122" target=_blank rel="nofollow"><img src="http://www.projectfoodie.com/images/fb-thumb.jpg" border="0"></a></span></td><td><span class="help" onmouseover="return overlib('Digg This!', CAPTION, 'Digg', BELOW, RIGHT)" onmouseout="return nd();";><a href="http://digg.com/submit?url=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1888%26amp%3BItemid%3D122&title=Life%2C+on+the+Line" target=_blank rel="nofollow"><img src="http://www.projectfoodie.com/images/digg-thumb.gif" border="0"></a></span></td><td><span class="help" onmouseover="return overlib('Bookmark using any bookmark manager', CAPTION, 'Add This', BELOW, RIGHT)" onmouseout="return nd();";><a href="http://www.addthis.com/bookmark.php?pub=projectfoodie&url=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1888%26amp%3BItemid%3D122&title=Life%2C+on+the+Line" target=_blank rel="nofollow"><img src="http://www.projectfoodie.com/images/sm-plus.gif" border="0"></a></span></td></tr></table><iframe src="http://www.facebook.com/widgets/like.php?href=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1888%26amp%3BItemid%3D122&amp;layout=standard&amp;show_faces=false&amp;width=300&amp;action=like&amp;colorscheme=light&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:35px;" allowTransparency="true"></iframe></div><a name="comment-1888" title="comment-1888"></a></td></tr></tr><tr><td><div class="postcomment"><a href="index.php?option=com_content&task=view&id=1888&Itemid=122#comment-1888">post a comment</a></div></td></tr></table></div></td></tr><tr style="border-bottom:1pt solid #B4CF33"><td width="50%" valign="top" style="padding-right:10px; padding-left:0px; border-right:1pt solid #B4CF33" ><table><tr><td><div class="pfmostrecent"><div style="padding-top:0px"><p><h5 style="text-align:center; font-size:14pt;display:inline">In Season: Mandarins</h5><p style="font-size:8pt"><em> by <a href="SophiaMarkoulakis.html" style="font-size:8pt">Sophia Markoulakis</a></em></p></div><p style="padding-bottom:5pt"> <p align="center"><em>Mandarin recipes to try: <a href="#salad">salads</a> | <a href="#main">mains</a> | <a href="#desserts">desserts</a><a href="#main"></a>  </em></p><em>For more great recipes using in season items check out  Sophia&#39;s posts on <a href="content/view/1528/150/">Heirloom Apples</a>, <a href="content/view/1568/150/">Butternut Squash</a>  and <a href="content/view/1499/150/">Figs</a>&nbsp; </em><p style="padding-bottom:5pt"><img align="right" src="http://www.projectfoodie.com/images/stories/daily/1876.jpg">The amazing variety of mandarins available at the market today has reached distracting proportions. Just when you find your personal favorite, a new hybrid comes along promising to be even more flavorful. For almost a century, citrus breeders...</div></td></tr></table></td><td width="50%" valign="top" style="padding-left:10px"><table><tr><td><div class="pfmostrecent"><div style="padding-top:0px"><p><h5 style="text-align:center; font-size:14pt;display:inline">A Radical Departure</h5><p style="font-size:8pt"><em> by <a href="PeggyFallon.html" style="font-size:8pt">Peggy Fallon</a></em></p></div><p style="padding-bottom:5pt"> <p style="padding-bottom:5pt"><img align="right" src="http://www.projectfoodie.com/images/stories/daily/1878.jpg">When creating new recipes most inexperienced cooks assume they will eventually hit the jackpot if they just continue to add a pinch of this and a teaspoon of that&mdash;a routine that confuses an endless stream of ingredients with originality. The final result may taste okay, but the flavors are usually muddled and the list of ingredients far too lengthy to ever tempt you into making it again. It takes a talented chef with an imaginative yet discriminating...</div></td></tr></table></td></tr><tr align="bottom"><td><table class="contentfooter" width="95%"><tr><td align="right"><p><a class="continuereading" href="index.php?option=com_content&amp;task=view&amp;id=1876&Itemid=127">continue reading &gt; </a></p></td><tr><td><div class="chicklets"><table><tr><td><span class="help" onmouseover="return overlib('Stumble It!', CAPTION, 'Stumble', BELOW, RIGHT)" onmouseout="return nd();";><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1876%26amp%3BItemid%3D127&title=In+Season%3A+Mandarins" target=_blank rel="nofollow"><img src="http://www.projectfoodie.com/images/stumble.gif" border="0"></a></span></td><td><span class="help" onmouseover="return overlib('Share on Facebook', CAPTION, 'Facebook', BELOW, RIGHT)" onmouseout="return nd();";><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1876%26amp%3BItemid%3D127" target=_blank rel="nofollow"><img src="http://www.projectfoodie.com/images/fb-thumb.jpg" border="0"></a></span></td><td><span class="help" onmouseover="return overlib('Digg This!', CAPTION, 'Digg', BELOW, RIGHT)" onmouseout="return nd();";><a href="http://digg.com/submit?url=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1876%26amp%3BItemid%3D127&title=In+Season%3A+Mandarins" target=_blank rel="nofollow"><img src="http://www.projectfoodie.com/images/digg-thumb.gif" border="0"></a></span></td><td><span class="help" onmouseover="return overlib('Bookmark using any bookmark manager', CAPTION, 'Add This', BELOW, RIGHT)" onmouseout="return nd();";><a href="http://www.addthis.com/bookmark.php?pub=projectfoodie&url=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1876%26amp%3BItemid%3D127&title=In+Season%3A+Mandarins" target=_blank rel="nofollow"><img src="http://www.projectfoodie.com/images/sm-plus.gif" border="0"></a></span></td></tr></table><iframe src="http://www.facebook.com/widgets/like.php?href=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1876%26amp%3BItemid%3D127&amp;layout=standard&amp;show_faces=false&amp;width=300&amp;action=like&amp;colorscheme=light&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:35px;" allowTransparency="true"></iframe></div><a name="comment-1876" title="comment-1876"></a></td></tr></tr><tr><td><div class="postcomment"><a href="index.php?option=com_content&task=view&id=1876&Itemid=127#comment-1876">post a comment</a></div></td></tr></table></div></td><td><table class="contentfooter" width="95%"><tr><td align="right"><p><a class="continuereading" href="index.php?option=com_content&amp;task=view&amp;id=1878&Itemid=122">continue reading &gt; </a></p></td><tr><td><div class="chicklets"><table><tr><td><span class="help" onmouseover="return overlib('Stumble It!', CAPTION, 'Stumble', BELOW, RIGHT)" onmouseout="return nd();";><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1878%26amp%3BItemid%3D122&title=A+Radical+Departure" target=_blank rel="nofollow"><img src="http://www.projectfoodie.com/images/stumble.gif" border="0"></a></span></td><td><span class="help" onmouseover="return overlib('Share on Facebook', CAPTION, 'Facebook', BELOW, RIGHT)" onmouseout="return nd();";><a href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1878%26amp%3BItemid%3D122" target=_blank rel="nofollow"><img src="http://www.projectfoodie.com/images/fb-thumb.jpg" border="0"></a></span></td><td><span class="help" onmouseover="return overlib('Digg This!', CAPTION, 'Digg', BELOW, RIGHT)" onmouseout="return nd();";><a href="http://digg.com/submit?url=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1878%26amp%3BItemid%3D122&title=A+Radical+Departure" target=_blank rel="nofollow"><img src="http://www.projectfoodie.com/images/digg-thumb.gif" border="0"></a></span></td><td><span class="help" onmouseover="return overlib('Bookmark using any bookmark manager', CAPTION, 'Add This', BELOW, RIGHT)" onmouseout="return nd();";><a href="http://www.addthis.com/bookmark.php?pub=projectfoodie&url=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1878%26amp%3BItemid%3D122&title=A+Radical+Departure" target=_blank rel="nofollow"><img src="http://www.projectfoodie.com/images/sm-plus.gif" border="0"></a></span></td></tr></table><iframe src="http://www.facebook.com/widgets/like.php?href=http%3A%2F%2Fwww.projectfoodie.com%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D1878%26amp%3BItemid%3D122&amp;layout=standard&amp;show_faces=false&amp;width=300&amp;action=like&amp;colorscheme=light&amp;height=35" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:35px;" allowTransparency="true"></iframe></div><a name="comment-1878" title="comment-1878"></a></td></tr></tr><tr><td><div class="postcomment"><a href="index.php?option=com_content&task=view&id=1878&Itemid=122#comment-1878">comments (4)</a></div></td></tr></table></div></td></tr><tr style="border-bottom:1pt solid #B4CF33"></table>
+
+
+			</td>
+			    		</tr>
+		</table>
+		              
+
+
+<a href="/component/option,com_frontpage/Itemid,1/limit,4/limitstart,4/">see more articles >></a>              </td></tr></table>
+             </td> 
+         
+		  <td class="RightColumn" width="185px" valign="top">
+             		<table cellpadding="0" cellspacing="0" class="moduletable">
+		<tr>
+		   <td>
+		   <div class="module" style="padding-bottom:10px"><h2>Recipe</h2><div class="moduleGraphicTop"></div><div class="moduleGraphicBottom"></div><h3>OF THE DAY</h3></a><p class="moduleCenter"><a href="http://www.projectfoodie.com/index.php?option=com_content&task=view&id=1891&Itemid=150"><img style="border:0pt;margin-bottom:5px" src="http://www.projectfoodie.com/images/recipes/117/117209-thumb.jpg"></a></p><p style="font-size:8pt"><a style="color:#585858" href="http://www.projectfoodie.com/index.php?option=com_content&task=view&id=1891&Itemid=150"><strong>Ultimate Sriracha Burger</strong></a> from The Sriracha Cookbook</p></div>			</td>
+			    		</tr>
+		</table>
+				<table cellpadding="0" cellspacing="0" class="moduletable">
+		<tr>
+		   <td>
+		   <div class="module"><div class="moduleGraphicWrapper"><h2>Recipes</h2><div class="moduleGraphicTop"></div></div><div class="moduleGraphicBottom"></div><h3>BY ACTIVITY </h3></div><div class="tagcloud"><ul><li><a href="index2.php?option=com_pfrecipetracker&action=recent&event=track">Recently Saved </a></li><li><a href="index2.php?option=com_pfrecipetracker&action=recent&event=tag">Recently Tagged</a></li><li><a href="index2.php?option=com_pfrecipetracker&action=recent&event=comment">Recently Commented</a></li><li><a href="index2.php?option=com_pfrecipetracker&action=recent&event=rated">Recently Rated</a></li><li><a href="index2.php?option=com_pfrecipetracker&action=recent&event=topratednew">Top Rated Newly Added</a></li><li><a href="index2.php?option=com_pfrecipetracker&action=recent&event=healthful">Healthful Rated</a></li></ul>			</td>
+			    		</tr>
+		</table>
+				<table cellpadding="0" cellspacing="0" class="moduletable">
+		<tr>
+		   <td>
+		   <!-- Begin Adify tag for "righttower" Ad Space (160x600) ID #1000001803307 -->
+<script type="text/javascript">
+	sr_adspace_id = 1000001803307;
+	sr_adspace_width = 160;
+	sr_adspace_height = 600;
+	sr_ad_new_window = true;
+	sr_adspace_type = "graphic";
+</script>
+<script type="text/javascript" src="http://ad.afy11.net/srad.js?azId=1000001803307">
+</script>
+<!-- End Adify tag for "righttower" Ad Space (160x600) ID #1000001803307 -->			</td>
+			    		</tr>
+		</table>
+				<table cellpadding="0" cellspacing="0" class="moduletable">
+		<tr>
+		   <td>
+		   <br>
+<br>
+<!-- Begin Adify tag for "Platefull Badge" Widget Space (159x80) ID #1000000819872 -->
+<script type="text/javascript">
+	sr_widget_id = 1000000819872;
+	sr_widget_width = 159;
+	sr_widget_height = 80;
+</script>
+<script type="text/javascript" src="http://ad.afy11.net/srwidget.js?wId=1000000819872">
+</script>
+<!-- End Adify tag for "Platefull Badge" Widget Space (159x80) ID #1000000819872 -->
+			</td>
+			    		</tr>
+		</table>
+		            </td>
+          </tr>
+        
+        <tr><td colspan="2">
+            <div class="MainBody"></div>
+            </td>
+        </tr>
+
+
+
+        <tr><td colspan="2"> 
+            <div class="pfmessage">
+            <div class="left"><span class="pathway">Home </span></div>
+            		<table cellpadding="0" cellspacing="0" class="moduletable">
+		<tr>
+		   <td>
+		   <div align="center">
+<a href="privacy.html">Privacy Policy</a> - <a href="terms-of-use.html">Terms of Use</a> - <a 
+href="content/view/399/148/">Site Index</a>
+<br>
+Copyright &copy; 2007, 2008, 2009, 2010 by Project Foodie. All Rights Reserved.
+<br />
+<p>Logo and website color scheme/theme by <a href="http://www.creativehotlist.com/index.asp?linktarget=fullprofile.asp&indID=126091&portID=153607">Elizabeth Goodspeed</a>.</p>
+</div>			</td>
+			    		</tr>
+		</table>
+				<table cellpadding="0" cellspacing="0" class="moduletable">
+		<tr>
+		   <td>
+		   <meta property="fb:admins" content="1200110863" />
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2523573-1";
+urchinTracker();
+</script>
+
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript">
+_qoptions={
+qacct:"p-car37_3zZ9g4Q"
+};
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-car37_3zZ9g4Q.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast tag -->
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<script type="text/javascript">
+_qacct="p-12AmG0LyesoS2";quantserve();</script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-12AmG0LyesoS2.gif" style="display: none" height="1" width="1" alt="Quantcast"/></noscript>
+<!-- End Quantcast tag -->
+			</td>
+			    		</tr>
+		</table>
+		            </div>
+            </td>
+        </tr>
+        <tr><td colspan="2" align="center"> 
+            		<table cellpadding="0" cellspacing="0" class="moduletable">
+		<tr>
+		   <td>
+		   <!-- Casale Media: Pop Under -->
+<script type="text/javascript"><!--
+var casaleD=new Date();var casaleR=(casaleD.getTime()%8673806982)+Math.random();
+var casaleU=escape(window.location.href);
+var casaleHost=' type="text/javascript" src="http://as.casalemedia.com/s?s=';
+document.write('<scr'+'ipt'+casaleHost+'111872&amp;u=');
+document.write(casaleU+'&amp;f=1&amp;id='+casaleR+'"><\/scr'+'ipt>');
+//--></script>
+<!-- DO NOT MODIFY -->			</td>
+			    		</tr>
+		</table>
+				<table cellpadding="0" cellspacing="0" class="moduletableHeader">
+		<tr>
+		   <td>
+		   <div class="mod_login"><form action="http://www.projectfoodie.com/component/option,com_comprofiler/Itemid,0/task,login/" method="post" id="mod_loginformHeader" style="margin:0px;">
+<span id="mod_login_usernametextHeader"><label for="mod_login_usernameHeader">Username</label></span>&nbsp;
+<input type="text" name="username" id="mod_login_usernameHeader" class="inputboxHeader" size="10" />&nbsp;
+<span id="mod_login_passwordtextHeader"><label for="mod_login_passwordHeader">Password</label></span>&nbsp;<span><input type="password" name="passwd" id="mod_login_passwordHeader" class="inputboxHeader" size="10" /></span>&nbsp;
+<input type="hidden" name="op2" value="login" />
+<input type="hidden" name="lang" value="english" />
+<input type="hidden" name="force_session" value="1" />
+<input type="hidden" name="return" value="B:aHR0cDovL3d3dy5wcm9qZWN0Zm9vZGllLmNvbS9pbmRleC5waHA/b3B0aW9uPWNvbV9mcm9udHBhZ2UmYW1wO0l0ZW1pZD0x" />
+<input type="hidden" name="message" value="0" />
+<input type="hidden" name="loginfrom" value="loginmodule" />
+<input type="hidden" name="cbsecuritym3" value="cbm_205fa9f7_3d97b470_49cd8f0f0722b640f8c647d476ebb8e5" />
+<input type="hidden" name="j1b73577d8030e6b5be16d313632ce40a" value="1" />
+<input type="hidden" name="remember" value="yes" /><input type="submit" name="Submit" class="buttonHeader" value="Login" />&nbsp;&nbsp;
+<a href="http://www.projectfoodie.com/component/option,com_comprofiler/Itemid,0/task,lostPassword/" class="mod_loginHeader">Forgot password?</a>&nbsp;
+&nbsp;<span id="mod_login_noaccountHeader">No account yet? <a href="http://www.projectfoodie.com/component/option,com_comprofiler/Itemid,0/task,registers/" class="mod_loginHeader">Register</a></span>
+</form></div>
+			</td>
+			    		</tr>
+		</table>
+		            </div>
+            </td>
+        </tr>
+    </table>
+    </td>
+</tr>
+</table>
+    <span style="display:none" id="pfParams">#-##-##-##-##-##-##-##-##-##-##-##-##-#0#-#all#-##-##-#name#-##-##-#</span><span style="display:none" id="pfrecipeids"></span><SCRIPT LANGUAGE="JAVASCRIPT" src="http://www.projectfoodie.com/includes/js/post-pf.js"></script>
+<!-- ukey="50E0CEC1" -->
+</body>
+</html>
+
+<!-- 1299118639 -->

@@ -1,0 +1,419 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Oh So Tasty!</title>
+<link rel="shortcut icon" href="http://26.media.tumblr.com/avatar_8d5dc551191c_16.png">
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<style type="text/css">
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #333333;
+        
+}
+
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: none;
+}
+
+input, textarea {
+	font: bold 1.2em Arial, Helvetica, sans-serif;
+	color: #333333;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-weight: normal;
+	color: #000000;
+}
+
+
+h1 {
+	letter-spacing: -1px;
+	font-size: 2.6em;
+        }
+h1 a {
+        color: #000000;
+}
+
+h1 a:hover {
+       color: #c00040;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h2 a {
+	text-decoration: none;
+	color: #000000;
+}
+
+h2 a:hover {
+	text-decoration: none;
+	color: #c0e0a0;
+}
+
+h3 {
+        margin: 3px;
+	font-size: 2em;
+	font-weight: normal;
+	color: #200000;
+}
+
+
+p, ul, ol {
+	margin-bottom: 1.6em;
+	line-height: 180%;
+}
+
+
+a {
+	text-decoration: none;
+        font-size: 1.1em;
+	color: #40a0f0;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #c0e0a0;
+}
+
+
+hr {
+	display: none;
+}
+
+
+/* Header */
+
+
+
+#header {
+	width: 980px;
+        padding-top: 30px;
+	height: 150px;
+	margin: 0 auto;
+}
+
+#header h1 {
+	float: left;
+	margin-top: 5px;
+	padding: 5px 50px 0 0;
+	background: FFF;
+	text-transform: lowercase;
+	letter-spacing: -3px;
+	font-size: 4.4em;
+        color: #20000;
+}
+
+
+#header h2 {
+	float: left;
+	margin: 0 0 0 -130px;
+	padding: 5px 0 0 0;
+	text-transform: lowercase;
+        letter-spacing: 5px;
+	font-size: 1em;
+	font-weight: bold;
+	color: #40a0f0;
+}
+
+#header h2 a {
+	color: #40a0f0;
+}
+
+
+/* Page */
+
+#page {
+	width: 980px;
+        -width: 5px;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 855px;
+}
+
+.post {
+	
+	background: #FFF;
+        font-size: 1.1em;
+}
+
+.post .title {
+	letter-spacing: -1px;
+	font-size: 2.4em;
+	color: #200000;
+        border-bottom: 1px solid #EFEFEF;
+}
+
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 100px;
+        padding-left: 10px;
+        border-left: 1px solid;
+        border-color: #F5F5DC;
+       
+}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#sidebar li {
+	margin-bottom: 0px;
+	padding: 15px 0px;
+	background: #FFF;
+}
+
+#sidebar li ul {
+	line-height: 2em;
+}
+
+#sidebar li li {
+	margin: 0;
+	padding: 0;
+	background: none;
+	
+}
+
+#sidebar h2 {
+	margin-bottom: 10px;
+	letter-spacing: -1px;
+	color: #200000;
+}
+
+#sidebar a {
+	border: none;
+        color: #c00040;
+}
+#sidebar a:hover {
+        color: #c00040;
+}
+
+/* Footer */
+
+#footer {
+	clear: both;
+	padding: 10px 0;
+	border-top: 10px solid #DDDDDD;
+	background: #EFEFEF;
+}
+
+#footer p {
+	margin: 0;
+	padding: 10px 0 0 0;
+	text-align: center;
+	line-height: normal;
+}
+/* POST STYLES */
+
+.post {
+  margin: 0 0 1em 0;
+}
+
+
+
+.post .caption {
+  margin-bottom: 1.5em;
+}
+
+
+.quote .words {
+  line-height: 1.2em;
+  margin: 0 0 0.4em 0;
+  
+}
+
+.quote .short {
+  line-height: 1.3em;	
+}
+
+.quote .medium {
+  line-height: 1.2em;	
+}
+
+.quote .long {
+  font-size: 1em;
+  line-height: 1.3em;	
+}
+
+.photo img {
+  display: block;
+  padding: 8px;
+  margin: 0.7em auto;
+  background: #eee;
+}
+
+.chat .conversation {
+  list-style: none;
+  padding: 0;
+}
+
+.chat .conversation .line {
+  padding: 0.4em;
+}
+
+.chat .conversation .person {
+  font-weight: bold;
+}
+
+  
+</style>
+<meta http-equiv="x-dns-prefetch-control" content="off"/></head>
+<body>
+<!-- start header -->
+<div id="header">
+       
+	<h1><a href="/">Oh So Tasty!</a></h1>
+
+</div>
+<!-- end header -->
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+
+<div id="content">
+
+
+
+
+<div class="post">
+<h2 class="title"><a href="http://ohsootasty.tumblr.com/post/144028940/buttermilk-pancakes">Jul 18,  2009</a></h2>
+
+			
+            
+        </div><!-- end post-header -->
+      
+        <div class="post"><div class="entry">
+          <h3>Buttermilk Pancakes!</h3>
+          <p>I&#8217;ve been having those pancakes for a while now&#8230; just never cared to share the recipe because it&#8217;s not something umm, &#8220;new&#8221;? I don&#8217;t know! I don&#8217;t share what I do often.</p>
+<p><img src="http://farm3.static.flickr.com/2525/3731793350_2b60979954_o.jpg" width="800" height="600"/></p>
+<p>My family has the box mix version a lot. It&#8217;s good, it&#8217;s probably one of the best mixes out there. But&#8230; it feels good to make it yourself and customize the amount of certain ingredients!</p>
+<p><i><b>Buttermilk Pancakes</b></i></p>
+<p><b>You&#8217;ll need:</b></p>
+<p>1&#160;1/4 cups all-purpose flour<br/>1 egg<br/>1 teaspoon vanilla extract<br/>1&#160;1/4 cups buttermilk <i>(or use the alternative: for every cup of buttermilk, add 1 TBS vinegar to a cup of milk)</i><br/>1/4 cup white sugar<br/>a pinch of salt<br/>1 teaspoon baking powder<br/>1 teaspoon baking soda<br/>1/4 cup vegetable oil</p>
+<p><img src="http://farm4.static.flickr.com/3655/3730996387_062b42fe5f_o.jpg" width="800" height="600"/></p>
+<p><b>Directions:</b></p>
+<p>- Preheat a skillet over medium heat. Combine all ingredients in a blender. Puree until smooth. (I like using a fork at this point to get everything to blend.. not whisk it.)</p>
+<p>- Pour batter onto the griddle, to form 5 pancakes. Flip pancakes when edges appear to dry. Cook pancakes on other side for same amount of time until golden brown.</p>
+<p>I would really like to tell you that I time my cooking, but I don&#8217;t&#8230; I just cook them till I think they&#8217;re done!</p>
+<p><br/>What I do: top each pancake with a 1/4 teaspoon butter and stack them on top of each other. It gives the pancakes an amazing flavor and some crisp! and then&#8230; you know what&#8217;s next&#8230; uncontrollably pour syrup/honey/whatever on the pancakes till you think they&#8217;re soaked enough!</p>
+<p>Tip: don&#8217;t have this everyday. You&#8217;ll be fat in&#8230; 1.32 months.</p>
+        </div></div>
+        
+    
+        
+  
+        
+  
+        
+  
+        
+  
+        
+  
+        
+        <br />
+<div style="font-size: 10px; text-align: left;"><a class="dsq-comment-count" href="http://ohsootasty.tumblr.com/post/144028940/buttermilk-pancakes#disqus_thread">Comments (View)</a></div>
+<br />
+ 	
+
+<script type="text/javascript">var disqus_url = "http://ohsootasty.tumblr.com/post/144028940/buttermilk-pancakes"; var disqus_title ="Buttermilk Pancakes!";</script>
+<div id="disqus_thread"></div><script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ohsotasty/embed.js"></script>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/ohsotasty/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+
+      
+      <!-- Pagination only rendered on permalink pages -->
+        <a href="http://ohsootasty.tumblr.com/post/139022621" class="previous">&#8592; Previous Post</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://ohsootasty.tumblr.com/post/259553538" class="next">Next Post &#8594;</a>
+     <!-- end previous/next (posts) -->
+      
+      
+      
+      <br /><br />
+			</div>
+	
+	<!-- end content -->
+	<!-- start sidebar -->
+	<div id="sidebar">
+		<ul>
+			
+			<li>
+				<h2>navigate</h2>
+				<ul>
+<li><a href="/archive" title="archive">Archive</a></li>
+<li><a href="/random" title="random">Random</a></li>
+<li><a href="/mobile" title="mobile">Mobile</a></li>
+<li><a href="/rss" title="rss">RSS</a></li>
+<li><a href="mailto:yasso.rules [at] gmail.com" title="contact">Contact</a></li>
+				</ul>
+			</li>
+
+<li><h2>I am on...</h2>
+<ul><li>
+<a href="http://www.flickr.com/photos/yasmine__/">
+Flickr</a> /
+<a href="http://www.last.fm/user/yasmineabdullah">
+Last.fm</a> /
+<a href="http://www.behance.net/yasmine">
+Behance</a> /
+<a href="http://www.twitter.com/yassoma">
+Twitter</a> /
+<a href="http://www.plurk.com/meenaa">
+Plurk</a> /
+<a href="http://www.facebook.com/YasmineAlfouzan">
+Facebook</a> / <script language='javascript' type='text/javascript' src='http://www.retaggr.com/Script/GetWidget.ashx?t=1&event=mouseover&username=YasmineAbdullah'></script>
+</li></ul>
+				
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end sidebar -->
+</div>
+<!-- end page -->
+<div id="footer">
+	<p id="legal">&copy;2008 All Rights Reserved. </p> 
+	
+</p>
+</div>
+<!-- BEGIN TUMBLR CODE --><iframe src="http://assets.tumblr.com/iframe.html?9&src=http%3A%2F%2Fohsootasty.tumblr.com%2Fpost%2F144028940%2Fbuttermilk-pancakes&amp;pid=144028940&amp;rk=HPULBCah&amp;lang=en_US&amp;name=ohsootasty" scrolling="no" width="330" height="25" frameborder="0" style="position:absolute; z-index:1337; top:0px; right:0px; border:0px; background-color:transparent; overflow:hidden;" id="tumblr_controls"></iframe><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><script type="text/javascript">_qoptions={qacct:"p-19UtqE8ngoZbM"};</script><script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script><noscript><img src="http://pixel.quantserve.com/pixel/p-19UtqE8ngoZbM.gif" style="display:none; border-width:0px; height:1px; width:1px;" alt=""/></noscript><!-- END TUMBLR CODE --></body>
+</html>

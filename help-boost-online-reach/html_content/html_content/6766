@@ -1,0 +1,617 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+
+
+<title>Kiteboarding Gear</title>
+
+<link rel="stylesheet" href="http://www.powerkitesdirect.com/wp-content/themes/mk3/style.css" type="text/css" media="screen" title="default" />
+
+<link rel="alternate" type="application/rss+xml" title="Kiteboarding Kitesurfing Kite Surf Shop Power Kite &amp; Trainer Kites RSS Feed" href="http://www.powerkitesdirect.com/feed/" />
+
+<link rel="pingback" href="http://www.powerkitesdirect.com/xmlrpc.php" />
+
+<script src="http://www.powerkitesdirect.com/wp-content/themes/mk3/ajCart/jquery.js" type="text/javascript"></script>
+
+<script src="http://www.powerkitesdirect.com/wp-content/themes/mk3/ajCart/jquery.form.js" type="text/javascript"></script>
+
+<script src="http://www.powerkitesdirect.com/wp-content/themes/mk3/ajCart/thickbox.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+
+	$(document).ready(function() {
+
+		var CARTDIR="/wp-content/themes/mk3/ajCart/";
+
+		var PPEmail="powerkitesdirect@gmail.com";
+
+		imgLoader.src = CARTDIR + "loadingAnimation.gif";
+
+		
+
+		   $('.crtAdd').ajaxForm({
+
+		   //intercept the submit event with a callback
+
+		   beforeSubmit:  function(formData, jqForm, options) {
+
+		     //serialize form data; append to the form action; tack on ThickBox params
+
+		     var URL = jqForm[0].action + "?" + $.param(formData);
+
+		     URL += "&PPEmail="+PPEmail+"&CARTDIR="+CARTDIR;
+
+			 
+
+			 var form = jqForm[0]; 
+
+				 if (form.shp){
+
+					 var shipping = form.shp.value;
+
+					  if (form.shp.selectedIndex==0) {          // force a selection
+
+						alert ("Make a shipping selection!");
+
+						return false;
+
+						}
+
+					
+
+					 var ary = shipping.split (" ");          // break apart
+
+					  for (j=0; j<ary.length; j++) {  
+
+					    if (ary[j].length < 4) continue;
+
+						    tok = ary[j].substring (0,3); // first 3 chars
+
+						    val = ary[j].substring (3);   // get data
+
+						    if (tok == "hn=")             // value for item handling
+
+						      URL += "&" + "handling=" + val;
+
+						    if (tok == "hc=")             // value for handling cart
+
+						      URL += "&" + "handling_cart=" + val;
+
+						    if (tok == "s1=")             // value for shipping
+
+						      URL += "&" + "shipping=" + val;
+
+						    if (tok == "s2=")             // value for shipping2
+
+						      URL += "&" + "shipping2=" + val;
+
+					  }
+
+				 }	  
+
+		     //call ThickBox directly
+
+		     var caption = "My Shopping Cart";
+
+		     var imageGroup = false;
+
+		     tb_show(caption,URL,imageGroup);
+
+		     //cancel the form submission by returning false
+
+		       return false;
+
+		   }
+
+		 }); 
+
+		 
+
+	});
+
+</script>
+
+<link rel="stylesheet" href="http://www.powerkitesdirect.com/wp-content/themes/mk3/ajCart/thickbox.css" type="text/css" media="screen" title="default" />
+
+<script src="http://www.powerkitesdirect.com/wp-content/themes/mk3/js/FancyZoom.js" type="text/javascript"></script>
+
+<script src="http://www.powerkitesdirect.com/wp-content/themes/mk3/js/FancyZoomHTML.js" type="text/javascript"></script>
+
+	<style type="text/css">
+	body { background-color: #708BC0; }
+	#bar { background-color: #000000; }
+	#nav { background-color: #708BC0; }
+	#nav li a { color: #000000; }
+	#bar .barhead { width: 900px; }
+	#nav .navbar { width: 900px; }
+	#wrap { width: 900px; }	
+	#content .news { width: 470px; }
+	#content .products { width: 400px; }	
+	#content .products .post { width: 116px; }
+	#content .products .widgetcase { width: 375px; }	
+	#content .grid { width: 900px; }
+	/* The following is if widget sidebar is enabled */
+	//#content .grid { width: 500px; }
+	</style>
+	
+	<link rel="canonical" href="http://www.powerkitesdirect.com/kiteboarding-gear/" />
+	<meta name="description" content="This article details which kiteboarding gear and kitesurfing gear to check out for the new season. All types of kite boarding gear is discussed and the pros and cons of each are discussed." />
+	<meta name="keywords" content="kiteboarding gear,kitesurfing gear,kite boarding gear,kite surfing gear,kitesurf gear,Kiteboarding,kitesurfing,power kites,landboards,mountain boards,trainer kite,kitesurf,hq kites,ozone kites" />
+	<meta name="google-site-verification" content="www.powerkitesdirect.com" />
+	<meta name="y_key" content="www.powerktiesdirect.com" />
+	<meta name="msvalidate.01" content="www.powerkitesdirect.com" />
+				
+	<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.2.2 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-710914-4']);
+	_gaq.push(['_trackPageview'],['_trackPageLoadTime']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]></script>
+<link rel="alternate" type="application/rss+xml" title="Kiteboarding Kitesurfing Kite Surf Shop Power Kite &amp; Trainer Kites &raquo; Kiteboarding Gear Comments Feed" href="http://www.powerkitesdirect.com/kiteboarding-gear/feed/" />
+<link rel='stylesheet' id='gdsr_style_main-css'  href='http://www.powerkitesdirect.com/wp-content/plugins/gd-star-rating/css/gdsr.css.php?t=1325180243&#038;s=a10i10m20k20c05r05%23121620243046%23121620243240%23s1pchristmas%23s1pcrystal%23s1pdarkness%23s1poxygen%23s1goxygen_gif%23s1pplain%23s1ppumpkin%23s1psoft%23s1pstarrating%23s1pstarscape%23t1pclassical%23t1pstarrating%23t1gstarrating_gif%23lsgflower&#038;o=off&#038;ver=1.9.13' type='text/css' media='all' />
+<link rel='stylesheet' id='gdsr_style_xtra-css'  href='http://www.powerkitesdirect.com/wp-content/gd-star-rating/css/rating.css?ver=1.9.13' type='text/css' media='all' />
+<link rel='stylesheet' id='sfstst_css-css'  href='http://www.powerkitesdirect.com/wp-content/plugins/wp-testimonials/css/wp-testimonials-style.css?ver=3.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://www.powerkitesdirect.com/wp-content/plugins/contact-form-7/styles.css?ver=3.0.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='popup_domination-css'  href='http://www.powerkitesdirect.com/wp-content/plugins/popup-domination1/themes/lightbox3/lightbox.css?ver=3.2.1' type='text/css' media='all' />
+<script type="text/javascript">
+var popup_domination = {"defaults":{"name":"Your First Name...","from":"Your Email Address..."},"delay":8,"cookie_time":7,"center":"Y","cookie_path":"\/","show_opt":"open","unload_msg":"Would you like to signup to the newsletter before you go?","impression_count":0,"output":"<div class=\"popup-dom-lightbox-wrapper\" id=\"popup_domination_lightbox_wrapper\" style=\"display:none\">\n\t<div class=\"lightbox-main lightbox-color-red\">\n\t\t<a href=\"#\" class=\"lightbox-close\" id=\"popup_domination_lightbox_close\"><span>Close<\/span><\/a>\n\t\t<div class=\"lightbox-clear\"><\/div>\n\t\t<div class=\"lightbox-grey-panel\">\n\t\t\t<p class=\"heading\">Get $ 49 Worth of Kiteboarding Training - FREE !<\/p>\n\t\t\t\n\t\t\t<div class=\"bullet-listx\">\n\t\t\t\t<p>Join The Power Kites Direct VIP List and and get access to learning how to kiteboard - the fast, easy way! You're about to learn:<br \/>\r\n<\/p>\n\t\t\t\t<ul class=\"bullet-list\">\t\t\t\t\t<li>Our Favorite Methods for Speeding Up Your Kiteboard Training (get to the fun part - fast)<\/li>\t\t\t\t\t<li>Special Deals, Offers and Prices for VIP List Members. You Get First Pick of The Best Deals.<\/li>\t\t\t\t\t<li>Best Spots Worldwide and When to Go<\/li>\t\t\t\t<\/ul>\n\t\t\t\t<div class=\"lightbox-clear\"><\/div>\n\t\t\t<\/div>\n\t\t<\/div>\n\t\t\n\t\t<div class=\"lightbox-signup-panel\">\n\t\t\t<p><\/p>\n            <form method=\"post\" action=\"http:\/\/www.aweber.com\/scripts\/addlead.pl\" target=\"_blank\">\n                <div>\n                    <input type=\"hidden\" name=\"meta_web_form_id\" value=\"1602896050\" \/><input type=\"hidden\" name=\"meta_split_id\" value=\"\" \/><input type=\"hidden\" name=\"unit\" value=\"powerkitestips\" \/><input type=\"hidden\" name=\"redirect\" value=\"http:\/\/www.aweber.com\/thankyou-coi.htm?m=audio\" \/><input type=\"hidden\" name=\"meta_redirect_onlist\" value=\"\" \/><input type=\"hidden\" name=\"meta_adtracking\" value=\"\" \/><input type=\"hidden\" name=\"meta_message\" value=\"1\" \/><input type=\"hidden\" name=\"meta_required\" value=\"from\" \/><input type=\"hidden\" name=\"meta_forward_vars\" value=\"0\" \/><input type=\"hidden\" name=\"submit\" value=\"Get Instant Access Now\" \/><input type=\"text\" class=\"name\" value=\"Your First Name...\" name=\"name\" \/><input type=\"text\" class=\"email\" value=\"Your Email Address...\" name=\"from\" \/>                    <input type=\"submit\" value=\"FREE INSTANT ACCESS\" src=\"http:\/\/www.powerkitesdirect.com\/wp-content\/plugins\/popup-domination1\/themes\/lightbox3\/images\/trans.png\" class=\"green-button\" \/>\n\t\t\t\t\t<p class=\"secure\"><\/p>\n                <\/div>\n            <\/form>\n\t\t<\/div>\n\t\t<div class=\"lightbox-clear\"><\/div>\n\t\t\t<p class=\"powered\"><a href=\"http:\/\/www.popupdomination.com\/\" target=\"_blank\">Powered By PopUp Domination<\/a><\/p>\t<\/div>\n<\/div>"};
+</script><script type='text/javascript' src='http://www.powerkitesdirect.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://www.powerkitesdirect.com/wp-includes/js/jquery/jquery.js?ver=1.6.1'></script>
+<script type='text/javascript' src='http://www.powerkitesdirect.com/wp-content/plugins/gd-star-rating/js/gdsr.js?ver=1.9.13'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js?ver=3.2.1'></script>
+<script type='text/javascript' src='http://www.powerkitesdirect.com/wp-content/plugins/popup-domination1/lightbox.js?ver=1.0'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.powerkitesdirect.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.powerkitesdirect.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Kiteboarding Kitesurfing Kite Surf Shop Power Kite &amp; Trainer Kites' href='http://www.powerkitesdirect.com/' />
+<link rel='start' title='Griffin Kites LEI' href='http://www.powerkitesdirect.com/2009-griffin-kitesurfing-kites/' />
+<link rel='prev' title='Ozone Catalyst Reviewed' href='http://www.powerkitesdirect.com/ozone-catalyst-review/' />
+<link rel='next' title='Fastest Way to Learn to Kitesurf' href='http://www.powerkitesdirect.com/learn-to-kitesurf-2/' />
+<meta name="generator" content="WordPress 3.2.1" />
+<link rel='shortlink' href='http://www.powerkitesdirect.com/?p=3203' />
+<link rel="stylesheet" type="text/css" href="http://www.powerkitesdirect.com/wp-content/plugins/collision-testimonials/i/css/styles.css" media="all" /><script type="text/javascript">
+//<![CDATA[
+var _wpcf7 = { cached: 1 };
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+var gdsr_cnst_nonce = "50dced6da6";
+var gdsr_cnst_ajax = "http://www.powerkitesdirect.com/wp-content/plugins/gd-star-rating/ajax.php";
+var gdsr_cnst_button = 1;
+var gdsr_cnst_cache = 1;
+// ]]>
+</script>
+<!--[if IE]><style type="text/css">.ratemulti .starsbar .gdcurrent { -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)"; filter: alpha(opacity=70); }</style><![endif]-->
+<!-- This site is powered by Tweet, Like, Plusone and Share Plugin - http://letusbuzz.com/tweet-share-like-plusone/ -->
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Kiteboarding Gear" />
+	<meta property="og:url" content="http://www.powerkitesdirect.com/kiteboarding-gear/"/>
+			<meta property="og:image" content="http://www.powerkitesdirect.com/wp-content/uploads/2011/07/kiteboarding-gear-300x259.jpg" />
+	<style type="text/css">div.socialicons{float:left;display:block;margin-right: 10px;}div.socialicons p{margin-bottom: 0px !important;margin-top: 0px !important;padding-bottom: 0px !important;padding-top: 0px !important;}</style>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script><script type="text/javascript" src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script><script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
+<!-- Start of Woopra Code -->
+<script type="text/javascript">
+function woopraReady(tracker) {
+}
+</script>
+<script type="text/javascript">
+(function(){
+var wsc=document.createElement('script');
+wsc.type='text/javascript';
+wsc.src=document.location.protocol+'//static.woopra.com/js/woopra.js';
+wsc.async=true;
+var ssc = document.getElementsByTagName('script')[0];
+ssc.parentNode.insertBefore(wsc, ssc);})();
+</script>
+<!-- End of Woopra Code -->
+
+<script type="text/javascript">
+  swfobject.registerObject("wpFollowmeFlash", "9.0.0");
+</script>
+<style type="text/css">
+.getflash { font-size:8px; }
+.wp_followme_c2 {
+	position:fixed;
+	background:#59B7FF;
+	top:450px;
+	right:0px;
+	width:32px;
+	height:160px;
+	border:1px solid #FFFFFF;
+	color:#FFFFFF;
+}
+</style>
+
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style>
+	<!-- Clean Archives Reloaded v3.2.0 | http://www.viper007bond.com/wordpress-plugins/clean-archives-reloaded/ -->
+	<style type="text/css">.car-collapse .car-yearmonth { cursor: s-resize; } </style>
+	<script type="text/javascript">
+		/* <![CDATA[ */
+			jQuery(document).ready(function() {
+				jQuery('.car-collapse').find('.car-monthlisting').hide();
+				jQuery('.car-collapse').find('.car-monthlisting:first').show();
+				jQuery('.car-collapse').find('.car-yearmonth').click(function() {
+					jQuery(this).next('ul').slideToggle('fast');
+				});
+				jQuery('.car-collapse').find('.car-toggler').click(function() {
+					if ( 'Expand All' == jQuery(this).text() ) {
+						jQuery(this).parent('.car-container').find('.car-monthlisting').show();
+						jQuery(this).text('Collapse All');
+					}
+					else {
+						jQuery(this).parent('.car-container').find('.car-monthlisting').hide();
+						jQuery(this).text('Expand All');
+					}
+					return false;
+				});
+			});
+		/* ]]> */
+	</script>
+
+
+<SCRIPT language="JavaScript" type="text/javascript">
+
+<!-- Yahoo! Inc.
+
+var ysm_accountid  = "18QK20GMHVEJ6V24UH2O40R0B4G";
+
+document.write("<SCR" + "IPT language='JavaScript' type='text/javascript' " 
+
++ "SRC=//" + "srv3.wa.marketingsolutions.yahoo.com" + "/script/ScriptServlet" + "?aid=" + ysm_accountid 
+
++ "></SCR" + "IPT>");
+
+// -->
+
+</SCRIPT>
+
+
+
+<SCRIPT>
+
+ microsoft_adcenterconversion_domainid = 491386;
+
+ microsoft_adcenterconversion_cp = 5050;
+
+</SCRIPT>
+
+<meta name="verify-v1" content="RQrtNRWWY4s3/vlAOMuuMSyogj+iD+pnC7wgseh1ujs=" />
+
+</head>
+
+<body onload="setupZoom()">
+
+<div id="bar">
+<div id="banner">
+<div id="banner-logo"><a href="http://www.powerkitesdirect.com/"><img src="http://www.powerkitesdirect.com/wp-content/themes/mk3/PowerKitesLogo_01.png" /></a></div>
+<div id="banner-fshp"><a href="http://www.powerkitesdirect.com/worlds-lowest-price-guarantee/"><img src="http://www.powerkitesdirect.com/wp-content/themes/mk3/PowerKitesLogo_02.png" /></a></div>
+<div id="banner-social"><img src="http://www.powerkitesdirect.com/wp-content/themes/mk3/PowerKitesLogo_03.png" /></div>
+<div id="banner-socialf"><a href="https://www.facebook.com/pages/Kitesurfing-Fans/307571973366" title="Become a Fan!">&nbsp;</a></div>
+<div id="banner-socialt"><a href="http://twitter.com/power_kites" title="Follow us Twitter!">&nbsp;</a></div>
+<div id="banner-bestp"><a href="http://www.powerkitesdirect.com/power-kites-guarantee/" title="Best Price Guarantee!">&nbsp;</a></div>
+</div>
+
+ <div class="barhead">
+
+ 
+  </div>
+
+  <div style="clear:both;"></div>
+
+
+
+ </div>
+
+</div>
+
+<div id="nav" style="">
+
+  <div class="navbar">
+
+    <ul>
+
+      <li><a href="http://www.powerkitesdirect.com">Home</a></li>
+
+      <li class="page_item page-item-315"><a href="http://www.powerkitesdirect.com/store/" title="Buy Gear">Buy Gear</a></li>
+<li class="page_item page-item-2136"><a href="http://www.powerkitesdirect.com/trainer-kites/" title="Trainer Kites">Trainer Kites</a></li>
+<li class="page_item page-item-2130"><a href="http://www.powerkitesdirect.com/kitesurfing-kites/" title="Kitesurfing Kites">Kitesurfing Kites</a></li>
+<li class="page_item page-item-2128"><a href="http://www.powerkitesdirect.com/traction-kites/" title="Traction Kites">Traction Kites</a></li>
+<li class="page_item page-item-2132"><a href="http://www.powerkitesdirect.com/kite-boards/" title="Kite Boards">Kite Boards</a></li>
+<li class="page_item page-item-2134"><a href="http://www.powerkitesdirect.com/accessories/" title="Accessories">Accessories</a></li>
+<li class="page_item page-item-328"><a href="http://www.powerkitesdirect.com/used_gear/" title="Used Gear">Used Gear</a></li>
+<li class="page_item page-item-231"><a href="http://www.powerkitesdirect.com/contact/" title="Contact">Contact</a></li>
+
+	  <!-- The following line adds a "View Cart" link to the navigation menu. You may remove it if you don't want it shown -->
+
+      <!--"<li><a href="http://www.powerkitesdirect.com/wp-content/themes/mk3/ajCart/cart.php?cart=true&CARTDIR=/wp-content/themes/mk3/ajCart/&PPEmail=powerkitesdirect@gmail.com" class="thickbox" title="My Shopping Cart">View Cart</a></li>"-->
+
+      <!-- End of "View Cart" menu option-->
+
+    </ul>
+
+    <div style="clear:both;"></div>
+
+  </div>
+
+</div>
+
+<div style="clear:both;"></div>
+
+<div id="wrap">
+
+<div id="content">
+
+ 
+<div class="products">
+  <div class="widgetcase">
+    <ul>
+      <li id="search-2" class="widget widget_search"><h2 class="widgettitle">Search For Kites</h2>
+<form method="get" id="sform" action="http://www.powerkitesdirect.com/">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+</li>
+<li id="text-448844697" class="widget widget_text">			<div class="textwidget"><br>
+<br>
+<!-- Web Form Generator 2.0 -->
+<center><form method="post" action="http://www.aweber.com/scripts/addlead.pl" target="_new">
+<input type="hidden" name="meta_web_form_id" value="1700189720">
+<input type="hidden" name="meta_split_id" value="">
+<input type="hidden" name="unit" value="powerkitestips">
+<input type="hidden" name="redirect" value="http://www.aweber.com/form/thankyou_vo.html" id="redirect_c1348b285ee8c4a05d86e3ec7591a791">
+<input type="hidden" name="meta_redirect_onlist" value="">
+<input type="hidden" name="meta_adtracking" value="">
+<input type="hidden" name="meta_message" value="1">
+<input type="hidden" name="meta_required" value="from">
+<input type="hidden" name="meta_forward_vars" value="0">
+<table>
+<tr><td colspan=2><center><div align="center"><font size="4" face="Verdana"><strong>Get FREE Kitesurfing Tips!</strong></font></div>
+<div align="center"><font face="Verdana"><font size="4"><strong> </strong></font><em><font size="3"><strong><font color="#ff0000">Fill in below!</font></strong></font><br>
+</em></font></div></center></td></tr>
+<tr><td>Name:</td><td><input type="text" name="name" value="" size="20"></td></tr>
+<tr><td>Email:</td><td><input type="text" name="from" value="" size="20"></td></tr>
+    <tr><td colspan=2><center></center></td></tr>
+<tr><td align="center" colspan="2"><input type="submit" name="submit" value="Get Instant Access Now"></td></tr>
+</table>
+<img src="http://forms.aweber.com/form/displays.htm?id=jOwMDIwcnOxMDA==" border="0" />
+</form>
+</center></div>
+		</li>
+<li id="text-448844696" class="widget widget_text">			<div class="textwidget"><!-- PayPal Logo --><table border="0" cellpadding="10" cellspacing="0" align="center"><tr><td align="center"></td></tr>
+<tr><td align="center"><a href="http://www.powerkitesdirect.com/kiteboarding-gear/#"  onclick="javascript:window.open('https://www.paypal.com/us/cgi-bin/webscr?cmd=xpt/Marketing/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=350');"><img  src="https://www.paypal.com/en_US/i/bnr/horizontal_solution_PPeCheck.gif" border="0" alt="Solution Graphics"></a></td></tr></table><!-- PayPal Logo --></div>
+		</li>
+<li id="text-440464631" class="widget widget_text">			<div class="textwidget"><center><img src="http://www.powerkitesdirect.com/wp-content/uploads/2009/05/verisign1.gif" alt="verisign1" title="verisign1" width="130" height="88" class="aligncenter size-full wp-image-1047" />
+<img src="http://www.powerkitesdirect.com/wp-content/uploads/2009/trust_marks/starterssl-ssl-secure.gif" alt="ssl" title="PowerKites Direct is SSL Secured" width="112" height="65" class="aligncenter size-full wp-image-1048" />
+</center>
+<img src="http://powerkitesdirect.com/free-shipping-kitesurfing.jpg" alt="Free Shipping on all Kite Surfing Orders!">
+<br>
+
+<center><img src="http://www.powerkitesdirect.com/wp-content/uploads/2009/trust_marks/seal.gif.jpg" alt="100% Risk Free Money Back Guarantee, no risk guarantee, kites guarantee" title="guarantee"></center>
+<br>
+<center>
+<img src="http://www.powerkitesdirect.com/wp-content/uploads/2009/07/feedback-208x300.jpg" alt="customer feedback, buy a kite testimonials, kite reviews, kite shop, kite store" title="feedback" width="218" height="310" class="aligncenter size-medium wp-image-1241" />
+</center>
+
+
+</div>
+		</li>
+<li id="collisionwidget-3" class="widget collision_widget"><h2 class="widgettitle">Recent Customer Testimonials</h2>
+<p class="testimonial">We received the HQ Rush Pro kite I had a great first day of flying. And now I want another, lol. which is the next step up for us? Looking at the Beamer, Scout or Flow? Appreciate everything!<br /><span>&mdash; <strong>Ken Raglan</strong><em>, West Palm Beach</em></span></p></li>
+<li id="text-448844691" class="widget widget_text"><h2 class="widgettitle">Top Rated Kite Surfing Kites &amp; Gear</h2>
+			<div class="textwidget"><h3 style="font-size:1.4em;"><a target="_new" href="http://www.powerkitesdirect.com/beamer-4-iv/" >- Traction  Kite</a>
+<br></br>
+<a target="_new" href="http://www.powerkitesdirect.com/trainer-kites/" >- Trainer Kite</a>
+<br></br>
+<a target="_new" href="http://www.powerkitesdirect.com/hydra_trainer_kite/" >- HQ Hydra Kite</a>
+<br></br>
+<a target="_new" href="http://www.powerkitesdirect.com/kitesurfing-kites/" >- Kitesurfing Kites</a>
+<br></br>
+<a target="_new" href="http://www.powerkitesdirect.com/" >- Kiteboarding</a>
+<br></br>
+<a target="_new" href="http://www.powerkitesdirect.com/store/" >- More Kitesurfing Gear</a>
+<br></br>
+<a target="_new" href="http://digitalvideopros.com/" onclick="javascript:_gaq.push(['_trackEvent','outbound-widget','http://digitalvideopros.com']);">- Follow Focus</a>
+</h3>
+</div>
+		</li>
+<li id="twitter-5" class="widget widget_twitter"><div><h2 class="widgettitle"><span class='twitterwidget twitterwidget-title'>Follow PowerKites on Twitter!</span></h2>
+<div class="twitter-avatar"><a href="http://twitter.com/power_kites" title="Power Kites" target="_blank"><img alt='Power Kites' src='https://api.twitter.com/1/users/profile_image?screen_name=power_kites&size=normal' /></a></div><ul><li><span class='entry-content'>Griffin Kite Video|Griffin Kitesurfing Kites <a href="http://t.co/KuFmcub5" target="_blank">http://t.co/KuFmcub5</a> <a href="http://search.twitter.com/search?q=%23kiteboarding" class="twitter-hashtag" target="_blank">#kiteboarding</a> <a href="http://search.twitter.com/search?q=%23kites" class="twitter-hashtag" target="_blank">#kites</a></span> <span class='entry-meta'><span class='time-meta'><a href="http://twitter.com/power_kites/statuses/164437287965433857" target="_blank">about 23 hours ago</a></span> <span class='from-meta'>from <a href="http://www.ajaymatharu.com/" rel="nofollow">Tweet Old Post</a></span></span> <span class="intent-meta"><a href="http://twitter.com/intent/tweet?in_reply_to=164437287965433857" data-lang="en" class="in-reply-to" title="Reply" target="_blank">Reply</a><a href="http://twitter.com/intent/retweet?tweet_id=164437287965433857" data-lang="en" class="retweet" title="Retweet" target="_blank">Retweet</a><a href="http://twitter.com/intent/favorite?tweet_id=164437287965433857" data-lang="en" class="favorite" title="Favorite" target="_blank">Favorite</a></span></li><li><span class='entry-content'>Ozone Imp Trainer <a href="http://t.co/8ytvEpwg" target="_blank">http://t.co/8ytvEpwg</a> <a href="http://search.twitter.com/search?q=%23kiteboarding" class="twitter-hashtag" target="_blank">#kiteboarding</a> <a href="http://search.twitter.com/search?q=%23kites" class="twitter-hashtag" target="_blank">#kites</a></span> <span class='entry-meta'><span class='time-meta'><a href="http://twitter.com/power_kites/statuses/163982503286292481" target="_blank">01:50:50 PM January 30, 2012</a></span> <span class='from-meta'>from <a href="http://www.ajaymatharu.com/" rel="nofollow">Tweet Old Post</a></span></span> <span class="intent-meta"><a href="http://twitter.com/intent/tweet?in_reply_to=163982503286292481" data-lang="en" class="in-reply-to" title="Reply" target="_blank">Reply</a><a href="http://twitter.com/intent/retweet?tweet_id=163982503286292481" data-lang="en" class="retweet" title="Retweet" target="_blank">Retweet</a><a href="http://twitter.com/intent/favorite?tweet_id=163982503286292481" data-lang="en" class="favorite" title="Favorite" target="_blank">Favorite</a></span></li><li><span class='entry-content'>Assessing The Wind Strength And Direction – Why It's Important <a href="http://t.co/iFeiVHXQ" target="_blank">http://t.co/iFeiVHXQ</a> <a href="http://search.twitter.com/search?q=%23kiteboarding" class="twitter-hashtag" target="_blank">#kiteboarding</a> <a href="http://search.twitter.com/search?q=%23kites" class="twitter-hashtag" target="_blank">#kites</a></span> <span class='entry-meta'><span class='time-meta'><a href="http://twitter.com/power_kites/statuses/163527325772808192" target="_blank">07:42:07 AM January 29, 2012</a></span> <span class='from-meta'>from <a href="http://www.ajaymatharu.com/" rel="nofollow">Tweet Old Post</a></span></span> <span class="intent-meta"><a href="http://twitter.com/intent/tweet?in_reply_to=163527325772808192" data-lang="en" class="in-reply-to" title="Reply" target="_blank">Reply</a><a href="http://twitter.com/intent/retweet?tweet_id=163527325772808192" data-lang="en" class="retweet" title="Retweet" target="_blank">Retweet</a><a href="http://twitter.com/intent/favorite?tweet_id=163527325772808192" data-lang="en" class="favorite" title="Favorite" target="_blank">Favorite</a></span></li></ul><div class="follow-button"><a href="http://twitter.com/power_kites" class="twitter-follow-button" title="Follow @power_kites" data-lang="en" target="_blank">@power_kites</a></div></div></li>
+<li id="text-448844698" class="widget widget_text">			<div class="textwidget"><br>
+
+<center><iframe src="http://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FKitesurfing-Fans%2F307571973366&amp;width=310&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=false&amp;height=550" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:310px; height:550px;" allowTransparency="true"></iframe>
+</center></div>
+		</li>
+    </ul>
+  </div>
+  <div style="clear: both"></div>
+</div>
+<div class="news">
+  <div class="breadcrumbs">
+    <p><strong><a href="http://www.powerkitesdirect.com">
+      Kiteboarding Kitesurfing Kite Surf Shop Power Kite &amp; Trainer Kites      </a></strong> &#8250;
+      <a href="http://www.powerkitesdirect.com/category/education/" title="View all posts in Education" rel="category tag">Education</a>      &#8250;
+      Kiteboarding Gear    </p>
+  </div>
+  <div class="post" id="post-3203">
+    <h2>
+      Kiteboarding Gear    </h2>
+  </div>
+  <h1><span style="color: #000000;"><a href="http://www.powerkitesdirect.com" >Kiteboarding</a> Gear</span></h1>
+<p><span style="color: #000000;">Owning their own <a title="kiteboarding gear" href="http://www.powerkitesdirect.com/kiteboarding-gear/" >kiteboarding gear</a> is one of the ways people get started in the fastest growing water sport.  <a href="http://www.powerkitesdirect.com" >Kitesurfing</a> involves a board, similar to a surf board or snow board, which is then attached to a large kite. Using the renewable power of wind, the rider is able to be pulled along the shore, enjoying a peaceful afternoon or catching some major air. Due to its eco-friendly nature, the sport is quickly gaining ground, or rather, water.</span></p>
+<h2><span style="text-decoration: underline;">Kiteboarding Gear Reviewed</span></h2>
+<p><span style="color: #000000;"><strong> Kitesurfing gear</strong>, also known as <strong>kiteboarding gear,</strong> is a modest one time fee. Instead of paying for gas, a motor boat, and many other expenses, all the kitesurfing equipment one needs is a board and kite. <em>Kitesurfing gea</em>r is not expensive once the relative costs of other activities is taken into account. <em>Kitesurfing gear </em>can often be found for around one thousand dollars, a price that will quickly recoup itself when one takes into account the money saved with the lack of need for gasoline. This kitesurf gear will enable the owner hours of entertainment out on the open water.</span></p>
+<p><span style="color: #000000;"> Kitesurfing gear comes in all sorts of shapes and sizes. Kiteboarding gear is available in a variety of shapes and sizes. While the initial price of <em>kitesurfing gear</em> may be a bit high, the long term cost of <a href="http://www.powerkitesdirect.com/"  target="_blank"><strong>kiteboarding gear</strong></a> is much less. The money which is required for upkeep of of the equipment t is very small. Kite surf kites and boards provide hours of fun and excitement.</span></p>
+<p><span style="color: #000000;"> When one is looking for kitesurfing gear, there are different things which must be taken into account. First, the kiteboarding gear must be appropriate for the learner.<strong> Kiteboarding gea</strong>r which is above the learner&#8217;s level will not prove to be entertaining.<span style="text-decoration: underline;"> Kiteboarding gear</span> should always be the right size and shape for your particular body type. It is also helpful when purchasing kitesurfing gear to have someone size it  for you. The right make and model from Cabrinha, Griffin, Ozone of Best can make the difference!</span></p>
+<h3>Is Kiteboarding Gear Expensive?</h3>
+<p><span style="color: #000000;"> Kitesurfing gear is a great investment. Kitesurfing gear has resale value but must be taken care of to ensure its safety. The safety of <strong>kitesurfing gear </strong>is ensured by its proper care. Kiteboarding gear can be a great way to make friends and have fun. You will want tomake sure your gear is sized appropriately. <span style="text-decoration: underline;">Kiteboarding gear</span> must fit and not be loose. Kitesurfing gear is available for purchase or rental at many places.</span></p>
+<p><a onclick="javascript:pageTracker._trackPageview('/downloads/wp-content/uploads/2011/07/kiteboarding-gear.jpg');"  href="http://www.powerkitesdirect.com/wp-content/uploads/2011/07/kiteboarding-gear.jpg" ><img class="aligncenter size-medium wp-image-3204" title="kiteboarding-gear" src="http://www.powerkitesdirect.com/wp-content/uploads/2011/07/kiteboarding-gear-300x259.jpg" alt="kiteboarding gear 300x259 Kiteboarding Gear" width="300" height="259" /></a></p>
+<p><span style="color: #000000;">  To starting having the most fun you may have on the water, snow or land, get some kiteboarding gear today.<br />
+</span>
+<div class="social4i" style="height:29px;">
+<div class="social4in" style="height:29px;float: left;">
+<div class="socialicons s4twitter" style="float:left;margin-right: 10px;background:url(&quot;http://goo.gl/zjqd1&quot;) no-repeat;"><a onclick="javascript:pageTracker._trackPageview('/outgoing/twitter.com/share');" target="_blank"  href="http://twitter.com/share" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://twitter.com']);" data-url="http://www.powerkitesdirect.com/kiteboarding-gear/" data-counturl="http://www.powerkitesdirect.com/kiteboarding-gear/" data-text="Kiteboarding Gear" class="twitter-share-button" data-count="horizontal" data-via="power_kites"></a></div>
+<div class="socialicons s4fblike" style="float:left;margin-right: 10px;">
+<div id="fb-root"></div>
+<p><fb:like href="http%3A%2F%2Fwww.powerkitesdirect.com%2Fkiteboarding-gear%2F" send="false" layout="button_count" width="100" height="21" show_faces="false" font=""></fb:like></div>
+<div class="socialicons s4plusone" style="float:left;margin-right: 10px;"><g:plusone size="medium" href="http://www.powerkitesdirect.com/kiteboarding-gear/" count="true"></g:plusone></div>
+<div class="socialicons s4fbshare" style="position: relative;float:left;margin-right: 10px;">
+<div class="s4ifbshare" ><a onclick="javascript:pageTracker._trackPageview('/outgoing/www.facebook.com/sharer.php');" target="_blank" name="fb_share" type="button_count" share_url="http%3A%2F%2Fwww.powerkitesdirect.com%2Fkiteboarding-gear%2F"  href="http://www.facebook.com/sharer.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.facebook.com']);"></a></div>
+</div>
+</div>
+<div style="clear:both"></div>
+</div>
+<div class="gdsrcacheloader gdsrclsmall" id="gdsrc_asr.3203.0.1.1279621995.10.0.24.3.4.0"><strong>GD Star Rating</strong><br /><em>loading...</em></div><div class="gdsrcacheloader gdsrclsmall" id="gdsrc_atr.3203.0.1.1279621995.25.0.20.1.2.0"><strong>GD Star Rating</strong><br /><em>loading...</em></div><span class="hreview-aggregate" style="display: none !important;"><span class="item"><span class="fn">Kiteboarding Gear</span></span>, <span class="rating"><span class="average">10.0</span> out of <span class="best">10</span> based on <span class="count">1</span> rating <span class="summary"></span></span></span>  <br><br>
+  </div>
+<!-- added by open in new window plugin -->
+<script language="javascript" type="text/javascript" src="http://www.powerkitesdirect.com/wp-content/plugins/open-in-new-window-plugin/open_in_new_window.js"></script>
+<!-- end of open in new window plugin -->
+
+
+<div style="position:relative;">
+  <div class="wp_followme_c2">
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="32" height="160" id="wpFollowmeFlash">
+      <param name="movie" value="http://www.powerkitesdirect.com/wp-content/plugins/wp-followme/flash/wp_followme.swf" />
+      <param name="allowfullscreen" value="false" />
+      <param name="allowscriptaccess" value="always" />
+      <param name="flashvars" value="twit_icon=http://www.powerkitesdirect.com/wp-content/plugins/wp-followme/icons/14.png&amp;turl=http://twitter.com/power_kites&amp;twitmsg=Follow Me&amp;twitmsgcolor=FFFFFF&amp;iconbgcolor=FFFFFF" />
+      <param name="bgcolor" value="#59B7FF" />
+      <!--[if !IE]>-->
+      <object type="application/x-shockwave-flash" data="http://www.powerkitesdirect.com/wp-content/plugins/wp-followme/flash/wp_followme.swf" width="32" height="160">
+        <param name="allowfullscreen" value="false" />
+        <param name="allowscriptaccess" value="always" />
+        <param name="flashvars" value="twit_icon=http://www.powerkitesdirect.com/wp-content/plugins/wp-followme/icons/14.png&amp;turl=http://twitter.com/power_kites&amp;twitmsg=Follow Me&amp;twitmsgcolor=FFFFFF&amp;iconbgcolor=FFFFFF" />
+        <param name="bgcolor" value="#59B7FF" />
+        <!--<![endif]-->
+		<div class="getflash">
+         <a rel="nofollow" href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a>Plugin by wpburn.com <a href="http://wpburn.com">wordpress themes</a></div><!--[if !IE]>-->
+      </object> <!--<![endif]-->
+    </object>
+  </div>
+</div>
+
+
+
+<div style="clear: both"></div>
+
+</div>
+
+<div id="footer">
+
+  <div class="col1">
+  </div>
+
+ 
+
+</div>
+
+<div id="copyright">
+
+  <p style="padding:10px;">
+
+    Kiteboarding Kitesurfing Kite Surf Shop Power Kite &amp; Trainer Kites
+   All Rights Reserved</a> 
+<br>
+    <p><a href="http://www.powerkitesdirect.com/sitemap.xml">Sitemap</a></p>
+</div>
+
+<div style="clear: both"></div>
+
+</div>
+
+<script type='text/javascript' src='http://www.powerkitesdirect.com/wp-content/plugins/contact-form-7/jquery.form.js?ver=2.52'></script>
+<script type='text/javascript' src='http://www.powerkitesdirect.com/wp-content/plugins/contact-form-7/scripts.js?ver=3.0.2.1'></script>
+
+<!-- tracker added by Ultimate Google Analytics plugin v1.6.0: http://www.oratransplant.nl/uga -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-8465206-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<div id="su-footer-links" style="text-align: center;"></div><script type="text/javascript">
+var popup_domination = {"defaults":{"name":"Your First Name...","from":"Your Email Address..."},"delay":8,"cookie_time":7,"center":"Y","cookie_path":"\/","show_opt":"open","unload_msg":"Would you like to signup to the newsletter before you go?","impression_count":0,"output":"<div class=\"popup-dom-lightbox-wrapper\" id=\"popup_domination_lightbox_wrapper\" style=\"display:none\">\n\t<div class=\"lightbox-main lightbox-color-red\">\n\t\t<a href=\"#\" class=\"lightbox-close\" id=\"popup_domination_lightbox_close\"><span>Close<\/span><\/a>\n\t\t<div class=\"lightbox-clear\"><\/div>\n\t\t<div class=\"lightbox-grey-panel\">\n\t\t\t<p class=\"heading\">Get $ 49 Worth of Kiteboarding Training - FREE !<\/p>\n\t\t\t\n\t\t\t<div class=\"bullet-listx\">\n\t\t\t\t<p>Join The Power Kites Direct VIP List and and get access to learning how to kiteboard - the fast, easy way! You're about to learn:<br \/>\r\n<\/p>\n\t\t\t\t<ul class=\"bullet-list\">\t\t\t\t\t<li>Our Favorite Methods for Speeding Up Your Kiteboard Training (get to the fun part - fast)<\/li>\t\t\t\t\t<li>Special Deals, Offers and Prices for VIP List Members. You Get First Pick of The Best Deals.<\/li>\t\t\t\t\t<li>Best Spots Worldwide and When to Go<\/li>\t\t\t\t<\/ul>\n\t\t\t\t<div class=\"lightbox-clear\"><\/div>\n\t\t\t<\/div>\n\t\t<\/div>\n\t\t\n\t\t<div class=\"lightbox-signup-panel\">\n\t\t\t<p><\/p>\n            <form method=\"post\" action=\"http:\/\/www.aweber.com\/scripts\/addlead.pl\" target=\"_blank\">\n                <div>\n                    <input type=\"hidden\" name=\"meta_web_form_id\" value=\"1602896050\" \/><input type=\"hidden\" name=\"meta_split_id\" value=\"\" \/><input type=\"hidden\" name=\"unit\" value=\"powerkitestips\" \/><input type=\"hidden\" name=\"redirect\" value=\"http:\/\/www.aweber.com\/thankyou-coi.htm?m=audio\" \/><input type=\"hidden\" name=\"meta_redirect_onlist\" value=\"\" \/><input type=\"hidden\" name=\"meta_adtracking\" value=\"\" \/><input type=\"hidden\" name=\"meta_message\" value=\"1\" \/><input type=\"hidden\" name=\"meta_required\" value=\"from\" \/><input type=\"hidden\" name=\"meta_forward_vars\" value=\"0\" \/><input type=\"hidden\" name=\"submit\" value=\"Get Instant Access Now\" \/><input type=\"text\" class=\"name\" value=\"Your First Name...\" name=\"name\" \/><input type=\"text\" class=\"email\" value=\"Your Email Address...\" name=\"from\" \/>                    <input type=\"submit\" value=\"FREE INSTANT ACCESS\" src=\"http:\/\/www.powerkitesdirect.com\/wp-content\/plugins\/popup-domination1\/themes\/lightbox3\/images\/trans.png\" class=\"green-button\" \/>\n\t\t\t\t\t<p class=\"secure\"><\/p>\n                <\/div>\n            <\/form>\n\t\t<\/div>\n\t\t<div class=\"lightbox-clear\"><\/div>\n\t\t\t<p class=\"powered\"><a href=\"http:\/\/www.popupdomination.com\/\" target=\"_blank\">Powered By PopUp Domination<\/a><\/p>\t<\/div>\n<\/div>"};
+</script><script type='text/javascript' src='http://platform.twitter.com/widgets.js?ver=1.0.0'></script>
+
+<script type="text/javascript" src="http://cetrk.com/pages/scripts/0010/3154.js"> </script>
+
+<script type="text/javascript">
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+
+</script>
+
+<script type="text/javascript">
+
+try {
+
+var pageTracker = _gat._getTracker("UA-710914-4");
+
+pageTracker._trackPageview();
+
+} catch(err) {}</script>
+
+<script type="text/javascript" src="http://cetrk.com/pages/scripts/0010/3154.js"> </script>
+
+
+
+<SCRIPT language="JavaScript" type="text/javascript">
+
+<!-- Yahoo! Inc.
+
+var ysm_accountid  = "18QK20GMHVEJ6V24UH2O40R0B4G";
+
+document.write("<SCR" + "IPT language='JavaScript' type='text/javascript' " 
+
++ "SRC=//" + "srv3.wa.marketingsolutions.yahoo.com" + "/script/ScriptServlet" + "?aid=" + ysm_accountid 
+
++ "></SCR" + "IPT>");
+
+// -->
+
+</SCRIPT>
+
+<script type="text/javascript">
+var WRInitTime=(new Date()).getTime();
+</script>
+
+<!-- ClickTale Bottom part -->
+<div id="ClickTaleDiv" style="display: none;"></div>
+<script type="text/javascript">
+if(document.location.protocol!='https:')
+  document.write(unescape("%3Cscript%20src='http://s.clicktale.net/WRb.js'%20type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+if(typeof ClickTale=='function') ClickTale(37784,0.1,"www");
+</script>
+<!-- ClickTale end of Bottom part -->
+
+<!--Start of Zopim Live Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+$.src='//cdn.zopim.com/?CWujTF3GxD5P8oWhWGBIdxOTSbTt2UdN';z.t=+new Date;$.
+type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+</script>
+</body></html>
+<!-- Dynamic page generated in 0.400 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2012-02-01 15:18:33 -->
+<!-- super cache -->

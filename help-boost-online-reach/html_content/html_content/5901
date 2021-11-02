@@ -1,0 +1,184 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<title>CalorieConnect.com</title>
+<meta name="description" content="Calorie Connect is a dynamic diet and exercise service. We provide user-friendly interactive data on a host of foods and recreation activities and help members achieve a healthy body through our goal-oriented system.">
+<meta name="keywords" content="calorie, connect, diet help, lose weight, nutrition, diet, exercise, weight loss, get healthy, nutrition information">
+
+<script type="text/JavaScript">
+<!--
+var grrBob = "init: ''";
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function getObject(oName){
+	if(document.getElementById){
+		this.o = document.getElementById(oName);
+		this.s = document.getElementById(oName).style;
+	}else if(document.all){
+		this.o = document.all[oName];
+		this.s = document.all[oName].style;
+	}else if(document.layers){
+		this.o = document.layers[oName];
+		this.s = document.layers[oName];
+	}
+}
+//-->
+</script>
+<link href="/main.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+
+#introBox {
+	clear: both;
+	width: 100%;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+	#introBox #main {
+		position: relative;
+		width: 503px;
+		height: 244px;
+		margin-top: 17px;
+		padding: 0px 55px 0px 19px;
+		border: 2px solid #9FCE23;
+		border-left: none;
+		background-image: url(images/bg_introbox.gif);
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+	#introBox p { margin: 20px 0px 20px 0px; line-height: 17px;}
+	#introBox h1 {
+		margin-top: 25px;
+		font-size: 2em;
+		color: #9FCE23;
+	}
+#more {
+	margin: 10px 30px 30px 30px;
+}
+
+-->
+</style>
+<script language="javascript" type="text/javascript">
+function setFocus() {
+	if(document.frmLogin){
+		document.frmLogin.userName.focus()
+	}
+}
+</script>
+</head>
+
+<body onLoad="setFocus()">
+<div id="container">
+
+<table cellpadding="0" cellspacing="0" id="header"><tr>
+<td>
+	<!-- <p id="tempTitle"><span id="cal">Calorie</span><span id="con">Connect</span><span id="com">.com</span></p> --><a href="/service.php"><img src="/images/logo_calorie_connect.gif" border="0" alt="CalorieConnect.com - Diet & Exercise Services"><br></a>
+</td>
+
+<td align="right" valign="middle" style="padding-top: 3px;">
+			<form name="frmLogin" method="POST" action="/scripts/dologin.php">
+		<table cellpadding="0" cellspacing="0" id="userLogin"><tr>
+		<td align="left" style="padding-left: 4px;"><span style="font-size: .8em; color: #aaa;">USERNAME</span><br><input type="text" id="userName" name="login" size="12" onFocus="this.value='';"><br></td>
+		<td align="left" style="padding-left: 4px;"><span style="font-size: .8em; color: #aaa;">PASSWORD</span><br><input type="password" id="password" name="password" size="12" onFocus="this.value='';"><br></td>
+		<td style="padding: 12px 10px 0px 4px;"><input type="submit" value="Login"></td>
+		</tr>
+		<!-- <tr><td align="right" style="padding: 0px 0px 4px 4px;" colspan="4"><input type="checkbox" name="save_pw"><span class="softText">Remember my password on this computer</span></td></tr> -->
+		</table>
+		</form>
+	</td>
+</tr></table>
+<div id="navCore">
+	<ul>
+		<li><a href="/my_profile/"><img src="/images/icons/nav/my_profile.gif" width="16" height="16" class="navIcon" border="0">My profile</a></li>
+		<li><a href="/my_profile/nutrition/"><img src="/images/icons/nav/nutrition.gif" width="16" height="16" class="navIcon" border="0">Nutrition</a></li>
+		<li><a href="/my_profile/exercise/"><img src="/images/icons/nav/exercise.gif" width="16" height="16" class="navIcon" border="0">Exercise</a></li>
+		<li><a href="/my_profile/reports/"><img src="/images/icons/nav/reports.gif" width="16" height="16" class="navIcon" border="0">Reports</a></li>
+		<li><a href="/my_profile/settings.php"><img src="/images/icons/nav/settings.gif" width="16" height="16" class="navIcon" border="0">Settings</a></li>
+			</ul>
+		
+	</div>
+
+
+<table cellpadding="0" cellspacing="0" id="introBox"><tr>
+<td width="155"><img src="/images/characters/carol_front.jpg" width="155" height="265"></td>
+<td valign="top" width="100%">
+<div id="main">
+	<h1>Lose weight & stay healthy!</h1>
+	<p>CalorieConnect.com is a dynamic diet and exercise service. Simply record your foods eaten and recreational activities with our user-friendly interface and we'll provide you with a custom fitness profile including nutrient tracking, daily targets, advice, and detailed printable reports.</p>
+	<p><!-- <img src="/images/price_circle.gif" width="68" height="68" align="absmiddle" alt="$12 /month"> &nbsp; --><a href="create_profile"><img src="/images/buttons/get_started_today.gif" alt="Get started today!" border="0" align="absmiddle"></a> <!-- &nbsp;Not sure? <a href="/tour/" target="_blank">Take a free tour</a> --></p>
+</div>
+</td>
+</tr></table>
+
+<div style="margin: 15px 0px 0px 0px;">
+	<div style="margin: 0px 20px 15px 0px; padding: 0px 0px 0px 0px; width: 496px; float: left;">
+		<div id="more">	
+			<h1>Our program</h1>
+			<p>Calorie Connect provides its members with personalized data on the calories they consume in their food and the 
+			calories they burn during exercise. We present detailed analysis of the nutritional value of members’ diets, 
+			including information on fat, fiber, carbohydrates, and protein.</p>
+			<p>Using our comprehensive list of 
+			foods and sporting and recreational activities our members plot their progress towards healthy goals. Members keep 
+			track of their advancement towards their goals by viewing our exciting user-friendly system of targets and charts.</p> 
+			<!-- <p><img src="/images/icons/arrow.gif" class="icon"><a href="/tour/" target="_blank">Take a quick tour</a></p> -->
+			<p><img src="/images/icons/arrow.gif" class="icon"><a href="/create_profile/">Get started today!</a></p>
+		</div>
+	</div>	
+	<div style="margin: 0px 0px 15px 0px; padding: 0px 0px 0px 0px; width: 233px; float: left; font-size: .85em;">
+		<div class="yellowBox">
+		<h2>Quote</h2>
+		<div class="subBox">
+		<img src="/images/logos/nhlbi.gif" width="50" height="50" align="left" style="margin: 10px 5px 0px 0px;">
+		<p>"Record keeping is one of the most successful behavioral techniques for weight loss and maintenance."</p>
+		<p><em>The National Heart, Lung, and Blood Institute</em></p>
+		</div>		
+		<h2>Quote</h2>
+		<div class="subBox">
+		<img src="/images/logos/nifcr.gif" width="50" height="50" align="left" style="margin: 10px 5px 0px 0px;">
+		<p>"An estimated 30 to 40% of all cancer cases could be prevented over time by a combination of following recommended diets and maintaining physical activity and appropriate body weight."</p>
+		<p><em>The American Institute for Cancer Research</em></p>
+		</div>
+		</div>
+	</div>
+</div>
+
+<div style="margin-left: 15px;">
+<div id="footer">
+<p align="center"><a href="/help/faq.php">FAQ</a> | <a href="/help/tutorial.php">Tutorial</a> | <a href="/contact_us/">Contact us</a></p>
+<p align="center">© Copyright 2006, CalorieConnect.com Diet & Exercise Services. All rights reserved. <a href="/privacy.php">Privacy</a></p>
+</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-439176-2";
+urchinTracker();
+</script></div>
+</div><!-- /container -->
+</body>
+</html>

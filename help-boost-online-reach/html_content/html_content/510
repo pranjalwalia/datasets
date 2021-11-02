@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Punchfork</title>
+  <link rel="stylesheet" type="text/css" href="/punchfork.css" />
+</head>
+<body>
+<div class="site-header" id="dark-header">
+  <div id="inner-header" class="center">
+    <a class="logo" href="/">Punchfork</a>
+    <div class="clear-float"></div>
+  </div>
+</div>
+<div id="page" class="center">
+<div class="dialog white">
+  <div id="shutdown">
+    <p>Punchfork was acquired by Pinterest in January 2013. <a href="pinterest">Read the announcement.</a></p>
+    <p><strong>Archives</strong></p>
+    <p>If you were a Punchfork user, you can access a permanent archive of your recipe likes. Simply enter your Punchfork username below.</p>
+    <p>
+      <form id="archive-form" action="/">
+        <input id="archive-username" type="text" name="archive-username" placeholder="Your Punchfork username" alt="Your Punchfork username">
+        <input id="archive-submit" type="submit" value="See my recipes">
+        <div class="clear-float"></div>
+      </form>
+    </p>
+    <p>If you can't remember your username, email us at <a href="mailto:help@punchfork.com">help@punchfork.com</a>.</p>
+    <p><strong>About</strong></p>
+    <p>What was Punchfork all about? <a href="about">Some history.</a><p>
+    <p><strong>Thank You</strong></p>
+    <p>Our sincerest thanks to community members, friends, and everyone involved with Punchfork during its run from May 2010 to March 2013.</p>
+  </div>
+  <div id="main-screenshot">
+    <img src="screenshot.jpg" />
+  </div>
+  <div class="clear-float"></div>
+</div>
+</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#archive-form').on('submit', lookupUserArchive);
+});
+
+function lookupUserArchive(event) {
+  event.preventDefault();
+  var username = $('#archive-username').val();
+  username = jQuery.trim(username).toLowerCase();
+  if (typeof username != 'undefined') {
+    if (/^[A-Za-z0-9_]+$/.test(username)) {
+      var currentHost = $(location).attr('protocol') + '//' + $(location).attr('host');
+      window.location.href = currentHost + '/likes/' + encodeURIComponent(username);
+    } else if (username == '') {
+      alert('Please enter a username.');
+    } else {
+      alert('Please enter a valid username.');
+    }
+  }
+}
+</script>
+</body>
+</html>

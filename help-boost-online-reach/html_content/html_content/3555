@@ -1,0 +1,1343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+   <title>25 Great Recipes for Camping | Serious Eats</title>
+	<meta name="description" content="Got camping plans for the three-day weekend? (Or any weekend, for that matter.) Stock up that cooler with a few staples like granola, pizza dough, and make-ahead desserts and your camping menu just got way more delicious. Just don't blame..." />
+	<meta name="keywords" content="Serious Eats, food, media, news, camping, grilling, recipe roundups, salads, summer" />
+
+<!-- [2] including mt.js here -->
+    <script src="http://static.seriouseats.com/serious_eats/js/mt.js" type="text/javascript"></script>
+
+	<script src="http://static.seriouseats.com/js/jquery.min.js"></script>
+	<script src="http://static.seriouseats.com/js/jquery.tools.scroll.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://static.seriouseats.com/js/jquery.color.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://static.seriouseats.com/serious_eats/js/mt-site.js" type="text/javascript"></script>
+	<script src="http://static.seriouseats.com/js/jquery.accordion.min.js" type="text/javascript"></script>
+	<script src="http://static.seriouseats.com/js/accordion.js" type="text/javascript"></script>
+	<script src="http://static.seriouseats.com/js/new-home.js" type="text/javascript"></script>
+	<script type="text/javascript">
+var field_stars = new Array();
+function star_over(field, rating, on, off) {
+	for (var i = 1; i <= rating; i++) {
+		var star = document.getElementById(field + '_' + i);
+		star.src = on;
+	}
+	for (var i = rating + 1; i <= field_stars[field]; i++) {
+		var star = document.getElementById(field + '_' + i);
+		star.src = off;	
+	}
+}
+function star_out(field, rating, on, off) {
+	var val = document.getElementById(field).value;
+	if (val) {
+		val = parseInt(val);
+	} else {
+		val = 0;
+	}
+	for (var i = 1; i <= val; i++) {
+		var star = document.getElementById(field + '_' + i);
+		star.src = on;
+	}
+	for (var i = val + 1; i <= field_stars[field]; i++) {
+		var star = document.getElementById(field + '_' + i);
+		star.src = off;
+	}
+}
+function star_click(field, rating) {
+	document.getElementById(field).value = rating;
+}
+</script>
+
+    <script src="http://static.seriouseats.com/js/mobileRedirect.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/generalV2.css?v=20100728" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/global-masthead.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/print.css" media="print" />
+
+	<!--[if gte IE 7]>
+	  <link rel="stylesheet" href="http://static.seriouseats.com/css/ie7.css" type="text/css" media="screen" charset="utf-8" />
+	<![endif]-->
+	<!--[if lt IE 7]>
+	  <link rel="stylesheet" href="http://static.seriouseats.com/css/ie6.css" type="text/css" media="screen" charset="utf-8" />
+	<![endif]-->
+
+	<meta name="copyright" content="Serious Eats 2011" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="false" />
+        <meta property="fb:page_id" content="168926019255" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="alternate" type="application/atom+xml" title="Serious Eats" href="http://feeds.seriouseats.com/seriouseatsfeaturesvideos" />
+
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    $(document).ready(function() {
+        mtUpdateScores();
+    });
+    //mtAttachEvent('load', mtUpdateScores);
+    mtAttachEvent('usersignin', mtUpdateScores);
+    /* ]]> */
+    </script>
+
+
+
+	
+	
+
+	<script src="http://static.seriouseats.com/js/individualPost.js?v=022408" type="text/javascript"></script>
+
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+	$("#emailThis").one("click", function(){
+		frames['emailIframe'].location.href = "http://www.seriouseats.com/cgi-bin/mte//plugins/SendEntry/mt-send-entry.cgi?__mode=create&entry_id=151814";
+		return false;	
+	});
+});	
+//-->
+</script>
+
+
+
+
+
+<script src="http://static.seriouseats.com/js/date.js" type="text/javascript"></script>
+<script src="http://static.seriouseats.com/js/pagination.js" type="text/javascript">
+</script>
+
+<script src="http://www.seriouseats.com/2011/05/camping-recipes-for-grilling-no-cook-salads-sides-desserts-breakfast-comments.js?20110524124635" type="text/javascript"></script>
+
+<script type="text/javascript">
+  	var commentsJSLoaded = false;
+  	var commentsDisplayed = false;
+  	var commentCount = '';
+  	var commentCountText = '';
+  	var intervalID = 0;
+  	var numCommentsPerPage = 100;
+  	//100;
+
+  	// For printing comments with Recipe posts   
+  	var recipeCommentsToInclude = new Array(); 
+  	var jumpToTopOfComments = true;
+    
+  	if (numComments > 0) {
+		commentCount = numComments + " Comment";
+        if (numComments > 1) {
+              commentCount += "s";
+        }
+   	} else {
+        commentCount = "Post a Comment";
+   	}
+	  
+
+      commentCountText = '<a href="http://www.seriouseats.com/2011/05/camping-recipes-for-grilling-no-cook-salads-sides-desserts-breakfast.html#comments"  class="commentCount">';
+      commentCountText += commentCount + '</a>';               
+
+
+
+      commentsJSLoaded = true;
+	  
+	  intervalID = setInterval("showCommentSection()", 1000);
+  
+function showCommentSection()
+{
+	if (!commentsDisplayed)
+	{
+		if (commentsJSLoaded && ($('#commentSection').length) && ($('#postFooterCommentCount').length))  {
+			$("#postFooterCommentCount").html(commentCountText);
+			if($(".entryCommentCount").length > 0) {
+				$(".entryCommentCount").each(function() {
+				 	$(this).html(commentCount);
+				});
+			}	
+	   
+			if (numComments <= numCommentsPerPage) {
+				showComments(0, numComments);
+			} else {
+				jumpToTopOfComments = false;
+	
+				$(".pagination").pagination(numComments, {
+					items_per_page:numCommentsPerPage,
+					num_edge_entries:1,
+					num_display_entries:9,
+					next_show_always:false,
+					prev_show_always:false,
+					link_to:"#comments",
+					callback:handlePaginationClick
+				});
+				
+				jumpToTopOfComments = true;
+			}
+			commentsDisplayed = true;
+		} 
+	} else {
+		clearInterval(intervalID);
+	} 
+}
+  
+function showComments(startNum, endNum)
+{
+    var commentContent = '';
+	var regex = new RegExp("\n", "g"); 
+
+    for (var i = startNum;i < endNum;i++) {
+        commentContent += '<a name="' + commentJSON[i]["comment_id"] + '"></a>';
+    	if (i%2) {
+    		commentContent += '<div class="comment yellow">';
+    	} else {
+    		commentContent += '<div class="comment green">';
+    	}
+        commentContent += '<div class="comment-body">';
+        
+                commentContent += '<p>' + commentJSON[i]["text"].replace(regex, "<br />") + '</p><div class="comment-body-bottom"></div></div><p class="commenter postFooter"><a href="http://www.seriouseats.com/user/profile/' + commentJSON[i]["author_username"] + '">' + commentJSON[i]["author_nickname"] + '</a> at <a href="http://www.seriouseats.com/2011/05/camping-recipes-for-grilling-no-cook-salads-sides-desserts-breakfast.html#' + commentJSON[i]["comment_id"] + '">';
+        
+ 		
+ 		var date = commentJSON[i]["created_on"];
+ 		
+ 		var commentDate = new Date(date.substr(0,4), date.substr(4,2)-1, date.substr(6,2), date.substr(8,2), date.substr(10,2), date.substr(12,2));
+ 		
+ 		commentContent += commentDate.toString("h:mmtt on MM/dd/yy") + '</a></p></div>'; 		
+    }
+	
+    $('#commentSection').html(commentContent);
+	
+	// Recipe post - checked comments for printing
+	$('input[name$="include-comment"]').change(function() {
+		if ($(this).is(':checked')) { 
+			var arrayIndex = (jQuery.inArray($(this).attr('value'), recipeCommentsToInclude));
+			if (arrayIndex < 0) {
+				recipeCommentsToInclude.push($(this).attr('value'));
+				comments_list = recipeCommentsToInclude.join();
+			}
+		}
+		else {
+			var arrayIndex = (jQuery.inArray($(this).attr('value'), recipeCommentsToInclude));
+			if (arrayIndex >= 0) {
+				recipeCommentsToInclude.splice(arrayIndex,1);
+				comments_list = recipeCommentsToInclude.join();
+			}
+		}
+	});
+}
+
+function handlePaginationClick(page_index, pagination_container) {
+    var max_num = Math.min((page_index+1) * numCommentsPerPage, numComments);
+    var commentRange = '';
+    if ((max_num < numComments) || (max_num > numCommentsPerPage)) {
+         commentRange += "(" + (page_index*numCommentsPerPage + 1) + " - " + max_num + ") of ";
+    }
+
+    $('#commentRange').html(commentRange);
+
+	showComments(page_index*numCommentsPerPage, max_num);
+    
+	if (jumpToTopOfComments) {
+    	document.getElementById('comments').scrollIntoView();
+	}
+    return false;
+}
+
+$(document).ready(function()
+{
+	if (!commentsDisplayed)
+	{
+		showCommentSection();
+	}
+});
+</script>
+
+
+</head>
+	
+<body id="blog">
+
+<div id="topAdSpace">
+	<!-- FM Leaderboard 728x90 Top of Page Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/2385'></script>
+        <!-- FM Leaderboard 728x90 Top of Page Zone -->
+</div>
+
+<div id="container">
+
+<div class="clearfix familyTabs" id="SE">
+<ul> <!-- class="fmenu" id="familyLinks" -->
+<li><a href="http://www.seriouseats.com/" id="seTab" class="active">Serious Eats</a></li>
+<li><a href="http://slice.seriouseats.com" id="sliceTab" class="">Slice</a></li>
+<li><a href="http://aht.seriouseats.com" id="ahtTab" class="">A Hamburger Today</a></li>
+<li><a href="http://newyork.seriouseats.com/" id="senyTab" class="">New York</a></li>
+<li><a href="http://photograzing.seriouseats.com" id="photoTab" class="">Photograzing</a></li>
+<li><a href="http://www.seriouseats.com/talk/" id="talkTab" class="">Talk</a></li>
+<li><a href="http://www.seriouseats.com/recipes/" id="recipesTab" class="">Recipes</a></li>
+<li><a href="http://drinks.seriouseats.com" id="drinksTab" class="">Drinks</a></li>
+</ul>
+
+
+<div class="widget-sign-in widget">
+    <div id="signin-widget-content" class="widget-content"></div>
+</div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+function mtUpdateSignInWidget(u) {
+    var separator = '&nbsp;&nbsp;|&nbsp;&nbsp;';
+    var el = document.getElementById('signin-widget-content');
+    var content = '';
+    // alert (document.URL);
+    //alert (encodeURIComponent(document.URL));
+    if (!el) return;
+    if (u) {
+        if (u && u.is_authenticated) {
+            user = u;
+            mtSaveUser();
+        } else {
+            // user really isn't logged in; so let's do this!
+            return mtSignIn();
+        }
+    } else {
+        u = mtGetUser();
+    }
+    if (u && u.name) {
+        var url;
+		content += '<div id="login-tab" class="loggedIn"><div id="login-tab-inner">';
+        if (u.is_authenticated) {
+            if (u.is_author) {
+
+				url = 'http://www.seriouseats.com/user/profile/'; 
+
+
+            } else {
+                url = u.url;
+            }
+        } else if (u.url) {
+            url = u.url;
+        } else {
+            url = null;
+        }
+        if (url)
+            content += '<p><strong><a href="' + url + '">' + u.name + '</a></strong></p>';
+        else
+            content += '<p><strong>' + u.name + '</strong></p>';
+        if (u.is_author)
+            content += '<p><a href="http://www.seriouseats.com/cgi-bin/mte/mt-cp.cgi?__mode=edit&blog_id=30&return_to=' + encodeURIComponent(document.URL) + '">Account</a>';
+        
+        content += ' | <a href="javascript:void(0)" onclick="return mtSignOutOnClick()">Log out</a>.';
+        
+		content += '</div></div><div class="clearer"><!-- --></div>'
+    } else if (u && u.is_banned) {
+        content = 'You do not have permission to sign in to this blog.';
+    } else {
+		content = '<div id="login-tab" class="notLoggedIn"><div id="login-tab-inner"><a onclick="return mtSignInOnClick(\'login-tab-inner\')" href="javascript:void(0)" id="login-link">log in</a></div></div><div class="clearer"><!-- --></div>'
+    }
+    //alert ("content is: " + content);
+    el.innerHTML = content;
+}
+mtAttachEvent('usersignin', mtUpdateSignInWidget);
+mtUpdateSignInWidget();
+/* ]]> */
+</script>
+<script type="text/javascript">
+//mtAttachEvent('load', mtUpdateScores);
+//mtAttachEvent('usersignin', mtUpdateScores);
+</script>
+
+ 
+</div><!-- close familyNav -->
+
+<div id="header" class="SE-header">
+    <div id="topHeader">
+        <h1 id="logo" title="Serious Eats home"><a href="http://www.seriouseats.com/">Serious Eats - seriouseats.com</a></h1>   
+
+<script type="text/javascript">window.featurescode = "SE";</script>
+<script src="http://www.seriouseats.com/js/skyboxes.js" type="text/javascript"></script>
+
+
+    </div><!--/#topHeader -->
+
+    
+
+
+
+    <div id="newNavBar">
+        
+        <ul id="navNew">
+            <li>
+                <a href="http://www.seriouseats.com/" id="nav-home" class="nav-item">Home</a>
+            </li>
+            <li>
+                <a href="http://www.seriouseats.com/eating-out/" id="nav-out" class="nav-item nav-menu">Eating Out</a>
+                <div class="navFlyout">
+	
+	<div class="home-column-excerpt first">
+		<div class="thumb-100x90">
+			<a href="http://www.seriouseats.com/2011/05/chicken-no2-sandwich-at-marios-bohemian-cigar-store-san-francisco-ca.html">
+			
+				<img src="http://www.seriouseats.com/assets_c/2011/04/20110411-sandwichaday-mariosbohemian-thumb-autox90-152879.jpg" alt="" />
+			
+			</a>
+		</div>
+		<h2 class="most-popular-head">Most Popular</h2>
+		
+		
+		
+		<p class="flyout-title"><a href="http://www.seriouseats.com/2011/05/chicken-no2-sandwich-at-marios-bohemian-cigar-store-san-francisco-ca.html">Sandwich a Day: Chicken No.2 at Mario's Bohemian Cigar Store in San Francisco</a></p>
+	</div>
+	
+	
+	<div class="home-column-excerpt">
+		<div class="thumb-100x90">
+		<a href="http://www.seriouseats.com/2010/09/culinary-ambassadors-street-food-in-iceland--.html">
+		
+			<img src="http://www.seriouseats.com/assets_c/2010/09/20100904-ca-iceland-street-food-hot-dog-stand-thumb-autox90-109897.jpg" alt="" />
+		
+		</a>
+		</div>
+		<h2 class="featured-column-head">Featured</h2>
+		
+		
+		
+		<p class="flyout-title"><a href="http://www.seriouseats.com/2010/09/culinary-ambassadors-street-food-in-iceland--.html">Culinary Ambassadors: Street Food in Iceland - Hot Dogs from Bæjarins Beztu</a></p>
+	</div>
+	
+	<div class="recent-posts"><a href="/eating-out/" class="nav-more">Most Recent Posts &raquo;</a></div>
+	
+</div>
+
+            </li>
+            <li>
+                <a href="http://www.seriouseats.com/recipes/" id="nav-recipes" class="nav-item nav-menu">Recipes</a>
+                <div class="navFlyout">
+	
+	<div class="home-column-excerpt first">
+		<div class="thumb-100x90">
+			<a href="http://www.seriouseats.com/recipes/2011/05/bread-baking-sesame-and-flax-flatbreads-recipe.html">
+			
+				<img src="http://www.seriouseats.com/recipes/assets_c/2011/05/20110524-bread-baking-sesame-flax-flatbreads-thumb-autox90-161241.jpg" alt="" />
+			
+			</a>
+		</div>
+		<h2 class="most-popular-head">Most Popular</h2>
+			
+				<p class="linksrc"><a href="http://www.seriouseats.com/recipes/" class="recipes_post" rel="nofollow">Recipes</a></p>
+		
+		<p class="flyout-title"><a href="http://www.seriouseats.com/recipes/2011/05/bread-baking-sesame-and-flax-flatbreads-recipe.html">Bread Baking: Sesame and Flax Flatbreads</a></p>
+	</div>
+	
+	
+	<div class="home-column-excerpt">
+		<div class="thumb-100x90">
+		<a href="http://www.seriouseats.com/recipes/2010/12/easy-homemade-hot-chocolate-mix-recipe.html">
+		
+			<img src="http://www.seriouseats.com/recipes/assets_c/2010/12/20101215-hot-chocolate-primary-thumb-autox90-128570.jpg" alt="" />
+		
+		</a>
+		</div>
+		<h2 class="featured-column-head">Featured</h2>
+			
+				<p class="linksrc"><a href="http://www.seriouseats.com/recipes/" class="recipes_post" rel="nofollow">Recipes</a></p>
+		
+		<p class="flyout-title"><a href="http://www.seriouseats.com/recipes/2010/12/easy-homemade-hot-chocolate-mix-recipe.html">Easy Homemade Hot Chocolate Mix</a></p>
+	</div>
+	
+	<div class="recent-posts"><a href="/recipes/" class="nav-more">Most Recent Posts &raquo;</a></div>
+	
+</div>
+
+            </li>
+            <li>
+                <a href="http://www.seriouseats.com/columns/" id="nav-columns" class="nav-item nav-menu">Columns</a>
+                <div class="navFlyout">
+
+<div id="column-flyout">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/a_sandwich_a_day/?ref=flyout" class="column-title"><div>A Sandwich a Day</div></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Entry IS the parent Columns category -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/crisper_whisperer/?ref=flyout" class="column-title"><div>Crisper Whisperer</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/ed_levines_serious_diet/?ref=flyout" class="column-title"><div>Ed Levine's Serious Diet</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/edible_diy/?ref=flyout" class="column-title"><div>Edible DIY</div></a>
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/fast_food/?ref=flyout" class="column-title"><div>Fast Food</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/food_policy/?ref=flyout" class="column-title"><div>Food Policy</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/gadgets/?ref=flyout" class="column-title"><div>Gadgets</div></a>
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/hot_dog_of_the_week/?ref=flyout" class="column-title"><div>Hot Dog of the Week</div></a>
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/how-to/?ref=flyout" class="column-title"><div>How To</div></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/in-season/?ref=flyout" class="column-title"><div>In Season</div></a>
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/knife_skills/?ref=flyout" class="column-title"><div>Knife Skills</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/market-scene/?ref=flyout" class="column-title"><div>Market Scene</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/meet_and_eat/?ref=flyout" class="column-title"><div>Meet and Eat</div></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/mixed_review/?ref=flyout" class="column-title"><div>Mixed Review</div></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/scandinavian_street_food/?ref=flyout" class="column-title"><div>Scandinavian Street Food</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/serious-cheese/?ref=flyout" class="column-title"><div>Serious Cheese</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/serious-chocolate/?ref=flyout" class="column-title"><div>Serious Chocolate</div></a>
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/serious_entertaining/?ref=flyout" class="column-title"><div>Serious Entertaining</div></a>
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/serious-heat/?ref=flyout" class="column-title"><div>Serious Heat</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/serious_reads/?ref=flyout" class="column-title"><div>Serious Reads</div></a>
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/seriously_asian/?ref=flyout" class="column-title"><div>Seriously Asian</div></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/southern-belly/?ref=flyout" class="column-title"><div>Southern Belly</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/spice_hunting/?ref=flyout" class="column-title"><div>Spice Hunting</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/taste-tests/?ref=flyout" class="column-title"><div>Taste Tests</div></a>
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/thats_nuts/?ref=flyout" class="column-title"><div>That's Nuts</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/the-food-lab/?ref=flyout" class="column-title"><div>The Food Lab</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/the_nasty_bits/?ref=flyout" class="column-title"><div>The Nasty Bits</div></a>
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/when_pigs_fly/?ref=flyout" class="column-title"><div>When Pigs Fly</div></a>
+
+
+ 
+
+	<div class="recent-posts"><a href="/columns/?ref=flyout" class="nav-more">See More Columns &raquo;</a></div>
+	
+</div>
+</div>
+
+            </li>
+                        <li>
+                <a href="http://www.cooking.com/aff/adredir.asp?CCAID=CBSEPTPH&Redir=%2Fseriouseats" id="nav-home" class="nav-item">Shop</a>        
+            </li>
+             <li>
+                <a href="http://videos.seriouseats.com" id="nav-videos" class="nav-item">Videos</a>        
+            </li>
+        </ul>
+        
+        <div id="search">
+
+<form id="SearchForm" method="get" action="http://www.seriouseats.com/cgi-bin/mte/mt-search.cgi">
+        <input type="hidden" id="IncludeBlogs" name="IncludeBlogs" value="30" />
+        <input type="hidden" name="limit" value="20" />
+        <input id="searchBox" class="query" name="search" value="" />
+
+
+
+		<input type="image" value="search" src="http://www.seriouseats.com/imagesV2/buttons/search.png" width="62" height="24" border="0" alt="search" id="searchButton" name="sa">
+    </form>
+
+<script type="text/javascript">
+// For blogs under Serious Eats, we want to use their blog ID for search
+if ($('#IncludeBlogs').val() == '31') {
+   if (document.location.href.indexOf('/talk/')>-1) {
+      $('#IncludeBlogs').val('32');
+   }else if (document.location.href.indexOf('/recipes/')>-1) {
+      $('#IncludeBlogs').val('34');
+   }else {
+      $('#IncludeBlogs').val('30');
+   }
+}
+
+</script>
+
+
+
+        </div>
+        <div class="clearer"></div>
+        
+    </div><!-- close navBar -->
+
+</div><!-- close header -->
+
+	<div id="content">
+		
+		<div id="threeColumn1">
+			
+		<!-- post include -->
+		
+			<div class="individualPost">
+
+				<div class="tools" id="blogTools">
+
+					<ul id="postTools" class="left">
+						<li><a href="http://www.seriouseats.com/2011/05/print/camping-recipes-for-grilling-no-cook-salads-sides-desserts-breakfast.html" title="Print" target="_blank"><img src="/imagesV2/transparent.gif" class="icon icon-print" alt="Print This" /></a></li>
+						<li><a class="addthis_button_email"></a></li>
+					</ul>
+					
+					<ul id="share" class="right">
+                                        <li><a class="addthis_button_tweetmeme" tm:style="compact"></a></li> 
+                   	                <li id="shareParent">Share:</li>
+                                        <li><a class="addthis_button_reddit"></a></li>
+                                        <li><a class="addthis_button_delicious"></a></li>
+                                        <li><a class="addthis_button_facebook"></a></li>
+                                        <li><a class="addthis_button_twitter"></a></li>                                        
+					<li><a class="addthis_button_stumbleupon"></a></li>
+					<li><a class="addthis_button_facebook_like"></a></li>
+					</ul><!-- close share --><div class="clearer"></div>
+				
+				
+					<div id="iframeContainer" style="background: #fff;">
+						<iframe id="emailIframe" name="emailIframe" width="489" height="465" background="#ffffff"  bgcolor="#ffffff" frameborder="0" scrolling="no" src="" ></iframe>
+					</div>
+
+				</div><!-- close blogTools -->  
+
+				<h3>25 Great Recipes for Camping</h3>
+			
+				<p class="byline">Posted by <a href="http://www.seriouseats.com/user/profile/The Serious Eats Team">The Serious Eats Team</a>, May 23, 2011 at  7:00 PM</p>     
+			
+
+				     
+<script type="text/javascript">
+        $(document).ready(function(){ 
+        	var entryRecipeAlert = '#' + $(this).attr('id') + ' .recipe-alert';
+            if (($('.individualPost .recipe-alert').length > 0) && ($('.individualPost .entry-main-image').length > 0)) {
+            	$('.individualPost .recipe-alert').insertAfter($('.individualPost .entry-main-image').parent());
+            }
+            if ($('.individualPost .breakoutbox').length > 0) {
+            	$('.individualPost .breakoutbox').insertAfter($('.individualPost .recipe-alert'));
+		$('.individualPost .breakoutbox').css('clear', 'right');
+            }
+        });
+    </script>
+
+    
+    
+    
+     
+
+
+				<p>Got camping plans for the three-day weekend? (Or any weekend, for that matter.) Stock up that cooler with a few staples like granola, pizza dough, and make-ahead desserts and your camping menu just got way more delicious. Just don't blame us if you attract the bears.</p>
+
+<h4>For the Fire</h4>
+
+<p><img alt="dt-grilledlimeshrimp.jpg" src="http://www.seriouseats.com/dt-grilledlimeshrimp.jpg" width="500" height="333" class="mt-image-none" style="" /></p>
+
+<p><strong><a href="http://www.seriouseats.com/recipes/2011/02/ultimate-sriracha-burger-recipe.html">Ultimate Sriracha Burger »</a><br />
+<a href="http://www.seriouseats.com/recipes/2009/07/grilled-lime-garlic-shrimp-recipe.html">Grilled Lime Garlic Shrimp »</a><br />
+<a href="http://www.seriouseats.com/recipes/2010/05/blue-cheese-portobello-mushroom-burgers-recipe.html">Blue Cheese Portobello Mushroom Burgers »</a><br />
+ <a href="http://www.seriouseats.com/recipes/2010/05/how-to-make-grilled-pizza-napoletana-on-a-barbecue-recipe.html">Grilled Pizza Napoletana »</a><br />
+<a href="http://www.seriouseats.com/recipes/2009/05/grilling-spinach-and-cheese-stuffed-portobello-mushrooms-recipe.html">Spinach and Cheese Stuffed Portobellos »</a><br />
+<a href="http://www.seriouseats.com/recipes/2011/03/grilling-smashed-potatoes.html">Smashed Potatoes »</a><br />
+<a href="http://www.seriouseats.com/recipes/2010/08/grilling-corn-with-chili-lime-butter-recipe.html">Corn with Chili Lime Butter »</a><br />
+<a href="http://www.seriouseats.com/recipes/2010/07/grilling-salad-with-grilled-radicchio-knob-onions-recipe.html">Grilled Radicchio and Knob Onions Salad »</a><br />
+<a href="http://www.seriouseats.com/recipes/2010/06/grilling-fries-potato-wedges-recipe.html">Grilled Potato Wedges »</a></strong></p>
+
+<h4>Make-Ahead Pastas and Salads</h4>
+
+<p><img alt="20110523-camping-recipes.jpg" src="http://www.seriouseats.com/images/20110523-camping-recipes.jpg" width="500" height="375" class="mt-image-none" style="" /></p>
+
+<p><strong><a href="http://www.seriouseats.com/recipes/2010/03/dinner-tonight-artichoke-olive-and-lemon-pasta-salad-recipe.html">Artichoke, Olive, and Lemon Pasta »</a><br />
+<a href="http://www.seriouseats.com/recipes/2009/09/pasta-with-corn-arugula-and-tomatoes-recipe.html">Pasta with Corn, Arugula, and Tomatoes »</a><br />
+<a href="http://www.seriouseats.com/recipes/2010/09/bocce-pasta-salad-recipe.html">Bocce Pasta Salad »</a><br />
+<a href="http://www.seriouseats.com/recipes/2009/09/yellow-tomato-salad-roasted-red-pepper-feta-mint-salad-recipe.html">Yellow Tomato Salad with Roasted Red Pepper, Feta, and Mint »</a><br />
+<a href="http://www.seriouseats.com/recipes/2010/09/healthy-and-delicious-confetti-quinoa-salad.html">Confetti Quinoa Salad »</a></strong></p>
+
+<h4>Desserts to Pack</h4>
+
+<p><img alt="20110309-127677-Serious-Sweets-SmoresBrownies-PRIMARY.jpg" src="http://www.seriouseats.com/20110309-127677-Serious-Sweets-SmoresBrownies-PRIMARY.jpg" width="500" height="375" class="mt-image-none" style="" /></p>
+
+<p><strong><a href="http://www.seriouseats.com/recipes/2011/03/serious-sweets-smores-brownie-bars-desserts-snacks-recipe.html">Smores Brownie Bars »</a><br />
+<a href="http://www.seriouseats.com/recipes/2011/04/pecan-pie-bars-recipe.html">Pecan Pie Bars »</a><br />
+<a href="http://www.seriouseats.com/recipes/2009/09/sunday-brunch-crumb-cake-breakfast-coffee-recipe.html">Crumb Cake »</a><br />
+<a href="http://www.seriouseats.com/recipes/2010/01/grilling-bartlett-pears-a-la-mode-recipe.html">Grilled Pears a la Mode »</a><br />
+<a href="http://www.seriouseats.com/recipes/2010/12/cook-the-book-peanut-butter-and-jelly-bars.html">PB and J bars »</a></strong></p>
+
+<h4>For Breakfast</h4>
+
+<p><img alt="20100606grits.jpg" src="http://www.seriouseats.com/20100606grits.jpg" width="500" height="333" class="mt-image-none" style="" /></p>
+
+<p><strong><a href="http://www.seriouseats.com/recipes/2011/02/oat-and-date-bars-breakfast-snack-recipe.html">Oat and Date Bars »</a><br />
+<a href="http://www.seriouseats.com/recipes/2010/06/sunday-brunch-bacon-cheddar-broiled-grits.html">Bacon Cheddar Grits »</a><br />
+<a href="http://www.seriouseats.com/recipes/2011/03/hearty-granola-recipe.html">Granola »</a><br />
+<a href="http://www.seriouseats.com/recipes/2008/08/sunday_brunch_kenny_shopsins_perfect_scramble.html">Kenny Shopsin's Scrambled Eggs »</a><br />
+<a href="http://www.seriouseats.com/recipes/2009/10/healthy-delicious-granola-bars-recipe.html">Granola Bars »</a><br />
+<a href="http://www.seriouseats.com/recipes/2010/04/buttermilk-corn-muffins-recipe.html">Buttermilk Corn Muffins »</a></strong></p>
+				<a name="continued"></a>
+				
+				
+				
+
+				
+
+<p class="postFooter" id="commentsAndFavoritesFooter">
+
+<span id="postFooterCommentCount"><a href="http://www.seriouseats.com/2011/05/camping-recipes-for-grilling-no-cook-salads-sides-desserts-breakfast.html#comments" class="commentCount">Post a Comment</a></span>
+
+
+<span class="favorite">
+
+<!-- [1] new favorite code  -->
+<span class="entry-scoring">
+<a href="javascript:void(0);" onclick="return mtScore(151814);" id="scoring-id-151814" class="scoring">Favorite this!</a> &nbsp;(<span id="scoring-score-151814" class="scoring-score">17</span>)
+</span>
+
+
+</span>
+
+</p>
+<div class="clearer"></div>
+
+<p class="postFooter">Tags: <a href="/tags/camping">camping</a>, <a href="/tags/grilling">grilling</a>, <a href="/tags/recipe roundups">recipe roundups</a>, <a href="/tags/salads">salads</a>, <a href="/tags/summer">summer</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+					
+<div class="clearer"></div>
+
+
+
+
+<br/>
+
+<script language='JavaScript'>
+var OB_langJS = 'http://widgets.outbrain.com/lang_en.js'; var OBITm = '1296090325009';var OB_raterMode = 'none';var OB_recMode = 'strip'; 
+
+var OutbrainPermaLink='http://www.seriouseats.com/2011/05/camping-recipes-for-grilling-no-cook-salads-sides-desserts-breakfast.html'; 
+
+ if ( typeof(OB_Script)!='undefined' )OutbrainStart(); else { var OB_Script = true; var str = unescape("%3Cscript src=\'http://widgets.outbrain.com/OutbrainRater.js\' type=\'text/javascript\'%3E%3C/script%3E"); document.write(str); }
+ </script>
+
+
+<div id="adStrip">
+				
+<script type="text/javascript"><!--
+google_ad_client = "pub-8758429631178774";
+/* 468x60, created 4/18/08 */
+google_ad_slot = "2061107744";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+				
+				</div><!-- close adStrip -->
+					
+					
+			</div><!-- close individual post -->
+
+	<div id="comments">
+				
+					
+						
+						
+<h4 class="body"><span id="commentRange"></span>
+<span class="entryCommentCount">Comments</span>:</h4>
+
+					
+					
+	
+					
+        <div id="commentPagination" class="pagination">
+        </div>
+        <div style="clear:both;"></div>
+	<div id="commentSection" style="padding-top:10px;padding-bottom:10px;">
+	</div>
+        <div id="bottomCommentPagination" class="pagination"></div>
+        <div style="clear:both;"></div>
+                                        
+
+				</div><!-- end comments -->
+				
+				
+
+<a name="ihascommented"></a><div id="commented" style="display: none;"><p>Thanks for commenting!<br />Your comment has been accepted<br />and will appear in a moment.</p></div>
+
+ <h4 class="body addAComment">Add a comment:</h4>
+
+
+					<div id="add">
+						<script type="text/javascript">
+						user = mtGetUser();
+						if (user && user.is_authenticated) {
+							document.write("");
+						} else {
+							document.write("<div class=\"commentGuidelines\"><h3>Hello Eater!</h3><p>To start talking, please <a href=\"javascript:void(0)\" onclick=\"return mtSignInOnClick('signin-widget-content')\">log in</a> or <a href=\"http://www.seriouseats.com/cgi-bin/mte/mt-cp.cgi?__mode=register&blog_id=30&return_to=" + encodeURIComponent('http://www.seriouseats.com/welcome/') + "\">sign up</a> &mdash; it's fast and free!</p></div>");
+						}
+						</script>
+					</div>
+					
+				
+
+				
+
+
+					<div id="post-comment">
+						
+					
+						<a name="commentform"></a>
+						<div class="formSection">
+							<form method="post" action="http://www.seriouseats.com/cgi-bin/mte/mt-comments.cgi" name="comments_form" id="comments_form" onsubmit="setCookie('commented', 'true'); document.getElementById('comment-post').disabled=true; document.getElementById('comment-post').value = '&nbsp;&nbsp;&nbsp;Please wait...&nbsp;&nbsp;&nbsp;'; ">
+
+<input type="hidden" name="post" value="post" />
+								<input type="hidden" name="static" value="1" />
+								<input type="hidden" name="entry_id" value="151814" />
+								<textarea id="addComment" rows="5" cols="60" name="text" class="formText"></textarea>
+								<div style="float:left"><p class="requirements">Comments can take up to a minute to appear - please be patient!</p></div>
+
+<div style="float:right" class="formCommentPreview">
+									<input type="submit" value="Post a Comment!" name="post" id="comment-post" class="formButton"  />
+								</div><div class="clearer"></div>
+							</form>
+						</div>
+						
+						<div id="previewingComment">	
+							<h4 class="body">Previewing your comment:</h4>
+							<div class="comment preview">
+								<div class="comment-body" >
+									<p id="livePreview">&nbsp;</p>
+									<div class="comment-body-bottom"></div>
+								</div>
+							</div><!-- close comment preview -->
+						</div><!-- close previewing comment -->				
+			
+						<div class="tools" id="HTMLHints">
+							<p><strong>HTML Hints</strong></p>
+							<p>Some HTML is OK: &lt;a href="URL"&gt;link&lt;/a&gt;, &lt;strong&gt;<strong>strong</strong>&lt;/strong&gt;, &lt;em&gt;<em>em</em>&lt;/em&gt;</p>
+							
+							<p><strong>Comment Guidelines</strong></p>
+							<p>Post whatever you want, just keep it seriously about eats, seriously. We reserve the right to delete off-topic or inflammatory comments. Learn more at our <a href="http://www.seriouseats.com/comment-policy/">Comment Policy page</a>.</p>
+							
+							<p>If you see something not so nice, please, <a href="http://www.seriouseats.com/contact?selected=flag&url=http://www.seriouseats.com/2011/05/camping-recipes-for-grilling-no-cook-salads-sides-desserts-breakfast.html">report an inappropriate comment.</a></strong></p>
+						</div>
+						
+					
+					</div><!-- close post-comment -->
+			
+					 <script type="text/javascript">
+						 if (!user || !user.is_authenticated) { document.getElementById("post-comment").style.display = 'none'; }
+					 </script>
+ 
+ 
+				
+
+
+		</div><!-- end column 1 -->
+
+		<!-- SQUARE AD SPACE -->
+		<div id="featuredRight2Columns" class="indEntrySquare">
+		<div class="indEntrySquareAd" id="BIGBOX">
+			<!-- FM 300x250 ATF- Main Site Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/2386'></script>
+                       <!-- FM 300x250 ATF- Main Site Zone -->
+		</div>		
+	</div><!-- close featuredRight2Columns -->
+		<!-- /SQUARE AD SPACE -->
+
+<div id="featuredRight2Columns">
+<!-- Facebook Like Fan Box -->
+<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fseriouseats&amp;width=350&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=true&amp;height=265" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:350px; height:265px; padding-bottom:8px;" allowTransparency="true"></iframe>
+<!--/Facebook Like Fan Box -->
+</div>
+
+<div class="vsw-ad-block">
+<!-- VSW ADS -->
+<script type="text/javascript" language="JavaScript">
+var era_rc = {
+ERADomain: 'as.vs4food.com',
+PubID: 'seriouseats'
+};
+</script>
+<link rel="stylesheet" type="text/css" href="http://as.vs4food.com/ERA/Custom/VSW/CSS/HtmlRelatedLinks.css">
+<script type="text/javascript" language="JavaScript" src="http://as.vs4food.com/ERA/era_rl.aspx"></script>
+<!-- END VSW ADS -->
+</div>
+
+		<div id="threeColumn2">
+			
+
+<div class="column2List2" id="multiview">
+
+<!-- HOT TOPICS -->	
+	<div id="hotTopics1">
+		<div class="heading">
+			<h4 title="The most active entries based on number of comments in the last 24 hours">Hot Topics</h4>
+		</div>
+
+<div>
+
+<p><a href="http://www.seriouseats.com/2011/05/video-how-to-catch-kill-and-eat-an-arkansas-frog-perennial-plate.html" rel="nofollow">Video: How to Catch, Kill and Eat an Arkansas Frog</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/2011/05/video-how-to-catch-kill-and-eat-an-arkansas-frog-perennial-plate.html#comments" rel="nofollow">1 comment</a></p>
+
+<p><a href="http://www.seriouseats.com/talk/2011/05/your-best-brunch-definition.html" rel="nofollow">Your Best Brunch Definition?</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/talk/2011/05/your-best-brunch-definition.html#comments" rel="nofollow">3 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/recipes/2011/05/bread-baking-sesame-and-flax-flatbreads-recipe.html" rel="nofollow">Bread Baking: Sesame and Flax Flatbreads</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/recipes/2011/05/bread-baking-sesame-and-flax-flatbreads-recipe.html#comments" rel="nofollow">2 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/2011/05/cookie-monster-chai-oatmeal-raisin-cookies.html" rel="nofollow">Cookie Monster: Chai Oatmeal Raisin Cookies</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/2011/05/cookie-monster-chai-oatmeal-raisin-cookies.html#comments" rel="nofollow">3 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/recipes/2011/05/chai-oatmeal-cookies-recipe.html" rel="nofollow">Chai Oatmeal Raisin Cookies</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/recipes/2011/05/chai-oatmeal-cookies-recipe.html#comments" rel="nofollow">0 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/talk/2011/05/its-harder-than-it-looks.html" rel="nofollow">It's Harder Than it Looks</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/talk/2011/05/its-harder-than-it-looks.html#comments" rel="nofollow">16 comments</a></p>
+
+</div>
+
+	</div><!-- /HOT TOPICS  -->
+
+</div><!-- /multiview  -->
+	
+			<!-- DAY OLD SPECIAL -->
+			<script src="http://www.seriouseats.com/js/sidebuckets.js?20110518223203" type="text/javascript"></script>
+
+			<!-- /DAY OLD SPECIAL -->
+			
+		
+		
+		</div><!-- end column 2 -->
+	
+			
+		<div id="threeColumn3">
+		
+			<div class="columnAdSpace">
+	<div class="columnAdTower">
+		<!-- FM 160x600 Right Sidebar MainSite Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/2388'></script>
+                <!-- FM 160x600 Right Sidebar MainSite Zone -->
+	</div>
+</div>
+
+			
+		</div><!-- end column 3 -->
+		<div class="clearer"></div>
+		
+	</div><!-- close content div -->
+
+<script src="http://www.seriouseats.com/js/bottombuckets.js?20110515111504" type="text/javascript"></script>
+
+
+<div id="footer" class="shortFooter">
+
+	<div id="footerColumn1" class="footer-column">
+		<h3 id="h-still-hungry">Still Hungry?</h3>
+		<ul>	
+			<li><a href="/?ref=footer">Home</a></li>
+			<li><a href="/talk/?ref=footer">Talk</a></li>
+			<li><a href="/recipes/?ref=footer">Recipes</a></li>
+			<li><a href="/eating_out/?ref=footer">Eating Out</a></li>
+			<li><a href="http://videos.seriouseats.com/?ref=footer">Videos</a></li>
+			<li><a href="/columns/?ref=footer">Columns</a></li>
+		</ul>
+	</div><!-- close footerColumn1 -->
+		
+	<div id="footerColumn2" class="footer-column">
+	   <h3 id="h-delivery">Delivery</h3>
+		<p>Subscribe to our email newsletters so you don't miss anything delicious!</p>
+
+   		<form action="http://www.seriouseats.com/cgi-bin/mte/plugins/ProfileMail/profilemail.cgi" enctype="multipart/form-data" id="profile_edit" method="post">
+   		    <input type="hidden" name="__mode" value="save">
+   		    <input type="hidden" name="blog_id" value="30">
+   			<input value="Your Email Address:" type="text" name="email" class="short" onblur="if(this.value==''){this.style.color=''; this.form.reset()}" onfocus="this.value = ''; this.style.color = '#000';" />
+   			<div class="formField">
+   				<input type="checkbox" name="serious_eats_weekly_newsletter" id="serious_eats_weekly_newsletter"  /><label for="serious_eats_weekly_newsletter"> Weekly Newsletter</label>
+   		 		<br />
+   				<input type="hidden" name="name" value="" />
+   				<input type="checkbox" name="serious_eats_recipe_newsletter" id="serious_eats_recipe_newsletter"  /><label for="serious_eats_recipe_newsletter"> Recipe Newsletter</label>
+   				<br />
+   				<input type="checkbox" name="serious_eats_new_york_newsletter" id="serious_eats_new_york_newsletter"  /><label for="serious_eats_new_york_newsletter"> New York Newsletter</label>
+   				<br />
+   				<input type="checkbox" name="serious_eats_drinks_newsletter" id="serious_eats_drinks_newsletter"  /><label for="serious_eats_drinks_newsletter"> Drinks Newsletter</label>
+   				
+   			</div>
+   			<input type="image" value="Subscribe" src="http://seriouseats.com/imagesV2/buttons/subscribe.png" width="82" height="24" border="0" alt="subscribe" />
+   		</form>
+
+
+	</div><!-- close footerColumn2 -->
+		
+	<div id="footerColumn3" class="footer-column">
+		<h3 id="h-kiss-the-chef">Kiss the Chef</h3>
+		<ul>	
+			<li><a href="/about/?ref=footer">About Us</a></li>
+			<li><a href="/contact/?ref=footer">Contact Us</a></li>
+			<li><a href="/advertise/?ref=footer">Advertise with Us</a></li>
+		</ul>
+		<h3 id="h-family-style">Family Style</h3>
+		<ul>
+			<li><a href="http://www.sliceny.com/?ref=sefooter">Slice</a></li>
+			<li><a href="http://www.ahamburgertoday.com/?ref=sefooter">A Hamburger Today</a></li>
+			<li><a href="http://newyork.seriouseats.com/?ref=sefooter">Serious Eats: New York</a></li>
+			<li><a href="http://photograzing.seriouseats.com/?ref=sefooter">Photograzing</a></li>
+		</ul>
+	</div><!-- close footerColumn3 -->
+
+	<div id="footerColumn4" class="footer-column">
+			<h3 id="h-feed-yourself">Feed Yourself</h3>
+			<p>Subscribe to our feeds:</p>
+			<p><a href="http://feeds.feedburner.com/seriouseatsfeaturesvideos">Serious Eats</a>, <a href="http://feeds.feedburner.com/seriouseatstalk">Talk</a>, <a href="http://feeds.feedburner.com/seriouseats/recipes">Recipes</a></p>
+			<br />
+			<p>Subscribe by email:</p>
+			<p><a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=595294&amp;loc=en_US">All of Serious Eats</a></p>
+	</div><!-- close footerColumn4 --><div class="clearer"></div>
+
+	<a href="http://twitter.com/seriouseats" id="footer-twitter">Follow us on Twitter!</a>
+
+</div><!-- close footer div -->
+
+
+
+<!-- footer links module -->
+<div id="footerLinks">
+<ul>
+<li><a href="http://www.seriouseats.com/faq/">FAQ</a></li>
+<li><a href="http://www.seriouseats.com/advertise/">Advertise</a></li>
+<li><a href="http://www.seriouseats.com/sitemap/">Sitemap</a></li>
+<li><a href="http://www.seriouseats.com/terms/">Terms of Use</a></li>
+<li><a href="http://www.seriouseats.com/privacy/">Privacy Policy</a></li>
+<li>&copy; 2006-2011</li>
+</ul>
+</div>
+<!-- /footer links module -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js'; type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-962456-1");
+pageTracker._setDomainName(".seriouseats.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<script type="text/javascript">
+function recordOutboundLink(link, category, action, outgoingPageviewLink) {
+  try {
+    pageTracker._trackEvent(category, action, outgoingPageviewLink);
+    pageTracker._trackPageview(outgoingPageviewLink);
+    //alert (outgoingPageviewLink);
+    //setTimeout('window.open(link.href)', 100); 
+    setTimeout('document.location = "' + link + '"', 100) 
+  }catch(err){}
+}
+</script>
+
+<!-- Start Amazon Impression Reporting Script -->
+<script type="text/javascript" src="http://www.assoc-amazon.com/s/impression-counter?tag=serieats-20&o=1"></script>
+<noscript><img src="http://www.assoc-amazon.com/s/noscript?tag=serieats-20" alt="" /></noscript>
+<!-- End Amazon Impression Reporting Script -->
+
+<!-- FM Tracking Pixel -->
+<script type='text/javascript' src='http://static.fmpub.net/site/seriouseats'></script>
+<!-- FM Tracking Pixel -->
+
+<!-- chartbeat -->
+<script type="text/javascript">
+var cbjspath = "static.chartbeat.com/js/chartbeat.js?uid=2384&domain=seriouseats.com";
+var cbjsprotocol = (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://");
+document.write(unescape("%3Cscript src='"+cbjsprotocol+cbjspath+"' type='text/javascript'%3E%3C/script%3E"))
+</script>
+<!-- chartbeat -->
+
+<!-- Addthis -->
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=seriouseats"></script>
+<!-- Addthis -->
+
+<!-- SkimLinks -->
+<script type="text/javascript" src="http://s.skimresources.com/js/3781X630295.skimlinks.js"></script>
+<!-- SkimLinks -->
+
+<!-- FM Custom Video Egg Zone Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/3947'></script>
+<!-- FM Custom Video Egg Zone Zone -->
+
+<!--  BuzzFeed code begins -->
+<div id="BF_WIDGET_1"> </div>
+<script type="text/javascript">
+(function( ){
+	BF_WIDGET_JS=document.createElement('script'); BF_WIDGET_JS.type="text/javascript";
+	BF_WIDGET_SRC="http://ct.buzzfeed.com/wd/UserWidget?u=seriouseats.com&amp;to=1&amp;or=vb&amp;wid=1&amp;cb=" + (new Date()).getTime();
+	setTimeout(function() {document.getElementById('BF_WIDGET_1').appendChild(BF_WIDGET_JS);BF_WIDGET_JS.src=BF_WIDGET_SRC},1);
+})();
+</script>
+<!-- / BuzzFeed code ends -->
+
+</div><!-- close container div -->
+
+<script type="text/javascript">
+  try {
+    pageTracker._trackEvent('Serious Eats_Individual_Pages', 'Outbrain_Pageview', 'http://www.seriouseats.com/2011/05/camping-recipes-for-grilling-no-cook-salads-sides-desserts-breakfast.html');
+  }catch(err){}
+</script>
+
+</body>
+</html>

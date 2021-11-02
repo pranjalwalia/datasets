@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+<head>
+<title> | Computerworld NZ</title><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="author" content="Fairfax Media Business Group ">
+<meta name="copyright" content="Fairfax Media Business Group">
+<meta name="description" content="Self-replicating printer frees-up 3D printing under GNU">
+<link rel="alternate" type="application/rss+xml" title="Computerworld's rss feed" href="http://computerworld.co.nz/rss/computerworld.xml">
+<link rel="shortcut icon" href="http://computerworld.co.nz/news.nsf/cw.ico">
+<link rel="image_src" href="http://computerworld.co.nz/idgnet/covers/computerworld_120.jpg" />
+<link rel="stylesheet" href="http://computerworld.co.nz/cw/2010/computerworld_style.css" type="text/css" media="all" />
+<!--[if IE]>
+<link type="text/css" rel="stylesheet" media="all" href="http://computerworld.co.nz/cw/2010/computerworld_style_ie.css" />
+<![endif]-->
+<script type="text/javascript" src="http://computerworld.co.nz/ads/scripts/flashobject.js"></script>
+<script type="text/javascript" src="http://computerworld.co.nz/ads/scripts/ad_tag.js"></script>
+<script type="text/javascript" src="http://computerworld.co.nz/fmbg/script/jquery.js"></script>
+<script type="text/javascript" src="http://computerworld.co.nz/cw/2010/cw_script.js"></script>
+<link rel="canonical" href="http://computerworld.co.nz/news.nsf/tech/2F5C3C5D68A380EDCC257423006E71CD" />
+<script language="JavaScript" type="text/javascript">
+<!-- 
+document._domino_target = "_self";
+function _doClick(v, o, t) {
+  var url="/news.nsf/0/2f5c3c5d68a380edcc257423006e71cd?OpenDocument&Click=" + v;
+  if (o.href != null)
+    o.href = url;
+  else {
+    if (t == null)
+      t = document._domino_target;
+    window.open(url, t);
+  }
+
+}
+// -->
+</script>
+</head>
+<body text="#000000" bgcolor="#FFFFFF">
+
+<form action=""><!--google Analytics start--><script type="text/javascript">
+window.google_analytics_uacct = "UA-645112-4";
+</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-645112-4");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+<!--google Analytics finished-->
+</form>
+<!--Big banner ad start--> <div id="wall_bg" style="background-image: none">
+ <div id="adSpace1">
+<script language="JavaScript" src="http://ad-apac.doubleclick.net/adj/onl.fbg.cw/tech;pos=pos1;tile=1;dcopt=ist;sz=760x120,728x90;ord=0.633127336537728?" type="text/javascript"></script>
+<noscript><a href="http://ad-apac.doubleclick.net/jump/onl.fbg.cw/tech;pos=pos1;tile=1;sz=760x120,728x90;ord=0.633127336537728?" target="_blank"><img src="http://ad-apac.doubleclick.net/ad/onl.fbg.cw/tech;pos=pos1;tile=1;sz=760x120,728x90;ord=0.633127336537728?"  border="0" alt=""></a></noscript>
+  </div><!--Big banner ad finished-->
+<!--Page top start: Logo, Quick links, Search box start--><div id="container"><div id="page_top"><div id="site_logo"><a href="http://computerworld.co.nz" title="Computerworld &#8211; IT news for New Zealand's ICT community" ><img src="http://computerworld.co.nz/cw/2010/images/logo_computerworld_web.jpg" alt="Computerworld &#8211; IT news for New Zealand's ICT community" /></a></div>
+    <div id="search">
+      <p id="quick_links"><a href="/news.nsf/sitemap" title="sitemap">sitemap</a> | <a href="http://computerworld.co.nz/cw/subscribe" title="subscribe" target="_blank">subscribe</a> | <a href="http://fairfaxbm.co.nz/signup#computerworld" title="newsletters" target="_blank">newsletters</a> | <a href="http://fairfaxbm.co.nz/sales/computerworld#contacts" title="contacts" target="_blank">contacts</a></p>
+      <form method="post" action="/news.nsf/HTMLSearchForm?CreateDocument" name="Search_Form">
+<input name="query" maxlength="255" id="search_field_form" type="text" /><input id="img-search" value="Search" src="http://computerworld.co.nz/cw/2010/images/bt_search.jpg" type="image" />
+      </form></div></div><!--Page top start: Logo, Quick links, Search box finished-->
+<!--Navigation start-->   <div class="clear_space"></div><div id="menu">
+    <ul class="nav">
+      <li> <a href="http://computerworld.co.nz" title="Computerworld &#8211; IT news for New Zealand's ICT community" >HOME</a> </li>
+      <li class="hasmore"><a   title="IT News - technology, Internet, operating systems, software, security">NEWS</a>
+        <ul class="dropdown">
+         <li><a href="http://computerworld.co.nz/news.nsf/cwdnews" title="Local IT News - technology, Internet, operating systems, software, security">LOCAL NEWS</a></li>
+          <li><a href="http://computerworld.co.nz/news.nsf/cwinews" title="Global IT News - technology, Internet, operating systems, software, security">INTERNATIONAL NEWS</a></li>
+        </ul>
+      </li>
+      <li><a href="http://computerworld.co.nz/news.nsf/cwtech" title="Technology - local and global technology news"  id=nav_on>TECHNOLOGY</a></li>
+      <li><a href="http://computerworld.co.nz/news.nsf/cwscrt" title="Security - firewall, virus, worm, Trojan, hacker, malware, phishing, DDoS protection" >SECURITY</a></li>
+      <li><a href="http://computerworld.co.nz/news.nsf/cwdevt" title="Development - Java, .NET, open source, application & software development" >DEVELOPMENT</a></li>
+      <li><a href="http://computerworld.co.nz/news.nsf/cwnetw" title="Network & Telco - Networking & Telecommunications news" >NETWORK &amp; TELCO</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/cwspec" title="Special Features - in-depth analysis, special features, case studies" >SPECIAL</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/cwmgmt" title="IT Management - Enterprise IT, cloud computing, IT infrastructure" >MANAGEMENT</a></li>
+<li class="hasmore"><a   title="IT Careers - IT employment and hiring">CAREERS</a>
+        <ul class="dropdown">
+         <li><a href="http://computerworld.co.nz/news.nsf/cwcare" title="CAREER NEWS AND ADVICE - IT staff, contractors, managers">CAREER NEWS AND ADVICE</a></li>
+         <li><a href="http://computerworld.co.nz/news.nsf/cwjobs" title="RECRUITMENT OPPORTUNITIES -  Recruitment and hiring, IT salaries and IT skills shortage">RECRUITMENT OPPORTUNITIES</a></li>
+        </ul>
+      </li>
+<li><a href="http://computerworld.co.nz/news.nsf/cwnewmedia" title="New Media - Digital media, social media, interactive media stories" >NEW MEDIA</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/cwfryup" title="Computerworld FryUp - Weekly commentary & analysis from Sarah Putt" >FRYUP</a> </li>
+<li><a  href="http://fairfaxevents.co.nz" target="_blank" title="Events, awards, workshops, summits, seminars">EVENTS</a></li>
+    </ul>
+  </div> <!--Navigation finished-->
+<div class="clear"></div>
+  
+<!-- Date and short communication start--><div id="content_top">
+    <div id="date_top">Sunday, 24 April 2011</div>
+    <div id="communication"> <a href="http://www.twitter.com/computerworldnz" title="Follow us on twitter" class="twitter" target="_blank">Follow us on twitter</a> || <a href="http://www.facebook.com/pages/Computerworld-NZ/128538550535138?v=walll" title="Become a fan on facebook" class="facebook" target="_blank">Become a fan on facebook</a> || <a href="http://computerworld.co.nz/rss/computerworld.xml" title="RSS" class="rss" target="_blank">RSS</a></div>
+<div class="clear_space"></div> </div><!-- Date and short communication finished-->
+  <!--content start-->
+  <div id="content">
+    <div id="article_col">
+      <!-- page title-->
+      <h1 id="h1_story">Open source 3D printer copies itself</h1> 
+      <!-- page title-->
+<!-- Left col start   -->
+<div id="left_col">
+<!-- Latest News box start  -->
+<div class="leftbox">
+<div class="leftbox_title">LATEST NEWS</div>
+<ul><li><a href="http://computerworld.co.nz/news.nsf/news/ipv4-addresses-down-to-last-block-rationing-starts">IPv4 addresses down to last block &#8211; rationing starts</a> || <a href="http://computerworld.co.nz/news.nsf/news/ipv4-addresses-down-to-last-block-rationing-starts#comment_top" class="li_comments">1</a></li><li><a href="http://computerworld.co.nz/news.nsf/news/commerce-commission-seeks-submissions-on-changes-to-uba-pricing-scheme">Commerce Commission seeks submissions on changes to UBA pricing scheme</a> || <a href="http://computerworld.co.nz/news.nsf/news/commerce-commission-seeks-submissions-on-changes-to-uba-pricing-scheme#comment_top" class="li_comments">1</a></li><li><a href="http://computerworld.co.nz/news.nsf/news/jade-takes-joob-into-mobile-space">Jade takes JOOB into mobile space</a></li><li><a href="http://computerworld.co.nz/news.nsf/fryup/fry-up-cool-guys">Fry Up: Cool guys</a> || <a href="http://computerworld.co.nz/news.nsf/fryup/fry-up-cool-guys#comment_top" class="li_comments">2</a></li><li><a href="http://computerworld.co.nz/news.nsf/news/telecom-annnounces-slimmed-down-executive-team">Telecom announces slimmed-down executive team</a></li><li><a href="http://computerworld.co.nz/news.nsf/news/former-telecom-exec-involved-in-breach-of-commerce-act-now-heading-med-telco-unit">Former Telecom exec involved in breach of Commerce Act now heading MED telco unit</a> || <a href="http://computerworld.co.nz/news.nsf/news/former-telecom-exec-involved-in-breach-of-commerce-act-now-heading-med-telco-unit#comment_top" class="li_comments">8</a></li></ul>
+</div>
+<!-- Latest News box finished -->
+<div class="clear"></div>
+<!-- Related stories box start  --><!-- Related stories box start  -->
+<div class="clear"></div>
+<!-- skyscraper start  --> 
+   <div id="skyscraper">
+<script language="JavaScript" src="http://ad-apac.doubleclick.net/adj/onl.fbg.cw/tech;tile=2;sz=160x600;ord=0.633127336537728?" type="text/javascript"></script>
+<noscript><a href="http://ad-apac.doubleclick.net/jump/onl.fbg.cw/tech;tile=2;sz=160x600;ord=0.633127336537728?" target="_blank"><img src="http://ad-apac.doubleclick.net/ad/onl.fbg.cw/tech;tile=2;sz=160x600;ord=0.633127336537728?" width="160" height="600" border="0" alt=""></a></noscript>
+      </div>
+<!-- skyscraper start  -->
+ <div class="clear"></div>
+      
+<!-- sus box start-->  
+ <div id="leftbox_subs"> 
+ <div class="cw_info_title">SUBSCRIBE</div>
+        <div class="cw_info"><img src="http://computerworld.co.nz/idgnet/covers/computerworld_120.jpg" alt="Newsletter &amp; Subscriptions" /> <b><i>Computerworld</i></b> is New Zealand's only specialised information systems fortnightly. <br />
+          <a href="http://computerworld.co.nz/cw/subscribe" target="new"><b>Subscribe now</b></a> for $100 (24 issues) and save more than 37% off  the cover price! <br />
+          <img src="http://computerworld.co.nz/cw/2010/images/top10_website_2009.gif"> </div>
+</div>
+ <!-- sus box finished-->
+      
+<div class="clear"></div>
+      
+ <!--newletter box start-->
+ <div id="leftbox_news"> 
+<div class="cw_info_title">SIGN UP</div>
+        <div class="cw_info"><img src="http://computerworld.co.nz/cw/2007/img/cw_topnews.jpg"  alt="Newsletter &amp; Subscriptions" /> <br />
+          Get the latest news from <b><i>Computerworld </i></b> delivered via email.<br />
+          <a href="http://fairfaxbm.co.nz/signup#computerworld" target="new"><b>Sign up now</b></a> </div>
+</div>
+<!--newletter box finished--> <!--COMPUTERWORLD WEB LEFT-->
+<!--leftcol finished-->
+    </div>
+<!--centre col start-->
+    <div id="center_col">
+<div id="div_brief">Self-replicating printer frees-up 3D printing under GNU</div>
+<span class="story_info">By Ulrika Hedquist | Auckland  | Tuesday, 8 April, 2008  </span>
+<!-- utility box top start--><div class="utilitybox">
+
+<a href="/news.nsf/email?OpenForm&parentunid=2F5C3C5D68A380EDCC257423006E71CD" title="Email" class="email">email</a> <a href="/news.nsf/printer/2F5C3C5D68A380EDCC257423006E71CD" title="Print" class="print">Print</a></div><!-- utility box top finished-->
+        <!--Web content start-->
+        <div id="story_body">
+<!--<cut>-->
+
+<p><font size="2" face="Verdana">Based in the Waitakeres, in West Auckland, software developer and artist Vik Olliver is part of a team developing an open-source, self-copying 3D printer. The </font><a href="http://reprap.org/bin/view/Main/WebHome" target="new"><font size="2" face="Verdana">RepRap</font></a><font size="2" face="Verdana"> (Replicating Rapid-prototyper) printer can replicate and update itself. It can print its own parts, including updates, says Olliver, who is one of the core members of the RepRap team.</font><br>
+<br>
+<font size="2" face="Verdana">The 3D printer works by building components up in layers of plastic, mainly polylactic acid (PLA), which is a bio-degradable polymer made from lactic acid. The technology already exists, but commercial machines are very expensive. They also can&#8217;t copy themselves, and they can&#8217;t be manipulated by users, says Olliver. </font><br>
+<br>
+<font size="2" face="Verdana">RepRap has a different idea. The team, which is spread over New Zealand, the UK and the US, develops and gives away the designs for its much cheaper machine, which also has self-copying capabilities. It wants to make the machine available to anybody &#8212; including small communities in the developing world, as well as people in the developed world, says Olliver. </font><br>
+<br>
+<font size="2" face="Verdana">Accordingly, the RepRap machine is distributed, at no cost, under the GNU (General Public Licence).  </font><br>
+<br>
+<font size="2" face="Verdana">RepRap&#8217;s open-source project aims to keep on improving the machine. &#8220;So it can do what people want it to do&#8221;, says Olliver. Improvements will go back to users and, in this way, the machine as a whole evolves, he says. The idea of evolution is important, he adds. The device Olliver is creating now will probably bear very little resemblance to the device that will appear on everybody&#8217;s desks in the future, he says.</font><br>
+<br>
+<font size="2" face="Verdana">&#8220;We want to make sure that everything is open, not just the design and the software you control it with, but the entire tool-chain, from the ground up,&#8221; he says. </font><br>
+<br>
+<font size="2" face="Verdana">Olliver works for Catalyst IT, a Wellington-based open-source business system provider. He is fortunate enough to get &#8220;Google-time&#8221; from the company, which means he is allowed to work on his own research projects one day a week &#8212; just like employees at Google. This has led to considerable developments in the RepRap project in the last six months, his says. </font><br>
+<br>
+<img src="/news.nsf/0/2f5c3c5d68a380edcc257423006e71cd/wbod/0.A86?OpenElement&amp;FieldElemFormat=jpg" width="333" height="250"><br>
+<br>
+<font size="2" face="Verdana">New features include, for example, heads that can be changed for different kinds of plastic. A head that deposits low melting-point metal is in development, he says. The metal melts at a lower temperature than that at which plastic melts, which means the metal can be put inside plastic, says Olliver. &#8220;That means, in theory, we could build structures like motors.&#8221;</font><br>
+<br>
+<font size="2" face="Verdana">RepRap also allows people to build circuits in 3D, as well as various shapes, with the result that objects, such as a cell phone, don&#8217;t have to be flat, he says. </font><br>
+<br>
+<font size="2" face="Verdana">There are at least seven copies of the RepRap machine in the world that Olliver knows about. The 3D printer also allows for a new and fascinating way of communicating: Olliver can design something at home in New Zealand, which then appears on another researcher&#8217;s desk, in Bath, in the UK, or the other way around.</font><br>
+<br>
+<font size="2" face="Verdana">At the moment, the RepRap uses two different kinds of plastic &#8212; PLA, a relatively rigid plastic, which is ideal for making objects such as corner brackets; and a more flexible plastic for making, for example, iPod cases, he says.</font><br>
+<br>
+<img src="/news.nsf/0/2f5c3c5d68a380edcc257423006e71cd/wbod/0.2A78?OpenElement&amp;FieldElemFormat=jpg" width="226" height="213" border="1" align="right"><font size="2" face="Verdana">But having the machine copy itself is the most useful thing the team can make it do, and that is the primary goal of the project, says Olliver. However, it can also be used to make other things, such as wine glasses &#8212; definitely water-tight, he adds &#8212; and plastic parts for machines. When </font><i><font size="2" face="Verdana">Computerworld </font></i><font size="2" face="Verdana">talked to him, Olliver had just printed out a small part to fix his blender.</font><br>
+<br>
+<font size="2" face="Verdana">&#8220;We know that people are going to use the printer to try to make weapons [and] sex toys and drug paraphernalia,&#8221; he says. &#8220;This is obviously not what we&#8217;re hoping they are going to build. We are hoping they are going to build more and better RepRaps.&#8221; </font>
+<!--</cut>-->
+
+
+<!-- multiple pages start--> 
+
+<!-- multiple pages finished--> 
+
+
+ </div>
+<div class="clear_space"></div>
+<!--Web content finished-->
+
+        <!-- utility box bottom start--><div class="utility_bottom">
+  <ul>
+    <li></li>
+    <li><a href="/news.nsf/email?OpenForm&parentunid=2F5C3C5D68A380EDCC257423006E71CD" title="Email" class="email">email</a></li>
+    <li><a href="http://computerworld.co.nz/news.nsf/printer/2F5C3C5D68A380EDCC257423006E71CD" title="Print" class="print">Print</a></li>
+  </ul>
+  <div class="share_icons"> Share this story with:<br />
+    <a href="/news.nsf/share?Openagent&id=2F5C3C5D68A380EDCC257423006E71CD&q=http://www.twitter.com/home?status=RT+@ComputerworldNZ:+Open+source+3D+printer+copies+itself+http://computerworld.co.nz/news.nsf/tech/2F5C3C5D68A380EDCC257423006E71CD" title="Twitter" target="_blank"><img src="http://computerworld.co.nz/cw/2010/images/icon_twitter.jpg" /></a><a href="/news.nsf/share?Openagent&id=2F5C3C5D68A380EDCC257423006E71CD&q=http://www.facebook.com/share.php?u=http://computerworld.co.nz/news.nsf/tech/2F5C3C5D68A380EDCC257423006E71CD&t=ComputerworldNZ - Open%20source%203D%20printer%20copies%20itself" title="Facebook" target="_blank"><img src="http://computerworld.co.nz/cw/2010/images/icon_facebook.jpg" /></a><a href="/news.nsf/share?Openagent&id=2F5C3C5D68A380EDCC257423006E71CD&q=http://www.linkedin.com/shareArticle?mini=true&url=http://computerworld.co.nz/news.nsf/tech/2F5C3C5D68A380EDCC257423006E71CD&title=Open%20source%203D%20printer%20copies%20itself&summary=Self-replicating%20printer%20frees-up%203D%20printing%20under%20GNU&source=http://computerworld.co.nz" title="LinkedIn" target="_blank"><img src="http://computerworld.co.nz/cw/2010/images/icon_linkin.jpg" /></a></div><div style="clear:both"></div></div>
+
+
+
+<br>
+        <!-- utility box bottom finished-->
+
+        <!--Comment start-->
+
+	
+        <!--comments finished-->
+
+        <!--post new comment start-->
+
+        <!--post new comment finish-->
+        <div class="clear"></div>
+</div>
+
+<!-- center div finished-->
+    </div>
+
+<!-- right col start-->
+<div id="right_col">  
+
+<!-- event button ad start-->
+<ul id="promoButtonsList">
+<li id="EventFeature_0" ><a href="http://fairfaxevents.co.nz/events.nsf/events/fryup-live-may-2011" title="FryUp Live" target="_blank"> <img src="/news.nsf/events/BC16876441004F05CC25786C0016A00B/$File/FryUpLive_300x125_2.gif"  alt="FryUp Live"></a></li>
+<li id="EventFeature_1" style="display:none;"><a href="http://www.brightstar.co.nz/conferences/2011-new-zealand-cio-summit" title="CIO Summit 2011"  target="_blank"> <img src="/news.nsf/events/73D1E8034E8CFBE1CC2577F20017C892/$File/CIOSummit_300x125_071211_v3.gif"  alt="CIO Summit 2011"></a></li>
+<li id="EventFeature_2" style="display:none;"><a href="http://www.unlimited.co.nz/cfoawards" title="CFO awards"  target="_blank"> <img src="/news.nsf/events/76823A8086AF5B1CCC25785B001C09AD/$File/CFOAWARDS_300x125_070211.gif"  alt="CFO awards"></a></li>
+<li id="EventFeature_3" style="display:none;"><a href="http://sustainable60.co.nz/sustainable60.nsf/UNID/CFEF694A47F6586DCC25775A007819C8" title="The Sustainable 60 Workshops: Marketplace"  target="_blank"> <img src="/news.nsf/events/0F7914A75E806850CC257869007A1F94/$File/S60_workshop_marketplace_300x125_V2.gif"  alt="The Sustainable 60 Workshops: Marketplace"></a></li>
+
+</ul>
+<div id="promoButtons">
+  <ul id="seekIndex">
+<li class="navCurrent" id="sf0"><a href="#EventFeature_0" title="FryUp Live"  target="_blank">&nbsp;</a></li>
+<li  id="sf1"><a href="#EventFeature_1" title="CIO Summit 2011"  target="_blank">&nbsp;</a></li>
+<li  id="sf2"><a href="#EventFeature_2" title="CFO awards"  target="_blank">&nbsp;</a></li>
+<li  id="sf3"><a href="#EventFeature_3" title="The Sustainable 60 Workshops: Marketplace"  target="_blank">&nbsp;</a></li>
+
+  </ul>
+</div>
+<div class="clear"></div>
+<script type="text/javascript" src="http://computerworld.co.nz/fmbg/script/pomoButtons.js"></script>
+
+
+
+<!-- event button ad finished-->
+
+<!-- half page ad start-->
+<div id="halfpage"><script language="JavaScript" src="http://ad-apac.doubleclick.net/adj/onl.fbg.cw/tech;pos=pos1;tile=3;sz=300x250,300x600;ord=0.633127336537728?" type="text/javascript"></script>
+<noscript><a href="http://ad-apac.doubleclick.net/jump/onl.fbg.cw/tech;pos=pos1;tile=3;sz=300x250,300x600;ord=0.633127336537728?" target="_blank"><img src="http://ad-apac.doubleclick.net/ad/onl.fbg.cw/tech;pos=pos1;tile=3;sz=300x250,300x600;ord=0.633127336537728?" width="300"  border="0" alt=""></a></noscript>
+</div>
+
+<!-- half page ad finished--><div class="clear"></div>
+
+<!-- Most  popular box start-->
+<div class="popular_title">MOST POPULAR</div>
+      <div class="container">
+        <ul class="tabNav">
+          <li class="current"><a  title="READ">READ</a></li>
+          <li><a  title="COMMENTED">COMMENTED</a></li>
+          <li><a  title="EMAILED">EMAILED</a></li>
+          <li><a  title="SHARED">SHARED</a></li>
+        </ul>
+        <div class="tabContainer">
+          <div class="tab current">
+            <ul class="tab_ul">
+
+<li><a href="http://computerworld.co.nz/news.nsf/news/former-telecom-exec-involved-in-breach-of-commerce-act-now-heading-med-telco-unit">Former Telecom exec involved in breach of Commerce Act now heading MED telco unit</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/news/telecom-annnounces-slimmed-down-executive-team">Telecom annnounces slimmed-down executive team</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/news/rbi-contract-signed-with-telecom-and-vodafone">RBI contract signed with Telecom and Vodafone</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/fryup/fry-up-cool-guys">Fry Up: Cool guys</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/news/ipv4-addresses-down-to-last-block-rationing-starts">IPv4 addresses down to last block &#8211; rationing starts</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/special/moving-to-the-cloud-the-users-perspective">Moving to the cloud &#8211; the users&#8217; perspective</a></li>
+
+
+            </ul>
+          </div>
+          <div class="tab">
+            <ul class="tab_ul">
+ 
+<li><a href="http://computerworld.co.nz/news.nsf/news/computer-society-shakes-off-stuffy-label#comment_top">Computer Society shakes off 'stuffy' label</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/news/telecom-makes-final-offer-to-cfh-after-ufb-negotiations#comment_top">Telecom makes final offer to CFH after UFB negotiations</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/news/former-telecom-exec-involved-in-breach-of-commerce-act-now-heading-med-telco-unit#comment_top">Former Telecom exec involved in breach of Commerce Act now heading MED telco unit</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/news/candidates-for-govt-iaas-contract-shortlisted#comment_top">Candidates for Govt IaaS contract shortlisted</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/news/high-court-imposes-12-million-fine-on-telecom#comment_top">High Court imposes $12 million fine on Telecom</a></li>
+
+
+            </ul>
+          </div>
+          <div class="tab">
+            <ul class="tab_ul">
+
+<li><a href="http://computerworld.co.nz/news.nsf/news/aged-care-program-proves-value-in-christchurch">Aged-care program proves value in Christchurch</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/news/westfield-resists-push-to-offshore-data-to-us">Westfield resists push to offshore data to US</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/management/victoria-police-database-project-faces-100-million-blowout">Victoria Police database project faces $100 million blowout</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/management/city-of-los-angeles-may-sue-over-delays-in-google-apps-project-report">City of Los Angeles may sue over delays in Google Apps project: report</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/news/former-telecom-exec-involved-in-breach-of-commerce-act-now-heading-med-telco-unit">Former Telecom exec involved in breach of Commerce Act now heading MED telco unit</a></li>
+
+
+            </ul>
+          </div>
+          <div class="tab">
+            <ul class="tab_ul">
+
+<li><a href="http://computerworld.co.nz/news.nsf/news/vodafone-consolidates-call-centre-operation">Vodafone consolidates call centre operation</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/news/high-court-imposes-12-million-fine-on-telecom">High Court imposes $12 million fine on Telecom</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/management/city-of-los-angeles-may-sue-over-delays-in-google-apps-project-report">City of Los Angeles may sue over delays in Google Apps project: report</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/news/oracle-to-discontinue-commercial-open-office">Oracle to discontinue commercial Open Office</a></li>
+<li><a href="http://computerworld.co.nz/news.nsf/news/rbi-contract-signed-with-telecom-and-vodafone">RBI contract signed with Telecom and Vodafone</a></li>
+
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+<!-- Most  popular box finished--><div class="clear"></div>
+
+<!--boombox start-->
+<div class="boombox">
+<script language="JavaScript" src="http://ad-apac.doubleclick.net/adj/onl.fbg.cw/tech;pos=pos2;tile=4;sz=300x250;ord=0.633127336537728?" type="text/javascript"></script>
+<noscript><a href="http://ad-apac.doubleclick.net/jump/onl.fbg.cw/tech;pos=pos2;tile=4;sz=300x250;ord=0.633127336537728?" target="_blank"><img src="http://ad-apac.doubleclick.net/ad/onl.fbg.cw/tech;pos=pos2;tile=4;sz=300x250;ord=0.633127336537728?" width="300"  height="250" border="0" alt=""></a></noscript>
+</div>
+
+<!--boombox finished--><div class="clear"></div>
+
+
+<!--boombox  bottom2 start-->
+<div class="boombox">
+<script language="JavaScript" src="http://ad-apac.doubleclick.net/adj/onl.fbg.cw/tech;pos=pos3;tile=6;sz=300x250;ord=0.633127336537728?" type="text/javascript"></script>
+<noscript><a href="http://ad-apac.doubleclick.net/jump/onl.fbg.cw/tech;pos=pos3;tile=6;sz=300x250;ord=0.633127336537728?" target="_blank"><img src="http://ad-apac.doubleclick.net/ad/onl.fbg.cw/tech;pos=pos3;tile=6;sz=300x250;ord=0.633127336537728?" width="300"    height="250"  border="0" alt=""></a></noscript>
+</div>
+
+<!--boombox  bottom2  finished--><div class="clear"></div>
+
+<!--Trademe Jobs start--> 
+ <iframe src="http://computerworld.co.nz/fmbg/script/trademejobs_300x250.html" width="300" height="250" frameborder="0" scrolling="no"></iframe>
+
+<!--Trademe Jobs finished--><div class="clear"></div>
+
+<!--Google Ad start-->     
+<div id="div_googlead">
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-8150694236441980";
+/* 300x250, created 01/10/09 */
+google_ad_slot = "5686053051";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+</div>
+<!--Google Ad finished--><div class="clear"></div>
+<br>
+ <!--COMPUTERWORLD WEB RIGHT-->
+
+<!--right div finished-->
+   </div>
+
+<div class="clear"></div>
+ 
+ <!--content finished-->
+  </div>
+<!-- most popular stories from other website start-->  <div id="most_popular_stories">
+    <div class="most_popular_stories_title">MOST POPULAR STORIES <span class="span_blue">FROM FAIRFAX MEDIA BUSINESS  GROUP WEBSITES</span></div>
+
+<!-- CIO-->
+    <div class="div_lists"> <a href="http://cio.co.nz" title="cio.co.nz" target="_blank"><img src="http://computerworld.co.nz/fmbg/images/logos/footer_logo_cio_small.jpg" alt="cio.co.nz" /></a>
+      <ul>
+
+<li><a href="http://cio.co.nz/cio.nsf/news/C86D4EE1944A1E42CC257870001454BE">Six Biggest Cloud Computing Myths</a></li>
+<li><a href="http://cio.co.nz/cio.nsf/spot/210FE56BE175331ACC257871001017B8">Experience required</a></li>
+<li><a href="http://cio.co.nz/cio.nsf/news/39CCFF24D4648D31CC25786F000D6D7C">Pingar finds further success in China</a></li>
+<li><a href="http://cio.co.nz/cio.nsf/spot/FBCF0ADA113E2485CC257871000C556E">Driving for change</a></li>
+<li><a href="http://cio.co.nz/cio.nsf/news/65838D5612BD978CCC257876000801E6">RIM announced as official Rugby World Cup sponsor</a></li>
+
+
+      </ul>
+    </div>
+
+<!-- CIO-->
+
+<!-- PCWorld-->
+    <div class="div_lists"> <a href="http://pcworld.co.nz" title="pcworld.co.nz" target="_blank"><img src="http://computerworld.co.nz/fmbg/images/logos/footer_logo_pcw_small.jpg" alt="pcworld.co.nz" /></a>
+      <ul>
+
+<li><a href="http://pcworld.co.nz/pcworld/pcw.nsf/mobile/preview-samsung-android-tablet-and-smartphones">Preview: Samsung Android tablet and smartphones</a></li>
+<li><a href="http://pcworld.co.nz/pcworld/pcw.nsf/feature/core-investment">Core Investment</a></li>
+<li><a href="http://pcworld.co.nz/pcworld/pcw.nsf/news/wii-2-on-the-way-nintendo-is-growing-up">Wii 2 on the Way: Nintendo is Growing Up</a></li>
+<li><a href="http://pcworld.co.nz/pcworld/pcw.nsf/reviews/canon-eos-550d">Canon EOS 550D</a></li>
+<li><a href="http://pcworld.co.nz/pcworld/pcw.nsf/how-to/make-over-your-online-image-to-help-your-job-search">Make over your online image to help your job search</a></li>
+<li><a href="http://pcworld.co.nz/pcworld/pcw.nsf/news/samsung-panasonic-show-off-new-tv-range">Samsung, Panasonic show off new TV range</a></li>
+
+
+      </ul>
+    </div>
+<!-- PCWorld-->
+
+<!-- Reseller-->
+    <div class="div_lists"> <a href="http://reseller.co.nz" title="reseller.co.nz" target="_blank"><img src="http://computerworld.co.nz/fmbg/images/logos/footer_logo_reseller_small.jpg" alt="reseller.co.nz" /></a>
+      <ul>
+
+<li><a href="http://reseller.co.nz/reseller.nsf/inews/microsoft-to-push-ie9-via-windows-update-next-week">Microsoft to push IE9 via Windows Update next week</a></li>
+<li><a href="http://reseller.co.nz/reseller.nsf/news/tech-ed-tickets-on-sale-from-may-2">Tech Ed tickets on sale from May 2</a></li>
+<li><a href="http://reseller.co.nz/reseller.nsf/inews/android-tablets-undercutting-ipad-prices">Android tablets undercutting iPad prices</a></li>
+<li><a href="http://reseller.co.nz/reseller.nsf/news/revera-signs-up-to-vmware-programme">Revera signs up to VMware programme</a></li>
+<li><a href="http://reseller.co.nz/reseller.nsf/inews/ieee-hopes-to-drive-cloud-standards">IEEE hopes to drive cloud standards</a></li>
+
+
+      </ul>
+
+
+    </div>
+<!-- Reseller-->
+
+<!-- Unlimited-->
+    <div class="div_lists_last"> <a href="http://unlimited.co.nz" title="unlimited.co.nz" target="_blank"><img src="http://computerworld.co.nz/fmbg/images/logos/footer_logo_unlimited_small.jpg" alt="unlimited.co.nz" /></a>
+      <ul>
+
+<li><a href="http://unlimited.co.nz/unlimited.nsf/growth/startup-weekend-ready-to-launch">Startup Weekend ready to launch</a></li>
+<li><a href="http://unlimited.co.nz/unlimited.nsf/technology/cloudbusting">Cloudbusting</a></li>
+<li><a href="http://unlimited.co.nz/unlimited.nsf/innovation/the-middle-step">The middle step</a></li>
+<li><a href="http://unlimited.co.nz/unlimited.nsf/startup/just-pick-up-the-phone">Just pick up the phone</a></li>
+<li><a href="http://unlimited.co.nz/unlimited.nsf/opinion/wide-angle">Wide angle</a></li>
+
+
+      </ul>
+    </div>
+<!-- Unlimited-->
+</div>
+<p> <!-- most popular stories from other website finished-->
+  <div class="clear_space"></div>
+
+  <!-- footer div start-->
+  <div id="footer">
+    <!-- FairfaxBM Network Site Footer -->
+<table width="100%" cellspacing="0" cellpadding="4" border="0">
+  <tr> 
+    <td align="center" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 12px;">
+         &copy; Fairfax Media Business Group <br /><a class="copyright" href="http://www.fairfaxnz.co.nz" target="_blank">Fairfax New Zealand</a> Limited, 
+		<!--update copyright-->
+		<script type="text/javascript">
+			var d = new Date()
+			document.write(d.getFullYear())
+		</script>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 12px;">
+        <a href="http://fairfaxbm.co.nz">FairfaxBG</a> - <a href="http://computerworld.co.nz">Computerworld</a> - <a href="http://pcworld.co.nz">PC World</a> - <a href="http://reseller.co.nz">Reseller News</a> - <a href="http://cio.co.nz">CIO</a> -  <a href="http://unlimited.co.nz" target="_blank">Unlimited</a> - <a href="http://actv8.co.nz" target="_blank">actv8</a> 
+    </td>
+  </tr>
+  <tr>
+    <td align="center" style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; line-height: 12px;">
+        <a href="mailto:webmaster@fairfaxbm.co.nz">Email Webmaster</a> - <a href="http://fairfaxbm.co.nz/contacts">Contact
+         Fairfax Media Business Group</a> - <a href="http://mags4gifts.co.nz" target="_blank" title="Magazine Subscriptions">Magazine Subscriptions</a> - <a href="http://fairfaxbm.co.nz/advertise">Advertise 
+        With Us</a> - <a href="http://fairfaxbm.co.nz/privacy">Privacy Policy</a> 
+    </td>
+  </tr>
+</table>
+<!-- End FairfaxBM Network Site Footer -->
+                                                
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2009 Nielsen Online -->
+<script type="text/javascript" src="//secure-nz.imrworldwide.com/v60.js">
+</script>
+<script type="text/javascript">
+ var pvar = { cid: "idg-nz", content: "0", server: "secure-nz" };
+ var feat = { surveys_enabled: 1, sample_rate: 0.05 };
+ var trac = nol_t(pvar, feat);
+ var _rsND = trac.getSchemeHost(); // For compatibility with v53 surveys
+ var _rsCI = "idg-nz"; // For compatibility with v53 surveys
+ trac.record().post().do_sample();
+</script>
+<noscript>
+ <div>
+ <img src="//secure-nz.imrworldwide.com/cgi-bin/m?ci=idg-nz&amp;cg=0&amp;cc=1&amp;ts=noscript"
+ width="1" height="1" alt="" />
+ </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+  <!-- footer div finished-->
+ </div>
+
+<!--container div finished--> 
+</div>
+
+<!--wall bg div finished--> 
+</div>
+
+
+<br>
+ <!--COMPUTERWORLD WEB FOOTER--></form>
+</body>
+</html>

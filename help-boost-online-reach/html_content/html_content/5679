@@ -1,0 +1,605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://www.facebook.com/2008/fbml">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    
+      <title>Pro Con Lists</title> 
+    
+        <meta name="description" content="Create a pros & cons list now or browse other user’s lists. Review products pros and cons or list all the positives and negatives to help you make your next big decisions." />
+        
+    <meta name="keywords" content="Standar Keywords" />
+  
+  <script src="/javascripts/prototype.js?1273686222" type="text/javascript"></script>
+<script src="/javascripts/effects.js?1273686222" type="text/javascript"></script>
+<script src="/javascripts/dragdrop.js?1273686222" type="text/javascript"></script>
+<script src="/javascripts/controls.js?1273686222" type="text/javascript"></script>
+<script src="/javascripts/lightwindow.js?1273686222" type="text/javascript"></script>
+<script src="/javascripts/custom-form-elements.js?1273686222" type="text/javascript"></script>
+<script src="/javascripts/scriptaculous.js?1273686222" type="text/javascript"></script>
+<script src="/javascripts/jquery-1.3.2.js?1273686222" type="text/javascript"></script>
+<script src="/javascripts/jquery.tools.min.js?1273686222" type="text/javascript"></script>
+<script src="/javascripts/application.js?1273686222" type="text/javascript"></script>
+  
+    <script src="/javascripts/image_swap.js?1273686222" type="text/javascript"></script>	
+  
+  <link href="/stylesheets/main.css?1320389449" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/errors.css?1273686222" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/rating.css?1273686222" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/lightwindow.css?1273686222" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/list_result.css?1273686222" media="screen" rel="stylesheet" type="text/css" />  
+  
+    <link href="/stylesheets/home.css?1273686222" media="screen" rel="stylesheet" type="text/css" />
+  
+  <!--[if IE 7]>
+  <link href="/stylesheets/ie7/main.css?1273686222" media="screen" rel="stylesheet" type="text/css" /> 
+  <![endif]-->
+  
+  
+  <link rel="icon" href="/imgaes/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+</head>
+<body id="body_element">
+  <script src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" type="text/javascript"></script>
+  <script type="text/javascript">
+    //<![CDATA[
+  jQuery(document).ready(function() {
+      FB_RequireFeatures(["XFBML"], function() {
+        FB.init('e693713ab845be6cb39c674f9c926e51','/xd_receiver.html', {});
+      });
+    });
+    //]]>
+  </script>
+
+    <!-- N/A <div id="spinner" style="display: none;">
+      <div class="details">
+        <img alt="Loading" src="/images/animated_gifs/loading_bar.gif?1273686222" /><p>Creating List, Do Not Refresh</p>
+      </div>
+    </div> -->
+    <div id="container">
+      <div id="header">
+        <a href="/"><div id="logo"></div></a>
+        <div id="utility">
+  <form action="/de_assigned_facebook" id="de_assigned_facebook" method="post">
+    <input type="hidden" value=ovkRcEmvHWakzHLA2S7Sdq1gRiPXQmTYoZdc+h9XZn8= name="authenticity_token"/>
+  </form>
+    <div id="utility_ajax">
+      
+        <form action="/user_session" method="post" id="connect_to_facebook_form">
+          <input type="hidden" value=ovkRcEmvHWakzHLA2S7Sdq1gRiPXQmTYoZdc+h9XZn8= name="authenticity_token"/>
+        </form>
+        <table>
+          <tr>
+            <td align="center">
+              <a href="/user_session/new?wizard=true" class="lightwindow" params="lightwindow_type=page,lightwindow_iframe_embed=true,lightwindow_height=260">Sign in</a>
+            </td>
+            <td align="center">
+              &nbsp; | &nbsp;
+              <a href="/account/new?wizard=true" class="lightwindow" params="lightwindow_type=page,lightwindow_iframe_embed=true,lightwindow_height=260">Sign up</a>
+            </td>
+            <td align="center">
+              &nbsp; | &nbsp;
+              <fb:login-button v='2' size='small' onlogin='connect_to_facebook();'>Login with Facebook</fb:login-button>
+            </td>
+          </tr>
+        </table>
+        
+        <script charset="utf-8" type="text/javascript">
+          function connect_to_facebook() {
+			    jQuery.ajax({
+                   type: "POST",
+                   url: "/user_session",
+                   dataType: 'script',
+                   data: jQuery("#connect_to_facebook_form").serialize(),
+				   
+				  success: function(){update_page()}
+				  
+				  });
+          }
+		  
+		  function connect_to_facebook_facebook() {
+			    jQuery.ajax({
+                   type: "POST",
+                   url: "/user_session",
+                   dataType: 'script',
+                   data: jQuery("#connect_to_facebook_form").serialize(),
+				   success: function(){ myLightWindow.deactivate(); update_page_facebook(); }
+                  });
+          }
+        </script>
+    </div>
+</div>
+
+        <div id="search"><!--
+	<form action="/search/results" method="post" style="height: 25px;"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="ovkRcEmvHWakzHLA2S7Sdq1gRiPXQmTYoZdc+h9XZn8=" /></div>
+		<input class="text" id="search_type" name="search[type]" size="30" type="text" />
+		<input class="submit" name="commit" type="submit" value="Search Lists" />
+                
+		<div id="searchlist">    
+			<a href="#dsfsd">Advanced Search</a>
+                      </div>
+                
+	</form>   
+	 -->
+	<form action="http://www.proconlists.com/results.html" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-9493852439077901:3013519070" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input type="text" name="q" size="20" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+</form>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>  
+</div>
+
+        <div id="tabs">
+	<ul id="primary">
+  	<li class="active"><a href="/">HOME</a></li>
+    <li ><a href="/categories">CATEGORIES</a></li>
+    <li ><a href="/list/new">CREATE A LIST</a></li>
+    <li ><a href="http://proconlists.com/account">MY LISTS</a></li>
+    <li ><a href="/about-us">ABOUT</a></li>
+	</ul>
+</div>
+
+      </div>
+      <div id="yield"> 
+        <div id="textarea">
+          
+<div id="home">
+    <div id="home-image">
+        <div id="imagetext">
+            <h1 id="welcome_to_proconlists.com">Welcome to ProConLists.com</h1>
+            <p>
+                A Pro/Con list can help you make more informed decisions by weighing 
+                all the positives and negatives. 
+            </p>
+            <br>
+            <p>
+                <strong>Create a List for any Topic or Decision</strong>
+            </p>
+            <p>
+                Some of the questions a Pro/Con list can help with are:
+            </p>
+            <ul>
+                <li>
+                    Should I go to that school?
+                </li>
+                <li>
+                    Is this a good television?
+                </li>
+                <li>
+                    Will it be a good thing if I date her?
+                </li>
+                <li>
+                    Should I buy a house?
+                </li>
+            </ul>
+        </div>
+        <div id="button">
+            <a href="/list/new" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('createlist','','/images/createlist_over.png',2)"><img alt="Create List" id="createlist" name="createlist" src="/images/createlist.png?1273686222" /></a>
+        </div>
+    </div>
+    <div class="lower_homepage">
+        <div class="results">
+            <div id="title-results">
+                <h2>Featured Pro/Con Lists</h2>
+            </div>
+            <div id="each-result">
+                <table>
+                    <tr>
+                        <td class="left-image">
+                            <a href="http://www.proconlists.com/list/celebrities/steve-jobs/27"><img alt=":left" src="/images/featured/:left.jpg?1323982429" /></a>
+                            <div id="text-under-image">
+                                <a href="http://www.proconlists.com/list/celebrities/steve-jobs/27">Pros and Cons of Steve Jobs</a>
+                            </div>
+                        </td>
+                        <td class="empty">
+                            &nbsp;
+                        </td>
+                        <td class="right-image">
+                            <a href="http://www.proconlists.com/list/computers-internet/apples-icloud-/6"><img alt=":right" src="/images/featured/:right.jpg?1323981732" /></a>
+                            <div id="text-under-image">
+                                <a href="http://www.proconlists.com/list/computers-internet/apples-icloud-/6">Pros and Cons of Apple's iCloud</a>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <br/>
+                
+                <div class="results_box ">	
+  
+
+<div class="title">
+  
+    
+    <a href="/list/style-design/getting-a-tattoo/4575" class="lbOn"><img alt="Getting-a-tattoo" src="/images/list/259/crop/getting-a-tattoo.jpg?1330285679" /></a>
+  
+  
+  <h3><a href="/list/style-design/getting-a-tattoo/4575">Getting a Tattoo Pros & Cons</a></h3>
+</div>
+
+  <div style='margin-left: 90px;'> 
+    <p>
+      Deciding whether to get a tattoo/many tattoos in the future.....
+    </p>
+  
+  <p>
+    <span style="font-weight: bold;"> 6 Pros / 7 Cons
+ </span>
+    <span class="text">| <a href="/list/style-design/getting-a-tattoo/4575#n_comments"><span class="decoration">0
+          Comments</span></a>| Created by anonymous
+    </span>
+  </p>
+</div>
+<br style="height:0px;"/>
+</div>
+<div class="results_box ">	
+  
+
+<div class="title">
+  
+    
+    <a href="/list/computers-internet/playing-world-of-warcraft-vs-not-playing/3813" class="lbOn"><img alt="Playing-world-of-warcraft-vs-not-playing" src="/images/list/230/crop/playing-world-of-warcraft-vs-not-playing.jpg?1322935132" /></a>
+  
+  
+  <h3><a href="/list/computers-internet/playing-world-of-warcraft-vs-not-playing/3813">Playing World of Warcraft vs. Not playing Pros & Cons</a></h3>
+</div>
+
+  <div style='margin-left: 90px;'> 
+    <p>
+      I want to think of the pros and cons in playing. I have been playing on and off for several years now, and before I start playing again, I need to think of why I should or should not.
+    </p>
+  
+  <p>
+    <span style="font-weight: bold;"> 3 Pros / 3 Cons
+ </span>
+    <span class="text">| <a href="/list/computers-internet/playing-world-of-warcraft-vs-not-playing/3813#n_comments"><span class="decoration">0
+          Comments</span></a>| Created by anonymous
+    </span>
+  </p>
+</div>
+<br style="height:0px;"/>
+</div>
+<div class="results_box ">	
+  
+
+<div class="title">
+  
+    
+    <a href="/list/home-garden/latex-mattress-/27" class="lbOn"><img alt="Latex-mattress-" src="/images/list/227/crop/latex-mattress-.jpg?1322548085" /></a>
+  
+  
+  <h3><a href="/list/home-garden/latex-mattress-/27">Latex Mattress  Pros & Cons</a></h3>
+</div>
+
+  <div style='margin-left: 90px;'> 
+    <p>
+      what kind of organic mattress should I get? Wool, latex? 
+    </p>
+  
+  <p>
+    <span style="font-weight: bold;"> 6 Pros / 2 Cons
+ </span>
+    <span class="text">| <a href="/list/home-garden/latex-mattress-/27#n_comments"><span class="decoration">0
+          Comments</span></a>| Created by <a href="/user/bryan.rosenkrantz">bryan.rosenkrantz</a>
+    </span>
+  </p>
+</div>
+<br style="height:0px;"/>
+</div>
+<div class="results_box ">	
+  
+
+<div class="title">
+  
+    
+    <a href="/list/places-regions/living-in-austin-texas/1276" class="lbOn"><img alt="Living-in-austin-texas" src="/images/list/100/crop/living-in-austin-texas.png?1279845359" /></a>
+  
+  
+  <h3><a href="/list/places-regions/living-in-austin-texas/1276">Living In Austin Texas Pros & Cons</a></h3>
+</div>
+
+  <div style='margin-left: 90px;'> 
+    <p>
+      A List of Pros/Cons To Living In Austin, Texas
+    </p>
+  
+  <p>
+    <span style="font-weight: bold;"> 19 Pros / 9 Cons
+ </span>
+    <span class="text">| <a href="/list/places-regions/living-in-austin-texas/1276#n_comments"><span class="decoration">0
+          Comments</span></a>| Created by anonymous
+    </span>
+  </p>
+</div>
+<br style="height:0px;"/>
+</div>
+<div class="results_box ">	
+  
+
+<div class="title">
+  
+    
+    <a href="/list/fashion-beauty/being-an-extremely-attractive-women/36" class="lbOn"><img alt="Being-an-extremely-attractive-women" src="/images/list/29/crop/being-an-extremely-attractive-women.jpeg?1267040874" /></a>
+  
+  
+  <h3><a href="/list/fashion-beauty/being-an-extremely-attractive-women/36">Being an Extremely Attractive Women Pros & Cons</a></h3>
+</div>
+
+  <div style='margin-left: 90px;'> 
+    <p>
+      Being good looking has a lot of perks but it also has a few drawbacks. 
+    </p>
+  
+  <p>
+    <span style="font-weight: bold;"> 6 Pros / 5 Cons
+ </span>
+    <span class="text">| <a href="/list/fashion-beauty/being-an-extremely-attractive-women/36#n_comments"><span class="decoration">8
+          Comments</span></a>| Created by <a href="/user/Madison">Madison</a>
+    </span>
+  </p>
+</div>
+<br style="height:0px;"/>
+</div>
+<div class="results_box ">	
+  
+
+<div class="title">
+  
+    
+    <a href="/list/education/school-uniforms/35" class="lbOn"><img alt="School-uniforms" src="/images/list/27/crop/school-uniforms.jpg?1267040871" /></a>
+  
+  
+  <h3><a href="/list/education/school-uniforms/35">School Uniforms Pros & Cons</a></h3>
+</div>
+
+  <div style='margin-left: 90px;'> 
+    <p>
+      What are the pros and cons of school uniforms?
+    </p>
+  
+  <p>
+    <span style="font-weight: bold;"> 7 Pros / 3 Cons
+ </span>
+    <span class="text">| <a href="/list/education/school-uniforms/35#n_comments"><span class="decoration">1
+          Comment</span></a>| Created by <a href="/user/MSBrooks34">MSBrooks34</a>
+    </span>
+  </p>
+</div>
+<br style="height:0px;"/>
+</div>
+
+                
+            </div>
+            <div id="each-result" class="popular">
+                <div id="title-results">
+                    <h2>Most Recent Pro/Con Lists</h2>
+                </div>
+                
+                  <div class="google-ads">
+                    <script type="text/javascript">
+                      <!--
+                      google_ad_client = "pub-9493852439077901";
+                      /* 300x250, created 2/22/10 */
+                      google_ad_slot = "6037180570";
+                      google_ad_width = 300;
+                      google_ad_height = 250;
+                      //-->
+                    </script>
+                    <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+                  </div>
+                  <div class="results_box ">	
+  
+
+<div class="title">
+  
+  
+  <h3><a href="/list/business-finance/living-in-edmonton/4791">Living in edmonton Pros & Cons</a></h3>
+</div>
+
+  <div style=''> 
+    <p>
+      Moving to Edmonton over Calgary
+    </p>
+  
+  <p>
+    <span style="font-weight: bold;"> 3 Pros / 3 Cons
+ </span>
+    <span class="text">| <a href="/list/business-finance/living-in-edmonton/4791#n_comments"><span class="decoration">0
+          Comments</span></a>| Created by anonymous
+    </span>
+  </p>
+</div>
+<br style="height:0px;"/>
+</div>
+<div class="results_box ">	
+  
+
+<div class="title">
+  
+  
+  <h3><a href="/list/health-nutrition/having--foot-surgey/4790">having  foot surgey Pros & Cons</a></h3>
+</div>
+
+  <div style=''> 
+    <p>
+      whether or not to get surgery this summer or  the next summer
+    </p>
+  
+  <p>
+    <span style="font-weight: bold;"> 5 Pros / 5 Cons
+ </span>
+    <span class="text">| <a href="/list/health-nutrition/having--foot-surgey/4790#n_comments"><span class="decoration">0
+          Comments</span></a>| Created by anonymous
+    </span>
+  </p>
+</div>
+<br style="height:0px;"/>
+</div>
+<div class="results_box ">	
+  
+
+<div class="title">
+  
+  
+  <h3><a href="/list/relationships-sexuality/should-i-stay-or-should-i-go/4786">Should I stay or should I go? Pros & Cons</a></h3>
+</div>
+
+  <div style=''> 
+    <p>
+      Heartache!
+    </p>
+  
+  <p>
+    <span style="font-weight: bold;"> 5 Pros / 6 Cons
+ </span>
+    <span class="text">| <a href="/list/relationships-sexuality/should-i-stay-or-should-i-go/4786#n_comments"><span class="decoration">0
+          Comments</span></a>| Created by anonymous
+    </span>
+  </p>
+</div>
+<br style="height:0px;"/>
+</div>
+<div class="results_box ">	
+  
+
+<div class="title">
+  
+  
+  <h3><a href="/list/relationships-sexuality/moving-or-staying/4785">Moving or Staying Pros & Cons</a></h3>
+</div>
+
+  <div style=''> 
+    <p>
+      Should I stay in Toronto or move to Edmonton?
+    </p>
+  
+  <p>
+    <span style="font-weight: bold;"> 6 Pros / 3 Cons
+ </span>
+    <span class="text">| <a href="/list/relationships-sexuality/moving-or-staying/4785#n_comments"><span class="decoration">0
+          Comments</span></a>| Created by anonymous
+    </span>
+  </p>
+</div>
+<br style="height:0px;"/>
+</div>
+<div class="results_box ">	
+  
+
+<div class="title">
+  
+  
+  <h3><a href="/list/education/loyola-marymount-university/4295">Loyola Marymount University Pros & Cons</a></h3>
+</div>
+
+  <div style=''> 
+    <p>
+      I do not know if I should stay at Loyola Marymount University or transfer to Santa Clara University based on my first year experience...
+    </p>
+  
+  <p>
+    <span style="font-weight: bold;"> 5 Pros / 3 Cons
+ </span>
+    <span class="text">| <a href="/list/education/loyola-marymount-university/4295#n_comments"><span class="decoration">0
+          Comments</span></a>| Created by anonymous
+    </span>
+  </p>
+</div>
+<br style="height:0px;"/>
+</div>
+<div class="results_box ">	
+  
+
+<div class="title">
+  
+  
+  <h3><a href="/list/education/sonography/4784">sonography Pros & Cons</a></h3>
+</div>
+
+  <div style=''> 
+    <p>
+      pro and cons
+
+    </p>
+  
+  <p>
+    <span style="font-weight: bold;"> 4 Pros / 2 Cons
+ </span>
+    <span class="text">| <a href="/list/education/sonography/4784#n_comments"><span class="decoration">0
+          Comments</span></a>| Created by anonymous
+    </span>
+  </p>
+</div>
+<br style="height:0px;"/>
+</div>
+
+                
+                <div id="view-more">
+                  <a href="/search/results?view=recent">...view more of the most recent Pro Con Lists</a>
+                </div>
+              </div>
+            </div>
+            <div class="right goggle">
+              <script type="text/javascript">
+                <!--
+                google_ad_client = "pub-9493852439077901";
+                /* 160x600, created 4/27/09 */
+                google_ad_slot = "3891282295";
+                google_ad_width = 160;
+                google_ad_height = 600;
+                //-->
+                </script>
+                <script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+                </script>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div id="footer">
+        <div id="logo-line">
+  <img src="/images/footer_logo.png" width="82" height="32" align="middle" alt="Pro Con List logo" /> 
+  <a href="/">Home</a> | <a href="/about-us">About Pro Con Lists</a> | <a href="/categories">Categories</a> | <a href="/list/new">Create a List</a> | 
+  <a href="/newsroom">Newsroom</a> | <a href="/profile">My Account</a>
+  <div id="copyright"> 
+    <div id="twitter_link"> <img alt="Twitter" src="/images/twitter.png?1273686222" /> <a href="http://twitter.com/proconlists">Follow Us On Twitter</a></div>
+    <p>&copy; 2012 Br&ouml;sen Interactive, All rights reserved. | <a href="/terms-of-use">Terms of Use</a><br />
+      Pro Con Lists are the trademarks of Pro Con Inc.</p>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+        try {
+          var pageTracker = _gat._getTracker("UA-3091014-3");
+          pageTracker._trackPageview();
+        } catch(err) {}</script>
+      <style type='text/css'>@import url('http://s3.amazonaws.com/getsatisfaction.com/feedback/feedback.css');</style>
+      <script src='http://s3.amazonaws.com/getsatisfaction.com/feedback/feedback.js' type='text/javascript'></script>
+      <script type="text/javascript" charset="utf-8">
+        var tab_options = {}
+        tab_options.placement = "right";  // left, right, bottom, hidden
+        tab_options.color = "#222"; // hex (#FF0000) or color (red)
+        GSFN.feedback('http://getsatisfaction.com/pro_con_lists/feedback/topics/new?display=overlay&style=question', tab_options);
+      </script>
+      
+        <script type="text/javascript" charset="utf-8">
+          function update_page() {
+            return true
+          }
+        </script>
+      
+      </body>
+    </html>

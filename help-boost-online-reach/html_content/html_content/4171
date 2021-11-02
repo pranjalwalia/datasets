@@ -1,0 +1,1534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+<head>
+	<script type="text/javascript" src="http://twimgs.com/ddj/detect.js"></script>
+		<script type = "text/javascript"> 
+/* MoFuse Mobile Detect & Redirect */
+var mfp_url='http://m.drdobbs.com/';
+var mfp_host_name = document.location.hostname;
+var mfp_request_uri = document.location.pathname;
+var mfp_no_mobile = document.location.search;
+var mfp_cookie = document.cookie;
+var mfp_ua = navigator.userAgent.toLowerCase();
+var mfp_devices = ['vnd.wap.xhtml+xml', 'sony', 'symbian', 'nokia', 'samsung', 'mobile', 'windows ce', 'epoc', 'opera mini', 'nitro', 'j2me', 'midp-', 'cldc-', 'netfront', 'mot', 'up.browser', 'up.link', 'audiovox', 'blackberry', 'ericsson', 'panasonic', 'philips', 'sanyo', 'sharp', 'sie-', 'portalmmm', 'blazer', 'avantgo', 'danger', 'palm', 'series60', 'palmsource', 'pocketpc', 'smartphone', 'rover', 'ipaq', 'au-mic', 'alcatel', 'ericy', 'vodafone', 'wap1', 'wap2', 'teleca', 'playstation', 'lge', 'lg-', 'iphone', 'android', 'htc', 'dream', 'webos', 'bolt', 'nintendo'];
+function mf_detect(mfp_ua, mfp_devices) {
+    for (var i in mfp_devices) {
+        if (mfp_ua.indexOf(mfp_devices[i]) != -1 && !((mfp_ua.indexOf('android') != -1 && mfp_ua.indexOf('mobile') == -1) || mfp_ua.indexOf('ipad') != -1)) {
+            return true;
+        }
+    }
+}
+if (mfp_no_mobile != '?nomobile=1' && mfp_cookie.indexOf('mfp_no_mobile') == -1) {
+    if (mf_detect(mfp_ua, mfp_devices)) {
+        window.location = mfp_url + "?h=" + mfp_host_name + "&r=" + mfp_request_uri;
+    }
+}  
+</script>
+	
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+
+<title>PCs and Tablets: The Convergence is Happening Now | Dr Dobb's</title><meta name="description" content="The new iPad? Meh. I'm running Visual Studio 11 on Windows 8 (64-bit) on my tablet. Yes, my tablet." />
+<meta name="headline" content="PCs and Tablets: The Convergence is Happening Now" />
+<meta name="keywords" content="software development, source code,Architecture &amp; Design, Eclipse &amp; Open Source, Windows/.NET, Database, Testing &amp; Debugging, SOA,Web Services &amp; XML, Mobility, Security, Global Developer,64-bit/Multicore,Embedded Systems, Lightweight Languages, Perl, PHP, Ruby, Python, AI and Robotics, Linux/UNIX" />
+<meta name="created" content="April 10, 2012" />
+<meta name="google-site-verification" content="HqG7-1r7RoBTg-CKrClDy746Njj0o8y-9CgeYSK4CyM" />
+<meta name="original-source" content="http://www.drdobbs.com/mobile/232900072" /> 
+	<link rel="image_src" href="http://i.cmpnet.com/ddj/v2/images/fb_thumbnail.jpg" />
+	<link rel="stylesheet" href="http://i.cmpnet.com/ddj/v2/css/thickbox.css" />
+	<link rel="stylesheet" href="http://i.cmpnet.com/ddj/v2/css/style.css" />
+	<link rel="SHORTCUT ICON" href="http://i.cmpnet.com/ddj/v2/images/favicon.ico"/>
+	
+
+	<script language="JavaScript" type="text/javascript" src="http://i.cmpnet.com/nc/mt/js/jquery-1.2.6.min.js"></script>
+	<script language="JavaScript" type="text/javascript" src="http://i.cmpnet.com/nc/mt/js/sidebar.js"></script>
+	<script language="JavaScript" type="text/javascript" src="http://i.cmpnet.com/nc/mt/js/thickbox.js"></script>
+	<script language="JavaScript" type="text/javascript" src="http://i.cmpnet.com/nc/mt/js/togglediv.js"></script>
+
+	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4af4a81901b903fa"></script>
+	<script language="JavaScript" type="text/javascript" src="http://i.cmpnet.com/ddj/v2/scripts/scripts.js"></script>
+	<script language="JavaScript" type="text/javascript" src="https://i.cmpnet.com/ddj/js/popwindow.js"></script>
+
+	
+	<script type="text/javascript" src="http://img.drdobbs.com/v2/js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="http://img.drdobbs.com/v2/js/jquery-ui-1.8rc3.custom.min.js"></script>
+	<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="http://twimgs.com/ddj/v2/css/h-nav.css" />     
+	<link rel="stylesheet" href="http://twimgs.com/ddj/v2/css/devtest_style.css" />
+	<style>
+		#container #header #nav { font-size: .9em; margin-top: 0px; margin-left: 5px; width: 999px; position: relative; top: 4px;  } /* Absolutely positioned #nav is lower on homepage, see home.css */
+	</style>
+<script type="text/javascript">
+    //<![CDATA[
+$.ajax({
+	   type: "GET",
+	   url: "/checkauth",
+	   data: {"referer": encodeURIComponent(document.referrer), "redirectTo": encodeURIComponent(window.location.href)},
+	   success: function(data){
+		   if (data != null)
+			{
+				window.location = data.redirectTo;
+			}
+	   },
+	   dataType: "json",
+	   async: false,
+	   cache: false
+	 });    //]]>
+</script><link href="http://www.drdobbs.com/mobile/232900072" rel="canonical" />
+<link href="/rss/all" rel="alternate" type="application/rss+xml" title="Dr. Dobb's All Articles" />
+<link href="/rss/all" rel="alternate" type="application/rss+xml" title="Dr. Dobb's All Articles" />
+<link href="http://twimgs.com/ddj/v2/css/article/tabs.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="http://twimgs.com/ddj/v2/css/devtest_left-col-slim.css" media="screen" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() {
+    $('.welcome')
+	.load(
+		"/index/welcome",
+		{'redirectTo' : window.location.href}
+	);
+});
+//]]>
+
+</script>	<meta name="pagecaching" content="509"/><meta name="node" content="52"/>	<script type="text/javascript" src="http://twimgs.com/ddj/v2/js/article/tabbed-content.jquery.js"></script>
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script><script language='JavaScript' type='text/javascript' src='/common/contentgating.js?version=1.2'></script>	
+</head>
+<body>
+<div id="topAdContainer">
+<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1953620/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Wallpaper_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=959778967;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1953620/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Wallpaper_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1953620/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Wallpaper_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" border="0" width="1" height="1"></img></a></noscript>
+<!-- SiteCatalyst code version: H.16.
+Copyright 1997-2008 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script type="text/javascript" src="http://i.ubm-us.net/shared/omniture/h_s_code_remote.js" ></script>
+
+<script language='JavaScript' type='text/javascript'>
+	var referer = '';
+	var eVar23 = '';
+	var slr="";	
+	var host="";	
+	
+	$.ajax({
+	   type: "GET",
+	   url: host+"/omniture",
+	   data: "referer="+slr+encodeURIComponent(document.referrer),
+	   success: function(data){		   
+		   if (data != null)
+			{
+				referer = data.referer;
+				eVar23 = data.eVar23;					
+			}
+	   },
+	   dataType: "json",
+	   async: false,
+	   cache: false
+	 }	
+	 );
+	
+	 
+</script>
+
+<script language='JavaScript' type='text/javascript'>
+<!--	
+s.pageName="";
+s.referrer=referer;
+s.server="";
+s.channel="drdobbs.com/mobile";
+s.pageType="";
+s.prop1="";
+s.prop2="232900072";
+s.prop3="Dr. Dobb's Journal | 232900072 | PCs and Tablets: The Convergence is Happening Now";
+s.prop4="PCs and Tablets: The Convergence is Happening Now";
+s.prop5="mobile";
+s.prop6="";
+s.prop7="Andrew Binstock";
+s.prop8="199.30.80.99 | Mozilla/5.0 (X11; U; Linux x86_64; en-US; rv:1.9.2.3) Gecko/20100423 Ubuntu/10.04 (lucid) Firefox/3.6.3";
+s.prop9="";
+s.prop10="complete";
+s.prop11="Feature";
+s.prop12="";
+s.prop14="";
+s.prop15="";
+s.prop16="";
+s.prop19="False";
+s.prop20="20120410";
+s.prop21="";
+
+/* Conversion Variables */
+s.campaign="";
+s.state="";
+s.zip="";
+s.events="event5";
+s.products="";
+s.purchaseID="";
+s.eVar1="";
+s.eVar2="";
+s.eVar3="";
+s.eVar4="";
+s.eVar5="";
+s.eVar21="";
+s.eVar22="";
+s.eVar23=eVar23;
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//-->	
+</script>
+
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://cmpglobalvista.112.2O7.net/b/ss/cmpglobalvista/1/H.16--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+
+<script language="JavaScript" type="text/javascript">
+	function trackComment(){
+        var s=s_gi('cmpglobalvista'); 
+        s.evar24=s.prop7 +" | "+ s.prop4;  
+	    s.events='event8';
+	    s.tl(this,'o','Article Comment Posted'); 
+   }
+</script>
+
+<!-- End SiteCatalyst code version: H.16  --><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1183575/0/16/ADTECH;alias=Dr.Dobbs_Mobile_WelcomeAd_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=959778967;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1183575/0/16/ADTECH;alias=Dr.Dobbs_Mobile_WelcomeAd_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1183575/0/16/ADTECH;alias=Dr.Dobbs_Mobile_WelcomeAd_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" border="0" width="1" height="1"></img></a></noscript>
+<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/2147145/0/0/ADTECH;alias=Dr.Dobbs_Mobile_Skin_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=959778967;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/2147145/0/0/ADTECH;alias=Dr.Dobbs_Mobile_Skin_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/2147145/0/0/ADTECH;alias=Dr.Dobbs_Mobile_Skin_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" border="0" width="1" height="1"></img></a></noscript>
+</div>
+<div id="container">
+	<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1183517/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Ticker_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=959778967;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1183517/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Ticker_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1183517/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Ticker_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" border="0" width="1" height="1"></img></a></noscript>
+	<style>
+		#login, #login a, #login strong { color: white;  font-weight: bold; font-size:12px;} 
+</style>
+
+
+<div id="login" class="welcome" style="padding-left: 12px;">	
+	<!-- load dynamically -->
+</div>	<div id="header">	   
+	   <!-- h-nav -->
+	    <div id="h-nav">
+	    	<ul>
+			<li><a href="/subscribe/">Subscribe</a></li>
+		    <li><a href="/newsletters/">Newsletters</a></li>
+			<li><a href="http://www.informationweek.com/whitepaper?itc=ddj-header-twdl">Digital Library</a></li>
+			<li><a href="/rss/">RSS</a></li>
+			</ul>						
+		</div>
+    	<!-- / h-nav -->
+		
+	<div id="search">
+		<script language="JavaScript" type="text/javascript">
+<!--
+	$(
+		function()
+		{ 	 
+			$('input.search')
+				.click(
+					function()
+					{
+						queryText = $('input#queryText').val();
+						queryText = queryText.replace(/^\s*/, '').replace(/\s*$/, ''); 
+						if (!queryText)
+						{
+							return false;
+						}
+					}
+				)
+				.attr('disabled', false);
+			
+		}
+	);
+//-->
+</script>
+
+<form method="get" action="/sitesearch">
+	<input type="hidden" name="sort" value="publishDate desc"/>
+	<ul>
+		<li><input type="text" value="" size="40" id="queryText" name="queryText" maxlength="100" class="text"></li>
+		<li><input type="submit" value=" " class="search" disabled="true"></li>
+	</ul>
+	Search: 
+	<input type="radio" name="type" value="site" checked /> Site
+	<input type="radio" name="type" value="sourcecode" /> Source Code
+</form>	</div>
+	</br></br>
+
+		<div id="h-nav_main">
+ 	
+<div id="h-nav_mainSection">
+<!-- main section indicator -->
+<ul class="navigation">
+  <li class="h-58"><a href="/?itc=ddj-header-navbar-home" class="h-58" style="float:left">Home</a></li><li class="h-68"><a href="/articles?itc=ddj-header-navbar-articles" class="h-68" style="float:left">Articles</a></li><li class="h-58"><a href="/news?itc=ddj-header-navbar-news" class="h-58" style="float:left">News</a></li><li class="h-58"><a href="/blogs?itc=ddj-header-navbar-blogs" class="h-58" style="float:left">Blogs</a></li><li class="h-108"><a href="/sourcecode?itc=ddj-header-navbar-sourcecode" class="h-108" style="float:left">Source Code</a></li><li class="h-118"><a href="https://store.drdobbs.com/?itc=ddj-header-navbar-store" class="h-118" style="float:left">Dobb's on DVD</a></li><li class="h-88"><a href="/tv?itc=ddj-header-navbar-tv" class="h-88" style="float:left">Dobb's TV</a></li><li class="h-148"><a href="/webinars?itc=ddj-header-navbar-webinars" class="h-148" style="float:left">Webinars &amp; Events</a></li> 
+</ul>
+</div><div id="clearLeft"></div>
+<!-- / main section indicator -->
+<!-- header social icons -->
+  <div id="h-nav_social">	 	
+  	<ul>
+	<li ><a  href="http://www.facebook.com/pages/Dr-Dobbs/17631669579" style="float:left"><img src="http://twimgs.com/ddj/v2/images/h-facebook_sm.png" alt="Facebook" border="0" /></a></li>
+	<li ><a  href="http://twitter.com/dr_dobbs" style="float:left"><img src="http://twimgs.com/ddj/v2/images/h-twitter_sm.png" alt="Twitter" border="0"></a></li>
+  	</ul>
+  </div>		
+<!-- / header social icons -->
+
+
+ <!-- go parallel indicator -->
+ <!-- <div id="h-nav_goParallel">	 	
+	<ul>  
+	 <li class="h-88">
+	<a title="Go Parallel" class="gp" href="/go-parallel/?itc=ddj-header-navbar-goparallel" style="float:right">Go Parallel</a>
+	</li>
+	</ul>
+  </div>  -->
+ <!-- / go parallel indicator -->
+
+</div><!-- / h-nav_main -->
+
+<br>
+</div>
+	<div id="subnav">
+	<div id="nav2">
+		<ul class="navigation">
+		
+		 <li ><a href="/cloud?itc=ddj-channel-navbar-cloud" style="float:left;">Cloud</a></li><li ><a href="/mobile?itc=ddj-channel-navbar-mobile" style="float:left;" class="channelActive">Mobile</a></li><li ><a href="/parallel?itc=ddj-channel-navbar-parallel" style="float:left;">Parallel</a></li><li ><a href="/windows?itc=ddj-channel-navbar-windows" style="float:left;">.NET</a></li><li ><a href="/jvm?itc=ddj-channel-navbar-jvm" style="float:left;">JVM Languages</a></li><li ><a href="/cpp?itc=ddj-channel-navbar-cpp" style="float:left;">C/C++</a></li><li ><a href="/tools?itc=ddj-channel-navbar-tools" style="float:left;">Tools</a></li><li ><a href="/architecture-and-design?itc=ddj-channel-navbar-architecture-and-design" style="float:left;">Design</a></li><li ><a href="/testing?itc=ddj-channel-navbar-testing" style="float:left;">Testing</a></li><li ><a href="/web-development?itc=ddj-channel-navbar-web-development" style="float:left;">Web Dev</a></li><li class="lastitem"><a href="/joltawards?itc=ddj-channel-navbar-joltawards" style="float:left;">Jolt Awards</a></li> 
+</ul>
+</div>	 <!-- End: nav2 --> 
+</div><!-- End: subnav -->	
+		
+	<div id="leaderboard2">
+		<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1183477/0/225/ADTECH;alias=Dr.Dobbs_Mobile_Top_728x90;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=959778967;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1183477/0/225/ADTECH;alias=Dr.Dobbs_Mobile_Top_728x90;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1183477/0/225/ADTECH;alias=Dr.Dobbs_Mobile_Top_728x90;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" border="0" width="1" height="1"></img></a></noscript>
+	</div>
+	
+	<div id="columns">
+		
+		<div id="content">
+			<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shLegacy.js"></script>
+<!--<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shCore.js"></script> -->
+<script type="text/javascript" src="http://twimgs.com/ddj/v2/syntaxhighlighter/scripts/shCore_new.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushXml.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushVb.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushSql.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushScala.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushSass.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushRuby.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushPython.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushPlain.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushPhp.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushPerl.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushJavaFX.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushJava.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushGroovy.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushErlang.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushDiff.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushDelphi.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushCss.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushCSharp.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushCpp.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushColdFusion.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushBash.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushAS3.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shBrushAppleScript.js"></script>
+<script type="text/javascript" src="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/scripts/shAutoloader.js"></script>
+
+
+
+<link href="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+<link href="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/styles/shCoreDefault.css" rel="stylesheet" type="text/css" />
+<link href="http://i.cmpnet.com/ddj/v2/syntaxhighlighter/styles/shCore.css" rel="stylesheet" type="text/css" />
+<style>
+syntaxhighlighter {
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    overflow-x: auto;
+    overflow-y: auto;
+    width: 450px;
+}
+</style>
+<div class="articles no-border">
+ 	<span id ="rss" style="float: right; margin-bottom: 3px;">
+        <a href="/rss/mobile"><img alt="RSS" src="http://i.cmpnet.com/ddj/v2/images/rss.gif"></a>
+
+    </span>
+
+				<h2>Mobile</h2>
+		
+<div class="sharing-tools">	 
+	<div class="share-index"> 
+		<div style="float: left; margin-right: 40px;" class="share-tweet">
+		    <!-- BEGIN TWEET BUTTON  -->
+			<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+			<iframe scrolling="no" frameborder="0" class="twitter-share-button twitter-count-horizontal" tabindex="0" allowtransparency="true" src="http://platform0.twitter.com/widgets/tweet_button.html?_=1297073032116&count=horizontal&lang=en&counturl=http://www.drdobbs.com/mobile/232900072&text=PCs and Tablets: The Convergence is Happening Now -- @dr_dobbs&url=http://twb.io/JuHjbH
+" style="width: 110px; height: 20px;" title="Twitter For Websites: Tweet Button"></iframe>
+			<!-- END TWEET BUTTON  -->	
+        </div>						 
+		<!-- BEGIN FB LIKE  -->
+		<div style="float: left; margin-right: 5px;" class="share-facebook-likes">    	 
+			<iframe scrolling="no" frameborder="0" allowtransparency="true" style="border: medium none; overflow: hidden; width: 90px; padding-top: 0px; height: 25px;" src="http://www.facebook.com/plugins/like.php?href=http://www.drdobbs.com/mobile/232900072&amp;layout=button_count&amp;show_faces=false&amp;stream=false&amp;width=90&amp;action=like&amp;font&amp;colorscheme=light&amp;height=35"></iframe>
+		</div>
+        <!-- END FB LIKE  --> 
+		<!-- Linked In Button -->
+		<div class="share-tweet" style="float: left; margin-right: 6px;">
+		<script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
+		<script type="in/share" data-url="http://www.drdobbs.com/mobile/232900072"></script>
+		</div>
+		<!-- Linked In Button -->
+		<!-- Google +1 Button -->
+		<div style="float: left; margin-right: 2px;">
+		<g:plusone size="small" count="false"></g:plusone>
+		</div>
+		<!-- Google +1 Button -->		
+		<div class="addthis_toolbox addthis_pill_combo_style" addthis:url="http://www.drdobbs.com/mobile/232900072">
+				
+			<a style="cursor: pointer;" class="addthis_button_stumbleupon at300b" href="http://www.addthis.com/bookmark.php?v=250&amp;winname=addthis&amp;pub=Dr.Dobbs&amp;source=tbx-250&amp;lng=en-US&amp;s=stumbleupon&amp;url=http://www.drdobbs.com/mobile/232900072&amp;title=PCs and Tablets: The Convergence is Happening Now&amp;ate=AT-Dr.Dobbs/-/fs-0/4d4fc3809f4d8545/1&amp;sms_ss=1&amp;at_xt=1&amp;CXNID=2000001.5215456080540439074NXC&amp;pre=http%3A%2F%2Fwww.drdobbs.com%2F&amp;tt=0" target="_blank" title="Send to StumbleUpon"> <span class="at300bs at15t_stumbleupon"></span></a>
+			<a class="addthis_button_reddit" style="cursor:pointer"></a>			
+			<a href="http://www.facebook.com/sharer.php?u=http://www.drdobbs.com/mobile/232900072&amp;t=&amp;src=sp" share_url="http://www.drdobbs.com/mobile/232900072" type="icon" name="fb_share" style="text-decoration: none;"><span class="FBConnectButton_Simple"><span class="FBConnectButton_Text_Simple">?</span></span></a><script type="text/javascript" src="http://static.ak.fbcdn.net/connect.php/js/FB.Share"></script>
+			<a title="Send As Email" href="javascript:emailLauncher('/email?articleUrl=','/mobile/232900072')" class="addthis_default_style"><img hspace="0" border="0" src="http://i.cmpnet.com/ddj/v2/images/share_email_icon.gif"></a> 
+			<a href="/article/print?articleId=232900072&amp;siteSectionName=mobile" class="addthis_default_style"><img hspace="4" border="0" src="http://i.cmpnet.com/ddj/v2/images/share_print_icon.gif"></a>
+			<a href="http://www.drdobbs.com/mobile/232900072#" class="addthis_permalink">Permalink</a>
+			<div class="atclear"></div>
+		</div>
+		<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+		<script src="http://s7.addthis.com/js/250/addthis_widget.js#pub=xa-4af4a81901b903fa" type="text/javascript"></script>
+		<!-- AddThis Button END -->		
+	</div>
+	<div style="clear: both;"></div>			
+</div>
+
+<script>
+function emailLauncher(filePath,storyURL) {
+	uri = filePath + encodeURIComponent(storyURL);		
+	window.open(uri,"","toolbar=no,scrollbars=auto,location=no,status=no,width=733,height=590,resizable=1");
+}
+</script>	
+
+<div id="article-header">
+<h1 class="story-title">PCs and Tablets: The Convergence is Happening Now</h1>
+<p class="byline">By <a href="/author/6960">Andrew Binstock</a>, April 10, 2012</p>
+<p class="byline-comments"><span>
+<a href="http://www.drdobbs.com/mobile/232900072?wc=4#disqus_thread" class="commentLink" data-disqus-identifier="article_232900072"></a>
+ 
+</span></p>
+
+	
+<font class="story-teaser">The new iPad? Meh. I'm running Visual Studio 11 on Windows 8 (64-bit) on my tablet. Yes, my tablet.</font><br>
+
+</div>
+<div class="story">
+	<p>While the technical press spent most of last month fawning  over the new iPad and its "retina" display, my retinas were enjoying a much deeper level of techie satisfaction. I was running full scale Windows apps, such as Visual Studio, on the Samsung Slate 7. The Slate, an Intel-based tablet, was recently released with these hardware specs: an Intel Core i5 Mobile processor, 4GB RAM, and 128 GB  SSD. It's an 11.6-inch LCD display (1366 x 768), so somewhat larger than an iPad. Unlike the iPad or, in fact, 
+ most other tablets, it has an HDMI and a USB port. The Slate also has a docking station with two USB and an Ethernet port. So, as you can tell, it's a true PC in the form factor of a tablet. The picture below confirms this.</p>
+<P>
+ <p>
+ <img src="http://twimgs.com/ddj/images/article/2012/0412/intel_slate_tablet.jpg" width="450" height="360" alt="Description: Samsung Series 7 Slim Slate PC With Windows 7">
+ </p>
+ <p>The docking station is the hardware interface of choice when  you're using the Slate as a PC, as the various ports enable me to plug in a regular-sized keyboard and mouse. (The latter two components can also connect via Bluetooth.)  And if the display is  too small for me (although it's quite legible as is), I can use the HDMI port to drive a monitor. Then when I'm ready to go mobile, I can unplug everything and use the Slate as I would any tablet: to check mail (from within Outlook), surf the web, listen to music, and watch films. The one big difference from the other tablets is the software. I don't have to use iTunes to access my music.  In fact, because the filesystem is not obscured by the UI, I can manage my music and videos as files and play them  as I wish with standard Windows players and tools.</p>
+  
+ <p>I'll stop giving you hardware envy, and now discuss the  downsides. The Slate weighs about 7 ounces more than the iPad 1, which still  puts total weight under two pounds. This is great for a PC device, but limits  the product's use where holding it for long periods is typical (book reader, photo viewer, etc.) Without a keyboard, it's very hard to do right-clicks and frequently difficult to zero in on specific tabs. For this problem, Samsung includes a stylus that helps you accurately tap on what you want. More to the point, when the Metro UI of Windows 8 is used, it obviates all these problems: The big, blocky, colorful design of widgets and apps mean that navigating is easy without having to take careful aim or right-click.</p>
+  
+ <p>So, what does this tablet have to do with software  development? Lots, actually. If you subscribe&#8212;as I do&#8212;to the belief that high-end tablets will inevitably overlap with PCs in terms of performance and capability, then the Slate represents the future today. It also means that insofar as tablets are concerned, the current model of downloading mobile apps will be supplanted in favor of using regular desktop apps. Mobile apps will return to their original venue, the smart phone, which due to its form factor, cannot push into the same domain as the PC. </p>
+  
+ <p>Interestingly, the laptop or tablet-as-PC cannot displace  the smartphone either, again due to the form factor. Note that despite the  availability of Google Voice and other similar IP telephony services on tablets, few (if any!) users have abandoned their cell phones to pursue a tablet-only path. Consequently, it's safe to assume that mobile apps will continue to thrive on handsets. The question is to what extent those apps will be different in terms of coding and design from the apps on tablets. </p>
+  
+ <p>The company that has embraced the tablet-PC convergence most clearly, in my estimation, is Microsoft. The Windows 8 release runs on both x86 and ARM  processors and the Metro UI brings mobile-style UX to the desktop. (As I found out by running Win 8 on this tablet though, the Win 7 UI is still very much available for users who prefer the traditional desktop metaphor. I expect that  for coding, this metaphor will generally be preferred.) By bringing the OS and the  UIs across laptop/desktops, tablets, and smart phones, Microsoft is wisely hedging its bets in multiple directions, but especially that tablets like the Samsung Slate will emerge as the new PCs. The bet does extend to phones, however. As described in the immediately <a href="http://drdobbs.com/mobile/232700367">preceding editorial</a>, the cross-over between  Windows apps for the phone and those for larger devices is significant. That editorial, by Dino Esposito, concluded "If you're coming to Windows Phone with a .NET background, you will feel right at home." I believe Microsoft's Windows 8 goal is to make this true across the entire line of user devices. </p>	
+	<!-- send Article author Details-->
+	<p><i></i></p></div><!-- test -->
+<br>
+		<div class="nav1">
+<center>
+	</center>
+</div>
+
+<style type="text/css">
+<!--
+.nav1 {
+	clear: both;
+	text-align: center;
+}
+
+.topcommenttools .tools {
+	display: table;
+	font-size: .7em;
+	font-weight: bold;
+	padding-bottom: 10px;
+	width: 100%;
+}
+
+.topcommenttools .tools .reply {
+	float: left;
+}
+
+.topcommenttools .tools .share-email-report {
+	float: right;
+}
+
+.topcommenttools .tools .share-email-report span {
+	margin-left: 10px;
+}
+
+.topcommenttools .tools .reply a {
+	background: transparent
+		url('http://i.cmpnet.com/ddj/v2/images/reply.gif') no-repeat 0px 3px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.topcommenttools .tools .share {
+	background: transparent
+		url('http://i.cmpnet.com/ddj/v2/images/share_icon.gif') no-repeat
+		bottom left;
+	padding-left: 23px;
+}
+
+.topcommenttools .tools .email {
+	background: transparent
+		url('http://i.cmpnet.com/ddj/v2/images/mail_icon.gif') no-repeat
+		bottom left;
+	padding-left: 22px;
+}
+
+.topcommenttools .tools .report {
+	background: transparent
+		url('http://i.cmpnet.com/ddj/v2/images/report_icon.gif') no-repeat
+		bottom left;
+	padding-left: 16px;
+}
+-->
+</style>
+
+</div>
+
+<!--  Related Reading Box -->
+             
+     
+    <h3 class="resources">Related Reading</h3>
+    <div class="related-resources first tabs" style="margin-bottom:10px;">
+        <ul class="toc clearfix">
+            <li class="first"><a href="#toc-news" title="News">News</a></li>
+            <li><a href="#toc-most-popular" title="Most Popular">Most Popular</a></li>
+        </ul>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-news">News</a></h3>
+			    <ul class="events">
+<li><a href="/tools/232901682?cid=SBX_ddj_related_news_default&itc=SBX_ddj_related_news_default" title="Free Version Management Licenses For Software Application Developers">Free Version Management Licenses For Software Application Developers</a></li><li><a href="/windows/232901590?cid=SBX_ddj_related_news_default&itc=SBX_ddj_related_news_default" title="Infragistics "Fostering" Designer/Developer Love">Infragistics "Fostering" Designer/Developer Love</a></li><li><a href="/windows/232901232?cid=SBX_ddj_related_news_default&itc=SBX_ddj_related_news_default" title="MS Open Tech Releases Open Source Metro Theme for jQuery Mobile">MS Open Tech Releases Open Source Metro Theme for jQuery Mobile</a></li><li><a href="/jvm/232901202?cid=SBX_ddj_related_news_default&itc=SBX_ddj_related_news_default" title="Oracle Releases Java SE 7 Update 4 and JavaFX 2.1">Oracle Releases Java SE 7 Update 4 and JavaFX 2.1</a></li><a class="continue" href="/news?cid=SBX_ddj_related_news_more&itc=SBX_ddj_related_news_more" title="More News">More News<span>&raquo;</span></a>                        
+    </ul>                    
+        </div>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-most-popular">Most Popular</a></h3>
+			    <ul class="events">
+<li><a href="/blog/cpp/232901591?cid=SBX_ddj_related_mostpopular_default&itc=SBX_ddj_related_mostpopular_default" title="Voldemort Types In D">Voldemort Types In D</a></li><li><a href="/cpp/199500857?cid=SBX_ddj_related_mostpopular_default&itc=SBX_ddj_related_mostpopular_default" title="A Simple and Efficient FFT Implementation in C++:<br> Part I">A Simple and Efficient FFT Implementation in C++:<br> Part I</a></li><li><a href="/parallel/232800139?cid=SBX_ddj_related_mostpopular_default&itc=SBX_ddj_related_mostpopular_default" title="Intel's 50+ core MIC architecture: HPC on a Card or Massive Co-Processor?">Intel's 50+ core MIC architecture: HPC on a Card or Massive Co-Processor?</a></li><li><a href="/parallel/207402986?cid=SBX_ddj_related_mostpopular_default&itc=SBX_ddj_related_mostpopular_default" title="CUDA, Supercomputing for the Masses: Part 2">CUDA, Supercomputing for the Masses: Part 2</a></li><a class="continue" href="/?cid=SBX_ddj_related_mostpopular_more&itc=SBX_ddj_related_mostpopular_more" title="More Popular">More Popular<span>&raquo;</span></a>                        
+    </ul>        </div>
+    </div>
+    <div class="related-resources tabs" style="margin-bottom:10px;">
+        <ul class="toc clearfix">
+            <li class="first"><a href="#toc-commentary" title="Commentary">Commentary</a></li>
+            <li><a href="#toc-web" title="On the Web">On the Web</a></li>
+        </ul>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-commentary">Commentary</a></h3>
+			    <ul class="events">
+<li><a href="/open-source/240000041?cid=SBX_ddj_related_commentary_default&itc=SBX_ddj_related_commentary_default" title="Stash Code On Stash: Git Repository Management">Stash Code On Stash: Git Repository Management</a></li><li><a href="/testing/232901589?cid=SBX_ddj_related_commentary_default&itc=SBX_ddj_related_commentary_default" title="NT OBJECTives: Top 10 Business Logic Attack Vectors">NT OBJECTives: Top 10 Business Logic Attack Vectors</a></li><li><a href="/database/232900522?cid=SBX_ddj_related_commentary_default&itc=SBX_ddj_related_commentary_default" title="Kernels, Contexts, Threads, and Extensible Database Architecture">Kernels, Contexts, Threads, and Extensible Database Architecture</a></li><li><a href="/windows/232901534?cid=SBX_ddj_related_commentary_default&itc=SBX_ddj_related_commentary_default" title="Some Android Apps "Prefer" Native">Some Android Apps "Prefer" Native</a></li><a class="continue" href="/articles?cid=SBX_ddj_related_mostpopular_more&itc=SBX_ddj_related_mostpopular_more" title="More Commentary">More Commentary<span>&raquo;</span></a>                        
+    </ul>        </div>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-web">On the Web</a></h3>
+                <ul class="events">
+<li><a href="http://defensesystems.com/articles/2011/12/14/navy-antidote-undersea-robots.aspx?cid=SBX_ddj_related_elsewhere_default&itc=SBX_ddj_related_elsewhere_default"target="_blank" title="Navy delves deeper into undersea robotics">Navy delves deeper into undersea robotics</a></li><li><a href="http://www.technologyreview.com/blog/arxiv/27407/?p1=blogs&cid=SBX_ddj_related_elsewhere_default&itc=SBX_ddj_related_elsewhere_default"target="_blank" title="Quantum PageRank Algorithm Outperforms Classical Version">Quantum PageRank Algorithm Outperforms Classical Version</a></li><li><a href="http://www.ama-assn.org/amednews/2011/12/12/bisd1213.htm?cid=SBX_ddj_related_elsewhere_default&itc=SBX_ddj_related_elsewhere_default"target="_blank" title="Health care's top 2012 issues: technology, social media, security">Health care's top 2012 issues: technology, social media, security</a></li><li><a href="http://www.tmcnet.com/tmcnet/interop/articles/173814-interop-survey-takes-pulse-personal-pcs-devices-corporate.htm?cid=SBX_ddj_related_elsewhere_default&itc=SBX_ddj_related_elsewhere_default"target="_blank" title="Interop Survey Takes Pulse of Personal PCs, Devices on Corporate Networks">Interop Survey Takes Pulse of Personal PCs, Devices on Corporate Networks</a></li><a class="continue" href="/?cid=SBX_ddj_related_elsewhere_more&itc=SBX_ddj_related_elsewhere_more" title="More On The Web">More On The Web<span>&raquo;</span></a>                        
+    </ul>        </div>
+    </div>
+    <div class="related-resources tabs" style="margin-bottom:10px;">
+        <ul class="toc clearfix">
+            <li class="first"><a href="#toc-video" title="Video">Video</a></li>
+            <li><a href="#toc-slideshow" title="Slideshow">Slideshow</a></li>
+        </ul>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-video">Video</a></h3>
+			    <ul class="events">
+<li><a href="/video/232800377?cid=SBX_ddj_related_video_default&itc=SBX_ddj_related_video_default" title="2012 Intel Science Talent Search Winners">2012 Intel Science Talent Search Winners</a></li><li><a href="/video/security/232500494?cid=SBX_ddj_related_video_default&itc=SBX_ddj_related_video_default" title="Former Hacker: Software Should Be More Secure">Former Hacker: Software Should Be More Secure</a></li><li><a href="/video/go-parallel/article/parallel/232500491?cid=SBX_ddj_related_video_default&itc=SBX_ddj_related_video_default" title="Joe Everton on GPA 4.3">Joe Everton on GPA 4.3</a></li><li><a href="/video/232500537?cid=SBX_ddj_related_video_default&itc=SBX_ddj_related_video_default" title="IBM at 100">IBM at 100</a></li><a class="continue" href="/video/archives?cid=SBX_ddj_related_video_more&itc=SBX_ddj_related_video_more" title="More Videos">More Videos<span>&raquo;</span></a>                        
+    </ul>        </div>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-slideshow">Slideshow</a></h3>
+			    <ul class="events">
+<li><a href="/slideshows/232901643?cid=SBX_ddj_related_slideshow_default&itc=SBX_ddj_related_slideshow_default" title="New Native Languages">New Native Languages</a></li><li><a href="/joltawards/232901286?cid=SBX_ddj_related_slideshow_default&itc=SBX_ddj_related_slideshow_default" title="Jolt Awards: The Best Testing Tools">Jolt Awards: The Best Testing Tools</a></li><li><a href="/tools/232602534?cid=SBX_ddj_related_slideshow_default&itc=SBX_ddj_related_slideshow_default" title="Developer's Reading List">Developer's Reading List</a></li><li><a href="/joltawards/232601043?cid=SBX_ddj_related_slideshow_default&itc=SBX_ddj_related_slideshow_default" title="2012 Jolt Award Winners for Third-Party Libraries">2012 Jolt Award Winners for Third-Party Libraries</a></li><a class="continue" href="/slideshows?cid=SBX_ddj_related_slideshow_more&itc=SBX_ddj_related_slideshow_more" title="More Slideshows">More Slideshows<span>&raquo;</span></a>                        
+    </ul>        </div>
+    </div>
+    <hr style="margin-bottom:10px;"/>
+    
+        <h3 class="resources">More  Insights</h3>
+    
+    <div class="related-resources first" style="margin-bottom:10px;">
+    <h3>White Papers</h3>		<ul class="archive">	
+				
+				<li>		
+				<a href="http://www.informationweek.com/whitepaper/healthcare/leadership/fade-or-flourish-rethinking-the-role-of-life-scie-wp1335712079?articleID=191704692&cid=SBX_ddj_well_wp_default&itc=SBX_ddj_well_wp_default">
+				Fade or flourish? Rethinking the role of life sciences companies in the healthcare ecosystem				</a>
+				</li>
+				
+				<li>		
+				<a href="http://www.informationweek.com/whitepaper/Hardware/Data-Centers/aol-reduces-data-center-energy-consumption-with-ra-wp1335385135?articleID=191704645&cid=SBX_ddj_well_wp_default&itc=SBX_ddj_well_wp_default">
+				AOL Reduces Data Center Energy Consumption With Raritans Help				</a>
+				</li>
+						
+		</ul>
+		
+	<a title='More White Papers' href='http://informationweek.com/whitepaper?cid=SBX_ddj_well_wp_more&itc=SBX_ddj_well_wp_more' class='continue'>More <span>>></span></a>    </div>
+    <div class="related-resources" style="margin-bottom:10px;">
+    <h3>Reports</h3>		<ul class="archive">	
+				
+				<li>		
+				<a href="http://reports.informationweek.com/abstract/6/8714/Data-Center/strategy-predictive-analytics-for-it.html?cid=SBX_ddj_well_Analytics_default&itc=SBX_ddj_well_Analytics_default">
+				Strategy: Predictive Analytics for IT				</a>
+				</li>
+				
+				<li>		
+				<a href="http://reports.informationweek.com/abstract/21/8676/Security/strategy-database-defense.html?cid=SBX_ddj_well_Analytics_default&itc=SBX_ddj_well_Analytics_default">
+				Strategy: Database Defense				</a>
+				</li>
+						
+		</ul>
+		
+	<a title='More Reports' href='http://reports.informationweek.com/?cid=SBX_ddj_well_analytics_more&itc=SBX_ddj_well_analytics_more' class='continue'>More <span>>></span></a>    </div>
+    <div class="related-resources" style="margin-bottom:10px;">
+    <h3>Webcasts</h3>		<ul class="archive">	
+				
+				<li>		
+				<a href="https://www.techwebonlineevents.com/ars/eventregistration.do?mode=eventreg&F=1004301&K=SBX&cid=SBX_ddj_well_Webcast_default&itc=SBX_ddj_well_Webcast_default">
+				Self-Encrypting Drives: The Evolution of Encryption				</a>
+				</li>
+				
+				<li>		
+				<a href="https://www.techwebonlineevents.com/ars/eventregistration.do?mode=eventreg&F=1003942&K=6IK&cid=SBX_ddj_well_Webcast_default&itc=SBX_ddj_well_Webcast_default">
+				Maximize ROI with Database Consolidation onto Private Clouds				</a>
+				</li>
+						
+		</ul>
+		
+	<a title='More Webcast' href='http://informationweek.com/whitepaper/viewallasset?start=1&contentType=4&cid=SBX_ddj_well_webcasts_more&itc=SBX_ddj_well_webcasts_more' class='continue'>More <span>>></span></a>    </div>
+<hr /><!-- /  Related Reading Box -->
+<div class="dcolmask doublepage">
+<div class="dcolleft">
+			<div class="dcol1">
+			<!-- Column 1 start -->
+ 			<div id="left-col" style="width:160px;">
+				<div class="infolink">
+					<span style="font-size: 0.7em; font-weight: bold;">INFO-LINK</span>
+<ul style="color: rgb(33, 82, 190); font-size: 0.7em; list-style: none outside none; margin-top: 0px; padding: 8px 0px 0px;">
+<li style="padding-left: 15px; background: url(&quot;http://i.cmpnet.com/nc/mt/bg_left-nav.png&quot;) no-repeat scroll 5px 7px transparent; color: rgb(0, 59, 176); margin: 0px 0pt;">
+	<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1183516/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Infolink_1_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1183516/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Infolink_1_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1183516/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Infolink_1_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=;" border="0" width="1" height="1"></img></a></noscript>
+</li>
+<li style="padding-left: 15px; background: url(&quot;http://i.cmpnet.com/nc/mt/bg_left-nav.png&quot;) no-repeat scroll 5px 7px transparent; color: rgb(0, 59, 176); margin: 0px 0pt;">
+	<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1183550/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Infolink_2_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1183550/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Infolink_2_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1183550/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Infolink_2_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=;" border="0" width="1" height="1"></img></a></noscript>
+</li>
+<li style="padding-left: 15px; background: url(&quot;http://i.cmpnet.com/nc/mt/bg_left-nav.png&quot;) no-repeat scroll 5px 7px transparent; color: rgb(0, 59, 176); margin: 0px 0pt;">
+	<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1183588/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Infolink_3_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1183588/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Infolink_3_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1183588/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Infolink_3_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=;" border="0" width="1" height="1"></img></a></noscript>
+</li>
+<li style="padding-left: 15px; background: url(&quot;http://i.cmpnet.com/nc/mt/bg_left-nav.png&quot;) no-repeat scroll 5px 7px transparent; color: rgb(0, 59, 176); margin: 0px 0pt;">
+	<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1183424/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Infolink_4_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1183424/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Infolink_4_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1183424/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Infolink_4_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=;" border="0" width="1" height="1"></img></a></noscript>
+</li>
+</ul>
+
+
+
+
+				</div>
+				<br/>
+				<br/>
+				
+				<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1196722/0/154/ADTECH;alias=Dr.Dobbs_Mobile_Sky_160x600;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1196722/0/154/ADTECH;alias=Dr.Dobbs_Mobile_Sky_160x600;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1196722/0/154/ADTECH;alias=Dr.Dobbs_Mobile_Sky_160x600;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=;" border="0" width="1" height="1"></img></a></noscript>
+				<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1629135/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Floating_Banner_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1629135/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Floating_Banner_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1629135/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Floating_Banner_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=;" border="0" width="1" height="1"></img></a></noscript>
+ 	
+ 			</div>
+ 		</div>
+ 		<div class="dcol2" style="left:71%;width:73%;">
+		<!--  Commenting -->
+		<div id="dobbs_disqus">
+		<div id="disqus-hints-box">
+  <script type="text/javascript" src="http://twimgs.com/brainyard/js/colorbox/jquery.colorbox-min.js"></script>
+<script type="text/javascript">
+	var brainyardDomain  = 'www.drdobbs.com';
+</script>
+<script type="text/javascript" src="http://twimgs.com/brainyard/js/disqusHints.js"></script>
+<!-- This section is for calling the commenting policy pop-up -->
+<script>
+	$(document).ready(function(){
+		$(".commentingPolicy").colorbox({width:"420px",height:"300px",inline:true,href:"#inlineCommenting"});//end .htmlTags
+	});//end doc ready
+</script>
+<link rel="stylesheet" href="http://twimgs.com/brainyard/css/colorbox.css" type="text/css" />
+<link rel="stylesheet" href="http://twimgs.com/brainyard/css/disqusHints.css" type="text/css" />
+
+<div style='display:none'>
+	<div id='inlineModal' style='padding:10px;'>
+    	<div class="newsletterHeader">
+    		<img src="http://twimgs.com/ddj/images/dobbs_disqus_logo.gif" />
+    	</div>
+    	<br /><br /> 
+    	<div class="markdown">
+      		<h3>Currently we allow the following HTML tags in comments:</h3>
+			<h3>Single tags</h3>
+			<p><i>These tags can be used alone and don't need an ending tag. </i></p>
+			<p><code>&lt;br&gt;</code> Defines a single line break <br /><br /> 
+			<code>&lt;hr&gt;</code> Defines a horizontal line</p>
+
+			<h3>Matching tags</h3>
+			<p><i>These require an ending tag - e.g. <code>&lt;i&gt;italic text&lt;/i&gt;</code> </i></p>
+			<p><code>&lt;a&gt;</code> Defines an anchor<br /><br />
+			<code>&lt;b&gt;</code> Defines bold text<br /><br />
+			<code>&lt;big&gt;</code> Defines big text<br /><br />
+
+			<code>&lt;blockquote&gt;</code> Defines a long quotation<br /><br />
+			<code>&lt;caption&gt;</code> Defines a table caption<br /><br />
+			<code>&lt;cite&gt;</code> Defines a citation<br /><br />
+			<code>&lt;code&gt;</code> Defines computer code text<br /><br />
+			<code>&lt;em&gt;</code> Defines emphasized text<br /><br />
+
+			<code>&lt;fieldset&gt;</code> Defines a border around elements in a form<br /><br />
+			<code>&lt;h1&gt;</code> This is heading 1<br /><br />
+			<code>&lt;h2&gt;</code> This is heading 2<br /><br />
+			<code>&lt;h3&gt;</code> This is heading 3<br /><br />
+			<code>&lt;h4&gt;</code> This is heading 4<br /><br />
+			
+			<code>&lt;h5&gt;</code> This is heading 5<br /><br />
+			<code>&lt;h6&gt;</code> This is heading 6<br /><br />
+			<code>&lt;i&gt;</code> Defines italic text<br /><br />
+			<code>&lt;p&gt;</code> Defines a paragraph<br /><br />
+			<code>&lt;pre&gt;</code> Defines preformatted text<br /><br />
+			
+			<code>&lt;q&gt;</code> Defines a short quotation<br /><br />
+			<code>&lt;samp&gt;</code> Defines sample computer code text<br /><br />
+			<code>&lt;small&gt;</code> Defines small text<br /><br />
+			<code>&lt;span&gt;</code> Defines a section in a document<br /><br />
+			<code>&lt;s&gt;</code> Defines strikethrough text<br /><br />
+			
+			<code>&lt;strike&gt;</code> Defines strikethrough text <br /><br />
+			<code>&lt;strong&gt;</code> Defines strong text <br /><br />
+			<code>&lt;sub&gt;</code> Defines subscripted text <br /><br />
+			<code>&lt;sup&gt;</code> Defines superscripted text <br /><br />
+			<code>&lt;u&gt;</code> Defines underlined text<br /><br /></p>
+    	</div>  
+	</div><!-- /end  inline_mailinglist-->
+
+	<div id='inlineCommenting' style='padding:10px;text-align: justify;' class="markdown">
+		  <p>DrDobbs encourages readers to engage 
+		  in spirited, healthy debate, including taking us to task.  
+		  However, DrDobbs moderates all comments posted to our site, 
+		  and reserves the right to modify or remove any content that it determines to be derogatory, 
+		  offensive, inflammatory, vulgar, irrelevant/off-topic, racist or obvious marketing/SPAM.  
+		  DrDobbs further reserves the right to disable the profile of any commenter participating 
+		  in said activities.</p>
+	</div>	
+</div>
+<table cellspacing="0" cellpadding="0" border="0" width="100%" bgcolor="#f3f3f3">
+	<tr>
+    	<td colspan="2">&nbsp;</td>  
+	</tr>
+	<tr>
+   	 	<td width="34"><img src="http://twimgs.com/informationweek/Disqus_art/hintbox_info.jpg" alt="Disqus Tips" border="0" align="left" height="34"></td> 
+		<td><font style="font-family: Arial, Helvetica, Geneva, SunSans-Regular, sans-serif; color: #000000; font-size: 11px;">
+			<strong>To upload an avatar photo,</strong> first <a href="http://disqus.com/dashboard/" style="font-family: Arial,Helvetica,Geneva,SunSans-Regular,sans-serif; color: #003bb0; font-size: 11px;" target="_blank">complete your Disqus profile.</a> | <a href="#" class="htmlTags" style="font-family: Arial,Helvetica,Geneva,SunSans-Regular,sans-serif; color: #003bb0; font-size: 11px;">View the list</a> of <strong>supported HTML tags</strong> you can use to style comments. | Please read our <a href="#" class="commentingPolicy" style="font-family: Arial,Helvetica,Geneva,SunSans-Regular,sans-serif; color: #003bb0; font-size: 11px;"><strong>commenting policy.</strong></a>
+			</font>
+		</td>
+	</tr>
+	<tr>
+       <td colspan="2">&nbsp;</td>  
+	</tr>
+</table>  
+
+</div>
+
+<script language='JavaScript' type='text/javascript'>
+<!--
+var jmessage = '';
+	var jtimestamp = '';
+	var jhmac = '';
+	var jmessage = '';
+	$.ajax({
+	   type: "GET",
+	   url: "/disqussetting",
+	   data: "referer="+encodeURIComponent(window.location.href),
+	   success: function(data){		   
+		   if (data != null)
+			{
+			   jmessage = data.jmessage;
+			   jtimestamp = data.jtimestamp;
+			   jhmac = data.jhmac;					
+			}
+	   },
+	   dataType: "json",
+	   async: false,
+	   cache: false
+	 }	
+	 );	
+
+				if(jhmac == null || jhmac == ''){
+				var headID = document.getElementsByTagName("head")[0];         
+				var cssNode = document.createElement('link');
+				cssNode.type = 'text/css';
+				cssNode.rel = 'stylesheet';
+				cssNode.href = 'http://i.techweb.com/brainyard/css/disqusLoggedOff.css';
+				cssNode.media = 'screen';
+				headID.appendChild(cssNode);
+			}
+			else
+			{
+								document.write("<style type=\"text/css\">#techwebCommentLogin{display:none;}</style>");
+
+			}
+	-->
+	 
+</script>
+<script type="text/javascript">
+  if (jmessage == null)
+        $("div#disqus-hints-box").hide();
+</script>
+<script type="text/javascript">
+var disqus_config = function () {
+
+	var hmac1 = jhmac;
+	var htimestamp = jtimestamp;
+	var hmessage = jmessage;	
+	if(hmac1 != null){		
+			this.page.remote_auth_s3 = hmessage + ' ' + hmac1 + ' ' + htimestamp;
+			this.page.api_key = "Qq6ImCn7MIzMK699FJY4iuhauNLipx3XghP08sjP0Wz9Ipk81mTrcqxz85A8OOqv";			
+	}
+	this.page.author_s3 = "eyJ1c2VybmFtZSI6IkFuZHJld0JpbnN0b2NrIn0= 77ee1ac0a7909b5469b92c364376edd20a3e2e76 1336606673";		
+    this.sso = {
+          name:    "UBM TechWeb",
+          button:  "http://i.techweb.com/informationweek/images/ubm-techweb-logo.gif",
+          icon:    "http://i.cmpnet.com/brainyard/images/favicon.ico",
+          url:     "http://www.drdobbs.com/login?assetId=156622&successfulLoginRedirect=http%3A%2F%2Fwww.drdobbs.com%2Fmobile%2F232900072%3Fwc%3D4",
+          logout:  "http://www.drdobbs.com/logout?redirect=http%3A%2F%2Fwww.drdobbs.com%2Fmobile%2F232900072%3Fwc%3D4",
+          width:   "800",
+          height:  "400"
+    };
+    this.callbacks.onNewComment = [function() {trackComment();}];
+};
+</script>
+
+<style type="text/css">
+.dsq-post-tools .dsq-post-as .dsq-button{
+	background: url(none);
+	background-color:#c90000;
+}
+
+.dsq-post-tools .dsq-post-as .dsq-button:active{
+	background: url(none);
+	background-color:#ed0404;
+}
+
+.dsq-post-tools .dsq-post-as .dsq-button:hover{
+	background: url(none);
+	background-color:#e00000;
+}
+.dsq-post-tools .dsq-post-as .dsq-button{
+text-shadow:none;
+color:white;
+}
+.dsq-comment-text blockquote{
+	border-left:1px solid #555555;
+	padding-left:15px;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-style:italic;
+	font-size:15px;
+	margin:15px;
+	color:#999999;
+	margin-bottom:10px;
+	padding-right:15px;
+	font-weight:bold;
+}
+#dsq-content .dsq-comment-meta li, #dsq-content .dsq-comment-actions li {
+    float: left;
+    font-size: 65%;
+    margin: 0 10px 0 0;
+}
+
+#dsq-content #dsq-footer li {
+    float: left;
+    font-size: 0.75em;
+    margin: 0 10px 0 0;
+}
+
+#dsq-content .dsq-comment-text {
+    display: inline;
+    font-size: .80em;
+}
+</style>
+
+<a name="comments"></a>
+<div id="disqus_thread">
+		
+</div>
+
+
+<script type="text/javascript">
+			var disqus_developer = 1;
+		
+    var disqus_shortname = 'drdobbs';
+    var disqus_domain = 'disqus.com';
+    var disqus_identifier = 'article_232900072';
+	var disqus_url = 'http://www.drdobbs.com/mobile/232900072?wc=4';
+		var disqus_title = '"PCs and Tablets: The Convergence is Happening Now"';
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+   
+    
+</script>
+		</div> 
+		<!-- /  Commenting -->
+		<!-- Best of Web -->
+            <div class="subsection best">
+                <h2>Best of the Web</h2>
+
+<h1><a name="b4" href="/bestofweb/QuickRead1.jhtml?KeepThis=true&amp;TB_iframe=true&amp;height=300&amp;width=735" class="thickbox">What the New iPad and iOS 5.1 Mean for Developers</a></h1>
+<p>The new display is gorgeous. But local storage for HMTL5 is currently broken on the new iPad and performance of some apps is slower. Here's a deep dive into the issues, including benchmarks and analysis.</p> 
+<p class="quick-read"><a href="/bestofweb/QuickRead1.jhtml?KeepThis=true&amp;TB_iframe=true&amp;height=300&amp;width=735" class="thickbox">Quick Read</a></p>
+
+<h1><a name="b1" href="/bestofweb/QuickRead2.jhtml?KeepThis=true&amp;TB_iframe=true&amp;height=300&amp;width=735" class="thickbox">Triple Buffering as A Concurrency Mechanism</a></h1>
+<p>Triple Buffering is a way of passing data between a producer and a consumer running at different rates. It ensures that the consumer sees only complete data with minimal lag.</p> 
+<p class="quick-read"><a href="/bestofweb/QuickRead2.jhtml?KeepThis=true&amp;TB_iframe=true&amp;height=300&amp;width=735" class="thickbox">Quick Read</a></p>
+ 
+<h1><a name="b2" href="/bestofweb/QuickRead3.jhtml?KeepThis=true&amp;TB_iframe=true&amp;height=300&amp;width=735" class="thickbox">Embedding GDB Breakpoints in C Source Code</a></h1>
+<p><p>Have you ever wanted to embed GDB breakpoints in C source code? Something like this:<code>
+<br>printf("Hello,\n");
+<br>EMBED_BREAKPOINT;
+<br>printf("world!\n");</code></p>
+<p class="quick-read"><a href="/bestofweb/QuickRead3.jhtml?KeepThis=true&amp;TB_iframe=true&amp;height=300&amp;width=735" class="thickbox">Quick Read</a></p>
+     
+<h1><a name="b3" href="/bestofweb/QuickRead5.jhtml?KeepThis=true&amp;TB_iframe=true&amp;height=300&amp;width=735" class="thickbox">Writing Kernel Exploits</a></h1>
+<p>Why attack the kernel? Because it has a huge attack surface with potential for very interesting bugs. This presentation (pdf) takes a code-level dive into recently reported Linux-kernel exploits.</p> 
+<p class="quick-read"><a href="/bestofweb/QuickRead5.jhtml?KeepThis=true&amp;TB_iframe=true&amp;height=300&amp;width=735" class="thickbox">Quick Read</a></p>
+ <br> 
+<p><a href="http://drdobbs.com/bestofweb/" color="blue" align="right">         <b>More "Best of the Web" >></b></a></p>
+            </div>
+  		<!-- END Best of Web -->
+	</div>
+</div>
+</div>
+
+<!-- Finally, to actually run the highlighter, you need to include this JS on your page -->
+<script type="text/javascript">
+     SyntaxHighlighter.all();
+</script>	
+		</div>
+		<div id="right-col">
+			<!-- div class="subsection " -->
+<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/2296655/0/0/ADTECH;alias=Dr.Dobbs_Mobile_Modal_336x70;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=959778967;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/2296655/0/0/ADTECH;alias=Dr.Dobbs_Mobile_Modal_336x70;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/2296655/0/0/ADTECH;alias=Dr.Dobbs_Mobile_Modal_336x70;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" border="0" width="1" height="1"></img></a></noscript>
+ <!-- /div -->			<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1183416/0/0/ADTECH;alias=Dr.Dobbs_Mobile_IMU1_300x250;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=959778967;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1183416/0/0/ADTECH;alias=Dr.Dobbs_Mobile_IMU1_300x250;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1183416/0/0/ADTECH;alias=Dr.Dobbs_Mobile_IMU1_300x250;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" border="0" width="1" height="1"></img></a></noscript>
+			<!--
+			<br/><br/>
+			
+			<div class="subsection sponsored-content"> -->
+				<!-- ?php echo $this->render('/shared/right/articlepremiumcontent.phtml')? -->
+			<!-- </div> -->
+			<div class="recent-articles">
+				
+	<h2>Mobile Recent Articles</h2>
+	<ul>	
+				<li><a href="/mobile/232900584">Using SQLite on Android</a></li>
+				<li><a href="/mobile/232900527">Microsoft's New Simple Database</a></li>
+				<li><a href="/mobile/232700367">Windows Phone: <br>Surprisingly Easy to Develop For</a></li>
+				<li><a href="/mobile/232602462">7 Steps To A Killer Mobile UI</a></li>
+				<li><a href="/mobile/232602420">Writing Chrome Extensions</a></li>
+				<li><a href="/mobile/"></a></li>
+			</ul>			</div>
+			 
+			
+			<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1183600/0/6/ADTECH;alias=Dr.Dobbs_Mobile_Tile_125x125;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=959778967;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1183600/0/6/ADTECH;alias=Dr.Dobbs_Mobile_Tile_125x125;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1183600/0/6/ADTECH;alias=Dr.Dobbs_Mobile_Tile_125x125;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" border="0" width="1" height="1"></img></a></noscript>
+			
+			<div class="subsection mostpopular">
+				<h2>Most Popular</h2>
+
+<div class="tab_controls">
+	<a id="articles" class="current" href="#">Stories</a>
+	<a id="blogs" href="#">Blogs</a>
+</div>
+<div id="mostpopular" class="box_wrap">
+	<ul>
+				<li>
+					<a href="/mobile/232602420?itc=dobbs-callout-mostpop">Writing Chrome Extensions</a>
+					</li>
+				<li>
+					<a href="/mobile/232900527?itc=dobbs-callout-mostpop">Microsoft's New Simple Database</a>
+					</li>
+				<li>
+					<a href="/mobile/232500828?itc=dobbs-callout-mostpop">Using Bluetooth</a>
+					</li>
+				<li>
+					<a href="/mobile/232900072?itc=dobbs-callout-mostpop">PCs and Tablets: The Convergence is Happening Now</a>
+					</li>
+				<li>
+					<a href="/mobile/231903399?itc=dobbs-callout-mostpop">Generating Code Metrics and Estimating Costs with Xcode</a>
+					</li>
+				<li>
+					<a href="/mobile/?itc=dobbs-callout-mostpop"></a>
+					</li>
+		</ul></div>
+
+<div id="mostpopular" class="box_wrap" style="display: none;">
+	<ul>
+				<li>
+					<a href="/blogs/mobile/232200675?itc=dobbs-callout-mostpop-blog">Reading PDFs on the Kindle Fire</a>
+					</li>
+				<li>
+					<a href="/blogs/mobile/232500367?itc=dobbs-callout-mostpop-blog">Coding in a Post-PC World Series</a>
+					</li>
+				<li>
+					<a href="/blogs/mobile/232601905?itc=dobbs-callout-mostpop-blog">Information Storage and Retrieval: From MEDLARS to Twitter</a>
+					</li>
+				<li>
+					<a href="/blogs/go-parallel/blogs/parallel/229301022?itc=dobbs-callout-mostpop-blog">iPad 2 Brings iOS Developers to Multicore Programming Land</a>
+					</li>
+				<li>
+					<a href="/blogs/mobile/231001154?itc=dobbs-callout-mostpop-blog">Software AG / Terracotta at Process World 2011</a>
+					</li>
+				<li>
+					<a href="/blogs/mobile/?itc=dobbs-callout-mostpop-blog"></a>
+					</li>
+		</ul></div>
+			</div>
+			
+			<div class="box video">
+				<h3 class="video"><span>Video</span></h3>	<div class="box_wrap">
+		<!-- Start of Brightcove Player -->
+		<script type="text/javascript" src="http://admin.brightcove.com/js/experience_util.js"></script>
+		<script type="text/javascript">
+	 		// By use of this code snippet, I agree to the Brightcove Publisher T and C 
+	 		// found at http://corp.brightcove.com/legal/terms_publisher.cfm. 
+	
+	 		var config = new Array();
+	
+	 		/* 
+	 		* feel free to edit these configurations
+	 		* to modify the player experience
+	 		*/
+	 		config["videoId"] = null; //the default video loaded into the player
+	 		config["videoRef"] = null; //the default video loaded into the player by ref id specified in console
+	 		config["lineupId"] = null; //the default lineup loaded into the player
+	 		config["playerTag"] = null; //player tag used for identifying this page in brightcove reporting
+	 		config["autoStart"] = false; //tells the player to start playing video on load
+	 		config["preloadBackColor"] = "#FFFFFF"; //background color while loading the player
+	 		config["wmode"] = "opaque";
+	
+	 		/* do not edit these config items */
+	 		config["playerId"] = 64699398001;
+	 		config["width"] = 300;
+	 		config["height"] = 361;
+	
+	 		createExperience(config, 8);
+		</script>
+		<!-- End of Brightcove Player -->
+	</div>
+	
+	<div class="slide_controls"> 
+				<a href="/tv"><strong>View All Videos</strong></a>
+			</div>
+	
+			</div>
+			
+			<div class="subsection sponsored-content">
+					<h2>This month's Dr. Dobb's Journal</h2>
+	<div class="sponsored">
+		<div class="whitepaper">
+			<div align="center">
+				<a href="/digital/042312?k=ddjtm&cid=onedit_ds_ddjtm">
+					<img height="131" width="216" border="0" alt="The Dr. Dobb's Digital Digest cover - May Issue" src="http://twimgs.com/ddj/digital/042312/042312_DobbsDigest_Cover.jpg">
+				</a>
+			</div>
+			<p>
+				<a href="/digital/042312?k=ddjtm&cid=onedit_ds_ddjtm"><b>This month</b></a>, in the May 2012 digital issue of Dr. Dobb's Journal, we focus on database development with tips on using SQLite to persist data on Android devices, a deep-dive into extensible database architectures, dataflow programming for managing huge data loads, <b><a href="/digital/042312?k=ddjtm&cid=onedit_ds_ddjtm">and much more!</a></b><br><br>
+				<a href="/digital/042312?k=ddjtm&cid=onedit_ds_ddjtm">Download the latest issue today. &gt;&gt;</a> 
+			</p>
+		</div>	
+	</div>			</div>
+			
+			<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1183546/0/0/ADTECH;alias=Dr.Dobbs_Mobile_IMU2_300x250;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=959778967;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1183546/0/0/ADTECH;alias=Dr.Dobbs_Mobile_IMU2_300x250;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1183546/0/0/ADTECH;alias=Dr.Dobbs_Mobile_IMU2_300x250;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" border="0" width="1" height="1"></img></a></noscript>
+			<div class="recent-articles">
+<h2>Featured Reports</h2>
+		<ul class="archive">	
+				
+				<li>		
+				<a href="http://reports.informationweek.com/abstract/21/8704/Security/strategy-fisma-lifts-all-compliance-boats.html?cid=SBX_ddj_fture_Analytics_default&itc=SBX_ddj_fture_Analytics_default">
+				Strategy: FISMA Lifts All Compliance Boats				</a>
+				</li>
+				
+				<li>		
+				<a href="http://reports.informationweek.com/abstract/21/8696/Security/strategy-mobile-device-borne-malware.html?cid=SBX_ddj_fture_Analytics_default&itc=SBX_ddj_fture_Analytics_default">
+				Strategy: Mobile Device-Borne Malware				</a>
+				</li>
+				
+				<li>		
+				<a href="http://reports.informationweek.com/abstract/5/8682/Cloud-Computing/fundamentals-understanding-private-cloud-stacks.html?cid=SBX_ddj_fture_Analytics_default&itc=SBX_ddj_fture_Analytics_default">
+				Fundamentals: Understanding Private Cloud Stacks				</a>
+				</li>
+				
+				<li>		
+				<a href="http://reports.informationweek.com/abstract/21/8676/Security/strategy-database-defense.html?cid=SBX_ddj_fture_Analytics_default&itc=SBX_ddj_fture_Analytics_default">
+				Strategy: Database Defense				</a>
+				</li>
+				
+				<li>		
+				<a href="http://reports.informationweek.com/redirectasset/8627?cid=SBX_ddj_fture_Analytics_default&itc=SBX_ddj_fture_Analytics_default">
+				Strategy: Smartcard Security				</a>
+				</li>
+						
+		</ul>
+		
+	<h2>Featured Whitepapers</h2>
+		<ul class="archive">	
+				
+				<li>		
+				<a href="http://www.informationweek.com/whitepaper/healthcare/leadership/redefining-value-in-healthcare-innovating-to-expa-wp1335712748?articleID=191704694&cid=SBX_ddj_fture_wp_default&itc=SBX_ddj_fture_wp_default">
+				Redefining Value in Healthcare: Innovating to expand access, improve quality and reduce costs of care				</a>
+				</li>
+				
+				<li>		
+				<a href="http://www.informationweek.com/whitepaper/healthcare/admin-systems/redefining-value-and-success-in-healthcare-chart-wp1335712943?articleID=191704695&cid=SBX_ddj_fture_wp_default&itc=SBX_ddj_fture_wp_default">
+				Redefining Value and Success in Healthcare:  Charting the path to the future				</a>
+				</li>
+				
+				<li>		
+				<a href="http://www.informationweek.com/whitepaper/Storage/Data-Protection/data-center-operational-efficiency-best-practices-wp1335809123?articleID=191704681&cid=SBX_ddj_fture_wp_default&itc=SBX_ddj_fture_wp_default">
+				Data center operational efficiency best practices				</a>
+				</li>
+				
+				<li>		
+				<a href="http://www.informationweek.com/whitepaper/Software/Databases/db2-purescale-vision-brochure-wp1336082875?articleID=191704720&cid=SBX_ddj_fture_wp_default&itc=SBX_ddj_fture_wp_default">
+				DB2 pureScale Vision brochure				</a>
+				</li>
+				
+				<li>		
+				<a href="http://www.informationweek.com/whitepaper/Business-Intelligence/Business-Process-Management/simplify-ssl-certificate-management-across-the-ent-wp1336402201?articleID=191704723&cid=SBX_ddj_fture_wp_default&itc=SBX_ddj_fture_wp_default">
+				Simplify SSL Certificate Management Across the Enterprise				</a>
+				</li>
+						
+		</ul>
+		
+	<h2>Featured Webcasts</h2>
+		<ul class="archive">	
+				
+				<li>		
+				<a href="https://www.techwebonlineevents.com/ars/eventregistration.do?mode=eventreg&F=1004451&K=SBX&cid=SBX_ddj_fture_Webcast_default&itc=SBX_ddj_fture_Webcast_default">
+				How to Build a Next-Generation Big Data Architecture				</a>
+				</li>
+				
+				<li>		
+				<a href="http://www.theitservicessite.com/webinar.asp?webinar_id=29853&webinar_promo=SBX&cid=SBX_ddj_fture_Webcast_default&itc=SBX_ddj_fture_Webcast_default">
+				Data Center Design for the 21st Century- Best Practices From the Data Center Operational Efficiency Study				</a>
+				</li>
+				
+				<li>		
+				<a href="https://www.techwebonlineevents.com/ars/eventregistration.do?mode=eventreg&F=1004341&K=SBX&cid=SBX_ddj_fture_Webcast_default&itc=SBX_ddj_fture_Webcast_default">
+				Does America's Next "Road to Prosperity" lie in Rural Sourcing?				</a>
+				</li>
+				
+				<li>		
+				<a href="https://www.techwebonlineevents.com/ars/eventregistration.do?mode=eventreg&F=1004301&K=SBX&cid=SBX_ddj_fture_Webcast_default&itc=SBX_ddj_fture_Webcast_default">
+				Self-Encrypting Drives: The Evolution of Encryption				</a>
+				</li>
+				
+				<li>		
+				<a href="https://www.techwebonlineevents.com/ars/eventregistration.do?mode=eventreg&F=1003942&K=6IK&cid=SBX_ddj_fture_Webcast_default&itc=SBX_ddj_fture_Webcast_default">
+				Maximize ROI with Database Consolidation onto Private Clouds				</a>
+				</li>
+						
+		</ul>
+		
+	</div>
+ 
+			<div class="subsection mostrecent">
+				<h2>Most Recent Premium Content</h2>
+<div class="tab_controls">
+	<a class="current" href="/digitaledition/">Digital Issues</a>
+</div>	
+<div class="box_wrap">
+<ul>
+<a href="/digitaledition/">2011 <em>Dr. Dobb's Journal</em> Digital Archive</a><br /><br />		
+
+<li><a href="http://drdobbs.com/digital/121911/?cid=ddj_premium_January2012"><i>Dr. Dobb's Journal</i> January Digital Issue</a></li>
+<li><a href="http://drdobbs.com/digital/011912/?cid=ddj_premium_February2012"><i>Dr. Dobb's Journal</i> February Digital Issue</a></li>
+<li><a href="http://drdobbs.com/digital/021912/?cid=ddj_premium_March2012"><i>Dr. Dobb's Journal</i> March Digital Issue</a></li>
+<li><a href="http://drdobbs.com/digital/031912/?cid=ddj_premium_April2012"><i>Dr. Dobb's Journal</i> April Digital Issue</a></li>
+</ul>
+</div>			</div>
+			
+		</div>
+		
+		<script src="http://content.dl-rms.com/rms/19467/nodetag.js"></script>
+		<div id="bottom" align="center" style="clear: both;">
+			<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1183535/0/225/ADTECH;alias=Dr.Dobbs_Mobile_Bottom_728x90;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=959778967;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1183535/0/225/ADTECH;alias=Dr.Dobbs_Mobile_Bottom_728x90;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1183535/0/225/ADTECH;alias=Dr.Dobbs_Mobile_Bottom_728x90;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" border="0" width="1" height="1"></img></a></noscript>
+
+<table cellspacing="0" cellpadding="0" border="0" width="990" class="elfixo"><tbody>
+<tr>
+    <td valign="top">
+
+
+<link rel="stylesheet" type="text/css" href="http://twimgs.com/infoweek/footernav/august11/superfooter_936.css" />
+<div align="center">
+<div id="tw_superfooter_936">
+
+	<div id="tw_superfooter_top">
+		<div id="tw_superfooter_bottom_bg">
+		<div id="tw_superfooter_header">
+			<div id="tw_superfooter_left_header_logo">
+				<a href="http://www.techweb.com/aboutus?itc=footer" target="_blank"><img src="http://twimgs.com/infoweek/footernav/august11/ubmtechweb_logo_sm.gif"/></a>
+			</div>
+			<div id="tw_superfooter_tagline"><h3>Enabling People and Organizations to Harness the Transformative Power of Technology</h3></div>
+		</div>
+		<div id="tw_superfooter_mid">
+			<div id="tw_superfooter_links">
+			
+				<ul class="tw_superfooter_links_column">
+					<h4>CIOs &amp; IT Professionals</h4>
+					<li><a href="http://www.blackhat.com/" target="_blank">Black Hat</a></li>
+					<li><a href="http://www.byte.com/?itc=footer" target="_blank">BYTE</a></li>
+					<li><a href="http://www.cloudconnectevent.com/?itc=footer" target="_blank">Cloud Connect</a></li>
+					<li><a href="http://www.darkreading.com/?itc=footer" target="_blank">Dark Reading</a></li>
+					<li><a href="http://www.enterprise2conf.com/?itc=footer" target="_blank">Enterprise 2.0</a></li>
+					<li><a href="http://www.voicecon.com/?itc=footer" target="_blank">Enterprise Connect</a></li>
+					<li><a href="http://www.enterpriseefficiency.com/?itc=footer" target="_blank">Enterprise Efficiency</a></li>
+					<li><a href="http://www.thinkhdi.com/?itc=footer" target="_blank">HDI</a></li>
+					<li><a href="http://www.informationweek.com/?itc=footer" target="_blank">InformationWeek</a></li>
+					<li><a href="http://www.informationweek.com/iw500?itc=footer" target="_blank">InformationWeek 500</a></li>
+					<li><a href="http://www.informationweekconference.com/?itc=footer" target="_blank">InformationWeek 500 Conference</a></li>
+					<li><a href="http://www.informationweek.com/events/?itc=footer" target="_blank">InformationWeek Events</a></li>
+					<li><a href="http://www.informationweek.com/global-cio/?itc=footer" target="_blank">InformationWeek Global CIO</a></li>
+					<li><a href="http://www.informationweek.com/healthcare/?itc=footer" target="_blank">InformationWeek Healthcare</a></li>
+					<li><a href="http://www.informationweek.in/?itc=footer" target="_blank">InformationWeek India</a></li>
+					<li><a href="http://reports.informationweek.com/?itc=footer" target="_blank">InformationWeek Reports</a></li>
+					<li><a href="http://smb.informationweek.com/?itc=footer" target="_blank">InformationWeek SMB</a></li>
+					<li><a href="http://www.interop.com/?itc=footer" target="_blank">Interop</a></li>
+					<li><a href="http://www.mobileconnectevent.com/?itc=footer" target="_blank">Mobile Connect</a></li>
+					<li><a href="http://www.networkcomputing.com/?itc=footer" target="_blank">Network Computing</a></li>
+					<li><a href="http://www.nojitter.com/?itc=footer" target="_blank">No Jitter</a></li>
+					<li><a href="http://www.techweb.com/?itc=footer" target="_blank">TechWeb.com</a></li>
+					<li><a href="http://www.thebrainyard.com/?itc=footer" target="_blank">The BrainYard</a></li>
+				</ul>
+				<ul class="tw_superfooter_links_column">
+					<h4>Software Developers</h4>
+					<li><a href="http://drdobbs.com/?itc=footer" target="_blank">Dr. Dobb's</a></li>
+					<li><a href="http://drdobbs.com/windows/?itc=footer" target="_blank">Dr. Dobb's M-Dev</a></li>
+					<li><a href="http://www.drdobbs.com/digital?itc=footer" target="_blank">Dr. Dobb's Journal</a></li>
+					<li><a href="http://www.drdobbs.com/newsletters/?itc=footer" target="_blank">Dr. Dobb's Update</a></li>
+					<li><a href="http://www.techweb.com/?itc=footer" target="_blank">TechWeb.com</a></li>
+					<h4>Web &amp; Digital Professionals</h4>
+					<li><a href="http://www.internetevolution.com/?itc=footer" target="_blank">Internet Evolution</a></li>
+					<li><a href="http://www.onlinemarketingsummit.com/?itc=footer" target="_blank">Online Marketing Summit</a></li>
+					<li><a href="http://www.techweb.com/?itc=footer" target="_blank">TechWeb.com</a></li>
+					<h4>Government Officials</h4>
+					<li><a href="http://www.gtec.ca/?itc=footer" target="_blank">GTEC Ottawa</a></li>
+					<li><a href="http://www.informationweek.com/government/?itc=footer" target="_blank">InformationWeek Government</a></li>
+					<li><a href="http://www.techweb.com/?itc=footer" target="_blank">TechWeb.com</a></li>
+				</ul>
+				<ul class="tw_superfooter_links_column">
+					<h4>Vertical Markets</h4>
+					<li><a href="http://www.advancedtrading.com/?itc=footer" target="_blank">Advanced Trading</a></li>
+					<li><a href="http://www.banktech.com/?itc=footer" target="_blank">Bank Systems &amp; Technology</a></li>
+					<li><a href="http://www.createyournextcustomer.com/?itc=footer" target="_blank">CreateYourNextCustomer</a></li>
+					<li><a href="http://www.informationweek.com/government/?itc=footer" target="_blank">InformationWeek Government</a></li>
+					<li><a href="http://www.informationweek.com/healthcare/?itc=footer" target="_blank">InformationWeek Healthcare</a></li>
+					<li><a href="http://www.insurancetech.com/?itc=footer" target="_blank">Insurance &amp; Technology</a></li>
+					<li><a href="http://www.lightreading.com/?itc=footer" target="_blank">Light Reading / Telecom</a></li>
+					<li><a href="http://www.thecmosite.com/?itc=footer" target="_blank">The CMO Site</a></li>
+					<li><a href="http://www.wallstreetandtech.com/?itc=footer" target="_blank">Wall Street &amp; Technology</a></li>
+					<h4>Game Industry Professionals</h4>
+					<li><a href="http://gamasutra.com/?itc=footer" target="_blank">Gamasutra.com</a></li>
+					<li><a href="http://www.gdconf.com/?itc=footer" target="_blank">Game Developers Conference (GDC)</a></li>
+					<li><a href="http://www.igf.com/?itc=footer" target="_blank">Independent Games Festival</a></li>
+					<li><a href="http://www.gdmag.com/?itc=footer" target="_blank">Game Developer Magazine</a></li>
+					<li><a href="http://www.gdceurope.com/?itc=footer" target="_blank">GDC Europe</a></li>
+					<li><a href="http://www.china.gdconf.com/?itc=footer" target="_blank">GDC China</a></li>
+					<li><a href="http://www.gamecareerguide.com/?itc=footer" target="_blank">Game Career Guide</a></li>
+					<li><a href="http://www.game-advertising-online.com/?itc=footer" target="_blank">Game Advertising Online</a></li>
+				</ul>
+				<ul class="tw_superfooter_links_column">
+					<h4>Global Communications <br />Service Providers</h4>
+					<li><a href="http://www.4gworld.com/?itc=footer" target="_blank">4G World</a></li>
+					<li><a href="http://www.heavyreading.com/?itc=footer" target="_blank">Heavy Reading</a></li>
+					<li><a href="http://www.heavyreading.com/research/?itc=footer" target="_blank">Heavy Reading Insiders</a></li>
+					<li><a href="http://www.pyr.com/" target="_blank">Pyramid Research</a></li>
+					<li><a href="http://www.lightreading.com/?itc=footer" target="_blank">Light Reading</a></li>	
+					<li><a href="http://www.lightreading.in/?itc=footer" target="_blank">Light Reading India</a></li>	
+					<li><a href="http://www.lightreading.com/lr-mobile/?itc=footer" target="_blank">Light Reading Mobile</a></li>
+					<li><a href="http://www.lightreading.com/lr-cable/?itc=footer" target="_blank">Light Reading Cable</a></li>
+					<li><a href="http://www.lightreading.com/europe/?itc=footer" target="_blank">Light Reading Europe</a></li>
+					<li><a href="http://www.lightreading.com/asia/?itc=footer" target="_blank">Light Reading Asia</a></li>
+					<li><a href="http://www.EthernetExpo.com" target="_blank">Ethernet Expo</a></li>
+					<li><a href="http://www.TelcoTVonline.com" target="_blank">TelcoTV</a></li>
+					<li><a href="http://www.towersummit.com" target="_blank">Tower Summit</a></li>
+					<li><a href="http://www.lightreading.com/live/?itc=footer" target="_blank">Light Reading Live &amp; Virtual Events</a></li>
+					<li><a href="http://www.lightreading.com/calendar_webinars.asp?site=lightreading?itc=footer" target="_blank">Webinars</a></li>
+				</ul>
+
+			<ul class="tw_superfooter_links_column">
+					<h4>Most Popular</h4>
+					<li><a href="http://www.lightreading.com/blog.asp?blog_sectionid=419&doc_id=180545&site=cdn&?itc=footer" target="_blank">Cable Catchup</a></li>
+					<li><a href="http://blog.cloudconnectevent.com/?itc=footer" target="_blank">Cloud Connect Blog</a></li>
+					<li><a href="http://www.informationweek.com/blogs/digital_life?itc=footer" target="_blank">Digital Life</a></li>
+					<li><a href="http://www.darkreading.com/blog/archives/evil_bytes/index.html?itc=footer" target="_blank">Evil Bytes</a></li>
+					<li><a href="http://reports.informationweek.com/?itc=footer" target="_blank">InformationWeek Reports</a></li>
+					<li><a href="http://blog.interop.com/?itc=footer" target="_blank">Interop Blog</a></li>
+					<li><a href="http://www.lightreading.com/archives.asp?section_id=222" target="_blank">Monkey Bidness</a></li>
+					<li><a href="http://www.informationweek.com/blogs/mobility?itc=footer" target="_blank">Over the Air</a></li>
+					<li><a href="http://www.informationweek.com/personal-tech/?itc=footer" target="_blank">Personal Tech</a></li>
+					<li><a href="http://www.lightreading.com/archives.asp?section_id=217" target="_blank">The Philter</a></li>
+					<li><a href="http://www.lightreading.com/archives.asp?section_id=388" target="_blank">Valley Wonk</a></li>
+				</ul>
+
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="tw_superfooter_bottom">
+		<div id="tw_superfooter_tw">
+						<h4>UBM TechWeb Reader Services</h4>
+			<ul>
+				<li><a href="http://www.techweb.com/aboutus/?itc=footer" target="_blank">About UBM TechWeb</a></li>
+				<li><a href="http://createyournextcustomer.com/contact-us/?itc=footer" target="_blank">Advertising Contacts</a></li>
+				<li><a href="http://www.createyournextcustomer.com/?itc=footer" target="_blank">Technology Marketing Solutions</a></li>
+				<li><a href="http://www.ubmtechweb.com/contact/?itc=footer" target="_blank">Contact Us</a></li>
+				<li><a href="mailto:feedback@techweb.com" target="_blank">Feedback</a></li>	
+			</ul>
+			<div style="clear:both;"></div>
+			<ul>
+				<li><a href="http://www.wrightsreprints.com/reprints/?magid=techweb" target="_blank">Reprints</a></li>	
+				<li><a href="http://www.informationweek.com/whitepaper/?itc=footer" target="_blank">TechWeb Digital Library / White Papers</a></li>	
+				<li><a href="http://events.techweb.com/?itc=footer" target="_blank">TechWeb Events Calendar</a></li>	
+				<li><a href="http://www.techweb.com/?itc=footer" target="_blank">TechWeb.com</a></li>	
+			</ul>
+
+		</div>
+	</div>
+	<div id="tw_superfooter_tos">
+				<ul>
+                      <li><a href="http://legal.us.ubm.com/terms-of-service/?itc=footer" target="_blank">Terms of Service</a></li>
+		      <li>|</li>
+                      <li><a href="http://legal.us.ubm.com/privacy-notice/?itc=footer" target="_blank">Privacy Statement</a></li>
+		      <li>|</li>
+                      <li><a href="http://legal.us.ubm.com/copyright-notice/?itc=footer" target="_blank">Copyright &copy; 2012 UBM TechWeb, All rights reserved.</a></li>
+                </ul>
+		<br /><a href="http://www.zend.com">Powered by Zend/PHP</a>
+	</div>
+</div>
+<style>
+
+/* BEGIN FOOTER CSS */
+
+#footer {
+	clear: both;
+	font-family:arial, helvetica, sans-serif;
+	color: #fff;
+	border-top: 4px solid #febc00;
+	/* border-bottom: 2px solid #ccc;
+	orignal footer bottom color.  changed w/ refresh 0/19/2010 - JH
+	border-bottom: 4px solid #971c10;
+	*/
+	font-size: .9em;
+	text-align:center;
+}
+
+ 
+
+#footer a,
+#footer a:visited {
+	color: #fff;	
+	text-decoration: none;
+	
+}
+ 
+
+#footer #footer2 ul {
+	margin: 0;
+	padding: 5px 0;
+	list-style:none;
+	line-height: 1.4em;
+	text-align:center;
+	width:999px;
+}
+
+#footer #footer2 li {
+	font-weight: normal;
+	padding: 0 0 0 15px;
+	display: inline;
+	text-indent:0;
+	text-decoration: none;	
+}
+ 
+#footer-a {
+	background-color: #369f2b;
+	text-align:center;
+}
+
+#footer-b {
+	background-color: #16530f;
+	text-align:center;
+}
+ 
+#footer #footer2 #footer-a li a,
+#footer #footer2 #footer-c li a {
+	background: url("http://twimgs.com/ddj/v2/images/footer_vertline.gif") no-repeat 1px .15em;
+	padding-left:20px;
+	margin-top:10px;
+	text-indent:0;	
+}
+
+#footer #footer2 #footer-b li a {
+	background: url("http://twimgs.com/ddj/v2/images/footer_vertline.gif") no-repeat 1px .15em;
+	padding-left:20px;
+	margin-top:10px;
+	text-indent:0;
+}
+
+#footer #footer2 #footer-a .first,
+#footer #footer2 #footer-b .first,
+#footer #footer2 #footer-c .first {
+	background: none;
+	padding-left:0;
+	text-indent:0;
+}
+
+
+#footer #footer2 li{
+	background: none;
+	
+}
+
+/* END FOOTER CSS */
+
+</style>
+
+<div id="footer">
+
+<div id="footer2">
+      
+	<div id="footer-a">
+	  <center>
+      <ul>  
+        
+<li><a href=/ class="first">Dr. Dobb's Home</a></li><li><a href=/articles>Articles</a></li><li><a href=/news>News</a></li><li><a href=/blogs>Blogs</a></li><li><a href=/sourcecode>Source Code</a></li><li><a href=https://store.drdobbs.com/>Dobb's on DVD</a></li><li><a href=/tv>Dobb's TV</a></li><li><a href=/webinars>Webinars &amp; Events</a></li>      </ul>
+	  </center>
+	</div>
+	  
+	<div id="footer-b">
+	  <center>
+      <ul> 
+        <li><a href="/aboutus" class="first">About Us</a></li>
+        <li><a href="/contactus">Contact Us</a></li>
+        <li><a href="/sitemap">Site Map</a></li>
+        <li><a href="/edcal">Editorial Calendar</a></li>
+     </ul>
+	  </center>
+	</div>
+  
+</div>
+<!-- END: Footer2 -->
+</div> 
+<!-- END: Footer -->
+
+</div>
+</div>
+<br />
+
+
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://twimgs.com/informationweek/elqNow/elqCfg.js'></SCRIPT>
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://twimgs.com/informationweek/elqNow/elqImg.js'></SCRIPT>
+		</div>
+		
+	</div>
+</div>
+
+<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1183536/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Pagepeel_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=100;target=_blank;grp=959778967;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1183536/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Pagepeel_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1183536/0/16/ADTECH;alias=Dr.Dobbs_Mobile_Pagepeel_1x1;key=wc4+232900072+/mobile/232900072;kvarticleid=232900072;kauthor=Andrew Binstock;loc=300;grp=959778967;" border="0" width="1" height="1"></img></a></noscript>
+<!-- Default Insight Tag -->
+<script type="text/javascript">
+  var _bizo_data_partner_id = "590";
+  </script>
+<script type="text/javascript">
+  var _bizo_p = (("https:" == document.location.protocol) ? "https://sjs." : "http://js.");
+  document.write(unescape("%3Cscript src='" + _bizo_p + "bizographics.com/convert_data.js?partner_id=" + _bizo_data_partner_id + "' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+ <script type="text/javascript">
+                           
+                var disqus_shortname = 'drdobbs';
+                                                var disqus_developer = 1;
+                                /* * * DON'T EDIT BELOW THIS LINE * * */
+                 (function () {
+                var s = document.createElement('script'); s.async = true;
+                  s.type = 'text/javascript';
+                 s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+                 (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                 }());
+</script>
+
+</body>
+</html>

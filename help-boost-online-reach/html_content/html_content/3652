@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title>Anatidaephobia / cSlacker</title>
+		<script src="/public/js/jquery.min.js"></script>		
+		<link rel="stylesheet" type="text/css" href="/public/css/cslacker.com.core.css" media="all" />
+		<script src="/public/js/toolbox.js"></script>	
+		<link rel="icon" type="image/png" href="/public/images/favicon.png" />
+		<script>
+			$(document).ready(function(){
+				rr.menu.create(
+					$("#nav-account"),
+					$("#nav-account a.button"),
+					$("#nav-account ul")
+				);
+			});
+						
+			cs = {
+				REF: 	"b41685f841b2cee448b5a8a00773f62fe83ff29de1e6244d4525bb15edbaa6bdbf6ae05d90b38d2237d32cf7122ce022ea1ba14a508b627ac67eced75ec5cd6a1328388749",
+				DURL: 	"http://cslacker.com/",
+				USER: 	0			};
+			
+		</script>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-913307-13']);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+	</head>
+	<body>
+		<center>
+			<div class="nav">
+				<center>
+					<table>
+						<tr>
+							<td width="270" align="left">
+								<a href="http://cslacker.com/" class="link"><span class="logo"></span></a>
+							</td>
+															<td align="right">	
+									<a href="" class="link" onclick="return rr.account.login();"><span class="link">Member Login</span></a>
+									<a href="" class="link" onclick="return rr.image.upload();"><span class="link">Upload Image</span></a>
+									
+									<a href="http://cslacker.com/images/random" class="link"><span class="link">Random Image</span></a>
+									<a href="http://cslacker.com/images" class="link"><span class="link">New Images</span></a>
+									<a href="http://cslacker.com/images/hot" class="link"><span class="link">Hot Images</span></a>
+								</td>
+													</tr>
+					</table>
+				</center>
+			</div>
+			<div class="main">		
+	
+	<script>
+	
+		var page = {
+			onload: function() {
+				page.div = $("#page");
+			
+				//social badges
+				//twitter
+				var s = document.createElement('SCRIPT');
+				s.type = 'text/javascript';
+				s.async = true;
+				s.src = 'http://platform.twitter.com/widgets.js';
+				(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(s);
+			
+				//stumble
+				$('<iframe></iframe>')
+				.attr({
+					'src': 					"http://www.stumbleupon.com/badge/embed/5/?url=http%3A%2F%2Fcslacker.com%2Fimages%2Fview%2F4210",
+					'scrolling': 			"no",
+					'frameborder':			"0",
+					'allowTransparency': 	"true"
+				})
+				.css({
+					'border': 	'none',
+					'overflow': 'hidden',
+					'width':	'50px',
+					'height': 	'60px'
+				})
+				.appendTo(
+					page.div.find(".id-stumbleupon-badge")
+				);
+				
+				//facebook
+				//$.getScript('http://connect.facebook.net/en_US/all.js#appId=175058249217885&amp;xfbml=1', function(){ alert("moo"); });
+								
+				//google +1
+				$.getScript('http://apis.google.com/js/plusone.js');
+				
+				//end badges
+				
+				
+				//vote float
+				var top = $('.vote-floater .inner', page.div).offset().top - parseFloat($('.vote-floater .inner', page.div).css('marginTop').replace(/auto/, 0));
+				$(window).scroll(function (event) {
+					// what the y position of the scroll is
+					var y = $(this).scrollTop();
+					// whether that's below the form
+					if (y >= top) {
+					// if so, ad the fixed class
+						$('.vote-floater .inner', page.div).addClass('fixed');
+					} else {
+					// otherwise remove it
+						$('.vote-floater .inner', page.div).removeClass('fixed');
+					}
+				});
+			},
+			
+			vote: function(rating) {
+				rr.ajax.request({
+					url: "http://cslacker.com/images/ajax/vote/id:4210?rc=b41685f841b2cee448b5a8a00773f62fe83ff29de1e6244d4525bb15edbaa6bdbf6ae05d90b38d2237d32cf7122ce022ea1ba14a508b627ac67eced75ec5cd6a1328388749", 
+					data: {
+						rating: rating
+					},
+					success: function(response) {							
+						if (response && response.status === 'good') {
+							
+							page.div.find("#image-vote .total").html(response.total);
+							page.div.find("#image-vote .count").html(response.count + " votes");
+							
+						} else {
+							var message = response && response.message ? response.message : "Your vote could not be cast, try again later.";
+							
+							rr.dialog.alert({
+								title: "Error",
+								message: {
+									body: message,
+									css_class: 'error'
+								}
+							});	
+						}
+			    	}	    	
+			    });
+			},
+						
+			upvote: function() {
+				var up 		= page.div.find("#image-vote .up");
+				var down 	= page.div.find("#image-vote .down");
+				
+				if (up.hasClass('active')) {
+					up.removeClass("active");
+					var rating = 0;
+				} else {
+					up.addClass("active");
+					var rating = 1;
+				}
+				
+				down.removeClass("active");
+				page.vote(rating);
+				return false;
+			},
+			
+			downvote: function() {
+				var up 		= page.div.find("#image-vote .up");
+				var down 	= page.div.find("#image-vote .down");
+				
+				if (down.hasClass('active')) {
+					down.removeClass("active");
+					var rating = 0;
+				} else {
+					down.addClass("active");
+					var rating = -1;
+				}
+		
+				up.removeClass("active");
+				page.vote(rating);
+				return false;
+			}
+		};
+		
+		$(document).ready(page.onload);
+							
+	</script>
+	
+	<div id="page">
+		<h3 class="header">
+												<a href="/">Home</a> / 
+																<a href="/images">Images</a> / 
+																Anatidaephobia									</h3>
+		<center>
+				
+			<div style="margin: 5px 0 10px 0;">
+				<script type="text/javascript"><!--
+				google_ad_client = "pub-3926606141096010";
+				/* 728x90, created 7/18/09 */
+				google_ad_slot = "3509008000";
+				google_ad_width = 728;
+				google_ad_height = 90;
+				//-->
+				</script>
+				<script type="text/javascript"
+				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>	
+			</div>
+			
+			<div>
+				<h2>Anatidaephobia</h2>
+				<table width="100%">
+					<tr>
+						<td width="50%">
+															<div class="prev">
+									<div class="caption">Previous</div>
+									&laquo;&laquo; <a href="http://cslacker.com/images/view/4211">Every Morning Is A Smirnoff Morning</a>
+								</div>
+													</td>
+						<td>
+															<div class="next">
+									<div class="caption">Next</div>
+									<a href="http://cslacker.com/images/view/4209">Fatty Got Stuck</a> &raquo;&raquo;
+								</div>
+													</td>
+					</tr>
+				</table>
+				<div class="imageblock">
+					<div class="vote-floater">
+						<div class="inner">
+							<center>
+								<div id="image-vote" class="voting">
+						
+																												<img src="/public/images/ui/vote/up_48.png" alt="Good" class="up" onclick="return page.upvote();" />
+																		<div class="total">1</div>
+																			<img src="/public/images/ui/vote/down_48.png" alt="Bad" class="down" onclick="return page.downvote(4210);" />
+																		<div class="count">1 votes</div>
+								</div>
+								
+								<div style="width: 60px;">
+								
+									<!-- Place this tag where you want the +1 button to render -->
+									<div style="margin: 10px 10px 0 0; width: 60px; height: 70px; font-size: 11px;">
+										<g:plusone size="tall"></g:plusone>
+									</div>
+									
+									<div style="width: 55px; height: 70px; padding: 0 0 0 5px;">
+										<div id="fb-root"></div>
+										<script src="http://connect.facebook.net/en_US/all.js#appId=175058249217885&amp;xfbml=1"></script>
+										<fb:like href="http://cslacker.com/images/view/4210" send="false" layout="box_count" width="55" show_faces="false" font=""></fb:like>
+									</div>
+									
+									<div style="width: 60px; height: 70px; font-size: 11px;" class="id-stumbleupon-badge">
+									</div>
+									
+									<div style="width: 60px; height: 70px; font-size: 11px;">
+										<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://cslacker.com/images/view/4210" data-text="Anatidaephobia" data-count="vertical">Tweet</a>
+									</div>
+								
+								</div>
+								
+							</center>
+						</div>
+					</div>
+					
+					<div style="overflow: hidden; height: 809px; width: 900px; border: 1px solid black; position: relative;">				
+						<div style="position: absolute; top: -1px; left: -1px;">
+															<img src="http://c.cslacker.com/4210l.jpg" height="836" width="902" alt="Anatidaephobia" class="large" onclick="location.href='http://cslacker.com/images/view/4209';" style="cursor: pointer; display: block;" />
+													</div>
+					</div>
+				</div>
+				
+				<div style="padding: 3px 10px; margin: 10px 0;">
+					<p class="copy">
+						Anatidaephobia - the fear of ducks					</p>
+										<div class="tags" style="margin: 0 0 10px 0;">
+						Tags: <a href="http://cslacker.com/images/tag:29">amazing</a>, <a href="http://cslacker.com/images/tag:473">funny</a> -  Views: 25,710					</div>
+				</div>
+				
+								
+				<table width="100%">
+					<tr>
+						<td width="50%">
+															<div class="prev">
+									<div class="caption">Previous</div>
+									&laquo;&laquo; <a href="http://cslacker.com/images/view/4211">Every Morning Is A Smirnoff Morning</a>
+								</div>
+													</td>
+						<td>
+															<div class="next">
+									<div class="caption">Next</div>
+									<a href="http://cslacker.com/images/view/4209">Fatty Got Stuck</a> &raquo;&raquo;
+								</div>
+													</td>
+					</tr>
+				</table>
+			</div>
+				
+			<div style="margin: 10px 0 10px 0;">
+				<script type="text/javascript"><!--
+				google_ad_client = "pub-3926606141096010";
+				/* 728x90, created 7/18/09 */
+				google_ad_slot = "3509008000";
+				google_ad_width = 728;
+				google_ad_height = 90;
+				//-->
+				</script>
+				<script type="text/javascript"
+				src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+				</script>	
+			</div>
+		</center>
+		
+		<div style="padding: 3px 10px; margin: 10px 0;">
+			<center>		
+									<ul class="images">
+													 
+																<li onclick="location.href='http://cslacker.com/images/view/7647';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/7647"><img src="http://c.cslacker.com/cache/t/1/8/7647.png" width="104" height="130" alt="Browse The Internets" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/3839';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/3839"><img src="http://c.cslacker.com/cache/t/1/4/3839.png" width="129" height="130" alt="MURIKA!" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/715';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/715"><img src="http://c.cslacker.com/cache/t/1/1/715.png" width="130" height="79" alt="Fish Addiction" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/2405';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/2405"><img src="http://c.cslacker.com/cache/t/1/3/2405.png" width="130" height="121" alt="Motivation" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/7026';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/7026"><img src="http://c.cslacker.com/cache/t/1/8/7026.png" width="130" height="87" alt="Big Splash" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/711';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/711"><img src="http://c.cslacker.com/cache/t/1/1/711.png" width="86" height="130" alt="Filling Up" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/7392';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/7392"><img src="http://c.cslacker.com/cache/t/1/8/7392.png" width="130" height="42" alt="Yyoo Ddaawwgg" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/1068';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/1068"><img src="http://c.cslacker.com/cache/t/1/2/1068.png" width="130" height="98" alt="Watermelon Sculpture" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/2142';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/2142"><img src="http://c.cslacker.com/cache/t/1/3/2142.png" width="130" height="98" alt="Murderous Parrot" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/8249';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/8249"><img src="http://c.cslacker.com/cache/t/1/9/8249.png" width="130" height="115" alt="The reason my wife won't ride a moped with me" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/7191';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/7191"><img src="http://c.cslacker.com/cache/t/1/8/7191.png" width="130" height="98" alt="Female Hoverhand" /></a></td></tr></table></li>
+																				 
+																<li onclick="location.href='http://cslacker.com/images/view/7809';"><table><tr><td align="center"><a href="http://cslacker.com/images/view/7809"><img src="http://c.cslacker.com/cache/t/1/8/7809.png" width="97" height="130" alt="Dumpin'" /></a></td></tr></table></li>
+																		</ul>
+							</center>
+			<div class="clear"></div>
+		</div>
+		
+				
+			<h3 class="header" id="comments">
+				<div class="right">
+					0 comments
+				</div>
+				Comments
+			</h3>
+			
+			<script src="/public/js/toolbox.commenting.js"></script>
+			
+			<div class="void">
+				<div style="width: 500px;">
+					<form onsubmit="return page.comment.submit(4210, null, $(this).find('textarea[name=body]'), $(this).find('input[name=anonymous]'), $(this).find('input[type=submit]'));" class="id-commenting">
+						<div style="margin: 0 0 5px 0;">
+							<textarea name="body" style="width: 490px; height: 75px;"></textarea>
+						</div>
+												<div>
+							<input type="submit" value="Post Anonymously" />
+							<input type="button" value="Login" onclick="return rr.account.login();" class="right" />
+							<input type="hidden" name="anonymous" value="1" />
+						</div>
+						<div class="clear"></div>
+											</form>
+				</div>			
+				
+				<div class="comments">
+					
+
+	
+	<ul class="comments" style="display: none;"></ul>
+				</div>
+							
+			</div>
+		
+			</div>
+	
+	
+		
+		
+			</div>
+			<div class="footer">
+				Questions, comments or bug to reports? <a href="mailto:neoform@cslacker.com">email me</a>.
+				<br />
+				Page generated in <strong>0.0400</strong> seconds 
+				using <strong>1,377.10</strong> KB of memory.
+			</div>		
+		</center>
+	</body>
+</html>

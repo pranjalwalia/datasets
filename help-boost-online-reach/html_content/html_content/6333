@@ -1,0 +1,1736 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title> Girl Launches MIT Admission Letter To Near Space | Space.com </title>
+  <meta name="description" content="The Massachusetts Institute of Technology has been sending acceptance letters to students in tubes with a task of 'hacking' them in some creative way. Erin King's tube shined the brightest as she turned it into a high-altitude balloon project. " />
+  <meta name="keywords" content="mit, acceptance letter, near space, tube, high school girl, high altitude balloon, project, massachusetts institute of technology, video, videofromspace" />
+  <meta name="robots" content="index,follow" />
+  <meta name="google-site-verification" content="MbXIxQZKTmppqEDFE0bdWHdQq_OSDiASMxZeFX1x-3k" />
+  <link rel="shortcut icon" href="http://i.space.com/images/site/favicon.ico" />
+  <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js" type="text/javascript"></script>
+  <script src="/javascripts/site.js?1327612924" type="text/javascript"></script>
+<script src="/javascripts/jquery.tools.min.js?1296172568" type="text/javascript"></script>
+<script src="/javascripts/jcarousellite_1.0.1.min.js?1287503220" type="text/javascript"></script>
+  <script>$jq = jQuery.noConflict();</script>
+  <script src="/javascripts/top_five.js" type="text/javascript"></script>
+<script src="/javascripts/fixed_top_bar.js?1315515911" type="text/javascript"></script>
+<script src="/javascripts/mbox.js?1301694522" type="text/javascript"></script>
+  <link href="/stylesheets/site.css?1327449256" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/fixed_top_bar.css?1316029127" media="screen" rel="stylesheet" type="text/css" />
+  
+  <link href="/stylesheets/video.css?1322520497" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/article-album.css?1328023484" media="screen" rel="stylesheet" type="text/css" />
+  <script src="http://admin.brightcove.com/js/BrightcoveExperiences.js" type="text/javascript"></script>
+<script src="http://admin.brightcove.com/js/APIModules_all.js" type="text/javascript"></script>
+
+  <script src="/javascripts/video/video_json.js" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+    var video_info = {"bread_crumb":["<a href=\"/\">Home</a>","<a href=\"/video/\">Video</a>"],"playlist_id":"740380963001","video_id":"1439278179001"}
+    var old_url = '';
+    var notFirstVid = false;
+	var isashow = false;
+    var startID = video_info.video_id;
+    function addScriptTag(id, url, callback) {
+	  var scriptTag = document.createElement("script");
+	  var noCacheIE = '&noCacheIE=' + (new Date()).getTime();
+
+	  // Add script object attributes
+	  scriptTag.setAttribute("type", "text/javascript");
+	  scriptTag.setAttribute("charset", "utf-8");
+	  scriptTag.setAttribute("src", url + "&callback=" + callback + noCacheIE);
+	  scriptTag.setAttribute("id", id);
+
+	  var head = document.getElementsByTagName("head").item(0);
+	  head.appendChild(scriptTag);
+    }
+
+    var space_shows = new Array();
+    var space_channels = new Array();
+    function getShowsVideos() {
+      for (show in show_sequence){
+        space_shows[show_sequence[show].sequence] = {"id":show,
+                                            "referenceId":show_sequence[show].referenceId,
+                                            "name":show_sequence[show].name,
+                                            "shortDescription":null,
+                                            "thumbnailURL":show_sequence[show].thumbnailURL,
+                                            "filterTags":[],
+                                            "playlistType":"EXPLICIT"}
+      }
+      addScriptTag("ttrPopular", "http://api.brightcove.com/services/library?"+
+                   "command=find_playlist_by_id&playlist_id=" + video_info.playlist_id +
+                   "&token=Jf08V2LSSN1szAQI3pr1hL3tOm0QdluOzvHd8zJTmVM.",
+                   "ttrPopularResponse");
+    }
+    
+    function ttrPopularResponse(jsonData) {
+      space_video_channel = {'items':jsonData.videos};
+      sortedReply(space_video_channel);
+    }
+
+    var exp;
+    var content;
+    var sortedIDS;
+    var video, player, search, menu, social;
+    function onTemplateLoaded(e){
+        player	        = brightcove.getExperience("myExperience");
+        content	        = player.getModule(APIModules.CONTENT);
+        exp		        = player.getModule(APIModules.EXPERIENCE);
+        video 	        = player.getModule(APIModules.VIDEO_PLAYER);
+        search 	        = player.getModule(APIModules.SEARCH);
+        menu            = player.getModule(APIModules.MENU);
+        social          = player.getModule(APIModules.SOCIAL);
+        content.addEventListener(BCContentEvent.MEDIA_COLLECTION_LOAD, onMediaCollectionLoad);
+        exp.addEventListener(BCExperienceEvent.TEMPLATE_READY,onTemplateReady);
+        video.addEventListener(BCMediaEvent.CHANGE,onMediaChanged);
+        search.addEventListener(BCSearchEvent.RESULT,onSearch);
+    }
+
+    function onTemplateReady(){
+        getShowsVideos();
+    }
+    
+    function onShowClick(e){
+      if (typeof(show_sequence[e.elementData.id]) != 'undefined'){
+        if (typeof(e.elementData.videos) == 'undefined' ){
+          getMediashow(e.elementData.id, "addShow");
+        }else{
+          h={'items':e.elementData.videos};
+          sortedReply(h);
+        }
+        isashow = true;
+        $jq(".vidhead_name").html(e.elementData.name);
+        $jq(".vidhead_right").html(['<a href="/">Home</a>','<a href="/video/">Video</a>','Video Shows'].join(" > "));
+      }
+    }
+    
+    function getMediaVideos(playlist_id){
+      if (typeof(space_channels[playlist_id]) == 'undefined'){
+        getMediashow(playlist_id, "addChannel");
+      }else{
+        h={'items':space_channels[playlist_id].videos};
+        sortedReply(h);
+      }
+    }
+    
+    function getMediashow(id, callback){
+        addScriptTag(callback, "http://api.brightcove.com/services/library?"+
+                     "command=find_playlist_by_id&playlist_id="+id+
+                     "&token=Jf08V2LSSN1szAQI3pr1hL3tOm0QdluOzvHd8zJTmVM.",callback+'Response');
+    }
+    
+    function addShowResponse(jsonData){
+      for (show in space_shows){
+        if (space_shows[show].id == jsonData.id){
+          space_shows[show].videoIds = jsonData.videoIds;
+          space_shows[show].videos = jsonData.videos;
+        }
+      }
+      var vs = exp.getElementByID("videoListShows")
+      vs.setData(space_shows);
+      h={'items':jsonData.videos};
+      sortedReply(h);
+    }
+    
+    function addChannelResponse(jsonData){
+      space_channels[jsonData.id] = jsonData;
+      h={'items':jsonData.videos};
+      sortedReply(h);
+    }
+    
+    function sortedReply(data){
+        var tmpArray = [];
+        var sortedArray = [];
+        var viewCountIds = [];
+        var pubDateIds = [];
+        try{
+            for(var i = 0; i < data["items"].length; i++){
+                if(data["items"][i]){
+                    tmpArray.push({id: data["items"][i]["id"], viewCount: data["items"][i]["playsTotal"], pubDate: data["items"][i]["publishedDate"]});
+                }
+            }
+        }catch(exep){}
+        for(var i = 0; i < tmpArray.length; i++ ){
+            sortedArray.push(tmpArray[i].id);
+        }
+        pubDateIds = sortedArray;
+
+        tmpArray.sort(sortViewCountArray);
+        for(var i = 0; i < tmpArray.length; i++ ){
+            viewCountIds.push(tmpArray[i].id);
+        }
+
+        sortedIDS = {viewCount: viewCountIds, pubDates: pubDateIds};
+        function sortViewCountArray(a,b){
+            var x = parseInt(a.viewCount);
+            var y = parseInt(b.viewCount);
+            return ((x < y) ? 1 : ((x > y) ? -1 : 0));
+        }
+
+        content.getMediaInGroupAsynch(sortedArray.concat(space_shows));
+        var t = sortedArray;
+        return sortedArray;
+    }
+    
+    function onTabClick(e){
+        var playList = exp.getElementByID("videoListShows");
+        playList.setSelectedIndex(-1);
+    }
+    var showData = [];
+    function onMediaCollectionLoad(e){
+        var tmpArray = [];
+
+        var showsList = exp.getElementByID("videoListShows");
+        var tabListShows = exp.getElementByID("videoList");
+        var firstLoad = 0;
+        if(showsList.getNumItems() < 1){
+            firstLoad = 1;
+            for(var i=0; i < space_shows.length; i++){
+                showData.push((space_shows[i]));
+            }
+            showsList.addEventListener("elementClick", onShowClick);
+           
+            showsList.setData(showData);
+
+            tabListShows.addEventListener("elementClick", onTabClick);
+        }
+		if(isashow){
+		  var d_name = "Episodes";
+		}else{
+		  var d_name = "Latest Videos";
+		}
+		
+        tabList = exp.getElementByID("playlistTabs");
+        var topPlaylist = {
+            displayName: "Most Popular",
+            mediaIds: sortedIDS.viewCount
+        };
+        var newestPlaylist = {
+            displayName: d_name,
+            mediaIds: sortedIDS.pubDates
+        };
+        try{
+
+            var b = content.createRuntimeMediaCollection(newestPlaylist,"playlist");
+            tabList.replaceTabAt(b,0);
+            var a = content.createRuntimeMediaCollection(topPlaylist,"playlist");
+            tabList.replaceTabAt(a,1);
+
+            tabList.setSelectedIndex(0);
+        }catch(e){
+            alert(e);
+        }
+        var playList = exp.getElementByID("videoList");
+        playList.setSelectedIndex(0);
+        if(startID > 0){
+            video.loadVideo(startID);
+            playList.setSelectedIndex((startID == e["mediaCollection"]["mediaIds"][0])? 0 : -1 ); 
+            startID = 0;
+        }else{
+            video.loadVideo(e["mediaCollection"]["mediaIds"][0]);
+        }
+    }
+    
+    function onMediaChanged(e){
+      if(old_url == ''){
+        setTimeout("notFirstVid=true;", 10000);
+      }
+      $jq("#video_description").html(e.media.shortDescription);
+      if (typeof(player_bottom_info[e.media.id]) == 'object')
+      {
+        $jq("#video_credit").html('Credit: '+player_bottom_info[e.media.id].credit);
+        document.getElementById("video_partner_img").style.display='none';
+        document.getElementById("video_partner_img").src=player_bottom_info[e.media.id].partner_image;
+        document.getElementById("video_partner_link").href=player_bottom_info[e.media.id].partner_link;
+		
+		var current_url = 'http://www.space.com'+player_bottom_info[e.media.id].link;
+		social.setLink(current_url);
+        
+        video_page_update(current_url);
+      }else{
+        $jq("#video_credit").html('');
+        document.getElementById("video_partner_img").src='';
+		social.setLink('http://www.space.com/video')
+        
+        toggle_hidden('comments_cont', false);
+        old_url = 'changed';
+      }
+    }
+
+    function playVideo(vidID){
+        video.loadVideo(vidID);
+    }
+
+    sfHover = function() {
+      var sfEls = document.getElementById("cat_link").getElementsByTagName("LI");
+      for (var i=0; i<sfEls.length; i++) {
+        sfEls[i].onmouseover=function() {
+          this.className+=" sfhover";
+        }
+        sfEls[i].onmouseout=function() {
+          this.className=this.className.replace(new RegExp(" sfhover\\b"), "");
+        }
+      }
+    }
+    $jq(document).ready(function(){
+        sfHover();
+        $jq(".cat_final").click(function(){
+			isashow = false;
+            var breadCrumb = [];
+            breadCrumb.push('<a href="/">Home</a>');
+            breadCrumb.push('<a href="/video/">Video</a>');
+            breadCrumb.push($jq(this).parent().parent().parent().children("span").find("input[type=hidden]")[0].name);
+            breadCrumb.push($jq(this).find("input[type=hidden]")[0].name);
+            $jq(".vidhead_name").html('Video');
+            var ids = $jq(this).find("input[type=hidden]").val();
+            if (ids != ''){
+              $jq(".vidhead_right").html(breadCrumb.join(" > "));
+            }
+            var playList = exp.getElementByID("videoListShows");
+            playList.setSelectedIndex(-1);
+            getMediaVideos(ids);
+        });
+        $jq(".cat_parent_name").click(function(){
+			isashow = false;
+            var hide_info = $jq(this).find("input[type=hidden]")[0];
+            var breadCrumb = [];
+            breadCrumb.push('<a href="/">Home</a>');
+            breadCrumb.push('<a href="/video/">Video</a>');
+            breadCrumb.push(hide_info.name);
+            $jq(".vidhead_name").html('Video');
+            var ids = hide_info.value;
+            if (ids != ''){
+              $jq(".vidhead_right").html(breadCrumb.join(" > "));
+            }
+            var playList = exp.getElementByID("videoListShows");
+            playList.setSelectedIndex(-1);
+            getMediaVideos(ids);
+        });
+    });
+    
+    function video_page_update(current_url){
+        if (old_url != current_url){
+            old_url = current_url;
+            update_comments(current_url);
+            if(notFirstVid){
+                reloadScripts();
+            }
+        }
+    }
+    function update_comments(url){
+	  var fbCom = document.getElementById('fb_comment_cont');
+	  fbCom.innerHTML = '';
+	  fbCom.innerHTML = '<fb:comments href="'+ url +'" num_posts="10" width="615" ></fb:comments>';
+	  FB.XFBML.parse(fbCom);
+	  toggle_hidden('comments_cont', true);
+    }
+</script>
+
+
+    <script type="text/javascript">var google_adnum = 0;</script>
+    <script type="text/javascript">
+    <!--
+        var axel = Math.random() + "";
+        var ord = axel * 1000000000000000000;
+    //-->
+
+</script>
+  
+  <link rel='canonical' href='http://www.space.com/14496-girl-launches-mit-admission-letter-space.html' />
+  
+  <meta property="og:title" content="Girl Launches MIT Admission Letter To Near Space"/>
+  <meta property="og:url" content="http://www.space.com/14496-girl-launches-mit-admission-letter-space.html"/>
+  <meta property="og:type" content="movie"/>
+  <meta property="og:video" content="http://c.brightcove.com/services/viewer/federated_f9?isVid=1&amp;isUI=1&amp;publisherID=1417332051&amp;playerID=1416237365001&amp;domain=embed&amp;videoId=1439278179001"/>
+  <meta property="og:site_name" content="Space.com"/>
+  <meta property="og:description" content="The Massachusetts Institute of Technology has been sending acceptance letters to students in tubes with a task of 'hacking' them in some creative way. Erin King's tube shined the brightest as she turned it into a high-altitude balloon project. "/>
+  <meta property="og:video:width" content="400"/>
+  <meta property="og:image" content="http://brightcove.vo.llnwd.net/d20/unsecured/media/1417332051/1417332051_1439268021001_SP-120207-mit-letter-near-space.jpg?pubId=1417332051"/>
+  <meta property="og:video:height" content="274"/>
+  <meta property="og:video:secure_url" content="https://secure.brightcove.com/services/viewer/federated_f9/1417332051?isVid=1&amp;isUI=1&amp;playerKey=AQ~~,AAAAAFR6xVM~,85KKOZyvPf78WM3Sb-L8ZEmS5RNaktxU&amp;videoId=1439278179001&amp;secureConnections=true"/>
+  
+</head>
+  <body>
+
+
+
+<script>
+  var current_location = "http://www.facebook.com/pages/Spacecom/17610706465";
+
+    var top_title = "Girl Launches MIT Admission Letter To Near Space";
+
+  var top_page_title = top_title.split(' ').join('+');
+  var environment = 'production';
+  
+  document.write('<iframe id="top_side" scrolling="no" frameborder="0" style="border: none; overflow: hidden;" src="/likebar.php?url=' + escape(current_location) + '&title='+ escape(top_page_title) +'&env='+ environment +'"></iframe>');
+</script>
+
+<div class="ie6_wrapper">
+
+    <!-- Begin comScore Tag -->
+
+    <script>
+      var csDocDomain = document.location.href;
+      document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b")
+      + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+    </script>
+
+    <script>
+        setTimeout('COMSCORE.beacon({'+
+        'c1:2,'+
+        'c2:"6035753",'+
+        'c3:"6035753",'+
+        'c4:"' + csDocDomain + '",'+
+        'c5:"Technology - News",'+
+        'c6:"",'+
+        'c15:""'+
+        '});',0);
+    </script>
+    <noscript>
+      <img src="http://b.scorecardresearch.com/b?c1=2&c2=6035753&c3=6035753&c4=http://www.space.com/&c5=Technology - News&c6=&c15=C67BD3C1&cv=1.3&cj=1" style="display:none" width="0" height="0" alt="" />
+    </noscript>
+
+    <!-- End comScore Tag -->
+
+  
+
+  <div style="position:absolute; height:0px; width:100%; .z-index:10000;">
+  <div id="underlay"></div>
+  <div id="container">
+    <div id="containerBg">
+          <div id="header">
+      <div class="header_logo_cont">
+        <a href="/">
+          <div class="header_logo"></div>
+        </a>
+      </div>
+      <div class="header_search">
+        <div class="search_containers">
+          <div class="search_cont_top">
+            <div id="loggedOut" style="width:180px; margin-left:10px; height:60px;">
+			  
+            </div>
+          </div>
+          <form action="/search.php" method="GET">
+            <div class="search_cont_bot">
+              <div class="header_searchbut">
+                <input type="hidden" name="cx" value="partner-pub-1894578950532504:47n5qdg34oa" />
+                <input type="hidden" name="cof" value="FORID:10" />
+                <input type="hidden" name="ie" value="ISO-8859-1" />
+                <input type="submit" name="sa" value="" />
+              </div>
+              <div class="header_searchbox">
+                <input type="text" name="q" onfocus="if(this.value=='Search') this.value='';" onblur="if(this.value=='') this.value='Search';" value="Search" />
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div id="navigation" style="text-align:center;">
+      <span style="display:inline-block;" class="top_nav_links">
+          
+            
+              
+            
+          
+            <span><a style="border-left:1px solid #666666;"
+          
+             class="section_home" href="/">Home</a></span>
+          
+            
+              
+            
+          
+            <span><a style=""
+          
+             class="section_news" href="/news/">News</a></span>
+          
+            
+              
+            
+          
+            <span><a style=""
+          
+             class="section_spaceflight" href="/spaceflight/">Spaceflight</a></span>
+          
+            
+              
+            
+          
+            <span><a style=""
+          
+             class="section_science-astronomy" href="/science-astronomy/">Science & Astronomy</a></span>
+          
+            
+              
+            
+          
+            <span><a style=""
+          
+             class="section_search-for-life" href="/search-for-life/">Search for Life</a></span>
+          
+            
+              
+            
+          
+            <span><a style=""
+          
+             class="section_skywatching" href="/skywatching/">Skywatching</a></span>
+          
+            
+              
+            
+          
+            <span><a style=""
+          
+             class="section_tech-robots" href="/tech-robots/">Tech & Robots</a></span>
+          
+            
+              
+            
+          
+            <span><a style=""
+          
+             class="section_topics" href="/topics/">Topics</a></span>
+          
+            
+              
+            
+          
+            <span><a style=""
+          
+             class="section_images" href="/images/">Images</a></span>
+          
+            
+              
+            
+          
+            <span style='background:url("http://i.space.com/images/site/top_nav_bg2.png") repeat-x; '><a style=' background:url("http://i.space.com/images/site/top_nav_bg2.png") repeat-x;  color:#FFFFFF'
+          
+             class="section_video" href="/video/">Video</a></span>
+          
+            
+              
+            
+          
+            <span><a style=""
+          
+             class="section_entertainment" href="/entertainment/">Entertainment</a></span>
+          
+          <span style='background:url("http://i.space.com/images/site/top_nav_bg2.png") repeat-x; '><a class="section_store" href="http://store.space.com?utm_source=space.com&utm_medium=site_navbar&utm_campaign=store_callout" target="_blank">Shop</a></span>
+      </span>
+    </div>
+      <script>
+        buildLinkTracking('top_nav_links','top_nav_links',null,null,null,true);
+      </script>
+    <div id="ad-leaderboard">
+        <div class="leaderboard">
+          
+
+<span id="ad_leaderboard" style="display:inline-block"></span>
+
+        </div>
+    </div>
+
+      <div id="content-container">
+        
+
+        <div class="main_content">
+          
+          <div class="video_header">
+  <div class="vidhead_left">
+    <div class="vidhead_name">Video</div>
+  </div>
+  <div style="margin: 0px 20px; float: left;">
+      <ul id="cat_link" class="cat_link">
+          <li>
+              <span><img id="cat_button" src="/images/site/video/browse-video-channels.jpg" alt="Browse Video Channels" /></span>
+              <ul>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name"  >
+                      Space
+                      <input type="hidden" value="740055647001" name="Space" />
+                    </span>
+                    <ul>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name"  >
+                      Technology
+                      <input type="hidden" value="740206020001" name="Technology" />
+                    </span>
+                    <ul>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Exploration
+                            <input type="hidden" value="740055649001" name="Exploration" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Transportation
+                            <input type="hidden" value="742217301001" name="Transportation" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Software and Systems
+                            <input type="hidden" value="740209891001" name="Software and Systems" />
+                          </span>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name"  >
+                      Strange News
+                      <input type="hidden" value="740380966001" name="Strange News" />
+                    </span>
+                    <ul>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Not Quite Science
+                            <input type="hidden" value="740206022001" name="Not Quite Science" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Adventurous Extremes
+                            <input type="hidden" value="742217290001" name="Adventurous Extremes" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Inexplicable
+                            <input type="hidden" value="742217293001" name="Inexplicable" />
+                          </span>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name"  >
+                      Film
+                      <input type="hidden" value="740206034001" name="Film" />
+                    </span>
+                    <ul>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Film People
+                            <input type="hidden" value="918742012001" name="Film People" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Indie Film
+                            <input type="hidden" value="740380970001" name="Indie Film" />
+                          </span>
+                        </li>
+                      
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name"  >
+                      Books
+                      <input type="hidden" value="742217291001" name="Books" />
+                    </span>
+                    <ul>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Book People
+                            <input type="hidden" value="740380972001" name="Book People" />
+                          </span>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name"  >
+                      Animals
+                      <input type="hidden" value="740209884001" name="Animals" />
+                    </span>
+                    <ul>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Biology
+                            <input type="hidden" value="740206040001" name="Biology" />
+                          </span>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name"  >
+                      History
+                      <input type="hidden" value="740206041001" name="History" />
+                    </span>
+                    <ul>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Geology
+                            <input type="hidden" value="742217300001" name="Geology" />
+                          </span>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name"  >
+                      Environment
+                      <input type="hidden" value="740380975001" name="Environment" />
+                    </span>
+                    <ul>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Bygone Earth
+                            <input type="hidden" value="740209890001" name="Bygone Earth" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Earth Health
+                            <input type="hidden" value="742217299001" name="Earth Health" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Human Impact
+                            <input type="hidden" value="740206053001" name="Human Impact" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Innovation
+                            <input type="hidden" value="740380979001" name="Innovation" />
+                          </span>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name"  >
+                      Earth From Orbit
+                      <input type="hidden" value="740206027001" name="Earth From Orbit" />
+                    </span>
+                    <ul>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Land
+                            <input type="hidden" value="740206048001" name="Land" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Weather
+                            <input type="hidden" value="740209889001" name="Weather" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Oceans
+                            <input type="hidden" value="740206046001" name="Oceans" />
+                          </span>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name"  >
+                      Health
+                      <input type="hidden" value="740206052001" name="Health" />
+                    </span>
+                    <ul>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Human Body
+                            <input type="hidden" value="742217298001" name="Human Body" />
+                          </span>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name"  >
+                      Life Beyond Earth
+                      <input type="hidden" value="740209879001" name="Life Beyond Earth" />
+                    </span>
+                    <ul>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Astrobiology
+                            <input type="hidden" value="740209882001" name="Astrobiology" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            SETI
+                            <input type="hidden" value="740206039001" name="SETI" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Exoplanets
+                            <input type="hidden" value="742217292001" name="Exoplanets" />
+                          </span>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name"  >
+                      Culture
+                      <input type="hidden" value="740055648001" name="Culture" />
+                    </span>
+                    <ul>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            How it Happens
+                            <input type="hidden" value="918742014001" name="How it Happens" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Movies
+                            <input type="hidden" value="740206035001" name="Movies" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Big Questions
+                            <input type="hidden" value="740209881001" name="Big Questions" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Games
+                            <input type="hidden" value="740209885001" name="Games" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            People and Politics
+                            <input type="hidden" value="742217296001" name="People and Politics" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Old Ideas
+                            <input type="hidden" value="740209896001" name="Old Ideas" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Anthropology
+                            <input type="hidden" value="740209897001" name="Anthropology" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Art
+                            <input type="hidden" value="740380977001" name="Art" />
+                          </span>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name"  >
+                      People
+                      <input type="hidden" value="740380964001" name="People" />
+                    </span>
+                    <ul>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Astronauts
+                            <input type="hidden" value="740206023001" name="Astronauts" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Engineers
+                            <input type="hidden" value="740055650001" name="Engineers" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Policy People
+                            <input type="hidden" value="740206025001" name="Policy People" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Scientists
+                            <input type="hidden" value="740206024001" name="Scientists" />
+                          </span>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name" title='Spacecraft and Launchers' >
+                      Spacecraft and La...
+                      <input type="hidden" value="740380965001" name="Spacecraft and Launchers" />
+                    </span>
+                    <ul>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Science Probes
+                            <input type="hidden" value="740209868001" name="Science Probes" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Launchers
+                            <input type="hidden" value="740209873001" name="Launchers" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Satellites
+                            <input type="hidden" value="740380971001" name="Satellites" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Missions Past
+                            <input type="hidden" value="740206032001" name="Missions Past" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Space Power
+                            <input type="hidden" value="740206028001" name="Space Power" />
+                          </span>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name"  >
+                      Private Space
+                      <input type="hidden" value="740380967001" name="Private Space" />
+                    </span>
+                    <ul>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Adventure Travel
+                            <input type="hidden" value="740209872001" name="Adventure Travel" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            New Vehicles
+                            <input type="hidden" value="740206036001" name="New Vehicles" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final" title='Settlement and Colonization' >
+                            Settlement and Colo...
+                            <input type="hidden" value="740380968001" name="Settlement and Colonization" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Entrepreneurs
+                            <input type="hidden" value="740209867001" name="Entrepreneurs" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Overview Effect
+                            <input type="hidden" value="740209870001" name="Overview Effect" />
+                          </span>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name" title='Astronomy and Astrophysics' >
+                      Astronomy and Ast...
+                      <input type="hidden" value="740209869001" name="Astronomy and Astrophysics" />
+                    </span>
+                    <ul>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Solar System Science
+                            <input type="hidden" value="740055651001" name="Solar System Science" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Deep Space Discoveries
+                            <input type="hidden" value="742217286001" name="Deep Space Discoveries" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Amateur Astronomy
+                            <input type="hidden" value="740209875001" name="Amateur Astronomy" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Large Telescopes
+                            <input type="hidden" value="742217289001" name="Large Telescopes" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Fringe Physics
+                            <input type="hidden" value="740206044001" name="Fringe Physics" />
+                          </span>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+                  <li class="cat_item_parent" >
+                    <span class="cat_parent_name"  >
+                      Objects
+                      <input type="hidden" value="740209866001" name="Objects" />
+                    </span>
+                    <ul>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Moons
+                            <input type="hidden" value="740206026001" name="Moons" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Stars and Galaxies
+                            <input type="hidden" value="740209874001" name="Stars and Galaxies" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Planets
+                            <input type="hidden" value="742217288001" name="Planets" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Sun
+                            <input type="hidden" value="740209877001" name="Sun" />
+                          </span>
+                        </li>
+                      
+                      
+                        <li class="cat_item">
+                          <span class="cat_final"  >
+                            Asteroids and Comets
+                            <input type="hidden" value="740206033001" name="Asteroids and Comets" />
+                          </span>
+                        </li>
+                      
+                    </ul>
+                  </li>
+                
+              </ul>
+          </li>
+      </ul>
+      <div style="clear: both;"></div>
+  </div>
+  <div class="vidhead_right">
+    <div class="breadcrumb"><script> document.write(video_info.bread_crumb.join(' &gt; ')); </script></div>
+  </div>
+</div>
+          
+
+  <div style="display:none">
+
+  </div>
+
+  <object id="myExperience" class="BrightcoveExperience">
+      <param name="wmode" value="transparent" />
+      <param name="bgcolor" value="#FFFFFF" />
+      <param name="width" value="970" />
+      <param name="height" value="440" />
+      <param name="playerID" value="678787085001" />
+      <param name="publisherID" value="1417332051"/>
+      <param name="isVid" value="true" />
+      <param name="isUI" value="true" />
+      <param name="dynamicStreaming" value="true" />
+      <param name="linkBaseURL" value="http://www.space.com/14496-girl-launches-mit-admission-letter-space.html" />
+  </object>
+
+  <script type="text/javascript">brightcove.createExperiences();</script>
+
+
+          <div style="float:left; background-color:#4a4949; color:#a2a2a2; width:960px; padding:0px 5px 5px;">
+  <div style="float:left; width:670px; padding:0px 5px 5px 5px;">
+    <div style="float:left; width:650px;">
+      <div style="float:left;width:100%;margin:0px 5px 5px 5px;">
+        <div style="float:left;width:215px;">
+          <a href="/video-shows/">
+            <img src="/images/site/video/all_shows.png" alt="All Videos" />
+          </a>
+        </div>
+
+        <span style="float:left;color:#FFF;font-size:17px;font-weight:bold;width:75px;">Share</span>
+        
+        <div style="float:left;margin-right:10px;">
+          
+          <script>
+            var current_location = window.location.href;
+            var title = 'Girl Launches MIT Admission Letter To Near Space'
+            var page_title = title.split(' ').join('+');
+            var environment = 'production';
+          </script>
+          
+          <script type="text/javascript">
+            document.write('<iframe src="/social.php?type=face&size=s&url=' + escape(current_location) + '&title='+ escape(page_title) +'&page_position=Video_Share_Bar_like&env='+ environment +'" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>');
+          </script>
+          
+        </div>
+        <div style="float:left;margin-right:10px;">
+          
+          <script>
+            document.write('<iframe src="/social.php?type=twit&size=s&url=' + escape(current_location) + '&title='+ escape(page_title) +'&page_position=Video_Share_Bar_tweet&env='+ environment +'" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:21px;" allowTransparency="true"></iframe>');
+          </script>
+          
+        </div>
+        <div style="float:left;">
+          <g:plusone callback="top_plus_one" size="medium"></g:plusone>
+          <script type="text/javascript">
+            function top_plus_one( obj ) {
+              _gaq.push(['_trackEvent','Top_Share_Bar', 'Google+1', obj.state]);
+              plus_one_callback();
+            }
+          </script>
+        </div>
+
+      </div>
+      <div id="video_description" style="float:left; width:100%;">
+        The Massachusetts Institute of Technology has been sending acceptance letters to students in tubes with a task of 'hacking' them in some creative way. Erin King's tube shined the brightest as she turned it into a high-altitude balloon project. 
+      </div>
+      <div id="video_credit" style="float:left; width:100%; height:14px; margin-top:5px;">
+        Credit: Erin King
+      </div>
+    </div>
+    <div style="float:left; width:215px; text-align:center;">
+      
+      <a id="video_partner_link" href="" target="_blank">
+        <img id="video_partner_img" onerror="this.style.display='none'" onload="this.style.display='inline'" src="" />
+      </a>
+    </div>
+  </div>
+  <div style="float:left; width:255px;">
+    <div style="float:left;width:100%;text-align:right;">
+      <a href="/video/archive.html">
+        <img src="/images/site/video/all_videos.png" alt="All Videos" />
+      </a>
+    </div>
+    <script type="text/javascript">
+      function google_ad_request_done(google_ads){
+        var s = '';
+        var i;
+        if(google_ads.length == 0){
+          return;
+        }
+        s += '<div class="rn_adsense" id="nointelliTXT"><div class="adsense_goo"><a href="'+ google_info.feedback_url +'">Ads by Google</a></div>'    
+        for(i = 0; i < google_ads.length; ++i){
+          s += '<div class="rn_adsengap"><div class="vsense_title"><a target="_blank" href="' +
+          google_ads[i].url + '" onmouseout="window.status=\'\'" onmouseover="window.status=\'go to ' +
+          google_ads[i].visible_url + '\';return true">' +
+          google_ads[i].line1 + '</a></div><div>' +
+          google_ads[i].line2 + ' ' +
+          google_ads[i].line3 + '<div class="rn_adsenbot"><a target="_blank" href="' +
+          google_ads[i].url + '" onmouseout="window.status=\'\'" onmouseover="window.status=\'go to ' +
+          google_ads[i].visible_url + '\';return true"><span style="color:#A2A2A2;">' +
+          google_ads[i].visible_url + '</a></div></div></div>';
+        }
+        s += '</div>'
+        if (google_ads[0].bidtype == "CPC") {
+          google_adnum = google_adnum + google_ads.length;
+        }
+        document.write(s);
+        return;
+      }
+      
+      google_ad_client = 'pub-1894578950532504';
+      google_ad_output = 'js';
+      google_max_num_ads = '1';
+      google_ad_channel = '3735313997';
+      google_ad_type = 'text_html';
+      google_feedback = 'on';
+      google_skip = google_adnum;
+      </script>            
+      <script src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+  </div>
+</div>
+          
+
+          <div class="left_content">
+            
+<div class="video_slider">
+  <div class="vid_slidehead">
+    Related Videos
+  </div>
+  <div class="vslide_cont">
+    <div class="vslide_left">
+      <img src="/images/site/video/left-arrow.jpg" alt="Left Arrow" id="leftvideo" />
+    </div>
+    <div class="vslide_mid">
+      <div class="vslide_hidden" id="relatedvideos">
+        <ul style="padding:0px; margin:0px; list-style-type:none;">
+          
+            
+              <li style="padding:0px; display:inline-block;height:114px;">
+                <div class="vslide_ind">
+                  <div><a href="/14491-static-electricity-walks-water.html"><span class="img_overlay overlay_i00"></span><img src="http://i.space.com/images/i/15074/i00/SP_120207_zero-g_knitting_needle.jpg?1328629629" alt="In Zero-G Static Electricity Walks On Water" /></a></div>
+                  <div><a href="/14491-static-electricity-walks-water.html">In Zero-G Static Electricity Walks On Water </a></div>
+                </div>
+              </li>
+              
+          
+            
+              <li style="padding:0px; display:inline-block;height:114px;">
+                <div class="vslide_ind">
+                  <div><a href="/14489-ultimate-skydiving-falling-human-break-sound-barrier.html"><span class="img_overlay overlay_i00"></span><img src="http://i.space.com/images/i/15070/i00/SP_120206_red_bull_strato_dive.jpg?1328574653" alt="Ultimate Skydiving: Falling Human to Break Sound Barrier?" /></a></div>
+                  <div><a href="/14489-ultimate-skydiving-falling-human-break-sound-barrier.html">Ultimate Skydiving: Falling Human to Break Sound Barrier?</a></div>
+                </div>
+              </li>
+              
+          
+            
+              <li style="padding:0px; display:inline-block;height:114px;">
+                <div class="vslide_ind">
+                  <div><a href="/14479-stephen-colbert-touts-nasa-life-improving-research.html"><span class="img_overlay overlay_i00"></span><img src="http://i.space.com/images/i/15052/i00/SP_120206_stephen_colbert_nasa.jpg?1328548720" alt="Stephen Colbert Touts NASA's Life Improving Research" /></a></div>
+                  <div><a href="/14479-stephen-colbert-touts-nasa-life-improving-research.html">Stephen Colbert Touts NASA's Life Improving Research</a></div>
+                </div>
+              </li>
+              
+          
+            
+              <li style="padding:0px; display:inline-block;height:114px;">
+                <div class="vslide_ind">
+                  <div><a href="/14477-sun-super-bowl-spitfire-pre-game-solar-fireworks.html"><span class="img_overlay overlay_i00"></span><img src="http://i.space.com/images/i/15048/i00/SP_120206_suns_spitfire.jpg?1328538856" alt="Sun's Super Bowl Spitfire: Pre-Game Solar Fireworks" /></a></div>
+                  <div><a href="/14477-sun-super-bowl-spitfire-pre-game-solar-fireworks.html">Sun's Super Bowl Spitfire: Pre-Game Solar Fireworks </a></div>
+                </div>
+              </li>
+              
+          
+            
+              <li style="padding:0px; display:inline-block;height:114px;">
+                <div class="vslide_ind">
+                  <div><a href="/14467-eros-valentine-day-asteroid-fly.html"><span class="img_overlay overlay_i00"></span><img src="http://i.space.com/images/i/15031/i00/SP_120203_eros_valentines_flyby.jpg?1328292573" alt="Oh Eros: Valentine's Day Asteroid Makes NEAR Fly-by" /></a></div>
+                  <div><a href="/14467-eros-valentine-day-asteroid-fly.html">Oh Eros: Valentine's Day Asteroid Makes NEAR Fly-by</a></div>
+                </div>
+              </li>
+              
+          
+            
+              <li style="padding:0px; display:inline-block;height:114px;">
+                <div class="vslide_ind">
+                  <div><a href="/14462-hubble-hit-spiral-galaxy-quasars.html"><span class="img_overlay overlay_i00"></span><img src="http://i.space.com/images/i/15021/i00/SP_120202_quasar_galaxy.jpg?1328224923" alt="Hubble Hit: Spiral Galaxy and the Quasars " /></a></div>
+                  <div><a href="/14462-hubble-hit-spiral-galaxy-quasars.html">Hubble Hit: Spiral Galaxy and the Quasars </a></div>
+                </div>
+              </li>
+              
+          
+            
+              <li style="padding:0px; display:inline-block;height:114px;">
+                <div class="vslide_ind">
+                  <div><a href="/14458-soyuz-rocket-bumpy-ride-history.html"><span class="img_overlay overlay_i00"></span><img src="http://i.space.com/images/i/15015/i00/SP_120202_soyuz_history.jpg?1328220259" alt="Soyuz Rocket's Bumpy Ride - The History" /></a></div>
+                  <div><a href="/14458-soyuz-rocket-bumpy-ride-history.html">Soyuz Rocket's Bumpy Ride - The History</a></div>
+                </div>
+              </li>
+              
+          
+            
+              <li style="padding:0px; display:inline-block;height:114px;">
+                <div class="vslide_ind">
+                  <div><a href="/14454-fireball-texas-caught-police-dash-cam.html"><span class="img_overlay overlay_i00"></span><img src="http://i.space.com/images/i/15008/i00/SP_120202_fireball_dash_cam.jpg?1328215006" alt="Fireball Over Texas Caught By Police Dash Cam" /></a></div>
+                  <div><a href="/14454-fireball-texas-caught-police-dash-cam.html">Fireball Over Texas Caught By Police Dash Cam</a></div>
+                </div>
+              </li>
+              
+          
+            
+              <li style="padding:0px; display:inline-block;height:114px;">
+                <div class="vslide_ind">
+                  <div><a href="/14448-europe-space-program-spurring-job-growth.html"><span class="img_overlay overlay_i00"></span><img src="http://i.space.com/images/i/15002/i00/SP_120202_europe_space_jobs.jpg?1328206630" alt="Europe's Space Program Spurring Job Growth" /></a></div>
+                  <div><a href="/14448-europe-space-program-spurring-job-growth.html">Europe's Space Program Spurring Job Growth</a></div>
+                </div>
+              </li>
+              
+          
+            
+              <li style="padding:0px; display:inline-block;height:114px;">
+                <div class="vslide_ind">
+                  <div><a href="/14442-grail-mission-snaps-side-moon.html"><span class="img_overlay overlay_i00"></span><img src="http://i.space.com/images/i/14986/i00/SP_120201_grail_far_side_moon.jpg?1328133695" alt="Grail Snaps Far Side of the Moon - First Look" /></a></div>
+                  <div><a href="/14442-grail-mission-snaps-side-moon.html">Grail Mission Snaps Far Side of the Moon - First Look</a></div>
+                </div>
+              </li>
+              
+          
+            
+              <li style="padding:0px; display:inline-block;height:114px;">
+                <div class="vslide_ind">
+                  <div><a href="/14437-strange-supernova-cold-gas-cloud-molding-space-oddity.html"><span class="img_overlay overlay_i00"></span><img src="http://i.space.com/images/i/14978/i00/SP_120201_supernova_oddity.jpg?1328129995" alt="Strange Supernova - Cold Gas Cloud Molding Space Oddity?" /></a></div>
+                  <div><a href="/14437-strange-supernova-cold-gas-cloud-molding-space-oddity.html">Strange Supernova - Cold Gas Cloud Molding Space Oddity?</a></div>
+                </div>
+              </li>
+              
+          
+            
+              <li style="padding:0px; display:inline-block;height:114px;">
+                <div class="vslide_ind">
+                  <div><a href="/14434-emergency-launch-escape-private-space.html"><span class="img_overlay overlay_i00"></span><img src="http://i.space.com/images/i/14974/i00/SP_120201_spacex_launch_abort_test_firing.jpg?1328125332" alt="Emergency Launch Escape - The Private Space Way" /></a></div>
+                  <div><a href="/14434-emergency-launch-escape-private-space.html">Emergency Launch Escape - The Private Space Way</a></div>
+                </div>
+              </li>
+              
+          
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="vslide_right">
+     <img src="/images/site/video/right-arrow.jpg" alt="Right Arrow" id="rightvideo" />
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+(function($jq) {
+    $jq("#relatedvideos").jCarouselLite({
+        btnNext: "#rightvideo",
+        btnPrev: "#leftvideo",
+        circular: false,
+        visible: 5
+    });
+})(jQuery);
+</script>
+
+
+            
+            <div class="vadsense" id="nointelliTXT">
+              <script type="text/javascript">
+                function google_ad_request_done(google_ads){
+                  var s = '';
+                  var i;
+                  if(google_ads.length == 0){
+                    return;
+                  }
+                  s += '<div class="vsense_goo"><a href="'+ google_info.feedback_url +'">Ads by Google</a></div>'    
+                  for(i = 0; i < google_ads.length; ++i){
+                    s += '<div class="vidsense"><div class="vsense_title"><a target="_blank" href="' +
+                    google_ads[i].url + '" onmouseout="window.status=\'\'" onmouseover="window.status=\'go to ' +
+                    google_ads[i].visible_url + '\';return true">' +
+                    google_ads[i].line1 + '</a></div><div>' +
+                    google_ads[i].line2 + ' ' +
+                    google_ads[i].line3 + '</div></div>';
+                  }
+                  if (google_ads[0].bidtype == "CPC") {
+                    google_adnum = google_adnum + google_ads.length;
+                  }
+                  document.write(s);
+                  return;
+                }
+                
+                google_ad_client = 'pub-1894578950532504';
+                google_ad_output = 'js';
+                google_max_num_ads = '3';
+                google_ad_channel = '3735313997';
+                google_ad_type = 'text_html';
+                google_feedback = 'on';
+                google_skip = google_adnum;
+              </script>            
+              <script src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+            </div>
+            
+
+            
+
+            <div id="comments_cont" style="clear:both; float:left; width:620px; padding-top:20px; display:inline-block; background-color: white;">
+  <div id="fb-root"></div>
+  <script src="https://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+  <div id="fb_comment_cont">
+    <fb:comments href="http://www.space.com/14496-girl-launches-mit-admission-letter-space.html" num_posts="10" width="615" ></fb:comments>
+  </div>
+</div>
+
+
+          </div>
+          <div class="right_content">
+            <div class="side_row">
+
+<span id="ad_companion" style="display:inline-block"></span>
+</div>
+            <div class="rnav_spacer"></div>
+            <div class="side_row">
+    <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FSpacecom%2F17610706465&amp;width=300&amp;colorscheme=dark&amp;show_faces=true&amp;border_color=black&amp;stream=false&amp;header=true&amp;height=290" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:293px;" allowTransparency="true"></iframe>
+</div>
+
+            <div class="rnav_spacer"></div>
+            <script type='text/javascript'>
+  if(typeof(get_top_five) != 'undefined'){
+    document.write(get_top_five());
+    buildLinkTracking("most_pop_b", "right_nav_most_pop", "b");
+  }
+</script>
+            <div class="rnav_spacer"></div>
+            
+            <div class="side_row">
+              <script type="text/javascript">
+                function google_ad_request_done(google_ads){
+                  var s = '';
+                  var i;
+                  if(google_ads.length == 0){
+                    return;
+                  }
+                  s += '<div class="rn_adsense" id="nointelliTXT"><div class="adsense_goo"><a href="'+ google_info.feedback_url +'">Ads by Google</a></div>'    
+                  for(i = 0; i < google_ads.length; ++i){
+                    s += '<div class="rn_adsengap"><div class="vsense_title"><a target="_blank" href="' +
+                    google_ads[i].url + '" onmouseout="window.status=\'\'" onmouseover="window.status=\'go to ' +
+                    google_ads[i].visible_url + '\';return true">' +
+                    google_ads[i].line1 + '</a></div><div>' +
+                    google_ads[i].line2 + ' ' +
+                    google_ads[i].line3 + '<div class="rn_adsenbot"><a target="_blank" href="' +
+                    google_ads[i].url + '" onmouseout="window.status=\'\'" onmouseover="window.status=\'go to ' +
+                    google_ads[i].visible_url + '\';return true"><span>' +
+                    google_ads[i].visible_url + '</a></div></div></div>';
+                  }
+                  s += '</div>'
+                  if (google_ads[0].bidtype == "CPC") {
+                    google_adnum = google_adnum + google_ads.length;
+                  }
+                  document.write(s);
+                  return;
+                }
+                
+                google_ad_client = 'pub-1894578950532504';
+                google_ad_output = 'js';
+                google_max_num_ads = '3';
+                google_ad_channel = '3735313997';
+                google_ad_type = 'text_html';
+                google_feedback = 'on';
+                google_skip = google_adnum;
+                </script>            
+                <script src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+            </div>
+            <div class="rnav_spacer"></div>
+            
+            
+<div class="side_row" style='text-align:center;'>
+  <div class="facebook_activity">
+    <div style="float:left; padding-top:10px;">
+      <img src="http://i.space.com/images/site/social/facebook.jpg" alt="Facebook Activity" />
+    </div>
+    <div style="float:left; padding:0px 0px 0px 10px; font-size:21px; line-height:50px; font-weight:bold;">
+      FACEBOOK ACTIVITY
+    </div>
+  </div>
+  <div style="display:inline-block;">
+    
+    
+    <iframe src="/social.php?type=face&size=l" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:300px;" allowTransparency="true"></iframe>
+    
+    
+  </div>
+</div>
+            <div class="rnav_spacer"></div>
+            
+<div class="side_row">
+  <div class="twitter_activity">
+    <div><img src="/images/site/social/twitter.jpg" alt="TWITTER" /></div>
+    <div style="float:left; padding:0px 5px; font-size:19px; line-height:29px; font-weight:bold;">TWITTER ACTIVITY</div>
+    <div class="rn_twitfollow" style="padding-top:8px;"><a style="font-size:14px;" href="http://twitter.com/SPACEdotcom">Follow us</a></div>
+  </div>
+  <div style='display:inline-block;'>
+    
+    
+    <iframe src="/social.php?type=twit&size=l" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:300px;" allowTransparency="true"></iframe>
+    
+    
+  </div>
+</div>
+          </div>
+
+      </div>
+      <div>
+          <div class="footer">
+
+  <div class="site_pages">
+    <div class="network_title">
+      Company Pages
+    </div>
+    <div class="site_pagelinks">
+      <div><a href="http://www.techmedianetwork.com">Company Info</a></div>
+      <div><a href="http://www.techmedianetwork.com/our-brands/space.html">About the Site</a></div>
+      <div><a href="/contact_us.php">Contact Us</a></div>
+      <div><a href="http://www.techmedianetwork.com/advertising/why-advertise.html">Advertise with Us</a></div>
+      <div><a href="http://www.techmedianetwork.com/using-our-content.html">Using our Content</a></div>
+      <div><a href="http://www.techmedianetwork.com/licensing-and-reprints.html">Licensing & Reprints</a></div>
+      <div><a href="/privacy_policy.php">Privacy Policy</a></div>
+      <div><a href="/home/feed/site.xml">Sitemap</a></div>
+    </div>
+  </div>
+
+  <div class="media_network">
+    <div class="network_title">
+      TechMediaNetwork Brands
+    </div>
+    <div class="network_sites">
+      <div><a href="http://www.techmedianetwork.com/">TechMediaNetwork</a></div>
+      <div><a href="http://www.ipadnewsdaily.com/">iPadNewsDaily</a></div>
+      <div><a href="http://www.toptenreviews.com/">TopTenREVIEWS</a></div>
+      <div><a href="http://www.businessnewsdaily.com/">BusinessNewsDaily</a></div>
+      <div><a href="http://www.laptopmag.com/">LAPTOP</a></div>
+      <div><a href="http://www.myhealthnewsdaily.com/">MyHealthNewsDaily</a></div>
+      <div><a href="http://www.space.com/">SPACE.com</a></div>
+      <div><a href="http://www.securitynewsdaily.com">SecurityNewsDaily</a></div>
+      <div><a href="http://www.livescience.com/">LiveScience</a></div>
+      <div><a href="http://www.innovationnewsdaily.com">InnovationNewsDaily</a></div>
+      <div><a href="http://www.technewsdaily.com/">TechNewsDaily</a></div>
+      <div><a href="http://www.ittechnewsdaily.com">IT TechNewsDaily</a></div>
+      <div><a href="http://www.newsarama.com/">Newsarama</a></div>
+      <div><a href="http://www.hermanstreet.com/">Herman Street</a></div>
+      <div><a href="http://www.lifeslittlemysteries.com/">Life's Little Mysteries</a></div>
+      <div><a href="http://www.northorion.com">North Orion</a></div>
+      <div><a href="http://www.ouramazingplanet.com/">OurAmazingPlanet</a></div>
+    </div>
+  </div>
+
+  <div class="footer_mailing">
+    <form name="footer_email">
+      <div class="mailing_top">
+        <div><img src="http://i.space.com/images/site/join-mailing.jpg" alt="JOIN OUR MAILING LIST" /></div>
+        <div class="mailing_right">Join our community</div>
+      </div>
+      <div class="" style="width:100%; float:left;" id="emailSignUp">
+        <div class="mailing_input">
+          <input type="text" id="email" name="email" value="Enter your email address" onblur="if(this.value=='') this.value='Enter your email address';" onfocus="if(this.value=='Enter your email address') this.value='';">
+        </div>
+        <div class="mailing_submit">
+          <button type="button" onsubmit="loadSignUp();" onclick="loadSignUp();" style="cursor:pointer; background-color: transparent; background-image: url('/images/site/submit-email.jpg'); background-repeat: no-repeat; border: 0 none; color: #FFFFFF; height: 34px; padding-top: 1px; width: 58px;" >&nbsp;</button>
+        </div>
+      </div>
+    </form>
+    <script type="text/javascript">
+      function loadSignUp(){
+        var loadsu;
+        loadsu=new XMLHttpRequest();
+        loadsu.onreadystatechange=function(){
+        if (loadsu.readyState==4 && loadsu.status==200){
+          document.getElementById("emailSignUp").innerHTML=loadsu.responseText;
+          }
+        }
+        var email_value=encodeURIComponent(document.getElementById("email").value);
+        var email_params = "email="+email_value;
+        loadsu.open("POST","http://www.space.com/javascripts/email_ajax.php",true);
+        loadsu.setRequestHeader("Content-type", "application/x-www-form-urlencoded")
+        loadsu.send(email_params);
+      }
+    </script>
+  </div>
+  <div class="footer_share">
+    <div><img src="http://i.space.com/images/site/social/follow-us-on.jpg" alt="Follow Us On" /></div>
+    <div>
+      <div><a href="/home/feed/site.xml"><img src="http://i.space.com/images/site/foot-rss.jpg" alt="RSS" title="RSS" /></a></div>
+      <div><a href="http://www.facebook.com/pages/Spacecom/17610706465"><img src="http://i.space.com/images/site/foot-fb.jpg" alt="Facebook" title="Facebook" /></a></div>
+      <div><a href="http://twitter.com/SPACEdotcom"><img src="http://i.space.com/images/site/foot-twit.jpg" alt="Twitter" title="Twitter" /></a></div>
+      <div><a href="http://www.youtube.com/user/VideoFromSpace"><img src="http://i.space.com/images/site/foot-youtube.jpg" alt="YouTube" title="YouTube" /></a></div>
+    </div>
+    <div>Copyright &copy; 2012<br /> TechMediaNetwork.com<br /> All rights reserved.</div>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+    </div>
+  
+<!-- Start Google Analytics tag -->
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+
+  _gaq.push(['_setAccount', 'UA-11681412-1'],
+            ['_setDomainName', 'space.com'],
+            ['_setCustomVar', 1, 'Section', 'video', 3],
+            ['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- End Google Analytics tag -->
+
+<!-- Start Quantcast tag -->
+  <script type="text/javascript">
+    _qoptions={
+    qacct:"p-306sOjcgY0NWo"
+    };
+  </script>
+  <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+  <noscript>
+    <img src="http://pixel.quantserve.com/pixel/p-306sOjcgY0NWo.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+  </noscript>
+<!-- End Quantcast tag -->
+
+  
+<script>
+    pagebanners={
+        zone:'tmn.space/video',kw:"mit,%20acceptance%20letter,%20near%20space,%20tube,%20high%20school%20girl,%20high%20altitude%20balloon,%20project,%20massachusetts%20institute%20of%20technology,%20video,%20videofromspace",
+        ads:[
+            {num:'leaderboard',tile:1,w:970,h:90,sz:'728x90,970x66,970x90',mh:90},
+            {num:'billboard',tile:2,w:300,h:250,sz:'300x250,300x600',mh:600},
+            {num:'billboard2',tile:3,w:300,h:423,sz:'300x423',mh:600}
+            ]
+    };
+    runAds();
+</script>
+
+  <div id="stuff_pop" style="display:none; overflow:visible; position:absolute;"></div>
+  <div id='popup_object_ad' style='display:none;'>
+    <iframe id='popup_object_ad_ifrm' name='popup_object_ad_ifrm' scrolling='no' frameborder='0' src='http://api.toptenreviews.com/r/c/request_ad.php?path=tmn/space'></iframe>
+</div>
+<script type='text/javascript' id='popup_tag_script' src='http://api.toptenreviews.com/r/c/request.php?path=tmn/space&sub_id=default'></script>
+    
+  
+  
+
+<script type="text/javascript" src="http://space.us.intellitxt.com/intellitxt/front.asp?ipid=25732"></script>
+
+  
+  <script type="text/javascript" src="http://tags.crwdcntrl.net/c/629/cc.js"></script>
+<script type="text/javascript" language="javascript">LOTCC.bcp();</script>
+</body>
+</html>

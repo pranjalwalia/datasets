@@ -1,0 +1,1364 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+	
+	<title>
+		Honey-Soy Chicken Kebabs recipe - All recipes UK
+	</title>
+	<link href="http://allrecipes.co.uk/recipe/1684/honey-soy-chicken-kebabs.aspx" rel="canonical" />
+	<meta content="Honey-Soy Chicken Kebabs" name="title" />
+	<meta content="Honey, soy sauce and garlic make a terrific marinade and basting sauce for chicken kebabs with your favourite vegetables - try onion, peppers, cherry tomatoes or mushrooms. Barbecue or grill." name="description" />
+	<meta content="30minutesto1hour,Acrowd,BBQ,Chicken,Dairyfree,Dinner,Easy,Eggfree,Main" name="keywords" />
+	<link href="http://ukcdn.ar-cdn.com/Recipes/XLarge/65644354-ee00-4199-a79b-386603a2be20.jpg" rel="image_src" />
+	
+    <!-- Facebook open graph data -->
+    <meta content="Honey-Soy Chicken Kebabs" property="og:title" />
+    <meta content="food" property="og:type" />
+    <meta content="http://allrecipes.co.uk/recipe/1684/honey-soy-chicken-kebabs.aspx" property="og:url" />
+    <meta content="http://ukcdn.ar-cdn.com/Recipes/Large/65644354-ee00-4199-a79b-386603a2be20.jpg" property="og:image" />
+    <meta content="http://allrecipes.co.uk" property="og:site_name" />
+    <meta content="79328513686" property="fb:page_id" />
+     
+          
+     <link rel='stylesheet' type='text/css' 
+                    href='http://ukcdn.ar-cdn.com/allrecipes-combined.css?v=2.11' />
+    
+     <link rel='stylesheet' type='text/css' 
+                    href='http://ukcdn.ar-cdn.com/allrecipes_uk.css?v=2.11' />
+	
+	<script type="text/javascript" language="javascript">
+        var ROOT_URL = "/";
+        var recipeId;
+        var PHOTO_URL = "http://ukcdn.ar-cdn.com";
+	</script>
+    <script src='http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.1.min.js?v=2.11' type='text/javascript'></script>
+     
+
+     <script src='http://ukcdn.ar-cdn.com/scripts/Messages.js?v=2.11' type='text/javascript'></script>
+     <script src='http://ukcdn.ar-cdn.com/scripts/combined-min.js?v=2.11' type='text/javascript'></script>
+     <script src='http://ukcdn.ar-cdn.com/scripts/combined-mvc-min.js?v=2.11' type='text/javascript'></script>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script type="text/javascript">
+    // FB like
+    $(function () {
+     if (document.getElementById('facebook-jssdk')) { return; }
+        var like = document.createElement('script'); like.type = 'text/javascript'; like.async = true;
+        like.src = '//connect.facebook.net/en_GB/all.js'; like.id = 'facebook-jssdk';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(like, s);
+    }); 
+window.fbAsyncInit = function() {
+    FB.init({     
+      status : true, // check login status
+      cookie : true, // enable cookies to allow the server to access the session
+      xfbml : true, // parse XFBML  
+      channelUrl : window.location.protocol + '//' + window.location.hostname + '/fb_channel.aspx'
+    }); }
+    $(function () {
+      window.___gcfg = {lang: 'en-GB'};
+      if (document.getElementById('google-plus')) { return; }
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js'; po.id = 'google-plus';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    });
+    $(function () {
+      if (document.getElementById('pin-it')) { return; }
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'http://assets.pinterest.com/js/pinit.js'; po.id = 'pin-it';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+    });
+</script>
+<script type="text/javascript">
+// enable the click event handler on all the pin it buttons
+$(function () {
+    $(".pin-it-button").attr("href", "#").click(function () {
+        handlePinItClickEvent(this);
+    });
+});
+
+// Handle the pin it click event by building the url and calling the pinIt helper.
+function handlePinItClickEvent(element) {
+
+    // select recipe page photo - alt text used for description
+    var media, description, mainelement = $("#r_mainPhoto");    
+
+    // if we have a main photo now we are on a recipe page
+    if (mainelement.length) {
+        // pull the image and use the alt text for the description
+        description = mainelement.attr("alt");
+        media = $("meta[property='og:image']").attr("content");
+    }
+    else {
+        // pull the header for the article page
+        mainelement = $("#RecipeBody h1");
+        if (mainelement.length) {
+            // pull the title of the article and the image from the meta tag
+            description = $("#RecipeBody h1").text();
+            media = $("meta[property='og:image']").attr("content");
+
+        } 
+        // no other scenarios are supported at this time
+    }
+
+    var pinQueryString = '?url=';
+    pinQueryString += document.URL.split("?")[0].replace("#", "");
+    pinQueryString = pinQueryString + "&media=" + media;
+    pinQueryString = pinQueryString + "&description=" + escape(description + " @ " + location.host);
+
+    return pinItToPopupWindow(element, 'http://pinterest.com/pin/create/button/' + pinQueryString);
+}
+
+// Create a new window that directs to the pinit url.
+function pinItToPopupWindow(pinItButton, pinUrl) {
+    // open a new window with the pin url
+    var modal = window.open(pinUrl, 'signin', 'width=670,height=300');
+
+    // define a method that will wait for the dialog to be closed so we can update the button class
+    var wait = function () {
+        setTimeout(function () {
+            if (modal == null) {
+                //failure();
+                return;
+            }
+            if (modal.closed)
+                pinItButton.setAttribute('class', 'pinned');
+            else
+                wait();
+        }, 25);
+    };
+    // run our wait method so the button will be updated if possible
+    wait();
+
+    return false;
+} 
+</script>
+	<div class="fullheightcontainer">
+		
+	<div class="ad width728">
+	<div class="marBotIE17">
+		<!-- begin ad tag (tile=1) -->
+<script type="text/javascript">
+var ord = Number(ord) || Math.floor(Math.random()*10e16);
+document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/aruk.recipes/bbq;tile=1;pos=1;dcopt=ist;sz=728x90,970x66;k=30minutesto1hour;k=Acrowd;k=BBQ;k=Chicken;k=Dairyfree;k=Dinner;k=Easy;k=Eggfree;k=Main;t=bbq;t=chicken;t=chickenbreast;t=bbqchicken;t=quickchicken;t=chickendinner;t=bbqkebab;t=dairyfree;t=quickandeasy;t=cutsofchicken;t=bbqchickenkebabs;t=popularchicken;t=bbqchickenbreast;ord=' + ord + '?"><\/script>');
+</script><noscript><a href="http://ad.doubleclick.net/jump/aruk.recipes/bbq;tile=1;pos=1;sz=728x90;k=30minutesto1hour;k=Acrowd;k=BBQ;k=Chicken;k=Dairyfree;k=Dinner;k=Easy;k=Eggfree;k=Main;t=bbq;t=chicken;t=chickenbreast;t=bbqchicken;t=quickchicken;t=chickendinner;t=bbqkebab;t=dairyfree;t=quickandeasy;t=cutsofchicken;t=bbqchickenkebabs;t=popularchicken;t=bbqchickenbreast;ord=123456789?" target="_blank"><img src="http://ad.doubleclick.net/ad/aruk.recipes/bbq;tile=1;pos=1;sz=728x90;k=30minutesto1hour;k=Acrowd;k=BBQ;k=Chicken;k=Dairyfree;k=Dinner;k=Easy;k=Eggfree;k=Main;t=bbq;t=chicken;t=chickenbreast;t=bbqchicken;t=quickchicken;t=chickendinner;t=bbqkebab;t=dairyfree;t=quickandeasy;t=cutsofchicken;t=bbqchickenkebabs;t=popularchicken;t=bbqchickenbreast;ord=123456789?" width="728" height="90" border="0" alt=""/></a></noscript>
+<!-- End ad tag -->
+	</div>
+</div>
+
+		
+<div class="header ">
+	<a clickmapkey="tn:logo" id="lnkImgLogo" href="/" class="noBorder leftFloat arlogo">
+		<img alt="Allrecipes UK | Ireland" src="http://ukcdn.ar-cdn.com/arlogo-uk.gif"></img></a>
+	<div class="leftFloat searchControl bigFont">
+		<span class="leftFloat">
+			SEARCH FOR:</span>
+		<input type="radio" class="leftFloat searchCnt marlt5" name="searchRadio" value="1"
+			checked="checked" id="recipeRadio" />
+		<label class="leftFloat marlt5" for="recipeRadio">
+			Recipes</label>
+		<input type="radio" class="leftFloat searchCnt marlt5" name="searchRadio" value="2"
+			id="articleRadio" />
+		<label class="leftFloat marlt5" for="articleRadio">
+			How to articles</label>
+		<div class="clear">
+		</div>
+		<div class="martop5">
+			<input type="text" class=" bigFont searchbox autoSearch ac_input watermarked" id="txtRecipeSearch"
+				name="txtRecipeSearch" autocomplete="off"/>
+			<img title="find recipes or articles" alt="find recipes or articles"
+				src="http://ukcdn.ar-cdn.com/btn_search.gif"
+				clickmapkey="tn:search" class="searchGo top" id="searchGo">
+		</div>
+	</div>
+	<div class="rightFloat  martop15" id="divLogInBox">
+	</div>
+	<div class="clear">
+	</div>
+	<ul class="h3 hidden topnav">
+		<li style="border-left:1px dotted #ffd18c;"  class="activeTab"><a href="/recipes/recipe-search.aspx"
+			clickmapkey="tn:tm">
+			Recipes</a> </li>
+		<li class="topnav1"><a href="http://allrecipes.co.uk/recipes/salad-recipes.aspx?ft=1" clickmapkey="tn:tm" class="nobrd_bt inactiveTab">Salad</a></li><li class="topnav1"><a href="http://allrecipes.co.uk/recipes/chicken-recipes.aspx?ft=2" clickmapkey="tn:tm" class="nobrd_bt inactiveTab">Chicken</a></li>
+		
+		<li><a href="/how-to/how-to-cook.aspx" clickmapkey="tn:tm">
+			How to</a> </li>
+		<li><a href="/photos/newest-photos.aspx" clickmapkey="tn:tm"
+			rel="nofollow">
+			Pictures</a> </li>
+		<li><a href="/cooks/cook-search.aspx" clickmapkey="tn:tm"
+			rel="nofollow">
+			Cooks</a> </li>
+		
+		<li ><a href="/cooks/my-stuff/my-saved-recipes.aspx" clickmapkey="tn:tm" rel="nofollow"  class="js-authRequired js-successGotoTarget" id="a-topnavmystuff">
+			My stuff</a> </li>
+		<li class="subRecipeTab"><a href="/cooks/my-stuff/submit-a-recipe.aspx"
+			clickmapkey="tn:tm" class="nobrd_bt subRecipeTab js-authRequired js-successGotoTarget" id="a-topnavsubmit" rel="nofollow">
+			Add my recipe</a> </li>
+	</ul>
+</div>
+
+<script type="text/javascript">
+		initializeHeader();
+</script>
+
+
+	<script type="text/javascript">
+	var vd_rx;
+	var _IsReviewPopupLoaded = false;
+	recipeId = 1684;
+	var postAction = '';
+	var rvwPopup;
+	vd_rx = new aRecipe(recipeId, ARIntl.Authentication.isUserAuthenticated(),'/recipe/addtag','/recipe/persistreview',
+		'/recipe/addtofavorites','/recipe/deletetag',
+		'/recipe/deletereview','/recipe/reviewbox',
+		'/recipe/tagcloud','/recipe/getreviews',
+		'/recipe/addreviewbox');	
+	function resolveContext(){
+		return vd_rx;
+	}		
+	</script>
+	<form method="post" id="frmR" action="/recipe/1684/honey-soy-chicken-kebabs.aspx">
+	<input id="recipeId" name="recipeId" type="hidden" value="1684" />
+	<input type="hidden" id="postAction" name="pa" />
+	</form>
+	<div class="whitebg hidden width100p pagebg">
+		<div class="leftContainer">
+			<div class="leftCenter">
+				<div class="leftTop">
+					<div id="leftCategories" class="facet_box">
+						
+<h2 class="h3 orange martop10">
+	Related categories</h2>
+
+<h3 class="biggerFont grey marbot5 martop10">
+	Main ingredients</h3>
+<ul>
+	
+	<li>
+		<a clickmapkey="ln:kw" href="/recipes/chicken-recipes.aspx">Chicken</a><span> (2311)</span></li>
+	
+</ul>
+
+<h3 class="biggerFont grey marbot5 martop10">
+	Recipe type</h3>
+<ul>
+	
+	<li>
+		<a clickmapkey="ln:kw" href="/recipes/dinner-recipes.aspx">Dinner</a><span> (7106)</span></li>
+	
+	<li>
+		<a clickmapkey="ln:kw" href="/recipes/main-recipes.aspx">Main</a><span> (7307)</span></li>
+	
+</ul>
+
+<h3 class="biggerFont grey marbot5 martop10">
+	Other</h3>
+<ul>
+	
+	
+	<li><a class="jqTagHub" href="/recipes/tag-2550/chicken-breast-recipes.aspx">Chicken breast recipes</a><span> (1275)</span></li>
+	<li><a class="jqTagHub" href="/recipes/tag-3541/bbq-chicken-recipes.aspx">BBQ chicken recipes</a><span> (131)</span></li>
+	<li><a class="jqTagHub" href="/recipes/tag-1887/quick-chicken-recipes.aspx">Quick chicken recipes</a><span> (935)</span></li>
+	<li><a class="jqTagHub" href="/recipes/tag-5655/chicken-dinner-recipes.aspx">Chicken dinner recipes</a><span> (1542)</span></li>
+	<li><a class="jqTagHub" href="/recipes/tag-3550/bbq-kebabs.aspx">BBQ kebabs</a><span> (48)</span></li>
+	
+	<li><a class="jqTagHub" href="/recipes/tag-361/quick-and-easy-recipes.aspx">Quick and easy recipes</a><span> (2575)</span></li>
+	<li><a class="jqTagHub" href="/recipes/tag-6580/cuts-of-chicken-recipes.aspx">Cuts of chicken</a><span> (1516)</span></li>
+	<li><a class="jqTagHub" href="/recipes/tag-6611/bbq-chicken-kebabs-recipes.aspx">BBQ chicken kebabs</a><span> (16)</span></li>
+	<li><a class="jqTagHub" href="/recipes/tag-6636/popular-chicken-recipes.aspx">Popular chicken recipes</a><span> (1050)</span></li>
+	<li><a class="jqTagHub" href="/recipes/tag-6662/bbq-chicken-breast-recipes.aspx">BBQ chicken breasts</a><span> (70)</span></li>
+	
+</ul>
+
+						<div class="padtop20">
+							
+<h2 class="h3 orange martop10 marbot5">
+	Related articles and cooking videos</h2>
+
+<ul>
+	<li>
+		<a href="/how-to/121/how-to-make-chicken-tikka-kebabs-video.aspx" clickmapkey="ln:ra">How to make chicken tikka kebabs video</a></li>
+</ul>
+
+<ul>
+	<li>
+		<a href="/how-to/88/how-to-make-toad-in-the-hole-video.aspx" clickmapkey="ln:ra">How to make toad in the hole video</a></li>
+</ul>
+
+<ul>
+	<li>
+		<a href="/how-to/9/how-to-debone-a-chicken-thigh.aspx" clickmapkey="ln:ra">How to debone a chicken thigh</a></li>
+</ul>
+
+<ul>
+	<li>
+		<a href="/how-to/54/how-to-make-bbq-ribs-video.aspx" clickmapkey="ln:ra">How to make BBQ ribs video</a></li>
+</ul>
+
+<ul>
+	<li>
+		<a href="/how-to/85/how-to-make-lamb-curry-video.aspx" clickmapkey="ln:ra">How to make lamb curry video</a></li>
+</ul>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="leftBottom">
+			</div>
+		</div>
+		<div class="centerContainer hrecipe">
+			<div id="sm" class="success width90p hidden" style="display: none">
+				<div class="leftFloat csssprite succsprite">
+				</div>
+				<div class="leftFloat marlt10 width90p">
+					<h2>
+						Success!
+					</h2>
+					<p>
+						Success! This recipe has been added to your
+						<a href="/cooks/my-stuff/my-saved-recipes.aspx">
+							Saved recipes.
+						</a>
+					</p>
+				</div>
+				<div class="clear">
+				</div>
+			</div>
+			<h1 class="orange marbot10 fn">
+				Honey-Soy Chicken Kebabs</h1>
+			<div class="review hreview-aggregate width100p hidden">
+						
+				<div class="leftFloat martop4_cn">
+					<span class='csssprite bigStarSprite leftFloat bigFullStar' title='4'></span><span class='csssprite bigStarSprite leftFloat bigFullStar' title='4'></span><span class='csssprite bigStarSprite leftFloat bigFullStar' title='4'></span><span class='csssprite bigStarSprite leftFloat bigFullStar' title='4'></span><span class='csssprite bigStarSprite leftFloat bigEmptyStar' title='4'></span>
+					<span style="display:none"><abbr class="rating" title="4">4</abbr></span>
+				</div>
+				<div class="leftFloat marlt10 martop3 inlineblock">
+					<a href="javascript:void(null)" id="rAdd" class="jqAddRvw" data-pa="3">
+						Review it</a>
+						<span class="grey">| </span><a clickmapkey="mn" href="/recipe/1684/reviews-comments.aspx">Read</a><span class="jqCount grey count"> (9) </span>
+				</div>
+				<div class="leftFloat marlt10 line1-6 difficulty">
+					<a class="bgKwrd8-1" clickmapkey="mn:diff" href="/recipes/easy-recipes.aspx">Easy</a>
+				</div>
+			</div>
+			<div class="greydottedline martop10"></div>
+			<div class="hidden width100p martop10">
+				<div class="leftFloat width250">
+					<a class="noDecoration" href="javascript:void(null);" id="a-a-recipephotoadd"><img alt="Honey-Soy Chicken Kebabs" class="photo  xlargeImg" id="r_mainPhoto" src="http://ukcdn.ar-cdn.com/Recipes/XLarge/65644354-ee00-4199-a79b-386603a2be20.jpg" /></a>
+					
+					<div class="orgbox orange pad5 width238 hidden" style="margin-top: -2px">
+						<div class="leftFloat width140">
+							<a class="addphoto noBorder orange js-authRequired js-successGotoTarget" href="/cooks/my-stuff/post-photo-for-recipe-1684.aspx" id="a-recipephotoadd">Add a picture</a>
+						</div>
+						<div class="rightFloat">
+							<span id="r_pc_cnt">1 of 2</span>
+							<img alt="&lt;" class="baseline handCursor" id="r_i_prev" src="http://ukcdn.ar-cdn.com/page_sm_back_hot.gif" />
+							<img alt=">" class="baseline handCursor" id="r_i_next" src="http://ukcdn.ar-cdn.com/page_sm_next_hot.gif" />
+						</div>
+					</div>
+					<div class="martop5 line1-6">
+						<span class="bold">Picture by:</span>
+						<a class="grey noDecoration defaultCursor" clickmapkey="mn:pb" href="javascript:void(null)" id="r_photoBy" rel="nofollow">SunFlower</a>
+					</div>
+					
+				</div>
+				<div class="rightFloat width210 marlt10">
+					
+					<b>
+						Recipe by:
+					</b>
+					<span class="author">Ann Marie</span>
+					<p class="desc martop10">
+						
+						<span class="summary">Honey, soy sauce and garlic make a terrific marinade and basting sauce for chicken kebabs with your favourite vegetables - try onion, peppers, cherry tomatoes or mushrooms. Barbecue or grill.</span>
+					</p>
+					<p class="posrel">
+						
+					</p>
+					<p>
+						<span class="bgKwrd2-2">&nbsp;</span>
+						 
+						Ready in
+						<b class="duration">
+							<span class="value-title" title="PT30M"></span>30 mins</b>
+					</p>
+					<div class="martop5 marbot5">Saved by 102 cook(s)</div>
+					
+				</div>
+				
+			</div>
+					
+			
+			<div class="martop20 width100p">
+				<div class="leftFloat width250">
+					<h2 class="orange bold marbot5">
+						Ingredients</h2>
+					<div><span>Serves</span>: <span class="bold yield">12</span></div>
+					
+		<ul class="martop10">
+			
+			<li class="ingredient">
+				<span class="name">4 tablespoons vegetable oil</span></li>
+			
+			<li class="ingredient">
+				<span class="name">5 tablespoons honey</span></li>
+			
+			<li class="ingredient">
+				<span class="name">5 tablespoons soy sauce</span></li>
+			
+			<li class="ingredient">
+				<span class="name">1/4 teaspoon freshly ground black pepper</span></li>
+			
+			<li class="ingredient">
+				<span class="name">8 skinless, boneless chicken breast fillets - cut into cubes</span></li>
+			
+			<li class="ingredient">
+				<span class="name">2 cloves garlic</span></li>
+			
+			<li class="ingredient">
+				<span class="name">5 onions, cut into pieces</span></li>
+			
+			<li class="ingredient">
+				<span class="name">2 red peppers, cut into pieces</span></li>
+			
+			<li class="ingredient">
+				<span class="name">skewers</span></li>
+			
+		</ul>
+
+				</div>
+				<div class="rightFloat toolbox">
+					<a id="a1" class="jqAf" data-pa="1"><span class="recipe_icons iconSave"></span></a>
+                         <p><a href="javascript:void(null);" clickmapkey="mn:add to favourite" class="viewrecipe_icon jqAf" title="Save to favourites">Save to favourites</a></p>
+                         
+                         <div class="clear"></div>
+                         
+                         <a rel="nofollow" href="/recipe/1684/email-a-friend.aspx"><span class="recipe_icons iconEmail"></span></a>
+                         <p><a title="Email a friend" clickmapkey="mn:email friend" rel="nofollow" class="viewrecipe_icon" href="/recipe/1684/email-a-friend.aspx">Email a friend</a></p>
+
+                         <div class="clear"></div>
+                         
+                         <a rel="nofollow" href="/recipe/1684/print-friendly.aspx"><span class="recipe_icons iconPrint"></span></a>
+                         <p><a title="Print friendly" clickmapkey="mn:print recipe" rel="nofollow" class="viewrecipe_icon" href="/recipe/1684/print-friendly.aspx">Print friendly</a></p>
+                         
+                         <div class="clear"></div>
+                         <hr />
+
+                         
+<div class="top martop5"><div runat="server" id="divButtonContainer" class="fb-like" data-send="false" data-layout="button_count" data-width="180"
+    data-show-faces="false" data-font="verdana" >
+</div></div>
+<div class="top martop5"><g:plusone size="medium"></g:plusone></div>
+<div class="top martop5 padbot5"><a href="http://pinterest.com/pin/create/button/" class="pin-it-button" count-layout="horizontal"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a></div>
+				</div>
+			</div>
+               <div class="clear"></div>
+			<h2 class="orange bold marbot5 martop20">
+				Preparation method</h2>
+			Prep: <span class="bold"><span class="preptime"><span class="value-title" title="PT15M"></span>15 mins</span></span>			
+			| <span>Cook: </span><span class="bold"><span class="cooktime"><span class="value-title" title="PT15M"></span>15 mins</span></span>
+			
+			
+			
+<div class="martop10 marbot20">
+	
+	<div class="martop10 hidden width100p">
+		<div class="leftFloat marrt10 orange rightAlign line1-6" style="width:18px;">1.</div>
+		
+		<div class="leftFloat line1-6 width90p">
+			In a large bowl, whisk together oil, honey, soy sauce and pepper. Before adding chicken, reserve a small amount of marinade to brush onto kebabs while cooking. Place the chicken, garlic, onions and peppers in the bowl, and marinate in the refrigerator at least 2 hours (the longer the better).
+		</div>
+	</div>
+	
+	<div class="martop10 hidden width100p">
+		<div class="leftFloat marrt10 orange rightAlign line1-6" style="width:18px;">2.</div>
+		
+		<div class="leftFloat line1-6 width90p">
+			Preheat barbecue for high heat.
+		</div>
+	</div>
+	
+	<div class="martop10 hidden width100p">
+		<div class="leftFloat marrt10 orange rightAlign line1-6" style="width:18px;">3.</div>
+		
+		<div class="leftFloat line1-6 width90p">
+			Drain marinade from the chicken and vegetables, and discard marinade. Thread chicken and vegetables alternately onto the skewers.
+		</div>
+	</div>
+	
+	<div class="martop10 hidden width100p">
+		<div class="leftFloat marrt10 orange rightAlign line1-6" style="width:18px;">4.</div>
+		
+		<div class="leftFloat line1-6 width90p">
+			Lightly oil the cooking grate. Cook kebabs for 12 to 15 minutes, until chicken juices run clear. Turn and brush with reserved marinade frequently.
+		</div>
+	</div>
+	
+</div>
+
+<div class="marbot10">
+
+	<span class="orange">BBQ tips</span>
+	<p>
+		Check out our <a href="http://allrecipes.co.uk/how-to/tag-5240/how-to-bbq.aspx">BBQ how-to guides and videos</a> for easy tips on how to BBQ to perfection!
+	</p>
+	
+</div>
+			<div class="grey width100p hidden line1-6">
+				<div class="leftFloat width60p">
+					Provided by:Allrecipes
+				</div>
+				<div class="rightFloat">
+					Last updated:
+					25 Oct 2011</div>
+			</div>
+			
+			<div class="greydottedline martop5 marbot10">
+			</div>
+			<div class="ad">
+	<div class="marBotIE17">
+		<!-- begin ad tag (tile=3) -->
+<script type="text/javascript">
+var ord = Number(ord) || Math.floor(Math.random()*10e16);
+document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/aruk.recipes/bbq;tile=3;pos=1;sz=468x60;k=30minutesto1hour;k=Acrowd;k=BBQ;k=Chicken;k=Dairyfree;k=Dinner;k=Easy;k=Eggfree;k=Main;t=bbq;t=chicken;t=chickenbreast;t=bbqchicken;t=quickchicken;t=chickendinner;t=bbqkebab;t=dairyfree;t=quickandeasy;t=cutsofchicken;t=bbqchickenkebabs;t=popularchicken;t=bbqchickenbreast;ord=' + ord + '?"><\/script>');
+</script><noscript><a href="http://ad.doubleclick.net/jump/aruk.recipes/bbq;tile=3;pos=1;sz=468x60;k=30minutesto1hour;k=Acrowd;k=BBQ;k=Chicken;k=Dairyfree;k=Dinner;k=Easy;k=Eggfree;k=Main;t=bbq;t=chicken;t=chickenbreast;t=bbqchicken;t=quickchicken;t=chickendinner;t=bbqkebab;t=dairyfree;t=quickandeasy;t=cutsofchicken;t=bbqchickenkebabs;t=popularchicken;t=bbqchickenbreast;ord=123456789?" target="_blank"><img src="http://ad.doubleclick.net/ad/aruk.recipes/bbq;tile=3;pos=1;sz=468x60;k=30minutesto1hour;k=Acrowd;k=BBQ;k=Chicken;k=Dairyfree;k=Dinner;k=Easy;k=Eggfree;k=Main;t=bbq;t=chicken;t=chickenbreast;t=bbqchicken;t=quickchicken;t=chickendinner;t=bbqkebab;t=dairyfree;t=quickandeasy;t=cutsofchicken;t=bbqchickenkebabs;t=popularchicken;t=bbqchickenbreast;ord=123456789?" width="468" height="60" border="0" alt=""/></a></noscript>
+<!-- End ad tag -->
+	</div><div class="marbot5 width100p hidden martop5 line1-6">
+		<div class="rightFloat">
+			<a rel="nofollow" href="/advertisewithus.aspx?468x60">ADVERTISE WITH US</a>
+		</div>
+	</div>
+</div>
+			<a name="reviews"></a>
+               <div id="rvwPop"></div>
+			<a name="rating"></a>
+               <div class="martop20" style="zoom: 100%">
+				<h2 class="orange leftFloat bold">
+					Reviews & comments</h2>
+				<div class="rightFloat reviewIcon csssprite bigFont">
+					<a href="javascript:void(null)" clickmapkey="mn" class="inlineblock jqAddRvw " id="rAdd1" data-pa="3">
+						Review this recipe</a></div>
+				<div class="clear">
+				</div>
+			</div>
+			<div class="greydottedline martop5 marbot10">
+			</div>
+			<div id="rvsCntr">
+				
+<div class="martop10 jqRevCntr">
+	<div class="leftFloat width80p">
+		
+		<div class="leftFloat">
+			<div class="leftFloat martop3">
+				<span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span>
+			</div>
+			<div class="bgKwrd8-1  leftFloat marlt10">Easy</div>
+			<div class="clear">
+			</div>
+		</div>
+		
+		<div class="clear">
+		</div>
+		
+		<div class="martop5">
+			<span class="emoticon" style='background-position:-23px 0'></span> very nice and easy to make. my kids loved them</div>
+		<div class="grey martop5">
+			Posted:
+			07 Jan 2011</div>
+		<div class="clear">
+		</div>
+		<div class="martop10">
+			
+			<div class="jqHelp">
+				Was this review helpful?
+				[<a href="javascript:void(null);" onclick="resolveContext().likeReview(this,9491);">YES</a>]
+			</div>
+			<div><span class="jqHCount">2 user(s) found this review helpful</span></div>
+		</div>
+	</div>
+	<div class="rightFloat center width75 hidden">
+		<a class="noDecoration" href="/cooks/39112/tori21x.aspx" rel="nofollow"><img alt="tori21x" class=" smallImg" src="http://ukcdn.ar-cdn.com/Personal/Small/default-uk.gif" /></a>
+		<p class="">
+			<a href="/cooks/39112/tori21x.aspx" rel="nofollow" title="tori21x">tori21x</a>
+		</p>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+<div class="greysolidline martop10 marbot10">
+</div>
+
+<div class="martop10 jqRevCntr">
+	<div class="leftFloat width80p">
+		
+		<div class="leftFloat">
+			<div class="leftFloat martop3">
+				<span class='csssprite smallStarSprite leftFloat smallFullStar' title='4'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='4'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='4'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='4'></span><span class='csssprite smallStarSprite leftFloat smallEmptyStar' title='4'></span>
+			</div>
+			<div class="bgKwrd8-1  leftFloat marlt10">Easy</div>
+			<div class="clear">
+			</div>
+		</div>
+		
+		<div class="clear">
+		</div>
+		
+		<div class="martop5">
+			My partner and I decided we needed a marinade for our kebabs so we found this one and decided to give it a try. Normally I struggle to get him to clear his plate. This time I had to remind him to leave some for me. <span class="emoticon" style='background-position:-161px 0'></span></div>
+		<div class="grey martop5">
+			Posted:
+			15 Apr 2010</div>
+		<div class="clear">
+		</div>
+		<div class="martop10">
+			
+			<div class="jqHelp">
+				Was this review helpful?
+				[<a href="javascript:void(null);" onclick="resolveContext().likeReview(this,6514);">YES</a>]
+			</div>
+			<div><span class="jqHCount">2 user(s) found this review helpful</span></div>
+		</div>
+	</div>
+	<div class="rightFloat center width75 hidden">
+		<a class="noDecoration" href="/cooks/25255/sleepichick.aspx" rel="nofollow"><img alt="Sleepichick" class=" smallImg" src="http://ukcdn.ar-cdn.com/Personal/Small/default-uk.gif" /></a>
+		<p class="">
+			<a href="/cooks/25255/sleepichick.aspx" rel="nofollow" title="Sleepichick">Sleepichick</a>
+		</p>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+<div class="greysolidline martop10 marbot10">
+</div>
+
+<div class="martop10 jqRevCntr">
+	<div class="leftFloat width80p">
+		
+		<div class="leftFloat">
+			<div class="leftFloat martop3">
+				<span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span>
+			</div>
+			<div class="bgKwrd8-1  leftFloat marlt10">Easy</div>
+			<div class="clear">
+			</div>
+		</div>
+		
+		<div class="clear">
+		</div>
+		
+		<div class="martop5">
+			I made these for my husband & our friends and they were delicious,i let the chicken marinate for 4 hours in the fridge,but i forgot 2 put the garlic in<span class="emoticon" style='background-position:-69px 0'></span>Which i'm sure would have made them taste even better!I will definitely be making these again<span class="emoticon" style='background-position:-23px 0'></span></div>
+		<div class="grey martop5">
+			Posted:
+			12 Nov 2009</div>
+		<div class="clear">
+		</div>
+		<div class="martop10">
+			
+			<div class="jqHelp">
+				Was this review helpful?
+				[<a href="javascript:void(null);" onclick="resolveContext().likeReview(this,4769);">YES</a>]
+			</div>
+			<div><span class="jqHCount">2 user(s) found this review helpful</span></div>
+		</div>
+	</div>
+	<div class="rightFloat center width75 hidden">
+		<a class="noDecoration" href="/cooks/14991/keri.aspx" rel="nofollow"><img alt="Keri" class=" smallImg" src="http://ukcdn.ar-cdn.com/Personal/Small/d594ccb6-8dd6-4f6e-b78f-f72ef22bdc0c.jpg" /></a>
+		<p class="">
+			<a href="/cooks/14991/keri.aspx" rel="nofollow" title="Keri">Keri</a>
+		</p>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+<div class="greysolidline martop10 marbot10">
+</div>
+
+<div class="martop10 jqRevCntr">
+	<div class="leftFloat width80p">
+		
+		<div class="leftFloat">
+			<div class="leftFloat martop3">
+				<span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span>
+			</div>
+			<div class="bgKwrd8-1  leftFloat marlt10">Easy</div>
+			<div class="clear">
+			</div>
+		</div>
+		
+		<div class="clear">
+		</div>
+		
+		<div class="martop5">
+			Absolutely fantastic recipe!  Really easy and fast to prepare and tastes great.  I would definitely recommend letting it marinade overnight but I only had 1 hour and they were still delicious! Enjoy!</div>
+		<div class="grey martop5">
+			Posted:
+			30 Sep 2009</div>
+		<div class="clear">
+		</div>
+		<div class="martop10">
+			
+			<div class="jqHelp">
+				Was this review helpful?
+				[<a href="javascript:void(null);" onclick="resolveContext().likeReview(this,4391);">YES</a>]
+			</div>
+			<div><span class="jqHCount">2 user(s) found this review helpful</span></div>
+		</div>
+	</div>
+	<div class="rightFloat center width75 hidden">
+		<a class="noDecoration" href="/cooks/9744/silverwood.aspx" rel="nofollow"><img alt="silverwood" class=" smallImg" src="http://ukcdn.ar-cdn.com/Personal/Small/fe0087a4-ae4d-407c-875b-e9290fdeab3d.jpg" /></a>
+		<p class="">
+			<a href="/cooks/9744/silverwood.aspx" rel="nofollow" title="silverwood">silverwood</a>
+		</p>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+<div class="greysolidline martop10 marbot10">
+</div>
+
+<div class="martop10 jqRevCntr">
+	<div class="leftFloat width80p">
+		
+		<div class="clear">
+		</div>
+		Your comment:
+		<div class="martop5">
+			Something else. 
+This was really good.  The only thing that I did differently was to put all the chicken together on skewers and the veggies together on skewers.  This way, if the veggies got done first they didn't burn while waiting for the chicken.</div>
+		<div class="grey martop5">
+			Posted:
+			18 Jul 2008</div>
+		<div class="clear">
+		</div>
+		<div class="martop10">
+			
+			<div class="jqHelp">
+				Was this comment helpful?
+				[<a href="javascript:void(null);" onclick="resolveContext().likeReview(this,12096);">YES</a>]
+			</div>
+			<div><span class="jqHCount">9 users found this comment helpful</span></div>
+		</div>
+	</div>
+	<div class="rightFloat center width75 hidden">
+		<img alt="BEBOC" class=" smallImg" src="http://ukcdn.ar-cdn.com/Personal/Small/default-uk.gif" />
+		<p class="">
+			<span>BEBOC</span>
+		</p>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+<div class="greysolidline martop10 marbot10">
+</div>
+
+<div class="martop10 jqRevCntr">
+	<div class="leftFloat width80p">
+		
+		<div class="clear">
+		</div>
+		Your comment:
+		<div class="martop5">
+			Used different ingredients. 
+We had a party and decided to serve these for something a little different.  They were a hit!!  People are still talking about them 2 months later.  We marinated prawns in addition to the chicken and added pineapple to the skewers. They were fabulous.</div>
+		<div class="grey martop5">
+			Posted:
+			18 Jul 2008</div>
+		<div class="clear">
+		</div>
+		<div class="martop10">
+			
+			<div class="jqHelp">
+				Was this comment helpful?
+				[<a href="javascript:void(null);" onclick="resolveContext().likeReview(this,12097);">YES</a>]
+			</div>
+			<div><span class="jqHCount">10 users found this comment helpful</span></div>
+		</div>
+	</div>
+	<div class="rightFloat center width75 hidden">
+		<img alt="MARPUP69" class=" smallImg" src="http://ukcdn.ar-cdn.com/Personal/Small/default-uk.gif" />
+		<p class="">
+			<span>MARPUP69</span>
+		</p>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+<div class="greysolidline martop10 marbot10">
+</div>
+
+<div class="martop10 jqRevCntr">
+	<div class="leftFloat width80p">
+		
+		<div class="leftFloat">
+			<div class="leftFloat martop3">
+				<span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span>
+			</div>
+			<div class="bgKwrd8-1  leftFloat marlt10">Easy</div>
+			<div class="clear">
+			</div>
+		</div>
+		
+		<div class="clear">
+		</div>
+		Your review:
+		<div class="martop5">
+			This is an excellent recipe, and lives up to all the reviews. A few things to remember. 1. Double the sauce, or you won't have enough. 2. If you're going to baste with the sauce, do it in the last minutes of of cooking. 3. Marinating the chicken and veggies is a MUST, and the longer the better. I left them for about 8 hours. 4. If you're using wooden skewers, don't forget to soak them in water for a few hours, or they'll burn. 5. If you lower your bbq temperature a bit, you'll be able to put the veggies and chicken on the same skewers and they'll come out cooked to perfection. Oh, and you've got to add some pineapple pieces.</div>
+		<div class="grey martop5">
+			Posted:
+			18 Jul 2008</div>
+		<div class="clear">
+		</div>
+		<div class="martop10">
+			
+			<div class="jqHelp">
+				Was this review helpful?
+				[<a href="javascript:void(null);" onclick="resolveContext().likeReview(this,463);">YES</a>]
+			</div>
+			<div><span class="jqHCount">5 user(s) found this review helpful</span></div>
+		</div>
+	</div>
+	<div class="rightFloat center width75 hidden">
+		<img alt="Sous Andy" class=" smallImg" src="http://ukcdn.ar-cdn.com/Personal/Small/default-uk.gif" />
+		<p class="">
+			<span>Sous Andy</span>
+		</p>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+<div class="greysolidline martop10 marbot10">
+</div>
+
+<div class="martop10 jqRevCntr">
+	<div class="leftFloat width80p">
+		
+		<div class="leftFloat">
+			<div class="leftFloat martop3">
+				<span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span>
+			</div>
+			<div class="bgKwrd8-1  leftFloat marlt10">Easy</div>
+			<div class="clear">
+			</div>
+		</div>
+		
+		<div class="clear">
+		</div>
+		Your review:
+		<div class="martop5">
+			This recipe was  fantastic! Even my 3 year old ate the chicken.  My husband who is the pickiest human alive absolutely loved it.  Thanks for a great summer recipe!</div>
+		<div class="grey martop5">
+			Posted:
+			18 Jul 2008</div>
+		<div class="clear">
+		</div>
+		<div class="martop10">
+			
+			<div class="jqHelp">
+				Was this review helpful?
+				[<a href="javascript:void(null);" onclick="resolveContext().likeReview(this,464);">YES</a>]
+			</div>
+			<div><span class="jqHCount">1 user(s) found this review helpful</span></div>
+		</div>
+	</div>
+	<div class="rightFloat center width75 hidden">
+		<img alt="KIMBACUB" class=" smallImg" src="http://ukcdn.ar-cdn.com/Personal/Small/default-uk.gif" />
+		<p class="">
+			<span>KIMBACUB</span>
+		</p>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+<div class="greysolidline martop10 marbot10">
+</div>
+
+<div class="martop10 jqRevCntr">
+	<div class="leftFloat width80p">
+		
+		<div class="leftFloat">
+			<div class="leftFloat martop3">
+				<span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='5'></span>
+			</div>
+			<div class="bgKwrd8-1  leftFloat marlt10">Easy</div>
+			<div class="clear">
+			</div>
+		</div>
+		
+		<div class="clear">
+		</div>
+		Your review:
+		<div class="martop5">
+			This is a very tasty and versatile recipe!  I haven't had any trouble with lack of flavour; in fact, the other night I made this last minute and it only marinated about 30 minutes and was still delicious.  The kebabs are great, but one of my favourite ways to use this is as a sandwich:  leave the chicken breasts intact, or cut in half to fit a bap.  Otherwise, follow the recipe for marinating the chicken (I did put the garlic and onion in the marinade for flavour).  Serve on a bap (I prefer whole wheat) with cheese melted on top, honey mustard, and toppings of your choice (lettuce, tomato, onion, etc).  Yum!  If you make extra chicken, try the leftovers sliced on a salad for lunch the next day.</div>
+		<div class="grey martop5">
+			Posted:
+			18 Jul 2008</div>
+		<div class="clear">
+		</div>
+		<div class="martop10">
+			
+			<div class="jqHelp">
+				Was this review helpful?
+				[<a href="javascript:void(null);" onclick="resolveContext().likeReview(this,465);">YES</a>]
+			</div>
+			<div><span class="jqHCount">4 user(s) found this review helpful</span></div>
+		</div>
+	</div>
+	<div class="rightFloat center width75 hidden">
+		<img alt="HBAnderson" class=" smallImg" src="http://ukcdn.ar-cdn.com/Personal/Small/default-uk.gif" />
+		<p class="">
+			<span>HBAnderson</span>
+		</p>
+	</div>
+	<div class="clear">
+	</div>
+</div>
+<div class="greysolidline martop10 marbot10">
+</div>
+
+
+<script type="text/javascript">
+	resolveContext().updateReviewCount(9);
+</script>
+
+
+			</div>
+			
+			<p class="martop20 grey">
+				<a href="/recipe/1684/reviews-comments.aspx">>> View all reviews and comments</a>
+				<span class="jqCount"> (9)</span>
+			</p>
+			
+		</div>
+		<div class="rightContainer">
+			
+<noscript>
+	<div class="error">
+		<div class="errorsprite csssprite leftFloat">
+		</div>
+		<div class="leftFloat width220 marlt10">
+			This site requires a Javascript-enabled browser, for more instructions
+			<a href="/javascript.aspx" rel="nofollow">
+				click here.
+			</a>
+		</div>
+		<div class="clear">
+		</div>
+	</div>
+</noscript>
+
+<div class="orgsolidline marbot5">
+</div>
+<div class="marlt5">
+	<h2 class="h2 orange">
+		Similar recipes</h2>
+		
+	<div class="hidden width100p martop10">
+			<a class="noDecoration" href="/recipe/1392/easy-chicken-kebabs.aspx"><img alt="Easy Chicken Kebabs" class="leftFloat  smallImg" src="http://ukcdn.ar-cdn.com/Recipes/Small/20974.jpg" /></a>
+		<div class="leftFloat marlt10 width70p">
+			<a clickmapkey="rn:sr" href="/recipe/1392/easy-chicken-kebabs.aspx">Easy Chicken Kebabs</a>
+			<div class="hidden width100p martop5">
+				<span class='csssprite smallStarSprite leftFloat smallFullStar' title='4.5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='4.5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='4.5'></span><span class='csssprite smallStarSprite leftFloat smallFullStar' title='4.5'></span><span class='csssprite smallStarSprite leftFloat smallHalfStar' title='4.5'></span>
+			</div>
+		</div>
+	</div>
+		
+	<div class="hidden width100p martop10">
+			<a class="noDecoration" href="/recipe/2385/thai-style-chicken-kebabs.aspx"><img alt="Thai-Style Chicken Kebabs" class="leftFloat  smallImg" src="http://ukcdn.ar-cdn.com/Recipes/Small/52390.jpg" /></a>
+		<div class="leftFloat marlt10 width70p">
+			<a clickmapkey="rn:sr" href="/recipe/2385/thai-style-chicken-kebabs.aspx">Thai-Style Chicken Kebabs</a>
+			<div class="hidden width100p martop5">
+				<span class='csssprite smallStarSprite leftFloat smallEmptyStar' title='0'></span><span class='csssprite smallStarSprite leftFloat smallEmptyStar' title='0'></span><span class='csssprite smallStarSprite leftFloat smallEmptyStar' title='0'></span><span class='csssprite smallStarSprite leftFloat smallEmptyStar' title='0'></span><span class='csssprite smallStarSprite leftFloat smallEmptyStar' title='0'></span>
+			</div>
+		</div>
+	</div>
+		
+	<div class="hidden width100p martop10">
+			<a class="noDecoration" href="/recipe/1866/mexican-kebabs.aspx"><img alt="Mexican Kebabs" class="leftFloat  smallImg" src="http://ukcdn.ar-cdn.com/Recipes/Small/35806.jpg" /></a>
+		<div class="leftFloat marlt10 width70p">
+			<a clickmapkey="rn:sr" href="/recipe/1866/mexican-kebabs.aspx">Mexican Kebabs</a>
+			<div class="hidden width100p martop5">
+				<span class='csssprite smallStarSprite leftFloat smallEmptyStar' title='0'></span><span class='csssprite smallStarSprite leftFloat smallEmptyStar' title='0'></span><span class='csssprite smallStarSprite leftFloat smallEmptyStar' title='0'></span><span class='csssprite smallStarSprite leftFloat smallEmptyStar' title='0'></span><span class='csssprite smallStarSprite leftFloat smallEmptyStar' title='0'></span>
+			</div>
+		</div>
+	</div>
+
+</div>
+<div class="orgsolidline marbot10 martop10">
+</div>
+
+			<div>
+				<div class="ad">
+	<div class="marBotIE17">
+		<!-- begin ad tag (tile=4) -->
+<script type="text/javascript">
+var ord = Number(ord) || Math.floor(Math.random()*10e16);
+document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/aruk.recipes/bbq;tile=4;pos=1;sz=300x600,300x250;k=30minutesto1hour;k=Acrowd;k=BBQ;k=Chicken;k=Dairyfree;k=Dinner;k=Easy;k=Eggfree;k=Main;t=bbq;t=chicken;t=chickenbreast;t=bbqchicken;t=quickchicken;t=chickendinner;t=bbqkebab;t=dairyfree;t=quickandeasy;t=cutsofchicken;t=bbqchickenkebabs;t=popularchicken;t=bbqchickenbreast;ord=' + ord + '?"><\/script>');
+</script><noscript><a href="http://ad.doubleclick.net/jump/aruk.recipes/bbq;tile=4;pos=1;sz=300x600,300x250;k=30minutesto1hour;k=Acrowd;k=BBQ;k=Chicken;k=Dairyfree;k=Dinner;k=Easy;k=Eggfree;k=Main;t=bbq;t=chicken;t=chickenbreast;t=bbqchicken;t=quickchicken;t=chickendinner;t=bbqkebab;t=dairyfree;t=quickandeasy;t=cutsofchicken;t=bbqchickenkebabs;t=popularchicken;t=bbqchickenbreast;ord=123456789?" target="_blank"><img src="http://ad.doubleclick.net/ad/aruk.recipes/bbq;tile=4;pos=1;sz=300x600,300x250;k=30minutesto1hour;k=Acrowd;k=BBQ;k=Chicken;k=Dairyfree;k=Dinner;k=Easy;k=Eggfree;k=Main;t=bbq;t=chicken;t=chickenbreast;t=bbqchicken;t=quickchicken;t=chickendinner;t=bbqkebab;t=dairyfree;t=quickandeasy;t=cutsofchicken;t=bbqchickenkebabs;t=popularchicken;t=bbqchickenbreast;ord=123456789?" width="300" height="250" border="0" alt=""/></a></noscript>
+<!-- End ad tag -->
+	</div><div class="marbot5 width100p hidden martop5 line1-6">
+		<div class="rightFloat">
+			<a rel="nofollow" href="/advertisewithus.aspx?300x250">ADVERTISE WITH US</a>
+		</div>
+	</div>
+</div>
+			</div>
+			<div id="rightad1">
+				
+<a id="PromoImage" clickmapkey="rn:internal promo" href="http://www.youtube.com/user/AllrecipesUK" class="noDecoration">
+	<img alt="New videos every week!" title="New videos every week!" src="http://ukcdn.ar-cdn.com/PromoIcons/e4cd304b-2058-4572-880f-ae2028aeda8c.jpg" 
+		  class="noBorder internalPromoMaxWidth width300">
+</a>
+			</div>
+			<div>
+				<div id="26_nutrition_box">
+    <div class="padtop10 width100p marbot10">
+        <a name="Nutrition"></a>
+        <div id="26_div1" class="ieBorderBotWhite">
+            <div class="hidden orangeTopLeft orangesprite">
+            </div>
+            <div class="hidden orangeTopRight orangesprite">
+            </div>
+            <div class="hidden orangecenter">
+            </div>
+               <div class="orangecontent NutritionMargin">
+                    <h2 class="h2 orange" class="nutrition_head" style="padding-bottom: 4px">
+                         Nutrition                          
+                    </h2>
+                    <ul class="nutri_list">
+                      
+                                <li>
+                                Calories 177.2 kcal
+                                   </li>
+                       
+                                <li>
+                                Total Fat 6.6 g
+                                   </li>
+                       
+                                <li>
+                                Saturated Fat 1.1 g
+                                   </li>
+                       
+                                <li>
+                                Salt 447.2 mg
+                                   </li>
+                       
+                                <li>
+                                Protein 17.3 g
+                                   </li>
+                       
+                    </ul>
+                </div>
+             
+            <div class="hidden orangeBotLeft orangesprite">
+            </div>
+            <div class="hidden orangeBotRight orangesprite">
+            </div>
+            <div class="hidden orangecenter orangesprite">
+            </div>
+        </div>
+    </div>
+    <div class="clear">
+    </div>
+</div>
+			</div>
+			
+<div>
+	<div class="greydottedline martop20 marbot10">
+	</div>
+		<h3 class="h3 orange tag_head">
+		Seasonal favourites</h3>
+	<ul>
+	<li class="txtsm grey">THIS WEEK:</li>
+	
+		<li class="lineHeightPopColtn">
+			<a ClickMapKey="rn:sf" href="http://allrecipes.co.uk/recipes/tag-1487/quiche-recipes.aspx" rel="nofollow">Quiche recipes</a>
+		
+		</li>
+	
+		<li class="lineHeightPopColtn">
+			<a ClickMapKey="rn:sf" href="http://allrecipes.co.uk/recipes/tag-7085/street-party-recipes.aspx" rel="nofollow">Street party recipes</a>
+		
+		</li>
+	
+		<li class="lineHeightPopColtn">
+			<a ClickMapKey="rn:sf" href="http://allrecipes.co.uk/recipes/tag-173/asparagus-recipes.aspx" rel="nofollow">Asparagus recipes</a>
+		
+		</li>
+	
+		<li class="lineHeightPopColtn">
+			<a ClickMapKey="rn:sf" href="http://allrecipes.co.uk/recipes/salad-recipes.aspx" rel="nofollow">Salad recipes</a>
+		
+		</li>
+	
+	</ul>
+	<div class="greydottedline marbot10 martop10">
+	</div>
+</div>
+			<div>
+				<div class="ad">
+	<div class="marBotIE17">
+		<!-- begin ad tag (tile=5) -->
+<script type="text/javascript">
+var ord = Number(ord) || Math.floor(Math.random()*10e16);
+document.write('<script type="text/javascript" src="http://ad.doubleclick.net/adj/aruk.recipes/bbq;tile=5;pos=2;sz=300x250;k=30minutesto1hour;k=Acrowd;k=BBQ;k=Chicken;k=Dairyfree;k=Dinner;k=Easy;k=Eggfree;k=Main;t=bbq;t=chicken;t=chickenbreast;t=bbqchicken;t=quickchicken;t=chickendinner;t=bbqkebab;t=dairyfree;t=quickandeasy;t=cutsofchicken;t=bbqchickenkebabs;t=popularchicken;t=bbqchickenbreast;ord=' + ord + '?"><\/script>');
+</script><noscript><a href="http://ad.doubleclick.net/jump/aruk.recipes/bbq;tile=5;pos=2;sz=300x250;k=30minutesto1hour;k=Acrowd;k=BBQ;k=Chicken;k=Dairyfree;k=Dinner;k=Easy;k=Eggfree;k=Main;t=bbq;t=chicken;t=chickenbreast;t=bbqchicken;t=quickchicken;t=chickendinner;t=bbqkebab;t=dairyfree;t=quickandeasy;t=cutsofchicken;t=bbqchickenkebabs;t=popularchicken;t=bbqchickenbreast;ord=123456789?" target="_blank"><img src="http://ad.doubleclick.net/ad/aruk.recipes/bbq;tile=5;pos=2;sz=300x250;k=30minutesto1hour;k=Acrowd;k=BBQ;k=Chicken;k=Dairyfree;k=Dinner;k=Easy;k=Eggfree;k=Main;t=bbq;t=chicken;t=chickenbreast;t=bbqchicken;t=quickchicken;t=chickendinner;t=bbqkebab;t=dairyfree;t=quickandeasy;t=cutsofchicken;t=bbqchickenkebabs;t=popularchicken;t=bbqchickenbreast;ord=123456789?" width="300" height="250" border="0" alt=""/></a></noscript>
+<!-- End ad tag -->
+	</div>
+</div>
+			</div>
+			
+<div id="history" class="martop10">
+    <div class="browse_box ieBorderBotWhite width100p">
+        <div class="overflow orangeTopLeft orangesprite">
+        </div>
+        <div class="overflow orangeTopRight orangesprite">
+        </div>
+        <div class="overflow orangecenter ">
+        </div>
+        <div class="NutritionMargin orangecontent facet_box">
+            <h2 class="h2 orange">
+                <div class="icon csssprite imgHistory">
+                </div>
+                <span id="30_lH">History</span>
+            </h2>
+            <div class="recent_view">
+                <h3 class="biggerFont grey martop15">
+                    My recently viewed recipes</h3>
+                <ul class="history marlt5 martop5">
+                    
+                </ul>
+               <div class="greydottedline martop10 marbot10" id="ctl00_mainContainer_ucHistory_divSeparator">
+		</div>
+            </div>
+            <h3 class="biggerFont grey martop15">
+                My recent searches</h3>
+            <ul class="history marlt5 martop5">
+                
+            </ul>
+        </div>
+        <div class="overflow orangeBotLeft orangesprite">
+        </div>
+        <div class="overflow orangeBotRight orangesprite">
+        </div>
+        <div class="overflow orangecenter">
+        </div>
+    </div>
+</div>
+
+		</div>
+		<div class="clear">
+		</div>
+	</div>
+
+
+	<script type="text/javascript">
+		var rvwAttr = 'rAdd';
+		mapEnterKey('tc_Tag', 'tc_AddTag');
+		$('#tc_AddTag').click(function(e) {
+			e.stopPropagation();
+			vd_rx.addTag();
+		});
+		$('.jqAf').click(function(e) {
+			e.stopPropagation();
+			vd_rx.addToFavorites();
+		});
+		$('.jqAddRvw').click(function(e) {
+			e.stopPropagation();
+			rvwAttr = $(this).attr('id');
+			vd_rx.showReviewBox();
+		});
+		$('#vr_showDesc').click(function() {
+			$('#desc_pop').show();
+		});
+		$('#vr_closeDesc').click(function() {
+			$('#desc_pop').hide();
+		});
+		vd_rx.initReview();
+		$(document).ready(function() {
+			updateRecipeView(recipeId);
+			var PhotosDetail=[{ photoName:'65644354-ee00-4199-a79b-386603a2be20.jpg', photoUrl:'/photos/recipe-photo-5193.aspx', photoByName:'SunFlower', photoByUrl:'',photoId:'5193' }, { photoName:'8626.jpg', photoUrl:'/photos/recipe-photo-2775.aspx', photoByName:'Allrecipes', photoByUrl:'/cooks/45/allrecipes.aspx',photoId:'2775' }];;
+			var c = new carousel();
+			c.init(PhotosDetail);
+			if(postAction!=null && postAction!=''){
+				vd_rx.postLogin(postAction);
+			}
+		});	
+	</script>
+
+		
+<div class="footer ">
+	<div class="leftFloat smallerFont grey copyright">
+		<span>
+			ALL RIGHTS RESERVED</span>
+		<div>
+			&copy;<span>2012 Allrecipes.com</span></div>
+	</div>
+	<div class="leftFloat marlt15 width80p">
+		 
+			<ul class="bigFont subFooter line1-6">
+				<li><a href="/advertisewithus.aspx" rel="nofollow" >
+					Advertise with us</a> </li>
+				<li><a href="/contactus.aspx" rel="nofollow" >
+					Contact us</a> </li>
+				<li><a href="/news.aspx" rel="nofollow">
+					News</a> </li>
+				<li><a href="/help.aspx" rel="nofollow">
+					Help</a> </li>
+				<li><a href="/legal.aspx" rel="nofollow">
+					Legal</a> </li>
+				<li><a href="/privacy.aspx" rel="nofollow">
+					Privacy</a> </li>
+				<li style="border:none"><a href="/sitemap.aspx">
+					Site map</a> </li>
+			</ul>
+			<div class="clear"></div>
+			
+			<div class="smallerFont martop10">
+			<ul class="inlineList">
+				<li><span>
+					<a href="http://allrecipes.co.uk/guide/global_contact.aspx">Allrecipes  International:</a></span> </li>
+			
+				
+				
+				<li><a href="http://allrecipes.com.ar/" target="_blank" >
+					Argentina</a></li>
+				
+				<li>.</li>
+				
+				<li><a href="http://allrecipes.com.au" target="_blank" >
+					Australia/NZ</a></li>
+				
+				<li>.</li>
+				
+				<li><a href="http://allrecipes.com.br/" target="_blank" >
+					Brazil</a></li>
+				
+				<li>.</li>
+				
+				<li><a href="http://allrecipes.cn/" target="_blank" >
+					China</a></li>
+				
+				<li>.</li>
+				
+				<li><a href="http://allrecipes.fr/" target="_blank" >
+					France</a></li>
+				
+				<li>.</li>
+				
+				<li><a href="http://allrecipes.de/" target="_blank" >
+					Germany</a></li>
+				
+				<li>.</li>
+				
+				<li><a href="http://allrecipes.co.in/" target="_blank" >
+					India</a></li>
+				
+				<li>.</li>
+				
+				<li><a href="http://allrecipes.jp/" target="_blank" >
+					Japan</a></li>
+				
+				<li>.</li>
+				
+				<li><a href="http://allrecipes.kr/" target="_blank" >
+					Korea</a></li>
+				
+				<li>.</li>
+				
+				<li><a href="http://allrecipes.com.mx/" target="_blank" >
+					México</a></li>
+				
+				<li>.</li>
+				
+				<li><a href="http://allrecipes.nl/" target="_blank" >
+					Netherlands</a></li>
+				
+				<li>.</li>
+				
+				<li><a href="http://allrecipes.pl/" target="_blank" >
+					Poland</a></li>
+				
+				<li>.</li>
+				
+				<li><a href="http://qc.allrecipes.ca/" target="_blank" >
+					Québec</a></li>
+				
+				<li>.</li>
+				
+				<li><a href="http://allrecipes.ru/" target="_blank" >
+					Russia</a></li>
+				
+				<li>.</li>
+				
+				<li><a href="http://allrecipes.asia/" target="_blank" >
+					Southeast Asia</a></li>
+				
+				<li>.</li>
+				
+				<li><a href="http://allrecipes.com/" target="_blank" >
+					USA/Canada</a></li>
+				
+				</ul>
+			</div>
+			
+			<div class="smallerFont martop10">
+				 
+				
+				<a href="http://mantestedrecipes.com/" class="line1-6" target="_blank">
+					Man Tested Recipes</a>
+				
+			</div>
+			
+		</div>
+	 
+	<div class="clear">
+	</div>
+</div>
+<script src='http://ukcdn.ar-cdn.com/scripts/s_code.js?v=2.11' type='text/javascript'></script>
+		<script type="text/javascript">if(recipeId == null || recipeId != 0) {s.pageName = "/recipe/1684/honey-soy-chicken-kebabs.aspx";var s_code = s.t();if(s_code)document.write(s_code) }</script><script type="text/javascript">if(recipeId == null || recipeId != 0) {if(navigator.appVersion.indexOf('MSIE') >= 0)document.write(unescape('%3C')+'\!-'+'-') }</script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img src="http://metric.allrecipes.co.uk/b/ss/rdiallrecipesuk/1/H.20.3--NS/0" height="1" width="1" border="0" alt=""/></a></noscript>
+		
+    
+		
+<!-- Google analytics -->
+<script type="text/javascript">
+var _gaq = [];
+_gaq.push(['_setAccount', 'UA-20186726-4']);
+_gaq.push(['_setDomainName', 'none'],['_setAllowLinker', true],['_trackPageview'],['_trackPageLoadTime']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = 'http://www.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<!-- Optify analytics -->
+<script type="text/javascript">var _opt = _opt || [];_opt.push([ 'view', 'K5YZ8DXM' ]);(function(){var scr = document.createElement('script');scr.type = 'text/javascript';scr.async = true;scr.src = 'http://ukcdn.ar-cdn.com/scripts/opt-v2.js';var other = document.getElementsByTagName('script')[0];other.parentNode.insertBefore(scr, other);})();</script>
+    
+	</div>
+	<div id="loginDialogContainer" class="hidden">
+	</div>
+	
+	<style type="text/css">
+		body
+		{ background:#fff url(http://ukcdn.ar-cdn.com/global/wallpaper_intl_2012.gif) top center repeat-y}</style>
+	
+
+	<script type="text/javascript">
+	    $(document).ready(
+			function () {
+                
+			    logincontrol.load("divLogInBox");
+			    mapClickMap();
+
+			    ARIntl.Authentication.registerAuthenticationRequiredLinks();
+			});
+	</script>
+	<script type='text/javascript' src='http://allrecipes.uk.intellitxt.com/intellitxt/front.asp?ipid=22689'></script>
+</body>
+</html>

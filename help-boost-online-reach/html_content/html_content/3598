@@ -1,0 +1,1241 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr"
+ xmlns:og="http://opengraphprotocol.org/schema/"
+ xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>		
+<title>10 of the World&#8217;s Funniest Irish Jokes | PurpleSlinky</title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta name="description" content="" />
+
+<!-- stylesheets -->
+<link rel="stylesheet" type="text/css" href="http://purpleslinky.com/wp-content/themes/purpleslinky/style.css" media="screen" />
+
+<link rel="alternate" type="application/rss+xml" title="PurpleSlinky RSS Feed" href="http://purpleslinky.com/feed/" />
+<link rel="pingback" href="http://purpleslinky.com/xmlrpc.php" />
+
+<!-- js -->
+
+<link rel="alternate" type="application/rss+xml" title="PurpleSlinky &raquo; 10 of the World&#8217;s Funniest Irish Jokes Comments Feed" href="http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/feed/" />
+	<link rel="icon" href="http://s3.amazonaws.com/readers/purpleslinky/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="http://s3.amazonaws.com/readers/purpleslinky/favicon.ico" type="image/x-icon" />
+<meta property="og:image" content="http://s3.amazonaws.com/readers/purpleslinky/2009/05/31/993621.jpg" />
+<meta property="og:site_name" content="PurpleSlinky" />
+<meta property="og:title" content="10 of the World’s Funniest Irish Jokes" />
+<meta property="og:url" content="http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/" />
+<meta property="og:description" content="A selection of 10 of my favorite Irish jokes." />
+<meta property="og:type" content="article" />
+<script type='text/javascript' src='http://purpleslinky.com/wp-includes/js/tw-sack.js?ver=1.6.1'></script>
+<script type="text/javascript">
+//<![CDATA[
+function doILikeIt( website_channel_article_id,blog_id,post_id )
+{
+   document.getElementById('iLikeItLinkDiv').innerHTML = '';
+   document.getElementById('iLikeItNumber').innerHTML = '<img src="http://purpleslinky.com/wp-content/themes/purpleslinky/images/i-like-it-load.gif" />';
+   var mysack = new sack( 
+       "/wp-content/mu-plugins/w4l/w4l_i_like_it_ajax.php" );    
+
+  mysack.execute = 1;
+  mysack.method = 'POST';
+  mysack.setVar( "website_channel_article_id", website_channel_article_id );
+  mysack.setVar( "blog_id", blog_id );
+  mysack.setVar( "post_id", post_id );
+  mysack.setVar( "results_div_id", "iLikeItNumber" );
+  mysack.onError = function() { alert('Ajax error in voting' )};
+  mysack.runAJAX();
+
+  return true;
+
+} // end of JavaScript function myplugin_cast_vote
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+function flagReasonChanged(article_id){
+	if (document.getElementById('flagReasonsSelect').value == '') return false;
+	
+	if (document.getElementById('flagReasonsSelect').value == 'redirect'){
+		document.getElementById('masterCategoriesDiv').style.display='block';
+		document.getElementById('palagrizedUrlDiv').style.display='none';
+	}
+	else if (document.getElementById('flagReasonsSelect').value == 'plagiarism'){
+		document.getElementById('palagrizedUrlDiv').style.display='block';
+		document.getElementById('masterCategoriesDiv').style.display='none';
+	}
+	else
+		doFlagIt(article_id);
+		
+}           
+           
+function doFlagIt( article_id)
+{
+   var reason = document.getElementById('flagReasonsSelect').value;
+   var to_master_category_id = document.getElementById('masterCategoriesSelect').value;
+   var palagrized_url = encodeURIComponent(document.getElementById('palagrizedUrl').value);
+
+   if (reason == 'plagiarism' && palagrized_url.indexOf('http') < 0) return false;
+   if (reason != 'plagiarism') palagrized_url = '';
+	
+   document.getElementById('flagit_div').innerHTML = '';
+   document.getElementById('flagit_div').innerHTML = '<p>Thank you!</p>';
+   var mysack = new sack( 
+       "/wp-content/mu-plugins/w4l/w4l_flag_it_ajax.php" );    
+
+  mysack.execute = 1;
+  mysack.method = 'POST';
+  mysack.setVar( "article_id", article_id );
+  mysack.setVar( "by_writer_id", triond_writer_id);
+  mysack.setVar( "reason", reason);
+  mysack.setVar( "to_master_category_id", to_master_category_id);
+  mysack.setVar( "palagrized_url", palagrized_url);
+  mysack.onError = function() { alert('Ajax error in flagging' )};
+  mysack.runAJAX();
+
+  return true;
+
+} // end of JavaScript function myplugin_cast_vote
+//]]>
+</script>
+<script type='text/javascript' src='/wp-content/mu-plugins/w4l/combined_js.js'></script> 
+	<script type="text/javascript" language="javascript">
+	<!--
+		if (top.location != self.location) {
+			top.location = self.location.href
+		}
+	//-->
+	</script>
+	<script type="text/javascript">window.google_analytics_uacct = "UA-1488967-25";</script><style type="text/css" media="screen">
+
+/* Begin Contact Form ][ CSS */
+.contactform {
+	position: static;
+	overflow: hidden;
+}
+
+.contactleft {
+	width: 25%;
+	text-align: right;
+	clear: both;
+	float: left;
+	display: inline;
+	padding: 4px;
+	margin: 5px 0;
+    font-weight: bold;
+}
+
+.contactright {
+	width: 70%;
+	text-align: left;
+	float: right;
+	display: inline;
+	padding: 4px;
+	margin: 5px 0;
+}
+
+.contacterror {
+	border: 2px solid #ff0000;
+}
+/* End Contact Form ][ CSS */
+
+	</style>
+
+
+<!-- all in one seo pack 1.4.6.15 [287,360] -->
+<meta name="description" content="A selection of 10 of my favorite Irish jokes." />
+<meta name="keywords" content="funny,humour,irish,jokes" />
+<!-- /all in one seo pack -->
+<link rel="canonical" href="http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/" />
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<script type="text/javascript">
+//<![CDATA[
+function showTriondSignupForm()
+{
+   var mysack = new sack( 
+       "/wp-content/plugins/triond-signup/triond_signup_form_ajax.php" );    
+
+  mysack.execute = 0;
+  mysack.method = 'GET';
+  mysack.onCompletion = function() {document.getElementById("triond-signup-div").innerHTML = mysack.response;};
+  mysack.runAJAX();
+
+  return true;
+
+} // end of JavaScript function myplugin_cast_vote
+//]]>
+</script>
+
+
+<!-- Start Of Code Generated By SexyBookmarks 2.5.1 -->
+<link rel='stylesheet' id='sexy-bookmarks-css'  href='http://purpleslinky.cms.triond.com/wp-content/themes/purpleslinky/css/sexyBookmarksStyle.css?ver=2.5.1' type='text/css' media='all' />
+<!-- End Of Code Generated By SexyBookmarks 2.5.1 -->
+
+
+
+<!--[if IE]>	
+	<script src="http://purpleslinky.com/wp-content/themes/purpleslinky/js/DD_belatedPNG_0.0.7a-min.js"></script>
+	<script>	 
+	  DD_belatedPNG.fix('.navShadow');	 
+	  DD_belatedPNG.fix('.logo a');	 
+	</script>
+<![endif]-->
+
+<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="http://purpleslinky.com/wp-content/themes/purpleslinky/css/ie6Styles.css" />	
+<![endif]-->
+
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://purpleslinky.com/wp-content/themes/purpleslinky/css/ie7.css" />	
+<![endif]-->
+
+<meta name="google-site-verification" content="Ccr4cB4YC20z0fF_na7ei4HrXlukCwm8kFJzf6RM9F4" />
+</head>
+
+<body 
+<script type="text/javascript">
+var _spq = _spq || [];
+_spq.push(["_setSiteId", "tri1"]);
+
+(function() {
+  var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+  po.src = ('https:' == document.location.protocol ? "https://" : "http://") + 'www.sharepops.com/static/js/sp.js';
+  var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
+
+>
+		
+		<script type="text/javascript">
+			writer_triond_id = 154265;
+		</script>
+ 
+<!-- 
+		<script language="JavaScript" src="http://j.maxmind.com/app/geoip.js"></script>
+ -->
+		<script>
+			triond_user_logged_in = false;
+//			if (geoip_country_code() != 'CN'){
+//				document.write('<scr' + 'ipt type="text/javascript" src="http://www.triond.com/login/is-logged-in"></s' + 'cript>');
+//			} else {
+//				impression_country = 'CN';
+//			}
+		</script>
+
+
+<div id="wrapper">
+			
+	<div id="header">
+		<div id="logoWrapper">
+			<div class="logo"><a href="http://purpleslinky.com"><img src="http://purpleslinky.com/wp-content/themes/purpleslinky/images/logo.png" style="width:172px;height:90px;" /></a></div>
+		</div>
+		<div id="topNav">
+			<ul class="topNavigation">
+				<li><a href="/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/contact">Contact</a></li>
+				<li><a href="/advertise-with-us">Advertise with us</a></li>
+				<li><a href="http://www.triond.com">Submit an Article</a></li>
+			</ul>
+		</div>
+		<div id="ad728">
+			
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   if (typeof impression_country=="undefined") impression_country = '';
+					   if (impression_country != 'CN'){	
+						   var 	is_triond_reader;
+						   if (typeof triond_writer_id=="undefined")
+						   	 is_triond_reader = 'nontriond';
+						   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+						     is_triond_reader = 'nontriond';
+						   else
+						     is_triond_reader = 'yestriond'; 
+						   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+						   var m3_r = Math.floor(Math.random()*99999999999);
+						   if (!document.MAX_used) document.MAX_used = ',';
+						   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+						   document.write ("?zoneid=517");
+						   document.write ("&clr_link=168BC0&clr_title=168BC0&clr_bg=e7e1ed&clr_border=e7e1ed&clr_text=111122&source=acf=" + readCookie("w4lfc") + is_triond_reader);
+						   document.write ('&amp;cb=' + m3_r);
+						   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+						   document.write ("&amp;loc=" + escape(window.location));
+						   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+						   if (document.context) document.write ("&context=" + escape(document.context));
+						   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+						   document.write ("'><\/scr"+"ipt>");
+					   }
+					//]]>--></script>		</div>
+	</div><!--[END]#header-->
+	
+	<!--[START] main navigation -->						
+	<div id="navigation">
+	<div style="float:right; position: relative; top: 7px;"><a href="http://purpleslinky.com/feed/"><img src="http://purpleslinky.com/wp-content/themes/purpleslinky/images/feed.png" style="width:32px;height:32px;" /></a></div>
+		<ul id="mainNav" class="sf-menu">
+				<li class="cat-item cat-item-525"><a href="http://purpleslinky.com/category/humor/" title="View all posts filed under Humor">Humor</a>
+</li>
+	<li class="cat-item cat-item-8093"><a href="http://purpleslinky.com/category/jokes/" title="View all posts filed under Jokes">Jokes</a>
+</li>
+	<li class="cat-item cat-item-13999"><a href="http://purpleslinky.com/category/offbeat/" title="View all posts filed under Offbeat">Offbeat</a>
+</li>
+	<li class="cat-item cat-item-2077"><a href="http://purpleslinky.com/category/trivia/" title="View all posts filed under Trivia">Trivia</a>
+</li>
+		</ul>			
+	</div>	
+	<!--[END]#navigation-->
+<div id="leftCol">
+		<div id="breadcrumbsSingle"><a href="http://purpleslinky.com">Home</a> &raquo; <a href="http://purpleslinky.com/category/jokes/" title="View all posts in Jokes">Jokes</a> &raquo; <a href="http://purpleslinky.com/category/jokes/ethnic/" title="View all posts in Ethnic">Ethnic</a> &raquo; <strong>10 of the World&#8217;s Funniest Irish Jokes</strong></div>	
+			<div style="text-align: right; padding-right: 10px;">
+				<a href="http://twitter.com/purpleslinky" target="_blank">
+					<img style="width:16px;height:16px;vertical-align: text-bottom;" src="http://s3.amazonaws.com/readers/twitter_favicon.gif"/>
+					Follow us on Twitter
+				</a>
+			</div>
+
+		<div class="post">	
+				
+			<!--Blog item -->
+			<div class="blogFeature" id="post-8413">												
+				<h1><p class="title">10 of the World&#8217;s Funniest Irish Jokes</p></h1>			
+				<p class="meta">Published by <a href="http://purpleslinky.com/author/brianberu/" title="Posts by &lt;a target=&quot;_blank&quot; href=&quot;http://www.triond.com/users/brianberu&quot;&gt;brianberu&lt;/a&gt;"><a target="_blank" href="http://www.triond.com/users/brianberu">brianberu</a></a> in <a href="http://purpleslinky.com/category/jokes/ethnic/" title="View all posts in Ethnic" rel="category tag">Ethnic</a><br/><span class="date">May 31st, 2009</span></p>
+				<div id="ad300-title">
+	 				
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   if (typeof impression_country=="undefined") impression_country = '';
+					   if (impression_country != 'CN'){	
+						   var 	is_triond_reader;
+						   if (typeof triond_writer_id=="undefined")
+						   	 is_triond_reader = 'nontriond';
+						   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+						     is_triond_reader = 'nontriond';
+						   else
+						     is_triond_reader = 'yestriond'; 
+						   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+						   var m3_r = Math.floor(Math.random()*99999999999);
+						   if (!document.MAX_used) document.MAX_used = ',';
+						   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+						   document.write ("?zoneid=520");
+						   document.write ("&clr_link=168BC0&clr_title=168BC0&clr_bg=e7e1ed&clr_border=e7e1ed&clr_text=111122&source=acf=" + readCookie("w4lfc") + is_triond_reader);
+						   document.write ('&amp;cb=' + m3_r);
+						   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+						   document.write ("&amp;loc=" + escape(window.location));
+						   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+						   if (document.context) document.write ("&context=" + escape(document.context));
+						   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+						   document.write ("'><\/scr"+"ipt>");
+					   }
+					//]]>--></script>  				</div>
+				<h2 class="excerpt"><p>A selection of 10 of my favorite Irish jokes.</p>
+</h2>
+				<p class="text">
+					<div class="KonaBody"><p>Before anyone accuses me of being racist, I am Irish, and as anyone from Ireland will tell you 99% of Irish jokes come from Ireland, and the reason that they are so simple is so the English can understand them.</p>
+<ol>
+<li>An Englishman, Irishman, and Scotsman  all go for a job interview, and as there is only one post available the manager decides to set the three candidates a quiz, so he arranges a potato, a cabbage and a knife on his desk, and he calls the Englishman in, and asks &#8220;which is the odd one out of the three objects?&#8221; the Englishman replies &#8220;it&#8217;s the knife,&#8221; the manager replies &#8220;that&#8217;s correct,  but can you give me the reasoning behind your answer&#8221;, the Englishman replies &#8220;the potato, and the cabbage are vegetables, but the knife is metal&#8221;, the manager says &#8220;you&#8217;ve passed&#8221;, and calls in the Scotsman, the same scenario occurs and the Scotsman passes the quiz, so it&#8217;s Paddies turn, he goes into the office and the manager asks him &#8220;which is the odd one out&#8221;, so he studies for a while and says &#8220;it&#8217;s the cabbage&#8221;, the manager says &#8220;that&#8217;s fine but how did you arrive at that conclusion&#8221;, and Paddy says and he replies, &#8220;well I&#8217;m not sure about the cabbage, but you can make chips  with the other two&#8221;.</li>
+<li>Michael goes into a bar and orders five very large whiskeys, and as fast as the barman is pouring them Mick is drinking them, the barman says &#8220;why are you drinking so fast?&#8221;  Mick replies, &#8220;you would be drinking fast if you had what I have&#8221;, the barman enquires, &#8220;why what have you got?&#8221;  Mick replies &#8220;about &pound;0.45&#8243;.</li>
+<li>An Englishman, Irishman, and Scotsman are driving through the desert when their car breaks down, so they decide to start walking, but before they set off, they decide to take a part each from the car to help them on the journey, while walking the Scotsman said to the Englishman &#8220;why have you brought the radiator along?&#8221; to which he replies, &#8220;we are likely to be thirsty on this walk and we can drink from it&#8221;, the Englishman then said to the Scotsman, &#8220;why have you brought one of the seats?&#8221; the Scotsman replies &#8220;I can put it over my head and it keeps the sun off me, and when we stop to rest I have somewhere to sit&#8221; So they turn to Paddy and ask &#8220;why have you brought a door along?&#8221; and Paddy replies &#8220;when it gets to midday and the sun is high I can open the window and let some cool air in&#8221;.</li>
+<li>An Irishman is sat in the pub minding his own business when an Englishman walks in, as the pub was nearly empty he decides to sit down and have a chat with Michael, as he walked over he noticed there is a dog sat besides the Irishman, he sat down and they began to chat about the weather and other mundane topics, then the Englishman leaning towards the dog asked &#8220;does your dog bite?&#8221; to which Mick replied &#8220;no&#8221;, so the Englishman tried to stroke the dog, but got bit in the process, in his horror he exclaimed, &#8220;I thought you said that your dog doesn&#8217;t bite&#8221; to which Mick says &#8220;it&#8217;s not my dog&#8221;.</li>
+<li>Paddy walks up to Mike Tyson and says, &#8220;what would you do if I called you an idiot?&#8221; Tyson&#8217;s reply was &#8220;I&#8217;d beat you to a pulp&#8221;. So paddy says &#8220;what would you do if I thought you were an idiot?&#8221; Tyson replies &#8220;nothing because I don&#8217;t know what you&#8217;re thinking&#8221;, So paddy says &#8220;I think you&#8217;re an idiot&#8221;.</li>
+<li>Two Irishmen put a claim in for industrial deafness, and they have to face a medical tribunal, on the day of the examination they are sat in the waiting room,  Patrick is called into the doctors room, as he enters the doctor whispers &#8220;close the door please&#8221;, so Pat does as he is asked,  the doctor turns on him and says &#8220;get out, you&#8217;re not deaf you are just wasting my time&#8221;. on his way out his friend Brendan asks how he went on, Pat replies &#8220;if he asks you to close the door, don&#8217;t do it as it&#8217;s a trick&#8221;  Brendan enters the surgery and the doctor whispers &#8220;close the door please&#8221; to which he replies &#8220;close it yourself&#8221;.</li>
+<li>An Englishman is driving down the motorway at a hundred and twenty miles an hour, when he hears a knocking on the window, he turns to see Paddy on his motorcycle beside him, so he winds the window down and says &#8220;what do you want?&#8221; Paddy produces a cigarette and asks for a light, to which the Englishman replies &#8220;are you trying to kill yourself&#8221; Paddy looking a little bemused replied &#8220;no I only smoke five a day&#8221;.</li>
+<li>How do you confuse an Irishman? put three shovels against the wall, and tell him to take his pick</li>
+<li>An Irishman gets a job painting white lines on the motorway, he started Monday and completed three miles, on Tuesday he managed two and a half miles, Wednesday he only managed two miles, Thursday only one mile, and Friday  a mere half mile, so the foreman calls Paddy into his office and says to him, &#8220;you started so well on Monday but as the weeks gone by you&#8217;ve done less and less, can you explain yourelf?&#8221; to which Paddy replied, &#8220;well sir the paint pot was getting further away&#8221;.</li>
+<li>Two Irishmen were off on their holidays, flying from Dublin to Spain, ten minutes into the flight the pilot announces that there was an engine failure, but there was no cause for alarm, as they still had three good engines and it was only one and a half hours to touch down, Paddy said to Mick &#8220;I don&#8217;t like the sound of that&#8221; but Mick told him not to worry as there were still three good engines, ten minutes pass and another announcement from the captain, &#8220;we have had another engine failure but don&#8217;t worry as we still have two good engines and it&#8217;s only one hour twenty minutes to touch down&#8221;, Paddy once again airs his worries, and once again Mick comforts him, another ten minutes pass and the captain is on the intercom again, &#8220;sorry but we have lost another engine, but there is no cause for alarm as we will be making an emergency landing in Paris in ten minutes&#8221;, once again Paddy shows his concern and Mick tries to console him but Paddy won&#8217;t settle this time, so Mick says &#8220;what&#8217;s the problem&#8221;, to which Paddy says &#8220;well if the other engine goes, we&#8217;ll be up here all night&#8221;.</li>
+</ol>
+
+<!-- Facebook Like Button v1.9.5 BEGIN [http://blog.bottomlessinc.com] -->
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fpurpleslinky.com%2Fjokes%2Fethnic%2F10-of-the-worlds-funniest-irish-jokes%2F&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:450px; height: 62px; align: left; margin: 2px 0px 2px 0px"></iframe>
+<!-- Facebook Like Button END -->
+<div id="flagit_div" class="flagItDiv" style="display:none;margin-top:3px;margin-bottom:10px;height:25px;"><div id="flagReasonsDiv" style="display:block;float:left;margin-right:5px;">
+					<select id="flagReasonsSelect" onChange="flagReasonChanged(993621);" style="font-size:11px;">
+						<option value="">Flag It</option>
+						<option value="spam">Spam</option>
+						<option value="adult">Adult Content</option>
+						<option value="plagiarism">Plagiarism</option>
+						<option value="insufficient-quality">Insufficient Quality</option>
+						<option value="redirect">Wrong Category</option>
+					</select>
+				</div><div id="palagrizedUrlDiv" style="display:none;float:left;">
+					<input type="text" id="palagrizedUrl" style="font-size:11px;" value="enter plagiarized url...">
+					<input type="button" onClick="doFlagIt(993621)" style="font-size:11px;" value="Go">
+				</div><div id="masterCategoriesDiv" style="display:none;float:left;">
+					<select id="masterCategoriesSelect" onchange="doFlagIt(993621);" style="font-size:11px;">
+						<option value="">Select the Right Category</option>
+						<option value="27">About Writing</option>
+						<option value="59">Autos</option>
+						<option value="21">Books</option>
+						<option value="16">Business</option>
+						<option value="22">Computers</option>
+						<option value="3">Creative Writing</option>
+						<option value="13">Domestic</option>
+						<option value="6">Gaming</option>
+						<option value="2">General</option>
+						<option value="8">Health</option>
+						<option value="20">Internet</option>
+						<option value="19">Movies</option>
+						<option value="26">Music</option>
+						<option value="30">News</option>
+						<option value="29">Offbeat</option>
+						<option value="55">Pets</option>
+						<option value="54">Poetry</option>
+						<option value="9">Recipes</option>
+						<option value="11">Religion</option>
+						<option value="32">Science</option>
+						<option value="57">Short Stories</option>
+						<option value="12">Society</option>
+						<option value="17">Sports</option>
+						<option value="18">Television</option>
+						<option value="15">Travel</option>
+						<option value="53">Women</option>
+					</select>
+				</div></div><script type="text/javascript">if (typeof triond_writer_id != "undefined") document.getElementById('flagit_div').style.display='block';</script></div>
+		<script type='text/javascript'>
+		fiveMinNotEmbedded = true;
+		</script>
+										</p>
+				<div class="socialIcons"></div>				
+				
+								<!-- 
+		        <script language='JavaScript'>
+				var OutbrainPermaLink='http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/';
+				var OB_Template = 'Triond';
+				var OB_demoMode = false;
+				var OB_langJS ='http://widgets.outbrain.com/lang_en.js';
+				if ( typeof(OB_Script)!='undefined' )
+					OutbrainStart();
+				else {
+					var OB_Script = true;
+					var str = '<script src="http://widgets.outbrain.com/OutbrainRater.js" type="text/javascript"><\/script>';
+					document.write(str);
+				}
+				</script>
+				 -->
+				<script type="text/javascript">
+				    (function() {
+				        var params =
+				        {
+				            id: "a74ea237-3edb-4aa7-b476-ae854ca1aa20",
+				            d:  "cHVycGxlc2xpbmt5LmNvbQ==",
+				            wid: "5032"
+				        };
+				
+				        var qs="";for(var key in params){qs+=key+"="+params[key]+"&"}qs=qs.substring(0,qs.length-1);
+				        document.write('<script type="text/javascript" src="http://api.content.ad/Scripts/widget.js?' + qs + '"><\/script>');
+				    })();
+				</script>				 
+				
+			<div id="iLikeItContainer">
+				<div id="ilikeit_div" class="iLikeItDiv"><div class="iLikeItTextDiv"><span id="iLikeItNumber" class="iLikeItNumber">17</span><br/><span class="iLikeItText">Liked it</span></div><div id="iLikeItLinkDiv" class="iLikeItLinkDiv"><a class="iLikeItLink" 
+				  onClick="doILikeIt(740595,57,8413);">I Like It</a></div></div>				<div id="ad468">
+					
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   if (typeof impression_country=="undefined") impression_country = '';
+					   if (impression_country != 'CN'){	
+						   var 	is_triond_reader;
+						   if (typeof triond_writer_id=="undefined")
+						   	 is_triond_reader = 'nontriond';
+						   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+						     is_triond_reader = 'nontriond';
+						   else
+						     is_triond_reader = 'yestriond'; 
+						   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+						   var m3_r = Math.floor(Math.random()*99999999999);
+						   if (!document.MAX_used) document.MAX_used = ',';
+						   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+						   document.write ("?zoneid=522");
+						   document.write ("&clr_link=168BC0&clr_title=168BC0&clr_bg=e7e1ed&clr_border=e7e1ed&clr_text=111122&source=acf=" + readCookie("w4lfc") + is_triond_reader);
+						   document.write ('&amp;cb=' + m3_r);
+						   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+						   document.write ("&amp;loc=" + escape(window.location));
+						   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+						   if (document.context) document.write ("&context=" + escape(document.context));
+						   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+						   document.write ("'><\/scr"+"ipt>");
+					   }
+					//]]>--></script>				</div>
+				<div class="clear"></div>
+			</div>
+			
+			<div class="options">
+				<div class="clear"></div>						
+				<h5>Tags.</h5><a href="http://purpleslinky.com/tag/funny/" rel="tag">funny</a><a href="http://purpleslinky.com/tag/humour/" rel="tag">humour</a><a href="http://purpleslinky.com/tag/irish/" rel="tag">Irish</a><a href="http://purpleslinky.com/tag/jokes/" rel="tag">Jokes</a>					
+			</div>
+			<div class="clear"></div>
+			
+				<!--[START]sexy bookmarks -->
+				<div class="sexy-bookmarks sexy-bookmarks-bg-sexy" style=""><ul class="socials"><li class="sexy-scriptstyle"><a href="http://scriptandstyle.com/submit?url=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;title=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes" rel="normal nofollow" title="Submit this to Script &amp; Style">Submit this to Script &amp; Style</a></li><li class="sexy-blinklist"><a href="http://www.blinklist.com/index.php?Action=Blink/addblink.php&amp;Url=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;Title=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes" rel="normal nofollow" title="Share this on Blinklist">Share this on Blinklist</a></li><li class="sexy-delicious"><a href="http://del.icio.us/post?url=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;title=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes" rel="normal nofollow" title="Share this on del.icio.us">Share this on del.icio.us</a></li><li class="sexy-digg"><a href="http://digg.com/submit?phase=2&amp;url=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;title=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes" rel="normal nofollow" title="Digg this!">Digg this!</a></li><li class="sexy-diigo"><a href="http://www.diigo.com/post?url=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;title=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes&amp;desc=Before%20anyone%20accuses%20me%20of%20being%20racist%2C%20I%20am%20Irish%2C%20and%20as%20anyone%20from%20Ireland%20will%20tell%20you%2099%25%20of%20Irish%20jokes%20come%20from%20Ireland%2C%20and%20the%20reason%20that%20they%20are%20so%20simple%20is%20so%20the%20English%20can%20understand%20them.%0D%0A%0D%0AAn%20Englishman%2C%20Irishman%2C%20and%20Scotsman%20%20all%20go%20for%20a%20job%20interview%2C%20and%20as%20there%20is%20onl" rel="normal nofollow" title="Post this on Diigo">Post this on Diigo</a></li><li class="sexy-reddit"><a href="http://reddit.com/submit?url=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;title=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes" rel="normal nofollow" title="Share this on Reddit">Share this on Reddit</a></li><li class="sexy-yahoobuzz"><a href="http://buzz.yahoo.com/submit/?submitUrl=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;submitHeadline=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes&amp;submitSummary=Before%20anyone%20accuses%20me%20of%20being%20racist%2C%20I%20am%20Irish%2C%20and%20as%20anyone%20from%20Ireland%20will%20tell%20you%2099%25%20of%20Irish%20jokes%20come%20from%20Ireland%2C%20and%20the%20reason%20that%20they%20are%20so%20simple%20is%20so%20the%20English%20can%20understand%20them.%0D%0A%0D%0AAn%20Englishman%2C%20Irishman%2C%20and%20Scotsman%20%20all%20go%20for%20a%20job%20interview%2C%20and%20as%20there%20is%20onl&amp;submitCategory=science&amp;submitAssetType=text" rel="normal nofollow" title="Buzz up!">Buzz up!</a></li><li class="sexy-stumbleupon"><a href="http://www.stumbleupon.com/submit?url=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;title=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes" rel="normal nofollow" title="Stumble upon something good? Share it on StumbleUpon">Stumble upon something good? Share it on StumbleUpon</a></li><li class="sexy-technorati"><a href="http://technorati.com/faves?add=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/" rel="normal nofollow" title="Share this on Technorati">Share this on Technorati</a></li><li class="sexy-mixx"><a href="http://www.mixx.com/submit?page_url=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;title=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes" rel="normal nofollow" title="Share this on Mixx">Share this on Mixx</a></li><li class="sexy-myspace"><a href="http://www.myspace.com/Modules/PostTo/Pages/?u=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;t=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes" rel="normal nofollow" title="Post this to MySpace">Post this to MySpace</a></li><li class="sexy-designfloat"><a href="http://www.designfloat.com/submit.php?url=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;title=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes" rel="normal nofollow" title="Submit this to DesignFloat">Submit this to DesignFloat</a></li><li class="sexy-facebook"><a href="http://www.facebook.com/share.php?u=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;t=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes" rel="normal nofollow" title="Share this on Facebook">Share this on Facebook</a></li><li class="sexy-twitter"><a href="http://www.twitter.com/home?status=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes+-+http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/" rel="normal nofollow" title="Tweet This!">Tweet This!</a></li><li class="sexy-mail"><a href="mailto:?&amp;subject=10%20of%20the%20World%26%238217%3Bs%20Funniest%20Irish%20Jokes&amp;body=Before%20anyone%20accuses%20me%20of%20being%20racist%2C%20I%20am%20Irish%2C%20and%20as%20anyone%20from%20Ireland%20will%20tell%20you%2099%25%20of%20Irish%20jokes%20come%20from%20Ireland%2C%20and%20the%20reason%20that%20they%20are%20so%20simple%20is%20so%20the%20English%20can%20understand%20them.%0D%0A%0D%0AAn%20Englishman%2C%20Irishman%2C%20and%20Scotsman%20%20all%20go%20for%20a%20job%20interview%2C%20and%20as%20there%20is%20onl - http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/" rel="normal nofollow" title="Email this to a friend?">Email this to a friend?</a></li><li class="sexy-comfeed"><a href="http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/feed" rel="normal nofollow" title="Subscribe to the comments for this post?">Subscribe to the comments for this post?</a></li><li class="sexy-linkedin"><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;title=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes&amp;summary=Before%20anyone%20accuses%20me%20of%20being%20racist%2C%20I%20am%20Irish%2C%20and%20as%20anyone%20from%20Ireland%20will%20tell%20you%2099%25%20of%20Irish%20jokes%20come%20from%20Ireland%2C%20and%20the%20reason%20that%20they%20are%20so%20simple%20is%20so%20the%20English%20can%20understand%20them.%0D%0A%0D%0AAn%20Englishman%2C%20Irishman%2C%20and%20Scotsman%20%20all%20go%20for%20a%20job%20interview%2C%20and%20as%20there%20is%20onl&amp;source=PurpleSlinky" rel="normal nofollow" title="Share this on Linkedin">Share this on Linkedin</a></li><li class="sexy-newsvine"><a href="http://www.newsvine.com/_tools/seed&amp;save?u=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;h=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes" rel="normal nofollow" title="Seed this on Newsvine">Seed this on Newsvine</a></li><li class="sexy-devmarks"><a href="http://devmarks.com/index.php?posttext=Before%20anyone%20accuses%20me%20of%20being%20racist%2C%20I%20am%20Irish%2C%20and%20as%20anyone%20from%20Ireland%20will%20tell%20you%2099%25%20of%20Irish%20jokes%20come%20from%20Ireland%2C%20and%20the%20reason%20that%20they%20are%20so%20simple%20is%20so%20the%20English%20can%20understand%20them.%0D%0A%0D%0AAn%20Englishman%2C%20Irishman%2C%20and%20Scotsman%20%20all%20go%20for%20a%20job%20interview%2C%20and%20as%20there%20is%20onl&amp;posturl=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;posttitle=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes" rel="normal nofollow" title="Share this on Devmarks">Share this on Devmarks</a></li><li class="sexy-google"><a href="http://www.google.com/bookmarks/mark?op=add&amp;bkmk=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/title=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes" rel="normal nofollow" title="Add this to Google Bookmarks">Add this to Google Bookmarks</a></li><li class="sexy-misterwong"><a href="http://www.mister-wong.com/addurl/?bm_url=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;bm_description=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes&amp;plugin=sexybookmarks" rel="normal nofollow" title="Add this to Mister Wong">Add this to Mister Wong</a></li><li class="sexy-izeby"><a href="http://izeby.com/add_story.php?story_url=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/" rel="normal nofollow" title="Add this to Izeby">Add this to Izeby</a></li><li class="sexy-tumblr"><a href="http://www.tumblr.com/share?v=3&amp;u=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;t=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes&amp;s=" rel="normal nofollow" title="Share this on Tumblr">Share this on Tumblr</a></li><li class="sexy-tipd"><a href="http://tipd.com/submit.php?url=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/" rel="normal nofollow" title="Share this on Tipd">Share this on Tipd</a></li><li class="sexy-pfbuzz"><a href="http://pfbuzz.com/submit?url=http://purpleslinky.com/jokes/ethnic/10-of-the-worlds-funniest-irish-jokes/&amp;title=10+of+the+World%26%238217%3Bs+Funniest+Irish+Jokes" rel="normal nofollow" title="Share this on PFBuzz">Share this on PFBuzz</a></li></ul><div style="clear:both;"></div></div>				<!--[END]sexy bookmarks -->
+
+				
+				<div class="clear"></div>				
+			</div>			
+			<!--[END] Blog items -->						
+		</div>
+
+		<div class="clear"></div>
+		<div class="blockDividerWide"></div>
+		<div id="comments-wrapper">
+
+
+<!-- You can start editing here. -->
+
+	<a name="comments"></a>
+	<div id="commentDiv">
+
+		<div class="section-title">16 Comments</div>
+	
+		<ol class="comments">
+	
+			
+			<li class="comment alt" id="comment-31955">
+	
+				
+			
+				<div class="comment-data">
+					<div class="comment-gravatar">
+						<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+					</div>	
+					<div class="comment-author">Glassie</div>
+					<div class="comment-meta">Posted May 31, 2009 at 4:21 am</div>
+									
+					<p>As always you made me laugh, it&#8217;s a good job I don&#8217;t know you for I fear my face would have constant laughter lines and my cheeks would always be wet.</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="comment " id="comment-31957">
+	
+				
+			
+				<div class="comment-data">
+					<div class="comment-gravatar">
+						<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/2008/08/07/65205_a.jpg" vanityvid="triond:65205"/>
+					</div>	
+					<div class="comment-author"><a target="_blank" href="http://www.triond.com/users/Ramalingam">Ramalingam</a></div>
+					<div class="comment-meta">Posted May 31, 2009 at 9:07 am</div>
+									
+					<p>Nice jokes.Thank you</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="comment alt" id="comment-31959">
+	
+				
+			
+				<div class="comment-data">
+					<div class="comment-gravatar">
+						<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/2008/10/02/84361_a.jpg" vanityvid="triond:84361"/>
+					</div>	
+					<div class="comment-author"><a target="_blank" href="http://www.triond.com/users/M+J+katz">M J katz</a></div>
+					<div class="comment-meta">Posted May 31, 2009 at 11:47 am</div>
+									
+					<p>Ha ha ha!!!  I loved the jokes!  It would be hard to say which one is the best but #9 and #10 would be strong contenders!  <br />
+What a great way to start the day off! <img src='http://purpleslinky.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="comment " id="comment-31991">
+	
+				
+			
+				<div class="comment-data">
+					<div class="comment-gravatar">
+						<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/2009/04/11/165789_a.jpg" vanityvid="triond:165789"/>
+					</div>	
+					<div class="comment-author"><a target="_blank" href="http://www.triond.com/users/Judy+T+Lloyd">Judy T Lloyd</a></div>
+					<div class="comment-meta">Posted May 31, 2009 at 8:08 pm</div>
+									
+					<p>I love jokes and these were funny.</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="comment alt" id="comment-31993">
+	
+				
+			
+				<div class="comment-data">
+					<div class="comment-gravatar">
+						<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/2009/05/15/182105_a.jpg" vanityvid="triond:182105"/>
+					</div>	
+					<div class="comment-author"><a target="_blank" href="http://www.triond.com/users/ken+bultman">ken bultman</a></div>
+					<div class="comment-meta">Posted June 1, 2009 at 5:32 am</div>
+									
+					<p>Irish, blonde, or just plain secular&#8230;plumb funny.  Made my day.</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="comment " id="comment-31995">
+	
+				
+			
+				<div class="comment-data">
+					<div class="comment-gravatar">
+						<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+					</div>	
+					<div class="comment-author">william</div>
+					<div class="comment-meta">Posted June 1, 2009 at 11:53 am</div>
+									
+					<p>haha halarius! i laughed so hard at this LOL!</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="comment alt" id="comment-31997">
+	
+				
+			
+				<div class="comment-data">
+					<div class="comment-gravatar">
+						<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/2009/05/27/189269_a.jpg" vanityvid="triond:189269"/>
+					</div>	
+					<div class="comment-author"><a target="_blank" href="http://www.triond.com/users/Sarah+Sullins">Sarah Sullins</a></div>
+					<div class="comment-meta">Posted June 1, 2009 at 3:29 pm</div>
+									
+					<p>You had me rolling!  Thank you so much!</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="comment " id="comment-31999">
+	
+				
+			
+				<div class="comment-data">
+					<div class="comment-gravatar">
+						<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/2008/11/11/97747_a.jpg" vanityvid="triond:97747"/>
+					</div>	
+					<div class="comment-author"><a target="_blank" href="http://www.triond.com/users/dharokowns">dharokowns</a></div>
+					<div class="comment-meta">Posted June 1, 2009 at 7:03 pm</div>
+									
+					<p>Wow, I liked these a lot. Nothing like a good laugh! =D</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="comment alt" id="comment-32001">
+	
+				
+			
+				<div class="comment-data">
+					<div class="comment-gravatar">
+						<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+					</div>	
+					<div class="comment-author">danzill</div>
+					<div class="comment-meta">Posted June 1, 2009 at 7:54 pm</div>
+									
+					<p>omg if i could&#8217;ve chosen a rating i&#8217;d chosen 10 likes. such good jokes</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="comment " id="comment-32005">
+	
+				
+			
+				<div class="comment-data">
+					<div class="comment-gravatar">
+						<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+					</div>	
+					<div class="comment-author">Eric L. Wattree</div>
+					<div class="comment-meta">Posted June 2, 2009 at 6:59 am</div>
+									
+					<p>Irishman on twitter:</p>
+<p>What are you doing?</p>
+<p>Just sitting here drinkin&#8217; a pint of breakfast.</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="comment alt" id="comment-32003">
+	
+				
+			
+				<div class="comment-data">
+					<div class="comment-gravatar">
+						<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/2009/06/01/191801_a.jpg" vanityvid="triond:191801"/>
+					</div>	
+					<div class="comment-author"><a target="_blank" href="http://www.triond.com/users/Sarah+Sanguine">Sarah Sanguine</a></div>
+					<div class="comment-meta">Posted June 2, 2009 at 11:11 pm</div>
+									
+					<p>I loved number nine. They were all hilarious, though.</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="comment " id="comment-32007">
+	
+				
+			
+				<div class="comment-data">
+					<div class="comment-gravatar">
+						<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/2009/05/03/176525_a.jpg" vanityvid="triond:176525"/>
+					</div>	
+					<div class="comment-author"><a target="_blank" href="http://www.triond.com/users/Ask+Cash">Ask Cash</a></div>
+					<div class="comment-meta">Posted June 3, 2009 at 7:31 am</div>
+									
+					<p>Fun-tastic collection.<br />
+Loved them all.</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="comment alt" id="comment-32009">
+	
+				
+			
+				<div class="comment-data">
+					<div class="comment-gravatar">
+						<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+					</div>	
+					<div class="comment-author">idk</div>
+					<div class="comment-meta">Posted June 3, 2009 at 7:20 pm</div>
+									
+					<p>these weren&#8217;t funny at all.</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="comment " id="comment-32011">
+	
+				
+			
+				<div class="comment-data">
+					<div class="comment-gravatar">
+						<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+					</div>	
+					<div class="comment-author">Tim Hume</div>
+					<div class="comment-meta">Posted June 4, 2009 at 4:05 pm</div>
+									
+					<p>ha! ha! ha! these were funny even though i&#8217;m irish</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="comment alt" id="comment-32015">
+	
+				
+			
+				<div class="comment-data">
+					<div class="comment-gravatar">
+						<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+					</div>	
+					<div class="comment-author">brianberu</div>
+					<div class="comment-meta">Posted June 4, 2009 at 4:12 pm</div>
+									
+					<p>Hi Tim if you read the intro you would know that I am also Irish, I live in england now but I was born near Conomara</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="comment " id="comment-32013">
+	
+				
+			
+				<div class="comment-data">
+					<div class="comment-gravatar">
+						<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+					</div>	
+					<div class="comment-author">brianberu</div>
+					<div class="comment-meta">Posted June 4, 2009 at 4:17 pm</div>
+									
+					<p>Hi idk hope you are recovering from your senseofhumourectomy</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+		</ol>
+	
+	</div>
+
+ 
+</div>
+
+
+<div id="respond">Leave a Reply</div>
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'purpleslinky'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
+
+
+
+		</div><!--[END]#leftCol-->
+
+					<div id="rightCol">
+			
+			<div id="ad336">
+				
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   if (typeof impression_country=="undefined") impression_country = '';
+					   if (impression_country != 'CN'){	
+						   var 	is_triond_reader;
+						   if (typeof triond_writer_id=="undefined")
+						   	 is_triond_reader = 'nontriond';
+						   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+						     is_triond_reader = 'nontriond';
+						   else
+						     is_triond_reader = 'yestriond'; 
+						   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+						   var m3_r = Math.floor(Math.random()*99999999999);
+						   if (!document.MAX_used) document.MAX_used = ',';
+						   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+						   document.write ("?zoneid=518");
+						   document.write ("&clr_link=168BC0&clr_title=168BC0&clr_bg=e7e1ed&clr_border=e7e1ed&clr_text=111122&source=acf=" + readCookie("w4lfc") + is_triond_reader);
+						   document.write ('&amp;cb=' + m3_r);
+						   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+						   document.write ("&amp;loc=" + escape(window.location));
+						   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+						   if (document.context) document.write ("&context=" + escape(document.context));
+						   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+						   document.write ("'><\/scr"+"ipt>");
+					   }
+					//]]>--></script>			</div>
+			<!--Search module -->
+			<div class="module">
+				<div class="content">
+					<p class="title"><span>Search</span> PurpleSlinky</p>
+					<div id="cse" style="width: 100%;">Loading</div>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">
+  google.load('search', '1', {language : 'en', style : google.loader.themes.MINIMALIST});
+  google.setOnLoadCallback(function() {
+    var customSearchControl = new google.search.CustomSearchControl('008600977139321385175:zgowhkrhxmu');
+    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
+	customSearchControl.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
+    customSearchControl.draw('cse');
+  }, true);
+</script>				</div>
+			</div>
+			<!--[END}Search module -->
+
+			<div id="ad160Wrapper">
+				<div id="ad160-1">
+					
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   if (typeof impression_country=="undefined") impression_country = '';
+					   if (impression_country != 'CN'){	
+						   var 	is_triond_reader;
+						   if (typeof triond_writer_id=="undefined")
+						   	 is_triond_reader = 'nontriond';
+						   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+						     is_triond_reader = 'nontriond';
+						   else
+						     is_triond_reader = 'yestriond'; 
+						   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+						   var m3_r = Math.floor(Math.random()*99999999999);
+						   if (!document.MAX_used) document.MAX_used = ',';
+						   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+						   document.write ("?zoneid=809");
+						   document.write ("&clr_link=168BC0&clr_title=168BC0&clr_bg=e7e1ed&clr_border=e7e1ed&clr_text=111122&source=acf=" + readCookie("w4lfc") + is_triond_reader);
+						   document.write ('&amp;cb=' + m3_r);
+						   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+						   document.write ("&amp;loc=" + escape(window.location));
+						   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+						   if (document.context) document.write ("&context=" + escape(document.context));
+						   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+						   document.write ("'><\/scr"+"ipt>");
+					   }
+					//]]>--></script>				</div>
+				<div id="ad160-2">
+					
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   if (typeof impression_country=="undefined") impression_country = '';
+					   if (impression_country != 'CN'){	
+						   var 	is_triond_reader;
+						   if (typeof triond_writer_id=="undefined")
+						   	 is_triond_reader = 'nontriond';
+						   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+						     is_triond_reader = 'nontriond';
+						   else
+						     is_triond_reader = 'yestriond'; 
+						   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+						   var m3_r = Math.floor(Math.random()*99999999999);
+						   if (!document.MAX_used) document.MAX_used = ',';
+						   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+						   document.write ("?zoneid=519");
+						   document.write ("&clr_link=168BC0&clr_title=168BC0&clr_bg=e7e1ed&clr_border=e7e1ed&clr_text=111122&source=acf=" + readCookie("w4lfc") + is_triond_reader);
+						   document.write ('&amp;cb=' + m3_r);
+						   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+						   document.write ("&amp;loc=" + escape(window.location));
+						   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+						   if (document.context) document.write ("&context=" + escape(document.context));
+						   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+						   document.write ("'><\/scr"+"ipt>");
+					   }
+					//]]>--></script>				</div>
+				<div class="clear"></div>
+			</div>
+	
+			<div class="module">
+				<div class="moduleTop"></div>
+				<div class="content">
+					<iframe src="http://www.facebook.com/plugins/activity.php?site=purpleslinky.com&amp;width=320&amp;height=300&amp;header=true&amp;colorscheme=light&amp;recommendations=true&amp;ref=fb_activity" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:320px; height:300px; background-color: #fff;" allowTransparency="true"></iframe>										
+				</div>
+				<div class="moduleBottom"></div>				
+			</div>
+			<div class="module">
+				<div class="moduleTop"></div>
+					
+	<div id="triond-signup-div" style="display:none">
+	</div>
+	<script type="text/javascript">
+	if(typeof triond_user_logged_in != "undefined")
+	{
+		if(!triond_user_logged_in)
+		{
+			document.getElementById("triond-signup-div").style.display = "block";
+			showTriondSignupForm();
+		}
+	}
+	</script>
+					<div class="moduleBottom"></div>				
+			</div>
+	
+			<div id="ad336">
+				
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   if (typeof impression_country=="undefined") impression_country = '';
+					   if (impression_country != 'CN'){	
+						   var 	is_triond_reader;
+						   if (typeof triond_writer_id=="undefined")
+						   	 is_triond_reader = 'nontriond';
+						   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+						     is_triond_reader = 'nontriond';
+						   else
+						     is_triond_reader = 'yestriond'; 
+						   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+						   var m3_r = Math.floor(Math.random()*99999999999);
+						   if (!document.MAX_used) document.MAX_used = ',';
+						   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+						   document.write ("?zoneid=1498");
+						   document.write ("&clr_link=168BC0&clr_title=168BC0&clr_bg=e7e1ed&clr_border=e7e1ed&clr_text=111122&source=acf=" + readCookie("w4lfc") + is_triond_reader);
+						   document.write ('&amp;cb=' + m3_r);
+						   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+						   document.write ("&amp;loc=" + escape(window.location));
+						   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+						   if (document.context) document.write ("&context=" + escape(document.context));
+						   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+						   document.write ("'><\/scr"+"ipt>");
+					   }
+					//]]>--></script>			</div>
+	
+
+			<div class="module">
+				<div class="moduleTop"></div>
+				<div class="content">
+					<p class="title"><span>Popular</span> Articles</p>
+					<ul>
+						<li><div class="popularPostImgDiv"><a href="http://purpleslinky.com/jokes/dirty-jokes/" title="Celebrating Good Times in the Gulf"><img src="http://s3.amazonaws.com/readers/purpleslinky/2008/04/15/144844.jpg" style="height: 30px; width: 40px" class="popularPostPic" /></a></div><div class="popularPostLinkDiv"><a href="http://purpleslinky.com/jokes/dirty-jokes/" title="Celebrating Good Times in the Gulf">Celebrating Good Times in the Gulf</a></div><div style="clear:both;"></div></li><li><div class="popularPostImgDiv"><a href="http://purpleslinky.com/humor/youre-keen-on-these-mainly-because-they-are-humorous/" title="You're Keen on These Mainly Because They are Humorous!"><img src="http://s3.amazonaws.com/readers/socyberty/2008/04/06/139430.jpg" style="height: 30px; width: 40px" class="popularPostPic" /></a></div><div class="popularPostLinkDiv"><a href="http://purpleslinky.com/humor/youre-keen-on-these-mainly-because-they-are-humorous/" title="You're Keen on These Mainly Because They are Humorous!">You're Keen on These Mainly Because They are Humorous!</a></div><div style="clear:both;"></div></li><li><div class="popularPostImgDiv"><a href="http://purpleslinky.com/humor/animal/youtube-videos-a-cow-was-crushed-when-the-road-had-sex-with-a-bull/" title="Youtube Videos: A Cow Was Crushed When The Road Had Sex with a Bull"><img src="http://s3.amazonaws.com/readers/bizcovering/2007/05/22/5547.jpg" style="height: 30px; width: 40px" class="popularPostPic" /></a></div><div class="popularPostLinkDiv"><a href="http://purpleslinky.com/humor/animal/youtube-videos-a-cow-was-crushed-when-the-road-had-sex-with-a-bull/" title="Youtube Videos: A Cow Was Crushed When The Road Had Sex with a Bull">Youtube Videos: A Cow Was Crushed When The Road Had Sex with a Bull</a></div><div style="clear:both;"></div></li><li><div class="popularPostImgDiv"><a href="http://purpleslinky.com/humor/the-benefit-of-viagra-to-the-problem-of-erectile-dysfunction/" title="The Benefit of Viagra to The Problem of Erectile Dysfunction"><img src="http://s3.amazonaws.com/readers/authspot/2009/06/25/1103443.jpg" style="height: 30px; width: 40px" class="popularPostPic" /></a></div><div class="popularPostLinkDiv"><a href="http://purpleslinky.com/humor/the-benefit-of-viagra-to-the-problem-of-erectile-dysfunction/" title="The Benefit of Viagra to The Problem of Erectile Dysfunction">The Benefit of Viagra to The Problem of Erectile Dysfunction</a></div><div style="clear:both;"></div></li><li><div class="popularPostImgDiv"><a href="http://purpleslinky.com/humor/jokes-in-my-mail/" title="Jokes in My Mail"><img src="http://s3.amazonaws.com/readers/purpleslinky/2009/04/03/851899.jpg" style="height: 30px; width: 40px" class="popularPostPic" /></a></div><div class="popularPostLinkDiv"><a href="http://purpleslinky.com/humor/jokes-in-my-mail/" title="Jokes in My Mail">Jokes in My Mail</a></div><div style="clear:both;"></div></li><li><div class="popularPostImgDiv"><a href="http://purpleslinky.com/humor/enne-poloru-unfit-book-review-by-mohammed-abdul-rahman-konari-onari/" title=""Enne Poloru Unfit"  Book Review by Mohammed Abdul Rahman.konari     Onari"><img src="http://s3.amazonaws.com/readers/authspot/2009/06/26/1105681.jpg" style="height: 30px; width: 40px" class="popularPostPic" /></a></div><div class="popularPostLinkDiv"><a href="http://purpleslinky.com/humor/enne-poloru-unfit-book-review-by-mohammed-abdul-rahman-konari-onari/" title=""Enne Poloru Unfit"  Book Review by Mohammed Abdul Rahman.konari     Onari">"Enne Poloru Unfit"  Book Review by Mohammed Abdul Rahman.konari     Onari</a></div><div style="clear:both;"></div></li><li><div class="popularPostImgDiv"><a href="http://purpleslinky.com/humor/animal/natural-squirrel-repellent/" title="Natural Squirrel Repellent"><img src="http://s3.amazonaws.com/readers/authspot/2008/02/04/109041.jpg" style="height: 30px; width: 40px" class="popularPostPic" /></a></div><div class="popularPostLinkDiv"><a href="http://purpleslinky.com/humor/animal/natural-squirrel-repellent/" title="Natural Squirrel Repellent">Natural Squirrel Repellent</a></div><div style="clear:both;"></div></li><li><div class="popularPostImgDiv"><a href="http://purpleslinky.com/humor/computer/benefits-of-a-multilingual-website/" title="Benefits of a Multilingual Website"><img src="http://s3.amazonaws.com/readers/gomestic/2006/11/14/1565.jpg" style="height: 30px; width: 40px" class="popularPostPic" /></a></div><div class="popularPostLinkDiv"><a href="http://purpleslinky.com/humor/computer/benefits-of-a-multilingual-website/" title="Benefits of a Multilingual Website">Benefits of a Multilingual Website</a></div><div style="clear:both;"></div></li><li><div class="popularPostImgDiv"><a href="http://purpleslinky.com/humor/enne-pole-oru-unfit-an-unfit-like-me-book-review-by-mohammed-abdurahiman-konari/" title="Enne Pole Oru  Unfit (An Unfit Like Me) Book Review by Mohammed Abdurahiman.konari"><img src="http://s3.amazonaws.com/readers/cinemaroll/2008/09/04/302317.jpg" style="height: 30px; width: 40px" class="popularPostPic" /></a></div><div class="popularPostLinkDiv"><a href="http://purpleslinky.com/humor/enne-pole-oru-unfit-an-unfit-like-me-book-review-by-mohammed-abdurahiman-konari/" title="Enne Pole Oru  Unfit (An Unfit Like Me) Book Review by Mohammed Abdurahiman.konari">Enne Pole Oru  Unfit (An Unfit Like Me) Book Review by Mohammed Abdurahiman.konari</a></div><div style="clear:both;"></div></li><li><div class="popularPostImgDiv"><a href="http://purpleslinky.com/humor/101-funny-weird-and-random-stupid-things-you-shouldnt-do/" title="101 Funny, Weird and Random Stupid Things You Shouldn't Do"><img src="http://s3.amazonaws.com/readers/authspot/2009/07/12/1157711.jpg" style="height: 30px; width: 40px" class="popularPostPic" /></a></div><div class="popularPostLinkDiv"><a href="http://purpleslinky.com/humor/101-funny-weird-and-random-stupid-things-you-shouldnt-do/" title="101 Funny, Weird and Random Stupid Things You Shouldn't Do">101 Funny, Weird and Random Stupid Things You Shouldn't Do</a></div><div style="clear:both;"></div></li>					</ul>										
+				</div>
+				<div class="moduleBottom"></div>				
+			</div>
+
+<div>
+						
+	
+			
+			<!--widgets -->		
+							
+			<!--[END] widgets-->
+
+		
+		</div><!--[END]#rightCol-->	
+		<div class="clear"></div>		
+		
+		
+		
+		
+</div><!--[END] #wrapper -->
+		<div id="footerWrapper">
+		<div id="footer">					
+			<!--[START] Popular posts module -->
+			<div class="col1">			
+				
+			</div>
+			<!--[END] Popular posts module -->
+			
+			<div class="col2">
+				<p class="title">Navigate</p>
+				<ul class="component">
+					<li><a href="/">Home</a></li>
+					<li><a href="/about">About</a></li>
+					<li><a href="/contact">Contact</a></li>
+					<li><a href="/advertise-with-us">Advertise with us</a></li>
+					<li><a href="http://www.triond.com">Submit an Article</a></li>
+				</ul>
+			</div>
+			
+			<div class="col3">
+				<p class="title">You can find us on <a href="http://twitter.com/purpleslinky" target="_blank">Twitter</a></p>
+				<ul class="component">
+					<li></li>
+				</ul>
+			</div>
+			
+			<div class="clear"></div>
+			
+			<div class="footerDivider"></div>
+			
+			<div id="copyright">
+			<div id="poweredByTriond">			
+				Powered by <a href="http://www.triond.com"><img src="http://s3.amazonaws.com/triond/images/triond_network_logo_89x20.png" alt="Powered by Triond" width="89" height="20" /></a>
+			</div>
+				<div class="left"></div>
+				<div class="right"></div>
+				<div id="copyrightContent">
+					Copyright &copy; <a href="http://purpleslinky.com/">PurpleSlinky</a> 2013. All Rights Reserved.&nbsp;&nbsp;&nbsp;<a href="/terms-of-use">Terms of Use</a>&nbsp;&nbsp;&nbsp;<a href="/privacy-policy">Privacy Policy</a>
+				</div>
+			</div><!--[END] #copyright -->
+		</div><!--[END]#footer-->
+	</div><!--[END]#footerWrapper-->		
+
+	<!-- Start Quantcast By WP-Plugin: Quantcast-Quantifier -->
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<script type="text/javascript">_qacct="p-daj4ISsTm6BnE";quantserve();</script>
+<noscript>
+<a href="http://www.quantcast.com/p-daj4ISsTm6BnE" target="_blank"><img src="http://pixel.quantserve.com/pixel/p-daj4ISsTm6BnE.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/></a>
+</noscript> 
+<img width="1" height="1" border="0" src="http://wprest.triond.com/cntimp?home_channel_id=1439&website_channel_article_id=740595&rnd=2780433624"><script type="text/javascript">
+			document.write(unescape("%3Cscript src='/wp-content/mu-plugins/w4l/tiwik.js' type='text/javascript'%3E%3C/script%3E"));
+			</script><script type="text/javascript">
+			writer_id = 154265;
+			tiwik_log(writer_id);
+			</script><script type="text/javascript">
+					var _gaq = _gaq || [];
+					_gaq.push(['t25._setAccount', 'UA-1488967-25']);_gaq.push(['t25._setCustomVar',2,'publish_date','20090531',3]);_gaq.push(['t25._setCustomVar',3,'article_id','993621',3]);_gaq.push(['t25._setCustomVar',4,'wp_user_id','200745',3]);_gaq.push(['t25._trackPageview']);_gaq.push(['t29._setAccount', 'UA-1488967-29']);_gaq.push(['t29._setCustomVar',2,'publish_date','20090531',3]);_gaq.push(['t29._setCustomVar',3,'article_id','993621',3]);_gaq.push(['t29._setCustomVar',4,'wp_user_id','200745',3]);_gaq.push(['t29._trackPageview']);
+					(function() {
+					  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+					})();
+					
+					</script><script type="text/javascript">
+var _sf_async_config={uid:6902};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+       "static.chartbeat.com/js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script>
+	
+	 
+		<div id="ad-dynamic">
+			
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   if (typeof impression_country=="undefined") impression_country = '';
+					   if (impression_country != 'CN'){	
+						   var 	is_triond_reader;
+						   if (typeof triond_writer_id=="undefined")
+						   	 is_triond_reader = 'nontriond';
+						   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+						     is_triond_reader = 'nontriond';
+						   else
+						     is_triond_reader = 'yestriond'; 
+						   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+						   var m3_r = Math.floor(Math.random()*99999999999);
+						   if (!document.MAX_used) document.MAX_used = ',';
+						   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+						   document.write ("?zoneid=305");
+						   document.write ("&clr_link=168BC0&clr_title=168BC0&clr_bg=e7e1ed&clr_border=e7e1ed&clr_text=111122&source=acf=" + readCookie("w4lfc") + is_triond_reader);
+						   document.write ('&amp;cb=' + m3_r);
+						   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+						   document.write ("&amp;loc=" + escape(window.location));
+						   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+						   if (document.context) document.write ("&context=" + escape(document.context));
+						   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+						   document.write ("'><\/scr"+"ipt>");
+					   }
+					//]]>--></script>							</div>
+				<div id="ad-to">
+			
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   if (typeof impression_country=="undefined") impression_country = '';
+					   if (impression_country != 'CN'){	
+						   var 	is_triond_reader;
+						   if (typeof triond_writer_id=="undefined")
+						   	 is_triond_reader = 'nontriond';
+						   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+						     is_triond_reader = 'nontriond';
+						   else
+						     is_triond_reader = 'yestriond'; 
+						   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+						   var m3_r = Math.floor(Math.random()*99999999999);
+						   if (!document.MAX_used) document.MAX_used = ',';
+						   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+						   document.write ("?zoneid=1375");
+						   document.write ("&clr_link=168BC0&clr_title=168BC0&clr_bg=e7e1ed&clr_border=e7e1ed&clr_text=111122&source=acf=" + readCookie("w4lfc") + is_triond_reader);
+						   document.write ('&amp;cb=' + m3_r);
+						   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+						   document.write ("&amp;loc=" + escape(window.location));
+						   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+						   if (document.context) document.write ("&context=" + escape(document.context));
+						   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+						   document.write ("'><\/scr"+"ipt>");
+					   }
+					//]]>--></script>		</div>
+		<div id="ad-slider">
+			
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   if (typeof impression_country=="undefined") impression_country = '';
+					   if (impression_country != 'CN'){	
+						   var 	is_triond_reader;
+						   if (typeof triond_writer_id=="undefined")
+						   	 is_triond_reader = 'nontriond';
+						   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+						     is_triond_reader = 'nontriond';
+						   else
+						     is_triond_reader = 'yestriond'; 
+						   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+						   var m3_r = Math.floor(Math.random()*99999999999);
+						   if (!document.MAX_used) document.MAX_used = ',';
+						   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+						   document.write ("?zoneid=944");
+						   document.write ("&clr_link=168BC0&clr_title=168BC0&clr_bg=e7e1ed&clr_border=e7e1ed&clr_text=111122&source=acf=" + readCookie("w4lfc") + is_triond_reader);
+						   document.write ('&amp;cb=' + m3_r);
+						   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+						   document.write ("&amp;loc=" + escape(window.location));
+						   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+						   if (document.context) document.write ("&context=" + escape(document.context));
+						   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+						   document.write ("'><\/scr"+"ipt>");
+					   }
+					//]]>--></script>		</div>
+	<!-- start eXelate tag - Triond - Default Site -->
+
+<SCRIPT TYPE="text/javascript" SRC="http://loadus.exelator.com/load/?p=149&g=014&c=285365&ctg=entertainment&subctg=ethnic"></SCRIPT>
+<!--  end eXelate tag -->
+	
+<!-- start wibiya 
+<script src='http://toolbar.wibiya.com/toolbarLoader.php?toolbarId=844&nc=0&pl=1' type='text/javascript'></script>	
+ end wibiya -->
+ <script type="text/javascript">tyntVariables = {"ap":"Read more: "};</script> <script type="text/javascript" src="http://tcr.tynt.com/javascripts/Tracer.js?user=bqAbLMtt8r35jaadbiUt4I&amp;s=130"></script>
+
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   if (typeof impression_country=="undefined") impression_country = '';
+					   if (impression_country != 'CN'){	
+						   var 	is_triond_reader;
+						   if (typeof triond_writer_id=="undefined")
+						   	 is_triond_reader = 'nontriond';
+						   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+						     is_triond_reader = 'nontriond';
+						   else
+						     is_triond_reader = 'yestriond'; 
+						   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+						   var m3_r = Math.floor(Math.random()*99999999999);
+						   if (!document.MAX_used) document.MAX_used = ',';
+						   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+						   document.write ("?zoneid=1576");
+						   document.write ("&clr_link=168BC0&clr_title=168BC0&clr_bg=e7e1ed&clr_border=e7e1ed&clr_text=111122&source=acf=" + readCookie("w4lfc") + is_triond_reader);
+						   document.write ('&amp;cb=' + m3_r);
+						   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+						   document.write ("&amp;loc=" + escape(window.location));
+						   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+						   if (document.context) document.write ("&context=" + escape(document.context));
+						   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+						   document.write ("'><\/scr"+"ipt>");
+					   }
+					//]]>--></script>
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   if (typeof impression_country=="undefined") impression_country = '';
+					   if (impression_country != 'CN'){	
+						   var 	is_triond_reader;
+						   if (typeof triond_writer_id=="undefined")
+						   	 is_triond_reader = 'nontriond';
+						   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+						     is_triond_reader = 'nontriond';
+						   else
+						     is_triond_reader = 'yestriond'; 
+						   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+						   var m3_r = Math.floor(Math.random()*99999999999);
+						   if (!document.MAX_used) document.MAX_used = ',';
+						   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+						   document.write ("?zoneid=1599");
+						   document.write ("&clr_link=168BC0&clr_title=168BC0&clr_bg=e7e1ed&clr_border=e7e1ed&clr_text=111122&source=acf=" + readCookie("w4lfc") + is_triond_reader);
+						   document.write ('&amp;cb=' + m3_r);
+						   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+						   document.write ("&amp;loc=" + escape(window.location));
+						   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+						   if (document.context) document.write ("&context=" + escape(document.context));
+						   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+						   document.write ("'><\/scr"+"ipt>");
+					   }
+					//]]>--></script>	</body>
+</html>

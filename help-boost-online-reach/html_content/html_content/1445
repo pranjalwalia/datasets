@@ -1,0 +1,742 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <!-- DEFAULT COLORS -->
+        <meta name="color:Background" content="#eee"/>
+        <meta name="color:Content Background" content="#fff"/>
+        <meta name="color:Title" content="#444"/>
+        <meta name="color:Description" content="#666"/>
+        <meta name="color:Post Title" content="#c00"/>    
+        <meta name="color:Text" content="#444"/>
+        <meta name="color:Inline Link" content="#c00"/>
+        <meta name="color:Quote" content="#666"/>
+        <meta name="color:Quote Source" content="#444"/>
+        <meta name="color:Link Post" content="#c00"/>
+        <meta name="color:Conversation Background" content="#f8f8f8"/>
+        <meta name="color:Conversation Border" content="#ddd"/>
+        <meta name="color:Conversation Text" content="#444"/>
+        <meta name="color:Conversation Label" content="#111"/>
+        <meta name="color:Photo Border" content="#eee"/>
+        <meta name="color:Date" content="#fff"/>
+        <meta name="color:Date Background" content="#ccc"/>
+        <!-- END DEFAULT COLORS -->
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Proletariat Kitchen</title>
+        <link rel="icon" href="http://25.media.tumblr.com/avatar_77eb8789514f_16.png"/>
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="http://proletariatkitchen.tumblr.com/rss"/>
+        <meta name="viewport" content="width=775"/> <!-- iPhone -->
+
+        <style type="text/css">
+            body {
+                margin:           0px;
+                background-color: #eee;
+                font-family:      'Lucida Grande', Helvetica, sans-serif;
+            }
+            
+            #content {
+                width:            420px;
+                margin:           auto;
+                padding:          15px;
+                background-color: #fff;
+                position:         relative;
+            }
+
+            a {
+                color:            #c00;
+            }
+
+            h1 {
+                padding:          30px 0px 50px 0px;
+                margin:           0px;
+                text-align:       center;
+                font:             Bold 55px 'Arial Black', Tahoma, Helvetica, sans-serif;
+                letter-spacing:   -2px;
+                line-height:      50px;
+            }
+            
+            h1 a {
+                color:            #444;
+                text-decoration:  none;
+            }
+
+            #description {
+                position:         absolute;
+								left: 						465px;
+            }
+
+            #description div {
+                font:             normal 12px Helvetica,sans-serif;
+                line-height:      16px;
+                width:            150px;
+                color:            #666;
+            }
+
+						#description div#search {
+								text-align: right;
+						}
+
+            #description div a {
+                color:            #666;
+            }
+            
+            #description #nav_container {
+                font-size: 13px;
+                font-weight: bold;
+            }
+            
+            #description #nav_container .dim {
+                filter: alpha(opacity=50); 
+                -moz-opacity: 0.5; 
+                opacity: 0.5;
+            }
+
+						#searchresultcount {
+							margin: 0 0 30px;
+							text-align: center;
+						}
+            
+            .post {
+                position:         relative;
+                margin-bottom:    40px;
+            }
+
+            .post div.labels {
+                position:         absolute;
+                right:            435px;
+                text-align:       right;
+                width:            150px;
+            }
+
+            .post div.date {
+                background-color: #ccc;
+                white-space:      nowrap;
+                font:             Normal 20px Helvetica, sans-serif;
+                letter-spacing:   -1px;
+                color:            #fff;
+                display:          inline;
+                padding:          3px 5px 0px 5px;
+                line-height:      20px;
+            }
+
+            .post div.date a {
+                color:            #fff;
+                text-decoration:  none;
+            }
+
+            .post h2 {
+                font-size:        18px;
+                font-weight:      Bold;
+                color:            #c00;
+                letter-spacing:   -1px;
+                margin:           0px 0px 10px 0px;
+            }
+
+            .post h2 a {
+                color:            #c00;
+                text-decoration:  none;
+            }
+            
+            /* Regular Post */
+            .post .regular {
+                font-size:        12px;
+                color:            #444;
+                line-height:      17px;
+            }
+
+            .post .regular blockquote {
+                font-style: italic;
+            }
+            
+            /* Photo Post */
+            .post .photo img {
+                border:           solid 10px #eee;
+            }
+
+            .post .photo div.caption {
+                font-size:        11px;
+                color:            #444;
+                margin-top:       5px;
+            }
+            
+            .post .photo div.caption a {
+                color:            #444;
+            }
+            
+            /* Quote Post */
+            .post .quote span.quote {
+                font:             Bold 28px Helvetica, sans-serif;
+                letter-spacing:   -1px;
+                color:            #666;
+            }
+
+            .post .quote span.quote a {
+                color:            #666;
+            }
+
+            .post .quote span.quote big.quote {
+                font:             Bold 60px Georgia, serif;
+                line-height:      8px;
+                vertical-align:   -20px;
+            }
+            
+            .post .quote span.source {
+                font-size:        16px;
+                font-weight:      Bold;
+                color:            #444;
+                letter-spacing:   -1px;
+            }
+
+            .post .quote span.source a {
+                color:            #444;
+            }
+            
+            /* Link Post */
+            .post .link a.link {
+                font:             Bold 20px Helvetica, sans-serif;
+                letter-spacing:   -1px;
+                color:            #c00;
+            }
+            
+            .post .link span.description {
+                font-size: 13px;
+                font-weight: normal;
+                letter-spacing: -1px;
+            }
+
+            /* Conversation Post */
+            .post .conversation ul {
+                background-color: #f8f8f8;
+                list-style-type:  none;
+                margin:           0px;
+                padding:          0px;
+                border-left:      solid 5px #ddd;
+            }
+            
+            .post .conversation ul li {
+                border-bottom:    solid 1px #ddd;
+                font-size:        12px;
+                padding:          4px 0px 4px 8px;
+                color:            #444;
+            }
+            
+            .post .conversation ul li span.label {
+                font-weight:      bold;
+                color:            #111;
+            }
+            
+            /* Audio Post */      
+            .post .audio div.caption {
+                font-size:        11px;
+                color:            #444;
+                margin-top:       5px;
+            }
+            
+            .post .audio div.caption a {
+                color:            #444;
+            }
+            
+            /* Video Post */
+            .post .video {
+                width:            400px;
+                margin:           auto;
+            }
+
+            .post .video div.caption {
+                font-size:        11px;
+                color:            #444;
+                margin-top:       5px;
+            }
+            
+            .post div.video div.caption a {
+                color:            #444;
+            }
+
+            /* Footer */
+            #footer {
+                margin:           40px 0px 30px 0px;
+                text-align:       center;
+                font-size:        12px;
+            }
+            
+            #footer a {
+                text-decoration:  none;
+                color:            #444;
+            }
+            
+            #footer a:hover {
+                text-decoration:  underline;
+            }
+            
+						.query { font-weight: bold; }
+						
+            
+        </style>
+
+        <!--[if lt IE 7]>
+            <style type="text/css">
+                .post div.labels {
+                    right: 450px;
+                }
+            </style>
+        <![endif]-->
+    <meta http-equiv="x-dns-prefetch-control" content="off"/></head>
+    <body>
+        <div id="content">
+            <h1><a href="/">Proletariat Kitchen</a></h1>
+
+            <div id="description">
+                <div>
+										<div id="search">
+											<form action="/search" method="get">
+											    <input type="text" name="q" value=""/>
+											    <input type="submit" value="Search"/>
+											</form>
+										</div>
+	
+                    Proletariat Kitchen is a place for independence and empowerment through food.<br />
+<br />
+My name is Glenn Robinson and I am fascinated by food, people, and the environment.  Through Proletariat Kitchen I will bring you recipes, cooking techniques, how to's, diy, food history, food activism, foraging, and opinion.<br />
+<br />
+Email me for any comments or questions:<br />
+glenn@balumbum.com
+                    
+                    <p id="nav_container">
+                        <a href="/archive" id="archive_link">Archive</a>
+                        <span class="dim">/</span>
+                        <a href="http://proletariatkitchen.tumblr.com/rss">RSS</a>
+                    </p>
+                </div>
+            </div>
+            
+						
+
+            
+                <div class="post">
+                    <div class="labels">
+                        
+                            <div class="date"><a href="http://proletariatkitchen.tumblr.com/post/86135774/soup-stock">March 13</a></div>
+                        
+                    
+                        
+                    </div>
+
+                    
+                        <div class="regular">
+                            <h2><a href="http://proletariatkitchen.tumblr.com/post/86135774/soup-stock">Soup Stock.</a></h2>
+                            <p><img height="283" width="420" src="http://farm4.static.flickr.com/3595/3351512644_d643457e5f_o.jpg"/></p>
+<p>Forget the bullion cubes, making your own soup stock is so easy you&#8217;ll wonder why you didn&#8217;t start doing so sooner!</p>
+<p><a target="_blank" href="http://en.wikipedia.org/wiki/Stock_(food)">Soup stock</a> is the flavored liquid that is used as the base for many soups, adding a robustness to the overall flavor.  There are many different kinds of soup stocks according to what you put in them.  For instance fond brun, or brown stock, is achived by roasting bones and <a target="_blank" href="http://en.wikipedia.org/wiki/Mirepoix_(cuisine)">mirepoix</a>(mirepoix is most typically a combination of onions, carrots, and celery; often it can be the undesirable parts of these vegetables), whereas fond blanc, or white stock, is made by using raw bones and white mirepoix.  </p>
+<p>Today, I am making vegetable stock.  I like using vegetable stock because it tastes lighter and fresher.  I am using an adapted recipe from <a target="_blank" href="http://books.google.com/books?id=MwUKHQAACAAJ&amp;dq=inauthor:%22Donna+Hay%22"><i>Modern Classics: Book 1</i> by Donna Hay</a>.  </p>
+<p><img height="283" width="420" src="http://farm4.static.flickr.com/3449/3351512798_906e724eb5_o.jpg"/></p>
+<p>The ingredients are as follows:</p>
+<p>• 1 onion - quartered</p>
+<p>• 1 carrot - halved</p>
+<p>• 1 stick celery - chopped</p>
+<p>• 2 stalks parsley - I forgot to get the parsley and substituted with cilantro.  Makes for a slightly different flavor.</p>
+<p>• 1 bay leaf</p>
+<p>• 1 leek - I forgot the leek as well, where was my mind!  The leek definitely adds to the flavor, however you can just use green onions or another half a yellow or white onion if you&#8217;d like.</p>
+<p>• 1 cup sliced mushrooms</p>
+<p>• 4 liters water, or about 4 cereal bowls worth</p>
+<p>• sea salt</p>
+<p>• 5 peppercorns</p>
+<p><img height="283" width="420" src="http://farm4.static.flickr.com/3646/3351512896_f241a9c717_o.jpg"/></p>
+<p>To get started, pre-heat the oven to 400˚F(200˚C).  Chop and slice the vegetables, place on a baking sheet and roast in the oven for about 45 minutes, or until well browned. </p>
+<p><img height="283" width="420" src="http://farm4.static.flickr.com/3464/3351512722_2de28584a6_o.jpg"/></p>
+<p><img height="283" width="420" src="http://farm4.static.flickr.com/3593/3350689775_40862485c5_o.jpg"/></p>
+<p>Transfer the roasted veggies to a large stock pot with the bay leaf and peppercorns.  Add water and bring to a boil uncovered.  Reduce heat so stock simmers consistantly.  If necessary, usually only when using meat, skim the surface with a spoon to keep the stock clear.  SImmer for about an hour and add a generous amount of salt to bring out the flavor.  Strain the stock through a sieve and allow to cool.  Store in the fridge for up to 3 days or freeze for later use.</p>
+<p>To make beef, fish, or chicken stock add the bones, sinew, and meat to the roasting process.</p>
+<p>Enjoy.</p>
+                        </div>
+<div style="font-size: 10px; text-align: left;"><a href="http://proletariatkitchen.tumblr.com/post/86135774/soup-stock#disqus_thread">Comments (View)</a></div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+
+            
+                <div class="post">
+                    <div class="labels">
+                        
+                            <div class="date"><a href="http://proletariatkitchen.tumblr.com/post/80546938/granola-by-christine-caruso">February 22</a></div>
+                        
+                    
+                        
+                    </div>
+
+                    
+                        <div class="regular">
+                            <h2><a href="http://proletariatkitchen.tumblr.com/post/80546938/granola-by-christine-caruso">Granola by Christine Caruso</a></h2>
+                            <p><img src="http://farm4.static.flickr.com/3539/3301464454_2b5bcf4bd2_o.jpg" height="283" width="420"/></p>
+<p><a href="http://en.wikipedia.org/wiki/Granola">Granola</a>, the healthy, fatty, and delicious treat of grains, seeds, and sometimes fruit, is a relatively modern delight with a somewhat interesting past of sanitariums and marketing. <br/><br/>During the 1800&#8217;s <a target="_blank" href="http://en.wikipedia.org/wiki/Sylvester_Graham">Sylvester Graham</a>, an American dietary reformer who was obsesssed with curbing sexual excitement through diet,  developed graham flower.  Slightly later <a target="_blank" href="http://en.wikipedia.org/wiki/James_Caleb_Jackson">Dr. James C. Jackson</a>, who was an abolitionist, baked and re-baked graham flower creating &#8220;<a target="_blank" href="http://en.wikipedia.org/wiki/Granula">Granula</a>&#8221;, an early version of grape nuts.   Granula was to be implemented in healthy lifestyles at the hight of &#8220;spa&#8221; popularity during the 19th century.  In the latter half of the century, <a target="_blank" href="http://en.wikipedia.org/wiki/John_Harvey_Kellogg">Dr. John Harvey Kellogg</a>, whom we know as one of the founders of Kellog brand cereal and was also obsessed with curbing sexual excitement through diet and excercise, was experimenting with foods at the <a target="_blank" href="http://en.wikipedia.org/wiki/Battle_Creek_Sanitarium">Battle Creek Sanitarium</a>, of which he was director, developing a breakfast food of whole grains also named &#8220;Granula&#8221;.   Kellogg was soon sued by Dr. Jackson for use of the name Granula, so, he renamed his creation &#8220;Granola&#8221;.  A commonality between all three men is their belief that diet was a major factor in healthy living.  All were avid vegitarians, however it appears that Dr. Jackson was the only one not obsessed with curbing sexual excitement.  <br/><br/>As modern day breakfast cereals, developed by Kellogg, Post, and Quaker Oats, became increasingly sweet and marketed to children, granola was combined with fruit and nuts and marketed as a health food which was popular with the <a target="_blank" href="http://en.wikipedia.org/wiki/Hippie">hippie</a> movement.  After a series of marketers and &#8220;rights&#8221; sales, we have our modern day granola, which is still an easily accessible cereal, that can be made at home and will most likely taste better and be composed of better ingredients than store bought granola.<br/><br/>Below is a wonderful recipe for maple sweetened granola, adapted from <a target="_blank" href="http://books.google.com/books?id=PfQIAAAACAAJ&amp;dq=more+with+less+doris"><i>More with Less</i></a> by Doris Janzen Longacre, by Christine Caruso of <a target="_blank" href="http://eatthepresentmoment.blogspot.com/">Eat Here Now</a>, who, besides being an avid &#8220;foodie&#8221;, is currently studying food, environments, and urban health:</p>
+<p><img src="http://farm4.static.flickr.com/3386/3301464500_21870fd853_o.jpg" height="283" width="420"/><br/>ingredients:<br/>•2c whole wheat flour<br/>•6c rolled oats (old fashioned)<br/>•1c shredded (unsweetened) coconut<br/>•1c wheat germ<br/>•1T<br/><br/>•1/2c water<br/>•1c oil<br/>•1c maple syrup<br/>•2t vanilla extract<br/>•1T salt<br/><br/>Preheat oven to 250F.</p>
+<p><img src="http://farm4.static.flickr.com/3484/3300631155_518ef4accd_o.jpg" height="283" width="420"/></p>
+<p>Combine all of the dry ingredients in a large bowl.</p>
+<p><img src="http://farm4.static.flickr.com/3418/3300631397_23626e9e1d_o.jpg" height="283" width="420"/></p>
+<p>Wisk together wet ingredients and salt in a medium bowl.</p>
+<p><img src="http://farm4.static.flickr.com/3418/3301464542_3bc89cb8a7_o.jpg" height="283" width="420"/></p>
+<p>Stir wet ingredients into the dry ingredients.</p>
+<p><img src="http://farm4.static.flickr.com/3342/3300631341_8b0ef281f4_o.jpg" height="283" width="420"/></p>
+<p>Spread on two oiled baking sheets.  Bake for about an hour<br/><br/>This recipe makes about 3 quarts of granola.  For those that love to experiment, feel free to add various other grains, nuts, and dried fruit.</p>
+                        </div>
+<div style="font-size: 10px; text-align: left;"><a href="http://proletariatkitchen.tumblr.com/post/80546938/granola-by-christine-caruso#disqus_thread">Comments (View)</a></div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+
+            
+                <div class="post">
+                    <div class="labels">
+                        
+                    
+                        
+                            <div class="date"><a href="http://proletariatkitchen.tumblr.com/post/80495536/tahini">+</a></div>
+                        
+                    </div>
+
+                    
+                        <div class="regular">
+                            <h2><a href="http://proletariatkitchen.tumblr.com/post/80495536/tahini">Tahini</a></h2>
+                            <p><img src="http://farm4.static.flickr.com/3361/3295929621_4f06a23c1b_o.jpg" height="283" width="420"/></p>
+<p><a target="_blank" href="http://en.wikipedia.org/wiki/Tahini">Tahini</a>, or simply <a target="_blank" href="http://en.wikipedia.org/wiki/Sesame">sesame</a> paste, has been garnering much attention on the health food circuit in recent years due to it&#8217;s nutrients(contains <a target="_blank" href="http://en.wikipedia.org/wiki/Manganese">manganese</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Copper">copper</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Calcium">calcium</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Vitamin_B1">vitamin B1</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Vitamin_E">vitamin E</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Lignans">lignans</a>, and <a target="_blank" href="http://en.wikipedia.org/wiki/Phytoestrogens">phytoestrogens</a> with anti-cancer and antioxidant properties) and it&#8217;s ability to act as a base for many dressings and sauces.<br/><br/>However, sesame paste has been in use much longer than any modern trend.  Tahini is middle eastern in origin and is known as a component of <a target="_blank" href="http://en.wikipedia.org/wiki/Hummus">hummus</a> as well as a notable ingredient in <a target="_blank" href="http://en.wikipedia.org/wiki/Halva">halva</a>(tahini and honey) dating back to Babylon as a Greek and turkish snack(<a target="_blank" href="http://www.springerlink.com/content/l4602v2418362477/fulltext.pdf">Sesame protein: a review and prospectus, Journal of the American Oil Chemists&#8217; Society</a>).  Many Asian cultures also use sesame paste for sauces and treats.  Traditionally, tahini is made of hulled, lightly roasted sesame seeds and sesame paste is made of unhulled seeds.  Leaving the hull adds some nuttiness as well as some bitterness, however more nutrients remain.  <br/><br/>Hulling the sesame seeds strips away some nutrients, but also removes the oxalic acid which chelates with metal ions, such as calcium, causing stomach and kidney irritation(<a target="_blank" href="http://www.springerlink.com/content/l4602v2418362477/fulltext.pdf">Sesame protein: a review and prospectus, Journal of the American Oil Chemists&#8217; Society</a>).  <br/><br/>Making tahini is a simple process, yet it takes a little time.</p>
+<p><img src="http://farm4.static.flickr.com/3500/3296755070_76687bcc08_o.jpg" height="283" width="420"/></p>
+<p>To start, I soaked, overnight, 1&#160;1/2 cups sesame seeds, which is only about  $.30 to $.50 cents worth.  Soaking helps in the hulling process.  After soaking the seeds should be ready to hull, if not boil them for about 10 minutes.  Cool the seeds by pouring cool water into the pot.  To begin the hulling process, place a good amount of sesame seeds between your palms and rub hands up and down vigorously, like when trying to warm up.  After repeating the process you should start to see the hulls floating just above the sesame seeds.  To remove the hulls, take a small strainer or <a target="_blank" href="http://en.wikipedia.org/wiki/Chinois">chinois</a>, and try to skim them out.  You may end up removing some seeds.</p>
+<p><img src="http://farm4.static.flickr.com/3467/3296755024_9b6f68cd94_o.jpg" height="283" width="420"/></p>
+<p><img src="http://farm4.static.flickr.com/3491/3295929609_c1ee4987b1_o.jpg" height="283" width="420"/></p>
+<p>Next strain out the water.  I simply used a clean kitchen towel.  Spread seeds on a baking sheet and dry/lightly roast on low heat for about 20 to 30 minutes.  It is alright to lightly brown the seeds, however you do not want them to burn.</p>
+<p><img src="http://farm4.static.flickr.com/3462/3296755046_21ffd597ab_o.jpg" height="283" width="420"/></p>
+<p><img src="http://farm4.static.flickr.com/3537/3295929475_a2cf152a93_o.jpg" height="283" width="420"/></p>
+<p>After the sesame seeds are dry and cool, place in a blender, food processor, or on a mortar.  For the blender and food processor, use about 1/2 cup of oil(olive oil or sesame oil is preferred).  Pour in more oil as needed to get the mixture to turn into a creamy paste.  With the mortar and pestle, which I still do not have, you might not need much if any oil.  All you have to do is grind away.<br/><br/>Your tahini might not be as smooth as the store bought tahini, but it will be just as flavorful and will cost much less.</p>
+                        </div>
+<div style="font-size: 10px; text-align: left;"><a href="http://proletariatkitchen.tumblr.com/post/80495536/tahini#disqus_thread">Comments (View)</a></div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+
+            
+                <div class="post">
+                    <div class="labels">
+                        
+                            <div class="date"><a href="http://proletariatkitchen.tumblr.com/post/77769255/quick-tip-peelin">February 12</a></div>
+                        
+                    
+                        
+                    </div>
+
+                    
+                        <div class="regular">
+                            <h2><a href="http://proletariatkitchen.tumblr.com/post/77769255/quick-tip-peelin">Quick Tip: Peelin&#8217;</a></h2>
+                            <p><img src="http://farm4.static.flickr.com/3386/3273848635_9979966536_o.jpg" height="283" width="420"/></p>
+<p>If you don&#8217;t have a peeler or simply can&#8217;t find your prized <a target="_blank" href="http://gothamist.com/2009/02/03/union_square_peeler_peddler_joe_ade.php">Joe Ades</a> swiss peeler around the kitchen, use this handy little trick that does the job.  All you need is a knife and you are good to go.  Josh Greco, chef, musician, and contemplator, demonstrates this trick on a carrot. <br/><br/>Hold one end of the carrot and place the knife edge at a 45˚ angle, with the spine away from your hand, just above your thumb on the carrot.  Apply some force and pull knife away from body, keeping the angle, which will effectively remove the thin layer of skin.  This technique leaves the vegetable a little rough, but skin-less and ready for eating.</p>
+                        </div>
+<div style="font-size: 10px; text-align: left;"><a href="http://proletariatkitchen.tumblr.com/post/77769255/quick-tip-peelin#disqus_thread">Comments (View)</a></div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+
+            
+                <div class="post">
+                    <div class="labels">
+                        
+                            <div class="date"><a href="http://proletariatkitchen.tumblr.com/post/72396201/rice">January 22</a></div>
+                        
+                    
+                        
+                    </div>
+
+                    
+                        <div class="regular">
+                            <h2><a href="http://proletariatkitchen.tumblr.com/post/72396201/rice">Rice</a></h2>
+                            <p><img src="http://farm4.static.flickr.com/3093/3217818041_0024d0c232_o.jpg" height="283" width="420"/></p>
+<p><a target="_blank" href="http://en.wikipedia.org/wiki/Rice">Rice</a> is a staple food in a large portion of the worlds diet, ranging from Asia to Africa and the Americas.  Rice is viewed as a peasant food in some regions of the world, while in others it is viewed as a health food(the <a target="_blank" href="http://en.wikipedia.org/wiki/Macrobiotic_diet">macrobiotic diet</a> holds great importance on eating brown rice), however in many cultures across the globe rice is viewed as sacred, containing creation myths such as the <a target="_blank" href="http://en.wikipedia.org/wiki/Java">Javanese</a> story of <a target="_blank" href="http://books.google.com/books?id=65xuTvoorv8C&amp;pg=PA51&amp;lpg=PA51&amp;dq=Batara+Guru+and+Samyam+Sri&amp;source=bl&amp;ots=ELW6Mv3RYQ&amp;sig=eYPuzAmyZLMYu1p8U9MrwFj7j7U&amp;hl=en&amp;sa=X&amp;oi=book_result&amp;resnum=2&amp;ct=result">Batara Guru and Samyam Sri</a>(The Rice Book, Sri Owen: 51), or by being stored in holy rice barns, as is the case with many rice growers in the Japanese culture(The Rice Book, Sri Owen: 27).  I simply like the taste of rice, especially the nutty flavor of brown rice, and I feel great after eating a meal that includes rice.<br/><br/>Rice(Oryza sativa; Oryza glaberrima is native to West Africa) is a grass that is related to other grass-descendent cereals such as <a target="_blank" href="http://en.wikipedia.org/wiki/Wheat">wheat</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Oats">oats</a>, and <a target="_blank" href="http://en.wikipedia.org/wiki/Barley">barley</a>.  Broadly speaking there are three types of rice: long, medium, and short grain.  Other terms are also used in different regions of the world to describe the same general shape, such as patna, rose, and pearl, which are synonymous with long, medium, and short grain respectively(The Rice Book, Sri Owen: 6).  There are also many types of rice available for purchase depending on how the rice has been processed or milled.  This includes <a target="_blank" href="http://en.wikipedia.org/wiki/White_rice">white rice</a>, which has been fully milled(had the bran coat removed) and most likely water polished(talc was once used to create an extra whitening effect).  <a target="_blank" href="http://en.wikipedia.org/wiki/Brown_rice">Brown rice</a>(which has been associated with poverty in the past), also called whole rice, or Italian semigreggio, is rice with its bran intact, thus increasing the nutrition of brown rice over white rice.  <a target="_blank" href="http://en.wikipedia.org/wiki/Parboiled_rice">Parboiled</a> rice is rice that has been soaked, steamed, dried, and then milled, causing some nutrients from the bran to adhere to the endosperm of the rice and decreasing the brittleness of the grain.  Uncle Ben&#8217;s rice is parboiled.(The Rice Book, Sri Owen: 6-8)<br/><br/>One reason rice is so popular is it&#8217;s nutritive value.  Rice contains many B group vitamins, such as <a target="_blank" href="http://en.wikipedia.org/wiki/Thiamine">Thiamin</a>(which helps prevent <a target="_blank" href="http://en.wikipedia.org/wiki/Beriberi">Beriberi</a>, a disease that afflicts poverty sticken regions who ingest only polished white rice which is lower in Thiamine than brown rice), <a target="_blank" href="http://en.wikipedia.org/wiki/Riboflavin">Riboflavin</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Niacin">Niacin</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Vitamin_B6">Vitamin B6</a>, and <a target="_blank" href="http://en.wikipedia.org/wiki/Folate">Folate</a>.  Rice, in combination with beans, can provide a complete set of amino acids to create a protein, and rice has plenty of fiber(especially brown rice) to keep things moving smoothly(The Rice Book, Sri Owen: 14-16).  In addition many just enjoy the neutrality of it&#8217;s flavor and it&#8217;s ability to compliment most meals perfectly.<br/><br/>Something most associated with rice growing is the flooded field or <a target="_blank" href="http://en.wikipedia.org/wiki/Paddy_field">paddy</a>.  Rice can also be grown in dry fields, however there are certain benefits associated with flooding the fields.  The flooded fields insulate the crop from extreme heat and cold, drown out the weeds, protect against pests, and possibly provide extra nutrients for the plants due to many of the critters passing through.  The fields only remain flooded for a few weeks or months at a time.  A draw back to this method is the amount of water required for a large volume of rice, especially in our modern world where water security is ever so important.  Also, because of the anaerobic conditions that flooding fields create, organic matter in the soil begins to ferment, emitting large amounts of methane(<a target="_blank" href="http://www.ipcc.ch/pdf/assessment-report/ar4/syr/ar4_syr.pdf"><a href="http://www.ipcc.ch/pdf/assessment-report/ar4/syr/ar4_syr.pdf">http://www.ipcc.ch/pdf/assessment-report/ar4/syr/ar4_syr.pdf</a></a>).</p>
+<p><img src="http://farm4.static.flickr.com/3464/3218669434_e2d7ebfded_o.jpg" height="283" width="420"/></p>
+<p>To properly prepare rice I have found, through experimentation, that the best ratio of rice to water is 1 cup rice to 2 cups water for white rice or 2&#160;1/2 cups water for brown rice.  Visually, in a small pot, the water will extend just below the top knuckle of the index finger for white rice and just on the top knuckle of the index finger for brown rice when the index finger is placed in the water with the rice.</p>
+<p><img src="http://farm4.static.flickr.com/3411/3218669488_7dc9e0668c_o.jpg" height="283" width="420"/></p>
+<p>To cook the rice, cover and cook slightly higher than low heat for approximately 20 minutes for white and 26 minutes for brown rice.  The water and starch will boil out of the pot which is normal.  When the water has boiled out, tunnels will appear in the rice.  At this time turn off the heat and let sit, covered, for 5 to 10 minutes.  While the rice is cooling it will continue to soften.</p>
+<p><img src="http://farm4.static.flickr.com/3084/3218669524_d0db05de72_o.jpg" height="283" width="420"/></p>
+<p>You may need to adjust the time and heat according to your stove, however by following this general method you should get perfectly cooked rice.  <br/><br/>Though the traditional rice cooking methods have been adequate for thousands of years, a recently reported(people may have been doing this for ages) &#8220;new&#8221; method is gaining popularity for its health benefits over regular cooking methods.  This method is called <a target="_blank" href="http://en.wikipedia.org/wiki/Brown_rice">Germinated Brown Rice</a>(in Japanese, hatsuga genmai), or GBR.<br/><br/>GBR is also called <a target="_blank" href="http://en.wikipedia.org/wiki/Gamma-aminobutyric_acid">GABA</a> for the presences of <a target="_blank" href="http://en.wikipedia.org/wiki/Gamma-aminobutyric_acid">gamma-aminobutyric acid</a>(GABA) of which increases by twice as much during germination compared to regularly prepared brown rice.  GABA is a neurotransmitter inhibitor that promotes the production of <a target="_blank" href="http://en.wikipedia.org/wiki/Human_growth_hormone">Human Growth Hormone</a>, may increase the sleep cycle giving deeper rest, boost the immune system, inhibit the development of cancer cells, as well as assist in the treatment of anxiety.  In addition to GABA, other nutrients that are increased when brown rice is germinated are <a target="_blank" href="http://en.wikipedia.org/wiki/Dietary_fiber">dietary fiber</a>, inositols, <a target="_blank" href="http://en.wikipedia.org/wiki/Ferulic_acid">ferulic acid</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Phytic_acid">phytic acid</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Tocotrienols">tocotrienols</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Magnesium">magnesium</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Potassium">potassium</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Zinc">zinc</a>, gamma-oryzanol, and a prolylendopeptide base inhibitor(<a target="_blank" href="http://www.fao.org/rice2004/en/pdf/ito.pdf">FAO/UN International Year Of Rice: Marketing of Value Added Rice Products in Japan</a>).  What does that all mean? Well, that it&#8217;s possibly good for your brain, relieving constipation, preventing colon cancer, regulating blood sugar levels, preventing heart disease, lowering blood pressure, and preventing Alzheimer&#8217;s.<br/><br/>Now that we know how good GBR is, how do we prepare it?  It&#8217;s relatively easy and just requires a little patience.  First select good brown rice to germinate.  I get mine in bulk from the <a target="_blank" href="http://www.4thstreetfoodcoop.org/twiki/">4th Street Co-op</a> here in New York.  Then soak in warm water, between 80 to 100 degrees, for about 20 hours or longer with cooler temperatures.  I placed the pot of rice on my radiator to keep it warm.  Change the water a few times depending on the smell developed during soaking.  A trick to help reduce the smell is to soak the rice in green tea due to the antiseptic properties of the tea.  This technique may also increase the abundance of GABA(<a target="_blank" href="http://www.mellowmonk.com/2007/01/green-tea-boosts-gaba-content-of.html">Mellow Monk Green Tea Blog</a>).  After the rice has begun to germinate, lightly wash and cook as normal, slightly reducing the amount of water.  When finished, the rice will be softer and easier to digest when compared to traditionally prepared brown rice.</p>
+<p>Some of the information I gathered is from <i><a target="_blank" href="http://books.google.com/books?id=KqUFc4p2OA4C">The Rice Book</a></i> by Sri Owen.</p>
+                        </div>
+<div style="font-size: 10px; text-align: left;"><a href="http://proletariatkitchen.tumblr.com/post/72396201/rice#disqus_thread">Comments (View)</a></div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+
+            
+                <div class="post">
+                    <div class="labels">
+                        
+                            <div class="date"><a href="http://proletariatkitchen.tumblr.com/post/71413390/steam-beer-by-matt-miller">January 18</a></div>
+                        
+                    
+                        
+                    </div>
+
+                    
+                        <div class="regular">
+                            <h2><a href="http://proletariatkitchen.tumblr.com/post/71413390/steam-beer-by-matt-miller">Steam Beer by Matt Miller</a></h2>
+                            <p>This is my first attempt at <a target="_blank" href="http://en.wikipedia.org/wiki/Brewing">brewing</a> an all-grain batch of beer. All-grain brewing is essentially making beer from scratch (<a target="_blank" href="http://en.wikipedia.org/wiki/Malt">malted</a> <a target="_blank" href="http://en.wikipedia.org/wiki/Cereal">grains</a>, water, <a target="_blank" href="http://en.wikipedia.org/wiki/Yeast">yeast</a> and heat) as opposed to using packaged malt extracts that are diluted with water to create the <a target="_blank" href="http://en.wikipedia.org/wiki/Wort">wort</a>. It’s more work, but should result in a much better beer, let’s hope… The recipe we’re using is a slightly modified version of one I found in <a target="_blank" href="http://www.howtobrew.com/">John Palmer’s <i>How To Brew Brewer’s Publications 2006</i></a> for a <a target="_blank" href="http://en.wikipedia.org/wiki/Steam_beer">California Common</a>, or <a target="_blank" href="http://en.wikipedia.org/wiki/Steam_beer">Steam Beer</a>. Here’s what Palmer has to say about the style: <br/></p>
+<blockquote>This is the most well-known historic American beer style; it was developed in the San Francisco Bay area in the mid-1800s. The “steam” name most likely refers to the high degree of carbonation that the beers were reportedly served with, as well as its then-high-tech sound. San Francisco has a moderated climate year-round, typically cool, cloudy, and about 60 deg F in the winter months. Using (typically cold-loving) lager yeasts at these relatively high temperatures caused the beer to develop some of the fruity notes of ales while retaining the clean, crisp taste of lager beers. (231) <br/></blockquote>
+<p><br/>If you’ve ever had <a target="_blank" href="http://www.anchorbrewing.com/">Anchor Steam beer</a>, then you know what were shooting for: a brew beautiful in its balance of <a target="_blank" href="http://en.wikipedia.org/wiki/Hops">hop</a> aroma and bitterness and malt sweetness and showcasing the best attributes of the <a target="_blank" href="http://en.wikipedia.org/wiki/Lager">lager</a> and <a target="_blank" href="http://en.wikipedia.org/wiki/Ale">ale</a> styles. Hopefully we’ll come close to this high bar.</p>
+<p><img src="http://farm4.static.flickr.com/3536/3207129703_6ba455a5b2_o.jpg" height="340" width="420"/></p>
+<p>Here’s a shot of malted grain we will be using. Mixed together is 9 lbs of Marris Otter pale malt (a high-enzyme British barley variety), 1lb of Carastan, a specialty barley malt that is kilned slightly to add a caramel color and body to the finished beer, and a ½ lb of Carafoam, another specialty malt that adds body and aids in head retention when the beer is poured. The grain has been coarsely <a target="_blank" href="http://en.wikipedia.org/wiki/Mill_(grinding)">milled</a> so our <a target="_blank" href="http://en.wikipedia.org/wiki/Mashing">mash</a> water can extract all of the fermentable sugars and malty goodness that lies inside (more on this later).</p>
+<p><img src="http://farm4.static.flickr.com/3521/3207130013_662e2996f9_o.jpg" height="283" width="420"/></p>
+<p>The malted, crushed grains have been added to the <a target="_blank" href="http://en.wikipedia.org/wiki/Mashing">mash tun</a> (in this case a standard water cooler with a filter screen at the bottom and a ball valve at the spout to release the wort or unfermented beer) and mixed with hot water to reach a stable temperature of 153 deg F. This process is called <a target="_blank" href="http://en.wikipedia.org/wiki/Mashing">mashing</a>, and it will last for one hour. After mixing, the lid is screwed down and we cover the mash tun with blankets to retain as much heat as possible.</p>
+<p><img src="http://farm4.static.flickr.com/3418/3207129771_d6ca2eba6a_o.jpg" height="504" width="420"/></p>
+<p>Once the hour is up, it’s time to drain the sweet liquid from the grains into our brew pot, a process called <a target="_blank" href="http://en.wikipedia.org/wiki/Lautering">lautering</a>. After the initial runnings are collected, we add more hot water to the grains, mix, then drain into the pot until we collect 6+ gallons of wort (the final amount after boiling should be 5 gallons).</p>
+<p><img src="http://farm4.static.flickr.com/3491/3207129925_e38c3f3d3b_o.jpg" height="283" width="420"/></p>
+<p><img src="http://farm4.static.flickr.com/3527/3207975992_c794c0276a_o.jpg" height="283" width="420"/></p>
+<p>It’s time to boil! Our Northern Brewer hops are measured out into a bowl as the wort comes to a boil. Once we’re good and rolling, it’s time to add one once of hops. These will add bitterness to the beer and counterbalance the sweetness of the malt.  It’s important to stir constantly at this point to avoid boilovers, a frustrating and messy consequence of boiling a protein and carbohydrate rich liquid.</p>
+<p><img src="http://farm4.static.flickr.com/3469/3207129983_eb52274909_o.jpg" height="283" width="420"/></p>
+<p>Once 45 minutes have elapsed, it’s time to add one more once of hops. These are added toward the end of the boil to impart hop aroma and emphasize the subtle flavors and oils that are boiled out of the bittering hops.</p>
+<p><img src="http://farm4.static.flickr.com/3125/3207129733_70b5b9988c_o.jpg" height="340" width="420"/></p>
+<p>An hour has elapsed, and the boil is finished. We shut off the heat and carry the pot outside to cool in the snow. (Please note: this method is not recommended. Usually, all-grain brewers use an immersion wort chiller – a coiled copper contraption that cold water flows through – to rapidly cool the wort, which allows the 5 gallons of liquid to be safely cooled on the stove. Hopefully, we’ll have one set up for the next brew day!).</p>
+<p><img src="http://farm4.static.flickr.com/3332/3207975904_b2c4beed20_o.jpg" height="340" width="420"/></p>
+<p>Once the wort has reached the 75 deg F range, I take a gravity reading using my <a target="_blank" href="http://en.wikipedia.org/wiki/Hydrometer">hydrometer</a>. A hydrometer measures the amount of dissolved solids in a liquid &#8212; in the case of beer, the amount of dissolved, variably fermentable sugars – and, when compared with the reading taken after the beer is fermented, allows the brewer to calculate the alcohol by volume ratio of the finished brew. After recording the reading, it’s time to pour it into the fermenter (in our case, a six-gallon food-grade plastic bucket with a sealing lid and a small hole drilled in the top for an airlock). The wort should be poured vigorously to properly aerate it. After it’s in the fermenter, the yeast is added, the lid and airlock are secured and mother nature goes to work.</p>
+<p>*Note: Matt Miller is a good freind, jazz musician, and connoisseur of life.</p>
+                        </div>
+<div style="font-size: 10px; text-align: left;"><a href="http://proletariatkitchen.tumblr.com/post/71413390/steam-beer-by-matt-miller#disqus_thread">Comments (View)</a></div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+
+            
+                <div class="post">
+                    <div class="labels">
+                        
+                            <div class="date"><a href="http://proletariatkitchen.tumblr.com/post/70736070/sauerkraut">January 15</a></div>
+                        
+                    
+                        
+                    </div>
+
+                    
+                        <div class="regular">
+                            <h2><a href="http://proletariatkitchen.tumblr.com/post/70736070/sauerkraut">Sauerkraut</a></h2>
+                            <p><img src="http://farm4.static.flickr.com/3259/3199936660_b522420a68_o.jpg" height="283" width="420"/></p>
+<p><a target="_blank" href="http://en.wikipedia.org/wiki/Sauerkraut#rasol_.28.22cabbage_juice.22.29">Sauerkraut</a> has it&#8217;s roots in ancient civilizations(generally believed to have been brought to Europe by nomadic <a target="_blank" href="http://en.wikipedia.org/wiki/Tartars">Tatars</a> who encountered fermented <a target="_blank" href="http://en.wikipedia.org/wiki/Cabbage">cabbage</a> in China) but is most commonly associated with the German(hence the derogatory &#8220;Kraut&#8221;) culture as the companion to a nice juicy <a target="_blank" href="http://en.wikipedia.org/wiki/Bratwurst">bratwurst</a>, although many other European countries have their own version of kraut such as the French choucroute and the Polish kiszona kapusta.<br/><br/>Traditionally, the fermentation process has been used to preserve perishable foods(the process produces alcohol, lactic acid, and acetic acid, which are all &#8220;bio-preservatives&#8221; that retain nutrients and prevent spoilage), however with modern refrigeration, preservation takes a back seat to the health benefits that fermentation can yield, especially with fermented cabbage, or suaerkraut.<br/><br/><a target="_blank" href="http://en.wikipedia.org/wiki/James_Cook">Captain James Cook</a> was recognized by the Royal Society for having conquered <a target="_blank" href="http://en.wikipedia.org/wiki/Scurvy">scurvy</a>(<a target="_blank" href="http://en.wikipedia.org/wiki/Vitamin_c">vitamin C</a> deficiency) by appropriating fermented cabbage most likely after <a target="_blank" href="http://en.wikipedia.org/wiki/James_Lind_(physician)">James Lind&#8217;s</a> work on preventing scurvy.  In addition to containing the scurvy fighting vitamin C, sauerkraut contains <a target="_blank" href="http://en.wikipedia.org/wiki/Lactobacillus">lactobacilli</a>(a bacteria that converts lactose into sugars and lactic acid, thus helping in digestion), as well as cancer fighting isothiocyanate and sulforaphane.  The juice is especially useful as a gastroregulator for gastrointestinal conditions and various other digestive and even respiratory conditions, although the most popular use for sauerkraut juice, or rasol, is as a hangover remedy because of its neutralizing effect on alcohol intoxication.<br/><br/>Making sauerkraut is easy.  All you need is cabbage, salt, and patience.  For this recipe I am using red cabbage, although any cabbage would work.  The ingredients are as follows:<br/><br/>• 1/2 cabbage<br/>• copious amounts of salt<br/>• about 3 cups water<br/>• optional flavoring (I am using bay leaves)</p>
+<p><img src="http://farm4.static.flickr.com/3342/3199936622_32cb05ac8a_o.jpg" height="283" width="420"/></p>
+<p>To start, thinly shred the cabbage.  Place in bowl or jar.  Apply salt liberally.  Next is the fun part.  Pound the cabbage!  I used my fist and then the bottom of a heavy glass.  Pour water into the pounded cabbage until is just covers the top, creating the brine.  This produces the anaerobic atmosphere for the fermentation to take place.  Next, to keep the cabbage below the surface of the brine, place a weighted plate or other clean object over the kraut.  Place the kraut in a cool dark place and cover with a towel.  Leave covered for 1 to 4 weeks while periodically checking and, if necessary, skimming any bacteria off the top of the brine.</p>
+<p><img src="http://farm4.static.flickr.com/3370/3199090879_ced5fc9487_o.jpg" height="283" width="420"/></p>
+<p>The sauerkraut fermentation process is called <a target="_blank" href="http://en.wikipedia.org/wiki/Lacto-fermentation">lacto-fermentation</a> because of the presence of the lactobacillus bacteria and it&#8217;s role of converting sugars into lactic acid.  No special cultures of lactic acid bacteria are needed because the bacteria is present in raw cabbage.  Fermentation begins as <a target="_blank" href="http://en.wikipedia.org/wiki/Anaerobic_organism">anaerobic</a> bacteria, such as <a target="_blank" href="http://en.wikipedia.org/wiki/Klebsiella">klebsiella</a> and <a target="_blank" href="http://en.wikipedia.org/wiki/Enterobacter">enterobacter</a>, produce an acidic environment.  This environment is perfect for <a target="_blank" href="http://en.wikipedia.org/wiki/Leuconostoc_mesenteroides">leuconostoc mesenteroides</a> to take over.  Finally <a target="_blank" href="http://en.wikipedia.org/wiki/Lactobacillus">lactobacillus</a> ferments any remaining sugars.<br/><br/>A great book on fermentation(where I obtained some of my info), with sauerkraut information and recipes, is <a target="_blank" href="http://www.wildfermentation.com">Wild Fermentation</a> by Sandor Ellix Katz.</p>
+                        </div>
+<div style="font-size: 10px; text-align: left;"><a href="http://proletariatkitchen.tumblr.com/post/70736070/sauerkraut#disqus_thread">Comments (View)</a></div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+
+            
+                <div class="post">
+                    <div class="labels">
+                        
+                            <div class="date"><a href="http://proletariatkitchen.tumblr.com/post/67113094/usda">December 28</a></div>
+                        
+                    
+                        
+                    </div>
+
+                    
+                        <div class="regular">
+                            <h2><a href="http://proletariatkitchen.tumblr.com/post/67113094/usda">USDA</a></h2>
+                            <p>Every week heralds news of Obama&#8217;s cabinet nominations for his upcoming administration.  Some seem somewhat positive when viewed from my conservationist perspective, however many I view with skepticism due to their past record and current stance on certain issues. <br/><br/>Though all nominations are equally important for various reasons, the nomination for Secretary of the <a target="_blank" href="http://en.wikipedia.org/wiki/United_States_Department_of_Agriculture">United States Department of Agriculture(USDA)</a>, <a target="_self" href="http://www.usda.gov"><a href="http://www.usda.gov">www.usda.gov</a></a>, stands out as especially important because this is the position that not only determines what we eat but how we get our food, what sort of farms we have, what sort of crops are grown on those farms, and, contrary to what you might think, protection of our natural resources and the environment(<a target="_blank" href="http://www.nationmaster.com/encyclopedia/National-Environmental-Policy-Act">National Environmental Policy Act</a>).<br/><br/>Obama has nominated <a target="_blank" href="http://en.wikipedia.org/wiki/Tom_Vilsack">Tom Vilsack</a>, former governor of Iowa and 2008 presidential candidate, for the position of Secretary of the United States Department of Agriculture.  Video and transcript of the press conference can be seen <a target="_blank" href="http://www.nytimes.com/2008/12/17/us/politics/17text-obama.html">here</a> and <a target="_blank" href="http://www.scribd.com/doc/9114449/Obama-Press-Conference-Announcing-Vilsack-and-Salazar-to-his-Cabinet">here</a> (Ken Salazar is also nominated to Secretary of the Department of the Interior in this press conference).  <br/><br/>Tom Vilsack is a democrat and, as stated earlier, former Governor of Iowa, one of the largest proponents of <a target="_blank" href="http://en.wikipedia.org/wiki/Agribusiness">agribusiness</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/GM_crops">genetically modified(GM)</a> crops(<a target="_blank" href="http://www.pewtrusts.org/uploadedFiles/wwwpewtrustsorg/Fact_Sheets/Food_and.../PIFB_Genetically_Modified_Crops_Factsheet0804.pdf"><a href="http://www.pewtrusts.org/uploadedFiles/wwwpewtrustsorg/Fact_Sheets/Food_and.../PIFB_Genetically_Modified_Crops_Factsheet0804.pdf">www.pewtrusts.org/uploadedFiles/wwwpewtrustsorg/Fact_Sheets/Food_and&#8230;/PIFB_Genetically_Modified_Crops_Factsheet0804.pdf</a></a>), farm subsidies(particularly for corn)(<a target="_blank" href="http://farm.ewg.org/farm/progdetail.php?fips=19000&amp;progcode=corn"><a href="http://farm.ewg.org/farm/progdetail.php?fips=19000&amp;progcode=corn">http://farm.ewg.org/farm/progdetail.php?fips=19000&amp;progcode=corn</a></a>), and <a target="_blank" href="http://en.wikipedia.org/wiki/Biofuel">biofuel</a> feedstock producers of the United States, especially during Mr. Vilsack&#8217;s tenure as governor, hence my concern over his future role as Secretary of the Department of Agriculture.  One more thing, he has been named Governor of the Year by the Biotechnology Industry Organization(<a target="_blank" href="http://farm.ewg.org/farm/progdetail.php?fips=19000&amp;progcode=corn"><a href="http://www.bio.org/news/pressreleases/newsitem.asp?id=2001_0920_01">http://www.bio.org/news/pressreleases/newsitem.asp?id=2001_0920_01</a></a>). <br/><br/>Why are biofuels and genetically modified crops so potentially damaging?  Basically biofuel production is being taken over by agribusiness and is using large portions of farm land and/or the natural environment to produce crops that will be used to make fuel.  This is a method that can decrease our dependence on foreign oil, but can cause a rise in the cost of food production, due to competition for land as well as subsidies that favor fuel crops(<a target="_blank" href="http://www.telegraph.co.uk/earth/earthnews/3298862/Biofuels-stampede-%27damaging-the-environment%27.html"><a href="http://www.telegraph.co.uk/earth/earthnews/3298862/Biofuels-stampede-%27damaging-the-environment%27.html">http://www.telegraph.co.uk/earth/earthnews/3298862/Biofuels-stampede-%27damaging-the-environment%27.html</a></a>).<br/><br/>GM crops are touted as helping to solve the worlds hunger crisis, when in reality they reduce food security by displacing poor farmers, reduce land area planted to food crops like corn and beans for local consumption, are controlled by corporations such as monsanto and are used in conjunction with their own pesticides, are used to feed livestock not people, and are used for biofuels.  More can be seen <a target="_blank" href="http://www.centerforfoodsafety.org/WhoBenefitsPR2_13_08.cfm">here</a>.<br/><br/><a target="_blank" href="http://www.michaelpollan.com/">Michael Pollan</a>, author of <a target="_blank" href="http://books.google.com/books?id=0qBYDphA1CoC"><i>In Defense of Food: An Eater’s Manifesto</i></a> and <i><a target="_blank" href="http://books.google.com/books?id=WxErAAAACAAJ&amp;dq=The+Omnivore%27s+Dilemma:+A+Natural+History+of+Four+Meals&amp;ei=7CFXScmoCYnwkQTPit26Cg">The Omnivore&#8217;s Dilemma: A Natural History of Four Meals</a>,</i> expresses his disappointment in the nomination of Tom Vilsack <a target="_blank" href="http://www.npr.org/templates/story/story.php?storyId=98409347">here</a> and a critical article on the decision can be seen <a target="_blank" href="http://www.npr.org/templates/story/story.php?storyId=98409347">here</a>.  The Organic Consumers Association has 6 compelling reasons the nomination could be a huge mistake as well.  The article can be seen <a href="http://www.organicconsumers.org/articles/article_15573.cfm">here</a>.<br/><br/>So what can we do?<br/><br/>Well, first and foremost, by growing as much food as possible(gardens are great!), foraging in your parks or natural areas, attending farmers markets and supporting small local and organic farms you will know where your food comes from and how your food is grown.  Because of this you will be supporting the local economy as well as the small organic farm which can then flourish and continue to feed your community.  This is independence and empowerment that can remove you from an unhealthy food cycle.<br/><br/>Further, you can support organizations like <a target="_blank" href="http://www/fooddeclaration.org">Food Declaration</a> and <a target="_blank" href="http://www.organicconsumers.org/">Organic Consumers Association</a>.  From there you can inform yourself, keep up to date, and know what food you put in your body.</p>
+                        </div>
+<div style="font-size: 10px; text-align: left;"><a href="http://proletariatkitchen.tumblr.com/post/67113094/usda#disqus_thread">Comments (View)</a></div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+
+            
+                <div class="post">
+                    <div class="labels">
+                        
+                            <div class="date"><a href="http://proletariatkitchen.tumblr.com/post/66278580/cranberry-crabapple-chutney">December 22</a></div>
+                        
+                    
+                        
+                    </div>
+
+                    
+                        <div class="regular">
+                            <h2><a href="http://proletariatkitchen.tumblr.com/post/66278580/cranberry-crabapple-chutney">Cranberry Crabapple Chutney</a></h2>
+                            <p><img src="http://farm4.static.flickr.com/3119/3129075520_d3251d5296_o.jpg" height="283" width="420"/></p>
+<p>Many have never had the pleasure of trying the traditional Indian condiment <a target="_blank" href="http://en.wikipedia.org/wiki/Chutney">chutney</a>.  The idea of <a target="_blank" href="http://en.wikipedia.org/wiki/Chutney">chutney</a> is to crush together local and fresh fruits, vegetables, and seasoning.  This fits perfectly with my food ideals of eating as local and fresh as possible.  Because of this there are many different varieties of <a target="_blank" href="http://en.wikipedia.org/wiki/Chutney">chutney</a>, from coconut to mango.  Basically, whatever is available.<br/><br/>I was able to pick up some organic <a target="_blank" href="http://en.wikipedia.org/wiki/Cranberry">cranberries</a>(cranberries are great sources of antioxidants, they are cancer fighters, and urinary tract infection fighters) at the Union Square, NY, farmers market and, after talking to some people there, found out that New Jersey is one of the major producers of cranberries (<a target="_blank" href="http://www.ipmcenters.org/cropprofiles/docs/njcranberries.html">the third largest producer of cranberries in the US as of 2000</a>).  The <a target="_blank" href="http://en.wikipedia.org/wiki/Crabapple">crabapples</a>, which are actually a little sweeter than the cranberries, were picked from the crabapple trees just inside the Eastern Parkway entrance to the <a target="_blank" href="http://www.bbg.org/">Brooklyn Botanic Garden</a>.  The trees were ripe with crabapples&#8230;I couldn&#8217;t resist!<br/><br/>For this cranbery crabapple <a target="_blank" href="http://en.wikipedia.org/wiki/Chutney">chutney</a> recipe I am infusing inspiration from the Filipino Achara (pickled green papaya), of which there is a great recipe in the wonderful book <a target="_blank" href="http://books.google.com/books?id=eipyAAAACAAJ&amp;dq=memories+of+phillipine+kitchens&amp;ei=Y_dPSffjFIz2MLyRxZIP"><i>Memories of Philippine Kitchens</i></a> by Amy Besa and Romy Dorotan.  This will actuallygive the chutney a more westernized style due to the addition of preserving agents, rice vinegar, and the reduction of the <a target="_blank" href="http://en.wikipedia.org/wiki/Chutney">chutney</a>.<br/><br/>The Ingredients are as follows:<br/><br/>• approximately 2 to 3 cups of fresh cranberries<br/>• approximately 1 cup of fresh crabapples<br/>• 3 to 6 thai green chilis depending on desired hotness<br/>• 3 cloves garlic chopped<br/>• 1 onion<br/>• small bunch of scallions (preferably wild scallions or onion if you can find it)<br/>• 1 stick of cinnamon<br/>• 1&#160;1/2 cup of rice vinegar<br/>• 1/2 cup sugar</p>
+<p><img src="http://farm4.static.flickr.com/3220/3129075542_96fff64b69_o.jpg" height="283" width="420"/></p>
+<p>Because <a target="_blank" href="http://en.wikipedia.org/wiki/Chutney">chutney</a> is to be crushed to be made, typically a <a target="_blank" href="http://en.wikipedia.org/wiki/Mortar_and_pestle">mortar and pestle</a> is used (called a &#8220;Kharal&#8221; or &#8220;khal&#8221; in Hindu cultures).  If you do not have a mortar and pestle like me, use the flat side of your cooking knife, like when crushing garlic, to crush the cranberries and crabapples.  Crush until a majority are smashed and the bulk resembles a chunky paste.  While doing this, the cranberries will pop!  Chop the garlic, peppers, onion, and scallion.</p>
+<p><img src="http://farm4.static.flickr.com/3115/3129075572_afbcaa2d25_o.jpg" height="283" width="420"/></p>
+<p><img src="http://farm4.static.flickr.com/3045/3128247005_e124b2ef4f_o.jpg" height="283" width="420"/></p>
+<p>In a pot, heat the rice vinegar and add sugar and cinnamon stick.  Stir until sugar is dissolved.  Once sugar is dissolved, add the chopped and crushed ingredients.  Continue to smash un-crushed cranberries on the side of the pot while stirring.  As the chutney is reducing it will become a deep red/burgundy color.  Keep stirring until the consistency resembles that of a relish.  The chutney will be a perfect blend of sweet, sour, and spicy, with a nice cranberry flavor.  Remember that a little chutney goes a long way so there is no need to overload.  Serve with rice and fish, and/or baked squash.</p>
+<p>Be sure to experiment with local fruits and vegetables, such as apples or tomatoes, and for the traditional style of <a target="_blank" href="http://en.wikipedia.org/wiki/Chutney">chutney</a> use a juice instead of the vinegar and do not reduce in a pot.</p>
+                        </div>
+<div style="font-size: 10px; text-align: left;"><a href="http://proletariatkitchen.tumblr.com/post/66278580/cranberry-crabapple-chutney#disqus_thread">Comments (View)</a></div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+
+            
+                <div class="post">
+                    <div class="labels">
+                        
+                            <div class="date"><a href="http://proletariatkitchen.tumblr.com/post/65615460/beans">December 18</a></div>
+                        
+                    
+                        
+                    </div>
+
+                    
+                        <div class="regular">
+                            <h2><a href="http://proletariatkitchen.tumblr.com/post/65615460/beans">Beans.</a></h2>
+                            <p><img src="http://farm4.static.flickr.com/3161/3118252519_8dd45a7fb9_o.jpg" height="283" width="420"/></p>
+<p><a target="_blank" href="http://en.wikipedia.org/wiki/Common_bean">Beans</a> are amazing.  They provide <a target="_blank" href="http://en.wikipedia.org/wiki/Nitrogen-fixing_bacteria">nitrogen-fixing</a> bacteria, which supply other plants with essential nutrients, thus their role as one of the &#8220;<a href="http://en.wikipedia.org/wiki/Three_Sisters_(agriculture)">Three Sisters</a>&#8221; in Latin and Native American cultures where they are grown with maize and squash.  They are high in starch, protein and dietary fiber and are an excellent source of iron, potassium, selenium, molybdenum, thiamine, vitamin B6, and folic acid.  When eaten in combination with corn, all the essential amino acids are present to make a complete protein.<br/><br/>Beans also cause gas(a great source of humor&#8230;or so they say).  This is due to hard-to-digest complex sugars(<a target="_blank" href="http://en.wikipedia.org/wiki/Trisaccharides">trisaccharides</a>).  Beans also contain a toxin, <a target="_blank" href="http://en.wikipedia.org/wiki/Phytohaemagglutinin">lectin phytohaemagglutinin</a>, and <a target="_blank" href="http://phytic%20acid">phytic acid</a>, which can cause stomach irritation.  Although, phytic acid can help reduce the risk of cancers, especially colon cancer.  It&#8217;s a good thing the preparation of the beans, if done correctly, can take care of these things.</p>
+<p><img src="http://farm4.static.flickr.com/3129/3119079414_2feb47e877_o.jpg" height="283" width="420"/></p>
+<p>To properly prepare beans, first soak overnight in a bowl in either the fridge or on the countertop(for extra long soaking place beans in fridge to prevent souring).  Pour enough water in the bowl so that it extends above the beans about 2 inches.  If you can, switch out the water at least once to remove some of the trisaccharides.  The next day, or after about 8 hours, it is time to cook!</p>
+<p><img src="http://farm4.static.flickr.com/3177/3118252585_b427d6728d_o.jpg" height="283" width="420"/></p>
+<p>Strain and rinse the beans then place in new water, be sure to pour enough water to extend above the beans around 2 inches.  Boil the beans furiously for 10 minutes with the lid off.  Scrape off the foam that forms.  The foam is the gas inducing trisaccharides.  Then season, cover, and simmer.</p>
+<p><img src="http://farm4.static.flickr.com/3201/3119079342_c92fd1d466_o.jpg" height="283" width="420"/></p>
+<p>To further reduce torturing friends and relatives with unnatural gas, you can add <a target="_blank" href="http://en.wikipedia.org/wiki/Kombu">kombu</a> or <a target="_blank" href="http://en.wikipedia.org/wiki/Epazote">epazote</a> into the beans.  <a target="_blank" href="http://en.wikipedia.org/wiki/Kombu">Kombu</a> is a seaweed that is used heavily in asian cultures and <a target="_blank" href="http://en.wikipedia.org/wiki/Epazote">epazote</a> is an herb that is used in many Latin cultures.  Both aid in digestion and help to reduce gas.  I am using <a target="_blank" href="http://en.wikipedia.org/wiki/Epazote">epazote</a> because as it happens it grows like a weed in most parts the United States, Central, and South America.  However, after a few unsuccessful outings to Prospect Park, I was only able to find epazote at a local Mexican restaurant, <a target="_blank" href="http://www.chavellas.com/Chavellas.html">Chavella&#8217;s</a>.  Usually you can find epazote at most Mexican bodegas.  When seraching in the natural environment for epazote, follow your nose.  Epazote has a strong turpentine-like aroma.</p>
+<p><img src="http://farm4.static.flickr.com/3083/3118252561_e462416940_o.jpg" height="283" width="420"/></p>
+<p>Besides the epazote (the dried bunch of herbs in the pic above), I typically season black beans with garlic, onion, bay leaves, salt, and chilis.  This time I used wild scallions from prospect park instead of traditional onions.  Use each ingredient at your own discretion and be sure to experiment!</p>
+<p>Besides Wikipedia I obtained my &#8220;bean&#8221; info from <a href="http://www.rwood.com/Books/nwfe.htm"><i>The New Whole Foods Encyclopedia</i></a> by Rebecca Wood and from Alana, one of the chefs from the <a target="_blank" href="http://www.jivamuktiyoga.com/fms/index.html">Jivamukti Cafe</a>.</p>
+                        </div>
+<div style="font-size: 10px; text-align: left;"><a href="http://proletariatkitchen.tumblr.com/post/65615460/beans#disqus_thread">Comments (View)</a></div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+
+            
+
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script type="text/javascript" src="http://disqus.com/forums/proletariatkitchen/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+
+            <div id="footer">
+                
+                
+                
+                    <a href="/page/2">Next &#187;</a>
+                
+            </div>
+        </div>
+    <!-- BEGIN TUMBLR CODE --><iframe src="http://assets.tumblr.com/iframe.html?9&src=http%3A%2F%2Fproletariatkitchen.tumblr.com%2F&amp;lang=en_US&amp;name=proletariatkitchen" scrolling="no" width="330" height="25" frameborder="0" style="position:absolute; z-index:1337; top:0px; right:0px; border:0px; background-color:transparent; overflow:hidden;" id="tumblr_controls"></iframe><!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]--><script type="text/javascript">_qoptions={qacct:"p-19UtqE8ngoZbM"};</script><script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script><noscript><img src="http://pixel.quantserve.com/pixel/p-19UtqE8ngoZbM.gif" style="display:none; border-width:0px; height:1px; width:1px;" alt=""/></noscript><!-- END TUMBLR CODE --></body>
+</html>

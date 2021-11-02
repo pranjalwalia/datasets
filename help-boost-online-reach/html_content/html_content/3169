@@ -1,0 +1,1350 @@
+<!-- $Id: index.html,v 1.2 2002/05/29 20:15:07 mike Exp $  -->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+
+<HEAD>
+<TITLE>News from The Associated Press</TITLE>
+<script type="text/javascript" language="javascript" src="cnames.js"></script>
+<SCRIPT TYPE="TEXT/JAVASCRIPT" LANGUAGE="JAVASCRIPT">
+
+<!-- Hide script from older browsers
+		var stdBrowser = (document.getElementById) ? true : false;
+		function selectCheck(code) {
+		    if (code =="#" || code == null) return false;
+		    window.location = "/dynamic/fronts/HOME?SITE=" + code + "&SECTION=HOME";
+		    return true;
+		}
+		function popToggle(evt,currElem) {
+			var popUpWin = (stdBrowser) ? document.getElementById(currElem).style : eval("document." + currElem)
+			if (popUpWin.visibility == "visible" || popUpWin.visibility == "show")
+				popDown(currElem);
+			else
+				popUp(evt, currElem);
+		}
+		function randomSite()
+		{
+
+		    sites = new Array( 3 );
+		    sites[ 0 ] = "AZPHG";
+		    sites[ 1 ] = "LABAT";
+		    sites[ 2 ] = "1010WINS";
+	            n = 0;
+		    while ( n == 0 )
+		    {
+		       i = Math.random();
+		       i = i * 10;
+		       i = Math.floor( i );
+		       if ( i <= 3 )
+                       {
+                            n = 1;
+		       }
+
+		    }
+		    selectCheck( sites[ i ] );
+		 }
+
+		function popUp(evt,currElem) {
+			var popnum;
+			for (popnum=1;popnum<53;popnum++) {
+				var elem = 'popUp' + popnum;
+				var test = (stdBrowser) ? document.getElementById(elem).style : eval("document." + elem);
+				if (test.visibility=="visible" || test.visibility=="show")
+					popDown(elem);
+			}
+
+			var popUpWin = (stdBrowser) ? document.getElementById(currElem).style : eval("document." + currElem);
+			if (document.all) {
+				popUpWin.pixelTop = parseInt(evt.y)-15;
+				popUpWin.pixelLeft = Math.max(2,parseInt(evt.x)+10);
+			}
+
+			else {
+				if (stdBrowser) {
+					popUpWin.top = parseInt(evt.pageY)-15 + "px";
+					popUpWin.left = Math.max(2,parseInt(evt.pageX)+10) + "px";
+				}
+
+				else {
+					popUpWin.top = parseInt(evt.pageY)-15;
+					popUpWin.left = Math.max(2,parseInt(evt.pageX)+10);
+				}
+
+			}
+			popUpWin.visibility = "visible";
+		}
+
+		function popDown(currElem) {
+			var popUpWin = (stdBrowser) ? document.getElementById(currElem).style : eval("document." + currElem);
+			if (document.layers) { //if Netscape:
+				popUpWin.visibility = "hide";
+			}
+
+			else {
+				popUpWin.visibility = "hidden";
+			}
+
+		}
+		// End hiding script -->
+	</SCRIPT>
+
+	<STYLE TYPE="TEXT/CSS">
+		<!--
+		.popUpStyle {background-color: transparent;	border: #000000 0px solid;
+					 layer-background-color: transparent;
+					 font: 10px verdana, arial, helvetica, sans-serif; padding: 0px;
+					 position: absolute; visibility: hidden}
+		-->
+
+	</STYLE>
+</HEAD>
+
+
+<BODY BGCOLOR="#FFFFFF">
+
+<!-- SiteCatalyst code version: G.6.
+Copyright 1997-2004 Omniture, Inc. More info available at
+http://www.omniture.com --><script language="JavaScript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+
+
+/*
+ * Plugin: Clean out original variable values of first image request
+ */
+function s_vp_sprcln()
+{var slst=new Array("pageName","server","channel","pageType",
+"prop","campaign","state","zip","products","events","purchaseID",
+"hier","eVar");for(var i=0;i<slst.length;i++){if(slst[i]=="hier")
+{for(var h=1;h<6;h++){svb(slst[i]+h);}}else if(slst[i]=="eVar")
+{for(var e=1;e<21;e++){svb(slst[i]+e);}}else if(slst[i]=="prop")
+{for(var p=1;p<26;p++){svb(slst[i]+p);}}else{svb(slst[i]);}}
+}function svb(vn){eval('s_'+vn+'=""');}
+s_vp_sprcln();
+
+var s_ap_pageName=""
+var s_ap_server=""
+var s_ap_channel=""
+var s_ap_pageType=""
+var s_ap_prop1=""
+var s_ap_prop2=""
+var s_ap_prop3=""
+var s_ap_prop4=""
+var s_ap_prop5=""
+var s_ap_prop6=""
+var s_ap_prop7=""
+var s_ap_prop8=""
+var s_ap_prop9=""
+var s_ap_prop10=""
+var s_ap_prop11=""
+var s_ap_prop12=""
+var s_ap_prop13=""
+var s_ap_prop14=""
+var s_ap_prop15=""
+/* E-commerce Variables */
+var s_ap_campaign=""
+var s_ap_state=""
+var s_ap_zip=""
+var s_ap_events=""
+var s_ap_products=""
+var s_ap_purchaseID=""
+var s_ap_eVar1=""
+var s_ap_eVar2=""
+var s_ap_eVar3=""
+var s_ap_eVar4=""
+var s_ap_eVar5=""
+/********* INSERT THE DOMAIN AND PATH TO YOUR CODE BELOW ************/
+
+//--></script><script language="JavaScript" src="http://hosted.ap.org/specials/s_code_remote.js"></script>
+
+<!-- End SiteCatalyst code version: G.6. -->
+
+<! Start States Selection >
+
+
+<SPAN CLASS="popUpStyle" ID="popUp1"><form name="popUp1">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp1.SITE.options[document.popUp1.SITE.selectedIndex].value );">
+
+	<option selected value="#">Kansas</option>
+
+		<option value="KSNEW"> Newton Kansas Online  </option>
+		<option value="KSPIT"> The (Pittsburg, KS) Morning Sun  </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp2"><form name="popUp2">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp2.SITE.options[document.popUp2.SITE.selectedIndex].value );">
+
+<option selected value="#">New Mexico</option>
+
+		<option value="NMALJ"> Albuquerque Journal Online </option>
+		<option value="NMSAN"> Santa Fe New Mexican  </option>
+		<option value="NMALT"> Albuquerque Tribune </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp3"><form name="popUp3">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp3.SITE.options[document.popUp3.SITE.selectedIndex].value );">
+
+	<option selected value="#">Alabama</option>
+
+		<option value="ALMON"> Montgomery Advertiser </option>
+		<option value="ALANN"> The Anniston Star </option>
+		<option value="ALDOT"> The Dothan Eagle </option>
+		<option value="ALOPE"> The Opelika Auburn News </option>
+		<option value="ALJAS"> Daily Mountain Eagle  </option>
+		<option value="WBRC"> WBRCTV </option>
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp4"><form name="popUp4">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp4.SITE.options[document.popUp4.SITE.selectedIndex].value );">
+
+	<option selected value="#">Florida</option>
+
+		<option value="FLDAY"> Daytona Beach NewsJournal </option>
+		<option value="FLROC"> Florida Today </option>
+		<option value="FLBOC"> Boca Raton News  </option>
+		<option value="FLJAJ"> Florida TimesUnion  </option>
+		<option value="FLNAP"> Naples Daily News </option>
+		<option value="FLMYR"> Ft. Meyers News Press </option>
+		<option value="FLPAP"> Palm Beach Post </option>
+		<option value="FLPEJ"> Pensacola News Journal </option>
+		<option value="FLPET"> St. Petersburg Times </option>
+		<option value="FLTAM"> Tampa Tribune </option>
+		<option value="FLSTU"> Stuart News </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp5"><form name="popUp5">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp5.SITE.options[document.popUp5.SITE.selectedIndex].value );">
+<option selected value="#">Arizona</option>
+
+	<option value="AZPHG"> Arizona Republic </option>
+
+		<option value="AZCAS"> Casa Grande Valley Newspapers  </option>
+		<option value="AZSUN"> (Sun City, AZ) Daily NewsSun  </option>
+		<option value="AZMES"> (Mesa, AZ) East Valley Tribune </option>
+		<option value="AZTUS"> Arizona Daily Star </option>
+		<option value="AZYUM"> The Sun</option>
+		<option value="AZTUC"> Tucson Citizen </option>
+		<option value="KTVK"> KTVKTV, Phoenix, AZ </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp6"><form name="popUp6">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp6.SITE.options[document.popUp6.SITE.selectedIndex].value );">
+
+	<option selected value="#">Alaska</option>
+
+		<option value="AKKET"> Ketchikan Daily News  </option>
+		<option value="AKKOD"> Kodiak Daily Mirror </option>
+		<option value="AKFAI"> Fairbanks Daily NewsMiner </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp7"><form name="popUp7">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp7.SITE.options[document.popUp7.SITE.selectedIndex].value );">
+
+	<option selected value="#">California</option>
+
+		<option value="CATOR"> (Torrance, CA) Daily Breeze </option>
+		<option value="CAWOO"> Woodland Daily Democrat </option>
+		<option value="CAONT"> Inland Valley Daily Bulletin </option>
+		<option value="CAEUR"> Eureka TimesStandard </option>
+		<option value="CAVEN"> Vantura County Star </option>
+		<option value="CAOAK"> (Oakland Tribune) Insidebayarea.com </option>
+		<option value="CANOV"> Marin Independent Journal </option>
+		<option value="CAANR"> Orange County Register </option>
+		<option value="CANAP"> Napa Valley Register  </option>
+		<option value="CAPAD"> Palm SpringsThe Desert Sun </option>
+		<option value="CARIE"> Riverside PressEnterprise  </option>
+		<option value="CALON"> (Long Beach, CA) PressTelegram </option>
+		<option value="CAFRE"> Fresno Bee </option>
+		<option value="CARED"> (Redding, CA) Record Searchlight </option>
+		<option value="CASTO"> Stockton Record </option>
+		<option value="CASAN"> San Bernardino Daily Sun </option>
+		<option value="CAESC"> San Diego North County Times  </option>
+		<option value="CASDT"> San Diego Daily Transcript  </option>
+		<option value="CAWES"> San Gabriel Valley Tribune </option>
+		<option value="CABAR"> Santa Barbara NewsPress  </option>
+		<option value="CACRU"> Santa Cruz County Sentinel </option>
+		<option value="CADIU"> (San Diego, CA) UnionTribune </option>
+		<option value="CAPAS"> Pasadena StarNews </option>
+		<option value="CASOU"> Tahoe Daily Tribune  </option>
+		<option value="CASAL"> The (Salinas, CA) Californian </option>
+		<option value="CACDE"> (Crescent City, CA) Daily Triplicate </option>
+		<option value="CALOM"> Lompoc Record  </option>
+		<option value="CAVAC"> The (Vacaville, CA ) Reporter  </option>
+		<option value="CAGRA"> The Union </option>
+		<option value="CATUL"> Tulare AdvanceRegister  </option>
+		<option value="CASON"> Union Democrat </option>
+		<option value="CAVIC"> Victorville Daily Press </option>
+		<option value="CAVIS"> Visalia TimesDelta </option>
+		<option value="CAWHI"> Whittier Daily News </option>
+		<option value="CAANG"> ANG Papers </option>
+		<option value="CACHI"> Chico EnterpriseRecord </option>
+		<option value="CAFAR"> Fremont Argus </option>
+		<option value="CAFRA"> San Francisco Chronicle </option>
+		<option value="CAHAY"> (Hayward, CA) Daily Review </option>
+		<option value="CALAK"> Lake County RecordBee </option>
+		<option value="CAPLE"> TriValley Herald </option>
+		<option value="CARDB"> Red Bluff Daily News </option>
+		<option value="CASMA"> San Mateo County Times </option>
+		<option value="CAVAL"> (Vallejo, CA) TimesHerald </option>
+		<option value="CAVAN"> The Los Angeles Daily News </option>
+		<option value="KGO"> KGO-TV San Francisco, CA </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp8"><form name="popUp8">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp8.SITE.options[document.popUp8.SITE.selectedIndex].value );">
+
+	<option selected value="#">Texas</option>
+
+		<option value="KVUE"> KVUETV, Austin, TX </option>
+		<option value="TXABI"> Abilene ReporterNews </option>
+		<option value="TXBAY"> Baytown Sun  </option>
+		<option value="TXBEA"> Beaumont Enterprise </option>
+		<option value="TXBRY"> BryanCollege Station Eagle </option>
+		<option value="TXCOR"> Corpus Christi Caller Times </option>
+		<option value="TXELP"> El Paso Times </option>
+		<option value="TXNEW"> Herald Zeitung  </option>
+		<option value="TXHOU"> Houston Chronicle </option>
+		<option value="TXCN"> Texas Cable News, Dallas, TX </option>
+		<option value="TXKER"> Kerrville Daily Times </option>
+		<option value="TXMID"> Midland ReporterTelegram </option>
+		<option value="TXODE"> Odessa American </option>
+		<option value="TXPLA"> Plainview Daily Herald </option>
+		<option value="TXSAE"> San Antonio ExpressNews </option>
+		<option value="TXSAN"> San Angelo Standard Times </option>
+		<option value="TXTEC"> Texas City Sun  </option>
+		<option value="TXCOL"> (Texas A&M University) The Battalion </option>
+		<option value="TXBRH"> Brownsville Herald </option>
+		<option value="TXDMN"> Dallas Morning News </option>
+		<option value="TXTYL"> Tyler Morning Telegraph</option>
+		<option value="TXCLU"> Brazosport Facts </option>
+		<option value="TXGAL"> Galveston County Daily News </option>
+		<option value="TXMCA"> (McAllen, TX) Monitor </option>
+		<option value="TXWIC"> (Wichita Falls, TX) Times Record News </option>
+		<option value="TXHAR"> Valley Morning Star </option>
+		<option value="TXDEL"> Del Rio News Herald </option>
+		<option value="TXDER"> Denton RecordChronicle </option>
+		<option value="KHOU"> KHOU-TV, Houston, TX </option>
+		<option value="WFAA"> WFAA-TV, Dallas, TX </option>
+		<option value="KFNC"> KFNC-FM, , Houston, TX </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp9"><form name="popUp9">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp9.SITE.options[document.popUp9.SITE.selectedIndex].value );">
+
+	<option selected value="#">Wyoming</option>
+
+		<option value="WYCHE"> Wyoming TribuneEagle  </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp10"><form name="popUp10">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp10.SITE.options[document.popUp10.SITE.selectedIndex].value );">
+
+	<option selected value="#">Nevada</option>
+
+		<option value="NVLAS"> Las Vegas ReviewJournal </option>
+		<option value="NVREN"> Reno GazetteJournal </option>
+		<option value="NVCAP"> Nevada Appeal </option>
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp11"><form name="popUp11">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp11.SITE.options[document.popUp11.SITE.selectedIndex].value );">
+
+	<option selected value="#">Oregon</option>
+
+		<option value="ORBAK"> Baker City Hearld </option>
+		<option value="KOIN"> KOINTV </option>
+		<option value="ORLAG"> La Grande Observer </option>
+		<option value="ORMED"> Mail Tribune </option>
+		<option value="ORCOO"> Coos Bay World </option>
+		<option value="ORALB"> (Albany, OR) MidValley OnLine  </option>
+		<option value="ORSAL"> Statesman Journal  </option>
+		<option value="ORBEN"> Bend Bulletin </option>
+		<option value="ORAST"> Daily Astorian </option>
+		<option value="ORPEN"> East Oregonian  </option>
+		<option value="ORROS"> Roseburg News Review  </option>
+		<option value="KGW"> KGW-TV </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp12"><form name="popUp12">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp12.SITE.options[document.popUp12.SITE.selectedIndex].value );">
+
+	<option selected value="#">Washington</option>
+
+		<option value="NWCN"> North West Cable News, Seattle, WA </option>
+		<option value="WABEL"> Bellingham Herald </option>
+		<option value="WABEJ"> King County Journal  </option>
+		<option value="WAPAN"> Peninsula Daily News  </option>
+		<option value="WAVAN"> Columbian  </option>
+		<option value="WAOLY"> Olympian </option>
+		<option value="WAWAL"> Union Bulletin  </option>
+		<option value="KING"> KINGTV, Seattle, WA </option>
+            <option value="KREM"> KREMTV, Spokane, WA </option>
+		<option value="KPTK"> KPTK-AM 1090, Seattle, WA </option>
+		<option value="WABRE"> The Bremerton Sun  </option>
+		<option value="WAYAK"> Yakima Herald-Republic </option>
+		<option value="WALON"> The Daily News (CN) </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp13"><form name="popUp13">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp13.SITE.options[document.popUp13.SITE.selectedIndex].value );">
+
+	<option selected value="#">Idaho</option>
+
+		<option value="IDBOI"> The Idaho Statesman </option>
+		<option value="KTVB"> KTVBTV, Boise, ID </option>
+		<option value="IDTWF">- Times-News, Twin Falls, ID </option>
+		<option value="IDLEW">- Lewiston Morning Tribune, Lewiston, ID </option>
+
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp14"><form name="popUp14">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp14.SITE.options[document.popUp14.SITE.selectedIndex].value );">
+
+	<option selected value="#">Maine</option>
+
+		<option value="MELEE"> SunJournal Online  </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp15"><form name="popUp15">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp15.SITE.options[document.popUp15.SITE.selectedIndex].value );">
+
+	<option selected value="#">Montana</option>
+
+		<option value="MTGRE"> Great Falls Tribune  </option>
+		<option value="MTBIL"> Billings Gazette </option>
+		<option value="MTHEL"> Helena Independent Record </option>
+		<option value="MTMIS"> The Missoulian </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp16"><form name="popUp16">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp16.SITE.options[document.popUp16.SITE.selectedIndex].value );">
+
+	<option selected value="#">Utah</option>
+
+		<option value="UTSGS"> St. George Spectrum  </option>
+		<option value="UTPRO"> (Provo, UT) Daily Herald  </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp17"><form name="popUp17">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp17.SITE.options[document.popUp17.SITE.selectedIndex].value );">
+
+	<option selected value="#">Colorado</option>
+
+		<option value="COCOL"> Colorado Springs Gazette </option>
+		<option value="CODEN"> Denver Post </option>
+		<option value="COFOR"> Fort Collins Coloradoan  </option>
+		<option value="COGRE"> Greeley Tribune  </option>
+		<option value="COLON"> (Longmont, CO) Daily TimesCall   </option>
+		<option value="COLOV"> (Loveland, CO) Daily ReporterHerald  </option>
+		<option value="CODER"> Rocky Mountain News </option>
+		<option value="COFRI"> Summit Daily News  </option>
+		<option value="COBOU"> Daily Camera </option>
+		<option value="COVAI"> Vail Daily  </option>
+		<option value="COAST"> Aspen Times  </option>
+		<option value="COSTE"> (Sterling, CO) Journal Advocate </option>
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp18"><form name="popUp18">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp18.SITE.options[document.popUp18.SITE.selectedIndex].value );">
+
+	<option selected value="#">North Dakota</option>
+
+		<option value="NDBIS"> Bismarck Tribune </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp19"><form name="popUp19">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp19.SITE.options[document.popUp19.SITE.selectedIndex].value );">
+
+	<option selected value="#">South Dakota</option>
+
+		<option value="SDSIO"> Argus Leader  </option>
+		<option value="SDRAP"> The Rapid City Journal  </option>
+		<option value="SDWAT"> Watertown Public Opinion </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp20"><form name="popUp20">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp20.SITE.options[document.popUp20.SITE.selectedIndex].value );">
+
+	<option selected value="#">Nebraska</option>
+
+		<option value="NEKEA"> Kearney Hub </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp21"><form name="popUp21">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp21.SITE.options[document.popUp21.SITE.selectedIndex].value );">
+
+	<option selected value="#">Oklahoma</option>
+
+		<option value="OKBAR"> Examiner Enterprise  </option>
+		<option value="OKPON"> Ponca City News </option>
+		<option value="OKSHA"> Shawnee NewsStar  </option>
+		<option value="OKOKL"> The Oklahoman </option>
+		<option value="OKTUL"> Tulsa World </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp22"><form name="popUp22">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp22.SITE.options[document.popUp22.SITE.selectedIndex].value );">
+
+	<option selected value="#">Minnesota</option>
+
+		<option value="MNROC"> Rochester PostBulletin </option>
+		<option value="MNCLO"> St Cloud Times </option>
+		<option value="MNMAN"> The Free Press </option>
+		<option value="MNWIN"> Winona Daily News </option>
+		<option value="MNWIL"> West Central Tribune </option>
+		<option value="WCCO">  830 WCCO-AM, Minneapolis </option>
+		<option value="KMSP">  KMSP-TV, Minneapolis-St.Paul </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp23"><form name="popUp23">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp23.SITE.options[document.popUp23.SITE.selectedIndex].value );">
+
+	<option selected value="#">Iowa</option>
+
+		<option value="IACED"> (Cedar Rapids/Iowa City) Gazette </option>
+		<option value="IAMAS"> Mason City GlobeGazette </option>
+		<option value="IAIOP"> Iowa City PressCitizen </option>
+		<option value="IADES"> Des Moines Register </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp24"><form name="popUp24">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp24.SITE.options[document.popUp24.SITE.selectedIndex].value );">
+
+	<option selected value="#">Missouri</option>
+
+		<option value="MOCAP"> Southeast Missourian </option>
+		<option value="MOJOP"> Joplin Globe </option>
+		<option value="MOSPL"> Springfield NewsLeader </option>
+		<option value="MOSTP"> St. Louis PostDispatch </option>
+		<option value="MOSED"> Sedalia Democrat  </option>
+		<option value="KMOV"> KMOV-TV, St. Louis, MO </option>
+		<option value="KCMO"> KCMO 710AM, Kansas City, MO </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp25"><form name="popUp25">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp25.SITE.options[document.popUp25.SITE.selectedIndex].value );">
+
+	<option selected value="#">Arkansas</option>
+
+		<option value="ARMOU"> Baxter Bulletin </option>
+		<option value="ARSPR"> Morning News of Northwest Arkansas  </option>
+		<option value="ARFOS"> Southwest Times Record  </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp26"><form name="popUp26">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp26.SITE.options[document.popUp26.SITE.selectedIndex].value );">
+
+	<option selected value="#">Louisiana</option>
+
+		<option value="LABAT"> Baton Rouge Advocate </option>
+		<option value="LACHA"> The American Press </option>
+		<option value="WWL"> WWL-TV, New Orleans, LA </option>
+		<option value="LALAF"> Lafayette Advertister  </option>
+		<option value="LAORS"> TimesPicayune  </option>
+		<option value="LAMON"> Monroe News Star </option>
+		<option value="LASHT"> Shreveport Times  </option>
+		<option value="LAALE"> Alexandria Daily Town Talk  </option>
+		<option value="WGSO"> WGSO - 990AM  </option>
+		<option value="WFNO"> WFNO - 830AM Metairie, LA </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp27"><form name="popUp27">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp27.SITE.options[document.popUp27.SITE.selectedIndex].value );">
+
+	<option selected value="#">Mississippi</option>
+
+		<option value="MSJAD"> Clarion Ledger </option>
+		<option value="MSHAT"> Hattiesburg American  </option>
+		<option value="MSCLE"> Bolivar Commercial  </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp28"><form name="popUp28">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp28.SITE.options[document.popUp28.SITE.selectedIndex].value );">
+
+	<option selected value="#">Tennessee</option>
+
+		<option value="TNMOR"> Morristown Citizen Tribune  </option>
+		<option value="TNCLE"> Cleveland Daily Banner  </option>
+		<option value="TNNPT"> (Newport, TN) Plain Talk  </option>
+		<option value="TNMUR"> Murfreesboro Daily News Journal  </option>
+		<option value="TNMAR"> Maryville Daily Times  </option>
+		<option value="TNGRE"> Greeneville Sun  </option>
+		<option value="TNCOO"> Cookeville HeraldCitizen  </option>
+		<option value="TNJAC"> Jackson Sun </option>
+		<option value="TNMEM"> Commercial Appeal </option>
+		<option value="TNATH"> Daily PostAthenian  </option>
+		<option value="TNKNN"> Knoxville NewsSentinel </option>
+		<option value="TNCLA"> LeafChronicle  </option>
+		<option value="TNNAT"> Nashville Tennessean </option>
+		<option value="TNTUL"> Tullahoma News  </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp29"><form name="popUp29">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp29.SITE.options[document.popUp29.SITE.selectedIndex].value );">
+
+	<option selected value="#">Georgia</option>
+
+		<option value="WDUN">  AccessNorthGa.com </option>
+		<option value="GAVAL"> South Georgia Online </option>
+		<option value="GACAT"> Cartersville Daily News Tribune  </option>
+		<option value="GAGAI"> Gainesville Times </option>
+		<option value="GASTA"> Statesboro Herald </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp30"><form name="popUp30">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp30.SITE.options[document.popUp30.SITE.selectedIndex].value );">
+
+	<option selected value="#">South Carolina</option>
+
+		<option value="SCAND"> Anderson Independent </option>
+		<option value="SCCHA"> Charleston Post and Courier </option>
+		<option value="SCGRE"> Greenville News </option>
+		<option value="SCFLO"> Florence Morning News </option>
+		<option value="SCSUM"> Sumter Item  </option>
+		<option value="SCORA"> Orangeburg Times and Democrat </option>
+		<option value="SCGRI"> Greenwood Index Journal </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp31"><form name="popUp31">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp31.SITE.options[document.popUp31.SITE.selectedIndex].value );">
+
+	<option selected value="#">North Carolina</option>
+
+		<option value="NCMOR"> Morganton News Herald </option>
+		<option value="NCKIN"> Kinston Free Press </option>
+		<option value="NCBUR"> Burlington TimesNews </option>
+		<option value="NCASH"> Asheville Citizen Times </option>
+		<option value="NCCON"> Concord/Kannapolis Independent Tribune </option>
+		<option value="NCFAY"> Fayetteville Observer  </option>
+		<option value="NCHIC"> Hickory Daily Record </option>
+		<option value="NCJAC"> Jacksonville Daily News </option>
+		<option value="NCMAR"> McDowell News </option>
+		<option value="NCMOH"> Morganton NewsHerald  </option>
+		<option value="NCGRE"> Greensboro NewsRecord  </option>
+		<option value="NCSTA"> Statesville Record & Landmark </option>
+		<option value="NCWIL"> Wilson Daily Times  </option>
+		<option value="NCWIN"> WinstonSalem Journal </option>
+		<option value="NCAGW"> (World Journalism Institute) World Publications </option>
+		<option value="NCBER"> New Bern Sun Journal </option>
+		<option value="WCNC"> WCNCTV, Charlotte, NC </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp32"><form name="popUp32">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp32.SITE.options[document.popUp32.SITE.selectedIndex].value );">
+
+	<option selected value="#">Wisconsin</option>
+
+		<option value="WILAC"> Marinette Eagle Herald </option>
+		<option value="WILAC"> La Crosse Tribune  </option>
+		<option value="WIAPP"> Appleton Post Crescent  </option>
+		<option value="WIBEV"> Ozaukee Daily Citizen  </option>
+		<option value="WIEAU"> Eau Claire Leader Telegram </option>
+		<option value="WIMIL"> Milwaukee Journal Sentinel </option>
+		<option value="WIJAN"> Janesville Gazette </option>
+		<option value="WIRAC"> Racine Journal Times  </option>
+		<option value="WIWAT"> Watertown Daily Times  </option>
+		<option value="WDEZ"> WDEZFM Wausau, WI  </option>
+		<option value="WIXX"> WIXX Radio Green Bay, WI   </option>
+		<option value="WICHP"> Chippewa Herald  </option>
+		<option value="WIKEN"> Kenosha News (CN) </option>
+		<option value="WTMJ">  WTMJ 620AM Milwaukee, WI (CN) </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp33"><form name="popUp33">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp33.SITE.options[document.popUp33.SITE.selectedIndex].value );">
+
+	<option selected value="#">Michigan</option>
+
+		<option value="MIBAT"> Battle Creek Enquirer  </option>
+		<option value="MIBAX"> Huron Daily Tribune </option>
+		<option value="MICAL"> Cadillac News </option>
+		<option value="MIDTF"> Detroit Free Press  </option>
+		<option value="MILAN"> Lansing Journal </option>
+		<option value="MIMID"> Midland News </option>
+		<option value="MIDTN"> Detroit News </option>
+		<option value="MIPOR"> Port Huron Times Herald  </option>
+		<option value="MITRA"> Traverse City RecordEagle </option>
+		<option value="WNWN">  WNWN-FM  </option>
+		<option value="MIROY"> Oak Daily Tribune </option>
+		<option value="MIPLE"> Pleasant Morning Sun</option>
+		<option value="MICLE"> Macomb Daily </option>
+		<option value="WHNN"> WHNN - FM (Saginaw, MI) </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp34"><form name="popUp34">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp34.SITE.options[document.popUp34.SITE.selectedIndex].value );">
+
+	<option selected value="#">Illinois</option>
+
+		<option value="ILKAN"> Kanakee Journal Online  </option>
+		<option value="ILLIN"> Lincoln Courier </option>
+		<option value="ILBLO"> Bloomington Pantagraph  </option>
+		<option value="ILMO2"> QuadCities Online  </option>
+		<option value="ILMOL"> Moline Dispatch </option>
+		<option value="ILROR"> Rockford RegisterStar </option>
+		<option value="ILSPR"> State JournalRegister </option>
+		<option value="ILJOL"> Suburban Chicago Newspapers  </option>
+		<option value="ILEDW"> Edwardsville Intelligencer </option>
+		<option value="WPNA">  WPNA-AM, Oak Park, IL  </option>
+		<option value="ILPAR"> Paris Beacon News </option>
+		<option value="WJPF">  WJPF-AM, Carterville, IL</option>
+
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp35"><form name="popUp35">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp35.SITE.options[document.popUp35.SITE.selectedIndex].value );">
+
+	<option selected value="#">Hawaii</option>
+
+		<option value="HIHAD"> Honolulu Advertiser  </option>
+		<option value="HIHIO"> Hawaii Tribune Herald  </option>
+		<option value="HIKAT"> West Hawaii Today  </option>
+
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp36"><form name="popUp36">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp36.SITE.options[document.popUp36.SITE.selectedIndex].value );">
+
+	<option selected value="#">Indiana</option>
+
+		<option value="INMAR"> Marion Chronicle Tribune  </option>
+		<option value="INCOR"> Columbus Republic  </option>
+		<option value="INFRD"> Franklin Daily Journal  </option>
+		<option value="INEVA"> Evansville Courier & Press </option>
+		<option value="ININS"> Indianapolis Star </option>
+		<option value="INLAF"> Lafayette Journal & Courier </option>
+		<option value="INRIC"> Richmond PalladiumItem  </option>
+		<option value="INMUN"> Munice Star Press  </option>
+		<option value="INVIN"> Vincennes SunCommercial</option>
+		<option value="INELK"> Elkhart Truth </option>
+		<option value="INKEN"> Kendallville NewsSun </option>
+
+</select>
+</form>
+</SPAN>
+
+<SPAN CLASS="popUpStyle" ID="popUp37"><form name="popUp37">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp37.SITE.options[document.popUp37.SITE.selectedIndex].value );">
+
+	<option selected value="#">Kentucky</option>
+
+		<option value="WHAS">  WHASTV, Louisville, KY </option>
+		<option value="KYASH"> Ashland Daily Independent  </option>
+		<option value="KYELI"> Elizabethtown NewsEnterprise  </option>
+		<option value="KYLOU"> Louisville CourierJournal </option>
+		<option value="KYHEN"> Henderson Gleaner  </option>
+		<option value="WKHG">-  WKHG-FM, Leitchfield, KY </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp38"><form name="popUp38">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp38.SITE.options[document.popUp38.SITE.selectedIndex].value );">
+
+	<option selected value="#">Ohio</option>
+
+		<option value="OHCOD"> Columbus Daily Reporter  </option>
+		<option value="NNCO">  Newspaper Network of Central Ohio  </option>
+		<option value="OHFRE"> Fremont News Messenger  </option>
+		<option value="OHCLI"> Port Clinton News Herald  </option>
+		<option value="OHCIN"> Cincinnati Enquirer </option>
+		<option value="OHCOL"> Columbus Dispatch  </option>
+		<option value="OHTOL"> Toledo Blade  </option>
+		<option value="OHELY"> Elyria ChronicleTelegram </option>
+		<option value="OHALL"> allaroundcleveland.com </option>
+		<option value="OHCAM"> (Cambridge, OH)  Daily Jeffersonian </option>
+		<option value="OHCIP"> Cincinnati Post </option>
+		<option value="OHDEF"> Defiance CrescentNews </option>
+		<option value="OHLIM"> Lima News </option>
+		<option value="OHRAV"> Ravenna Record Courier Ravenna </option>
+		<option value="OHWOO"> The Wooster Daily Record </option>
+		<option value="OHFIN"> The (Findlay) Courier </option>
+		<option value="OHMOU"> Mount Vernon News </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp39"><form name="popUp39">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp39.SITE.options[document.popUp39.SITE.selectedIndex].value );">
+
+	<option selected value="#">Pennsylvania</option>
+
+		<option value="PAPIT"> Pittsburgh PostGazette </option>
+		<option value="JRC">   allaroundphilly.com </option>
+		<option value="PASUN"> Daily Item </option>
+		<option value="PACHE"> Delaware County (PA) Times  </option>
+		<option value="PAUNI"> Uniontown Herald Standard  </option>
+		<option value="PAPHQ"> Philadelphia Daily News  </option>
+		<option value="PASTR"> Pocono Record </option>
+		<option value="PACHA"> Public Opinion  </option>
+		<option value="PAREA"> Reading Eagle </option>
+		<option value="PAPOT"> Pottsville Republican  </option>
+		<option value="PASCR"> Scranton Times </option>
+		<option value="PANOR"> Times Herald </option>
+		<option value="PALEH"> Lehighton Times News  </option>
+		<option value="PAALM"> Altoona Mirror </option>
+		<option value="PAWAS"> Washington (Pa.) ObserverReporter  </option>
+		<option value="PAHAN"> Hanover Evening Sun </option>
+		<option value="PAYOK"> York Daily Record </option>
+		<option value="PASOM"> Daily American  </option>
+		<option value="KYWAM"> KYW-AM 1060, Philadelphia </option>
+		<option value="KQVAM"> KQV-AM 1410, Pittsburgh </option>
+        <option value="KDKAAM">KDKA-AM 1020, Pittsburgh </option>
+        <option value="PAGRE"> Pittsburgh Tribune-Review</option>
+        <option value="PAGRE"> Greensburg Tribune-Review</option>
+        <option value="PAPPA">- Philadelphia Metro </option>
+
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp40"><form name="popUp40">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp40.SITE.options[document.popUp40.SITE.selectedIndex].value );">
+
+	<option selected value="#">New York</option>
+
+		<option value="1010WINS"> 1010WINS </option>
+		<option value="NYPLA"> Plattsburgh Press Republican </option>
+		<option value="NYBIN"> Binghamton Press & SunBulletin  </option>
+		<option value="NYBUE"> Buffalo News </option>
+		<option value="NYONE"> Oneonta Daily Star </option>
+		<option value="NYROR"> Rochester Democrat and Chronicle </option>
+		<option value="NYNYP"> New York Post </option>
+		<option value="NYWHI"> NY Journal News </option>
+		<option value="NYUTI"> Utica Observer Dispatch </option>
+		<option value="NYONI"> Oneida Daily Dispatch </option>
+		<option value="NYPOU"> Poughkeepsie Journal  </option>
+		<option value="NYROM"> Rome Sentinel  </option>
+		<option value="NYELG"> Elmira Star Gazette  </option>
+		<option value="NYSTA"> Staten Island Advance  </option>
+		<option value="NYKIN"> Kingston Daily Freeman </option>
+		<option value="NYITH"> Ithaca Journal  </option>
+		<option value="NYTRO"> Troy Record </option>
+		<option value="NYSAR"> Saratogian </option>
+		<option value="NYMID"> Middletown Times HeraldRecord </option>
+		<option value="NYELMD"> Elmira StarGazette </option>
+		<option value="NYGLE"> Glens Falls Post Star  </option>
+		<option value="NYNSN"> New York Sun </option>
+		<option value="WYSL">  WYSL - 1040AM, Avon </option>
+		<option value="WNYC">  WNYC - NY Public Radio </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp41"><form name="popUp41">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp41.SITE.options[document.popUp41.SITE.selectedIndex].value );">
+
+	<option selected value="#">Connecticut</option>
+
+		<option value="CTBRP"> Connecticut Post </option>
+		<option value="CTNHR"> CT Central </option>
+		<option value="CTNOR"> Norwich Bulletin  </option>
+		<option value="CTNLD"> New London Day  </option>
+		<option value="CTDAN"> Danbury NewsTimes </option>
+		<option value="WDRCAM"> WDRC AM 1360 </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp42"><form name="popUp42">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp42.SITE.options[document.popUp42.SITE.selectedIndex].value );">
+
+	<option selected value="#">Vermont</option>
+
+		<option value="VTBUR"> Burlington Free Press </option>
+		<option value="VTRUT"> Rutland Herald </option>
+		<option value="VTBAR"> BarreMontpelier Times Argus </option>
+		<option value="VTBEN"> Bennington Banner </option>
+		<option value="VTBRA"> Brattleboro Reformer </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp43"><form name="popUp43">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp43.SITE.options[document.popUp43.SITE.selectedIndex].value );">
+
+	<option selected value="#">New Hampshire</option>
+
+		<option value="NHCON"> Concord Monitor  </option>
+		<option value="NHKEE"> Keene Sentinel  </option>
+		<option value="NHPOR"> The Portsmouth Herald </option>
+		<option value="NHWLV"> Lebanon Valley News  </option>
+		<option value="NHMAL"> New Hampshire Union Leader </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp44"><form name="popUp44">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp44.SITE.options[document.popUp44.SITE.selectedIndex].value );">
+
+	<option selected value="#">Massachusetts</option>
+
+		<option value="MABOH"> Boston Herald </option>
+		<option value="MAQUI"> Quincy Patriot Ledger </option>
+		<option value="MAHYC"> Cape Cod Times </option>
+		<option value="MAGRE"> Greenfield Recorder  </option>
+		<option value="MAFAL"> Fall River Herald News </option>
+		<option value="MABED"> New Bedford Standard Times </option>
+		<option value="MATAU"> Taunton Daily Gazette </option>
+		<option value="MAPIT"> Berskshire Eagle </option>
+		<option value="MABRO"> Brockton Enterprise </option>
+		<option value="MAFIT"> Fitchburg Sentinel & Enterprise </option>
+		<option value="MALOW"> Lowell Sun </option>
+		<option value="MANAT"> North Adams Transcript </option>
+		<option value="WRKO"> WRKO  680AM Boston </option>
+		<option value="MABOC"> (Boston, MA) Christian Science Moniotor  </option>
+		<option value="MAATT">  Attleboro Sun Chronicle</option>
+		<option value="WBZAM">  WBZ-AM</option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp45"><form name="popUp45">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp45.SITE.options[document.popUp45.SITE.selectedIndex].value );">
+
+	<option selected value="#">New Jersey</option>
+
+		<option value="NJASB"> Asbury Park Press  </option>
+		<option value="NJBRI"> Bridgewater Courier News  </option>
+		<option value="NJCAM"> (Cherry Hill) Courier Post  </option>
+		<option value="NJHAC"> NorthJersey.com </option>
+		<option value="NJVIN"> Vineland Daily Journal </option>
+		<option value="NJMOR"> Parsippany Daily Record </option>
+                <option value="NJBRU"> Home News Tribune </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp46"><form name="popUp46">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp46.SITE.options[document.popUp46.SITE.selectedIndex].value );">
+
+	<option selected value="#">Rhode Island</option>
+
+		<option value="RIPRJ"> Providence Journal </option>
+		<option value="RIWOO"> Woonsocket Call </option>
+		<option value="RIWAR"> Kent County (Southern, RI) Daily Times </option>
+		<option value="RIPAW"> Pawtucket Times </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp47"><form name="popUp47">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp47.SITE.options[document.popUp47.SITE.selectedIndex].value );">
+
+	<option selected value="#">West Virginia</option>
+
+		<option value="WVCLA"> Clarksburg Exponent Telegram  </option>
+		<option value="WVHUN"> Huntington Herald Dispatch  </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp48"><form name="popUp48">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp48.SITE.options[document.popUp48.SITE.selectedIndex].value );">
+
+	<option selected value="#">Virginia</option>
+
+		<option value="VASTA"> Staunton News Leader  </option>
+		<option value="VANOV"> VirginianPilot </option>
+		<option value="WVEC"> WVECTV, Norfolk, VA </option>
+		<option value="VARIT"> Richmond Times Dispatch </option>
+		<option value="VACHA"> Charlottesville Daily Progress </option>
+		<option value="VALYD"> Lynchburg News & Advance </option>
+		<option value="VAROA"> Roanoke Times </option>
+		<option value="VABRM"> Bristol HeraldCourier </option>
+		<option value="VACUL"> Culpepper StarExponent </option>
+		<option value="VADAR"> Danville Register & Bee </option>
+		<option value="VASTR"> Northern Virginia Daily </option>
+		<option value="VAWAY"> News Virginian </option>
+		<option value="VAWOO"> Potomac News </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp49"><form name="popUp49">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp49.SITE.options[document.popUp49.SITE.selectedIndex].value );">
+
+	<option selected value="#">Delaware</option>
+
+		<option value="DEWIL"> Wilmington NewsJournal </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp50"><form name="popUp50">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp50.SITE.options[document.popUp50.SITE.selectedIndex].value );">
+
+<option selected value="#">Maryland</option>
+
+	<option value="MDELK"> Cecil Whig  </option>
+	<option value="MDSAL"> Salisbury Daily Times  </option>
+	<option value="MDFRE"> Frederick NewsPost  </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp51"><form name="popUp51">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp51.SITE.options[document.popUp51.SITE.selectedIndex].value );">
+
+<option selected value="#">District of Columbia</option>
+
+	<option value="DCTMS"> Washington Times </option>
+	<option value="DCUSN"> US News & World Report </option>
+
+</select>
+</form>
+</SPAN>
+
+
+<SPAN CLASS="popUpStyle" ID="popUp52"><form name="popUp52">
+<select name="SITE" size="5"
+onChange="selectCheck( document.popUp52.SITE.options[document.popUp52.SITE.selectedIndex].value );">
+
+	<option selected value="#">Puerto Rico</option>
+
+</select>
+</form>
+</SPAN>
+
+
+<! End States Selection >
+
+
+
+
+
+<DIV ALIGN="LEFT">
+  <table width="500" border="0" cellpadding="1">
+      <td width="500">
+	<table width="500" border="0" cellpadding="1" height="468" cellspacing="0">
+	  <tr>
+	    <td height="88">
+
+<A onClick="randomSite()"><img src="http://customwire.ap.org/specials/icons/aplogo227.gif" width="227" height="42" border="0"></a>
+<br>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="2" color="#000000">This is the news Web site of the Associated Press, its member newspapers and broadcasters.</font>
+<br>
+<br><font size="2" face="Verdana, Arial, Helvetica, sans-serif">To
+		get the latest news from the AP and a member Web site, click on
+		the state and select a member from the list. To close the menu,
+		click on the state again.
+
+		<!-- If you don't see your local news site
+		listed, click on the logo above or right <a href="/GoToAP.cgi" style="text-decoration: none">here</a>
+		to connect to a randomly generated AP member site.--></font><BR>
+
+	      <table width="500" cellspacing="4" cellpadding="2" height="" border="0">
+		<tr>
+		  <td colspan="3">
+
+		  <img src="http://customwire.ap.org/specials/bluepage-map.gif" width="500" height="333" usemap="#usMap" border="0">
+                    <map name="usMap">
+		      <area shape="poly" coords="205,140,206,174,273,172,271,147,264,138,205,139" href="#ks" onClick="popToggle(event,'popUp1')" alt="Kansas" title="Kansas">
+		      <area shape="poly" coords="143,171,197,174,196,232,163,233,161,237,149,234,150,240,139,238,144,172" onClick="popToggle(event,'popUp2')" href="#nm" alt="New Mexico" title="New Mexico">
+		      <area shape="poly" coords="358,184,332,188,335,217,339,242,348,241,346,233,373,228,368,211,358,186,357,185" href="#al" onClick="popToggle(event,'popUp3')" alt="Alabama" title="Alabama">
+		      <area shape="poly" coords="346,232,372,227,380,230,407,223,421,243,432,264,435,283,427,285,415,275,404,265,400,256,399,250,397,244,390,241,383,237,379,238,377,242,375,243,368,237,347,238" href="#fl" onClick="popToggle(event,'popUp4')" alt="Florida" title="Florida">
+		      <area shape="poly" coords="143,172,98,168,96,180,92,178,89,193,92,198,87,210,86,216,84,220,114,236,124,238,132,239,139,238,142,172" href="#az" onClick="popToggle(event,'popUp5')" alt="Arizona" title="Arizona">
+		      <area shape="poly" coords="24,230,11,241,7,259,9,280,19,287,9,304,12,307,51,278,70,279,94,294,95,286,74,271,63,269,53,235,45,231,25,230" href="#ak" onClick="popToggle(event,'popUp6')">
+		      <area shape="poly" coords="49,129,48,137,88,189,91,198,85,216,63,217,59,206,33,189,33,179,26,163,14,130,15,120,13,115,19,106,18,96,51,103,51,114" href="#ca" onClick="popToggle(event,'popUp7')" alt="California" title="California">
+		      <area shape="poly" coords="227,180,196,180,196,233,160,233,165,238,178,248,182,260,196,266,200,266,201,258,212,260,223,271,230,283,236,292,243,298,251,302,256,302,256,301,253,283,259,276,263,271,272,265,278,261,284,258,286,255,290,247,291,239,285,228,282,223,282,212,278,210,271,209,265,209,259,212,253,210,241,207,235,207,228,204,226,203,225,182" href="#tx" onClick="popToggle(event,'popUp8')" alt="Texas" title="Texas">
+		      <area shape="poly" coords="154,79,188,81,188,128,128,124,131,78" href="#wy" onClick="popToggle(event,'popUp9')" alt="Wyoming" title="Wyoming">
+		      <area shape="poly" coords="89,188,48,137,52,103,103,110,95,178,89,180" href="#nv" onClick="popToggle(event,'popUp10')" alt="Nevada" title="Nevada">
+		      <area shape="poly" coords="18,95,18,85,30,48,40,51,41,59,52,59,70,59,81,61,89,66,84,73,81,79,82,85,77,107" href="#or" onClick="popToggle(event,'popUp11')" alt="Oregon" title="Oregon">
+		      <area shape="poly" coords="32,49,30,23,46,27,46,20,90,27,84,61,43,58" href="#wa" onClick="popToggle(event,'popUp12')" alt="Washington" title="Washington">
+		      <area shape="poly" coords="90,28,98,28" href="#id" onClick="popToggle(event,'popUp13')" alt="Idaho" title="Idaho">
+		      <area shape="poly" coords="90,27,84,60,90,65,82,76,78,105,130,113,130,83,121,82,113,78,110,68,105,68,107,57,97,42,97,28" href="#id" onClick="popToggle(event,'popUp13')">
+		      <area shape="poly" coords="452,36,463,57,474,45,486,28,477,17,470,7,457,5" href="#me" onClick="popToggle(event,'popUp14')" alt="Maine" title="Maine">
+		      <area shape="poly" coords="97,28,189,35,188,81,132,79,130,84,123,83,114,79,110,68,106,70,107,56,98,44" href="#mt" onClick="popToggle(event,'popUp15')" alt="Montana" title="Montana">
+		      <area shape="poly" coords="103,110,128,114,127,125,144,126,142,172,97,168" href="#ut" onClick="popToggle(event,'popUp16')" alt="Utah" title="Utah">
+		      <area shape="poly" coords="144,125,205,128,206,174,142,172" href="#co" onClick="popToggle(event,'popUp17')" alt="Colorado" title="Colorado">
+		      <area shape="poly" coords="189,35,242,34,246,49,247,60,249,69,189,70" href="#nd" onClick="popToggle(event,'popUp18')" alt="North Dakota" title="North Dakota">
+		      <area shape="poly" coords="188,70,249,69,247,74,252,76,252,97,252,110,243,106,231,103,189,104" href="#sd" onClick="popToggle(event,'popUp19')" alt="South Dakota" title="South Dakota">
+		      <area shape="poly" coords="188,105,232,103,253,111,258,120,261,130,268,141,258,138,240,139,205,139,206,128,188,128" href="#ne" onClick="popToggle(event,'popUp20')" alt="Nebraska" title="Nebraska">
+		      <area shape="poly" coords="197,174,274,172,276,210,270,207,261,211,253,210,245,207,234,206,227,202,226,181,197,181" href="#ok" onClick="popToggle(event,'popUp21')" alt="Oklahoma" title="Oklahoma">
+		      <area shape="poly" coords="243,34,257,32,261,30,263,34,271,36,277,36,281,39,288,39,293,38,303,40,284,56,282,63,280,71,281,79,296,93,253,97,250,73" href="#mn" onClick="popToggle(event,'popUp22')" alt="Minnesota" title="Minnesota">
+		      <area shape="poly" coords="252,97,296,94,298,100,307,110,300,116,301,123,296,127,261,130,253,108" href="#ia" onClick="popToggle(event,'popUp23')" alt="Iowa" title="Iowa">
+		      <area shape="poly" coords="262,131,298,127,298,134,306,140,307,145,312,146,311,153,318,156,321,162,322,166,322,171,320,179,316,177,316,171,273,177,271,146,267,140" href="#mo" onClick="popToggle(event,'popUp24')" alt="Missouri" title="Missouri">
+		      <area shape="poly" coords="274,177,315,172,316,178,320,177,318,188,314,193,315,196,310,201,309,207,312,214,282,217,282,210,276,210" href="#ar" onClick="popToggle(event,'popUp25')" alt="Arkansas" title="Arkansas">
+		      <area shape="poly" coords="282,216,283,224" href="#">
+		      <area shape="poly" coords="282,217,285,226,290,235,309,236,313,223,310,214" href="#la" onClick="popToggle(event,'popUp26')" alt="Louisiana" title="Louisiana">
+		      <area shape="poly" coords="289,235,291,246,286,255,304,255,319,258,338,258,333,245,327,243,326,235" href="#la" onClick="popToggle(event,'popUp26')" alt="Louisiana" title="Louisiana">
+		      <area shape="poly" coords="316,189,332,188,339,241,329,243,327,235,309,235,314,223,310,216,312,214,310,206" href="#ms" onClick="popToggle(event,'popUp27')" alt="Mississippi" title="Mississippi">
+		      <area shape="poly" coords="318,190,322,172,389,158,388,165,378,171,372,175,367,182" href="#tn" onClick="popToggle(event,'popUp28')" alt="Tennessee" title="Tennessee">
+		      <area shape="poly" coords="359,184,382,179,380,183,387,187,397,194,410,208,407,223,380,228,372,228" href="#ga" onClick="popToggle(event,'popUp29')" alt="Georgia" title="Georgia">
+		      <area shape="poly" coords="382,179,393,174,401,172,404,177,414,174,427,180,424,186,423,190,411,207,380,182" href="#sc" onClick="popToggle(event,'popUp30')" alt="South Carolina" title="South Carolina">
+		      <area shape="poly" coords="368,182,372,175,389,165,390,158,442,145,448,148,449,157,445,165,436,171,430,183,415,173,405,175,399,171,382,179" href="#nc" onClick="popToggle(event,'popUp31')" alt="North Carolina" title="North Carolina">
+		      <area shape="poly" coords="283,57,293,52,298,58,304,61,315,62,320,65,323,72,326,68,328,71,324,82,326,94,325,100,303,104,294,89,286,83,280,74" href="#wi" onClick="popToggle(event,'popUp32')" alt="Wisconsin" title="Wisconsin">
+		      <area shape="poly" coords="325,55" href="#">
+		      <area shape="poly" coords="296,54,306,61,315,61,325,71,331,63,342,57,343,63,358,57,345,48,320,41,312,48,310,51" href="#mi" onClick="popToggle(event,'popUp33')" alt="Michigan" title="Michigan">
+		      <area shape="poly" coords="336,107,365,103,372,92,364,75,355,60,338,65,331,74" href="#mi" onClick="popToggle(event,'popUp33')" alt="Michigan" title="Michigan">
+		      <area shape="poly" coords="303,102,325,100,329,107,333,138,334,146,332,154,329,160,323,164,318,155,311,153,311,145,306,141,299,135,299,125,301,117,307,108" href="#il" onClick="popToggle(event,'popUp34')" alt="Illinois" title="Illinois">
+		      <area shape="poly" coords="105,248,121,254,143,266,157,276,163,290,141,295,116,264,86,255,93,245" href="#hi" onClick="popToggle(event,'popUp35')" alt="Hawaii" title="Hawaii">
+		      <area shape="poly" coords="329,110,354,105,359,138,354,141,349,149,344,151,333,151" href="#in" onClick="popToggle(event,'popUp36')" alt="Indiana" title="Indiana">
+		      <area shape="poly" coords="323,171,377,160,386,147,378,142,377,137,366,138,360,135,354,143,345,151,332,152,325,165" href="#ky" onClick="popToggle(event,'popUp37')" alt="Kentucky" title="Kentucky">
+		      <area shape="poly" coords="354,104,372,103,380,102,387,94,390,111,392,121,387,125,384,132,380,140,376,136,369,138,358,135" href="#oh" onClick="popToggle(event,'popUp38')" alt="Ohio" title="Ohio">
+		      <area shape="poly" coords="393,120,387,95,393,91,402,91,428,84,437,89,436,95,439,99,442,104,435,108" href="#pa" onClick="popToggle(event,'popUp39')" alt="Pennsylvania" title="Pennsylvania">
+		      <area shape="poly" coords="394,91,428,84" href="#">
+		      <area shape="poly" coords="428,84,392,92,398,85,398,77,406,73,418,67,416,61,421,50,427,45,435,45,438,55,442,63,445,69,444,76" href="#ny" onClick="popToggle(event,'popUp40')" alt="New York" title="New York">
+		      <area shape="poly" coords="448,87,451,87,460,87,452,93,444,94,444,89,436,88" href="#ny" onClick="popToggle(event,'popUp40')" alt="New York" title="New York">
+		      <area shape="rect" coords="433,79,461,88" href="#ct" onClick="popToggle(event,'popUp41')" alt="Connecticut" title="Connecticut">
+		      <area shape="poly" coords="435,45,449,40,450,46,448,51,449,59,450,66,443,69" href="#vt" onClick="popToggle(event,'popUp42')" alt="Vermont" title="Vermont">
+		      <area shape="poly" coords="452,34,448,39,449,48,449,55,450,64,454,66,461,63,462,55" href="#nh" onClick="popToggle(event,'popUp43')" alt="New Hampshire" title="New Hampshire">
+		      <area shape="poly" coords="446,77,444,68,449,66,455,65,463,61,467,65,474,68,475,74,459,76,450,79" onClick="popToggle(event,'popUp44')" href="#ma">
+		      <area shape="poly" coords="438,89,444,89,446,96,452,98,455,105,455,111,445,114,437,109,443,102,437,97,437,92" href="#nj" onClick="popToggle(event,'popUp45')" alt="New Jersey" title="New Jersey">
+		      <area shape="rect" coords="461,76,476,86" href="#ri" onClick="popToggle(event,'popUp46')" alt="Rhode Island" title="Rhode Island">
+		      <area shape="poly" coords="378,141,384,148,393,149,400,144,404,134,408,127,415,119,420,120,411,119,403,124,401,119,391,119" href="#wv" onClick="popToggle(event,'popUp47')" alt="West Virginia" title="West Virginia">
+		      <area shape="poly" coords="385,149,377,160,440,145,424,142,426,128,425,122,413,117,404,134,399,145,392,149" href="#va" onClick="popToggle(event,'popUp48')" alt="Virginia" title="Virginia">
+		      <area shape="poly" coords="434,110,438,110,445,115,454,112,454,121,454,125,441,123,438,116" href="#de" onClick="popToggle(event,'popUp49')" alt="Delaware" title="Delaware">
+		      <area shape="poly" coords="434,108,400,118,404,123,414,118,419,118,428,122,428,130,444,129,444,123,438,115" href="#md" onClick="popToggle(event,'popUp50')" alt="Maryland" title="Maryland">
+		      <area shape="rect" coords="426,128,457,145" href="#dc" onClick="popToggle(event,'popUp51')" alt="Washington, D.C." title="Washington, D.C.">
+		      <area shape="rect" coords="453,306,486,325" href="#pr" onClick="popToggle(event,'popUp52')" alt="Puerto Rico" title="Puerto Rico">
+
+		    </map>
+
+		  </td>
+		</tr>
+	      </table>
+	     </td>
+	  </tr>
+	</table>
+
+	<table width="500" border="0" cellpadding="1">
+	  <tr>
+	    <td>
+
+	    <!-- <p><font face="Verdana, Arial, Helvetica, sans-serif" size="1"><a href="/public_pages/WirePortal.pcgi/intl_portal.html" style="text-decoration: none">CLICK HERE FOR INTERNATIONAL NEWSPAPERS AND BROADCAST SUBSCRIBERS</a></font></p>-->
+	      <p><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Copyright
+		2008 Associated Press. All rights reserved. This material may
+		not be published, broadcast, rewritten or redistributed.</font></p>
+	      <p><font size="1" face="Verdana, Arial, Helvetica, sans-serif"><a href="http://www.ap.org" style="text-decoration: none">Comments
+		and questions</a></font></p>
+
+	    </td>
+	  </tr>
+	</table>
+	<p>&nbsp;</p>
+
+      </td>
+    </tr>
+  </table>
+
+</DIV>
+</BODY>
+</HTML>

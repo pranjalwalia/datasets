@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" dir="ltr" lang="en-US" xmlns:og="http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" dir="ltr" lang="en-US" xmlns:og="http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" dir="ltr" lang="en-US" xmlns:og="http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" dir="ltr" lang="en-US" xmlns:og="http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" dir="ltr" lang="en-US" xmlns:og="http://ogp.me/ns#"><!--<![endif]-->
+ 
+<head id="www-sitename-com" data-template-set="html5-reset-wordpress-theme" profile="http://gmpg.org/xfn/11">
+<meta charset="UTF-8">
+ 
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>
+How to Download Youtube Videos via the Command Line - LonePlacebo </title>
+<meta name="title" content="How to Download Youtube Videos via the Command Line - LonePlacebo">
+<meta name="description" content="Majoring in Technology">
+<meta name="google-site-verification" content="6lA5Ug5vx7RFlUVJ3nGQ6MfUeMn7RJaRUbCiIjhaubU">
+<meta name="author" content="Tony Hue">
+<meta name="Copyright" content="Copyright Tony Hue. All Rights Reserved.">
+ 
+<meta name="DC.title" content="LonePlacebo">
+<meta name="DC.subject" content="Tech Blog">
+<meta name="DC.creator" content="Tony Hue">
+ 
+ 
+<link rel="shortcut icon" href="http://loneplacebo.com/wp-content/themes/fathom/_/img/favicon.ico">
+<link rel="apple-touch-icon" href="http://loneplacebo.com/wp-content/themes/fathom/_/img/apple-touch-icon.png">
+ 
+<link rel="stylesheet" href="http://loneplacebo.com/wp-content/themes/fathom/style.css" media="screen,projection">
+<link rel="stylesheet" href="http://loneplacebo.com/wp-content/themes/fathom/_/css/print.css" media="print">
+ 
+<link href='http://fonts.googleapis.com/css?family=Cabin:400,600' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+ 
+<script src="http://loneplacebo.com/wp-content/themes/fathom/_/js/modernizr-1.7.min.js"></script>
+<link rel="pingback" href="http://loneplacebo.com/xmlrpc.php"/>
+<style type="text/css">div#fancybox-close{right:-15px;top:-12px}div#fancybox-content{border-color:#FFFFFF}div#fancybox-title{background-color:#FFFFFF}div#fancybox-outer{background-color:#FFFFFF}div#fancybox-title-inside{color:#333333}</style>
+ 
+<meta name="description" content="Downloading videos off Youtube is such a common ritual on the Internet, but how about doing it via the command line?"/>
+<meta name="keywords" content="command line, terminal, youtube videos, download youtube videos"/>
+<link rel="canonical" href="http://loneplacebo.com/how-to-download-youtube-videos-via-the-command-line/"/>
+ 
+<link rel="alternate" type="application/rss+xml" title="LonePlacebo &raquo; Feed" href="http://loneplacebo.com/feed/"/>
+<link rel="alternate" type="application/rss+xml" title="LonePlacebo &raquo; Comments Feed" href="http://loneplacebo.com/comments/feed/"/>
+<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.2.3 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-12084812-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]></script>
+<link rel="alternate" type="application/rss+xml" title="LonePlacebo &raquo; How to Download Youtube Videos via the Command Line Comments Feed" href="http://loneplacebo.com/how-to-download-youtube-videos-via-the-command-line/feed/"/>
+<link rel='stylesheet' id='fancybox-css' href='http://loneplacebo.com/wp-content/plugins/fancybox-for-wordpress/fancybox/fancybox.css?ver=3.3.1' type='text/css' media='all'/>
+<link rel='stylesheet' id='wp-polls-css' href='http://loneplacebo.com/wp-content/plugins/wp-polls/polls-css.css?ver=2.50' type='text/css' media='all'/>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=3.3.1'></script>
+<script type='text/javascript' src='http://loneplacebo.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<script type='text/javascript' src='http://loneplacebo.com/wp-content/plugins/fancybox-for-wordpress/fancybox/jquery.fancybox.js?ver=1.3.4'></script>
+<script type='text/javascript' src='http://loneplacebo.com/wp-content/plugins/wp-featured-content-slider/scripts/jquery.cycle.all.2.72.js?ver=1.3'></script>
+<meta name="generator" content="WordPress 3.3.1"/>
+<link rel='shortlink' href='http://loneplacebo.com/?p=3967'/>
+<meta name="_awb_version" content="2.0.3"/>
+ 
+<script type="text/javascript">
+jQuery(function(){
+
+jQuery.fn.getTitle = function() { // Copy the title of every IMG tag and add it to its parent A so that fancybox can show titles
+	var arr = jQuery("a.fancybox");
+	jQuery.each(arr, function() {
+		var title = jQuery(this).children("img").attr("title");
+		jQuery(this).attr('title',title);
+	})
+}
+
+// Supported file extensions
+var thumbnails = jQuery("a:has(img)").filter( function() { return /(jpe?g|png|gif|bmp)$/i.test(jQuery(this).attr('href')) });
+
+thumbnails.addClass("fancybox").attr("rel","fancybox").getTitle();
+
+jQuery("a.fancybox").fancybox({
+	'cyclic': false,
+	'autoScale': false,
+	'padding': 10,
+	'opacity': true,
+	'speedIn': 500,
+	'speedOut': 500,
+	'changeSpeed': 300,
+	'overlayShow': true,
+	'overlayOpacity': "0.3",
+	'overlayColor': "#666666",
+	'titleShow': true,
+	'titlePosition': 'inside',
+	'enableEscapeButton': true,
+	'showCloseButton': true,
+	'showNavArrows': true,
+	'hideOnOverlayClick': true,
+	'hideOnContentClick': false,
+	'width': 560,
+	'height': 340,
+	'transitionIn': "fade",
+	'transitionOut': "fade",
+	'centerOnScroll': true
+});
+		
+
+})
+</script>
+ 
+<style type="text/css">.wp-polls .pollbar{margin:1px;font-size:6px;line-height:8px;height:8px;background-image:url('http://loneplacebo.com/wp-content/plugins/wp-polls/images/default/pollbg.gif');border:1px solid #c8c8c8;}</style>
+ 
+<meta property='fb:admins' content='518599998'/>
+<meta property='fb:app_id' content='89168697324'/>
+<meta property='fb:page_id' content='91491867156'/>
+<meta property='og:url' content='http://loneplacebo.com/how-to-download-youtube-videos-via-the-command-line/'/>
+<meta property='og:title' content='How to Download Youtube Videos via the Command Line'/>
+<meta property='og:site_name' content='LonePlacebo'/>
+<meta property='og:description' content='  I don&#039;t purport this tutorial as being the ideal way to download Youtube videos to your computer. A simple Google search will lead you to an assortment of o'/>
+<meta property='og:type' content='article'/>
+<meta property='og:image' content='http://loneplacebo.com/wp-content/uploads/2011/10/Youtube-Terminal-150x150.png'/>
+<meta property='og:locale' content='en_US'/>
+ 
+</head>
+<body id="top" class="single single-post postid-3967 single-format-standard">
+<div id="page-wrap"> 
+<div id="container" class="cf">
+<header id="intro">
+<div id="logo">
+<h1><a href="http://loneplacebo.com/">
+LonePlacebo <div class="description">Majoring in Technology</div>
+</a>
+</h1>
+</div>
+<div id="topnav">
+ 
+<div id="search-box">
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">
+					      google.load('search', '1');
+					      google.setOnLoadCallback(function() {
+					        google.search.CustomSearchControl.attachAutoCompletion(
+					          '016164296208729675189:qq4uaxnfgew',
+					          document.getElementById('q'),
+					          'cse-search-box');
+					      });
+					    </script>
+<form action="http://loneplacebo.com/search-results" id="cse-search-box">
+<div>
+<input type="text" id="q" name="q" class="cse-input" placeholder="Search and hit enter" autocomplete="on" size="24"/>
+</div>
+</form>
+</div> 
+<ul id="menu-main-navigation" class="menu"><li id="menu-item-4068" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4068"><a href="http://loneplacebo.com/about/">About</a></li>
+<li id="menu-item-4067" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4067"><a href="http://loneplacebo.com/contact/">Contact</a></li>
+<li id="menu-item-4070" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4070"><a href="http://loneplacebo.com/archives/">Archives</a></li>
+<li id="menu-item-4240" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4240"><a href="http://loneplacebo.com/subscribe/">Subscribe</a></li>
+</ul>  
+</div> 
+</header>
+<div id="sidebarWrap">
+<div id="sidebar">
+<ul class="tabs">
+ 
+<li><a class="active" href="#recent-posts">Recent</a></li>
+<li><a href="#activity">@loneplacebo</a></li>
+<li><a href="#poll">Poll</a></li>
+</ul>
+<ul class="tabs-content cf">
+ 
+ 
+<li id="recent-posts" class="active">
+<ul>
+<li class="cf">
+<a href="http://loneplacebo.com/simple-terminal-commands-to-tweak-os-x/" class="recent-thumb">
+<img width="50" height="28" src="http://loneplacebo.com/wp-content/uploads/2012/04/terminal-300x168.jpg" class="alignleft wp-post-image" alt="terminal" title="terminal"/> </a>
+<h5>
+<a title="Simple Terminal Commands to Tweak OS X" href="http://loneplacebo.com/simple-terminal-commands-to-tweak-os-x/" rel="bookmark">
+Simple Terminal Commands to Tweak OS X </a>
+</h5>
+<div class="entry-meta">
+<time datetime="April 9, 2012" class="published">
+April 9, 2012 </time>
+&middot;
+<span class="comment-count">
+<a href="http://loneplacebo.com/simple-terminal-commands-to-tweak-os-x/#respond" class="comments-link" rel="nofollow" title="Comment on Simple Terminal Commands to Tweak OS X"><span class="dsq-postid" rel="4267 http://loneplacebo.com/?p=4267">O Comments</span></a> </span>
+</div>
+</li>
+<li class="cf">
+<a href="http://loneplacebo.com/the-belkin-dual-usb-charger-and-surge-protector/" class="recent-thumb">
+<img width="50" height="50" src="http://loneplacebo.com/wp-content/uploads/2012/03/Belkin-Mini-Surge-Protector-Dual-USB-Charger-200x200.jpg" class="alignleft wp-post-image" alt="Belkin Mini Surge Protector Dual USB Charger" title="Belkin Mini Surge Protector Dual USB Charger"/> </a>
+<h5>
+<a title="The Belkin Dual USB Charger and Surge Protector" href="http://loneplacebo.com/the-belkin-dual-usb-charger-and-surge-protector/" rel="bookmark">
+The Belkin Dual USB Charger and Surge Protector </a>
+</h5>
+<div class="entry-meta">
+<time datetime="April 8, 2012" class="published">
+April 8, 2012 </time>
+&middot;
+<span class="comment-count">
+<a href="http://loneplacebo.com/the-belkin-dual-usb-charger-and-surge-protector/#respond" class="comments-link" rel="nofollow" title="Comment on The Belkin Dual USB Charger and Surge Protector"><span class="dsq-postid" rel="4256 http://loneplacebo.com/?p=4256">O Comments</span></a> </span>
+</div>
+</li>
+<li class="cf">
+<a href="http://loneplacebo.com/googles-augmented-reality-glasses/" class="recent-thumb">
+<img width="44" height="50" src="http://loneplacebo.com/wp-content/uploads/2012/04/project-glass-264x300.jpg" class="alignleft wp-post-image" alt="project glass" title="project glass"/> </a>
+<h5>
+<a title="Google&#8217;s Augmented Reality Glasses: Can you see the future?" href="http://loneplacebo.com/googles-augmented-reality-glasses/" rel="bookmark">
+Google&#8217;s Augmented Reality Glasses: Can you see the future? </a>
+</h5>
+<div class="entry-meta">
+<time datetime="April 4, 2012" class="published">
+April 4, 2012 </time>
+&middot;
+<span class="comment-count">
+<a href="http://loneplacebo.com/googles-augmented-reality-glasses/#respond" class="comments-link" rel="nofollow" title="Comment on Google&#8217;s Augmented Reality Glasses: Can you see the future?"><span class="dsq-postid" rel="4263 http://loneplacebo.com/?p=4263">O Comments</span></a> </span>
+</div>
+</li>
+<li class="cf">
+<a href="http://loneplacebo.com/how-to-remember-100-names-in-5-minutes/" class="recent-thumb">
+<img width="50" height="32" src="http://loneplacebo.com/wp-content/uploads/2012/04/who-am-i-300x195.jpg" class="alignleft wp-post-image" alt="who-am-i" title="who-am-i"/> </a>
+<h5>
+<a title="How to Remember 100 Names in 5 Minutes" href="http://loneplacebo.com/how-to-remember-100-names-in-5-minutes/" rel="bookmark">
+How to Remember 100 Names in 5 Minutes </a>
+</h5>
+<div class="entry-meta">
+<time datetime="April 2, 2012" class="published">
+April 2, 2012 </time>
+&middot;
+<span class="comment-count">
+<a href="http://loneplacebo.com/how-to-remember-100-names-in-5-minutes/#respond" class="comments-link" rel="nofollow" title="Comment on How to Remember 100 Names in 5 Minutes"><span class="dsq-postid" rel="4259 http://loneplacebo.com/?p=4259">O Comments</span></a> </span>
+</div>
+</li>
+<li class="cf">
+<a href="http://loneplacebo.com/another-reason-to-get-an-ipad/" class="recent-thumb">
+<img width="50" height="37" src="http://loneplacebo.com/wp-content/uploads/2012/03/paper-sketch-300x225.jpg" class="alignleft wp-post-image" alt="@joseph_carney is a hipster" title="paper-sketch"/> </a>
+<h5>
+<a title="Another reason to get an iPad" href="http://loneplacebo.com/another-reason-to-get-an-ipad/" rel="bookmark">
+Another reason to get an iPad </a>
+</h5>
+<div class="entry-meta">
+<time datetime="March 30, 2012" class="published">
+March 30, 2012 </time>
+&middot;
+<span class="comment-count">
+<a href="http://loneplacebo.com/another-reason-to-get-an-ipad/#respond" class="comments-link" rel="nofollow" title="Comment on Another reason to get an iPad"><span class="dsq-postid" rel="4254 http://loneplacebo.com/?p=4254">O Comments</span></a> </span>
+</div>
+</li>
+</ul>
+</li>
+ 
+ 
+<li id="activity">
+ 
+<p class="twitter-message"> The Instagram team hanging out at Facebook HQ, looking for their $1 billion paycheck. <a href="http://t.co/cvGi0ylb" class="twitter-link">http://t.co/cvGi0ylb</a> <a href="http://twitter.com/loneplacebo/statuses/189533474837889025" class="twitter-link">#</a> <span class="twitter-timestamp"><abbr title="2012/04/10 02:01:16">1 hour ago</abbr></span></p><p class="twitter-message"> For a cool $1 billion, Facebook now owns Instagram. <a href="https://t.co/xBitgAdq" class="twitter-link">https://t.co/xBitgAdq</a> <a href="http://t.co/HcmtRofS" class="twitter-link">http://t.co/HcmtRofS</a> <a href="http://twitter.com/loneplacebo/statuses/189407764156653568" class="twitter-link">#</a> <span class="twitter-timestamp"><abbr title="2012/04/09 17:41:44">9 hours ago</abbr></span></p><p class="twitter-message"> iPad docking station - <a href="http://t.co/ahNbUXqd" class="twitter-link">http://t.co/ahNbUXqd</a> <a href="http://t.co/lC7A9X0M" class="twitter-link">http://t.co/lC7A9X0M</a> <a href="http://twitter.com/loneplacebo/statuses/189240804097794048" class="twitter-link">#</a> <span class="twitter-timestamp"><abbr title="2012/04/09 06:38:18">20 hours ago</abbr></span></p>  
+<a href="https://twitter.com/loneplacebo" class="twitter-follow-button" data-show-count="true" data-show-screen-name="true" data-related="tonykhue">Follow @loneplacebo</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2Floneplacebo&amp;send=false&amp;layout=button_count&amp;width=250&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=260320290653336" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:250px; height:21px;" allowTransparency="true"></iframe>
+</li> 
+ 
+<li id="poll">
+<h2>Polls</h2>
+<ul>
+<li><div id="polls-3" class="wp-polls">
+<form id="polls_form_3" class="wp-polls-form" action="/how-to-download-youtube-videos-via-the-command-line/" method="post">
+<p style="display: none;"><input type="hidden" name="poll_id" value="3"/></p>
+<p><strong>Would you purchase stock in Facebook?</strong></p><div id="polls-3-ans" class="wp-polls-ans"><ul class="wp-polls-ul">
+<li><input type="radio" id="poll-answer-11" name="poll_3" value="11"/> <label for="poll-answer-11">Yes</label></li>
+<li><input type="radio" id="poll-answer-12" name="poll_3" value="12"/> <label for="poll-answer-12">No</label></li>
+<li><input type="radio" id="poll-answer-13" name="poll_3" value="13"/> <label for="poll-answer-13">Wait and see</label></li>
+</ul><p style="text-align: center;"><input type="button" name="vote" value="   Vote   " class="Buttons" onclick="poll_vote(3);"/></p><p style="text-align: center;"><a href="#ViewPollResults" onclick="poll_result(3); return false;" title="View Results Of This Poll">View Results</a></p></div>
+</form>
+</div>
+<div id="polls-3-loading" class="wp-polls-loading"><img src="http://loneplacebo.com/wp-content/plugins/wp-polls/images/loading.gif" width="16" height="16" alt="Loading ..." title="Loading ..." class="wp-polls-image"/>&nbsp;Loading ...</div>
+</li>
+</ul>
+</li> 
+</ul>
+<div id="text-9" class="widget widget_text"> <div class="textwidget"><div id="influads" class="box">
+<div id="influads_block" class="influads_block"> </div>
+<script type="text/javascript">(function(){ var acc =   "acc_275d317_pub";var st ="css";var or= "h";var e=document.getElementsByTagName("script")[0];var d=document.createElement("script");d.src=('https:' == document.location.protocol ?'https://' : 'http://') +"engine.influads.com/show/"+or+"/"+st+"/"+acc;d.type="text/javascript"; d.async=true; d.defer=true; e.parentNode.insertBefore(d,e);})();</script>
+</div></div>
+</div>
+</div> 
+</div>
+<div id="content">
+<article class="post-3967 post type-post status-publish format-standard" id="post-3967">
+<h1 class="entry-title">How to Download Youtube Videos via the Command Line</h1>
+<footer class="meta">
+<span class="byline author vcard">
+<i>by</i> <span class="fn"><a href="http://loneplacebo.com/author/tonyhue/" title="Posts by Tony Hue" rel="author">Tony Hue</a> </span>
+</span>
+&middot;
+<time title="5 months ago" class="timestamp">
+October 23rd, 2011 </time>
+&middot;
+<a href="http://loneplacebo.com/how-to-download-youtube-videos-via-the-command-line/#respond" class="comments-link" rel="nofollow" title="Comment on How to Download Youtube Videos via the Command Line"><span class="dsq-postid" rel="3967 http://loneplacebo.com/?p=3967">O Comments</span></a> </footer> <div class="entry-content">
+<img src="http://loneplacebo.com/wp-content/uploads/2011/10/download-youtube-video-in-terminal.png" alt="download-youtube-video-in-terminal" title="download-youtube-video-in-terminal" width="575" height="377" class="aligncenter no-border size-full wp-image-3975"/>
+<p>I don&#8217;t purport this tutorial as being the ideal way to download Youtube videos to your computer. A <a href="http://www.google.com/search?aq=f&#038;gcx=c&#038;sourceid=chrome&#038;ie=UTF-8&#038;q=How+to+Download+Youtube+Videos&#038;qscrl=1" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.google.com/search?aq=f&amp;gcx=c&amp;sourceid=chrome&amp;ie=UTF-8&amp;q=How+to+Download+Youtube+Videos&amp;qscrl=1']);">simple Google search</a> will lead you to an assortment of options that requires less technical expertise. However, if you&#8217;re like me, and are relatively new to the <a href="http://en.wikipedia.org/wiki/Command-line_interface" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://en.wikipedia.org/wiki/Command-line_interface']);">command-line</a> (think your OS without the GUI and a mouse), this might be an interesting way to accomplish something relatively useful (download Youtube videos to your computer) and also learn how to directly communicate with your computer.<br/>
+<span id="more-3967"></span><br/>
+In this tutorial, I&#8217;ll be using a command-line program called <a href="http://rg3.github.com/youtube-dl/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://rg3.github.com/youtube-dl/']);">youtube-dl</a>. Sorry, Window users. This walkthrough is tailored for Mac/Linux users. However, there is a nice write-up <a href="http://rg3.github.com/youtube-dl/windows.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://rg3.github.com/youtube-dl/windows.html']);">here</a>, which you can follow as well.</p>
+<h3>Working with Terminal: The Basics</h3>
+<p>I&#8217;m no command-line genius, maybe just a hair above a beginner. I know how to navigate my way through the system directory, output files/folders, copy/delete stuff, and open applications. Thankfully, that should be enough for completing this guide.</p>
+<p>First, download and save the <a href="http://rg3.github.com/youtube-dl/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://rg3.github.com/youtube-dl/']);">youtube-dl</a> program to your computer <a href="https://github.com/rg3/youtube-dl/raw/2011.10.19/youtube-dl" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://github.com/rg3/youtube-dl/raw/2011.10.19/youtube-dl']);">here</a>. You should right-click the link and select &#8220;Save Link As&#8230;&#8221; and save the file with the Python extension, .py.</p>
+<p>Next, open up Terminal on your Mac. Type in:</p>
+<p><code>cd /usr/local/</code></p>
+<p class="respond">NOTE:<em> This is a hidden directory on your computer system where some of the core programs are being handled. Thus, I urge extra caution when working here.</em></p>
+<p>I also like to use the <a href="http://guides.macrumors.com/ls" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://guides.macrumors.com/ls']);">ls</a> command which outputs a list of all the files and directories I can navigate to next based on my current location. Go ahead and try it now.</p>
+<p>Next, type into Terminal:</p>
+<p><code>open bin</code></p>
+<div id="attachment_3970" class="wp-caption aligncenter" style="width: 310px"><a href="http://loneplacebo.com/wp-content/uploads/2011/10/bin-directory.png"><img src="http://loneplacebo.com/wp-content/uploads/2011/10/bin-directory-300x172.png" alt="bin-directory" title="bin-directory" width="300" height="172" class="size-medium wp-image-3970"/></a><p class="wp-caption-text">Click to enlarge</p></div>
+<p>A new Finder window should appear containing a bunch of cryptic looking files. The reason why we have to navigate to this folder via Terminal is because by default it is a hidden system folder, meaning it can&#8217;t be reached via Finder alone. There is a <a href="http://www.mactricksandtips.com/2008/04/show-hidden-files.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.mactricksandtips.com/2008/04/show-hidden-files.html']);">Terminal command</a> to display all hidden files by default, but it is generally advised not to do so. </p>
+<div id="attachment_3968" class="wp-caption aligncenter" style="width: 432px"><img src="http://loneplacebo.com/wp-content/uploads/2011/10/authenticate.png" alt="authenticate" title="authenticate" width="422" height="154" class="size-full wp-image-3968"/><p class="wp-caption-text">Press Authenticate and enter your login credentials</p></div>
+<p>Paste your <strong>youtube-dl.py</strong> file now in the <strong>bin</strong> folder you are in. A pop-up will appear telling you that you don&#8217;t have permission to do so. Select <strong>Authenticate</strong> and enter your login password. Verify that the file was correctly saved to the directory.</p>
+<p>Currently in Terminal, we are sitting inside the /usr/local directory. Next, type in:</p>
+<p><code>cd bin</code></p>
+<p>This moves you into the <strong>bin</strong> folder, where you had saved the <strong>youtube-dl.py</strong> file to in the previous step.</p>
+<h3>A short intro to file permissions</h3>
+<p><a href="http://en.wikipedia.org/wiki/Filesystem_permissions" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://en.wikipedia.org/wiki/Filesystem_permissions']);">File permissions</a> determine which users can perform a certain action on specific files and directories. There are &#8220;read&#8221;(r), &#8220;write&#8221;(w), and &#8220;execute&#8221;(x) permissions and are assigned to three types of users: a) user (u) b) group (g) and c) other (o). Read the following articles for a more further details:</p>
+<ul>
+<li><a href="http://www.dartmouth.edu/~rc/help/faq/permissions.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://www.dartmouth.edu/~rc/help/faq/permissions.html']);">Understanding File Permissions on Unix</a></li>
+<li><a href="http://kb.iu.edu/data/abdb.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://kb.iu.edu/data/abdb.html']);">In Unix, how do I change the permissions for a file?</a></li>
+</ul>
+<p>The reason why I mention file permissions is because you will need to edit the file permissions for the <strong>youtube-dl.py</strong> file currently residing in your <strong>bin</strong> folder. At the moment, the file only has read and write access to the user, which is you. You can view the permissions using the <strong>ls</strong> command mentioned earlier, by including the <strong>-l</strong> option, which displays extra details.</p>
+<p>So typing in the following&#8230;</p>
+<p><code>ls -l</code></p>
+<p>&#8230;while in the <strong>bin</strong> directory should display something like this:</p>
+<pre><code>-rwxrwxr-x@ 1 tonyhue staff 66816 Jan 10 2011 twdiff 
+-rwxrwxr-x@ 1 tonyhue staff 77120 Jan 10 2011 twfind 
+-rw-r-xr-x@ 1 tonyhue staff 139584 Oct 20 18:33 youtube-dl.py</code></pre>
+<p>There should be other files, but I only included the last three, which includes the <strong>youtube-dl.py</strong> file. You can also check the permissions for a specific file/directory by using the <strong>-g</strong> option:</p>
+<p><code>ls -lg youtube-dl.py</code></p>
+<p>In order for the program to run, you need to give yourself execution permission. Currently, <strong>youtube-dl.py</strong> has read and write access. To add execution permission, we will use the <a href="http://catcode.com/teachmod/" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://catcode.com/teachmod/']);">chmod</a> command by typing in:</p>
+<p><code>chmod u+x youtube-dl.py</code></p>
+<p>Verify that the correct permissions for the file contain read, write, and execution permission by typing in:</p>
+<p><code>ls -lg youtube-dl.py</code></p>
+<h3>Almost there!</h3>
+<p>Congrats! You&#8217;ve (hopefully) made it this far unscathed. After modifying the permissions for the <strong>youtube-dl.py</strong> file, you can now start downloading Youtube videos to your computer from the command-line! Just type in:</p>
+<p><code>youtube-dl.py [youtube video link]</code></p>
+<blockquote><p>Don&#8217;t include the bracket parenthesis!</p></blockquote>
+<p>Things should be working properly if Terminal outputs something that looks like this:</p>
+<pre><code>[youtube] w639H9ZUqZw: Downloading video webpage 
+[youtube] w639H9ZUqZw: Downloading video info webpage 
+[youtube] w639H9ZUqZw: Extracting video information 
+[download] Destination: w639H9ZUqZw.mp4 
+[download] 100.0% of 9.53M at 9.06M/s ETA 00:00</code></pre>
+<p>Don&#8217;t fret if you start getting error messages. Try restarting Terminal and attempting again. Verify that <strong>youtube-dl.py</strong> has rwx permissions. Also, check to see if you remembered to include the .py extension.</p>
+<p>If all has gone according to plan, you should be able to find your newly-downloaded video in your Users folder. Yeah, I know. Terrible place to put it, amiright?</p>
+<h3>What else?</h3>
+<p>Pat yourself on the back once more! You&#8217;ve successfully downloaded a Youtube video to your computer! Youtube-dl has <a href="http://rg3.github.com/youtube-dl/documentation.html" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','http://rg3.github.com/youtube-dl/documentation.html']);">a number of available options</a> to customize the video you download, such as changing the video filename to the video&#8217;s title instead of its id. Also, the program can also download videos from other sources besides Youtube, including Vimeo, Daily Motion, and Metacafe. The sky is the limit!</p>
+ 
+<div class="share-this cf">
+<div class="tweet-btn">
+ 
+<a href="https://twitter.com/share" class="twitter-share-button" data-via="tonykhue" data-related="loneplacebo">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+<div class="like-btn">
+ 
+<iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Floneplacebo.com%2Fhow-to-download-youtube-videos-via-the-command-line%2F&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=true&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21&amp;appId=285928588085870" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+</div>
+<div class="plus-btn">
+ 
+<g:plusone annotation="inline" width="120" size="medium"></g:plusone>
+</div>
+</div> 
+</div> 
+<aside id="end-of-post" class="cf"><div id="yarrp">
+<h3>Related Posts</h3>
+<p>No related posts.</p>
+</div>
+ 
+<div id="subscribe">
+<h3>Subscribe via:</h3>
+<ul>
+<li>Twitter <a href="http://twitter.com/loneplacebo">@loneplacebo</a></li>
+<li>Facebook <a href="http://facebook.com/loneplacebo">fb.me/loneplacebo</a></li>
+<li>Email <a href="http://feedburner.google.com/fb/a/mailverify?uri=LonePlacebo&amp;loc=en_US">Newsletter</a></li>
+</ul>
+ 
+</div> 
+</aside>
+</article>
+<div id="disqus_thread">
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://loneplacebo.com/how-to-download-youtube-videos-via-the-command-line/';
+    var disqus_identifier = '3967 http://loneplacebo.com/?p=3967';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'loneplacebo';
+    var disqus_title = "How to Download Youtube Videos via the Command Line";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            DISQUS.request.get('?cf_action=sync_comments&post_id=3967');
+        });
+                    };
+    var facebookXdReceiverPath = 'http://loneplacebo.com/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/loneplacebo.com\/how-to-download-youtube-videos-via-the-command-line\/trackback\/"    };
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+        dsq.src = 'http' + '://' + disqus_shortname + '.' + disqus_domain + '/embed.js?pname=wordpress&pver=2.72';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+</div> 
+</div> 
+<footer id="footer" class="cf">
+<div class="source-org vcard copyright">
+<small>Copyright &copy; 2012 LonePlacebo </small> <div class="secondary-nav">
+<ul id="menu-footer-navigation" class="menu"><li id="menu-item-4241" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4241"><a href="http://loneplacebo.com/write-for-us/">Write for Us</a></li>
+<li id="menu-item-4242" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4242"><a href="http://loneplacebo.com/colophon/">Colophon</a></li>
+<li id="menu-item-4243" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4243"><a href="http://loneplacebo.com/advertise/">Advertise</a></li>
+</ul> </div>
+</div>
+</footer>
+</div> 
+ 
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script><script type='text/javascript'>
+/* <![CDATA[ */
+var pollsL10n = {"ajax_url":"http:\/\/loneplacebo.com\/wp-content\/plugins\/wp-polls\/wp-polls.php","text_wait":"Your last request is still being processed. Please wait a while ...","text_valid":"Please choose a valid poll answer.","text_multiple":"Maximum number of choices allowed: ","show_loading":"1","show_fading":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://loneplacebo.com/wp-content/plugins/wp-polls/polls-js.js?ver=2.50'></script>
+ 
+ 
+ 
+<script src="http://loneplacebo.com/wp-content/themes/fathom/_/js/functions.js"></script>
+</body>
+</html>
+ 
+ 
+ 

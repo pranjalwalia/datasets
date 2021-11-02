@@ -1,0 +1,626 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head profile="http://gmpg.org/xfn/11">
+
+<title>2009s Operating System Throwdown | Sherweb blog</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />	
+
+<link rel="stylesheet" href="http://blog.sherweb.com/wp-content/themes/sherweb/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="SherWeb RSS Feed" href="http://blog.sherweb.com/feed/" />
+<link rel="pingback" href="http://blog.sherweb.com/xmlrpc.php" />
+<script language="javascript" src="http://blog.sherweb.com/wp-content/themes/sherweb/js/maxlib.js" type="text/javascript"></script>
+<script src="http://blog.sherweb.com/wp-content/themes/sherweb/js/wp_nvi_lib.js" language="javascript" type="text/javascript"></script>
+	<link rel='archives' title='January 2012' href='http://blog.sherweb.com/2012/01/' />
+	<link rel='archives' title='December 2011' href='http://blog.sherweb.com/2011/12/' />
+	<link rel='archives' title='November 2011' href='http://blog.sherweb.com/2011/11/' />
+	<link rel='archives' title='October 2011' href='http://blog.sherweb.com/2011/10/' />
+	<link rel='archives' title='September 2011' href='http://blog.sherweb.com/2011/09/' />
+	<link rel='archives' title='August 2011' href='http://blog.sherweb.com/2011/08/' />
+	<link rel='archives' title='July 2011' href='http://blog.sherweb.com/2011/07/' />
+	<link rel='archives' title='June 2011' href='http://blog.sherweb.com/2011/06/' />
+	<link rel='archives' title='May 2011' href='http://blog.sherweb.com/2011/05/' />
+	<link rel='archives' title='April 2011' href='http://blog.sherweb.com/2011/04/' />
+	<link rel='archives' title='March 2011' href='http://blog.sherweb.com/2011/03/' />
+	<link rel='archives' title='February 2011' href='http://blog.sherweb.com/2011/02/' />
+	<link rel='archives' title='January 2011' href='http://blog.sherweb.com/2011/01/' />
+	<link rel='archives' title='December 2010' href='http://blog.sherweb.com/2010/12/' />
+	<link rel='archives' title='November 2010' href='http://blog.sherweb.com/2010/11/' />
+	<link rel='archives' title='October 2010' href='http://blog.sherweb.com/2010/10/' />
+	<link rel='archives' title='September 2010' href='http://blog.sherweb.com/2010/09/' />
+	<link rel='archives' title='August 2010' href='http://blog.sherweb.com/2010/08/' />
+	<link rel='archives' title='July 2010' href='http://blog.sherweb.com/2010/07/' />
+	<link rel='archives' title='June 2010' href='http://blog.sherweb.com/2010/06/' />
+	<link rel='archives' title='May 2010' href='http://blog.sherweb.com/2010/05/' />
+	<link rel='archives' title='April 2010' href='http://blog.sherweb.com/2010/04/' />
+	<link rel='archives' title='March 2010' href='http://blog.sherweb.com/2010/03/' />
+	<link rel='archives' title='February 2010' href='http://blog.sherweb.com/2010/02/' />
+	<link rel='archives' title='January 2010' href='http://blog.sherweb.com/2010/01/' />
+	<link rel='archives' title='December 2009' href='http://blog.sherweb.com/2009/12/' />
+	<link rel='archives' title='November 2009' href='http://blog.sherweb.com/2009/11/' />
+	<link rel='archives' title='October 2009' href='http://blog.sherweb.com/2009/10/' />
+	<link rel='archives' title='September 2009' href='http://blog.sherweb.com/2009/09/' />
+	<link rel='archives' title='August 2009' href='http://blog.sherweb.com/2009/08/' />
+	<link rel='archives' title='July 2009' href='http://blog.sherweb.com/2009/07/' />
+	<link rel='archives' title='June 2009' href='http://blog.sherweb.com/2009/06/' />
+	<link rel='archives' title='May 2009' href='http://blog.sherweb.com/2009/05/' />
+	<link rel='archives' title='April 2009' href='http://blog.sherweb.com/2009/04/' />
+	<link rel='archives' title='March 2009' href='http://blog.sherweb.com/2009/03/' />
+	<link rel='archives' title='February 2009' href='http://blog.sherweb.com/2009/02/' />
+	<link rel='archives' title='December 2008' href='http://blog.sherweb.com/2008/12/' />
+	<link rel='archives' title='April 2008' href='http://blog.sherweb.com/2008/04/' />
+	<link rel='archives' title='March 2008' href='http://blog.sherweb.com/2008/03/' />
+	<link rel='archives' title='February 2008' href='http://blog.sherweb.com/2008/02/' />
+	<link rel='archives' title='January 2008' href='http://blog.sherweb.com/2008/01/' />
+	<link rel='archives' title='December 2007' href='http://blog.sherweb.com/2007/12/' />
+	<link rel='archives' title='October 2007' href='http://blog.sherweb.com/2007/10/' />
+	<link rel='archives' title='September 2007' href='http://blog.sherweb.com/2007/09/' />
+	<link rel='archives' title='August 2007' href='http://blog.sherweb.com/2007/08/' />
+	<link rel='archives' title='July 2007' href='http://blog.sherweb.com/2007/07/' />
+	<link rel='archives' title='May 2007' href='http://blog.sherweb.com/2007/05/' />
+				
+	<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.06 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-1380078-1']);
+</script><script src="http://blog.sherweb.com/wp-content/plugins/google-analytics-for-wordpress/custom_se_async.js" type="text/javascript"></script>
+<script type="text/javascript">	_gaq.push(['_setAllowLinker',true],['_setDomainName','.sherweb.com'],['_setCustomVar',2,'author','admin',3],['_setCustomVar',3,'tags','',3],['_setCustomVar',4,'year','2009',3],['_setCustomVar',5,'categories','general',3],['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	// End of Google Analytics for WordPress by Yoast v4.0
+	//]]></script>
+<link rel="alternate" type="application/rss+xml" title="SherWeb &raquo; 2009s Operating System Throwdown Comments Feed" href="http://blog.sherweb.com/2009s-operating-system-throwdown/feed/" />
+<script type='text/javascript' src='http://blog.sherweb.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://blog.sherweb.com/wp-includes/js/swfobject.js?ver=2.2'></script>
+<script type='text/javascript' src='http://blog.sherweb.com/wp-includes/js/jquery/jquery.js?ver=1.6.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.sherweb.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.sherweb.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='SherWeb' href='http://blog.sherweb.com/' />
+<link rel='start' title='Go F&amp;^!k Yourself!' href='http://blog.sherweb.com/go-fk-yourself/' />
+<link rel='prev' title='9 Inspiring Green Tech Projects in the Developing World' href='http://blog.sherweb.com/9-inspiring-green-tech-projects-in-the-developing-world/' />
+<link rel='next' title='Wild Mods: Bizarre Animal Case Mods' href='http://blog.sherweb.com/wild-mods-bizarre-animal-case-mods/' />
+<meta name="generator" content="WordPress 3.2.1" />
+<link rel='canonical' href='http://blog.sherweb.com/2009s-operating-system-throwdown/' />
+<link rel='shortlink' href='http://blog.sherweb.com/?p=775' />
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<!-- Vipers Video Quicktags v6.3.0 | http://www.viper007bond.com/wordpress-plugins/vipers-video-quicktags/ -->
+<style type="text/css">
+.vvqbox { display: block; max-width: 100%; visibility: visible !important; margin: 10px auto; } .vvqbox img { max-width: 100%; height: 100%; } .vvqbox object { max-width: 100%; } 
+</style>
+<script type="text/javascript">
+// <![CDATA[
+	var vvqflashvars = {};
+	var vvqparams = { wmode: "opaque", allowfullscreen: "true", allowscriptaccess: "always" };
+	var vvqattributes = {};
+	var vvqexpressinstall = "http://blog.sherweb.com/wp-content/plugins/vipers-video-quicktags/resources/expressinstall.swf";
+// ]]>
+</script>
+</head>
+<body>
+
+<a name="topofpage"></a>
+<div id="wrapper">
+	<div id="container">
+		<div id="header">
+			<div id="containerHeader">
+				<div id="logo">
+					<a href="http://www.sherweb.com" class="rollOverTrans" title="SherWeb"><img src="http://blog.sherweb.com/wp-content/themes/sherweb/images/logo.jpg" alt="SherWeb" /></a>
+					<h1><a href="http://www.sherweb.com">SherWeb</a></h1>
+				</div>
+				
+				<div id="topmenu">
+					<ul>
+						<li><a href="http://blog.sherweb.com" class="rollOverTrans" title="Home"><img src="http://blog.sherweb.com/wp-content/themes/sherweb/images/menu_home.gif" alt="Home" class="rollover" /></a></li>
+						<li><a href="http://blog.sherweb.com/about/" class="rollOverTrans" title="About"><img src="http://blog.sherweb.com/wp-content/themes/sherweb/images/menu_about.gif" alt="About" class="rollover" /></a></li>
+						<li><a href="http://www.sherweb.com/contact-us" target="_blank" class="rollOverTrans" title="Contact"><img src="http://blog.sherweb.com/wp-content/themes/sherweb/images/menu_contact.gif" alt="Contact" class="rollover" /></a></li>
+					</ul>
+				</div>
+			</div>
+		</div><div id="sidebar">
+	<div id="rssFeed">
+		<a href="http://blog.sherweb.com/feed/" title="Rss Feeds"><img src="http://blog.sherweb.com/wp-content/themes/sherweb/images/btnSubscribeRss.jpg" alt="Rss Feeds" /></a>
+	</div>
+	
+<div id="searchForm">
+    <form method="get" id="searchform" action="http://blog.sherweb.com" onsubmit="return validSearch(this);">
+		<input type="text" name="s" id="s" class="inputStyle" />
+		<input type="image" id="searchsubmit" src="http://blog.sherweb.com/wp-content/themes/sherweb/images/btn_search.jpg" />
+	</form>
+</div>		<div class="leftbar">
+    		<h2>Categories</h2>		<ul>
+	<li class="cat-item cat-item-7"><a href="http://blog.sherweb.com/category/email/" title="View all posts filed under Email">Email</a> (11)
+</li>
+	<li class="cat-item cat-item-6"><a href="http://blog.sherweb.com/category/general/" title="View all posts filed under General">General</a> (139)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://blog.sherweb.com/category/hosted-exchange/" title="View all posts filed under Hosted Exchange">Hosted Exchange</a> (20)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://blog.sherweb.com/category/hosted-sharepoint/" title="View all posts filed under Hosted Sharepoint">Hosted Sharepoint</a> (6)
+</li>
+	<li class="cat-item cat-item-69"><a href="http://blog.sherweb.com/category/online-backup/" title="Online Backup section blog.sherweb.com">Online Backup</a> (1)
+</li>
+	<li class="cat-item cat-item-33"><a href="http://blog.sherweb.com/category/sherweb-stuff/" title="View all posts filed under SherWeb Stuff">SherWeb Stuff</a> (7)
+</li>
+	<li class="cat-item cat-item-1"><a href="http://blog.sherweb.com/category/uncategorized/" title="View all posts filed under Uncategorized">Uncategorized</a> (1)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://blog.sherweb.com/category/web-hosting/" title="View all posts filed under Web hosting">Web hosting</a> (14)
+</li>
+		</ul>
+				<h2>Recent Posts</h2>		<ul>
+				<li><a href="http://blog.sherweb.com/exchange-hosting-vs-staying-internal-pros-and-cons/" title="Exchange Hosting vs. Staying Internal: Pros and Cons">Exchange Hosting vs. Staying Internal: Pros and Cons</a></li>
+				<li><a href="http://blog.sherweb.com/online-backup-sherweb-presents-skynox/" title="Online Backup: SherWeb presents SkyNox">Online Backup: SherWeb presents SkyNox</a></li>
+				<li><a href="http://blog.sherweb.com/how-to-correctly-name-the-files-you-share/" title="How to Correctly Name The Files You Share">How to Correctly Name The Files You Share</a></li>
+				<li><a href="http://blog.sherweb.com/online-holiday-shopping-vs-mall-madness/" title="Online Holiday Shopping vs. Mall Madness (Infographic)">Online Holiday Shopping vs. Mall Madness (Infographic)</a></li>
+				<li><a href="http://blog.sherweb.com/how-to-use-sharepoint-on-your-mobile/" title="How to Use SharePoint on Your Mobile">How to Use SharePoint on Your Mobile</a></li>
+				<li><a href="http://blog.sherweb.com/the-top-10-best-mock-twitter-accounts/" title="The Top 10 Best Mock Twitter Accounts">The Top 10 Best Mock Twitter Accounts</a></li>
+				<li><a href="http://blog.sherweb.com/making-life-simpler-with-hosted-mobility/" title="Making Life Simpler with Hosted Mobility">Making Life Simpler with Hosted Mobility</a></li>
+				</ul>
+		<h2>Recent Comments</h2><ul id="recentcomments"><li class="recentcomments">16011017 Fulki Nafilah on <a href="http://blog.sherweb.com/motion-control-sixthsense-technology-why-were-still-waiting/comment-page-3/#comment-195261">Motion Control SixthSense Technology: Why We’re Still Waiting</a></li><li class="recentcomments">Hudan Asharyanto - 16311239 on <a href="http://blog.sherweb.com/motion-control-sixthsense-technology-why-were-still-waiting/comment-page-3/#comment-195214">Motion Control SixthSense Technology: Why We’re Still Waiting</a></li><li class="recentcomments">Septia Eka Marsha Putra on <a href="http://blog.sherweb.com/motion-control-sixthsense-technology-why-were-still-waiting/comment-page-3/#comment-194762">Motion Control SixthSense Technology: Why We’re Still Waiting</a></li><li class="recentcomments">annisa khair 16011021 on <a href="http://blog.sherweb.com/motion-control-sixthsense-technology-why-were-still-waiting/comment-page-3/#comment-194722">Motion Control SixthSense Technology: Why We’re Still Waiting</a></li><li class="recentcomments">annisa khair on <a href="http://blog.sherweb.com/motion-control-sixthsense-technology-why-were-still-waiting/comment-page-3/#comment-194720">Motion Control SixthSense Technology: Why We’re Still Waiting</a></li><li class="recentcomments">16311243 on <a href="http://blog.sherweb.com/motion-control-sixthsense-technology-why-were-still-waiting/comment-page-3/#comment-194509">Motion Control SixthSense Technology: Why We’re Still Waiting</a></li><li class="recentcomments">ummi salamah on <a href="http://blog.sherweb.com/motion-control-sixthsense-technology-why-were-still-waiting/comment-page-3/#comment-194384">Motion Control SixthSense Technology: Why We’re Still Waiting</a></li><li class="recentcomments">16011058 on <a href="http://blog.sherweb.com/motion-control-sixthsense-technology-why-were-still-waiting/comment-page-3/#comment-194328">Motion Control SixthSense Technology: Why We’re Still Waiting</a></li><li class="recentcomments">Gladyza Putri Vanska (16111121) on <a href="http://blog.sherweb.com/motion-control-sixthsense-technology-why-were-still-waiting/comment-page-3/#comment-194317">Motion Control SixthSense Technology: Why We’re Still Waiting</a></li></ul><h2>Archives</h2>		<ul>
+			<li><a href='http://blog.sherweb.com/2012/01/' title='January 2012'>January 2012</a></li>
+	<li><a href='http://blog.sherweb.com/2011/12/' title='December 2011'>December 2011</a></li>
+	<li><a href='http://blog.sherweb.com/2011/11/' title='November 2011'>November 2011</a></li>
+	<li><a href='http://blog.sherweb.com/2011/10/' title='October 2011'>October 2011</a></li>
+	<li><a href='http://blog.sherweb.com/2011/09/' title='September 2011'>September 2011</a></li>
+	<li><a href='http://blog.sherweb.com/2011/08/' title='August 2011'>August 2011</a></li>
+	<li><a href='http://blog.sherweb.com/2011/07/' title='July 2011'>July 2011</a></li>
+	<li><a href='http://blog.sherweb.com/2011/06/' title='June 2011'>June 2011</a></li>
+	<li><a href='http://blog.sherweb.com/2011/05/' title='May 2011'>May 2011</a></li>
+	<li><a href='http://blog.sherweb.com/2011/04/' title='April 2011'>April 2011</a></li>
+	<li><a href='http://blog.sherweb.com/2011/03/' title='March 2011'>March 2011</a></li>
+	<li><a href='http://blog.sherweb.com/2011/02/' title='February 2011'>February 2011</a></li>
+	<li><a href='http://blog.sherweb.com/2011/01/' title='January 2011'>January 2011</a></li>
+	<li><a href='http://blog.sherweb.com/2010/12/' title='December 2010'>December 2010</a></li>
+	<li><a href='http://blog.sherweb.com/2010/11/' title='November 2010'>November 2010</a></li>
+	<li><a href='http://blog.sherweb.com/2010/10/' title='October 2010'>October 2010</a></li>
+	<li><a href='http://blog.sherweb.com/2010/09/' title='September 2010'>September 2010</a></li>
+	<li><a href='http://blog.sherweb.com/2010/08/' title='August 2010'>August 2010</a></li>
+	<li><a href='http://blog.sherweb.com/2010/07/' title='July 2010'>July 2010</a></li>
+	<li><a href='http://blog.sherweb.com/2010/06/' title='June 2010'>June 2010</a></li>
+	<li><a href='http://blog.sherweb.com/2010/05/' title='May 2010'>May 2010</a></li>
+	<li><a href='http://blog.sherweb.com/2010/04/' title='April 2010'>April 2010</a></li>
+	<li><a href='http://blog.sherweb.com/2010/03/' title='March 2010'>March 2010</a></li>
+	<li><a href='http://blog.sherweb.com/2010/02/' title='February 2010'>February 2010</a></li>
+	<li><a href='http://blog.sherweb.com/2010/01/' title='January 2010'>January 2010</a></li>
+	<li><a href='http://blog.sherweb.com/2009/12/' title='December 2009'>December 2009</a></li>
+	<li><a href='http://blog.sherweb.com/2009/11/' title='November 2009'>November 2009</a></li>
+	<li><a href='http://blog.sherweb.com/2009/10/' title='October 2009'>October 2009</a></li>
+	<li><a href='http://blog.sherweb.com/2009/09/' title='September 2009'>September 2009</a></li>
+	<li><a href='http://blog.sherweb.com/2009/08/' title='August 2009'>August 2009</a></li>
+	<li><a href='http://blog.sherweb.com/2009/07/' title='July 2009'>July 2009</a></li>
+	<li><a href='http://blog.sherweb.com/2009/06/' title='June 2009'>June 2009</a></li>
+	<li><a href='http://blog.sherweb.com/2009/05/' title='May 2009'>May 2009</a></li>
+	<li><a href='http://blog.sherweb.com/2009/04/' title='April 2009'>April 2009</a></li>
+	<li><a href='http://blog.sherweb.com/2009/03/' title='March 2009'>March 2009</a></li>
+	<li><a href='http://blog.sherweb.com/2009/02/' title='February 2009'>February 2009</a></li>
+	<li><a href='http://blog.sherweb.com/2008/12/' title='December 2008'>December 2008</a></li>
+	<li><a href='http://blog.sherweb.com/2008/04/' title='April 2008'>April 2008</a></li>
+	<li><a href='http://blog.sherweb.com/2008/03/' title='March 2008'>March 2008</a></li>
+	<li><a href='http://blog.sherweb.com/2008/02/' title='February 2008'>February 2008</a></li>
+	<li><a href='http://blog.sherweb.com/2008/01/' title='January 2008'>January 2008</a></li>
+	<li><a href='http://blog.sherweb.com/2007/12/' title='December 2007'>December 2007</a></li>
+	<li><a href='http://blog.sherweb.com/2007/10/' title='October 2007'>October 2007</a></li>
+	<li><a href='http://blog.sherweb.com/2007/09/' title='September 2007'>September 2007</a></li>
+	<li><a href='http://blog.sherweb.com/2007/08/' title='August 2007'>August 2007</a></li>
+	<li><a href='http://blog.sherweb.com/2007/07/' title='July 2007'>July 2007</a></li>
+	<li><a href='http://blog.sherweb.com/2007/05/' title='May 2007'>May 2007</a></li>
+		</ul>
+	
+	<h2>Tags</h2>
+	<div id="tagsCloud"><a href='http://blog.sherweb.com/tag/anonymous/' class='tag-link-15' title='2 topics' style='font-size: 16.4pt;'>anonymous</a>
+<a href='http://blog.sherweb.com/tag/bank-of-america/' class='tag-link-18' title='1 topic' style='font-size: 8pt;'>Bank of America</a>
+<a href='http://blog.sherweb.com/tag/cloud-computing/' class='tag-link-8' title='1 topic' style='font-size: 8pt;'>cloud computing</a>
+<a href='http://blog.sherweb.com/tag/cloud-hosting/' class='tag-link-38' title='2 topics' style='font-size: 16.4pt;'>cloud hosting</a>
+<a href='http://blog.sherweb.com/tag/ddos/' class='tag-link-25' title='1 topic' style='font-size: 8pt;'>DDos</a>
+<a href='http://blog.sherweb.com/tag/dedicated-hosting/' class='tag-link-26' title='1 topic' style='font-size: 8pt;'>dedicated hosting</a>
+<a href='http://blog.sherweb.com/tag/domain-name/' class='tag-link-13' title='1 topic' style='font-size: 8pt;'>domain name</a>
+<a href='http://blog.sherweb.com/tag/ebay/' class='tag-link-20' title='1 topic' style='font-size: 8pt;'>eBay</a>
+<a href='http://blog.sherweb.com/tag/email-market-share/' class='tag-link-50' title='1 topic' style='font-size: 8pt;'>email market share</a>
+<a href='http://blog.sherweb.com/tag/exchange-2010/' class='tag-link-34' title='1 topic' style='font-size: 8pt;'>exchange 2010</a>
+<a href='http://blog.sherweb.com/tag/exchange-hosting/' class='tag-link-63' title='2 topics' style='font-size: 16.4pt;'>Exchange hosting</a>
+<a href='http://blog.sherweb.com/tag/facebook/' class='tag-link-36' title='2 topics' style='font-size: 16.4pt;'>Facebook</a>
+<a href='http://blog.sherweb.com/tag/geo-tagging/' class='tag-link-45' title='1 topic' style='font-size: 8pt;'>geo-tagging</a>
+<a href='http://blog.sherweb.com/tag/google/' class='tag-link-35' title='1 topic' style='font-size: 8pt;'>Google+</a>
+<a href='http://blog.sherweb.com/tag/hacking/' class='tag-link-47' title='2 topics' style='font-size: 16.4pt;'>hacking</a>
+<a href='http://blog.sherweb.com/tag/hosted-exchange/' class='tag-link-3' title='3 topics' style='font-size: 22pt;'>Hosted Exchange</a>
+<a href='http://blog.sherweb.com/tag/hosting/' class='tag-link-39' title='1 topic' style='font-size: 8pt;'>hosting</a>
+<a href='http://blog.sherweb.com/tag/hosting-solutions/' class='tag-link-11' title='1 topic' style='font-size: 8pt;'>hosting solutions</a>
+<a href='http://blog.sherweb.com/tag/infographic/' class='tag-link-48' title='1 topic' style='font-size: 8pt;'>infographic</a>
+<a href='http://blog.sherweb.com/tag/inventions/' class='tag-link-32' title='1 topic' style='font-size: 8pt;'>inventions</a>
+<a href='http://blog.sherweb.com/tag/koch-industries/' class='tag-link-24' title='1 topic' style='font-size: 8pt;'>Koch Industries</a>
+<a href='http://blog.sherweb.com/tag/mastercard/' class='tag-link-21' title='1 topic' style='font-size: 8pt;'>MasterCard</a>
+<a href='http://blog.sherweb.com/tag/minority-report/' class='tag-link-30' title='1 topic' style='font-size: 8pt;'>minority report</a>
+<a href='http://blog.sherweb.com/tag/open-source/' class='tag-link-29' title='1 topic' style='font-size: 8pt;'>open source</a>
+<a href='http://blog.sherweb.com/tag/paypal/' class='tag-link-19' title='1 topic' style='font-size: 8pt;'>PayPal</a>
+<a href='http://blog.sherweb.com/tag/postfinance/' class='tag-link-17' title='1 topic' style='font-size: 8pt;'>PostFinance</a>
+<a href='http://blog.sherweb.com/tag/pranav-mistry/' class='tag-link-31' title='1 topic' style='font-size: 8pt;'>pranav mistry</a>
+<a href='http://blog.sherweb.com/tag/scientology/' class='tag-link-16' title='1 topic' style='font-size: 8pt;'>Scientology</a>
+<a href='http://blog.sherweb.com/tag/secure-web-hosting/' class='tag-link-49' title='1 topic' style='font-size: 8pt;'>secure web hosting</a>
+<a href='http://blog.sherweb.com/tag/shared-hosting/' class='tag-link-10' title='2 topics' style='font-size: 16.4pt;'>shared hosting</a>
+<a href='http://blog.sherweb.com/tag/sharepoint-2010/' class='tag-link-44' title='3 topics' style='font-size: 22pt;'>Sharepoint 2010</a>
+<a href='http://blog.sherweb.com/tag/sherweb-resller/' class='tag-link-27' title='1 topic' style='font-size: 8pt;'>sherweb resller</a>
+<a href='http://blog.sherweb.com/tag/sixthsense/' class='tag-link-28' title='1 topic' style='font-size: 8pt;'>sixthsense</a>
+<a href='http://blog.sherweb.com/tag/social-networks/' class='tag-link-37' title='1 topic' style='font-size: 8pt;'>Social networks</a>
+<a href='http://blog.sherweb.com/tag/streaming/' class='tag-link-40' title='1 topic' style='font-size: 8pt;'>streaming</a>
+<a href='http://blog.sherweb.com/tag/tech-gadgets/' class='tag-link-51' title='1 topic' style='font-size: 8pt;'>tech gadgets</a>
+<a href='http://blog.sherweb.com/tag/video/' class='tag-link-42' title='1 topic' style='font-size: 8pt;'>video</a>
+<a href='http://blog.sherweb.com/tag/virtual-reality/' class='tag-link-46' title='1 topic' style='font-size: 8pt;'>virtual reality</a>
+<a href='http://blog.sherweb.com/tag/visa/' class='tag-link-22' title='1 topic' style='font-size: 8pt;'>Visa</a>
+<a href='http://blog.sherweb.com/tag/vps/' class='tag-link-9' title='2 topics' style='font-size: 16.4pt;'>vps</a>
+<a href='http://blog.sherweb.com/tag/web-hosting-2/' class='tag-link-12' title='2 topics' style='font-size: 16.4pt;'>web hosting</a>
+<a href='http://blog.sherweb.com/tag/web-series/' class='tag-link-41' title='1 topic' style='font-size: 8pt;'>web series</a>
+<a href='http://blog.sherweb.com/tag/web-streaming/' class='tag-link-43' title='2 topics' style='font-size: 16.4pt;'>web streaming</a>
+<a href='http://blog.sherweb.com/tag/westboro-baptist-church/' class='tag-link-23' title='1 topic' style='font-size: 8pt;'>Westboro Baptist Church</a>
+<a href='http://blog.sherweb.com/tag/wikileaks/' class='tag-link-14' title='1 topic' style='font-size: 8pt;'>wikileaks</a></div>
+	
+    
+
+    </div>
+    <div class="clear"></div>
+</div>
+	
+		<div id="content">
+		
+		        		
+					
+			<div class="entry">
+			
+				<div class="metadata">
+					
+					
+					<p class="dateArticles">December 9, 2009</p>
+											<h2 class="mainTitle">2009s Operating System Throwdown</h2>
+										
+										<div class="metaInfos">
+																								Posted by admin at 10:35 am						in <a href="http://blog.sherweb.com/category/general/" title="View all posts in General" rel="category tag">General</a>												
+						<div class="metacomments"><a href="http://blog.sherweb.com/2009s-operating-system-throwdown/#comments"><span class="bigger">5</span>&nbsp;<span class="titleComments">comments</span></a></div>
+	
+					</div>
+					
+					<div class="clear"></div>
+				</div>
+						
+				
+<!-- AddThis Button Begin -->
+<script type="text/javascript">var addthis_product = 'wpp-261';
+var addthis_config = {"data_track_clickback":true};</script><script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid=My+Profile"></script><div class="addthis_toolbox addthis_default_style addthis_" addthis:url='http://blog.sherweb.com/2009s-operating-system-throwdown/' addthis:title='2009s Operating System Throwdown ' ><a class="addthis_button_preferred_1"></a><a class="addthis_button_preferred_2"></a><a class="addthis_button_preferred_3"></a><a class="addthis_button_preferred_4"></a><a class="addthis_button_compact"></a></div><p>In the past few months computer users have been presented with not one, not two, not even three, but four potential operating systems from which to choose. Microsoft, Apple, Ubuntu and Google have all thrown down in an OS showdown, trying to win your money and market share. They’re new, shiny and each OS purports to be the solution to all of your problems. So which one’s right for you?<span id="more-775"></span></p>
+<h3>Windows 7</h3>
+<p><img src="http://farm3.static.flickr.com/2582/4170238382_e63d591e77_o.jpg" alt="" width="275" height="275" /><br />
+Let’s start with the heavy weight in this one. As of October 2009 Microsoft owned 91 per cent of the market share of client operating systems on the Internet. This company has history, with unparalleled product recognition, it is the world&#8217;s #1 <a href="http://www.sherweb.com/hosted-exchange" >exchange hosting</a> company, and after the Vista fiasco, Microsoft knows exactly <strong>what not to do</strong>.</p>
+<p>Windows 7 came onto the scene on July 22, 2009, available for retail purchase as of Oct. 22.<br />
+Unlike its predecessor Vista, intended to rebuild Windows inside and out, Windows 7 represents an incremental upgrade from the older operating systems, easing users into the new user interface. Imagine that Windows XP and Vista had a (very stable) baby, and that’s Windows 7.</p>
+<p>In fact, Microsoft was so afraid of another bug-ridden, fail whale release that Windows 7 has actually gone through one of the biggest Beta tests in OS history. What does that mean for you?<br />
+<img src="http://farm3.static.flickr.com/2551/4169450371_11fcd1f447_o.jpg" alt="" width="374" height="275" /><br />
+<strong>Pros:</strong><br />
+This operating system is stable, smooth, relatively bug free and extra polished. A ton of work has been done on the UI; the design is new and slick, but still familiar. The toolbar has been revamped, taking the concept behind Mac’s OS X’s toolbar and tweaking it: you can preview open windows from the toolbar.</p>
+<p>Windows 7 has taken some big steps forward in desktop management. An auto-resizing feature makes it easy to work on multiple windows at the same time. All inactive windows are turned translucent allowing users to sort through their open windows more easily without having to constantly minimize and maximize.</p>
+<p>Windows Media Player has been overhauled; more file types are compatible, the interface has changed and features a “send to” function that allows you to send media files to any compatible device on the network.</p>
+<p><strong>Cons:</strong><br />
+This OS might be the Vista that we were supposed to have the first time around, but there are still a few downsides.</p>
+<p>According to the reviews, networking and sharing, though a great feature, is still a little complicated for the layman. If you’re running a dual-processor you’ll have to upgrade to either Windows 7 Professional or Ultimate (a price jump of $80-$100) as the baseline Home Premium edition can’t support you. Internet Explorer, despite some upgrades, still can’t hack it against the competition, so you’ll probably end up downloading Chrome, Mozilla or Opera.</p>
+<p>Really, the biggest criticism out there of Windows 7 is that it’s not quite innovative enough. But in the face of what they went through with Vista, can you blame them? Windows 7 is a steady dependable workhorse, and quite possibly the savior Microsoft had been looking for.</p>
+<p><strong>Price:</strong><br />
+To upgrade it costs $49. To buy the program fresh, it’ll cost you around $100 to $200.<br />
+<strong>System recommendations</strong>:<br />
+For the 32 bit version<br />
+<em>1 GHz processor<br />
+1 GB RAM<br />
+16 GB of free HD space</em></p>
+<h3>Mac Snow Leopard</h3>
+<p><img src="http://farm3.static.flickr.com/2704/4169476589_7542414610_o.jpg" alt="" width="197" height="197" /></p>
+<p>Mac has been kicking ass and taking names in the user interface realm for years, so it’s no surprise that its latest operating system release didn’t change much visually—if it ain’t broke, don’t fix it. All of the significant work on Snow Leopard was done on the OS’s fundamentals: coding has been changed; programs have been pimped. This OS release is all about improving speed, stability and efficiency.<br />
+Released on August 28, 2009 the OS features all of your favorite oldies but goodies.<br />
+<img src="http://farm3.static.flickr.com/2551/4169450207_fa0a951af6_o.jpg" alt="" width="376" height="275" /><br />
+<strong>Pros:</strong></p>
+<p>All of the internal tinkering the Apple people have done has upgraded the classic programs. Snow Leopard’s Finder has been rewritten in Cocoa, something Mac users have been after for years. This means Finder is faster, more effective, and now features a cover-flow display option. Safari has been given a boost in its JAVA and HTML performance. The preview program runs more efficiently and Quicktime has also been given a once-over.</p>
+<p>The installation process has been streamlined and simplified; simply pop the disc in, click one or two buttons and Bob’s your uncle. The install program will quarantine all incompatible applications in a folder, allowing you to deal with them after the installation process is complete.</p>
+<p>Snow Leopard is capable of supporting a multi-core processor. Finally, this OS is significantly smaller than its predecessor, and users could find from 4 to 10 GB freed up after the upgrade.</p>
+<p><strong>Cons: </strong></p>
+<p>In a decided choosing of sides, Snow Leopard will no longer support PowerPC architecture or applications. This kitty only runs on Intel. And while the install sequence has been simplified, users are no longer offered the “archive and install” option. Users could find difficulties installing the OS on older computers and the significant changes of the system fundamentals could lead to compatibility problems.</p>
+<p><strong>Price:</strong><br />
+It’s only $29 for the upgrade and for the complete program, around $150.<br />
+<strong>System Recommendations</strong>:<br />
+<em>5 GB of HD space<br />
+1 GB of RAM<br />
+An Intel processor</em></p>
+<h3>Ubuntu Karmic Koala 9.10</h3>
+<p><img src="http://farm3.static.flickr.com/2784/4170238482_e4ff2e1edf_o.png" alt="" width="203" height="282" /></p>
+<p>Like clockwork Ubuntu issued its latest OS on Oct. 29 this year, with it’s next release already announced for Apr. 29, 2010. This distribution has consistently provided its users with a quality, user-friendly open-source operating system since its release of Gutsy Gibbon in 2007 and Karmic Koala is no exception. Unlike the big two OSs, Koala focused on improving its cloud computing, many of its new features running off of the Eucalyptus server. The Ubuntu people have also implemented “100 Paper Cuts,” encouraging users to report or fix the bugs in the system that a user might encounter on their first day of using a brand new install.<br />
+<img src="http://farm3.static.flickr.com/2594/4169450115_e59c88f347_b.jpg" alt="" width="349" height="282" /><br />
+<strong>Pros:</strong></p>
+<p>Koala features a host of your favourite open-source programs including Mozilla Firefox, the Open Office Suite 3.1, GIMP 2.6, and GNOME 2.28. It also introduces Empathy as its IM service. As previously stated, this OS has put some emphasis on cloud computing which means that in using Koala your computer could be capable of more than…its capable of.</p>
+<p>With Ubuntu One, users get 2 GB of free online storage on Eucalyptus. This can be used to back up your system in case of a major computer malfunction or for sharing. And you may need that space because Ubuntu’s software center gives users easy access to a smorgasbord of free open source programs.<br />
+Koala is user friendly, light, and good for all skill levels. Oh, did I mention that it’s free?</p>
+<p><strong>Cons:</strong></p>
+<p>With initiatives like 100 Paper Cuts there aren’t a whole lot of cons associated with Ubuntu releases (or at least not many that stick around for long). One of the reported problems, however, is that Ubuntu One is a bit buggy. But who knows, that could have been fixed already.</p>
+<p>And if you’re dealing in state secrets of the utmost importance, you might not want to store that in the cloud.</p>
+<p><strong>Price</strong>: $0<br />
+<strong>System Recommendations</strong>:<br />
+<em>384 MB RAM<br />
+8 GB of HD space</em></p>
+<h3>Google Chrome OS</h3>
+<p><img src="http://farm3.static.flickr.com/2603/4170238526_d470886e18_o.jpg" alt="" width="299" height="213" /></p>
+<p>So, I know we only got a sneak peek and the real operating system isn’t due out until April of next year, but the buzz created when Google gave the world a look at the beta and the codes for Chrome was deafening.<br />
+In fact, I’m not even sure you could call Chrome an operating system in the traditional sense of the word. Completely cloud-based? No hard drive component? This OS is a perfect example of hardware/software synergy, and that hardware is netbooks.</p>
+<p>Google Chrome has released a statement about they how see the future, and that future is one where your computer is nothing more than your solid interface with the Internet.<br />
+<span class="vvqbox vvqyoutube" style="width:425px;height:344px;"><span id="vvq-775-youtube-1"><a href="http://www.youtube.com/watch?v=hJ57xzo287U" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.youtube.com/watch?v=hJ57xzo287U']);"><img src="http://img.youtube.com/vi/hJ57xzo287U/0.jpg" alt="YouTube Preview Image" /></a></span></span><br />
+<strong>Pros:</strong></p>
+<p>Chrome gives new meaning to the term “lightweight operating system.” No part of Chrome will be stored on your computer. That means your OS will never get rusty, your computer won’t get bogged down with software, and the “system requirements” for your computer are laughably low. All you need is a Linux Kernel and you’re good to go.</p>
+<p>Because everything is web-based you can actually access your operating system from any computer in the world. Your computer gets smashed? Your roommate pours Pepsi on it? Not a problem. Just buy a new $200 netbook or borrow a friend’s and everything will be waiting for you, just like you left it, once you log on. If you can put it on the web you can use it on your computer.</p>
+<p>Because there’s basically nothing on your computer the start up time for your system is between 7 and 14 seconds (much shorter than the traditional 40 seconds). Just turn your computer on and start wandering the Internet.</p>
+<p><strong>Cons:</strong></p>
+<p>This OS is definitely built for city-dwellers (or people from Estonia) because it’s 100 per cent dependent on the user having access to a Wi-Fi connection at all times. If you can’t get onto the Internet, we’ll then you can’t do anything. It would be like someone giving you a keyboard that isn’t attached to a computer.</p>
+<p>Chrome will only run on computers with solid flash memory, not traditional hard drives.  So for all those people with standard computers, I’m sorry to disappoint you.</p>
+<p>The user interface for the OS is just like the Chrome web-browser…is the Chrome web-browser. Unfortunately for all of you iTunes fans, users will be unable to add any programs to the OS. All applications must be web-based.</p>
+<p>And for all of you people that are worried about information security, perhaps storing all of your information in a giant cloud just isn’t right for you.</p>
+<p><strong>Price</strong>: $0<br />
+<strong>System Requirements</strong>:<br />
+<em>Internet<br />
+Flash SSD </em></p>
+<p>So, there you are, a plethora of choices. Best of luck in choosing.</p>
+<div class="addthis_toolbox addthis_default_style" addthis:url='http://blog.sherweb.com/2009s-operating-system-throwdown/' addthis:title='2009s Operating System Throwdown ' ><a class="addthis_button_google_plusone" g:plusone:size="medium" ></a><a class="addthis_counter addthis_pill_style"></a></div>
+<script type="text/javascript">
+	swfobject.embedSWF("http://www.youtube.com/v/hJ57xzo287U&amp;rel=0&amp;fs=1&amp;showsearch=0&amp;showinfo=0", "vvq-775-youtube-1", "425", "344", "10", vvqexpressinstall, vvqflashvars, vvqparams, vvqattributes);
+</script>
+				<div class="clear"></div>
+				
+								
+								<div class="comments-template">
+<!-- You can start editing here. -->
+
+<div class="socialActions">
+	<div class="socialbookmark">
+		<div class="diggBtn"></div>
+		<div class="redditBtn"></div>
+	</div>
+	
+	<div class="chicklet_creatorWidget">
+		 
+	</div>
+</div>
+<div class="clear"></div>
+
+
+<h2 id="comments">5 comments</h2>
+<div class="commentlist">
+			<div id="comment-6853"  class="comment even thread-even depth-1" >
+		<div class="commentInfos">
+						 <div class="avatarImg">
+						</div>	
+						
+			<div class="commentsInfosRight">
+				Posted&nbsp;by				<a href="#comment-6853" title="" rel="nofollow"></a>
+				<a href="http://www.2kad.net" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://www.2kad.net']);"  rel='external nofollow' class='url'>Paul</a>				at&nbsp;12:42 pm				at&nbsp;10. December 2009												
+				<div class="contentContent"><p>Chrome OS sounds like it&#8217;s only going to work with an unlimited bandwidth internet connection (not always viable on a mobile connection) and that&#8217;s assuming you are always within range of an internet connection. That won&#8217;t be popular around here, as all the mobile carriers still have massive black spots in their coverage.</p>
+</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+			<div id="comment-6871"  class="comment odd alt thread-odd thread-alt depth-1" >
+		<div class="commentInfos">
+						 <div class="avatarImg">
+						</div>	
+						
+			<div class="commentsInfosRight">
+				Posted&nbsp;by				<a href="#comment-6871" title="" rel="nofollow"></a>
+				<a href="http://www.comptechgadgets.blogspot.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://www.comptechgadgets.blogspot.com']);"  rel='external nofollow' class='url'>Ashish Kalmegh</a>				at&nbsp;7:57 am				at&nbsp;11. December 2009												
+				<div class="contentContent"><p>looking forward to buy google chrome os</p>
+</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+			<div id="comment-21740"  class="comment even thread-even depth-1" >
+		<div class="commentInfos">
+						 <div class="avatarImg">
+						</div>	
+						
+			<div class="commentsInfosRight">
+				Posted&nbsp;by				<a href="#comment-21740" title="" rel="nofollow"></a>
+				<a href="http://www.tassimobrewbotx.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://www.tassimobrewbotx.com']);"  rel='external nofollow' class='url'>Tassimo Brewbot</a>				at&nbsp;4:46 am				at&nbsp;5. January 2011												
+				<div class="contentContent"><p>So how do you think it turn out now that its 2011?</p>
+</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+			<div id="comment-60311"  class="comment odd alt thread-odd thread-alt depth-1" >
+		<div class="commentInfos">
+						 <div class="avatarImg">
+						</div>	
+						
+			<div class="commentsInfosRight">
+				Posted&nbsp;by				<a href="#comment-60311" title="" rel="nofollow"></a>
+				<a href="http://best-toilet-reviews.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://best-toilet-reviews.com']);"  rel='external nofollow' class='url'>Best Toilets</a>				at&nbsp;11:27 pm				at&nbsp;1. August 2011												
+				<div class="contentContent"><p>Nice post. I was checking constantly this blog and I am impressed! Very useful information specifically the last part <img src='http://blog.sherweb.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' />  I care for such info much. I was looking for this certain information for a long time. Thank you and best of luck.</p>
+</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+			<div id="comment-60523"  class="comment even thread-even depth-1" >
+		<div class="commentInfos">
+						 <div class="avatarImg">
+						</div>	
+						
+			<div class="commentsInfosRight">
+				Posted&nbsp;by				<a href="#comment-60523" title="" rel="nofollow"></a>
+				<a href="http://drawplay.org" onclick="javascript:_gaq.push(['_trackEvent','outbound-commentauthor','http://drawplay.org']);"  rel='external nofollow' class='url'>Draw Play</a>				at&nbsp;8:49 am				at&nbsp;2. August 2011												
+				<div class="contentContent"><p>I’m not sure where you are getting your info, but great topic. I needs to spend some time learning more or understanding more. Thanks for fantastic information I was looking for this info for my mission.</p>
+</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	</div>
+
+
+<div id="blockFormComment">
+		<h2 id="respond">
+		Comment this article	</h2>
+		<form action="http://blog.sherweb.com/wp-comments-post.php" method="post" id="commentform" onsubmit="return checkForm();">
+		
+	<div class="row">
+		<label for="author">Name <small>(required)</small></label>
+		<input type="text" name="author" id="author" value="" size="40" tabindex="1"  class="inputValid"  />
+	</div>
+	
+	<div class="row">
+		<label for="email">Email <small>(required)</small></label>
+		<input type="text" name="email" id="email" value="" size="40" tabindex="2"  class="inputValid"  />
+	</div>
+	
+	<div class="row">
+		<label for="url">Website </label>
+		<input type="text" name="url" id="url" value="" size="40" tabindex="3"  class="inputValid" />
+	</div>
+	<div class="clear"></div>
+	
+		
+	<!--<p><small><strong>XHTML</strong> - You can use:&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </small></p>-->
+	
+	<div class="row">
+		<label for="comment">Comments <small>(required)</small></label>
+		<textarea name="comment" id="comment" class="inputValid" cols="50" rows="6" tabindex="4"></textarea>
+	</div>
+	
+	<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="5fe285eff5" /></p>
+
+	<p style="clear: both;" class="subscribe-to-comments">
+	<input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" />
+	<label for="subscribe">Notify me of followup comments via e-mail</label>
+	</p>
+
+
+	
+	
+	<div class="row"><input name="submit" type="image" id="submit" tabindex="5" src="http://blog.sherweb.com/wp-content/themes/sherweb/images/btn_postComment.gif" />
+	<input type="hidden" name="comment_post_ID" value="775" />
+	</div>
+	</form>
+	</div></div>
+							</div>
+		
+						<div class="navigation">
+        	  
+            </div>
+        
+					
+		</div>
+		
+		<div id="sidebarRight">
+	<div id="twitter">
+		<div id="titleTwitter"><a href="http://www.twitter.com/sherweb"><img src="http://blog.sherweb.com/wp-content/themes/sherweb/images/logoTwitter.jpg" alt="" /></a></div>
+		<p class="twitter-message"> New Promotion! Enterprise: Exchange + SkyNox, SharePoint, Active Sync and MIDAS Migration, min. value $17 NO its $7.95! <a href="http://t.co/6a9QXdiF" class="twitter-link">http://t.co/6a9QXdiF</a> <a href="http://twitter.com/SherWeb/statuses/165535658788659200" class="twitter-link"> </a> <span class="twitter-timestamp"><abbr title="2012/02/03 20:42:31">12 hours ago</abbr></span></p><p class="twitter-message"> Promo! Entreprise: Exchange + SkyNox, SharePoint, Active Sync et Migration MIDAS, valeur min. 17$ NON maintenant $7.95! <a href="http://t.co/w81Qr15A" class="twitter-link">http://t.co/w81Qr15A</a> <a href="http://twitter.com/SherWeb/statuses/165535575603036161" class="twitter-link"> </a> <span class="twitter-timestamp"><abbr title="2012/02/03 20:42:11">12 hours ago</abbr></span></p><p class="twitter-message"> Accès exclusif au centre de données de SherWeb: <a href="http://t.co/7qHY9Qzb" class="twitter-link">http://t.co/7qHY9Qzb</a>. <a href="http://twitter.com/SherWeb/statuses/165182952261697536" class="twitter-link"> </a> <span class="twitter-timestamp"><abbr title="2012/02/02 21:20:59">2012/02/02</abbr></span></p>	</div>
+	
+	<div id="blogRoll">
+		<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fsherweb&amp;width=200&amp;height=290&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=false&amp;header=true&amp;appId=145267328822467" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:290px;" allowTransparency="true"></iframe>
+	</div>
+	
+		
+	<div id="chickletsSidebar">
+		<h2>Chicklets</h2>
+		<div id="containerChicklets">
+			 
+		</div>
+	</div>
+	
+		</div>
+    
+
+		
+		<div class="clear"></div>
+	</div>
+</div>
+
+	<div class="clear"></div>
+	
+	<div id="footer">
+		<div id="actionFooter">
+			<div id="recent_comments">
+				<a href="http://blog.sherweb.com/comments/feed/" title="Comments"><img src="http://blog.sherweb.com/wp-content/themes/sherweb/images/btnRssComments.jpg" alt="Comments" /></a>
+			</div>
+			<div id="recent_posts">
+				<a href="http://blog.sherweb.com/feed/" title="Articles"><img src="http://blog.sherweb.com/wp-content/themes/sherweb/images/btnRssArticles.jpg" alt="Articles" /></a>
+			</div>
+		</div>
+		
+		<div class="footer_column">
+			<h3 class="footer_title">Site Links</h3>
+			<ul>
+				<li><a href="http://www.sherweb.com/">home</a></li>
+				<li><a href="http://www.sherweb.com/site-map">SITEMAP</a></li> 
+				<li><a href="http://support.sherweb.com">TECH SUPPORT</a></li> 
+				<li><a href="http://www.sherweb.com/contact-us/rss-feeds" rel="nofollow">RSS FEEDS</a></li> 
+				<li><a href="http://www.sherweb.com/legal" rel="nofollow">LEGAL</a></li> 
+				<li><a href="http://www.sherweb.com/contact-us/contact-form?contact=websitebug" rel="nofollow">REPORT A WEBSITE BUG</a></li>
+			</ul>
+		</div>
+		<div class="footer_column noBorder">
+			<h3 class="footer_title">All About SherWeb</h3>
+			<ul>
+				<li><a href="http://www.sherweb.com/about-us">about us</a></li>
+				<li><a href="http://www.sherweb.com/contact-us" rel="nofollow">contact us</a></li>
+				<li><a href="http://www.sherweb.com/about-us/why-sherweb">Why SherWeb</a></li>
+				<li><a href="http://www.sherweb.com/contact-us/careers" rel="nofollow">jobs at sherweb</a></li>
+				<li><a href="http://blog.sherweb.com">sherweb blog</a></li>
+			</ul>
+		</div>
+		<div class="footer_column">
+			<h3 class="footer_title">Resellers Links</h3>
+			<ul>
+				<li><a href="http://www.sherweb.com/web-hosting/multidomain-hosting">Web Hosting Resellers Plans</a></li>
+				<!--<li><a href="http://www.sherweb.com/reseller-program">NEW:</a></li>-->
+				<li><a href="http://www.sherweb.com/reseller-program">Exchange Reseller Programs</a></li>
+			</ul>
+		</div>
+		<div class="footer_tags">
+			<h3 class="footer_title">Products Tag Clouds&nbsp;</h3>
+			<div class="blockTags">
+				<ul>
+					<li><a href="http://www.sherweb.com/web-hosting">WEB HOSTING</a></li>
+					<li><a href="http://www.sherweb.com/web-hosting/compare-hosting-plans">STANDARD PLAN</a></li>
+					<li><a href="http://www.sherweb.com/web-hosting/compare-hosting-plans">PRO PLAN</a></li>
+					<li><a href="http://www.sherweb.com/services#POP3">POP</a></li>
+					<li><a href="http://www.sherweb.com/web-hosting/domain-registration">DOMAIN NAMES</a></li>
+				</ul>
+			</div>
+<!--
+			<div class="blockTags">
+				<ul>
+					<li><a href="http://www.sherweb.com/dedicated-servers">DEDICATED SERVERS</a></li>
+					<li><a href="http://www.sherweb.com/dedicated-servers/compare-dedicated-servers">DEDICATED XEON</a></li>
+					<li><a href="http://www.sherweb.com/dedicated-servers/compare-dedicated-servers">DEDICATED CELERON</a></li>
+					<li><a href="http://www.sherweb.com/hosted-exchange">HOSTED EXCHANGE</a></li>
+					<li><a href="http://www.sherweb.com/sharepoint-hosting">SHAREPOINT HOSTING</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+-->
+		</div>
+		<div class="clear"></div>
+		<p id="copyright">Copyright &copy; SherWeb Inc. 1998 - 2009. All rights reserved.</p>
+	</div>
+	
+
+
+<!-- AddThis Button Begin -->
+<script type="text/javascript">var addthis_product = 'wpp-261';
+var addthis_config = {"data_track_clickback":true};</script><script type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid=My+Profile"></script><!--
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript"> 
+var pageTracker = _gat._getTracker("UA-1380078-1");
+pageTracker._setDomainName(".sherweb.com");
+pageTracker._setAllowHash(false);
+pageTracker._setAllowLinker();
+pageTracker._trackPageview();
+</script> 
+-->
+</body>
+</html>
+

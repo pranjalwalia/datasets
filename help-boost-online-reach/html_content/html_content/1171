@@ -1,0 +1,2252 @@
+<!DOCTYPE html>
+<html xmlns:og="http://opengraphprotocol.org/schema/"
+     xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+  <link rel="search" type="application/opensearchdescription+xml" title="Funny or Die" href="/open_search.xml" />
+  <title>Notes From Chris: Halloween Edition from Todd Lamb</title>
+  <meta name="description" content="Chris posted some notes around NYC for Halloween." />
+  <meta name="keywords" content="notes, from, chris, todd, lamb, nyc, posters, flyers, street, fictional, character, stupid" />
+  <meta name="viewport" content="width=980, initial-scale=1"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="canonical" href="http://www.funnyordie.com/slideshows/7aaa18ed5f/notes-from-chris-halloween-edition" />
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="jCCvQ8gZiC/Z6CzTQm+RAWJ5hZPkXAsafGy49EIKo7s=" name="csrf-token" />
+  <link href="http://public0.ordienetworks.com/assets/application-547fb0342b2df6d6827335d0e54ef26d.css" media="screen" rel="stylesheet" type="text/css" />
+  
+  <!--[if lt IE 8]>
+    <link href="http://public0.ordienetworks.com/assets/iehacks-df20de4c4cc2ef12196844399f826d75.css" media="screen" rel="stylesheet" type="text/css" />
+  <![endif]-->
+  
+  <script src="http://public0.ordienetworks.com/assets/application-7244da1b9c36162ec57ca852e36f64d9.js" type="text/javascript"></script>
+  
+
+
+    <script type="text/javascript">
+//<![CDATA[
+
+    var Media = {
+      viewkey: "7aaa18ed5f"
+    }
+
+//]]>
+</script>  <meta name="robots" content="noodp" />
+  <meta property="og:title" content="Notes From Chris: Halloween Edition">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://www.funnyordie.com/slideshows/7aaa18ed5f/notes-from-chris-halloween-edition">
+  <meta property="og:image" content="http://assets0.ordienetworks.com/images/user_photos/1233288/0bcd811f42a2b4f2058bbb490a616e77_large.jpg">
+  <meta property="og:site_name" content="Funny or Die">
+  <meta property="fb:app_id" content="138711277798">
+  <meta property="og:description" content="Chris posted some notes around NYC for Halloween.">
+  <link rel="videothumbnail" href="http://assets0.ordienetworks.com/images/user_photos/1233288/0bcd811f42a2b4f2058bbb490a616e77_large.jpg" type="image/jpeg" />
+  <link rel="image_src" href="http://assets0.ordienetworks.com/images/user_photos/1233288/0bcd811f42a2b4f2058bbb490a616e77_large.jpg" />
+  <meta name="medium" content="news" />
+  <link rel="target_url" href="http://www.funnyordie.com/slideshows/7aaa18ed5f/notes-from-chris-halloween-edition"/>
+
+  <script type="text/javascript">
+//<![CDATA[
+    if (!fb_post) var fb_post = {"method":"stream.publish","attachment":{"name":"Notes From Chris: Halloween Edition","href":"http://www.funnyordie.com/slideshows/7aaa18ed5f/notes-from-chris-halloween-edition","description":"Chris posted some notes around NYC for Halloween.","media":[{"type":"image","href":"http://www.funnyordie.com/videos/7aaa18ed5f/notes-from-chris-halloween-edition","src":"http://assets0.ordienetworks.com/images/user_photos/1233288/0bcd811f42a2b4f2058bbb490a616e77_large.jpg"}]},"action_links":[{"text":"See more slideshows","href":"http://www.funnyordie.com/"}]};
+
+//]]>
+</script><script src="http://public0.ordienetworks.com/assets/jquery.anythingslider.min-17ae1fc7659fa077902ff5fe443a4e90.js" type="text/javascript"></script>
+  <script type="text/javascript">
+//<![CDATA[
+
+    var currentUser = null;
+    var user_key = 'global';
+
+    User.setUser();
+    if (User.isLoggedIn()) {
+      Subscriptions.check();
+      display_not_confirmed_message();
+		}
+    jQuery(function($) {
+      Flash.init();
+      Funbar.init();
+      if ((!User.isLoggedIn()) && (Cookie.get('auth_token'))) $.post('/sessions/check_cookie');
+      
+  var slider_images_loaded = 0;
+  $('#slider > li > img').load(function() {
+    slider_images_loaded += 1;
+    if(slider_images_loaded == $('#slider > li > img').length) {
+      startPanel = (window.location.hash) ? parseInt(window.location.hash.replace('#slide','')) : 1;
+      if(startPanel > $('#slider > li > img').length) startPanel = 1;
+      $('#slider').anythingSlider({
+        width: 600,
+        delay: 6000,
+        startPanel: startPanel,
+        hashTags: false,
+        resizeContents: false,
+        startStopped: true,
+        buildNavigation: false,
+        buildStartStop: false,
+    
+        onSlideBegin: function(slider) {
+          $('#slides .active').removeClass('active').hide();
+        },
+        onSlideComplete: function(slider) {
+          $('#slideshow h4 span').text($('#title_'+slider.currentPage).text());
+          $('#caption_'+slider.currentPage).addClass('active').fadeIn();
+          $('#slide_count').text(slider.currentPage);
+          window.location.hash = '#slide'+slider.currentPage;
+          if(!slider.playing) {
+            $('#ss_play').show();
+            $('#ss_pause').hide();
+          }
+        }
+      });
+    
+      $('#slide_counter').prependTo('.anythingControls');
+      $('#slide_count').text(startPanel);
+  
+      $('#view_all').click(function() {
+        $('#slideshow').hide();
+        $('#slides hr, #slides img, #slides .title:not(:empty), #slides .caption:not(:empty)').show();
+        return false;
+      }).prependTo('.anythingControls');
+    
+      $('#slideshow h4').show();
+  	  $('#slides img, #slides hr, #slides .title').hide();
+  	  $('#slides .caption').hide().eq(startPanel-1).addClass('active').show();
+  	  $('#slideshow h4 span').text($('#title_'+startPanel).text());
+    }
+  }).each(function(){
+  	// this hack found in the comments of http://api.jquery.com/load-event/
+  	// it ensures that the load event fires even when the images are loaded from cache (FF and IE don't trigger load() in those cases)
+  	if(this.complete || (jQuery.browser.msie && parseInt(jQuery.browser.version) == 6)) 
+  	$(this).trigger("load");
+  });
+  
+  $('#ss_previous').click(function() { $('#slider').data('AnythingSlider').goBack(); });
+  $('#ss_next').click(function() { $('#slider').data('AnythingSlider').goForward(); });
+  $('#ss_play').click(function() {
+    $('#slider').data('AnythingSlider').goForward();
+    $('#slider').data('AnythingSlider').startStop(true);
+    $(this).hide();
+    $('#ss_pause').show();
+  });
+  $('#ss_pause').click(function() {
+    $('#slider').data('AnythingSlider').startStop(false);
+    $(this).hide();
+    $('#ss_play').show();
+  });
+    
+
+  $('#favorite_tab, #report_tab').click(function() {
+    if ($('#add_to_playlist').length + $('#report_medium').length < 2) {
+      $.get('/media/ajax_tabs/7aaa18ed5f');
+    }
+    return false;
+  });
+  $('.expander_head').live('click', function() {
+    $(this).parents('.expandable').toggleClass('collapsed');
+    if ($.data(document.body, $(this).attr('data-remote')) != true)
+      $.get($(this).attr('data-remote'));
+    $.data(document.body, $(this).attr('data-remote'), true);
+    return false;
+  });
+  var interstitial = false;
+  
+  if(User.isLoggedIn() && currentUser.newsletter) {
+    store_action('opt-in');
+  }
+  if(!Cookie.get("_nwsl")) {
+    var pv = Cookie.get("_pv", function(val) { return parseFloat(val); }) || 0
+    pv += 1;
+    Cookie.set("_pv", pv, {path: '/'});
+    if(pv >= 3) {
+      interstitial = true;
+      var noautostart = true;
+    }
+  }
+  
+  function validate_newsletter_signup() {
+    if($('#newsfeed_dialog_email').length) {
+      return Validation.validate('newsfeed_dialog_email');
+    } else {
+      return true;
+    }
+  }
+  
+  function temp_dismiss_dialog() {
+    Cookie.set("_pv", 0, {path: '/'})
+    dismiss_dialog('opt-in', '#newsletter_dialog');
+  }
+
+  if(interstitial)
+    show_dialog('#newsletter_dialog');
+    
+  $('#newsletter_dialog_form').submit(function() {
+    $('#newsletter_subscription_entry_dialog').slideUp();
+    $('#newsletter_subscription_waiting_dialog').show();
+    GA.event('subscribing','newsletter','interstitial/media/show/7aaa18ed5f');
+  });
+
+    });
+  
+    
+
+//]]>
+</script>  
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1629113-1']);
+  _gaq.push(['fullTracker._setAccount', 'UA-1629113-15']);
+  GA.setUserType("anonymous");
+    try{
+      var gwoCombo = utmx("combination");
+      if (!gwoCombo) {
+        GA.setExperiment("on_site_player_ads", "none");
+      } else {
+        GA.setExperiment("on_site_player_ads", utmx('combination') + "." + utmx("combination_string") );
+      }
+    }catch(e){}
+    GA.setUploader("toddlamb");
+
+  GA.page("");
+  _gaq.push(['_trackPageLoadTime']);
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+  })();
+</script>
+
+</head>
+<body>
+<script type="text/javascript" charset="utf-8">
+  if(UserAgent.iphoneOS()) {
+    document.write('<style type="text/css" media="screen">#funbar, .vp:hover .quicklist_icon {display:none;} #funbar_wrapper {width: 968px;} .embed_group,.favorite_group,.report_group { margin-left:0px;}</style>')
+    Tip = Class.create();
+  }
+</script>
+  <script type="text/javascript" charset="utf-8">
+    Funbar.params['medium'] = "7aaa18ed5f";
+  </script>
+<div id="funbar">
+  <div id="funbar_wrapper">
+    <div id="funbar_left_cap" class="funbar_cap"></div>
+    <div id="funbar_right_cap" class="funbar_cap"></div>
+    <div id="funbar_container">
+
+      <div id="funbar_left">
+        <div id="funbar_share_tab" class="funbar_tab funbar_button share_icons">
+					<img alt="" class="sprite funbar_share" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" />
+					<a href="#" onclick="if(!$('#email_medium_dialog_box_content').data('loaded')) {$('#email_medium_dialog_box_content').html('&lt;div class=\&quot;loading_dialog\&quot;&gt;&lt;img alt=\&quot;Spinner\&quot; src=\&quot;http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif\&quot; /&gt; Hold your horses&lt;\/div&gt;');$.ajax('/share/email_medium/288686'); $('#email_medium_dialog_box_content').data('loaded',true);}show_dialog('#email_medium_dialog');sendEvent('countdown');; return false;"><img alt="" class="sprite email_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a>
+					<a class="funbar_button" href="#" id="funbar_embed_tab" onclick="Funbar.popup(this, 'embed');; return false;" title="Embed stuff"><img alt="" class="sprite embed_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="funbar_popup_wrapper" id="funbar_embed" style="display:none"><span class="funbar_popup_arrow"></span><div class="funbar_popup"><div class="header">
+  <div style="float:right"><a href="#" onclick="Funbar.close('embed'); return false;"><img alt="" class="sprite funbar_minimize" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a></div>
+  
+  Embed stuff
+</div>
+<div class="funbar_content embed_content" id="funbar_embed_content">
+
+<div class="funbar_embed_widgets">
+  <h4>Embed a widget of videos</h4>
+    <div class="embed_widget_link">
+      <a href="#" onclick="show_dialog('#embed_widget_featured_1_dialog');update_embed_widget_code_featured_1();; return false;" title="Embed #{thing} on your webpage."><img alt="Embed_widget" height="19" src="http://public0.ordienetworks.com/assets/icons/embed_widget-b19a1049c9fcd1cc97a2437c7e510b22.png" width="43" /></a>
+      <a href="#" onclick="show_dialog('#embed_widget_featured_1_dialog');update_embed_widget_code_featured_1();; return false;">Funny or Die Featured Videos</a>
+    </div>
+</div>
+</div></div></div>
+					<a class="funbar_button" href="#" id="funbar_rss_tab" onclick="Funbar.popup(this, 'rss');; return false;" title="RSS Feeds"><img alt="" class="sprite rss_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="funbar_popup_wrapper" id="funbar_rss" style="display:none"><span class="funbar_popup_arrow"></span><div class="funbar_popup"><div class="header">
+  <div style="float:right"><a href="#" onclick="Funbar.close('rss'); return false;"><img alt="" class="sprite funbar_minimize" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a></div>
+  
+  RSS Feeds
+</div>
+<div class="funbar_content rss_content" id="funbar_rss_content">
+<div style="padding:5px 0">
+  <a href="/videos.rss" onclick="GA.event('subscribing', 'rss', '/videos.rss');return true;" target="_blank"><img alt="" class="sprite rss_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /> Subscribe to Today's Featured Videos</a>
+</div>
+
+<div style="padding:5px 0">
+	<a href="/newsfeed_rss/global" onclick="GA.event('subscribing', 'rss', '/newfeed_rss/global');return true;" target="_blank"><img alt="" class="sprite rss_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" />  Subscribe to Funny or Die Newsfeed</a>
+</div>
+</div></div></div>
+					
+<span class="funbar_viral_links">
+  <a href="http://www.funnyordie.com/jump_to?url=http%3A%2F%2Fwww.tumblr.com%2Fshare%2Fphoto%3Fsource%3Dhttp%253A%252F%252Fassets0.ordienetworks.com%252Fimages%252Fuser_photos%252F1233288%252F0bcd811f42a2b4f2058bbb490a616e77_width_640x.jpg%26caption%3DNotes%2520From%2520Chris%253A%2520Halloween%2520Edition%26clickthru%3Dhttp%253A%252F%252Fwww.funnyordie.com%252Fslideshows%252F7aaa18ed5f%252Fnotes-from-chris-halloween-edition&amp;video=7aaa18ed5f" data-ga-event="[&quot;sharing&quot;,&quot;tumblr_share&quot;,&quot;7aaa18ed5f&quot;]" data-popup="[&quot;t&quot;,&quot;toolbar=0,resizable=0,status=1,width=450,height=430&quot;]" id="tumblr_share" title="Share this on Tumblr"><img alt="" class="sprite tumblr_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a>
+  <a href="http://www.funnyordie.com/jump_to?url=http%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3Dhttp%253A%252F%252FFunnyOrDie.com%252Fm%252F66r2&amp;video=7aaa18ed5f" data-ga-event="[&quot;sharing&quot;,&quot;twitter_share&quot;,&quot;7aaa18ed5f&quot;]" data-popup="[&quot;t&quot;,&quot;toolbar=0,resizable=0,status=1,width=550,height=250&quot;]" id="twitter_share" title="Post this to Twitter"><img alt="Post this to Twitter" class="sprite twitter_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a>
+  <a data-ga-event="[&quot;sharing&quot;,&quot;facebook_share&quot;,&quot;7aaa18ed5f&quot;]" href="#" id="facebook_share" onclick="FB.ui(fb_post); return false;" title="Share this on Facebook"><img alt="Share this on Facebook" class="sprite facebook_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a>
+  <a href="http://www.funnyordie.com/jump_to?url=http%3A%2F%2Fwww.reddit.com%2Fsubmit%3Furl%3Dhttp%253A%252F%252Fwww.funnyordie.com%252Fslideshows%252F7aaa18ed5f%252Fnotes-from-chris-halloween-edition&amp;video=7aaa18ed5f" data-ga-event="[&quot;sharing&quot;,&quot;reddit_share&quot;,&quot;7aaa18ed5f&quot;]" data-popup="[&quot;location=0,status=0,scrollbars=1,menubar=0,resizable=1,width=980,height=600&quot;]" id="reddit_share" title="Submit to Reddit"><img alt="Submit to Reddit" class="sprite reddit_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a>
+  <a href="http://www.funnyordie.com/jump_to?url=http%3A%2F%2Fwww.stumbleupon.com%2Fsubmit%3Furl%3Dhttp%253A%252F%252Fwww.funnyordie.com%252Fslideshows%252F7aaa18ed5f%252Fnotes-from-chris-halloween-edition%26title%3DNotes%2520From%2520Chris%253A%2520Halloween%2520Edition&amp;video=7aaa18ed5f" data-ga-event="[&quot;sharing&quot;,&quot;stumble_share&quot;,&quot;7aaa18ed5f&quot;]" data-popup="[&quot;location=0,status=0,scrollbars=1,menubar=0,resizable=1,width=980,height=600&quot;]" id="stumble_share" title="Stumble it"><img alt="Stumble Upon" class="sprite stumble_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a>
+  &nbsp;
+  <g:plusone size="small" count="false" href="http://www.funnyordie.com/slideshows/7aaa18ed5f/notes-from-chris-halloween-edition" callback="trackGoogShare"></g:plusone>
+</span>
+
+
+        </div>
+    
+      </div>
+
+      <div id="funbar_right">
+        <div id="quicklist_empty" style="display:none">
+          Click the <a href="#" onclick="return false;; return false;" title="Not this one - on the thumbnails!"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a> to queue up a list of videos to watch next.
+		    </div>
+		    <div class="funbar_tab divided_tab" id="funbar_quicklist_container" style=""><a class="funbar_button" href="#" id="funbar_quicklist_tab" onclick="Funbar.popup(this, 'quicklist');; return false;" title="Quicklist"><img alt="" class="sprite funbar_quicklist_tab" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="funbar_popup_wrapper" id="funbar_quicklist" style="display:none"><span class="funbar_popup_arrow"></span><div class="funbar_popup"><div class="header">
+  <div style="float:right"><a href="#" onclick="Funbar.close('quicklist'); return false;"><img alt="" class="sprite funbar_minimize" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a></div>
+  
+  Quicklist
+</div>
+<div class="funbar_content quicklist_content" id="funbar_quicklist_content"><div class="funbar_loader">Loading Quicklist... <img align="top" alt="Spinner_snake" src="http://public0.ordienetworks.com/assets/spinner_snake-d05675b30294da74326c5e5ffa13f500.gif" /></div></div></div></div></div>
+		    <div class="funbar_tab divided_tab" id="funbar_watched_container" style=""><a class="funbar_button" href="#" id="funbar_watched_tab" onclick="Funbar.popup(this, 'watched');; return false;" title="History"><img alt="" class="sprite funbar_watched_tab" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="funbar_popup_wrapper" id="funbar_watched" style="display:none"><span class="funbar_popup_arrow"></span><div class="funbar_popup"><div class="header">
+  <div style="float:right"><a href="#" onclick="Funbar.close('watched'); return false;"><img alt="" class="sprite funbar_minimize" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a></div>
+  
+  History
+</div>
+<div class="funbar_content watched_content" id="funbar_watched_content"><div class="funbar_loader">Loading History... <img align="top" alt="Spinner_snake" src="http://public0.ordienetworks.com/assets/spinner_snake-d05675b30294da74326c5e5ffa13f500.gif" /></div></div></div></div></div>
+		    <div class="funbar_tab divided_tab" id="funbar_newsfeed_container" style=""><a class="funbar_button" href="#" id="funbar_newsfeed_tab" onclick="Funbar.popup(this, 'newsfeed');; return false;" title="Newsfeed"><img alt="" class="sprite funbar_newsfeed_tab" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="funbar_popup_wrapper" id="funbar_newsfeed" style="display:none"><span class="funbar_popup_arrow"></span><div class="funbar_popup"><div class="header">
+  <div style="float:right"><a href="#" onclick="Funbar.close('newsfeed'); return false;"><img alt="" class="sprite funbar_minimize" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a></div>
+  <a href="/newsfeed_rss/global" onclick="GA.event('subscribing', 'rss', '/newfeed_rss/global');return true;" target="_blank"><img alt="" class="sprite rss_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a>
+  Newsfeed
+</div>
+<div class="funbar_content newsfeed_content" id="funbar_newsfeed_content"><div class="funbar_loader">Loading Newsfeed... <img align="top" alt="Spinner_snake" src="http://public0.ordienetworks.com/assets/spinner_snake-d05675b30294da74326c5e5ffa13f500.gif" /></div></div></div></div></div>
+		    
+		    
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div id="page_header">
+  
+<div id="header">
+  <ul id="login_links">
+
+    <li><a class="header_login_link" href="/login" onclick="show_login_dialog(); return false;" rel="nofollow">Login</a></li>
+    <li><a href="/signup?rel=header" class="header_login_link" rel="nofollow">Sign Up</a></li>
+  <li id="fb_connect" style="display:none;"><a id="fb_connect_href" href="#" class="facebook_connect_text_18x18"><span class="facebook_connect_text_18x18">Connect</span></a></li>
+  <li id="fb_spinner" style="display:none;"><img alt="Spinner_black" src="http://public0.ordienetworks.com/assets/spinner_black-21a0c01e1d9816cf9979652940ed50b9.gif" style="vertical-align: top;" /> Loading...</li>
+  <li><a href="/upload?rel=header" rel="nofollow">UPLOAD</a></li>
+  
+  </ul>
+<div class="clear"> </div>
+
+  <div id="logo">
+    <a href="/" title="Funny or Die - Funny Videos"><img alt="Funny or Die - Funny Videos" src="http://public0.ordienetworks.com/assets/funny_or_die_logo-c47180da8a185fd287d00183d615c87f.png" /></a>
+		<div id="tagline">
+			<a href="/videos/edf214810a/queeens-goal-celebrations-2-from-queeen">That's another belter.</a>
+		</div>
+  </div>
+
+  <form accept-charset="UTF-8" action="/search/a" class="inline" id="search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+    <input id="q" name="q" placeholder="Search Funny or Die" size="20" type="text" value="" />
+    <input alt="Search" id="search_button" src="http://public0.ordienetworks.com/assets/sprites/magnify-3753fb2850b989f2d04fbf897699399c.png" type="image" />
+</form>  
+  <script type="text/javascript" charset="utf-8">
+    try {
+      if ((!$('#q').val) && (document.referrer) && (document.referrer != '')) {
+        var query = document.referrer.match(/[\?\&](q|p)=([^&]+)/gi);
+        if (query[0])
+          $('#q').val(unescape(query[0].replace(/[\?\&](q|p)=/i, '').replace(/\+/g, ' ')));
+      }
+    } catch(e) {}
+  </script>
+
+  <ul id="header_nav">
+    <li id="home_nav">
+      <a href="/" rel="nofollow">Home</a>
+    </li>
+    <li id="videos_nav">
+      <a href="/browse/videos/all/all/most_viewed/this_month?rel=header">Videos</a>
+      <div class="clear"> </div>
+      <div id="videos_subnav" class="subnav">
+        <div class="subnav_swoop"><div class="subnav_inner_swoop"></div></div>
+        <div id="videos_subnav_celebrities" class="subnav_column">
+          <div class="subnav_header">Celebrities</div>
+          <a href="/will_ferrell?rel=header"><img alt="Celebrity_ferrell" src="http://public0.ordienetworks.com/assets/header/celebrity_ferrell-d0488b563270b5e85b7abdb97f64d8e3.png" /></a>
+          <a href="/zachgalifianakis?rel=header"><img alt="Celebrity_galifianakis" src="http://public0.ordienetworks.com/assets/header/celebrity_galifianakis-139f31f674eeb69854f52741acd8df75.png" /></a>
+          <a href="/justin_bieber?rel=header"><img alt="Celebrity_beiber" src="http://public0.ordienetworks.com/assets/header/celebrity_beiber-a62334fe9afccf0e678bf05a902ebff4.png" /></a><br/>
+          <a href="/celebrities?rel=header" style="display:block;margin-top:10px"><img alt="Celebrity_button" src="http://public0.ordienetworks.com/assets/header/celebrity_button-68034e8de9df695d36e9386680ddf39f.png" /></a>
+        </div>
+        <div id="videos_subnav_browse" class="subnav_column">
+          <div class="subnav_header">Browse Videos</div>
+          <a href="/browse/videos/all/all/most_viewed?rel=header">Most Viewed</a> <span class="subnav_separator">|</span>
+          <a href="/browse/videos/all/all/most_buzz/this_week?rel=header">Trending</a> <span class="subnav_separator">|</span>
+          <a href="/browse/videos/all/all/most_recent?rel=header">Most Recent</a><br/>
+          <a href="/videos?rel=header" style="font-size:110%">Funny Or Die Exclusives</a>
+          <div class="subnav_header" style="margin-top: 15px">Popular Series</div>
+          <ul style="margin-right: 20px">
+            <li><a href="/videos/e8e4424115/between-two-ferns-with-zach-galifianakis-from-between-two-ferns-zach-galifianakis-michael-cera-and-comedy-deathray?playlist=135161&amp;rel=header">Between Two Ferns</a></li>
+            <li><a href="/videos/6cd1e6dbb4/every-little-step-with-mike-tyson-wayne-brady?playlist=313868&amp;rel=header">Funny or Die Jamz</a>
+            <li><a href="/videos/cd12846553/bieber-takes-over?playlist=308176&amp;rel=header">Bieber or Die</a></li>
+            <li><a href="/videos/5a52180b80/forehead-tittaes-w-marion-cotillard?playlist=307161&amp;rel=header">FoD Commercials</a></li>
+          </ul>
+          <ul>
+            <li><a href="/videos/68f23e244b/drunk-history-vol-1-featuring-michael-cera-from-drunk-history-michael-cera-derekwaters-and-jeremykonner?playlist=94888&amp;rel=header">Drunk History</a></li>
+            <li><a href="/videos/f8fab67257/rachel-bilson-s-deleted-sex-scene?playlist=310727&amp;rel=header">Funny or Die Movies</a></li>
+            <li><a href="/videos/fb8bfa526e/the-art-of-catlicking?playlist=163721&amp;rel=header">Hilarious Animals</a></li>
+            <li><a href="/videos/557c57321b/zac-efron-s-pool-party?playlist=310726&amp;rel=header">Funny or Die Shorts</a></li>
+          </ul>
+        </div>
+        <div id="videos_subnav_categories" class="subnav_column">
+          <div class="subnav_header">Categories</div>
+          <ul style="margin-right: 40px">
+            <li><a href="/browse/videos/animals/all/most_viewed/this_month?rel=header">Animals</a></li>
+            <li><a href="/browse/videos/animation/all/most_viewed/this_month?rel=header">Animation</a></li>
+            <li><a href="/browse/videos/clean_comedy/all/most_viewed/this_month?rel=header">Clean Comedy</a></li>
+            <li><a href="/browse/videos/dumb_people/all/most_viewed/this_month?rel=header">Dumb People</a></li>
+            <li><a href="/browse/videos/fails/all/most_viewed/this_month?rel=header">Fails</a></li>
+            <li><a href="/browse/videos/memes/all/most_viewed/this_month?rel=header">Internet Memes</a></li>
+            <li><a href="/browse/videos/mashups/all/most_viewed/this_month?rel=header">Mashups</a></li>
+            <li><a href="/browse/videos/music/all/most_viewed/this_month?rel=header">Music</a></li>
+          </ul>  
+          <ul>
+            <li><a href="/browse/videos/nostalgia/all/most_viewed/this_month?rel=header">Nostalgia</a></li>
+            <li><a href="/browse/videos/nsfw/all/most_viewed/this_month?rel=header">Not Safe For Work</a></li>
+            <li><a href="/browse/videos/politics/all/most_viewed/this_month?rel=header">Politics</a></li>
+            <li><a href="/browse/videos/rants/all/most_viewed/this_month?rel=header">Rants</a></li>
+            <li><a href="/browse/videos/real_life/all/most_viewed/this_month?rel=header">Real Life</a></li>
+            <li><a href="/browse/videos/recaps/all/most_viewed/this_month?rel=header">Recaps</a></li>
+            <li><a href="/browse/videos/sports/all/most_viewed/this_month?rel=header">Sports</a></li>
+            <li><a href="/browse/videos/stand_up/all/most_viewed/this_month?rel=header">Stand Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li id="pictures_nav">
+      <a href="/browse/pictures_and_words/all/all/most_viewed/this_month?rel=header">
+        Pictures<span style="font-size:0.65em"> &amp; </span>Words
+</a>      <div class="clear"> </div>
+      <div id="paw_subnav" class="subnav">
+        <div class="subnav_swoop"><div class="subnav_inner_swoop"></div></div>
+        <div id="paw_subnav_top_users" class="subnav_column">
+          <div class="subnav_header">Top Users</div>
+          <ul>
+            <li><a href="/dan?rel=header"><img alt="User_dan_abramson" src="http://public0.ordienetworks.com/assets/header/user_dan_abramson-1412460abefb225f75eef34b09325cac.png" /></a></li>
+            <li><a href="/lookwhatifound?rel=header"><img alt="User_look_what_i_found" src="http://public0.ordienetworks.com/assets/header/user_look_what_i_found-23e8a9d81eaf22191497ed3fcdbb8655.png" /></a></li>
+            <li><a href="/theshopshop?rel=header"><img alt="User_the_shop_shop" src="http://public0.ordienetworks.com/assets/header/user_the_shop_shop-67f5651a05eb798733026d72eeb61cd4.png" /></a></li>
+            <li><a href="/corymatthews?rel=header"><img alt="User_cory_matthews" src="http://public0.ordienetworks.com/assets/header/user_cory_matthews-9fff43857fe77c3d97431d5672ab32f1.png" /></a></li>
+            <li><a href="/themagichour?rel=header"><img alt="User_the_magic_hour" src="http://public0.ordienetworks.com/assets/header/user_the_magic_hour-206dd5be121d43610e22c69488eaff8b.png" /></a></li>
+          </ul>
+        </div>
+        <div id="paw_subnav_browse" class="subnav_column">
+          <div class="subnav_header">Browse Pictures &amp; Words</div>
+          <a href="/browse/slideshows/all/all/most_viewed/this_month?rel=header"><img alt="Slideshow_with_title" src="http://public0.ordienetworks.com/assets/header/slideshow_with_title-e97153e8411c49546f433fa8286ba186.png" /></a>
+          <a href="/browse/lists/all/all/most_viewed/this_month?rel=header"><img alt="List_with_title" src="http://public0.ordienetworks.com/assets/header/list_with_title-6a166d760b9bf49520cf8107e0a8a224.png" /></a>
+          <a href="/browse/pictures/all/all/most_viewed/this_month?rel=header"><img alt="Picture_with_title" src="http://public0.ordienetworks.com/assets/header/picture_with_title-ecba2cc537c59f2c7325a40a3d2d81ab.png" /></a><br/>
+          <a href="/browse/articles/all/all/most_viewed/this_month?rel=header"><img alt="Article_with_title" src="http://public0.ordienetworks.com/assets/header/article_with_title-8ed965b4775d9aef2e3381294995ace9.png" /></a>
+          <a href="/browse/caption_contests/all/all/most_viewed/this_month?rel=header"><img alt="Caption_contest_with_title" src="http://public0.ordienetworks.com/assets/header/caption_contest_with_title-be5af108327ae132fcea6024dd0badc7.png" /></a>
+          <a href="/podcasts?rel=header"><img alt="Podcast_with_title" src="http://public0.ordienetworks.com/assets/header/podcast_with_title-9827959bc90d63f4cd478e5b5fb684e8.png" /></a>
+        </div>
+        <div id="paw_subnav_categories" class="subnav_column">
+          <div class="subnav_header">Categories</div>
+          <ul style="margin-right: 40px">
+            <li><a href="/browse/pictures_and_words/animals/all/most_viewed/this_month?rel=header">Animals</a></li>
+            <li><a href="/browse/pictures_and_words/animation/all/most_viewed/this_month?rel=header">Animation</a></li>
+            <li><a href="/browse/pictures_and_words/dumb_people/all/most_viewed/this_month?rel=header">Dumb People</a></li>
+            <li><a href="/browse/pictures_and_words/fails/all/most_viewed/this_month?rel=header">Fails</a></li>
+            <li><a href="/browse/pictures_and_words/funny_pictures/all/most_viewed/this_month?rel=header">Funny Pictures</a></li>
+            <li><a href="/browse/pictures_and_words/memes/all/most_viewed/this_month?rel=header">Internet Memes</a></li>
+            <li><a href="/browse/pictures_and_words/jokes/all/most_viewed/this_month?rel=header">Jokes</a></li>
+            <li><a href="/browse/pictures_and_words/kids/all/most_viewed/this_month?rel=header">Kids</a></li>
+          </ul>  
+          <ul>
+            <li><a href="/browse/pictures_and_words/news_fails/all/most_viewed/this_month?rel=header">News Fails</a></li>
+            <li><a href="/browse/pictures_and_words/nostalgia/all/most_viewed/this_month?rel=header">Nostalgia</a></li>
+            <li><a href="/browse/pictures_and_words/photoshopped/all/most_viewed/this_month?rel=header">Photoshopped</a></li>
+            <li><a href="/browse/pictures_and_words/politics/all/most_viewed/this_month?rel=header">Politics</a></li>
+            <li><a href="/browse/pictures_and_words/rants/all/most_viewed/this_month?rel=header">Rants</a></li>
+            <li><a href="/browse/pictures_and_words/real_life/all/most_viewed/this_month?rel=header">Real Life</a></li>
+            <li><a href="/browse/pictures_and_words/recaps/all/most_viewed/this_month?rel=header">Recaps</a></li>
+            <li><a href="/browse/pictures_and_words/sports/all/most_viewed/this_month?rel=header">Sports</a></li>
+          </ul>
+        </div>
+      </div>
+    </li>
+    <li>
+      <a href="#" onclick="javascript: void(0); return false;">More</a>
+      <div class="clear"> </div>
+      <div id="more_subnav" class="subnav">
+        <div class="subnav_swoop"><div class="subnav_inner_swoop"></div></div>
+        <div id="more_subnav_social" class="subnav_column">
+          <div class="subnav_header">Social</div>
+            <a href="/promos/connect?rel=header">
+              <img alt="Social_newsletter" src="http://public0.ordienetworks.com/assets/header/social_newsletter-6f0f8fba7ea172b082ed93da87ca53ed.png" />
+              <div>Newsletter<br/><span>Weekly email of our best stuff.</span></div>
+</a>            <a href="http://www.facebook.com/funnyordie" data-ga-event="[&quot;measurement&quot;,&quot;more_subnav&quot;,&quot;facebook&quot;,1]" data-popup="true" id="facebook" rel="nofollow">
+              <img alt="Social_facebook" src="http://public0.ordienetworks.com/assets/header/social_facebook-a1c9402ba81cd2fedeaa20fe96424e4f.png" />
+              <div>Facebook<br/><span>Because you like us.</span></div>
+</a>            <a href="http://www.twitter.com/funnyordie" data-ga-event="[&quot;measurement&quot;,&quot;more_subnav&quot;,&quot;twitter&quot;,1]" data-popup="true" id="twitter" rel="nofollow">
+              <img alt="Social_twitter" src="http://public0.ordienetworks.com/assets/header/social_twitter-38fd81dfb5ef221a62c2428bf23a01d3.png" />
+              <div>Twitter<br/><span>We tweet.</span></div>
+</a>            <a href="http://funnyordie.tumblr.com/" data-ga-event="[&quot;measurement&quot;,&quot;more_subnav&quot;,&quot;tumblr&quot;,1]" data-popup="true" id="tumblr" rel="nofollow">
+              <img alt="Social_tumblr" src="http://public0.ordienetworks.com/assets/header/social_tumblr-0ccf85ce593686e2fd5c421223d4b1bc.png" />
+              <div>Tumblr<br/><span>Funny things for you.</span></div>
+</a>            <a href="http://www.youtube.com/funnyordie?utm_source=fod&amp;utm_medium=more_subnav&amp;utm_campaign=youtube" data-ga-event="[&quot;measurement&quot;,&quot;more_subnav&quot;,&quot;youtube&quot;,1]" data-popup="true" id="youtube" rel="nofollow">
+              <img alt="Social_youtube" src="http://public0.ordienetworks.com/assets/header/social_youtube-d995f129bbde59807c30001e8350005d.png" />
+              <div>YouTube<br/><span>If for some reason you are there, we are too.</span></div>
+</a>        </div>
+        <div id="more_subnav_misc" class="subnav_column">
+          <div class="subnav_header">Miscellaneous</div>
+          <ul>
+            <li><a href="/the_occasional"><img alt="Tiny-title" src="http://public0.ordienetworks.com/assets/the_occasional/tiny-title-1290dc524c777b82dc7d5df69f65e8ed.jpg" /></a> </li>
+            <li>
+              <a href="/promos/funnyordiepresents?rel=header"> 
+                <img alt="Mini_tv" src="http://public0.ordienetworks.com/assets/header/mini_tv-790aa4297a7f834a84e7277eaa248e79.png" />
+                <span>HBO:</span> Funny or Die Presents
+</a>            </li>
+            <li><a href="/support" data-popup="true" rel="nofollow">Help / Support</a></li>
+            <li><a href="/promos/widgethq?rel=header" rel="nofollow">Embed a Widget</a> </li>
+          </ul>
+            <div class="subnav_header" style="margin-top:15px">Store</div>
+            <div id="more_subnav_store">
+              <ul>
+                <li>Shirts</li>
+                <li>Hoodies</li>
+                <li>Pillows</li>
+              </ul>
+              <ul>
+                <li>Coasters</li>
+                <li>Journals</li>
+                <li>Bottle Openers</li>
+              </ul>
+              <a href="/store" rel="nofollow"><img alt="Store_button" src="http://public0.ordienetworks.com/assets/header/store_button-b4adb6e4f60cb809a77f0902cc8be392.png" /></a>
+            </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+
+</div>
+<div id="skin_wrapper">
+  <div id="wrapper">
+    <div id="user_messaging">
+      <div class="box flash_message flash_message" id="flash_message" style="display:none">...</div>
+    	
+    </div>
+        
+      <div id="leader_board_ad">
+  <div id="lb_ad_content">
+    
+<script charset="utf-8" id="_leader_board_ad" type="text/javascript">
+//<![CDATA[
+
+  if (!ord) var ord = Math.round(Math.random() * 10000000000000000);
+  if (!ad_tile) var ad_tile = 0;
+  if (typeof dcopt == "undefined") { var dcopt = ';dcopt=ist'; } else dcopt = '';
+  if (!ad_array) var ad_array = new Array();
+  ad_tile++;
+  ad_array.push(new Array('leader_board', 'http://ad.doubleclick.net/adi/fod/slideshows_show'+ dcopt +';users0=271325;channels0=funny_pictures;channels1=memes;channels2=dumb_people;viewkey=7aaa18ed5f;is_celebrity=false;is_exclusive=false;sz=728x90;tile='+ ad_tile +';ord=' + ord + '?', 728, 90));
+
+
+//]]>
+</script><noscript>
+  <a href="http://ad.doubleclick.net/jump/fod/slideshows_show;users0=271325;channels0=funny_pictures;channels1=memes;channels2=dumb_people;viewkey=7aaa18ed5f;is_celebrity=false;is_exclusive=false;sz=728x90"><img src="http://ad.doubleclick.net/ad/fod/slideshows_show;users0=271325;channels0=funny_pictures;channels1=memes;channels2=dumb_people;viewkey=7aaa18ed5f;is_celebrity=false;is_exclusive=false;sz=728x90?" width="728" height="90" border="0"></a>
+</noscript>
+
+  </div>
+</div>
+
+    <div id="page" class="media_show slideshow_show document_show medium_show leaderboard  ">
+      <div id="content">
+      	
+
+      	
+
+
+
+
+
+
+
+<div class="content_column" >
+  <div class="player_page_title_and_description">
+	<h1 class='player_page_h1'>
+		<a href="/slideshows/7aaa18ed5f/notes-from-chris-halloween-edition">Notes From Chris: Halloween Edition</a>
+	</h1>
+		<div id="media_description">
+		    Chris posted some notes around NYC for Halloween.
+		</div>
+</div>
+
+
+  
+<div id="action_button_group">
+	<span class="share_group">
+	  <span class="fb_like_button">
+	    <fb:like href="http://www.funnyordie.com/slideshows/7aaa18ed5f/notes-from-chris-halloween-edition" layout="button_count" show_faces="false" width="90"></fb:like>
+		</span>
+		<span class="google_plus1_button">
+		  <g:plusone size="medium" href="http://www.funnyordie.com/slideshows/7aaa18ed5f/notes-from-chris-halloween-edition" callback="trackGoogShare"></g:plusone>
+		</span>
+    <button class="button left tumblr_button" data-ga-event="[&quot;sharing&quot;,&quot;tumblr_share&quot;,&quot;7aaa18ed5f&quot;]" data-popup="[&quot;http://www.funnyordie.com/jump_to?url=http%3A%2F%2Fwww.tumblr.com%2Fshare%2Fphoto%3Fsource%3Dhttp%253A%252F%252Fassets0.ordienetworks.com%252Fimages%252Fuser_photos%252F1233288%252F0bcd811f42a2b4f2058bbb490a616e77_width_640x.jpg%26caption%3DNotes%2520From%2520Chris%253A%2520Halloween%2520Edition%26clickthru%3Dhttp%253A%252F%252Fwww.funnyordie.com%252Fslideshows%252F7aaa18ed5f%252Fnotes-from-chris-halloween-edition&amp;video=7aaa18ed5f&quot;,&quot;t&quot;,&quot;toolbar=0,resizable=0,status=1,width=450,height=430&quot;]"><img alt="" class="sprite tumblr_text_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></button><button class="button middle" data-ga-event="[&quot;sharing&quot;,&quot;twitter_share&quot;,&quot;7aaa18ed5f&quot;]" data-popup="[&quot;http://www.funnyordie.com/jump_to?url=http%3A%2F%2Ftwitter.com%2Fintent%2Ftweet%3Ftext%3Dhttp%253A%252F%252FFunnyOrDie.com%252Fm%252F66r2&amp;video=7aaa18ed5f&quot;,&quot;t&quot;,&quot;toolbar=0,resizable=0,status=1,width=550,height=250&quot;]"><img alt="" class="sprite twitter_full_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></button><button class="button middle facebook_button" data-ga-event="[&quot;sharing&quot;,&quot;facebook_share&quot;,&quot;7aaa18ed5f&quot;]" onclick="FB.ui(fb_post);"><img alt="" class="sprite facebook_full_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></button><button class="button middle" data-ga-event="[&quot;sharing&quot;,&quot;reddit_share&quot;,&quot;7aaa18ed5f&quot;]" data-popup="[&quot;http://www.funnyordie.com/jump_to?url=http%3A%2F%2Fwww.reddit.com%2Fsubmit%3Furl%3Dhttp%253A%252F%252Fwww.funnyordie.com%252Fslideshows%252F7aaa18ed5f%252Fnotes-from-chris-halloween-edition&amp;video=7aaa18ed5f&quot;,&quot;_blank&quot;,&quot;location=0,status=0,scrollbars=1,menubar=0,resizable=1,width=980,height=600&quot;]"><img alt="" class="sprite reddit_alien_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></button><button class="button right" data-ga-event="[&quot;sharing&quot;,&quot;stumble_share&quot;,&quot;7aaa18ed5f&quot;]" data-popup="[&quot;http://www.funnyordie.com/jump_to?url=http%3A%2F%2Fwww.stumbleupon.com%2Fsubmit%3Furl%3Dhttp%253A%252F%252Fwww.funnyordie.com%252Fslideshows%252F7aaa18ed5f%252Fnotes-from-chris-halloween-edition%26title%3DNotes%2520From%2520Chris%253A%2520Halloween%2520Edition&amp;video=7aaa18ed5f&quot;,&quot;_blank&quot;,&quot;location=0,status=0,scrollbars=1,menubar=0,resizable=1,width=980,height=600&quot;]"><img alt="" class="sprite stumble_dark_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></button>
+	</span>
+
+	<span class="embed_group" style="font-size:14px">
+		<button class="button left spriteless" onclick="if(!$('#email_medium_dialog_box_content').data('loaded')) {$('#email_medium_dialog_box_content').html('&lt;div class=\&quot;loading_dialog\&quot;&gt;&lt;img alt=\&quot;Spinner\&quot; src=\&quot;http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif\&quot; /&gt; Hold your horses&lt;\/div&gt;');$.ajax('/share/email_medium/288686'); $('#email_medium_dialog_box_content').data('loaded',true);}show_dialog('#email_medium_dialog');sendEvent('countdown');">email</button><button class="button right spriteless" onclick="toggleActionArea('link')">link</button>
+	</span>
+</div>
+
+<div id="action_areas">	
+  <div id="twitter_action_area" style="display:none;" class="action_area">
+    <div id="twitter_box_placeholder"></div>
+  </div>
+  <div id="link_action_area" style="display:none;" class="action_area">
+	  <div style="float:right;"><a href="#" onclick="toggleActionArea('link');; return false;"><img alt="" class="sprite close_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a></div>
+		<div id="link_action_area_content" style="margin:12px">
+			<label style="font-size: 16px;vertical-align:middle" for="short_link" title="Great for Sharing!">Shortened Link</label>
+			<input class="link_code" id="short_link" name="short_link" onclick="javascript:this.focus();this.select();GA.event('sharing','link_copy','7aaa18ed5f-notes-from-chris-halloween-edition')" readonly="readonly" size="30" style="margin-left:6px;font-size:16px;font-weight:bold;" type="text" value="http://FunnyOrDie.com/m/66r2" />
+			<script type="text/javascript">
+//<![CDATA[
+
+			  function get_link_code() {
+			    GA.event('sharing','link_copy','#{@medium.long_name}')
+			    return $F('short_link');
+			  }
+
+//]]>
+</script>    </div> 
+  </div> 
+</div>
+
+		
+
+<div id="slideshow">
+  <h4 style="display:none">
+    <div id="controls">
+      <button id="ss_previous" class="button left" title="Previous Slide"><img alt="" class="sprite ss_previous" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" />
+      </button><button id="ss_play" class="button middle" title="Play Slideshow"><img alt="" class="sprite ss_play" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" />
+      </button><button id="ss_pause" class="button middle" title="Pause Slideshow" style="display:none"><img alt="" class="sprite ss_pause" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" />
+      </button><button id="ss_next" class="button right" title="Next Slide"><img alt="" class="sprite ss_next" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></button>
+    </div>
+    <span></span>
+    <a href="#" id="view_all">View all on one page</a>
+    <div id="slide_counter"><span id="slide_count">1</span> / 5</div>
+  </h4>
+  
+  <ul id="slider">
+      <li><img alt="0bcd811f42a2b4f2058bbb490a616e77_width_600x" src="http://assets0.ordienetworks.com/images/user_photos/1233288/0bcd811f42a2b4f2058bbb490a616e77_width_600x.jpg" /></li>
+      <li><img alt="294d5f9333eea1f42836617aaa022f45_width_600x" src="http://assets0.ordienetworks.com/images/user_photos/1233290/294d5f9333eea1f42836617aaa022f45_width_600x.jpg" /></li>
+      <li><img alt="C37d79d04551819d5c78d076bdde277a_width_600x" src="http://assets0.ordienetworks.com/images/user_photos/1233292/c37d79d04551819d5c78d076bdde277a_width_600x.jpg" /></li>
+      <li><img alt="5f48c8f912b19a886ef783148e44c928_width_600x" src="http://assets0.ordienetworks.com/images/user_photos/1233293/5f48c8f912b19a886ef783148e44c928_width_600x.jpg" /></li>
+      <li><img alt="064ce84f6a8e8cc68e98b7207f7204db_width_600x" src="http://assets0.ordienetworks.com/images/user_photos/1233294/064ce84f6a8e8cc68e98b7207f7204db_width_600x.jpg" /></li>
+  </ul>
+</div>
+
+<div id="slides">
+    
+    <div id="title_1" class="title"></div>
+    <img alt="0bcd811f42a2b4f2058bbb490a616e77_width_600x" src="http://assets0.ordienetworks.com/images/user_photos/1233288/0bcd811f42a2b4f2058bbb490a616e77_width_600x.jpg" />
+    <div id="caption_1" class="caption"></div>
+    <hr />
+    <div id="title_2" class="title"></div>
+    <img alt="294d5f9333eea1f42836617aaa022f45_width_600x" src="http://assets0.ordienetworks.com/images/user_photos/1233290/294d5f9333eea1f42836617aaa022f45_width_600x.jpg" />
+    <div id="caption_2" class="caption"></div>
+    <hr />
+    <div id="title_3" class="title"></div>
+    <img alt="C37d79d04551819d5c78d076bdde277a_width_600x" src="http://assets0.ordienetworks.com/images/user_photos/1233292/c37d79d04551819d5c78d076bdde277a_width_600x.jpg" />
+    <div id="caption_3" class="caption"></div>
+    <hr />
+    <div id="title_4" class="title"></div>
+    <img alt="5f48c8f912b19a886ef783148e44c928_width_600x" src="http://assets0.ordienetworks.com/images/user_photos/1233293/5f48c8f912b19a886ef783148e44c928_width_600x.jpg" />
+    <div id="caption_4" class="caption"></div>
+    <hr />
+    <div id="title_5" class="title"></div>
+    <img alt="064ce84f6a8e8cc68e98b7207f7204db_width_600x" src="http://assets0.ordienetworks.com/images/user_photos/1233294/064ce84f6a8e8cc68e98b7207f7204db_width_600x.jpg" />
+    <div id="caption_5" class="caption"></div>
+</div>
+
+	    <script type="text/javascript" charset="utf-8">
+    if (true || UserAgent.android() || (swfobject.ua.pv[0] === 0)) {
+      document.write("    <div id=\"vote_buttons\" class=\"active\">\n      <img alt=\"Vote_down\" border=\"0\" class=\"vote_button\" data-vote=\"die\" height=\"44\" id=\"vote_down_button\" src=\"http://public0.ordienetworks.com/assets/vote_down-e86170b488c1687757eb7fdaff13de1c.png\" width=\"180\" />\n      <div id=\"vote_stats\">\n        <span id=\"rating\">76% Funny<\/span><br/>\n        77,003 Views\n      <\/div>\n      <img alt=\"Vote_up\" border=\"0\" class=\"vote_button\" data-vote=\"funny\" height=\"44\" id=\"vote_up_button\" src=\"http://public0.ordienetworks.com/assets/vote_up-42ab7ffb276f50372322fc3218f82d89.png\" width=\"180\" />\n      <div class=\"clear\"> <\/div>\n    <\/div>\n");
+    }
+  </script>
+	<script type="text/javascript" charset="utf-8">
+    $(function($){
+      setTimeout(function(){
+        $.post('/player/7aaa18ed5f/touch/'+ Math.round(Math.random() * 100000000));
+      }, 1000);
+    });
+	</script>
+
+	  
+	
+<div id="video_action_tabs" class="basic_tabs_container">
+
+	<div class="basic_tabs">
+    <a class="basic_tab selected " href="#" id="credits_tab" onclick="toggle_tabs('video_action_tabs','credits');; return false;" style="" title="">Credits</a>
+		<a class="basic_tab " href="#" id="details_tab" onclick="toggle_tabs('video_action_tabs','details');; return false;" style="" title="">Details</a>
+		
+    
+    
+		
+	</div>
+
+  <div class="basic_tabs_content">
+    <div id="credits_box" class="basic_tab_content">
+        <dl class='user_preview_video_participant '>
+	<dt>
+	    <a href="/toddlamb" title="Todd Lamb (a.k.a. toddlamb)"><img alt="toddlamb" class="linked_user_thumb" height="48" src="http://assets0.ordienetworks.com/images/user_photos/1026317/me_and_family_copy_square_medium.jpg" width="48" /></a>
+	</dt>
+	<dd class="has_buttons">
+	  	Uploader
+		<h3>
+			<a href="/toddlamb" class="user_link" title="Todd Lamb">Todd Lamb</a>
+		</h3>
+		
+	  <fb:like class="fb_like_button" href="http://www.funnyordie.com/toddlamb" layout="button_count" show_faces="false" width="90"></fb:like>
+	</dd>
+</dl>
+
+
+      <div class="clear"> </div>
+    </div>
+
+    <div id="details_box" class="basic_tab_content" style="display: none;">
+
+      <div class="medium_stats">
+
+  			<div class="video_stats">
+  				<p title="October 18, 2011">Added 5 months ago</p>
+  				<p>Favorited by <a href="/slideshows/favorited/7aaa18ed5f" rel="nofollow">1 user</a></p>
+  					<p>695 funny votes</p>
+  					<p>215 die votes</p>
+  			</div>
+
+    			<div id="media_description">
+    				<span class="video_info_label">Description:</span>
+    					Chris posted some notes around NYC for Halloween.
+    			</div>
+
+  			<div class="medium_detailed_meta_data">
+  					<div><span class="video_info_label">Categories:</span> <a href="/browse/slideshows/funny_pictures/all/most_buzz">Funny Pictures</a> <a href="/browse/slideshows/memes/all/most_buzz">Internet Memes</a> <a href="/browse/slideshows/dumb_people/all/most_buzz">Dumb People</a></div>
+				  <div><span class="video_info_label">Keywords:</span> <a href="http://www.funnyordie.com/topic/notes">notes</a> from <a href="http://www.funnyordie.com/topic/chris">chris</a> <a href="http://www.funnyordie.com/topic/todd">todd</a> <a href="http://www.funnyordie.com/topic/lamb">lamb</a> <a href="http://www.funnyordie.com/topic/nyc">nyc</a> <a href="http://www.funnyordie.com/topic/posters">posters</a> <a href="http://www.funnyordie.com/topic/flyers">flyers</a> <a href="http://www.funnyordie.com/topic/street">street</a> <a href="http://www.funnyordie.com/topic/fictional">fictional</a> <a href="http://www.funnyordie.com/topic/character">character</a> <a href="http://www.funnyordie.com/topic/stupid">stupid</a></div>
+  			</div>
+
+		  </div>
+      <div class="clear"> </div>
+    </div>
+    
+    
+      <div id="favorite_box" class="basic_tab_content" style="display: none;">
+        <div id="playlist_action_area" class="action_area">
+    		  <div id="add_to_playlist_box" style="margin:12px">
+    			  <h4 style="text-align:center"><img alt="Spinner" src="http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif" /> Patience is overrated...</h4>
+    		  </div>
+        </div>
+      </div>
+    
+      <div id="report_box" class="basic_tab_content" style="display: none;">
+        <div id="report_action_area" class="action_area">
+    		  <div id="report_box" style="margin:12px">
+    			  <h4 style="text-align:center"><img alt="Spinner" src="http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif" /> Patience is overrated...</h4>
+    		  </div>
+        </div>
+      </div>
+
+
+	</div>
+</div>
+
+
+		<div class="widget below_player_vids">
+
+
+
+      <div class="stacked_featured_box">
+	<div class="widget_title">
+		<h2 class="title">More by Todd Lamb</h2>
+		
+	</div>
+	<div class="media_collection">
+		<div class="featured_vp_container">
+				<div class="vp slideshow_preview document_preview medium_preview featured_vp " data-viewkey="vaf57df5716" id="medium_242576">
+  <div class="thumb rectangle_large"><a href="/slideshows/af57df5716/notes-from-chris-superbowl-edition?rel=by_user" class="nail" title="Notes From Chris: Superbowl Edition from Todd Lamb"><img alt="Notes From Chris: Superbowl Edition from Todd Lamb" class="thumbnail" src="http://assets0.ordienetworks.com/images/user_photos/1178375/supporter_rectangle_large.jpg" /></a><div class="ql_overlay ql_af57df5716"><a href="#" class="add_to_quicklist" data-qlviewkey="vaf57df5716" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+  <div class="details ">
+    <a href="/slideshows/af57df5716/notes-from-chris-superbowl-edition?rel=by_user" class="title" title="Notes From Chris: Superbowl Edition from Todd Lamb">8 Signs from a Super Bowl Enthusiast</a>
+</div></div>
+		</div>
+		<div class="featured_vp_container">
+				<div class="vp video_preview medium_preview featured_vp " data-viewkey="vf4f25add7c" id="medium_121051">
+  <div class="thumb rectangle_large"><a href="/videos/f4f25add7c/loud-people-episode-3?rel=by_user" class="nail" title="Loud People: Episode 3 from Todd Lamb"><img alt="Loud People: Episode 3 from Todd Lamb" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/f4f25add7c/large_16.jpg" width="142" /></a><div class="ql_overlay ql_f4f25add7c"><a href="#" class="add_to_quicklist" data-qlviewkey="vf4f25add7c" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+  <div class="details ">
+    <a href="/videos/f4f25add7c/loud-people-episode-3?rel=by_user" class="title" title="Loud People: Episode 3 from Todd Lamb">Loud People: Episode 3</a>
+</div></div>
+		</div>
+		<div class="featured_vp_container">
+				<div class="vp video_preview medium_preview featured_vp " data-viewkey="v5be0debe81" id="medium_120001">
+  <div class="thumb rectangle_large"><a href="/videos/5be0debe81/loud-people-episode-2?rel=by_user" class="nail" title="Loud People: Episode 2 from Todd Lamb"><img alt="Loud People: Episode 2 from Todd Lamb" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/5be0debe81/large_10.jpg" width="142" /></a><div class="ql_overlay ql_5be0debe81"><a href="#" class="add_to_quicklist" data-qlviewkey="v5be0debe81" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+  <div class="details ">
+    <a href="/videos/5be0debe81/loud-people-episode-2?rel=by_user" class="title" title="Loud People: Episode 2 from Todd Lamb">Loud People: Episode 2</a>
+</div></div>
+		</div>
+		<div class="featured_vp_container">
+				<div class="vp video_preview medium_preview featured_vp " data-viewkey="vb03c6dd6c6" id="medium_118342">
+  <div class="thumb rectangle_large"><a href="/videos/b03c6dd6c6/loud-people-episode-1?rel=by_user" class="nail" title="Loud People: Episode 1 from Todd Lamb"><img alt="Loud People: Episode 1 from Todd Lamb" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/b03c6dd6c6/large_16.jpg" width="142" /></a><div class="ql_overlay ql_b03c6dd6c6"><a href="#" class="add_to_quicklist" data-qlviewkey="vb03c6dd6c6" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+  <div class="details ">
+    <a href="/videos/b03c6dd6c6/loud-people-episode-1?rel=by_user" class="title" title="Loud People: Episode 1 from Todd Lamb">Loud People: Episode 1</a>
+</div></div>
+		</div>
+	</div>
+</div>
+
+	<div class="clear"> </div>
+</div>
+
+      <fb:comments href="http://www.funnyordie.com/slideshows/7aaa18ed5f/notes-from-chris-halloween-edition" num_posts="30" width="640"></fb:comments>
+
+</div>
+
+
+<div id="sidebar">
+  <div class='player_page_ad_box'>
+    <div class="player_page_mrec" style='float:right;width:300px;height:250px;margin-right:7px;'>
+      <div id="sidebar_wide_rectangle" class="ad_mrec">
+  <div id="mrec_content">
+    
+<script charset="utf-8" id="_medium_right_rectangle_ad" type="text/javascript">
+//<![CDATA[
+
+  if (!ord) var ord = Math.round(Math.random() * 10000000000000000);
+  if (!ad_tile) var ad_tile = 0;
+  if (typeof dcopt == "undefined") { var dcopt = ';dcopt=ist'; } else dcopt = '';
+  if (!ad_array) var ad_array = new Array();
+  ad_tile++;
+  ad_array.push(new Array('medium_right_rectangle', 'http://ad.doubleclick.net/adi/fod/slideshows_show'+ dcopt +';users0=271325;channels0=funny_pictures;channels1=memes;channels2=dumb_people;viewkey=7aaa18ed5f;is_celebrity=false;is_exclusive=false;sz=300x250;tile='+ ad_tile +';ord=' + ord + '?', 300, 250));
+
+
+//]]>
+</script><noscript>
+  <a href="http://ad.doubleclick.net/jump/fod/slideshows_show;users0=271325;channels0=funny_pictures;channels1=memes;channels2=dumb_people;viewkey=7aaa18ed5f;is_celebrity=false;is_exclusive=false;sz=300x250"><img src="http://ad.doubleclick.net/ad/fod/slideshows_show;users0=271325;channels0=funny_pictures;channels1=memes;channels2=dumb_people;viewkey=7aaa18ed5f;is_celebrity=false;is_exclusive=false;sz=300x250?" width="300" height="250" border="0"></a>
+</noscript>
+
+  </div>
+</div>
+
+    </div>
+  </div>
+    <div class="box medley expandable collapsed" id="medley_334479" style="">    <div class="medley_header">
+      <h4 class="expander_head", data-remote="/medley/288686/334479">
+        <span class="expander_next_text">Next In </span>
+        Halloweeeeeeeeen
+        <button class="expander_button"></button>
+      </h4>
+    </div>
+    <div class="medley_collapsed_contents">
+      <ul>
+          <li><div class="vp picture_preview image_preview medium_preview medley_vp" data-viewkey="v1b16320a58" id="medium_290194">
+  <div class="thumb square_medium"><a href="/pictures/1b16320a58/the-best-halloween-costume-of-2011?playlist=334479" class="nail" title="The Best Halloween Costume of 2011 from You're Doing It Right"><img alt="The Best Halloween Costume of 2011 from You're Doing It Right" class="thumbnail" src="http://assets0.ordienetworks.com/images/user_photos/1234929/2be9f7c6716d70efde680753ad932f1d_square_medium.jpg" /></a></div>
+  <a href="/pictures/1b16320a58/the-best-halloween-costume-of-2011?playlist=334479" class="title" title="The Best Halloween Costume of 2011 from You're Doing It Right">The Best Halloween Costume of 2011</a>
+  <div class="details ">
+    
+	    <div style="float:right"><span class="medley_index">6</span> of 8</div>
+    <span class="view_count">200,356 views</span>
+</div></div></li>
+      </ul>
+    </div>
+      <div class="medley_expanded_contents" id="334479_medley_contents">
+        <h4 class="spinner"><img alt="Spinner" src="http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif" /> Loading...</h4>
+      </div>
+</div>  <div class="box medley expandable collapsed" id="medley_featured_pictures_and_words" style="">    <div class="medley_header">
+      <h4 class="expander_head", data-remote="/medley/288686/featured_pictures_and_words">
+        
+        Featured Pictures And Words
+        <button class="expander_button"></button>
+      </h4>
+    </div>
+    <div class="medley_collapsed_contents">
+      <ul>
+          <li><div class="vp slideshow_preview document_preview medium_preview medley_vp" data-viewkey="v704b7bf83b" id="medium_312524">
+  <div class="thumb square_medium"><a href="/slideshows/704b7bf83b/pictures-of-bathroom-graffiti-done-right?playlist=featured_pictures_and_words" class="nail" title="9 Pictures of Bathroom Graffiti Done Right from Look What I Found"><img alt="9 Pictures of Bathroom Graffiti Done Right from Look What I Found" class="thumbnail" src="http://assets0.ordienetworks.com/images/user_photos/1253674/631f4f2befcdafc17c635165b479cf0f_square_medium.jpg" /></a></div>
+  <a href="/slideshows/704b7bf83b/pictures-of-bathroom-graffiti-done-right?playlist=featured_pictures_and_words" class="title" title="9 Pictures of Bathroom Graffiti Done Right from Look What I Found">9 Pictures of Bathroom Graffiti Done Right</a>
+  <div class="details ">
+    
+	    <div style="float:right"><span class="medley_index">1</span> of 25</div>
+    <span class="view_count">18,772 views</span>
+</div></div></li>
+      </ul>
+    </div>
+      <div class="medley_expanded_contents" id="featured_pictures_and_words_medley_contents">
+        <h4 class="spinner"><img alt="Spinner" src="http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif" /> Loading...</h4>
+      </div>
+</div>  <div class="box medley expandable collapsed" id="medley_related" style="">    <div class="medley_header">
+      <h4 class="expander_head", data-remote="/medley/288686/related">
+        
+        Related Videos
+        <button class="expander_button"></button>
+      </h4>
+    </div>
+    <div class="medley_collapsed_contents">
+      <ul>
+          <li><div class="vp video_preview medium_preview medley_vp" data-viewkey="vb03c6dd6c6" id="medium_118342">
+  <div class="thumb rectangle_medium"><a href="/videos/b03c6dd6c6/loud-people-episode-1" class="nail" title="Loud People: Episode 1 from Todd Lamb"><img alt="Loud People: Episode 1 from Todd Lamb" class="thumbnail" height="90" src="http://assets0.ordienetworks.com/tmbs/b03c6dd6c6/medium_16.jpg" width="124" /></a></div>
+  <a href="/videos/b03c6dd6c6/loud-people-episode-1" class="title" title="Loud People: Episode 1 from Todd Lamb">Loud People: Episode 1</a>
+  <div class="details ">
+    
+	    <div style="float:right"><span class="medley_index">1</span> of 9</div>
+    <span class="view_count">4,738 views</span>
+</div></div></li>
+      </ul>
+    </div>
+      <div class="medley_expanded_contents" id="related_medley_contents">
+        <h4 class="spinner"><img alt="Spinner" src="http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif" /> Loading...</h4>
+      </div>
+</div>  <div class="box medley expandable collapsed" id="medley_podcasts" style="">    <div class="medley_header">
+      <h4 class="expander_head", data-remote="/medley/288686/podcasts">
+        
+        Podcasts
+        <button class="expander_button"></button>
+      </h4>
+    </div>
+    <div class="medley_collapsed_contents">
+      <ul>
+          <li><div class="vp podcast_preview document_preview medium_preview medley_vp" data-viewkey="vdd8577d824" id="medium_311660">
+  <div class="thumb square_medium"><a href="/podcasts/dd8577d824/twirly-burrito?playlist=podcasts" class="nail" title="improv4humans: Twirly Burrito from Matt	Besser, improv4humans, Earwolf, Horatio Sanz, Dominic Dierkes, and Sean Clements"><img alt="improv4humans: Twirly Burrito from Matt	Besser, improv4humans, Earwolf, Horatio Sanz, Dominic Dierkes, and Sean Clements" class="thumbnail" src="http://assets0.ordienetworks.com/images/user_photos/1237526/658fbbe515e0c7e99fd728ca909356ae_square_medium.png" /></a></div>
+  <a href="/podcasts/dd8577d824/twirly-burrito?playlist=podcasts" class="title" title="improv4humans: Twirly Burrito from Matt	Besser, improv4humans, Earwolf, Horatio Sanz, Dominic Dierkes, and Sean Clements">Twirly Burrito</a>
+  <div class="details ">
+    improv4humans
+	    <div style="float:right"><span class="medley_index">1</span> of 16</div>
+    
+</div></div></li>
+      </ul>
+    </div>
+      <div class="medley_expanded_contents" id="podcasts_medley_contents">
+        <h4 class="spinner"><img alt="Spinner" src="http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif" /> Loading...</h4>
+      </div>
+</div>
+    <div class="box medley expandable collapsed" id="medley_category_funny_pictures" style="">    <div class="medley_header">
+      <h4 class="expander_head", data-remote="/medley/288686/category_funny_pictures">
+        
+        Funny Pictures
+        <button class="expander_button"></button>
+      </h4>
+    </div>
+    <div class="medley_collapsed_contents">
+      <ul>
+          <li><div class="vp list_preview document_preview medium_preview medley_vp" data-viewkey="v71bd760bbe" id="medium_252723">
+  <div class="thumb square_medium"><a href="/lists/71bd760bbe/31-brilliant-examples-of-engrish-fails" class="nail" title="31 Brilliant examples of Engrish fails... from Mikepattonfan (Sean Warhurst)"><img alt="31 Brilliant examples of Engrish fails... from Mikepattonfan (Sean Warhurst)" class="thumbnail" src="http://assets0.ordienetworks.com/images/user_photos/1192953/ATT3310668_square_medium.jpg" /></a></div>
+  <a href="/lists/71bd760bbe/31-brilliant-examples-of-engrish-fails" class="title" title="31 Brilliant examples of Engrish fails... from Mikepattonfan (Sean Warhurst)">31 Brilliant examples of Engrish fails...</a>
+  <div class="details ">
+    
+	    <div style="float:right"><span class="medley_index">1</span> of 10</div>
+    <span class="view_count">370,820 views</span>
+</div></div></li>
+      </ul>
+    </div>
+      <div class="medley_expanded_contents" id="category_funny_pictures_medley_contents">
+        <h4 class="spinner"><img alt="Spinner" src="http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif" /> Loading...</h4>
+      </div>
+</div>  <div class="box medley expandable collapsed" id="medley_category_memes" style="">    <div class="medley_header">
+      <h4 class="expander_head", data-remote="/medley/288686/category_memes">
+        
+        Internet Memes
+        <button class="expander_button"></button>
+      </h4>
+    </div>
+    <div class="medley_collapsed_contents">
+      <ul>
+          <li><div class="vp slideshow_preview document_preview medium_preview medley_vp" data-viewkey="v1a4ceee82a" id="medium_249875">
+  <div class="thumb square_medium"><a href="/slideshows/1a4ceee82a/the-13-most-awkward-spiderman-freeze-frames" class="nail" title="The 13 Most Awkward Spiderman Freeze Frames  from Look What I Found"><img alt="The 13 Most Awkward Spiderman Freeze Frames  from Look What I Found" class="thumbnail" src="http://assets0.ordienetworks.com/images/user_photos/1187492/tumblr_lhovqc78P31qbxdt7o1_500_square_medium.png" /></a></div>
+  <a href="/slideshows/1a4ceee82a/the-13-most-awkward-spiderman-freeze-frames" class="title" title="The 13 Most Awkward Spiderman Freeze Frames  from Look What I Found">The Most Awkward Spiderman Freeze Frames </a>
+  <div class="details ">
+    
+	    <div style="float:right"><span class="medley_index">1</span> of 10</div>
+    <span class="view_count">172,067 views</span>
+</div></div></li>
+      </ul>
+    </div>
+      <div class="medley_expanded_contents" id="category_memes_medley_contents">
+        <h4 class="spinner"><img alt="Spinner" src="http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif" /> Loading...</h4>
+      </div>
+</div>  <div class="box medley expandable collapsed" id="medley_category_dumb_people" style="">    <div class="medley_header">
+      <h4 class="expander_head", data-remote="/medley/288686/category_dumb_people">
+        
+        Dumb People
+        <button class="expander_button"></button>
+      </h4>
+    </div>
+    <div class="medley_collapsed_contents">
+      <ul>
+          <li><div class="vp slideshow_preview document_preview medium_preview medley_vp" data-viewkey="vcdb6712e2d" id="medium_236835">
+  <div class="thumb square_medium"><a href="/slideshows/cdb6712e2d/damn-you-autocorrect-fails-iphone-correct-texting" class="nail" title="The 11 Most Amazing Autocorrect Fails from Look What I Found"><img alt="The 11 Most Amazing Autocorrect Fails from Look What I Found" class="thumbnail" src="http://assets0.ordienetworks.com/images/user_photos/1170822/damn_you_auto_correct_funny_iphone_fails_and_blunders-3_square_medium.jpeg" /></a></div>
+  <a href="/slideshows/cdb6712e2d/damn-you-autocorrect-fails-iphone-correct-texting" class="title" title="The 11 Most Amazing Autocorrect Fails from Look What I Found">The 11 Most Amazing Autocorrect Fails</a>
+  <div class="details ">
+    
+	    <div style="float:right"><span class="medley_index">1</span> of 10</div>
+    <span class="view_count">928,210 views</span>
+</div></div></li>
+      </ul>
+    </div>
+      <div class="medley_expanded_contents" id="category_dumb_people_medley_contents">
+        <h4 class="spinner"><img alt="Spinner" src="http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif" /> Loading...</h4>
+      </div>
+</div>
+    <div class="box medley expandable collapsed" id="medley_quicklist" style="display:none">    <div class="medley_header">
+      <h4 class="expander_head", data-remote="">
+        
+        Quicklist
+        <button class="expander_button"></button>
+      </h4>
+    </div>
+    <div class="medley_collapsed_contents">
+      <ul>
+          <li>Loading...</li>
+      </ul>
+    </div>
+      <div class="medley_expanded_contents" id="quicklist_medley_contents">
+  <ul>
+  </ul>
+</div>
+</div>
+  <script type="text/javascript">
+//<![CDATA[
+Quicklist.teaser('7aaa18ed5f')
+//]]>
+</script>
+
+  
+	<div class="sponsored_videos">
+    <div class="sponsored_videos_header">
+      <h4>Sponsored Videos</h4>
+    </div>
+    <div class="sponsored_videos_content">
+      <ul>
+		      <li><div class="vp video_preview medium_preview medley_vp" data-viewkey="vdd1d6ee548" id="medium_311902">
+  <div class="thumb rectangle_medium"><a href="/videos/dd1d6ee548/after-last-night-sunday-morning" class="nail" title="After Last Night: Sunday Morning from Bedsider"><img alt="After Last Night: Sunday Morning from Bedsider" class="thumbnail" height="90" src="http://assets0.ordienetworks.com/tmbs/dd1d6ee548/medium_5.jpg" width="124" /></a></div>
+  <a href="/videos/dd1d6ee548/after-last-night-sunday-morning" class="title" title="After Last Night: Sunday Morning from Bedsider">After Last Night: Sunday Morning</a>
+  <div class="details ">
+    
+    <span class="view_count">23,130 views</span>
+</div></div></li>
+		      <li><div class="vp video_preview medium_preview medley_vp" data-viewkey="v31a8f82077" id="medium_311254">
+  <div class="thumb rectangle_medium"><a href="/videos/31a8f82077/the-weird-science-and-big-business-of-working-girls-in-the-breakfast-club" class="nail" title="The Weird Science and Big Business of Working Girls in The Breakfast Club from Pantene"><img alt="The Weird Science and Big Business of Working Girls in The Breakfast Club from Pantene" class="thumbnail" height="90" src="http://assets0.ordienetworks.com/tmbs/31a8f82077/medium_10.jpg" width="124" /></a></div>
+  <a href="/videos/31a8f82077/the-weird-science-and-big-business-of-working-girls-in-the-breakfast-club" class="title" title="The Weird Science and Big Business of Working Girls in The Breakfast Club from Pantene">The Weird Science and Big Business of Working Girls in The Breakfas...</a>
+  <div class="details ">
+    
+    <span class="view_count">100,451 views</span>
+</div></div></li>
+		      <li><div class="vp video_preview medium_preview medley_vp" data-viewkey="v1fc3af65e3" id="medium_307786">
+  <div class="thumb rectangle_medium"><a href="/videos/1fc3af65e3/kia-optima-dunks-over-blake-griffin" class="nail" title="Kia Optima Dunks Over Blake Griffin from Kia and Blake Griffin"><img alt="Kia Optima Dunks Over Blake Griffin from Kia and Blake Griffin" class="thumbnail" height="90" src="http://assets0.ordienetworks.com/tmbs/1fc3af65e3/medium_custom_f1807c469d8c358e92876cf56c6e5534_22144.jpg" width="124" /></a></div>
+  <a href="/videos/1fc3af65e3/kia-optima-dunks-over-blake-griffin" class="title" title="Kia Optima Dunks Over Blake Griffin from Kia and Blake Griffin">Kia Optima Dunks Over Blake Griffin</a>
+  <div class="details ">
+    
+    <span class="view_count">508,498 views</span>
+</div></div></li>
+      </ul>
+    </div>
+	</div>
+
+
+  <div style="border:1px solid #454545;padding:6px;">
+<img src="http://assets0.ordienetworks.com/misc/video-treat1.gif"/>
+<object width="300" height="265" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" id="ordie_player_8570ed6b3c"><param name="movie" value="http://player.ordienetworks.com/flash/fodplayer.swf" /><param name="flashvars" value="key=8570ed6b3c&autostart=8cm&preroll=true&touch=false" /><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always"></param><param name="wmode" value="transparent"></param><embed width="300" height="265" flashvars="key=8570ed6b3c&autostart=8cm&preroll=true&touch=false" allowfullscreen="true" allowscriptaccess="always" quality="high" wmode="transparent" src="http://player.ordienetworks.com/flash/fodplayer.swf" name="ordie_player_8570ed6b3c" type="application/x-shockwave-flash"></embed></object>
+<img src="http://assets0.ordienetworks.com/misc/video-treat2.gif"/>
+</div>
+    <div class="shiny_previews without_shine" style="position:relative">
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="v26253a6013" id="medium_312263">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/26253a6013/coachella-ticket-unboxing?rel=featured" class="nail" title="Coachella Ticket Unboxing from Erin Gibson, manasewitsch, Funny Or Die, Alex Richanbach, and BoTown Sound"><img alt="Coachella Ticket Unboxing from Erin Gibson, manasewitsch, Funny Or Die, Alex Richanbach, and BoTown Sound" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/26253a6013/large_3.jpg" width="142" /></a><a href="/videos/26253a6013/coachella-ticket-unboxing"><img alt="" class="sprite vp_exclusive_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="ql_overlay ql_26253a6013"><a href="#" class="add_to_quicklist" data-qlviewkey="v26253a6013" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/26253a6013/coachella-ticket-unboxing?rel=featured" class="title" title="Coachella Ticket Unboxing from Erin Gibson, manasewitsch, Funny Or Die, Alex Richanbach, and BoTown Sound">Coachella Ticket Unboxing</a>
+			<span class="users">from <a href="/gibblertron" title="Erin Gibson">Erin Gibson</a>, <a href="/manasewitsch" title="manasewitsch">manasewitsch</a>, <a href="/funnyordie" title="Funny Or Die">Funny Or Die</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="v0431c2b257" id="medium_312260">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/0431c2b257/muppets-vs-goldman-sachs?rel=featured" class="nail" title="Muppets vs. Goldman Sachs from Neal McDonough, Kyle MacLachlan, stephenkramerglickman, Alex Fernie, Funny Or Die, Christin Trogan, Brett W. Bachman, Uncorked Productions, and Luke Barnett"><img alt="Muppets vs. Goldman Sachs from Neal McDonough, Kyle MacLachlan, stephenkramerglickman, Alex Fernie, Funny Or Die, Christin Trogan, Brett W. Bachman, Uncorked Productions, and Luke Barnett" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/0431c2b257/large_19.jpg" width="142" /></a><a href="/videos/0431c2b257/muppets-vs-goldman-sachs"><img alt="" class="sprite vp_exclusive_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="ql_overlay ql_0431c2b257"><a href="#" class="add_to_quicklist" data-qlviewkey="v0431c2b257" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/0431c2b257/muppets-vs-goldman-sachs?rel=featured" class="title" title="Muppets vs. Goldman Sachs from Neal McDonough, Kyle MacLachlan, stephenkramerglickman, Alex Fernie, Funny Or Die, Christin Trogan, Brett W. Bachman, Uncorked Productions, and Luke Barnett">Muppets vs. Goldman Sachs</a>
+			<span class="users">from <a href="/neal_mcdonough" title="Neal McDonough">Neal McDonough</a>, <a href="/kyle_maclachlan" title="Kyle MacLachlan">Kyle MacLachlan</a>, <a href="/stephenkramerglickman" title="stephenkramerglickman">stephenkramerglickman</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="vfbc173dedf" id="medium_312102">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/fbc173dedf/google-me?rel=featured" class="nail" title="Google Me from Lauryn Kahn, Drew Brooks, Funny Or Die, John McKay, Alex Richanbach, BoTown Sound, Brett W. Bachman, Ellie del Campo, and Kat Bardot"><img alt="Google Me from Lauryn Kahn, Drew Brooks, Funny Or Die, John McKay, Alex Richanbach, BoTown Sound, Brett W. Bachman, Ellie del Campo, and Kat Bardot" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/fbc173dedf/large_4.jpg" width="142" /></a><a href="/videos/fbc173dedf/google-me"><img alt="" class="sprite vp_exclusive_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="ql_overlay ql_fbc173dedf"><a href="#" class="add_to_quicklist" data-qlviewkey="vfbc173dedf" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/fbc173dedf/google-me?rel=featured" class="title" title="Google Me from Lauryn Kahn, Drew Brooks, Funny Or Die, John McKay, Alex Richanbach, BoTown Sound, Brett W. Bachman, Ellie del Campo, and Kat Bardot">Google Me</a>
+			<span class="users">from <a href="/ellekaye" title="Lauryn Kahn">Lauryn Kahn</a>, <a href="/drewbrooks" title="Drew Brooks">Drew Brooks</a>, <a href="/funnyordie" title="Funny Or Die">Funny Or Die</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="vb47c65a47e" id="medium_312316">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/b47c65a47e/shit-actors-think-but-don-t-say?rel=featured" class="nail" title="Shit Actors Think But Don't Say from Juliannaguill, Alison Brie, and cyrina fiallo"><img alt="Shit Actors Think But Don't Say from Juliannaguill, Alison Brie, and cyrina fiallo" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/b47c65a47e/large_16.jpg" width="142" /></a><div class="ql_overlay ql_b47c65a47e"><a href="#" class="add_to_quicklist" data-qlviewkey="vb47c65a47e" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/b47c65a47e/shit-actors-think-but-don-t-say?rel=featured" class="title" title="Shit Actors Think But Don't Say from Juliannaguill, Alison Brie, and cyrina fiallo">Shit Actors Think But Don't Say</a>
+			<span class="users">from <a href="/juliannaguill" title="Juliannaguill">Juliannaguill</a>, <a href="/alison_brie" title="Alison Brie">Alison Brie</a>, <a href="/cyrinafiallo" title="cyrina fiallo">cyrina fiallo</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="vebf5074757" id="medium_312393">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/ebf5074757/zou-bisou-bisou-van-damme?rel=featured" class="nail" title="Zou Bisou Bisou Van Damme from Zou Bisou Bisou"><img alt="Zou Bisou Bisou Van Damme from Zou Bisou Bisou" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/ebf5074757/large_10.jpg" width="142" /></a><div class="ql_overlay ql_ebf5074757"><a href="#" class="add_to_quicklist" data-qlviewkey="vebf5074757" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/ebf5074757/zou-bisou-bisou-van-damme?rel=featured" class="title" title="Zou Bisou Bisou Van Damme from Zou Bisou Bisou">Zou Bisou Bisou Van Damme</a>
+			<span class="users">from <a href="/zou_bisou_bisou" title="Zou Bisou Bisou">Zou Bisou Bisou</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="v2fcb8733fe" id="medium_311431">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/2fcb8733fe/the-hungover-games?rel=featured" class="nail" title="The Hungover Games  from Funny Or Die, Ashley Hinshaw, Kathryn Hahn, Lauryn Kahn, lauren, Drew Brooks, David Ferguson, BillyMerritt, Marisa Pinson, James Pumphrey, Marshall Givens, Ilana Cohn, Willy Roberts, Brett W. Bachman, Alex Richanbach, Martin C Vallejo, Ellie del Campo, and BoTown Sound"><img alt="The Hungover Games  from Funny Or Die, Ashley Hinshaw, Kathryn Hahn, Lauryn Kahn, lauren, Drew Brooks, David Ferguson, BillyMerritt, Marisa Pinson, James Pumphrey, Marshall Givens, Ilana Cohn, Willy Roberts, Brett W. Bachman, Alex Richanbach, Martin C Vallejo, Ellie del Campo, and BoTown Sound" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/2fcb8733fe/large_custom_e3cccc09904df018fc7663337276b0eb_29812.jpg" width="142" /></a><a href="/videos/2fcb8733fe/the-hungover-games"><img alt="" class="sprite vp_exclusive_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="ql_overlay ql_2fcb8733fe"><a href="#" class="add_to_quicklist" data-qlviewkey="v2fcb8733fe" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/2fcb8733fe/the-hungover-games?rel=featured" class="title" title="The Hungover Games  from Funny Or Die, Ashley Hinshaw, Kathryn Hahn, Lauryn Kahn, lauren, Drew Brooks, David Ferguson, BillyMerritt, Marisa Pinson, James Pumphrey, Marshall Givens, Ilana Cohn, Willy Roberts, Brett W. Bachman, Alex Richanbach, Martin C Vallejo, Ellie del Campo, and BoTown Sound">The Hungover Games </a>
+			<span class="users">from <a href="/funnyordie" title="Funny Or Die">Funny Or Die</a>, <a href="/ashley_hinshaw" title="Ashley Hinshaw">Ashley Hinshaw</a>, <a href="/kathryn_hahn" title="Kathryn Hahn">Kathryn Hahn</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="va5cf524f12" id="medium_311250">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/a5cf524f12/the-alabama-face-guy-los-angeles?rel=featured" class="nail" title="The Alabama Face Guy: Los Angeles from Jack Blankenship, questlove, Rick Springfield, Danny Jelinek, Nick Wiger, Funny Or Die, manasewitsch, Mike Karnell, Alex Richanbach, Brian Lane, and Andrew Grissom"><img alt="The Alabama Face Guy: Los Angeles from Jack Blankenship, questlove, Rick Springfield, Danny Jelinek, Nick Wiger, Funny Or Die, manasewitsch, Mike Karnell, Alex Richanbach, Brian Lane, and Andrew Grissom" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/a5cf524f12/large_custom_25896af6ff2ee580e217b7250e7f9df5_33515.jpg" width="142" /></a><a href="/videos/a5cf524f12/the-alabama-face-guy-los-angeles"><img alt="" class="sprite vp_exclusive_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="ql_overlay ql_a5cf524f12"><a href="#" class="add_to_quicklist" data-qlviewkey="va5cf524f12" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/a5cf524f12/the-alabama-face-guy-los-angeles?rel=featured" class="title" title="The Alabama Face Guy: Los Angeles from Jack Blankenship, questlove, Rick Springfield, Danny Jelinek, Nick Wiger, Funny Or Die, manasewitsch, Mike Karnell, Alex Richanbach, Brian Lane, and Andrew Grissom">The Alabama Face Guy: Los Angeles</a>
+			<span class="users">from <a href="/jackblankenship" title="Jack Blankenship">Jack Blankenship</a>, <a href="/questlove" title="questlove">questlove</a>, <a href="/rick_springfield" title="Rick Springfield">Rick Springfield</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="vc22442cae5" id="medium_310654">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/c22442cae5/new-ipad-review?rel=featured" class="nail" title="New iPad Review from Funny Or Die, Ryan Perez, Nick Wiger, BoTown Sound, and Brian Lane"><img alt="New iPad Review from Funny Or Die, Ryan Perez, Nick Wiger, BoTown Sound, and Brian Lane" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/c22442cae5/large_14.jpg" width="142" /></a><a href="/videos/c22442cae5/new-ipad-review"><img alt="" class="sprite vp_exclusive_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="ql_overlay ql_c22442cae5"><a href="#" class="add_to_quicklist" data-qlviewkey="vc22442cae5" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/c22442cae5/new-ipad-review?rel=featured" class="title" title="New iPad Review from Funny Or Die, Ryan Perez, Nick Wiger, BoTown Sound, and Brian Lane">New iPad Review</a>
+			<span class="users">from <a href="/funnyordie" title="Funny Or Die">Funny Or Die</a>, <a href="/ryanperez" title="Ryan Perez">Ryan Perez</a>, <a href="/nickwiger" title="Nick Wiger">Nick Wiger</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="v8f1775487f" id="medium_310742">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/8f1775487f/weird-al-s-broadway-style-cabaret-review?rel=featured" class="nail" title="Weird Al's Broadway Style Cabaret Review from Funny Or Die, Al Yankovic, Thomas Lennon, Robert Ben Garant, Aimee Mann, Tim Heidecker, Brett Gelman, Garfunkel and Oates, Justin Donaldson, Jensen Karp, Drew Droege, and Josh Fadem"><img alt="Weird Al's Broadway Style Cabaret Review from Funny Or Die, Al Yankovic, Thomas Lennon, Robert Ben Garant, Aimee Mann, Tim Heidecker, Brett Gelman, Garfunkel and Oates, Justin Donaldson, Jensen Karp, Drew Droege, and Josh Fadem" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/8f1775487f/large_11.jpg" width="142" /></a><a href="/videos/8f1775487f/weird-al-s-broadway-style-cabaret-review"><img alt="" class="sprite vp_exclusive_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="ql_overlay ql_8f1775487f"><a href="#" class="add_to_quicklist" data-qlviewkey="v8f1775487f" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/8f1775487f/weird-al-s-broadway-style-cabaret-review?rel=featured" class="title" title="Weird Al's Broadway Style Cabaret Review from Funny Or Die, Al Yankovic, Thomas Lennon, Robert Ben Garant, Aimee Mann, Tim Heidecker, Brett Gelman, Garfunkel and Oates, Justin Donaldson, Jensen Karp, Drew Droege, and Josh Fadem">Weird Al's Broadway Style Cabaret Review</a>
+			<span class="users">from <a href="/funnyordie" title="Funny Or Die">Funny Or Die</a>, <a href="/al_yankovic_2" title="Al Yankovic">Al Yankovic</a>, <a href="/thomas_lennon" title="Thomas Lennon">Thomas Lennon</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="v5cd43bbf31" id="medium_310462">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/5cd43bbf31/the-tournament-challenge-challenged?rel=featured" class="nail" title="The Tournament Challenge Challenged from Chris O'Donnell, Stan Verrett, Matthew Morrison, Mark Valley, questlove, Jesse Williams, Jahvid Best, Ahna O'Reilly, Cody Horn, Funny Or Die, Avin Das, Andy Maxwell, Nick Wiger, Orlando Jones, Janina Gavankar, Christin Trogan, Kyle Bornheimer, Nic Nac Nicotera, and Alphonso McAuley"><img alt="The Tournament Challenge Challenged from Chris O'Donnell, Stan Verrett, Matthew Morrison, Mark Valley, questlove, Jesse Williams, Jahvid Best, Ahna O'Reilly, Cody Horn, Funny Or Die, Avin Das, Andy Maxwell, Nick Wiger, Orlando Jones, Janina Gavankar, Christin Trogan, Kyle Bornheimer, Nic Nac Nicotera, and Alphonso McAuley" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/5cd43bbf31/large_custom_c38bc4aa9f4a6fa0425eb96b8c298812_30480.jpg" width="142" /></a><a href="/videos/5cd43bbf31/the-tournament-challenge-challenged"><img alt="" class="sprite vp_exclusive_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="ql_overlay ql_5cd43bbf31"><a href="#" class="add_to_quicklist" data-qlviewkey="v5cd43bbf31" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/5cd43bbf31/the-tournament-challenge-challenged?rel=featured" class="title" title="The Tournament Challenge Challenged from Chris O'Donnell, Stan Verrett, Matthew Morrison, Mark Valley, questlove, Jesse Williams, Jahvid Best, Ahna O'Reilly, Cody Horn, Funny Or Die, Avin Das, Andy Maxwell, Nick Wiger, Orlando Jones, Janina Gavankar, Christin Trogan, Kyle Bornheimer, Nic Nac Nicotera, and Alphonso McAuley">The Tournament Challenge Challenged</a>
+			<span class="users">from <a href="/chris_odonnell" title="Chris O'Donnell">Chris O'Donnell</a>, <a href="/stan_verrett" title="Stan Verrett">Stan Verrett</a>, <a href="/matthew_morrison" title="Matthew Morrison">Matthew Morrison</a></span>
+</div>
+
+
+</div>
+	    <div class="vp slideshow_preview document_preview medium_preview wide_vp  " data-viewkey="v704b7bf83b" id="medium_312524">
+	
+    
+    <div class="details ">
+      <a href="/slideshows/704b7bf83b/pictures-of-bathroom-graffiti-done-right?rel=featured" class="title" title="9 Pictures of Bathroom Graffiti Done Right from Look What I Found">9 Pictures of Bathroom Graffiti Done Right</a>
+</div>		<div class="thumb square_large"><a href="/slideshows/704b7bf83b/pictures-of-bathroom-graffiti-done-right?rel=featured" class="nail" title="9 Pictures of Bathroom Graffiti Done Right from Look What I Found"><img alt="9 Pictures of Bathroom Graffiti Done Right from Look What I Found" class="thumbnail" src="http://assets0.ordienetworks.com/images/user_photos/1253674/631f4f2befcdafc17c635165b479cf0f_square_large.jpg" /></a><div class="ql_overlay ql_704b7bf83b"><a href="#" class="add_to_quicklist" data-qlviewkey="v704b7bf83b" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+			<span class="description">All of these pics unfortunately are cropped. They all actually include the line &quot;This is how it's done&quot; written underneath. </span>
+			<span class="users">by <a href="/lookwhatifound" title="Look What I Found">Look What I Found</a></span>
+</div>
+
+
+</div>
+	    <div class="vp picture_preview image_preview medium_preview wide_vp  " data-viewkey="v6c64de5277" id="medium_312535">
+	
+    
+    <div class="details ">
+      <a href="/pictures/6c64de5277/the-first-few-pages-of-michael-bay-s-script-to-ninja-turtles?rel=featured" class="title" title="The First Few Pages of Michael Bay's Script to 'Ninja Turtles' from Dan Abramson">The First Few Pages of Michael Bay's Script to 'Ninja Turtles'</a>
+</div>		<div class="thumb square_large"><a href="/pictures/6c64de5277/the-first-few-pages-of-michael-bay-s-script-to-ninja-turtles?rel=featured" class="nail" title="The First Few Pages of Michael Bay's Script to 'Ninja Turtles' from Dan Abramson"><img alt="The First Few Pages of Michael Bay's Script to 'Ninja Turtles' from Dan Abramson" class="thumbnail" src="http://assets0.ordienetworks.com/tmbs/6c64de5277/square_large_custom_2e16d8fa5616ad1114a5fbc0bbf70fef_49387.jpg" /></a><div class="ql_overlay ql_6c64de5277"><a href="#" class="add_to_quicklist" data-qlviewkey="v6c64de5277" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+			<span class="description">Michael Bay has riled up the fans of Teenage Mutant Ninja Turtles, as he plans to reboot the franchise with some changes: they're no longer teenagers. And they'r...</span>
+			<span class="users">from <a href="/dan" title="Dan Abramson">Dan Abramson</a></span>
+</div>
+
+
+</div>
+	    <div class="vp list_preview document_preview medium_preview wide_vp  " data-viewkey="v4fac6b567b" id="medium_312347">
+	
+    
+    <div class="details ">
+      <a href="/lists/4fac6b567b/forgotten-ways-white-shows-have-attempted-to-incorporate-black-characters?rel=featured" class="title" title="5 Forgotten Ways White TV Shows Have Attempted to Incorporate Black Characters  from A General Nonchalance">5 Forgotten Ways White TV Shows Have Attempted to Incorporate Black Characters </a>
+</div>		<div class="thumb square_large"><a href="/lists/4fac6b567b/forgotten-ways-white-shows-have-attempted-to-incorporate-black-characters?rel=featured" class="nail" title="5 Forgotten Ways White TV Shows Have Attempted to Incorporate Black Characters  from A General Nonchalance"><img alt="5 Forgotten Ways White TV Shows Have Attempted to Incorporate Black Characters  from A General Nonchalance" class="thumbnail" src="http://assets0.ordienetworks.com/images/user_photos/1253554/f186d6fe92ec1f2dbdb4127a2f95a84e_square_large.jpg" /></a><div class="ql_overlay ql_4fac6b567b"><a href="#" class="add_to_quicklist" data-qlviewkey="v4fac6b567b" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+			<span class="description">The season premiere of &quot;Mad Men,&quot; found some no-so-subtle ways to incorporate black characters into its very, very, very white show. But it's not the first hit s...</span>
+			<span class="users">by <a href="/ageneralnonchalance" title="A General Nonchalance">A General Nonchalance</a></span>
+</div>
+
+
+</div>
+	    <div class="vp slideshow_preview document_preview medium_preview wide_vp  " data-viewkey="vab705df764" id="medium_312161">
+	
+    
+    <div class="details ">
+      <a href="/slideshows/ab705df764/things-that-seem-legit?rel=featured" class="title" title="15 Things That Seem Legit from You're Doing It Wrong">15 Things That Seem Legit</a>
+</div>		<div class="thumb square_large"><a href="/slideshows/ab705df764/things-that-seem-legit?rel=featured" class="nail" title="15 Things That Seem Legit from You're Doing It Wrong"><img alt="15 Things That Seem Legit from You're Doing It Wrong" class="thumbnail" src="http://assets0.ordienetworks.com/images/user_photos/1253408/be93df7ac3e0ebeb90319c6265d3d074_square_large.jpg" /></a><div class="ql_overlay ql_ab705df764"><a href="#" class="add_to_quicklist" data-qlviewkey="vab705df764" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+			<span class="description">Yup. We can vouch for these.  </span>
+			<span class="users">by <a href="/doingitwrong" title="You're Doing It Wrong">You're Doing It Wrong</a></span>
+</div>
+
+
+</div>
+	    <div class="vp picture_preview image_preview medium_preview wide_vp  " data-viewkey="vf8db40a054" id="medium_312363">
+	
+    
+    <div class="details ">
+      <a href="/pictures/f8db40a054/why-did-rick-santorum-swear-at-a-ny-times-reporter?rel=featured" class="title" title="Why Did Rick Santorum Swear at a NY Times Reporter? [PIE CHART] from Graphs!">Why Did Rick Santorum Swear at a NY Times Reporter? [PIE CHART]</a>
+</div>		<div class="thumb square_large"><a href="/pictures/f8db40a054/why-did-rick-santorum-swear-at-a-ny-times-reporter?rel=featured" class="nail" title="Why Did Rick Santorum Swear at a NY Times Reporter? [PIE CHART] from Graphs!"><img alt="Why Did Rick Santorum Swear at a NY Times Reporter? [PIE CHART] from Graphs!" class="thumbnail" src="http://assets0.ordienetworks.com/tmbs/f8db40a054/square_large_custom_8a55c49617f10977dd77b9568791ca17_36947.jpg" /></a><div class="ql_overlay ql_f8db40a054"><a href="#" class="add_to_quicklist" data-qlviewkey="vf8db40a054" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+			<span class="description">Recently, Rick Santorum lashed out against a reporter from the New York Times, calling his reporting &quot;bullshit.&quot; Granted, nothing Santorum says at this point is ...</span>
+			<span class="users">from <a href="/graphs" title="Graphs!">Graphs!</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="vc7ba8def10" id="medium_312326">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/c7ba8def10/zou-bisou-bisou-with-elephants-and-lazers?rel=featured" class="nail" title="Zou Bisou Bisou (with Elephants and Lazers) from Zou Bisou Bisou"><img alt="Zou Bisou Bisou (with Elephants and Lazers) from Zou Bisou Bisou" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/c7ba8def10/large_9.jpg" width="142" /></a><div class="ql_overlay ql_c7ba8def10"><a href="#" class="add_to_quicklist" data-qlviewkey="vc7ba8def10" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/c7ba8def10/zou-bisou-bisou-with-elephants-and-lazers?rel=featured" class="title" title="Zou Bisou Bisou (with Elephants and Lazers) from Zou Bisou Bisou">Zou Bisou Bisou (with Elephants and Lazers)</a>
+			<span class="users">from <a href="/zou_bisou_bisou" title="Zou Bisou Bisou">Zou Bisou Bisou</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="vb4a1d3bc03" id="medium_312325">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/b4a1d3bc03/zou-jazzoo-jazzoo?rel=featured" class="nail" title="Zou Jazzoo Jazzoo from Zou Bisou Bisou"><img alt="Zou Jazzoo Jazzoo from Zou Bisou Bisou" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/b4a1d3bc03/large_11.jpg" width="142" /></a><div class="ql_overlay ql_b4a1d3bc03"><a href="#" class="add_to_quicklist" data-qlviewkey="vb4a1d3bc03" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/b4a1d3bc03/zou-jazzoo-jazzoo?rel=featured" class="title" title="Zou Jazzoo Jazzoo from Zou Bisou Bisou">Zou Jazzoo Jazzoo</a>
+			<span class="users">from <a href="/zou_bisou_bisou" title="Zou Bisou Bisou">Zou Bisou Bisou</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="v2e85abc245" id="medium_312269">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/2e85abc245/an-interview-with-will-ferrell-for-casa-de-mi-padre?rel=featured" class="nail" title="An Interview with Will Ferrell for Casa De Mi Padre  from Will Ferrell"><img alt="An Interview with Will Ferrell for Casa De Mi Padre  from Will Ferrell" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/2e85abc245/large_6.jpg" width="142" /></a><div class="ql_overlay ql_2e85abc245"><a href="#" class="add_to_quicklist" data-qlviewkey="v2e85abc245" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/2e85abc245/an-interview-with-will-ferrell-for-casa-de-mi-padre?rel=featured" class="title" title="An Interview with Will Ferrell for Casa De Mi Padre  from Will Ferrell">An Interview with Will Ferrell for Casa De Mi Padre </a>
+			<span class="users">from <a href="/will_ferrell" title="Will Ferrell">Will Ferrell</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="v50b40b12f3" id="medium_311749">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/50b40b12f3/project-strip-club?rel=featured" class="nail" title="Project Strip Club from liamshow"><img alt="Project Strip Club from liamshow" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/50b40b12f3/large_7.jpg" width="142" /></a><div class="ql_overlay ql_50b40b12f3"><a href="#" class="add_to_quicklist" data-qlviewkey="v50b40b12f3" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/50b40b12f3/project-strip-club?rel=featured" class="title" title="Project Strip Club from liamshow">Project Strip Club</a>
+			<span class="users">from <a href="/liamshow" title="liamshow">liamshow</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="vedb4de1f11" id="medium_312097">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/edb4de1f11/revenge-of-the-pie?rel=featured" class="nail" title="Revenge Of The Pie from Jason Biggs and American Reunion"><img alt="Revenge Of The Pie from Jason Biggs and American Reunion" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/edb4de1f11/large_11.jpg" width="142" /></a><div class="ql_overlay ql_edb4de1f11"><a href="#" class="add_to_quicklist" data-qlviewkey="vedb4de1f11" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/edb4de1f11/revenge-of-the-pie?rel=featured" class="title" title="Revenge Of The Pie from Jason Biggs and American Reunion">Revenge Of The Pie</a>
+			<span class="users">from <a href="/jason_biggs" title="Jason Biggs">Jason Biggs</a>, <a href="/american_reunion" title="American Reunion">American Reunion</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="vc3a7c381e4" id="medium_311425">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/c3a7c381e4/dog-poops-mid-competition?rel=featured" class="nail" title="Dog Poops Mid-Competition from That Happened!"><img alt="Dog Poops Mid-Competition from That Happened!" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/c3a7c381e4/large_11.jpg" width="142" /></a><div class="ql_overlay ql_c3a7c381e4"><a href="#" class="add_to_quicklist" data-qlviewkey="vc3a7c381e4" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/c3a7c381e4/dog-poops-mid-competition?rel=featured" class="title" title="Dog Poops Mid-Competition from That Happened!">Dog Poops Mid-Competition</a>
+			<span class="users">from <a href="/thathappened" title="That Happened!">That Happened!</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="v25f8f37f31" id="medium_311880">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/25f8f37f31/pilot-season-doctors-without-orders?rel=featured" class="nail" title="Pilot Season &quot;Doctors Without Orders&quot; from andyblitz and Maria Thayer"><img alt="Pilot Season &quot;Doctors Without Orders&quot; from andyblitz and Maria Thayer" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/25f8f37f31/large_11.jpg" width="142" /></a><div class="ql_overlay ql_25f8f37f31"><a href="#" class="add_to_quicklist" data-qlviewkey="v25f8f37f31" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/25f8f37f31/pilot-season-doctors-without-orders?rel=featured" class="title" title="Pilot Season &quot;Doctors Without Orders&quot; from andyblitz and Maria Thayer">Pilot Season &quot;Doctors Without Orders&quot;</a>
+			<span class="users">from <a href="/andyblitz" title="andyblitz">andyblitz</a>, <a href="/mariathayer" title="Maria Thayer">Maria Thayer</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="v70e6f00531" id="medium_311879">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/70e6f00531/mad-men-fall-of-the-iron-curtain?rel=featured" class="nail" title="MAD MEN: Fall Of The Iron Curtain from Alex Thurman"><img alt="MAD MEN: Fall Of The Iron Curtain from Alex Thurman" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/70e6f00531/large_custom_ff35770e6cc05fdf0f6791867eb6fd43_31135.jpg" width="142" /></a><div class="ql_overlay ql_70e6f00531"><a href="#" class="add_to_quicklist" data-qlviewkey="v70e6f00531" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/70e6f00531/mad-men-fall-of-the-iron-curtain?rel=featured" class="title" title="MAD MEN: Fall Of The Iron Curtain from Alex Thurman">MAD MEN: Fall Of The Iron Curtain</a>
+			<span class="users">from <a href="/fanficdungeon" title="Alex Thurman">Alex Thurman</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="v6515e3744e" id="medium_138674">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/6515e3744e/ma-men?rel=featured" class="nail" title="MA Men  from Joey McIntyre, Drew Antzis, Jessica Chaffin, and Antonio Scarlata"><img alt="MA Men  from Joey McIntyre, Drew Antzis, Jessica Chaffin, and Antonio Scarlata" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/6515e3744e/large_11.jpg" width="142" /></a><a href="/videos/6515e3744e/ma-men"><img alt="" class="sprite vp_exclusive_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="ql_overlay ql_6515e3744e"><a href="#" class="add_to_quicklist" data-qlviewkey="v6515e3744e" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/6515e3744e/ma-men?rel=featured" class="title" title="MA Men  from Joey McIntyre, Drew Antzis, Jessica Chaffin, and Antonio Scarlata">MA Men </a>
+			<span class="users">from <a href="/joey_mcintyre" title="Joey McIntyre">Joey McIntyre</a>, <a href="/drew" title="Drew Antzis">Drew Antzis</a>, <a href="/jchaff" title="Jessica Chaffin">Jessica Chaffin</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="vb473edbd41" id="medium_309996">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/b473edbd41/dirty-dishes?rel=featured" class="nail" title="Dirty Dishes from DeadKevinSketch"><img alt="Dirty Dishes from DeadKevinSketch" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/b473edbd41/large_11.jpg" width="142" /></a><div class="ql_overlay ql_b473edbd41"><a href="#" class="add_to_quicklist" data-qlviewkey="vb473edbd41" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/b473edbd41/dirty-dishes?rel=featured" class="title" title="Dirty Dishes from DeadKevinSketch">Dirty Dishes</a>
+			<span class="users">from <a href="/deadkevinsketch" title="DeadKevinSketch">DeadKevinSketch</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="vaefc0a521e" id="medium_311839">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/aefc0a521e/sunday-is-coming?rel=featured" class="nail" title="Sunday Is Coming from Chris Starr"><img alt="Sunday Is Coming from Chris Starr" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/aefc0a521e/large_16.jpg" width="142" /></a><div class="ql_overlay ql_aefc0a521e"><a href="#" class="add_to_quicklist" data-qlviewkey="vaefc0a521e" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/aefc0a521e/sunday-is-coming?rel=featured" class="title" title="Sunday Is Coming from Chris Starr">Sunday Is Coming</a>
+			<span class="users">from <a href="/chrisstarr" title="Chris Starr">Chris Starr</a></span>
+</div>
+
+
+</div>
+	    <div class="vp article_preview document_preview medium_preview wide_vp  " data-viewkey="v730d0a683d" id="medium_311986">
+	
+    
+    <div class="details ">
+      <a href="/articles/730d0a683d/link-dump-best-of-aziz-ansari-s-reddit-q-a-the-future-of-mad-men-and-more?rel=featured" class="title" title="Link Dump: Best of Aziz Ansari's Reddit Q&amp;A, The Future of Mad Men, and More  from FOD Link Dump">Link Dump: Best of Aziz Ansari's Reddit Q&amp;A, The Future of Mad Men, and More </a>
+</div>		<div class="thumb square_large"><a href="/articles/730d0a683d/link-dump-best-of-aziz-ansari-s-reddit-q-a-the-future-of-mad-men-and-more?rel=featured" class="nail" title="Link Dump: Best of Aziz Ansari's Reddit Q&amp;A, The Future of Mad Men, and More  from FOD Link Dump"><img alt="Link Dump: Best of Aziz Ansari's Reddit Q&amp;A, The Future of Mad Men, and More  from FOD Link Dump" class="thumbnail" src="http://assets0.ordienetworks.com/images/user_photos/1253274/f818d966ff4ea2ab58cb7b0927730a08_square_large.png" /></a><div class="ql_overlay ql_730d0a683d"><a href="#" class="add_to_quicklist" data-qlviewkey="v730d0a683d" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+			<span class="description">Plus a fantastic cat picture. </span>
+			<span class="users">by <a href="/linkdump" title="FOD Link Dump">FOD Link Dump</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="vaa88347a5d" id="medium_311768">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/aa88347a5d/inside-the-tebow-trade?rel=featured" class="nail" title="Inside the Tebow Trade from Chris Marrs and David Paul Meyer"><img alt="Inside the Tebow Trade from Chris Marrs and David Paul Meyer" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/aa88347a5d/large_9.jpg" width="142" /></a><div class="ql_overlay ql_aa88347a5d"><a href="#" class="add_to_quicklist" data-qlviewkey="vaa88347a5d" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/aa88347a5d/inside-the-tebow-trade?rel=featured" class="title" title="Inside the Tebow Trade from Chris Marrs and David Paul Meyer">Inside the Tebow Trade</a>
+			<span class="users">from <a href="/cmarrs" title="Chris Marrs">Chris Marrs</a>, <a href="/dpmeyer" title="David Paul Meyer">David Paul Meyer</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="v1b5b15361d" id="medium_303422">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/1b5b15361d/happy-place-episode-1?rel=featured" class="nail" title="Happy Place Episode 1 from norakirkpatrick, whithertford, Matt Jones, Allan McLeod, Danny &amp; Jason, manasewitsch, Danny Jelinek, whetzell, Funny Or Die, Doug Jones, Christin Trogan, and BoTown Sound"><img alt="Happy Place Episode 1 from norakirkpatrick, whithertford, Matt Jones, Allan McLeod, Danny &amp; Jason, manasewitsch, Danny Jelinek, whetzell, Funny Or Die, Doug Jones, Christin Trogan, and BoTown Sound" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/1b5b15361d/large_21.jpg" width="142" /></a><a href="/videos/1b5b15361d/happy-place-episode-1"><img alt="" class="sprite vp_exclusive_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="ql_overlay ql_1b5b15361d"><a href="#" class="add_to_quicklist" data-qlviewkey="v1b5b15361d" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/1b5b15361d/happy-place-episode-1?rel=featured" class="title" title="Happy Place Episode 1 from norakirkpatrick, whithertford, Matt Jones, Allan McLeod, Danny &amp; Jason, manasewitsch, Danny Jelinek, whetzell, Funny Or Die, Doug Jones, Christin Trogan, and BoTown Sound">Happy Place Episode 1</a>
+			<span class="users">from <a href="/norakirkpatrick" title="norakirkpatrick">norakirkpatrick</a>, <a href="/whithertford" title="whithertford">whithertford</a>, <a href="/therealmattjones" title="Matt Jones">Matt Jones</a></span>
+</div>
+
+
+</div>
+	    <div class="vp slideshow_preview document_preview medium_preview wide_vp  " data-viewkey="v5522d61f1e" id="medium_311881">
+	
+    
+    <div class="details ">
+      <a href="/slideshows/5522d61f1e/history-according-to-geraldo?rel=featured" class="title" title="History According to Geraldo from Rob Fee">History According to Geraldo</a>
+</div>		<div class="thumb square_large"><a href="/slideshows/5522d61f1e/history-according-to-geraldo?rel=featured" class="nail" title="History According to Geraldo from Rob Fee"><img alt="History According to Geraldo from Rob Fee" class="thumbnail" src="http://assets0.ordienetworks.com/images/user_photos/1253174/90a6123a99e75a2376f35b9501773ac7_square_large.jpg" /></a><div class="ql_overlay ql_5522d61f1e"><a href="#" class="add_to_quicklist" data-qlviewkey="v5522d61f1e" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+			<span class="description">What if Geraldo was right and every murder was the result of wearing a hoodie??</span>
+			<span class="users">by <a href="/robfee" title="Rob Fee">Rob Fee</a></span>
+</div>
+
+
+</div>
+	    <div class="vp picture_preview image_preview medium_preview wide_vp  " data-viewkey="v5b326b85c2" id="medium_311876">
+	
+    
+    <div class="details ">
+      <a href="/pictures/5b326b85c2/geraldo-rivera-reviews-a-hoodie-on-amazon?rel=featured" class="title" title="Geraldo Rivera Reviews a Hoodie on Amazon from Dan Abramson">Geraldo Rivera Reviews a Hoodie on Amazon</a>
+</div>		<div class="thumb square_large"><a href="/pictures/5b326b85c2/geraldo-rivera-reviews-a-hoodie-on-amazon?rel=featured" class="nail" title="Geraldo Rivera Reviews a Hoodie on Amazon from Dan Abramson"><img alt="Geraldo Rivera Reviews a Hoodie on Amazon from Dan Abramson" class="thumbnail" src="http://assets0.ordienetworks.com/tmbs/5b326b85c2/square_large_custom_eb86df7fa264563673c6ce6adf1563ab_31707.jpg" /></a><div class="ql_overlay ql_5b326b85c2"><a href="#" class="add_to_quicklist" data-qlviewkey="v5b326b85c2" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+			<span class="description">He did not like it. </span>
+			<span class="users">from <a href="/dan" title="Dan Abramson">Dan Abramson</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="vdfead2eb1e" id="medium_311599">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/dfead2eb1e/satan-and-jesus-discuss-peyton-manning?rel=featured" class="nail" title="Satan and Jesus Discuss Peyton Manning from Funny Or Die, Ray Wise, Avin Das, Nick Wiger, rachelgoldenberg, Brian Lane, and JohnFord"><img alt="Satan and Jesus Discuss Peyton Manning from Funny Or Die, Ray Wise, Avin Das, Nick Wiger, rachelgoldenberg, Brian Lane, and JohnFord" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/dfead2eb1e/large_3.jpg" width="142" /></a><a href="/videos/dfead2eb1e/satan-and-jesus-discuss-peyton-manning"><img alt="" class="sprite vp_exclusive_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="ql_overlay ql_dfead2eb1e"><a href="#" class="add_to_quicklist" data-qlviewkey="vdfead2eb1e" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/dfead2eb1e/satan-and-jesus-discuss-peyton-manning?rel=featured" class="title" title="Satan and Jesus Discuss Peyton Manning from Funny Or Die, Ray Wise, Avin Das, Nick Wiger, rachelgoldenberg, Brian Lane, and JohnFord">Satan and Jesus Discuss Peyton Manning</a>
+			<span class="users">from <a href="/funnyordie" title="Funny Or Die">Funny Or Die</a>, <a href="/ray_wise" title="Ray Wise">Ray Wise</a>, <a href="/avindas" title="Avin Das">Avin Das</a></span>
+</div>
+
+
+</div>
+	    <div class="vp slideshow_preview document_preview medium_preview wide_vp  " data-viewkey="v2718b7cacb" id="medium_311613">
+	
+    
+    <div class="details ">
+      <a href="/slideshows/2718b7cacb/every-pinterest-board-post-ever?rel=featured" class="title" title="Every Pinterest Board Post Ever from Ally Hord">Every Pinterest Board Post Ever</a>
+</div>		<div class="thumb square_large"><a href="/slideshows/2718b7cacb/every-pinterest-board-post-ever?rel=featured" class="nail" title="Every Pinterest Board Post Ever from Ally Hord"><img alt="Every Pinterest Board Post Ever from Ally Hord" class="thumbnail" src="http://assets0.ordienetworks.com/images/user_photos/1252908/b650a42b6382c5646c13fbf87fb331e0_square_large.jpg" /></a><div class="ql_overlay ql_2718b7cacb"><a href="#" class="add_to_quicklist" data-qlviewkey="v2718b7cacb" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+			<span class="description">It's no secret that Pinterest is the next big thing on the internet. But it DOES seem to be a secret that all it is is an annoying platform for people to post du...</span>
+			<span class="users">by <a href="/allyhord" title="Ally Hord">Ally Hord</a></span>
+</div>
+
+
+</div>
+	    <div class="vp video_preview medium_preview wide_vp  " data-viewkey="v3c265aa42f" id="medium_311783">
+	
+
+	  <div class="thumb rectangle_large"><a href="/videos/3c265aa42f/dynamite-roller-coaster-riding-tips?rel=featured" class="nail" title="Dynamite Roller Coaster Riding Tips from Taio Cruz, Funny Or Die, FriendsRUs, NickCorirossi, and Charles Ingram"><img alt="Dynamite Roller Coaster Riding Tips from Taio Cruz, Funny Or Die, FriendsRUs, NickCorirossi, and Charles Ingram" class="thumbnail" height="112" src="http://assets0.ordienetworks.com/tmbs/3c265aa42f/large_20.jpg" width="142" /></a><a href="/videos/3c265aa42f/dynamite-roller-coaster-riding-tips"><img alt="" class="sprite vp_exclusive_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><div class="ql_overlay ql_3c265aa42f"><a href="#" class="add_to_quicklist" data-qlviewkey="v3c265aa42f" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+	    <a href="/videos/3c265aa42f/dynamite-roller-coaster-riding-tips?rel=featured" class="title" title="Dynamite Roller Coaster Riding Tips from Taio Cruz, Funny Or Die, FriendsRUs, NickCorirossi, and Charles Ingram">Dynamite Roller Coaster Riding Tips</a>
+			<span class="users">from <a href="/taio_cruz" title="Taio Cruz">Taio Cruz</a>, <a href="/funnyordie" title="Funny Or Die">Funny Or Die</a>, <a href="/friendsrus" title="FriendsRUs">FriendsRUs</a></span>
+</div>
+
+
+</div>
+	    <div class="vp slideshow_preview document_preview medium_preview wide_vp  " data-viewkey="v42066e4cb3" id="medium_311617">
+	
+    
+    <div class="details ">
+      <a href="/slideshows/42066e4cb3/34-funniest-walking-dead-memes-from-season-2?rel=featured" class="title" title="34 Hilarious 'Walking Dead' Memes from Season 2 from Dashiell Driscoll and Memes!">34 Hilarious 'Walking Dead' Memes from Season 2</a>
+</div>		<div class="thumb square_large"><a href="/slideshows/42066e4cb3/34-funniest-walking-dead-memes-from-season-2?rel=featured" class="nail" title="34 Hilarious 'Walking Dead' Memes from Season 2 from Dashiell Driscoll and Memes!"><img alt="34 Hilarious 'Walking Dead' Memes from Season 2 from Dashiell Driscoll and Memes!" class="thumbnail" src="http://assets0.ordienetworks.com/images/user_photos/1252925/11283dac7035a801c240f8ee6a87f127_square_large.png" /></a><div class="ql_overlay ql_42066e4cb3"><a href="#" class="add_to_quicklist" data-qlviewkey="v42066e4cb3" title="Add to Quicklist"><img alt="" class="sprite quicklist_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a><img alt="" class="sprite quicklist_added_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /><span class="added_in_quicklist">Added</span></div></div>
+	  <div class="details ">
+			<span class="description">Carl! Get back in the house and laugh your sheriff hat off at these memes.</span>
+			<span class="users">by <a href="/dashiell" title="Dashiell Driscoll">Dashiell Driscoll</a>, <a href="/memes" title="Memes!">Memes!</a></span>
+</div>
+
+
+</div>
+    <div class="clear_left">&nbsp;</div>
+  </div>
+
+</div>
+
+<div id="content_footer" >
+  		<div class="widget" id="widget_299">
+	
+</div>
+
+</div>
+
+
+
+
+
+
+      	
+      	<div style="font-size:0.1em;clear:both">&nbsp;</div>
+      </div>
+      <ul id="content-footer">
+  <li class="social">
+    <h5>
+        follow us on the social webz
+    </h5>
+    <ul class="connect-buttons">
+      <li>
+        <a href="http://bit.ly/dpGmZb" data-popup="true" rel="nofollow"><img alt="" class="sprite connect-buttons-twitter" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a>
+      </li>
+      <li>
+        <a href="http://bit.ly/cEU6CQ" data-popup="true" rel="nofollow"><img alt="" class="sprite connect-buttons-facebook" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a>
+      </li>
+      <li>
+        <a href="http://bit.ly/a8Mz9G" data-popup="true" rel="nofollow"><img alt="" class="sprite connect-buttons-tumblr" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a>
+      </li>
+    </ul>
+  </li>
+  <li class="newsletter">
+      <img src="http://assets0.ordienetworks.com/images/connect_widget/envelope.png" title="Dear Penthouse, I never thought it would happen to me but..." class="letter">
+      <img src="http://assets0.ordienetworks.com/images/connect_widget/title.png" title="Funny Or Die Newsletter">
+      <p> A weekly roundup of everything great from the site to your inbox. It's funny, we promise. </p>
+      <div>
+         <div id="newsletter_subscription_box">
+           <div id="newsletter_subscription_waiting" style="display:none;">
+            <h4><img alt="Spinner" src="http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif" />Keep your pants on...</h4>
+          </div>
+          <div id='newsletter_subscription_entry' style='margin-bottom:8px;'>
+             <form accept-charset="UTF-8" action="/mailing_lists/signup/newsletter_subscription" data-remote="true" id="footer_newsletter_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jCCvQ8gZiC/Z6CzTQm+RAWJ5hZPkXAsafGy49EIKo7s=" /></div>
+               <input class="bluestroke" id="email" name="email" placeholder="Enter your email here!" type="text" value="" />
+               <input id="signup_page" name="signup_page" type="hidden" value="content_footer" />
+               <input class="button" id="news_button" name="commit" type="submit" value="JOIN" />
+</form>          </div>
+        </div>
+      </div>
+  </li>
+  <li class="store">
+    <a href="/the_occasional" data-popup="true"><img alt="Content-footer" src="http://public0.ordienetworks.com/assets/the_occasional/content-footer-d370cbf3d43fafb6cd82f4ead12b7026.jpg" /></a>
+  </li>
+</ul>
+
+<script type="text/javascript">
+//<![CDATA[
+
+  $(function() {
+    $('#footer_newsletter_form').submit(function() {
+      $('#newsletter_subscription_waiting').html('<h4><img alt=\"Spinner\" src=\"http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif\" />Keep your pants on...<\/h4>');
+      $('#newsletter_subscription_entry').hide();
+      $('#newsletter_subscription_waiting').show();
+    });
+  });
+
+//]]>
+</script>
+    </div>
+    <div class="clear"> </div>
+    
+<div id="footer">    
+  <div id="site_links" class="footer_section">
+    <h3>This Site</h3>
+    <ul>
+      <li><a href="/">Funny Videos</a></li>
+      <li><a href="/celebrity_videos">Celebrity Videos</a></li>
+      <li><a href="/photos/captions">Caption Contest</a></li>
+    </ul>
+    <a href="http://itunes.apple.com/us/artist/funny-or-die/id299546682" class="ios-app-store" data-popup="true" rel="nofollow" title="Funny or Die available in the iOS App Store">
+      <img alt="" class="sprite connect-buttons-ios-app-store" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" />
+</a>  </div>
+  <div id="about_links" class="footer_section">
+    <h3>Business &amp; Stuff</h3>
+    <ul>
+      <li><a href="/about">About Us</a></li>
+      <li><a href="#" onclick="show_dialog('#contact_us_dialog');load_support_widget(); return false;" reload="false">Contact Us</a></li>
+      <li><a href="/faqs" data-popup="true" rel="nofollow">Help / FAQs</a></li>
+      <li><a href="/about/terms">Terms of Use</a></li>
+      <li><a href="/about/privacy">Privacy Policy</a></li>
+      <li><a href="/about/advertising">Advertise</a></li>
+      <li><a href="https://www.pagegage.com/Default.aspx?m=n&amp;o=F37062D9A65543A46F2BA13299BA77A370A1C4EB" rel="nofollow">Self-Serve Advertising</a></li>
+    </ul>
+  </div>
+  <div id="people_links" class="footer_section">
+    <h3>Our People</h3>
+    <ul>
+      <li><a href="/will_ferrell">Will Ferrell</a></li>
+      <li><a href="/judd_apatow">Judd Apatow</a></li>
+      <li><a href="/adam_mckay">Adam McKay</a></li>
+      <li><a href="/chris_henchy">Chris Henchy</a></li>
+    </ul>
+  </div>
+  <div id="celeb_links" class="footer_section">
+    <h3>Featured Celebrities</h3>
+    <div class="celeb_sub_list">
+      <ul>
+        <li><a href="/benstiller">Ben Stiller</a></li>
+        <li><a href="/emma_stone">Emma Stone</a></li>
+        <li><a href="/videos/5216488a3b/eva-longoria-sex-tape-from-perry-hilton">Eva Longoria</a></li>
+        <li><a href="/eva_mendes">Eva Mendes</a></li>
+        <li><a href="/heidi_montag">Heidi Montag</a></li>
+        <li><a href="/jackblack">Jack Black</a></li>
+        <li><a href="/james_franco">James Franco</a></li>
+        <li><a href="/jane_lynch">Jane Lynch</a></li>
+      </ul>
+    </div>
+    <div class="celeb_sub_list">
+      <ul>
+        <li><a href="/johnmayer">John Mayer</a></li>
+        <li><a href="/john_c_reilly">John C. Reilly</a></li>
+        <li><a href="/justin_bieber">Justin Bieber</a></li>
+        <li><a href="/lindsay_lohan">Lindsay Lohan</a></li>
+        <li><a href="/marion_cotillard">Marion Cotillard</a></li>
+        <li><a href="/michael_cera">Michael Cera</a></li>
+        <li><a href="/natalie_portman">Natalie Portman</a></li>
+        <li><a href="/nick_swardson">Nick Swardson</a></li>
+      </ul>
+    </div>
+    <div class="celeb_sub_list">
+      <ul>
+        <li><a href="/oliviamunn">Olivia Munn</a></li>
+        <li><a href="/paris_hilton">Paris Hilton</a></li>
+        <li><a href="/ron_howard">Ron Howard</a></li>
+        <li><a href="/ryan_reynolds">Ryan Reynolds</a></li>
+        <li><a href="/sarah_silverman">Sarah Silverman</a></li>
+        <li><a href="/willarnett">Will Arnett</a></li>
+        <li><a href="/zac_efron">Zac Efron</a></li>
+        <li><a href="/zachgalifianakis">Zach Galifianakis</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div id="copyright_line">
+  Copyright &copy; 2012 Funny or Die Inc. All rights reserved.
+</div>  
+
+
+    <div id='header_holder' style="display: none;">
+  
+</div>
+
+<script charset="utf-8" type="text/javascript">
+//<![CDATA[
+
+  function load_ad_iframes() {
+    $(ad_array).each(function(index, elm) {
+      var ad_iframe = document.createElement('iframe');
+      $(ad_iframe).attr({
+        noresize: true,
+        scrolling: 'no',
+        hspace: 0,
+        vspace: 0,
+        frameborder: 0,
+        marginheight: 0,
+        marginwidth: 0,
+        allowTransparency: true,
+        id: '_' + elm[0] + '_ad',
+        src: elm[1],
+        width: elm[2],
+        height: elm[3]
+      });
+      var ad = $('#_' + elm[0] + '_ad');
+      var container_div = ad.parent('div');
+  
+      if (index == ad_array.length - 1) {
+        container_div.empty();
+        container_div.append($(ad_iframe));
+        setTimeout(function() { $(ad_iframe).trigger(elm[0] + '.loaded');}, 100);
+        setTimeout(function() { $('#fb-root').trigger('lastAd.loaded');}, 100 + (100 * index));
+      } else {
+        $("body").bind(ad_array[index + 1][0] + '.loaded', function(event) {
+          container_div.empty();
+          container_div.append($(ad_iframe));
+          setTimeout(function() { $(ad_iframe).trigger(elm[0] + '.loaded');}, 100);
+        });
+      }
+    });
+  }
+
+  function rotate_ads() {
+    ord = Math.round(Math.random() * 100000000);
+    $("body").unbind('lastAd.loaded');
+    $(ad_array).each(function(index, elm) {
+      $("body").unbind(elm[0] + '.loaded');
+    });
+    
+    $(ad_array).each(function(index, ad) {
+      var src = ad[1].replace(/ord=\d+/, 'ord=' + ord);
+      if (src.indexOf(';is_refresh=true?') == -1) {
+        src = src.match(/[^\?]+/);
+        src += ';is_refresh=true?';
+      }
+      ad[1] = src;
+    });
+    clear_skin();
+    load_ad_iframes();
+  }
+
+  $(function() {
+    if (typeof ad_array != "undefined") {
+      ad_array.reverse(); 
+      load_ad_iframes();
+    }
+  });
+  
+	  if ((typeof ad_array != "undefined") && (typeof(stop_refresh) == 'undefined')) setInterval('rotate_ads()', 180000);
+
+//]]>
+</script>
+    <!-- Quantcast Tag, part 1 -->
+<script type="text/javascript">
+  var _qevents = _qevents || [];
+  (function() {
+   var elem = document.createElement('script');
+   elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+   elem.async = true;
+   elem.type = "text/javascript";
+   var scpt = document.getElementsByTagName('script')[0];
+   scpt.parentNode.insertBefore(elem, scpt);
+  })();
+</script>
+<!-- Quantcast Tag, part 2 -->
+<script type="text/javascript">
+  var _uk_traffic = (navigator.language || navigator.userLanguage || "").match(/-GB/i);
+  if(_uk_traffic) {
+    _qevents.push( [ { qacct:"p-70RhgKmunzjBs", labels: "Celebrity,Humour,Movies,Pop Culture"}, { qacct:"p-19gN3EBNl7sTw"} ] );
+  } else {
+    _qevents.push( { qacct:"p-19gN3EBNl7sTw"} );
+  }
+</script>
+<noscript>
+  <div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-19gN3EBNl7sTw.gif" height="1" width="1" alt="Quantcast"/></div>
+</noscript>
+
+    <!-- Begin comScore Tag -->
+<script>
+  document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + 
+    ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+</script>
+<script>
+  COMSCORE.beacon({
+    c1:2,
+    c2:"6035215",
+    c4:"http://www.funnyordie.com/slideshows/7aaa18ed5f/notes-from-chris-halloween-edition"
+  });
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=6035215&c3=&c4=http%3A%2F%2Fwww.funnyordie.com%2Fslideshows%2F7aaa18ed5f%2Fnotes-from-chris-halloween-edition&c5=&c6=&c15=&cj=1" style="display:none" width="0" height="0" alt="" />
+</noscript>
+<!-- End comScore Tag -->
+
+    <!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="funnyordie.com"></div>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s, 
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true; 
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include --> 
+
+
+    
+    <script type="text/javascript">
+//<![CDATA[
+
+      $(document).bind('fb_connect:loaded', function(event) {
+        FB.getLoginStatus(function(response) {
+          if (response.status === 'connected') {
+            if (User.isLoggedIn()) {
+              $('#fod_logout_link').hide();
+              $('#fb_logout_link').show();
+              return;
+            } else if (!User.isLoggedIn()) {
+              $('span.facebook_connect_text_18x18').text('Log in');
+            }
+          }
+          $('#fb_connect').css('display', 'inline');
+        });
+      });
+
+//]]>
+</script>
+<div id="fb-root"></div>
+
+<script type="text/javascript">
+//<![CDATA[
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId: '138711277798', 
+      status: true, 
+      cookie: true, 
+      xfbml: true,
+      channelUrl: document.location.protocol + '//www.funnyordie.com/fb_channel.html',
+      oauth: true
+    });
+    $('#fb-root').trigger('fb_connect:loaded');
+  };
+  jQuery("body").bind('lastAd.loaded', function() {
+    var fb = document.createElement('script'); 
+    fb.async = true;
+    fb.src = document.location.protocol +
+      '//connect.facebook.net/en_US/all.js#xfbml=1';
+    document.getElementById('fb-root').appendChild(fb);
+  });
+  
+  $(document).bind('fb_connect:loaded', function(event) {
+    if ($('#fb_connect_href').length) {
+      $('#fb_connect_href').click( function(event) {
+        $("#fb_connect").hide();
+        $("#fb_spinner").show();
+        FB.login(handleFBSessionResponse, {scope:'email'});
+        GA.event("fb_connect", "login", "7aaa18ed5f");
+        return false;
+      });
+    }
+    FB.Event.subscribe('edge.create', function(href, widget) {
+      GA.event("sharing", "facebook_like", href);
+    });
+    
+    FB.Event.subscribe('comment.create', function() {
+      GA.event('sharing', 'facebook_comment', '7aaa18ed5f');
+    });
+  });
+  
+  function handleFBSessionResponse(response) {
+    if ((response.authResponse) && (response.authResponse.accessToken)) {
+      $.post('/users/fb_connect_login', {fb_at: response.authResponse.accessToken});
+    }
+  }
+  
+  function add_fb_at() {
+    FB.getLoginStatus(function(response) {
+      if ((response.authResponse) && (response.authResponse.accessToken)) {
+        $('#fb_at').val(response.authResponse.accessToken);
+      }
+    });  
+  }
+  
+  $(function() {
+    $('#facebook_login_form').submit(function(event) {
+      $('#fb_login_form').hide();
+      $('#fb_login_spinner').show();
+      add_fb_at();
+      if ($('#fb_at').val() == '') event.preventDefault();
+    });
+  });
+
+//]]>
+</script>
+
+    <script type="text/javascript">
+//<![CDATA[
+
+  window.___gcfg = {
+    lang: 'en-US'
+  };
+
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+  
+  function trackGoogShare(plusone) {
+    if (plusone.state == 'on')
+      GA.event("sharing", "google_plus1", plusone.href);
+  }
+
+//]]>
+</script>
+    
+<span id="twt_anywhere_span"></span>
+
+<script type="text/javascript">
+//<![CDATA[
+  
+  function populateTwitterForm(user) {
+    $('#twitter_name').val(user.data('screen_name'));
+    $('#twitter_id').val(user.data('id'));
+    $('#twitter_image').val(user.data('profile_image_url'));
+  }
+  
+  var handleTwitterLogin;
+  $(document).bind("twitter:loaded", function() {
+    twttr.anywhere(function (T) {
+      if (T.isConnected()) {
+        handleTwitterLogin = function (val) {
+          $.post("/users/twitter_connect_login", { 'twitter_id': T.currentUser.data('id'), 'post_auth':  val });
+          populateTwitterForm(T.currentUser);
+        } 
+      } else { 
+        if ($('#twitter_login').length) {
+          $('#twitter_login').html("<span id='twitter_login'></span>");  
+          T("#twitter_login").connectButton({
+            authComplete: function(user) {
+              populateTwitterForm(user);
+              $.post("/users/twitter_connect_login", { 'twitter_id': T.currentUser.data('id'), 'post_auth': '' });
+            }
+          });
+        } 
+        if ($('#twitter_login_comments').length) {
+          $('#twitter_login_comments').html("<span id='twitter_login_comments'></span>");  
+          T("#twitter_login_comments").connectButton({
+            authComplete: function(user) {
+              populateTwitterForm(user);
+              $.post("/users/twitter_connect_login", { 'twitter_id': T.currentUser.data('id'), 'post_auth': '' });
+            }
+          });
+        }
+      }
+    });
+  });
+  
+  $(function() {
+    $('twitter_login_form').submit(function() {
+      $('#twitter_login_form').hide();
+      $('#twitter_login_spinner').show();
+    });
+  });
+
+//]]>
+</script>
+
+    
+    <div id="newsletter_dialog" class="newsletter_dialog dialog" style="display:none"><div id="newsletter_dialog_box_container" class="newsletter_dialog_box_container dialog_box_container"><div id="newsletter_dialog_box" class="newsletter_dialog_box dialog_box "><div id="newsletter_dialog_close" class="dialog_closer"><a href="#" onclick="dismiss_dialog('dismiss', '#newsletter_dialog'); return false;"><img alt="" class="sprite close_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a></div><div id="newsletter_dialog_box_content" class="newsletter_dialog_box_content dialog_box_content">
+  <div style="color:#000;line-height:140%">JOIN THE <img alt="Black_logo" src="http://public0.ordienetworks.com/assets/interstitial/black_logo-1c3305c8ee5ca78facad28041aeb1a05.png" style="margin-bottom:-12px" /><br/><span style="font-size: 50px">NEWSLETTER</span></div>
+  <div id="newsletter_dialog_middle_box"><span>The best of Funny or Die.</span><br/><span style="color:#000;font-size:18px"><em>PLUS</em> EXCLUSIVE CONTENT</span></div>
+  <div id='newsletter_subscription_waiting_dialog' style="display:none;font-size:13px;color:#000000">
+		<img alt="Spinner" src="http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif" /> Adding your email to our newsletter list...
+	</div>
+	<div id='newsletter_subscription_entry_dialog' style='margin:20px 0 5px;line-height:20%;font-size:20px;color:#000000'>
+		<form accept-charset="UTF-8" action="/mailing_lists/signup/newsletter_subscription" data-remote="true" id="newsletter_dialog_form" method="post" onsubmit=" "><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jCCvQ8gZiC/Z6CzTQm+RAWJ5hZPkXAsafGy49EIKo7s=" /></div>			<div id="advice-newsfeed_dialog_email" style="display:none;font-size:11px;color:#990000;margin:0 22px 3px 0">Please enter a valid email address.</div>
+			<input class="required validate-email" id="newsfeed_dialog_email" name="email" onfocus="if(this.value == 'Your Email'){this.value='';this.onfocus=''};" style="font-size:20px;color:#999;padding:3px;width:250px" type="text" value="Your Email" />
+			<input id="signup_page" name="signup_page" type="hidden" value="interstitial/media/show/7aaa18ed5f" />
+			<input id="dialog" name="dialog" type="hidden" value="true" />
+			<input id="newsletter_dialog_submit" name="commit" title="SUBMIT" type="submit" value="SUBMIT" /><br/>
+			<span style='font-size:9px;color:#000'>We will not use your email for anything sneaky.</span>
+			<div style="margin-top:20px"><input id="newsletter_dialog_nothanks" onclick="dismiss_dialog('opt-out', '#newsletter_dialog');" title="NO THANKS, I CAN'T READ" type="button" value="NO THANKS, I CAN'T READ" /></div>
+</form>	</div>
+
+</div></div><div id="newsletter_dialog_hider" class="newsletter_dialog_hider dialog_hider" onclick="temp_dismiss_dialog(); return false;">&nbsp;</div></div><div id="newsletter_dialog_bg" class="newsletter_dialog_bg dialog_bg">&nbsp;</div></div><script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() { $(document).keydown(function(event) { if (event.keyCode == 27) hide_dialog('#newsletter_dialog'); }); });
+//]]>
+</script><div id="embed_widget_featured_1_dialog" class="embed_widget_dialog dialog" style="display:none"><div id="embed_widget_featured_1_dialog_box_container" class="embed_widget_dialog_box_container dialog_box_container"><div id="embed_widget_featured_1_dialog_box" class="embed_widget_dialog_box dialog_box "><div id="embed_widget_featured_1_dialog_close" class="dialog_closer"><a href="#" onclick="hide_dialog('#embed_widget_featured_1_dialog');; return false;"><img alt="" class="sprite close_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a></div><div id="embed_widget_featured_1_dialog_box_content" class="embed_widget_dialog_box_content dialog_box_content">
+<script type="text/javascript">
+//<![CDATA[
+
+
+	var template_featured_1 = _.template('<!-- Start of Funny or Die Funny or Die Featured Videos Widget -->\n<noscript><div><a href=\"http://www.funnyordie.com/?utm_campaign=featured&amp;utm_medium=widget&amp;utm_source=featured\">Funny or Die Featured Videos<\/a> from <a href=\"http://www.funnyordie.com/?utm_campaign=featured&amp;utm_medium=widget&amp;utm_source=featured\">Funny or Die<\/a><\/div><\/noscript>\n<iframe id=\"odn_featured_1\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\" src=\"http://www.funnyordie.com/widget/featured/1#{querystring}\" width=\"#{width}\" height=\"#{height}\"><\/iframe>\n<div><a href=\"http://www.funnyordie.com/?utm_campaign=featured&amp;utm_medium=widget&amp;utm_source=featured\">Funny or Die Featured Videos<\/a> from <a href=\"http://www.funnyordie.com/?utm_campaign=featured&amp;utm_medium=widget&amp;utm_source=featured\">Funny or Die<\/a><\/div>\n<!-- End of Funny or Die Funny or Die Featured Videos Widget -->');
+
+  function querystring_featured_1() {
+    var querystring = '';
+    var pairs = {};
+    var defaults = {theme:'dark',layout:'horizontal',height:'300',width:'300',font_size:'17',header:'22'};
+    _(defaults).each(function(value,key){
+      var field_id = "#" + key+'_featured_1';
+      if(value != $(field_id).val()) {
+        pairs[key] = $(field_id).val();
+      }
+    });
+    if(_(pairs).size() > 0) {
+      querystring = '?' + $.param(pairs);
+    }
+    var title_field_id = '#title_featured_1';
+    if($(title_field_id).val() != '' && $(title_field_id).val() != 'Funny or Die Featured Videos') {
+      querystring += '#'+escape($(title_field_id).val());
+    }
+    return querystring;
+  }
+
+	function update_embed_widget_code_featured_1() {
+	  $('#embed_widget_featured_1').val(template_featured_1({
+	    width:$('#width_featured_1').val(), height:$('#height_featured_1').val(), querystring:querystring_featured_1()
+	  }));
+	  $('#embed_widget_featured_1_dialog_box').css({width:(parseInt($('#width_featured_1').value)+240+'px')});
+		$('#embed_widget_preview_featured_1').html($('#embed_widget_featured_1').val());
+	}
+
+	function get_embed_code_featured_1() {
+	  GA.event('sharing','embed_widget_featured_copy','#{widget_object.id}')
+	  return $('#embed_widget_featured_1').val();
+	}
+
+  $(function($) {
+    $("#selector_videos_featured_1 select, #selector_videos_featured_1 input[type=text]").change(update_embed_widget_code_featured_1);
+  });
+
+
+//]]>
+</script>
+<div id="selector_videos_featured_1">
+
+	<h3 style="font-family:Futura;font-size:150%;text-align:center;text-transform:uppercase;font-weight:bold">Embed Funny or Die Featured Videos<br/>on your webpage or blog </h3>
+
+  <table cellpadding="0" cellspacing="10" border="0">
+    <tr>
+      <td valign="top">
+	      <h4 style="font-family:Futura;font-size:100%;margin-bottom:5px;">1. Customize Widget</h4>
+<table cellpadding="0" cellspacing="0" width="200" class="embed_widget_customization"><tbody>
+	<tr>
+	  <td width="60"><label for="theme_featured_1">THEME</label></td>
+	  <td>
+			<select id="theme_featured_1" name="theme_featured_1"><option value="dark">Dark</option>
+<option value="light">Light</option></select>
+		</td>
+	</tr>
+	<tr>
+		<td><label for="layout_featured_1">LAYOUT</label></td>
+		<td>
+			<select id="layout_featured_1" name="layout_featured_1"><option value="horizontal">Horizontal</option>
+<option value="vertical">Vertical</option></select>
+		</td>
+	</tr>
+	<tr>
+		<td><label for="height_featured_1">HEIGHT</label></td>
+		<td>
+			<input id="height_featured_1" name="height_featured_1" style="width:120px;" type="text" value="300" />
+		</td>
+	</tr>
+	<tr>
+		<td><label for="width_featured_1">WIDTH</label></td>
+		<td>
+			<input id="width_featured_1" name="width_featured_1" style="width:120px;" type="text" value="300" />
+		</td>
+	</tr>
+</tbody></table>
+
+<h4 style="font-family:Futura;font-size:100%;margin-bottom:5px;">2. Customize Title</h4>
+<table cellpadding="0" cellspacing="0" width="200" class="embed_widget_customization"><tbody>
+  <tr>
+    <td width="60"><label for="title_featured_1">TITLE</label></td>
+    <td>
+      <input id="title_featured_1" name="title_featured_1" style="width:120px;" type="text" value="Funny or Die Featured Videos" />
+    </td>
+  </tr>
+	<tr>
+		<td><label for="header_featured_1">HEIGHT</label></td>
+		<td>
+			<input id="header_featured_1" name="header_featured_1" style="width:120px;" type="text" value="22" />
+		</td>
+	</tr>
+	<tr>
+		<td><label for="font_size_featured_1">FONT SIZE</label></td>
+		<td>
+			<input id="font_size_featured_1" name="font_size_featured_1" style="width:120px;" type="text" value="17" />
+		</td>
+	</tr>
+  </tr>
+  <tr style="background-color:transparent">
+	  <td colspan="2" align="center" style="text-align:center"><button type="button">Preview</button></td>
+	</tr>
+</tbody></table>
+
+	      
+	      <h4 style="font-family:Futura;font-size:100%;margin-bottom:5px;margin-top:15px">3. Copy and Paste this HTML </h4>
+      	<textarea id="embed_widget_featured_1" name="embed_widget_featured_1" onclick="javascript:this.focus();this.select();GA.event('sharing','embed_widget_featured_copy','1')" readonly="readonly" style="height:80px;width:198px;font-size:12px">wait for it...</textarea>
+	    </td>
+	    
+	    <td valign="top">
+	      <div id="embed_widget_preview_featured_1">Loading...</div>
+	      <div style="background-color:#47B5D7;-moz-border-radius:10px;color:#000000;text-align:center;font-family:Futura;margin-top:10px">
+	        <h3 style="color:#000000;padding-top:5px;margin:0;font-size:140%">Want More Widgets?</h3>
+	        <p style="margin:0;padding-bottom:5px">We hope you do, because we made a shit-ton.<br/>Go to our <a href="/promos/widgethq" style="color:#000000">Widget Headquarters</a>.</p>
+	    </td>
+	  </tr>
+	</table>
+
+</div>
+
+</div></div><div id="embed_widget_featured_1_dialog_hider" class="embed_widget_dialog_hider dialog_hider" onclick="hide_dialog('#embed_widget_featured_1_dialog'); return false;">&nbsp;</div></div><div id="embed_widget_featured_1_dialog_bg" class="embed_widget_dialog_bg dialog_bg">&nbsp;</div></div><script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() { $(document).keydown(function(event) { if (event.keyCode == 27) hide_dialog('#embed_widget_featured_1_dialog'); }); });
+//]]>
+</script>  <script type="text/javascript">
+//<![CDATA[
+
+      if (!fb_post) var fb_post = {"method":"stream.publish","attachment":{"name":"Notes From Chris: Halloween Edition","href":"http://www.funnyordie.com/slideshows/7aaa18ed5f/notes-from-chris-halloween-edition","description":"Chris posted some notes around NYC for Halloween.","media":[{"type":"image","href":"http://www.funnyordie.com/videos/7aaa18ed5f/notes-from-chris-halloween-edition","src":"http://assets0.ordienetworks.com/images/user_photos/1233288/0bcd811f42a2b4f2058bbb490a616e77_large.jpg"}]},"action_links":[{"text":"See more slideshows","href":"http://www.funnyordie.com/"}]};
+
+//]]>
+</script>
+		<!--  Buzz Feed BuzzBox code begins -->		
+		<script type="text/javascript">
+		BF_BB_DATA = null;
+		(function( ){
+			document.write('<div id="BF_BUZZBOX" style="height: 0px; width: 0px;"></div>');
+			var sid="77RA57";	var c=""; var b="";	
+		   	BF_BB_SCRIPT=document.createElement('script'); BF_BB_SCRIPT.type="text/javascript";
+		   	BF_BB_SRC="http://buzzbox.buzzfeed.com/wd/BuzzBox?sid=" + sid + c + b + '&it=1&cb=' + (new Date()).getTime();					
+		   	setTimeout(function() { document.getElementById('BF_BUZZBOX').appendChild(BF_BB_SCRIPT); BF_BB_SCRIPT.src=BF_BB_SRC; },1);
+		})();
+		</script>
+		<!-- / Buzz Feed BuzzBox code ends -->
+<div id="email_medium_dialog" class="email_medium_dialog dialog" style="display:none"><div id="email_medium_dialog_box_container" class="email_medium_dialog_box_container dialog_box_container"><div id="email_medium_dialog_box" class="email_medium_dialog_box dialog_box "><div id="email_medium_dialog_close" class="dialog_closer"><a href="#" onclick="hide_dialog('#email_medium_dialog');; return false;"><img alt="" class="sprite close_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a></div><div id="email_medium_dialog_box_content" class="email_medium_dialog_box_content dialog_box_content"><div class="loading_dialog">&lt;img alt=&quot;Spinner&quot; src=&quot;http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif&quot; /&gt; Hold your horses</div></div></div><div id="email_medium_dialog_hider" class="email_medium_dialog_hider dialog_hider" onclick="hide_dialog('#email_medium_dialog'); return false;">&nbsp;</div></div><div id="email_medium_dialog_bg" class="email_medium_dialog_bg dialog_bg">&nbsp;</div></div><script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() { $(document).keydown(function(event) { if (event.keyCode == 27) hide_dialog('#email_medium_dialog'); }); });
+//]]>
+</script><div id="contact_us_dialog" class="contact_us_dialog dialog" style="display:none"><div id="contact_us_dialog_box_container" class="contact_us_dialog_box_container dialog_box_container"><div id="contact_us_dialog_box" class="contact_us_dialog_box dialog_box "><div id="contact_us_dialog_close" class="dialog_closer"><a href="#" onclick="hide_dialog('#contact_us_dialog');; return false;"><img alt="" class="sprite close_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a></div><div id="contact_us_dialog_box_content" class="contact_us_dialog_box_content dialog_box_content">  <!-- loads /support/widget iframe -->
+</div></div><div id="contact_us_dialog_hider" class="contact_us_dialog_hider dialog_hider" onclick="hide_dialog('#contact_us_dialog'); return false;">&nbsp;</div></div><div id="contact_us_dialog_bg" class="contact_us_dialog_bg dialog_bg">&nbsp;</div></div><script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() { $(document).keydown(function(event) { if (event.keyCode == 27) hide_dialog('#contact_us_dialog'); }); });
+//]]>
+</script><div id="fb_login_dialog" class="fb_login_dialog dialog" style="display:none"><div id="fb_login_dialog_box_container" class="fb_login_dialog_box_container dialog_box_container"><div id="fb_login_dialog_box" class="fb_login_dialog_box dialog_box default_box"><div id="fb_login_dialog_box_content" class="fb_login_dialog_box_content dialog_box_content">
+  <div class="inline_message notice" style="margin-top: 0px;">
+    Facebook Connect -- Last Step
+  </div>
+  <div id="fb_login_error" class="inline_message error" style="display:none;"></div>
+  <div style="padding: 10px;">
+    <span class="label">
+      Please pick a Funny or Die username -- this will also be your vanity URL and the name that appears next to your comments. Alphanumeric only (numbers, letters and underscores).
+    </span>
+    <div id="fb_login_form" style="margin-top: 10px;">
+      <form accept-charset="UTF-8" action="/users/fb_connect_login" id="facebook_login_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jCCvQ8gZiC/Z6CzTQm+RAWJ5hZPkXAsafGy49EIKo7s=" /></div>
+        <input id="requested_login" name="requested_login" type="text" /> &nbsp; <input name="commit" type="submit" value="Save" />
+        <input id="fb_at" name="fb_at" type="hidden" />
+</form>    </div>
+    <div id="fb_login_spinner" style="margin-top: 10px; display: none;">
+      <h4><img alt="Spinner" src="http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif" /> Processing...</h4>
+    </div>
+  </div>
+  
+</div></div></div><div id="fb_login_dialog_bg" class="fb_login_dialog_bg dialog_bg">&nbsp;</div></div><script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() { $(document).keydown(function(event) { if (event.keyCode == 27) hide_dialog('#fb_login_dialog'); }); });
+//]]>
+</script><div id="twitter_login_dialog" class="twitter_login_dialog dialog" style="display:none"><div id="twitter_login_dialog_box_container" class="twitter_login_dialog_box_container dialog_box_container"><div id="twitter_login_dialog_box" class="twitter_login_dialog_box dialog_box default_box"><div id="twitter_login_dialog_box_content" class="twitter_login_dialog_box_content dialog_box_content">
+  <div class="inline_message notice" style="margin-top: 0px;">
+    Twitter Connect -- Last Step
+  </div>
+  <div id="twitter_login_error" class="inline_message error" style="display:none;"></div>
+  <div style="padding: 10px;">
+    <div id="twitter_login_form" style="margin-top: 10px;">
+      <form accept-charset="UTF-8" action="/users/twitter_connect_login" id="twitter_login_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jCCvQ8gZiC/Z6CzTQm+RAWJ5hZPkXAsafGy49EIKo7s=" /></div>        <p>
+          <label for="twitter_email" class="label">Your email address:</label>
+          <br/>
+          <input class="text_input" id="twitter_email" maxlength="100" name="twitter_email" size="20" type="text" />
+        </p>
+        <p>
+          <label for="twitter_name" class="label">Choose a username:</label>
+          <br/>
+          <input class="text_input" id="twitter_name" maxlength="40" name="twitter_name" size="20" type="text" />
+        </p>
+        <p>
+          <input checked="checked" id="newsletter_opt_in" name="newsletter_opt_in" type="checkbox" value="1" />&nbsp;&nbsp;
+          <label for="account_newsletter_opt_in">I would like to receive the Funny or Die newsletter.</label>
+        </p>
+        <input id="twitter_id" name="twitter_id" type="hidden" />
+        <input id="twitter_image" name="twitter_image" type="hidden" />
+        <input id="post_auth" name="post_auth" type="hidden" />
+        <input name="commit" type="submit" value="Save" />
+</form>    </div>
+    <div id="twitter_login_spinner" style="margin-top: 10px; display: none;">
+      <h4><img alt="Spinner" src="http://public0.ordienetworks.com/assets/spinner-68eafc0f286febf746e81f763c3b15e4.gif" /> Processing...</h4>
+    </div>
+  </div>
+  
+</div></div></div><div id="twitter_login_dialog_bg" class="twitter_login_dialog_bg dialog_bg">&nbsp;</div></div><script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() { $(document).keydown(function(event) { if (event.keyCode == 27) hide_dialog('#twitter_login_dialog'); }); });
+//]]>
+</script><div id="login_dialog" class="login_dialog dialog" style="display:none"><div id="login_dialog_box_container" class="login_dialog_box_container dialog_box_container"><div id="login_dialog_box" class="login_dialog_box dialog_box "><div id="login_dialog_close" class="dialog_closer"><a href="#" onclick="hide_dialog('#login_dialog');; return false;"><img alt="" class="sprite close_icon" src="http://public0.ordienetworks.com/assets/s-1e2e1b09972ce63c8b963eb54b076872.gif" /></a></div><div id="login_dialog_box_content" class="login_dialog_box_content dialog_box_content">	<div id="login_signup_tabs">
+		<a class="selected" href="#" id="login_tab" onclick="toggle_login_signup(&quot;login&quot;);; return false;">Log in</a>
+		<a class="" href="#" id="signup_tab" onclick="toggle_login_signup(&quot;signup&quot;);; return false;">Join</a>
+		<a class="" href="#" id="connect_tab" onclick="toggle_login_signup(&quot;connect&quot;);; return false;">Connect via Facebook / Twitter</a>
+	</div>
+	<div style="padding-top:15px">
+		<div id="login" style="display:block">
+		  <form accept-charset="UTF-8" action="https://secure.funnyordie.com/session" id="login_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jCCvQ8gZiC/Z6CzTQm+RAWJ5hZPkXAsafGy49EIKo7s=" /></div><div id="login_fields">
+	<p><label for="login_user_login" class='label'>Username</label><br/>
+	<input autocapitalize="off" autocorrect="off" class="text_input" id="login_user_login" name="login_user[login]" size="30" type="text" /></p>
+	
+	<p><label for="login_user_password" class='label'>Password</label><br/>
+	<input class="text_input" id="login_user_password" name="login_user[password]" size="30" type="password" /></p>
+	
+	<p><input checked="checked" class="checkbox" id="remember_me" name="remember_me" type="checkbox" value="1" /><label for="remember_me" class='label'>Remember me</label></p>
+	<p><input class="submit_button button" name="commit" type="submit" value="Log In" /> <a href="/account/password_reminder" class="forgot_password" rel="nofollow">Forgot your password?</a></p>
+	<input id="post_login_action" name="post_login_action" type="hidden" />
+	<input id="post_login_action_id" name="post_login_action_id" type="hidden" />
+  <input id="return_to" name="return_to" type="hidden" value="/slideshows/7aaa18ed5f/notes-from-chris-halloween-edition" />
+	<input id="to" name="to" type="hidden" value="/slideshows/7aaa18ed5f/notes-from-chris-halloween-edition" />
+</div>
+</form>
+		</div>
+		<div id="signup" style="display:none">
+		  <form accept-charset="UTF-8" action="https://secure.funnyordie.com/signup" id="signup_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="jCCvQ8gZiC/Z6CzTQm+RAWJ5hZPkXAsafGy49EIKo7s=" /></div>  <p>
+    <label for="user_email" class="label">Your email address:</label>
+    <br/>
+    <input class="text_input" id="user_email" maxlength="100" name="user[email]" size="20" type="text" />
+  </p>
+  <p>
+    <label for="user_login" class="label">Choose a username:</label>
+    <br/>
+    <input class="text_input" id="user_login" maxlength="40" name="user[login]" size="20" type="text" />
+  </p>
+  <p>
+    <label for="user_password" class="label">Choose a password:</label>
+    <br/>
+    <input class="text_input" id="user_password" maxlength="40" name="user[password]" size="20" type="password" />
+  </p>
+  <p>
+    <label for="user_password_confirmation" class="label">Repeat your password:</label>
+    <br/>
+    <input class="text_input" id="user_password_confirmation" maxlength="40" name="user[password_confirmation]" size="20" type="password" />
+  </p>
+  <p>
+    <input name="user[accepted_tos]" type="hidden" value="0" /><input class="checkbox" id="user_accepted_tos" name="user[accepted_tos]" type="checkbox" value="1" /><label for="user_accepted_tos">I agree to the <a href="/about/terms">terms of use</a> and <a href="/about/privacy">privacy policy</a>.</label>
+  </p>
+  <p>
+    <input checked="checked" class="checkbox" id="newsletter_opt_in" name="newsletter_opt_in" type="checkbox" value="1" /><label for="newsletter_opt_in">I would like to receive the Funny or Die newsletter.</label>
+  </p>
+  <p style="text-align: center;"><input class="submit_button button" name="commit" style="width:162px" type="submit" value="Join Funny or Die" /></p>
+  <input id="post_signup_action" name="post_signup_action" type="hidden" />
+  <input id="post_signup_action_id" name="post_signup_action_id" type="hidden" />
+  <input id="user_signup_source" name="user[signup_source]" type="hidden" value="login_dialogue" />
+</form>
+		</div>
+		<div id="connect" style="display:none">
+		  <div class="box connect_box">
+<a class="connect_link" href="#" onclick="FB.login(handleFBSessionResponse); return false;" title="Connect with Facebook"><img alt="Connect with Facebook" id="fb_login_image" src="http://static.ak.fbcdn.net/images/fbconnect/login-buttons/connect_light_medium_long.gif" /></a>
+<h3><img alt="Facebook" src="http://public0.ordienetworks.com/assets/facebook-logo-b65b3c404b9b4612f363f55159e46bba.png" /> Users<span class="optional_text"> Can</span></h3>
+</div>
+<div class="box connect_box">
+<span id="twitter_login" class="connect_link"><a class="temporary" href="#" onclick="handleTwitterLogin(''); return false;" title="Connect with Twitter"><img alt="Twitter_connect" height="25" src="http://public0.ordienetworks.com/assets/twitter_connect-235bda8864d0e2bfe54f7cffd64f9906.png" width="170" /></a></span>
+<h3><img alt="Twitter" src="http://public0.ordienetworks.com/assets/twitter-logo-7cf4411097449ae25e9e4fd425f27af9.png" /> Users<span class="optional_text"> Can</span></h3>
+</div>
+		</div>
+	</div>
+</div></div><div id="login_dialog_hider" class="login_dialog_hider dialog_hider" onclick="hide_login_dialog(); return false;">&nbsp;</div></div><div id="login_dialog_bg" class="login_dialog_bg dialog_bg">&nbsp;</div></div><script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() { $(document).keydown(function(event) { if (event.keyCode == 27) hide_dialog('#login_dialog'); }); });
+//]]>
+</script>
+
+    <script type="text/javascript">
+//<![CDATA[
+
+      if (($('#lb_ad_content').length) || ($('#masthead_content').length)) {
+        $('#header_nav').live('mouseenter', function() { hide_banner(); });
+        $('#header_nav').live('mouseleave', function() { show_banner(); });
+      }
+
+//]]>
+</script>    <script id="medium-tooltip-template" type="text/template" charset="utf-8">
+      <div class="desc">
+        #{description}
+      </div>
+      #! _.each(users, function(user){ !#
+      <div class='user'>
+        <img src="#{user.profile_photo_url}" />
+        #{user.display_name}
+      </div>
+      #! }); !#
+      <hr style="clear:left;" />
+      <table width="250" cellpadding="0" cellspacing="0" border="0" class="tip_table">
+        <tr>
+          <td width="50" class="label">Rating:</td>
+          <td width="200"> #{rating_text} </td>
+        </tr>
+        <tr>
+          <td width="50" class="label">Views:</td>
+          <td width="200"> #{view_count}</td>
+        </tr>
+        #! if( 'duration' in obj ) { !#
+        <tr>
+          <td width="50" class="label">Time:</td>
+          <td width="200"> #{duration}</td>
+        </tr>
+        #! } !#
+        <tr>
+          <td width="50" class="label">Added:</td>
+          <td width="200"> #{added_at} </td>
+        </tr>
+      </table>
+    </script>
+    <!-- PageGen: 2012-03-28 17:37:59 -0500 -->
+  </div>
+</div>
+</body>
+</html>
+ 

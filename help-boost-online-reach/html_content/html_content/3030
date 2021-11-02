@@ -1,0 +1,551 @@
+<!DOCTYPE HTML>
+<html lang="en">
+ <head>
+  <!-- 	Attention! You must agree with FlightAware's Terms of Use at http://flightaware.com/about/termsofuse
+  Data robots and collection agents should use http://flightaware.com/commercial/flightxml/
+  	Copyright 2011 FlightAware.  All Rights Reserved. -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-language" content="en" />
+  <title>FlightAware > US Airways (US) #1549 > 15-Jan-2009 > KLGA-KLGA Flight Tracker</title>
+<link rel="icon" type="image/vnd.microsoft.icon" href="http://e0.flightcdn.com/images/favicon.ico" />
+
+<!-- non scripts -->
+  <link rel="stylesheet" type="text/css" href="http://e0.flightcdn.com/include/5e4b17597-jquery.autocomplete.css" />
+  <link rel="stylesheet" type="text/css" href="http://e0.flightcdn.com/include/5e4b17597-jquery-ui-1.8.4.custom.css" />
+  <link rel="stylesheet" type="text/css" href="http://e0.flightcdn.com/include/9672dce40-fa.css" />
+  <link rel="stylesheet" type="text/css" href="http://e0.flightcdn.com/include/5e4b17597-mapstyles.css" />
+<!--[if lte IE 7]>
+   <link rel="stylesheet" type="text/css" href="http://e1.flightcdn.com/include/224cf064e-fa_ie.css" />
+   <![endif]-->
+<!-- scripts -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script type="text/javascript" src="http://e0.flightcdn.com/include/5e4b17597-jquery.fauniversal.js" ></script>
+  <script type="text/javascript" src="http://e0.flightcdn.com/live/airlines_js.rvt?locale=en_US"></script>
+  <script type="text/javascript" src="http://e0.flightcdn.com/include/2936eede7-fa.js" ></script>
+  <script type="text/javascript" src="http://e1.flightcdn.com/include/5e4b17597-jquery.flot.min.js" ></script>
+  <script type="text/javascript" src="http://e1.flightcdn.com/include/5e4b17597-jquery.flot.crosshair.min.js" ></script>
+  <script type="text/javascript">var maplayers_url = "http://e0.flightcdn.com/include/ae28fd8b9-maplayers.js";</script>
+  <script type="text/javascript" src="http://e1.flightcdn.com/include/27e97a83f-buildmap.js" ></script>
+<!-- done emit -->
+
+  <meta name="keywords" content="US Airways (US) #1549 > 15-Jan-2009 > KLGA-KLGA Flight Tracker AWE1549 flight tracker tracking status map airport" />
+  <meta name="description" content="US Airways (US) #1549 > 15-Jan-2009 > KLGA-KLGA Flight Tracker (AWE1549) Flight Tracker (en route flights, arrivals, departures, history) with live maps and aircraft photos" />
+  <meta property="og:site_name" content="FlightAware"/>
+  <meta property="og:url" content="http://flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA"/>
+  <meta http-equiv="refresh" content="460" />
+  <script type="text/javascript">window.setTimeout("location.href = location.href;",450000);</script>
+</head>
+<body>
+<script>onerror = null;</script>
+<div id="pageContainer"><div id="topContainer">
+
+                <script type="text/javascript">
+
+		function openShareWindow(url,id,width,height,scrollbars) {
+   			popups = window.open(url,id,'toolbar=0,location=0,scrollbars='+scrollbars+',statusbar=0,menubar=0,resizable=0,width='+width+',height='+height+',left=20,top=40');
+   			window.popups.focus();
+ 		}
+
+                $(document).ready(function(){
+
+         $('#airport_name_or_city').autocomplete('/ajax/puts_airport_names.rvt', {
+                minChars: 3,
+                max: 50,
+                matchContains: true,
+                extraParams: { timestamp: 'null', locale: 'en_US' },
+                width: 400
+        }).result(function(event, item) {
+            //if they've selected a name from the list
+            //we can assume they are no longer searching on airport code.
+            //null out airport code field, so that airport is selected by name
+            //and automatically submit form to view activity
+            $('#airport').val('');
+                //fauxListWrapper.hide();
+            $('#airportTrackForm').submit();
+        });
+
+        $('#share_link').validate({
+                rules: {
+                        recipient: {
+                                required: true,
+                                email: true
+                        },
+                        sender: {
+                                required: true,
+                                email: true
+                        }
+                },
+                messages: {
+                        recipient: 'Please fix',
+                        sender: 'Please fix'
+                },
+            submitHandler: function(form) {
+                var scriptUrl = '/ajax/share_email.rvt';
+                var dataStr = $('form#share_link').serialize();
+                $.ajax({
+                   type: 'POST',
+                   url: scriptUrl,
+                   data: dataStr,
+                   success: function(msg) {
+                       $('#emailShareSuccessContentWrapper').html(msg);
+                   }
+               });
+            }
+
+        });
+
+
+        });
+
+</script>
+
+  <table id="topContent">
+   <tr>
+    <td rowspan="2" width="160" style="padding-left: 5px;">
+    <a href="/"><img src="http://e1.flightcdn.com/images/logo.png" width="160" height="60" alt="FlightAware" border="0" /></a>
+
+    </td>
+    <td id="topSlogan">
+	 <h1><a href="/">Live Flight Tracking.</a></h1>
+    </td>
+    <td width="50%" id="topContainerBadgeBlock">
+     
+    </td>
+    <td rowspan="2" width="110" id="topLinks1" class="topLinks">
+    <a href="/account/manage">Register</a> / <a onclick="DoLoginBox(); return false" href="/account/login">Login</a>
+    </td>
+    <td rowspan="2" width="110" id="topLinks2" class="topLinks">
+    <a href="/about/advertising">Advertising</a><br /><a href="/about/faq.rvt">FAQs</a><br /><a href="/about/merchandise/">Merchandise</a>
+    
+<div style="margin-top: 3px;"><noscript><img src="http://e1.flightcdn.com/images/share/share_icons_lblue.png" width="66" height="20" alt="Share a FlightAware Link" usemap="#sharemap" class="imageMap" /><map name="sharemap"><area shape="rect" coords="0,0,22,20" target="_blank" href="/about/share.rvt?target=facebook;url=http://flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA;title=FlightAware%20%3e%20US%20Airways%20%28US%29%20%231549%20%3e%2015-Jan-2009%20%3e%20KLGA-KLGA%20Flight%20Tracker" alt="Share via facebook" /><area shape="rect" coords="22,0,44,20" target="_blank" href="/about/share.rvt?target=twitter;url=http://flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA;title=FlightAware%20%3e%20US%20Airways%20%28US%29%20%231549%20%3e%2015-Jan-2009%20%3e%20KLGA-KLGA%20Flight%20Tracker" alt="Share via twitter" /><area shape="rect" coords="44,0,66,20" target="_blank" href="/about/share.rvt?target=email;url=http://flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA;title=FlightAware%20%3e%20US%20Airways%20%28US%29%20%231549%20%3e%2015-Jan-2009%20%3e%20KLGA-KLGA%20Flight%20Tracker" alt="Share via email" /></map></noscript><div id="jsShareIcons" style="display: none;"><img src="http://e1.flightcdn.com/images/share/share_icons_lblue.png" width="66" height="20" alt="Share a FlightAware Link" usemap="#sharemapJS" class="imageMap" /><map name="sharemapJS" id="sharemapJS"><area shape="rect" coords="0,0,22,20" href="javascript:openShareWindow('http://www.facebook.com/sharer.php?u=http://flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA&t=FlightAware%20%3e%20US%20Airways%20%28US%29%20%231549%20%3e%2015-Jan-2009%20%3e%20KLGA-KLGA%20Flight%20Tracker','facebookPopup',630,450,0)" alt="Share via facebook" /><area shape="rect" coords="22,0,44,20" href="javascript:openShareWindow('http://twitter.com/share?url=http://flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA&text=FlightAware%20%3e%20US%20Airways%20%28US%29%20%231549%20%3e%2015-Jan-2009%20%3e%20KLGA-KLGA%20Flight%20Tracker','twitterPopup',810,600,'yes')" alt="Share via twitter" /><area shape="rect" coords="44,0,66,20" alt="Share via email" href="javascript:emailShareWindow();" /></map></div>
+
+<script type="text/javascript" charset="utf-8">
+
+  $(document).ready(function(){
+
+	$('#jsShareIcons').show();
+$('#emailShareDialog').dialog({
+                        autoOpen: false,
+                        closeOnEscape: true,
+                        position: ['center',200],
+                        resizable: false,
+                        modal: true,
+                        width: 520,
+			zIndex: 1300
+                });
+        $('.emailShareCancel').click(function() {
+                $('#emailShareDialog').dialog('close');
+        });
+
+        });
+
+	function emailShareWindow() {
+		$('#emailShareDialog').dialog('open');
+	}
+
+	</script>
+<div id="emailShareDialog" class="shareDialog" title="Share a FlightAware Link" style="display: none;">
+<div id="emailShareDialogContentWrapper">
+<form id="share_link" name="share_link">
+<input type="hidden" name="title" value="FlightAware > US Airways (US) #1549 > 15-Jan-2009 > KLGA-KLGA Flight Tracker" />
+<input type="hidden" name="url" value="http://flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA" />
+<table width="100%" class="csLightBlue modalForm">
+<tr><th>Link</th><td>FlightAware > US Airways (US) #1549 > 15-Jan-2009 > KLGA-KLGA Flight Tracker
+</td></tr>
+<tr><th>Sender</th><td>
+<input type="hidden" name="sender_name" value="" />
+			<input type="text" name="sender" size="32" />
+</td></tr>
+<tr><th>Recepient E-Mail (your friend)</th><td>
+<input type="text" name="recipient" size="32" />
+</td></tr>
+<tr><th>Your Comments<br />(optional)</th><td>
+<textarea name="comment" cols="32" rows="5"></textarea>
+</td></tr>
+<tr><td></td><td>
+<input type="submit" name="form" value="E-mail Link" />
+
+</td></tr>
+</table>
+</form>
+</div>
+<span class="emailShareCancel fauxLink linkBlue">Close</span>
+<span id="emailShareSuccessContentWrapper"></span>
+</div>
+</div>
+
+
+    </td>
+  </tr>
+  <tr>
+   <td id="topText" colspan="2">
+    <div id="headerText"><div id="topTextLinks"> <strong><a href="/account/manage">Free Registration</a> (<a href="/about/account_types.rvt">Why Register?</a>)</strong></div> |
+			<a onclick="DoLoginBox(); return false" href="/account/login">Login</a> | <span id="currentTime"></span></div>
+    <div id="LoginBox">
+		<form name="login" action="https://flightaware.com/account/session" method="post">
+		<input type='hidden' name='mode' value='login' />
+
+	 	<label for="flightaware_username">Username</label>
+		<input size='12' type='text' name='flightaware_username' id='flightaware_username' />
+
+	 	<label for="flightaware_password">Password</label>
+		<input size='12' type='password' name='flightaware_password' id='flightaware_password' />
+		<input type='submit' value='Login' /></form>
+	<a href="/account/manage">Register</a> (Free Registration) |  <a href="/account/forgot">Forgot Username/Password</a> | <a href='javascript:NoLoginBox()'>Cancel</a>
+	</div>
+   <div id="LocaleTopBox" style="text-align: right;"><form  action="/account/locale_switch.rvt" method="get" style="display: inline;">
+ <select name="locale"  onchange="this.form.submit();">
+  <option value="ar_SA">العربية</option>
+  <option value="de_DE">Deutsch</option>
+  <option value="en_AU">English (Australia)</option>
+  <option value="en_CA">English (Canada)</option>
+  <option value="en_GB">English (UK)</option>
+  <option value="en_US" selected="selected">English (USA)</option>
+  <option value="es_ES">Español</option>
+  <option value="fr_CA">Français (Canada)</option>
+  <option value="fr_FR">Français (France)</option>
+  <option value="he_IL">עִבְרִית</option>
+  <option value="hi_IN">हिन्दी</option>
+  <option value="it_IT">Italiano</option>
+  <option value="ja_JP">日本語</option>
+  <option value="ko_KR">한국어</option>
+  <option value="nl_NL">Nederlands</option>
+  <option value="pt_BR">Português (Brasil)</option>
+  <option value="pt_PT">Português (Portugal)</option>
+  <option value="ru_RU">Русский</option>
+  <option value="zh_CN">中文(简体)</option>
+  <option value="zh_HK">中文(香港)</option>
+  <option value="zh_TW">中文(台灣)</option>
+ </select>
+</form>
+<a href="/account/locale_switch.rvt?locale=en_US"><img height="11" width="16" src="http://e1.flightcdn.com/images/countries/US.png" border="0" alt="US Flag" title="Switch to US FlightAware" /></a>&nbsp;</div>
+   </td>
+  </tr>
+ </table>
+</div>
+<table cellspacing="0" cellpadding="0" width="99%" border="0"><tr>
+	<td style="padding: 0; margin: 0;" valign="top"><div id="navBar" style="margin-bottom: 4px; margin-top: 4px;">
+<ul class="menulist" id="listMenuRoot">
+ <li class="item_first current">
+<a href="/live/" class="titleLink"><h4 class="HeaderIMGText navMenu">Live Flight Tracking</h4></a> 
+ <ul class="submenu">
+  <li class="submenu_item"><a href="/live/findflight/"> <h4 class="navMenuSub HeaderIMGText">Flight Finder</h4> </a></li>
+  <li class="submenu_item"><a href="/live/fleet/"> <h4 class="navMenuSub HeaderIMGText">Browse by Operator</h4> </a></li>
+  <li class="submenu_item"><a href="/resources/airport/browse/"> <h4 class="navMenuSub HeaderIMGText">Browse by Airport</h4> </a></li>
+  <li class="submenu_item"><a href="/live/aircrafttype/"> <h4 class="navMenuSub HeaderIMGText">Browse by Aircraft Type</h4> </a></li>
+  <li class="submenu_item"><a href="/live/airport/random"> <h4 class="navMenuSub HeaderIMGText">Random Airport</h4> </a></li>
+  <li class="submenu_item"><a href="/live/flight/random"> <h4 class="navMenuSub HeaderIMGText">Random Flight</h4> </a></li>
+</ul>
+</li>
+ <li>
+<a href="/flightplan/" class="titleLink"><h4 class="HeaderIMGText navMenu">Flight Planning</h4></a> 
+ <ul class="submenu">
+  <li class="submenu_item"><a href="/flightplan/"> <h4 class="navMenuSub HeaderIMGText">Plan a Flight</h4> </a></li>
+  <li class="submenu_item"><a href="/flightplan/manage/flights"> <h4 class="navMenuSub HeaderIMGText">My Filed Flights</h4> </a></li>
+  <li class="submenu_item"><a href="/flightplan/manage/aircraft"> <h4 class="navMenuSub HeaderIMGText">My Aircraft</h4> </a></li>
+  <li class="submenu_item"><a href="/flightplan/manage/pilots"> <h4 class="navMenuSub HeaderIMGText">My Pilots</h4> </a></li>
+  <li class="submenu_item"><a href="/flightplan/faq.rvt"> <h4 class="navMenuSub HeaderIMGText">Flight Planning Help</h4> </a></li>
+  <li class="submenu_item"><a href="/fuelaware/"> <h4 class="navMenuSub HeaderIMGText">FuelAware</h4> </a></li>
+</ul>
+</li>
+ <li>
+<a href="/resources/" class="titleLink"><h4 class="HeaderIMGText navMenu">Pilot Resources</h4></a> 
+ <ul class="submenu">
+  <li class="submenu_item"><a href="/fuelaware/"> <h4 class="navMenuSub HeaderIMGText">FuelAware</h4> </a></li>
+</ul>
+</li>
+ <li>
+<a href="/photos/" class="titleLink"><h4 class="HeaderIMGText navMenu">Aviation Photos</h4></a> 
+ <ul class="submenu">
+  <li class="submenu_item"><a href="/photos/"> <h4 class="navMenuSub HeaderIMGText">Popular Photos</h4> </a></li>
+  <li class="submenu_item"><a href="/photos/browse/newest"> <h4 class="navMenuSub HeaderIMGText">Newest Photos</h4> </a></li>
+  <li class="submenu_item"><a href="/photos/ranked/cume"> <h4 class="navMenuSub HeaderIMGText">Highest Ranked</h4> </a></li>
+  <li class="submenu_item"><a href="/photos/staffpicks/cume"> <h4 class="navMenuSub HeaderIMGText">Staff Picks</h4> </a></li>
+</ul>
+</li>
+ <li>
+<a href="/squawks/" class="titleLink"><h4 class="HeaderIMGText navMenu">Squawks & Headlines</h4></a> 
+ <ul class="submenu">
+  <li class="submenu_item"><a href="/squawks/browse/general/recently/popular"> <h4 class="navMenuSub HeaderIMGText">Current Squawks</h4> </a></li>
+  <li class="submenu_item"><a href="/squawks/browse/general/24_hours/new"> <h4 class="navMenuSub HeaderIMGText">New Squawks</h4> </a></li>
+  <li class="submenu_item"><a href="/squawks/"> <h4 class="navMenuSub HeaderIMGText">Popular Squawks</h4> </a></li>
+</ul>
+</li>
+ <li>
+<a href="http://discussions.flightaware.com/" class="titleLink"><h4 class="HeaderIMGText navMenu">Discussions</h4></a> 
+</li>
+ <li>
+<a href="/commercial/" class="titleLink"><h4 class="HeaderIMGText navMenu">Commercial Services</h4></a> 
+ <ul class="submenu">
+  <li class="submenu_item"><a href="/commercial/advertising/"> <h4 class="navMenuSub HeaderIMGText">Advertising</h4> </a></li>
+  <li class="submenu_item"><a href="/commercial/integration"> <h4 class="navMenuSub HeaderIMGText">Site Integration</h4> </a></li>
+  <li class="submenu_item"><a href="/commercial/fbotoolbox"> <h4 class="navMenuSub HeaderIMGText">FBO Toolbox</h4> </a></li>
+  <li class="submenu_item"><a href="/commercial/unblock.rvt"> <h4 class="navMenuSub HeaderIMGText">Selective Unblocking</h4> </a></li>
+  <li class="submenu_item"><a href="/commercial/flightxml/"> <h4 class="navMenuSub HeaderIMGText">FlightXML</h4> </a></li>
+  <li class="submenu_item"><a href="/commercial/airportaware/"> <h4 class="navMenuSub HeaderIMGText">AirportAware</h4> </a></li>
+  <li class="submenu_item"><a href="/about/contact/"> <h4 class="navMenuSub HeaderIMGText">Custom Reports</h4> </a></li>
+  <li class="submenu_item"><a href="/commercial/premium/"> <h4 class="navMenuSub HeaderIMGText">Premium Accounts</h4> </a></li>
+  <li class="submenu_item"><a href="/commercial/#airport_history"> <h4 class="navMenuSub HeaderIMGText">Airport History</h4> </a></li>
+  <li class="submenu_item"><a href="/commercial/#flight_history"> <h4 class="navMenuSub HeaderIMGText">Flight History</h4> </a></li>
+</ul>
+</li>
+ <li>
+<a href="/about/" class="titleLink"><h4 class="HeaderIMGText navMenu">About FlightAware</h4></a> 
+ <ul class="submenu">
+  <li class="submenu_item"><a href="/about/"> <h4 class="navMenuSub HeaderIMGText">Overview</h4> </a></li>
+  <li class="submenu_item"><a href="/about/merchandise/"> <h4 class="navMenuSub HeaderIMGText">Company Store</h4> </a></li>
+  <li class="submenu_item"><a href="/about/faq.rvt"> <h4 class="navMenuSub HeaderIMGText">FAQs</h4> </a></li>
+  <li class="submenu_item"><a href="/about/executives/"> <h4 class="navMenuSub HeaderIMGText">Executive Profiles</h4> </a></li>
+  <li class="submenu_item"><a href="/about/history.rvt"> <h4 class="navMenuSub HeaderIMGText">History</h4> </a></li>
+  <li class="submenu_item"><a href="/about/contact/"> <h4 class="navMenuSub HeaderIMGText">Contact</h4> </a></li>
+  <li class="submenu_item"><a href="/about/careers/"> <h4 class="navMenuSub HeaderIMGText">Careers</h4> </a></li>
+  <li class="submenu_item"><a href="/about/account_types.rvt"> <h4 class="navMenuSub HeaderIMGText">Account Types</h4> </a></li>
+  <li class="submenu_item"><a href="/about/advertising/"> <h4 class="navMenuSub HeaderIMGText">Advertising</h4> </a></li>
+  <li class="submenu_item"><a href="/news/#press"> <h4 class="navMenuSub HeaderIMGText">Media and Press Kit</h4> </a></li>
+  <li class="submenu_item"><a href="/news/"> <h4 class="navMenuSub HeaderIMGText">Web Site News</h4> </a></li>
+</ul>
+</li>
+ <li class="item_last">
+<a href="/about/contact/" class="titleLink"><h4 class="HeaderIMGText navMenu">Contact</h4></a> 
+</li>
+</ul>
+</div>
+ <table width="170" border="0" cellspacing="0" cellpadding="0" id="trackBox">
+<tr>
+   <td class="trackboxComGradient">   	<h2>Live <a href="/">Flight Tracker</a></h2> </td></tr><tr><td class="trackboxPriGradient"><div class="trackBoxForm"><div class="trackFormSubhead">Private <a href="/">Flight Tracker:</a></div>
+	<form name="track" id="track" action="/live/form.rvt"><label for="ident">Flight/Tail#</label><input name="ident" id="ident" type="text" value="" title="e.g. N123AB" /><br /><div id="flightTrackerIdentError" style="color: red; padding: 12px 0; display: none;"></div><button class="unifiedtrack" type="submit" title="Track Flight" style="margin-left:67px;">Track Flight</button></form></div></td></tr><tr>
+   <td class="trackboxComGradient"><div class="trackBoxForm"><div class="trackFormSubhead"><a href="/">Airline Flight Tracker:</a></div>	<form name="searchform" id="searchform" action="/live/form.rvt" style="display: inline;">
+     <input type='hidden' id="ident_prefix" name='ident_prefix' value='AWE' />
+     <noscript><select name="airline_name_select" id="airline_name_select" style="float: right; width: 125px;"><option value="">Select an airline</option>    <option value="AAL">American Airlines </option>    <option value="AFR">Air France </option>    <option value="ANA">All Nippon Airways </option>    <option value="ASA">Alaska Airlines </option>    <option value="AWE" selected="selected">US Airways </option>    <option value="BAW">British Airways </option>    <option value="COA">Continental Air L</option>    <option value="DAL">Delta Air Lines </option>    <option value="DLH">Lufthansa </option>    <option value="FFT">Frontier Airlines </option>    <option value="JBU">JetBlue Airways </option>    <option value="NWA">Northwest Airlines </option>    <option value="SWA">Southwest Airlines </option>    <option value="TRS">AirTran Airways </option>    <option value="UAL">United Air Lines </option>    <option value="VIR">Virgin Atlantic </option>    <option value="VRD">Virgin America </option>    <option value="-- MORE --"></option>    <option value="AAH">Aloha Airlines </option>    <option value="AAL">American Airlines </option>    <option value="AAR">Asiana Airlines </option>    <option value="AAY">Allegiant Air </option>    <option value="ABL">Air Bc Ltd. </option>    <option value="ABS">Athabasca Airways</option>    <option value="ABX">Airborne Express </option>    <option value="ACA">Air Canada </option>    <option value="ACT">Flight Line </option>    <option value="ACY">Old ASA </option>    <option value="AEA">Air Europa </option>    <option value="AER">Alaska Central Ex</option>    <option value="AEW">AeroSvit Airlines </option>    <option value="AEY">Air Italy </option>    <option value="AFL">Aeroflot - Russia</option>    <option value="AFR">Air France </option>    <option value="AIC">Air India </option>    <option value="AIP">Alpine Aviation </option>    <option value="AJM">Air Jamaica </option>    <option value="AJT">Amerijet Internat</option>    <option value="AJX">Air Japan</option>    <option value="ALK">Air Lanka </option>    <option value="ALV">Alas de Venezuela </option>    <option value="AMF">Ameriflight </option>    <option value="AMR">Air Specialties C</option>    <option value="AMT">American Trans Air </option>    <option value="AMW">Air Midwest </option>    <option value="AMX">Aerovias de Mexic</option>    <option value="ANA">All Nippon Airways </option>    <option value="ANV">Air Nevada Airlin</option>    <option value="ANZ">Air New Zealand L</option>    <option value="APC">Airpac </option>    <option value="APW">Arrow Airways </option>    <option value="ARG">Aerolineas Argent</option>    <option value="ASA">Alaska Airlines </option>    <option value="ASH">Mesa Airlines </option>    <option value="ASQ">Atlantic Southeas</option>    <option value="ATE">Aeromexico Travel </option>    <option value="ATN">Air Transport Int</option>    <option value="AUA">Austrian Airlines </option>    <option value="AVA">Avianca, Aerovias</option>    <option value="AVI">L'Avion </option>    <option value="AVN">Air Vanuatu </option>    <option value="AWE" selected="selected">US Airways </option>    <option value="AWI">Air Wisconsin Air</option>    <option value="AZA">Alitalia - Linee </option>    <option value="BAW">British Airways </option>    <option value="BBR">Santa Barbara Air</option>    <option value="BER">Air Berlin </option>    <option value="BHS">Bahamasair Holdin</option>    <option value="BKA">Bankair </option>    <option value="BLS">Bearskin Lake Air</option>    <option value="BMA">British Midland A</option>    <option value="BMR">bmi regional </option>    <option value="BSK">Miami Air Interna</option>    <option value="BSY">Big Sky Airlines </option>    <option value="BTA">ExpressJet Airlin</option>    <option value="BWA">Caribbean Airlines </option>    <option value="CAA">Old ASA </option>    <option value="CAL">China Airlines </option>    <option value="CAO">Air China Cargo </option>    <option value="CAY">Cayman Airways Lt</option>    <option value="CCA">Air China </option>    <option value="CCI">Capital Cargo Int</option>    <option value="CEA">RegionsAir </option>    <option value="CES">China Eastern Air</option>    <option value="CFS">Empire Airways </option>    <option value="CHH">Hainan Airlines </option>    <option value="CHP">Consorcio Aviaxsa</option>    <option value="CHQ">Chautauqua Airlin</option>    <option value="CJA">Canjet Airlines </option>    <option value="CJC">Colgan Air </option>    <option value="CKK">China Cargo Airli</option>    <option value="CKS">Kalitta Air </option>    <option value="CLG">Chalair </option>    <option value="CLX">Cargolux Airlines</option>    <option value="CME">Prince Edward Air</option>    <option value="CMI">Continental Micro</option>    <option value="CMP">Copa Airlines </option>    <option value="CNK">Sunwest Home Avia</option>    <option value="COA">Continental Air L</option>    <option value="COM">Comair </option>    <option value="CPA">Cathay Pacific Ai</option>    <option value="CPZ">Compass Airlines </option>    <option value="CRG">Cargoitalia </option>    <option value="CSA">Czech Airlines </option>    <option value="CSN">China Southern Ai</option>    <option value="CSQ">I.b.c. Airways </option>    <option value="CUB">Cubana de Aviacion </option>    <option value="CWC">Centurion Air Car</option>    <option value="CXP">Xtra Airways </option>    <option value="CXS">Boston-Maine Airw</option>    <option value="DAL">Delta Air Lines </option>    <option value="DHK">DHL Air Ltd </option>    <option value="DHL">Astar Air Cargo </option>    <option value="DLH">Lufthansa </option>    <option value="EEZ">Eurofly S.p.a. </option>    <option value="EGF">American Eagle </option>    <option value="EIA">Evergreen Interna</option>    <option value="EIN">Aer Lingus Teoran</option>    <option value="ELY">El Al - Israel Ai</option>    <option value="ERH">Era Helicopters </option>    <option value="ESS">Eos Airlines </option>    <option value="ETD">Etihad Airways </option>    <option value="ETH">Ethiopian Airline</option>    <option value="EVA">Eva Airways Corpo</option>    <option value="FDX">Federal Express C</option>    <option value="FFT">Frontier Airlines </option>    <option value="FIN">Finnair </option>    <option value="FLG">Pinnacle Airlines </option>    <option value="FLX">Flight Express </option>    <option value="FRL">Freedom Airlines </option>    <option value="FTA">Frontier Flying S</option>    <option value="FWL">Florida West Inte</option>    <option value="GCO">Gemini Air Cargo,</option>    <option value="GEC">Lufthansa Cargo A</option>    <option value="GFT">Gulfstream Intern</option>    <option value="GGC">Cargo 360 </option>    <option value="GGN">Air Georgian </option>    <option value="GJS">GoJet Airlines </option>    <option value="GLA">Great Lakes Aviat</option>    <option value="GLR">Central Mountain </option>    <option value="GPD">Tradewind Aviation </option>    <option value="GTI">Atlas Air </option>    <option value="GUG">Aviateca </option>    <option value="GUN">Grant Aviation </option>    <option value="GWL">Great Wall </option>    <option value="GWY">Usa 3000 Airlines </option>    <option value="HAL">Hawaiian Airlines </option>    <option value="HMA">Air Tahoma Inc </option>    <option value="IBE">Iberia - Lineas A</option>    <option value="IBX">Ibex Airlines </option>    <option value="ICE">Icelandair </option>    <option value="ICL">Cavei Avir Lemita</option>    <option value="IDE">Independence Air </option>    <option value="INC">Insel Air Interna</option>    <option value="ISR">Israir Ltd. </option>    <option value="JAI">Jet Airways, M/s </option>    <option value="JAL">Japan Air Lines C</option>    <option value="JAZ">Jalways Co. </option>    <option value="JBU">JetBlue Airways </option>    <option value="JIA">PSA Airlines </option>    <option value="JUS">Usa Jet Airlines </option>    <option value="JZA">Jazz Air Lp. </option>    <option value="KAC">Kuwait Airways Co</option>    <option value="KAL">Korean Air Lines </option>    <option value="KAP">Hyannis Air Servi</option>    <option value="KEN">Kenmore Air Harbo</option>    <option value="KFS">Kalitta Charters </option>    <option value="KLM">KLM Royal Dutch A</option>    <option value="LAL">Labrador Airways </option>    <option value="LAN">Linea Aerea Nacio</option>    <option value="LCO">LAN Cargo </option>    <option value="LIA">Leeward Islands A</option>    <option value="LLB">Lloyd Aereo Boliv</option>    <option value="LNE">LAN Ecuador </option>    <option value="LOF">Trans States Airl</option>    <option value="LOT">Lot - Polskie Lin</option>    <option value="LPE">LAN Peru</option>    <option value="LRC">Lineas Aereas Cos</option>    <option value="LTU">Lufttransport-Unt</option>    <option value="LYC">Lynden Air Cargo </option>    <option value="LYM">Key Lime Air </option>    <option value="MAH">Malev - Hungarian</option>    <option value="MAS">Malaysian Airline</option>    <option value="MEP">Midwest Airlines </option>    <option value="MES">Mesaba Airlines </option>    <option value="MKU">Island Air </option>    <option value="MPD">Air Comet </option>    <option value="MPH">Martinair Holland</option>    <option value="MSR">Egypt Air </option>    <option value="MTN">Mountain Air Cargo </option>    <option value="MXA">Compania Mexicana</option>    <option value="MXJ">MAXjet Airways </option>    <option value="NAC">Northern Air Cargo </option>    <option value="NAO">North American Ai</option>    <option value="NCA">Nippon Cargo Airl</option>    <option value="NKS">Spirit Airlines </option>    <option value="NWA">Northwest Airlines </option>    <option value="OAE">Omni Air Express </option>    <option value="OAL">Olympic Airways S</option>    <option value="OOM">Zoom Airlines </option>    <option value="PAC">Polar Air Cargo </option>    <option value="PAL">Philippine Air Li</option>    <option value="PCM">Westair Industries </option>    <option value="PCO">Pacific Coastal A</option>    <option value="PDT">Piedmont Airlines </option>    <option value="PEN">Peninsula Airways </option>    <option value="PIA">Pakistan Internat</option>    <option value="PJF">Projet Aviation </option>    <option value="POE">Porter Airlines </option>    <option value="QFA">Qantas Airways </option>    <option value="QNZ">Jetconnect </option>    <option value="QTR">Qatar Airways Com</option>    <option value="QUE">Gouvernement Du Q</option>    <option value="QXE">Horizon Airlines </option>    <option value="RAM">Royal Air Maroc -</option>    <option value="RBY">Vision Airlines </option>    <option value="RJA">Royal Jordanian </option>    <option value="RPA">Republic Airlines </option>    <option value="RUF">Air 1st Aviation </option>    <option value="RYN">Ryan Aviation Cor</option>    <option value="RZO">Sata Internacional </option>    <option value="SAA">South African Air</option>    <option value="SAS">Scandinavian Airl</option>    <option value="SCX">MN Airlines D/B/A</option>    <option value="SDY">Island Express </option>    <option value="SFG">Caribbean Sun Air</option>    <option value="SIA">Singapore Airlines </option>    <option value="SKK">Skylink Aviation </option>    <option value="SKQ">Labcorp </option>    <option value="SKW">SkyWest Airlines </option>    <option value="SKZ">Skyway Enterprises </option>    <option value="SLI">Servicios Aereos </option>    <option value="SLM">Surinaamse Luchtv</option>    <option value="SNC">Air Cargo Carriers </option>    <option value="SOO">Southern Air </option>    <option value="SPR">Eastern Flying Se</option>    <option value="SQC">Singapore Airline</option>    <option value="SQH">SeaPort Airlines </option>    <option value="SSV">Skyservice F.b.o. </option>    <option value="SSX">Frontier Airlines</option>    <option value="SVA">Saudi Arabian Air</option>    <option value="SWA">Southwest Airlines </option>    <option value="SWG">Sunwing Airlines </option>    <option value="SWR">Swiss </option>    <option value="SYX">Astral Aviation D</option>    <option value="TAI">Taca Internationa</option>    <option value="TAM">TAM Airlines </option>    <option value="TAP">Transportes Aereo</option>    <option value="TCF">Shuttle America </option>    <option value="TCX">Thomas Cook Airli</option>    <option value="TDX">Wrangler Aviation</option>    <option value="THA">Thai Airways </option>    <option value="THT">Air Tahiti Nui </option>    <option value="THY">Turkish Airlines </option>    <option value="TOM">Thomsonfly </option>    <option value="TPA">Transportes Aereo</option>    <option value="TRS">AirTran Airways </option>    <option value="TSC">Air Transat </option>    <option value="TUS">Transportes Chart</option>    <option value="UAE">Emirates </option>    <option value="UAL">United Air Lines </option>    <option value="UCA">Commutair </option>    <option value="UPS">United Parcel Ser</option>    <option value="USA">US Airways </option>    <option value="UZB">Uzbekistan Havo J</option>    <option value="VAU">V Australia </option>    <option value="VEC">Venezolana Servic</option>    <option value="VIR">Virgin Atlantic </option>    <option value="VLE">Volare Airlines </option>    <option value="VRD">Virgin America </option>    <option value="VRG">Viacao Aerea Rio-</option>    <option value="VTS">Tatonduk Outfitte</option>    <option value="WAE">Western Air Expre</option>    <option value="WAV">Warbelows Air Ven</option>    <option value="WJA">Westjet Airlines </option>    <option value="WOA">World Airways </option>    <option value="WRT">Wright Air Lines </option>    <option value="WSG">Wasaya Airways Ltd </option>    <option value="YZR">Yangtze River Exp</option></select></noscript>
+
+      <div class="jsEnabledAirlineField trackFormRow" style="float: left;" >
+         <div style="float: left;">  <label for="airline_name" class="defaultLabel">Airline</label> </div></div><div class="jsEnabledAirlineField trackFormRow" style="display: none;"><input id="airline_name" name="q" type="text" value="US Airways  - AWE" title="e.g. United" class="defaultComField" />
+     </div><br /><div>&nbsp;</div>
+	<div class="trackFormRow"><div style="float: left;"> <label for="ident_suffix" class="defaultLabel">Flight #</label></div><input id="ident_suffix" name="ident_suffix" type="text" value="1549" title="e.g. 450" class="defaultComField" /></div>
+     <button type="submit" class="unifiedtrack" title="Track Flight">Track Flight</button>
+
+        </form><br /><div class="findFlightS" style=""><a href="/live/findflight" class="titleLink">
+	 <h4 class="findFlightSide">FORGOT the FLIGHT  NUMBER?</h4>
+	</a></div>
+   	</div></td>
+  </tr>
+  <tr>
+<td>
+    </td></tr>
+ <tr>
+   <td style="border-top: 5px solid white;">        <h2 class="airportInfoHeader">Airport Tracker/Info</h2></td>
+  </tr>
+  <tr>
+<td class="trackboxAirportGradient">
+    
+   <div class="trackBoxForm"><form class="trackForm" name="airport" id="airportTrackForm" action="/live/form.rvt">
+    <label for="airport">Airport Code</label>
+    <input id="airport" title="e.g. KJFK" name="airport" type="text" value="KLGA" /><br />
+	<span style="font-style: italic;">-or-</span><br />
+    <label for="airport_name_or_city">Airport City</label>
+    <input id="airport_name_or_city" title="e.g. New York" name="airport_name_or_city" type="text" class="airportNameField" /><button class="unifiedtrack" type="button" id="airportInfoButton" title="View Info" name="View Info" style=" clear:right; margin-bottom:10px;">View&nbsp;Info</button><br/><button class="unifiedtrack" type="submit" id="trackunified" title="View Activity" name="View Activity" style=" clear:right; margin-bottom:10px;">View&nbsp;Activity</button><br/></form></div></td>
+ </tr><tr><td><div class="bottomShadow">&nbsp;</div></td></tr>
+<tr><td colspan="2" class="bodyDivider"></td></tr>
+<tr><td style="margin: 0; padding: 0;" class="midAd" width="100%">
+		<iframe
+		 src="http://ad.doubleclick.net/adi/flight.main/live;sz=160x600,120x600,120x240,160x240;;origin=KLGA;aircraft_make=;type=airline;lang=en;destination=KLGA;engine_category=piston;ident=AWE1549;aircraft_type=;origin_IATA=LGA;engine_type=;origin_state=NY;locale=en_US;destination_IATA=LGA;userGen=f;unitName=flight;destination_state=NY;aircraft_model=;prefix=AWE;dc_ref=http%3a%2f%2fflightaware.com%2flive%2fflight%2fAWE1549%2fhistory%2f20090115%2f2004Z%2fKLGA%2fKLGA?ident=AWE1549;historyDate=20090115;historyTime=2004Z;historyOrigin=KLGA;historyDestination=KLGA;tile=1;ord=1298683246?"
+		 width="160"
+		 height="600"
+		 marginwidth="0"
+		 marginheight="0"
+		 hspace="0"
+		 vspace="0"
+		 frameborder="0"
+		 style="display: block; margin-right: auto; margin-left: auto;"
+		 scrolling="no">
+		</iframe></td></tr>
+</table>
+</td><td width="100%" valign="top">
+<div id="bodyHeader"><h2><a class="headerLink" href="/">FlightAware</a> > <a class="headerLink" href="/live/">Live Flight Tracker</a> > <span class="bodyNavTitle">US Airways (US) #1549 > 15-Jan-2009 > KLGA-KLGA Flight Tracker</span></h2></div><div id="Body" class="container">
+<table cellpadding="0" cellspacing="0" border="0">
+
+	<tr><td colspan="2" style="height: 1px;"></td></tr>
+
+	<tr>
+<td valign="top" align="left" width="100%" style="background-color: #002F5D;">
+<script type="text/javascript">
+		cdnEnabled = 1; weather_cdn = "e1.flightcdn.com"; tile_cdn = "e1.flightcdn.com"; project = false; nexrad_time = 1232051400; formatted_time = "15-Jan-2009 03:30PM"; trackstring = {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.87261,40.77725]},"properties":{"label":"KLGA","type":"origin"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.87261,40.77725]},"properties":{"label":"KLGA","type":"destination"}},{"type":"Feature","geometry":{"type":"LineString","coordinates":[[-73.86670,40.80000],[-73.86780,40.80405],[-73.86817,40.81034],[-73.86780,40.81885],[-73.86807,40.82838],[-73.87034,40.83770],[-73.87460,40.84680],[-73.87996,40.85558],[-73.88551,40.86391],[-73.89125,40.87180],[-73.89802,40.87671],[-73.90668,40.87611],[-73.91720,40.87000],[-73.92762,40.86131],[-73.93596,40.85298],[-73.94220,40.84500],[-73.94772,40.83801],[-73.95389,40.83262],[-73.96070,40.82885],[-73.96823,40.82409],[-73.97657,40.81576],[-73.98570,40.80385],[-73.99549,40.78874],[-74.00583,40.77079],[-74.01670,40.75000]]},"properties":{"label":""}}]}; projectstring = {"type":"FeatureCollection","features":[]}; routestring = {"type":"FeatureCollection","features":[]}; waypointstring = {"type":"FeatureCollection","features":[]}; localized_map_strings = {"Overlays":"Overlays","Estimated":"ESTIMATED","Weather":"Weather","Flown Route":"Flown Route","Planned Route":"Planned Route","Waypoints":"Waypoints","Aircraft":"Aircraft","Major Airports":"Nearby Airports","Aviation Sectional":"Aviation Sectional","Classic":"Classic","Earth View":"Earth View","Hover for Route":"Hover for Route","Arrivals":"Arrivals","Departures":"Departures","Vicinity":"Vicinity"};
+		var major_airports = {"type":"FeatureCollection","features":[{"type":"Feature","geometry":{"type":"Point","coordinates":[-113.57972,53.30972]},"properties":{"label":"CYEG"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.39333,46.79111]},"properties":{"label":"CYQB"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.74139,45.46806]},"properties":{"label":"CYUL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-123.18444,49.19389]},"properties":{"label":"CYVR"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-97.23444,49.91000]},"properties":{"label":"CYWG"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-114.02028,51.11389]},"properties":{"label":"CYYC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-79.63056,43.67722]},"properties":{"label":"CYYZ"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-106.60919,35.04019]},"properties":{"label":"KABQ"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-84.42807,33.63672]},"properties":{"label":"KATL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-97.66989,30.19453]},"properties":{"label":"KAUS"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-72.68322,41.93889]},"properties":{"label":"KBDL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-86.75231,33.56389]},"properties":{"label":"KBHM"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-86.67819,36.12447]},"properties":{"label":"KBNA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-71.00642,42.36297]},"properties":{"label":"KBOS"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-78.73217,42.94052]},"properties":{"label":"KBUF"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-118.35867,34.20067]},"properties":{"label":"KBUR"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-76.66833,39.17536]},"properties":{"label":"KBWI"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-81.85498,41.40942]},"properties":{"label":"KCLE"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.94907,35.21374]},"properties":{"label":"KCLT"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-82.89189,39.99797]},"properties":{"label":"KCMH"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-84.66782,39.04884]},"properties":{"label":"KCVG"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-96.85178,32.84711]},"properties":{"label":"KDAL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.03772,38.85208]},"properties":{"label":"KDCA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-104.67318,39.86166]},"properties":{"label":"KDEN"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-97.03800,32.89683]},"properties":{"label":"KDFW"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-83.35339,42.21244]},"properties":{"label":"KDTW"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-74.16867,40.69250]},"properties":{"label":"KEWR"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.15275,26.07258]},"properties":{"label":"KFLL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-95.27889,29.64542]},"properties":{"label":"KHOU"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.70756,41.06694]},"properties":{"label":"KHPN"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.45994,38.94744]},"properties":{"label":"KIAD"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-95.34144,29.98443]},"properties":{"label":"KIAH"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-86.29466,39.71730]},"properties":{"label":"KIND"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-81.68786,30.49406]},"properties":{"label":"KJAX"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.77893,40.63975]},"properties":{"label":"KJFK"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-115.15225,36.08006]},"properties":{"label":"KLAS"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-118.40716,33.94252]},"properties":{"label":"KLAX"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-73.87261,40.77725]},"properties":{"label":"KLGA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-94.71391,39.29761]},"properties":{"label":"KMCI"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-81.30899,28.42939]},"properties":{"label":"KMCO"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-87.75242,41.78597]},"properties":{"label":"KMDW"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-89.97667,35.04242]},"properties":{"label":"KMEM"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.29012,25.79536]},"properties":{"label":"KMIA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-87.89673,42.94721]},"properties":{"label":"KMKE"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-93.22177,44.88196]},"properties":{"label":"KMSP"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-90.25803,29.99339]},"properties":{"label":"KMSY"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-122.22072,37.72128]},"properties":{"label":"KOAK"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-95.89406,41.30317]},"properties":{"label":"KOMA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-117.60119,34.05600]},"properties":{"label":"KONT"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-87.90667,41.98165]},"properties":{"label":"KORD"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.09558,26.68317]},"properties":{"label":"KPBI"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-122.59687,45.58871]},"properties":{"label":"KPDX"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-75.24087,39.87225]},"properties":{"label":"KPHL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-112.01158,33.43428]},"properties":{"label":"KPHX"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-80.23286,40.49147]},"properties":{"label":"KPIT"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-78.78747,35.87764]},"properties":{"label":"KRDU"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.31967,37.50517]},"properties":{"label":"KRIC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-117.18967,32.73356]},"properties":{"label":"KSAN"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-98.46978,29.53369]},"properties":{"label":"KSAT"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-85.73650,38.17409]},"properties":{"label":"KSDF"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-122.31178,47.44989]},"properties":{"label":"KSEA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-122.37489,37.61897]},"properties":{"label":"KSFO"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-121.92911,37.36267]},"properties":{"label":"KSJC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-111.97777,40.78839]},"properties":{"label":"KSLC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-121.59078,38.69542]},"properties":{"label":"KSMF"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-117.86822,33.67567]},"properties":{"label":"KSNA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-90.37003,38.74870]},"properties":{"label":"KSTL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-74.06084,40.85010]},"properties":{"label":"KTEB"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-82.53325,27.97547]},"properties":{"label":"KTPA"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-149.99636,61.17436]},"properties":{"label":"PANC"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-157.92243,21.31868]},"properties":{"label":"PHNL"}},{"type":"Feature","geometry":{"type":"Point","coordinates":[-66.00200,18.43929]},"properties":{"label":"TJSJ"}}]};
+		var flight_id = "AWE1549-1231962643-21148-5";
+		var imgWindow = "flight_track_bigmap.rvt?ident=AWE1549-1231962643-21148-5&airports=KLGA+KLGA&height=340&width=400&departuretime=1232051160&arrivaltime=1232051520";
+		var oldMapUrl = "http://flightaware.com/ajax/oldmap.rvt?mapWidth=400&mapHeight=340&type=flight&ident=AWE1549&flightOrigin=KLGA&flightDestination=KLGA&departuretime=1232051160&arrivaltime=1232051520&key=406ef6e52c05c9b529bc6729368667f0166480b7&time=1298683246&flight_id=AWE1549-1231962643-21148-5";
+		var imgWidth = 920;
+		var imgHeight = 600;
+		var mapsize = "regular";
+		var change_baselayer = true;
+		
+		</script><div id="map" style="height: auto; width: 100%; position: relative;"><noscript><a href='/live/flight_track_bigmap.rvt?ident=AWE1549-1231962643-21148-5&airports=KLGA+KLGA&height=340&width=400&departuretime=1232051160&arrivaltime=1232051520' target='newwin'><img border='0' id='oldMap' src='http://flightaware.com/ajax/oldmap.rvt?mapWidth=400&mapHeight=340&type=flight&ident=AWE1549&flightOrigin=KLGA&flightDestination=KLGA&departuretime=1232051160&arrivaltime=1232051520&key=406ef6e52c05c9b529bc6729368667f0166480b7&time=1298683246&flight_id=AWE1549-1231962643-21148-5' /></a></noscript></div>
+</td>
+ <td style="vertical-align: top; text-align: left;" width="400">
+<table cellspacing="0" cellpadding="2" height="340" width="100%"><tr><th colspan="4" class="mainTrackHeader" style="background-color: #707277; min-height: 57px; min-width: 330px;">
+			 	<table width="100%" style="color: #FFFFFF;" cellpadding="0" cellspacing="0">
+				 <tr>
+				  <td style="padding-left: 2px; padding-right: 2px; vertical-align: center; max-width: 90px;"><a href="/photos/view/387006-f58799039ee95024fcfb3fa400ea96626488a1ec/aircrafttype/A322"><img src="http://e1.photos.flightcdn.com/photos/retriever/4c325a7549e986a5a72b99872ef5d40e345560bb" border="0" width="80" height="60" class="thumbnail_nav" alt="FlightAware Photo"  /></a></td>
+				  <td valign="top" style="text-align: left; font-size: 16px; font-weight: normal;" class="nowrap"> <span title="alpha whiskey echo one fife four niner ">AWE1549</span> <font style="font-size: 12px;"></font><br /><font style="font-size: 10px;">(<a href="http://www.usairways.com/" target="_blank" class="mainTrackHeader">web site</a>) (<a href="/live/fleet/AWE" class="mainTrackHeader">all flights</a>)  </font><br /><span title="+1-800-428-4322"><font style="font-size: 10px;">US Airways &quot;Cactus&quot;<br />Tempe, AZ</font></span></td>
+				  <td width="37" align="right" style="text-align: right; padding-left: 15px; padding-right: 5px;"><a href="/account/manage/alerts/0/add?m_ident=AWE1549;date_start=2009-01-15;date_end=2009-01-15&m_origin=KLGA&m_destination=KLGA"><img src="http://e1.flightcdn.com/images/alert_icon.gif" height="40" width="37" border="0" /></a></td>
+				  <td id="alertLink" width="110" style="text-align: left; font-size: 10px;" align="right"><a href="/account/manage/alerts/0/add?m_ident=AWE1549;date_start=2009-01-15;date_end=2009-01-15&m_origin=KLGA&m_destination=KLGA"> Get Notified </a> of <br /> this flight's activity.</td>
+				 </tr></table>
+				</th></tr>
+			<tr>
+				 <th class="secondaryHeader">Aircraft</th>
+				<td class="smallrow1" width="90%" colspan="3" style="padding-left: .75em; text-align: left" nowrap="nowrap">Airbus A320 (twin-jet) (A320/<span title="RNP and RVSM">Q</span> - <a href="/live/aircrafttype/A320">track</a> or <a href="/photos/aircrafttype/A320">photos</a>)</td>
+			</tr>
+				
+       		 	<tr>
+				<th class="secondaryHeader" width="10">Origin</th>
+				<td class="smallrow2" nowrap="nowrap" colspan="3" style="text-align: left">&nbsp;  <span title="New York, NY">LaGuardia</span> (KLGA - <a href="/live/airport/KLGA">track</a> or <a href="/resources/airport/KLGA">info</a>)</td>
+			</tr>
+       		 	<tr>
+				<th class="secondaryHeader">Destination</th>
+				<td class="smallrow1" nowrap="nowrap" colspan="3" style="text-align: left">&nbsp;  <span title="New York, NY">LaGuardia</span> (KLGA - <a href="/live/airport/KLGA">track</a> or <a href="/resources/airport/KLGA">info</a>)</td>
+			</tr>
+			<tr>
+				<th class="secondaryHeader">&nbsp;</th>
+				<td colspan="3" class="smallrow1">&nbsp; <i><a href="/live/findflight/KLGA/KLGA">Other flights between these airports</a></i></td>
+			</tr><tr>
+						<th class="secondaryHeader">Route</th>
+						<td colspan="3" class="smallrow2" style="font-size: 10px; padding-left: 1em;">BIGGY J75 GVE LYH SUDSY3  (<a href="/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA/route">Decode</a>)</td>
+				</tr>
+       		 	<tr>
+				<th class="secondaryHeader">Date</th>
+				<td colspan="3" class="smallrow1" style="text-align: left">&nbsp; Thursday, January 15 2009</td>
+			</tr>
+       		 	<tr>
+				<th class="secondaryHeader">Duration</th>
+				<td colspan="3" class="smallrow2" style="text-align: left">&nbsp; 6 minutes</td>
+
+			</tr><tr>
+			<th class="secondaryHeader">Status</th>
+			<td class="smallrow1" colspan="3" nowrap="nowrap">&nbsp; Unknown (<a href="/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA/tracklog">track log & graph</a>)</td>
+			</tr><tr>
+		<th class="secondaryHeader">Distance</th>
+		<td colspan="3" class="smallrow2" style="text-align: left">&nbsp; Direct: 0 sm &nbsp &nbsp Planned: 1,134 sm &nbsp &nbsp Flown: 26 sm</td></tr><tr class="thirdHeader">
+			<th class="secondaryHeader">&nbsp;</th>
+			<td>Scheduled</td>
+			
+			<td>Actual/<i>Estimated</i></td>
+			</tr><tr class="smallrow2">
+			<th class="secondaryHeader">Departure</th>
+			<td>03:04PM&nbsp;EST</td>
+			
+			<td>03:26PM&nbsp;EST</td>
+			</tr><tr class="smallrow1">
+			<th class="secondaryHeader">Arrival</th>
+			<td>04:38PM&nbsp;EST</td>
+			
+			<td>03:32PM&nbsp;EST</td>
+			</tr><tr class="smallrow2">
+				<th class="secondaryHeader">Speed</th>
+				<td><span title="Mach 0.79">455 kts</span></td>
+				
+				<td></td>
+				</tr><tr class="smallrow1">
+				<th class="secondaryHeader">Altitude</th>
+				<td>36,000 feet</td>
+				
+				<td></td>
+				</tr></table>
+		</td>
+</tr>
+<tr><td colspan="2" class="bodyDivider"></td></tr>
+</table>
+<table width="100%" cellspacing="0" cellpadding="0">
+<tr><td colspan="2"><div class="alertBoxOrangeWhiteBorder"><p>
+		LaGuardia (<a class="overrideLinkStyle" href="http://flightaware.com/live/airport/KLGA">KLGA</a>) is currently experiencing inbound flights delayed at their origin an average of 1 hour 44 minutes  due to wind. (<a class="overrideLinkStyle" href="/live/airport/delays">all delays</a>) (<a class="overrideLinkStyle" href="/live/cancelled">all cancellations</a>)
+		</p></div></td></tr><tr><td colspan="2"><div class="alertBoxOrangeWhiteBorder"><p>
+		LaGuardia (<a class="overrideLinkStyle" href="http://flightaware.com/live/airport/KLGA">KLGA</a>) is currently experiencing:</p><p><ul><li>arrival delays for airbone aircraft an average of 45 minutes</li></p><p><li>inbound flights delayed at their origin an average of 1 hour 44 minutes  due to wind</li></p><p> (<a class="overrideLinkStyle" href="/live/airport/delays">all delays</a>) (<a class="overrideLinkStyle" href="/live/cancelled">all cancellations</a>)
+		</p></div></td></tr>
+<tr><td class="greyAd">
+		<iframe
+		 src="http://ad.doubleclick.net/adi/flight.main/live;sz=728x90,468x60;;origin=KLGA;aircraft_make=;type=airline;lang=en;destination=KLGA;engine_category=piston;ident=AWE1549;aircraft_type=;origin_IATA=LGA;engine_type=;origin_state=NY;locale=en_US;destination_IATA=LGA;userGen=f;unitName=flight;destination_state=NY;aircraft_model=;prefix=AWE;dc_ref=http%3a%2f%2fflightaware.com%2flive%2fflight%2fAWE1549%2fhistory%2f20090115%2f2004Z%2fKLGA%2fKLGA?ident=AWE1549;historyDate=20090115;historyTime=2004Z;historyOrigin=KLGA;historyDestination=KLGA;tile=2;ord=1298683246?"
+		 width="728"
+		 height="90"
+		 marginwidth="0"
+		 marginheight="0"
+		 hspace="0"
+		 vspace="0"
+		 frameborder="0"
+		 style="display: block; margin-right: auto; margin-left: auto;"
+		 scrolling="no">
+		</iframe></td></tr>
+<tr><td><div class="bottomShadow">&nbsp;</div></td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td colspan="2">
+<span class="faActionButton"><a href="/account/remarks.rvt?action=add;type=ident;link=AWE1549">Remark on this Aircraft (AWE1549) <img src="http://e0.flightcdn.com/images/orange_action_arrows.png" width="7" height="10" border="0" /></a></span>
+<span class="faActionButton"><a href="/account/remarks.rvt?action=add;type=flight;link=AWE1549-1231962643-21148-5">Remark on this Flight (KLGA-KLGA) <img src="http://e0.flightcdn.com/images/orange_action_arrows.png" width="7" height="10" border="0" /></a></span>
+</td></tr>
+<tr><td colspan="2">&nbsp;</td></tr>
+<tr><td>
+
+	    <table border="0" align="center" cellpadding="0" cellspacing="0" width="100%">
+		<tr><td colspan="7" class="mainHeader">
+		 <div style="width: 25%; float: left;">ACTIVITY LOG</div>
+		 <div style="width: 75%; font-size: 12px; text-align: right; float: right;">
+		 Want a full history search for AWE1549 dating back to 2005? <a href="/live/flight/AWE1549/history/buy">Buy now.  Get it within one hour.</a>
+		 </div>
+		 </td>
+		</tr>
+		</table>
+<table border="0" align="center" cellpadding="2" width="100%" style="border: 1px solid #b2b2b2;">
+
+		<tr class="secondaryHeader">
+	         <th>Date</th>
+			 <th>Aircraft</th>
+			 <th>Origin</th>
+			 <th>Destination</th>
+	         <th>Departure</th>
+	         <th>Arrival</th>
+	         <th>Duration</th>
+	        </tr>
+<tr class="smallrow1">
+ <td colspan="7" style="text-align: center'"><strong>Registered users (registering is free and easy!) view 4 months history. <a href="/account/manage">Register</a></strong></td>
+</tr>
+<tr class="smallrow2">
+ <td colspan="7" class="smallrow2" style="text-align: center">No History Data (searched last 14 days)</td>
+</tr>
+</table>
+<div class="bottomShadow">&nbsp;</div>
+</td></tr>
+<tr><td align="center"><!--[if lt IE 9]><script type="text/javascript" src="http://e1.flightcdn.com/include/excanvas.min.js"></script><![endif]-->
+		<div id="AltPlot" style="width: 730px; height: 150px;"></div>
+		<script type="text/javascript" src="http://e0.flightcdn.com/include/plot_altitude.js"></script>
+		<script type="text/javascript"><!--
+altitude_json = [[1232033173000,1800],[1232033227000,2800],[1232033255000,3200],[1232033288000,2000],[1232033315000,1600],[1232033349000,1200],[1232033375000,1300],[1232033415000,400],[1232033470000,300]]; speed_json = [[1232033173000,151],[1232033227000,174],[1232033255000,194],[1232033288000,202],[1232033315000,215],[1232033349000,194],[1232033375000,191],[1232033415000,189],[1232033470000,153]]; facility_json = {"1232033173000":"New York TRACON","1232033227000":"New York TRACON","1232033255000":"New York Center","1232033288000":"New York TRACON","1232033315000":"New York Center","1232033349000":"New York TRACON","1232033375000":"New York Center","1232033415000":"New York TRACON","1232033470000":"New York TRACON"}; est_arrival = null; filed_alt = 36000;
+// --></script></td></tr>
+
+</table>
+  </div>
+
+  </td></tr></table>
+	 <div id="Footer">
+      <div id="footerLanguages">
+	  <a onclick="location.href='/account/locale_switch.rvt?locale=ar_SA'; return false;" href="http://ar.flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA">العربية</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=de_DE'; return false;" href="http://de.flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA">Deutsch</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=en_US'; return false;" href="http://flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA">English</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=es_ES'; return false;" href="http://es.flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA">Español</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=fr_FR'; return false;" href="http://fr.flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA">Français</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=he_IL'; return false;" href="http://he.flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA">עִבְרִית</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=it_IT'; return false;" href="http://it.flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA">Italiano</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=ja_JP'; return false;" href="http://ja.flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA">日本語</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=nl_NL'; return false;" href="http://nl.flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA">Nederlands</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=pt_BR'; return false;" href="http://pt.flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA">Português</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=ru_RU'; return false;" href="http://ru.flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA">Русский</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=zh_CN'; return false;" href="http://zh.flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA">中文(简体)</a> | <a onclick="location.href='/account/locale_switch.rvt?locale=zh_TW'; return false;" href="http://zh-tw.flightaware.com/live/flight/AWE1549/history/20090115/2004Z/KLGA/KLGA">中文(台灣)</a>
+	  </div>
+      <div id="footerCopyright">
+	  &copy; 2011 FlightAware | <a href="/about/termsofuse">Terms Of Use</a>  | <a href="/about/privacy">Privacy</a>
+	  </div>
+	  
+   </div>
+   <script>var lazyload_scripts = [];</script>
+<script>_qoptions = { qacct: 'p-16S-sAgkGlgVs'  }; lazyload_scripts.push('http://edge.quantserve.com/quant.js');</script>
+<noscript><img src='http://pixel.quantserve.com/pixel/p-16S-sAgkGlgVs.gif' style='display: none;' border='0' height='1' width='1' alt=''></noscript>
+<script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-498336-1'], ['_setVar', 'US US/en_US'], ['_initData'], ['_trackPageview']); lazyload_scripts.push('http://www.google-analytics.com/ga.js');</script>
+<script>var _comscore = [{ c1: '2', c2: '8950477' }]; lazyload_scripts.push('http://sb.scorecardresearch.com/beacon.js');</script>
+<script type='text/javascript' defer='defer'>
+function lazyLoad() {
+	for (var x = 0; x < lazyload_scripts.length; x++) {
+		var el = document.createElement('script'); el.type = 'text/javascript'; el.async = true; el.src = lazyload_scripts[x];
+		document.getElementsByTagName('head')[0].appendChild(el);
+	}
+}
+if (typeof window.addEventListener !== 'undefined') window.addEventListener('load', lazyLoad, false);
+else if (typeof window.attachEvent !== 'undefined') window.attachEvent('onload', lazyLoad);
+else lazyLoad();
+</script>
+ </body>
+</html>

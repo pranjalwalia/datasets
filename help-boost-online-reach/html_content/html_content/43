@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <title>Emptees</title>
+  <meta name="description" content="A once vibrant community of tee shirt designers and enthusiasts from all over the world." />
+  <link rel="shortcut icon" type="image/png" href="/images/favicon.png" />
+	<link type="text/css" rel="stylesheet" href="/stylesheets/site.css" media="screen" />
+</head>
+<body>
+  <div class="container">
+    <h1>Thank you</h1>
+    
+    <p>From 2007 to 2011 Emptees was a vibrant community of tee shirt designers and enthusiasts from all over the world. However, the time came to pass the torch. So long, and thanks for all the tees.</p>
+    
+    <p id="signature">The Emptees crew</p>
+    
+    <div id="links">
+      <h3>Other tee communities:</h3>
+      <ul>
+        <li><a href="http://www.mintees.com/">Mintees</a></li>
+        <li><a href="http://www.bandjob.com/">Band Job</a></li>
+      </ul>
+    </div>
+  </div>
+  
+  <div id="tile"></div>
+  
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" ></script>
+  <script type="text/javascript" charset="utf-8">
+    $(function() {
+      $('.container').css('background', '#fff url(/images/loading.gif) no-repeat 19px 55px');
+      var url = '/images/tile_big.jpg';
+      var img = new Image();
+      		img.onload = function() {
+      		  $('.container').css('background', '#fff');
+          	$('#tile').hide().css('background-image', 'url(' + url + ')').fadeIn();
+        	}
+        	img.src = url;
+    });
+    
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-86918-9']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</body>
+</html>

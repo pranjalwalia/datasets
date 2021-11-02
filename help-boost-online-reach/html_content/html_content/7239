@@ -1,0 +1,1913 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>The Ultimate Showdown</title>
+	<link rel="stylesheet" href="http://css.ngfiles.com/ng_wide.css?1294180462" type="text/css" media="screen" />
+	<link rel="stylesheet" href="http://css.ngfiles.com/iphone.css" type="text/css" media="only screen and (max-device-width: 480px)" />
+	<link rel="stylesheet" href="http://css.ngfiles.com/print.css" type="text/css" media="print" />
+	<!-- CSS -->
+
+	<script type="text/javascript" src="http://js.ngfiles.com/ng_publish.js?1294180461"></script>
+	<!-- JS -->
+
+	<script type="text/javascript">
+	// <![CDATA[
+		// ==================== Code for handling the AJAX login box ========================
+		// We're embedding this here, rather than in a .js, because we need to guarantee it's loaded just below
+
+		var u_cookie = 'NG_GG_username';
+		var pm_count_cookie_name = 'unread_PMs';
+		var unread_pm_count = null;
+		var page_is_dynamic = true;
+		var user_logged_in = false;
+
+		function ReturnCookie(this_name)
+		{
+			var parts = document.cookie.split(';');
+			var sub_parts;
+
+			for(var i=0; i<parts.length; i++) {
+				sub_parts = parts[i].split('=');
+
+				sub_parts[0] = sub_parts[0].replace(/\s/, '');
+
+				if(sub_parts[0] == this_name) {
+					return(unescape(sub_parts[1]));
+				}
+			}
+
+			// If we're here, we didn't find the cookie
+			return(null);
+		}
+
+		// Set cookies from JavaScript using this - swiped from http://www.dustindiaz.com/top-ten-javascript/
+		function SetCookie(name, value, expires)
+		{
+			if(typeof expires == 'undefined') {
+				expires = 0;
+			}
+
+			var today = new Date();
+			today.setTime(today.getTime());
+
+			if(expires) {
+				expires = expires * 1000 * 60 * 60 * 24;
+			}
+
+			var expires_date = new Date(today.getTime() + expires);
+
+			document.cookie = name + '=' + escape(value) + ((expires) ? ';expires='+expires_date.toGMTString() : '' ) + ';path=/;domain=.newgrounds.com';
+		}
+
+		function DivSwap(old_div_id, new_div_id)
+		{
+			var old_div = $(old_div_id);
+			var new_div = $(new_div_id);
+
+			if((old_div) && (new_div)) {
+				new_div.style.display = "block";
+				old_div.style.display = "none";
+			}
+		}
+
+		function IsSoftLoggedIn()
+		{
+			return((ReturnCookie(String.fromCharCode(118,109,107,49,100,117,53,108,56,109)) != null) || (ReturnCookie(String.fromCharCode(118,109,107,108,100,117,53,73,56,109)) != null));
+		}
+
+		function LoadLoginBox()
+		{
+			// Let's make sure the browser isn't preserving some weird state
+			if(!(typeof request_in_progress == 'undefined')) {
+				// This variable may not have been loaded yet, since it's coming from a .js file
+				request_in_progress = false;
+			}
+
+			// Always see if they've got a username cookie to put as a default value in the login box
+			var username = ReturnCookie(u_cookie);
+			if(username != null) {
+				$('lb_username').value = username;
+			}
+
+			// Also always check for a # of unread PMs, handed off from PHP
+			if(unread_pm_count != null) {
+				// Got a value, set it and store it in a cookie
+				SetUnreadPMCount(unread_pm_count);
+			} else {
+				// Didn't get a value.  See if we've got anything stored from before, in a cookie
+				var unread_pm_count_cookie = ReturnCookie(pm_count_cookie_name);
+
+				if((unread_pm_count_cookie != null) && (unread_pm_count_cookie > 0)) {
+					SetUnreadPMCount(unread_pm_count_cookie);
+				}
+			}
+
+			// Now swap in the appropriate box
+			if(!(IsSoftLoggedIn())) {
+				// They're not logged in, so show the login form
+				DivSwap('loginbox', 'loginbox_notloggedin');
+			} else {
+				// They are logged in, so show their account options
+				// Gotta do this here, so the username displays properly on page refreshes
+				SetLoggedInUsername(username);
+
+				DivSwap('loginbox', 'loginbox_loggedin');
+			}
+		}
+
+		function SetUnreadPMCount(value)
+		{
+			var new_count = '';
+			if(value > 0) {
+				new_count = ' (' + FormatNumber(value) + ')';
+			}
+
+			$('unread_pm_count_display').innerHTML = new_count;
+			SetCookie(pm_count_cookie_name, value);
+		}
+
+		function SetLoggedInUsername(name)
+		{
+			$('loginbox_username').innerHTML = '<a href="http://' + name.toLowerCase() + '.newgrounds.com/">' + name + '</a>';
+			$(username_fieldname).value = name;				// Also set the name in the login text field
+		}
+
+		/* disabled for now
+		document.observe('dom:loaded', function() {
+			new Ajax.Autocompleter('topsearch_terms', 'searchhint', '/ajax/searchsuggestion.php', {
+				onShow: function(e, u) {
+					$('topsuperbanner').style.visibility = 'hidden';
+					// Positioning is taken care of in CSS. Disregard the search element.
+					Effect.Appear(u,{duration:0.15});
+				},
+
+				onHide: function(e, u) {
+					$('topsuperbanner').style.visibility = 'visible';
+					new Effect.Fade(u,{duration:0.15});
+				},
+
+				minChars: 3,
+				frequency: 0.1,
+
+				callback: function(terms) {
+					return 'topsearch_terms=' + escape(terms.value) + '&topsearch_type=' + $F('topsearch_type');
+				}
+			});
+		});
+		*/
+
+		// assume ads are blocked until imported javascript tells us otherwise
+	// ]]>
+	</script>
+	<script type="text/javascript" src="http://www.ngads.com/checkabp.js?thisistotrickabp=http://server.cpmstar.com/view.aspx"></script>
+
+	<link rel="shortcut icon" type="image/png" href="http://img.ngfiles.com/favicon.ico" />
+
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+	<meta name="viewport" content="width=780" />
+<style type="text/css">
+.vl {display:block} #fa003db94db4f4ba360c2,#vdee73bd4db4f4ba3616b,#y4b783494db4f4ba36024,#x3d5df8b4db4f4ba36251,#vbedaf584db4f4ba361f7,#a63604484db4f4ba3603d,#u5be39a94db4f4ba3619d,#q857fd9e4db4f4ba36279,#bddf24834db4f4ba36086,#t599480e4db4f4ba36130,#n16324644db4f4ba36157,#hf5edef04db4f4ba3611c,#w103d9954db4f4ba360d6,#g54a17b74db4f4ba3621f,#kf0c87834db4f4ba360ea,#ga61689c4db4f4ba3609b,#g6d6e6944db4f4ba361b1,#y56594264db4f4ba36051,#e78ff8f64db4f4ba36143,#ecfb2c8d4db4f4ba3628d,#sc47aa854db4f4ba361c5,#nac228474db4f4ba3620c,#f100246b4db4f4ba360ae,#cb4d8a784db4f4ba361d9,#qbe4e4714db4f4ba36233,#n0e2a5374db4f4ba36265,#n2b4ed0c4db4f4ba36107,#k2c9d5714db4f4ba36065,#u38e2ea44db4f4ba3617f {display:none} 
+</style>
+
+<meta name="title" content="The Ultimate Showdown" />
+<meta name="description" content="Everyone is fighting for ultimate superiority. Yes, even batman." />
+<link rel="image_src" href="http://picon.ngfiles.com/285000/flash_285267.jpeg" />
+</head>
+
+<body>
+<div id="popin" style="width: 520px;display:none;z-Index:90;">
+	<div class="box title" >
+		<div class="boxtop"><div><div></div></div></div>
+		<div class="boxl">
+			<div class="boxr">
+				<div class="boxm">
+					<div class="headsizer">
+						<div class="heading">
+							<h1 class="ngpres i-arrow" id="popmovietitle"><span class="shortpres">Newgrounds Presents:</span> Some movie</h1>
+							<span class="btn"><a href="#" onclick="movie_viewer.Cancel();return(false);"><span class="del" id="closebutton">Close Window</span></a></span>
+						</div>
+					</div>
+
+					<div id="popmovie">.</div>
+
+					<div class="hr"><hr /></div>
+
+					<!--
+					<div class="popadiframe">
+						<script type="text/javascript">
+						// <![CDATA[
+
+							var cpmstar_rnd=Math.round(Math.random()*999999);
+							var cpmstar_pid=6984;
+							document.writeln("<IFR"+"AME width=630 height=90 frameborder=0 scrolling='no' src='http://server.cpmstar.com/view.aspx?poolid="+cpmstar_pid+"&multi=7&rnd="+cpmstar_rnd+"'></IFR"+"AME>");
+
+						// ]]>
+						</script>
+					</div>
+					-->
+
+					<div class="popadtext" id="popadtextoutter">
+						<a id="popin_cpmstarHeadline" class="cpmstarHeadline" href="#" target="_blank"></a>
+						<a id="popin_cpmstarText" class="cpmstarText" href="#" target="_blank"></a>
+					</div>
+
+					<br clear="left" />
+
+				</div>
+			</div>
+		</div>
+		<div class="boxbot"><div><div></div></div></div>
+	</div>
+</div>
+
+
+<div id="mainframe">
+	<div id="main">
+		<!-- SKINAD_OUTER -->
+		<div id="center">
+			<!-- SKINAD -->
+			<div id="banner">
+				<h1 class="ng"><a href="http://www.newgrounds.com/">Newgrounds.com &mdash; Everything, By Everyone.</a></h1>
+
+				<div id="wholeloginbox" class="loginbox">
+					<div id="loginbox">
+						<strong class="status">Checking login status&hellip;</strong>
+					</div>
+					<div id="loginbox_notloggedin" class="hidecode">
+						<form method="post" action="http://www.newgrounds.com/account/" id="loginboxform" onsubmit="AttemptLogin();return(false);">
+
+						<ul>
+							<li><a href="http://www.newgrounds.com/join">Not a member? SIGN UP!</a></li>
+							<li><input type="submit" class="hiddensubmit" value="s" /><a href="http://www.newgrounds.com/join/forgot">Forgot login?</a></li>
+						</ul>
+
+						<p>
+							<strong>USERNAME:</strong>
+							<input type="text" name="lb_username" id="lb_username" maxlength="20" class="inputfield formtext" />
+						</p>
+						<p>
+							<strong>PASSWORD:</strong>
+							<input type="password" name="lb_userpass" id="lb_userpass" maxlength="10" class="inputfield formtext" />
+						</p>
+
+						<div id="loginbox_button">
+							<p class="save">
+								<input type="checkbox" name="lb_remember" id="lb_remember" value="on" />
+								<a class="textclick" href="javascript:HandleClick('lb_remember');">Save Info!</a>
+							</p>
+							<span class="btn"><a href="javascript:AttemptLogin();">Jack In!&nbsp;&gt;</a></span>
+						</div>
+						<div id="loginbox_animation_login" class="hidecode">
+							<p class="save"><strong class="status">Logging in&hellip;</strong></p>
+						</div>
+
+						</form>
+					</div>
+					<div id="loginbox_loggedin" class="logged hidecode">
+						<div id="loginbox_loggedin_msg">
+							<strong class="status">Logged in as:<br /><span id="loginbox_username">.</span></strong>
+						</div>
+						<div id="loginbox_animation_logout" class="hidecode">
+							<strong class="status">Logging out&hellip;</strong>
+						</div>
+						<span class="btn"><a href="http://www.newgrounds.com/pm/">Inbox<em id="unread_pm_count_display"></em></a></span>
+						<span class="btn"><a href="http://www.newgrounds.com/account/">My Account</a></span>
+						<span class="btn"><a href="http://www.newgrounds.com/account/logout" onclick="AttemptLogout();return(false);">Log Out</a></span>
+					</div>
+				</div>
+
+				<form method="get" id="search" action="#" onsubmit="RunSearch('topsearch', 'portal');return(false);">
+					<input type="text" id="topsearch_terms" size="12" class="search inputfield formtext" />
+					<select id="topsearch_type" class="formtext pulldown">
+						<option value="title">Title&nbsp;&nbsp;</option>
+						<option value="author">Author&nbsp;&nbsp;</option>
+					</select>
+					<span class="btn"><a href="#" onclick="RunSearch('topsearch', 'portal');return(false);">Search!</a></span>
+				</form>
+				<div class="linkcomplete" id="searchhint"></div>
+			</div>
+			<div id="skyplane">
+				<a href="http://www.newgrounds.com/art">New art portal!</a>
+			</div>
+
+			<div id="nav-sub">
+				<dl>
+					<dd><a href="http://www.newgrounds.com/primer">About Newgrounds</a> |</dd>
+					<dd><a href="http://www.newgrounds.com/news/">Blogs</a> |</dd>
+					<!-- dd><a href="http://www.newgrounds.com/portal/view/537101">Chat</a> |</dd -->
+					<dd><a href="http://www.newgrounds.com/chat">Chat</a> |</dd>
+					<dd><a href="http://www.newgrounds.com/downloads/">Downloads</a> |</dd>
+					<dd><a href="http://www.newgrounds.com/lit/faq">Help / FAQ</a> |</dd>
+					<dd><a href="http://www.newgrounds.com/lit/">Lit</a> |</dd>
+					<dd><a href="http://www.newgrounds.com/mature/">Mature</a> |</dd>
+					<dd><a href="http://www.newgrounds.com/network/">Network</a> |</dd>
+					<dd><a href="http://www.newgrounds.com/rankings/">Rankings</a> |</dd>
+					<dd><a href="http://www.newgrounds.com/submit">Submit Content!</a></dd>
+				</dl>
+			</div>
+
+			<div id="nav-main">
+				<dl>
+					<dd id="flashportal"><a href="http://www.newgrounds.com/portal/">Flash Portal</a></dd>
+					<dd id="audioportal"><a href="http://www.newgrounds.com/audio/">Audio Portal</a></dd>
+					<dd id="artportal"><a href="http://www.newgrounds.com/art/">Art Portal</a></dd>
+					<dd id="games"><a href="http://www.newgrounds.com/game/">Games</a></dd>
+					<dd id="movies"><a href="http://www.newgrounds.com/movies/">Movies</a></dd>
+					<dd id="collections"><a href="http://www.newgrounds.com/collection/">Collections</a></dd>
+					<dd id="series"><a href="http://www.newgrounds.com/collection/series">Series</a></dd>
+					<dd id="forums"><a href="http://www.newgrounds.com/bbs/">Forums</a></dd>
+					<dd id="store"><a href="http://www.newgrounds.com/store/">Store</a></dd>
+				</dl>
+			</div>
+			<br clear="left" />
+
+			<script type="text/javascript">
+			// <![CDATA[
+				LoadLoginBox();
+			// ]]>
+			</script>
+
+			<!-- USERBANNER -->
+
+			<div id="cont-out">
+				<div id="cont-mid">
+					<div id="cont">
+
+						<!-- NOAD -->
+						<div class="box adhead">
+							<div class="boxtop"><div></div></div>
+							<div class="boxl">
+								<div class="boxr">
+									<div class="boxm horzad">
+										<script type="text/javascript">
+// <![CDATA[ 
+addSwappableElement("<iframe src=\"http:\/\/ads.newgrounds.com\/ads.php?t=1&amp;s=et\" frameborder=\"0\" height=\"90\" width=\"728\" scrolling=\"no\" class=\"horzad\" id=\"topsuperbanner\"><\/iframe>", "wide", "bottomad");// ]]> 
+
+</script>
+									</div>
+								</div>
+							</div>
+							<div class="boxbot"><div></div></div>
+						</div>
+						<br clear="left" />
+
+						<!-- End of the top header include -->
+
+<script type="text/javascript" src="http://js.ngfiles.com/movieviewer.js"></script>
+<script type="text/javascript" src="http://js.ngfiles.com/submission.js"></script>
+<script type="text/javascript" src="http://js.ngfiles.com/reviewcontroller.js"></script>
+<script type="text/javascript" src="http://js.ngfiles.com/templatewriter.js"></script>
+
+
+		<script type="text/javascript">
+		// <![CDATA[
+			submission_controller.Init(285267, 1, new Array('h5'+'1'+'77'+'a'+'4f'+'4'+'d'+'b4'+'f'+'4'+'ba'+'36'+'00'+'2','fa'+'1'+'0'+'b'+'1'+'c'+'f4'+'d'+'b4'+'f4'+'ba'+'35'+'fa'+'e','r'+'2'+'5'+'b3'+'67'+'b4'+'d'+'b'+'4'+'f4'+'b'+'a'+'35'+'fc'+'3','w1'+'d1'+'ae'+'c9'+'4d'+'b4'+'f4'+'b'+'a3'+'5'+'f'+'e'+'a','e3'+'44'+'4f'+'8'+'0'+'4d'+'b'+'4f'+'4'+'ba'+'35'+'f'+'d'+'7','c0'+'d'+'43'+'4'+'81'+'4'+'db'+'4f'+'4'+'ba'+'36'+'01'+'6'));
+
+			function u5ed3ad84db4f4ba35f9(a, b)
+			{
+				var m = new Array();
+				m['p'+'e7'+'d'+'85'+'f'+'64'+'d'+'b4'+'f'+'4'+'b'+'a3'+'5'+'f'+'a3']=8883-25810+16927;m['tc'+'6'+'c'+'9e'+'5'+'74'+'d'+'b4'+'f'+'4'+'ba'+'35'+'f'+'e'+'1']=4038-66996+62961;m['kc'+'eb'+'e'+'8'+'a2'+'4'+'db'+'4f'+'4b'+'a3'+'5'+'fb'+'9']=2888-48268+45381;m['e5'+'0'+'c'+'5'+'d'+'3'+'3'+'4'+'d'+'b4'+'f'+'4b'+'a'+'3'+'5'+'fc'+'d']=8961-10353+1394;m['z4'+'7'+'b'+'1'+'c'+'7'+'1'+'4'+'db'+'4'+'f4'+'b'+'a'+'36'+'0'+'0'+'c']=4794-47955+43166;m['p'+'28'+'5'+'d'+'32'+'e'+'4d'+'b4'+'f'+'4b'+'a3'+'5'+'ff'+'4']=6273-14901+8632;
+				var v = m[a];
+				if(v == undefined)
+				{
+					submission_controller.IllegalVoteAttempt();
+					return;
+				}
+
+				submission_controller.GetVoteController(b).DoVote(v);
+			}
+
+			function e(a, b) { ToggleDisplayElement(a, 'block'); ToggleDisplayElement(b, 'none'); }
+			function f(i) { e('t' + i, 'tt'); }
+			function g(i) { e('tt', 't' + i); }
+
+			var PageGlobals = {
+				"review_ids": [
+				10868230,10867667,10866244,10863510,10862742				]
+			};
+		// ]]>
+		</script>
+		
+<div class="wide_storepromo">
+	<a href="http://www.youtube.com/newgrounds"><img src="http://img.ngfiles.com/AD-youtube.gif" alt="Subscribe to our YouTube feed!" /></a>
+</div>
+
+<form id="mainform" method="post" action="#" onsubmit="return(false);">
+<!-- this submission HAS suggested content, AWESOME SAUCE! -->
+<script type="text/javascript">
+	// <![CDATA[
+	function hideFlash() {
+		$('flashhover_container').style.display='none';
+	}
+	function showFlash() {
+		$('flashhover_container').style.display='';
+	}
+	// ]]>
+</script>
+
+
+<div class="flash_content_area" id="the_flash_embed">
+		<div class="flashhover_container" id="flashhover_container" >
+			<div class="box widebox title" id="flashhover_box">
+				<div class="boxtop"><div></div></div>
+				<div class="boxl">
+					<div class="boxr">
+						<div class="boxm">
+
+							<div class="headsizer">
+								<div class="heading overlayed">
+
+									<h1 class="view i-rate-t">The Ultimate Showdown <span class="gray">by</span> <a href="http://altffour.newgrounds.com">altffour</a></h1>
+									<div class="flashoptions" id="size_and_lightbox_options">
+										<script type="text/javascript">
+											// <![CDATA[
+											var o_btns = new FlashWriter("http://flash.ngfiles.com/portal/flash_display_options.swf", "108", "30");
+											o_btns.SetScriptAccess("always");
+											o_btns.SetFullScreen(true);
+																						o_btns.SetParams(
+												"scaling=1"+
+												"&ftype=Movie"
+											);
+											o_btns.Print();
+											// ]]>
+										</script>
+									</div>
+
+									<p id="button_hover">
+										<strong id="button_hover_text" class=""></strong>
+									</p>
+
+								</div>
+							</div>
+							
+														<div id="judgement_blockade" style="display:none">
+								<div class="in-page-warning">
+									<a href="javascript:unblock()"><img src="http://img.ngfiles.com/portal/blockade_judgement.gif" alt="under judgement" /></a>
+								</div>
+							</div>
+							<div id="adult_blockade" style="display:none">
+								<div class="in-page-warning">
+									<a href="javascript:unblock()"><img src="http://img.ngfiles.com/portal/blockade_adult.gif" alt="this is adult" /></a>
+								</div>
+							</div>
+							<div id="popup_blockade" style="display:none">
+								<div class="in-page-warning">
+									<a href="javascript:unblock()"><img src="http://img.ngfiles.com/portal/blockade_popup.gif" alt="popup is open" /></a>
+								</div>
+							</div>
+							<div id="general_blockade" style="display:none">
+								<div class="in-page-warning">
+									<a href="javascript:unblock()"><img src="http://img.ngfiles.com/portal/blockade_all.gif" alt="unblock flash?" /></a>
+								</div>
+							</div>
+
+																					<div id="flash_embed" class="flashhover_embed" style="width:400px; height:300px;">
+								<!-- movie goes here -->
+							</div>
+
+							<div class="hr"><hr /></div>
+
+							<div class="popadtext" id="textunderflash">
+																							</div>
+							<br clear="left" />
+
+
+						</div>
+					</div>
+				</div>
+				<div class="boxbot"><div></div></div>
+			</div>
+
+	</div>
+
+		<div id="flash_embed_sizer" class="flashbackground">
+	</div>
+		
+</div>
+
+				<div id="suggested_content_wide" class="suggested_horizontal">
+			<div class="box">
+				<div class="boxtop"><div></div></div>
+				<div class="boxl">
+					<div class="boxr">
+						<div class="boxm">
+
+							<div class="featurefix">
+																	<div>
+										<a href="http://www.newgrounds.com/portal/view/18702" class="feature">
+										<img src="http://picon.ngfiles.com/18000/portal_18702.gif" alt="icon" />
+										<span class="fout"> <span class="fmid"><span class="fin">
+										<span class="ftitle">Hyakugojyuuichi!!</span>
+										This crazy video took the Internet by storm! A must see!										</span></span></span>
+										</a>
+									</div>
+																	<div>
+										<a href="http://www.newgrounds.com/portal/view/287468" class="feature">
+										<img src="http://picon.ngfiles.com/287000/portal_287468.gif" alt="icon" />
+										<span class="fout"> <span class="fmid"><span class="fin">
+										<span class="ftitle">When Robots Attack</span>
+										Robots take over the world in this music video by Kepple for the song by Lemon Demon!										</span></span></span>
+										</a>
+									</div>
+																	<div>
+										<a href="http://www.newgrounds.com/portal/view/407963" class="feature">
+										<img src="http://picon.ngfiles.com/407000/portal_407963.gif" alt="icon" />
+										<span class="fout"> <span class="fmid"><span class="fin">
+										<span class="ftitle">Lemon Demon's &quot;Bad Idea&quot;</span>
+										TmsT's music video for Lemon Demon's epic zombie-slaying misadventure!										</span></span></span>
+										</a>
+									</div>
+																	<div>
+										<a href="http://www.newgrounds.com/portal/view/295165" class="feature">
+										<img src="http://picon.ngfiles.com/295000/portal_295165.gif" alt="icon" />
+										<span class="fout"> <span class="fmid"><span class="fin">
+										<span class="ftitle">Geeks In Love</span>
+										A geeky Valentine's Day gift from TmsT animation and Lemon Demon music!										</span></span></span>
+										</a>
+									</div>
+																<br clear="left" />
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="boxbot"><div></div></div>
+			</div>
+		</div>
+	
+<script type="text/javascript">
+	// <![CDATA[
+
+		var fw = new FlashWriter("http://uploads.ungrounded.net/285000/285267_ultimateshowdown.swf", "100%", "100%");
+		fw.SetScriptAccess("never");
+		fw.SetFullScreen(true);
+		fw.SetFullScreenOnSelection(true);
+
+					var fw_params = [{param:"NewgroundsAPI_PublisherID", value:"1"},{param:"NewgroundsAPI_SandboxID", value:"4db4f4ba32058"}];
+		
+		
+		var save_file_id = null;
+		var save_group_id = null;
+
+		function makeFlashParams() {
+			var p = "";
+
+			for(var i=0; i<fw_params.length; i++) {
+				if (i > 0) {
+					p+="&";
+				}
+				p+=fw_params[i].param+"="+fw_params[i].value;
+			}
+
+			if (save_file_id && save_group_id) {
+				if (p !== "") {
+					p+="&";
+				}
+				p+="NewgroundsAPI_SaveFileID="+save_file_id
+				p+="&NewgroundsAPI_SaveGroupID="+save_group_id
+
+				// reset the file id to what it was when the page was loaded
+									save_file_id = null;
+							}
+			return p;
+		}
+
+		function getEmbedHTML() {
+			fw.SetParams(
+				makeFlashParams()
+			);
+			fw.SetFullScreen(true);
+			return fw.ToString();
+		}
+
+		var lightbox = null;
+		var movie_open = false;
+		function popMovie(groupid,saveid)
+		{
+			extra = "sandboxid=4db4f4ba32058";
+			if (saveid && groupid) {
+				extra = extra+"&group_id="+groupid+"&save_id="+saveid;
+			}
+			submission_controller.PopViewer(472, 684, extra);
+			$('flash_embed').innerHTML = $('popup_blockade').innerHTML;
+			movie_open = false;
+			return(false);
+		}
+
+		// create the lightbox;
+		function setLightbox() {
+			if (!lightbox) {
+				var body = document.getElementsByTagName("body").item(0);
+				lightbox = document.createElement("div");
+				lightbox.setAttribute("id", "lightbox");
+				lightbox.setAttribute("class", "black_overlay");
+				lightbox.setAttribute("className", "black_overlay");
+				body.appendChild(lightbox);
+				$('lightbox').style.height = getDocumentHeight()+"px";
+				$('lightbox').style.display = "none";
+			}
+		}
+
+		// resize vars
+		var page_width = 942;
+		var interval;
+		var x_speed = 0;
+		var y_speed = 0;
+
+		// set the author-specified movie size
+		var full_width = 942;
+		var full_height = 707;
+
+		// set the in-line movie sizes
+		var normal_width = 400;
+		var normal_height = 300;
+
+		// set the resize defaults
+		var current_width = normal_width;
+		var current_height = normal_height;
+		var use_width = normal_width;
+		var use_height = normal_height;
+
+		// transition speed stuff
+		var duration = 0.5;
+		var framerate = 50;
+		var frames = (duration*1000)/framerate;
+
+		// lightbox vars
+		var lights = true;
+
+		// lightbox fade in/out effects
+		function FadeEffect(element){
+			new Effect.Fade(element, {duration:0.5});
+		}
+		function ShowEffect(element){
+			new Effect.Appear(element, {duration:0.5, from:0.0, to:0.8});
+		}
+
+		function dimLights(lt) {
+			lights = lt;
+			if (lights) {
+				clearSwappableElements();
+				$('flashhover_container').className = "flashhover_container poddimmed";
+				setLightbox();
+				ShowEffect('lightbox');
+				lights = false;
+			} else {
+				fillSwappableElements();
+				$('flashhover_container').className = "flashhover_container";
+				setLightbox();
+				FadeEffect('lightbox');
+				lights = true;
+			}
+		}
+
+		// resize functions
+		function fullSize() {
+			use_width = full_width;
+			use_height = full_height;
+			startScale();
+		}
+		function normalSize() {
+			use_width = normal_width;
+			use_height = normal_height;
+			startScale();
+		}
+
+		// figures out if we need to shrink or grow
+		function startScale() {
+			clearInterval(interval);
+			if (current_width > use_width) {
+				scaleDown();
+			} else if (current_width < use_width) {
+				scaleUp();
+			}
+		}
+		function scaleUp() {
+			x_speed = Math.round( (use_width-current_width) /frames );
+			y_speed = Math.round( (use_height-current_height) /frames );
+			interval = setInterval("growFlash()",framerate);
+		}
+		function scaleDown() {
+			x_speed = Math.round( (current_width-use_width) /frames );
+			y_speed = Math.round( (current_height-use_height) /frames );
+			interval = setInterval("shrinkFlash()",framerate);
+		}
+
+		// functions for the actual resizing
+		function growFlash() {
+			current_width+=x_speed;
+			current_height+=y_speed;
+
+			if (current_width >= use_width || current_height >= use_height) {
+				current_width = use_width;
+				current_height = use_height;
+				clearInterval(interval);
+			}
+			setSizing();
+		}
+		function shrinkFlash() {
+			current_width-=x_speed;
+			current_height-=y_speed;
+
+			if (current_width <= use_width || current_height <= use_height) {
+				current_width = use_width;
+				current_height = use_height;
+				clearInterval(interval);
+			}
+			setSizing();
+		}
+
+		// Function for scaling the in-line sizer div
+		function setSizing() {
+			$('flash_embed').style.width = current_width+"px";
+			$('flash_embed').style.height = current_height+"px";
+
+			$('flash_embed_sizer').style.height = $('flashhover_container').offsetHeight+"px";
+			$('flash_embed_sizer').style.width = $('flashhover_container').offsetWidth+"px";
+					}
+
+		setSizing();
+
+					$('flash_embed').innerHTML = getEmbedHTML();
+			movie_open = true;
+		
+		function closeMovie() {
+			dimLights(false);
+			normalSize();
+			$('flash_embed').innerHTML = $('general_blockade').innerHTML;
+			movie_open = false;
+		}
+
+		function unblock() {
+			$('flash_embed').innerHTML = getEmbedHTML();
+			movie_open = true;
+		}
+
+		function showHover(txt) {
+			if (!txt || txt == 'null') {
+				$('button_hover_text').innerHTML = "";
+				checkhover = false;
+			} else {
+				$('button_hover_text').innerHTML = txt;
+				checkhover = true;
+			}
+		}
+
+		// functions for getting the dimensions iof the actual document (for sizing the lightbox)
+		function getDocumentHeight() {
+			return getDocumentDimensions().height;
+		}
+		function getDocumentDimensions() {
+
+			if( window.innerHeight && window.scrollMaxY ) // Firefox
+			{
+				pageWidth = window.innerWidth + window.scrollMaxX;
+				pageHeight = window.innerHeight + window.scrollMaxY;
+			}
+			else if( document.body.scrollHeight > document.body.offsetHeight ) // all but Explorer Mac
+			{
+				pageWidth = document.body.scrollWidth;
+				pageHeight = document.body.scrollHeight;
+			}
+			else // works in Explorer 6 Strict, Mozilla (not FF) and Safari
+			{
+				pageWidth = document.body.offsetWidth + document.body.offsetLeft;
+				pageHeight = document.body.offsetHeight + document.body.offsetTop;
+			}
+			return {height:pageHeight, width:pageWidth};
+		}
+
+		var last_shake = 0;
+		function shakeScreen() {
+			var date = new Date();
+			var time = date.getTime();
+
+			if (time > last_shake + 2000) {
+				last_shake = time;
+			} else {
+				return;
+			}
+
+			if (movie_open) {
+				Effect.Shake('the_flash_embed',{duration:0.25, distance:15});
+				Effect.Shake('the_flash_embed',{duration:0.3, distance:5});
+			} else {
+				var pop = submission_controller.GetPopWindow();
+				if (pop) {
+					pop.shakeScreen();
+				}
+			}
+		}
+
+	// ]]>
+</script>
+
+<div>
+<div id="leftcol">
+
+	
+		
+	<div class="box title">
+		<div class="boxtop"><div></div></div>
+		<div class="boxl">
+			<div class="boxr">
+				<div class="boxm">
+					<div class="headsizer">
+						<div class="heading">
+							<h3 class="view i-info">Author &amp; File Information</h3>
+																				</div>
+					</div>
+
+					<div class="creditsizer">
+
+						
+
+							<div class="credits">
+								<a href="http://altffour.newgrounds.com"><img src="http://uicon.ngfiles.com/763000/763911.gif" alt="altffour" height="46" width="46" class="icon" /></a>
+
+								<div class="fout"><div class="fmid"><div class="fin">
+								<h4>Artist</h4>
+								<h2 class="author"><a href="http://altffour.newgrounds.com/">shawn vulliez (altffour)</a></h2>
+									<p class="authorcontact">
+
+									<a class="ac_mail" title="Contact" href="http://www.newgrounds.com/pm/send/altffour">Contact</a>
+									
+									
+									</p>
+								</div></div></div>
+
+							</div>
+						
+
+							<div class="credits">
+								<a href="http://trapezoid.newgrounds.com"><img src="http://uicon.ngfiles.com/icon_default.gif" alt="Trapezoid" height="46" width="46" class="icon" /></a>
+
+								<div class="fout"><div class="fmid"><div class="fin">
+								<h4>Music (non-AP)</h4>
+								<h2 class="author"><a href="http://trapezoid.newgrounds.com/">Neil Cicierega (Trapezoid)</a></h2>
+									<p class="authorcontact">
+
+									<a class="ac_mail" title="Contact" href="http://www.newgrounds.com/pm/send/trapezoid">Contact</a>
+																			<a href="http://www.eviltrailmix.com" class="ac_web" title="Visit Artist's Site">Visit Artist's Site</a>
+									
+									
+									</p>
+								</div></div></div>
+
+							</div>
+						
+					</div>
+
+						
+																<div class="creditsizerlined">
+
+										<h4>Additional Audio</h4>
+										<h2 class="audioauthor"><a href="http://www.lemondemon.com">Lemon Demon</a> (<a href="http://www.amazon.com/exec/obidos/external-search?tag=newgrounds-20&amp;keyword=Lemon+Demon&amp;mode=music">Buy!</a>)</h2>
+
+									</div>
+									
+					<div class="hr hrfix"><hr /></div>
+					<div class="boxsizer">
+
+						<p class="dotted"><em><strong class="yellow">Submitted</strong>:</em>  12/22/2005 <span class="gray">|</span> 08:01PM EST</p>
+
+						<p class="dotted">
+							<em><strong class="yellow">File Info</strong>:</em> Movie							<span class="gray">|</span> 2.8 MB															| <span class="gray">Add Movie to Favorites</span>
+													</p>
+
+						
+													<p class="dotted">
+								<em><strong class="yellow">Genre</strong>:</em> Comedy - Parody							</p>
+						
+													<p class="dotted"><em><strong class="yellow">Current Score</strong>:</em>
+								<span id="submission_score">4.34</span> <span class="gray">/</span> 5.00 <span id="submission_score_change"></span>
+							</p>
+
+							<p class="last">
+								<strong class="white" id="submission_num_votes">366,809</strong> votes <span class="gray">|</span>
+								<strong class="white">12,163,037</strong> views							</p>
+											</div>
+				</div>
+			</div>
+		</div>
+		<div class="boxbot"><div></div></div>
+	</div>
+
+
+				<div class="box">
+			<div class="boxtop"><div></div></div>
+			<div class="boxl">
+				<div class="boxr">
+					<div class="boxm">
+						<ul class="award">
+														<li>
+									<img src="http://img.ngfiles.com/aicons/awards_1.gif" height="20" width="20" alt="Weekly Users' Choice" /> <span class="white"> Weekly Users' Choice</span> &ndash; 12<span class="gray">/</span>28<span class="gray">/</span>2005								</li>
+																<li>
+									<img src="http://img.ngfiles.com/aicons/awards_5.gif" height="20" width="20" alt="Daily Feature" /> <span class="white"> Daily Feature</span> &ndash; 12<span class="gray">/</span>23<span class="gray">/</span>2005								</li>
+														</ul>
+						<br clear="left" />
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+			<div class="boxbot"><div></div></div>
+		</div>
+	
+	<div id="votebar">
+		<div class="flashvote">
+			<div id="votebar_wrapper_hidden" class="votedead" style="position:absolute;display:none">
+				<p id="votetext" class="votetext">Voting is enabled after Movie loads</p>
+			</div>
+			<div id="votebar_wrapper">
+				<p id="tt" class="votetext"><ins>Click an icon to vote on this!</ins></p>
+				<p id="t0" style="display: none">Blam this piece of <em>crap!</em></p>
+				<p id="t1" style="display: none">This makes poop look good.</p>
+				<p id="t2" style="display: none">Nothing too new or interesting.</p>
+				<p id="t3" style="display: none">Not bad. In fact&hellip; I like it!</p>
+				<p id="t4" style="display: none">This Flash is crunk, fo' shizzle!</p>
+				<p id="t5" style="display: none">Woot!!! All my 5 R belong to this!</p>
+
+						<ul>
+						<li id="v0">
+										<a class="vl" id="a63604484db4f4ba3603d" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'i'+'7'+'26'+'23'+'d'+'7'+'4'+'d'+'b4'+'f'+'4'+'b'+'a3'+'60'+'2'+'d'); return(false);" onmouseover="f(0);" onmouseout="g(0);"></a>
+												<a class="vl" id="y56594264db4f4ba36051" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'g2'+'64'+'8'+'24'+'14'+'d'+'b4'+'f'+'4b'+'a'+'36'+'0'+'6'+'f'); return(false);" onmouseover="f(0);" onmouseout="g(0);"></a>
+												<a class="vl" id="pe7d85f64db4f4ba35fa3" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'fa'+'10'+'b'+'1'+'cf'+'4'+'d'+'b4'+'f'+'4'+'b'+'a3'+'5'+'f'+'ae'); return(false);" onmouseover="f(0);" onmouseout="g(0);"></a>
+												<a class="vl" id="k2c9d5714db4f4ba36065" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 't0'+'c'+'a4'+'d'+'bd'+'4'+'db'+'4f'+'4'+'b'+'a'+'3'+'6'+'0'+'4'+'7'); return(false);" onmouseover="f(0);" onmouseout="g(0);"></a>
+												<a class="vl" id="y4b783494db4f4ba36024" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'm9'+'c'+'af'+'e'+'3'+'74'+'d'+'b4'+'f'+'4'+'b'+'a'+'36'+'0'+'5b'); return(false);" onmouseover="f(0);" onmouseout="g(0);"></a>
+										</li>
+								<li id="v1">
+										<a class="vl" id="fa003db94db4f4ba360c2" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'y'+'38'+'02'+'d'+'c'+'8'+'4'+'db'+'4'+'f4'+'b'+'a'+'36'+'0a'+'4'); return(false);" onmouseover="f(1);" onmouseout="g(1);"></a>
+												<a class="vl" id="bddf24834db4f4ba36086" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'e6'+'a0'+'80'+'b'+'44'+'d'+'b'+'4'+'f4'+'b'+'a'+'3'+'60'+'f'+'4'); return(false);" onmouseover="f(1);" onmouseout="g(1);"></a>
+												<a class="vl" id="w103d9954db4f4ba360d6" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'fd'+'5'+'51'+'6'+'bd'+'4'+'d'+'b'+'4'+'f'+'4b'+'a'+'36'+'0'+'90'); return(false);" onmouseover="f(1);" onmouseout="g(1);"></a>
+												<a class="vl" id="ga61689c4db4f4ba3609b" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'w'+'80'+'a7'+'e'+'f'+'6'+'4'+'d'+'b'+'4'+'f4'+'ba'+'3'+'6'+'0b'+'8'); return(false);" onmouseover="f(1);" onmouseout="g(1);"></a>
+												<a class="vl" id="kf0c87834db4f4ba360ea" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'l'+'4f'+'3a'+'e'+'90'+'4d'+'b4'+'f4'+'ba'+'3'+'6'+'0'+'cc'); return(false);" onmouseover="f(1);" onmouseout="g(1);"></a>
+												<a class="vl" id="f100246b4db4f4ba360ae" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'i8'+'d'+'49'+'2f'+'c4'+'db'+'4f'+'4b'+'a3'+'6'+'0'+'d'+'f'); return(false);" onmouseover="f(1);" onmouseout="g(1);"></a>
+												<a class="vl" id="kcebe8a24db4f4ba35fb9" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'r2'+'5'+'b'+'36'+'7b'+'4'+'db'+'4f'+'4b'+'a'+'3'+'5f'+'c3'); return(false);" onmouseover="f(1);" onmouseout="g(1);"></a>
+										</li>
+								<li id="v2">
+										<a class="vl" id="u38e2ea44db4f4ba3617f" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'c'+'29'+'e'+'7'+'1'+'3e'+'4'+'d'+'b'+'4'+'f4'+'b'+'a3'+'61'+'4'+'d'); return(false);" onmouseover="f(2);" onmouseout="g(2);"></a>
+												<a class="vl" id="e50c5d334db4f4ba35fcd" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'e3'+'4'+'4'+'4'+'f8'+'04'+'d'+'b'+'4'+'f4'+'ba'+'35'+'f'+'d7'); return(false);" onmouseover="f(2);" onmouseout="g(2);"></a>
+												<a class="vl" id="n2b4ed0c4db4f4ba36107" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'd4'+'7'+'2'+'5'+'b1'+'84'+'db'+'4f'+'4b'+'a'+'36'+'13'+'9'); return(false);" onmouseover="f(2);" onmouseout="g(2);"></a>
+												<a class="vl" id="hf5edef04db4f4ba3611c" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'za'+'67'+'55'+'6'+'6'+'4'+'d'+'b4'+'f4'+'b'+'a3'+'61'+'88'); return(false);" onmouseover="f(2);" onmouseout="g(2);"></a>
+												<a class="vl" id="n16324644db4f4ba36157" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'q'+'f7'+'4'+'1'+'0'+'bf'+'4d'+'b4'+'f4'+'b'+'a'+'36'+'1'+'1'+'1'); return(false);" onmouseover="f(2);" onmouseout="g(2);"></a>
+												<a class="vl" id="e78ff8f64db4f4ba36143" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'q'+'1e'+'2c'+'60'+'6'+'4d'+'b'+'4f'+'4b'+'a'+'3'+'61'+'25'); return(false);" onmouseover="f(2);" onmouseout="g(2);"></a>
+												<a class="vl" id="vdee73bd4db4f4ba3616b" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'm'+'f8'+'c'+'2'+'9e'+'5'+'4d'+'b4'+'f'+'4'+'ba'+'36'+'1'+'61'); return(false);" onmouseover="f(2);" onmouseout="g(2);"></a>
+												<a class="vl" id="t599480e4db4f4ba36130" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'f4'+'02'+'3'+'00'+'f4'+'db'+'4f'+'4b'+'a'+'36'+'17'+'4'); return(false);" onmouseover="f(2);" onmouseout="g(2);"></a>
+										</li>
+								<li id="v3">
+										<a class="vl" id="sc47aa854db4f4ba361c5" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'f9'+'8'+'a'+'7'+'d6'+'b'+'4'+'db'+'4f'+'4b'+'a'+'3'+'61'+'e'+'3'); return(false);" onmouseover="f(3);" onmouseout="g(3);"></a>
+												<a class="vl" id="tc6c9e574db4f4ba35fe1" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'w'+'1'+'d'+'1'+'ae'+'c9'+'4'+'db'+'4'+'f4'+'ba'+'35'+'fe'+'a'); return(false);" onmouseover="f(3);" onmouseout="g(3);"></a>
+												<a class="vl" id="u5be39a94db4f4ba3619d" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'oc'+'7b'+'34'+'f8'+'4d'+'b'+'4f'+'4'+'b'+'a3'+'61'+'cf'); return(false);" onmouseover="f(3);" onmouseout="g(3);"></a>
+												<a class="vl" id="g6d6e6944db4f4ba361b1" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'df'+'b6'+'1'+'3b'+'e4'+'db'+'4'+'f4'+'ba'+'36'+'1'+'bb'); return(false);" onmouseover="f(3);" onmouseout="g(3);"></a>
+												<a class="vl" id="cb4d8a784db4f4ba361d9" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'zd'+'5f'+'59'+'e'+'d4'+'db'+'4f'+'4'+'b'+'a3'+'6'+'1'+'a6'); return(false);" onmouseover="f(3);" onmouseout="g(3);"></a>
+										</li>
+								<li id="v4">
+										<a class="vl" id="g54a17b74db4f4ba3621f" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'd5'+'3'+'9'+'3'+'8d'+'64'+'db'+'4f'+'4'+'ba'+'3'+'62'+'15'); return(false);" onmouseover="f(4);" onmouseout="g(4);"></a>
+												<a class="vl" id="vbedaf584db4f4ba361f7" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'n7'+'e'+'2d'+'b'+'6'+'54'+'db'+'4f'+'4'+'b'+'a3'+'62'+'2'+'9'); return(false);" onmouseover="f(4);" onmouseout="g(4);"></a>
+												<a class="vl" id="nac228474db4f4ba3620c" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'r'+'4'+'01'+'a'+'4'+'4'+'a'+'4'+'db'+'4'+'f'+'4b'+'a'+'36'+'20'+'1'); return(false);" onmouseover="f(4);" onmouseout="g(4);"></a>
+												<a class="vl" id="p285d32e4db4f4ba35ff4" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'h5'+'17'+'7a'+'4f'+'4d'+'b4'+'f'+'4'+'ba'+'3'+'6'+'0'+'02'); return(false);" onmouseover="f(4);" onmouseout="g(4);"></a>
+												<a class="vl" id="qbe4e4714db4f4ba36233" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'o1'+'6'+'c'+'a1'+'fe'+'4d'+'b'+'4'+'f4'+'b'+'a3'+'6'+'2'+'3c'); return(false);" onmouseover="f(4);" onmouseout="g(4);"></a>
+										</li>
+								<li id="v5">
+										<a class="vl" id="q857fd9e4db4f4ba36279" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'dd'+'b'+'2'+'60'+'5'+'d4'+'d'+'b4'+'f'+'4'+'ba'+'36'+'29'+'7'); return(false);" onmouseover="f(5);" onmouseout="g(5);"></a>
+												<a class="vl" id="x3d5df8b4db4f4ba36251" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'p0'+'d'+'d'+'7'+'f'+'2'+'e'+'4'+'d'+'b'+'4'+'f'+'4b'+'a'+'3'+'6'+'25'+'a'); return(false);" onmouseover="f(5);" onmouseout="g(5);"></a>
+												<a class="vl" id="ecfb2c8d4db4f4ba3628d" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'b9'+'b0'+'36'+'50'+'4d'+'b'+'4'+'f4'+'b'+'a'+'3'+'6'+'2'+'8'+'3'); return(false);" onmouseover="f(5);" onmouseout="g(5);"></a>
+												<a class="vl" id="z47b1c714db4f4ba3600c" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'c'+'0d'+'4'+'34'+'8'+'1'+'4d'+'b4'+'f'+'4b'+'a'+'3'+'60'+'1'+'6'); return(false);" onmouseover="f(5);" onmouseout="g(5);"></a>
+												<a class="vl" id="n0e2a5374db4f4ba36265" href="#" onclick="u5ed3ad84db4f4ba35f9(this.id, 'u0'+'f4'+'56'+'b'+'14'+'d'+'b4'+'f4'+'b'+'a3'+'62'+'6f'); return(false);" onmouseover="f(5);" onmouseout="g(5);"></a>
+										</li>
+						</ul>
+					</div>
+		</div>
+	</div>
+
+			<div id="voteprompt">
+			<p>You are not <a href="javascript:submission_controller.ShowLoginBox();">logged in</a>.</p>
+		</div>
+	
+	<div class="box onethirdadholder">
+		<div class="boxtop"><div></div></div>
+		<div class="boxl">
+			<div class="boxr">
+				<div class="boxm">
+					<div class="boxad onethirdad">
+						<script type="text/javascript">
+// <![CDATA[ 
+addSwappableElement("<iframe src=\"http:\/\/www.newgrounds.com\/includes\/ad_commonside_wide.php?gid=28526703\" scrolling=\"no\" frameborder=\"0\" class=\"onethirdad\" id='cpmstar_300x250'><\/iframe>", "300x250", null);// ]]> 
+
+</script>					</div>
+					<br clear="left" />
+				</div>
+			</div>
+		</div>
+		<div class="boxbot"><div></div></div>
+	</div>
+
+			<div class="box title">
+			<div class="boxtop"><div></div></div>
+			<div class="boxl">
+				<div class="boxr">
+					<div class="boxm">
+						<div class="headsizer">
+							<div class="heading"><h3 class="i-features">Related Series / Collections</h3></div>
+						</div>
+						<div class="featurefix">
+
+																<div>
+										<a href="/collection/flashportalhistory2005.html" class="feature">
+										<img src="http://collect.ngfiles.com/0/icon_272.gif" height="46" width="46" alt="Flash Portal History: 2005 icon" />										<span class="fout"> <span class="fmid"><span class="fin">
+										<span class="ftitle">Flash Portal History: 2005</span> Lots of great submissions, culminating in The Ultimate Showdown in December.										</span></span></span>
+										</a>
+									</div>
+																		<div>
+										<a href="/toon/funnycartoons.html" class="feature">
+										<img src="http://collect.ngfiles.com/0/icon_59.gif" height="46" width="46" alt="Funny Cartoons icon" />										<span class="fout"> <span class="fmid"><span class="fin">
+										<span class="ftitle">Funny Cartoons</span> These cartoons are a laugh riot!										</span></span></span>
+										</a>
+									</div>
+																		<div>
+										<a href="/collection/lemondemon.html" class="feature">
+										<img src="http://collect.ngfiles.com/0/icon_245.gif" height="46" width="46" alt="Lemon Demon icon" />										<span class="fout"> <span class="fmid"><span class="fin">
+										<span class="ftitle">Lemon Demon</span> Music videos featuring the songs of Lemon Demon!										</span></span></span>
+										</a>
+									</div>
+																		<div>
+										<a href="/toon/musicvideos.html" class="feature">
+										<img src="http://collect.ngfiles.com/0/icon_64.gif" height="46" width="46" alt="Music Videos icon" />										<span class="fout"> <span class="fmid"><span class="fin">
+										<span class="ftitle">Music Videos</span> Badger Badger, All Your Base; it's all here!										</span></span></span>
+										</a>
+									</div>
+									
+							<br clear="left" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="boxbot"><div></div></div>
+		</div>
+	
+			<div class="box title">
+			<div class="boxtop"><div></div></div>
+			<div class="boxl">
+				<div class="boxr">
+					<div class="boxm">
+						<div class="headsizer">
+							<div class="heading"><h3 class="i-arrow">Related Submissions</h3></div>
+						</div>
+						<div class="boxsizer">
+															<p class="dotted">Submissions by <a href="http://altffour.newgrounds.com/">shawn vulliez (altffour)</a>:
+										<select id="movies763911" onchange="JumpToMovie(this);" class="formtext pulldown">
+											<option value="0">&mdash; Choose below&hellip; &mdash;&nbsp;&nbsp;</option>
+																								<option value="328278">Dinosaurchestra</option>
+																										<option value="276616">eBaums world dot com</option>
+																										<option value="374234">i like kitty cats!</option>
+																										<option value="303638">Snakes on a Plane</option>
+																										<option value="332884">Summer Camp Preview</option>
+																										<option value="359721">Summer Camp: Episode 1</option>
+																										<option value="392749">The Fart Button</option>
+																										<option value="426611">The Party Song</option>
+																										<option value="457069">TTB Vol. 1 &quot;Time Bears&quot;</option>
+																										<option value="487746">TTB Vol. 2 &quot;Gettysbear&quot;</option>
+																							</select>
+
+																			</p>
+																		<p class="dotted">Submissions by <a href="http://trapezoid.newgrounds.com/">Neil Cicierega (Trapezoid)</a>:
+										<select id="movies165501" onchange="JumpToMovie(this);" class="formtext pulldown">
+											<option value="0">&mdash; Choose below&hellip; &mdash;&nbsp;&nbsp;</option>
+																								<option value="25644">Batman (Animutated)</option>
+																										<option value="48593">Captain Lou</option>
+																										<option value="41181">Cold Heart</option>
+																										<option value="328278">Dinosaurchestra</option>
+																										<option value="19257">Do the Mario!</option>
+																										<option value="52761">Earth vs Funk</option>
+																										<option value="276616">eBaums world dot com</option>
+																										<option value="207627">Emmy's Christmas Gift</option>
+																										<option value="112181">Facts About US Presidents</option>
+																										<option value="310209">Fiberglass Monkey</option>
+																										<option value="295165">Geeks In Love</option>
+																										<option value="18702">Hyakugojyuuichi!!</option>
+																										<option value="45746">Jesus H. Christ</option>
+																										<option value="33461">Kung Fu Phil</option>
+																										<option value="407963">Lemon Demon's &quot;Bad Idea&quot;</option>
+																										<option value="18794">Lesko's Revenge</option>
+																										<option value="42921">Life is Like a Mop</option>
+																										<option value="21946">Lucky Lucky</option>
+																										<option value="27647">Nya Nya Nya</option>
+																										<option value="140341">Potter Puppet Pals 2!</option>
+																										<option value="125471">Potter Puppet Pals!</option>
+																										<option value="37228">Rubber Duckie</option>
+																										<option value="87626">Seinfeld II</option>
+																										<option value="303638">Snakes on a Plane</option>
+																										<option value="245744">The Fingertips Project</option>
+																										<option value="21081">The Japanese Pokerap</option>
+																										<option value="22972">The Japanese Pokerap 2</option>
+																										<option value="38162">The Unabombers - Slipknot</option>
+																										<option value="287468">When Robots Attack</option>
+																										<option value="91829">Wizard Power</option>
+																							</select>
+
+																			</p>
+									
+						
+							<h4>Users who liked this also enjoyed:</h4>
+							<ul class="sendlinks">
+																	<li><a href="http://www.newgrounds.com/portal/view/58184" title="Suitable for Everyone">FF Tribute - Chocobo Mix</a></li>
+																		<li><a href="http://www.newgrounds.com/portal/view/243164" title="Suitable for Ages 17+">Lilium</a></li>
+																		<li><a href="http://www.newgrounds.com/portal/view/193426" title="Suitable for Everyone">Walk-Smash-Walk</a></li>
+																		<li><a href="http://www.newgrounds.com/portal/view/278299" title="Suitable for Everyone">The Touchtone Genius</a></li>
+																		<li><a href="http://www.newgrounds.com/portal/view/158417" title="Suitable for Everyone">Bitey of Brackenwood</a></li>
+																</ul>
+
+												</div>
+					</div>
+				</div>
+			</div>
+			<div class="boxbot"><div></div></div>
+		</div>
+	
+			<div class="box">
+			<div class="boxtop"><div></div></div>
+			<div class="boxl">
+				<div class="boxr">
+					<div class="boxm">
+						<div class="boxsizer">
+							<h4>Help this author!</h4>
+							<ul class="sendlinks">
+								<li><a href="/portal/addtocollection/285267">Recommend this for a collection</a></li>
+
+															</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="boxbot"><div></div></div>
+		</div>
+	
+
+        <div class="box onethirdadholder" style="display:none">
+                <div class="boxtop"><div></div></div>
+                <div class="boxl">
+                        <div class="boxr">
+                                <div class="boxm">
+
+
+																			<div style="width:300px; margin: 5px auto; " id="hidefromleeches">
+											<script type="text/javascript"><!--
+											google_ad_client = "pub-4357719191980916";
+											/* 300x250, created 5/12/09 */
+											google_ad_slot = "5366382677";
+											google_ad_width = 300;
+											google_ad_height = 250;
+											//-->
+											</script>
+											<script type="text/javascript"
+											src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+											</script>
+										</div>
+									
+																		<div id="showtoleeches" style="display:none;">
+											<script type="text/javascript">
+												// <![CDATA[
+													// for adblock users:
+													if (user_is_a_leech) {
+														document.write("<iframe src=\"http:\/\/www.newgrounds.com\/promo\/store_promo300x250.html\" class=\"onethirdad\" scrolling=\"no\" height=\"250\" width=\"300\" frameborder=\"0\"><\/iframe>");
+														if ($('hidefromleeches')) {
+															$('hidefromleeches').style.display = "none";
+														}
+														$('showtoleeches').style.display = "";
+													}
+												//]]>
+											</script>
+									</div>
+
+									<br clear="left" />
+
+                                </div>
+                        </div>
+                </div>
+                <div class="boxbot"><div></div></div>
+        </div>
+</div>
+
+<div id="rightcol">
+	
+			<div class="box twothird" id="aftervote" style="display:none;">
+		<div id="aftervote_wrapper" style="visibility:hidden;">
+		<div id="aftervote_wrapper_inner">
+			<div class="boxtop"><div></div></div>
+			<div class="boxl">
+				<div class="boxr">
+					<div class="boxm">
+						<div id="aftervote_msg" class="boxsizer">x</div>
+					</div>
+				</div>
+			</div>
+			<div class="boxbot"><div></div></div>
+		</div>
+		</div>
+		</div>
+			
+	
+	<div class="box title twothird">
+		<div class="boxtop"><div></div></div>
+		<div class="boxl">
+			<div class="boxr">
+				<div class="boxm">
+					<div class="headsizer">
+						<div class="heading">
+							<h2 class="i-comments">Author Comments</h2>
+													</div>
+					</div>
+
+					<div class="boxsizer">
+						
+						<p>&quot;The Ultimate Showdown of Ultimate Destiny&quot;</p>
+
+<p>THANKS FOR THE SUPPORT WE LOVE HIP HOP</p>
+
+<p>You can find the mp3 on lemondemon.com or tindeck.com</p>
+													<span class="commentlink">
+																	<a id="num_reviews_link" href="http://www.newgrounds.com/portal/reviews/285267">15,404 reviews</a> |
+								
+																	<strong>Log in to write a review</strong> |
+								
+								<a id="sharethis285267_link" href="javascript:submission_controller.GetReviewController().ToggleShareWindow();">Share this!</a>
+							</span>
+											</div>
+				</div>
+			</div>
+		</div>
+		<div class="boxbot"><div></div></div>
+	</div>
+
+	
+				<div id="writereview285267" class="box title twothird" style="display:none;">
+		<div id="writereview285267_wrapper" style="visibility:hidden;">
+		<div id="writereview285267_wrapper_inner">
+		<div>
+			<div class="boxtop"><div></div></div>
+			<div class="boxl">
+				<div class="boxr">
+					<div class="boxm">
+						<div class="headsizer">
+							<div class="heading">
+								<h2 id="writereview285267_header" class="i-opinions">Write a Review!</h2>
+								<span id="writereview285267_button" class="btn"><a href="javascript:submission_controller.GetReviewController().SaveReview();">Submit Review!</a></span>
+							</div>
+						</div>
+
+						<div class="boxsizer">
+							<div class="shortform">
+								<p>Enter your summary, rating, and review for<span class="gray">:</span> <em>The Ultimate Showdown</em></p>
+								<input id="writereview285267_summary" type="text" class="inputfield formtext medinput" maxlength="50" />
+
+								<div class="star-rating">
+									<ul>
+																				<li><a href="javascript:submission_controller.GetReviewController().GetWriteReviewWindow().SetRating(1);" id="writereview285267_rating1" title="1 / 10" class="star1">1 star out of 10</a></li>
+																						<li><a href="javascript:submission_controller.GetReviewController().GetWriteReviewWindow().SetRating(2);" id="writereview285267_rating2" title="2 / 10" class="star2">2 stars out of 10</a></li>
+																						<li><a href="javascript:submission_controller.GetReviewController().GetWriteReviewWindow().SetRating(3);" id="writereview285267_rating3" title="3 / 10" class="star3">3 stars out of 10</a></li>
+																						<li><a href="javascript:submission_controller.GetReviewController().GetWriteReviewWindow().SetRating(4);" id="writereview285267_rating4" title="4 / 10" class="star4">4 stars out of 10</a></li>
+																						<li><a href="javascript:submission_controller.GetReviewController().GetWriteReviewWindow().SetRating(5);" id="writereview285267_rating5" title="5 / 10" class="star5">5 stars out of 10</a></li>
+																						<li><a href="javascript:submission_controller.GetReviewController().GetWriteReviewWindow().SetRating(6);" id="writereview285267_rating6" title="6 / 10" class="star6">6 stars out of 10</a></li>
+																						<li><a href="javascript:submission_controller.GetReviewController().GetWriteReviewWindow().SetRating(7);" id="writereview285267_rating7" title="7 / 10" class="star7">7 stars out of 10</a></li>
+																						<li><a href="javascript:submission_controller.GetReviewController().GetWriteReviewWindow().SetRating(8);" id="writereview285267_rating8" title="8 / 10" class="star8">8 stars out of 10</a></li>
+																						<li><a href="javascript:submission_controller.GetReviewController().GetWriteReviewWindow().SetRating(9);" id="writereview285267_rating9" title="9 / 10" class="star9">9 stars out of 10</a></li>
+																						<li><a href="javascript:submission_controller.GetReviewController().GetWriteReviewWindow().SetRating(10);" id="writereview285267_rating10" title="10 / 10" class="star10">10 stars out of 10</a></li>
+																				</ul>
+
+									<em>Your rating: <span id="writereview285267_rating_text">-</span> / 10 </em>
+									<span class="nostars"><a href="javascript:submission_controller.GetReviewController().GetWriteReviewWindow().SetRating(0);" id="writereview285267_rating0" title="0 / 10" class="star0">zero</a></span>
+								</div>
+
+								<textarea name="writereview285267_body" id="writereview285267_body" rows="12" cols="75" class="skinnier"></textarea>
+								<p class="inputnote"><em>No HTML, please.</em> Characters remaining: <strong class="yellow" id="writereview285267_body_chars_remaining">4,096</strong>.</p>
+
+									<script type="text/javascript">
+		CheckCharsRemaining("writereview285267_body", 4096, 0);
+	</script>
+	
+								<p class="rules">If you are giving this submission a low score, please offer constructive criticism that will be useful to the artist. The review space is not a place for you to act like a total asshole. If your review is found to be mean, offensive, or generally not helpful, you will be banned and your account may be terminated. <strong class="red">NOTE: Any attempt to promote an outside, unrelated website in this space will result in the deletion of your user account.</strong></p>
+
+																	<p class="agreement">
+										<input type="checkbox" value="Y" id="writereview285267_agreed" />
+										I have read and understood the <a href="/portal/agreement_reviews.html" onclick="NewWindow('/portal/agreement_reviews.html', 400, 650); return(false);">guidelines for posting reviews</a> to Newgrounds.
+									</p>
+															</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="boxbot"><div></div></div>
+		</div>
+		</div>
+		</div>
+		</div>
+						<div class="box title twothird" id="sharethis285267" style="display:none;">
+		<div id="sharethis285267_wrapper" style="visibility:hidden;">
+		<div id="sharethis285267_wrapper_inner">
+		<div>
+			<div class="boxtop"><div></div></div>
+			<div class="boxl">
+				<div class="boxr">
+					<div class="boxm">
+						<div class="headsizer">
+
+						<div class="heading">
+							<h2 class="i-share">Share this!</h2>
+						</div>
+						</div>
+
+						<div class="boxsizer">
+							<p>Spread the word about<span class="gray">:</span> <em>The Ultimate Showdown</em></p>
+
+							<ul class="award share">
+																	<li><img src="http://sicon.ngfiles.com/delicious.gif" height="20" width="20" alt="del.icio.us" /> <a href="http://del.icio.us/post?url=http://www.newgrounds.com/portal/view/285267&amp;title=The+Ultimate+Showdown">Bookmark on Del.icio.us</a></li>
+																	<li><img src="http://sicon.ngfiles.com/digg.gif" height="20" width="20" alt="Digg" /> <a href="http://www.digg.com/submit?phase=2&amp;url=http://www.newgrounds.com/portal/view/285267&amp;title=The+Ultimate+Showdown">Digg this</a></li>
+																	<li><img src="http://sicon.ngfiles.com/google.gif" height="20" width="20" alt="Google" /> <a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http://www.newgrounds.com/portal/view/285267&amp;title=The+Ultimate+Showdown">Add to Google bookmarks</a></li>
+																	<li><img src="http://sicon.ngfiles.com/magnolia.gif" height="20" width="20" alt="Ma.gnolia" /> <a href="http://ma.gnolia.com/bookmarklet/snap/add?url=http://www.newgrounds.com/portal/view/285267&amp;title=The+Ultimate+Showdown">Add to Ma.gnolia</a></li>
+																	<li><img src="http://sicon.ngfiles.com/netscape.gif" height="20" width="20" alt="Netscape" /> <a href="http://www.netscape.com/submit/?U=http://www.newgrounds.com/portal/view/285267&amp;T=The+Ultimate+Showdown">Save URL on Netscape</a></li>
+																	<li><img src="http://sicon.ngfiles.com/newsvine.gif" height="20" width="20" alt="Newsvine" /> <a href="http://www.newsvine.com/_tools/seed&amp;save?u=http://www.newgrounds.com/portal/view/285267&amp;T=The+Ultimate+Showdown">Add to Newsvine</a></li>
+																	<li><img src="http://sicon.ngfiles.com/reddit.gif" height="20" width="20" alt="Reddit" /> <a href="http://reddit.com/submit?url=http://www.newgrounds.com/portal/view/285267&amp;title=The+Ultimate+Showdown">Link on Reddit</a></li>
+																	<li><img src="http://sicon.ngfiles.com/slashdot.gif" height="20" width="20" alt="Slashdot" /> <a href="http://slashdot.org/bookmark.pl?url=http://www.newgrounds.com/portal/view/285267&amp;title=The+Ultimate+Showdown">Submit to Slashdot</a></li>
+																	<li><img src="http://sicon.ngfiles.com/technorati.gif" height="20" width="20" alt="Technorati" /> <a href="http://technorati.com/faves?add=http://www.newgrounds.com/portal/view/285267">Favorite with Technorati</a></li>
+																	<li><img src="http://sicon.ngfiles.com/yahoo.gif" height="20" width="20" alt="Yahoo" /> <a href="http://myweb.yahoo.com/myresults/bookmarklet?u=http://www.newgrounds.com/portal/view/285267&amp;t=The+Ultimate+Showdown">Save to Yahoo! MyWeb</a></li>
+															</ul>
+
+							<br clear="left" />
+							<div class="clearfix"></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="boxbot"><div></div></div>
+		</div>
+		</div>
+		</div>
+		</div>
+		
+		<div class="box title twothird" id="topreviews285267">
+		<div id="topreviews285267_wrapper">
+		<div id="topreviews285267_wrapper_inner">
+		<div>
+			<div class="boxtop"><div></div></div>
+			<div class="boxl">
+				<div class="boxr">
+					<div class="boxm" id="review_container">
+						<div class="headsizer" id="review_anchor">
+							<div class="heading">
+								<h2 class="i-opinions">The people have spoken</h2>
+								<p>Average Score: <span id="avg_review_score">9.6</span> / 10</p>
+							</div>
+						</div>
+
+						
+		<div id="review10868230">
+		<div id="review10868230_wrapper">
+		<div id="review10868230_wrapper_inner">
+
+		<div class="review" id="reviewbundle10868230">
+			<div class="head">
+
+									<div class="reviewscore">
+						<span>Score: <strong id="review10868230_score" class="score10">10</strong></span>
+					</div>
+				
+									<a href="http://ajohnl1.newgrounds.com"><img src="http://uicon.ngfiles.com/icon_default.gif" alt="ajohnl1" height="46" width="46" class="icon" align="left" /></a>
+				
+				<p><span>"</span>best thing ever<span>"</span></p>
+
+									<div><span>by: <a href="http://ajohnl1.newgrounds.com/">ajohnl1</a></span></div>
+				
+				<div><span>date: <strong>2 hours ago</strong></span></div>
+			</div>
+
+			
+			<p>Nuff said</p>
+			<span id="review_response_anchor_10868230"></span>
+			
+			
+							<div class="foot">
+					<dl>
+													<dt id="helpful_header_10868230">Rate this review:</dt>
+							<dd id="helpful_y_10868230" class="goodreview"><a href="#" onclick="GetReviewController(10868230).GetHelpfulness().Yes();return(false);" title="Rate this review as helpful.">Helpful!</a></dd>
+							<dd id="helpful_n_10868230" class="badreview"><a href="#" onclick="GetReviewController(10868230).GetHelpfulness().No();return(false);" title="Rate this review as useless.">Useless.</a></dd>
+							<dd id="helpful_x_10868230" class="abusivereview"><a href="#" onclick="GetReviewController(10868230).GetHelpfulness().Abusive();return(false);" title="Flag this review as abusive.">Flag as abusive.</a></dd>
+											</dl>
+					<span>No users have weighed in on this review.</span>
+				</div>
+					</div>
+
+		
+		</div>
+		</div>
+		</div>
+
+												<div class="hr"><hr /></div>
+										
+		<div id="review10867667">
+		<div id="review10867667_wrapper">
+		<div id="review10867667_wrapper_inner">
+
+		<div class="review" id="reviewbundle10867667">
+			<div class="head">
+
+									<div class="reviewscore">
+						<span>Score: <strong id="review10867667_score" class="score10">10</strong></span>
+					</div>
+				
+									<a href="http://casimo2.newgrounds.com"><img src="http://uicon.ngfiles.com/icon_default.gif" alt="casimo2" height="46" width="46" class="icon" align="left" /></a>
+				
+				<p><span>"</span>ah yes<span>"</span></p>
+
+									<div><span>by: <a href="http://casimo2.newgrounds.com/">casimo2</a></span></div>
+				
+				<div><span>date: <strong>6 hours ago</strong></span></div>
+			</div>
+
+			
+			<p>The more I watch it, the more I like it. And I do love it already (actually I've been singing it all day long :P)</p>
+			<span id="review_response_anchor_10867667"></span>
+			
+			
+							<div class="foot">
+					<dl>
+													<dt id="helpful_header_10867667">Rate this review:</dt>
+							<dd id="helpful_y_10867667" class="goodreview"><a href="#" onclick="GetReviewController(10867667).GetHelpfulness().Yes();return(false);" title="Rate this review as helpful.">Helpful!</a></dd>
+							<dd id="helpful_n_10867667" class="badreview"><a href="#" onclick="GetReviewController(10867667).GetHelpfulness().No();return(false);" title="Rate this review as useless.">Useless.</a></dd>
+							<dd id="helpful_x_10867667" class="abusivereview"><a href="#" onclick="GetReviewController(10867667).GetHelpfulness().Abusive();return(false);" title="Flag this review as abusive.">Flag as abusive.</a></dd>
+											</dl>
+					<span>No users have weighed in on this review.</span>
+				</div>
+					</div>
+
+		
+		</div>
+		</div>
+		</div>
+
+												<div class="hr"><hr /></div>
+										
+		<div id="review10866244">
+		<div id="review10866244_wrapper">
+		<div id="review10866244_wrapper_inner">
+
+		<div class="review" id="reviewbundle10866244">
+			<div class="head">
+
+									<div class="reviewscore">
+						<span>Score: <strong id="review10866244_score" class="score10">10</strong></span>
+					</div>
+				
+									<a href="http://rodrickrulez.newgrounds.com"><img src="http://uicon.ngfiles.com/icon_default.gif" alt="rodrickrulez" height="46" width="46" class="icon" align="left" /></a>
+				
+				<p><span>"</span>cooooooooooooooooooooooooooooooooooooooooooooool!!<span>"</span></p>
+
+									<div><span>by: <a href="http://rodrickrulez.newgrounds.com/">rodrickrulez</a></span></div>
+				
+				<div><span>date: <strong>April 24, 2011</strong></span></div>
+			</div>
+
+			
+			<p>AAAAAAAAAAAAAAWWWWWWWWWWWWWWWWWWWWWSS SSSSSSSSSSSSSSSSSSSSSOOOOOOOOOOOMMMMM MMMMMMMMMMEEEEEEEEEEEE!<br />
+espesially when chuck norris kicked indiana jones in the crotch!XD<br />
+then the fucking power rangers are the second best!lol</p>
+			<span id="review_response_anchor_10866244"></span>
+			
+			
+							<div class="foot">
+					<dl>
+													<dt id="helpful_header_10866244">Rate this review:</dt>
+							<dd id="helpful_y_10866244" class="goodreview"><a href="#" onclick="GetReviewController(10866244).GetHelpfulness().Yes();return(false);" title="Rate this review as helpful.">Helpful!</a></dd>
+							<dd id="helpful_n_10866244" class="badreview"><a href="#" onclick="GetReviewController(10866244).GetHelpfulness().No();return(false);" title="Rate this review as useless.">Useless.</a></dd>
+							<dd id="helpful_x_10866244" class="abusivereview"><a href="#" onclick="GetReviewController(10866244).GetHelpfulness().Abusive();return(false);" title="Flag this review as abusive.">Flag as abusive.</a></dd>
+											</dl>
+					<span>No users have weighed in on this review.</span>
+				</div>
+					</div>
+
+		
+		</div>
+		</div>
+		</div>
+
+												<div class="hr"><hr /></div>
+										
+		<div id="review10863510">
+		<div id="review10863510_wrapper">
+		<div id="review10863510_wrapper_inner">
+
+		<div class="review" id="reviewbundle10863510">
+			<div class="head">
+
+									<div class="reviewscore">
+						<span>Score: <strong id="review10863510_score" class="score10">10</strong></span>
+					</div>
+				
+									<a href="http://dargoon.newgrounds.com"><img src="http://uicon.ngfiles.com/icon_default.gif" alt="dargoon" height="46" width="46" class="icon" align="left" /></a>
+				
+				<p><span>"</span>good<span>"</span></p>
+
+									<div><span>by: <a href="http://dargoon.newgrounds.com/">dargoon</a></span></div>
+				
+				<div><span>date: <strong>April 22, 2011</strong></span></div>
+			</div>
+
+			
+			<p>me and me cousin luv it</p>
+			<span id="review_response_anchor_10863510"></span>
+			
+			
+							<div class="foot">
+					<dl>
+													<dt id="helpful_header_10863510">Rate this review:</dt>
+							<dd id="helpful_y_10863510" class="goodreview"><a href="#" onclick="GetReviewController(10863510).GetHelpfulness().Yes();return(false);" title="Rate this review as helpful.">Helpful!</a></dd>
+							<dd id="helpful_n_10863510" class="badreview"><a href="#" onclick="GetReviewController(10863510).GetHelpfulness().No();return(false);" title="Rate this review as useless.">Useless.</a></dd>
+							<dd id="helpful_x_10863510" class="abusivereview"><a href="#" onclick="GetReviewController(10863510).GetHelpfulness().Abusive();return(false);" title="Flag this review as abusive.">Flag as abusive.</a></dd>
+											</dl>
+					<span>People aren't in agreement over whether this is helpful or not.</span>
+				</div>
+					</div>
+
+		
+		</div>
+		</div>
+		</div>
+
+												<div class="hr"><hr /></div>
+										
+		<div id="review10862742">
+		<div id="review10862742_wrapper">
+		<div id="review10862742_wrapper_inner">
+
+		<div class="review" id="reviewbundle10862742">
+			<div class="head">
+
+									<div class="reviewscore">
+						<span>Score: <strong id="review10862742_score" class="score9">9</strong></span>
+					</div>
+				
+									<a href="http://goblin27.newgrounds.com"><img src="http://uicon.ngfiles.com/3738000/3738100.png" alt="Goblin27" height="46" width="46" class="icon" align="left" /></a>
+				
+				<p><span>"</span>Finally, after years, a real review.<span>"</span></p>
+
+									<div><span>by: <a href="http://goblin27.newgrounds.com/">Goblin27</a></span></div>
+				
+				<div><span>date: <strong>April 22, 2011</strong></span></div>
+			</div>
+
+			
+			<p>Animation quality: 5/10. Nothing special, sorry to say. Too rough for my taste.<br />
+Music: 8/10. Not one of LD's best.<br />
+Concept: 10/10, makes this vid truly amazing.<br />
+Introducing Me To The Wonder Of Lemon Demon: Priceless. Thank you so much.</p>
+			<span id="review_response_anchor_10862742"></span>
+			
+			
+							<div class="foot">
+					<dl>
+													<dt id="helpful_header_10862742">Rate this review:</dt>
+							<dd id="helpful_y_10862742" class="goodreview"><a href="#" onclick="GetReviewController(10862742).GetHelpfulness().Yes();return(false);" title="Rate this review as helpful.">Helpful!</a></dd>
+							<dd id="helpful_n_10862742" class="badreview"><a href="#" onclick="GetReviewController(10862742).GetHelpfulness().No();return(false);" title="Rate this review as useless.">Useless.</a></dd>
+							<dd id="helpful_x_10862742" class="abusivereview"><a href="#" onclick="GetReviewController(10862742).GetHelpfulness().Abusive();return(false);" title="Flag this review as abusive.">Flag as abusive.</a></dd>
+											</dl>
+					<span>People find this review <strong class="goodreview">helpful!</strong></span>
+				</div>
+					</div>
+
+		
+		</div>
+		</div>
+		</div>
+
+							</div>
+				</div>
+			</div>
+			<div class="boxbot"><div></div></div>
+		</div>
+		</div>
+		</div>
+		</div>
+
+	
+</div>
+</div>
+
+<br clear="all" />
+
+<div class="wide_storepromobot">
+	<a href="http://www.youtube.com/newgrounds"><img src="http://img.ngfiles.com/AD-youtube.gif" alt="Subscribe to our YouTube feed!" /></a>
+</div>
+
+
+<input type="hidden" id="submission_key" value="PkQcFzXzdtOzlxbStiNmYwNzkxOGYwQjAyNTIrM19xNGI2MzE7QjQ2QlYxOzJWMDNiMjI4ZjIrVnFfOTcxbTk5MTk3NTA0MQ==" />
+
+</form>
+
+<script type="text/javascript">
+// <![CDATA[
+	submission_controller.PageLoaded();
+
+			var is_ie = (navigator.userAgent.indexOf("MSIE") > 0);
+
+		var xmouse, ymouse;
+					var layout_width = 1024;
+		
+		if(is_ie) {
+			var xflux = 38;
+			var yflux = 342;
+		} else {
+			var xflux = 28;
+			var yflux = 344;
+		}
+
+		var xoffset = 20;
+		var yoffset = 30;
+
+		var checkhover = false;
+					var buttons_left = $('size_and_lightbox_options').offsetLeft;
+			var buttons_width = $('size_and_lightbox_options').offsetWidth;
+			var buttons_right = buttons_left+buttons_width;
+
+			var buttons_top = $('size_and_lightbox_options').offsetTop;
+			var buttons_height = $('size_and_lightbox_options').offsetHeight;
+			var buttons_bottom = buttons_top+buttons_height;
+				function GetMousePosition(e)
+		{
+			if(is_ie)
+			{
+				xmouse = document.documentElement.scrollLeft+window.event.clientX;
+				ymouse = document.documentElement.scrollTop+window.event.clientY;
+			} else
+			{
+				xmouse = e.pageX;
+				ymouse = e.pageY;
+			}
+
+			var left_offset = Math.round((getWindowWidth() - layout_width)/2);
+
+			var my_left = xmouse - left_offset - xflux;
+			var my_top = ymouse - yflux;
+
+			if (left_offset < 1) {
+				left_offset = 0;
+			}
+			var my_width = (xmouse+xoffset) - left_offset;
+			// if the api hovers extend offscreen, move it to the left of the mouse
+
+
+			var x_offset = my_width >= 800 ? 260:0;
+
+						
+							if (checkhover && (my_left < buttons_left || my_left > buttons_right || my_top < buttons_top || my_top > buttons_bottom)) {
+					$('button_hover_text').innerHTML = "";
+					checkhover = false;
+				}
+					}
+
+		function getWindowWidth() {
+			var x = 0;
+			if (self.innerHeight) {
+				x = self.innerWidth;
+			} else if (document.documentElement && document.documentElement.clientHeight) {
+				x = document.documentElement.clientWidth;
+			} else if (document.body) {
+				x = document.body.clientWidth;
+			}
+
+			return x;
+		}
+
+		document.onmousemove = GetMousePosition;
+	
+	// ]]>
+</script>
+
+<script type="text/javascript" src="http://server.cpmstar.com/view.aspx?poolid=1134&amp;script=1"></script>
+
+<script type="text/javascript">
+// <![CDATA[
+		// if cpmstar is blocked use this text:
+		if (user_is_a_leech) {
+			cpmStarAdInfo = {
+				title:"Newgrounds Store",
+				desc:"Cool shirts, toys, keychains, DVDs, stickers and more. BUY SOMETHING!!!!",
+				link:"http://www.newgrounds.com/store"
+			};
+		}
+
+		var textlink = ("<a class=\"cpmstarHeadline\" href=\"" + cpmStarAdInfo["link"] + "\" target=\"_blank\">" + cpmStarAdInfo["title"] + "</a>");
+		textlink += ("<a class=\"cpmstarText\" href=\"" + cpmStarAdInfo["link"] + "\" target=\"_blank\">" + cpmStarAdInfo["desc"] + "</a>");
+		$('textunderflash').innerHTML = textlink;
+
+		// just because the ad space isn't the right size by default....
+		setSizing();
+
+
+		// this is a list of all the possible api divs
+		var api_pods = [
+			{name:'files', label:"User Generated Files"},
+			{name:'medals', label:"Medals"},
+			{name:'scores', label:"Scores"}
+		];
+
+		// check the html and see what pods actually exist for this submission
+		var has_pods = [];
+		for(var i=0; i<api_pods.length; i++) {
+			var pod = api_pods[i].name;
+			if ($('api_pod_'+pod)) {
+				has_pods.push(api_pods[i]);
+			}
+		}
+
+		// build the inter-pod tabs for each pod
+		if (has_pods.length > 0) {
+
+			for(var i=0; i<has_pods.length; i++) {
+				var pod = has_pods[i].name;
+				if ($(pod+'_nav_tabs')) {
+					var tabs = [];
+
+					for(var p=0; p<has_pods.length; p++) {
+						has_pods[p].pod = pod;
+						tabs.unshift(has_pods[p]);
+					}
+
+					var template = new TemplateWriter(pod+'_nav_tabs');
+					template.AssignVarToLoop('tabs', tabs.length > 1 ? tabs : []);
+					template.Render();
+
+					if (tabs.length > 1) {
+						var btn = new Button(pod+"_btn_"+pod);
+						btn.Disable();
+					}
+				}
+			}
+
+			if (save_file_id) {
+				viewAPIPod('files');
+			} else {
+				viewAPIPod(has_pods[0].name);
+			}
+		}
+
+
+		// hide all pods then unhide the slecetd one
+		function viewAPIPod(pod) {
+			for(var i=0; i<has_pods.length; i++) {
+				$('api_pod_'+has_pods[i].name).style.display = "none";
+			}
+			$('api_pod_'+pod).style.display = "";
+		}
+
+	// ]]>
+</script>
+
+						<!-- Beginning of the bottom footer include -->
+						<div class="box adfoot">
+							<div class="boxtop"><div></div></div>
+							<div class="boxl">
+								<div class="boxr">
+									<div class="boxm horzad">
+										<script type="text/javascript">
+// <![CDATA[ 
+addSwappableElement("<iframe src=\"http:\/\/www.newgrounds.com\/includes\/ad_bottom.php?id=8\" scrolling=\"no\" frameborder=\"0\" height=\"90\" width=\"728\" id=\"bottomsuperbanner\" class=\"horzad\"><\/iframe>", "wide", "bottomad");// ]]> 
+
+</script>
+									</div>
+								</div>
+							</div>
+							<div class="boxbot"><div></div></div>
+						</div>
+
+						
+
+						<!-- UP-HEADER:BEGIN -->
+
+						<br clear="all" />
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="foot">
+	<div id="originalfooterdiv">
+		<div class="box boxsizer">
+	<div class="featurefix">
+
+		<h4>Movies of the Week</h4>
+		
+				<div><a href="http://www.newgrounds.com/portal/view/567351" class="feature">
+			<img src="http://picon.ngfiles.com/567000/portal_567351.gif" alt="Quest of the Manwhore" />
+			<span class="fout"><span class="fmid"><span class="fin">
+				<span class="ftitle">Quest of the Manwhore</span>I am a whore of some renown, your buttocks are my hunting ground...			</span></span></span>
+		</a></div>
+				<div><a href="http://www.newgrounds.com/portal/view/567481" class="feature">
+			<img src="http://picon.ngfiles.com/567000/portal_567481.gif" alt="Leo &amp; Satan IV" />
+			<span class="fout"><span class="fmid"><span class="fin">
+				<span class="ftitle">Leo &amp; Satan IV</span>Leo and Satan play some Video Games			</span></span></span>
+		</a></div>
+				<div><a href="http://www.newgrounds.com/portal/view/567786" class="feature">
+			<img src="http://picon.ngfiles.com/567000/portal_567786.gif" alt="I'm a Bear, etc" />
+			<span class="fout"><span class="fmid"><span class="fin">
+				<span class="ftitle">I'm a Bear, etc</span>Mike Birbiglia tells a story about fishing in Alaska			</span></span></span>
+		</a></div>
+		
+	</div>
+		
+	<div class="featurefix">
+
+		<h4>Games of the Week</h4>
+		
+				<div><a href="http://www.newgrounds.com/portal/view/567439" class="feature">
+			<img src="http://picon.ngfiles.com/567000/portal_567439.gif" alt="Upgrade Complete 2" />
+			<span class="fout"><span class="fmid"><span class="fin">
+				<span class="ftitle">Upgrade Complete 2</span>An upgrade to the previous game about upgrades. Upgraded in various upgradeable ways!			</span></span></span>
+		</a></div>
+				<div><a href="http://www.newgrounds.com/portal/view/567595" class="feature">
+			<img src="http://picon.ngfiles.com/567000/portal_567595.gif" alt="I Have 1 Day" />
+			<span class="fout"><span class="fmid"><span class="fin">
+				<span class="ftitle">I Have 1 Day</span>You have 1 day to solve the mystery and save the kingdom from utter frog-struction.			</span></span></span>
+		</a></div>
+				<div><a href="http://www.newgrounds.com/portal/view/567842" class="feature">
+			<img src="http://picon.ngfiles.com/567000/portal_567842.gif" alt="Magi: The Fallen World" />
+			<span class="fout"><span class="fmid"><span class="fin">
+				<span class="ftitle">Magi: The Fallen World</span>Choose your character, search quests, explore dungeons, fight powerful monsters!			</span></span></span>
+		</a></div>
+				
+	</div>
+		
+	<div class="featurefix">
+
+		<h4>Today's Best</h4>
+		
+				<div><a href="http://www.newgrounds.com/portal/view/568247" class="feature">
+			<img src="http://picon.ngfiles.com/568000/portal_568247.gif" alt="An Easter Massacre 5" />
+			<span class="fout"><span class="fmid"><span class="fin">
+				<span class="ftitle">An Easter Massacre 5</span>This year, we end it.			</span></span></span>
+		</a></div>
+				<div><a href="http://www.newgrounds.com/portal/view/568222" class="feature">
+			<img src="http://picon.ngfiles.com/568000/portal_568222.gif" alt="Cursed Edition - horror" />
+			<span class="fout"><span class="fmid"><span class="fin">
+				<span class="ftitle">Cursed Edition - horror</span>Cursed Edition - Horror			</span></span></span>
+		</a></div>
+				<div><a href="http://www.newgrounds.com/portal/view/568263" class="feature">
+			<img src="http://picon.ngfiles.com/568000/portal_568263.gif" alt="&quot;ClayMotion&quot;" />
+			<span class="fout"><span class="fmid"><span class="fin">
+				<span class="ftitle">&quot;ClayMotion&quot;</span>October 2010 Original morphing claymation by SJ			</span></span></span>
+		</a></div>
+		
+	</div>
+</div>		<span id="originalfooterspan">
+			<strong class="dotted yellow">&copy; Copyright 1995-2011 Newgrounds, Inc. All Rights Reserved. <a href="http://www.newgrounds.com/privacy" class="yellow">Privacy Policy</a> | <a href="http://www.newgrounds.com/legal" class="yellow">Terms of Use</a></strong>
+			<strong class="dotted">newgrounds.com &mdash; Your #1 online entertainment community. All your base are belong to us.</strong>
+			<strong class="dotted yellow">
+				<a href="http://www.newgrounds.com/portal/">Flash Portal</a> |
+				<a href="http://www.newgrounds.com/audio/">Audio Portal</a> |
+				<a href="http://www.newgrounds.com/game/">Games</a> |
+				<a href="http://www.newgrounds.com/movies/">Movies</a> |
+				<a href="http://www.newgrounds.com/collection/">Collections</a> |
+				<a href="http://www.newgrounds.com/collection/series">Series</a> |
+				<a href="http://www.newgrounds.com/bbs/">Forums</a> |
+				<a href="http://www.newgrounds.com/store/">Store</a>
+			</strong>
+			<strong class="dotted orange">
+				<a href="http://www.newgrounds.com/primer">About Newgrounds</a> |
+				<a href="http://www.newgrounds.com/lit/faq">Help / FAQ</a> |
+				<a href="http://www.newgrounds.com/news/">Blogs</a> |
+				<a href="http://www.newgrounds.com/chat/">Chat</a> |
+				<a href="http://www.newgrounds.com/lit/">Literature</a> |
+				<a href="http://www.newgrounds.com/mature/">Mature</a> |
+				<a href="http://www.newgrounds.com/rankings/">Rankings</a> |
+				<a href="http://www.newgrounds.com/network/">Network</a> |
+				<a href="http://www.newgrounds.com/downloads/">NG Arsenal</a>
+			</strong>
+			<strong class="dotted red">
+				<a href="http://www.newgrounds.com/staff">The Staff</a> |
+				<a href="http://www.newgrounds.com/ngmag/">NG Mag</a> |
+				<a href="http://www.newgrounds.com/link">Link to Us!</a> |
+				<a href="http://www.newgrounds.com/submit">Submit Content!</a> |
+				<a href="http://www.newgrounds.com/feeds/rss/">RSS</a>
+			</strong>
+		</span>
+	</div>
+</div>
+
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	// <![CDATA[
+		_uacct = "UA-850825-1";
+		urchinTracker();
+	// ]]>
+	</script>
+
+<script type="text/javascript">
+	// <![CDATA[
+		fillSwappableElements();
+	// ]]>
+</script>
+</body>
+</html>

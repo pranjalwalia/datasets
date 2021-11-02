@@ -1,0 +1,522 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#" xmlns:review="http://www.purl.org/stuff/rev#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:foaf="http://xmlns.com/foaf/0.1/" >
+	<head>
+		<title>The Luckiest Hole In One Ever - That Video Site</title>
+		<link rel="stylesheet" href="/style.css" type="text/css" media="screen" />
+		<link rel="alternate" type="application/rss+xml" title="That Video Site Feed" href="http://feeds.feedburner.com/thatvideositefeed" />
+		<link rel="image_src" href="http://www.thatvideosite.com/core/110/image_200.jpg">
+		<script src="http://widgets.digg.com/buttons.js" type="text/javascript"></script>
+		<meta name="tweetmeme-title" content="The Luckiest Hole In One Ever" />
+		<link rel="Shortcut Icon" href="/favicon.ico">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<meta name="google-site-verification" content="DiBp-GqZWbOuDWexU5XhdUFiLvzYb3lON6Mec0S-jvw" />
+		<meta name="description" content="The Luckiest Hole In One Ever" />
+		<meta name="keywords" content="The Luckiest Hole In One Ever" />
+		<meta name="title" content="The Luckiest Hole In One Ever" />
+		<meta name="robots" content="index, follow" />
+        <meta property="og:title" content="The Luckiest Hole In One Ever" />
+        <meta property="og:image" content="http://www.thatvideosite.com/core/110/image_200.jpg" />
+        <meta property="og:site_name" content="That Video Site" />
+        <meta property="og:url" content="http://www.thatvideosite.com/video/the_luckiest_hole_in_one_ever" />
+        <meta property="og:type" content="video" />         
+		<script src="http://media.thatvideosite.com/player/player.js"></script>
+		<script src="http://media.thatvideosite.com/library/prototype.js" type="text/javascript"></script>
+		<script src="http://media.thatvideosite.com/library/scriptaculous.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			var positive_selected = [], neutral_selected = [], negative_selected = [], wanttoseen = [], umovie = [], current_rating = [], favorited = [], pos = [], neu = [], neg = [], tot = [];
+			var user, points, percent, showtrailer;			
+			pos = 11;
+neu = 5;
+neg = 5;
+tot = 21;
+			
+			function sidepane(page, current)
+			{
+				new Ajax.Request('/scripts/sidepane.php',
+			  {
+			  	parameters: {page: page, id: current},
+			    onSuccess: function(transport)
+			    {			    		    	
+			    	$('pane').update(transport.responseText);   
+			    },
+			    onFailure: function(){ alert('Something went wrong...') }
+			  });				
+			}
+			
+			function rate(rating, id)
+			{
+				switch(rating)
+			  {
+			  case 1:
+			  	$('positive').update('<img src=\'http://media.thatvideosite.com/images/positive_off.png\'>');
+			    			
+			 		if(!$('positive').hasClassName('rate_box_positive'))
+			 			$('positive').addClassName('rate_box_positive')			    			
+					    	
+					break;
+				case 2:
+			  	$('neutral').update('<img src=\'http://media.thatvideosite.com/images/neutral_off.png\'>');			    			
+					    			
+					if(!$('neutral').hasClassName('rate_box_neutral'))
+						$('neutral').addClassName('rate_box_neutral')
+					    							    					    		   						    		
+					break;
+				case 3:
+					$('negative').update('<img src=\'http://media.thatvideosite.com/images/negative_off.png\'>');			    		
+				   				   			
+					if(!$('negative').hasClassName('rate_box_negative'))
+						$('negative').addClassName('rate_box_negative')			    			
+						    			
+					break;
+				}      
+				  
+				new Ajax.Request('/scripts/rate.php',
+			  {
+			  	parameters: {rating: rating, id: id},
+			    onSuccess: function(transport)
+			    {			    		    	
+			    	switch(rating)
+			    	{
+			    		case 1:			   
+			    			if($('neutral').hasClassName('rate_box_neutral'))
+			    			{			    		
+			    				
+				    			$('neutral').fade({to: 0.1, duration: 0.5});	
+				    			setTimeout("$('neutral').update('<img src=\"http://media.thatvideosite.com/images/neutral_fade.png\">')", 500);	
+				    			setTimeout("$('neutral').addClassName('rate_box_fade_neutral').removeClassName('rate_box_neutral')", 500);		    			
+				    			setTimeout("$('neutral').appear({from: 0.1})", 500);		
+			    			}	    			
+			    			
+			    			if($('negative').hasClassName('rate_box_negative'))
+			    			{    				
+				    			$('negative').fade({to: 0.1, duration: 0.5});			
+				    			setTimeout("$('negative').update('<img src=\"http://media.thatvideosite.com/images/negative_fade.png\">')", 500);	
+				    			setTimeout("$('negative').addClassName('rate_box_fade_negative').removeClassName('rate_box_negative')", 500);
+				    			setTimeout("$('negative').appear({from: 0.1})", 500);   
+			    			} 		
+			    				
+				   			pos++;
+				   			tot++;
+				   			
+								$('percent_bar').fade({to: 0.01, duration: 0.5});		
+								points	= (2 * pos) + neu;
+								percent = Math.floor((points / (tot * 2)) * 100);
+								
+								setTimeout("$('percent_bar').setStyle({ width: '" + Math.floor((percent / 100) * 125) + "px' })", 500);
+								setTimeout("$('percent_text').update(percent + '%')", 500);	
+								setTimeout("$('percent_bar').appear({from: 0.01})", 500); 	
+													  	
+			    			break;
+				   		case 2:		 
+				   			current_rating[id] = 2;   							    			
+				   			if($('positive').hasClassName('rate_box_positive'))
+				   			{			  	    				  		
+				    			$('positive').fade({to: 0.1, duration: 0.5});		
+				    			setTimeout("$('positive').update('<img src=\"http://media.thatvideosite.com/images/positive_fade.png\">')", 500);	
+				    			setTimeout("$('positive').addClassName('rate_box_fade_positive').removeClassName('rate_box_positive')", 500);
+				    			setTimeout("$('positive').appear({from: 0.1})", 500);		
+				   			}	    			
+						    			
+				   			if($('negative').hasClassName('rate_box_negative'))
+				   			{				    				
+				    			$('negative').fade({to: 0.1, duration: 0.5});			
+				    			setTimeout("$('negative').update('<img src=\"http://media.thatvideosite.com/images/negative_fade.png\">')", 500);	
+				    			setTimeout("$('negative').addClassName('rate_box_fade_negative').removeClassName('rate_box_negative')", 500);
+				    			setTimeout("$('negative').appear({from: 0.1})", 500);   
+				   			} 			
+				   			
+				   			neu++;
+				   			tot++;
+				   			
+								$('percent_bar').fade({to: 0.01, duration: 0.5});		
+								points	= (2 * pos) + neu;
+								percent = Math.floor((points / (tot * 2)) * 100);
+								
+								setTimeout("$('percent_bar').setStyle({ width: '" + Math.floor((percent / 100) * 125) + "px' })", 500);				
+								setTimeout("$('percent_text').update(percent + '%')", 500);	
+			   				setTimeout("$('percent_bar').appear({from: 0.01})", 500); 	
+														   								    		   						    		
+				   			break;
+				   		case 3:		
+				   			current_rating[id] = 3;	    			
+			    			if($('positive').hasClassName('rate_box_positive'))
+			    			{							    					    		
+				    			$('positive').fade({to: 0.1, duration: 0.5});		
+				    			setTimeout("$('positive').update('<img src=\"http://media.thatvideosite.com/images/positive_fade.png\">')", 500);	
+				    			setTimeout("$('positive').addClassName('rate_box_fade_positive').removeClassName('rate_box_positive')", 500);
+				    			setTimeout("$('positive').appear({from: 0.1})", 500);		
+			    			}	    			
+			    			
+			    			if($('neutral').hasClassName('rate_box_neutral'))
+			    			{				    				
+				    			$('neutral').fade({to: 0.1, duration: 0.5});			
+				    			setTimeout("$('neutral').update('<img src=\"http://media.thatvideosite.com/images/neutral_fade.png\">')", 500);	
+				    			setTimeout("$('neutral').addClassName('rate_box_fade_neutral').removeClassName('rate_box_neutral')", 500);
+				    			setTimeout("$('neutral').appear({from: 0.1})", 500);   
+			    			} 	
+			    						  
+				   			neg++;
+				   			tot++;
+				   			
+								$('percent_bar').fade({to: 0.01, duration: 0.5});		
+								points	= (2 * pos) + neu;
+								percent = Math.floor((points / (tot * 2)) * 100);								
+								
+								setTimeout("$('percent_bar').setStyle({ width: '" + Math.floor((percent / 100) * 125) + "px' })", 500);							
+								setTimeout("$('percent_text').update(percent + '%')", 500);	
+								setTimeout("$('percent_bar').appear({from: 0.01})", 500); 	
+										    						    								    				  		
+			    			break;
+			      }      
+			    },
+			    onFailure: function(){ alert('Something went wrong...') }
+			  });
+			}					
+		</script>
+		<!--[if IE]>
+		<style type="text/css">
+		  .clearfix {
+		    zoom: 1;     /* triggers hasLayout */
+		    display: block;     /* resets display for IE/Win */
+
+		    }  /* Only IE can see inside the conditional comment
+		    and read this CSS rule. Don't ever use a normal HTML
+		    comment inside the CC or it will close prematurely. */
+		</style>
+		<![endif]-->	
+		
+	</head>
+	<body>
+		<center>
+			<div class="topheader">
+					<div class="content1">
+						<div class="bd clearfix">
+							<div style="width: 220px; float: left;"><a href="/"><img src="http://media.thatvideosite.com/images/logo.png" style="padding-top: 2px;" border="0"></a></div>
+								<a href="/"><div style="float: left; margin-top: 5px; padding-right: 10px; padding-left: 10px;" id="headerbuttondiv">Home</div></a>
+								<a href="mailto:tvscontact@gmail.com"><div style="float: left; margin-top: 5px; padding-right: 10px; padding-left: 10px;" id="headerbuttondiv">Contact</div></a>
+								<div style="float: right; padding-top: 5px; padding-right: 10px;">
+									<form action="/" method="get" style="display: inline;">
+										<input type="text" name="search" value="">
+										<input type="submit" value="Search">
+									</form>	
+								</div>
+																				
+									</div>
+					</div>
+				<div class="ft"><div class="c"></div></div>	
+			</div>		 	
+			<div class="adcontainer">
+				<div style="float: left;">
+					<script type="text/javascript"><!--
+google_ad_client = "pub-9312847798954977";
+/* 728x90, created 2/10/10 */
+google_ad_slot = "9513127392";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>			
+				</div>
+				<div style="float: right;">
+					<script type="text/javascript" src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/en_US"></script><script type="text/javascript">FB.init("0c0b0e67499b7888e72424515794c3b8");</script><fb:fan profile_id="387132905219" stream="0" connections="0" logobar="1" width="220"></fb:fan>
+					
+				</div>
+			</div>	
+			<br style="clear: both;" />									
+				<div style="clear: both;" class="content">
+				 <div class="hd"><div class="c"></div></div>
+				 <div class="content1">
+				 <div class="bd clearfix">
+						<div class="leftside">
+													<div style="display: block; font-size: 1.6em; padding: 5px; color: #2a2a2a; height: 45px;">The Luckiest Hole In One Ever</div>
+														<div style="padding-bottom: 10px;">
+										
+                            
+	<!-- START OF THE PLAYER EMBEDDING TO COPY-PASTE --> 
+	<object id="player" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" name="player" width="640" height="360"> 
+		<param name="movie" value="/mediaplayer/player.swf" /> 
+		<param name="allowfullscreen" value="true" /> 
+		<param name="allowscriptaccess" value="always" /> 
+		<param name="flashvars" value="file=http://www.thatvideosite.com/core/110/video.flv&autostart=true" /> 
+		<embed 
+			type="application/x-shockwave-flash"
+			id="player2"
+			name="player2"
+			src="/mediaplayer/player.swf" 
+			width="640" 
+			height="360"
+			allowscriptaccess="always" 
+			allowfullscreen="true"
+			flashvars="file=http://www.thatvideosite.com/core/110/video.flv&autostart=true"
+		/> 
+	</object> 
+	<!-- END OF THE PLAYER EMBEDDING -->                             
+
+											
+						 	</div>
+						<div style="width: 640px;">
+							<a href="/video/pizza_delivery_fail"><div style="float: left; text-align: center; width: 100px; margin-right: 10px;" id="buttondiv2">Previous Video</div></a> 
+							<div style="float: left; width: 110px; height: 24px; padding-top: 2px;">
+								<iframe src="http://www.facebook.com/plugins/like.php?href=http://www.thatvideosite.com/video/the_luckiest_hole_in_one_ever&amp;layout=button_count&amp;show-faces=false&amp;width=110" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width: 70px;" allowTransparency="true"></iframe>
+							</div>
+							<div style="height: 24px; float: left; padding-bottom: 10px;">
+								<div id="negative" class="rate_box_negative" style="padding-bottom: 2px; float: left; width: 24px; height: 24px;"><a href='javascript:rate(3, 110)' style='display: block;'>&nbsp;</a></div><div id="neutral" class="rate_box_neutral" style="padding-bottom: 2px; float: left; margin-left: 3px; margin-right: 3px; width: 24px; height: 24px;"><a href='javascript:rate(2, 110)' style='display: block;'>&nbsp;</a></div><div id="positive" class="rate_box_positive" style="padding-bottom: 2px; float: left; margin-right: 3px; width: 24px; height: 24px;"><a href='javascript:rate(1, 110)' style='display: block;'>&nbsp;</a></div><div id="percent_text" style="float: left; background: url(http://media.thatvideosite.com/images/percent_over.png) repeat-x; margin-left: 6px; height: 22px; width: 50px; padding-top: 2px; padding-left: 8px; font-size: 1.3em; font-weight: bold; font-family: Arial;">64%</div><div style="float: left; width: 145px; height: 24px; background: url(/images/percent_over.png) repeat-x;">
+													<div style="width: 125px; height: 16px;  background: url(http://media.thatvideosite.com/images/percent_bg.png) repeat-x;">
+														<div id="percent_bar" style="width: 80px; height: 16px; margin-top: 4px; background: url(http://media.thatvideosite.com/images/percent.png) repeat-x; text-align: center;"><span></span></div>
+													</div>
+												</div>							</div>	
+							<a href="/video/one_hell_of_a_lucky_driver"><div style="float: right; text-align: center; width: 100px;" id="buttondiv2">Next Video</div></a>  	
+						</div>
+						<br style="clear: both;" />
+						<div id="infopane" style="width: 634px;">				 
+							<div style="float: left; font-size: 1.2em; width: 130px; padding-top: 3px;"><b>Views:</b> 16,131</div>
+							<div style="float: left; width: 220px; font-size: 1.2em; height: 30px; padding-top: 3px;">
+											<div>
+												<b>Tags:</b>
+												<span style="font-weight: normal;"><a href="/tag/golf">Golf</a>, <a href="/tag/hole_in_one">Hole In One</a></span>	
+											</div>
+								<div style="padding-top: 10px; width: 80px; text-align: left; float: left;"><b>Short URL: </b></div><div style="padding-left: 6px; padding-top: 7px; width: 120px; float: left;"><input type="text" onClick="this.focus();this.select();" readonly="readonly" value="http://su.pr/1l2Ykl" style="width: 120px; border-width: 1px; padding: 2px;"></div>																			
+							</div>
+							<div style="float: left; padding-top: 3px;  width: 65px;">
+								<script src="http://www.stumbleupon.com/hostedbadge.php?s=5"></script>								
+							</div>									
+							<div style="float: left; padding-top: 3px;  width: 75px;">
+								<a name="fb_share" type="box_count" share_url="http://www.thatvideosite.com/video/the_luckiest_hole_in_one_ever">Share</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+							</div>		
+							<div style="float: left; padding-top: 3px;  width: 68px;">
+								<script type="text/javascript">
+									tweetmeme_url = 'http://www.thatvideosite.com/video/the_luckiest_hole_in_one_ever';
+									tweetmeme_source = 'thatvideosite';
+									tweetmeme_service = 'su.pr';								
+								</script>											
+								<script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>
+							</div>																							
+							<div style="float: left; padding-top: 3px; width: 60px;">
+								<a class="DiggThisButton DiggMedium"></a>
+							</div>
+														<br style="clear: both;" />				
+						</div>		      
+                             					 						 
+						<div style="clear: both; padding-bottom: 5px; border-bottom: 2px solid #c3c3c3; font-size: 1.2em;">More Videos</div>
+                        <div style="width: 640px; display: block;">
+
+							<div style="float: left;">
+								<a href="/video/battlestar_galactica_vs_beastie_boys">
+														<div style="float: left;" id="smallentry">
+														<center>
+															<img src="http://media.thatvideosite.com/core/1315/image_w_150.jpg" style="width: 139px; padding: 2px; margin-bottom: 5px; border: 1px solid #c3c3c3;">
+														</center>
+														Battlestar Galactica vs. Beastie Boys
+														</div>
+													</a>
+													<div style="width: 9px; float: left;">&nbsp;</div><a href="/video/ski_lift_faceplant">
+														<div style="float: left;" id="smallentry">
+														<center>
+															<img src="http://media.thatvideosite.com/core/3022/image_w_150.jpg" style="width: 139px; padding: 2px; margin-bottom: 5px; border: 1px solid #c3c3c3;">
+														</center>
+														Ski Lift Faceplant
+														</div>
+													</a>
+													<div style="width: 9px; float: left;">&nbsp;</div><a href="/video/wrong_place_to_release_several_hundred_balloons">
+														<div style="float: left;" id="smallentry">
+														<center>
+															<img src="http://media.thatvideosite.com/core/128/image_w_150.jpg" style="width: 139px; padding: 2px; margin-bottom: 5px; border: 1px solid #c3c3c3;">
+														</center>
+														Wrong place to release several hundred balloons
+														</div>
+													</a>
+													<div style="width: 9px; float: left;">&nbsp;</div><a href="/video/ricky_gervais_monologue_on_celebrity">
+														<div style="float: left;" id="smallentry">
+														<center>
+															<img src="http://media.thatvideosite.com/core/2627/image_w_150.jpg" style="width: 139px; padding: 2px; margin-bottom: 5px; border: 1px solid #c3c3c3;">
+														</center>
+														Ricky Gervais' monologue on celebrity
+														</div>
+													</a>
+													<br style="clear: both;" /><div style="border-top: 1px dotted #b6b6b6; margin-bottom: 10px;"><span></span></div><a href="/video/deceptive_motorcycle_commercial">
+														<div style="float: left;" id="smallentry">
+														<center>
+															<img src="http://media.thatvideosite.com/core/352/image_w_150.jpg" style="width: 139px; padding: 2px; margin-bottom: 5px; border: 1px solid #c3c3c3;">
+														</center>
+														Deceptive Motorcycle Commercial
+														</div>
+													</a>
+													<div style="width: 9px; float: left;">&nbsp;</div><a href="/video/the_dark_knight_rap">
+														<div style="float: left;" id="smallentry">
+														<center>
+															<img src="http://media.thatvideosite.com/core/648/image_w_150.jpg" style="width: 139px; padding: 2px; margin-bottom: 5px; border: 1px solid #c3c3c3;">
+														</center>
+														The Dark Knight Rap
+														</div>
+													</a>
+													<div style="width: 9px; float: left;">&nbsp;</div><a href="/video/deer_blown_out_of_water_by_helicopter">
+														<div style="float: left;" id="smallentry">
+														<center>
+															<img src="http://media.thatvideosite.com/core/16/image_w_150.jpg" style="width: 139px; padding: 2px; margin-bottom: 5px; border: 1px solid #c3c3c3;">
+														</center>
+														Deer blown out of water by helicopter
+														</div>
+													</a>
+													<div style="width: 9px; float: left;">&nbsp;</div><a href="/video/megan_fox_speed_painting">
+														<div style="float: left;" id="smallentry">
+														<center>
+															<img src="http://media.thatvideosite.com/core/153/image_w_150.jpg" style="width: 139px; padding: 2px; margin-bottom: 5px; border: 1px solid #c3c3c3;">
+														</center>
+														Megan Fox Speed Painting
+														</div>
+													</a>
+													<br style="clear: both;" /><div style="border-top: 1px dotted #b6b6b6; margin-bottom: 10px;"><span></span></div>	
+							</div>							
+						<div id="disqus_thread" style="clear: both;"></div>
+						<script type="text/javascript">
+						  /**
+						    * var disqus_identifier; [Optional but recommended: Define a unique identifier (e.g. post id or slug) for this thread] 
+						    */
+						  (function() {
+						   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+						   dsq.src = 'http://thatvideosite.disqus.com/embed.js';
+						   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+						  })();
+						</script>
+						<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=thatvideosite">comments powered by Disqus.</a></noscript>
+						<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+	 						 
+					
+						</div>						 	
+												</div>
+						<div class="rightside">		
+							<div style="padding-top: 55px; padding-bottom: 15px; height: 250px;">
+								<script type="text/javascript"><!--
+google_ad_client = "pub-9312847798954977";
+/* 300x250, created 10/14/09 */
+google_ad_slot = "1024605753";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>							
+							</div>								
+							<div style="padding-bottom: 15px;">						
+								<div style="padding-bottom: 5px; border-bottom: 2px solid #c3c3c3; font-size: 1.2em; width: 300px;">More Videos</div>
+                                <a href="/video/plural_of_octopus"><div id="smallsidetopentry" style="width: 300px; padding-top: 7px;">
+                                		      <div style="float: left; width: 70px; "><img src="http://media.thatvideosite.com/core/2349/image_75.jpg" style="width: 60px; padding: 2px; border: 1px solid #c3c3c3;"></div>
+                                	          <div style="float: left; width: 228px; padding-left: 1px; padding-right: 1px;">Plural of Octopus<br /><div style="color: #2a2a2a; margin-top: 5px; font-size: .9em;">Views: <span style="font-weight: normal;">5,194</span></div></div>
+                                           </div></a>
+                                			<a href="/video/unbreakable_lcd_screen"><div id="smallsidetopentry" style="width: 300px; padding-top: 7px;">
+                                		      <div style="float: left; width: 70px; "><img src="http://media.thatvideosite.com/core/1219/image_75.jpg" style="width: 60px; padding: 2px; border: 1px solid #c3c3c3;"></div>
+                                	          <div style="float: left; width: 228px; padding-left: 1px; padding-right: 1px;">Unbreakable LCD Screen<br /><div style="color: #2a2a2a; margin-top: 5px; font-size: .9em;">Views: <span style="font-weight: normal;">7,610</span></div></div>
+                                           </div></a>
+                                			<a href="/video/epic_lady_gaga_bad_romance_a_capella"><div id="smallsidetopentry" style="width: 300px; padding-top: 7px;">
+                                		      <div style="float: left; width: 70px; "><img src="http://media.thatvideosite.com/core/1751/image_75.jpg" style="width: 60px; padding: 2px; border: 1px solid #c3c3c3;"></div>
+                                	          <div style="float: left; width: 228px; padding-left: 1px; padding-right: 1px;">Epic Lady Gaga "Bad Romance" A Capella<br /><div style="color: #2a2a2a; margin-top: 5px; font-size: .9em;">Views: <span style="font-weight: normal;">8,518</span></div></div>
+                                           </div></a>
+                                			<a href="/video/i_have_to_be_honest_with_you"><div id="smallsidetopentry" style="width: 300px; padding-top: 7px;">
+                                		      <div style="float: left; width: 70px; "><img src="http://media.thatvideosite.com/core/2695/image_75.jpg" style="width: 60px; padding: 2px; border: 1px solid #c3c3c3;"></div>
+                                	          <div style="float: left; width: 228px; padding-left: 1px; padding-right: 1px;">"I have to be honest with you..."<br /><div style="color: #2a2a2a; margin-top: 5px; font-size: .9em;">Views: <span style="font-weight: normal;">6,429</span></div></div>
+                                           </div></a>
+                                			<a href="/video/shredding_and_beat_boxing_on_a_mouth_harp"><div id="smallsidetopentry" style="width: 300px; padding-top: 7px;">
+                                		      <div style="float: left; width: 70px; "><img src="http://media.thatvideosite.com/core/2097/image_75.jpg" style="width: 60px; padding: 2px; border: 1px solid #c3c3c3;"></div>
+                                	          <div style="float: left; width: 228px; padding-left: 1px; padding-right: 1px;">Shredding and beat boxing on a mouth harp<br /><div style="color: #2a2a2a; margin-top: 5px; font-size: .9em;">Views: <span style="font-weight: normal;">114,338</span></div></div>
+                                           </div></a>
+                                			<a href="/video/atv_stunt_fail"><div id="smallsidetopentry" style="width: 300px; padding-top: 7px;">
+                                		      <div style="float: left; width: 70px; "><img src="http://media.thatvideosite.com/core/580/image_75.jpg" style="width: 60px; padding: 2px; border: 1px solid #c3c3c3;"></div>
+                                	          <div style="float: left; width: 228px; padding-left: 1px; padding-right: 1px;">ATV Stunt Fail<br /><div style="color: #2a2a2a; margin-top: 5px; font-size: .9em;">Views: <span style="font-weight: normal;">9,515</span></div></div>
+                                           </div></a>
+                                			<a href="/video/nastyass_honey_badger"><div id="smallsidetopentry" style="width: 300px; padding-top: 7px;">
+                                		      <div style="float: left; width: 70px; "><img src="http://media.thatvideosite.com/core/3104/image_75.jpg" style="width: 60px; padding: 2px; border: 1px solid #c3c3c3;"></div>
+                                	          <div style="float: left; width: 228px; padding-left: 1px; padding-right: 1px;">Nastyass Honey Badger<br /><div style="color: #2a2a2a; margin-top: 5px; font-size: .9em;">Views: <span style="font-weight: normal;">7,099</span></div></div>
+                                           </div></a>
+                                			<a href="/video/the_old_bowl_of_water_pushed_to_the_ceiling_prank"><div id="smallsidetopentry" style="width: 300px; padding-top: 7px;">
+                                		      <div style="float: left; width: 70px; "><img src="http://media.thatvideosite.com/core/1042/image_75.jpg" style="width: 60px; padding: 2px; border: 1px solid #c3c3c3;"></div>
+                                	          <div style="float: left; width: 228px; padding-left: 1px; padding-right: 1px;">The old bowl of water pushed to the ceiling prank<br /><div style="color: #2a2a2a; margin-top: 5px; font-size: .9em;">Views: <span style="font-weight: normal;">16,180</span></div></div>
+                                           </div></a>
+                                			<a href="/video/8_year_old_kid_covers_hey_soul_sister_with_ukulele"><div id="smallsidetopentry" style="width: 300px; padding-top: 7px;">
+                                		      <div style="float: left; width: 70px; "><img src="http://media.thatvideosite.com/core/1643/image_75.jpg" style="width: 60px; padding: 2px; border: 1px solid #c3c3c3;"></div>
+                                	          <div style="float: left; width: 228px; padding-left: 1px; padding-right: 1px;">8 year old kid covers "Hey, Soul Sister" with ukulele<br /><div style="color: #2a2a2a; margin-top: 5px; font-size: .9em;">Views: <span style="font-weight: normal;">10,432</span></div></div>
+                                           </div></a>
+                                			<a href="/video/swirl_optical_illusion"><div id="smallsidetopentry" style="width: 300px; padding-top: 7px;">
+                                		      <div style="float: left; width: 70px; "><img src="http://media.thatvideosite.com/core/775/image_75.jpg" style="width: 60px; padding: 2px; border: 1px solid #c3c3c3;"></div>
+                                	          <div style="float: left; width: 228px; padding-left: 1px; padding-right: 1px;">Swirl Optical Illusion<br /><div style="color: #2a2a2a; margin-top: 5px; font-size: .9em;">Views: <span style="font-weight: normal;">10,341</span></div></div>
+                                           </div></a>
+                                			<a href="/video/star_trek_tik_tok"><div id="smallsidetopentry" style="width: 300px; padding-top: 7px;">
+                                		      <div style="float: left; width: 70px; "><img src="http://media.thatvideosite.com/core/2138/image_75.jpg" style="width: 60px; padding: 2px; border: 1px solid #c3c3c3;"></div>
+                                	          <div style="float: left; width: 228px; padding-left: 1px; padding-right: 1px;">Star Trek TiK ToK<br /><div style="color: #2a2a2a; margin-top: 5px; font-size: .9em;">Views: <span style="font-weight: normal;">8,851</span></div></div>
+                                           </div></a>
+                                			<a href="/video/the_ball_faceplant"><div id="smallsidetopentry" style="width: 300px; padding-top: 7px;">
+                                		      <div style="float: left; width: 70px; "><img src="http://media.thatvideosite.com/core/1174/image_75.jpg" style="width: 60px; padding: 2px; border: 1px solid #c3c3c3;"></div>
+                                	          <div style="float: left; width: 228px; padding-left: 1px; padding-right: 1px;">The Ball Faceplant<br /><div style="color: #2a2a2a; margin-top: 5px; font-size: .9em;">Views: <span style="font-weight: normal;">12,784</span></div></div>
+                                           </div></a>
+                                			<a href="/video/the_top_10_jackie_chan_stunts"><div id="smallsidetopentry" style="width: 300px; padding-top: 7px;">
+                                		      <div style="float: left; width: 70px; "><img src="http://media.thatvideosite.com/core/2324/image_75.jpg" style="width: 60px; padding: 2px; border: 1px solid #c3c3c3;"></div>
+                                	          <div style="float: left; width: 228px; padding-left: 1px; padding-right: 1px;">The Top 10 Jackie Chan Stunts<br /><div style="color: #2a2a2a; margin-top: 5px; font-size: .9em;">Views: <span style="font-weight: normal;">13,104</span></div></div>
+                                           </div></a>
+                                			<a href="/video/response_to_jizz_in_my_pants_puke_in_my_mouth"><div id="smallsidetopentry" style="width: 300px; padding-top: 7px;">
+                                		      <div style="float: left; width: 70px; "><img src="http://media.thatvideosite.com/core/529/image_75.jpg" style="width: 60px; padding: 2px; border: 1px solid #c3c3c3;"></div>
+                                	          <div style="float: left; width: 228px; padding-left: 1px; padding-right: 1px;">Response to J*zz in my Pants: Puke in my Mouth<br /><div style="color: #2a2a2a; margin-top: 5px; font-size: .9em;">Views: <span style="font-weight: normal;">22,630</span></div></div>
+                                           </div></a>
+                                			<a href="/video/how_transformers_3_is_going_to_look"><div id="smallsidetopentry" style="width: 300px; padding-top: 7px;">
+                                		      <div style="float: left; width: 70px; "><img src="http://media.thatvideosite.com/core/349/image_75.jpg" style="width: 60px; padding: 2px; border: 1px solid #c3c3c3;"></div>
+                                	          <div style="float: left; width: 228px; padding-left: 1px; padding-right: 1px;">How 'Transformers 3' is going to look<br /><div style="color: #2a2a2a; margin-top: 5px; font-size: .9em;">Views: <span style="font-weight: normal;">9,820</span></div></div>
+                                           </div></a>
+                                			                             
+							</div>	
+												
+						</div>
+						<br style="clear: both;" />
+				 </div></div>
+				 <div class="ft"><div class="c"></div></div>
+			</div>
+				<br style="clear: both;" />
+			
+				
+						<div id="eXTReMe"><a href="http://extremetracking.com/open?login=thatvids">
+						<img src="http://t1.extreme-dm.com/i.gif" style="border: 0;"
+						height="38" width="41" id="EXim" alt="eXTReMe Tracker" /></a>
+						<script type="text/javascript"><!--
+						var EXlogin='thatvids' // Login
+						var EXvsrv='s11' // VServer
+						EXs=screen;EXw=EXs.width;navigator.appName!="Netscape"?
+						EXb=EXs.colorDepth:EXb=EXs.pixelDepth;EXsrc="src";
+						navigator.javaEnabled()==1?EXjv="y":EXjv="n";
+						EXd=document;EXw?"":EXw="na";EXb?"":EXb="na";
+						EXd.write("<img "+EXsrc+"=http://e2.extreme-dm.com",
+						"/"+EXvsrv+".g?login="+EXlogin+"&amp;",
+						"jv="+EXjv+"&amp;j=y&amp;srw="+EXw+"&amp;srb="+EXb+"&amp;",
+						"l="+escape(EXd.referrer)+" height=1 width=1>");//-->
+						</script><noscript><div id="neXTReMe"><img height="1" width="1" alt=""
+						src="http://e2.extreme-dm.com/s11.g?login=thatvids&amp;j=n&amp;jv=n" />
+						</div></noscript></div>		
+							
+				<script type="text/javascript">
+				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+				</script>
+				<script type="text/javascript">
+				try {
+				var pageTracker = _gat._getTracker("UA-11132666-1");
+				pageTracker._trackPageview();
+				} catch(err) {}</script>						
+		</center>
+	<script type="text/javascript">
+	//<![CDATA[
+	(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+		if(links[i].href.indexOf('#disqus_thread') >= 0) {
+			query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+		}
+		}
+		document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/thatvideosite/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+	//]]>
+	</script>		
+	</body>
+</html>
+
+0.192659

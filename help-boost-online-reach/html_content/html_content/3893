@@ -1,0 +1,802 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Life expectancy calculator - Health Tools - C-Health</title>
+	<meta name="keywords" content="life expectancy calculator, long life, when will I die, death forecast, what age will I die, how long will I live" />
+	<meta name="description" content="How many years you have ahead of you depends on a lot of different factors, many of which are under your control.  Find out your life expectancy using this interactive calculator, and see how even small lifestyle decisions can make a difference." />
+
+</head>
+    <style type="text/css">
+        body { font-family: arial; font-size: 14px; color:#444;}
+        div#wrapper { text-align: center;  }
+        div#header {
+            background-image: url(images/toolstemplate/header.jpg);
+            background-repeat: no-repeat;
+            width: 956px;
+            height: 99px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        overflow: hidden;
+
+        }
+
+        div#innerwrapper {
+         text-align: left;
+         width: 956px;
+        margin-left: auto;
+        margin-right: auto;
+
+        }
+        div#content
+        {
+            width: 620px;
+            float: left;
+        }
+        div#contentinner
+        {
+            padding: 20px;
+        }
+        div#contentright
+        {
+            width: 336px;
+            float: left;
+        }
+        div#contentrightinner
+        {
+            padding: 30px 10px;
+        }
+        div#header h1.title {
+            color: #888888;
+            font-family: arial;
+            font-size: 26px;
+            font-weight: 100;
+            position: relative;
+            top: 15px;
+            left: 30px;
+
+        }
+        div#header div.logo
+        {
+            position: relative;
+            top: -60px;
+            padding-left: 620px;
+
+        }
+        div#contentinner p
+        {
+            padding: 10px;
+            background-color: #F6F5F5;
+            color: #444444;
+            font-size: 14px;
+        }
+        a
+        {
+            color: #EF7500;
+            font-weight: normal;
+            text-decoration: underline;
+        }
+
+
+
+
+
+table.toolTable
+{
+    width: 560px;
+    background-color: #F2F0F0; /*#eef2f6;*/
+    border-collapse:collapse;
+    border-spacing:0 0;
+    border: 1px solid  #eef2f6;
+    margin: 0;
+}
+html > body table.toolTable
+{
+   border-collapse:separate;
+}
+table.toolTable caption
+{
+background-color: #EF7500; /*#3E73B9;*/
+	width: 560px;
+	display: table-caption;
+	color: #fff;
+	border-left: 1px soild  #3E73B9;
+	border-right :1px soild  #3E73B9;
+	border-top : 1px soild  #3E73B9;
+}
+table.toolTable td.label
+{
+    width: 150px;
+    text-align: right;
+    margin-right: 5px;
+}
+table.toolTable tr.header th
+{
+    text-align: center;
+    font-weight: bold;
+    border: 0;
+    padding: 5px;
+    background-color:#EF7500;
+    color: #fff;
+    font-size: 12px;
+}
+table.toolTable td
+{
+    border: 0;
+    padding: 5px;
+    font-size: 12px;
+    color: #444;
+}
+table.toolTable td.tdsel
+{
+    cursor:	pointer;
+}
+table.toolTable td label
+{
+    font-weight: bold;
+}
+
+table.toolTable tr.odd td
+{
+    background-color:  #F2F0F0; /*#F6F5F5;*/
+}
+table.toolTable tr.even td
+{
+    background-color: #fff;
+}
+table.toolTable td input.colour3 {
+	background-color: #F2F0F0;
+	color: #000;
+}
+table.toolTable td.tdcentered
+{
+    text-align: center;
+}
+span.toolHeading
+{
+    font-size: 1.5em;
+}
+
+table.toolTable tr.submit td input
+{
+    background-image: url(images/toolstemplate/submit.jpg);
+    background-repeat: no-repeat;
+    border: 0;
+    font-weight: bold;
+    color: #444;
+    width: 111px;
+    height: 41px;
+}
+
+/* Fertility Tool CSS */
+
+
+div#FertilityDDG
+{
+    width: 524px;
+}
+div#FertilityDDG table.toolTable, div#FertilityDDG table.toolTable2
+{
+    border: 0;
+    width: 470px;
+
+}
+div#FertilityDDG table.toolTable td label
+{
+    color: #436389;
+}
+div#FertilityDDG table.toolTable td input, div#FertilityDDG table.toolTable textarea
+{
+    border: 1px solid #ccc;
+}
+div#FertilityDDG table.toolTable2 td input, div#FertilityDDG table.toolTable2 textarea
+{
+    border: 0px solid #fff;
+}
+div#FertilityDDG table.toolTable td
+{
+    background-color: #F0F6FD;
+}
+div#FertilityDDG div#step1
+{
+
+
+
+}
+div#FertilityDDG div.section p
+{
+    padding: 10px;
+}
+div#FertilityDDG div.toolHeading
+{
+
+    background-image: url(../health_tools/84/images/header.gif);
+    background-repeat: no-repeat;
+    height: 20px;
+    color: #fff;
+    font-family: arial;
+    font-size: 16px;
+    padding: 11px;
+
+}
+div#FertilityDDG div.toolHeading span
+{
+     color: #fff;
+  font-weight: bold;
+}
+div#FertilityDDG div.sectionWrapperOuter
+{
+    float: left;
+    width: 554px;
+    background-image: url(../health_tools/84/images/content.gif);
+    background-repeat: repeat-y;
+
+}
+div#FertilityDDG div.sectionWrapper
+{
+    float: left;
+    width: 554px;
+    background-image: url(../health_tools/84/images/content.gif);
+    background-repeat: repeat-y;
+
+}
+div#FertilityDDG div.sectionContent
+{
+    float: left;
+    width: 494px;
+
+}
+div#FertilityDDG div.sectionMenu
+{
+    float: left;
+    width: 30px;
+
+}
+div#FertilityDDG div.sectionMenu a
+{
+    padding: 0;
+    margin: 0;
+}
+div.toolClear
+{
+    clear: both;
+}
+div#FertilityDDG div.sectionFooter
+{
+    background-image: url(../health_tools/84/images/footer.gif);
+    background-color: #fff;
+    background-repeat: no-repeat;
+    height: 9px;
+
+
+}
+div#FertilityDDG div.stepLinks
+{
+   font-weight: bold;
+   color:#666;
+}
+div#FertilityDDG div.stepLinks a
+{
+    color: #436389;
+    line-height: 180%;
+}
+div#FertilityDDG table.toolTable
+{
+    margin-left: 10px;
+}
+div#FertilityDDG table.toolTable td
+{
+
+}
+div#FertilityDDG table.toolTable tr.header th
+{
+    background-color:#B6D5FB;
+}
+div#FertilityDDG table.toolTable td.tdcentered
+{
+    background-color: #fff;
+}
+
+div#FertilityDDG div.sectionMenuNoLinks {
+    float:left;
+    width:30px;
+}
+div#FertilityDDG div.section {
+    float:left;
+    margin-bottom: 10px;
+}
+div#FertilityDDG div.toolnav, div#FertilityDDG table.toolnav
+{
+    float: left;
+}
+div#FertilityDDG a.FToolLink
+{
+    cursor: pointer;
+}
+div#FertilityDDG table.toolTable tr td
+{
+    border-left: 1px solid #F0F6FD;
+    border-top: 1px solid #F0F6FD;
+}
+div#FertilityDDG table.toolTable tr td.tdcentered
+{
+    padding: 10px;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+div#FertilityDDG table.toolTable tr td.tdcenteredlast
+{
+    border-bottom: 1px solid #ccc;
+}
+div#FertilityDDG table.toolTable tr.header th
+{
+    background-color: #ABCDF9;
+    color: #436389;
+    border-right: 1px solid #ABCDF9;
+}
+div#FertilityDDG table.toolTable tr.header th.nocolor
+{
+    background-color: #F0F6FD;
+}
+html > body table.toolTable {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+div#FertilityDDG table.toolTable, div#FertilityDDG table.toolTable tr, div#FertilityDDG table.toolTable table.toolTable tr td {
+    border: 0;
+}
+div#FertilityDDG div.section
+{
+
+}
+div#FertilityDDG div.section p {
+    color:#666;
+    padding: 6px 0 0px 12px;
+    line-height: 150%;
+    margin-bottom:  0;
+
+}
+div#FertilityDDG table.toolTable2
+{
+    margin-left: 12px;
+}
+div#FertilityDDG table.toolTable2 td, div#FertilityDDG table.toolTable2 th
+{
+    padding: 4px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+div#FertilityDDG table.toolTable2 tr.header th
+{
+    background-color: #B6D5FB;
+    color: #436389;
+    font-weight: 100;
+    font-size: 12px;
+    font-family: arial;
+}
+div#FertilityDDG div.section  p.strong
+{
+    font-weight: bold;
+    padding: 0 0 0 17px;
+    margin-bottom: 0px;
+    color: #436389;
+}
+/* End of Fertility Tool */
+#Footer {
+ 	font-size: 11px;
+	margin: 20px 0 0 0;
+}
+
+
+/* Resource sidebar styles */
+ul#ResNav {
+	padding: 0;
+	margin: 20px 0 0 7px;
+	list-style-type: none;
+	width: 280px;
+}
+
+ul#ResNav li {
+	margin: 3px 0;
+	width: 100%;
+}
+
+ul#ResNav li.title {
+	font-weight: bold;
+	padding: 10px;
+	background-color: #EAE8E8;
+}
+
+ul#ResNav li.home a {
+	margin-bottom: 10px;
+}
+
+ul#ResNav li a
+{
+	font-weight: normal;
+	color: #0669B4;
+	text-decoration: none;
+	background-color: #F8F7F7;
+	padding: 10px;
+	width: 100%;
+	display: block;
+}
+
+ul#ResNav li a:hover {
+	background-color: #FEFEFE;
+}
+
+		/* Related Links */
+		#RelatedLinks { list-style: none; margin: 2em 0; padding: 0; }
+		#RelatedLinks li { margin: 1em 0; padding: 0 10px; }
+		#RelatedLinks li.title { font-weight: bold; padding: 10px; background-color: #EAE8E8; }
+		#RelatedLinks li a { font-weight: normal; text-decoration: none; color: #0669B4; }
+		#RelatedLinks li a:hover { text-decoration: underline; }
+
+    </style>
+    <!--[if IE ]>
+        <style type="text/css">
+        div#header h1.title {
+            color: #888888;
+            font-family: arial;
+            font-size: 26px;
+            font-weight: 100;
+            position: relative;
+            top: 30px;
+            left: 30px;
+
+        }
+        div#header div.logo
+        {
+            position: relative;
+            top: -45px;
+            padding-left: 620px;
+
+
+        }
+        </style>
+    <![endif]-->
+	<script type="text/javascript" src="include/js/calculator0.js"></script>
+	<script type="text/javascript" src="include/js/default.js"></script>
+	<script type="text/javascript" src="include/js/ads/healthtools_article.js"></script>
+	<script type="text/javascript" src="http://www.canoe.com/generix/js/generix.js"></script>
+		<script type="text/javascript" src="http://www.canoe.com/generix/js/GenFonction.js"></script>
+		<script type="text/javascript" src="http://www.canoe.com/generix/dfp/external/chealth.canoe.ca/TagDfpSection.js"></script>
+
+
+		<script type="text/javascript" src="http://www.canoe.com/generix/dfp/external/chealth.canoe.ca/homepage/TagDfpConfig.js"></script>
+
+		<script type="text/javascript">
+		<!-- //
+		MyGenericTagVar.sectionLevel2="healthtools";
+		MyOmnitureVariables.sectionLevel2="healthtools";
+		
+		MyGenericTagVar.sectionLevel3="";
+		MyOmnitureVariables.sectionLevel3="";
+
+		/*populate articlename variable with the article's headline (i.e this.articlename='allergy triggers') */
+		MyOmnitureVariables.articlename = "Life expectancy calculator";
+		MyOmnitureVariables.prop12 = "health:"+MyOmnitureVariables.articlename;
+		/* populate prop20 with the content source either cp or ap (i.e. this.prop20='cp') */
+		MyOmnitureVariables.prop20 = '';
+		// -->
+		
+		</script>
+
+	<script type="text/javascript" src="http://www.canoe.com/generix/dfp/TagDfpEngine.js"></script>
+	   
+		<script type="text/javascript">
+		  MyGenericTagVar.dfpSpeKey.rb = "b";
+		</script>
+<body>
+
+<div id="wrapper">
+	<script language="javascript">fctAdTag("superbanner",MyGenericTagVar,1);</script>
+    <div id="header">
+        <h1 class="title">Life expectancy calculator</h1>
+        <div class="logo"><a href="index.asp"><img border="0" src="images/toolstemplate/logo.gif" alt="C-Health" /></a></div>
+    </div>
+    <div id="innerwrapper">
+        <div id="content">
+            <div id="contentinner">
+			
+	<form name="calculator" action="health_tools.asp" method="get">
+	<input type="hidden" name="channel_id" value="8">
+	<input type="hidden" name="relation_id" value="3399">
+	<input type="hidden" name="t" value="10">
+	<input type="hidden" name="calculate" value="y">
+	<input type="hidden" name="a" value="c">
+	<input type="hidden" name="text_id" value="2974">
+	<p>Have you ever thought about how long will you live?  Try our Life Expectancy Calculator to find out an estimate.</p>
+	<p>There are many factors that affect life expectancy. Some of these such as family history are not under your control, while others such as nutrition, exercise, and smoking habits are under your control.  See how your lifestyle affects you by answering the Life Expectancy Calculator questions.</p>		
+
+	<table  class="toolTable">
+	<tr class="odd">
+		<td valign="top"><span class="orderedListHeader">1 </span></td>
+		<td><label><b>Are you...</b></label></td>
+	</tr>
+	<tr class="odd">
+		<td >&nbsp;</td>
+		<td  >
+			<input type="radio" name="sex" id="sex_m" value="m" checked>&nbsp;<label for="sex_m">Male</label>
+			<input type="radio" name="sex" id="sex_f" value="f">&nbsp;<label for="sex_f">Female</label>
+		</td>
+	</tr>
+	<tr class="even">
+		<td valign="top"><span class="orderedListHeader">2 </span>&nbsp;&nbsp;</td>
+		<td ><label for="age"><b>How old are you?</b></label></td>
+	</tr>
+	<tr class="even">
+		<td>&nbsp;</td>
+		<td height="30">
+			<input type="text" name="age" id="age" size="3" value="">
+			<br>
+		</td>
+	</tr>		
+	<tr class="odd">
+		<td  valign="top"><span class="orderedListHeader">3 </span>&nbsp;&nbsp;</td>
+		<td  ><b>Do you live in an area with lots of pollution?</b></td>
+	</tr>
+	<tr class="odd">
+		<td >&nbsp;</td>
+		<td  height="30" >
+			<input type="radio" name="q1" id="q1_yes" value="-1" >&nbsp;<label for="q1_yes">Yes</label>
+			<input type="radio" name="q1" id="q1_no" value="0" >&nbsp;<label for="q1_no">No</label>
+		</td>
+	</tr>
+	<tr class="even">
+		<td valign="top"><span class="orderedListHeader">4 </span>&nbsp;&nbsp;</td>
+		<td ><b>Do you have more than one relative (a grandparent, parent, aunt, or uncle) who lived at least 90 years in good health?</b></td>
+	</tr>
+	<tr class="even">
+		<td>&nbsp;</td>
+		<td>
+			<input type="radio" name="q2" id="q2_yes" value="5" >&nbsp;<label for="q2_yes">Yes</label>
+			<input type="radio" name="q2" id="q2_no" value="0" >&nbsp;<label for="q2_no">No</label> 
+		</td>
+	</tr>
+	<tr class="odd">
+		<td  valign="top"><span class="orderedListHeader">5 </span>&nbsp;&nbsp;</td>
+		<td  ><b>Do you have a parent, brother or sister under 50 who has (or had) cancer or a heart condition, or has had diabetes since childhood?</b></td>
+	</tr>
+	<tr class="odd">
+		<td >&nbsp;</td>
+		<td >
+			<input type="radio" name="q3" id="q3_yes" value="-3" >&nbsp;<label for="q3_yes">Yes</label> 
+			<input type="radio" name="q3" id="q3_no" value="0" >&nbsp;<label for="q3_no">No</label> 
+		</td>
+	</tr>
+	<tr class="even">
+		<td valign="top"><span class="orderedListHeader">6 </span>&nbsp;&nbsp;</td>
+		<td ><b>Do you live alone?</b></td>
+	</tr>
+	<tr class="even">
+		<td>&nbsp;</td>
+		<td>
+			<input type="radio" name="q4" id="q4_1" value="-1" >&nbsp;<label for="q4_1">I have lived alone for 10 years or less.<br></label>
+			<input type="radio" name="q4" id="q4_2" value="-2" >&nbsp;<label for="q4_2">I have lived alone for more than 10 years.<br></label>
+			<input type="radio" name="q4" id="q4_3" value="-3" >&nbsp;<label for="q4_3">I have lived alone for more than 20 years.<br></label>
+			<input type="radio" name="q4" id="q4_4" value="5" >&nbsp;<label for="q4_4">I don't live alone. I live with a spouse or friend.<br></label>
+			<br>
+		</td>
+	</tr>
+	<tr class="odd">
+		<td  valign="top"><span class="orderedListHeader">7 </span>&nbsp;&nbsp;</td>
+		<td  ><b>Are you overweight?</b></td>
+	</tr>
+	<tr class="odd">
+		<td >&nbsp;</td>
+		<td >
+			<table cellpadding="0" cellspacing="0" border="0">
+			<tr>
+				<td >Weight<input type="text" name="wt_pd" id="wt_pd" size="2" value=""> <label for="wt_pd">lbs</label> or </td>
+				<td >&nbsp;<input type="text" name="wt_kg" id="wt_kg" size="2" value=""> <label for="wt_kg">kg</label>.</td>
+			</tr>
+			<tr>
+				<td >Height<input type="text" name="ht_ft" id="ht_ft" size="2" value=""> <label for="ht_ft">ft</label> <input type="text" name="ht_in" id="ht_in" size="2" value=""> <label for="ht_in">in</label> or </td>
+				<td >&nbsp;<input type="text" name="ht_cm" id="ht_cm" size="2" value=""> <label for="ht_cm">cm</label>.</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	<tr class="even">
+		<td valign="top"><span class="orderedListHeader">8 </span>&nbsp;&nbsp;</td>
+		<td ><b>Do you eat more than 5 portions of fruits and vegetables a day?</b></td>
+	</tr>
+	<tr class="even">
+		<td>&nbsp;</td>
+		<td>
+			<input type="radio" name="q6" id="q6_yes" value="2" >&nbsp;<label for="q6_yes">Yes</label>
+			<input type="radio" name="q6" id="q6_no" value="0" >&nbsp;<label for="q6_no">No</label>
+		</td>
+	</tr>		
+	<tr class="odd">
+		<td  valign="top"><span class="orderedListHeader">9 </span>&nbsp;&nbsp;</td>
+		<td  ><b>Do you eat processed or fast food regularly?</b></td>
+	</tr>
+	<tr class="odd">
+		<td >&nbsp;</td>
+		<td >
+			<input type="radio" name="q7" id="q7_yes" value="-2" >&nbsp;<label for="q7_yes">Yes</label>
+			<input type="radio" name="q7" id="q7_no" value="0" >&nbsp;<label for="q7_no">No</label>
+		</td>
+	</tr>
+	<tr class="even">
+		<td valign="top"><span class="orderedListHeader">10 </span></td>
+		<td ><b>How often do you exercise vigorously for at least 30 minutes (tennis, running, swimming, etc.)?</b></td>
+	</tr>
+	<tr class="even">
+		<td>&nbsp;</td>
+		<td>
+			<input type="radio" name="q8" id="q8_1" value="4" >&nbsp;<label for="q8_1">5 times a week.</label><br>
+			<input type="radio" name="q8" id="q8_2" value="2" >&nbsp;<label for="q8_2">2-3 times a week.</label><br>
+			<input type="radio" name="q8" id="q8_3" value="0" >&nbsp;<label for="q8_3">Less than 2 times a week.</label><br>
+		</td>
+	</tr>		
+	<tr class="odd">
+		<td  valign="top"><span class="orderedListHeader">11 </span>&nbsp;&nbsp;</td>
+		<td  ><b>How much do you drink?</b></td>
+	</tr>
+	<tr class="odd">
+		<td >&nbsp;</td>
+		<td >
+			<input type="radio" name="q9" id="q9_1" value="-2" >&nbsp;<label for="q9_3">I drink more than 2 drinks per day. (1 drink equals 12 ounces of beer, 5 ounces of wine, or 1.5 ounces of 80-proof spirits)</label><br>
+			<input type="radio" name="q9" id="q9_2" value="1" >&nbsp;<label for="q9_2">I drink 2 drinks per day or less.</label><br>
+			<input type="radio" name="q9" id="q9_3" value="1" >&nbsp;<label for="q9_3">I seldom drink or don't drink at all.</label><br>
+			<br>
+		</td>
+	</tr>
+	<tr class="even">
+		<td valign="top"><span class="orderedListHeader">12 </span>&nbsp;&nbsp;</td>
+		<td ><b>Which of the following describes you the best?</b></td>
+	</tr>
+	<tr class="even">
+		<td>&nbsp;</td>
+		<td>
+			<input type="radio" name="q10" id="q10_1" value="1.5" >&nbsp;<label for="q10_1">Stress is a positive influence.</label><br>
+			<input type="radio" name="q10" id="q10_2" value="-1.5" >&nbsp;<label for="q10_2">Stress eats away at me.</label><br>
+			<input type="radio" name="q10" id="q10_3" value="0" >&nbsp;<label for="q10_3">I can handle stress through exercise, meditation, or humour.</label><br>
+			<br>
+		</td>
+	</tr>	
+	<tr class="odd">
+		<td  valign="top"><span class="orderedListHeader">13 </span>&nbsp;&nbsp;</td>
+		<td  ><b>Which of the following describes your driving record the best?</b></td>
+	</tr>
+	<tr class="odd">
+		<td >&nbsp;</td>
+		<td >
+			<input type="radio" name="q11" id="q11_1" value="1" >&nbsp;<label for="q11_1">No accidents or violations in the last 3 years.</label><br>
+			<input type="radio" name="q11" id="q11_2" value="0" >&nbsp;<label for="q11_2">1-3 accidents or violations in the last 3 years.</label><br>
+			<input type="radio" name="q11" id="q11_3" value="-2" >&nbsp;<label for="q11_3">4 or more violation or accidents in the past 3 years.</label><br>
+			<br>
+		</td>
+	</tr>
+	<tr class="even">
+		<td valign="top"><span class="orderedListHeader">14 </span>&nbsp;&nbsp;</td>
+		<td ><b>Do you smoke?</b></td>
+	</tr>
+	<tr class="even">
+		<td>&nbsp;</td>
+		<td>
+			<input type="radio" name="q12" id="q12_1" value="0" >&nbsp;<label for="q12_1">No, and I don't spend much time around people who are smoking.</label><br>
+			<input type="radio" name="q12" id="q12_2" value="-2" >&nbsp;<label for="q12_2">No, but I'm exposed to a lot of second-hand smoke.</label><br>
+			<input type="radio" name="q12" id="q12_3" value="-3" >&nbsp;<label for="q12_3">Yes, half a pack per day or less.</label><br>
+			<input type="radio" name="q12" id="q12_4" value="-6" >&nbsp;<label for="q12_4">Yes, 1-2 packs per day.</label><br>
+			<input type="radio" name="q12" id="q12_5" value="-8" >&nbsp;<label for="q12_5">Yes, more than 2 packs per day.</label><br>
+			<br>
+		</td>
+	</tr>
+	<tr class="odd">
+		<td  valign="top"><span class="orderedListHeader">15 </span>&nbsp;&nbsp;</td>
+		<td  ><b>Do you have an annual medical checkup (that includes, for women, a gynecological exam) once a year?</b></td>
+	</tr>
+	<tr class="odd">
+		<td >&nbsp;</td>
+		<td  valign="top">
+			<input type="radio" name="q13" id="q13_yes" value="2" >&nbsp;<label for="q13_yes">Yes</label>
+			<input type="radio" name="q13" id="q13_no" value="0" >&nbsp;<label for="q13_no">No</label>
+		</td>
+	</tr>
+	<tr class="submit">
+		<td >&nbsp;</td>
+		<td  height="30" >
+			<input type="submit" value="Calculate" onFocus="this.blur();" alt="Calculate" onclick="return isFormOK('life_expectancy')">
+		</td>
+	</tr>
+	</table>
+	</form>
+	<br>
+		
+
+    		</div>
+			<div id="Footer">
+				The contents of this site are for informational purposes only and are meant to be discussed with your physician or other qualified health care professional before being acted on. Never disregard any advice given to you by your doctor or other qualified health care professional.  Always seek the advice of a physician or other licensed health care professional regarding any questions you have about your medical condition(s) and treatment(s).  This site is not a substitute for medical advice.<br><br>
+				&copy; 1996 - 2012 <a href="http://www.mediresource.com" target="_blank">MediResource Inc.</a> - MediResource reaches millions of Canadians each year.
+			</div>
+   	 	</div>
+        <div id="contentright">
+            <div id="contentrightinner">
+        		<div id="ad1">
+        			<div></div>
+        			<div>
+
+	<div id="CanoeBigBoxAd">
+		<!-- Advertorial start -->
+		<table border="0" cellpadding="0" cellspacing="0" align="center">
+	<tr>
+		<td align="center" valign="top"><span class="smallgraytext">Ad</span>
+		<br /><script language="javascript">fctAdTag("bigbox",MyGenericTagVar,1);</script>
+		</td>
+	</tr>
+</table>
+		<!-- Advertorial end -->
+	</div>
+
+	<div id="ad_middle2" style="width: 300px; padding-top: 10px; padding-left: 8px;">
+		<script LANGUAGE="JavaScript1.1">
+		<!--
+		OAS_url= 'http://oascentral.medbroadcast.com/RealMedia/ads/';
+		OAS_sitepage= 'medbroadcast.com/canoelifeexpectancytool';
+
+		if (typeof OAS_rns == "undefined") OAS_rns = new String (Math.random()).substring(2, 11);
+		document.write('<scr'+'ipt LANGUAGE="JavaScript1.1" SRC="'+ OAS_url + 'adstream_jx.ads/' + OAS_sitepage + '/1' + OAS_rns + '@Top,Middle,Position3,Position1,Middle1,Middle2,Middle3!Middle2?JX"></scr'+'ipt>');
+		// -->
+		</script>
+	</div>
+
+	<ul id="RelatedLinks">
+		<li class="title">You might also like</li>
+		<li><a href="channel_section_details.asp?text_id=5764&channel_id=2113&relation_id=95982">7 ways to protect yourself from the flu</a>
+		</li>
+		<li><a href="channel_section_details.asp?text_id=5757&channel_id=2113&relation_id=95973">Are you at risk of flu complications?</a>
+		</li>
+		<li><a href="channel_health_features_details.asp?health_feature_id=573&article_id=1540&channel_id=2113&relation_id=95985">How to care for someone with the flu</a>
+		</li>
+		<li><a href="health_tools.asp?t=7&text_id=1856&channel_id=2113&relation_id=95996">Cold or flu? Which is it?</a>
+		</li>
+	</ul>
+
+
+<ul id="ResNav">
+	<li class="title">More health resources</li>
+	<li class="home"><a href="index.asp">Health Home</a></li>
+	<li><a href="health_tools.asp?relation_id=3233">All Tools</a></li>
+	<li><a href="drug_info.asp">Drugs A-Z</a></li>
+	<li><a href="condition_info.asp">Conditions A-Z</a></li>
+	<li><a href="ask_an_expert_general.asp">Ask an Expert</a></li>
+	<li><a href="support_groups.asp">Support Groups</a></li>
+	<li><a href="columnist.asp?relation_id=3224">Columnists</a></li>
+	<li><a href="health_news_list.asp?relation_id=3185">C-Health News</a></li>
+	<li><a href="http://en.video.canoe.tv/video/health/health_news/1896809986">Health Videos</a></li>
+</ul>
+
+                    </div>
+        		</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<script type="text/javascript" src="http://www.canoe.com/generix/omniture/TagOmnitureEngine.js?new"></script>
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-4524706-10");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+</body>
+</html>
+	

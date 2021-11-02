@@ -1,0 +1,894 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+		<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+                
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="generator" content="Avery" />
+		<meta http-equiv="description" content="Videos from the TEDMED Events in San Diego, California" />
+		<meta http-equiv="keywords" content="" />
+		<title>
+        TEDMED        </title>
+                
+                    <link rel="stylesheet" type="text/css"  media="all" href="/CSS/pm_main.css" />
+                    <link rel="stylesheet" type="text/css"  media="all" href="/CSS/main.css" />
+                    <!--[if IE]><link rel="stylesheet" media="all" href="/CSS/ie.css" /><![endif]-->
+                    <link rel="icon" type="image/png" href="/Images/favicon3.png" />
+                    <script type="text/javascript" src="/JS/jquery-1.2.6.min.js"></script>
+                    <link rel="stylesheet" media="all" href="/JS/PrettyPhoto/css/prettyPhoto.css.php?baseurl=http%3A%2F%2Fwww.tedmed.com%2F" />
+                    <script type="text/javascript" src="/JS/PrettyPhoto/js/jquery.prettyPhoto.js"></script>
+                    <script type="text/javascript" src="/JS/iRotted.js"></script>
+                    <script type="text/javascript" src="/JS/formInteraction.js"></script>
+                    <script type="text/javascript" src="/JS/menuInteraction.js"></script>
+                    <script type="text/javascript" src="/JS/validate.js"></script>
+                    <script type="text/javascript" src="/JS/jqmodal.js"></script>
+                    <script type="text/javascript" src="/JS/fadeTo1996.js"></script>
+                    <script type="text/javascript" src="/JS/jquery.hoverIntent.minified.js"></script>
+                    <script type="text/javascript" src="/JS/jquery.bgiframe.pack.js"></script>
+                    <script type="text/javascript" src="/JS/superfish.js"></script>
+                    <script type="text/javascript" src="/Flash/js/swfobject.js"></script>
+                    <script type="text/javascript" src="/JS/global.js"></script>
+                    <script type="text/javascript" src="/JS/stuHover.js"></script>
+		
+		<script language="JavaScript">
+	function getFlashMovie(movieName)
+	{
+		var isIE = navigator.appName.indexOf("Microsoft") != -1;
+		return (isIE) ? window[movieName] : document[movieName];
+	}
+	
+</script>
+<script type="text/javascript">
+$(function(){
+		
+$("#mainNav li a.conference").hover( 
+function(){
+$("#mainNav li.selected ul.x").hide();
+$("#mainNav li.selected ul.z").hide();
+},
+function(){
+$("#mainNav li.selected ul.x").show();
+$("#mainNav li.selected ul.z").show();
+}
+);
+
+$("#mainNav li ul.y li a").hover( 
+function(){
+$("#mainNav li.selected ul.x").hide();
+$("#mainNav li.selected ul.z").hide();
+},
+function(){
+$("#mainNav li.selected ul.x").show();
+$("#mainNav li.selected ul.z").show();
+}
+);
+
+
+
+ $("#mainNav li a.sponsors").hover( 
+function(){
+$("#mainNav li.selected ul.x").hide();
+$("#mainNav li.selected ul.y").hide();
+},
+function(){
+$("#mainNav li.selected ul.y").show();
+$("#mainNav li.selected ul.x").show();
+}
+);
+
+
+$("#mainNav li ul.z li a").hover( 
+function(){
+$("#mainNav li.selected ul.x").hide();
+$("#mainNav li.selected ul.y").hide();
+},
+function(){
+$("#mainNav li.selected ul.x").show();
+$("#mainNav li.selected ul.y").show();
+}
+);
+
+
+
+
+
+ $("#mainNav li a.about").hover( 
+function(){
+$("#mainNav li.selected ul.y").hide();
+$("#mainNav li.selected ul.z").hide();
+},
+function(){
+$("#mainNav li.selected ul.y").show();
+$("#mainNav li.selected ul.z").show();
+}
+);
+ $("#mainNav li a.speakers").hover( 
+function(){
+$("#mainNav li.selected ul.y").hide();
+$("#mainNav li.selected ul.x").hide();
+$("#mainNav li.selected ul.z").hide();
+},
+function(){
+$("#mainNav li.selected ul.y").show();
+$("#mainNav li.selected ul.x").show();
+$("#mainNav li.selected ul.z").show();
+}
+);
+
+ $("#mainNav li a.videos").hover( 
+function(){
+$("#mainNav li.selected ul.y").hide();
+$("#mainNav li.selected ul.x").hide();
+$("#mainNav li.selected ul.z").hide();
+},
+function(){
+$("#mainNav li.selected ul.y").show();
+$("#mainNav li.selected ul.x").show();
+$("#mainNav li.selected ul.z").show();
+}
+);
+
+
+ $("#mainNav li a.apply").hover( 
+function(){
+$("#mainNav li.selected ul.y").hide();
+$("#mainNav li.selected ul.x").hide();
+$("#mainNav li.selected ul.z").hide();
+},
+function(){
+$("#mainNav li.selected ul.y").show();
+$("#mainNav li.selected ul.x").show();
+$("#mainNav li.selected ul.z").show();
+}
+);
+
+
+$("#mainNav li ul.x li a").hover( 
+function(){
+$("#mainNav li.selected ul.y").hide();
+$("#mainNav li.selected ul.z").hide();
+},
+function(){
+$("#mainNav li.selected ul.y").show();
+$("#mainNav li.selected ul.z").show();
+}
+);
+		
+		
+			jQuery(function() {
+				var speakerNomination=false;				if(speakerNomination=='success')
+				{
+					$(".nominate .jqmConfirmWindow").html('<p style="margin-top:0"><a class="jqmClose submit">X</a></p><h2>Thank You!</h2><p>Your nomination has been submitted for review.</p>');
+					$(".nominate").jqmShow();
+					
+				}
+				else if(speakerNomination=='failure')
+				{
+					$(".nominate .jqmConfirmWindow").html('<p style="margin-top:0"><a class="jqmClose submit">X</a></p><h2>Sorry!</h2><p>Your request cannot be processed at this time. Please try again later.</p>');
+					$(".nominate").jqmShow();
+				}
+
+				
+				$("#signUp2").initEmailForm({"target":"/mcjoin","baseurl":"/"});
+				$("#signUp5").initEmailForm({"target":"/mcjoin","baseurl":"/"});
+				$("#contactForm").initContactForm({"target":"/mail","baseurl":"/"});
+				// Menu Rollovers
+				$().initRollovers("/");
+				// Animated Quotes
+				/*$("#quotes").iRottedInit("/",
+					[
+						"Images/Quotes/quote1.gif",
+						"Images/Quotes/quote2.gif",
+						"Images/Quotes/quote3.gif",
+						"Images/Quotes/quote4.gif",
+						"Images/Quotes/quote5.gif",
+						"Images/Quotes/quote6.gif"
+					]
+				);*/
+			});
+		});
+		
+		
+	
+		</script>
+		</head>
+		<body>
+<!-- <div id="login-bg"></div> -->
+
+ <div class="jqmConfirm livep">
+      <div class="jqmConfirmWindow">
+      <h1>fdsf</h1>
+        </div></div>
+<div class="jqmConfirm vid">
+          <div class="jqmConfirmWindow">
+    <p style="margin-top:0"><a class="jqmClose submit">X</a></p>
+    <div style="margin:40px 0px 10px 19px;"> 
+              <script type="text/javascript">
+		var flashvars = {};
+		flashvars.mediaPath = "../Flash/";
+		flashvars.videoName="tedmed.flv";
+		var params = {};
+		params.wmode = "window";
+		var attributes = {};
+		attributes.id = "ted";
+		swfobject.embedSWF("../Flash/Vid.swf", "alternativeContent", "764", "481", "9.0.28", "swf/expressInstall.swf", flashvars, params, attributes);
+	  </script>
+              <div id="alternativeContent">
+        <p>This website requires Adobe Flash Player.<br/>
+                  Please download the latest <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash Plugin</a></p>
+      </div>
+            </div>
+  </div>
+        </div>
+<div class="jqmConfirm schedule">
+          <div class="jqmConfirmWindow">
+    <p style="margin-top:0"><a class="jqmClose submit">X</a></p>
+    
+<table align="center" border="0" cellpadding="1px" cellspacing="0px" width="800">
+  <tbody><tr class="Size_10" align="left" valign="top">
+    <td colspan="8"><img src="/Images/10165_ConfSchdle-Bar_1.gif" alt="2012 Header" height="79" width="800"></td>
+  </tr>
+  <tr class="Size_10" align="left" valign="top">
+    <td rowspan="3">&nbsp;</td>
+    <td><FONT SIZE="3">The Conference Begins</FONT>
+    </td>
+    <td colspan="6" style="background-color:#eee; text-align:center;"><FONT SIZE="3"><strong><FONT COLOR="#F00">TED</FONT>MED</strong>Health Zone: A healthy way to start your day.</FONT></td>
+    </tr>
+  <tr class="Size_10" align="left" valign="top">
+    <td width="183" rowspan="3">
+    <p class="size_10"><span class="red_10"><strong>Noon – 7:00 pm</strong></span><br>
+      <strong>Delegate Credentials Pickup* </strong><br>@ Kennedy Center<br>Opera House</p>
+      <p class="size_10"><span class="red_10"><strong>5:00 - 7:00 pm</strong></span><br>
+      <strong>Opening Session 1</strong><br>@ Opera House, Social Spaces, &amp; TEDMEDLive</p>
+      <p class="size_10"><span class="red_10"><strong>7:00 - 10:00 pm</strong></span><br>
+        <strong>Opening Dinner Reception</strong><br>@ Smithsonian National Portrait Gallery</p>
+      <p><strong>Optional:</strong> Monument Tour<br />after dinner.</p>
+      <p class="size_11" style="padding-right:5px;">*Credentials can also be picked up in front of Opera House Wednesday - Friday starting at 7:30 am. Access to all events requires Delegate Credentials. Bring government-issued, photo ID to pick up your Credentials in front of Opera House at The Kennedy Center.</p>
+    </td>
+    <td height="394" style="background-color:#eee;">&nbsp;</td>
+    <td width="178" class="Size_10" style="background-color:#eee;">
+    <p><span class="red_10"><strong>6:00 – 7:00 am</strong></span><br>
+        <strong>Run or Walk</strong><br />Meet @ 24<sup>th</sup> & M Streets</p>
+        
+        <p><span class="red_10"><strong>6:00 – 7:00 am</strong></span><br>
+        <strong>Yoga</strong><br />Meet @ Fairmont Hotel Dumbarton room</p>
+        
+        <p><span class="red_10"><strong>7:00 - 7:45 am</strong></span><br>
+        <strong>Meditation</strong> <br>@ African Lounge,<br>Kennedy Center</p>
+        
+      <p><span class="red_10"><strong>7:00 – 8:45 am</strong></span><br>
+        <strong>Breakfast</strong><br>@ The Social Hub</p>
+      <p><span class="red_10"><strong>9:00 – 6:00 pm</strong></span><br>
+        <strong>Eastern Healing,<br />Integrative Therapy</strong><br>@ African Lounge<br />Kennedy Center</p>
+    </td>
+    <td width="13" style="background-color:#eee;">&nbsp;</td>
+    <td width="178" style="background-color:#eee;">
+    <p><span class="red_10"><strong>6:00 – 7:00 am</strong></span><br>
+        <strong>Run or Walk</strong><br />Meet @ 24<sup>th</sup> & M Streets</p>
+        
+        <p><span class="red_10"><strong>6:00 – 7:00 am</strong></span><br>
+        <strong>Yoga</strong><br />Meet @ Fairmont Hotel Dumbarton room</p>
+        
+        <p><span class="red_10"><strong>7:00 - 7:45 am</strong></span><br>
+        <strong>Meditation</strong> <br>@ African Lounge,<br>Kennedy Center</p>
+        
+      <p><span class="red_10"><strong>7:00 – 8:45 am</strong></span><br>
+        <strong>Breakfast</strong><br>@ The Social Hub</p>
+      <p><span class="red_10"><strong>9:00 – 6:00 pm</strong></span><br>
+        <strong>Eastern Healing,<br />Integrative Therapy</strong><br>@ African Lounge<br />Kennedy Center</p>
+    </td>
+    <td width="13" style="background-color:#eee;">&nbsp;</td>
+    <td width="200" style="background-color:#eee;">
+    <p><span class="red_10"><strong>6:00 – 7:00 am</strong></span><br>
+        <strong>Run or Walk</strong><br />Meet @ 24<sup>th</sup> & M Streets</p>
+        
+        <p><span class="red_10"><strong>6:00 – 7:00 am</strong></span><br>
+        <strong>Yoga</strong><br />
+        Meet @ Fairmont Hotel<br />Dumbarton room</p>
+        
+        <p><span class="red_10"><strong>7:00 - 7:45 am</strong></span><br>
+        <strong>Meditation</strong> <br>@ African Lounge,<br>Kennedy Center</p>
+        
+      <p><span class="red_10"><strong>7:00 – 8:45 am</strong></span><br>
+        <strong>Breakfast</strong><br>@ The Social Hub</p>
+      <p><span class="red_10"><strong>9:00 – 11:00 am</strong></span><br>
+        <strong>Eastern Healing,<br />Integrative Therapy</strong><br>@ African Lounge<br />Kennedy Center</p>
+    </td>
+  </tr>
+  <tr class="Size_10" align="left" valign="top">
+    <td height="16" colspan="6" style="text-align:center;background-color:#eee;padding-bottom:10px;"><p5>Vegan & Vegetarian choices available at all meals & breaks.</p5></td>
+    </tr>
+  <tr class="Size_10" align="left" valign="top">
+    <td width="13" rowspan="2"></td>
+    <td width="8" rowspan="2">&nbsp;</td>
+    <td width="178" rowspan="2" class="Size_10">
+      <p><span class="red_10"><strong>8:45 – 10:30 am</strong></span><br>
+        <strong>Session 2</strong><br>@ Opera House, Social Spaces, TEDMEDLive</p>
+      <p><span class="red_10"><strong>10:30 – 11:15 am</strong></span><br>
+        <strong>Social Break</strong><br>@ The Social Hub</p>
+      <p><span class="red_10"><strong>11:15 - 12:45 pm</strong></span><br>
+        <strong>Session 3</strong><br>@ Opera House, Social Spaces, TEDMEDLive</p>
+      
+      <p><span class="red_10"><strong>12:45 - 2:15 pm</strong></span><br>
+        <strong>Lunch</strong><br>@ Kennedy Center Atrium &amp; Foyers, Roof Terrace Level<br><em>or</em>
+        <br><strong>Light Lunch</strong><br>@ The Social Hub</p>    
+      <p><span class="red_10"><strong>2:15 – 4:00 pm</strong></span><br>
+        <strong>Session 4</strong><br>@ Opera House, Social Spaces, TEDMEDLive<br>
+        </p>
+      <p><span class="red_10"><strong>4:00 – 5:00 pm</strong></span><br>
+        <strong>Social Break</strong><br>@ The Social Hub</p>
+      
+      <p><span class="red_10"><strong>5:00 – 6:45 pm</strong></span><br>
+        <strong>Session 5</strong><br>@ Opera House, Social Spaces, TEDMEDLive<br>
+        </p>
+      <p><span class="red_10"><strong>7:30 to 11:00 pm</strong></span><br>
+        <strong>Delegate Dinner Celebration</strong><br>@ Library of Congress</p>
+      <p><strong>Optional:</strong> Monument Tour<br />after dinner.</p>
+      </td>
+    <td width="13" rowspan="2">&nbsp;</td>
+    <td width="178" rowspan="2">
+      <p><span class="red_10"><strong>8:45 – 10:30 am</strong></span><br>
+        <strong>Session 6</strong><br>@ Opera House, Social Spaces, TEDMEDLive</p>
+      <p><span class="red_10"><strong>10:30 – 11:15 am</strong></span><br>
+        <strong>Social Break</strong><br>@ The Social Hub</p>
+      <p><span class="red_10"><strong>11:15 - 12:45 pm</strong></span><br>
+        <strong>Session 7</strong><br>@ Opera House, Social Spaces, TEDMEDLive</p>
+      
+      <p><span class="red_10"><strong>12:45 - 2:15 pm</strong></span><br>
+        <strong>Lunch</strong><br>@ Kennedy Center Atrium &amp; Foyers, Roof Terrace Level<br><em>or</em>
+        <br><strong>Light Lunch</strong><br>@ The Social Hub</p>
+      <p><span class="red_10"><strong>2:15 – 4:00 pm</strong></span><br>
+        <strong>Session 8</strong><br>@ Opera House, Social Spaces, TEDMEDLive<br>
+        </p>
+      <p><span class="red_10"><strong>4:00 – 5:00 pm</strong></span><br>
+        <strong>Social Break</strong><br>@ The Social Hub</p>
+      
+      <p><span class="red_10"><strong>5:00 – 6:45 pm</strong></span><br>
+        <strong>Session 9</strong><br>@ Opera House, Social Spaces, TEDMEDLive<br>
+        </p>
+      <p><span class="red_10"><strong>6:45 – 9:30 pm</strong></span><br>
+        <strong>Dinner on Your Own</strong><br>&amp; Private Sponsor Dinners</p>
+      <p><span class="red_10"><strong>9:30 – Midnight +</strong></span><br>
+        <strong>Sponsor Celebration Party</strong><br>@ National Building Museum<br>Bring a guest!</p>
+      </td>
+    <td width="13" rowspan="2">&nbsp;</td>
+    <td width="200" rowspan="2">
+      <p><span class="red_10"><strong>8:45 – 10:30 am</strong></span><br>
+        <strong>Session 10</strong><br>@ Opera House, Social Spaces, TEDMEDLive</p>
+      <p><span class="red_10"><strong>10:30 – 11:15 am</strong></span><br>
+        <strong>Social Break</strong><br>@ The Social Hub</p>
+      <p><span class="red_10"><strong>11:15 – 1:00 pm</strong></span><br>
+        <strong>Closing Session 11</strong><br>@ Opera House, Social Spaces, TEDMEDLive</p>
+          <p><span class="red_10"><strong>1:00 pm</strong></span><br>
+          <strong>Departure</strong><br>Complimentary transportation back to listed hotels. Transportation to airport on your own.</p></td>
+  </tr>
+  <tr class="Size_10" align="left" valign="top">
+    <td>&nbsp;</td>
+  </tr>
+  <tr class="Size_10" align="left" valign="top">  
+    <td colspan="8" style="font-size:12px;"><strong><FONT COLOR="#F00">TED</FONT>MED</strong> Fiats, <strong><FONT COLOR="#F00">TED</FONT>MED</strong> Trolleys, & <strong><FONT COLOR="#F00">TED</FONT>MED</strong> Buses:</td>
+  </tr>
+  <tr class="Size_10" align="left" valign="top">
+    <td colspan="8" style="color:#444; font-size:12px; font-weight:normal">Complimentary transportation from listed Hotels to and from The Kennedy Center and all evening events starts at Noon on Tuesday and 6:45 am  Wednesday - Friday. Catch a ride on a Fiat, Trolley, or Bus from a listed Hotel, The Kennedy Center, or our Evening Venues. The Kennedy Center also provides complimentary bus transportation to and from Foggy Bottom Metro Station starting at 7:00 am.<br>Transportation to and from airport is on your own.<br><br/></td>
+  </tr>
+  </tbody>
+</table>
+  </div>
+        </div>
+<div class="jqmConfirm patron-info">
+          <div class="jqmConfirmWindow">
+    <p style="margin-top:0"><a class="jqmClose submit">X</a></p>
+    <h2>Patron Admission Offers</h2>
+    <p>Becoming a TEDMED Patron means that $7,550 of your Patron Delegate fee supports The TEDMED Patron Fund. The TEDMED Patron fund is a non-501-c3 fund and is used to sponsor Delegates on a needs-blind basis, support TEDMEDLive simulcasts to remote non-profits (hospitals, universities, etc.), and to create and distribute free documentary films to the world. In return for this higher level of support, Patron Delegates receive the following special privileges and recognition:</p>
+    <ul style="font-size:12px; color:#333333;">
+              <li>Instant Application Approval and a Guaranteed Spot on Delegate Floor</li>
+              <li> An Invitation to TEDMED’s VIP, Speakers' Reception</li>
+              <li>Patron Listing in the Program Guide</li>
+              <li>Patron Listing in the Patron Fund</li>
+              <li>Guaranteed Patron Delegate Spot for 2014 (when 2014 Patron Delegate fee is paid)</li>
+              <li>VIP Admission Review Process for Your Recommended Delegates</li>
+              <li>Priority Badge Pick-up at Event</li>
+              <li>Patron Level Recognition on Badge</li>
+              <li> Ability to Transfer Delegate Pass</li>
+              <li> Ability to Postpone Delegate pass to 2014 </li>
+            </ul>
+  </div>
+        </div>
+<div class="jqmConfirm email">
+          <div class="jqmConfirmWindow">
+    <p style="margin-top:0"><a class="jqmClose submit">X</a></p>
+    <br />
+    <h2 style="margin-left:40px;">Please enter your name and email address </h2>
+    <form id="signUp5" action="http://www.tedmed.com/mcjoin/basic" method="POST">
+              <div class="left">
+        <label class="nameLabel"></label>
+      </div>
+              <div class="left">
+        <input type="text" name="name"  value="First Name" class="nameInput" />
+      </div>
+              <div class="left">
+        <label class="nameLabel"></label>
+      </div>
+              <div class="left">
+        <input type="text" name="name2" value="Last Name" class="nameInput2" />
+      </div>
+              <div class="left">
+        <label class="nameLabel"></label>
+      </div>
+              <div class="left">
+        <input type="text"  name="email" value="Email Address" class="emailInput" />
+      </div>
+              <br />
+              <br />
+              <input type="hidden" name="return" value="http://www.tedmed.com/videos-ipad" />
+              <input class="stay-informed" type="submit" value="SUBMIT" />
+            </form>
+    <br />
+  </div>
+        </div>
+<div class="jqmConfirm nominate">
+          <div class="jqmConfirmWindow">
+    <p style="margin-top:0"><a class="jqmClose submit">X</a></p>
+    <!--<h2>Nominate a Speaker</h2>
+<<<<<<< .mine
+    <p>Help us build a world-class set of speakers for our 2012 conference by providing us a lead to leaders and innovators in the medical field.  To submit a nomination, please fill out the information below and click “Submit�?.</p>
+=======
+    <p>Help us build a world-class set of speakers for our 2012 conference by providing us a lead to leaders and innovators in the medical field.  To submit a nomination, please fill out the information below and click “Submit�?.</p>
+>>>>>>> .r499
+    <p><span style="color:#ed242a;">*</span> Denotes a required field.</p>
+    <form id="nominate" method="post" action="speakers">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" class="nominate-table">
+        <tr>
+                  <td valign="top" class="right_align">Nominee's Name:</td>
+                  <td valign="top"><div>
+                      <input name="nomineeName" value="" type="text" class="formfield" id="first_name" style="width:250px;" maxlength="100" />
+                    </div>
+            <span class="required">*</span></td>
+                </tr>
+        <tr>
+                  <td valign="top" class="right_align">Company Affiliation:</td>
+                  <td valign="top"><div>
+                      <input name="companyAffiliation" value="" type="text" class="formfield" id="last_name" style="width:250px;" maxlength="100" />
+                    </div>
+            <span class="required">*</span></td>
+                </tr>
+        <tr>
+                  <td valign="top" class="right_align">Current Role:</td>
+                  <td valign="top"><div>
+                      <input name="currentRole" value="" type="text" class="formfield" id="title" style="width:250px;" maxlength="100" />
+                    </div></td>
+                </tr>
+        <tr>
+                  <td valign="top" class="right_align">Nominee's Contact Information:</td>
+                  <td valign="top"><div>
+                      <textarea name="nomineeContact" cols="70" rows="4" wrap="virtual" class="formfield" style="width:300px;"></textarea>
+                    </div>
+            <span class="required">*</span></td>
+                </tr>
+        <tr>
+                  <td valign="top" class="right_align">Biography:</td>
+                  <td valign="top"><div>
+                      <input name="biography" value="" type="text" class="formfield" id="title" style="width:250px;" maxlength="100" />
+                    </div></td>
+                </tr>
+        <tr>
+                  <td valign="top" class="right_align">Video link to past speaking presentations (if available):</td>
+                  <td valign="top"><div>
+                      <input name="videoLink" value="" type="text" class="formfield" id="title" style="width:250px;" maxlength="100" />
+                    </div></td>
+                </tr>
+        <tr>
+                  <td valign="top" class="right_align">Proposed topic<br/>
+            (provide either a title or description):</td>
+                  <td valign="top"><div>
+                      <input name="proposedTopic" value="" type="text" class="formfield" id="title" style="width:250px;" maxlength="100" />
+                    </div></td>
+                </tr>
+        <tr>
+                  <td valign="top" class="right_align">&nbsp;</td>
+                  <td valign="top"><div  style="width:320px;">Please provide any other information that you find relevant so that we can get a good sense for the presentation idea, topic, and the proposed speaker’s ability/experience in delivering the message.<br/>
+                      <textarea name="extraInfo" cols="70" rows="9" wrap="virtual" class="formfield" style="width:300px; margin-top:4px;"></textarea>
+                    </div></td>
+                </tr>
+        <tr>
+                  <td valign="top" class="right_align">&nbsp;</td>
+                  <td valign="top"><input name="button" type="submit" action="" class="submit nominated" value="Submit" style="width:auto; padding:0 10px" /></td>
+                </tr>
+      </table>
+            </form>-->
+            
+          
+    
+     <iframe height="1300" allowTransparency="true" frameborder="0" scrolling="auto" style="width:100%;border:none" src="http://forms.tedmed.com/embed.php?id=1<view-source:http://forms.tedmed.com/embed.php?id=1>" title="Nominate a Speaker"><a href="http://forms.tedmed.com/view.php?id=1"<http://forms.tedmed.com/view.php?id=1> title="Nominate a Speaker">Nominate a Speaker</a></iframe>
+    
+            
+            
+  </div>
+        </div>
+        
+        
+        <div class="jqmConfirm media">
+          <div class="jqmConfirmWindow">
+    <p style="margin-top:0"><a class="jqmClose submit">X</a></p>
+    <h2>APPLY FOR A PRESS PASS</h2>
+    <p>For more information about acquiring a Press Pass for TEDMED 2012, please <a href="/pdf/press_badge_criteria.pdf" target="_blank">click here</a> to read our press requirements</p>
+    <p><span style="color:#ed242a;">*</span> Denotes a required field.</p>
+    <form id="request" method="post" action="/about-tedmed/media">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0" class="nominate-table">
+        <tr>
+                  <td valign="top" class="right_align">Full Name:</td>
+                  <td valign="top"><div>
+                      <input name="fullName" value="" type="text" class="formfield" id="fullName" style="width:250px;" maxlength="100" />
+                    </div>
+            <span class="required">*</span></td>
+                </tr>
+        <tr>
+                  <td valign="top" class="right_align">News Organization:</td>
+                  <td valign="top"><div>
+                      <input name="newsOganisation" value="" type="text" class="formfield" id="newsOganisation" style="width:250px;" maxlength="100" />
+                    </div>
+            <span class="required">*</span></td>
+                </tr>
+        <tr>
+                  <td valign="top" class="right_align">Phone Number:</td>
+                  <td valign="top"><div>
+                      <input name="phoneNumber" value="" type="text" class="formfield" id="phoneNumber" style="width:250px;" maxlength="100" />
+                    </div><span class="required">*</span></td>
+                </tr>
+        <tr>
+                  <td valign="top" class="right_align">Email:</td>
+                  <td valign="top"><div>
+                      <input name="email" value="" type="text" class="formfield" id="email" style="width:250px;" maxlength="100" />
+                    </div><span class="required">*</span></td>
+                </tr>
+        <tr>
+                  <td valign="top" class="right_align">&nbsp;</td>
+                  <td valign="top"><input name="button" type="submit" action="" class="submit requested" value="Submit" style="width:auto; padding:0 10px" /></td>
+                </tr>
+                <tr><td height="80">&nbsp;</td></tr>
+      </table>
+            </form>
+</iframe>
+    
+            
+            
+  </div>
+        </div>
+<div id="header">
+          <div class="inner">
+    <div class="bar">
+              <p align="right"><strong><a href="#" class="login" >Join Our Mailing List</a></strong></p>
+			  <div class="social-links">
+		<a href="http://feeds.feedburner.com/TedmedBlog" class="rss" target="_blank" title="rss">&nbsp;</a>
+		<a href="http://www.facebook.com/pages/TEDMED/219609131402791" class="face-book" target="_blank" title="facebook">&nbsp;</a>
+		<a href="https://twitter.com/#!/tedmed" class="twitter" target="_blank" title="twitter">&nbsp;</a>
+		</div>
+              
+              <div class="top-blog">
+                  <a href="http://blog.tedmed.com" target="_blank" class="blog ir">Tedmed Blog</a>              </div>
+              
+            </div>
+    <div id="login">
+              <form id="signUp2"   action="http://www.tedmed.com/mcjoin/basic" method="POST">
+        <div class="left">
+                  <label class="nameLabel"></label>
+                </div>
+        <div class="left" style="margin-left:70px;">
+                  <input type="text" name="name" id="nameInput" value="First Name" class="nameInput" onfocus="clearDefault(this)"  onblur="resetDefault(this)"/>
+                </div>
+         <div class="left" style="margin-left:70px;">
+                  <label class="nameLabel"></label>
+                </div>
+         <div class="left" style="margin-left:70px;">
+                  <input type="text" name="name2" id="nameInput2" value="Last Name" class="nameInput" onfocus="clearDefault(this)"  onblur="resetDefault(this)"/>
+                </div>
+        <div class="left" style="margin-left:70px;">
+                  <label class="nameLabel"></label>
+                </div>
+        <div class="left" style="margin-left:70px;">
+                  <input type="text" id="emailInput" name="email" value="Email Address" class="emailInput" onfocus="clearDefault(this)"  onblur="resetDefault(this)" />
+                </div>
+        
+        <input type="hidden" name="return" value="http://www.tedmed.com/videos-ipad" />
+        <input class="stay-informed" style="float:right; margin-top:-67px; " type="submit" value="SUBMIT" />
+      </form>
+            </div>
+    
+    <!--<div class="bar"><p align="right"><strong><a href="#" class="login">Press Sign-in</a></strong></p></div>
+                <div id="login">
+                    <form>
+                    	<p>Please enter your email address and password to log in</p>
+                        <div class="left">
+                        <input type="text" value="Email Address" onfocus="clearDefault(this)"  onblur="resetDefault(this)"/>
+                        <input type="password" value="Password" onfocus="clearDefault(this)"  onblur="resetDefault(this)"/>
+                        </div>
+                        <input type="submit" class="submit" value="SUBMIT" />
+                    </form>
+                </div>-->
+    
+    <div id="logo"><a href="/home"><img src="/Images/tedmed_logo_2013.jpg" alt="TEDMED 2013" /></a></div>
+	
+    <div id="quotes">
+             <!--               <img src="/Images/Quotes/quote<br />
+<b>Notice</b>:  Undefined index:  count in <b>/nfs/c03/h01/mnt/51391/domains/tedmed.com/html/Template/Main.html.php</b> on line <b>659</b><br />
+.gif" alt="quote" /> 
+			  
+		<strong><span>Front-Line</span>Scholarships</strong>	  
+		<p>Are you an innovator or a leader on the front lines of health and medicine? Work for a start-up or a non-profit? In medical school?</p>
+		<a href="/conference/patron#open" id="findqa">Find out more</a> -->
+			  
+	</div>
+	
+  </div>
+        </div>
+<!--// end #header -->
+<div id="headerMenu">
+          <div class="inner">
+              
+                            
+              
+              
+    <ul id="mainNav">
+              <li ><a href="/about-tedmed/what-is-tedmed" class="about ir">About Tedmed</a>
+        <ul class="x">
+                  <li ><a href="/about-tedmed/what-is-tedmed">What is TEDMED?</a></li>
+                  <li ><a href="/about-tedmed/leadership-team">Leadership Team</a></li>
+                  <li ><a href="/about-tedmed/board-of-advisors">Board of Advisors</a></li>
+                  <li ><a href="/about-tedmed/media">Media</a></li>
+                  <li ><a href="/about-tedmed/contact-us">Contact Us</a></li>
+                  <li ><a href="/about-tedmed/faq">FAQ</a></li>
+                </ul>
+      </li>
+              <li ><a href="/conference/about-the-conference" class="conference ir">Conference</a>
+        <ul class="y">
+                  <li ><a href="/conference/about-the-conference">About The Conference</a></li>
+                  <li ><a href="/conference/patron">TEDMED Patron Fund </a></li>
+                  <li ><a href="/conference/live">TEDMED Live </a></li>
+                  
+                 
+                  <li ><a href="/conference/who-attends">Who Attends</a></li>
+                  <!--<li ><a href="/conference/schedule">Schedule</a></li>-->
+                  <li ><a href="/conference/location">Location</a></li>
+                </ul>
+      </li>
+              <li ><a href="/2012speakers" class="speakers ir">Speakers</a></li>
+              <li  class="selected" ><a href="/videos" class="videos ir">Videos</a></li>
+              <li ><a href="/sponsors/major-sponsors" class="sponsors ir">Sponsors</a>
+               <ul class="z">
+                  <li ><a href="/sponsors/major-sponsors">Major Sponsors </a></li>
+                  <li ><a href="/sponsors/contributors">Contributors </a></li>
+                  
+                </ul>
+              
+              
+              </li>
+               <li ><a href="http://challenges.tedmed.com"  class="greatC ir" >Great Challenges</a></li>
+              <li ><a href="/register" class="apply ir">Apply Now</a></li>
+              <!--<li ><a href="/conference/plan" class="plantedmed">Plan TEDMED</a></li>-->
+             <!-- <li ><a href="http://blog.tedmed.com" target="_blank" class="blog ir">Apply Now</a></li> -->
+            </ul>
+    <!--<ul id="calendarNav">
+					<li id="calendar">
+						<ul class="dropdown">
+							<li>
+								<a href="#" id="callink"><img src="/Images/Interface/Navigation/nav_calendar_off.gif" id="calendarNavImg" /></a>
+								<ul>
+									<li id="outlook"><a href="/CAL/tedmed2011.ics"><img src="/Images/Interface/Navigation/calendar-outlook.gif" width="107" height="32" alt="Outlook" /></a></li>
+									<li id="ical"><a href="/CAL/tedmed2011.ics"><img src="/Images/Interface/Navigation/calendar-ical.gif" width="108" height="39" alt="iCal" /></a></li>
+									<li id="google"><a href="http://www.google.com/calendar/event?action=TEMPLATE&text=TEDMED+2011+Conference&dates=20111025T090000/20111028T170000&details=Event+begins+afternoon+of+Tues+Oct+25th+and+ends+mid-day+Fri+Oct+28th.++Visit+www.TEDMED.com+for+more+details&location=Hotel+Del+Coronado,+San+Diego,+California+(1500+Orange+Ave.++Coronado,+CA++92118)"><img src="/Images/Interface/Navigation/calendar-google.gif" width="108" height="33" alt="Google" /></a></li>
+									<li id="yahoo" class="last"><a href="http://calendar.yahoo.com/?v=60&view=d&type=20&title=TEDMED+2011+Conference&st=20111025T090000&dur=7200&desc=Event+begins+afternoon+of+Tues+Oct+25th+and+ends+mid-day+Fri+Oct+28th.++Visit+www.TEDMED.com+for+more+details&in_loc=Hotel+Del+Coronado,+San+Diego,+California+(1500+Orange+Ave.++Coronado,+CA++92118)"><img src="/Images/Interface/Navigation/calendar-yahoo.gif" width="107" height="35" alt="Yahoo!" /></a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+				</ul>--> 
+  </div>
+        </div>
+<!--// end #headerMenu -->
+
+<div id="wrapper">
+          <div id="content">
+    <style type="text/css">
+div.holder-box{float:left; width:450px; height:155px; height:auto; margin-right:18px; margin-bottom:6px; overflow:hidden; cursor:pointer;}
+div.holder-box img {float:left;}
+div.holder-box div {float:left; width:200px; padding:12px; height:131px; background:#E8E8E8;}
+div.holder-box p {font-size:11px; color:#444; margin:0; line-height:14px; margin:0;}
+.hidden {display:none;}
+#sort,#year {font-size:14px; color:#444; float:left; overflow:hidden; margin-right:10px; width:100%; margin-bottom:5px;}
+#sort ul, #year ul {height:25px; float:left; padding:0; margin:0;}
+#sort ul li, #year ul li, #loader {float:left; list-style:none; display:block;  cursor:pointer; padding-right:15px; color:#ED252B; font-weight:bold;}
+#loader {color:#fff;}
+#sort ul li.selected, #year ul li.selected {color: #000;} 
+#sort ul li:hover, #year ul li:hover {text-decoration:underline;}
+h3 a {color:#000;}
+#loader {font-size:11px;margin-top:5px;background:#ED252B; clear:both; zoom:1; white-space:nowrap;border: 3px double #fff; *border: 3px double #ED252B;}
+#none {padding-top:5px; clear:both; margin:0;}
+.changer {text-transform:capitalize;}
+	</style>
+<h1 class="changer">All Videos</h1>    
+<div style="float:left;">
+<div id="year">
+			<span style="float:left; display:block; width:60px;">Filter</span>
+            <ul>
+            <li id="all" class="selected">All Videos</li>
+            <li id="2011">2011</li>
+            <li id="2010">2010</li>
+            <li id="2009">2009</li>
+            </ul>
+        </div>
+ <div id="sort">
+ 			<span style="float:left; display:block; width:60px;">Sort by</span>
+            <ul>
+            <li id="updated" class="selected">Most Recent</li>
+            <li id="viewCount">Most Popular</li>
+            <li id="videoName">A-Z</li>
+            </ul>
+        </div> 
+<div style="padding-bottom:20px; width:100%; float:left;">
+    <div id="big-box" style="width:100%; float:left;">
+    </div>
+</div>
+     <script type="text/javascript">
+	 	var str='updated';
+		var year='all';
+		
+		$("#year li").click(function () {
+		$(this).siblings().removeClass('selected');
+		$(this).addClass('selected');
+		year= $(this).attr('id');
+		$(".changer").html(year+' Videos');
+		showRSS(str, year);
+		});
+		
+		$("#sort li").click(function () {
+		$(this).siblings().removeClass('selected');
+		$(this).addClass('selected');
+		str= $(this).attr('id');
+		showRSS(str, year);
+		});
+		
+
+		
+	function showRSS(sorter,filter,morevids)
+	{
+	if (str.length==0)
+	  {
+	  document.getElementById("big-box").innerHTML="";
+	  return;
+	  }
+	else {}
+	if (window.XMLHttpRequest)
+	  {// code for IE7+, Firefox, Chrome, Opera, Safari
+	  xmlhttp=new XMLHttpRequest();
+	  }
+	else
+	  {// code for IE6, IE5
+	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	xmlhttp.onreadystatechange=function()
+	  {
+	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+		{
+			document.getElementById("big-box").innerHTML=xmlhttp.responseText;
+			jQuery("div.clickable").click(
+			function(e)
+			{
+				e.preventDefault();
+				window.location = $(this).attr("url");
+			});
+			jQuery('div.holder-box').hover(
+			  function () {
+				jQuery(this).children('.rollover').removeClass('hidden')
+			  }, 
+			  function () {
+				jQuery(this).children('.rollover').addClass('hidden');
+			  }
+			);
+		}
+	  }
+	xmlhttp.open("GET","Content/getrss-2.php?q="+sorter+"&year="+filter,true);
+	xmlhttp.send();
+	}
+	showRSS(str, year);
+
+
+
+	</script> 
+
+
+<!-- javascript coding -->
+
+
+
+  </div>
+          <!--// end #content --> 
+        </div>
+<!--// end #wrapper -->
+
+<div id="footer">
+          <div class="inner"> 
+    <!--	<h2 class="left">Join Our Mailing List</h2>
+                <form id="signUp2" action="http://www.tedmed.com/mcjoin/basic" method="POST">
+                    <div class="left"><label class="nameLabel">First<br/>Name</label></div>
+                    <div class="left"><input type="text" name="name" id="nameInput" class="nameInput" /></div>
+                    <div class="left"><label class="nameLabel">Last<br/>Name</label></div>
+                    <div class="left"><input type="text" name="name2" id="nameInput2" class="nameInput" /></div>
+                    <div class="left"><label class="nameLabel">Email<br/>Address</label></div>
+                    <div class="left"><input type="text" id="emailInput" name="email" class="emailInput" /></div>
+                    <input type="hidden" name="return" value="http://www.tedmed.com/videos-ipad" />
+                    <input class="stay-informed" type="submit" value="SUBMIT" />
+                </form>-->
+        <div id="sponsors-footer">
+<h3 style="font-weight:normal">MAJOR SPONSORS</h3>
+
+<table style="border-top: 0px solid rgb(153, 153, 153); margin-top: 0px;" cellpadding="0" cellspacing="0" width="950px;">
+<tbody><tr>
+<td width="19%"><a href="http://usa.siemens.com/healthcare" target="_blank"><img src="/Images/Logos/small-logos/siemens.jpg" alt="SIEMENS" height="18" width="114"></a></td> 
+<td width="18%"><a href="http://www.jnj.com/" target="_blank"><img src="/Images/Logos/small-logos/johnson-johnson.gif" alt="Johnson and Johnson" height="27" width="114" /></a></td>
+<td width="12%"><a href="https://www2.gehealthcare.com/portal/site/usen/gehchome/" target="_blank"><img src="/Images/Logos/small-logos/ge.gif" alt="GE" height="43" width="70"></a></td>
+
+<td width="20%">
+<a href="http://my.clevelandclinic.org/" target="_blank"><img src="/Images/Logos/small-logos/clevelandclinic.jpg" alt="Pioneer" height="25" width="142" /></a>
+
+
+</td>
+          <td width="14%"><a href="http://www.xerox.com/healthcare/enus.html" target="_blank"><img src="/Images/Logos/small-logos/xerox.jpg" alt="Pioneer" height="35" width="93" /></a></td>
+          
+        </tr>
+  <tr>
+    <td colspan="6" style="padding-right:0px;"><table width="950px;" cellpadding="0" cellspacing="0" style="border-top: 0px solid rgb(153, 153, 153);  margin-top: 0px;">
+      <tbody>
+        <tr>
+          <td width="17%"><a href="http://www.healthcare.philips.com/" target="_blank"><img src="/Images/Logos/small-logos/philips-165.gif" alt="PHILIPS" height="20" width="107"></a></td>
+          <td width="24%"><a href="http://www.rwjf.org/" target="_blank"><img src="/Images/Logos/small-logos/robert-wood-johnson-foundation.gif" alt="Robert Wood Johnson Foundation" height="57" width="165" /></a></td>
+<!--          <td width="15%"><a href="http://www.esri.com/industries/health/index.html" target="_blank"><img src="/Images/Logos/small-logos/esri.gif" alt="esri" height="30" width="86" /></a></td>
+-->          <td width="14%"><a href="http://www.mars.com/global/index.aspx" target="_blank"><img src="/Images/Logos/small-logos/mars.gif" alt="Mars Incorporated" height="31" width="80" /></a></td>
+          <td width="25%"><a href="http://www.boozallen.com/" target="_blank"><img src="/Images/Logos/bah.jpg" alt="Booz Allen Hamilton" height="22" width="192" /></a></td>
+          <td width="5%"></td>
+        </tr>
+      </tbody>
+    </table></td>
+    </tr>
+</tbody>
+</table>      
+<table style="border-top: 1px solid rgb(153, 153, 153);" cellpadding="0" cellspacing="0">
+<tbody><tr>
+<td colspan="4" style="font-weight:normal" ><h3 style="font-weight:normal">WE THANK OUR CONTRIBUTING SPONSORS</h3></td>
+<td colspan="3" style="border-left: 1px solid rgb(153, 153, 153); padding-left:15px; font-weight:normal"><h3 style="font-weight:normal">SPONSORS OF TEDMEDLive</h3></td>
+</tr>
+<tr>
+<td><a href="http://www.steelcase.com/" target="_blank"><img src="/Images/Logos/small-logos/steelcase-small.jpg" alt="Steelcase" height="21" width="95"></a></td>
+<td><a href="http://www.nurture.com/" target="_blank"><img src="/Images/Logos/small-logos/nurture.gif" alt="Nurture" height="25" width="99"></a></td>
+<td><a href="http://www.panasonic.com/business/medicalVideo/CardioHealth/" target="_blank"><img src="/Images/Logos/small-logos/panasonic-new.jpg" alt="Panasonic" height="28" width="95"></a></td>
+<td><a href="http://www.io-media.com/#/43/healthcare/who-we-are" target="_blank"><img src="/Images/Logos/small-logos/iomedia.gif" alt="Iomedia" height="14" width="107"></a></td>
+<td style="border-left: 1px solid rgb(153, 153, 153);"><a href="https://www.aamc.org/" target="_blank"><img src="/Images/Logos/small-logos/aamc.jpg" style="margin-left: 25px;" alt="AAMC" height="45" width="66" /></a></td> 
+<td><a href="http://usa.siemens.com/healthcare" target="_blank"><img src="/Images/Logos/small-logos/siemens-small.jpg" alt="SIEMENS" width="76" height="12" ></a></td>
+<td class="last"><a href="http://www.calendow.org/" target="_blank"><img src="/Images/Logos/small-logos/the-california-endowment-small.jpg" alt="California Endowment" width="108" height="35"></a></td> 
+</tr>        
+</tbody></table>
+</div>
+
+        <div class="bar">
+              <p align="center">Copyright 2008-2011 TEDMED, LLC All Rights Reserved. | <a href="/terms-conditions">Terms and Conditions</a> | <a href="/faq">FAQ</a> | <a href="/contact">Contact Us</a> | <a href="http://www.io-media.com" target="_blank">Site Design by IOMEDIA</a></p>
+            </div>
+  </div>
+        </div>
+<!--// end #footer -->
+
+<noscript>
+        <div id="noScriptWarning">
+  <h3>Note: <span>JavaScript Required</span></h3>
+  <p>Please enable JavaScript in your browser for full functionality!</p>
+</div>
+        </noscript>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7109281-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

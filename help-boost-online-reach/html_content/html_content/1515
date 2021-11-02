@@ -1,0 +1,653 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-CA" lang="en-CA">
+<?xml version="1.0" encoding="utf-8"?>
+<head>
+	<base href="http://www.moleculargastronomynetwork.com/" />
+	<title>Molecular Gastronomy Additives | Deep Freezing, Effervescence, Gelification</title>
+	<meta name="google-site-verification" content="W-K4ReKvewvvKGOsQgZdjCN7NwOv0fk729RB-KWwtZU" /> <meta name="msvalidate.01" content="4C73257C704F7762FEBBF15428A0CE70" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta name="robots" content="index,follow" />
+	<meta name="keywords" content="molecular gastronomy, molecural cooking, culinologt, molecular, gastronomy" />
+	<meta name="description" content="" />
+	
+	<link rel="start" title="Accueil" href="home.html" />
+	<link rel="index" title="Plan du site" href="site-map.html" />
+	<link rel="copyright" title="Copyright © 2011 Molecular Gastronomy Network Tous droits réservés." />
+	<link rel="author" title="Auteurs" href="http://www.vortexsolution.com" />
+	<link rel="shortcut icon" type="images/x-icon" href="Gx/favicon.ico" />
+	<link rel="image_src" href="http://moleculargastronomynetwork.com/gx/logo_molecular_gastronomy_network.gif" />
+	
+	<link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" title="Normal" />
+	<link rel="stylesheet" type="text/css" href="print.css" media="print" title="Normal" />
+	
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+	<script src="inc/AC_RunActiveContent.js" type="text/javascript"></script>
+
+	
+	
+	<script type="text/javascript" src="inc/jQuery/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="inc/jQuery/jquery.form.js"></script>
+	<link rel="stylesheet" type="text/css" href="inc/jQuery/jquery.tabs.css" media="screen" title="Normal" />
+	
+	
+	<script type="text/javascript" src="inc/jQuery/jquery.fancybox-1.3.0.pack.js"></script>
+	<link rel="stylesheet" type="text/css" href="jquery.fancybox-1.3.0.css"  media="screen" />
+	<script src="inc/prettyphoto/js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<link rel="STYLESHEET" type="text/css" href="inc/prettyphoto/css/prettyPhoto.css" />
+	
+	<script type="text/javascript" src="inc/jQuery/reflection.js"></script>
+
+	<script src="inc/jQuery/jquery.starRating/jquery.rating.js" type="text/javascript"></script>
+	<link rel="STYLESHEET" type="text/css" href="inc/jQuery/jquery.starRating/jquery.rating.css" />
+	
+	
+	<script type="text/javascript" src="inc/jQuery/calendrierEvenement.js" charset="ISO-8859-1"></script>
+	<script type="text/javascript" src="inc/jQuery/jquery.carousel.min.js"></script>
+	<script type="text/javascript" src="inc/jQuery/jquery.cycle/jquery.cycle.all.min.js"></script>
+	<script src="inc/jQuery/jquery.livequery.js" type="text/javascript"></script>
+	
+	<script src="inc/cufon-yui.js" type="text/javascript"></script>
+	<script src="inc/Chalet_500.font.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		Cufon.replace('#menu ul li a', {hover:true}) ('.cufon', {hover:true});
+	</script>
+	<script type="text/javascript">
+	
+	/* Fonctions COOKIE Javascript */
+	function setCookie(c_name,value,expiredays){
+		var exdate=new Date();
+		exdate.setDate(exdate.getDate()+expiredays);
+		document.cookie=c_name+ "=" +escape(value) + ((expiredays==null) ? "" : ";expires="+exdate.toGMTString()+";path=/");
+	};
+	
+	function getCookie(c_name){
+		if (document.cookie.length>0){
+			c_start=document.cookie.indexOf(c_name + "=");
+	  		if (c_start!=-1){
+				c_start=c_start + c_name.length+1;
+	    		c_end=document.cookie.indexOf(";",c_start);
+	    		if (c_end==-1) c_end=document.cookie.length;
+	    		return unescape(document.cookie.substring(c_start,c_end));
+	   	 	}
+	  	}
+		return "";
+	};
+		
+	function checkCookie(){
+		
+		var pubHaut = getCookie('pubHaut'); /* alert("slideIDHaut = "+pubHaut); */
+		var pubBas = getCookie('pubBas'); /* alert("slideIDBas = "+pubBas); */
+		var pubBas = getCookie('pubBas02'); /* alert("slideIDBas = "+pubBas); */
+		
+		if (pubHaut==null && pubHaut=="") { setCookie('pubHaut',0,1); }		
+		if (pubBas==null && pubBas=="") { setCookie('pubBas',0,1); }
+		if (pubBas==null && pubBas02=="") { setCookie('pubBas',0,1); }
+	};
+	
+	/* Fonctions Rotation de Banniere */	
+	if (getCookie("pubHaut") === undefined ) { setCookie("pubHaut", 0, 1); };
+	if (getCookie("pubBas") === undefined ) { setCookie("pubBas", 0, 1); };
+	if (getCookie("pubBas02") === undefined ) { setCookie("pubBas", 0, 1); };
+
+		$(function() {
+		   
+		  	function pubHautCookie(curr,next,opts) { 
+				var slideID = (opts.currSlide);	
+				setCookie("pubHaut", slideID, 1);
+			};
+			
+			function pubBasCookie(curr,next,opts) { 
+				var slideID = (opts.currSlide);	
+				setCookie("pubBas", slideID, 1);
+			};
+			
+			function pubBasCookie(curr,next,opts) { 
+				var slideID = (opts.currSlide);	
+				setCookie("pubBas02", slideID, 1);
+			};
+		    
+		});
+	</script>
+	
+	<script type="text/javascript">
+	//<![CDATA[
+	$(document).ready(function () {
+		
+		
+		
+		// PRETTYPHOTO
+		$("a[rel^='prettyPhoto']").prettyPhoto({theme: 'light_square'});
+		$("a.pp_close").html("Close");
+		$("a.pp_close").css("line-height","16px");
+		// ----------
+		$(".formBlog #bouton").css("display","none");
+		
+		var textarealength = 0;
+		
+		$("#commentaire").keyup(function(){
+			textarealength = $(this).val().length;
+			if(textarealength == 0){
+				$("#bouton").fadeOut("fast");
+			}else{
+				$("#bouton").fadeIn("fast");
+			}
+		});
+		
+		$(".menuDropDown li").each(function(){
+			$(this).children("ul").css({"display":"none","width":$(this).width()-21});
+			$(this).hover(function(){
+				if($(this).children("ul").is(":hidden")) {
+					$(this).children("ul").fadeIn("fast");
+				}else{
+					$(this).children("ul").css("display", "none");
+				}
+			});
+			
+			$(this).mouseleave(function(){
+				$(this).children("ul").css("display", "none");
+			});
+			
+			$(this).click(function(){
+				$(this).children("ul").css("display", "none");
+			});
+		});
+		
+		//jQuery Fancybox
+		$("a.fancybox").fancybox();
+		$("a.iframe").fancybox({
+			'hideOnContentClick': true,
+			'width'			:	500,
+			'height' 		:	360
+		});
+		
+		toggleEventCalendar('CalendrierEvenement', 'en');
+			
+		
+		$("#btCalendar").click(function () {
+			$("#calendar").slideToggle("slow");
+	    });
+		
+		$(".recherche").click(function(){$(this).addClass("hover");});
+		$(".recherche").blur(function(){$(this).removeClass("hover");});
+		
+		//Rating system
+		$(".star").rating();
+		
+		
+			$(".star").click(function(){
+				$("#loginTrigger").slideDown();
+				$("input[name=rating]").val($(this).children("a").html());
+			});
+			$(".favorisRecette").click(function(){
+				$("#loginTrigger").slideDown();
+			});
+		
+		
+	});
+	//]]>
+	</script>
+	
+	<style>
+
+	#tooltip{
+		position:absolute;
+		border:1px solid #333;
+		background:#f7f5d1;
+		padding:2px 5px;
+		color:#333;
+		display:none;
+	}	
+	</style>
+	
+	
+	
+	
+	<!--[if IE 6]>
+	<style type="text/css">
+		#menu_principal a.boutique, a.btn_commentaire,a.btn_commentaire:visited,input.btn_commentaire, img, #shadow_box, #shadow_bottom, #overlay, a.devenir_membre_fr, a.devenir_membre_en, #menu_principal ul li a.boutique, #menu_principal ul li a.boutique_en {_behavior:url(inc/iepngfix.htc);}
+	</style>
+	<![endif]-->
+	
+	
+	<link href="MODULE_RssNouvelle.cfm?l=en" rel="alternate" type="application/rss+xml" title="Molecular Gastronomy Network - Nouvelles" />
+		
+	
+	
+</head>
+<body id="main">
+
+<div id="shadow_box">
+	<div id="menuTop">
+		<ul class="menuSec">
+			<li><a href="home.html"  class="tooltip" title="Web Standards Magazine">Home</a></li>
+			<li><a href="news.html" >News</a></li>
+			
+			<li><a href="surveys.html" >Surveys</a></li>
+			<li><a href="contest.html" >Contest</a></li>
+			<li><a href="about-us.html" >About us</a></li>
+			<li><a href="contact-us.html" >Contact</a></li>
+		</ul>
+		<ul id="menuUtilisateur" class="menuSec menuDropDown">
+			
+				<li><a href="my-account.html" >Login</a></li>
+				<li><a href="subscribe.html" >Create an account</a></li>
+			
+			<li class="dernier"><a href="additifs.html" class="langue" id="fr" lang="fr">Français</a></li>
+		</ul>
+	</div>
+	
+	<div id="conteneur">
+		<a name="haut"></a>
+		
+		<div id="haut">
+			<a href="home.html"><img src="Gx/M/logo_molecular_gastronomy_network.gif" width="278" height="101" id="logo" alt="Molecular Gastronomy Network" title="Molecular Gastronomy Network" /></a>
+			
+			
+			<ul id="menu_principal" class="menuDropDown">
+				<li><a href="additives.html" class="cufon additifs additifsactif">Additives</a></li>
+				<li><a href="en/formations.html" class="cufon formations ">Training</a></li>
+				<li><a href="recipes.html" class="cufon recettes ">Recipes</a></li>
+				<li><a href="javascript:;" class="cufon communaute ">Community</a>
+					<ul style="height:50px;">
+						<li><a href="community.html" class="cufon chefs ">Forum</a></li>
+						<li style="margin:10px 0 0 0;"><a href="community/chefs.html" class="cufon chefs ">Chefs</a></li>
+					</ul>
+				</li>
+				 
+				<li><a href="http://www.molecule-r.com" target="_blank" class="boutique_en last"></a></li>
+			</ul>
+			
+		</div>
+		
+		<div class="both"></div>
+		
+			
+			
+			<div id="contenu_full">
+			
+<h1>Additives</h1>
+<p>Some popular food additives used in molecular gastronomy:&nbsp;</p>
+
+<p></p>
+	
+
+
+<a name="haut"></a>
+<ul>
+	<li><a href="additifs.html#cat-5">Deep Freezing</a></li><li><a href="additifs.html#cat-6">Effervescence</a></li><li><a href="additifs.html#cat-3">Emulsification</a></li><li><a href="additifs.html#cat-2">Gelification</a></li><li><a href="additifs.html#cat-1">Spherification</a></li><li><a href="additifs.html#cat-4">Thickening</a></li><li><a href="additifs.html#cat-7">Transformation</a></li>
+</ul>
+
+<br class="both" /><br />
+
+  
+	<a name="cat-5"></a><h2 class="h1"><em>Deep Freezing</em></h2>
+	
+	
+	<div class="block_additif">
+		<div class="additif_img">
+			
+			<a href="18-additives/Liquid-Nitrogen.html" rel="nofollow">
+			
+				<img src="DATA/ADDITIF/18_listing~v~Liquid_Nitrogen.jpg" alt="" width="266" height="187" />
+			
+			</a>
+			
+			
+		</div>
+		<div class="additif_txt">
+			<h2><a href="18-additives/Liquid-Nitrogen.html" class="additif_titre">Liquid Nitrogen</a></h2>
+			<p>Nitrogen is a natural gas. It can be liquified in a plant and is used as such in molecular gastronomy most often to deep freeze foam pieces or to make ice cream.</p>
+			<p><a href="18-additives/Liquid-Nitrogen.html" rel="nofollow">More details</a></p>
+		</div>
+		<div class="both"></div>
+	</div>
+	<div id="additif_bas"></div><br />
+	
+	
+	<a href="additifs.html#haut" style="float:right;" class="liens">Top of the page</a>
+	<div class="both"><!-- Clear both --></div>
+  
+	<a name="cat-6"></a><h2 class="h1"><em>Effervescence</em></h2>
+	
+	
+	<div class="block_additif">
+		<div class="additif_img">
+			
+			<a href="21-additives/Popping-Sugar.html" rel="nofollow">
+			
+				<img src="DATA/ADDITIF/21_listing~v~Popping_Sugar.jpg" alt="" width="266" height="187" />
+			
+			</a>
+			
+			
+		</div>
+		<div class="additif_txt">
+			<h2><a href="21-additives/Popping-Sugar.html" class="additif_titre">Popping Sugar</a></h2>
+			<p>Popping sugar is sugar containing carbon dioxide so that it pops on the tongue!</p>
+			<p><a href="21-additives/Popping-Sugar.html" rel="nofollow">More details</a></p>
+		</div>
+		<div class="both"></div>
+	</div>
+	<div id="additif_bas"></div><br />
+	
+	
+	<a href="additifs.html#haut" style="float:right;" class="liens">Top of the page</a>
+	<div class="both"><!-- Clear both --></div>
+  
+	<a name="cat-3"></a><h2 class="h1"><em>Emulsification</em></h2>
+	
+	
+	<div class="block_additif">
+		<div class="additif_img">
+			
+			<a href="15-additives/Soy-Lecithin.html" rel="nofollow">
+			
+				<img src="DATA/ADDITIF/15_listing~v~Soy_Lecithin.jpg" alt="" width="266" height="187" />
+			
+			</a>
+			
+			
+		</div>
+		<div class="additif_txt">
+			<h2><a href="15-additives/Soy-Lecithin.html" class="additif_titre">Soy Lecithin</a></h2>
+			<p>Lecithin is an emulsifier extracted from soy beans, it is used in molecular gastronomy to make any liquid emulsion or for tremendously light or frozen foams.</p>
+			<p><a href="15-additives/Soy-Lecithin.html" rel="nofollow">More details</a></p>
+		</div>
+		<div class="both"></div>
+	</div>
+	<div id="additif_bas"></div><br />
+	
+	
+	<a href="additifs.html#haut" style="float:right;" class="liens">Top of the page</a>
+	<div class="both"><!-- Clear both --></div>
+  
+	<a name="cat-2"></a><h2 class="h1"><em>Gelification</em></h2>
+	
+	
+	<div class="block_additif">
+		<div class="additif_img">
+			
+			<a href="5-additives/Agar-agar.html" rel="nofollow">
+			
+				<img src="DATA/ADDITIF/5_listing~v~Agar-agar.jpg" alt="" width="266" height="187" />
+			
+			</a>
+			
+			
+		</div>
+		<div class="additif_txt">
+			<h2><a href="5-additives/Agar-agar.html" class="additif_titre">Agar-agar</a></h2>
+			<p>An algae extracted, heat-resistant gelling agent, agar-agar is used in molecular gastronomy to make all sorts of gelified shapes : pearls, spaghetti, lentils, prisms, etc.</p>
+			<p><a href="5-additives/Agar-agar.html" rel="nofollow">More details</a></p>
+		</div>
+		<div class="both"></div>
+	</div>
+	<div id="additif_bas"></div><br />
+	
+	<div class="block_additif">
+		<div class="additif_img">
+			
+			<a href="14-additives/Carrageenan.html" rel="nofollow">
+			
+				<img src="DATA/ADDITIF/14_listing~v~Carrageenan.jpg" alt="" width="266" height="187" />
+			
+			</a>
+			
+			
+		</div>
+		<div class="additif_txt">
+			<h2><a href="14-additives/Carrageenan.html" class="additif_titre">Carrageenan</a></h2>
+			<p>Carrageenan is a geling agent extracted from many species of red algae.&nbsp; The texture of the carrageenan gels varies form simple thickening to firm gel.&nbsp; For this reason, carrageenans are&nbsp;used&nbsp;in molecular gatronomy in a vast array of hot or cold dishes of jelly or mousse.</p>
+			<p><a href="14-additives/Carrageenan.html" rel="nofollow">More details</a></p>
+		</div>
+		<div class="both"></div>
+	</div>
+	<div id="additif_bas"></div><br />
+	
+	<div class="block_additif">
+		<div class="additif_img">
+			
+			<a href="16-additives/Gelatin.html" rel="nofollow">
+			
+				<img src="DATA/ADDITIF/16_listing~v~Gelatin.jpg" alt="" width="266" height="187" />
+			
+			</a>
+			
+			
+		</div>
+		<div class="additif_txt">
+			<h2><a href="16-additives/Gelatin.html" class="additif_titre">Gelatin</a></h2>
+			<p>A heat-sensitive gelling agent of animal origin, gelatin is used in molecular gastronomy for a vast array of dishes : entrees, pastries, confectionaries and even cocktails.</p>
+			<p><a href="16-additives/Gelatin.html" rel="nofollow">More details</a></p>
+		</div>
+		<div class="both"></div>
+	</div>
+	<div id="additif_bas"></div><br />
+	
+	<div class="block_additif">
+		<div class="additif_img">
+			
+			<a href="19-additives/Gellan-Gum.html" rel="nofollow">
+			
+				<img src="DATA/ADDITIF/19_listing~v~Gellan_Gum.jpg" alt="" width="266" height="187" />
+			
+			</a>
+			
+			
+		</div>
+		<div class="additif_txt">
+			<h2><a href="19-additives/Gellan-Gum.html" class="additif_titre">Gellan Gum</a></h2>
+			<p>A gelling agent produced through fermentation of an algae, gellan gum is used in molecular gastronomy to make all sorts of firm-jellied pieces with distinctive shapes.</p>
+			<p><a href="19-additives/Gellan-Gum.html" rel="nofollow">More details</a></p>
+		</div>
+		<div class="both"></div>
+	</div>
+	<div id="additif_bas"></div><br />
+	
+	
+	<a href="additifs.html#haut" style="float:right;" class="liens">Top of the page</a>
+	<div class="both"><!-- Clear both --></div>
+  
+	<a name="cat-1"></a><h2 class="h1"><em>Spherification</em></h2>
+	
+	
+	<div class="block_additif">
+		<div class="additif_img">
+			
+			<a href="13-additives/Calcium-salts.html" rel="nofollow">
+			
+				<img src="DATA/ADDITIF/13_listing~v~Calcium_salts.jpg" alt="" width="266" height="187" />
+			
+			</a>
+			
+			
+		</div>
+		<div class="additif_txt">
+			<h2><a href="13-additives/Calcium-salts.html" class="additif_titre">Calcium salts</a></h2>
+			<p>Calcium is a mineral salt. In molecular gastronomy, calcium salts are involved in the basic  spherification or reverse-spherification processes in reaction with  sodium alginate. Sodium alginate indeed needs a source of calcium to form a gel.</p>
+			<p><a href="13-additives/Calcium-salts.html" rel="nofollow">More details</a></p>
+		</div>
+		<div class="both"></div>
+	</div>
+	<div id="additif_bas"></div><br />
+	
+	<div class="block_additif">
+		<div class="additif_img">
+			
+			<a href="12-additives/Sodium-alginate.html" rel="nofollow">
+			
+				<img src="DATA/ADDITIF/12_listing~v~Sodium_alginate.jpg" alt="" width="266" height="187" />
+			
+			</a>
+			
+			
+		</div>
+		<div class="additif_txt">
+			<h2><a href="12-additives/Sodium-alginate.html" class="additif_titre">Sodium alginate</a></h2>
+			<p>An algae-extracted gelling agent, sodium alginate is used in molecular gastronomy in association with calcium salts for the basic spherification and reverse-spherification processes, whether to make small caviar-like pearls or large ravioles.</p>
+			<p><a href="12-additives/Sodium-alginate.html" rel="nofollow">More details</a></p>
+		</div>
+		<div class="both"></div>
+	</div>
+	<div id="additif_bas"></div><br />
+	
+	
+	<a href="additifs.html#haut" style="float:right;" class="liens">Top of the page</a>
+	<div class="both"><!-- Clear both --></div>
+  
+	<a name="cat-4"></a><h2 class="h1"><em>Thickening</em></h2>
+	
+	
+	<div class="block_additif">
+		<div class="additif_img">
+			
+			<a href="20-additives/Xanthan-Gum.html" rel="nofollow">
+			
+				<img src="DATA/ADDITIF/20_listing~v~Xanthan_Gum.jpg" alt="" width="266" height="187" />
+			
+			</a>
+			
+			
+		</div>
+		<div class="additif_txt">
+			<h2><a href="20-additives/Xanthan-Gum.html" class="additif_titre">Xanthan Gum</a></h2>
+			<p>Xanthan gum is a thickening agent produced by fermentation, it is used in molecular gastronomy to thicken sauces and dressings as well as to make fat-reduced, no-ice cream milkshakes that are just as thick.</p>
+			<p><a href="20-additives/Xanthan-Gum.html" rel="nofollow">More details</a></p>
+		</div>
+		<div class="both"></div>
+	</div>
+	<div id="additif_bas"></div><br />
+	
+	
+	<a href="additifs.html#haut" style="float:right;" class="liens">Top of the page</a>
+	<div class="both"><!-- Clear both --></div>
+  
+	<a name="cat-7"></a><h2 class="h1"><em>Transformation</em></h2>
+	
+	
+	<div class="block_additif">
+		<div class="additif_img">
+			
+			<a href="22-additives/Maltodextrin.html" rel="nofollow">
+			
+				<img src="DATA/ADDITIF/22_listing~v~Maltodextrin.jpg" alt="" width="266" height="187" />
+			
+			</a>
+			
+			
+		</div>
+		<div class="additif_txt">
+			<h2><a href="22-additives/Maltodextrin.html" class="additif_titre">Maltodextrin</a></h2>
+			<p>Maltodextrin is an unsweet sugar that can be flavored in many different ways and then sprinkled over any dish; there are endless possibilities in molecular gastronomy!</p>
+			<p><a href="22-additives/Maltodextrin.html" rel="nofollow">More details</a></p>
+		</div>
+		<div class="both"></div>
+	</div>
+	<div id="additif_bas"></div><br />
+	
+	<div class="block_additif">
+		<div class="additif_img">
+			
+			<a href="23-additives/Transglutaminase.html" rel="nofollow">
+			
+				<img src="DATA/ADDITIF/no_image.jpg" alt="" width="266" height="187" />
+			
+			</a>
+			
+			
+		</div>
+		<div class="additif_txt">
+			<h2><a href="23-additives/Transglutaminase.html" class="additif_titre">Transglutaminase</a></h2>
+			<p>Transglutaminase is an enzyme that has the property to bind protein rich foods like meat, poultry, fish and seafood, or foods mixed with gelatin. It is thus possible to bind small or irregular cuts of meat into larger pieces in order to allow for even cooking, or for a different presentation style.</p>
+			<p><a href="23-additives/Transglutaminase.html" rel="nofollow">More details</a></p>
+		</div>
+		<div class="both"></div>
+	</div>
+	<div id="additif_bas"></div><br />
+	
+	
+	<a href="additifs.html#haut" style="float:right;" class="liens">Top of the page</a>
+	<div class="both"><!-- Clear both --></div>
+
+			</div>
+			
+		
+		
+		<div class="both"></div>
+		
+		<div id="menuBas">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="my-account.html">My account</a></li>
+				<li><a href="about-us.html">About us</a></li>
+				<li><a href="site-map.html">Site map</a></li>
+				<li><a href="javascript:window.print();">Print</a></li>
+				<li><a href="refer-this-site.html">Send to a friend</a></li>
+				<li><a href="contact-us.html">Contact</a></li>
+				<li><a href="additifs.html?START=1&amp;PAGEENCOURS=1" lang="fr">Français</a></li>
+			</ul>
+		</div>
+		
+		<div id="socialBookmarker" class="socialBookmarker_en">
+			<div id="socialBookmarkerPrefix">Bookmarks:&nbsp;</div>
+		</div>
+		
+		<div class="both"></div>
+		
+	</div>
+</div>
+<div id="shadow_bottom"></div>
+
+<div id="piedPage">
+
+	
+	
+	<div id="copyrights">
+		<a href="legal-information.html" id="lienCopyrights">© 2011 <b>Molecular Gastronomy Network</b> All rights reserved.</a>
+		<a href="http://www.vortexsolution.com" rel="external nofollow" title="Website design">Website design</a><a href="http://www.vortexsolution.com"  rel="external nofollow" title="Vortex Solution"> by Vortex Solution</a><br />
+	</div>
+
+	<br class="both" /><br class="both" />
+	
+</div>
+
+
+
+<script type="text/javascript">
+	function externalLinks() {
+	 if (!document.getElementsByTagName) return;
+	 var anchors = document.getElementsByTagName("a");
+	 for (var i=0; i<anchors.length; i++) {
+	   var anchor = anchors[i];
+	   if (anchor.getAttribute("href") && (anchor.getAttribute("rel") == "external" || anchor.getAttribute("rel") == "external nofollow") )
+	     anchor.target = "_blank";
+	 }
+	}
+	window.onload = externalLinks;
+</script>
+
+
+
+<script type="text/javascript" src="http://www.vortexsolution.com/bookmark/bookmark.cfm"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery('#socialBookmarker').bookmarker({colonnes : 2, liensDirect : ['facebook','twitter', 'technorati','myspace'],maxItems:5,formatImage:'png', langue:'en'});
+	});
+</script>
+
+
+
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-19379062-1");
+		pageTracker._trackPageview();
+	</script>
+
+</body>
+</html> 

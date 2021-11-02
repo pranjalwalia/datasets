@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>oranges vs. apples - Compare which is healthier?</title>
+<meta name="description" content="TwoFoods is an online food comparison tool that helps you choose healthy foods." />
+<base href="http://www.twofoods.com/" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="/js/jquery.autocomplete.min.js"></script> -->
+<script type="text/javascript" src="/js/jquery.bgiframe.min.js"></script>
+<!-- <link type="text/css" rel="stylesheet" href="/css/jquery.autocomplete.css" /> -->
+<!-- <link type="text/css" rel="stylesheet" href="/css/thickbox.css" /> -->
+<link type="text/css" rel="stylesheet" href="/css/style2.css" />
+<meta name="description" contents="Compare the nutritional content of oranges and apples" />
+<meta name="keywords" content="oranges, apples, comparison, nutrition, nutritional data, healthy, healthier" />
+<script type="text/javascript">
+$().ready(function() {
+	$('a[href *= "help"]').click(function() {
+		var div = $('div.help');
+		
+		if (div)
+		$('div.help').slideDown();	
+	});
+	
+	$('div.choices ol li a').click(function() {
+		var thislink = $(this);
+		var divname = $(this).attr('rel');
+		var parentname = divname.split('_')[0]
+		$('div#' + parentname + ' div.nutrition div').hide();
+		$('div#' + parentname + ' div.nutrition div.clear').show(); // reverse this mistake
+		$('div#' + parentname + ' div.choices ol a').removeClass('selected');
+		thislink.addClass('selected');
+		$('#' + divname).show();
+	});
+	
+	// get anchor and click if necessary
+	$("a[ href ^= '#' ]").each(function() {
+		var url = window.location.toString();
+		var anchor_index = url.indexOf('#');
+	    if (anchor_index != -1) {
+	    	url = url.substring(0, anchor_index);
+	    }
+        var href = url + $(this).attr('href').replace('/#.*/i','');
+        $(this).attr('href',href);
+    });
+    
+	var myFile = document.location.toString();
+	if (myFile.match('#')) {
+	  var myAnchor = '#' + myFile.split('#')[1];
+	  $('a[href *= "' + myAnchor + '"]').click();
+	}
+});
+</script> 
+</head>
+<body>
+<div id="container">
+	<a class="twofoods" href="/"><img src="images/food_comparison.png" alt="instant food comparisons" title="instant food comparisons" /></a>
+	
+	<form method="post" action="/compare/">
+		<div id="food1" class="compare">
+			<div class="head">
+				<input tabindex="1" type="text" class="food text" name="food1" autocomplete="off" value="oranges" />
+				<input type="submit" name="" value="update search" />
+				<div class="links">
+					<a class="new" href="/">new search</a>
+				</div>
+			</div>	
+			<div class="nutrition">
+								
+								<div id="food1_1">
+					<span>serving: 100g</span>
+					<p><span class="cals">47</span>calories</p>
+					<p><span class="carbs">11.75g</span>carbs</p>
+					<p><span class="fat">0.12g</span>fat</p>
+					<p><span class="protein">0.94g</span>protein</p>
+					<div class="clear"></div>
+				</div>
+								<div id="food1_2" style="display:none">
+					<span>serving: 100g</span>
+					<p><span class="cals">49</span>calories</p>
+					<p><span class="carbs">12.54g</span>carbs</p>
+					<p><span class="fat">0.15g</span>fat</p>
+					<p><span class="protein">0.91g</span>protein</p>
+					<div class="clear"></div>
+				</div>
+								<div id="food1_3" style="display:none">
+					<span>serving: 100g</span>
+					<p><span class="cals">49</span>calories</p>
+					<p><span class="carbs">11.89g</span>carbs</p>
+					<p><span class="fat">0.30g</span>fat</p>
+					<p><span class="protein">1.04g</span>protein</p>
+					<div class="clear"></div>
+				</div>
+								<div id="food1_4" style="display:none">
+					<span>serving: 100g</span>
+					<p><span class="cals">46</span>calories</p>
+					<p><span class="carbs">11.54g</span>carbs</p>
+					<p><span class="fat">0.21g</span>fat</p>
+					<p><span class="protein">0.70g</span>protein</p>
+					<div class="clear"></div>
+				</div>
+								<div id="food1_5" style="display:none">
+					<span>serving: 100g</span>
+					<p><span class="cals">53</span>calories</p>
+					<p><span class="carbs">13.34g</span>carbs</p>
+					<p><span class="fat">0.31g</span>fat</p>
+					<p><span class="protein">0.81g</span>protein</p>
+					<div class="clear"></div>
+				</div>
+							</div>
+			<div class="choices">
+				<ol>
+										<li><a class="selected" rel="food1_1" href="#food1_1">Oranges<span class="brand">Generic</span><span class="calories">47 calories</span></a></li>
+										<li><a  rel="food1_2" href="#food1_2">Navels Oranges<span class="brand">Generic</span><span class="calories">49 calories</span></a></li>
+										<li><a  rel="food1_3" href="#food1_3">Valencias California Oranges<span class="brand">Generic</span><span class="calories">49 calories</span></a></li>
+										<li><a  rel="food1_4" href="#food1_4">Florida Oranges<span class="brand">Generic</span><span class="calories">46 calories</span></a></li>
+										<li><a  rel="food1_5" href="#food1_5">Tangerines (Mandarin Oranges)<span class="brand">Generic</span><span class="calories">53 calories</span></a></li>
+									</ol>
+			</div>
+			<div class="botcompare"></div>
+			<div class="clear"></div>
+		</div>
+		<div id="food2" class="compare">
+			<div class="head">
+				<input tabindex="2" type="text" class="food text" name="food2" autocomplete="off" value="apples" />
+				<input tabindex="3" type="submit" name="" value="update search" />
+				<div class="links">
+					<a class="new" href="/">new search</a>
+				</div>
+			</div>	
+			<div class="nutrition">
+					
+								<div id="food2_1">
+					<span>serving: 100g</span>
+					<p><span class="cals">52</span>calories</p>
+					<p><span class="carbs">13.81g</span>carbs</p>
+					<p><span class="fat">0.17g</span>fat</p>
+					<p><span class="protein">0.26g</span>protein</p>
+					<div class="clear"></div>
+				</div>
+								<div id="food2_2" style="display:none">
+					<span>serving: 100g</span>
+					<p><span class="cals">48</span>calories</p>
+					<p><span class="carbs">12.76g</span>carbs</p>
+					<p><span class="fat">0.13g</span>fat</p>
+					<p><span class="protein">0.27g</span>protein</p>
+					<div class="clear"></div>
+				</div>
+								<div id="food2_3" style="display:none">
+					<span>serving: 101g</span>
+					<p><span class="cals">53</span>calories</p>
+					<p><span class="carbs">13.95g</span>carbs</p>
+					<p><span class="fat">0.17g</span>fat</p>
+					<p><span class="protein">0.26g</span>protein</p>
+					<div class="clear"></div>
+				</div>
+								<div id="food2_4" style="display:none">
+					<span>serving: 101g</span>
+					<p><span class="cals">53</span>calories</p>
+					<p><span class="carbs">13.95g</span>carbs</p>
+					<p><span class="fat">0.17g</span>fat</p>
+					<p><span class="protein">0.26g</span>protein</p>
+					<div class="clear"></div>
+				</div>
+								<div id="food2_5" style="display:none">
+					<span>serving: 99g</span>
+					<p><span class="cals">51</span>calories</p>
+					<p><span class="carbs">13.67g</span>carbs</p>
+					<p><span class="fat">0.17g</span>fat</p>
+					<p><span class="protein">0.26g</span>protein</p>
+					<div class="clear"></div>
+				</div>
+							</div>
+			<div class="choices">
+				<ol>
+										<li><a class="selected" rel="food2_1" href="#food2_1">Apples<span class="brand">Generic</span><span class="calories">52 calories</span></a></li>
+										<li><a  rel="food2_2" href="#food2_2">Apples (Without Skin)<span class="brand">Generic</span><span class="calories">48 calories</span></a></li>
+										<li><a  rel="food2_3" href="#food2_3">Golden Delicious Apples<span class="brand">Generic</span><span class="calories">53 calories</span></a></li>
+										<li><a  rel="food2_4" href="#food2_4">Red Delicious Apples<span class="brand">Generic</span><span class="calories">53 calories</span></a></li>
+										<li><a  rel="food2_5" href="#food2_5">Fuji Apples<span class="brand">Generic</span><span class="calories">51 calories</span></a></li>
+									</ol>
+			</div>
+			<div class="botcompare"></div>
+			<div class="clear"></div>
+		</div>
+	</form>
+	<div class="clear" style="height: 15px"></div>
+	<ul class="nav">
+		<li><a id="showhelp" href="#help">how does twofoods work?</a></li>
+		<li><a href="http://www.twitter.com/twofoods">Twitter</a></li>
+		<li><!-- Begin FatSecret Platform API HTML Attribution Snippet -->
+<a href="http://platform.fatsecret.com">Powered by FatSecret</a>
+<!-- End FatSecret Platform API HTML Attribution Snippet --></li>
+	</ul>
+	<div class="clear"></div>
+	<div class="help">
+	<p><b>TwoFoods</b> is a food comparision tool that compares the nutritional data of two food items to see
+	which food suits your healthy eating goal.  Example food items:
+	<ul>
+		<li>mcdonald's big mac</li>
+		<li>greek salad</li>
+		<li>subway melt</li>
+	</ul>
+	</p>
+	</div>
+	<div id="copyright">Copyright &copy; 2009-2012, <a href="http://www.aspenlabs.com/">Aspen Labs, LLC</a></div>
+</div>
+<script type="text/javascript">
+var domainy = location.protocol == "https:" ? "https://static.getclicky.com" : "http://static.getclicky.com";
+document.write(unescape("%3Cscript src='" + domainy + "/128577.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/128577-db17.gif" /></p></noscript>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-10304921-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
+</html>

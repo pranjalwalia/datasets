@@ -1,0 +1,2673 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en">
+
+    <head>
+        <title>17 Healthy Foods For Under $1</title>
+
+                        <meta name="description" content="A list of 17 healthy foods that you can buy for less than $1." />
+                    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<meta property="og:type" content="article"/>
+		<meta property="og:site_name" content="Tip Hero"/>
+		<meta property="fb:admins" content="715146979"/>
+
+        <link type="text/css" rel="stylesheet" href="_tpl/style.css" />
+        <script type="text/javascript" src="_lib/prototype.js"></script>
+        
+        <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+        <script type="text/javascript">
+            var pageTracker = _gat._getTracker("UA-4737508-1");
+            pageTracker._initData();
+            pageTracker._setDomainName(".tiphero.com");
+            pageTracker._trackPageview();
+        </script>
+
+
+
+                    <script type="text/javascript">
+//
+function check_dublicate_username()
+{
+	var url = 'index.php?_ws=Users&_ms=check_user&tip_id=1174&&user_name=' + encodeURIComponent(document.getElementById("id_user_name").value);
+	// notice the use of a proxy to circumvent the Same Origin Policy. 
+	new Ajax.Request(url, {
+		method: 'get',
+		onSuccess: function(transport) {
+			if (transport.responseText != '0')
+			{
+				alert('This user name already exists. Please choose another one.');
+			}
+		}
+		});
+}
+
+function check_dublicate_email()
+{
+	var url = 'index.php?_ws=Users&_ms=check_email&tip_id=1174&&user_email=' + encodeURIComponent(document.getElementById("id_user_email").value);
+	// notice the use of a proxy to circumvent the Same Origin Policy.
+	new Ajax.Request(url, {
+		method: 'get',
+		onSuccess: function(transport) {
+			if (transport.responseText != '0')
+			{
+				alert('This email already exists. Please choose another one.');
+			}
+		}
+		});
+}
+
+function ma_sleep(naptime)
+{
+	naptime = naptime * 1000;
+	var sleeping = true;
+	var now = new Date();
+	var alarm;
+	var startingMSeconds = now.getTime();
+	//alert("starting nap at timestamp: " + startingMSeconds + "\nWill sleep for: " + naptime + " ms");
+	while(sleeping)
+	{
+		alarm = new Date();
+		alarmMSeconds = alarm.getTime();
+		if(alarmMSeconds - startingMSeconds > naptime){ sleeping = false; }
+	}
+}
+//
+function alreadyvotted_rate_the_tip(tip_id)
+{
+	document.getElementById('alreadyvotted_rate_the_tip_' + tip_id).style.display = 'inline';
+	document.getElementById('rate_the_tip_' + tip_id).style.display = 'none';
+}
+//
+function notloggedin_rate_the_tip(tip_id)
+{
+	document.getElementById('notloggedin_rate_the_tip_' + tip_id).style.display = 'inline';
+}
+//
+function rate_the_tip(tip_id, up)
+{
+	var url = 'index.php?_ws=Tips&_ms=rate&&tip_id=' + encodeURIComponent(tip_id) + '&up=' + encodeURIComponent(up);
+	// notice the use of a proxy to circumvent the Same Origin Policy. 
+	new Ajax.Request(url, {
+		method: 'get',
+		onSuccess: function(transport) {
+			if (transport.responseText == '0') {
+				alert('You have to be logged in to do that.');
+			} else if (transport.responseText == '2') {
+				//alert('You cannot vote twice for the same tip.');
+				alreadyvotted_rate_the_tip(tip_id)
+			} else if (transport.responseText == '1') {
+				//alert('Your vote has been saved. Thank you.');
+				document.getElementById('alreadyvotted_rate_the_tip_' + tip_id).style.display = 'none';
+				document.getElementById('rate_the_tip_' + tip_id).style.display = 'inline';
+				document.getElementById('rating_text_tip_' + tip_id).innerHTML = 'Thank you for your vote.';
+				reload_ratings(tip_id, up);
+			}
+		}
+		});
+}
+//
+function reload_ratings(tip_id, up)
+{
+	var url = 'index.php?_ws=Tips&_ms=get_rating&&tip_id=' + encodeURIComponent(tip_id) + '&up=' + encodeURIComponent(up);
+	// notice the use of a proxy to circumvent the Same Origin Policy. 
+	new Ajax.Request(url, {
+		method: 'get',
+		onSuccess: function(transport) {
+			if ( up == '1')
+			{
+				document.getElementById('rating_up_tip_'+tip_id).innerHTML = transport.responseText;
+			} else {
+				document.getElementById('rating_down_tip_'+tip_id).innerHTML = transport.responseText;
+			}
+		}
+		});	
+}
+//
+function onClickSortBy(e)
+{
+	window.location = "/?_ws=Tips&_ms=set_sort_by&tip_id=1174&&sort_by=" + e.value;
+}
+
+function popUp(URL,width,height) {
+day = new Date();
+id = day.getTime();
+eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width="+width+",height="+height+",left = 262,top = 184');");
+}
+
+</script>
+        
+                <script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+                </script>
+                <script type="text/javascript">
+                    GS_googleAddAdSenseService("ca-pub-4229809729554458");
+                    GS_googleEnableAllServices();
+                </script>
+                <script type="text/javascript">
+                    GA_googleAddSlot("ca-pub-4229809729554458", "Tips_Bottom_468_60");
+                    GA_googleAddSlot("ca-pub-4229809729554458", "Tips_Right_160_600");
+                    GA_googleAddSlot("ca-pub-4229809729554458", "Confirm_Bottom_468x60");
+                    GA_googleAddSlot("ca-pub-4229809729554458", "Comments_Latest_Right_160_600");
+                    GA_googleAddSlot("ca-pub-4229809729554458", "Tips_Center_300_250");
+                    GA_googleAddSlot("ca-pub-4229809729554458", "Tips_Right_GAD_160_600");
+                </script>
+                <script type="text/javascript">
+                     GA_googleAddAttr("Category", "9000");
+                    </script>
+                <script type="text/javascript">
+                    GA_googleFetchAds();
+                </script>
+
+                <meta name="google-site-verification" content="e9CYsgf111z16vTPTxNK6pNRr-10wN7T_Al-MYB7wFA" />
+                
+
+
+                </head>
+                <body>
+
+                    <div id="page">
+                        <div id="containerwide">
+                            
+                            <table border="0" cellpadding="0" cellspacing="0" width="1030" >
+                            
+                                <tr>
+                                	
+                                    <td colspan="4" align="center" ><img alt="-" src="_tpl/img/border_top.gif" border="0" />
+                                    </td>
+                                    
+                                </tr>
+                                
+                                <tr>
+                                    
+                                    <td style="background:url(_tpl/img/border_left.gif);background-repeat:repeat-y;background-position:top left;">&nbsp;
+                                    
+                                    </td>
+
+                                    <!-- Header1 -->
+                                    <td colspan="2" valign="top" align="left">
+                                        <table border="0" cellpadding="0" cellspacing="0">
+                                        
+                                            <tr>
+
+                                                <td valign="top" style="width: inherit;">
+                                                <a href="http://www.tiphero.com/">
+                                                <img src="img/logo_322x66.gif" alt="TipHero - Your Guide to Saving Money" border="0" />
+                                                </a>
+                                                </td>
+
+                                                <td>
+                                                	<table>
+                                                    	<tr>
+                                                        	<td valign="middle" align="center" style="font-family:verdana; font-size: 14px; width: 500px;"> 
+                                                			Tip Hero serves up fresh money-saving tips daily,<br/>
+                                                			with over 3,000 tips shared to date.                                                    
+                                                    		</td>
+                                                    	</tr>
+                                                    </table>
+                                                </td>
+
+                                                <td valign="middle" align="center"  nowrap="nowrap" style="padding: 0px 20px 0px 0px; width:200px;">
+                                                <a class="link_header_right" href="index.php?_ws=Users&amp;_ms=login_form&amp;tip_id=1174&amp;">Log In</a>
+<br />
+<a class="link_header_right" href="index.php?_ws=Users&amp;_ms=register&amp;tip_id=1174&amp;">Become a Member</a>
+                                                    </td>
+
+                                            </tr>
+                                            
+                                            <tr>
+                                            
+                                            	<td colspan="3" height="5"></td>
+                                            
+                                            </tr>
+
+                                            <tr>
+                                                <td colspan="3" style="padding-left:18px;">
+                                                    <table border="0" cellpadding="0" cellspacing="0">
+                                                        <tr>
+                                                    		<td style="background-color:#4A911B; width:984px;">
+																<table style="padding-right:3px;" align="right">
+                                                                    <tr>
+                                                                        <td style="font-family:verdana; font-size:13px; color:#FFFFFF; font-weight:bold;">
+                                                                        Web Search:
+                                                                        </td>
+                                                                        <td class="search_box">
+<form method="POST" action="search">
+<input type="hidden" name="pid" value="0" />
+<input type="text" value="" name="q" style="width:160px;" />
+                                                                        </td>
+                                                                        <td align="center">
+<input type="submit" name="submit" value="Search">
+</form>
+                                                                        </td>
+                                                                        <td width="20px">&nbsp;
+                                                                        
+                                                                        </td>
+                                                                        <td style="font-family:verdana; font-size:13px; color:#FFFFFF; font-weight:bold;">
+                                                                        Site Search:
+                                                                        </td>
+                                                                        <td class="search_box">
+
+
+<form action="http://www.tiphero.com/google" id="cse-search-box">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-4229809729554458:qs0n5j-ri4t" />
+    <input type="hidden" name="cof" value="FORID:10" />
+    <input type="hidden" name="ie" value="ISO-8859-1" />
+    <input type="text" name="q" size="31" />
+    <input type="submit" name="sa" value="Search" />
+  </div>
+
+
+
+                                                                        </td>
+                                                                        <td>
+</form>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+                                                                        </td>
+																	</tr>           
+																</table>                                                        	
+                                                        	</td>
+                                                        </tr>
+                                                    </table>
+                                                </td>                                                
+                                            </tr>
+                                            
+                                            <tr>
+                                                
+                                                <td colspan="3" height="5px"></td>
+                                            
+                                            </tr>
+                                                                                                                                   
+											<tr>
+												
+                                                <td colspan="3">
+                                                	<table>
+                                                    	<tr>
+                                                
+															<td valign="top" align="center" style="padding: 0px 5px 0px 6px;width:221px;"><table width="212px"  cellspacing="0" cellpadding="0" border="0" >
+
+    <tr>
+        <td width="10" style="padding: 0px 0px 0px 10px;"></td>
+        <td>
+            <table width="212px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/small_bar.gif');background-repeat:no-repeat;background-position:top left;margin: 0 0 0 0;font-size: 20px;">
+                <tr><td style="padding: 7px 0px 7px 5px;" align="left">Tips by Category:
+                    </td></tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td width="10"></td>
+        <td>
+            <div class="menu">
+                <table class="menu" cellspacing="0" cellpadding="0" width="211px">
+                    <tbody>
+
+                        
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_2000_babies-kids.html"  >$&nbsp;Babies &amp; Kids <font class="count">(111) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_3000_cars-automotive.html"  >$&nbsp;Cars &amp; Automotive <font class="count">(99) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_1000_clothing-accessories.html"  >$&nbsp;Clothing &amp; Accessories <font class="count">(133) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_5000_electronics.html"  >$&nbsp;Electronics <font class="count">(99) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_16000_energy-utilities.html"  >$&nbsp;Energy &amp; Utilities <font class="count">(163) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_6000_entertainment.html"  >$&nbsp;Entertainment <font class="count">(144) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_9000_food-dining-out.html"  >$&nbsp;Food &amp; Dining Out <font class="count">(690) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_10000_health-beauty.html"  >$&nbsp;Health &amp; Beauty <font class="count">(295) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_19000_holidays-events.html"  >$&nbsp;Holidays &amp; Events <font class="count">(167) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_11000_home-garden.html"  >$&nbsp;Home &amp; Garden <font class="count">(595) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_21000_insurance-legal.html"  >$&nbsp;Insurance &amp; Legal <font class="count">(60) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_7000_personal-finance.html"  >$&nbsp;Personal Finance <font class="count">(283) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_13000_school-office.html"  >$&nbsp;School &amp; Office <font class="count">(67) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_14000_sports-recreation.html"  >$&nbsp;Sports &amp; Recreation <font class="count">(59) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_23000_travel.html"  >$&nbsp;Travel <font class="count">(69) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_17000_general.html"  >$&nbsp;General  <font class="count">(541) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                
+                        <tr><td width="10"></td><td nowrap="nowrap" align="left" style="padding: 0px 0px 0px 0px;">
+                                <table width="209px" border="0" cellpadding="0" cellspacing="0" style="background-image:url('_tpl/img/left_menu.gif');background-repeat:no-repeat;background-position:top left;">
+                                    <tr><td style="margin: 1px 1px 1px 1px;" align="left" nowrap="nowrap" >
+                                            <a href="/cat1_22000_q-a.html"  >$&nbsp;Q &amp; A <font class="count">(183) </font></a>
+                                        </td></tr>
+                                </table>
+                            </td></tr>
+                                                    </tbody>
+                </table>
+            </div>
+        </td>
+    </tr>
+
+
+    <tr><td width="10"></td><td>&nbsp;</td></tr>
+
+        <!-- BEGIN MODULES -->
+
+    <tr>
+        <td width="10" style="padding: 0px 0px 10px 10px;"></td>
+        <td>
+            <table class="main_box_comments" width="100%" cellpadding="0" cellspacing="0">
+                <tr><td class="main_box_comments_title">Recent Popular Tips</td></tr>
+
+
+
+                    
+                <tr><td style="padding: 10px 10px 10px 10px">
+                        <table class="box_comments" align="left">
+                            <tr><td class="left_table" width="100%" align="left"><a href="/tips_2926_10-frugal-lessons-from-disney-movies.html" title="10 Frugal Lessons from Disney Movies" >10 Frugal Lessons from Disney Movies</a>&nbsp;<img alt=">" src="_tpl/img/arrow.gif" />
+                            </td></tr>
+                        </table>
+
+                                
+                <tr><td style="padding: 10px 10px 10px 10px">
+                        <table class="box_comments" align="left">
+                            <tr><td class="left_table" width="100%" align="left"><a href="/tips_2854_little-known-uses-for-fruit-peels-shells-and-seeds.html" title="Little Known Uses for Fruit Peels, Shells and Seeds" >Little Known Uses for Fruit Peels, Shells and Seeds</a>&nbsp;<img alt=">" src="_tpl/img/arrow.gif" />
+                            </td></tr>
+                        </table>
+
+                                
+                <tr><td style="padding: 10px 10px 10px 10px">
+                        <table class="box_comments" align="left">
+                            <tr><td class="left_table" width="100%" align="left"><a href="/tips_2882_5-free-online-tools-for-organizing-your-busy-life.html" title="5 Free Tools for Organizing Your Busy Life" >5 Free Tools for Organizing Your Busy Life</a>&nbsp;<img alt=">" src="_tpl/img/arrow.gif" />
+                            </td></tr>
+                        </table>
+
+                                
+                <tr><td style="padding: 10px 10px 10px 10px">
+                        <table class="box_comments" align="left">
+                            <tr><td class="left_table" width="100%" align="left"><a href="/tips_3117_how-to-find-a-cheap-laptop-computer.html" title="How to Find a Cheap Laptop Computer" >How to Find a Cheap Laptop Computer</a>&nbsp;<img alt=">" src="_tpl/img/arrow.gif" />
+                            </td></tr>
+                        </table>
+
+                                
+                <tr><td style="padding: 10px 10px 10px 10px">
+                        <table class="box_comments" align="left">
+                            <tr><td class="left_table" width="100%" align="left"><a href="/tips_443_warren-buffetts-investing-advice-for-the-average-investor.html" title="Warren Buffett's Investing Advice for the Average Investor" >Warren Buffett's Investing Advice for the Average Investor</a>&nbsp;<img alt=">" src="_tpl/img/arrow.gif" />
+                            </td></tr>
+                        </table>
+
+                                
+            </table>
+        </td>
+    </tr>
+
+    <!-- END MODULES -->
+        
+    <tr><td width="10"></td><td>&nbsp;</td></tr>
+
+        <!-- BEGIN MODULES -->
+
+    <tr>
+        <td width="10" style="padding: 0px 0px 10px 10px;"></td>
+        <td>
+            <table class="main_box_comments" width="100%" cellpadding="0" cellspacing="0">
+                <tr><td class="main_box_comments_title">Popular Money Tips</td></tr>
+
+
+
+                    
+                <tr><td style="padding: 10px 10px 10px 10px">
+                        <table class="box_comments" align="left">
+                            <tr><td class="left_table" width="100%" align="left"><a href="/tips_1420_a-quick-guide-to-debt-settlement.html" title="A Quick Guide to Debt Settlements" >A Quick Guide to Debt Settlements</a>&nbsp;<img alt=">" src="_tpl/img/arrow.gif" />
+                            </td></tr>
+                        </table>
+
+                                
+                <tr><td style="padding: 10px 10px 10px 10px">
+                        <table class="box_comments" align="left">
+                            <tr><td class="left_table" width="100%" align="left"><a href="/tips_1005_geico-or-progressive-my-experience.html" title="Geico or Progressive? My Experience" >Geico or Progressive? My Experience</a>&nbsp;<img alt=">" src="_tpl/img/arrow.gif" />
+                            </td></tr>
+                        </table>
+
+                                
+                <tr><td style="padding: 10px 10px 10px 10px">
+                        <table class="box_comments" align="left">
+                            <tr><td class="left_table" width="100%" align="left"><a href="/tips_497_the-hidden-impact-of-mutual-fund-fees.html" title="The Hidden Impact of Mutual Fund Fees" >The Hidden Impact of Mutual Fund Fees</a>&nbsp;<img alt=">" src="_tpl/img/arrow.gif" />
+                            </td></tr>
+                        </table>
+
+                                
+                <tr><td style="padding: 10px 10px 10px 10px">
+                        <table class="box_comments" align="left">
+                            <tr><td class="left_table" width="100%" align="left"><a href="/tips_348_participate-in-research-studies-to-earn-extra-cash.html" title="Participate in Research Studies to Earn Extra Cash" >Participate in Research Studies to Earn Extra Cash</a>&nbsp;<img alt=">" src="_tpl/img/arrow.gif" />
+                            </td></tr>
+                        </table>
+
+                                
+                <tr><td style="padding: 10px 10px 10px 10px">
+                        <table class="box_comments" align="left">
+                            <tr><td class="left_table" width="100%" align="left"><a href="/tips_1660_tips-on-credit-card-debt-settlements.html" title="Tips on Credit Card Settlements" >Tips on Credit Card Settlements</a>&nbsp;<img alt=">" src="_tpl/img/arrow.gif" />
+                            </td></tr>
+                        </table>
+
+                                
+                <tr><td style="padding: 10px 10px 10px 10px">
+                        <table class="box_comments" align="left">
+                            <tr><td class="left_table" width="100%" align="left"><a href="/tips_1951_can-you-really-get-your-credit-score-for-free.html" title="Can You Really Get Your Credit Score for Free?" >Can You Really Get Your Credit Score for Free?</a>&nbsp;<img alt=">" src="_tpl/img/arrow.gif" />
+                            </td></tr>
+                        </table>
+
+                                
+                <tr><td style="padding: 10px 10px 10px 10px">
+                        <table class="box_comments" align="left">
+                            <tr><td class="left_table" width="100%" align="left"><a href="/tips_1950_how-much-life-insurance-do-i-need.html" title="How Much Life Insurance Do I need?" >How Much Life Insurance Do I need?</a>&nbsp;<img alt=">" src="_tpl/img/arrow.gif" />
+                            </td></tr>
+                        </table>
+
+                                
+            </table>
+        </td>
+    </tr>
+
+    <!-- END MODULES -->
+        
+
+
+	<tr>
+    	<td width="10" style="padding: 0px 0px 10px 10px;"></td>
+        <td>
+            <table class="main_box_comments" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                	<td class="main_box_comments_title">GIVEAWAYS SITES</td>
+                </tr>
+                <tr>
+                	<td style="padding: 10px 10px 10px 10px">
+                    	<table class="box_comments" align="left">
+                        	<tr>
+                            	<td class="left_table" width="100%" align="left"><a href="http://www.giveawaysandsweepstakes.com" target="_blank">Giveaways & Sweepstakes</a></td>
+                            </tr>
+                        </table>
+					</td>
+				</tr>
+            </table>
+        </td>
+	</tr>
+
+    <tr><td width="10"></td><td>&nbsp;</td></tr>
+
+
+
+
+
+</table>
+</td>
+            			                                    <td valign="top" align="center" style="padding: 0px 5px 0px 0px;width:770px;"><table width="760px" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+    	<td colspan="2" align="left" valign="top">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0"
+style="background-image:url('_tpl/img/large_bar.gif');background-repeat:no-repeat;background-position:top left;margin: 0 0 0 0;font-size: 20px;">
+				<tr>
+            		<td style="padding: 8px 0px 10px 10px;" align="left">Food &amp; Dining Out</td>
+            	</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+    	<td colspan="2" align="left" valign="top">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+                	<td class="core" style="color: #4A911B;font-size:12px; font-family: verdana;">
+                    <a href="/">Home</a> 
+					&gt; 
+					<a href="/cat1_9000_food-dining-out.html">
+					Food &amp; Dining Out</a>
+					&gt;
+					<font style='font-family: Verdana;font-size: 11px;font-weight: bold;color: #666666;' >Topics:</font>&nbsp;&nbsp;<a class="link_topic" href="/cat2_9002_groceries.html">Groceries</a>					</td>
+                </tr>
+				<tr>
+                	<td height="8"></td>
+                </tr>                                
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+    	<td colspan="2" align="left" valign="top">
+			<table width="100%" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+            		<td align="center">
+<script type="text/javascript"><!--
+google_ad_client = "pub-4229809729554458";
+/* Tip_728x90_1 */
+google_ad_slot = "8955474966";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+                    </td>
+            	</tr>
+			</table>
+		</td>
+	</tr>
+
+	<tr>
+    	<td>
+			<table width="100%" border="0" cellpadding="0" cellspacing="0" align="left" class="core" >
+				<tr>
+                	<td height="8"></td>
+                </tr>
+
+				<tr>
+                	<td class="core">
+                    <font style="font-family: Verdana;font-size: 17px;font-weight: bold;">17 Healthy Foods For Under $1</font>
+                    </td>
+                </tr>
+
+				<tr>
+                	<td align="left">
+                	<br>
+                	<font style="font-family: Verdana;font-size: 11px;font-weight: bold;color: #666666;">
+                	Submitted by: 
+					<a href="index.php?_ws=Users&_ms=profile&uid=1">
+					Ray @ Tip Hero</a>
+					&nbsp;03/22/2009 2:42 PM					</font>
+					</td>
+                </tr>
+
+				<tr><td class="core" width="100%">&nbsp;</td></tr>
+
+				<tr>
+	                <td class="core">
+                    <font class="tip_text">
+					 <img class="imageborder" src="http://www.tiphero.com/img/produce1.gif" align="right">One of the best ways to reduce your food bills is to cut back on packaged and processed foods and substitute in more fresh and healthier foods. Packaged and processed foods typically contain more sugar and sodium. They're also quite a bit more expensive.  Here's a list of 17 healthy foods that can be had for less than a dollar per serving. I've included the prices from my local supermarket in Portland, Oregon. Actual prices can vary quite a bit based on geography and growing season.  <br />
+<br />
+<b>Rice</b> - Rice is the most consumed staple in the world with nearly half of the developing worlds caloric intake coming from rice. The processing of rice removes much of its nutritional value. Brown rice retains the most nutritional value and white rice loses the most. Many rice producers enrich white rice with vitamins to add back in some of the nutritional value lost in the processing of rice. When you go to the supermarket many rice products will say "enriched" on the packaging. Even after enrichment whole brown rice is still more nutritional. <br />
+<br />
+<i>Cost:</i> Rice can be stored up to two years so it makes a good deal of economic sense to buy in bulk. If you buy 20 pounds or more you can find rice for less than 50 cents per pound. It is one of the most economical foods on the planet with a 100 calories of cooked rice costing roughly 3-4 cents.<br />
+<br />
+<b>Oatmeal</b> - My grandma swore by the health benefits of oatmeal. She had a bowl of oatmeal for breakfast every morning and lived well into her nineties. Oatmeal is rich in dietary fiber and has been shown to lower cholesterol and improve cardiovascular health.<br />
+<br />
+<i>Cost:</i> My local Winco has old fashioned oatmeal for 42 cents a pound.  I typically have a cup of oatmeal with some cinnamon mixed in for breakfast costing roughly 20 cents.<br />
+<br />
+<b>Potatoes</b> - As long as potatoes are prepared without loading them up with butter or sour cream they can be an extremely nutritious low calorie staple that's high in fiber and other vitamins. <br />
+<br />
+<i>Cost:</i> There are several types of potatoes but you can typically find most types of potatoes for between 40 and 60 cents per pound. <br />
+<br />
+<b>Eggs</b> - A great source of affordable low calorie protein. One egg contains just over 5 grams of protein.  <br />
+<br />
+<i>Cost:</i> 20 cents or less per egg with a typical breakfast containing two eggs.   <br />
+<br />
+<b>Popcorn</b> - Popcorn is high in dietary fiber and low in calories and fat as long as you don't load it up with salt and butter. According to Wikipedia popcorn became a popular snack food during the Great Depression. It's easy to see why, popcorn is one of the most inexpensive snack foods around especially if you pop your own popcorn. <br />
+<br />
+<i>Cost:</i> Loose kernels cost around 75 cents per pound. A typically microwave packet contains 2.8 ounces of dry popcorn kernels which comes out to roughly 13 cents if you pop it yourself. <br />
+<br />
+<b>Apples</b> - An apple a day keeps the doctor away. Apples are loaded with dietary fiber and antioxidants. Nearly all apples are under a dollar per apple in the supermarkets produce sections. <br />
+<br />
+<i>Cost:</i> Apples like all fruits are considerably cheaper during peak harvest seasons. Jonagold and Golden Delicious apples run between 70-80 cents per pound, Red Delicious typically run around 90 cents per pound and Fuji apples $1.20 per pound.<br />
+<br />
+<b>Watermelon</b> - Watermelon is a great summertime thirst quencher. It's very filling and low in calories due to the amount of water it holds. It's also packed with a number of antioxidants and vitamins. It also contains amino acids such as citrulline and arginine which promote cardiovascular health. <br />
+<br />
+<i>Cost:</i> You can typically find watermelon for around 40 cents a pound, and cheaper during growing season.<br />
+<br />
+<b>Garbanzo Beans</b> - As with most beans garbanzo beans also known as chickpeas are rich in dietary fiber and are a great source of protein. A cup of garbanzo beans contains more than a quarter of daily recommended protein. Studies have also shown that garbanzo beans lower LDL, the bad cholesterol. <br />
+<br />
+<i>Cost:</i> You can pick up garbanzo beans for a $1 per pound.<br />
+<br />
+<b>Pinto Beans</b> - Like garbanzo beans, pinto beans are packed with dietary fiber that helps reduce the bad cholesterol and is a great source of protein. Pinto beans are among the most affordable beans available. <br />
+<br />
+<i>Cost:</i> 77 cents per pound.<br />
+<br />
+<b>Bananas</b> - Sort of like natures candy bar bananas are a delicious creamy fruit which is rich in potassium and delivers a burst of energy. <br />
+<br />
+Cost: 40-60 cents per pound.<br />
+<br />
+<b>Kiwis</b> –Packed with vitamin C, this sweet tasting low calorie fruit makes an excellent out of the ordinary snack.  <br />
+<br />
+<i>Cost:</i> You can often find kiwis on sale three for a dollar.<br />
+<br />
+<b>Cantaloupe</b> – Cantaloupe is rich in Vitamin A and C, and potassium.  This sweet, cool fruit is also low in calories. Like most fruit Cantaloupe prices vary greatly throughout the year. <br />
+<br />
+<i>Cost:</i> In-season you can find it for low as 19 cents per pound and out-of-season it can run you up to 60 cents per pound.<br />
+<br />
+<b>Carrots</b> - Have garnered a reputation for improving eyesight because of the beta-carotene they contain. Carrots are low in calories and packed with essential vitamins and minerals.  They are easy to pack and make a great healthy snack. <br />
+<br />
+<i>Cost:</i> Carrots typically cost 50 cents per pound for the large variety and $1.25 per pound for baby carrots.<br />
+<br />
+<b>Lentils</b> - Lentils are a protein powerhouse, one cup of cooked lentils contains more than a third of recommended daily value of protein. Lentils like most legumes are also packed with cholesterol lowering dietary fiber. <br />
+<br />
+<i>Cost:</i> 90 cents per pound.<br />
+<br />
+<b>Grapefruit</b> – Is a fruit so low in calories it even has a diet named after it. Grapefruit is packed with Vitamin C and extremely low in calories. It has a tart taste which helps to quench people's hunger. <br />
+<br />
+<i>Cost:</i> 50 cents per pound.<br />
+<br />
+<b>Nuts</b> – Nuts such as almonds and walnuts are packed with monounsaturated fats which are considered healthy fats. Several studies have shown that nut consumption lowers your risk of heart disease. Nuts make a great snack that’s easy to pack up and take anywhere. <br />
+<br />
+<i>Cost:</i> Almonds $2.98 pound, Walnuts $2.88 a pound. <br />
+<br />
+<b>Water</b> - Water is one of the key building blocks of health. Replacing soft drinks and high calorie, sugary drinks is one of the best things you can do for your health. Drinking plenty of water also cuts down on hunger and food consumption.<br />
+<br />
+<i>Cost:</i> Practically free.<br />
+<br />
+<br />
+Check out our <a class="link_intip" href="http://www.tiphero.com/cat1_9000_food-dining-out.html">Food & Dining Out</a> category for more ways to save on groceries. Here are some additional food money saving tips:<br />
+<br />
+<li><a class="link_intip" href="http://www.tiphero.com/tips_393_can-buying-from-supermarket-bulk-bins-save-you-a-bundle.html">Buying from Supermarket Bulk Bins Save you a Bundle</a></li><br />
+<li><a class="link_intip" href="http://www.tiphero.com/tips_231_save-money-on-bread-by-shopping-at-bakery-outlets.html">Save Money on Bread by Shopping at Bakery Outlets</a></li><br />
+<li><a class="link_intip" href="http://www.tiphero.com/tips_985_the-spice-is-right-how-to-save-up-to-93-on-spices.html">How to Save Up to 90% on Spices</a></li><br />
+<li><a class="link_intip" href="http://www.tiphero.com/tips_441_18-money-saving-grocery-shopping-tips.html">18 Money-Saving Grocery Shopping Tips</a></li><br />
+<br />
+ Photo Credit: <a class="link_intip" target="blank" href="http://www.flickr.com/photos/alykat/5671630/">alykat</a><br />
+<br />
+-                    </font>
+    	            </td>
+                </tr>
+	  
+				<tr><td height="20"></td></tr>
+
+				<tr>
+                	<td class="core">
+                    <font class="tip_text">
+                    ---<br />
+                    sponsored: Find <b><a href="http://www.tiphero.com/search&q=free+grocery+coupons&ref=tip">Free Grocery Coupons</a></b>.
+                    </font>
+					</td>
+                </tr>
+
+				<tr><td height="20"></td></tr>
+
+				<tr>
+                	<td class="core">
+                	<font class="tip_text">---</font>
+                	</td>
+                </tr>
+
+				<tr>
+                	<td class="core">
+						<table>
+							<tr>
+
+								<td>
+                				<font class="tip_text">
+                				Get free Tip Hero updates via <b><a href="http://www.tiphero.com/_ws_Tips__ms_newsletter_.html" target="_blank">Email</a></b> , 
+                				<b><a href="http://feeds2.feedburner.com/tiphero" target="_blank">RSS</a></b> ,<br />
+                                <b><a href="http://www.facebook.com/tiphero" target="_blank">Facebook</a></b> , or <b><a href="http://www.twitter.com/tiphero" target="_blank">Twitter</a></b>.
+                				</font>
+								</td>
+                                
+                                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                                
+                                <td style="padding: 0px 0px 0px 20px; vertical-align:middle;">
+                                <a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php?u=http://www.tiphero.com/tips_1174_17-healthy-foods-for-under-1.html">Share</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>                            
+                                </td>
+                
+								<td style="padding: 0px 0px 0px 10px; vertical-align:middle;">
+								<a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="tiphero">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+								</td>
+                                
+							</tr>
+                    	</table>
+                    </td>
+				</tr>
+
+				<tr><td width="100%">&nbsp;</td></tr>
+
+
+<!-- BEGIN RELATED TIPS -->
+
+				
+				<tr>
+                	<td width="100%">
+					<div id="promo_tip">
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+                            
+                            	<td width="315px">
+								<font style="font-family: verdana;font-weight: normal;font-size: 13px;color: #000000;text-decoration: none;">
+                                More Money-Saving Tips:
+                                </font>
+																<li class="tip_related"><a class="link_related" name="296" id="296" href="/tips_296_20-healthy-foods-for-under-1.html">
+20 Healthy Foods for Under $1</a></li>
+																<li class="tip_related"><a class="link_related" name="1711" id="1711" href="/tips_1711_9-foods-you-think-are-healthy-but-arent-sparkpeople-com.html">
+9 Foods You Think Are Healthy But Aren't (sparkpeople.com)</a></li>
+																<li class="tip_related"><a class="link_related" name="1101" id="1101" href="/tips_1101_a-cheap-and-healthy-meat-substitute.html">
+A Cheap and Healthy Meat Substitute</a></li>
+																<li class="tip_related"><a class="link_related" name="1168" id="1168" href="/tips_1168_kid-friendly-healthy-eating-tricks.html">
+Kid Friendly Healthy Eating Tricks</a></li>
+																</td>
+                                
+								<td width="5px">&nbsp;</td>
+
+																
+                                <td aligh="left" valign="top" width="200px">
+								<font style="font-family: verdana;font-weight: normal;font-size: 13px;color: #000000;text-decoration: none;">
+                                Sponsored Searches:
+                                </font>
+																<li class="tip_related"><a class="link_related" rel="noindex,nofollow" href="http://www.tiphero.com/search&q=Healthy+Recipes?ref=refbx">Healthy Recipes</a></li>
+																<li class="tip_related"><a class="link_related" rel="noindex,nofollow" href="http://www.tiphero.com/search&q=+Organic+Farming?ref=refbx"> Organic Farming</a></li>
+																<li class="tip_related"><a class="link_related" rel="noindex,nofollow" href="http://www.tiphero.com/search&q=+Whole+Foods+Coupons?ref=refbx"> Whole Foods Coupons</a></li>
+																<li class="tip_related"><a class="link_related" rel="noindex,nofollow" href="http://www.tiphero.com/search&q=+Grocery+Coupons?ref=refbx"> Grocery Coupons</a></li>
+								                                
+								</td>
+                                
+								                                
+							</tr>
+						</table>
+					</div>
+					</td>
+				</tr>
+
+				
+<!-- END RELATED TIPS -->
+
+
+				<tr><td class="core" width="100%">&nbsp;</td></tr>
+
+
+
+<!-- Begin Ad Placement -->
+
+				<tr>
+                	<td class="core" width="100%">
+
+				<script type="text/javascript">
+				  GA_googleFillSlot("Tips_Center_300_250");
+				</script>
+
+					</td>
+                </tr>
+                
+				<tr><td class="core" width="100%">&nbsp;</td></tr>
+
+<!-- End Ad Placement -->
+
+				<tr><td>&nbsp;</td></tr>
+
+
+<!-- BEGIN COMMENTS -->
+				<tr>
+                	<td class="core" width="100%">
+						<table width="100%" border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td style="width:25px;background:url(_tpl/img/border_top_left.gif);background-repeat:repeat-y;background-position:top left;">&nbsp;
+                                
+                                </td>
+								<td>
+									<table>
+										<tr>
+                                        	<td class="core" >
+
+<form method="POST" action="index.php" onsubmit="return check_user_form();">
+<input type="hidden" value="Tips" name="_ws" />
+<input type="hidden" value="insert_comment" name="_ms" />
+
+<input type="hidden" value="" name="cat_id" />
+<input type="hidden" value="" name="topic_id" />
+<input type="hidden" value="" name="cat_name" />
+<input type="hidden" value="" name="topic_name" />
+<input type="hidden" value="1174" name="tip_id" />
+<input type="hidden" value="17 Healthy Foods For Under $1" name="tip_name" />
+
+												<table width="100%" border="0" cellpadding="0" cellspacing="0">
+
+													                                                
+													<tr><td>&nbsp;</td></tr>
+
+													<tr>
+                                    	            	<td class="comments" style="font-size:16px; font-family: Georgia;">
+                                	                	<b>Comments:</b><a name="comments"></a>
+                            	                    	</td>
+                        	                        </tr>
+                                                
+													<tr><td>&nbsp;</td></tr>
+
+													<tr>
+            	                                    	<td>
+        	                                        	<font color="#969896">.................................</font>
+    	                                            	</td>
+	                                                </tr>
+                                                
+													<tr><td>&nbsp;</td></tr>
+
+													
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_7826"></a> Great tips to think about. We walk to a little grocery store in the morning.
+From this small vendor we can buy a couple of oranges for pennies. Not only
+reasonable but we are helping an independent business.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														Grace</a>
+																												on March 25, 2009 8:55 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_7900"></a> I've been making popcorn on the stove for years now - I just don't know how
+people can enjoy the microwave stuff anymore!  I use olive oil and then sprinkle
+with Bragg's aminos and maybe a little shredded cheese, too.  So good :)														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=1686">
+														DogMama</a>
+																												on March 26, 2009 4:15 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_7907"></a> Don't forget cabbage! Very nutritious and only 59 cents/pound when it's NOT on
+sale. Also keeps for a while in the fridge.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=1524">
+														missusdunlap</a>
+																												on March 26, 2009 4:35 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_8028"></a> bulk almonds. as a runner I've learned they are a great source of good fat and
+protein. luckily, my kids will eat them, too. and they will last a long time.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														Roger W</a>
+																												on March 27, 2009 6:10 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_8459"></a> Holy crap, i wish nuts were that cheap for me.  More like 5.99/lb.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on April 01, 2009 3:53 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_8481"></a> I love nuts and my local grocer has them really cheap.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on April 01, 2009 10:22 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_8530"></a> I want to know where to find Cantaloupe that cheap! Here I have not seen it
+under $3 per Cantaloupe, and they are very small! <br />
+Plus bananas have been well over 70 cents a pound for the last year here. Once
+in a while they run 67 cent specials, but they are very black and almost rotten.
+														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														Lib</a>
+																												on April 02, 2009 9:42 AM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_8547"></a> I just picked up some cantaloupes at Shaw's for $2 a melon! (I live in Boston)
+and often find deals of 2 melons for $5. 														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on April 02, 2009 1:12 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_8548"></a> Lib, do you have Peadpod where you live? They are selling cantloupes for $1.88
+each--but you have to hire the delivery service. Not sure if Stop &amp; Shop
+stores sell them for the smae price.<br />
+<br />
+check <a title="link" target="_blank" rel="nofollow"
+href="http://www.peapod.com">www.peapod.com</a>														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on April 02, 2009 1:18 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_8615"></a> Nope, we live 2 hours away from the nearest town, and its less than 1,000
+people. But that's also why we bought where we did. However I do miss my fruit!
+<br />
+														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														Lib</a>
+																												on April 02, 2009 9:10 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_10249"></a> We joined a produce co-op a couple of years ago, and it's great.  We order
+during the weeks we want, and pick it up on the weekends.  (We are also
+volunteers.)  <br />
+<br />
+At ours, participants receive a minimum of $50/worth of produce for a $15
+contribution.  Each order fills up two small-ish laundry baskets.  There are
+lots of co-ops and CSAs all over the country, try localharvest.org to find one
+near you.  Many even offer more of a discount if you volunteer once in a while.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														KMPM</a>
+																												on April 12, 2009 4:20 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_10739"></a> I live in Eastern Oregon so my fresh produce isn't nearly as expensive since
+the stuff is grown locally and not shipped, so I understand where the author is
+coming from. <br />
+<br />
+At the same time I think she didn't consider those who are not blessed with an
+abundance of local farmers. I am sure if you purchase durring the growing season
+you can find some great deals too. For example for me cantalope is 99c/lb.
+because it's winter/spring but I know come summer it will be down to 29c/lb. or
+less.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														country girl</a>
+																												on April 16, 2009 8:35 AM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_10906"></a> I just paid $1.88 for cantaloupe at Sam's.  I live in Georgia.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														lburn1967</a>
+																												on April 17, 2009 5:01 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_10981"></a> I am paying almost $2.00 a pound for cantaloupe in Iowa.  Ship some of the
+cheap stuff to me ok?  LOL														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														MamaJ</a>
+																												on April 18, 2009 3:11 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_11932"></a> This article also gives people a great summer diet to lose weight, still eat
+healthy, and at a reasonable cost. Most of the items mentioned are coming into
+season and should be at their lowest cost in the next few months. Especially if
+you can find local vegitable and fruit markets.<br />
+<br />
+Low cost, low calorie, and good mix of healthy nutrients. A perfect summer diet
+to shed a few pounds.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														Jenifer</a>
+																												on April 30, 2009 12:00 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_12116"></a> I Live Insyracuse, N.Y. And Can Usually Find Some Great Deals. Cantalopes For
+.99C Ea.<br />
+<br />
+Grean Beans,99C @ Pound, Big Red Globe Grapes Last Week For .99C A Pound. <br
+/>
+<br />
+You Have To Look At The Ads Or Go To Your Local Farmers Markets.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on May 04, 2009 9:30 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_12225"></a> So new, nothing much to report as yet.  aw														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on May 07, 2009 6:24 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_12598"></a> This is an awesome article, loaded with terrific information.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														Martha Bruinsma</a>
+																												on May 20, 2009 7:14 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_12653"></a> i live at ga and bought a canalope for 88 cents 1.45 foe ex lage bag of
+broccile 2.00 5 lb of apple what a deal 														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on May 21, 2009 8:40 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_13412"></a> Thanks I love fresh fruits and vegetables, I wish there was local farmer's
+market nearby?														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														Debra Rincon Lopez</a>
+																												on June 14, 2009 4:46 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_14118"></a> Well written and resourced!  In my book I included tuna fish as a low-cost
+source of healthy protein (of course in moderation for women).  <br />
+<br />
+Also, joining a CSA helps build sustainable communities, provides fresh, local
+produce, and is extremely cost effective.  Thanks again - I'm going to link this
+site on my reader's blog for my book Recession $urvival Guide (available on
+Amazon).														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														Campbell Norwood</a>
+																												on July 06, 2009 9:06 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_14123"></a> these foods are not cheap														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on July 06, 2009 10:52 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_14325"></a> Nuts here run $6-8 a pound or more. I wish they were that cheap here too. I
+have decided to try putting in some nut trees to grow our own.<br />
+As with all things though it is best to check ads and compare prices. Farmers
+markets and people with roadside stands should have low prices with fresh fruits
+and vegetables														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=2372">
+														Michelle</a>
+																												on July 12, 2009 12:20 AM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_14854"></a> I don't know where you live, but in Massachusetts you are off by 20 to 100% on
+the cost of fruit and vegetables.  And I'm a very frugal shopper.  I remember
+when apples were 10 cents a pound, but I haven't seen any under about $1.49 a
+pound in a long time.  <br />
+<br />
+Even healthfood stores with open bins are $1.00 a pound or more for oatmeal. 
+These things aren't the cheap staples they used to be.  Potatoes under 99 cents
+a pound?  Where?  <br />
+<br />
+The US is becoming more like Europe in that we no longer have the cheap food
+that was available as we grew up.  We used to have many small farms competing
+for local business, we now have fewer but larger corporate farms, subsidized by
+the federal government (elected with the financial support of those same
+corporations), with a huge transportation cost added to the price of food.  So
+it goes.  														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														euonymous South of Boston, MA</a>
+																												on July 28, 2009 2:32 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_14902"></a> I agree with much of the listed things.  I disagree with some of them because
+of where they might be from/produced.  <br />
+<br />
+There is a wonderful movement in the USA to eliminate LAWNS and plant
+EDIBLES...one of which is nourishmeant.org It is a great idea to replant your
+place with edibles. <br />
+<br />
+Foraging is also coming back as a lost art.  Skip the chemically induced foods
+by all means, of course.  <br />
+<br />
+Here in Alaska we eat a lot of salmon (that we catch or dipnet)and other
+seafoods, wild berries, spruce tips, fiddlehead ferns, etc.  I believe that you
+can find food without purchasing it anywhere you live if you do some research.
+Both my father and grandfather taught us this as a way to live in North
+Carolina.<br />
+														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														Cortez Williams, RN</a>
+																												on July 29, 2009 7:37 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_14908"></a> I would like to hear from those who are interested in foraging and other things
+such as the movement to put a label on Hot Dogs as on example. There is some
+movement to make them labeled as carcinogenic due to their addition of sodium
+benzoate.  <br />
+<br />
+If this is passes in Legislation, how many other products will also have to wear
+the label? Very curious idea. Email me at mcortezwilliams(at)yahoo(dot)com<br
+/>
+Only serious need inquire and not about Palin's last day giving hotdogs out...														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														mcortezwilliams</a>
+																												on July 29, 2009 11:35 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_14914"></a> Ah, not to mention Quinoa....far more protein and much more delicious than
+rice.  Dare to say it but Costco has an organic huge bag for little money and it
+goes a long way. <br />
+<br />
+It is a mainstay in our diet over rice; cheaper in the long run when you are
+getting your needed protein. Plus you can add to it anything you wish such as
+fire roasted peppers, garlic, veggies, etc.  A lovely, nutty addition to any
+household that even the choosiest participant might enjoy.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														Cortez Williams, RN</a>
+																												on July 30, 2009 12:57 AM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_15074"></a> I live in rural Nebraska, and the stores carry junk produce here. Cantalope are
+$4.99 a piece as well as most fruit and produce trucked in. We have Wal-Mart
+here, but I DO NOT support it at all, I support my local farmers.<br />
+<br />
+Fruit is terrible here also. I myself, grow most of my own vegetables in my very
+tiny yard,(I practice edible lawn, and also homestead in the city) and have
+extra to can or freeze. I also dehydrate veggies, and fruit. I buy from our
+farmer's market, the things that I do not grow myself, or did not do well this
+spring and summer. <br />
+<br />
+I am on SSI and eat quite well, and barter veggies for meat (I am a veggie but
+my elderly parents are not. Just because I'm in Agricultural Nebraska doesn't
+mean you get great things also. By the way, we grow cattle here, but it is sooo
+expensive even here people like me cannot afford it. It is shipped out over
+seas. 														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on August 03, 2009 11:09 AM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_15106"></a> When fruit at the grocery store gets expensive and flavorless I keep frozen
+fruit from sam's on hand and use what I need and store the rest until I need it.
+ Less wasted that way because it doesn't spoil.  Also I buy fruit on sale and
+freeze some of it. Frozen bananas make great smoothies.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on August 04, 2009 4:01 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_15841"></a> I live on the border of Detroit.  With nine on our family, I have always been
+frugal.  Very rarely do I buy produce in a grocery store.  Instead, I find it
+much cheaper at produce markets.  The one that I shop at the most runs crazy
+sales on Wednesdays, so much so that the lines wrap around the store.  I found
+out that they restock everything on Thursday, so I go then.  The produce is very
+fresh and there are often further mark downs on some items.  This week I found
+three cantalopes for a dollar, if I wanted honey rock melons they were four for
+a dollar.  Huge green peppers are four for a dollar and the red ones are three
+for a dollar.  I always fill my cart and it runs me from $20 this week to $30
+dollars last week.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=1308">
+														Lori</a>
+																												on August 31, 2009 2:40 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_16219"></a> I've thrown out most of what I bought at Grocery Outlet in Vallejo.  The
+&quot;sell by&quot; dates are misleading.  In August, I bought &quot;sell by Oct
+2009&quot; products that were gross, old-tasting and inedible.  I don't throw
+out food, I'm Zero Waste.  I threw out most of what I bought there - wouldn't
+even give those old stale Town House crackers or &quot;Dobake&quot; sliced loaf
+cake to the birds.<br />
+Don't waste your money at Grocery Outlet.  Buy retail (or at Farmer's Markets)
+and stay healthy.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														max green</a>
+																												on September 17, 2009 3:56 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_16257"></a> I have never heard of Quinoa.  What does it look like?  How do you eat it?  We
+aren't near a Costco, but I'm sure if I knew what I was looking for I'd find
+it.<br />
+Thanks for the post.<br />
+<br />
+<br />
+Ah, not to mention Quinoa....far more protein and much more delicious than rice.
+Dare to say it but Costco has an organic huge bag for little money and it goes a
+long way. <br />
+<br />
+It is a mainstay in our diet over rice; cheaper in the long run when you are
+getting your needed protein. Plus you can add to it anything you wish such as
+fire roasted peppers, garlic, veggies, etc. A lovely, nutty addition to any
+household that even the choosiest participant might enjoy. <br />
+  <br />
+Posted by Cortez Williams, RN on July 30, 2009 12:57 AM  <br />
+................................. <br />
+														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														Pat in Kitchener</a>
+																												on September 18, 2009 10:25 AM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_16849"></a> You don't know what you are talking about. First of all you have never been in
+a store.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														James Jay Hicks</a>
+																												on October 08, 2009 3:14 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_16985"></a> I live on the East coast and they grow a lot of potatoes around here. You can
+buy a 50 pound bag for $4. How many people pay that for a 10 pound bag? When you
+walk into the grocery store you are paying the most you can possibly pay for
+food. If you have room you must grow a garden. You can grow all your veggies.
+Canning is easy and fun.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on October 14, 2009 9:47 AM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_16988"></a> Everyone should have 6 laying hens. They can feed themselves, except you might
+want to toss them some scraps in the Winter. They can eat anything and they
+produce eggs for free. Eggs some of the best food you can eat. The ones at the
+store have been pasteurized and they don't taste very good. 														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on October 14, 2009 9:58 AM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_17400"></a> To answer the question from earlier, Quinoa is a very healthy whole grain food
+that is rich in fiber.  I would say it is most similar to rice.  I use it for
+stuffed peppers and a base of stir fry instead of rice.  Barley is also a very
+healthy grain which is under $1 per serving but buy in bulk since the boxed
+version is more expensive.<br />
+<br />
+Milk and yogurt are also foods that could be added to the list on a per serving
+basis.   Other than the eggs and beans listed in the 17 items which offer a high
+protein content, most of the options are starches or fruits.  I struggle with
+finding foods high in protein that are affordable. <br />
+<br />
+This was a helpful article - thanks!<br />
+														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=2308">
+														Kimberly A. Griffiths</a>
+																												on October 25, 2009 6:44 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_17843"></a> For exactly $1 I can buy two bunches of either collard greens, kale, turnip
+greens or mustard greens. Mix and match. Saute with garlic and enjoy.<br />
+Greens are very easy to grow.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=2439">
+														Rinchen</a>
+																												on November 08, 2009 12:08 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_18807"></a> It's not at all same for all the countries as some countries got different
+prices for these stuff but still nice post and good healthy foods that must be
+used by all of us in our daily lives :)														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														My Health Blog</a>
+																												on December 01, 2009 3:59 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_21957"></a> Cantaloupes For$1  Heb or Kr or .99. watermelon  At .99 store Grapes at Heb in
+summer .79.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on February 03, 2010 11:38 AM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_22557"></a> i'd like to see WHERE you can buy nuts for 2.98 a pound???!!!!!!!<br />
+<br />
+especially almonds.....														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on February 16, 2010 2:54 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_22559"></a> perhaps almonds in shell or sliced - they sell around $3/lb. 														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on February 16, 2010 3:17 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_23790"></a> Question? Can I raise chickens in town? Will they fly over my six foot high
+fence? <br />
+<br />
+We are turning our yard into garden also. Raise potatoes in garbage cans. <br
+/>
+<br />
+Also bought 300 gal plastic tanks to catch rainwater off the roof (all three now
+full) to water garden or to use in an emergency for drinking. <br />
+<br />
+thanks m														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on March 07, 2010 5:49 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_26162"></a> Dear fellow frugal savers,<br />
+By all means grow a garden if you can. I try to grow the easy ones, tomatoes,
+peppers, greens, onions, &amp; herbs. Here in the Ozarks we get relatively cheap
+fruit in season, especially blueberries &amp; strawberries, especially if you go
+a few miles to the farm &amp; pick your own - apples &amp; peaches too.  The
+season doesn't last long but you can freeze or can them. Our small town has a
+farmers market 2 days/week.<br />
+<br />
+I contacted a local Mennonite farmer and get my milk weekly (1 gal./$1)&amp;
+provide my own container. I have to separate the cream out myself.<br />
+The local 7th Day Adventist Church runs a food coop.  They order the food once
+monthly. They also run a cooking class-once a month (they are strict
+vegetarians). I have learned about tofu &amp; other soy products &amp; how to
+cook with them.<br />
+<br />
+Don't be shy about contacting someone in the 7th Day Adventist Church about
+their food coop - you don't have to be a member to join in the food savings.
+Also, most of the Mennonites are farmers and are very friendly here and
+helpful.<br />
+<br />
+I know this sounds time consuming but once you make the contacts, its faster
+&amp; simpler (and more frugal too.)<br />
+<br />
+Keep trying and don't be shy!														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														Ann Fenner</a>
+																												on March 25, 2010 7:24 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_26946"></a> this may help me some. i am also having a hard time finding things to eat that
+are low in fat sugar count. can you help me?														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on March 28, 2010 9:02 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_27759"></a> Thanks for sharing your comparsion shopping. I want to know what formula you
+used to gather the percentage of cost per ounce? I used the smaller amount
+divided by the larger amount. However, I didn't come up with the same percentage
+that you did. So, you see, I do need help with using the correct formula!<br />
+<br />
+Thanks ever so much and keep shopping!														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														Rodjie Johnson</a>
+																												on April 08, 2010 9:31 AM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_30971"></a> Wow, you guys are so lucky. I live in Hawaii where the going rate for bananas
+is $1.09 per lb.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="#">
+														Susan Young</a>
+																												on May 14, 2010 6:24 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_33005"></a> thanks! There are some good tools on this site! I will definitely be reading
+here more often!														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=2372">
+														Michelle</a>
+																												on May 26, 2010 10:21 AM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_38318"></a> Wow!!!  A lot of great information that I have never think about.  Now my mind
+is racing.  Thank you.														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=3419">
+														anonymous</a>
+																												on June 28, 2010 1:08 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_58098"></a> Thank you for the list...I would like to share it with my readers along with
+your web site which I recently discovered.<br />
+<br />
+We all can be healthy... there are no excuses... this should be taught in
+schools at an early age... to avoid obesity and encourage a healthy diet. <br
+/>
+<br />
+ It's never too late to learn or teach an old dog new tricks.<br />
+<br />
+Thanks for sharing your knowledge!<br />
+Sincerely, <br />
+Vita<br />
+Publisher<br />
+The Thrifty Bee<br />
+thethriftybee@att.net														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=20735">
+														Vita Rokaw</a>
+																												on February 19, 2011 8:22 PM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td class="comments_body_copy">
+														<a name="comment_58288"></a> @ Vita: That's wonderful! Thank you for sharing Tip Hero with your readers!														</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+													<tr>
+                  	                            		<td style="font-size:12px; font-family: verdana;color: #4A911B;">
+                                                		Posted by 
+
+																												<a href="index.php?_ws=Users&_ms=profile&uid=2">
+														Tip Hero</a>
+																												on February 22, 2011 11:06 AM														</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+                                                		<font color="#969896">.................................</font>
+                                                		</td>
+                                                	</tr>
+
+													<tr><td>&nbsp;</td></tr>
+
+
+													<tr>
+                                                		<td>
+
+                                                		</td>
+                                                	</tr>
+
+													<tr><td height="8"></td></tr>
+
+													<tr>
+                                                		<td align="left">-----------------------------------------</td>
+                                                	</tr>
+
+													<tr><td height="8"></td></tr>
+
+													<tr>
+                                                		<td style="font-size:16px; font-family: Georgia;">
+                                                		<b>Share Your Comments:</b>
+                                                    	</td>
+                                                    </tr>
+
+													<tr><td>&nbsp;</td></tr>
+                                                
+												
+                                                	<tr>
+                                                		<td class="comments_body_copy">
+                                                		Comments may need to be approved before they are displayed.
+                                                		</td>
+                                                	</tr>
+
+
+
+
+											  		<tr><td>&nbsp;</td></tr>
+                            			
+                                              		<tr>
+														<td class="comments_field_names">
+                                              			<a name="comment_text"></a>Comments:
+                                              			</td>
+                                              		</tr>
+				  
+                  									<tr>
+                                                		<td>
+<textarea rows="12" cols="48" name="comment_body" id="id_comment_body" >
+</textarea>
+                                                		</td>
+                                                	</tr>
+
+
+													<tr>
+                                                		<td class="comments_field_names">
+                                                		User Name (required):
+                                                		</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+<input type="text" name="comment_user_name" class="big_text" value="" />
+														</td>
+                                            	    </tr>
+
+													<tr>
+                                    	            	<td class="comments_field_names">
+                                	                	Email Address (required - but your email address will not be displayed):
+                            	                    	</td>
+                        	                        </tr>
+                                                
+													<tr>
+                	                                	<td>
+<input type="text" name="comment_user_email" class="big_text" value="" />
+														</td>
+    	                                            </tr>
+
+													<tr>
+                                                		<td class="comments_field_names">
+                                                		Website URL (not required; please do not include "http://"):
+                                                		</td>
+                                                	</tr>
+
+													<tr>
+                                                		<td>
+<input type="text" name="comment_url" class="big_text" value="" />
+														</td>
+                                                	</tr>
+
+
+													<tr><td>&nbsp;</td></tr>
+
+													<tr>
+                                                		<td style="width:440px;" align="right">
+<input type="image" name="submitx" value="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"  src="_tpl/img/submit.gif"
+style="width:89px;height:24px;font-size: 14px;background-image: url('_tpl/img/submit.gif');background-repeat:no-repeat;background-position:top left;"/>					
+														</td>
+                                            	    </tr>
+
+												</table>
+</form>
+											</td>
+                                	    </tr>
+                                    
+<!-- END COMMENTS -->
+
+									</table>
+								</td>
+                    	    </tr>
+                        
+							<tr>
+                        		<td style="background:url(_tpl/img/border_top_bottom.gif);background-repeat:no-repeat;background-position:top left;" colspan="2">&nbsp;
+                            	
+                            	</td>
+							</tr>
+                        
+						</table>
+					</td>
+            	</tr>
+
+				<tr><td>&nbsp;</td></tr>
+
+			</table>
+		</td>
+
+<!-- BEGIN ADS -->
+
+		<td valign="top" style="padding: 20px 0px 0px 10px">
+
+<script type="text/javascript">
+  GA_googleFillSlot("Tips_Right_GAD_160_600");
+</script>
+
+		</td>
+
+<!-- END ADS -->
+
+	</tr>
+    
+</table>
+
+<script type="text/javascript">
+function format_link()
+{
+	alert('test');
+}
+function resize_images(image)
+{
+	if ( image.width > 300 ) {
+		image.width = 300;
+		image.onclick = function() {
+			window.open( image.src );
+		}
+		image.style.cursor = 'pointer';
+		image.title = "Click to enlarge";
+	}
+}
+//
+function check_user_form()
+{
+	if ( document.getElementById("id_comment_body").value == "" )
+	{
+		alert('Please enter comment body.');
+		return false;
+	}
+	bbstyle(-1);
+	return true;
+}
+</script>
+
+<script type="text/javascript">
+var timeObj        = new Date;
+var unixTimeMs   = timeObj.getTime();
+var unixTime      = parseInt(unixTimeMs / 1000);
+var orderID        = pageTracker._visitCode() + '-' + unixTime;
+
+pageTracker._addTrans(
+      orderID, // required
+      "",
+      "0.01",
+      "",
+      "",
+      "",
+      "",
+      ""
+); 
+
+pageTracker._addItem(
+      orderID, // required
+      "Tip",
+      "Tip Page",
+      "Tip Page",
+      "0.01",  // required
+      "1"   //required
+); 
+
+pageTracker._trackTrans();
+</script>
+
+
+
+</td>
+
+														</tr>
+                                                	</table>
+                                                </td>
+												
+											</tr>
+                                            
+                                <!-- END CORE -->                                                                                     
+                                        </table>
+                                    </td>
+                                    
+                                    <td style="background:url(_tpl/img/border_right.gif);background-repeat:repeat-y;background-position:top right;">&nbsp;												
+                                    
+                                    </td>
+                                    
+                                </tr>
+                                
+                                <tr><td colspan="4" align="center" ><img alt="-" src="_tpl/img/border_bottom.gif" border="0" /></td></tr>
+                                
+                            </table>
+
+                            <table class="footer">
+<tr><td align="center" >
+<a href="index.php?_ms=about_us" rel="nofollow"  class="link_footer">Our Mission</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="index.php?_ms=news" rel="nofollow"  class="link_footer">In the News</a>&nbsp;&nbsp;|&nbsp;&nbsp; 
+<a href="index.php?_ms=privacy" rel="nofollow" class="link_footer">Privacy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="index.php?_ms=terms_of_use" rel="nofollow" class="link_footer">Terms of Use</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="index.php?_ms=contact_us" rel="nofollow" class="link_footer">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="/_ws_Tips__ms_newsletter_.html" rel="nofollow" class="link_footer">Subscribe</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="index.php?_ws=Tips&_ms=unsubscribe_form" rel="nofollow" class="link_footer">Unsubscribe</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+<a href="http://feeds.feedburner.com/tiphero" rel="nofollow" class="link_footer">RSS</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Ftiphero&amp;layout=button_count&amp;show_faces=false&amp;width=50&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+
+</td></tr>
+
+<tr><td align="center">&copy; 2008-2011 Tipedia LLC. &nbsp;&nbsp;|&nbsp;&nbsp; All Rights Reserved.</td></tr>
+
+
+</table>
+                            
+                        </div>
+                    </div>
+                    
+				<script type="text/javascript">
+				(function() {
+				var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+				s.type = 'text/javascript';
+				s.async = true;
+				s.src = 'http://widgets.digg.com/buttons.js';
+				s1.parentNode.insertBefore(s, s1);
+				})();
+				</script>                              
+                    
+                </body>
+                </html>

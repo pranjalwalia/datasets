@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Pure Sleep</title>
+<!-- external style sheets-->
+<link href="../style/new-style.css" rel="stylesheet" type="text/css" />
+<!--end external style sheets-->
+
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+<!--Window Popup-->
+<script type="text/javascript"><!--  
+/* Script by: www.jtricks.com 
+ * Version: 20100515 
+ * Latest version: 
+ * www.jtricks.com/javascript/window/box.html 
+ */  
+// Moves the box object to be directly beneath an object.  
+function move_box(an, box)  
+{  
+    var cleft = 10;  
+    var ctop = 0;  
+    var obj = an;  
+  
+    while (obj.offsetParent)  
+    {  
+        cleft += obj.offsetLeft;  
+        ctop += obj.offsetTop;  
+        obj = obj.offsetParent;  
+    }  
+  
+    box.style.center = cleft + '%';  
+  
+    ctop += an.offsetHeight + 8;  
+  
+    // Handle Internet Explorer body margins,  
+    // which affect normal document, but not  
+    // absolute-positioned stuff.  
+    if (document.body.currentStyle &&  
+        document.body.currentStyle['marginTop'])  
+    {  
+        ctop += parseInt(  
+            document.body.currentStyle['marginTop']);  
+    }  
+  
+    box.style.top = ctop + 'px';  
+}  
+  
+// Shows a box if it wasn't shown yet or is hidden  
+// or hides it if it is currently shown  
+function show_hide_box(an, width, height, borderStyle)  
+{  
+    var href = an.href;  
+    var boxdiv = document.getElementById(href);  
+  
+    if (boxdiv != null)  
+    {  
+        if (boxdiv.style.display=='none')  
+        {  
+            // Show existing box, move it  
+            // if document changed layout  
+            move_box(an, boxdiv);  
+            boxdiv.style.display='block';  
+  
+            bringToFront(boxdiv);  
+  
+            // Workaround for Konqueror/Safari  
+            if (!boxdiv.contents.contentWindow)  
+                boxdiv.contents.src = href;  
+        }  
+        else  
+            // Hide currently shown box.  
+            boxdiv.style.display='none';  
+        return false;  
+    }  
+  
+    // Create box object through DOM  
+    boxdiv = document.createElement('div');  
+  
+    // Assign id equalling to the document it will show  
+    boxdiv.setAttribute('id', href);  
+  
+    boxdiv.style.display = 'block';  
+    boxdiv.style.position = 'absolute';  
+    boxdiv.style.width = width + 'px';  
+    boxdiv.style.height = height + 'px';  
+    boxdiv.style.border = borderStyle;  
+    boxdiv.style.textAlign = 'right';  
+    boxdiv.style.padding = '4px';  
+    boxdiv.style.background = '#FFFFFF';  
+    document.body.appendChild(boxdiv);  
+    bringToFront(boxdiv);  
+  
+    var offset = 0;  
+  
+    // Remove the following code if 'Close' hyperlink  
+    // is not needed.  
+    var close_href = document.createElement('a');  
+    close_href.href = 'javascript:void(0);';  
+    close_href.onclick = function()  
+        { show_hide_box(an, width, height, borderStyle); }  
+    close_href.appendChild(document.createTextNode('Close'));  
+    boxdiv.appendChild(close_href);  
+    offset = close_href.offsetHeight;  
+    // End of 'Close' hyperlink code.  
+  
+    var contents = document.createElement('iframe');  
+    //contents.scrolling = 'no';  
+    contents.overflowX = 'hidden';  
+    contents.overflowY = 'scroll';  
+    contents.frameBorder = '0';  
+    contents.style.width = width + 'px';  
+    contents.style.height = (height - offset) + 'px';  
+  
+    boxdiv.contents = contents;  
+    boxdiv.appendChild(contents);  
+  
+    move_box(an, boxdiv);  
+  
+    if (contents.contentWindow)  
+        contents.contentWindow.document.location.replace(  
+            href);  
+    else  
+        contents.src = href;  
+  
+    // The script has successfully shown the box,  
+    // prevent hyperlink navigation.  
+    return false;  
+}  
+  
+function getAbsoluteDivs()  
+{  
+    var arr = new Array();  
+    var all_divs = document.body.getElementsByTagName("DIV");  
+    var j = 0;  
+  
+    for (i = 0; i < all_divs.length; i++)  
+        if (all_divs.item(i).style.position=='absolute')  
+        {  
+            arr[j] = all_divs.item(i);  
+            j++;  
+        }  
+  
+    return arr;  
+}  
+  
+function bringToFront(obj)  
+{  
+    if (!document.getElementsByTagName)  
+        return;  
+  
+
+
+    var divs = getAbsoluteDivs();  
+    var max_index = 0;  
+    var cur_index;  
+  
+    // Compute the maximal z-index of  
+    // other absolute-positioned divs  
+    for (i = 0; i < divs.length; i++)  
+    {  
+        var item = divs[i];  
+        if (item == obj ||  
+            item.style.zIndex == '')  
+            continue;  
+  
+        cur_index = parseInt(item.style.zIndex);  
+        if (max_index < cur_index)  
+        {  
+            max_index = cur_index;  
+        }  
+    }  
+  
+    obj.style.zIndex = max_index + 100;  
+}  
+  
+//--></script>  
+<!--END Window Popup-->
+
+</script>
+
+<!--Window Popup-->
+<script language="javascript" type="text/javascript">
+<!--
+function popitup(url) {
+	newwindow=window.open(url,'name','top=100,left=900,height=600,width=370');
+	if (window.focus) {newwindow.focus()}
+	return false;
+}
+
+// -->
+</script>
+<!--internal style sheets--> 
+<style type="text/css"> 
+body,td,th {  
+	font-size: 12px; 
+}
+#title{
+	position:absolute;
+	top:0px;
+	left:10px;
+	height:auto;
+	width:auto;
+	z-index:2;
+	font-size:34px;
+	color:#CCC;
+}
+h1{
+	margin-top:0px;
+}
+h3{
+	margin-bottom:3px;
+	margin-top:13px;
+}
+#subtitle{
+	color:#4c6d8b;
+	position:absolute;
+	top:65px;
+	left:10px;
+	height:auto;
+	width:auto;
+	z-index:2;
+	font-size:20px;
+}
+#text{
+	position:absolute;
+	top:354px;
+	right:31px;
+	height:auto;
+	width:400px;
+	z-index:2;
+	text-align:justify;
+	background-image:url(../Images/every-issue/see-through/white-50.png);
+	padding-left:6px;
+	padding-right:6px;
+}
+</style>
+<!--end internal style sheets-->
+</head>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9106422-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><body>
+<!--menu-->
+<div id="full-banner">
+<!-- Serving Code 7.9.5 for [Zone] Banner both [Any Dimension] -->
+<script type="text/javascript" src="http://g.adspeed.net/ad.php?do=js&zid=24742&wd=-1&ht=-1&target=_blank"></script>
+<!-- End -->
+</div><div id="Menu"> 
+ <table width="900" border="0">
+  <tr>
+    <td width="240"> 
+    
+   <div class="breadcrumb">
+  <span class="left"></span>
+  <ul>
+    <li><a href="../index.php">Home</a></li>
+    <li><a href="../info/archives.php">Archives</a></li>
+    <li><a href="../blog/current.php">Blog</a></li>
+    <li><a href="../info/contact-us.php">Contact Us</a></li>
+  </ul>
+  <span class="right"></span>
+</div>  </td>
+     <td>
+      <!--add facebook button here-->
+      
+<iframe src="http://www.facebook.com/plugins/like.php?href=http://www.organiclifestylemagazine.com/issue-11/pure-sleep.php&amp;layout=standard&amp;show_faces=false&amp;width=390&amp;action=like&amp;colorscheme=light&amp;height=23" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:390px; height:23px;" allowTransparency="true"></iframe>
+      
+      
+      </td>
+  <td align="right">
+	<form action="../sphider-OLM/search.php" method="get">
+ 
+<input type="text" name="query" id="query" size="20" value="" action="include/js_suggest/suggest.php" columns="2" autocomplete="off" delay="1500">	
+  
+ 
+<input type="submit" value="Search">
+ 
+<input type="hidden" name="search" value="1"> 
+	</form>	   
+ </td>
+  </tr>
+</table>
+<!--end menu-->
+</div>
+<!--end menu-->
+
+ 
+<!--magazine-->
+
+<div id="inhalt">
+<div id="window" > 
+
+<!--begin page 1-->
+   	  	<div id=win[0] class=hidden>
+   <div id="page">
+   		<img src="../Images/issue-11/pure-sleep.jpg" width="900" height="560" alt="Pure Sleep" />
+        <div id="title">  <h1>Pure Sleep </h1> </div>
+        <div id="subtitle"> <h2>10 Tips for Better Sleep </h2>  </div> 
+        <div id="text">
+          <p>&nbsp;&nbsp; When we say  pure sleep, we mean deep, peaceful, quality sleep without the use of drugs.  Lack of quality deep sleep is linked to a host of problems including  depression, obesity, poor nutrient absorption and assimilation, and overall  poor health. If your quality of sleep improves, you will wake up more easily  feeling more refreshed, have more stamina and energy during the day, and quite  likely need less sleep at night. We need deep, quality, pure sleep. On the next  page we give you ten tips for getting a better night&rsquo;s sleep.</p>
+        </div>
+   
+   <!--page turn buttons-->   
+ <div id="previousbutton"><a href="monsanto.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Previous Page','','../Images/every-issue/buttons/previous_article_down.png',1)"><img src="../Images/every-issue/buttons/previous_article.png" alt="Previous Page" name="Previous Page" width="34" height="155" border="0" id="Previous Page" /></a></div>
+	<!--previous page above, next page below-->
+ <div id="nextbutton"><a href="javascript:showID('win[1]');" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Next Page','','../Images/every-issue/buttons/next_article_down.png',1)"><img src="../Images/every-issue/buttons/next_article.png" alt="Next Page" name="Next Page" width="34" height="155" border="0" id="Next Page" /></a></div>
+<!--end page turn buttons -->
+</div></div>		
+<!--end page 1-->
+
+<!--begin page 2-->          
+        <div id=win[1] class=hidden>
+   <div id="page">
+ 
+ 	<div id="halfcolumn">
+ 	  <h3>1. Don&rsquo;t go to sleep on a full  stomach</h3>
+      &nbsp;&nbsp;  Your body needs energy to digest food. Going to sleep on a full stomach  is bad for your digestion and can lower your quality of sleep. And you  shouldn&rsquo;t be eating enough to have a &ldquo;full&rdquo; stomach anyway.
+      <h3>2. Cut out alcohol and cut out  caffeine and other artificial stimulants </h3>
+      &nbsp;&nbsp;  While alcohol may decrease the time it takes you to fall asleep, it  actually increases the number of times you awaken in the latter half of the  night. If your sleep isn&rsquo;t restful, alcohol (beer, wine, or hard liquor) may be  the cause.<br />
+  &nbsp;&nbsp;  Artificial stimulants can affect your adrenal glands, which can affect  your energy levels during the day and your sleep at night.
+      <h3>3. Exercise</h3>
+      &nbsp;&nbsp;  Exercise during the day can help you sleep more soundly at night.
+      <h3>4. Eat a healthy diet</h3>
+      &nbsp;&nbsp;  There are many ways an unhealthy diet can affect your quality of sleep.  Eating healthy can give you more energy and a better night&rsquo;s sleep.
+      <h3>5. Get more sunlight</h3>
+      &nbsp;&nbsp;  Whether you sleep at night like most people or sleep during the day, you  need sunlight. Your body needs sunlight to produce vitamin D (which is actually  a hormone). Getting some sun on your bare skin can increase your energy and  elevate your mood. Most people do not get enough sunlight. Lack of sunlight  contributes to irritability, depression, low energy levels, and a desire for  more sleep.
+      <h3>6. Make sure you are sleeping in the  dark</h3>
+      &nbsp;&nbsp;  If you work at night and sleep during the day you need to take the steps  to  
+      <img src="../Images/every-issue/justify.png" width="273" height="1" />
+ 	</div>
+	<div id="halfcolumn2">  
+ &nbsp;<br />  &nbsp;<br />     block light out of your room. Make your room as dark as possible. Invest in  blackout shades or blackout curtains. 
+      <h3>7. Make your bed comfortable</h3>
+      &nbsp;&nbsp;  High quality sheets with a high thread count feel good on your skin and  make sleeping easier. Or maybe you prefer the touch of flannel. Comfort is  important. Comfort decreases needless tossing and turning.<br />
+  &nbsp;&nbsp;  You also need comfortable, quality pillows that cradle your head rather  than raise it. Your spine should lie straight.<br />
+  &nbsp;&nbsp;  A poor mattress will make it more difficult to get a good night&rsquo;s sleep.  Make sure your mattress is well supported with no lumps or dips.
+      <h3>8. Make your bed organic</h3>
+      &nbsp;&nbsp;  Sleep with all natural (not synthetic) materials. Better yet, sleep with  only organic, toxin free materials. Your skin needs to breathe. Synthetic  fibers do not facilitate air circulation.
+      <h3>9. Stop snoring</h3>
+       &nbsp;&nbsp; <a href="http://www.breatheright.com/" target="_blank">Breath Right</a> &reg; can help. If  you are overweight, you are more likely to snore, too. Snoring can cause you to  wake, and it certainly decreases your air flow. 
+      <h3>10. Try a humidifier</h3>
+      &nbsp;&nbsp;  If you are running your air conditioner or your heater, the air in your  house may be dry. If you wake with a sore throat, a dry nose, or have nose  bleeds, you might benefit from more humidity. Be sure to change the water  daily.  
+       <p> Sweet Dreams. <img src="../Images/every-issue/icons/olm.png" width="20" height="11" alt="OLM" /></p>
+        Also check out <a href="http://www.organiclifestylemagazine.com/issue-2/have-more-energy.php" target="_blank">10  Things You Can Do To Have More Energy</a> 
+        </div>
+
+    
+  <div id="green_header"><div id="green-title">Pure Sleep</div><div id="green-olm">Issue 11 | December/January 2009/2010</div></div>  
+    <div id="footer_copyright">Copyright &copy; 2009 Organic Lifestyle Magazine</div><div id="footer"><a href="../info/subscribe.php" onclick="window.open(this.href,'','resizable=yes,location=no,menubar=no,scrollbars=yes,status=no,toolbar=no,fullscreen=no,dependent=no,width=750,height=500,left=150,top=150,status'); return false">Subscribe for Free</a> | <a href="../../info/contact-us.php" onclick="window.open(this.href,'','resizable=no,location=no,menubar=no,scrollbars=no,status=no,toolbar=no,fullscreen=no,dependent=no,width=1050,height=auto,left=200,top=200,status'); return false">Contact Us</a></div><div id="footer_pagenumber" align="right">pg ##</div>
+    
+<!--page turn buttons-->   
+ <div id="previousbutton"><a href="javascript:showID('win[0]');" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('previous page2','','../Images/every-issue/buttons/previous_article_down.png',1)"><img src="../Images/every-issue/buttons/previous_article.png" alt="Previous Page" name="previous page2" width="34" height="155" border="0" id="previous page2" /></a></div>
+	<!--previous page above, next page below-->
+ <div id="nextbutton"><a href="javascript:showID('win[2]');" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('next page2','','../Images/every-issue/buttons/next_article_down.png',1)"><img src="../Images/every-issue/buttons/next_article.png" alt="Next Page" name="next page2" width="34" height="155" border="0" id="next page2" /></a></div>
+<!--end page turn buttons -->
+</div></div>		
+<!--end page 2-->
+
+<!--begin page 3-->          
+        <div id=win[2] class=hidden>
+   <div id="page">
+ <!-- Serving Code 7.9.5 for [Zone] Full Page both [Any Dimension] -->
+<script type="text/javascript" src="http://g.adspeed.net/ad.php?do=js&zid=24741&wd=-1&ht=-1&target=_blank"></script>
+<!-- End --> 
+     
+<!--page turn buttons-->   
+ <div id="previousbutton"><a href="javascript:showID('win[1]');" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('previouspage3','','../Images/every-issue/buttons/previous_article_down.png',1)"><img src="../Images/every-issue/buttons/previous_article.png" alt="Previous Page" name="previouspage3" width="34" height="155" border="0" id="previouspage3" /></a></div>
+	<!--previous page above, next page below-->
+ <div id="nextbutton"><a href="organic-home.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('nextpage3','','../Images/every-issue/buttons/next_article_down.png',1)"><img src="../Images/every-issue/buttons/next_article.png" alt="Next Page" name="nextpage3" width="34" height="155" border="0" id="nextpage3" /></a></div>
+<!--end page turn buttons -->
+</div></div>		
+<!--end page 3-->
+ 
+<!--pages script-->
+<script>
+function showID(it) {
+  var item = document.getElementById(it);
+   document.getElementById('win[0]').className='hidden'
+   document.getElementById('win[1]').className='hidden'
+   document.getElementById('win[2]').className='hidden'
+   
+  item.className='unhidden';
+}
+showID('win[0]');
+</script>
+
+<style>
+.hidden {
+    display         : none;
+}
+.unhidden {
+    display         : block;
+}
+</style></div>
+<!--end pages script--><!--google adsense-->
+<div id="adsense">
+<script type="text/javascript"><!--
+google_ad_client = "pub-9272042679772685";
+/* 728x15, created 8/1/09 */
+google_ad_slot = "4255959342";
+google_ad_width = 900;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<!--end adsense--> <!--socail media-->
+<div id="socialmedia"><table width="900" cellpadding="1">
+   <td>&nbsp;</td>
+  <!--SU--><td><script src="http://www.stumbleupon.com/hostedbadge.php?s=1"></script></td>
+  <!--digg--><td><script src="http://widgets.digg.com/buttons.js" type="text/javascript"></script><a class="DiggThisButton DiggCompact"></a> </td>
+  <!--facebook--><td><a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php">Share</a><script
+src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script> </td>
+  <!--Google Buzz--><td><a title="Post on Google Buzz" class="google-buzz-button" href="http://www.google.com/buzz/post" data-button-style="small-count"></a>
+<script type="text/javascript" src="http://www.google.com/buzz/api/button.js"></script></td>
+  <!--tweetme--><td><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="OrganicLife" data-related="Green_Lifestyle:Sister Publication">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></td>
+    
+    <td><div class="follow-us">Follow Us!</div></td>
+    <!--Follow Us-->
+    
+    <td width="46"><a href="http://www.facebook.com/organiclifestyle" target="_blank"><img src="../Images/every-issue/buttons/facebook-32x32.png" width="32" height="32" alt="facebook" /></a></td> 
+    <td width="46"><a href="http://www.twitter.com/OrganicLife" target="_blank"><img src="../Images/every-issue/buttons/twitter-32x32.png" alt="Follow jmichaeledwards on Twitter" width="32" height="32"/></a></td> 
+    <td width="46"><a href="http://digg.com/OrganicLife" target="_blank"><img src="../Images/every-issue/buttons/digg-32x32.png" width="32" height="32" alt="Digg" /></a></td> 
+    <td width="46"><a href="../info/pick-subscription.php" onclick="window.open
+(this.href,'','resizable=no,location=no,menubar=no,scrollbars=no,status=no,toolbar=no,fullscreen=no,dependent=no,width=610,height=
+500,left=200,top=200,status'); return false"><img src="../Images/every-issue/buttons/email-32x32.png" width="32" height="32" 
+alt="Subscribe via Email" /></a></td>
+    <td width="46"><a href="../subscribe.rss" onclick="window.open
+(this.href,'','location=no,status=no,scrollbars=yes,dependent=no,width=1050,height=700,left=20,top=20,status'); return false"><img 
+src="../Images/every-issue/buttons/feed-32x32.png" width="32" height="32" alt="RSS Feed" /></a></td> </tr>
+</table>
+</div>
+<!--end socail media-->
+<div id="letterboard-ad"> 
+<!-- Serving Code 7.9.5 for [Zone] Leaderboard both [Any Dimension] -->
+<script type="text/javascript" src="http://g.adspeed.net/ad.php?do=js&zid=24745&wd=-1&ht=-1&target=_blank"></script>
+<!-- End -->
+</div> <!-- Disqus commenting-->
+<div id="Comenting">
+<div id="Comenting-disqus">
+<div id="disqus_thread"></div><script type="text/javascript" src="http://disqus.com/forums/organiclifestyle/embed.js"></script><noscript><a href="http://organiclifestyle.disqus.com/?url=ref">View the discussion thread.</a></noscript><a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+
+<div id="Comenting-facebook">
+
+<script src=
+"http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php" 
+type="text/javascript"></script>
+
+<fb:comments></fb:comments>
+
+<script type="text/javascript">
+FB.init("8c3892298c95340654f6b9c5f064ebfa", "<path from web root>/xd_receiver.htm");
+</script>
+</div>
+<!-- end Disqus commenting--></div>
+<!--side menu-->
+<div id="mag-menu">
+<a href="cover.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('cover','','../Images/every-issue/buttons/cover-side-down-menu.png',1)"><img src="../Images/every-issue/buttons/cover-side-menu.png" alt="Cover" name="cover" width="34" height="155" border="0" id="cover" /></a>
+<br />
+<a href="contents.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('contents','','../Images/every-issue/buttons/contents-side-down-menu.png',1)"><img src="../Images/every-issue/buttons/contents-side-menu.png" alt="Contents" name="contents" width="34" height="155" border="0" id="contents" /></a>
+<br />
+
+<a href="../info/subscribe.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image1','','../Images/every-issue/buttons/subscribe-side-down-menu.png',1)" onclick="window.open(this.href,'','resizable=yes,location=no,menubar=no,scrollbars=yes,status=no,toolbar=no,fullscreen=no,dependent=no,width=620,height=500,left=150,top=150,status'); return false"><img src="../Images/every-issue/buttons/subscribe-side-menu.png" alt="Subscribe" name="Image1" width="34" height="155" border="0" id="Image1" /></a>
+<br />
+
+<a href="contributors.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('contributors','','../Images/every-issue/buttons/contributors-side-menu-down.png',1)"><img src="../Images/every-issue/buttons/contributors-side-menu.png" alt="Contributors" name="contributors" width="34" height="155" border="0" id="contributors" /></a></div>
+<!--end side menu-->
+
+<div id="facebook-recomendations">
+
+ <a href="../includes/facebook-recomendations.php" onclick="return show_hide_box(this, 340, 540, '2px solid')"> <img src="../Images/every-issue/icons/facebook-recomendations.png" alt="facebook recomendations" width="45" height="157" align="middle" /></a>
+
+</div>
+
+<div id="facebook-fanpage-popup">
+
+ <a href="../includes/facebook-fanpage.php" onclick="return show_hide_box(this, 340, 540, '2px solid')"> <img src="../Images/every-issue/icons/fan-page-popup.png" alt="facebook Fan Page" width="45" height="157" align="middle" /></a>
+
+</div>
+
+<div id="twitter-feed-popup">
+
+<a href="../includes/twitter-tweets.php" onclick="return popitup('../includes/twitter-tweets.php')"> <img src="../Images/every-issue/icons/twitter-feed.png" alt="twitter feed" width="45" height="157" align="middle" /></a>
+
+</div><!-- Start Quantcast tag -->
+<script type="text/javascript">
+_qoptions={
+qacct:"p-471uxSyc6t6XI"
+};
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-471uxSyc6t6XI.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast tag -->
+</body>
+</html>

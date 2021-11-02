@@ -1,0 +1,850 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+    
+   <head> 
+
+<!-- JAVASCRIPTS-->
+
+<script type="text/javascript" src="/wp-content/themes/l-rocks-theme/js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="/wp-content/themes/l-rocks-theme/js/jquery.scrollTo-min.js"></script>
+<script type="text/javascript" src="/wp-content/themes/l-rocks-theme/js/jquery.bgpos.js"></script>
+<script type="text/javascript" src="/wp-content/themes/l-rocks-theme/js/jquery.bgcolor.js"></script>
+<script type="text/javascript" src="/wp-content/themes/l-rocks-theme/js/cufon.js"></script>
+<script type="text/javascript" src="/wp-content/themes/l-rocks-theme/js/Helvetica_700.font.js"></script>
+
+
+<!--  CUFON TEXT  -->
+
+<script type="text/javascript">
+			Cufon.replace('.page_item a', {
+	hover: true
+});
+
+			Cufon.replace('.current_page_item ');
+			Cufon.replace('h1.entry-title ');
+					Cufon.replace('#footer-nav a', {
+	hover: true
+});
+Cufon.replace('#footer h3');
+Cufon.replace('.main-aside h3 ');
+Cufon.replace('body.slug-say-hello h3 ');
+Cufon.replace('body.slug-shop h3 ');
+Cufon.replace('.slug-archives .content-column h2 ');
+Cufon.replace('.slug-archives #container h1 ');
+Cufon.replace('.slug-archives #container h2, .archive #container h2, .archive .post h2, .search .post h2, .search .portfolio h2, .search .page .entry-title, .home .post h2,.post-title h1 a, #comments h3 ');
+
+		</script>
+        
+<!-- NAVIGATION SCRIPTS -->
+        
+        <script type="text/javascript">
+$(function(){
+	$('#menu .page_item a#homebtn')
+		.css( {backgroundPosition: "20px -30px"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundPosition:"(20px 0px)"}, {duration:100})
+		})
+		.mouseout(function(){
+			$(this).stop().animate({backgroundPosition:"(20px 0px)"}, {duration:600, complete:function(){
+				$(this).css({backgroundPosition: "20px -30px"})
+			}})
+		})
+			$('#menu .page_item a#aboutbtn')
+		.css( {backgroundPosition: "20px -30px"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundPosition:"(20px 0px)"}, {duration:100})
+			
+		})
+		.mouseout(function(){
+		$(this).stop().animate({backgroundPosition:"(20px -30px)"}, {duration:600})
+		})
+			$('#menu .page_item a#archivesbtn')
+		.css( {backgroundPosition: "30px -30px"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundPosition:"(30px 0px)"}, {duration:100})
+		})
+		.mouseout(function(){
+		$(this).stop().animate({backgroundPosition:"(30px -30px)"}, {duration:600})
+		})
+			$('#menu .page_item a#portfoliobtn')
+		.css( {backgroundPosition: "28px -30px"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundPosition:"(28px 0px)"}, {duration:100})
+		})
+		.mouseout(function(){
+	$(this).stop().animate({backgroundPosition:"(28px -30px)"}, {duration:600})
+		})
+			$('#menu .page_item a#photosbtn')
+		.css( {backgroundPosition: "23px -30px"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundPosition:"(23px 0px)"}, {duration:100})
+		})
+		.mouseout(function(){
+	$(this).stop().animate({backgroundPosition:"(23px -30px)"}, {duration:600})
+		})
+		
+		 /****SHOP BUTTON*****/
+			$('#menu .page_item a#shopbtn')
+		.css( {backgroundPosition: "18px -30px"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundPosition:"(18px 0px)"}, {duration:100})
+
+		})
+		.mouseout(function(){
+		$(this).stop().animate({backgroundPosition:"(18px -30px)"}, {duration:600})
+
+		})
+		
+		 /****SAY HELLO*****/
+			$('#menu .page_item a#hellobtn') 
+		.css( {backgroundPosition: "32px -30px"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundPosition:"(32px 0px)"}, {duration:100})
+         
+		})
+		.mouseout(function(){
+			$(this).stop().animate({backgroundPosition:"(32px -30px)"}, {duration:600})
+           
+		})
+		
+		/****MAIN LOGO*****/
+				$('#blog-title span') 
+		.css( {backgroundPosition: "0px -107px"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundPosition:"(0px 8px)"}, {duration:500})
+		})
+		.mouseout(function(){
+			$(this).stop().animate({backgroundPosition:"(0px -107px)"}, {duration:200})
+		})
+		
+
+        /****POST*****/
+
+		$('body.slug-portfolio #content .post') 
+		.css( {backgroundColor: "white"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundColor:"black"}, {duration:200})
+			
+		})
+		.mouseout(function(){
+			$(this).stop().animate({backgroundColor:"white"}, {duration:800})
+			
+		})
+		        /****PHOTO-BG*****/
+
+		$('#falbum-wrapper .falbum-album') 
+		.css( {backgroundColor: "white"} )
+		.mouseover(function(){
+			$(this).stop().animate({backgroundColor:"black"}, {duration:200})
+			
+		})
+		.mouseout(function(){
+			$(this).stop().animate({backgroundColor:"white"}, {duration:800})
+			
+		})
+		
+		
+		
+		
+	
+		
+});
+</script>
+
+<!-- TO TOP BUTTON -->
+ 
+ <script type="text/javascript">  
+   $(function () {  
+     $(window).scroll(function () {  
+          if ($(this).scrollTop() != 0) {  
+             $('#toTop').fadeIn();  
+         } else {  
+            $('#toTop').fadeOut();  
+         }  
+    });  
+     $('#toTop').click(function () {  
+         $('body,html').animate({  
+             scrollTop: 0  
+          },  
+          800);  
+      });  
+  });  
+  </script> 
+  
+<!-- IF IS ALBUM PAGE -->
+
+            <title>Larissa Meek  &raquo; Blog Archive   &raquo; 26 Cakes Perfect for Geeks</title>
+       
+      
+  <!-- ACTIVE NAV FOR PORTFOLIO SUB PAGES--> 
+
+	      
+     
+     	      
+<!-- END --> 
+    
+    	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<meta name="robots" content="index,follow" />
+
+	<link rel="canonical" href="http://larissameek.com/2009/01/12/26-cakes-perfect-for-geeks/" />
+
+	<link rel="stylesheet" type="text/css" href="http://larissameek.com/wp-content/themes/l-rocks-theme/style.css" />
+
+	<link rel="alternate" type="application/rss+xml" href="http://larissameek.com/feed/" title="Larissa Meek Posts RSS feed" />
+	<link rel="alternate" type="application/rss+xml" href="http://larissameek.com/comments/feed/" title="Larissa Meek Comments RSS feed" />
+
+	<link rel="pingback" href="http://larissameek.com/xmlrpc.php" />
+
+<link rel="alternate" type="application/rss+xml" title="Larissa Meek &raquo; 26 Cakes Perfect for Geeks Comments Feed" href="http://larissameek.com/2009/01/12/26-cakes-perfect-for-geeks/feed/" />
+<link rel='stylesheet' id='wp-advertiser-footer-theme-css-css'  href='http://larissameek.com/wp-content/plugins/wp-footer-ad/css/wp-theme.css?ver=3.0.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css'  href='http://larissameek.com/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' type='text/css' media='all' />
+<script type='text/javascript' src='http://larissameek.com/wp-includes/js/jquery/jquery.js?ver=1.4.2'></script>
+<script type='text/javascript' src='http://larissameek.com/wp-content/plugins/wordpress-toolbar/wp-toolbar.min.js?ver=2.2.3'></script>
+<script type='text/javascript' src='http://larissameek.com/wp-content/plugins/wp-footer-ad/js/jquery.tools.min.js?ver=3.0.1'></script>
+<script type='text/javascript' src='http://larissameek.com/wp-content/plugins/wp-footer-ad/js/jquery.wp-theme.js?ver=3.0.1'></script>
+<script type='text/javascript' src='http://larissameek.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<script type='text/javascript' src='http://larissameek.com/wp-content/plugins/image-gallery-reloaded/image-gallery-reloaded.js?ver=3.0.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://larissameek.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://larissameek.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Larissa Meek' href='http://larissameek.com/' />
+<link rel='start' title='Using a bowling ball to clean potato chips out of a trash can' href='http://larissameek.com/2006/05/21/using-a-bowling-ball-to-clean-potato-chips-out-of-a-trash-can/' />
+<link rel='prev' title='Insane Stop Motion Animation in a World of Books' href='http://larissameek.com/2009/01/07/insane-stop-motion-animation-in-a-world-of-books/' />
+<link rel='next' title='If you are ever in a talent show&#8230; DO THIS!' href='http://larissameek.com/2009/01/15/if-you-are-ever-in-a-talent-show-do-this/' />
+
+<link rel='canonical' href='http://larissameek.com/2009/01/12/26-cakes-perfect-for-geeks/' />
+<link rel='shortlink' href='http://wp.me/pZutK-i3' />
+<meta name='FAlbum' content='0.7.1' />
+<link rel='stylesheet' href='http://larissameek.com/wp-content/plugins/falbum/styles/default/falbum.css' type='text/css' />
+
+  <!-- Last.Fm Records start -->
+  <script type='text/javascript' src='http://larissameek.com/wp-content/plugins/lastfm-records/last.fm.records.js'></script>
+  <script type='text/javascript'>
+    var _config = { username: 'mizlame',
+                    placeholder: 'lastfmrecords',
+                    defaultthumb: 'http://cdn.last.fm/depth/catalogue/noimage/cover_85px.gif',
+                    count: 3,
+                    period: '3month',
+                    refresh: 10,
+                    offset: +0
+                  };
+    jQuery(document).ready( function() {
+      lastFmRecords.init(_config);
+    });
+  </script>
+  <!-- Last.Fm Records end -->
+
+<meta name="tweetmeme-title" content="26 Cakes Perfect for Geeks" />
+	<script type="text/javascript" src="http://larissameek.com/wp-content/themes/thematic/library/scripts/hoverIntent.js"></script>
+	<script type="text/javascript" src="http://larissameek.com/wp-content/themes/thematic/library/scripts/superfish.js"></script>
+	<script type="text/javascript" src="http://larissameek.com/wp-content/themes/thematic/library/scripts/supersubs.js"></script>
+
+	<script type="text/javascript">
+		jQuery.noConflict();
+	</script>
+	<script type='text/javascript'>
+/*<![CDATA[*/
+jQuery(function($){jQuery('.gallery').addClass('gallery_reloaded');jQuery('ul.gallery_reloaded').gallery_reloaded({history:false,clickNext:true,insert:'.main_image',onImage:function(a,b,c){a.css('display','none').fadeIn(1000);b.css('display','none').fadeIn(1000);var d=c.parents('li');d.siblings().children('img.selected').fadeTo(500,0.5);c.fadeTo('fast',1).addClass('selected');a.attr('title','Next image >>')},onThumb:function(a){var b=a.parents('li');var c=b.is('.active')?'1':'0.5';a.css({display:'none',opacity:c}).fadeIn(500);a.hover(function(){a.fadeTo('fast',1)},function(){b.not('.active').children('img').fadeTo('fast',0.5)})}});jQuery('ul.gallery_reloaded li:first-child').addClass('active')});function makeScrollable(j,k){var j=jQuery(j),k=jQuery(k);k.hide();var l=jQuery('<div class=loading>Loading Gallery...</div>').appendTo(j);var m=setInterval(function(){var a=k.find('img');var b=0;a.each(function(){if(this.complete)b++});if(b==a.length){clearInterval(m);setTimeout(function(){l.hide();j.css({overflow:'hidden'});k.slideDown('slow',function(){enable()})},1000)}},100);function enable(){var c=50;var d=j.width();var f=j.height();var g=k.outerWidth()+2*c;var h=j.offset();j.css({overflow:'hidden'});var i=k.find('li:last-child');j.mousemove(function(e){var a=i[0].offsetLeft+i.outerWidth()+c;var b=(e.pageX-j.offset().left)*(a-d)/d-c;if(b<0){b=0}j.scrollLeft(b)})}}jQuery(function(jQuery){makeScrollable('div.gholder','ul.gallery_reloaded')});this.gr_tooltip=function(){xOffset=10;yOffset=20;jQuery("div.gbackgr img").hover(function(e){this.t=this.title;this.alt = this.t;this.title = "";jQuery("body").append("<p id='gr_tooltip'>"+this.t+"</p>");jQuery("#gr_tooltip").css("top",(e.pageY-xOffset)+"px").css("left",(e.pageX+yOffset)+"px").fadeIn("fast")},function(){this.title=this.alt;jQuery("#gr_tooltip").remove()});jQuery("div.gbackgr img").mousemove(function(e){jQuery("#gr_tooltip").css("top",(e.pageY-xOffset)+"px").css("left",(e.pageX+yOffset)+"px")})};jQuery(function($){gr_tooltip()});/*]]>*/	</script>
+<!-- script type='text/javascript'>
+/*<![CDATA[*/
+jQuery(document).ready(function() {
+    jQuery('.main_image a').attr({class: "thickbox", rel: "thickbox"});
+});
+/*]]>*/
+</script -->
+<style type="text/css" media="screen">
+body {opacity .999;}
+.gbackgr {border: 5px solid #000000;width:680px;background:#000000;text-align:center;}
+.caption{color:#887777;display:block;font-style:italic;padding:0 8px 8px 0;float:left;}
+.gallery_reloaded {width:680px;margin:auto;}
+.gallery_reloaded li div .caption{font:italic 0.9em/1.4 georgia,serif;}
+.main_image {width:680px;height:auto;/*In testing - max-height:480px;*/overflow:hidden;}
+.main_image img{ margin-bottom:10px;max-width:680px;height:auto;width:auto;max-height:480px;}
+.gholder{position: relative;width: 680px;overflow: auto;/* For plugin to work on RTL sites */direction:ltr;padding: 0 0 5px 0;}
+.gallery_reloaded {width: 10000px;margin: 0 !important;padding: 0 !important;list-style: none;}
+.gallery_reloaded li {display:block;float:left;height:80px;margin:0 8px 0 0;overflow:hidden;width:80px;background:none;list-style:none;}
+.gallery_reloaded li a {display:none}
+.gallery_reloaded li div {position:absolute;display:none;top:0;left:180px}
+.gallery_reloaded li div img {cursor:pointer;height:100%;}
+.gallery_reloaded li.active div img, .gallery_reloaded li.active div {display:block}
+.gallery_reloaded li img.thumb {cursor:pointer;top:auto;left:auto;display:block;width:auto;height:auto}
+.gallery_reloaded li .caption {display:block;padding-top:.5em}
+* html .gallery_reloaded li div span {width:680px;} /* MSIE bug */
+p.gallery-nav{max-width:680px;height:30px;margin:0;padding:10px 5px 0;}
+p.gallery-nav a.back{background:url('http://larissameek.com/wp-content/plugins/image-gallery-reloaded/images/back.png') no-repeat; display:block;width:24px;height:24px;text-indent:-9999px;text-decoration:none;float:left;}
+p.gallery-nav a.forward{background:url('http://larissameek.com/wp-content/plugins/image-gallery-reloaded/images/forward.png') no-repeat; display:block;width:24px;height:24px;text-indent:-9999px;text-decoration:none;float:right;}
+.gallery_reloaded_container a{color: #666666; text-indent:-9999px; background:url('http://larissameek.com/wp-content/plugins/image-gallery-reloaded/images/larger.png') no-repeat;height:12px;width:12px;display:block;float:left;text-decoration:none;}
+#gr_tooltip{position:absolute;border:1px solid #887777;background:#000000;-moz-border-radius:5px;padding:4px 5px;color:#887777;display:none;}
+.loading{-moz-border-radius:4px;background:#000000;border:1px solid #887777;color:#887777;padding:10px;text-align:center;width:100px;}
+#TB_window a:link {color: #666666; text-indent:-9999px; background:url('http://larissameek.com/wp-content/plugins/image-gallery-reloaded/images/close.png') no-repeat;height:24px;width:24px;display:block;}
+.TB_overlayBG {background-color:#000;filter:alpha(opacity=75);-moz-opacity: 0.75;opacity: 0.75;}
+* html #TB_overlay { /* ie6 hack */position: absolute;height: expression(document.body.scrollHeight > document.body.offsetHeight ? document.body.scrollHeight : document.body.offsetHeight + 'px');}
+#TB_window {position: fixed;z-index: 102;color:#000000;display:none;top:50%;left:50%;}
+* html #TB_window { /* ie6 hack */position: absolute;margin-top: expression(0 - parseInt(this.offsetHeight / 2) + (TBWindowMargin = document.documentElement && document.documentElement.scrollTop || document.body.scrollTop) + 'px');}
+#TB_window img#TB_Image {border: 4px solid #000000;}
+#TB_caption{height:25px;padding:7px 10px 10px 12px;float:left;color:#887777;}
+#TB_closeWindow{float:right;height:25px;padding:4px 9px 10px 0;color:#887777;}
+</style><!--  END HEAD -->
+
+</head>
+
+<body class="wordpress y2010 m11 d24 h16 singular slug-26-cakes-perfect-for-geeks single postid-1119 s-y2009 s-m01 s-d12 s-h04 s-category-elsewhere s-author-admin s-comments-closed s-pings-closed windows firefox ff3 " >
+
+ <div id="dynatip">&nbsp;</div>
+
+<div id="wrapper" class="hfeed">
+
+<div id="follow" class="dyna">
+
+    <div style="width:980px; margin:0px auto;">  
+    
+    <div class="fltlft"><a href="http://feeds.feedburner.com/larissameek" class="rss-icon no_icon" title="RSS Feed">RSS</a> </div> 
+      
+      
+      <div class="fltrt"><span class="txt"> elsewhere:</span> <a href="http://www.linkedin.com/in/larissameek"  target="_blank" class="linkedin-icon no_icon" title="Linked In">Linked in</a> <a href="http://www.behance.net/larissameek" target="_blank" lang="behance-icon" title="Behance Network" class="behance-icon no_icon">Behance</a> <a href="http://www.last.fm/user/mizlame" target="_blank" class="lastfm-icon no_icon" title="Last.fm">Last.fm</a> <a href="http://www.youtube.com/user/mizlame" target="_blank" class="youtubeicon no_icon" title="YouTube">You Tube</a> <a href="http://www.facebook.com/#/larissameek?ref=profile" target="_blank" class="facebook-icon no_icon" title="Facebook">FaceBook</a> <a href="http://twitter.com/larissameek" target="_blank" class="twitter-icon no_icon" title="6425 Twitter followers">Twitter</a> <a href="http://flickr.com/larissa-meek" target="_blank" class="flickr-icon no_icon" title="Flickr">Flickr</a> <a href="http://dribbble.com/players/larissameek" target="_blank" class="dribbble-icon no_icon" title="Dribbble">Dribbble</a></div>
+      </div>
+
+      </div>
+             <div class="feedburner">  <a href="http://feeds.feedburner.com/LarissaMeek"><img src="http://feeds.feedburner.com/~fc/LarissaMeek?bg=333333&amp;fg=FFFFFF&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
+   </div>
+
+    <div id="header">
+        		    	<div id="branding">
+				    		<div id="blog-title"><span><a href="http://larissameek.com/" title="Larissa Meek" rel="home">Larissa Meek</a></span></div>
+			
+		    		<div id="blog-description">Artist + Web Geek</div>
+		    				    	</div><!--  #branding -->
+				    	<div id="access">
+		    		<div class="skip-link"><a href="#content" title="Skip navigation to the content">Skip to content</a></div>
+		            
+
+<div id="menu">
+ 
+<ul class="sf-menu">
+
+<li class="page_item"><a href="http://larissameek.com/"  id="homebtn">Home</a></li>
+	<li class="page_item"><a href="http://larissameek.com/about/" id="aboutbtn">About</a></li>
+	<li class="page_item"><a href="http://larissameek.com/archives/"  id="archivesbtn">Archives</a></li>
+    	<li class="page_item"><a href="http://larissameek.com/portfolio/" id="portfoliobtn">Portfolio</a></li>
+        	<li class="page_item left-of-logo"><a href="http://larissameek.com/photos/" title="Photos" id="photosbtn">Photos</a></li>
+                	<li class="page_item"><a href="http://larissameek.com/shop/" id="shopbtn">Shop</a></li>
+	<li class="page_item "><a href="http://larissameek.com/say-hello/"  id="hellobtn">Say&nbsp;Hello.</a></li>
+    
+    <li id="search">
+	
+	<form id="searchform" method="get" action="http://larissameek.com">
+		<div>
+			<input id="s" name="s" type="text" value="Looking for something?" onfocus="if (this.value == 'Looking for something?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Looking for something?';}" size="32" tabindex="1" />
+			<input id="searchsubmit" name="searchsubmit" type="submit" value="Search" tabindex="2" />
+		</div>
+	</form>    
+    </li>
+</ul>
+  
+
+      
+</div>
+ 
+		        </div><!-- #access -->
+		    </div><!-- #header-->
+    
+ 
+
+
+
+    
+
+    <div id="main">
+    <div class="post-title"><h1><a href="http://larissameek.com/2009/01/12/26-cakes-perfect-for-geeks/" rel="bookmark" title="Permanent Link to 26 Cakes Perfect for Geeks">26 Cakes Perfect for Geeks</a></h1>
+</div>
+<div class="post-meta-top">
+<!-- POST TITLE  -->
+
+<!-- DATE  -->
+  <div class="date">
+    Jan . 12 . 2009  </div>
+  <div class="category">posted in:
+    <a href="http://larissameek.com/category/elsewhere/" title="View all posts in elsewhere" rel="category tag">elsewhere</a>  </div>
+  <div class="tags">  
+ </div>
+
+
+ 
+ 
+  <div class="paging">
+    <span class="prev"><a href="http://larissameek.com/2009/01/07/insane-stop-motion-animation-in-a-world-of-books/">&laquo; prev</a></span> <span class="next"><a href="http://larissameek.com/2009/01/15/if-you-are-ever-in-a-talent-show-do-this/">next &raquo;</a></span>  </div>
+  
+   <div class="social"><div class="absolute">
+  <div class="tweetmeme_btn"> 
+  <script type="text/javascript">
+tweetmeme_style = 'compact';
+</script>
+<script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>
+
+</div>
+  <div class="fb-share">
+    <div id="fb_share_1" style=""><a name="fb_share" type="button_count" share_url="http://larissameek.com/2009/01/12/26-cakes-perfect-for-geeks/" href="http://www.facebook.com/sharer.php">Share</a></div><div><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>  </div>
+</div>
+</div>
+  
+  
+  
+</div>
+<div id="container">
+  <div id="content">
+        
+
+    			<div id="post-1119" class="hentry p1 post publish author-larissa category-elsewhere untagged comments-closed pings-closed y2009 m01 d12 h04 slug-26-cakes-perfect-for-geeks">
+            
+    			
+				<div class="entry-content">
+
+<p><script type="text/javascript">// <![CDATA[
+google_ad_client = "pub-8434499309764961";
+/* 336x280 - Geek Cake Post , created 9/15/10 */
+google_ad_slot = "2210665946";
+google_ad_width = 336;
+google_ad_height = 280;
+// ]]&gt;</script><br />
+<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript">
+</script><br />
+Here is the most awesome list of cakes and cupcakes (perfect for Geeks).</p>
+<h3>1. Geek Cupcakes!!! Too Cute!</h3>
+<p><img class="alignnone" src="http://farm4.static.flickr.com/3150/3091796410_b6618b3128.jpg?v=0" alt="" width="500" height="375" /></p>
+<p>These are by far my favorite cupcakes EVER! How cute are the pencil protectors, taped glasses and compasses? Yummo!  Made by <a href="http://www.flickr.com/photos/nickisalbum/3091796410/in/photostream/" target="_blank">Hey There, Cupcake!</a> found on Flickr.</p>
+<h3>2.  <span style="text-decoration: line-through;">R2D2</span> Cake Updated: R2M5 Cake</h3>
+<p><img class="alignnone size-full wp-image-1126" title="img_2076-for-ben" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/01/img_2076-for-ben.jpg" alt="img_2076-for-ben" width="404" height="500" /></p>
+<p><span class="asset-body">Mark Randazzo, who has a  bakery, <a href="http://www.markjosephcakes.com/" target="new">Mark Joseph Cakes</a>, got a lot of buzz for his cake-making skills on </span><span class="asset-body">BoingBoing, Gizmodo, Elite Choice and more.  Now, you can get the instructions on how to make your very own <span style="text-decoration: line-through;">R2D2</span> </span>R2M5 <span class="asset-body">cake at <a href="http://www.bsideblog.com/2008/06/making-the-most-amazing-r2d2-c.php" target="_blank">B-Side Blog from Mark</a>. The legs are made from Rice Crispie treats too!</span></p>
+<p><span class="asset-body">*UPDATE* &#8211; Thanks everyone for pointing out this is not R2D2! I made the update and need to polish up on my Start Wars trivia.</span></p>
+<h3>3. Pacman Cupcakes</h3>
+<p><img class="alignnone" src="http://farm3.static.flickr.com/2329/2210569000_2112344183.jpg?v=0" alt="" width="500" height="473" /></p>
+<p>So these are CUPCAKES and not a cake&#8230; but too cute to resist. This is perfect for any kid who grew up in the 80&#8242;s.  From <a href="http://www.flickr.com/photos/hello_naomi/sets/72157603771581849/">Flickr user hello naomi</a> &#8211; these PacMan cupcakes look too delicious to eat.</p>
+<h3><strong>4. For the Dungeon &amp; Dragons Geek </strong><em>(via <a href="http://www.geekologie.com/2009/01/wow_just_wow_puff_the_magic_dr.php" target="_blank">Geekologie</a>)</em></h3>
+<p><img class="alignnone size-full wp-image-1120" title="Dragon Cake" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/01/john-dragon1.jpg" alt="Dragon Cake" width="500" /></p>
+<p>This delicious dragon was made by <a href="http://www.mikesamazingcakes.com/" target="_blank">Mike&#8217;s Amazing Cakes</a> for some kind of Dungeon and Dragon party.  If you can&#8217;t afford to have one made, you can try to <a href="http://www.instructables.com/id/Fire-Breathing-Dragon-Cake!!/" target="_blank">make your own dragon cake</a> &#8211; but it probably won&#8217;t be quite as amazing.</p>
+<h3><strong>5. For the Camera Geek</strong></h3>
+<p><img class="alignnone size-full wp-image-1122" title="cameracake" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/01/cameracake.jpg" alt="cameracake" width="500" height="300" /></p>
+<p>A Nikon Camera Cake (via <a href="http://www.flickr.com/photos/fsumaria/3083145269/" target="_blank">fsumaria</a>).  This cake is from a bakery in  Pennsylvania called Granny Schmidt&#8217;s. The outside was made of fondant and the inside is red velvet cake.</p>
+<h3>6. Super Mario Cake</h3>
+<p><img class="alignnone size-full wp-image-1125" title="246142953_78c54ad543" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/01/246142953_78c54ad543.jpg" alt="246142953_78c54ad543" width="400" height="500" /></p>
+<p>This cake was actually made for a wedding! I wonder if the bride was dressed as Peach. Actually, after the bride and groom went around looking for a Mario and Peach wedding topper, the bride decided to surprise the groom on their wedding day with this masterpiece. Read the full story <a href="http://vesicular.livejournal.com/123053.html" target="_blank">here</a>.</p>
+<h3>7. Wii Cake for Gamer Geeks</h3>
+<h3><img class="alignnone size-full wp-image-1124" title="wiicake" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/01/wiicake.jpg" alt="wiicake" width="500" height="300" /></h3>
+<p>Back in July, 2007 Wired Magazine&#8217;s &#8220;How To&#8221; feature included a Wii Cake that was inedible due to support structures.  However, Brian Walak actually created one that you can in fact eat &#8211; and ended up on Martha&#8217;s show.  Here&#8217;s instructions on how to make your own <a href="http://blog.wired.com/games/2007/10/how-to-make-a-w.html" target="_blank">Wii cake</a> and is another wii cake version by <a href="http://craftastica.blogspot.com/2007/04/wii-cake.html#6371699321446351232" target="_blank">craftastica</a>.  I wonder if Martha has ever even played a Wii?</p>
+<h3>8. iPhone Cake</h3>
+<p><img class="alignnone size-full wp-image-1129" title="iphone-cake" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/01/iphone-cake.jpg" alt="iphone-cake" width="500" height="300" /></p>
+<p>I love my iPhone and think this cake might just be one of the easier ones because of the simple shape.  All you need is a steady hand for the icing. [Via <a href="http://fakesteve.blogspot.com/2007/07/much-love-sugarcat-cakes.html">The Secret Diary of Steve Jobs</a>]</p>
+<h3>9. Laptop Cake</h3>
+<p><img class="alignnone size-full wp-image-1130" title="lap-top-cake" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/01/lap-top-cake.jpg" alt="lap-top-cake" width="375" height="500" /></p>
+<p>By <a href="http://www.flickr.com/photos/smallthingsiced/2689069162/in/set-72157604435890098/" target="_blank">Small Things Iced</a> &#8211; Everything is edible except for the screen, it is a chocolate cake with chocolate buttercream covered (bottom layer) with blue fondant and then the top layer (laptop) is the same but covered with grey fondant then painted silver.</p>
+<h3>10.  <span class="subj-link">Tux the Linux Penguin </span></h3>
+<p><span class="subj-link"><img class="alignnone" src="http://pics.livejournal.com/beauty_moves/pic/0011st20" alt="" width="450" height="600" /></span></p>
+<p><span class="subj-link">This one is perfect for your open source geek. See how to make your own at <a href="http://killer-cakes.livejournal.com/5510.html" target="_blank">Killer Cakes</a>.</span></p>
+<h3>11. Kindle Cake</h3>
+<p><img class="alignnone size-full wp-image-1368" title="kindle cake" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/08/kindle.jpg" alt="kindle cake" width="356" height="464" /></p>
+<p><em>Kindle</em> is a wireless reader and <a href="http://www.geeksugar.com/1117818" target="_blank">Geeksugar</a> shows you how it was made.</p>
+<h3>12. Helio Ocean Cake</h3>
+<p><img class="alignnone size-full wp-image-1131" title="helio" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/01/helio.jpg" alt="helio" width="500" height="300" /></p>
+<p>A Helio Ocean CAKE!!! This was made by a girl for her boyfriend. Details over at <a href="http://www.geeksugar.com/281225" target="_blank">GeekSugar</a>.</p>
+<h3>13. Apple, Apple Pie</h3>
+<p><img class="alignnone size-full wp-image-1132" title="pie" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/01/pie.jpg" alt="pie" width="500" height="365" /></p>
+<p>Okay, so its not a cake but who can resist apple pie? APPLE, apple pie that is!  See how it was made <a href="http://www.evilmadscientist.com/article.php/ApplePie" target="_blank">here</a>.</p>
+<h3>14. Mario Kart Wedding Cake</h3>
+<p><img class="alignnone size-full wp-image-1369" title="mariokart" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/08/mariokart.jpg" alt="mariokart" width="365" height="550" /></p>
+<p>This Mario Kart wedding cake is simply stunning. All kinds of detailed photos can be found <a href="http://www.geeksugar.com/1720007" target="_blank">here.</a> If you are not in the market for a wedding cake, I also found this cool <a href="http://www.flickr.com/photos/debbiedoescakesnet/2905797338/in/photostream/" target="_blank">Toad/ Mario Kart cake</a> on flickr by Debbie Does Cakes.</p>
+<h3>15. Super Mario Cupcakes</h3>
+<p><img class="alignnone size-full wp-image-1370" title="mario-cupcakes" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/08/mario-cupcakes.jpg" alt="mario-cupcakes" width="500" height="430" /></p>
+<p>Continuing on the Mario theme, next up are these Super Duper <a href="http://www.geeksugar.com/813167" target="_blank">Super Mario Cupcakes</a>.  <a href="http://www.flickr.com/photos/debbiedoescakesnet/2889626001/" target="_blank">Debbie Does Cakes</a> has a nice version of Super Mario Cupcakes as well.</p>
+<h3>16. Sushi Cake (not made of fish)</h3>
+<p><img class="alignnone size-full wp-image-1133" title="sushicake" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/01/sushicake.jpg" alt="sushicake" width="500" height="542" /></p>
+<p>Found over at <a href="http://geekadelphia.com/2008/07/22/sushi-cake-delicious-not-made-of-fish/" target="_blank">geekadelphia</a>, made by  <a href="http://www.whippedbakeshop.com/" target="_blank">Zoe Lukas</a> this is made out of spiced carrot ginger cake with cream cheese icing. All those cute little details, the chopsticks, soy sauce bowl, snap peas… they aren’t plastic. Those are edible, made out of gum-paste, and the bamboo, wasabi, ginger… made out of fondant. The rice is coconut.  If you have a hankering for twinkies, check out <a href="http://www.notmartha.org/tomake/hostesssushi/" target="_blank">hostess snack cake sushi</a> or look at these <a href="http://flickr.com/photos/debbiedoescakesnet/2186261422/in/photostream/" target="_blank">stunning sushi cupcakes</a> on Flickr by Debbie Does Cakes.</p>
+<h3>17. Beer Bottle Cake for Beer Geeks</h3>
+<p><img class="alignnone size-full wp-image-1314" title="beercake" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/06/beercake.jpg" alt="beercake" width="366" height="500" /></p>
+<p>Debbie Does  Cakes is the master behind this cool <a href="http://www.flickr.com/photos/debbiedoescakesnet/2868116713/" target="_blank">Beer bottle cake</a> too. What can she NOT do?</p>
+<p>Update: I had to blur the bottle because I was told it was using a trademark even though I did not make the cake. Still it&#8217;s an amazing cake.</p>
+<h3>18. Yoda Cake for Star Wars Geeks</h3>
+<h3><img class="alignnone" src="http://farm4.static.flickr.com/3145/2893169447_6239fe5b37.jpg?v=0" alt="" width="354" height="500" /></h3>
+<p>Defies gravity, this <a href="http://www.flickr.com/photos/debbiedoescakesnet/2893169447/" target="_blank">Yoda Cake</a> Does&#8230; yes&#8230; hmm?</p>
+<h3>19. Nintendo Cake [source <a href="http://geekcake.blogspot.com/2008/08/fondant-nes.html" target="_blank">Geek Cake blog</a>]</h3>
+<p><img class="alignnone size-full wp-image-1371" title="nintendo" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/08/nintendo.jpg" alt="nintendo" width="487" height="430" /></p>
+<p>The cake is yellow, the controller is two Hershey bars with nougat between them, connected to the cake by black licorice, and the whole thing is that hard-sugar frosting.</p>
+<h3>20. Lego Cupcakes</h3>
+<p><img class="alignnone" src="http://farm3.static.flickr.com/2174/2346797680_e9cab25e85.jpg?v=1205975947" alt="" width="500" height="323" /></p>
+<p>These <a href="http://flickr.com/photos/hello_naomi/2346797680/" target="_blank">Lego cupcakes</a> are made by another Flickr baking super star <a href="http://flickr.com/photos/hello_naomi/2346797680/" target="_blank">Hello Naomi</a>.  I love playing with Legos!</p>
+<h3>21. Black Berry Cake</h3>
+<p><img class="alignnone" src="http://farm4.static.flickr.com/3191/2950874844_60dc1d943f.jpg?v=0" alt="" width="500" height="406" /></p>
+<p>Crack Berry anyone? Check out the detail on the screen and the perfect buttons. Amazing work by <a href="http://www.flickr.com/photos/debbiedoescakesnet/2950874844/in/photostream/" target="_blank">Debbie Does Cakes.</a></p>
+<h3>22. Back to the Future Geeks : The Delorean Cake</h3>
+<p><img class="alignnone" src="http://farm3.static.flickr.com/2385/2125498715_19ca994f5c.jpg?v=0" alt="" width="500" height="377" /></p>
+<p>Can i haz <a href="http://flickr.com/photos/11759027@N00/2125498715/" target="_blank">this cake</a> pleze? Who doesn&#8217;t LOVE &#8220;Back to the Future&#8221;?</p>
+<h3>23. Optimus Prime Cake [source: <a href="http://www.greatwhitesnark.com/2008/04/30/geeky-curiosity-of-the-week-optimus-prime-cake-and-the-best-30th-birthday-ever/" target="_blank">here</a>]</h3>
+<p><img class="alignnone" src="http://farm3.static.flickr.com/2224/2207133265_51de751eb7.jpg?v=0" alt="" width="500" height="375" /></p>
+<p>Transformer&#8217;s aren&#8217;t just for little kids anymore the one above was commissioned by a girl for her boyfriend&#8217;s 30th birthday and was The cake was modeled after the Robot Heroes version of Optimus Prime, the one that was released in the first wave of these toys.  Check out <a href="ttp://www.flickr.com/photos/floatingcat/sets/72157600493992206" target="_blank">this step-by-step set</a> on Flickr that show you how to make your own Optimus Prime cake.</p>
+<h3>24. Raving Rabid Cake</h3>
+<p><img class="alignnone size-full wp-image-1372" title="ravingrabbis" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/08/ravingrabbis.jpg" alt="ravingrabbis" width="375" height="500" /></p>
+<p>Raving Rabbids happens to be one of my favorite games on the Wii.  Found this cake on <a href="http://flickr.com/photos/44335127@N00/514687064/" target="_blank">Flickr</a>.</p>
+<h3>25. Gutiar Hero II Cake</h3>
+<p><img class="alignnone" src="http://farm3.static.flickr.com/2397/1963864064_e66bc907c6.jpg?v=0" alt="" width="500" height="333" /></p>
+<p>I have yet to play Gutiar Hero but my guess is that I would be horrible at it because I have a really bad ear for making music. I tried playing the violin in grade school and was always in the last chair. Anyway, if you want to make your own Guitar Hero Cake, check out this <a href="http://imnotcharming.wordpress.com/2008/07/10/bringing-back-the-past-cake-tutorial/" target="_blank">detailed tutorial</a>.</p>
+<h3>26. Mac Mini Cake</h3>
+<p><img class="alignnone size-full wp-image-1123" title="normal_macminibcake" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/01/normal_macminibcake.jpg" alt="normal_macminibcake" width="500" height="300" /></p>
+<p>This cake was made for boy&#8217;s 15th birthday. (via <a href="http://www.123macmini.com/news/story/368.html" target="_blank">here</a>)</p>
+<p><em>Update: This makes it 27 cakes.</em></p>
+<h3>27. FWA Cake (via <a href="http://twitter.com/fwa" target="_blank">@fwa</a>)</h3>
+<p><img class="alignnone size-full wp-image-1145" title="fwa2" src="http://larissameek.com.s52228.gridserver.com/wp-content/uploads/2009/01/fwa2.jpg" alt="fwa2" width="500" height="300" /></p>
+<p>The above sure could make for a good <a href="http://thefwa.com/" target="_blank">FWA</a> wallpaper inspiration. Time to get the PhotoShop skills working.</p>
+<p>Phew, that was quite a list! Do you know of any more? Please do share!!!</p>
+<script type="text/javascript">var wordpress_toolbar_urls = ["http:\/\/www.flickr.com\/photos\/nickisalbum\/3091796410\/in\/photostream\/","http:\/\/www.markjosephcakes.com\/","http:\/\/www.bsideblog.com\/2008\/06\/making-the-most-amazing-r2d2-c.php","http:\/\/www.flickr.com\/photos\/hello_naomi\/sets\/72157603771581849\/","http:\/\/www.geekologie.com\/2009\/01\/wow_just_wow_puff_the_magic_dr.php","http:\/\/www.mikesamazingcakes.com\/","http:\/\/www.instructables.com\/id\/Fire-Breathing-Dragon-Cake!!\/","http:\/\/www.flickr.com\/photos\/fsumaria\/3083145269\/","http:\/\/vesicular.livejournal.com\/123053.html","http:\/\/blog.wired.com\/games\/2007\/10\/how-to-make-a-w.html","http:\/\/craftastica.blogspot.com\/2007\/04\/wii-cake.html#6371699321446351232","http:\/\/fakesteve.blogspot.com\/2007\/07\/much-love-sugarcat-cakes.html","http:\/\/www.flickr.com\/photos\/smallthingsiced\/2689069162\/in\/set-72157604435890098\/","http:\/\/killer-cakes.livejournal.com\/5510.html","http:\/\/www.geeksugar.com\/1117818","http:\/\/www.geeksugar.com\/281225","http:\/\/www.evilmadscientist.com\/article.php\/ApplePie","http:\/\/www.geeksugar.com\/1720007","http:\/\/www.flickr.com\/photos\/debbiedoescakesnet\/2905797338\/in\/photostream\/","http:\/\/www.geeksugar.com\/813167","http:\/\/www.flickr.com\/photos\/debbiedoescakesnet\/2889626001\/","http:\/\/geekadelphia.com\/2008\/07\/22\/sushi-cake-delicious-not-made-of-fish\/","http:\/\/www.whippedbakeshop.com\/","http:\/\/www.notmartha.org\/tomake\/hostesssushi\/","http:\/\/flickr.com\/photos\/debbiedoescakesnet\/2186261422\/in\/photostream\/","http:\/\/www.flickr.com\/photos\/debbiedoescakesnet\/2868116713\/","http:\/\/www.flickr.com\/photos\/debbiedoescakesnet\/2893169447\/","http:\/\/geekcake.blogspot.com\/2008\/08\/fondant-nes.html","http:\/\/flickr.com\/photos\/hello_naomi\/2346797680\/","http:\/\/flickr.com\/photos\/hello_naomi\/2346797680\/","http:\/\/www.flickr.com\/photos\/debbiedoescakesnet\/2950874844\/in\/photostream\/","http:\/\/flickr.com\/photos\/11759027@N00\/2125498715\/","http:\/\/www.greatwhitesnark.com\/2008\/04\/30\/geeky-curiosity-of-the-week-optimus-prime-cake-and-the-best-30th-birthday-ever\/","ttp:\/\/www.flickr.com\/photos\/floatingcat\/sets\/72157600493992206","http:\/\/flickr.com\/photos\/44335127@N00\/514687064\/","http:\/\/imnotcharming.wordpress.com\/2008\/07\/10\/bringing-back-the-past-cake-tutorial\/","http:\/\/www.123macmini.com\/news\/story\/368.html","http:\/\/twitter.com\/fwa","http:\/\/thefwa.com\/"];var wordpress_toolbar_url = "http://larissameek.com/wp-content/plugins/wordpress-toolbar/toolbar.php";var wordpress_toolbar_oinw = "oinw";var wordpress_toolbar_hash = "aHR0cDovL2xhcmlzc2FtZWVrLmNvbS8yMDA5LzAxLzEyLzI2LWNha2VzLXBlcmZlY3QtZm9yLWdlZWtzLzx3cHRiPjI2IENha2VzIFBlcmZlY3QgZm9yIEdlZWtzPHdwdGI%2BaHR0cDovL2xhcmlzc2FtZWVrLmNvbTx3cHRiPkxhcmlzc2EgTWVlaw%3D%3D";</script>
+									</div>
+				<div></div><!-- .entry-utility -->
+			</div><!-- .post -->
+    
+
+    
+    <div class="post-navigation">
+     <div class="nav-previous"> &laquo; <a href="http://larissameek.com/2009/01/07/insane-stop-motion-animation-in-a-world-of-books/" rel="prev" title="Insane Stop Motion Animation in a World of Books">Insane Stop Motion Animation in a World of Books</a></div>
+ <div class="nav-next">  <a href="http://larissameek.com/2009/01/15/if-you-are-ever-in-a-talent-show-do-this/" rel="next" title="If you are ever in a talent show&#8230; DO THIS!">If you are ever in a talent show&#8230; DO THIS!</a> &raquo;</div>
+  </div>
+    <div class="more-posts">
+     <h2  class="related_post_title">Random Posts</h2><ul class="related_post"><li><a href="http://larissameek.com/2006/10/19/meeting-christian-slater-and-carmen-electra-at-the-mojo-launch-party-in-ny/" title="Meeting Christian Slater and Carmen Electra at the Mojo launch party in NY.">Meeting Christian Slater and Carmen Electra at the Mojo launch party in NY.</a></li><li><a href="http://larissameek.com/2008/01/01/happy-new-year-wicket-is-sick/" title="Happy New Year. Wicket is sick.">Happy New Year. Wicket is sick.</a></li></ul>     </div>
+    <!-- ?php thematic_navigation_below();? -->
+    			<div id="comments">
+
+
+
+
+
+				<div id="comments-list" class="comments">
+					<h3><span>109</span> Comments</h3>
+				
+					<ol>
+    	<li id="comment-6891" class="comment c c-y2010 c-m11 c-d10 c-h03 alt depth-1">
+    		<div class="comment-author vcard"><img alt='' src='http://0.gravatar.com/avatar/87d704b297515dfc07162acc989c864e?s=80&amp;d=monsterid&amp;r=G' class='photo avatar avatar-80 photo' height='80' width='80' /> <span class="fn n"><a href='http://www.facebook.com/pages/Ho-fatto-la-torta/14' rel='external nofollow' class='url url'>marcella marraro</a></span></div>
+    		<div class="comment-meta">11 . 10 . 2010 at 11:08 am </div>
+                <div class="comment-content">
+        		<p>Dear Madame, i&#8217;ve shared your incredible creation in my page, dedicated to cakes&#8230;<br />
+you cakes are really fantastic!!!! GOOD!!!</p>
+    		</div>
+			</li>
+    	<li id="comment-4365" class="comment c1 c-y2010 c-m10 c-d13 c-h02 depth-1">
+    		<div class="comment-author vcard"><img alt='' src='http://0.gravatar.com/avatar/ac1a239dd01e723f58d0ed6f091cb5ae?s=80&amp;d=monsterid&amp;r=G' class='photo avatar avatar-80 photo' height='80' width='80' /> <span class="fn n"><a href='http://www.facebook.com/group.php?gid=167285966621' rel='external nofollow' class='url url'>Erica B</a></span></div>
+    		<div class="comment-meta">10 . 13 . 2010 at 10:23 am </div>
+                <div class="comment-content">
+        		<p>Hi There, </p>
+<p>I just started up a custom cake business and thought I would send you a picture of a Mario Montage cake that I did for a friend of mine&#8217;s birthday. I specialize in silly and geeky cakes so you will definitely be seeing more. There will be a Tetris and Space Invaders cake in the pipes for this year. <a href="http://www.facebook.com/group.php?gid=167285966621005&amp;v=photos#" rel="nofollow">http://www.facebook.com/group.php?gid=167285966621005&amp;v=photos#</a>!/photo.php?fbid=1554738921374&amp;set=t.167285966621005</p>
+<p>Thank you </p>
+<p>E</p>
+    		</div>
+			</li>
+    	<li id="comment-3440" class="comment c2 c-y2010 c-m09 c-d17 c-h08 alt depth-1">
+    		<div class="comment-author vcard"><img alt='' src='http://0.gravatar.com/avatar/4eb8523d4c7ee6dae08d144faba3e99d?s=80&amp;d=monsterid&amp;r=G' class='photo avatar avatar-80 photo' height='80' width='80' /> <span class="fn n">viv</span></div>
+    		<div class="comment-meta">09 . 17 . 2010 at 4:28 pm </div>
+                <div class="comment-content">
+        		<p>really like the lego cake. I was a lego freak when I was young. cute.</p>
+    		</div>
+			</li>
+    	<li id="comment-3338" class="comment c3 c-y2010 c-m09 c-d13 c-h08 depth-1">
+    		<div class="comment-author vcard"><img alt='' src='http://0.gravatar.com/avatar/ec89f5891d1d16f33f3f90ab0dc5948e?s=80&amp;d=monsterid&amp;r=G' class='photo avatar avatar-80 photo' height='80' width='80' /> <span class="fn n">carrie</span></div>
+    		<div class="comment-meta">09 . 13 . 2010 at 4:56 pm </div>
+                <div class="comment-content">
+        		<p>hi&#8230; been making cakes for a year now&#8230;and im inspired by ur 3 tier but rather big tiered super marion cake.. wouldn&#8217;t know were to start when it coms to structure! jus wondered if u could give me any info on structure support? many thanx carrie.</p>
+    		</div>
+			</li>
+    	<li id="comment-3152" class="comment c4 c-y2010 c-m09 c-d07 c-h02 alt depth-1">
+    		<div class="comment-author vcard"><img alt='' src='http://1.gravatar.com/avatar/1fdf50534fc8f5b1b0a86beb4cf7112e?s=80&amp;d=monsterid&amp;r=G' class='photo avatar avatar-80 photo' height='80' width='80' /> <span class="fn n"><a href='http://www.zurmat.com' rel='external nofollow' class='url url'>Habibies</a></span></div>
+    		<div class="comment-meta">09 . 7 . 2010 at 10:28 am </div>
+                <div class="comment-content">
+        		<p>WoW Super i Have no Words for these cakes its so Yummmyyyyyyyyyy <img src='http://larissameek.com/wp-includes/images/smilies/icon_razz.gif' alt=':P' class='wp-smiley' /> </p>
+    		</div>
+			</li>
+    	<li id="comment-3122" class="comment c5 c-y2010 c-m09 c-d05 c-h16 depth-1">
+    		<div class="comment-author vcard"><img alt='' src='http://1.gravatar.com/avatar/7c13541eb5b79a30e792e4547562978f?s=80&amp;d=monsterid&amp;r=G' class='photo avatar avatar-80 photo' height='80' width='80' /> <span class="fn n">AWESOME-NESS</span></div>
+    		<div class="comment-meta">09 . 6 . 2010 at 12:31 am </div>
+                <div class="comment-content">
+        		<p>&#8230;</p>
+    		</div>
+			</li>
+    	<li id="comment-3121" class="comment c6 c-y2010 c-m09 c-d05 c-h16 alt depth-1">
+    		<div class="comment-author vcard"><img alt='' src='http://1.gravatar.com/avatar/7c13541eb5b79a30e792e4547562978f?s=80&amp;d=monsterid&amp;r=G' class='photo avatar avatar-80 photo' height='80' width='80' /> <span class="fn n">AWESOME-NESS</span></div>
+    		<div class="comment-meta">09 . 6 . 2010 at 12:30 am </div>
+                <div class="comment-content">
+        		<p>THAT IS TOTALLY AWESOME! I WISH I COUL MAKE  THOSE TOO<br />
+SO SAD&#8230; <img src='http://larissameek.com/wp-includes/images/smilies/icon_sad.gif' alt=':(' class='wp-smiley' /> </p>
+    		</div>
+			<ul class='children'>
+    	<li id="comment-6709" class="comment c7 c-y2010 c-m11 c-d08 c-h05 depth-2">
+    		<div class="comment-author vcard"><img alt='' src='http://0.gravatar.com/avatar/239b731288f73cd919b2d3e6d2d83a4a?s=80&amp;d=monsterid&amp;r=G' class='photo avatar avatar-80 photo' height='80' width='80' /> <span class="fn n"><a href='http://facebook.com' rel='external nofollow' class='url url'>Lewis</a></span></div>
+    		<div class="comment-meta">11 . 8 . 2010 at 1:00 pm </div>
+                <div class="comment-content">
+        		<p>those are amazing so much effort must of been put into then<br />
+the laptop on is awesomee!! :0</p>
+    		</div>
+			</li>
+</ul>
+</li>
+					</ol>
+
+        			<div id="comments-nav-below" class="comment-navigation">
+        			     <div class="paginated-comments-links"><a class='prev page-numbers' href='http://larissameek.com/2009/01/12/26-cakes-perfect-for-geeks/comment-page-2/#comments'>&laquo; Previous</a>
+<a class='page-numbers' href='http://larissameek.com/2009/01/12/26-cakes-perfect-for-geeks/comment-page-1/#comments'>1</a>
+<a class='page-numbers' href='http://larissameek.com/2009/01/12/26-cakes-perfect-for-geeks/comment-page-2/#comments'>2</a>
+<span class='page-numbers current'>3</span></div>
+                    </div>
+					
+				</div><!-- #comments-list .comments -->
+
+			
+
+
+
+		
+
+
+
+			</div><!-- #comments -->
+    
+
+  </div>
+  <!-- #content --> 
+</div>
+<!-- #container -->
+
+
+	<div id="primary" class="aside main-aside">
+		<ul class="xoxo">
+	<li id="text-4" class="widgetcontainer widget_text"><h3 class="widgettitle">Sponsors</h3>
+			<div class="textwidget"><ul>
+<li><a href="http://www.printplace.com/printing/business-card-printing.aspx">Business Cards</a></li>
+<li><a href ="http://www.uprinting.com/Postcards.html">Print Postcards</a></li>
+<li><span style="font-size:11px; color:#666666; font-family:Verdana,Geneva,sans-serif">Want to <a href ="http://larissameek.com/advertise/">Advertise</a>?</span></li>
+</ul>
+</div>
+		</li><li id="sa-recent-comments" class="widgetcontainer widget_recent_comments"><h3 class="widgettitle">Fresh Comments</h3>
+<table id="recentcomments"><tr><td><img alt='' src='http://0.gravatar.com/avatar/a76d9222b25c8feabbc0486bab4dcff8?s=40&amp;d=monsterid&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /></td><td>andrea on <a href="http://larissameek.com/2010/11/05/seeing-double/comment-page-1/#comment-7624">200 Diapers a Week&#8230; WHAT?!</a><br />Congrats Larissa. I don't know you personally but remember when you did the Average Joe show. I am really glad ...</td></tr><tr><td><img alt='' src='http://0.gravatar.com/avatar/ae5a5e728ea4ca5d014a97b79f64c18a?s=40&amp;d=monsterid&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /></td><td>Nicole on <a href="http://larissameek.com/2010/11/05/seeing-double/comment-page-1/#comment-7623">200 Diapers a Week&#8230; WHAT?!</a><br />I have b/g twins who are now 16 months, and honestly, it does get better. They are both down to ...</td></tr><tr><td><img alt='' src='http://0.gravatar.com/avatar/87d704b297515dfc07162acc989c864e?s=40&amp;d=monsterid&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /></td><td><a href='http://www.facebook.com/pages/Ho-fatto-la-torta/14' rel='external nofollow' class='url' target='_blank'>marcella marraro</a> on <a href="http://larissameek.com/2009/01/12/26-cakes-perfect-for-geeks/comment-page-3/#comment-6891">26 Cakes Perfect for Geeks</a><br />Dear Madame, i've shared your incredible creation in my page, dedicated to cakes...
+you cakes are really fantastic!!!! GOOD!!! </td></tr></table></li><li id="_widget-5" class="widgetcontainer widget__widget"><h3 class="widgettitle">Links of Interest</h3>
+
+<ul><li> <a href="http://www.design-training.com">Design Schools & Training</a> </li>
+<li> <a href="http://www.rissyroos.com">Prom Dresses</a> </li>
+<li> <a href="http://www.buydiva.net/">Fashion Shopping</a> </li>
+<li> <a href="http://www.wesleyberryflowers.com">FTD Flower Delivery</a> </li>
+<li> <a href="http://www.atconference.com">Conference Call Services Provider</a> </li>
+<li> <a href="http://www.stubhub.com/theater-tickets">Theater Tickets</a> </li>
+<li>Best <a href="http://cabletv.realitytvcalendar.com/">Cable TV Deals</a> and Promotions</li>
+<li> <a href="http://www.nytimes.com/1986/09/14/style/valerie-johnson-marries-stephen-dent.html">Stephen Dent</a> </li>
+<li> <a href="http://www.personalbrandingblog.com/personal-branding-interview-michael-fertik-and-david-thompson/">Michael Fertik</a> </li>
+</ul></li>		</ul>
+	</div><!-- #primary .aside -->
+		
+
+
+		
+	
+    </div><!-- #main -->
+    
+    
+<div id="footer-top"></div>
+	<div id="footer">
+    <div class="footer-accent-img"> 
+    <div class="footer-container"> 
+   
+    <ul id="footer-nav" class="fltlft">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/archives">Archives</a></li>
+      <li><a href="/portfolio">Portfolio</a></li>
+      <li><a href="/photos">Photos</a></li>
+      <li><a href="/shop">Shop</a></li>
+      <li><a href="/say hello.">Say&nbsp;Hello.</a></li>
+  </ul>
+  
+          <div id="siteinfo" class="fltrt">        
+    		© Copyright 2005 - <span class="the-year">2010</span> Larissa Meek. Powered by <a href="http://www.wordpress.org"  class="no_icon">WP</a> + <a href="http://themeshaper.com/thematic/"  class="no_icon">Thematic</a>           
+         <div id="useronline-count"><!-- ?php get_useronline(); ?> / < ?php echo get_users_browsing_site(); ? --></div>
+ 
+         </div><!-- #siteinfo -->
+<div id="toTop">Back to Top</div>  
+
+        
+        <div id="subsidiary">
+    
+    		    
+        <div id="first" class="aside sub-aside">
+<ul class="xoxo">
+<li id="text-3" class="widgetcontainer widget_text"><h3 class="widgettitle">About Me</h3>
+			<div class="textwidget"><div class="mini-bio-pic"><a href="http://larissameek.com/about/"><img  title="bio pic" alt=bio pic"  src="http://larissameek.com/wp-content/themes/thematic/images/sm-bio-pic.jpg"></a></div>
+
+<p>I'm Larissa Meek, an ACD for AgencyNet + I live in L.A., CA. This blog serves as a showcase for my artwork + personal ramblings...</p>
+
+<p><a href="http://larissameek.com/about/" class="read-more">Read More</a></p></div>
+		</li><li id="linkcat-17" class="widgetcontainer widget_links"><h3 class="widgettitle">Awards + Mentions</h3>
+
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.netmag.co.uk/zine/discover-culture/the-world-s-top-20-web-designers" title=".Net Magazine" target="_blank"><img src="http://larissameek.com/wp-content/themes/thematic/images/links/net-mag.jpg"  alt=".Net Magazine"  title=".Net Magazine" /></a></li>
+<li><a href="http://www.pbs.org/design/2009/11/are-there-no-women-in-web-design.php" title="PBS Interactive" target="_blank"><img src="http://larissameek.com/wp-content/themes/thematic/images/links/PBS.jpg"  alt="PBS Interactive"  title="PBS Interactive" /></a></li>
+
+	</ul>
+</li>
+</ul>
+</div><!-- #first .aside -->
+         
+        
+               
+    
+        <div id="second" class="aside sub-aside">
+<ul class="xoxo">
+<li id="categories-3" class="widgetcontainer widget_categories"><h3 class="widgettitle">Categories</h3>
+		<ul>
+	<li class="cat-item cat-item-3"><a href="http://larissameek.com/category/agencynet/" title="All items in this are related to AgencyNet.">agencynet</a> (24)
+</li>
+	<li class="cat-item cat-item-7"><a href="http://larissameek.com/category/art-design/" title="Creative bits.">art + design</a> (20)
+</li>
+	<li class="cat-item cat-item-4"><a href="http://larissameek.com/category/elsewhere/" title="View all posts filed under elsewhere">elsewhere</a> (58)
+</li>
+	<li class="cat-item cat-item-189"><a href="http://larissameek.com/category/giveaways/" title="View all posts filed under Giveaways">Giveaways</a> (1)
+</li>
+	<li class="cat-item cat-item-19"><a href="http://larissameek.com/category/humor/" title="View all posts filed under humor">humor</a> (44)
+</li>
+	<li class="cat-item cat-item-172"><a href="http://larissameek.com/category/jason/" title="View all posts filed under Jason">Jason</a> (1)
+</li>
+	<li class="cat-item cat-item-1"><a href="http://larissameek.com/category/odds-ends/" title="Miscellaneous bits that don&#039;t fit anywhere else. ">odds + ends</a> (33)
+</li>
+	<li class="cat-item cat-item-5"><a href="http://larissameek.com/category/personal/" title="View all posts filed under personal">personal</a> (99)
+</li>
+	<li class="cat-item cat-item-8"><a href="http://larissameek.com/category/technology/" title="View all posts filed under technology">technology</a> (1)
+</li>
+	<li class="cat-item cat-item-192"><a href="http://larissameek.com/category/the-twins/" title="View all posts filed under the twins">the twins</a> (1)
+</li>
+		</ul>
+</li><li id="execphp-6" class="widgetcontainer widget_execphp"><h3 class="widgettitle">Archives</h3>
+			
+			<div class="execphpwidget"><ul>  <li><strong><a href="http://larissameek.com/2010/">2010</a>: </strong> <a href="http://larissameek.com/2010/01/" title="January 2010">J</a> <a href="http://larissameek.com/2010/02/" title="February 2010">F</a> <a href="http://larissameek.com/2010/03/" title="March 2010">M</a> <a href="http://larissameek.com/2010/04/" title="April 2010">A</a> <a href="http://larissameek.com/2010/05/" title="May 2010">M</a> <span class="emptymonth">J</span> <a href="http://larissameek.com/2010/07/" title="July 2010">J</a> <a href="http://larissameek.com/2010/08/" title="August 2010">A</a> <a href="http://larissameek.com/2010/09/" title="September 2010">S</a> <a href="http://larissameek.com/2010/10/" title="October 2010">O</a> <a href="http://larissameek.com/2010/11/" title="November 2010">N</a> <span class="emptymonth">D</span> </li>
+<li><strong><a href="http://larissameek.com/2009/">2009</a>: </strong> <a href="http://larissameek.com/2009/01/" title="January 2009">J</a> <a href="http://larissameek.com/2009/02/" title="February 2009">F</a> <a href="http://larissameek.com/2009/03/" title="March 2009">M</a> <a href="http://larissameek.com/2009/04/" title="April 2009">A</a> <a href="http://larissameek.com/2009/05/" title="May 2009">M</a> <a href="http://larissameek.com/2009/06/" title="June 2009">J</a> <a href="http://larissameek.com/2009/07/" title="July 2009">J</a> <a href="http://larissameek.com/2009/08/" title="August 2009">A</a> <a href="http://larissameek.com/2009/09/" title="September 2009">S</a> <a href="http://larissameek.com/2009/10/" title="October 2009">O</a> <a href="http://larissameek.com/2009/11/" title="November 2009">N</a> <a href="http://larissameek.com/2009/12/" title="December 2009">D</a> </li>
+<li><strong><a href="http://larissameek.com/2008/">2008</a>: </strong> <a href="http://larissameek.com/2008/01/" title="January 2008">J</a> <a href="http://larissameek.com/2008/02/" title="February 2008">F</a> <a href="http://larissameek.com/2008/03/" title="March 2008">M</a> <a href="http://larissameek.com/2008/04/" title="April 2008">A</a> <a href="http://larissameek.com/2008/05/" title="May 2008">M</a> <a href="http://larissameek.com/2008/06/" title="June 2008">J</a> <a href="http://larissameek.com/2008/07/" title="July 2008">J</a> <a href="http://larissameek.com/2008/08/" title="August 2008">A</a> <a href="http://larissameek.com/2008/09/" title="September 2008">S</a> <a href="http://larissameek.com/2008/10/" title="October 2008">O</a> <a href="http://larissameek.com/2008/11/" title="November 2008">N</a> <a href="http://larissameek.com/2008/12/" title="December 2008">D</a> </li>
+<li><strong><a href="http://larissameek.com/2007/">2007</a>: </strong> <a href="http://larissameek.com/2007/01/" title="January 2007">J</a> <a href="http://larissameek.com/2007/02/" title="February 2007">F</a> <a href="http://larissameek.com/2007/03/" title="March 2007">M</a> <a href="http://larissameek.com/2007/04/" title="April 2007">A</a> <a href="http://larissameek.com/2007/05/" title="May 2007">M</a> <a href="http://larissameek.com/2007/06/" title="June 2007">J</a> <a href="http://larissameek.com/2007/07/" title="July 2007">J</a> <a href="http://larissameek.com/2007/08/" title="August 2007">A</a> <a href="http://larissameek.com/2007/09/" title="September 2007">S</a> <a href="http://larissameek.com/2007/10/" title="October 2007">O</a> <a href="http://larissameek.com/2007/11/" title="November 2007">N</a> <a href="http://larissameek.com/2007/12/" title="December 2007">D</a> </li>
+<li><strong><a href="http://larissameek.com/2006/">2006</a>: </strong> <a href="http://larissameek.com/2006/01/" title="January 2006">J</a> <span class="emptymonth">F</span> <span class="emptymonth">M</span> <a href="http://larissameek.com/2006/04/" title="April 2006">A</a> <a href="http://larissameek.com/2006/05/" title="May 2006">M</a> <span class="emptymonth">J</span> <a href="http://larissameek.com/2006/07/" title="July 2006">J</a> <a href="http://larissameek.com/2006/08/" title="August 2006">A</a> <a href="http://larissameek.com/2006/09/" title="September 2006">S</a> <a href="http://larissameek.com/2006/10/" title="October 2006">O</a> <a href="http://larissameek.com/2006/11/" title="November 2006">N</a> <a href="http://larissameek.com/2006/12/" title="December 2006">D</a> </li>
+<li><strong><a href="http://larissameek.com/2005/">2005</a>: </strong> <span class="emptymonth">J</span> <a href="http://larissameek.com/2005/02/" title="February 2005">F</a> <a href="http://larissameek.com/2005/03/" title="March 2005">M</a> <a href="http://larissameek.com/2005/04/" title="April 2005">A</a> <a href="http://larissameek.com/2005/05/" title="May 2005">M</a> <span class="emptymonth">J</span> <span class="emptymonth">J</span> <a href="http://larissameek.com/2005/08/" title="August 2005">A</a> <a href="http://larissameek.com/2005/09/" title="September 2005">S</a> <span class="emptymonth">O</span> <a href="http://larissameek.com/2005/11/" title="November 2005">N</a> <span class="emptymonth">D</span> </li>
+  </ul></div>
+		</li></ul>
+</div><!-- #second .aside -->
+       
+        
+           
+        <div id="third" class="aside sub-aside">
+<ul class="xoxo">
+<li id="execphp-5" class="widgetcontainer widget_execphp"><h3 class="widgettitle">Recent Photos</h3>
+			
+			<div class="execphpwidget"><div class='falbum-recent'>
+<div class='falbum-thumbnail-nods'><a href='/photos/show/recent/photo/5072762844/'><img src='http://farm5.static.flickr.com/4104/5072762844_9e0a8257b5_s.jpg' alt="Tracy and I" title="Tracy and I" /></a>
+</div>
+<div class='falbum-thumbnail-nods'><a href='/photos/show/recent/photo/5072161397/'><img src='http://farm5.static.flickr.com/4153/5072161397_4ab5c6cc6a_s.jpg' alt="Tracy and I" title="Tracy and I" /></a>
+</div>
+<div class='falbum-thumbnail-nods'><a href='/photos/show/recent/photo/5072761426/'><img src='http://farm5.static.flickr.com/4092/5072761426_6ebfd0c307_s.jpg' alt="Baby Shower" title="Baby Shower" /></a>
+</div>
+<div class='falbum-thumbnail-nods'><a href='/photos/show/recent/photo/5072191359/'><img src='http://farm5.static.flickr.com/4084/5072191359_0480d1ae2d_s.jpg' alt="Baby Bump" title="Baby Bump" /></a>
+</div>
+<div class='falbum-thumbnail-nods'><a href='/photos/show/recent/photo/5082079846/'><img src='http://farm5.static.flickr.com/4034/5082079846_f11dc16ec0_s.jpg' alt="Baby Shower!" title="Baby Shower!" /></a>
+</div>
+<div class='falbum-thumbnail-nods'><a href='/photos/show/recent/photo/5082079132/'><img src='http://farm5.static.flickr.com/4107/5082079132_8ac51b8347_s.jpg' alt="Baby Shower!" title="Baby Shower!" /></a>
+</div>
+</div>
+</div>
+		</li>
+
+<li id="lastfmrecordswidget-4" class="widgetcontainer widget_lastfmrecordswidget"><h3 class="widgettitle">Listening To</h3>
+
+<div id='lastfmrecords'></div>
+</li>
+
+</ul>
+</div><!-- #third .aside -->
+       
+        
+         
+        
+    </div><!-- #subsidiary -->
+    
+
+
+
+<div id="recent-tweets">
+<div class="tweets"> 
+
+<ul id="twitter_update_list"> 
+<li></li>
+</ul>
+<a href="http://twitter.com/larissameek" id="twitter-link" >+ follow me</a>
+</div>
+<div class="followers"><a href="http://twitter.com/larissameek">@larissameek</a> has 6425 followers</div>
+</div>
+		
+        </div><!-- #footer-container -->
+        
+        </div><!-- #footer-bg-img -->
+	</div><!-- #footer -->
+	
+  
+
+</div><!-- #wrapper .hfeed -->
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var thickboxL10n = {
+	next: "Next &gt;",
+	prev: "&lt; Prev",
+	image: "Image",
+	of: "of",
+	close: "Close",
+	noiframes: "This feature requires inline frames. You have iframes disabled or your browser does not support them."
+};
+try{convertEntities(thickboxL10n);}catch(e){};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://larissameek.com/wp-includes/js/thickbox/thickbox.js?ver=3.1-20100407'></script>
+<!--stats_footer_test--><script src="http://stats.wordpress.com/e-201047.js" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({blog:'14655172',v:'ext',post:'1119'});
+var load_cmc = function(){linktracker_init(14655172,1119,2);};
+if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+else load_cmc();
+</script>
+
+<!-- TOOLTIP -->
+
+
+
+<script type="text/javascript">
+$(document).ready(function() { 
+ $(".blogroll li [title]").tooltip({tip: '#dynatip', effect: 'slide', offset: [0, 0] });
+    // initialize tooltip 
+    $(".dyna a[title]").tooltip({ 
+ 	// use single tooltip element for all tips 
+	 tip: '#dynatip',  
+     // tweak the position 
+      offset: [0, 0], 
+         
+        // use "slide" effect 
+        effect: 'slide' 
+         
+    // add dynamic plugin  
+    }).dynamic( { 
+     
+        // customized configuration on bottom edge 
+        top: { 
+         
+            // slide downwards 
+            direction: 'down', 
+             
+            // bounce back when closed 
+            bounce: false
+        } 
+    }); 
+     
+});
+</script>
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/larissameek.json?callback=twitterCallback2&amp;count=1"></script>
+</body>
+</html>
+<!-- Dynamic page generated in 2.001 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2010-11-24 16:19:31 -->
+<!-- super cache -->

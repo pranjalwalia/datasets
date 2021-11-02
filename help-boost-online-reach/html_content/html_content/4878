@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" >
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<title>Piccsy :: Ali Owned</title>
+	<meta name="keywords" content="Piccsy" />
+	<meta name="description" content="Piccsy website" />
+	<base href="http://piccsy.com/" />
+	<link href="http://piccsy.com/piccsy/css/site.css" rel="stylesheet" type="text/css" />
+	<link href="http://piccsy.com/piccsy/js/jquery-ui-1.8.10.custom/css/blitzer/jquery-ui-1.8.10.custom.css" rel="stylesheet" type="text/css" />
+	<!--[if lte IE 7]>
+	<style type="text/css">
+		html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
+	</style>
+	<![endif]-->
+	
+	<script type="text/javascript" src="http://piccsy.com/piccsy/js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="http://piccsy.com/piccsy/js/jquery-ui-1.8.10.custom/js/jquery-ui-1.8.10.custom.min.js"></script>
+        <script type="text/javascript" src="http://piccsy.com/piccsy/js/jquery.socialbutton-1.7.1.js"></script>
+        <script type="text/javascript" src="http://piccsy.com/piccsy/js/qtip/jquery.qtip-1.0.0-rc3.min.js"></script>
+        <script type="text/javascript" src="http://piccsy.com/piccsy/js/combined.min.js"></script>
+	<script type="text/javascript">fadeOpacity.addRule('oR1', .3, 1, 30);</script>
+	<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+        <meta property="og:title" content="Piccsy :: Ali Owned"/> <meta property="og:site_name" content="Piccsy"/> <meta property="og:image" content="http://images.piccsy.com/cache/images/ali-owned-117743-480-480.jpg"/> <meta property="og:type" content="article"/> <meta property="og:description" content=""/> <meta property="og:image" content="http://piccsy.com/2011/07/ali-owned/"/>   <link rel="image_src" type="image/jpeg" href="http://images.piccsy.com/cache/images/ali-owned-117743-480-480.jpg" />   <script type="text/javascript" src="/piccsy/js/jquery.countdown.min.js"></script>   <script type="text/javascript" src="/piccsy/js/jquery.autocomplete.js"></script>               
+
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<div id="logo">
+				<a href="/"></a>
+				<div style="position:relative;bottom:67px;left:198px;font-size:13px;">beta</div>
+			</div>
+			<div class="clear"></div>
+			<div id="nav" class="jqueryslidemenu">
+				<ul>
+					<li><a href="/?from=all">new</a>
+						<ul>
+							<li><a href="/?from=all">from all</a></li>
+						</ul>
+					</li>
+					<li><a href="/?popular=recent">popular</a>
+						<ul>
+							<li><a href="/?popular=recent">recent</a></li>
+							<li><a href="/?popular=day">today</a></li>
+							<li><a href="/?popular=week">this week</a></li>
+							<li><a href="/?popular=month">this month</a></li>
+							<li><a href="/?popular=forever">all time</a></li>
+							<li><a href="/members/" class="last">members</a></li>
+						</ul>
+					</li>
+					<li><a href="/tags/">tags</a>
+						<ul>
+							<li><a href="/?tag=photography">photography (58192)</a></li>
+							<li><a href="/?tag=illustration">illustration (19432)</a></li>
+							<li><a href="/?tag=design">design (16044)</a></li>
+							<li><a href="/?tag=fashion">fashion (12741)</a></li>
+							<li><a href="/?tag=nsfw">nsfw (7856)</a></li>
+							<li><a href="/tags/" class="last">view more</a></li>
+						</ul>
+					</li>
+					<li><a href="#">search</a>
+						<ul>
+							<li>
+								<div style="padding:2px;">
+								<form action="/search/" method="get" class="search">
+									<input type="text" name="q" class="search" />
+									<input type="submit" name="s" value="" class="search" />
+								</form>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li><a href="/about/">about</a></li>
+					<li><div style="padding:8px 10px;">|</div></li>
+					<li>
+						<a href="/auth/login/">login</a>
+					</li>
+				</ul>
+			</div><!-- #nav -->
+			<div class="clear"></div>
+		</div><!-- #header -->
+
+<div id="fbFloat" style="position:absolute;z-index:1;top:230px;right:0;">
+	<a href="javascript:showBlock('feedbackForm')"><img src="/piccsy/images/feedback.png" alt="feedback button" /></a>
+	<form id="feedbackForm" action="/feedback/" method="post" style="display:none; position:absolute; right:0; z-index:10;">
+		<span style="display:block;width:240px;background-color:#fff;padding:10px;">
+			You need to sign-in to submit feedback.
+		</span>
+	</form>
+</div>
+
+<!--
+<script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery('#fbFloat').aqFloater({attach: 'ne', duration: 300, opacity: .9});
+	});
+</script>
+-->
+
+
+<script type="text/javascript" >
+                                   
+                                            $(document).ready(function() {
+
+                                            $('#facebookshare,#fshare_btn').socialbutton('facebook_share', {
+                                                button: 'button_count',
+                                                url: document.location.href,
+                                                encoded: true,
+                                                text: 'Share'
+                                            });
+                                            $('#twittershare,#retweet_btn').socialbutton('twitter', {
+                                                button: 'horizontal',
+                                                url: document.location.href,
+                                                encoded: true,
+                                                text: 'Check out this Picc at Piccsy.com',
+                                                lang: 'en',
+                                                via: 'ilovepiccsy',
+                                                related: 'twitter'
+                                            });
+
+  
+                                            $( "#socialshare" ).dialog({
+                                                        autoOpen: false,
+                                                        show: "fade",
+                                                        hide: "fade"
+                                                });
+
+                                          $("#new_tags").autocomplete("/tags/search", {
+                                                    width: 150,
+                                                    dataType: 'json',
+                                                    highlight: false,
+                                                    autoFill: false,
+                                                    delay: 400,
+                                                    scroll: true,
+                                                    scrollHeight: 300,
+                                                    multiple: true,
+                                                    matchContains: true,
+                                                    selectFirst: false,
+
+                                                    parse: function(data) {
+                                                            var array = new Array();
+                                                            for(var i=0;i<data.tags.length;i++)
+                                                            {
+                                                                    array[array.length] = { data: data.tags[i], value: data.tags[i].id, result: data.tags[i].tag };
+                                                            }
+                                                            return array;
+                                                    },
+
+                                                    formatItem: function(row) {
+                                                            return row.tag;
+                                                    }
+                                                });
+
+		// "share this page" link on right click
+                /*
+		jQuery('#indivPost-leftColumn').qtip({
+			content: {
+				text: jQuery('div#share'),
+				title: {
+					text: 'Link to this page'
+				}
+			},
+			position: {
+				target: 'mouse',			// position it where the click was...
+				adjust: { mouse: false }	// ...but don't follow the mouse
+			},
+			show: 'mousedown',
+			hide: 'unfocus',
+			style: {
+				width: 437
+			}
+		});
+		jQuery('#indivPost-leftColumn').bind('contextmenu', function(e){ return false; });
+                */
+
+
+                                            });
+
+                                            function picc_it(post_id,type) {
+								jQuery.ajaxSetup({ error:function(x, e){ alert('Error piccing post ['+post_id+']'); } });
+								picc_url = 'http://piccsy.com/post/unpicc/'+post_id+'/';
+                                                                if(type=='picc') { picc_url = 'http://piccsy.com/post/picc/'+post_id+'/'; }
+                                                                jQuery.post(picc_url, function(data, s){                                                                 
+                                                                        if (data.redirect) {
+										document.location = 'http://piccsy.com/'+data.redirect;
+										return;
+									}
+									if (data.success == false) {
+										alert('Error piccing post ['+post_id+']');
+									}
+                                                                        if(type=='picc') {
+
+                                                                        
+                                                                        $( "#socialshare" ).dialog({ autoOpen: false, draggable: false , resizable:false, position: ['right','bottom'] });
+                                                                        $('.ui-dialog').css({position:"fixed",margin:"20px"});
+                                                                        $( "#socialshare" ).dialog('open');
+                                                                        
+                                                                        $(window).resize(function() {
+                                                                          $( "#socialshare" ).dialog({ position: ['right','bottom'] });
+                                                                        });
+
+                                                                            $('#picc_it').hide();
+                                                                            $('#unpicc_it').show();
+                                                                        } else {
+                                                                            $('#unpicc_it').hide();
+                                                                            $('#picc_it').show();
+                                                                        }
+                                                                }, "json");
+							}
+
+
+
+                                                       
+                                        </script>
+<div id="wrapper">
+			<div id="flash_message"></div>
+			<div id="indivPost-leftColumn">
+                                    <img src="http://images.piccsy.com/cache/images/ali-owned-117743-480-480.jpg" alt="Ali Owned" />                              
+								<div id="share" style="display:none">
+									<textarea cols="48" rows="2">http://piccsy.com/2011/07/ali-owned/</textarea>
+								</div>
+                 	</div>
+			<div id="indivPost-rightColumn">
+
+
+                                                                                                                                <div class="pic similar">
+                                                                        <a href="/2011/07/muhammad-ali-and-the-beatles/"><img src="http://images.piccsy.com/cache/images/muhammad-ali-and-the-beatles-115622-140-140.jpg" alt="" /></a>
+																		<a class="duplicate" id="duplicate115622" href="#"
+																		   onclick="flag_duplicate(117743, 115622, 'http://piccsy.com/duplicate/add/'); return false;">Duplicate?</a>
+                                                                </div>
+                                                                                                <div class="pic similar">
+                                                                        <a href="/2011/07/muhammad-ali-and-sammy-davis-jr/"><img src="http://images.piccsy.com/cache/images/muhammad-ali-and-sammy-davis-jr-115601-140-140.jpg" alt="" /></a>
+																		<a class="duplicate" id="duplicate115601" href="#"
+																		   onclick="flag_duplicate(117743, 115601, 'http://piccsy.com/duplicate/add/'); return false;">Duplicate?</a>
+                                                                </div>
+                                                                                                <div class="pic similar">
+                                                                        <a href="/2010/12/andr-ren-roussimoff-vs-muhammad-ali/"><img src="http://images.piccsy.com/cache/images/41213-33f5e0-140-140.jpg" alt="" /></a>
+																		<a class="duplicate" id="duplicate41213" href="#"
+																		   onclick="flag_duplicate(117743, 41213, 'http://piccsy.com/duplicate/add/'); return false;">Duplicate?</a>
+                                                                </div>
+                                                                                                <div class="pic similar">
+                                                                        <a href="/2011/07/ballet-photography-6ojaclg0n/"><img src="http://images.piccsy.com/cache/images/ballet-photography-6ojaclg0n-120850-140-140.jpg" alt="" /></a>
+																		<a class="duplicate" id="duplicate120850" href="#"
+																		   onclick="flag_duplicate(117743, 120850, 'http://piccsy.com/duplicate/add/'); return false;">Duplicate?</a>
+                                                                </div>
+                                                                                                <div class="pic similar">
+                                                                        <a href="/2011/07/ballet-photography-6d1h5aaqd/"><img src="http://images.piccsy.com/cache/images/ballet-photography-6d1h5aaqd-57228-140-140.jpg" alt="" /></a>
+																		<a class="duplicate" id="duplicate57228" href="#"
+																		   onclick="flag_duplicate(117743, 57228, 'http://piccsy.com/duplicate/add/'); return false;">Duplicate?</a>
+                                                                </div>
+                                                                                                <div class="pic similar">
+                                                                        <a href="/2011/07/beautiful-portraits-photography/"><img src="http://images.piccsy.com/cache/images/beautiful-portraits-photography-119809-140-140.jpg" alt="" /></a>
+																		<a class="duplicate" id="duplicate119809" href="#"
+																		   onclick="flag_duplicate(117743, 119809, 'http://piccsy.com/duplicate/add/'); return false;">Duplicate?</a>
+                                                                </div>
+                                                                                                <div class="pic similar">
+                                                                        <a href="/2011/07/mohammed-ali-and-malcolm-x/"><img src="http://images.piccsy.com/cache/images/mohammed-ali-and-malcolm-x-115599-140-140.jpg" alt="" /></a>
+																		<a class="duplicate" id="duplicate115599" href="#"
+																		   onclick="flag_duplicate(117743, 115599, 'http://piccsy.com/duplicate/add/'); return false;">Duplicate?</a>
+                                                                </div>
+                                                                                                <div class="pic similar">
+                                                                        <a href="/2011/07/amazing-photography/"><img src="http://images.piccsy.com/cache/images/amazing-photography-114864-140-140.jpg" alt="" /></a>
+																		<a class="duplicate" id="duplicate114864" href="#"
+																		   onclick="flag_duplicate(117743, 114864, 'http://piccsy.com/duplicate/add/'); return false;">Duplicate?</a>
+                                                                </div>
+                                                                                                <div class="pic similar">
+                                                                        <a href="/2011/06/ali---cleveland-1966/"><img src="http://images.piccsy.com/cache/images/ali---cleveland-1966-106976-140-140.jpg" alt="" /></a>
+																		<a class="duplicate" id="duplicate106976" href="#"
+																		   onclick="flag_duplicate(117743, 106976, 'http://piccsy.com/duplicate/add/'); return false;">Duplicate?</a>
+                                                                </div>
+                                                                                            
+				<div class="clear"></div>
+				<div class="spacer"></div>
+
+
+
+
+
+                                
+                                <div id="socialshare" style="display:none; min-height:inherit !important; padding:20px;" title="Thanks for Piccing">
+                                    <div id="thanks" style="font-size:14px;"  > This image has been successfully picced, please click below to share it with your friends on Twitter or Facebook. </div>
+                                    <br/>
+                                    <div id="twittershare" style="margin: 0px 20px; float:left; " ></div>
+                                    <div id="facebookshare"></div>
+                                    <div style="clear:both;"></div>
+                                </div>
+
+                                
+                                
+                                                               <div id="picc_it"  > <a href="#" onclick="picc_it('117743','picc'); return false;" class="heart">picc</a>  </div>
+                                
+                                                               <div id="unpicc_it"  style="display:none;" > <a href="#" onclick="picc_it('117743','unpicc'); return false;" class="heart" title="unpicc">picced</a> </div>
+                                
+                               
+                                	<ul id="flag_down">
+		<li class="flag">
+			<span>flag</span>
+			<ul>
+				<li><a id="duplicate_btn" href="#" title="Flag image as duplicate" onclick="return false;">duplicate</a></li>
+				<li>
+					<a id="votedown_btn" href="#"
+					   onclick="flag_votedown(117743, '/post/votedown/'); return false;">votedown</a>
+				</li>
+				<li>
+					<form name="nsfw" action="/post/tag/" method="post" style="display:none;">
+						<input type="hidden" name="post_id" value="117743" />
+						<input type="hidden" name="tag" value="nsfw" />
+					</form>
+					<a href="#" onclick="document.forms['nsfw'].submit(); return false;">nsfw</a>
+				</li>
+				<li>
+					<a href="/dmca/">copyright</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+                                                                                                <a href="http://img.ffffound.com/" target="_blank" class="arrow">view source</a>
+                                				<div class="clear"></div>
+
+
+
+
+
+				<h3>Ali Owned</h3>
+				<p></p>
+				<br />
+
+
+
+
+
+
+				<div class="postedBy">
+					<span class="black" style="font-size:12px"><b>Posted by</b></span> <a href="/user/view/pakistan/">pakistan</a>
+				</div>
+				<form name="follow" action="/user/follow/pakistan" method="post" style="display:none"></form>
+				<a href="#" onclick="document.forms['follow'].submit(); return false;" class="fi_btns follow">follow user</a>
+
+
+<form name="ignore" action="/user/ignore/pakistan" method="post" style="display:none"></form>
+<a href="#" onclick="document.forms['ignore'].submit(); return false;" class="fi_btns ignore">ignore user</a>
+				<div class="clear"></div>
+				<strong>Via</strong> <a href="http://img.ffffound.com/">img.ffffound.com</a>				<div class="spacer"></div>
+
+
+				<div>
+
+					<h4 style="float:left;">Tags</h4>
+					<a style="padding:2px 3px 3px;" href="javascript:showBlock('addtag');"><img src="/piccsy/images/tag-plus.jpg" alt="add more tags" /></a>
+					
+                                        <form action="/post/update/117743/" method="post" id="addtag" style="display:none; position:absolute; margin-left:35px;">
+						<input id="new_tags" class="search" name="new_tags" type="text" />
+						<input type="hidden" name="tag_24" />
+						<input type="hidden" name="tag_7688" />
+					</form>
+				</div>
+				<div class="clear"></div>
+				<p>
+<a href="/?tag=photography">photography</a>, <a href="/?tag=muhammad ali">muhammad ali</a>				</p>
+				<div class="spacer"></div>
+
+
+
+                                <h4>Who else picced (16)?</h4>
+				<p>
+<a href="/user/view/pakistan/">pakistan</a>, <a href="/user/view/_kaRd_/">_kaRd_</a>, <a href="/user/view/rustymcgrady/">rustymcgrady</a>, <a href="/user/view/ahrimanpob/">ahrimanpob</a>, <a href="/user/view/redskins86/">redskins86</a>, <a href="/user/view/connorsweet/">connorsweet</a>, <a href="/user/view/CeilingTiles/">CeilingTiles</a>, <a href="/user/view/SimulatedReality/">SimulatedReality</a>, <a href="/user/view/streetseraph/">streetseraph</a>, <a href="/user/view/jacobniblett/">jacobniblett</a>, <a href="/user/view/afterschoolspecial/">afterschoolspecial</a>, <a href="/user/view/alexgriffin74/">alexgriffin74</a>, <a href="/user/view/Principe016/">Principe016</a>, <a href="/user/view/vishnuyada/">vishnuyada</a>, <a href="/user/view/SergioRamos/">SergioRamos</a>, <a href="/user/view/CrownSimba/">CrownSimba</a>				</p>
+				<div class="spacer"></div>
+
+
+
+
+
+<!-- flike and retweet buttons -->
+				<div id="share_buttons" style="height:25px;">
+					<div id="stumble_btn" style="width:95px;float:left;margin-top:2px;">
+						<script type="text/javascript" src="http://www.stumbleupon.com/hostedbadge.php?s=1"></script>
+					</div>
+					<div id="retweet_btn" style="width:110px;height:21px;overflow:hidden;float:left;text-align:right;">
+						
+					</div><!-- #retweet_btn -->
+					<div id="fshare_btn" style="width:123px;height:21px;overflow:hidden;float:left;">
+						
+					</div><!-- #fshare_btn -->
+
+					<div id="googleplus_btn">
+						<g:plusone size="medium"></g:plusone>
+					</div>
+
+				</div><!-- #share_buttons -->
+				<div class="spacer" style="height:60px"></div>
+
+
+
+
+
+<!-- comments -->
+
+
+
+			</div><!-- #indivPost-rightColumn -->
+		</div><!-- #wrapper -->
+		<div class="clear"></div>
+		<div class="spacer" style="height:100px;"></div>
+		<div class="clear"></div>
+
+	</div><!-- #container -->
+	<div id="footer">
+				<p><a href="/about/">About</a></p>
+		<p><a href="/api/">API</a></p>
+		<p><a href="/dmca/">Copyright</a></p>
+		<p><a href="/tos/">Terms of service</a></p>
+		<p><a href="/2257/">2257 Exempt</a></p>
+		<p>Copyright 2010 Piccsy.com</p>
+		<p><a href="http://moxycreative.com/">Designed by Moxy Creative</a></p>
+	</div><!-- #footer -->
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+	try {
+		var pageTracker = _gat._getTracker("UA-15657555-1");
+		pageTracker._trackPageview();
+	} catch(err) {}
+</script>
+</body>
+</html>

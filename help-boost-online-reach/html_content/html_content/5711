@@ -1,0 +1,2153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js"> 
+  <head>
+  
+          <!-- Mobile redirector -->
+<script type="text/javascript">
+(function(){
+  
+  // get redirector to work in development
+  var tmp = /^(www\.)?([\w\.]+)?(refinery29|rf29)\.(\w+)(:\d+)?$/.exec(window.location.host.toLowerCase()),
+      
+      // sub domain
+      sub = tmp[2],
+      
+      // domain
+      dom = tmp[3],
+
+      // top level domain
+      tld = tmp[4],
+      
+      // cookie domain for mobile_referrer cookie
+      cookie_domain = dom+'.'+tld,
+      
+      // domain for mobile redirect
+      mobile_domain = 'm.'+(sub ? sub : '')+cookie_domain,
+      
+      // ignore direct traffic referrers
+      r29p = new RegExp('^(https?:\/\/)((www|m|touch)\.)'+sub+dom+'\.'+tld, 'i'),
+      
+      // validate referrer before overriding
+      r29v = function(d){
+        return !!(d && String(d).length && !String(d).match(r29p));
+      };
+
+  // quirksmode.org: JavaScript - Cookies
+  // http://www.quirksmode.org/js/cookies.html
+  
+  var cookie_create = function(name, value, days){
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      var expires = '; expires='+date.toGMTString();
+    }
+    else {
+      var expires = '';
+    }
+    var val = name+'='+value+expires+'; path=/; domain=.'+cookie_domain+';';
+    document.cookie = val;
+  },
+  
+  cookie_delete = function(name){
+    cookie_create(name,'',-1);
+  },
+  
+  cookie_read = function(name){
+    var nameEQ = name + '=';
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') {
+        c = c.substring(1,c.length);
+      }
+      if (c.indexOf(nameEQ) == 0) {
+        var val = c.substring(nameEQ.length,c.length);
+        return val;
+      }
+    }
+  	return null;
+  },
+  
+  show_mobile_link = function(){
+    var show_link = function(){
+      document.getElementById('mobile-link').style.display = 'block';
+    }
+    if (typeof window.onload != 'function') {
+      window.onload = show_link;
+    }
+    else {
+      var prev_onload = window.onload;
+      window.onload = function(){
+        prev_onload && prev_onload();
+        show_mobile_link();
+      };
+    }
+  };
+  
+  href = document.location.href.toString();
+  
+  // ignore mobile for thirty days
+  if (href.match(/mobile=false/i)) {
+    cookie_create('force_web', '1', 30);
+    show_mobile_link();
+    return;
+  }
+  
+  // URL param force mobile ver
+  var force_mobile = href.match(/mobile=true/i),
+
+      // Cookie to force web ver
+      ignore_mobile = cookie_read('force_web') && cookie_read('force_web') === '1',
+
+      // UA detection for mobile
+      is_mobile = navigator.userAgent.match(/iphone|ipod|android/i);
+      
+      if(navigator.userAgent.match(/ipad/i)) { 
+        // facebook user-agent stupidly calls iPad an iPhone
+        is_mobile = '';
+      }
+  
+  // forcing mobile on non-mobile browser or mobile browser and not forcing desktop
+  if (force_mobile || (is_mobile && !ignore_mobile)) {
+ 
+    force_mobile && cookie_delete('force_web');
+   
+    
+    // if we have valid referrer, write referrer cookie
+    if (r29v(document.referrer)) {
+      cookie_create('mobile_referrer', document.referrer, 1);
+    }
+   
+    // redirect
+    var mobile_location = 'http://'+mobile_domain+location.pathname.replace(/^(.*)\/slideshow/, '$1') + '?' + location.search.slice(1);
+    window.location = mobile_location;
+    return;
+  }
+  
+  // show mobile link if we didn't redirect
+  is_mobile && show_mobile_link();
+  
+})();
+</script>
+<!--/Mobile redirector -->
+    
+  
+        <script type="text/javascript">var _dc_tile = 1;var _dc_ts=_sf_startpt=(new Date()).getTime();WRInitTime=(new Date()).getTime();</script>
+    <link rel="stylesheet" href="http://static3.refinery29.com/blog/dde5b0/css/compiled/style.css" media="print, screen" />
+    <link rel="alternate" type="application/rss+xml" title="Refinery29" href="http://www.refinery29.com/index.xml" />
+    
+  	<!--[if lt IE 9]>
+  		<link rel="stylesheet" type="text/css" href="http://static2.refinery29.com/blog/dde5b0/css/compiled/ie.css" />
+      <script src="http://static3.refinery29.com/blog/dde5b0/js/html5.js"></script>
+    <![endif]-->
+
+    
+    <script type="text/javascript" src="http://static1.refinery29.com/blog/dde5b0/js/jquery.js"></script>
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/dde5b0/js/jquery/plugins/jcarousel/jcarousel.js"></script>
+    <script type="text/javascript" src="http://static3.refinery29.com/blog/dde5b0/js/spin.js"></script>
+    <!-- Pinterest Hover Pin -->  
+    <script type="text/javascript" src="http://static1.refinery29.com/blog/dde5b0/js/jquery/plugins/jquery.autopin.alt_title.js"></script>
+
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/dde5b0/js/r29.js"></script>
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/dde5b0/js/api.js"></script>
+
+
+
+    <!-- Avoiding Flash of Unstyled Text -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    
+
+    
+    
+          <script type="text/javascript" src="http://static3.refinery29.com/blog/dde5b0/js/socket.io/socket.io.js"></script>
+    
+  
+    <title itemprop="name">
+			Barbie As The Mona Lisa, Statue of Liberty, And Other Works Of Art
+	
+</title> 
+    
+    <!-- Meta -->
+    
+  
+  
+   <!-- month of beauty -->
+
+  
+  <!-- Entry Meta -->
+	<meta name="description" content="First there was the affair with Christian Louboutin, then a dress up session with Comme des Gar&ccedil;ons, followed by the Gaga identity theft situation. But now, Barbie has turned to the art world to appear in some of the most..." itemprop="description">
+
+ 
+<meta name="keywords"    content="" itemprop="keywords"> 
+
+  <!-- Facebook Meta -->
+  <meta property="og:title"       content="Barbie As The Mona Lisa, Statue of Liberty, And Other Works Of Art" itemprop="name" />
+  <meta property="og:type"        content="article"/>
+  <meta property="og:url"         content="http://www.refinery29.com/barbie-as-fine-art.php"/>
+  <meta property="og:image"       content="http://static3.refinery29.com/bin/entry/d6d/300x/21724/image.jpg" itemprop="image" />
+  <meta property="og:site_name"   content="Refinery29" itemprop="publisher" />
+  <meta property="og:description" content="First there was the affair with Christian Louboutin, then a dress up session with Comme des Gar&ccedil;ons, followed by the Gaga identity theft situation. But now, Barbie has turned to the art world to appear in some of the most..." />
+
+
+<link rel="canonical" href="http://www.refinery29.com/barbie-as-fine-art" />
+
+<!-- Slideshow Meta -->
+
+        
+<!-- Pagination Meta -->
+
+	
+  
+
+        
+    
+    <meta property="fb:app_id" content="155023867867753"/>
+    <link href="https://plus.google.com/101601649207969071719" rel="publisher" />
+    
+  </head>
+    
+  <body>
+    <div id="container">
+						
+		             	<header id="main">
+
+  <!-- Information Bar -->
+  <nav>
+    <div class="container ad-frame-wrap">    
+      
+      
+                  <!-- Ad -->
+          <div class="ad-frame">
+            
+                        	
+            
+            
+                          
+<div class="ad ad-728x90" iframe-code="http://ad.doubleclick.net/adi/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;" iframe-size="728x90, 970x66"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+            
+          </div>
+        
+      
+    </div>
+    
+    <div class="container">
+    
+      <h1><a href="http://www.refinery29.com">Refinery29</a></h1>
+      
+              
+      
+      
+      
+      
+    
+      <ul class="features">
+        <li><a href="http://www.refinery29.com" class="read active">Read</a></li>
+          <!-- Empty divs for gradient-ed vertical lines :/ -->
+          <li><div>&nbsp;</div></li>
+        <li><a href="http://www.refinery29.com/video" class="watch">Watch</a></li>
+          <li><div>&nbsp;</div></li>
+
+        <li><a href="https://www.refinery29.com/shops" class="shop">Shop</a></li>
+
+
+      </ul>
+      
+      <ul class="user">
+        <li class="user-login"><a href="https://welcome.refinery29.com/login" class="user-login r29-login">Login</a></li>
+        <li class="user-login"><a href="https://welcome.refinery29.com/register" class="user-login r29-register">Register</a></li>
+        <li class="shopping"><a href="https://www.refinery29.com/shops">0</a></li>
+
+        <li class="search">
+          <a href="javascript:void(0);" class="trigger">Search</a>
+          <div id="search" class="display_none">
+            <div class="search" id="search-box">
+  <form method="get" action="/search">
+    <input type="text" name="q" value="" placeholder="Search" data-placeholder="Search" autocomplete="off" />
+    
+    
+  </form>
+  <div class="flap"></div>
+</div>
+
+          </div>
+        </li>
+        
+      </ul>
+      
+      <!-- I give up trying to avoid these, it's not worth it -->
+      <div class="clear"></div>
+      
+    </div>      
+  </nav>
+  
+  
+    <!--  -->
+    
+    <!-- Categories -->
+    <ul class="categories">
+      <div class="container">
+    
+        <!-- Cities Dropdown -->
+        <li class="cities" data-cat="cities">
+          <a href="javascript:void(0);">Cities</a>
+          <ul class="display_none" data-cat="cities">
+            
+                          <li>
+                <a href="http://www.refinery29.com/new-york">New York</a>
+              </li>
+                          <li>
+                <a href="http://www.refinery29.com/los-angeles">Los Angeles</a>
+              </li>
+                          <li>
+                <a href="http://www.refinery29.com/chicago">Chicago</a>
+              </li>
+                          <li>
+                <a href="http://www.refinery29.com/san-francisco">San Francisco</a>
+              </li>
+                          <li>
+                <a href="http://www.refinery29.com/washington-dc">Washington, D.C.</a>
+              </li>
+                          <li>
+                <a href="http://www.refinery29.com/miami">Miami</a>
+              </li>
+            
+          </ul>
+        </li>
+        
+        
+      
+                  <li class="global" data-cat="fashion">
+              <a href="http://www.refinery29.com/fashion"><span>Fashion</span></a>
+          </li>
+                  <li class="global" data-cat="beauty">
+              <a href="http://www.refinery29.com/beauty"><span>Beauty</span></a>
+          </li>
+                  <li class="global" data-cat="living">
+              <a href="http://www.refinery29.com/living"><span>Living</span></a>
+          </li>
+                  <li class="global" data-cat="entertainment">
+              <a href="http://www.refinery29.com/entertainment"><span>Entertainment</span></a>
+          </li>
+                  <li class="global" data-cat="how-to">
+              <a href="http://www.refinery29.com/how-to"><span>How To</span></a>
+          </li>
+                  <li class="global active" data-cat="news">
+              <a href="http://www.refinery29.com/news"><span>News</span></a>
+          </li>
+        
+      </div>
+    </ul> <!-- End Categories Content -->
+      
+    <!-- Subcategories Submenus -->
+    <div class="container">
+      <div class="subcat-content">
+
+        
+      
+                  <div class="display_none" data-cat="fashion">
+                          <!-- Sub-categories -->
+              <ul class="subcats">
+                                  <li data-subcat="shopping">
+                    <a  href="http://www.refinery29.com/fashion/shopping">
+                      Shopping
+                    </a>
+                  </li>
+                                  <li data-subcat="designers">
+                    <a  href="http://www.refinery29.com/fashion/designers">
+                      Designers
+                    </a>
+                  </li>
+                                  <li data-subcat="street-style">
+                    <a  href="http://www.refinery29.com/fashion/street-style">
+                      Street Style
+                    </a>
+                  </li>
+                                  <li data-subcat="stores">
+                    <a  href="http://www.refinery29.com/fashion/stores">
+                      Stores
+                    </a>
+                  </li>
+                                  <li data-subcat="trends">
+                    <a  href="http://www.refinery29.com/fashion/trends">
+                      Trends
+                    </a>
+                  </li>
+                                  <li data-subcat="college">
+                    <a  href="http://www.refinery29.com/fashion/college">
+                      College
+                    </a>
+                  </li>
+                                  <li data-subcat="mens">
+                    <a  href="http://www.refinery29.com/fashion/mens">
+                      Men&#039;s
+                    </a>
+                  </li>
+                                  <li data-subcat="events">
+                    <a  href="http://www.refinery29.com/fashion/events">
+                      Events
+                    </a>
+                  </li>
+                
+              </ul>
+              
+              <ul class="popular-trending">
+                <img src="http://static1.refinery29.com/blog/dde5b0/static/images/menu-loader-24.gif" class="loading" />
+              </ul>
+
+            
+          </div>
+                  <div class="display_none" data-cat="beauty">
+                          <!-- Sub-categories -->
+              <ul class="subcats">
+                                  <li data-subcat="hair">
+                    <a  href="http://www.refinery29.com/beauty/hair">
+                      Hair
+                    </a>
+                  </li>
+                                  <li data-subcat="nails">
+                    <a  href="http://www.refinery29.com/beauty/nails">
+                      Nails
+                    </a>
+                  </li>
+                                  <li data-subcat="makeup">
+                    <a  href="http://www.refinery29.com/beauty/makeup">
+                      Makeup
+                    </a>
+                  </li>
+                                  <li data-subcat="skin-care">
+                    <a  href="http://www.refinery29.com/beauty/skin-care">
+                      Skin Care
+                    </a>
+                  </li>
+                                  <li data-subcat="wellness">
+                    <a  href="http://www.refinery29.com/beauty/wellness">
+                      Wellness
+                    </a>
+                  </li>
+                                  <li data-subcat="fitness">
+                    <a  href="http://www.refinery29.com/beauty/fitness">
+                      Fitness
+                    </a>
+                  </li>
+                
+              </ul>
+              
+              <ul class="popular-trending">
+                <img src="http://static1.refinery29.com/blog/dde5b0/static/images/menu-loader-24.gif" class="loading" />
+              </ul>
+
+            
+          </div>
+                  <div class="display_none" data-cat="living">
+                          <!-- Sub-categories -->
+              <ul class="subcats">
+                                  <li data-subcat="home">
+                    <a  href="http://www.refinery29.com/living/home">
+                      Home
+                    </a>
+                  </li>
+                                  <li data-subcat="entertaining">
+                    <a  href="http://www.refinery29.com/living/entertaining">
+                      Entertaining
+                    </a>
+                  </li>
+                                  <li data-subcat="food-and-drink">
+                    <a  href="http://www.refinery29.com/living/food-and-drink">
+                      Food And Drink
+                    </a>
+                  </li>
+                                  <li data-subcat="travel">
+                    <a  href="http://www.refinery29.com/living/travel">
+                      Travel
+                    </a>
+                  </li>
+                                  <li data-subcat="gadgets">
+                    <a  href="http://www.refinery29.com/living/gadgets">
+                      Gadgets
+                    </a>
+                  </li>
+                
+              </ul>
+              
+              <ul class="popular-trending">
+                <img src="http://static1.refinery29.com/blog/dde5b0/static/images/menu-loader-24.gif" class="loading" />
+              </ul>
+
+            
+          </div>
+                  <div class="display_none" data-cat="entertainment">
+                          <!-- Sub-categories -->
+              <ul class="subcats">
+                                  <li data-subcat="music">
+                    <a  href="http://www.refinery29.com/entertainment/music">
+                      Music
+                    </a>
+                  </li>
+                                  <li data-subcat="humor">
+                    <a  href="http://www.refinery29.com/entertainment/humor">
+                      Humor
+                    </a>
+                  </li>
+                                  <li data-subcat="art">
+                    <a  href="http://www.refinery29.com/entertainment/art">
+                      Art
+                    </a>
+                  </li>
+                                  <li data-subcat="celebrities">
+                    <a  href="http://www.refinery29.com/entertainment/celebrities">
+                      Celebrities
+                    </a>
+                  </li>
+                                  <li data-subcat="influencers">
+                    <a  href="http://www.refinery29.com/entertainment/influencers">
+                      Influencers
+                    </a>
+                  </li>
+                
+              </ul>
+              
+              <ul class="popular-trending">
+                <img src="http://static1.refinery29.com/blog/dde5b0/static/images/menu-loader-24.gif" class="loading" />
+              </ul>
+
+            
+          </div>
+                  <div class="display_none" data-cat="how-to">
+                          <!-- Sub-categories -->
+              <ul class="subcats">
+                                  <li data-subcat="i-diy">
+                    <a  href="http://www.refinery29.com/how-to/i-diy">
+                      I Diy
+                    </a>
+                  </li>
+                                  <li data-subcat="styling-tips">
+                    <a  href="http://www.refinery29.com/how-to/styling-tips">
+                      Styling Tips
+                    </a>
+                  </li>
+                                  <li data-subcat="what-to-wear">
+                    <a  href="http://www.refinery29.com/how-to/what-to-wear">
+                      What To Wear
+                    </a>
+                  </li>
+                
+              </ul>
+              
+              <ul class="popular-trending">
+                <img src="http://static1.refinery29.com/blog/dde5b0/static/images/menu-loader-24.gif" class="loading" />
+              </ul>
+
+            
+          </div>
+                  <div class="display_none" data-cat="news">
+                          <!-- Sub-categories -->
+              <ul class="subcats">
+                                  <li data-subcat="fashion">
+                    <a  class="active" href="http://www.refinery29.com/news/fashion">
+                      Fashion
+                    </a>
+                  </li>
+                                  <li data-subcat="beauty">
+                    <a  href="http://www.refinery29.com/news/beauty">
+                      Beauty
+                    </a>
+                  </li>
+                                  <li data-subcat="celebrities">
+                    <a  href="http://www.refinery29.com/news/celebrities">
+                      Celebrities
+                    </a>
+                  </li>
+                
+              </ul>
+              
+              <ul class="popular-trending">
+                <img src="http://static1.refinery29.com/blog/dde5b0/static/images/menu-loader-24.gif" class="loading" />
+              </ul>
+
+            
+          </div>
+        
+
+      </div> <!-- End Subcategories Content -->
+      
+    </div> <!-- End Subcategories Container -->
+
+          
+    
+    
+    
+              <!-- Optional Subcategory Menu -->
+        <div class="container">
+                      <ul class="global">
+               <!-- Global -->
+                                  <li  class="active"><a href="/news/fashion">Fashion</a>&nbsp;&nbsp;</li>
+                                  <li ><a href="/news/beauty">Beauty</a>&nbsp;&nbsp;</li>
+                                  <li ><a href="/news/celebrities">Celebrities</a>&nbsp;&nbsp;</li>
+                
+              
+            </ul>
+          
+      
+          
+          <div class="clear"></div>
+        </div>
+      
+      
+    
+
+  
+
+</header>
+
+		    
+			
+			
+
+      <div id="skin"></div><!--need this for background skinz-->
+      
+  		            <div class="inner">
+        
+            
+								  
+				  
+    				
+  				
+    		  
+				
+				
+        <div id="content"> 
+        
+          					<!-- LEFT -->
+					<div class="col_2">
+						
+  <!-- CACHE 18c1a - ttl: 180 -->    <!-- Mini Signup Module on Entry Pages: For Once -->
+          <!-- Lil Mini Signup Module -->
+<div class="signup-mini" style="display:none;">
+  <div class="folded-corner"></div>
+  <img src="http://static1.refinery29.com/blog/dde5b0/images/signup/sample-email.png" width="195" height="163" alt="Get Your Free Daily Newsletter!" class="left" />
+  <h4>Get Your Free <br>Daily Newsletter!</h4>
+  <p>The freshest fashion, shopping, lifestyle news, beauty tips, and local deals you'll ever need!</p>
+  
+  <form action="/signup/new-york?source=sitebox&medium=organic" method="POST">
+  
+    <input type="email" name="email" required placeholder="Enter your Email Address" data-placeholder="Enter your Email Address">
+    
+    <input type="hidden" name="email_lists[everywhere]" value="true">
+    
+      
+    <input type="submit" name="submit" value="Sign Up" />
+  
+  
+  </form>
+
+  <a href="" class="close">Close<span></span></a>
+</div>
+
+
+<script type="text/javascript">
+
+  $('.signup-mini a.close').click(function(event) {
+    event.preventDefault();
+    $('.signup-mini').hide();
+    R29.cookie.set('signup_mini',1,3600*24*30);
+  });
+
+  $('.signup-mini input.submit').click(function(event) {
+    R29.cookie.set('signup_mini',1,-1);
+    return true;
+  });
+
+  if(!R29.cookie.get('signup_mini')) {
+    $('.signup-mini').show();
+  }
+
+</script>
+    
+    <div class="entry-block">
+      <aside class="social-sidebar">
+
+    <!-- R29 CLIP -->
+  
+  
+  <!-- FB -->
+  <div class="facebook" itemprop="interactionCount">
+    <fb:like layout="box_count" href="http://www.refinery29.com/barbie-as-fine-art.php" send="false" width="50" ref="sidebar"></fb:like>
+  </div>
+  
+  <!-- Twitter -->
+  <div class="twitter" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'TwitterSidebar', 'tweet']);">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-text="Barbie As The Mona Lisa, Statue of Liberty, And Other Works Of Art" data-url="http://www.refinery29.com/barbie-as-fine-art.php" data-count="vertical" data-via="refinery29">&nbsp;</a>
+  </div>
+
+  <!-- Pinterest -->
+  <div class="pinterest" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'Pinterest', 'pinned']);">
+    <a href="http://pinterest.com/pin/create/button/?url=http://www.refinery29.com/barbie-as-fine-art.php&media=http://static1.refinery29.com/bin/entry/b17/x/21724/image.jpg&description=Barbie As The Mona Lisa, Statue of Liberty, And Other Works Of Art" class="pin-it-button" count-layout="vertical">Pin It</a>
+  </div>
+  
+  <!-- Stumbleupon -->
+  <div class="stumbleupon" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'StumbleSidebar', 'stumble']);">
+    <iframe src="http://badge.stumbleupon.com/badge/embed/5/?url=http://www.refinery29.com/barbie-as-fine-art.php" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:60px;" allowTransparency="true"></iframe>
+  </div>
+  
+</aside>
+    
+      
+  
+  
+   
+    
+        
+  
+
+  
+  <div class="entry-header">
+    
+    
+  	
+
+    <div class="category">
+      
+            
+          Fashion
+        
+      
+
+    </div>
+    
+    <div class="deliminator"></div>
+    
+    <div class="date">
+              Jan 13, 2010 6:00 PM
+        <!-- <span itemprop="datePublished">2010-01-13 18:00:00</span> -->
+      
+    </div>
+    <div class="asset-info">
+
+      <!-- Facebook Like -->
+      <div class="facebook" itemprop="interactionCount">
+        <fb:like layout="button_count" href="http://www.refinery29.com/barbie-as-fine-art.php" width="90" ref="entrypage"></fb:like>
+      </div>
+      <!-- Twitter Share -->
+      <div class="twitter" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'TwitterSolo', 'Tweet']);">
+        <a href="http://twitter.com/share" class="twitter-share-button" data-text="Barbie As The Mona Lisa, Statue of Liberty, And Other Works Of Art" data-url="http://www.refinery29.com/barbie-as-fine-art.php" data-count="horizontal" data-via="refinery29">&nbsp;</a>
+      </div>
+  
+      <!-- Comment Count -->
+<div class="comment-count" itemprop="interactionCount">
+      <a href="/barbie-as-fine-art#disqus_thread" data-url="http://www.refinery29.com/barbie-as-fine-art.php" class="comments"><span class="comment-count">0</span></a>
+  
+</div>
+  
+    </div>
+  </div>
+
+      
+      <!-- Sponsored Headline eMeta -->
+      
+    
+      <div class="entry">
+	<div itemscope itemtype="http://schema.org/Article">
+	  <div class="h1">Barbie As The Mona Lisa, Statue of Liberty, And Other Works Of Art</div>
+	  <p class="byline">
+
+      By 
+    
+    <a href="/author/laura-yacoe" rel="author"><span itemprop="author">Laura Yacoe</span></a>
+</p>
+	  	    <div class="body">
+	    	<span itemprop="articleBody">
+		      First there was the <a href="/under_the_influence/barbie_and_christian_louboutin.php">affair with Christian Louboutin</a>, then a dress up session with <a href="http://pipeline.refinery29.com/news/barbie_comme_des_garcons.php" target="_blank" rel="nofollow">Comme des Garçons</a>, followed by the <a href="http://pipeline.refinery29.com/news/barbie_goes_gaga_with_some_imp.php" rel="nofollow" target="_blank">Gaga identity theft</a> situation. But now, <strong>Barbie</strong> has turned to the <strong>art world</strong> to appear in some of the most recognized images in history. From surrealism to modern art, the fine art spectrum has welcomed the plastic diva and placed her into such works like Vermeer's <em>Girl With The Pearl Earring</em> and The Beatles' <em>Yellow Submarine</em> album art. Click through to see Barbie like you've never seen her before! (<a href="http://www.barbiemamuse.com/barbie_ga_venus_de_milo.php" target="_blank" rel="nofollow">Barbie</a>) <br><br><img alt="barbie_gets_artsy_01" src="/static/bin/entry/92c/x/21734/barbie-gets-artsy-01.jpg" width="600" height="400" class="mt-image-none" style=""><br><br><em>Above, from left:</em> Barbie in "Venus by Milo"; Barbie in "Girl With the Pearl Earring," by Vermeer.
+<!--more-->
+<br><img alt="barbie_gets_arty_02" src="/static/bin/entry/5a2/x/21742/barbie-gets-arty-02.jpg" width="600" height="400" class="mt-image-none" style=""><br><br><em>Above, from left:</em> Barbie in "Mona Lisa", by Leonardo Davinci; Barbie in an Erwin Blumenfeld-shot <em>Vogue</em> cover. <br><br><img alt="babrie_gets_arty_03" src="/static/bin/entry/527/x/21751/babrie-gets-arty-03.jpg" width="600" height="400" class="mt-image-none" style=""><br><br><em>Above, from left:</em> Barbie as Gabrielle "Coco" Chanel; Barbie as the Statue of Liberty, by Bartholdi. <br><br><img alt="barbie_gets_artsy_04" src="/static/bin/entry/d3c/x/21782/barbie-gets-artsy-04.jpg" width="600" height="400" class="mt-image-none" style=""><br><br><em>Above, from left:</em> Barbie in a <strong>Helmut Newton</strong> photograph; Barbie as Nefertiti. <br><br><img alt="barbie_gets_artsy_05" src="/static/bin/entry/832/x/21794/barbie-gets-artsy-05.jpg" width="600" height="400" class="mt-image-none" style=""><br><br><em>Above, from left:</em> Barbie in <em>Man Ray</em> photograph; Barbie in <em>The Beatles' Yellow Submarine Album Cover</em>. <br><br><img alt="barbie_gets_arty_06" src="/static/bin/entry/c1e/x/21799/barbie-gets-arty-06.jpg" width="600" height="400" class="mt-image-none" style=""><br><br><em>Above, from left</em>: Barbie in "Dora Maar", by Picasso; Barbie in "The Portrait of Sylvia von Harden", by Otto Dixx.
+		      
+		      		        
+
+
+
+
+		      
+		      
+		      
+  
+  
+
+		      
+		      
+	      </span>
+		  </div>
+	  
+	  
+	  <div class="clear"></div>
+  </div>
+</div>
+      
+      
+      
+      <div class="footer">
+      <div class="tags">
+              <a href="/news">News</a> &raquo; 
+      
+      <a href="/news/fashion">Fashion</a> &raquo;
+      	
+      	Barbie As The Mona Lisa, Statue of Liberty, And Other Works Of Art
+      
+      <br/>
+      
+      
+    </div>
+  
+  
+  
+  
+
+  
+
+  
+</div>
+    <!-- /CACHE 18c1a - ttl: 180 -->
+    
+      
+      
+      <!-- Related Stories -->
+<div class="related-stories">
+  <div class="hot-dimple">Related Stories</div>
+  <ul>
+    <!-- CACHE 994e5 - ttl: 180 -->      
+      
+                  
+                  
+          <li>
+            <div class="asset">
+              <a href="/fall-fashion-ads"><img src="http://static2.refinery29.com/bin/entry/cd2/120x143/463983/opener.jpg" alt="opener" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/fall-fashion-ads">We Caption The Best Of The Fall Campaigns</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/olympic-body-doubles"><img src="http://static2.refinery29.com/bin/entry/537/120x143/464084/opener.jpg" alt="opener" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/olympic-body-doubles">Amazing: Fashion Celebrities & Their Olympic Body Doubles</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/victoria-beckham-glamour"><img src="http://static1.refinery29.com/bin/entry/b88/120x143/463069/glamour-victoria-beckham.jpg" alt="glamour-victoria-beckham" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/victoria-beckham-glamour">Exclusive Pics! Victoria Beckham Guest Edits Mag, Hates&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/manrepeller-leandra-medine"><img src="http://static2.refinery29.com/bin/entry/086/120x143/459569/tmr-bof.jpg" alt="TMR-BOF" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/manrepeller-leandra-medine">5 Things To Know This AM</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/2012/07/34838/jeffrey-campbell-roller-skates"><img src="http://static3.refinery29.com/bin/entry/f97/120x143/453378/rollin-op.jpg" alt="rollin_OP" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/2012/07/34838/jeffrey-campbell-roller-skates">Found: The Shoes We've Wanted Since '82</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/2012/07/34800/ebay-designer-collaboration"><img src="http://static2.refinery29.com/bin/entry/e9c/120x143/451329/cbop.jpg" alt="cbOP" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/2012/07/34800/ebay-designer-collaboration">First Look At eBay's Designer Collab — All Under $100&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/highest-fashion-salaries"><img src="http://static3.refinery29.com/bin/entry/568/120x143/86992/opener.jpg" alt="opener" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/highest-fashion-salaries">The Highest-Paid Fashion Players Are Making $5 Million&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/2012/07/34778/tavi-gevinson-bust"><img src="http://static3.refinery29.com/bin/entry/8e8/120x143/442411/tavi-gevinson-bust-cover-1.jpg" alt="tavi-gevinson-bust-cover-1" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/2012/07/34778/tavi-gevinson-bust">Wait, That's Not Michelle Williams On The Cover Of <em>Bust</em></a></h2>
+          </li>
+          
+        
+      
+                
+        
+      
+        
+    <!-- /CACHE 994e5 - ttl: 180 -->
+  </ul>
+
+  
+<div class="ad ad-related-stories-ccu" iframe-code="http://ad.doubleclick.net/adi/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=middle;tile=3;dcopt=;sz=300x251;" iframe-size="300x251"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=middle;tile=3;dcopt=;sz=300x251;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=middle;tile=3;dcopt=;sz=300x251;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=middle;tile=3;dcopt=;sz=300x251;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+
+</div>
+
+      <div id="comments">
+      <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    
+        var disqus_shortname = 'refinery'; // required: replace example with your forum shortname
+        var disqus_developer = 1;
+        var disqus_url = 'http://www.refinery29.com/barbie-as-fine-art.php';
+        
+        $(function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('body')[0]).appendChild(dsq);
+        });
+        
+    </script>
+  
+</div>
+    </div>
+     
+
+					</div>
+            
+          <div class="col beta sidebar">
+            <!-- RIGHT -->
+                            
+              <!-- CACHE 7b283 - ttl: 600 -->                
+                        				  <!-- Signup -->
+<div class="widget" style="margin-bottom: 20px">
+   
+     
+  
+  
+  <a href="/signup/everywhere?source=sitearrow&amp;medium=organic" class="signup everywhere" alt="Sign Up Now!"></a>
+
+
+</div>
+
+                
+      				  
+      				  <div class="social-networks">
+
+  <p>Follow Us</p>
+
+  <a href="https://twitter.com/refinery29" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @refinery29</a>
+  
+  <a href="http://pinterest.com/refinery29/" target="_blank" rel="nofollow" class="pinterest">
+    <img src="http://static2.refinery29.com/blog/dde5b0/images/widgets/pinterest.png" width="26" height="20" alt="Follow Us on Pinterest">
+  </a>
+
+  <div class="fblike">
+    <fb:like href="http://www.facebook.com/refinery29" data-layout="button_count" show_faces="false" width="105" height="28"></fb:like>
+  </div>
+  
+</div>
+      				  
+                
+<div class="ad ad-sidebar-border" iframe-code="http://ad.doubleclick.net/adi/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;" iframe-size="300x250,300x600,300x1050"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+                
+                
+                                
+
+                                
+                
+                
+
+                
+                
+                
+                
+                                	<div class="m-o-w-widget">
+  <a href="/month-of-women"><h3 class="headline">The Month of Working Girls</h3></a>
+      <div>
+    
+      
+      
+        <a href="/christina-tosi"><img src="http://static3.refinery29.com/bin/entry/231/280x335/458421/2.jpg" alt="2" width="280" height="335"  /></a>
+        
+    </div>
+      
+        
+</div>
+                
+
+
+                
+              <!-- /CACHE 7b283 - ttl: 600 -->
+              
+              
+              
+              
+              <!-- R29 Shops Widget-->
+	<div class="shops-widget">
+		<a href="https://refinery29.com/shops"><img class="shops_header" src="http://static2.refinery29.com/blog/dde5b0/images/widgets/shopsheader.png" alt="Have you shopped today?"/></a>
+		
+		<ul>
+		
+			<li>
+				<a href="https://refinery29.com/shops/shop-furbish-voucher.html" class="less">
+					<img id="main_image" src="https://www.refinery29.com/shops/media/catalog/product/cache/1/small_image/80x/0f13e383cea6a6f81f8b8e46d43dd471/f/u/furbishopen.jpg" class="left" alt="Shop now on R29Shops"/>
+					<div class="shopsh4">Furbish</div>
+					<div class="deal">Style-Heavy D&eacute;cor Finds<br><b>$45</b> gets you $90</div>
+					<div class="buy_now">BUY NOW<img class="arrow" src="http://static1.refinery29.com/blog/dde5b0/images/widgets/triangle.png"/></div>
+				</a>
+			</li>
+			
+			<li>
+				<a href="https://refinery29.com/shops/boutiques-137/kusmi-tea.html" class="less">
+					<img id="main_image" src="https://www.refinery29.com/shops/media/catalog/product/cache/1/small_image/80x/0f13e383cea6a6f81f8b8e46d43dd471/t/h/the_tea_assortments_and_kusmi_shopping_bag_001_opener.jpg" class="left" alt="Shop now on R29Shops"/>
+					<div class="shopsh4">Kusmi Tea</div>
+					<div class="deal">Indulge In A Gift-Worthy Selection Of Gourmet Teas and Accessories</div>
+					<div class="buy_now">SHOP THE BOUTIQUE<img class="arrow" src="http://static1.refinery29.com/blog/dde5b0/images/widgets/triangle.png"/></div>	
+				</a>
+			</li>
+			
+			<li>
+				<a href="https://refinery29.com/shops/clothing/tusc-voucher.html" class="less">
+					<img id="main_image" src="https://www.refinery29.com/shops/media/catalog/product/cache/1/small_image/306x/0f13e383cea6a6f81f8b8e46d43dd471/o/p/opentusc.jpg" class="left" alt="Shop now on R29Shops"/>
+					<div class="shopsh4">Tusc Boutique</div>
+					<div class="deal">40+ Budget Finds<br><b>$30</b> gets you $60</div>
+					<div class="buy_now">BUY NOW<img class="arrow" src="http://static1.refinery29.com/blog/dde5b0/images/widgets/triangle.png"/></div>		
+				</a>
+			</li>
+			
+		</ul>
+
+	</div>
+              <!--Top Popular & Editor's Picks -->
+              
+              <!-- Top 5 Editor's Picks -->
+<div class="top-picks">
+  <div class="editors"></div>
+  <ul class="editors">
+          <li>
+      	<a href="/street-style-history" class="title">
+	        <span><img src="http://static3.refinery29.com/bin/entry/725/60x70/244960/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					Has Street Style Jumped The Shark? 
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/street-style-history" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/fashion-tattoo-designs" class="title">
+	        <span><img src="http://static3.refinery29.com/bin/entry/35f/60x70/168427/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					Fashion Tattoos: The Stories Behind The Ink! 
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/fashion-tattoo-designs" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/bag-personality-quiz" class="title">
+	        <span><img src="http://static3.refinery29.com/bin/entry/d49/60x70/167484/bag-opener6.jpg" alt="Bag_Opener6" width="60" height="70"  /></span>
+					What Your It Bag Of Choice Says About You 
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/bag-personality-quiz" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/jean-paul-gaultier-interview" class="title">
+	        <span><img src="http://static2.refinery29.com/bin/entry/fd7/60x70/165137/jpg.jpg" alt="JPG" width="60" height="70"  /></span>
+					Jean Paul Gaultier On Loving S.F., Hating Tech, & Turning 60
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/jean-paul-gaultier-interview" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/dangerous-beauty-and-fashion" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/public/13d/60x70/164477/opener1.jpg" alt="Opener1" width="60" height="70"  /></span>
+					10 Things You're Wearing That Could Kill You
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/dangerous-beauty-and-fashion" width="90"></fb:like>
+      </li>
+    
+        
+  </ul>
+</div>
+              
+                              <div class="r29tv">
+  <a href="http://www.refinery29.com/video"><img src="http://static3.refinery29.com/blog/dde5b0/images/widgets/r29tv-header.jpg" style="margin: 0pt auto; display: block;" alt="Refinery29 TV" /></a>               
+  
+  <div style="display:none"></div>
+  
+  <!--  Videos populated by 
+        Homepage & Index Page Right Rail Playlist in Brightcove Admin
+        Video Player with Horizontal Video List -->
+  
+  <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+  
+  <object id="myExperience" class="BrightcoveExperience">
+    <param name="bgcolor" value="#FFFFFF" />
+    <param name="width" value="300" />
+    <param name="height" value="340" />
+    <param name="playerID" value="1223625514001" />
+    <param name="playerKey" value="AQ~~,AAAAjP0iSQE~,RJXHfxnZT2gNv3dZGdjsA7BIfR73CLPe" />
+    <param name="isVid" value="true" />
+    <param name="isUI" value="true" />
+    <param name="dynamicStreaming" value="true" />
+    <param name="wmode" value="transparent" />
+  </object>
+  
+  <!-- 
+  This script tag will cause the Brightcove Players defined above it to be created as soon
+  as the line is read by the browser. If you wish to have the player instantiated only after
+  the rest of the HTML is processed and the page load is complete, remove the line.
+  -->
+  <script type="text/javascript">brightcove.createExperiences();</script>
+</div>
+              
+              
+              <!-- Top 5 Popular -->
+<div class="top-picks">
+  <div class="popular">
+    
+<div class="ad ad-top5" iframe-code="http://ad.doubleclick.net/adi/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=top;tile=6;dcopt=;sz=75x30;" iframe-size="75x30"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=top;tile=6;dcopt=;sz=75x30;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=top;tile=6;dcopt=;sz=75x30;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=top;tile=6;dcopt=;sz=75x30;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+  </div>
+  <ul>
+    <!-- CACHE 373b5 - ttl: 600 -->  
+              <li>
+        	<a href="/cindy-crawfords-daughter-kaia-gerber-versace-ads" class="title">
+	          <span><img src="http://static3.refinery29.com/bin/entry/7fe/60x70/110967/cindy-crawford-daughter-op.jpg" alt="cindy-crawford-daughter-op" width="60" height="70"  /></span>
+	          Cindy Crawford's Daughter Is 10 Years Old And THIS Is What She Looks Like
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/cindy-crawfords-daughter-kaia-gerber-versace-ads" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/2012/07/34004/espn-nude-olympians" class="title">
+	          <span><img src="http://static2.refinery29.com/bin/entry/7e4/60x70/301129/screen-shot-2012-07-11-at-8-24-56-am.jpg" alt="Screen Shot 2012-07-11 at 8.24.56 AM" width="60" height="70"  /></span>
+	          Bodies We Want: Naked Olympians Bare All In This Beautiful Photo Shoot
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/2012/07/34004/espn-nude-olympians" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/vanity-fair-best-dressed" class="title">
+	          <span><img src="http://static3.refinery29.com/bin/entry/e34/60x70/458475/kate-middleton-july31.jpg" alt="kate_middleton_july31" width="60" height="70"  /></span>
+	          Our Top 10 From <em>Vanity Fair</em>'s Best-Dressed List
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/vanity-fair-best-dressed" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/half-drag-portraits" class="title">
+	          <span><img src="http://static2.refinery29.com/bin/entry/34f/60x70/465533/halfdrag-opener.jpg" alt="HalfDrag-Opener" width="60" height="70"  /></span>
+	          Double Take: We Can't Stop Staring At These Half-Drag Portraits
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/half-drag-portraits" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/one-night-stand" class="title">
+	          <span><img src="http://static2.refinery29.com/bin/entry/04e/60x70/454381/jill-di-donato.jpg" alt="jill-di-donato" width="60" height="70"  /></span>
+	          One-Night Stands: Empowering Or Soul-Crushing?
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/one-night-stand" width="90"></fb:like>
+        </li>
+      
+    <!-- /CACHE 373b5 - ttl: 600 -->
+  </ul>
+</div>
+              
+              <!-- CACHE a66ee - ttl: 600 -->                <!-- Ad Editorial Module -->
+                
+                
+                <!-- Facebook Likes Widget -->
+<div class="facebook-likes">
+  <fb:like-box href="http://www.facebook.com/refinery29" width="300" height="255" show_faces="true" rows="1" stream="false" header="false"></fb:like-box>
+</div>
+<!-- /Facebook Widget -->
+                <!-- Street Style Widget -->
+<div class="street-fashion-widget">
+  <a href="/fashion/street-style/" class="header">Street Fashion</a>
+      <a href="/summer-dresses-for-4-hot-weather-events">
+	    <span class="italic">The Chicest Summer Frocks — D.C. Style </span>
+	    <span class="polaroid">
+	      <img src="http://static2.refinery29.com/bin/entry/bc5/158x190/458947/opener2.jpg" alt="opener2" width="158" height="190"  />
+	    </span>
+    </a>  
+  
+        
+</div>
+              <!-- /CACHE a66ee - ttl: 600 -->
+                 
+              
+<div class="ad ad-sidebar" iframe-code="http://ad.doubleclick.net/adi/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=middle1;tile=7;dcopt=;sz=300x100;" iframe-size="300x100"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=middle1;tile=7;dcopt=;sz=300x100;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=middle1;tile=7;dcopt=;sz=300x100;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/news/fashion;s1=news;s2=fashion;sponsorship=;pagetype=entry;test=;pageid=barbie-as-fine-art;tags=;pos=middle1;tile=7;dcopt=;sz=300x100;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+              
+            
+          </div>
+          
+          <div class="clear"></div>
+          <!-- CACHE 20367 - ttl: 300 -->            <!-- Footer @More Stories -->
+<div class="footer-boxes">
+  <div class="hot-dimple">More Style At Your Fingertips</div>
+	<ul>
+    
+    <li>
+      <div>
+        <a href="/back-to-school">
+                    	<img src="http://static3.refinery29.com/blog/dde5b0/images/collections/footer/back-to-reality.jpg" width="120" height="143">
+          	<span class="more_h2 footer_h2">Back To Reality: Your First Step Into A Season Of Perfect Style</span>
+          
+        </a>
+				<div>
+					<a href="/back-to-school" class="category">Back to Reality</a>
+				</div>
+      </div>
+    </li>
+					<li>
+				<div> 
+  				<a href="/extreme-shoes">
+  					<img src="http://static2.refinery29.com/bin/entry/432/120x143/464726/opener-site.jpg" alt="opener_site" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">Extreme Footwear: 11 Pairs That Push The Limit</span>
+  				</a> 
+					<div>
+						<!-- Comment Count -->
+<div class="comment-count" itemprop="interactionCount">
+      <a href="/extreme-shoes#disqus_thread" data-url="http://www.refinery29.com/extreme-shoes" class="comments"><span class="comment-count">0</span></a>
+  
+</div>
+
+													<a href="/fashion/trends" class="category">Trends</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/cat-eye-makeup-ideas">
+  					<img src="http://static3.refinery29.com/bin/entry/d5e/120x143/424822/cat-eye-liner-video.jpg" alt="cat-eye-liner-video" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">How To Master The Classic Cat-Eye Look</span>
+  				</a> 
+					<div>
+						<!-- Comment Count -->
+<div class="comment-count" itemprop="interactionCount">
+      <a href="/cat-eye-makeup-ideas#comments" class="comments"><div class="fb-comments-count" data-href="http://www.refinery29.com/cat-eye-makeup-ideas"></div></a>
+  
+</div>
+
+													<a href="/video/beauty" class="category">Beauty</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/african-american-hair-guide">
+  					<img src="http://static1.refinery29.com/bin/entry/14a/120x143/333642/opener-new.jpg" alt="opener-new" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">The Ultimate Guide To African-American Hair</span>
+  				</a> 
+					<div>
+						<!-- Comment Count -->
+<div class="comment-count" itemprop="interactionCount">
+      <a href="/african-american-hair-guide#comments" class="comments"><div class="fb-comments-count" data-href="http://www.refinery29.com/african-american-hair-guide"></div></a>
+  
+</div>
+
+													<a href="/beauty/hair" class="category">Hair</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/paris-street-style">
+  					<img src="http://static1.refinery29.com/bin/entry/2d8/120x143/304986/opener.jpg" alt="opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">Paris Street Style That Does Bastille Day Justice</span>
+  				</a> 
+					<div>
+						<!-- Comment Count -->
+<div class="comment-count" itemprop="interactionCount">
+      <a href="/paris-street-style#disqus_thread" data-url="http://www.refinery29.com/paris-street-style" class="comments"><span class="comment-count">0</span></a>
+  
+</div>
+
+													<a href="/fashion/street-style" class="category">Street Style</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/flattering-fall-trends">
+  					<img src="http://static3.refinery29.com/bin/entry/70c/120x143/301701/opener-1.jpg" alt="Opener-1" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">7 Fall Trends That REALLY Flatter!</span>
+  				</a> 
+					<div>
+						<!-- Comment Count -->
+<div class="comment-count" itemprop="interactionCount">
+      <a href="/flattering-fall-trends#disqus_thread" data-url="http://www.refinery29.com/flattering-fall-trends" class="comments"><span class="comment-count">0</span></a>
+  
+</div>
+
+													<a href="/how-to/styling-tips" class="category">Styling Tips</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+        
+	</ul> 
+</div>
+          <!-- /CACHE 20367 - ttl: 300 -->
+          
+
+        </div> <!-- /Content -->        
+                
+      </div> <!-- /Inner -->
+      
+      <!-- Footer -->
+<div id="footer">
+  <div class="footer_wrap">
+    <div class="col_3 first">
+      <dl>
+        <dt>Browse</dt>
+        <dd class="first">
+          <a href="http://www.refinery29.com">Read</a> /
+        </dd>
+        <dd>
+          <a href="http://www.refinery29.com/video">Watch</a> /
+        </dd>
+        <dd>
+          <a href="https://www.refinery29.com/shops">Shop</a>
+        </dd>
+      </dl>
+      <dl>
+        <dt>Refinery29</dt>
+        <dd class="first">
+          <a href="http://www.refinery29.com/about">About</a> /
+        </dd>
+        <dd>
+          <a href="http://www.refinery29.com/news">News</a> /
+        </dd>
+        <dd>
+          <a href="http://www.refinery29.com/about">Advertising</a> /
+        </dd>
+        <dd>
+          <a class="callout" href="http://www.refinery29.com/careers">We're Hiring!</a>
+        </dd>
+      </dl>
+    </div> <!-- end .col_3 -->
+  	  <div class="col_3">
+      <dl>
+        <dt id="shops_header">R29 Shops</dt>
+        <dd class="first">
+          <a href="https://www.refinery29.com/shops/help-me">Help</a> /
+        </dd>
+        <dd>
+          <a href="https://www.refinery29.com/shops/about-r29-shops">About</a>
+        </dd>
+      </dl>
+      <dl>
+        <dt id="labs_header">R29 Labs</dt>
+        <dd class="first">
+          <a href="http://the-rig.refinery29.com">The Rig</a> /
+        </dd>
+        <dd>
+          Pipeline <span class="emphasis">(coming soon)</span>
+        </dd>
+      </dl>
+    </div> <!-- end .col_3 -->
+    <div class="col_3">
+      
+      <h3>Connect with R29</h3>
+      <ul class="footer_social">
+        <li>
+          <a href="https://www.facebook.com/refinery29"><img src="http://static2.refinery29.com/blog/dde5b0/images/footer/fb.png" alt="Facebook" /></a>
+        </li>
+        <li>
+          <a href="http://twitter.com/#!/refinery29"><img src="http://static1.refinery29.com/blog/dde5b0/images/footer/twitter.png" alt="Twitter" /></a>
+        </li>
+        <li>
+          <a href="http://pinterest.com/refinery29/"><img src="http://static2.refinery29.com/blog/dde5b0/images/footer/pinterest.png" alt="Pinterest" /></a>
+        </li>
+        <li>
+          <a href="http://web.stagram.com/n/refinery29/"><img src="http://static1.refinery29.com/blog/dde5b0/images/footer/insta.png" alt="Instagram" /></a>
+        </li>
+        <li>
+          <a href="http://www.refinery29.com/index.xml"><img src="http://static1.refinery29.com/blog/dde5b0/images/footer/rss.png" alt="RSS" /></a>
+        </li>
+        <li>
+          <a href="http://open.spotify.com/user/refinery29/playlist/1Zl7ytzACYt1xVq7UmzJYU"><img src="http://static3.refinery29.com/blog/dde5b0/images/footer/spotify.png" alt="Spotify" /></a>
+        </li>
+      </ul>
+    </div> <!-- end .col_3 -->
+  	<div id="mobile-link"><a href="/?mobile=true">Refinery29 Mobile</a></div>
+  </div> <!-- end .footer_wrap -->
+  <div class="thick_divide">&nbsp;</div>
+  <div class="footer_wrap">
+  	<a href="javascript:void(0);" id="footer_feedback">Feedback</a>
+  	<p id="footer_copyright">&copy;2012 Refinery29</p>
+    <ul class="global_links">
+      <li>
+        <a id="r29_home" href="http://www.refinery29.com">R29</a>
+      </li>
+      <li>
+        <a href="http://www.refinery29.com/terms-and-conditions">Terms</a>
+      </li>
+      <li>
+        <a href="http://www.refinery29.com/privacy">Privacy</a>
+      </li>
+      <li>
+        <p>Made with <img class="zelda" src="http://static2.refinery29.com/blog/dde5b0/images/footer/zelda_heart.png" alt="love"/> in NYC</p>
+      </li>
+    </ul>
+  </div> <!-- end .footer_wrap -->
+</div> <!-- end #footer -->
+
+<!-- To make sure these fonts load! -->
+<div class="font-loader">
+  <span class="proximanovaregular">A</span>
+  <span class="proximanovabold">B</span>
+  <span class="opensansbold">C</span>
+  <span class="opensansitalic">D</span>
+  <span class="opensanslight">E</span>
+  <span class="opensansregular">F</span>
+  <span class="opensanssemibold">G</span>
+  <span class="opensanssemibolditalic">H</span>
+  <span class="raleway">I</span>
+</div>
+      
+    </div> <!-- /Container -->
+
+    <!-- Comscore -->
+<script type="text/javascript">
+  var r29cookie = document.cookie;
+  var val;
+  
+  if (r29cookie.indexOf("r29comstore=") != -1)
+   {
+      i = r29cookie.indexOf("r29comstore=");
+      s = r29cookie.substring(i + 12);
+      j = s.indexOf(";");
+      if (j == -1)
+      {
+          val = s;
+      }
+      else {
+          val = s.substring(0, j);
+      }
+  } else {
+      val = Math.floor(Math.random() * 12345678);
+      var date = new Date();
+      date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+      document.cookie = 'r29comstore=' + val + '; expires=' + date.toGMTString() + '; path=/';
+  }
+  
+  var currentUrl = self.location.url;
+  document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb": "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+
+</script>
+<script type="text/javascript"> 
+  COMSCORE.beacon({ c1:2, c2:"7395029",c3:"www.refinery29.com", c4:currentUrl, c5:"", c6:"", c15: val });
+</script>
+<noscript>
+  <img src = "http://b.scorecardresearch.com/p?c1=2&amp;c2=7395029&amp;c3=www.refinery29.com&amp;c4=http://www.refinery29.com/&amp;c5=&amp;c6=&amp;c15=C67BD3C1&amp;cj=1" alt="Comscore" />
+</noscript>
+<!-- /Comscore -->
+<!-- Google Analytics -->
+<script type="text/javascript">
+  
+  var _gaq = _gaq || [];
+    
+  // break up host into app, subdomain and tld
+  var tmp = /^([^\.]+\.)([\w\.]+)?(refinery29|rf29)\.(\w+)(:\d+)?$/.exec(window.location.host.toLowerCase()),
+    
+      // application
+      app = tmp[1] ? tmp[1] : 'www',
+      
+      // subdomain
+      sub = tmp[2] ? tmp[2] : '',
+      
+      // domain
+      dom = tmp[3] ? tmp[3] : 'refinery29',
+
+      // top level domain
+      tld = tmp[4] ? tmp[4] : 'com';
+  
+  _gaq.push(['_setAccount', 'UA-315022-1']);
+  
+  _gaq.push(['_setDomainName', '.' + dom + '.' + tld]);
+
+  _gaq.push(['_addIgnoredRef', dom + '.' + tld]);
+
+  
+  
+  _gaq.push(['_setCustomVar',
+    1,                   // This custom var is set to slot #1.  Required parameter.
+    'Category',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'news\/fashion', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+   
+   
+  _gaq.push(['_setCustomVar',
+    2,                   // This custom var is set to slot #2.  Required parameter.
+    'Publication Date',     // The name acts as a kind of category for the user activity.  Required parameter.
+    '2010-01-13', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  
+  
+  _gaq.push(['_setCustomVar',
+    3,                   // This custom var is set to slot #3.  Required parameter.
+    'Author',// The name acts as a kind of category for the user activity.  Required parameter.
+    'Laura Yacoe', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  _gaq.push(['_setCustomVar',
+    4,                   // This custom var is set to slot #4.  Required parameter.
+    'Entry Type',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'ARTICLE', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+
+  
+  _gaq.push(['_setCustomVar', //USE THIS  R29.cookie.get('R29_UID');
+    5,                   // This custom var is set to slot #5.  Required parameter.
+    'Log-in Status',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'Not Logged In', // This value of the custom variable.  Required parameter.
+    2                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  // Adding back in data-click tracking -JS, 6.26.12
+  // Content > Events in Google Analytics
+  $('[data-click]').live('click', function() {
+    _gaq.push(['_trackEvent',
+      ($(this).attr('data-category') !== undefined) ? $(this).attr('data-category') : 'User Click Tracking', // Category (required)
+      $(this).attr('data-click'), // Action (required)
+      ($(this).attr('data-label') !== undefined)    ? $(this).attr('data-label')    : 'news/fashion', // Label (optional); Default: current category
+      null, // Value (optional, integer) - empty
+      true // Non-interaction (optional, boolean) - event hit will not be used in bounce-rate calculation
+    ]);
+  });
+  
+  R29.tracking.outbound();
+  
+  _gaq.push(['_trackPageview']);
+   
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- /Google Analytics -->
+
+<!-- Quantcast -->
+<script type="text/javascript">
+_qoptions={ qacct:"p-fesXMHo90Ka_A" };
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+  <img src="http://pixel.quantserve.com/pixel/p-fesXMHo90Ka_A.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- /Quantcast -->
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <a id="parsely-cfg" data-parsely-site="refinery29.com"
+     href="http://parsely.com" style="display:none;">Powered by the Parse.ly Publisher Platform (P3).</a>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+
+    <div id="js-cont"></div>
+
+<!-- Facebook -->
+<div id="fb-root"></div> 
+<script type="text/javascript">
+
+  window.fbAsyncInit = function() {
+  
+    FB.init({ appId: '155023867867753', status: true, cookie: true, xfbml: false});
+    
+    /* Check if the user is NOT logged into R29, but IS logged into Facebook.  Fix it */
+    if (R29.url.param.getVar('fb') && !R29.user.token() && FB.getSession()) { //We have some sort of session, we *may* be logged in.
+      FB.getLoginStatus(function(response) {
+        if(response.status == 'connected') {
+          return document.location = 'https://welcome.refinery29.com/connect/facebook?from=http%3A%2F%2Fwww.refinery29.com%2Fbarbie-as-fine-art&amp;sig=3aceb&amp;app=blog&amp;fb=1';
+        }    
+      });      
+    }
+        
+    //FACEBOOK LOGIN
+    $('a.fb_button').live('click', function() {
+      R29.FBLoginPopup();
+      return false;
+    });
+    
+    if (typeof window.fbAsyncOnInit == "function") {
+      window.fbAsyncOnInit();
+    }
+    
+    /* GOOGLE ANALYTICS */
+
+    FB.Event.subscribe('edge.create', function(targetUrl, fb_ref) {
+    	if (fb_ref._attr.ref == "homepage"){
+    		_gaq.push(['_trackEvent', 'FacebookIndex', 'like']);
+    	}
+    	else if (fb_ref._attr.ref == "entrypage"){
+    		_gaq.push(['_trackEvent', 'FacebookSolo', 'like']);
+    	}
+    	else if (fb_ref._attr.ref == "sidebar"){
+    		_gaq.push(['_trackEvent', 'FacebookSidebar', 'like']);
+    	}
+      _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
+    });
+    
+    FB.Event.subscribe('edge.remove', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'unlike', targetUrl]);
+    });
+    
+    FB.Event.subscribe('message.send', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'send', targetUrl]);
+    });
+    
+       
+  };
+  
+  R29.FBLoginPopup = function () {
+
+    FB.login(function(response) {
+    
+      if (response.session) {
+        //They *may* have given us perms, but who knows.
+        return document.location = 'https://welcome.refinery29.com/connect/facebook?from=http%3A%2F%2Fwww.refinery29.com%2Fbarbie-as-fine-art&amp;sig=3aceb&amp;app=blog&amp;fb=1';
+      } else {
+        //Oh well, something is wrong, let's try the normal login
+        return document.location = 'https://welcome.refinery29.com/connect/facebook?from=http%3A%2F%2Fwww.refinery29.com%2Fbarbie-as-fine-art&amp;sig=3aceb&amp;app=blog&amp;fb=1';
+      }
+      
+     },{ scope: 'email,offline_access,publish_stream,publish_actions' } );
+  }
+  
+  
+</script>
+
+<script type="text/javascript">
+  //
+  
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</script>
+<!-- /Facebook -->
+
+<!-- Twitter -->
+<script type="text/javascript">
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+
+  
+  //START GOOGLE ANALYTICS TWITTER TRACKING
+  function trackTwitter(intent_event) {
+    if (intent_event) {
+      var opt_pagePath;
+      if (intent_event.target && intent_event.target.nodeName == 'IFRAME') {
+            opt_target = extractParamFromUri(intent_event.target.src, 'url');
+      }
+      _gaq.push(['_trackSocial', 'twitter', 'tweet', opt_pagePath]);
+    }
+  }
+
+  //Wrap event bindings - Wait for async js to load
+  twttr.ready(function (twttr) {
+    //event bindings
+    twttr.events.bind('tweet', trackTwitter);
+  });
+  
+	function extractParamFromUri(uri, paramName) {
+	  if (!uri) {
+	    return;
+	  }
+	  var regex = new RegExp('[\\?&#]' + paramName + '=([^&#]*)');
+	  var params = regex.exec(uri);
+	  if (params != null) {
+	    return unescape(params[1]);
+	  }
+	  return;
+	}
+	//END GOOGLE ANALYTICS TWITTER TRACKING
+
+</script>
+<!-- /Twitter -->
+
+<!-- Pinterest -->
+  <script type="text/javascript">
+  (function() {
+      window.PinIt = window.PinIt || { loaded:false };
+      if (window.PinIt.loaded) return;
+      window.PinIt.loaded = true;
+      function async_load(){
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          if (window.location.protocol == "https:")
+              s.src = "https://assets.pinterest.com/js/pinit.js";
+          else
+              s.src = "http://assets.pinterest.com/js/pinit.js";
+          var x = document.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(s, x);
+      }
+      if (window.attachEvent) {
+          window.attachEvent("onload", async_load);
+      }
+      else {
+          window.addEventListener("load", async_load, false);
+          window.addEventListener("hashchange", async_load, false);
+      }
+  })();
+  </script>
+<!-- /Pinterest -->
+
+
+<!-- Disqus -->
+
+<script type="text/javascript">
+  var disqus_shortname = 'refinery';
+  var disqus_developer = 1;
+  
+
+var DISQUSWIDGETS;
+var disqus_domain;
+var disqus_shortname;
+if (typeof DISQUSWIDGETS == "undefined") {
+    DISQUSWIDGETS = (function () {
+        var d = {},
+            a = (document.getElementsByTagName("HEAD")[0] || document.getElementsByTagName("BODY")[0]),
+            c = 0,
+            f = {},
+            e = {
+                identifier: 1,
+                url: 2,
+                slug: 3
+            };
+
+        function b(i) {
+            var h, k;
+
+            function j(l) {
+                return i.hasAttribute ? i.hasAttribute(l) : i.getAttribute(l) !== null
+            }
+            
+            if (j("data-disqus-identifier")) {
+                h = e.identifier;
+                k = i.getAttribute("data-disqus-identifier")
+            } else {
+            
+                if (j("data-url")) {
+                    h = e.url;
+                    k = i.getAttribute("data-url")
+                } else if (j("data-disqus-slug")) {
+                    h = e.slug;
+                    k = i.getAttribute("data-disqus-slug")
+                } else {
+                    h = e.url;
+                    k = i.href.replace("#disqus_thread", "")
+                }
+                
+            }
+            f[c++] = {
+                element: i,
+                type: h,
+                value: k
+            }
+        }
+        function g(k) {
+            var j = document.getElementsByTagName("A");
+            for (var h = 0; h < j.length; h++) {
+                if (j[h].href.indexOf("#disqus_thread") >= 0) {
+                    k(j[h])
+                }
+            }
+        }
+        d.domain = "disqus.com";
+        d.forum = "";
+        d.getCount = function () {
+            var m, h, k, j;
+            var l = [],
+                o = 0,
+                i = 10;
+
+            function n(q, p) {
+                return encodeURIComponent(q) + "=" + encodeURIComponent(p.type) + "," + encodeURIComponent(p.value)
+            }
+            g(b);
+            for (m in f) {
+                if (f.hasOwnProperty(m)) {
+                    l.push(n(m, f[m]))
+                }
+            }
+            k = l.slice(o, i);
+            while (k.length > 0) {
+                j = document.createElement("script");
+                j.type = "text/javascript";
+                j.async = true;
+                j.src = "http://" + d.domain + "/forums/" + d.forum + "/count.js?q=1&" + k.join("&");
+                a.appendChild(j);
+                o += 10;
+                i += 10;
+                k = l.slice(o, i)
+            }
+        };
+        d.displayCount = function (j) {
+            var m, h, n, l;
+            for (var k = 0; k < j.counts.length; k++) {
+                m = j.counts[k];
+                h = f[m.uid];
+                if (h) {
+                    if (m.comments === 0) {
+                        n = j.text.comments.zero
+                    } else {
+                        if (m.comments == 1) {
+                            n = j.text.comments.one
+                        } else {
+                            n = j.text.comments.multiple
+                        }
+                    }
+                    l = n.replace("{num}", m.comments);
+                    if (j.showReactions) {
+                        n = "";
+                        if (m.reactions === 0) {
+                            n = j.text.reactions.zero
+                        } else {
+                            if (m.reactions == 1) {
+                                n = j.text.reactions.one
+                            } else {
+                                n = j.text.reactions.multiple
+                            }
+                        }
+                        if (n !== "") {
+                            l += " " + j.text.and + " " + n.replace("{num}", m.reactions)
+                        }
+                    }
+                    h.element.innerHTML = l
+                }
+            }
+        };
+        return d
+    }())
+}(function () {
+    if (typeof disqus_domain != "undefined") {
+        DISQUSWIDGETS.domain = disqus_domain
+    }
+    DISQUSWIDGETS.forum = disqus_shortname;
+    DISQUSWIDGETS.getCount()
+}());
+
+ 
+  
+</script>
+<!-- /Disqus -->
+
+<!-- Magento Cart -->
+
+
+<!-- R29 Schtufff -->
+<script type="text/javascript">
+
+$(function() {
+
+  // Variables
+  var tabs = $('div.top-five > ul > li');
+  var top5 = $('div.top-five > div');
+    
+  // On Click
+  $(tabs).click(function() {
+    
+    $(tabs).removeClass("active");
+    $(this).addClass("active");
+    
+    $(top5).hide();
+    var activeTab = $(this).find("a").attr("href");
+    $(activeTab).show();
+    
+    return false;
+  });
+  
+  
+  // Hot Carousel
+  $("#hot-carousel li").show();
+  $("#hot-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  auto: 6,
+  itemFallbackDimension: 280,
+  initCallback: 
+  function (carousel) {
+    $('.control div.slide-btn', carousel.container).bind('click', function() {
+      carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_id')));
+      $('.control div',carousel.container).removeClass('selected');
+      $(this).addClass('selected');
+      return false;
+    });
+    $('.control div.next', carousel.container).bind('click', function() {
+      carousel.next();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+    $('.control div.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+  },
+  itemVisibleInCallback: function(carousel, item, idx, state) {
+    $('.control div',carousel.container).removeClass('selected');
+    $('.control div[image_id='+idx+']',carousel.container).addClass('selected');  
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+
+  // Category Carousel
+  
+  $("#category-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  itemFallbackDimension: 562,
+  initCallback: 
+  function (carousel) {
+    $('.control a.next', carousel.container).bind('click', function() {
+      carousel.next();
+      return false;
+    });
+    $('.control a.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      return false;
+    });
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+  
+  // Hot Category Carousel
+  $("#category-hot-carousel li").show();
+  $("#category-hot-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  auto: 6,
+  itemFallbackDimension: 608,
+  initCallback: 
+  function (carousel) {
+    $('.control div.slide-btn', carousel.container).bind('click', function() {
+      carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_id')));
+      $('.control div',carousel.container).removeClass('selected');
+      $(this).addClass('selected');
+      return false;
+    });
+    $('.control div.next', carousel.container).bind('click', function() {
+      carousel.next();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+    $('.control div.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+  },
+  itemVisibleInCallback: function(carousel, item, idx, state) {
+    $('.control div',carousel.container).removeClass('selected');
+    $('.control div[image_id='+idx+']',carousel.container).addClass('selected');  
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+
+
+
+});
+
+</script>
+
+<!-- Pinterest Hover Buttons -->
+<script type="text/javascript">
+  
+    
+    $(window).bind('hashchange load', function() {
+      R29.blog.pinterest("http://www.refinery29.com/barbie-as-fine-art.php", "Barbie As The Mona Lisa, Statue of Liberty, And Other Works Of Art");
+    });
+      
+  
+
+
+</script>
+
+    <script type="text/javascript">
+  
+  var _chartbeat_loaded = false;
+  
+  $(function() {
+   
+    if (_chartbeat_loaded) return; 
+    
+    _chartbeat_loaded = true;
+    
+    var _sf_async_config={ uid:3552,domain:"refinery29.com" };
+    R29.remote.include_js("//a248.e.akamai.net/chartbeat.download.akamai.com/102508/js/chartbeat.js");
+      
+  });
+</script>
+          <!-- Crazy Egg -->
+<script type="text/javascript" src="//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/5055.js"></script>
+<!-- /Crazy Egg -->
+    
+          <!-- ClickTale -->
+<div id="ClickTaleDiv" style="display: none;"></div>
+<script type="text/javascript" src="http://static1.refinery29.com/blog/dde5b0/js/clicktale/WRc5.js"></script>
+<script type="text/javascript">
+  var ClickTaleSSL=1;var ClickTaleCookieDomain='.refinery29.com';
+  if(typeof ClickTale=='function') ClickTale(1528,0.0006+0,"www08");
+</script>
+<!-- /ClickTale -->  
+    
+    
+    <!-- Internal Stats -->
+<script type="text/javascript">
+
+      R29_STAT_DATA = $.extend({ app:'blog' },R29.url.param.getUTM());
+  
+  
+  try {
+    R29.stats.send([['user_page_load',R29_STAT_DATA, ((new Date()).getTime() - _sf_startpt)]]);
+  } catch (e) { };
+      
+</script>
+<!-- /Internal Stats -->
+    
+    
+    
+    
+    <script type="text/javascript">
+     try {
+        R29.stats.send([['user_page_view',{
+          app:  'blog',
+          page: 'entry',
+          entry_type: 'ARTICLE',
+          entry_id: 7462, 
+          market_id: 1, 
+          category_id: [734,733,1], 
+          author_id: [139]
+        }]]);
+        
+        
+      } catch (e) { };
+    </script> 
+    
+    
+    
+          <!-- Sailthru Horizon --> 
+      <script type="text/javascript">
+        (function() {
+          var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+          s.src = ('https:'==location.protocol?'https://d1gp8joe0evc8s.cloudfront.net':'http://cdn.sail-horizon.com')+'/horizon/v1.js';
+          var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+      </script>
+      <script type="text/javascript">
+        $(window).load(function() {
+          Sailthru.setup({
+            domain: 'horizon.refinery29.com',
+            tags: "",
+            cookieDomain: '.refinery29.com'
+          });
+        });
+      </script>
+    
+
+
+  </body>
+<!-- Served in 182ms by web03.prod.rf29.net at Thu, 02 Aug 2012 11:34:24 -0400 -->
+</html>

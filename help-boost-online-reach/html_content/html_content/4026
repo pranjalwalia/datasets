@@ -1,0 +1,825 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html xmlns:og="http://opengraphprotocol.org/schema/"
+      xmlns:fb="http://www.facebook.com/2008/fbml"><head>
+		<script type="text/javascript">
+		
+		var _sf_startpt=(new Date()).getTime()
+		
+		</script>
+<base href="http://www.nylonmag.com/">
+
+<!--<link rel="stylesheet" href="css/global.css" type="text/css">//-->
+
+<link rel="shortcut icon" href="http://www.nylonmag.com/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="http://www.nylonmag.com/images/favicon.ico" type="image/x-icon" />
+
+
+<style type="text/css" media="all">
+	@import url("http://www.nylonmag.com/views/css/global2.css");
+	@import url("http://www.nylonmag.com/views/css/layers2.css");
+	@import url("http://www.nylonmag.com/views/css/navigation2.css");
+</style>
+<style type="text/css" media="print">	@import url("http://www.nylonmag.com/views/css/print.css");
+</style>
+
+<!--[if lte IE 6]>
+	<style type="text/css" media="all">
+		@import url("http://www.nylonmag.com/views/css/ie-fix.css");
+	</style>
+<![endif]-->
+
+<script language="Javascript" src="functions/browserdetect.js"></script>
+<!--because ie doesn't calculate the container width correctly... //-->
+<script language="Javascript">
+
+	if (browser == "Internet Explorer" && OS == "Mac") {
+		document.location.href="upgradebrowser.html";
+	}
+	if (location.href.indexOf("printPreview") != -1) { // found
+		//alert("preview");
+		// If this a print preview, all we do is add the print css to simulate the browser's print preview
+		document.write('<link rel="stylesheet" href="http://www.nylonmag.com/views/css/print.css" type="text/css" />');
+	}
+
+</script>
+<script LANGUAGE="JavaScript">
+
+	function popUp(URL) {
+		day = new Date();
+		id = day.getTime();
+		eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=530,height=710');");
+	}
+	function popUp2(URL) {
+		day = new Date();
+		id = day.getTime();
+		eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=430,height=450');");
+	}
+	function popUp3(URL) {
+		day = new Date();
+		id = day.getTime();
+		eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=480,height=480');");
+	}
+
+</script>
+
+<title>NYLON MAGAZINE</title>
+<meta name="title" content="NYLON MAGAZINE">
+
+
+<script language="Javascript" src="functions/rollover.js"></script>
+<script language="Javascript" src="functions/rate.js"></script>
+<script language="Javascript">
+	//preload the heart_on image for the rating rollover to have a better visual effect
+	pic1= new Image(); 
+	pic1.src="http://www.nylonmag.com/images/heart_on.jpg"; 
+</script>
+<script language="Javascript" src="functions/main.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
+<!-- jquery input replace by pauljamescampbell.co.uk, MIT License -->
+
+
+
+<!------ARTICLE HEADER SLIDESHOW------>
+
+
+
+
+
+<script type="text/javascript" src="http://cloud.github.com/downloads/malsup/cycle/jquery.cycle.all.latest.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+    $('.slideshow').cycle({
+		fx: 'fade'
+	});
+});
+
+</script>
+
+
+<!------ARTICLE HEADER SLIDESHOW------>
+
+
+
+<!------NEW ARTICLE GALLERY------>
+
+
+
+
+
+
+
+<!------NEW ARTICLE GAL------>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+(function($) {
+	
+	$.fn.defaultvalue = function() {
+		
+		// Scope
+		var elements = this;
+		var args = arguments;
+		var c = 0;
+		
+		return(
+			elements.each(function() {				
+				
+				// Default values within scope
+				var el = $(this);
+				var def = args[c++];
+
+				el.val(def).focus(function() {
+					if(el.val() == def) {
+						el.val("");
+					}
+					el.blur(function() {
+						if(el.val() == "") {
+							el.val(def);
+						}
+					});
+				});
+				
+			})
+		);
+	}
+})(jQuery)
+
+</script>
+<script type="text/javascript">
+
+
+$(function($) {
+	$("#searchbox").defaultvalue("and destroy...");
+});
+
+
+
+
+
+//necessary for new article galleries to work 
+
+
+$(function($) {
+	$('#slideshow1').cycle();
+});
+
+
+
+
+
+</script>
+<meta name="google-site-verification" content="QRHpIXha6QzwmeMUK98dQHXp1YngQSxZknykYJc-Za8" />
+<!-- end input -->
+
+
+</head>
+
+
+<body style="background-image:url('http://nylonmag.com/customads/jbrand-bg.jpg'); background-repeat:no-repeat;background-position:center top;background-color:#ffffff;">
+
+
+<body>
+
+<div id="container">
+	<div id="topper-box" style="margin-right:0px">
+<!-- ADVERTISEMENT -->
+	<div class="advertisment-area" id="ad-top">
+
+
+	
+
+
+
+																			<div id="bannerad">
+							<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+GS_googleAddAdSenseService("ca-pub-8355715672558893");
+GS_googleEnableAllServices();
+</script>
+<script type='text/javascript'>
+GA_googleAddSlot("ca-pub-8355715672558893", "300x100_A_0");
+GA_googleAddSlot("ca-pub-8355715672558893", "300x100_B_0");
+GA_googleAddSlot("ca-pub-8355715672558893", "300x600_0");
+GA_googleAddSlot("ca-pub-8355715672558893", "300x250_B_0");
+GA_googleAddSlot("ca-pub-8355715672558893", "728x90_footer_0");
+GA_googleAddSlot("ca-pub-8355715672558893", "728x90_header_0");
+</script>
+<script type='text/javascript'>
+GA_googleFetchAds();
+</script>
+<!-- ca-pub-8355715672558893/728x90_header_0 -->
+<script type='text/javascript'>
+GA_googleFillSlot("728x90_header_0");
+</script>
+
+							</div>
+																
+																					
+					
+					
+																																
+							
+					</div>
+					
+<div id="facebook-nav"><iframe src="http://www.facebook.com/plugins/likebox.php?id=60772646764&amp;width=200&amp;connections=0&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:62px;" allowTransparency="true"></iframe>				
+						<br /><div style="padding-left:6px"><a href="http://facebook.com/nylonmagazine" target="_blank"><img src="/images/new/social-fb.gif" /></a>
+						<a href="http://twitter.com/nylonmag" target="_blank"><img src="/images/new/social-twitter.gif" /></a>
+						<a href="http://myspace.com/nylonmagazine" target="_blank"><img src="/images/new/social-myspace.gif" /></a>
+						<a href="http://www.youtube.com/nylonmagazine" target="_blank"><img src="/images/new/social-youtube.gif" /></a>
+						</div>
+						</div>
+
+				</div>
+	
+		<div id="container-main">
+		
+<!-- HEADER -->
+<div id="header-intro">
+  <a href="?" class="header-link"></a>
+	<div class="header-ad-space">
+			<div id="subpromo-box">
+				<div id="subpromo-text"><a href="https://w1.buysub.com/pubs/NY/NYN/NYLON_sub1.jsp?cds_page_id=44131&cds_mag_code=NYN&id=1275933605901&lsid=31581300059027704&vid=1" target="_blank"><img src="/images/new/mag-subscribe.gif" /></a><br />
+					<a href="https://w1.buysub.com/servlet/GiftsGateway?cds_mag_code=NYN&cds_page_id=67416">give a gift</a><br />
+					<a href="http://www.nylonmag.com/backissues/">back issues</a><br />
+					<a href="https://w1.buysub.com/pubs/NY/NYN/NYLON_sub1.jsp?cds_page_id=44131&cds_mag_code=NYN&id=1275933605901&lsid=31581300059027704&vid=1">subscription services</a></div>
+				<div id="subpromo-mag">
+					<a href="https://w1.buysub.com/pubs/NY/NYN/NYLON_sub1.jsp?cds_page_id=44131&cds_mag_code=NYN&id=1275933605901&lsid=31581300059027704&vid=1"><img src="images/new/home_nylon_mag.gif"></a>
+				</div>
+
+
+			</div>
+
+
+
+
+		</div>
+	
+<div id="header-date-search">
+		<div id="header-date">
+		
+		</div> 
+		<div id="header-search" style="position:relative;">
+			<form name="search" id="search" action="" method="get">
+				<input type="Hidden" name="section" value="search">
+				<img style="border:none; position:absolute; left:-64px; top:5px;" src="images/new/btn_search.gif" onclick="document.search.submit();" />
+				<input name="article_search" type="text" id="searchbox" />
+			</form>
+		</div>
+	</div>
+</div>
+
+<!-- HEADER -->	<!-- NAVIGATION -->	
+<div id="navigation-intro">
+	<ul id="nav">
+				<li id="nav-link-fashion" title="fashion"><a href="?section=section&papid=1"><span>fashion</span></a></li>
+				
+				<li id="nav-link-beauty" title="beauty"><a href="?section=section&papid=2"><span>beauty</span></a></li>
+				
+				<li id="nav-link-radar" title="radar"><a href="?section=subsection&subid=2"><span>radar</span></a></li>
+				
+				<li id="nav-link-culture" title="culture"><a href="?section=section&papid=4"><span>culture</span></a></li>
+				
+					<li id="nav-link-photos" title="photos"><a href="?section=gallery&galid=6"><span>photos</a></li>
+				
+				<li id="nav-link-blogs" title="blogs"><a target="_blank" href="/nylonblogs"><span>blogs</span></a></li>
+				
+				<li id="nav-link-magazine" title="the magazine"><a href="?section=digitalissue"><span>the magazine</span></a></li>
+				
+				<li id="nav-link-aboutus" title="nylon mall"><a href="?section=nylonmall&amp;page=1"><span>nylon mall</span></a></li>
+				
+	
+				<li id="nav-link-ourspace" title="nylon guys"><a href="http://www.nylonguysmag.com/"><span>nylon guys</span></a></li>
+		
+				<li id="nav-link-nylonguys" title="nylon tv"><a href="?section=section&papid=9"><span>nylon tv</span></a></li>
+				
+	</ul>
+	<!-- ><div id="facebook-nav"><iframe src="http://www.facebook.com/plugins/likebox.php?id=60772646764&amp;width=200&amp;connections=0&amp;stream=false&amp;header=false&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:62px;" allowTransparency="true"></iframe></div>-->		
+</div> 
+
+<!-- NAVIGATION -->
+<div style="height:6px;"></div>
+					 
+											
+
+<!--  -->
+<div id="container-bg">	
+<!--  -->
+	
+
+
+<div id="column-one-intro" class="clearfix">
+
+
+<!-- start leads -->
+<div id="leadimgs">
+<div id="slideshow1">
+	
+<div>
+	<a href="?section=article&parid=6198" target="_self"><img src="http://www.nylonmag.com/modules/magsection/article/uploaded_images/6198_ct_readbig.jpg" width="637px" height="332px" /></a><img src="/images/new/big-shadow.jpg" /><p>HOW YOU CAN STAR IN OUR NEW TUMBLR.</p><h2><a href="?section=article&parid=6198" target="_self">READ ALL ABOUT IT</a></h2>
+</div>
+
+<div style="display:none;">
+	<a href="?section=article&parid=6196" target="_self"><img src="http://www.nylonmag.com/modules/magsection/article/uploaded_images/6196_ct_tv_jamie.jpg" width="637px" height="332px" /></a><img src="/images/new/big-shadow.jpg" /> <p>BEHIND THE SCENES OF JAMIE CHUNG'S NYLON COVER SHOOT</p><h2><a href="?section=article&parid=6196" target="_self">NYLON TV + JAMIE CHUNG</a></h2>
+</div>
+
+<div style="display:none;">
+	<a href="?section=article&parid=6195" target="_self"><img src="http://www.nylonmag.com/modules/magsection/article/uploaded_images/6195_ct_jena_tv.jpg" width="637px" height="332px" /></a><img src="/images/new/big-shadow.jpg" /> <p>JENA MALONE REVEALS HER MOST CURRENT OBSESSION.</p><h2><a href="?section=article&parid=6195" target="_self">NYLON TV + JENA MALONE</a></h2>
+</div>
+
+<div style="display:none;">
+	<a href="?section=article&parid=6194" target="_self"><img src="http://www.nylonmag.com/modules/magsection/article/uploaded_images/6194_ct_tv_abbie.jpg" width="637px" height="332px" /></a><img src="/images/new/big-shadow.jpg" /> <p>ARE AUSTRALIANS TAKING OVER HOLLYWOOD?</p><h2><a href="?section=article&parid=6194" target="_self">NYLON TV + ABBIE CORNISH</a></h2>
+</div>
+
+
+
+</div>
+</div>
+<!-- end leads -->
+
+<!-- start hp-sub -->
+<div id="hp-sub">
+	<!-- start 160 -->
+	<div id="one-sixty">
+		<div id="one-sixty-interior">
+			<div id="one-sixty-content">
+			<a href=http://nylonmag.com/nylonblogs/blog/2011/04/19/best-dressed-annasophia-robb-2/ ><img src="/images/new/nylon-best-dressed-logo.png" alt="NYLON BEST DRESSED" style="margin-bottom: 10px;"/></a><br />
+			<img src="/images/new/paper-dots.gif" style="margin-bottom: 10px;margin-left:-4px;"/><br />
+			<a href=http://nylonmag.com/nylonblogs/blog/2011/04/19/best-dressed-annasophia-robb-2/><img src="/images/new/current-best-dressed.jpg" alt="NYLON BEST DRESSED" style="margin-bottom: 5px;margin-left:3px;"/></a>
+
+			
+				<img src="/images/new/paper-dots.gif" style="margin-bottom: 10px;margin-left:-8px;"/><br />
+
+						<img src="/images/new/most-viewed.gif" style="margin-bottom: 8px;"/><br />
+						<ul style="padding:0; margin:0;">
+														<li style="list-style-type:none;margin-bottom:10px;padding: 0;margin-left:0;"><a href="?section=article&parid=6133">THE INSIDER: BONNIE WRIGHT</a></li>
+														<li style="list-style-type:none;margin-bottom:10px;padding: 0;margin-left:0;"><a href="?section=article&parid=6150">NYLON TV + LINDSAY ELLINGSON</a></li>
+														<li style="list-style-type:none;margin-bottom:10px;padding: 0;margin-left:0;"><a href="?section=article&parid=6185">BEST DRESSED: COACHELLA</a></li>
+														<li style="list-style-type:none;margin-bottom:10px;padding: 0;margin-left:0;"><a href="?section=article&parid=6156">STREET STYLE: NAIL ART</a></li>
+														<li style="list-style-type:none;margin-bottom:10px;padding: 0;margin-left:0;"><a href="?section=article&parid=6140">HYPER BLINK</a></li>
+													</ul>
+
+			</div>
+		</div>
+		<div id="one-sixty-bottom"></div>
+	</div>
+	<!-- end 160 -->
+	<!-- start 450 -->
+	<div id="four-fifty">
+		
+		
+			
+			<div id="tout">
+			<div class="photo-intro-01">
+				<div class="content-photo">
+					<a href="?section=article&parid=6198"><img src="http://www.nylonmag.com/modules/magsection/article/uploaded_images/6198_ft_read small.jpg" border="0"/></a>
+				</div>
+				<div class="content-desc">
+											<a href="?section=subsection&subid=4">
+						<img src="http://www.nylonmag.com/images/new/section_sub_4.gif" />
+						</a>
+										<div class="content-type">
+					<h3 style="color:#262626;"><a href="?section=article&parid=6198">READ ALL ABOUT IT</a></h3>
+					<p style="color:#262626;">How you can star in our new Tumblr.</p>
+					<a href="?section=article&parid=6198">more</a>
+					</div>
+				</div>
+			</div>
+			</div>
+		
+			<div id="tout">
+			<div class="photo-intro-01">
+				<div class="content-photo">
+					<a href="?section=article&parid=6197"><img src="http://www.nylonmag.com/modules/magsection/article/uploaded_images/6197_ft_twodoor_th.jpg" border="0"/></a>
+				</div>
+				<div class="content-desc">
+											<a href="?section=subsection&subid=2">
+						<img src="http://www.nylonmag.com/images/new/section_sub_2.gif" />
+						</a>
+										<div class="content-type">
+					<h3 style="color:#262626;"><a href="?section=article&parid=6197">FREE MUSIC: TWO DOOR CINEMA CLUB</a></h3>
+					<p style="color:#262626;">Get hyped up on this exclusive new remix! </p>
+					<a href="?section=article&parid=6197">more</a>
+					</div>
+				</div>
+			</div>
+			</div>
+	
+		
+			<div id="tout">
+			<div class="photo-intro-01">
+				<div class="content-photo">
+					<a href="?section=article&parid=6196"><img src="http://www.nylonmag.com/modules/magsection/article/uploaded_images/6196_ft_tv_jamie_thumb.jpg" border="0"/></a>
+				</div>
+				<div class="content-desc">
+										<a href="?section=section&papid=9">
+					<img src="http://www.nylonmag.com/images/new/section_9.gif" />
+					</a>
+										<div class="content-type">
+					<h3 style="color:#262626;"><a href="?section=article&parid=6196">NYLON TV + JAMIE CHUNG</a></h3>
+					<p style="color:#262626;">Behind the scenes of Jamie Chung's NYLON cover shoot</p>
+					<a href="?section=article&parid=6196">more</a>
+					</div>
+				</div>
+			</div>	
+			</div>
+			
+			<div id="tout">
+			<div class="photo-intro-01">
+				<div class="content-photo">
+					<a href="?section=article&parid=6195"><img src="http://www.nylonmag.com/modules/magsection/article/uploaded_images/6195_ft_jena_tv_th.jpg" border="0"/></a>
+				</div>
+				<div class="content-desc">
+										<a href="?section=section&papid=9">
+					<img src="http://www.nylonmag.com/images/new/section_9.gif" />
+					</a>
+										<div class="content-type">
+					<h3 style="color:#262626;"><a href="?section=article&parid=6195">NYLON TV + JENA MALONE</a></h3>
+					<p style="color:#262626;">Jena Malone reveals her most current obsession.</p>
+					<a href="?section=article&parid=6195">more</a>
+					</div>
+				</div>
+			</div>
+			</div>
+
+	<!-- mh84 adding 5, 6, 7, 8, 9, 10 -->
+		<div id="tout">
+		<div class="photo-intro-01">
+			<div class="content-photo">
+				<a href="?section=article&parid=6194"><img src="http://www.nylonmag.com/modules/magsection/article/uploaded_images/6194_ft_tv_abbie_thumb.jpg" border="0"/></a>
+			</div>
+			<div class="content-desc">
+								<a href="?section=section&papid=9">
+				<img src="http://www.nylonmag.com/images/new/section_9.gif" />
+				</a>
+								<div class="content-type">
+				<h3 style="color:#262626;"><a href="?section=article&parid=6194">NYLON TV + ABBIE CORNISH</a></h3>
+				<p style="color:#262626;">Are Australians taking over Hollywood?</p>
+				<a href="?section=article&parid=6194">more</a>
+				</div>
+			</div>
+		</div>	
+		</div>
+	<!-- mh84 adding 6 -->	
+		<div id="tout">
+		<div class="photo-intro-01">
+			<div class="content-photo">
+				<a href="?section=article&parid=6193"><img src="http://www.nylonmag.com/modules/magsection/article/uploaded_images/6193_ft_show_th.jpg" border="0"/></a>
+			</div>
+			<div class="content-desc">
+								<a href="?section=section&papid=1">
+				<img src="http://www.nylonmag.com/images/new/section_1.gif" />
+				</a>
+								<div class="content-type">
+				<h3 style="color:#262626;"><a href="?section=article&parid=6193">SHOW OFF</a></h3>
+				<p style="color:#262626;">Bloggers go head to head in the latest lookbook for Adidas.</p>
+				<a href="?section=article&parid=6193">more</a>
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		<!-- mh84 adding 7 -->	
+			<div id="tout">
+			<div class="photo-intro-01">
+				<div class="content-photo">
+					<a href="?section=article&parid=6192"><img src="http://www.nylonmag.com/modules/magsection/article/uploaded_images/6192_ft_bike small.jpg" border="0"/></a>
+				</div>
+				<div class="content-desc">
+										<a href="?section=section&papid=1">
+					<img src="http://www.nylonmag.com/images/new/section_1.gif" />
+					</a>
+										<div class="content-type">
+					<h3 style="color:#262626;"><a href="?section=article&parid=6192">FASHION MOVIE: ARMANI JEANS</a></h3>
+					<p style="color:#262626;">Watch "Bike" by Justin Anderson!</p>
+					<a href="?section=article&parid=6192">more</a>
+					</div>
+				</div>
+			</div>
+			</div>
+		
+		
+		<!-- mh84 adding 8 -->	
+				<div id="tout">
+				<div class="photo-intro-01">
+					<div class="content-photo">
+						<a href="?section=article&parid=6191"><img src="http://www.nylonmag.com/modules/magsection/article/uploaded_images/6191_ft_massy_th.jpg" border="0"/></a>
+					</div>
+					<div class="content-desc">
+													<a href="?section=subsection&subid=3">
+							<img src="http://www.nylonmag.com/images/new/section_sub_3.gif" />
+							</a>
+												<div class="content-type">
+						<h3 style="color:#262626;"><a href="?section=article&parid=6191">THE INSIDER: MASSY TADJEDIN </a></h3>
+						<p style="color:#262626;">The director of "Last Night" fills us in on the film. </p>
+						<a href="?section=article&parid=6191">more</a>
+						</div>
+					</div>
+				</div>
+				</div>
+		
+		<!-- mh84 adding 9 -->	
+			<div id="tout">
+			<div class="photo-intro-01">
+				<div class="content-photo">
+					<a href="?section=article&parid=6190"><img src="http://www.nylonmag.com/modules/magsection/article/uploaded_images/6190_ft_cheer small.jpg" border="0"/></a>
+				</div>
+				<div class="content-desc">
+										<a href="?section=section&papid=2">
+					<img src="http://www.nylonmag.com/images/new/section_2.gif" />
+					</a>
+										<div class="content-type">
+					<h3 style="color:#262626;"><a href="?section=article&parid=6190">CHEER CAMP</a></h3>
+					<p style="color:#262626;">Is there a secret to the perfect smile?</p>
+					<a href="?section=article&parid=6190">more</a>
+					</div>
+				</div>
+			</div>
+			</div>
+		
+		
+		<!-- mh84 adding 10 -->	
+			<div id="tout">
+			<div class="photo-intro-01">
+				<div class="content-photo">
+					<a href="?section=article&parid=6188"><img src="http://www.nylonmag.com/modules/magsection/article/uploaded_images/6188_ft_various_th.jpg" border="0"/></a>
+				</div>
+				<div class="content-desc">
+											<a href="?section=subsection&subid=1">
+						<img src="http://www.nylonmag.com/images/new/section_sub_1.gif" />
+						</a>
+										<div class="content-type">
+					<h3 style="color:#262626;"><a href="?section=article&parid=6188">BOOK CLUB: VARIOUS AUTHORS</a></h3>
+					<p style="color:#262626;">Get your short story fix with this blog-turned-book. </p>
+					<a href="?section=article&parid=6188">more</a>
+					</div>
+				</div>
+			</div>
+			</div>
+
+	</div>
+	<!-- end 450 -->
+</div>
+<!-- end hp-sub -->
+
+
+<script type="text/javascript" src="/images/new/jquery.cycle.lite.1.0.min.js"></script> 
+</div>	
+
+		
+<div id="column-two-intro">
+<!--
+<a href="javascript:popUp3('?section=newsletter');">sign up to our newsletter</a>
+-->
+<br />
+
+	<div class="content-item">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr align="center">
+    <td>
+		<a href="https://w1.buysub.com/pubs/NY/NYN/NYLON_sub1.jsp?cds_page_id=44131&cds_mag_code=NYN&id=1275933605901&lsid=31581300059027704&vid=1">
+			<img src="http://www.nylonmag.com/images/home_subscribenow.gif" align="absmiddle" />
+		</a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+		<a href="https://w1.buysub.com/pubs/NY/NYN/NYLON_sub1.jsp?cds_page_id=44131&cds_mag_code=NYN&id=1275933605901&lsid=31581300059027704&vid=1">
+        <img src="http://www.nylonmag.com/images/home_subscribenow_text.jpg" />    
+        </a>        
+    </td>
+  </tr>    
+</table>
+	</div>
+    
+    <br />
+	
+    <div class="content-item">
+     <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+  <tr align="center">
+    <td>
+		<a href="https://w1.buysub.com/pubs/NY/NYG/Single_Sub_with_Tshirt_Premium.jsp?cds_page_id=55791&cds_mag_code=NYG&id=1226093367630&lsid=83121528320061489&vid=3" align="absmiddle">
+		<img src="http://www.nylonmag.com/images/home_nylonguys.jpg" align="absmiddle" />   
+        </a>
+    </td>
+  </tr>
+  <tr align="center">
+    <td>
+		<a href="http://www.nylonguysmag.com/" align="absmiddle">    
+        <img src="http://www.nylonmag.com/images/home_nylonguys_text.jpg" align="center" />    
+        </a>
+    </td>
+  </tr>
+      </table>
+	</div>	
+
+<br />
+ <div class="content-item">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center">
+   <tr align="center">
+    <td>
+	  <a href="http://www.zinio.com/browse/publications/?productId=500221617&offer=500118015&pss=1" align="absmiddle"><img src="http://www.nylonmag.com/images/subscribedigmag.jpg" align="absmiddle" /></a>
+    </td>
+  </tr>
+  </table>
+ </div>	
+<br />
+ 
+	<div class="content-item">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr align="center">
+    <td>
+      <img src="http://www.nylonmag.com/images/sign_up_updates.gif" />
+    </td>
+  </tr>
+  <tr align="center">
+    <td>
+		<form action="?section=signup" method="post" onsubmit="popupSimple(200,100,'views/signup_popup.html');">
+			<input type="hidden" name="redirect_success" value="index.php?section=home&msg2=" />
+			<input type="hidden" name="redirect_fail" value="index.php?section=home&msg2=Please%20enter%20a%20valid%20email%20address." />			
+			<input type="text" name="sup_email" value="enter email" style="width:130px;" />
+			<input type="image" style="border:none;" src="images/submit_greybg.gif" />
+		</form>
+		<div style="margin: -10px 0 0 0; font-size: 11px;">
+			<a href="?section=section&amp;papid=10" class="link-spacing">past newsletters</a>	
+		</div>
+    
+    </td>
+  </tr>  
+</table>
+	</div>
+	
+					
+<div class="content-item">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr align="center">
+    <td>
+      <a href="http://www.nylonmag.com/backissues/">
+      <img src="http://www.nylonguysmag.com/static/images/back-issue-promo.jpg" />
+      </a>
+    </td>
+  </tr>
+</table>
+</div>
+	
+</div>
+<div id="column-three-intro">
+	
+	
+
+	
+	
+
+
+
+	
+		<div class="content-item">
+		<!-- ca-pub-8355715672558893/300x600_0 -->
+<script type='text/javascript'>
+GA_googleFillSlot("300x600_0");
+</script>
+	</div>
+	<br />
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br />
+
+
+
+		<div class="content-item">
+		<!-- ca-pub-8355715672558893/300x250_B_0 -->
+<script type='text/javascript'>
+GA_googleFillSlot("300x250_B_0");
+</script>
+	</div>
+	<br />
+
+
+
+
+			<div class="content-item">
+			<br>
+			<!-- ca-pub-8355715672558893/300x100_B_0 -->
+<script type='text/javascript'>
+GA_googleFillSlot("300x100_B_0");
+</script>
+		</div>
+	<br />
+			<div class="content-item">
+			<br>
+			<!-- ca-pub-8355715672558893/300x100_A_0 -->
+<script type='text/javascript'>
+GA_googleFillSlot("300x100_A_0");
+</script>
+		</div>
+	<br />
+	
+
+	</div></div>	
+	
+<div id="footer">
+	2011 NYLON HOLDING INC. All Rights Reserved <br />
+		<a href="https://w1.buysub.com/servlet/OrdersGateway?cds_mag_code=NYN&cds_page_id=44131">SUBSCRIPTION</a> | 
+        <a href="?section=mediakit">ADVERTISE</a> | 
+		<a href="javascript:popUp('privacy.html')">PRIVACY</a> | 
+		<a href="?section=contactus">CONTACT US</a> | 
+		<a href="?section=rssfeeds">RSS FEED</a>
+</div>			</div>
+		</div>
+	
+
+
+
+<!-- ADVERTISEMENT -->
+	<div class="advertisment-area">
+																		<div id="bannerad">
+							<!-- ca-pub-8355715672558893/728x90_footer_0 -->
+<script type='text/javascript'>
+GA_googleFillSlot("728x90_footer_0");
+</script>
+							</div>
+																												</div>
+<!-- ADVERTISEMENT -->
+
+
+	
+</div>
+
+<!-- Google analytics --> 
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"> 
+</script> 
+
+<script type="text/javascript"> 
+
+_uacct = "UA-1780491-1";
+urchinTracker();
+</script> 
+
+
+<!-- Start Quantcast tag --> 
+<script type="text/javascript"> 
+_qoptions={
+qacct:"p-69yK4yoRmPzLs"
+};
+
+</script>
+
+
+<script type="text/javascript">
+
+var _sf_async_config={uid:9737,domain:"nylonmag.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+       "static.chartbeat.com/js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+
+</script>
+</body>
+</html>

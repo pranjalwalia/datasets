@@ -1,0 +1,3712 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en" xmlns:fb="https://www.facebook.com/2008/fbml">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article# food_prod: http://ogp.me/ns/fb/food_prod#">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.9">
+  <meta name="verify-v1" content="lMOAF4P7f2sxMtpjVkGgQTON1Js3aD2uDielq9qdoYI="/>
+  <meta name="google-site-verification" content="3hxp5oA8CYuqgtPrXrz0LmDSGYTIe2jQK9ToV1gwurI"/>
+  <meta property="og:site_name" content="Food52"/>
+  <meta property="og:url" content="http://www.food52.com/recipes/13568_watermelon_chili_sliders"/>
+  <meta property="fb:app_id" content="174162069306426"/>
+
+  
+    <meta property="og:type" content="food_prod:recipe"/>
+    <meta property="og:title" content="Watermelon chili sliders"/>
+    <meta property="og:image" content="http://d2k9njawademcf.cloudfront.net/indeximages/20271/large/DSCN6081a.jpg?1311967776"/>
+    <meta created_date="2011-07-27 14:21:56 -0400"/>
+    <meta property="og:description" content="Adapting a watermelon appetizer idea, I have added fresh hot serrano pepper with a white balsamic vinegar. I first tried these..." />
+
+
+  <title>Watermelon chili sliders recipe from food52</title>
+  <!-- link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/food52-TheAandMBlog" / -->
+  <!--[if IE]>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/ie8.css"/>
+  <![endif]-->
+  <link rel="stylesheet" type="text/css" href="/fonts/MyFontsWebfontsOrderM3084221.css">
+  
+  
+  
+  
+  
+  
+  
+  <link href="/stylesheets/layout.min.css?1343745045" media="screen" rel="stylesheet" type="text/css" />
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+  <!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  
+  
+
+  
+  <script src="/javascripts/jquery-ui-1.7.2.custom.min.js?1343745045" type="text/javascript"></script>
+  <script src="/javascripts/lightbox.js?1343745045" type="text/javascript"></script>
+  <script src="/javascripts/slides.jquery.js?1343745045" type="text/javascript"></script>
+  <script src="/javascripts/jquery.cookie.js?1343745045" type="text/javascript"></script>
+  <script src="/javascripts/application.js?1343745045" type="text/javascript"></script>
+  <script src="/javascripts/dropdown.js?1343745045" type="text/javascript"></script>
+  <script src="/javascripts/tooltips.js?1343745045" type="text/javascript"></script>
+  <script src="/javascripts/jquery.fancybox.pack.js?1343745045" type="text/javascript"></script>
+  <script src="/javascripts/easypaginate.js?1343745045" type="text/javascript"></script>
+  <script src="/javascripts/jquery.aw-showcase.js?1343745045" type="text/javascript"></script>
+  
+
+  
+
+  
+    
+    
+<script type="text/javascript">
+  function fbSaveRecipe()
+  {
+    // TODO: Revise this so it doesn't ask logged in users to login again via FB.getLoginStatus
+    FB.login(function(response) {
+      if (response.authResponse) {
+        // User is authenticated, Publish Action
+        publishSaveRecipe();
+      } else {
+        // User declined authentication
+        console.log("User declined app: "+response);
+       }
+     },{scope: 'email,publish_actions'});
+  }
+
+  function publishSaveRecipe()
+  {
+    FB.api(
+      "/me/food_prod:save?recipe=http://www.food52.com/recipes/13568_watermelon_chili_sliders",
+      'post',
+      function(response) {
+        if (!response || response.error) {
+          console.log(response);
+        } else {
+          alert('Your recipe was successfully saved!');
+        }
+      });
+  }
+
+  function trimTags() {
+        var tagsString = document.getElementById('tags_name').value;
+        if (tagsString != null) {
+            document.getElementById('tags_name').value = tagsString.trim();
+        }
+    }
+
+    function setupAjaxTags() {
+        var tagsString = document.getElementById('tags_input').value;
+
+        if (tagsString == null || tagsString.trim() == "" || tagsString.trim().indexOf("Enter") == 0) {
+            document.getElementById('tag_canvas').innerHTML = '';
+            return;
+        }
+
+        var lastChar = tagsString.substring(tagsString.length - 1);
+        var pattern = /[\/\;\(\)\*\&\^\%\$\#\@\!\[\]\{\}\-\_\.\+\=]/;
+        if (lastChar.match(pattern) != null) {
+            tagsString = tagsString.substring(0,tagsString.length - 1);
+            document.getElementById('tags_input').value = tagsString;
+        }
+
+        tagsArr = tagsString.split("|")
+        tagsArr = tagsArr.toString().split(",");
+
+        if (tagsArr == null || tagsArr.length < 1) {
+            document.getElementById('tag_canvas').innerHTML = '';
+            return;
+        }
+
+        //only allow 5 tags
+        if (tagsArr.length > 5) {
+            tagsString = tagsString.substring(0, tagsString.length - 1);
+            document.getElementById('tags_input').value = tagsString;
+            tagsArr = tagsString.split(",");
+        }
+
+        tagsHTML = "";
+        for (i = 0; i < tagsArr.length; i++) {
+            tagsHTML += "<a href='/hotline/questions/" + tagsArr[i].trim() + "' target='_blank'>" + tagsArr[i].trim() + "</a>";
+            if (i < tagsArr.length - 1)
+                tagsHTML = tagsHTML + " | ";
+        }
+
+        document.getElementById('tag_canvas').innerHTML = tagsHTML;
+    }
+
+    //after selection of autocomplete choice, add a comma to the tags string
+    function afterUpdate() {
+        var tagsString = document.getElementById('tags_input').value;
+        tagsArr = tagsString.split("|")
+        tagsArr = tagsArr.toString().split(",");
+        if (tagsArr.length >= 5)
+            return;
+        document.getElementById('tags_input').value = tagsString + ", ";
+    }
+
+
+
+
+
+</script>
+
+
+    <script src="/javascripts/tabs.js?1343745045" type="text/javascript"></script>
+<script src="/javascripts/widgets/tooltip.js?1343745045" type="text/javascript"></script>
+    <script src="/javascripts/recipes.js?1343745045" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#recipe_slides').slides({
+        preload: true,
+        generatePagination: false
+      });
+
+      if ($(window).width() > 480) // Scroll tracking. Disable for mobile devices
+      {
+        var position = $(".footer").offset().top - $("#single_recipe").height() - 60;
+        $("#single_recipe").followTo($("#single_recipe").offset().top, position);
+      }
+      else
+      {
+        $(document).ready(function() {
+            $("#single_recipe").css({
+                position: 'static'
+            });
+        });
+      }
+
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $.ajax({
+        url: "/recipes/check_if_editable/13568",
+        dataType: 'html',
+        timeout: 3000,
+        error: function() { 
+          //alert("Error talking to server.");
+        },
+        success: function(data) {
+          $("#edit-box").html(data);
+        }
+      });
+    });
+  </script>
+
+    
+
+
+    <!-- Pintrest -->
+    <script type="text/javascript">
+    (function() {
+        window.PinIt = window.PinIt || { loaded:false };
+        if (window.PinIt.loaded) return;
+        window.PinIt.loaded = true;
+        function async_load(){
+            var s = document.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "http://assets.pinterest.com/js/pinit.js";
+            var x = document.getElementsByTagName("script")[0];
+            x.parentNode.insertBefore(s, x);
+        }
+        if (window.attachEvent)
+            window.attachEvent("onload", async_load);
+        else
+            window.addEventListener("load", async_load, false);
+    })();
+    </script>
+    <!-- end Pintrest-->
+
+    <script type="text/javascript">
+      function tab() {
+      
+		_gaq.push(['_trackEvent', 'Questions Tab', 'http://food52.com']);
+      
+      }
+    </script>
+
+    <script type="text/javascript">
+      function product_landing(name,url) {
+      
+		_gaq.push(['_trackEvent', 'Product Landing Hit', name, url]);
+      
+      }
+      function product_direct(name,url) {
+      
+		_gaq.push(['_trackEvent', 'Product Direct Hit', name, url]);
+      
+      }
+    </script>
+
+  
+    <link href="/stylesheets/lightbox.css?1343745045" media="screen" rel="stylesheet" type="text/css" />
+    
+    <link href="/stylesheets/activity.css?1343745045" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/single_recipe.css?1343745045" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/recipes.css?1343745045" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/data.css?1343745045" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/stylesheets/news.css?1343745045" media="screen" rel="stylesheet" type="text/css" />
+
+    <link href="/stylesheets/print_recipe.css?1343745045" media="print" rel="stylesheet" type="text/css" />
+
+    
+
+
+  <script type="text/javascript">
+      window.onload = function() {
+          
+      }
+  </script>
+
+  <script type="text/javascript">
+      $(document).ready(function() {
+          $("input#search").focus(function(event) {
+              $(this).val("");
+          });
+      });
+
+  </script>
+
+
+  <script>
+  var _gaq=[['_setAccount','UA-9081548-1'],['_trackPageview']];
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<script>
+function recordOutboundLink(link, category, action) {
+	_gaq.push(['_trackEvent', category, action]);
+	window.open (link.href,"x");
+}
+
+$(function() {
+	$(".track-ga-click-event").on("click", function(event) {
+		var category = ($(this).data('ga-category')) ? $(this).data('ga-category') : '';
+		var action = ($(this).data('ga-action')) ? $(this).data('ga-action') : '';
+		var label = ($(this).data('ga-label')) ? $(this).data('ga-label') : '';
+		var value = ($(this).data('ga-value')) ? $(this).data('ga-value') : '';
+		var noninteraction = ($(this).data('ga-noninteraction')) ? $(this).data('ga-noninteraction') : false;
+		
+		if (category && action) {
+			_gaq.push(['_trackEvent', category, action, label, value]);
+		}
+	});
+});
+</script>
+
+
+
+</head>
+<body>
+<div class="outer_container" id="header">
+
+<div class="header">
+
+	<div class="header_top clearfix">
+	  <div class="user">
+	    <div id='logged_out'>
+	      <ul id="login">
+	        <li><a href="#signup_open" onclick="scrollTo(0,0);" name="modal" r="/recipes/new">Add a Recipe</a></li>
+	        <li><a href="#signup_open" name="modal">Log In</a></li>
+	        <li class="no_line"><a href="#signup_open" name="modal">Sign Up</a></li>
+	      </ul>
+	    </div>
+	    <div id='logged_in' style="display: none;">
+	      <ul id="login">
+	        <li id="message">Hi, <a href="#" id="profile_link" class="username"><span id="user_short_name">User</span>!</a>
+	        </li>
+	        <li class="no_line"><a href="#" id="recipe_link"><span id="user_recipes">My Recipes</span></a></li>
+	        <li class="left_line"><a href="/recipes/new">Add a Recipe</a></li>
+	        <li class="no_line"><a href="/logout">Log Out</a></li>
+	      </ul>
+	    </div>
+	    <script type="text/javascript" charset="utf-8">
+	        handle_cached_user();
+	    </script>
+	  </div>
+
+	  <h5 class="logo"><a href="/"><span>Food52</span></a></h5>
+
+	  <div class="header_search">
+	    <ul>
+	      <form action="/home/search">
+	        <li id="search">
+	          <input id="search" type="text" name="search" value="Enter Search Term(s)"/>
+	          <select class="select" name="option" title="Recipes">
+	            <option value="recipes">Recipes</option>
+	            <option value="foodpickle">Hotline</option>
+	            <option value="shop">Shop</option>
+	            
+	            <option value="cooks">Cooks</option>
+	            <option value="articles">Features</option>
+	          </select>
+	        </li>
+	        <li id="submit">
+	          <input type="submit" id="submit" value=""/>
+	        </li>
+	      </form>
+
+	      
+
+	    </ul>
+	  </div>
+	</div>
+	<div id="navigation">
+	  <div id="navWrapper">
+	    <ul class="clearfix">
+	      
+	      <li>
+	        <a href="/recipes" class="subtitle track-ga-click-event"
+				data-ga-category="Header Main Nav" data-ga-action="Click Main Nav Label" data-ga-label="Recipes"
+	 			id='selected' >Recipes</a><span class="bullet">&bull;</span>
+	                <span class='tooltip' id="recipes"><span>
+	                    <div class="hover_wrap" id="recipes">
+	                      <div class="hover_box clearfix">
+	                        <ul>
+	                          <li><a href="/recipes/new" id="bold" class="track-ga-click-event"
+									data-ga-category="Header Main Nav Hover" data-ga-action="Click Add Recipe"
+									data-ga-label="">Add a Recipe &raquo;</a></li>
+	                          <li><a href="/recipes/search?ca=84" class="track-ga-click-event"
+									data-ga-category="Header Main Nav Hover" data-ga-action="Click Recipes Category"
+									data-ga-label="Top Recipes">Top Recipes</a></li>
+	                          <li><a href="/recipes/search?ca=85" class="track-ga-click-event"
+									data-ga-category="Header Main Nav Hover" data-ga-action="Click Recipes Category"
+									data-ga-label="Community Picks">Community Picks</a></li>
+	                          <li><a href="/recipes/search?ca=88" class="track-ga-click-event"
+									data-ga-category="Header Main Nav Hover" data-ga-action="Click Recipes Category"
+									data-ga-label="Contest Winners">Contest Winners</a></li>
+	                          <li><a href="/blog/category/128_genius_recipes" class="track-ga-click-event"
+									data-ga-category="Header Main Nav Hover" data-ga-action="Click Recipes Category"
+									data-ga-label="Genius Recipes">Genius Recipes</a></li>
+	                          <li><a href="/recipes/search/season/summer" class="track-ga-click-event"
+									data-ga-category="Header Main Nav Hover" data-ga-action="Click Recipes Category"
+									data-ga-label="Recipes for Summer">Recipes for Summer</a></li>
+	                        </ul>
+	                        <div class="entries">
+	                          <div class="recipe_right">
+								<a class="track-ga-click-event" href="/recipes/1170_butternut_squash_salad"
+									data-ga-category="Header Main Nav Hover" data-ga-action="Click Recipe - Right Image" 
+									data-ga-label="Butternut Squash Salad">
+									<img src="http://d2k9njawademcf.cloudfront.net/indeximages/20495/five_col/1012009F_0034.JPG?1312320642" alt="Butternut Squash Salad" />
+								</a>
+	                            <div class="info_recipe">
+	                              <mark id="recipe_white_outline"></mark>
+	                              <a class="track-ga-click-event" id="descriptor" href="/recipes/1170_butternut_squash_salad"
+									data-ga-category="Header Main Nav Hover" data-ga-action="Click Recipe - Right Label" 
+									data-ga-label="Recipe of the Day">Recipe of the
+	                                Day</a>
+
+	                              <h2 class="recipe_title" id="white">
+									<a class="track-ga-click-event" href="/recipes/1170_butternut_squash_salad"
+										data-ga-category="Header Main Nav Hover" data-ga-action="Click Recipe - Right Label" 
+										data-ga-label="Butternut Squash Salad">Butternut Squash Salad</a>
+								  </h2>
+	                            </div>
+	                          </div>
+	                        </div>
+	                      </div>
+	                    </div>
+	             	</span></span>
+	      </li>
+	      <li>
+	        <a href="/hotline" class="subtitle" false >Hotline</a><span class="bullet">&bull;</span>
+	                <span class='tooltip' id="foodpickle"><span>
+	                    <div class="hover_wrap" id="foodpickle">
+	                      <div class="hover_box clearfix" id="recipes">
+	                        <mark id="hotline"></mark>
+	                        <h3 class="hover_description">
+	                          <a href="/hotline">Ask any food question. Or answer any food question!</a>
+	                        </h3>
+	                      </div>
+	                    </div>
+	                	</span>
+	                </span>
+	      </li>
+	      <li>
+	        <a href="/blog" class="subtitle" false>Feed52</a><span class="bullet">&bull;</span>
+	                <span class='tooltip' id="cooks"><span>
+	                    <div class="hover_wrap" id="articles">
+	                      <div class="hover_box clearfix">
+	                        <ul>
+	                          <!-- NEED LINKS, may also need to ask a&m about the categories they want here, AND IMAGE -->
+	                          <li><a href="/blog/category/123_jennys_in_the_kitchen">Jenny's in the Kitchen</a></li>
+	                          <li><a href="/blog/category/103_cooking_from_every_angle">Cooking from Every Angle</a></li>
+	                          <li><a href="/blog/category/128_genius_recipes">Genius Recipes</a></li>
+	                          <li><a href="/blog/category/148_sunday_dinners">Sunday Dinners</a></li>
+	                          <li><a href="/blog/category/146_city_dirt">City Dirt</a></li>
+	                          <li><a href="/blog/category/147_big_feast">Big Feast</a></li>
+	                          <li><a href="/blog/category/119_videos">Videos</a></li>
+	                        </ul>
+	                        <div class="entries">
+	                          <div class="recipe_right">
+	                            <a href="http://food52.com/blog/4098_heart_and_soul"><img alt="7647589620_d81a812a92_z" src="http://d2k9njawademcf.cloudfront.net/homepage_promo_images/1205/five_col/7647589620_d81a812a92_z.jpg?1343742908" /></a>
+	                            <div class="info_recipe">
+	                              <mark id="recipe_white_outline"></mark>
+	                              <a class="" id="descriptor" href="http://food52.com/blog/4098_heart_and_soul">Featured Article</a>
+
+	                              <h2 class="recipe_title" id="white"><a href="http://food52.com/blog/4098_heart_and_soul">Tom celebrates and commemorates with a soul food feast.</a></h2>
+	                            </div>
+	                          </div>
+	                        </div>
+	                      </div>
+	                    </div>
+	                	</span>
+	                </span>
+	      </li>
+	      <li>
+			<a href="http://shop.food52.com" class="subtitle">Shop</a><span class="bullet">&bull;</span>
+	                <span class='tooltip' id="shop"><span>
+	                    <div class="hover_wrap" id="shop">
+	                      <div class="hover_box clearfix">
+	                        <div class="entries">
+	                          <div class="recipe_right">
+	                            <!-- LATEST SHOP OFFER STUFF -->
+	                            <a href="http://shop.food52.com" target="_blank"><img src="http://d2k9njawademcf.cloudfront.net/shop_promo_images/63/five_col/Nudo_Flavored_Range_579x385.jpg?1343300978"/></a>
+
+	                            <div class="info_recipe">
+	                              <a class="" id="descriptor" href="/recipes/1170_butternut_squash_salad">Now in the shop</a>
+
+	                              <h2 class="recipe_title" id="white">
+	                                <a href="http://shop.food52.com">Save $10 on nudo's first cold press extra virgin olive oil</a></h2>
+	                            </div>
+	                          </div>
+	                        </div>
+	                      </div>
+	                    </div>
+	                	</span>
+	                </span>
+	      </li>
+	      <li>
+	        <a href="/contests" class="subtitle track-ga-click-event"
+				data-ga-category="Header Main Nav" data-ga-action="Click Main Nav Label" data-ga-label="Contests"
+				false>Recipe Contests</a><span class="bullet">&bull;</span>
+	                <span class='tooltip' id="contests"><span>
+	                    <div class="hover_wrap">
+	                      <div class="hover_box clearfix">
+	                        <ul>
+	                          <li><a href="/contests/307_wildcard" id="bold">The Current Contest &raquo;</a></li>
+	                          <li>
+	                            <a href="/recipes/14725_porcini_and_rosemary_crusted_beef_tenderloin_with_port_wine_sauce">The Latest Winner</a></li>
+	                          <li><a href="/contests/archives">Past Winners</a></li>
+	                          <li><a href="/blog/2616_winner_of_your_best_root_vegetable_side">Latest Winners Q&amp;A</a></li>
+	                          <li><a href="/blog/2637_the_food52_cookbook_is_here">The First Food52 Cookbook!</a></li>
+	                          <li id="last"><a href="/home/about_contests">About the Contests</a></li>
+	                        </ul>
+	                        <div class="entries">
+	                          <div class="recipe_right">
+	                            <a class="track-ga-click-event" href="/contests/307_wildcard"
+									data-ga-category="Header Main Nav Hover" data-ga-action="Click Contest - Right Image" 
+									data-ga-label="Wildcard">
+									<img src="/images/medium/missing.png" alt="Wildcard" />
+								</a>
+	                            <div class="info_recipe">
+	                              <mark id="contest_white_outline"></mark>
+								  <a class="track-ga-click-event" id="descriptor" href="/contests/307_wildcard"
+									data-ga-category="Header Main Nav Hover" data-ga-action="Click Contest - Right State" 
+									data-ga-label="winners">winners</a>
+
+	                              <h2 class="recipe_title" id="white">
+									<a class="track-ga-click-event" href="/contests/307_wildcard"
+										data-ga-category="Header Main Nav Hover" data-ga-action="Click Contest - Right Label" 
+										data-ga-label="Wildcard">Wildcard</a>
+								  </h2>
+	                            </div>
+	                          </div>
+	                        </div>
+	                      </div>
+	                    </div>
+						      </span>
+	              </span>
+	      </li>
+	
+		  <li>
+	        <li><a href="/home/jobs" class="subtitle">We're Hiring!</a>
+	      </li>
+      
+	      
+
+	    </ul>
+	  </div>
+
+	</div>
+
+	<div id="newsletterWrap">
+		<div class="message" id="newsletter">
+		  	<div class="clearfix messageContainer">
+		       
+		  	  <h5 class="message_text" id="grey">Sign up for our surprise-filled, can't-live-without-them emails!</h5>
+		  	  <a href="#" class="dismiss" onclick="hideAndSetCookie();"></a>
+		  	  <form action="/newsletters" method="post" onsubmit="jQuery.ajax({data:jQuery.param(jQuery(this).serializeArray()), dataType:'script', type:'post', url:'/newsletters'}); return false;">
+		  	      
+		  	      <input id="search" name="newsletter[email_address]" onfocus="if(this.value=='Email address')this.value=''" size="30" type="text" value="Enter your email address" />
+		          <input id="newsletter_is_shop" name="newsletter[is_shop]" type="hidden" value="0" />
+		  	      <input id="green_button" name="commit" type="submit" value="Subscribe" />
+		  	  </form>
+		  	</div>
+		</div>
+	</div>
+
+	<script>
+	    displayNewsletterMessage();
+	</script>
+
+</div> <!-- End header -->
+
+</div> <!-- End outer_container -->
+
+<div class="container clearfix">
+
+  <div id="fb-root"></div>
+
+  <script type="text/javascript">
+
+    // Initialize Facebook app for Like buttons and app actions ie Ask Question, Save Recipe
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId : '174162069306426', // App ID
+        status : true, // check login status
+        cookie : true, // enable cookies to allow the server to access the session
+        xfbml : true, // parse XFBML
+        oauth: true
+      });
+    };
+
+    // Load the SDK Asynchronously
+    (function(d){
+      var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+      js = d.createElement('script'); js.id = id; js.async = true;
+      js.src = "//connect.facebook.net/en_US/all.js";
+      d.getElementsByTagName('head')[0].appendChild(js);
+    }(document));
+
+  </script>
+
+  
+    <div class="three_columns leftest">
+      <div class="space_20"></div>
+      <div class="data module" id="single_recipe">
+        <ul class="data">
+          
+          <li class="dark clearfix" id="first">
+            
+            <h3 class="activity_count">
+              <span>14,922</span> views</h3>
+          </li>
+          <div id="rating">
+            
+            <li class="dark clearfix">
+              
+              <h3 class="activity_count" id="left"><span>4</span></h3>
+              <h3 class="activity_count" id="right">cooks want to eat this</h3>
+            </li>
+            <li class="button">
+
+              <span class="arrow_down"></span>
+              
+                  <a href="#signup_open" class="green_button" name="modal">Me too!</a>
+              
+            </li>
+          </div>
+          <div id="save">
+            <li class="dark clearfix">
+              
+              
+              <h3 class="activity_count" id="left"><span>57</span></h3>
+              <h3 class="activity_count" id="right">cooks saved this recipe</h3>
+            </li>
+            <li class="button">
+              
+                <a href="#signup_open" class="green_button" name="modal">Save this recipe</a>
+              
+            </li>
+            <li class="button">
+              <a href="#" class="green_button" onclick="fbSaveRecipe()">Save to Facebook</a>
+            </li>
+          </div>
+          <li class="clearfix">
+            
+            
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/medium/12158_062.jpg?1341604224" /></a>
+            
+            <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+            <span class="date">by <a href="/users/12307_sagegreen" class="username">Sagegreen</a></span>
+            
+            
+                <a href="/users/recipes/12307_sagegreen" class="action">View
+                  my 314 recipes &raquo;</a>
+            
+          </li>
+          
+          
+          
+
+
+          <li>
+            <!-- h3 class="heading" id="small">Share the deliciousness</h3i-->
+            <ul class="social_data">
+              <li>
+                <fb:like href="http://www.food52.com/recipes/13568_watermelon_chili_sliders" send="false" layout="button_count" width="100" show_faces="false"></fb:like>
+                
+              </li>
+              <li>
+                <a href="http://twitter.com/share?url=http://www.food52.com/recipes/13568_watermelon_chili_sliders" class="twitter-share-button" data-count="horizontal">Tweet</a>
+                <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+              </li>
+              <li>
+                <a href="http://pinterest.com/pin/create/button/?url=http://www.food52.com/recipes/13568_watermelon_chili_sliders&media=http://d2k9njawademcf.cloudfront.net/indeximages/20271/nine_col/DSCN6081a.jpg?1311967776&description=Watermelon chili sliders" class="pin-it-button" count-layout="horizontal">Pin It</a>
+              </li>
+              <li class="clearfix">
+                <a class="jump" href="#" id="email" onclick="openModal(&quot;#email_modal_open&quot;);; return false;"></a>
+                <a href="/recipes/print/13568" target="_blank" class="jump" id="print"></a>
+              </li>
+            </ul>
+          </li>
+          <li class="clearfix" id="last">
+
+            <a class="jump" href="#" id="flag" onclick="openModal(&quot;#modal_flag_recipe&quot;);; return false;"><span class="date">Flag this recipe for inappropriate content</span></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="ten_columns">
+        
+    <!-- SINGLE RECIPE -->
+    <div class="single_recipe">
+    <div class="recipe_viewer">
+    <div class="icons clearfix">
+      <mark id="recipe"><span>Recipe</span></mark>
+      
+    </div>
+    <h1 class="individual">Watermelon chili sliders</h1>
+    
+    
+    <div id="tabs">
+    <ul class="nav">
+      <li><a href="#recipe_tab">Recipe</a></li>
+      
+      
+      <li>
+        <a href="#foodpickle_tab" onclick="tab();">
+          
+              No Questions Yet
+          
+        </a>
+      </li>
+      <!-- <li><a href="#cooking_view">Cooking View</a></li> -->
+    </ul>
+    <div id="recipe_tab">
+      <div class="recipe">
+        <div id="recipe_slides">
+
+          
+            <div class="slides_container">
+
+            
+
+              
+                <div class="slide">
+                  <div class="image_container">
+                    <img alt="Watermelon chili sliders" src="http://d2k9njawademcf.cloudfront.net/indeximages/20271/nine_col/DSCN6081a.jpg?1311967776" />
+                  </div>
+                  <div class="caption" style='bottom:0;' >
+                    <p>Photo 1 of 4 <br/>by Sagegreen</p>
+                  </div>
+                </div>
+              
+
+              
+                <div class="slide">
+                  <div class="image_container">
+                    <img alt="Watermelon chili sliders" src="http://d2k9njawademcf.cloudfront.net/indeximages/20199/nine_col/DSCN6072.JPG?1311791852" />
+                  </div>
+                  <div class="caption"  >
+                    <p>Photo 2 of 4 <br/>by Sagegreen</p>
+                  </div>
+                </div>
+              
+
+              
+                <div class="slide">
+                  <div class="image_container">
+                    <img alt="Watermelon chili sliders" src="http://d2k9njawademcf.cloudfront.net/indeximages/20202/nine_col/DSCN6074.JPG?1311798852" />
+                  </div>
+                  <div class="caption"  >
+                    <p>Photo 3 of 4 <br/>by Sagegreen</p>
+                  </div>
+                </div>
+              
+
+              
+                <div class="slide">
+                  <div class="image_container">
+                    <img alt="Watermelon chili sliders" src="http://d2k9njawademcf.cloudfront.net/indeximages/20197/nine_col/DSCN6071.JPG?1311790949" />
+                  </div>
+                  <div class="caption"  >
+                    <p>Photo 4 of 4 <br/>by Sagegreen</p>
+                  </div>
+                </div>
+              
+              </div>
+
+              
+                <a href="#" class="prev"><span></span></a>
+                <a href="#" class="next"><span></span></a>
+              
+          
+
+          
+          
+
+        </div>
+      </div>
+      <div class="recipe_content">
+        <ul>
+              <li class="recipe_notes clearfix" id="enter">
+                <div id="edit-box"></div>
+                
+                  
+                    
+                      <h5 class="enter">This recipe was entered in the contest for <a href="/contests/249_your_best_chili_pepper_recipe" class="contest">Your Best Chili Pepper Recipe</a></h5>
+                    
+                  
+                    
+                      <h5 class="enter">This recipe was entered in the contest for <a href="/contests/251_your_best_fair_food" class="contest">Your Best Fair Food</a></h5>
+                    
+                  
+                
+              </li>
+          
+          <li class="recipe_notes clearfix">
+            <mark id="cooks"><span>Chef</span></mark>
+            <p><a href="/users/12307_sagegreen" class="username">Sagegreen</a>'s
+              <strong>Notes</strong>:
+              
+                  <span class="expand_collapse short_desc">Adapting a watermelon appetizer idea, I have added fresh hot serrano pepper with a white balsamic vinegar. I first tried these out with my pickled peppers, but in the end decided that I prefer...</span>
+                  <span class="expand_collapse long_desc" style="display:none;"><p class="expand_collapse long_desc" style="display:none;">Adapting a watermelon appetizer idea, I have added fresh hot serrano pepper with a white balsamic vinegar. I first tried these out with my pickled peppers, but in the end decided that I prefer the fresh peppers.</p></span>
+              
+
+            </p>
+            
+                <a href="#" class="expand_collapse" id="expand">Expand<span></span></a>
+                <a href="#" class="expand_collapse" id="collapse" style="display:none;">Collapse<span></span></a>
+            
+          </li>
+        </ul>
+
+        <div class="recipe_info clearfix">
+          <h3 class="activity_count">Makes 24</h3>
+          
+          
+              <div class="recipe_ingredients">
+                
+                
+                    <p>
+                       
+                      
+                      
+                          
+                          
+                              chilled seedless watermelon cut into 24 bitesize cubes, each roughly around an inch and a half
+                          
+                      
+                      <span class='tooltip'>
+                        <a class="reply" href="#" onclick="openModalRecipeQuestion('#ask_question_modal', 13568, 'ingredient_534313');; return false;"><span>Ask a question about this ingredient</span></a>
+                      </span>
+                    </p>
+                
+                    <p>
+                       
+                      
+                      
+                          
+                          
+                              squeeze of 1 fresh lime
+                          
+                      
+                      <span class='tooltip'>
+                        <a class="reply" href="#" onclick="openModalRecipeQuestion('#ask_question_modal', 13568, 'ingredient_534314');; return false;"><span>Ask a question about this ingredient</span></a>
+                      </span>
+                    </p>
+                
+                    <p>
+                       
+                      
+                      
+                          
+                          
+                              drizzle of premium extra virgin olive oil (I used Nudo's stone ground with basil)
+                          
+                      
+                      <span class='tooltip'>
+                        <a class="reply" href="#" onclick="openModalRecipeQuestion('#ask_question_modal', 13568, 'ingredient_534315');; return false;"><span>Ask a question about this ingredient</span></a>
+                      </span>
+                    </p>
+                
+                    <p>
+                      @ 3 tablespoons
+                      
+                      
+                          
+                          
+                              white or golden balsamic vinegar ( or your favorite shrub, if you prefer)
+                          
+                      
+                      <span class='tooltip'>
+                        <a class="reply" href="#" onclick="openModalRecipeQuestion('#ask_question_modal', 13568, 'ingredient_534316');; return false;"><span>Ask a question about this ingredient</span></a>
+                      </span>
+                    </p>
+                
+                    <p>
+                      3 
+                      
+                      
+                          
+                          
+                              serrano (or jalapeno peppers), cut into 24 small pieces
+                          
+                      
+                      <span class='tooltip'>
+                        <a class="reply" href="#" onclick="openModalRecipeQuestion('#ask_question_modal', 13568, 'ingredient_534317');; return false;"><span>Ask a question about this ingredient</span></a>
+                      </span>
+                    </p>
+                
+                    <p>
+                       
+                      
+                      
+                          
+                          
+                              generous pinch of Aleppo pepper
+                          
+                      
+                      <span class='tooltip'>
+                        <a class="reply" href="#" onclick="openModalRecipeQuestion('#ask_question_modal', 13568, 'ingredient_534318');; return false;"><span>Ask a question about this ingredient</span></a>
+                      </span>
+                    </p>
+                
+                    <p>
+                       
+                      
+                      
+                          
+                          
+                              generous pinch of artisan coarse salt such as Bolivian rose, black Hawaiian, or Maldon
+                          
+                      
+                      <span class='tooltip'>
+                        <a class="reply" href="#" onclick="openModalRecipeQuestion('#ask_question_modal', 13568, 'ingredient_534319');; return false;"><span>Ask a question about this ingredient</span></a>
+                      </span>
+                    </p>
+                
+              </div>
+                
+                  
+				<div class="hotline clearfix">
+                    <a class="reply" href="#" onclick="openModalRecipeQuestion('#ask_question_modal', 13568, '');; return false;"><img src="/images/ask_hotline.png"></a>
+				</div>
+                
+              <div class="recipe_steps clearfix">
+                <ol>
+                  
+                      <li><p>Line up the cut and chilled inch and a half watermelon cubes. Spritz these first with lime juice and then drizzle with the olive oil. To cut the chili peppers, you might want to quarter slice each one lengthwise first and then half each quarter. Wipe away the seeds. Trim up the pieces if you like. 
+                        </p>
+                        <span class='tooltip'>
+                          <a class="reply" href="#" onclick="openModalRecipeQuestion('#ask_question_modal', 13568, 'step_287083');; return false;"><span>Ask a question about this step</span></a>
+                        </span>
+                      </li>
+                  
+                      <li><p>Next using a teaspoon carve out a narrow elliptical cavity almost half an inch deep from the top of each one, on the bias. I create the half the cavity with the spoon with its concave side facing the center of the cube and then go in  opposite (see photos). Fill the cavities with the vinegar.
+                        </p>
+                        <span class='tooltip'>
+                          <a class="reply" href="#" onclick="openModalRecipeQuestion('#ask_question_modal', 13568, 'step_287084');; return false;"><span>Ask a question about this step</span></a>
+                        </span>
+                      </li>
+                  
+                      <li><p>Transfer to a serving platter. Stick one toothpick into each slice of chili pepper. Insert one in each watermelon cube. Finish with a sprinkle of Aleppo pepper and artisan salt just before serving. 
+                        </p>
+                        <span class='tooltip'>
+                          <a class="reply" href="#" onclick="openModalRecipeQuestion('#ask_question_modal', 13568, 'step_287085');; return false;"><span>Ask a question about this step</span></a>
+                        </span>
+                      </li>
+                  
+                </ol>
+              </div>
+
+          
+
+
+        </div>
+      </div>
+
+      
+      <a name="comments"></a>
+
+      
+        <h3 class="heading">57 Comments on Watermelon chili sliders</h3>
+      
+
+      
+        
+            
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+        <a href="/users/27496_hcr" class="pie slice_37"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/27496_hcr" class="username">HCR</a>
+	 	 
+          <span class="date">added 11 months ago</span>
+        </div>
+        
+            <a href="#reply_85741" onclick='$("#reply_85741").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">ooh i would LOVE one of those RIGHT now.</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added 11 months ago</span>
+              </div>
+            
+            
+                <a href="#reply_85741" onclick='$("#reply_85741").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks, h.c.r!</p>
+        </div>
+
+    
+    
+    <div id="reply_85741" name="reply_85741" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/16506_summer_of_eggplant" class="avatar"><img alt="Img_1823" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/16506/small/IMG_1823.jpg?1340320084" /></a>
+        
+        <a href="/users/16506_summer_of_eggplant" class="pie slice_44"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/16506_summer_of_eggplant" class="username">Summer of Eggplant</a>
+	 	 
+          <span class="date">added 11 months ago</span>
+        </div>
+        
+            <a href="#reply_85739" onclick='$("#reply_85739").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">Yu-um.</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added 11 months ago</span>
+              </div>
+            
+            
+                <a href="#reply_85739" onclick='$("#reply_85739").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks, SoE!</p>
+        </div>
+
+    
+    
+    <div id="reply_85739" name="reply_85739" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+        <a href="/users/12436_omarston" class="pie slice_5"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/12436_omarston" class="username">omarston</a>
+	 	 
+          <span class="date">added 11 months ago</span>
+        </div>
+        
+            <a href="#reply_85537" onclick='$("#reply_85537").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">Wow! Your creativity is amazing!</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added 11 months ago</span>
+              </div>
+            
+            
+                <a href="#reply_85537" onclick='$("#reply_85537").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks,om!</p>
+        </div>
+
+    
+    
+    <div id="reply_85537" name="reply_85537" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/25008_sdebrango" class="avatar"><img alt="Oldies_joemare_bd" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/25008/small/oldies_joemare_bd.jpg?1311988212" /></a>
+        
+        <a href="/users/25008_sdebrango" class="pie slice_50"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/25008_sdebrango" class="username">sdebrango</a>
+	 	 
+          <span class="date">added 11 months ago</span>
+        </div>
+        
+            <a href="#reply_85530" onclick='$("#reply_85530").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">So glad to see these beautiful little bits of deliciousness again! You are right, so nice to see a healthy addition,</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added 11 months ago</span>
+              </div>
+            
+            
+                <a href="#reply_85530" onclick='$("#reply_85530").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks, s. I love making and eating these!</p>
+        </div>
+
+    
+    
+    <div id="reply_85530" name="reply_85530" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/11487_boulangere" class="avatar"><img alt="Img_2764" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/11487/small/IMG_2764.jpg?1318095694" /></a>
+        
+        <a href="/users/11487_boulangere" class="pie slice_50"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/11487_boulangere" class="username">boulangere</a>
+	 	 
+          <span class="date">added 11 months ago</span>
+        </div>
+        
+            <a href="#reply_85503" onclick='$("#reply_85503").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">Oh, welcome back to these beauties!</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/15156_panfusine" class="avatar"><img alt="Dsc_0122" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/15156/small/DSC_0122.NEF-1.jpg?1323980192" /></a>
+              
+              <a href="/users/15156_panfusine" class="pie slice_49"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/15156_panfusine" class="username">Panfusine</a>
+				        
+                <span class="date">added 11 months ago</span>
+              </div>
+            
+            
+                <a href="#reply_85503" onclick='$("#reply_85503").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">A sight for sore eyes!</p>
+        </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added 11 months ago</span>
+              </div>
+            
+            
+                <a href="#reply_85503" onclick='$("#reply_85503").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks, guys. I think these would be a healthy addition to the fair.</p>
+        </div>
+
+    
+    
+    <div id="reply_85503" name="reply_85503" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/41_jestei" class="avatar"><img alt="_mg_0362" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/41/small/_MG_0362.JPG?1246223114" /></a>
+        
+        <a href="/users/41_jestei" class="pie slice_42"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/41_jestei" class="username">Jestei</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_83608" onclick='$("#reply_83608").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">ohhhhhhh this looks exciting</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_83608" onclick='$("#reply_83608").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks so much, Jestei. They are pretty easy and healthy....and disappear pretty fast!</p>
+        </div>
+
+    
+    
+    <div id="reply_83608" name="reply_83608" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+        
+        <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_83523" onclick='$("#reply_83523").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">Oops, I accidentally erased the line to wipe out the seeds of the chili peppers after cutting them in one of my edits. So please don't include the seeds!</p>
+    </div>
+
+    
+    
+    <div id="reply_83523" name="reply_83523" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/18440_wssmom" class="avatar"><img alt="Me" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/18440/small/me.bmp?1294352076" /></a>
+        
+        <a href="/users/18440_wssmom" class="pie slice_49"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/18440_wssmom" class="username">wssmom</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_83411" onclick='$("#reply_83411").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">What a fabulous combination (and a great foto, too)!</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_83411" onclick='$("#reply_83411").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks, wssmom. Your frittata sounds wonderful, too!</p>
+        </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/18440_wssmom" class="avatar"><img alt="Me" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/18440/small/me.bmp?1294352076" /></a>
+              
+              <a href="/users/18440_wssmom" class="pie slice_49"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/18440_wssmom" class="username">wssmom</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_83411" onclick='$("#reply_83411").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">You know, I betcha these would be good, too, with tequila in place of the balsamic, for an interesting twist! </p>
+        </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_83411" onclick='$("#reply_83411").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">You know they would! I first had watermelon cubes which were scooped out with a melon baller and then filled with little vodka shots.</p>
+        </div>
+
+    
+    
+    <div id="reply_83411" name="reply_83411" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/10342_cookinginvictoria" class="avatar"><img alt="Cimg0737" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/10342/small/CIMG0737.JPG?1305009236" /></a>
+        
+        <a href="/users/10342_cookinginvictoria" class="pie slice_47"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/10342_cookinginvictoria" class="username">cookinginvictoria</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_83372" onclick='$("#reply_83372").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">Wow -- what an inventive idea. Love the combination of flavors that you have created here: watermelon, chili, and vinegar. Sounds like the perfect antidote for a hot summer day. And your photos are stunning -- these look too pretty to eat!</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_83372" onclick='$("#reply_83372").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks so much, civ. You can make these whatever size you consider to be the perfect bite; their looks and size make them really easy to eat, trust me!</p>
+        </div>
+
+    
+    
+    <div id="reply_83372" name="reply_83372" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/33079_lakelurelady" class="avatar"><img alt="Stringio" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/33079/small/stringio.txt?1332601592" /></a>
+        
+        <a href="/users/33079_lakelurelady" class="pie slice_34"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/33079_lakelurelady" class="username">lakelurelady</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_83237" onclick='$("#reply_83237").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">So simple, but yet so complex.  Love it.</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_83237" onclick='$("#reply_83237").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thank you so much for that observation, lll.</p>
+        </div>
+
+    
+    
+    <div id="reply_83237" name="reply_83237" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/333_chezsuzanne" class="avatar"><img alt="Chocolate_peppermint_truffle_cookies_032" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/333/small/Chocolate_Peppermint_Truffle_Cookies_032.jpg?1260683250" /></a>
+        
+        <a href="/users/333_chezsuzanne" class="pie slice_50"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/333_chezsuzanne" class="username">ChezSuzanne</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_83189" onclick='$("#reply_83189").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">I am TOTALLY making these!!!</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_83189" onclick='$("#reply_83189").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks so much, ChezSuzanne. Let me know what you think if you try these.</p>
+        </div>
+
+    
+    
+    <div id="reply_83189" name="reply_83189" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/17903_bluekaleroad" class="avatar"><img alt="Fb" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/17903/small/fb.bmp?1310580205" /></a>
+        
+        <a href="/users/17903_bluekaleroad" class="pie slice_46"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/17903_bluekaleroad" class="username">BlueKaleRoad</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_83175" onclick='$("#reply_83175").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">I've been pondering what to serve as an appetizer tomorrow evening and then saw your watermelon sliders...so perfect for a warm summer night!</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_83175" onclick='$("#reply_83175").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">If you serve them, please let me know what you think! Thanks, BKR.</p>
+        </div>
+
+    
+    
+    <div id="reply_83175" name="reply_83175" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/17743_hardlikearmour" class="avatar"><img alt="Gator_cake" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/17743/small/gator_cake.jpg?1338141676" /></a>
+        
+        <a href="/users/17743_hardlikearmour" class="pie slice_50"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/17743_hardlikearmour" class="username">hardlikearmour</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_83142" onclick='$("#reply_83142").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">This sounds awesome, and perfect for a hot & humid day.  I bet it would be good with some drinking vinegar (aka shrub) in place of the balsamic.</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_83142" onclick='$("#reply_83142").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks, hla. What a great suggestion!</p>
+        </div>
+
+    
+    
+    <div id="reply_83142" name="reply_83142" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/25050_lorigoldsby" class="avatar"><img alt="Lorigoldsby" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/25050/small/LoriGoldsby.jpg?1305167483" /></a>
+        
+        <a href="/users/25050_lorigoldsby" class="pie slice_48"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/25050_lorigoldsby" class="username">lorigoldsby</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_83109" onclick='$("#reply_83109").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">that is beautiful!  did you use the black hawaiian salt?</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_83109" onclick='$("#reply_83109").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks, lori. Yes, I just got both black Hawaiian and Bolivian rose salts from cubemarketplace! They are so good, too!</p>
+        </div>
+
+    
+    
+    <div id="reply_83109" name="reply_83109" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+        <a href="/users/33851_melissaleithwood" class="pie slice_1"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/33851_melissaleithwood" class="username">melissaleithwood</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_82987" onclick='$("#reply_82987").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">Hi there, what plugin do you use to get your print, email, share, etc tab below the picture?</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_82987" onclick='$("#reply_82987").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Hi, Melissa. I haven't added anything particular so I am not sure what you might need. If you have any problems, you might want to email the editors (editors@food52.com) for suggestions. They have always been helpful.</p>
+        </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/25050_lorigoldsby" class="avatar"><img alt="Lorigoldsby" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/25050/small/LoriGoldsby.jpg?1305167483" /></a>
+              
+              <a href="/users/25050_lorigoldsby" class="pie slice_48"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/25050_lorigoldsby" class="username">lorigoldsby</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_82987" onclick='$("#reply_82987").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">it will automatically appear--you don't have to do anything.</p>
+        </div>
+
+    
+    
+    <div id="reply_82987" name="reply_82987" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/19888_checker" class="avatar"><img alt="Checker" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/19888/small/checker.jpg?1298966176" /></a>
+        
+        <a href="/users/19888_checker" class="pie slice_40"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/19888_checker" class="username">checker</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_82819" onclick='$("#reply_82819").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">Pretty!</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_82819" onclick='$("#reply_82819").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks, checker.</p>
+        </div>
+
+    
+    
+    <div id="reply_82819" name="reply_82819" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/11460_hilarybee" class="avatar"><img alt="Blue_cropped" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/11460/small/blue_cropped.jpg?1313326592" /></a>
+        
+        <a href="/users/11460_hilarybee" class="pie slice_46"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/11460_hilarybee" class="username">Hilarybee</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_82799" onclick='$("#reply_82799").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">This would be so beautiful dunked in a martini (sans the balsamic). </p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_82799" onclick='$("#reply_82799").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks, Hilarybee. I had thought of that, sans oil, too!</p>
+        </div>
+
+    
+    
+    <div id="reply_82799" name="reply_82799" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/15156_panfusine" class="avatar"><img alt="Dsc_0122" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/15156/small/DSC_0122.NEF-1.jpg?1323980192" /></a>
+        
+        <a href="/users/15156_panfusine" class="pie slice_49"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/15156_panfusine" class="username">Panfusine</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_82789" onclick='$("#reply_82789").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">wont work for me.. they look too cute to gobble up.. oh well I'll just shut my eyes then!</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_82789" onclick='$("#reply_82789").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Aw, go on and gobble!</p>
+        </div>
+
+    
+    
+    <div id="reply_82789" name="reply_82789" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/10532_lapadia" class="avatar"><img alt="Me-and-pizza1" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/10532/small/me-and-pizza1.jpg?1341665657" /></a>
+        
+        <a href="/users/10532_lapadia" class="pie slice_49"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/10532_lapadia" class="username">lapadia</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_82766" onclick='$("#reply_82766").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">A terrific idea, Sagegreen...and I will take mine with a Vodka on the rocks chaser!</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_82766" onclick='$("#reply_82766").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">LOL, lapadia! After cocktail week I am switching over to salads myself! But I am sure these would be great with vodka or gin in the little cavity.</p>
+        </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/10532_lapadia" class="avatar"><img alt="Me-and-pizza1" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/10532/small/me-and-pizza1.jpg?1341665657" /></a>
+              
+              <a href="/users/10532_lapadia" class="pie slice_49"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/10532_lapadia" class="username">lapadia</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_82766" onclick='$("#reply_82766").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">:) The sunshine and warmer weather is just starting to show up around the PacNW, this seems a great way to celebrate it, oh, and with a great BBQ, of course :)</p>
+        </div>
+
+    
+    
+    <div id="reply_82766" name="reply_82766" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/5167_dymnyno" class="avatar"><img alt="186003_1004761561_1198459_n" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/5167/small/186003_1004761561_1198459_n.jpg?1323791636" /></a>
+        
+        <a href="/users/5167_dymnyno" class="pie slice_50"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/5167_dymnyno" class="username">dymnyno</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_82753" onclick='$("#reply_82753").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">Wow!  These are gorgeous!!  Natural dayglo colors!</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_82753" onclick='$("#reply_82753").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks, dymnyno. The sunlight caught them just so!</p>
+        </div>
+
+    
+    
+    <div id="reply_82753" name="reply_82753" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/11487_boulangere" class="avatar"><img alt="Img_2764" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/11487/small/IMG_2764.jpg?1318095694" /></a>
+        
+        <a href="/users/11487_boulangere" class="pie slice_50"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/11487_boulangere" class="username">boulangere</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_82730" onclick='$("#reply_82730").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">I'm with you on the need for cold food.  Your invention is beautiful, and I love its flavors.</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_82730" onclick='$("#reply_82730").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks, b, and welcome back! We missed you.</p>
+        </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/11487_boulangere" class="avatar"><img alt="Img_2764" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/11487/small/IMG_2764.jpg?1318095694" /></a>
+              
+              <a href="/users/11487_boulangere" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/11487_boulangere" class="username">boulangere</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_82730" onclick='$("#reply_82730").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">And I all of you!</p>
+        </div>
+
+    
+    
+    <div id="reply_82730" name="reply_82730" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/14354_sadassa_ulna" class="avatar"><img alt="Jc_profilepic" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/14354/small/JC_profilepic.jpg?1320424192" /></a>
+        
+        <a href="/users/14354_sadassa_ulna" class="pie slice_45"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/14354_sadassa_ulna" class="username">Sadassa_Ulna</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_82729" onclick='$("#reply_82729").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">Wow. These look and sound amazing. You are so inventive!</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_82729" onclick='$("#reply_82729").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks, S_U! These evolved this afternoon.</p>
+        </div>
+
+    
+    
+    <div id="reply_82729" name="reply_82729" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/25008_sdebrango" class="avatar"><img alt="Oldies_joemare_bd" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/25008/small/oldies_joemare_bd.jpg?1311988212" /></a>
+        
+        <a href="/users/25008_sdebrango" class="pie slice_50"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/25008_sdebrango" class="username">sdebrango</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_82724" onclick='$("#reply_82724").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">I love this cool and hot what a brilliant idea! Perfect hot weather appetizer.</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_82724" onclick='$("#reply_82724").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks, sdebrango! I was going for the healthy salad angle. </p>
+        </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/25008_sdebrango" class="avatar"><img alt="Oldies_joemare_bd" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/25008/small/oldies_joemare_bd.jpg?1311988212" /></a>
+              
+              <a href="/users/25008_sdebrango" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/25008_sdebrango" class="username">sdebrango</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_82724" onclick='$("#reply_82724").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Another addition to my salad repertoire, thank you.</p>
+        </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_82724" onclick='$("#reply_82724").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks. Instead of sandwich sliders, I thought these would go down more easily. I just added another photo showing some black salt. </p>
+        </div>
+
+    
+    
+    <div id="reply_82724" name="reply_82724" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/8894_bevi" class="avatar"><img alt="Blue" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/8894/small/blue.jpg?1341658462" /></a>
+        
+        <a href="/users/8894_bevi" class="pie slice_48"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/8894_bevi" class="username">Bevi</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_82721" onclick='$("#reply_82721").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">And yowza!</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_82721" onclick='$("#reply_82721").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks, Bevi. I just can't seem to cook anything this week, despite all these tempting, incredibly delicious chili recipes!</p>
+        </div>
+
+    
+    
+    <div id="reply_82721" name="reply_82721" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+            
+            
+            
+    <div class="comment clearfix">
+      <div class="user clearfix">
+        
+        
+            <a href="/users/21712_sexylambchopx" class="avatar"><img alt="Img00019-20100929-0432_1_" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/21712/small/IMG00019-20100929-0432_1_.jpg?1309714573" /></a>
+        
+        <a href="/users/21712_sexylambchopx" class="pie slice_47"></a>
+        
+        <div class="user_info">
+          
+			<a href="/users/21712_sexylambchopx" class="username">sexyLAMBCHOPx</a>
+	 	 
+          <span class="date">added about 1 year ago</span>
+        </div>
+        
+            <a href="#reply_82710" onclick='$("#reply_82710").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+        
+      </div>
+      
+      <p class="comment_text">Wowza!</p>
+    </div>
+
+    
+        <div class="comment clearfix" id="reply">
+          <div class="user clearfix">
+            
+              
+              
+                <a href="/users/12307_sagegreen" class="avatar"><img alt="12158_062" class="avatar" src="http://d2k9njawademcf.cloudfront.net/users/12307/small/12158_062.jpg?1341604224" /></a>
+              
+              <a href="/users/12307_sagegreen" class="pie slice_50"></a>
+
+              <div class="user_info">
+                
+				          <a href="/users/12307_sagegreen" class="username">Sagegreen</a>
+				        
+                <span class="date">added about 1 year ago</span>
+              </div>
+            
+            
+                <a href="#reply_82710" onclick='$("#reply_82710").toggle();return false;' class="reply"><span class="date">Reply</span></a>
+            
+
+            
+          </div>
+          
+          <p class="comment_text">Thanks, sLx!</p>
+        </div>
+
+    
+    
+    <div id="reply_82710" name="reply_82710" style="display:none;" class="reply_indent">
+      
+    <h4 class="signup">Please <a href="#signup_open" onclick="scrollTo(0,0);" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to add a comment!</h4>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+        
+      
+
+      
+          <h4 class="signup">
+          Please <a href="#signup_open" name="modal">Sign up</a> (or <a href="#signup_open" name="modal">log in</a>) to comment on a recipe!</h4>
+      
+
+    </div>
+
+    
+
+    <div id="foodpickle_tab">
+
+      
+      
+                                
+					<div class="hotline clearfix">
+                      <a class="reply" href="#" onclick="openModalRecipeQuestion('#ask_question_modal', 13568, '');; return false;"><img src="/images/ask_hotline.png"></a>
+					</div>
+      
+
+
+    </div>
+    <!-- <div id="cooking_view">
+      
+      <div class="cooking_ingredients" id="hide">
+        <h3 class="large_green"><a href="#" onclick="swap_visibility('hide','show');">Close Ingredients<span></span></a>
+        </h3>
+
+        <div class="tool_tip">
+          <span class="arrow"></span>
+
+          <div class="tool_tip_wrap clearfix">
+            <p>Click to close ingredients</p>
+          </div>
+        </div>
+
+        <div class="ingredients">
+          <h4 class="servings">Makes 24</h4>
+
+              
+
+              
+
+                  <p>
+                     
+
+                    
+                    
+                        
+                        
+                            chilled seedless watermelon cut into 24 bitesize cubes, each roughly around an inch and a half
+                        
+                    
+                  </p>
+
+              
+
+                  <p>
+                     
+
+                    
+                    
+                        
+                        
+                            squeeze of 1 fresh lime
+                        
+                    
+                  </p>
+
+              
+
+                  <p>
+                     
+
+                    
+                    
+                        
+                        
+                            drizzle of premium extra virgin olive oil (I used Nudo's stone ground with basil)
+                        
+                    
+                  </p>
+
+              
+
+                  <p>
+                    @ 3 tablespoons
+
+                    
+                    
+                        
+                        
+                            white or golden balsamic vinegar ( or your favorite shrub, if you prefer)
+                        
+                    
+                  </p>
+
+              
+
+                  <p>
+                    3 
+
+                    
+                    
+                        
+                        
+                            serrano (or jalapeno peppers), cut into 24 small pieces
+                        
+                    
+                  </p>
+
+              
+
+                  <p>
+                     
+
+                    
+                    
+                        
+                        
+                            generous pinch of Aleppo pepper
+                        
+                    
+                  </p>
+
+              
+
+                  <p>
+                     
+
+                    
+                    
+                        
+                        
+                            generous pinch of artisan coarse salt such as Bolivian rose, black Hawaiian, or Maldon
+                        
+                    
+                  </p>
+
+              
+
+
+        </div>
+        <h3 class="large_green" id="black">
+          <a href="#" onclick="swap_visibility('hide','show');">Close Ingredients<span></span></a></h3>
+      </div>
+      <div id="show" class="cooking_ingredients">
+        <h3 class="large_green">
+          <a href="#" onclick="swap_visibility('show','hide');">Expand Ingredients<span></span></a></h3>
+      </div>
+
+      <div class="cooking_instructions">
+        
+        <ol>
+          
+              <li><p>Line up the cut and chilled inch and a half watermelon cubes. Spritz these first with lime juice and then drizzle with the olive oil. To cut the chili peppers, you might want to quarter slice each one lengthwise first and then half each quarter. Wipe away the seeds. Trim up the pieces if you like. 
+              </p>
+              </li>
+          
+              <li><p>Next using a teaspoon carve out a narrow elliptical cavity almost half an inch deep from the top of each one, on the bias. I create the half the cavity with the spoon with its concave side facing the center of the cube and then go in  opposite (see photos). Fill the cavities with the vinegar.
+              </p>
+              </li>
+          
+              <li><p>Transfer to a serving platter. Stick one toothpick into each slice of chili pepper. Insert one in each watermelon cube. Finish with a sprinkle of Aleppo pepper and artisan salt just before serving. 
+              </p>
+              </li>
+          
+        </ol>
+
+      </div>
+      
+    </div> -->
+    </div>
+    </div>
+    </div>
+    <!-- END SINGLE RECIPE -->
+    </div>
+    <div class="five_columns">
+      <div class="ads module">
+        <div id="FOOD52_HOMEPAGE_AD">
+          <script type="text/javascript">
+            document.write('<script type="text/javascript" src="http://ads.saymedia.com/ai014e8be8f032970d017615cf8d22970c.js?ord='+ Math.random() + '"></sc'+'ript>')
+          </script>
+          
+          
+        </div>
+      </div>
+
+      
+        
+  
+  <div class="recipes module" style="border:1px solid #c2c2c2; padding-top: 8px;">
+    <mark id="recipes"></mark>
+
+    <h3 class="heading">
+      <a href="/blog/category/155_product" onclick="product_landing('Index','http://food52.com/blog/category/155_product');"><span>A&M's Favorites</span></a>
+    </h3>
+    <div class="imageWrap">
+      <a href="/blog/3484_hario_skerton_coffee_mill" onclick="product_landing('Hario Skerton Coffee Mill','/blog/3484');"><img alt="7046012013_cd9eaafe9c_m" class="product" src="http://d2k9njawademcf.cloudfront.net/post_promo_images/3484/original/7046012013_cd9eaafe9c_m.jpeg?1337086960" /></a>
+    </div>
+    <div class="info_recipe">
+      <h2 class="recipe_title" id="white">Prep</h2>
+    </div>
+    <ul class="recipes_list">
+      
+        
+        <li><h2 class="medium_title"><span class="prod_label">Cook:&nbsp;&nbsp;</span><a href="/blog/3164_oxo_good_cookie_spatula" onclick="product_landing('OXO Good Cookie Spatula','/blog/3164');">OXO Good Cookie Spatula</a></h2></li>
+      
+        
+        <li><h2 class="medium_title"><span class="prod_label">Shelve:&nbsp;&nbsp;</span><a href="/blog/3159_barefoot_contessa_family_style" onclick="product_landing('Barefoot Contessa Family Style','/blog/3159');">Barefoot Contessa Family Style</a></h2></li>
+      
+        
+        <li><h2 class="medium_title"><span class="prod_label">Serve:&nbsp;&nbsp;</span><a href="/blog/3174_sori_yanagi_ladle" onclick="product_landing('Sori Yanagi Ladle ','/blog/3174');">Sori Yanagi Ladle </a></h2></li>
+      
+    </ul>
+    <a href="/blog/category/155_product" class="view_more" onclick="product_landing('Index','http://food52.com/blog/category/155_product');"><span class="bold">See More A&M's Favorites</span></a>
+  </div>
+
+
+      
+        
+      
+      
+          
+            
+            
+
+            
+
+    
+<div class="recipes module">
+	<mark id="recipes"></mark>
+
+	<h3 class="heading">
+      <a href="/recipe/that-serve-a-crowd-recipes"><span class="bold">That Serve a Crowd</span> Recipes</a>
+    </h3>
+	<a href="/recipes/9709_nutella_pudding"><img alt="030111f_574" src="http://d2k9njawademcf.cloudfront.net/indeximages/14229/five_col/030111F_574.JPG?1299173198" /></a>
+	<ul class="recipes_list">
+  	
+	    <li><h2 class="medium_title"><a href="/recipes/9709_nutella_pudding">"Nutella" Pudding</a></h2></li>
+	
+	</ul>
+    <a href="/recipe/that-serve-a-crowd-recipes" class="view_more">See more &raquo;</a>
+</div>
+
+          
+          
+      
+          
+            
+            
+
+            
+
+    
+<div class="recipes module">
+	<mark id="recipes"></mark>
+
+	<h3 class="heading">
+      <a href="/recipe/summer-recipes"><span class="bold">Summer</span> Recipes</a>
+    </h3>
+	<a href="/recipes/4860_strawberryfennel_ice_cream"><img alt="060810f_784" src="http://d2k9njawademcf.cloudfront.net/indeximages/6691/five_col/060810F_784.JPG?1276185679" /></a>
+	<ul class="recipes_list">
+  	
+	    <li><h2 class="medium_title"><a href="/recipes/4860_strawberryfennel_ice_cream">Strawberry-Fennel Ice Cream</a></h2></li>
+	
+	</ul>
+    <a href="/recipe/summer-recipes" class="view_more">See more &raquo;</a>
+</div>
+
+          
+          
+              
+                  
+                  
+                    <div class="recipes module">
+	<mark id="contest"></mark>
+
+	<h3 class="heading"><a href="/contests/249_your_best_chili_pepper_recipe"><span class="bold">Your Best Chili Pepper Recipe</span></a> Entries</h3>
+	<a href="/recipes/13594_huevos_rancheros_countrystyle_eggs_topped_with_pork_and_green_chile"><img alt="6473759803_a4bb6877e6_z" src="http://d2k9njawademcf.cloudfront.net/indeximages/23000/five_col/6473759803_a4bb6877e6_z.jpg?1323362198" /></a>
+	<ul class="recipes_list">
+	    <li><h2 class="medium_title"><a href="/recipes/13594_huevos_rancheros_countrystyle_eggs_topped_with_pork_and_green_chile">Huevos Rancheros (Country-Style Eggs Topped with Pork and Green Chile)</a></h2></li>
+    </ul>
+    <a href="/contests/249_your_best_chili_pepper_recipe" class="view_more">See more &raquo;</a>
+</div>
+                  
+              
+          
+      
+          
+            
+            
+
+            
+
+    
+<div class="recipes module">
+	<mark id="recipes"></mark>
+
+	<h3 class="heading">
+      <a href="/recipe/can-be-made-ahead-recipes"><span class="bold">Can Be Made Ahead</span> Recipes</a>
+    </h3>
+	<a href="/recipes/3062_overnight_steelcut_oats_with_almond_butter_honey"><img alt="021610f52_208" src="http://d2k9njawademcf.cloudfront.net/indeximages/4225/five_col/021610F52_208.JPG?1266513010" /></a>
+	<ul class="recipes_list">
+  	
+	    <li><h2 class="medium_title"><a href="/recipes/3062_overnight_steelcut_oats_with_almond_butter_honey">Overnight Steel-Cut Oats with Almond Butter & Honey</a></h2></li>
+	
+	</ul>
+    <a href="/recipe/can-be-made-ahead-recipes" class="view_more">See more &raquo;</a>
+</div>
+
+          
+          
+      
+          
+            
+            
+
+            
+
+    
+<div class="recipes module">
+	<mark id="recipes"></mark>
+
+	<h3 class="heading">
+      <a href="/recipe/hors-d-ouvre-recipes"><span class="bold">Hors d'oeuvre</span> Recipes</a>
+    </h3>
+	<a href="/recipes/8547_mulled_white_wine_with_pear_brandy"><img alt="122010f_397" src="http://d2k9njawademcf.cloudfront.net/indeximages/12168/five_col/122010F_397.JPG?1293681524" /></a>
+	<ul class="recipes_list">
+  	
+	    <li><h2 class="medium_title"><a href="/recipes/8547_mulled_white_wine_with_pear_brandy">Mulled White Wine with Pear Brandy</a></h2></li>
+	
+	</ul>
+    <a href="/recipe/hors-d-ouvre-recipes" class="view_more">See more &raquo;</a>
+</div>
+
+          
+          
+      
+          
+          
+      
+          
+          
+      
+          
+          
+      
+          
+          
+      
+          
+          
+      
+          
+          
+      
+
+      <div class="item about_editors module" id="border_bottom">
+  <mark id="cooks_white"></mark>
+  <h3 class="heading">Meet our Hotliners:</h3>
+  <h3 class="heading" id="secondary"><a href="/users/36256_anne_haerle">Anne Haerle</a></h3>
+  
+
+  
+
+  <p class="hotliner"><b><a _blank'="" href="http://twitter.com/#!/SLTChef’ target=">Anne</a></b> is the <b><a href="http://sltchef.com/" target="_blank">Corporate Chef</a></b> at <b><a href="http://www.surlatable.com/" target="_blank">Sur La Table</a></b>.</p>
+  
+      
+  
+</div>
+
+
+      
+      
+
+    </div>
+
+    <div id="lightbox_overlay">
+      <div class="confirmation_modal small" id="email_modal_open">
+        <!-- Match id to a above -->
+        <div class="modal_header">
+          <a href="#" class="close" id="no_circle"/></a>
+          <!-- Logged in -->
+          
+            <!-- Logged out -->
+            <h3 class="green_caps_heading"><span>Please</span> <a href="#signup_open" name="modal" class="username">Sign Up</a> <span>or</span> <a href="#signup_open" name="modal" class="username">Log In</a></h3>
+          
+        </div>
+
+        <span id="email_form_body">
+            
+        </span>
+      </div>
+
+      <div id="lightbox_overlay">
+  <div class="confirmation_modal" id="ask_question_modal">
+        <div class="modal_header">
+          <a href="#" class="close" id="no_circle"/></a>
+          
+            <!-- Logged out -->
+            <h3 class="green_caps_heading">To ask your question, simply log in or sign up -- it's super easy, and this way we can email you the answers as they come in!</h3>
+            <a href="#signup_open" name="modal" class="username">Log In </a> <span> | </span> <a href="#signup_open" name="modal" class="username">Sign Up</a></h3>
+          
+        </div>
+
+        <div id="question_form_body">
+          
+        </div>
+      </div>
+</div>
+
+      <!-- Mask to cover the whole screen -->
+      <div id="mask"></div>
+    </div>
+
+    <div id="lightbox_overlay">
+  <div class="confirmation_modal small" id="modal_flag_recipe">
+		<div class="modal_header">
+			<a href="#" class="close" id="no_circle"/></a>
+			<h3 class="green_caps_heading" id="flag">Flag This Recipe</h3>
+		</div>
+    <div id="flag_as_inappropriate_form_recipe">
+		  <form action="/recipes/flag/13568" class="flag_form" method="post" onsubmit="jQuery.ajax({data:jQuery.param(jQuery(this).serializeArray()), dataType:'script', type:'post', url:'/recipes/flag/13568'}); return false;">
+		    <ul>
+			    <li>
+				    <p class="note">Let us know if you've seen this recipe before (if so, where) or if it contains any inappropriate content:</p>
+			    </li>
+			    <li>
+		        <textarea cols="40" id="flag_comment" name="flag[comment]" rows="20"></textarea>
+			    </li>
+			    <li class="clearfix">
+				    <input class="green_button" id="flag_submit" name="commit" type="submit" value="Submit" />
+			    </li>
+		    </ul>
+		  </form>
+    </div>
+  </div>
+</div>
+
+    
+    
+
+
+
+  <div id="lightbox_overlay">
+    <div class="confirmation_modal signin" id="signup_open">
+
+    </div>
+    <!-- Mask to cover the whole screen -->
+    <div id="mask" onclick="closeModal(); return false;"></div>
+  </div>
+</div>
+<div class="outer_container">
+  <div class="footer">
+    <div class="inner clearfix">
+      <ul class="top_row clearfix">
+        <li id="one"><img src="/images/food52_white.png"/></li>
+        <li id="two"><h5 class="footer_head">Categories</h5></li>
+        <li id="three"><h5 class="footer_head">Company</h5></li>
+        <li id="four"><h5 class="footer_head">Press</h5></li>
+        <li id="five"><h5 class="footer_head">FOOD52's THE BEST OF THE BEST</h5></li>
+        <li id="six"><a href="http://www.facebook.com/pages/food52/133148554015" id="facebook"><span>facebook</span></a>
+        </li>
+        <li id="seven"><a href="http://twitter.com/food52" id="twitter"><span>twitter</span></a></li>
+        <li id="eight"><a href="http://feeds.feedburner.com/food52-TheAandMBlog" id="rss"><span>rss</span></a></li>
+      </ul>
+      <div class="clearfix">
+			<ul class="left_column">
+        <h5 class="green_italic">Hungry for more?</h5>
+        <h5 class="small_white">Sign up for our surprise-filled, <br/>
+          not-at-all-annoying emails for <br/>
+          great recipes and products<br/>
+          selected by us!</h5>
+        <form action="/newsletters" method="post" onsubmit="jQuery.ajax({data:jQuery.param(jQuery(this).serializeArray()), dataType:'script', type:'post', url:'/newsletters'}); return false;">
+            <input id="newsletter_email_address" name="newsletter[email_address]" onfocus="if(this.value=='Enter your email address')this.value=''" size="30" type="text" value="Enter your email address" />
+            <input id="green_button" name="commit" type="submit" value="Subscribe &raquo;" />
+        </form>
+        <a href="/home/tos" class="dark_arial">Terms |</a><a href="/home/privacy_policy" class="dark_arial">Privacy</a>
+        <span class="dark_arial">&copy; 2009 - 2012 Food52</span>
+        
+        <span class="small_white">Made in NYC</span>
+        <a href="http://avec.us" class="small_white">Designed by: //Avec</a>
+      </ul>
+      <ul class="bulleted" id="two">
+        <li><a href="/recipes">Recipes</a></li>
+        <li><a href="/contests">Contests</a></li>
+        <li><a href="/cooks">Cooks</a></li>
+        <li><a href="/hotline">Hotline</a></li>
+        
+        <li><a href="http://shop.food52.com">Shop</a></li>
+      </ul>
+      <ul class="bulleted" id="three">
+        <li><a href="/home/about_food52">About Food52</a></li>
+        <li><a href="/home/faq">FAQ</a></li>
+        <li><a href="/articles/category/115_press">Press</a></li>
+        <li><a href="/home/jobs">Jobs - We're Hiring!</a></li>
+        <li><a href="http://www.saymedia.com/advertisingcontact.php">Advertise with Us</a></li>
+        <li><a href="/home/contact_us">Contact Us</a></li>
+        <!-- <li><a href="/home/advertise">Advertise on Food52</a></li> -->
+      </ul>
+      <ul class="logos">
+        
+        
+            <li>
+              <a target="_blank" href="http://abclocal.go.com/wabc/story?section=news/local/new_york&id=7803768"><img src="/images/footer_abc.jpg"/></a>
+            </li>
+        
+        
+            <li>
+              <a target="_blank" href="http://www.dailycandy.com/all-cities/article/75467/Project+Mayhem"><img src="/images/footer_dailycandy.jpg"/></a>
+            </li>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            <li>
+              <a target="_blank" href="http://today.msnbc.msn.com/id/33899111"><img src="/images/footer_todayshow.jpg"/></a>
+            </li>
+        
+        
+            <li>
+              <a target="_blank" href="http://tastingtable.com/ecs/1226.htm%29--and"><img src="/images/footer_ttable.jpg"/></a>
+            </li>
+        
+        
+            <li>
+              <a target="_blank" href="http://blogs.laweekly.com/squidink/2009/08/food_52_when_american_idol_and.php"><img src="/images/footer_weekly.jpg"/></a>
+            </li>
+        
+      </ul>
+      <ul class="unbulleted">
+        <li><h5 class="second_header">5 Popular Recipes:</h5></li>
+        
+            <li><a href="/recipes/9769_carrot_and_parsnip_fettuccine">Carrot and Parsnip Fettuccine</a></li>
+        
+            <li><a href="/recipes/14735_new_years_day_fresh_ham">New Year's Day Fresh Ham</a></li>
+        
+            <li><a href="/recipes/17148_ramp_carbonara">Ramp Carbonara</a></li>
+        
+            <li><a href="/recipes/2073_griddled_polenta_cakes_with_caramelized_onions_goat_cheese_and_honey">Griddled Polenta Cakes with Caramelized Onions, Goat Cheese, and Honey</a></li>
+        
+            <li><a href="/recipes/17331_mango_cream_tart_with_mango_whipped_cream">Mango Cream Tart With Mango Whipped Cream</a></li>
+        
+      </ul>
+      
+      <!-- <ul class="unbulleted">
+        <li><h5 class="second_header">5 Popular Contests:</h5></li>
+        
+            <li><a href="/contests/236_the_recipe_you_want_to_be_remembered_for">The Recipe You Want To Be Remembered For</a></li>
+        
+            <li><a href="/contests/295_your_best_dish_with_meat_as_a_flavoring">Your Best Dish with Meat as a Flavoring</a></li>
+        
+            <li><a href="/contests/213_your_best_recipe_with_cardamom">Your Best Recipe with Cardamom</a></li>
+        
+            <li><a href="/contests/244_your_best_picnic_dish">Your Best Picnic Dish</a></li>
+        
+            <li><a href="/contests/275_your_best_chocolate_spice">Your Best Chocolate & Spice</a></li>
+        
+      </ul> -->
+      <ul class="unbulleted">
+        <li><h5 class="second_header">Our Partners:</h5></li>
+        <li><a href="http://saymedia.com" target="_blank"><img title="SAY Channel Food" src="http://channels.saymedia.com/img/Food-light.png" border="0" alt="SAY Channel Food"></a></li>
+        
+            <li><a href="http://wholefoodsmarketcooking.com" target="_blank"><img title="Whole Foods Market" src="/images/wfm_cooking_logo.png" border="0" alt="Whole Foods Market"></a></li>
+        
+      </ul>
+
+</div>
+    </div>
+  </div>
+</div>
+
+    <script type="text/javascript">
+        var cbjspath = "static.chartbeat.com/js/chartbeat.js?uid=2344&domain=food52.com";
+        var cbjsprotocol = (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://");
+        document.write(unescape("%3Cscript src='" + cbjsprotocol + cbjspath + "' type='text/javascript'%3E%3C/script%3E"))
+    </script>
+
+    <script type="text/javascript">
+      /**
+       *  @author:    Danny Ng (http://www.dannytalk.com)
+       *  @date:      30/08/08
+       *  @updated:   26/09/08
+       *  @notes:     Free to use and distribute without altering this notice. Would appreciate a link back.
+       */
+
+        var dtalk_ga = {
+            applyVirtualExits: function() {
+                var trackPage = function(a)
+                {
+                    var domain_name = document.location.toString().toLowerCase().split('/')[2];
+                    var exit_domain = a.href.split('/')[2].toLowerCase();
+                    if (domain_name.toLowerCase().indexOf(exit_domain) == -1)
+                    {
+						_gaq.push(['_trackEvent', 'Exit', exit_domain, a.href]);
+                    }
+                };
+                var anchors = document.getElementsByTagName('a');
+                for (var i = 0; i < anchors.length; i++)
+                {
+                    if (anchors[i].href && anchors[i].href != (document.location + '#') && anchors[i].href.indexOf("#") == -1)
+                    {
+                        if (anchors[i].onclick == undefined || typeof anchors[i].onclick == 'undefined')
+                            anchors[i].onclick = function(e) {
+                                trackPage(this);
+                            };
+                        else if (typeof anchors[i].onclick == 'function')
+                        {
+                            var old_onclick = anchors[i].onclick;
+                            anchors[i].onclick = function(e) {
+                                old_onclick();
+                                trackPage(this);
+                            };
+                        }
+                    }
+                }
+            }
+        };
+
+        dtalk_ga.applyVirtualExits();
+      </script>
+
+
+    <script type="text/javascript">
+        function action(action) {
+			_gaq.push(['_trackEvent', 'Top Navigation', action, 'recipes']);
+        }
+    </script>
+
+    <!-- Begin comScore Tag -->
+    <script>
+        var _comscore = _comscore || [];
+        _comscore.push({ c1: "2", c2: "6036036" });
+        (function() {
+            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+            s.async = true;
+            s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+            el.parentNode.insertBefore(s, el);
+        })();
+    </script>
+
+  <noscript>
+    <img src="http://b.scorecardresearch.com/p?c1=2&c2=6036036&cv=2.0&cj=1" />
+  </noscript>
+
+
+
+<script type="text/javascript" charset="utf-8">
+	$("#featureSlider ul li:nth-child(3n+1)").css("margin-left","0px");
+	$("#featureShop ul li:nth-child(2n+1)").css("margin-left","0px");	
+	$("#featureTimetoEat ul li:nth-child(3n+1)").css("margin-left","0px");
+	
+	$(".welcomeToFood ul li").css({
+		"width"	: "50px",
+		"height" : "50px"
+		});
+	
+		$(".footer .inner .clearfix").css({
+			"width"				: "1060px"
+		});
+		
+		$(".footer .inner .left_column").css({
+			"padding-left" : "0px"	
+		});
+		
+		$(".footer .inner ul.unbulleted").css({
+			"margin-left" : "20px"
+		});
+		
+		$(".footer .inner #five").css({
+			"width"	: "260px",
+			"margin-right"	: "20px"
+		});
+		
+
+</script>
+
+</body>
+
+
+</html>

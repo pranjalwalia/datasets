@@ -1,0 +1,1678 @@
+	<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Slide On Over&#8230; | Picky Palate</title>
+
+<link rel="stylesheet" href="http://picky-palate.com/wp-content/themes/picky-new/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Picky Palate RSS Feed" href="http://feeds.feedburner.com/PickyPalate" />
+<link rel="alternate" type="application/rss+xml" title="Picky Palate | Travel RSS Feed" href="http://picky-palate.com/category/travel/feed/" />
+<link rel="pingback" href="http://picky-palate.com/xmlrpc.php" />
+<link rel="shortcut icon" href="http://picky-palate.com/favicon.ico" />
+
+
+<script type="text/javascript">
+<!--
+/***********************************************
+* AnyLink Drop Down Menu- © Dynamic Drive (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Contents for menu 1
+var menu1=new Array()
+menu1[0]='<a href="http://picky-palate.com/as-featured-on/">As Featured On</a>'
+menu1[1]='<a href="http://picky-palate.com/cooking-wins/">Cooking Wins</a>'
+menu1[2]='<a href="http://picky-palate.com/q-and-a/">Q &amp; A</a>'
+menu1[3]='<a href="http://picky-palate.com/links/">Blogroll</a>'
+
+
+//Contents for menu 2
+var menu2=new Array()
+menu2[0]='<a href="http://picky-palate.com/category/appetizer/">Appetizers/Sides</a>'
+menu2[1]='<a href="http://picky-palate.com/category/breakfast/">Breakfast/Brunch</a>'
+menu2[2]='<a href="http://picky-palate.com/category/desserts/">Desserts</a>'
+menu2[3]='<a href="http://picky-palate.com/category/desserts/brownies-and-bars/">Brownies and Bars</a>'
+menu2[4]='<a href="http://picky-palate.com/category/desserts/cakes-and-cupcakes/">Cakes and Cupcakes</a>'
+menu2[5]='<a href="http://picky-palate.com/category/desserts/cookies/">Cookies</a>'
+menu2[6]='<a href="http://picky-palate.com/category/dinner/">Dinner</a>'
+menu2[7]='<a href="http://picky-palate.com/category/dinner/beef-dinner/">Beef</a>'
+menu2[8]='<a href="http://picky-palate.com/category/dinner/chicken-dinner/">Chicken</a>'
+menu2[9]='<a href="http://picky-palate.com/category/dinner/sandwiches-and-burgers/">Sandwiches and Burgers</a>'
+menu2[10]='<a href="http://picky-palate.com/category/dinner/seafood-dinner/">Seafood</a>'
+menu2[11]='<a href="http://picky-palate.com/category/dinner/soups-and-stews/">Soups and Stews</a>'
+
+//Contents for menu 3
+var menu3=new Array()
+menu3[0]='<a href="http://picky-palate.com/category/sponsored/">Sponsored</a>'
+menu3[1]='<a href="http://picky-palate.com/category/reviews/">Reviews</a>'
+
+var menuwidth='100px' //default menu width
+var menubgcolor='#ffffff'  //menu bgcolor
+var disappeardelay=250  //menu disappear speed onMouseout (in miliseconds)
+var hidemenu_onclick="yes" //hide menu when user clicks within menu?
+
+/////No further editting needed
+
+var ie4=document.all
+var ns6=document.getElementById&&!document.all
+
+if (ie4||ns6)
+document.write('<div id="dropmenudiv" style="visibility:hidden;width:'+menuwidth+';background-color:'+menubgcolor+'" onMouseover="clearhidemenu()" onMouseout="dynamichide(event)"></div>')
+
+function getposOffset(what, offsettype){
+var totaloffset=(offsettype=="left")? what.offsetLeft : what.offsetTop;
+var parentEl=what.offsetParent;
+while (parentEl!=null){
+totaloffset=(offsettype=="left")? totaloffset+parentEl.offsetLeft : totaloffset+parentEl.offsetTop;
+parentEl=parentEl.offsetParent;
+}
+return totaloffset;
+}
+
+function showhide(obj, e, visible, hidden, menuwidth){
+if (ie4||ns6)
+dropmenuobj.style.left=dropmenuobj.style.top=-500
+if (menuwidth!=""){
+dropmenuobj.widthobj=dropmenuobj.style
+dropmenuobj.widthobj.width=menuwidth
+}
+if (e.type=="click" && obj.visibility==hidden || e.type=="mouseover")
+obj.visibility=visible
+else if (e.type=="click")
+obj.visibility=hidden
+}
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function clearbrowseredge(obj, whichedge){
+var edgeoffset=0
+if (whichedge=="rightedge"){
+var windowedge=ie4 && !window.opera? iecompattest().scrollLeft+iecompattest().clientWidth-15 : window.pageXOffset+window.innerWidth-15
+dropmenuobj.contentmeasure=dropmenuobj.offsetWidth
+if (windowedge-dropmenuobj.x < dropmenuobj.contentmeasure)
+edgeoffset=dropmenuobj.contentmeasure-obj.offsetWidth
+}
+else{
+var topedge=ie4 && !window.opera? iecompattest().scrollTop : window.pageYOffset
+var windowedge=ie4 && !window.opera? iecompattest().scrollTop+iecompattest().clientHeight-15 : window.pageYOffset+window.innerHeight-18
+dropmenuobj.contentmeasure=dropmenuobj.offsetHeight
+if (windowedge-dropmenuobj.y < dropmenuobj.contentmeasure){ //move up?
+edgeoffset=dropmenuobj.contentmeasure+obj.offsetHeight
+if ((dropmenuobj.y-topedge)<dropmenuobj.contentmeasure) //up no good either?
+edgeoffset=dropmenuobj.y+obj.offsetHeight-topedge
+}
+}
+return edgeoffset
+}
+
+function populatemenu(what){
+if (ie4||ns6)
+dropmenuobj.innerHTML=what.join("")
+}
+
+function dropdownmenu(obj, e, menucontents, menuwidth){
+if (window.event) event.cancelBubble=true
+else if (e.stopPropagation) e.stopPropagation()
+clearhidemenu()
+dropmenuobj=document.getElementById? document.getElementById("dropmenudiv") : dropmenudiv
+populatemenu(menucontents)
+
+if (ie4||ns6){
+showhide(dropmenuobj.style, e, "visible", "hidden", menuwidth)
+dropmenuobj.x=getposOffset(obj, "left")
+dropmenuobj.y=getposOffset(obj, "top")
+dropmenuobj.style.left=dropmenuobj.x-clearbrowseredge(obj, "rightedge")+"px"
+dropmenuobj.style.top=dropmenuobj.y-clearbrowseredge(obj, "bottomedge")+obj.offsetHeight+"px"
+}
+
+return clickreturnvalue()
+}
+
+function clickreturnvalue(){
+if (ie4||ns6) return false
+else return true
+}
+
+function contains_ns6(a, b) {
+while (b.parentNode)
+if ((b = b.parentNode) == a)
+return true;
+return false;
+}
+
+function dynamichide(e){
+if (ie4&&!dropmenuobj.contains(e.toElement))
+delayhidemenu()
+else if (ns6&&e.currentTarget!= e.relatedTarget&& !contains_ns6(e.currentTarget, e.relatedTarget))
+delayhidemenu()
+}
+
+function hidemenu(e){
+if (typeof dropmenuobj!="undefined"){
+if (ie4||ns6)
+dropmenuobj.style.visibility="hidden"
+}
+}
+
+function delayhidemenu(){
+if (ie4||ns6)
+delayhide=setTimeout("hidemenu()",disappeardelay)
+}
+
+function clearhidemenu(){
+if (typeof delayhide!="undefined")
+clearTimeout(delayhide)
+}
+
+if (hidemenu_onclick=="yes")
+document.onclick=hidemenu
+
+if (document.images) {
+  var homen = new Image();
+  homen.src = "http://picky-palate.com/wp-content/themes/picky-new/images/homen.gif";
+  var homea = new Image();
+  homea.src = "http://picky-palate.com/wp-content/themes/picky-new/images/homea.gif";
+  var aboutn = new Image();
+  aboutn.src = "http://picky-palate.com/wp-content/themes/picky-new/images/aboutn.gif";
+  var abouta = new Image();
+  abouta.src = "http://picky-palate.com/wp-content/themes/picky-new/images/abouta.gif";
+  var indexn = new Image();
+  indexn.src = "http://picky-palate.com/wp-content/themes/picky-new/images/recipe-indexn.gif";
+  var indexa = new Image();
+  indexa.src = "http://picky-palate.com/wp-content/themes/picky-new/images/recipe-indexa.gif";
+  var giveawaysn = new Image();
+  giveawaysn.src = "http://picky-palate.com/wp-content/themes/picky-new/images/giveawaysn.gif";
+  var giveawaysa = new Image();
+  giveawaysa.src = "http://picky-palate.com/wp-content/themes/picky-new/images/giveawaysa.gif";
+  var lifen = new Image();
+  lifen.src = "http://picky-palate.com/wp-content/themes/picky-new/images/lifen.gif";
+  var lifea = new Image();
+  lifea.src = "http://picky-palate.com/wp-content/themes/picky-new/images/lifea.gif";
+  var contactn = new Image();
+  contactn.src = "http://picky-palate.com/wp-content/themes/picky-new/images/contactn.gif";
+  var contacta = new Image();
+  contacta.src = "http://picky-palate.com/wp-content/themes/picky-new/images/contacta.gif";
+}
+
+function act(imgName) {
+  if (document.images) 
+    document.images[imgName].src = eval(imgName + "a.src");
+}
+
+function inact(imgName) {
+  if (document.images)
+    document.images[imgName].src = eval(imgName + "n.src");
+}
+// -->
+</script>
+
+<link rel="alternate" type="application/rss+xml" title="Picky Palate &raquo; Slide On Over&#8230; Comments Feed" href="http://picky-palate.com/2008/09/04/slide-on-over/feed/" />
+<link rel='stylesheet' id='wp_greet_box_style-css'  href='http://picky-palate.com/wp-content/plugins/wp-greet-box/css/style.css?ver=3.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://picky-palate.com/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://picky-palate.com/wp-includes/js/jquery/jquery.js?ver=1.4.4'></script>
+<script type='text/javascript' src='http://picky-palate.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var SHRSB_Globals = {
+	src: "http://picky-palate.com/wp-content/plugins/sexybookmarks/spritegen"
+};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://picky-palate.com/wp-content/plugins/sexybookmarks/js/shareaholic-publishers.min.js?ver=3.3.6'></script>
+<script type='text/javascript' src='http://picky-palate.com/wp-content/plugins/sexybookmarks/js/shareaholic-perf.js?ver=3.3.6'></script>
+<script type='text/javascript' src='http://picky-palate.com/wp-content/plugins/wp-greet-box/js/functions.js?ver=3.1'></script>
+<script type='text/javascript' src='http://picky-palate.com/wp-content/plugins/wp-greet-box/js/js-mode.js?ver=3.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://picky-palate.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://picky-palate.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Picky Palate' href='http://picky-palate.com/' />
+<link rel='start' title='My First Cook-off&#8230;The Pillsbury Bake-off 2004' href='http://picky-palate.com/2007/10/11/my-first-cook-offthe-pillsbury-bake-off/' />
+<link rel='prev' title='No Monkey Business!' href='http://picky-palate.com/2008/09/01/no-monkey-business/' />
+<link rel='next' title='Get Your Reservations Set&#8230;.' href='http://picky-palate.com/2008/09/05/get-your-reservations-set/' />
+<meta name="generator" content="WordPress 3.1" />
+<link rel='shortlink' href='http://picky-palate.com/?p=179' />
+
+<!-- All in One SEO Pack 1.6.13.2 by Michael Torbert of Semper Fi Web Design[308,357] -->
+<meta name="description" content="Normal 0 false false false MicrosoftInternetExplorer4 /* Style Definitions */ table.MsoNormalTable" />
+<meta name="keywords" content="appetizers/sides,dinner" />
+<link rel="canonical" href="http://picky-palate.com/2008/09/04/slide-on-over/" />
+<!-- /all in one seo pack -->
+
+<!-- Quantcast Tag, part 1 -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16883395-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+
+<body>
+
+<script language="javascript" src="http://www.herchannel.com/nav_loader/partner/pickypalate.js" type="text/javascript"></script>
+
+<div id="container">
+
+	<div id="content">
+
+		<div id="header">
+			<ul class="topmenu">
+	<li><a href="http://picky-palate.com/" onmouseover="act('home')" onmouseout="inact('home')"><img src="http://picky-palate.com/wp-content/themes/picky-new/images/homen.gif" height="21" width="57" name="home" alt="Home" /></a></li>
+	<li><a href="http://picky-palate.com/about/" onmouseover="act('about'), dropdownmenu(this, event, menu1, '92px')" onmouseout="delayhidemenu(), inact('about')"><img src="http://picky-palate.com/wp-content/themes/picky-new/images/aboutn.gif" height="21" width="57" name="about" alt="About" /></a></li>
+	<li class="index"><a href="http://picky-palate.com/recipe-index/" onmouseover="act('index'), dropdownmenu(this, event, menu2, '143px')" onmouseout="delayhidemenu(), inact('index')"><img src="http://picky-palate.com/wp-content/themes/picky-new/images/recipe-indexn.gif" height="21" width="119" name="index" alt="Recipe Index" /></a></li>
+	<li class="giveaways"><a href="http://picky-palate.com/category/giveaways/" onmouseover="act('giveaways'), dropdownmenu(this, event, menu3, '91px')" onmouseout="delayhidemenu(), inact('giveaways')"><img src="http://picky-palate.com/wp-content/themes/picky-new/images/giveawaysn.gif" height="21" width="98" name="giveaways" alt="Giveaways" /></a></li>
+	<li><a href="http://picky-palate.com/category/travel/" onmouseover="act('life')" onmouseout="inact('life')"><img src="http://picky-palate.com/wp-content/themes/picky-new/images/lifen.gif" height="21" width="58" name="life" alt="Travel" /></a></li>
+	<li><a href="http://picky-palate.com/contact/" onmouseover="act('contact')" onmouseout="inact('contact')"><img src="http://picky-palate.com/wp-content/themes/picky-new/images/contactn.gif" height="21" width="69" name="contact" alt="Contact" /></a></li>
+</ul>
+
+<div class="clearit"></div>
+
+		</div>
+
+		<div class="storycontent">
+
+		        		<div id="greet_block"></div>		
+		
+			<div class="navigation">
+				<div class="alignleft">&laquo; <a href="http://picky-palate.com/2008/09/01/no-monkey-business/" rel="prev">Previous Post</a></div>
+				<div class="alignright"><a href="http://picky-palate.com/2008/09/05/get-your-reservations-set/" rel="next">Next Post</a> &raquo;</div>
+                        	<div class="clearit"></div>
+			</div>
+
+		
+		        <div class="title">
+		                <div class="date">
+				        Sep				        <div class="date-large">4</div>
+				        2008      
+		                </div>
+
+  		        	<h1><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/cb9a58ed02b5a57ae956a843bc1ba87c.png" alt="Slide On Over&#8230;" width="205" height="20" /></h1>
+
+  		                <h3>Tags: <a href="http://picky-palate.com/tag/bbq-chicken/" rel="tag">BBQ chicken</a>, <a href="http://picky-palate.com/tag/sliders/" rel="tag">sliders</a></h3>
+		        </div>
+
+		
+			<div class="category">
+  		        	  		        	<a href="http://picky-palate.com/category/appetizer/"><img src="http://picky-palate.com/wp-content/themes/picky-new/images/sides.gif" alt="Appetizers/Sides" width="168" height="41" /></a>
+  		        				</div>
+		
+			<div class="clearit"></div>
+
+		        <p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_cGPg0Rl228w/SL9vL1p1O6I/AAAAAAAADZI/rOaXKsqMI5A/s1600-h/IMG_8629-Titled.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://picky-palate.com//home/pickypal/public_html/wp-content/uploads/HLIC/15d617ad152f23949f24e532e0977242.jpg" alt="" id="BLOGGER_PHOTO_ID_5242030740454325154" border="0" /><meta equiv="Content-Type" content="text/html; charset=utf-8"><meta name="ProgId" content="Word.Document"><meta name="Generator" content="Microsoft Word 11"><meta name="Originator" content="Microsoft Word 11">
+<link rel="File-List" href="file:///C:%5CDOCUME%7E1%5CCULLEN%7E1%5CLOCALS%7E1%5CTemp%5Cmsohtml1%5C01%5Cclip_filelist.xml"><!--[if gte mso 9]><xml>  <w:worddocument>   <w:view>Normal</w:View>   <w:zoom>0</w:Zoom>   <w:punctuationkerning/>   <w:validateagainstschemas/>   <w:saveifxmlinvalid>false</w:SaveIfXMLInvalid>   <w:ignoremixedcontent>false</w:IgnoreMixedContent>   <w:alwaysshowplaceholdertext>false</w:AlwaysShowPlaceholderText>   <w:compatibility>    <w:breakwrappedtables/>    <w:snaptogridincell/>    <w:wraptextwithpunct/>    <w:useasianbreakrules/>    <w:dontgrowautofit/>   </w:Compatibility>   <w:browserlevel>MicrosoftInternetExplorer4</w:BrowserLevel>  </w:WordDocument> </xml><![endif]--><!--[if gte mso 9]><xml>  <w:latentstyles deflockedstate="false" latentstylecount="156">  </w:LatentStyles> </xml><![endif]--><br />
+<style> <!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --> </style>
+<p><!--[if gte mso 10]><br />
+<style>  /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} </style>
+<p> <![endif]--></a><br />
+<br /><meta equiv="Content-Type" content="text/html; charset=utf-8"><meta name="ProgId" content="Word.Document"><meta name="Generator" content="Microsoft Word 11"><meta name="Originator" content="Microsoft Word 11">
+<link rel="File-List" href="file:///C:%5CDOCUME%7E1%5CCULLEN%7E1%5CLOCALS%7E1%5CTemp%5Cmsohtml1%5C01%5Cclip_filelist.xml"><!--[if gte mso 9]><xml>  <w:worddocument>   <w:view>Normal</w:View>   <w:zoom>0</w:Zoom>   <w:punctuationkerning/>   <w:validateagainstschemas/>   <w:saveifxmlinvalid>false</w:SaveIfXMLInvalid>   <w:ignoremixedcontent>false</w:IgnoreMixedContent>   <w:alwaysshowplaceholdertext>false</w:AlwaysShowPlaceholderText>   <w:compatibility>    <w:breakwrappedtables/>    <w:snaptogridincell/>    <w:wraptextwithpunct/>    <w:useasianbreakrules/>    <w:dontgrowautofit/>   </w:Compatibility>   <w:browserlevel>MicrosoftInternetExplorer4</w:BrowserLevel>  </w:WordDocument> </xml><![endif]--><!--[if gte mso 9]><xml>  <w:latentstyles deflockedstate="false" latentstylecount="156">  </w:LatentStyles> </xml><![endif]--><br />
+<style> <!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --> </style>
+<p><!--[if gte mso 10]><br />
+<style>  /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} </style>
+<p> <![endif]-->
+<p style="text-align: left;" class="MsoNormal">Good late Wednesday night, I can hardly wait to jump into bed, but wanted to post while my little guys are sound asleep!</p>
+<p style="text-align: left;" class="MsoNormal">
+</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal"><o:p> </o:p></p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">What a crack up little Kindergartners are. Every Wednesday morning I take my boys to school in their wagon a few minutes early so that my 3 year old can play with his brother at the “big boy” playground.<span style="">  </span>I sat back in the shade watching and cracking up the whole time.<span style="">  </span>I was entertained watching the girls chase the boys and the boys freaking out when the girls got too close.<span style="">  </span>My favorite was watching my kindergartener introduce his little brother to all of his friends on the playground, while holding his hand.<span style="">  I could hardly believe my eyes when he started kissing and hugging him.  </span>If only he was that nice to him at home!</p>
+<p style="text-align: left;" class="MsoNormal">
+<br /><span style="">  </span></p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal"><o:p> </o:p></p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">Whether you are BBQ&#8217;ing or not, these little sliders are so much fun and finger licking good.<span style="">  </span>My BBQ sauce is a breeze to make and is so much better than those bottled sauces.<span style="">  </span>Give it a try, you might even have all of the ingredients on hand.<span style="">  </span>If you’ve never topped your BBQ sandwiches with coleslaw get going, you will just love it.<span style="">  </span>Cool, crisp and a total must!</p>
+<p style="text-align: left;" class="MsoNormal">
+</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal"><o:p> </o:p></p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">If you&#8217;ve got a second, I’ve got 2 friends that are in need of some votes.<span style="">  </span>Catherine, my contesting buddy and author of the Dish Today is participating in the Tillamook Mac and Cheese Cook-off and needs your <a style="color: rgb(204, 0, 0);" href="http://www.macaroniandcheeseandcheese.com/recipe/smoky-black-pepper-cheese-and-macaroni-wi/">VOTE</a>.<span style="">  </span>It literally takes 1 second.<span style="">  </span>Mandy from Gourmet Mom On The Go needs your <a style="color: rgb(204, 0, 0);" href="http://gourmetmomonthego.blogspot.com/2008/09/edible-chandelier.html">VOTE</a> as well for her yummy cupcakes, follow her link and hurry she needs it before noon Thursday!<span style="">  </span>Good Luck Ladies!</p>
+<p><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_cGPg0Rl228w/SL9vL1p1O6I/AAAAAAAADZI/rOaXKsqMI5A/s1600-h/IMG_8629-Titled.jpg"><span style="font-weight: bold;"></span></a><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_cGPg0Rl228w/SL9vERIlKKI/AAAAAAAADZA/1WJZkAFAF0E/s1600-h/IMG_8635-Titled.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://picky-palate.com//home/pickypal/public_html/wp-content/uploads/HLIC/77ce668f8a9c9751fb85c5fbc7f2f86e.jpg" alt="" id="BLOGGER_PHOTO_ID_5242030610392098978" border="0" /></a><br />
+<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://2.bp.blogspot.com/_cGPg0Rl228w/SL9u_2fJ9EI/AAAAAAAADY4/AkfxhL1xtSk/s1600-h/IMG_8630-Titled.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://picky-palate.com//home/pickypal/public_html/wp-content/uploads/HLIC/6d1bf6cda39d1c6bc86bbff3de5bf32a.jpg" alt="" id="BLOGGER_PHOTO_ID_5242030534519551042" border="0" /></a><br />
+<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_cGPg0Rl228w/SL9u7Cex87I/AAAAAAAADYw/vZdvgPJU_-0/s1600-h/IMG_8632-Titled.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://picky-palate.com//home/pickypal/public_html/wp-content/uploads/HLIC/53b6ba4343e918a1f4f50da348b9c63b.jpg" alt="" id="BLOGGER_PHOTO_ID_5242030451839857586" border="0" /></a><br />
+<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://4.bp.blogspot.com/_cGPg0Rl228w/SL9u3oP4e8I/AAAAAAAADYo/zigS9NqiMew/s1600-h/IMG_8652-Titled.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://picky-palate.com//home/pickypal/public_html/wp-content/uploads/HLIC/bdca3df25fe6b037bf447275a11cf9fb.jpg" alt="" id="BLOGGER_PHOTO_ID_5242030393258441666" border="0" /></a><br />
+<br /><a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://3.bp.blogspot.com/_cGPg0Rl228w/SL9uwBv5ZKI/AAAAAAAADYg/3tvSf195lHA/s1600-h/IMG_8643-Titled.jpg"><img style="margin: 0px auto 10px; display: block; text-align: center; cursor: pointer;" src="http://picky-palate.com//home/pickypal/public_html/wp-content/uploads/HLIC/ee45fb791dafca54586b5a43d0eb4f33.jpg" alt="" id="BLOGGER_PHOTO_ID_5242030262664651938" border="0" /></a><meta equiv="Content-Type" content="text/html; charset=utf-8"><meta name="ProgId" content="Word.Document"><meta name="Generator" content="Microsoft Word 11"><meta name="Originator" content="Microsoft Word 11">
+<link rel="File-List" href="file:///C:%5CDOCUME%7E1%5CCULLEN%7E1%5CLOCALS%7E1%5CTemp%5Cmsohtml1%5C01%5Cclip_filelist.xml"><o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="place"></o:smarttagtype><o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="City"></o:smarttagtype><!--[if gte mso 9]><xml>  <w:worddocument>   <w:view>Normal</w:View>   <w:zoom>0</w:Zoom>   <w:punctuationkerning/>   <w:validateagainstschemas/>   <w:saveifxmlinvalid>false</w:SaveIfXMLInvalid>   <w:ignoremixedcontent>false</w:IgnoreMixedContent>   <w:alwaysshowplaceholdertext>false</w:AlwaysShowPlaceholderText>   <w:compatibility>    <w:breakwrappedtables/>    <w:snaptogridincell/>    <w:wraptextwithpunct/>    <w:useasianbreakrules/>    <w:dontgrowautofit/>   </w:Compatibility>   <w:browserlevel>MicrosoftInternetExplorer4</w:BrowserLevel>  </w:WordDocument> </xml><![endif]--><!--[if gte mso 9]><xml>  <w:latentstyles deflockedstate="false" latentstylecount="156">  </w:LatentStyles> </xml><![endif]--><!--[if !mso]><object classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id="ieooui"></object><br />
+<style> st1\:*{behavior:url(#ieooui) } </style>
+<p> <![endif]--><br />
+<style> <!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.0in 1.0in 1.0in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --> </style>
+<p><!--[if gte mso 10]><br />
+<style>  /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} </style>
+<p> <![endif]-->
+<p style="text-align: center; font-weight: bold;" class="MsoNormal"><span style="font-size:130%;">Shredded BBQ Chicken Sliders with Creamy Cole Slaw</span></p>
+<p class="MsoNormal"><o:p> </o:p></p>
+<p style="text-align: left;" class="MsoNormal"><u><br />
+<br /></u></p>
+<p style="text-align: left;" class="MsoNormal"><u>Homemade Finger Licking BBQ Sauce<o:p></o:p></u></p>
+<div>  </div>
+<p style="text-align: left;" class="MsoNormal">1 ½ Cups ketchup</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">3 Tablespoons <st1:city st="on"><st1:place st="on">Dijon</st1:place></st1:city> Mustard</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">4 Tablespoons worstershire sauce</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">2 Tablespoons apple cider vinegar</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">1 ½ Tablespoons lemon juice</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">4 Tablespoons brown sugar</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">1 teaspoon fresh cracked black pepper</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">1 teaspoon honey</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">Pinch of salt</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal"><o:p> </o:p></p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">
+</p>
+<p style="text-align: left;" class="MsoNormal">2 large boneless skinless chicken breasts, cooked and shredded (I pressure cook mine)</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal"><o:p> </o:p></p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal"><u><br />
+<br /></u></p>
+<p style="text-align: left;" class="MsoNormal"><u>Simple Coleslaw<o:p></o:p></u></p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">16 oz bag of coleslaw mix</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">½ Cup mayonnaise or miracle whip</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">2 Tablespoons sugar</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">1 Tablespoon <st1:place st="on"><st1:city st="on">Dijon</st1:city></st1:place> Mustard</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">1 teaspoon honey</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal"><o:p> </o:p></p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">
+</p>
+<p style="text-align: left;" class="MsoNormal">Whole wheat dinner rolls, I used Alpine Valley (they were awesome, found them at Costco)</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal"><o:p> </o:p></p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">
+</p>
+<p style="text-align: left;" class="MsoNormal">1.<span style="">  </span>Combine all ingredients into a medium saucepan over medium low heat.<span style="">  </span>Cook for 15 minutes, stirring often.<span style="">  </span>Reduce heat to low and stir in shredded chicken.<span style="">  </span>Let simmer.</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal"><o:p> </o:p></p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">
+</p>
+<p style="text-align: left;" class="MsoNormal">2.<span style="">  </span>Place cabbage into a large bowl.<span style="">  </span>Place mayonnaise, sugar, mustard and honey into a small bowl and mix together.<span style="">  </span>Pour and stir into cabbage until combined.<span style="">  </span></p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal"><o:p> </o:p></p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">
+</p>
+<p style="text-align: left;" class="MsoNormal">3.<span style="">  </span>Spoon BBQ chicken onto bottom rolls.<span style="">  </span>Top with a spoonful of coleslaw then close with top rolls.<span style="">  </span>Enjoy!</p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal"><o:p> </o:p></p>
+<div style="text-align: left;">  </div>
+<p style="text-align: left;" class="MsoNormal">
+</p>
+<p style="text-align: left;" class="MsoNormal">10-12 sliders</p>
+<p style="text-align: left;" class="MsoNormal">
+</p>
+<p style="text-align: left;" class="MsoNormal"><span style="font-size:130%;"><span style="font-weight: bold;">Have a GREAT rest of the week!  I&#8217;ll be back with more of the food we ate WAY too much of over last weekend!</span></span><br /></p>
+<br />
+
+		        <div class="post">
+                        	<img src="http://picky-palate.com/wp-content/themes/picky/images/comment.png" alt="Comments" /> <a href="#reply">Leave a Reply</a><br />
+                                <a href="http://picky-palate.com/2008/09/04/slide-on-over/print/" title="Print" rel="nofollow"><img class="WP-PrintIcon" src="http://picky-palate.com/wp-content/plugins/wp-print/images/printer_famfamfam.gif" alt="Print" title="Print" style="border: 0px;" /></a>&nbsp;<a href="http://picky-palate.com/2008/09/04/slide-on-over/print/" title="Print" rel="nofollow">Print</a>
+<br />
+                                <br />
+                                                                <div class="clearit"></div>
+		        </div>
+
+		        <div class="share">
+                        	<div class="shr-publisher-179"></div>		        </div>
+
+                        <div class="clearit"></div>
+
+			<!-- Ad code starts here -->
+
+                                                <center>
+                        	<script type="text/javascript">
+                        		sr_adspace_id = 1000002322307;
+                        		sr_adspace_width = 300;
+                        		sr_adspace_height = 250;
+                        		sr_ad_new_window = true;
+                        		sr_adspace_type = "graphic";
+                        	</script>
+                        	<script type="text/javascript" src="http://ad.afy11.net/srad.js?azId=1000002322307">
+                        	</script>
+                        	<br /><br />
+
+                        	<script type="text/javascript"><!--
+                        	google_ad_client = "pub-1130747429210864";
+                        	/* 468x60, created 12/15/09 */
+                        	google_ad_slot = "8163647899";
+                        	google_ad_width = 468;
+                        	google_ad_height = 60;
+                        	//-->
+                        	</script>
+                        	<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+                        </center>
+
+                        
+			<!-- Ad code ends here -->
+
+                        <div class="divider"></div>
+
+		
+<!-- You can start editing here. -->
+
+
+	<h2 class="comments"><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/a5dee815a08ebd9dd4f6b5d06ad12d14.png" alt="Comments" width="137" height="18" /></h2>
+
+	<h3>69 Responses        | <a href='http://picky-palate.com/2008/09/04/slide-on-over/feed/'>Comments RSS</a>		| <a href="http://picky-palate.com/2008/09/04/slide-on-over/trackback/" rel="trackback">TrackBack URI</a>
+	</h3>
+
+	<div class="com-navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-2/#comments" >Newer Comments &raquo;</a></div>
+                <div class="clearit"></div>
+	</div>
+
+	<ol class="commentlist">
+			   <li class="comment even thread-even depth-1" id="li-comment-4136">
+		 <div class="commentnumber">1</div>		 <div id="comment-4136">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Andrea and Casey</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4136">September 4, 2008 at 2:10 am</a></div>
+		  <p>I&#8217;ve been looking at your blog, or drooling and dreaming of all the yummy food is more like it <img src='http://picky-palate.com/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' /> , for a few months. My husband jokingly told me I wasn&#8217;t allowed to look at it anymore, or watch food network, or snoop all my other tasty blogs, unless I started making some of it.  So on Sunday I made your turkey lettuce wraps and they turned out fabulous. I loved them! Thank you so much for posting all of your recipes! I can&#8217;t wait to try more.</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4136#respond' onclick='return addComment.moveForm("comment-4136", "4136", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4137">
+		 <div class="commentnumber">2</div>		 <div id="comment-4137">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Pam</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4137">September 4, 2008 at 2:29 am</a></div>
+		  <p>I love, love, love pork sandwiches with cole slaw.  Great recipe &#8211; can&#8217;t wait to try it.</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4137#respond' onclick='return addComment.moveForm("comment-4137", "4137", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4138">
+		 <div class="commentnumber">3</div>		 <div id="comment-4138">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Nash</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4138">September 4, 2008 at 3:04 am</a></div>
+		  <p>I love BBQ shredded beef or chicken and these look so good. Never tried the slaw on them but I will. Oh how I need to start working out again.</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4138#respond' onclick='return addComment.moveForm("comment-4138", "4138", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4139">
+		 <div class="commentnumber">4</div>		 <div id="comment-4139">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">HoneyB</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4139">September 4, 2008 at 3:42 am</a></div>
+		  <p>I&#8217;m going to try your sauce on venison and make these sandwiches.  They look absolutely awesome.  I saw your title before I got here and immediately thought mini burgers.  I was close!  I love anything mini so I&#8217;m loving your lasts few posts especially! <img src='http://picky-palate.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4139#respond' onclick='return addComment.moveForm("comment-4139", "4139", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4140">
+		 <div class="commentnumber">5</div>		 <div id="comment-4140">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Clumbsy Cookie</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4140">September 4, 2008 at 4:39 am</a></div>
+		  <p>So cute your kids!!!<br />My barbecue recipe is similar to your so I know this will be yummy! I also love to eat mine with shreded chicken, somethimes I even cook the chicken inside the sauce for extra yuminess. But waht i dind&#8217;t try yet was the coleslaw&#8230; I think I will like it!;)<br />Can&#8217;t wait t see what ele you ate! Lol!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4140#respond' onclick='return addComment.moveForm("comment-4140", "4140", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4141">
+		 <div class="commentnumber">6</div>		 <div id="comment-4141">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Beth</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4141">September 4, 2008 at 7:09 am</a></div>
+		  <p>My mouth is watering. Loving the BBQ sauce &#8211; Im writing it down now! My brother and I used to be very well behaved and gave off the illusion of actually liking each other..when we were out. When we were at home it was a totally different matter. My mum got a few grey hairs from all our arguments and fighting!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4141#respond' onclick='return addComment.moveForm("comment-4141", "4141", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4142">
+		 <div class="commentnumber">7</div>		 <div id="comment-4142">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Emily</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4142">September 4, 2008 at 8:36 am</a></div>
+		  <p>You and my older sister are in the same situation with your boys! What a fun age! Oh school days! <br />Your BBQ suace sounds soooo good! We actually had BBQ Pork Sammy&#8217;s on Labor day . .. now I am definately going to have to try your recipe!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4142#respond' onclick='return addComment.moveForm("comment-4142", "4142", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4143">
+		 <div class="commentnumber">8</div>		 <div id="comment-4143">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">carin davis</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4143">September 4, 2008 at 8:46 am</a></div>
+		  <p>does your family appreciate how lucky they are to find your dinner table in the evening!?!?!?  looks delicious!!!!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4143#respond' onclick='return addComment.moveForm("comment-4143", "4143", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4144">
+		 <div class="commentnumber">9</div>		 <div id="comment-4144">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Mary Ann</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4144">September 4, 2008 at 9:05 am</a></div>
+		  <p>These sliders look perfect for a weekend party or easy weeknight dinner.  Great idea! I can&#8217;t wait to try your homemade BBQ sauce!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4144#respond' onclick='return addComment.moveForm("comment-4144", "4144", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4145">
+		 <div class="commentnumber">10</div>		 <div id="comment-4145">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Prudy</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4145">September 4, 2008 at 9:20 am</a></div>
+		  <p>I love carolina sandwiches-the BBQ meat plus slaw.  Your take looks delicious.  Don&#8217;t you love just watching your kids around other kids?</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4145#respond' onclick='return addComment.moveForm("comment-4145", "4145", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4146">
+		 <div class="commentnumber">11</div>		 <div id="comment-4146">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Maria</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4146">September 4, 2008 at 9:35 am</a></div>
+		  <p>Your kids sound adorable!! <br />I like how you put the slaw on the sandwich! We ate too much too, but we keep eating that is the problem:)</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4146#respond' onclick='return addComment.moveForm("comment-4146", "4146", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4148">
+		 <div class="commentnumber">12</div>		 <div id="comment-4148">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Veronica</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4148">September 4, 2008 at 10:02 am</a></div>
+		  <p>I love when my kids are unexpectedly nice to each other! Your sliders look fabulous-I like the rolls you used they look like they have a lot of flavor.</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4148#respond' onclick='return addComment.moveForm("comment-4148", "4148", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4149">
+		 <div class="commentnumber">13</div>		 <div id="comment-4149">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Lucy</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4149">September 4, 2008 at 10:09 am</a></div>
+		  <p>Bright and early this morning I saw this post and thought OMQ&#8230; but getting ready for work got in the way&#8230;so I&#8217;m back drooling!!  BOY!!! these look awesome <img src='http://picky-palate.com/wp-includes/images/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> </p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4149#respond' onclick='return addComment.moveForm("comment-4149", "4149", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4150">
+		 <div class="commentnumber">14</div>		 <div id="comment-4150">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Live.Love.Eat</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4150">September 4, 2008 at 10:28 am</a></div>
+		  <p>Oh gosh, the picture has made me slobber over myself. These look amazing. I have never put coleslaw on my sandwich but I totally will since you said so <img src='http://picky-palate.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' />  These are going on my sidebar list of morsels to make.</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4150#respond' onclick='return addComment.moveForm("comment-4150", "4150", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4151">
+		 <div class="commentnumber">15</div>		 <div id="comment-4151">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Dawn</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4151">September 4, 2008 at 10:30 am</a></div>
+		  <p>I love that you put coleslaw on the slider.  I use coleslaw in a lot of my sandwiches, burgers, calzones, etc&#8230;<br />Those look soooooo good&#8211;I&#8217;m so hungry now.</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4151#respond' onclick='return addComment.moveForm("comment-4151", "4151", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4152">
+		 <div class="commentnumber">16</div>		 <div id="comment-4152">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Jenny</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4152">September 4, 2008 at 10:38 am</a></div>
+		  <p>Hi Andrea, so glad  you enjoyed teh lettuce wraps!  Thanks for commenting!</p>
+<p>Hi Pam, Thanks, I love adding cole slaw!</p>
+<p>Hi Shanda,<br />Don&#8217;t we all need to work out more!!!??  </p>
+<p>Mmmm, I bet it&#8217;d be great Shelby let me know how it turns out.</p>
+<p>Hi Rita,<br />I&#8217;ll have to cook the chicken inside next time, bet it&#8217;s great!</p>
+<p>Thanks Beth,<br />I love how you say mum!  Too cute.</p>
+<p>Hi Emily,<br />It&#8217;s fun having my little guys, you must have had a great labor day weekend too!</p>
+<p>Hi Carin,<br />I must admit, I don&#8217;t cook every night, but I try to most of the week!</p>
+<p>Thanks Mary Ann!</p>
+<p>Yes Prudy, the cole slaw is so cool in Carolina Sammy&#8217;s!</p>
+<p>Thanks Maria and Veronica!</p>
+<p>Hi Lucy,<br />It is a bit early for BBQ, but what the heck, I&#8217;d have one right now!</p>
+<p>Hi Stephanie,<br />You&#8217;d be surprised how good the slaw is on BBQ, try it.</p>
+<p>Thanks Dawn!  I&#8217;m getting hungry talking about all this BBQ too!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4152#respond' onclick='return addComment.moveForm("comment-4152", "4152", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4153">
+		 <div class="commentnumber">17</div>		 <div id="comment-4153">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Haley</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4153">September 4, 2008 at 11:06 am</a></div>
+		  <p>What a tasty sandwich! I&#8217;ve been looking for different bbq sauce recipes and yours looks amazing!</p>
+<p>We&#8217;d like to invite you to participate in our September apple and peach recipe contest (the recipe can be sweet or savory).  All competitors will be eligible to win one of three prizes <img src='http://picky-palate.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> !  Please email me, <a href="mailto:haleyglasco@gmail.com">haleyglasco@gmail.com</a>, if you&#8217;re interested.  Feel free to check out our blog for more details: <a href="http://blog.keyingredient.com/2008/08/29/september-kick-contest/" rel="nofollow">http://blog.keyingredient.com/2008/08/29/september-kick-contest/</a></p>
+<p>Thanks <img src='http://picky-palate.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> ,<br />Haley<br />KI Blogger</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4153#respond' onclick='return addComment.moveForm("comment-4153", "4153", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4154">
+		 <div class="commentnumber">18</div>		 <div id="comment-4154">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Sara</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4154">September 4, 2008 at 11:28 am</a></div>
+		  <p>Your sliders look so tasty.  I can&#8217;t wait to try them out.  We had pulled pork sandwiches last night for a bbq.  I wish I would have made your sliders.  I&#8217;m sure they would have been a hit.  Next time!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4154#respond' onclick='return addComment.moveForm("comment-4154", "4154", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4155">
+		 <div class="commentnumber">19</div>		 <div id="comment-4155">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Sharon</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4155">September 4, 2008 at 11:32 am</a></div>
+		  <p>You really are on a mini kick <img src='http://picky-palate.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' />   I love sliders, and more importantly pulled pork!  These look so tasty!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4155#respond' onclick='return addComment.moveForm("comment-4155", "4155", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4156">
+		 <div class="commentnumber">20</div>		 <div id="comment-4156">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Sara</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4156">September 4, 2008 at 11:42 am</a></div>
+		  <p>Yum!  These look delicious, Jenny.  I&#8217;m printing the recipe out as we speak and they will be on my menu next week.  Thanks! <img src='http://picky-palate.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4156#respond' onclick='return addComment.moveForm("comment-4156", "4156", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4157">
+		 <div class="commentnumber">21</div>		 <div id="comment-4157">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Natashya</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4157">September 4, 2008 at 11:48 am</a></div>
+		  <p>These look really tasty, I guess &#8220;sliders&#8221; are an American creation. What state(s) are they from?<br />I will have to try these soon,  I love the size too. You can choose how much you want to eat.</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4157#respond' onclick='return addComment.moveForm("comment-4157", "4157", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4158">
+		 <div class="commentnumber">22</div>		 <div id="comment-4158">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Katerina</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4158">September 4, 2008 at 11:52 am</a></div>
+		  <p>These look so good, and using chicken would be really easy too.  Thanks for the idea!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4158#respond' onclick='return addComment.moveForm("comment-4158", "4158", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4159">
+		 <div class="commentnumber">23</div>		 <div id="comment-4159">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">mikky</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4159">September 4, 2008 at 12:28 pm</a></div>
+		  <p>what a great meal&#8230; I&#8217;m sure my kids and hubby would love it&#8230; again, my thanks to you for sharing&#8230; <img src='http://picky-palate.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4159#respond' onclick='return addComment.moveForm("comment-4159", "4159", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4160">
+		 <div class="commentnumber">24</div>		 <div id="comment-4160">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Amy</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4160">September 4, 2008 at 12:33 pm</a></div>
+		  <p>These look great!!  We love bbq!!  I can&#8217;t wait to try your sauce recipe!!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4160#respond' onclick='return addComment.moveForm("comment-4160", "4160", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4161">
+		 <div class="commentnumber">25</div>		 <div id="comment-4161">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Leslie</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4161">September 4, 2008 at 12:40 pm</a></div>
+		  <p>WHat a sweet story about the kiddos! I would have had to taken a photo of the proof..because my husband never would have believed it!!LOL<br />I will have to try your sauce..I just made Shredded BBQ sanwiches last night..but used the yucky bbq sauce..But they were still good!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4161#respond' onclick='return addComment.moveForm("comment-4161", "4161", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4162">
+		 <div class="commentnumber">26</div>		 <div id="comment-4162">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Kris</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4162">September 4, 2008 at 12:47 pm</a></div>
+		  <p>I LOVE and appreciate you blog so much. I have a link to it on my blog and check it frequently. You do an amazing job with yummy dishes and beautiful photos. I wonder if you have more recipes using a pressure cooker. I bought one a few years ago and have hardly used it. I live in Minnesota and cole slaw on pulled pork/chicken sandwiches is the only way to go out here.</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4162#respond' onclick='return addComment.moveForm("comment-4162", "4162", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4163">
+		 <div class="commentnumber">27</div>		 <div id="comment-4163">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Jenny</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4163">September 4, 2008 at 1:19 pm</a></div>
+		  <p>Thanks Haley,<br />I&#8217;ll look into your contest!</p>
+<p>Hi Sara,<br />I love pulled pork sandwiches too, I&#8217;ll have to go with pork next time!</p>
+<p>I know Sharon, what&#8217;s my problem?!</p>
+<p>Great Sarah, you&#8217;ll have to let me know how they turn out for you!</p>
+<p>Natashya,<br />Funny, I don&#8217;t know where the slider originated from, I&#8217;ll have to look into that.  They are mighty tasty!</p>
+<p>Thanks Katerina, they are mighty easy, that&#8217;s what I love about them!</p>
+<p>Hi Mikky,<br />I&#8217;m always happy to share, I get so mad when people won&#8217;t share good recipes, why keep them all to yourself!??</p>
+<p>Thanks Amy, I&#8217;m always up for BBQ too!</p>
+<p>Hi Leslie,<br />I&#8217;ve used my fair share of bottled sauce, and I must say I like it just fine.  I think it&#8217;s fun sometime to make the real deal!  I wish I would have had my camera at the playground yesterday!</p>
+<p>Hi Kris,<br />Thanks for your nice comments.  I do have some more pressure cooker recipes, but I mostly use mine to cook my chicken these days.  If I can find them I&#8217;ll be happy to email them over to you!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4163#respond' onclick='return addComment.moveForm("comment-4163", "4163", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4164">
+		 <div class="commentnumber">28</div>		 <div id="comment-4164">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Grace</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4164">September 4, 2008 at 1:56 pm</a></div>
+		  <p>bbq chicken with cole slaw is probably my favorite sloppy sandwich.  i can smear it up and down my face and drip it all over my best shirt and not really care.  these look incredible, and i&#8217;m sure they are. <img src='http://picky-palate.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4164#respond' onclick='return addComment.moveForm("comment-4164", "4164", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4165">
+		 <div class="commentnumber">29</div>		 <div id="comment-4165">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Deborah</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4165">September 4, 2008 at 2:29 pm</a></div>
+		  <p>I made bbq beef sandwiches for a family get-together a few weeks ago, and almost posted about them today!  These look delicious!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4165#respond' onclick='return addComment.moveForm("comment-4165", "4165", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4166">
+		 <div class="commentnumber">30</div>		 <div id="comment-4166">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Kelly</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4166">September 4, 2008 at 2:31 pm</a></div>
+		  <p>I love making bbq chicken sliders but have yet to try my hand at the sauce.  I can&#8217;t wait to try your recipe. Thanks.</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4166#respond' onclick='return addComment.moveForm("comment-4166", "4166", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4167">
+		 <div class="commentnumber">31</div>		 <div id="comment-4167">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Jenny</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4167">September 4, 2008 at 2:33 pm</a></div>
+		  <p>Too funny Grace, I think I&#8217;d be joining you!</p>
+<p>Hi Deborah,<br />Can&#8217;t wait to see your sandwiches!</p>
+<p>Hi Kelly,<br />BBQ is the best isn&#8217;t it?  Apparently everyone enjoys it!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4167#respond' onclick='return addComment.moveForm("comment-4167", "4167", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4168">
+		 <div class="commentnumber">32</div>		 <div id="comment-4168">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">The Curtis Family</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4168">September 4, 2008 at 3:12 pm</a></div>
+		  <p>Hey Jenny &#8211; Jarad and I went to Tennessee last year and I had my first bbq and slaw sandwich. We make them all the time now! My family thinks we&#8217;re crazy, but the combo is just so dang good!</p>
+<p>I&#8217;m going to try your sauce. Yum I&#8217;m starving now.</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4168#respond' onclick='return addComment.moveForm("comment-4168", "4168", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4169">
+		 <div class="commentnumber">33</div>		 <div id="comment-4169">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Theresa</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4169">September 4, 2008 at 3:48 pm</a></div>
+		  <p>These look great.  I love pulled pork.  Can&#8217;t wait to try these!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4169#respond' onclick='return addComment.moveForm("comment-4169", "4169", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4171">
+		 <div class="commentnumber">34</div>		 <div id="comment-4171">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">carol</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4171">September 4, 2008 at 4:06 pm</a></div>
+		  <p>OK-I think the town&#8217;s gonna have to make my road longer so I have further to walk when I try and exercise all this good food of your off!!!  These look wonderful&#8230;and I confess&#8230;I&#8217;m a &#8220;grab a bottle of BBQ sauce at the store&#8221; girl&#8230;.I&#8217;m gonna try your recipe when this bottle in the fridge is gone.  LOVE the idea of the mini sandwiches with cole slaw to boot&#8230;.YUM!  <br />How sweet of big brother to introduce little brother to all his friends?  That makes my heart smile.  My 8 year old grandson is good like that about including his 1 year old brother&#8230;.but the 1 year old is going through a phase of throwing everything in the trash-including big brother&#8217;s toys&#8230;and his Mom&#8217;s keys&#8230;.NOT a good thing&#8230;.Stephen told his mother &#8220;Mom I love my little brother to pieces but PLEASE MAKE HIM STOP!!!&#8221;  <br />The fun with boys never ends&#8230;..;)</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4171#respond' onclick='return addComment.moveForm("comment-4171", "4171", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4172">
+		 <div class="commentnumber">35</div>		 <div id="comment-4172">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">~Priscilla~</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4172">September 4, 2008 at 5:27 pm</a></div>
+		  <p>yummy jenny this looks so good. i know my family will love this. thank you always so much for these delicious recipes, i can&#8217;t wait for each post.</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4172#respond' onclick='return addComment.moveForm("comment-4172", "4172", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4173">
+		 <div class="commentnumber">36</div>		 <div id="comment-4173">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Jenny</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4173">September 4, 2008 at 5:34 pm</a></div>
+		  <p>Hi Katie,<br />I&#8217;m with you, the slaw is so good with the BBQ!</p>
+<p>Thanks Theresa!</p>
+<p>Carol,<br />I look forward to reading every one of your comments.  Thanks for taking the time to make my day!!</p>
+<p>Hi Priscilla,<br />You are so sweet,  I always look forward to your posts too!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4173#respond' onclick='return addComment.moveForm("comment-4173", "4173", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4175">
+		 <div class="commentnumber">37</div>		 <div id="comment-4175">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Nikki</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4175">September 4, 2008 at 8:33 pm</a></div>
+		  <p>I&#8217;m totally making these this weekend!  Thanks for the recipe!  I love your mini madness too!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4175#respond' onclick='return addComment.moveForm("comment-4175", "4175", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4176">
+		 <div class="commentnumber">38</div>		 <div id="comment-4176">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Mandy</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4176">September 4, 2008 at 9:10 pm</a></div>
+		  <p>Jenny, Jenny, Jenny&#8211;you are seriously the best!!  After you posted about the contest, I got a ton of votes and actually came close to winning!  It&#8217;s obvious that everyone loves you and that was really nice of you to help me out.  Thanks a million!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4176#respond' onclick='return addComment.moveForm("comment-4176", "4176", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4177">
+		 <div class="commentnumber">39</div>		 <div id="comment-4177">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Kevin</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4177">September 4, 2008 at 9:22 pm</a></div>
+		  <p>Those sliders look nice and moist and full of flavour.  The cole slaw looks really creamy and good.</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4177#respond' onclick='return addComment.moveForm("comment-4177", "4177", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4179">
+		 <div class="commentnumber">40</div>		 <div id="comment-4179">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Lisa</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4179">September 4, 2008 at 9:30 pm</a></div>
+		  <p>We finished dinner not too long ago and now I am hungry!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4179#respond' onclick='return addComment.moveForm("comment-4179", "4179", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4180">
+		 <div class="commentnumber">41</div>		 <div id="comment-4180">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">PheMom</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4180">September 4, 2008 at 10:10 pm</a></div>
+		  <p>I am totally going to try your BBQ sauce.  I have never been a slaw fan but your sliders have about got me convinced!</p>
+<p>Aren&#8217;t kindergartners so silly!  So far we are having a good year too (though Aidan doesn&#8217;t want to talk to the girls either LOL!)</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4180#respond' onclick='return addComment.moveForm("comment-4180", "4180", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4181">
+		 <div class="commentnumber">42</div>		 <div id="comment-4181">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Katie's blog</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4181">September 4, 2008 at 11:08 pm</a></div>
+		  <p>Those look yummy.  Any you are right, Kindergartners are  funny.  I have one and he cracks me up every day.</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4181#respond' onclick='return addComment.moveForm("comment-4181", "4181", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4182">
+		 <div class="commentnumber">43</div>		 <div id="comment-4182">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Bridgett</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4182">September 4, 2008 at 11:53 pm</a></div>
+		  <p>These look incredible!  I think anyone would be happy to see these on their plate.</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4182#respond' onclick='return addComment.moveForm("comment-4182", "4182", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4183">
+		 <div class="commentnumber">44</div>		 <div id="comment-4183">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Helene</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4183">September 5, 2008 at 12:27 am</a></div>
+		  <p>With a picture like that I would not resist eating your meal.  Thanks for the great recipes.</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4183#respond' onclick='return addComment.moveForm("comment-4183", "4183", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4184">
+		 <div class="commentnumber">45</div>		 <div id="comment-4184">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Emiline</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4184">September 5, 2008 at 1:09 am</a></div>
+		  <p>Voted!<br />She has to win!  She just has to.  </p>
+<p>Sliders look awesome.</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4184#respond' onclick='return addComment.moveForm("comment-4184", "4184", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4185">
+		 <div class="commentnumber">46</div>		 <div id="comment-4185">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">PaniniKathy</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4185">September 5, 2008 at 1:27 am</a></div>
+		  <p>Hooray for mini food!!  I always love a BBQ/slaw combo. These look yummy!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4185#respond' onclick='return addComment.moveForm("comment-4185", "4185", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4186">
+		 <div class="commentnumber">47</div>		 <div id="comment-4186">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Jenny</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4186">September 5, 2008 at 1:33 am</a></div>
+		  <p>Thanks for the comments everyone!</p>
+<p>Mandy, Glad to hear you got awfully close to winning.  Your cupcakes were a winner to me!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4186#respond' onclick='return addComment.moveForm("comment-4186", "4186", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4187">
+		 <div class="commentnumber">48</div>		 <div id="comment-4187">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">hot garlic</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4187">September 5, 2008 at 5:29 am</a></div>
+		  <p>Check, check, and check, I&#8217;ve got everything to make the sauce!  Yum, will give it a try!  It&#8217;s been forever since I made bbq sauce, I wouldn&#8217;t even know where to dig up the recipe!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4187#respond' onclick='return addComment.moveForm("comment-4187", "4187", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment even thread-even depth-1" id="li-comment-4189">
+		 <div class="commentnumber">49</div>		 <div id="comment-4189">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Proud Italian Cook</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4189">September 5, 2008 at 8:28 am</a></div>
+		  <p>Love these, and I love the buns, now I have to find them at Costco!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4189#respond' onclick='return addComment.moveForm("comment-4189", "4189", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	   <li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-4190">
+		 <div class="commentnumber">50</div>		 <div id="comment-4190">
+		  <div class="comment-author vcard">
+			 <img alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=48' class='avatar avatar-48 photo avatar-default' height='48' width='48' />	
+			 <cite class="fn">Katherine Aucoin</cite> <span class="says">says:</span>		  </div>
+		  	
+		  <div class="comment-meta commentmetadata"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-1/#comment-4190">September 5, 2008 at 8:49 am</a></div>
+		  <p>I had never heard of pork sandwiches with cole slaw until I moved here&#8230;it seems to be the status quo and it&#8217;s turned out to be a great combination.  Your sliders look delicious!</p>
+	
+		  <div class="reply">
+			 <a class='comment-reply-link' href='/2008/09/04/slide-on-over/?replytocom=4190#respond' onclick='return addComment.moveForm("comment-4190", "4190", "respond", "179")'>Reply</a>		  </div>
+		 </div>
+	</li>
+	</ol>
+
+	<div class="com-navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"><a href="http://picky-palate.com/2008/09/04/slide-on-over/comment-page-2/#comments" >Newer Comments &raquo;</a></div>
+                <div class="clearit"></div>
+	</div>
+
+
+<a name="reply"></a>
+
+<div id="respond">
+
+	<h2 class="comments"><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/46fd2a1ae297788397f2d3d3e46dfe2b.png" alt="Leave a Comment" width="229" height="18" /><br />
+        </h2>
+
+	<div class="cancel-comment-reply">
+		<small><a rel="nofollow" id="cancel-comment-reply-link" href="/2008/09/04/slide-on-over/#respond" style="display:none;">Click here to cancel reply.</a></small>
+	</div>
+
+	
+	<h3>Comment a lot? <a href="http://picky-palate.com/wp-register.php">Register here</a>. Already registered? <a href="http://picky-palate.com/wp-login.php">Login here</a>.<br />
+        Want your own gravatar?  <a href="http://site.gravatar.com/">Get one here</a>.</h3>
+
+	<form action="http://picky-palate.com/wp-comments-post.php" method="post" id="commentform">
+
+	
+	<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
+	<label for="author"><small>Name (required)</small></label></p>
+
+	<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' />
+	<label for="email"><small>Mail (will not be published) (required)</small></label></p>
+
+	<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+	<label for="url"><small>Website</small></label></p>
+
+	
+	<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
+	
+<div id="captchaImgDiv">
+
+<div class="captchaSizeDivSmall"><img id="si_image_com" class="si-captcha" src="http://picky-palate.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/securimage_show.php?si_sm_captcha=1&amp;si_form_id=com&amp;prefix=DmHXo7Mt2XhbsEhg" alt="CAPTCHA Image" title="CAPTCHA Image" />
+    <input id="si_code_com" name="si_code_com" type="hidden"  value="DmHXo7Mt2XhbsEhg" />
+    <div id="si_audio_com">
+      <a id="si_aud_com" href="http://picky-palate.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/securimage_play.php?si_form_id=com&amp;prefix=DmHXo7Mt2XhbsEhg" rel="nofollow" title="CAPTCHA Audio">
+     <img class="captchaImgAudio" src="http://picky-palate.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/images/audio_icon.png" alt="CAPTCHA Audio" onclick="this.blur();" /></a>
+     </div>
+    <div id="si_refresh_com">
+<a href="#" rel="nofollow" title="Refresh Image" onclick="si_captcha_refresh('si_image_com','com','mp3','/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage','http://picky-palate.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/securimage_show.php?si_sm_captcha=1&amp;si_form_id=com&amp;prefix='); return false;">
+      <img class="captchaImgRefresh" src="http://picky-palate.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/images/refresh.png" alt="Refresh Image" onclick="this.blur();" /></a>
+  </div>
+  </div>
+<div id="captchaInputDiv"><input id="captcha_code" name="captcha_code" type="text" value="" tabindex="4"  aria-required="true"  />
+ <label id="captcha_code_label" for="captcha_code">CAPTCHA Code</label><span class="required"> *</span>
+ </div>
+</div>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="0e8b69715e" /></p><br />
+
+	<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+	<input type='hidden' name='comment_post_ID' value='179' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+	</p>
+
+	</form>
+
+	
+</div>
+
+
+                <div class="divider"></div>
+
+		<div class="navigation">
+			<div class="alignleft">&laquo; <a href="http://picky-palate.com/2008/09/01/no-monkey-business/" rel="prev">Previous Post</a></div>
+			<div class="alignright"><a href="http://picky-palate.com/2008/09/05/get-your-reservations-set/" rel="next">Next Post</a> &raquo;</div>
+                        <div class="clearit"></div>
+		</div>
+
+		
+        	</div>
+
+	</div>
+
+			<div id="side">
+
+<img class="alignright" title="JennyAbout" src="http://picky-palate.com/wp-content/uploads/2010/05/JennyAbout-230x250.jpg" alt="" width="164" height="164" />
+
+<p class="leftaligned">Welcome to Picky Palate! Hope you can kick your feet up and find something good to eat from my kitchen. Just so you know, I do NOT wear high heels to the grocery store, just love the look of it :) Unless otherwise noted, the recipes are my creations, Enjoy!</p><br />
+
+<a href="http://twitter.com/pickypalate" target="_blank" rel="nofollow" ><img class="feed" src="http://picky-palate.com/wp-content/themes/picky/images/twitter.gif" alt="Follow me on twitter" width="28" height="29" /></a>
+
+<a href="http://www.facebook.com/pages/Picky-Palate/278387252484?ref=mf" target="_blank" rel="nofollow" ><img class="feed" src="http://picky-palate.com/wp-content/themes/picky/images/facebook.gif"alt="Friend me on facebook" width="28" height="29" /></a>
+
+<a href="http://pickypalate.stumbleupon.com/public/favorites/" target="_blank" rel="nofollow" ><img class="feed" src="http://picky-palate.com/wp-content/themes/picky/images/stumbleupon.gif" alt="Stumbleupon" width="28" height="29" /></a>
+
+<a href="http://feeds.feedburner.com/PickyPalate" target="_blank" rel="nofollow"><img class="feed" src="http://picky-palate.com/wp-content/themes/picky/images/feed.gif" alt="Subscribe" width="28" height="29" /></a> <a href="http://feeds.feedburner.com/PickyPalate" target="_blank" rel="nofollow"><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/ed63f0a7f77f5ebd54630f0037394df3.png" alt="Subscribe to Picky Palate" width="209" height="18" /></a><br /><br />
+
+<form method="get" id="searchform" action="http://picky-palate.com/">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" />
+</div>
+</form>
+<br />
+
+<center>
+<!-- Begin supplemental 300 ad -->
+<script src="http://ads.blogherads.com/24/2402/300b.js" type="text/javascript"></script>
+<!-- End supplemental 300 ad -->
+</center><br />
+
+<center>
+<!-- Begin supplemental 160 ad -->
+<script src="http://ads.blogherads.com/24/2402/160nh.js" type="text/javascript"></script>
+<!-- End supplemental 160 ad -->
+ 
+<div class="bh-headlines">
+<!--BEGIN SIDEBAR HEADLINES -->
+<script src="http://ads.blogherads.com/24/2402/headlines.js" type="text/javascript"></script>
+<!--END SIDEBAR HEADLINES -->
+</div>
+
+<script language="javascript" src="http://www.herchannel.com/vehicle/widget/pickypalate/myvideos.js" type="text/javascript"></script><br /><br />
+</center>
+
+<div class="side1">
+<!-- Left side starts here -->
+
+<center>
+<!-- Begin Adify tag for "PickyPalateAdSpace" Ad Space (160x600) ID #9043407 -->
+<script type="text/javascript">
+	sr_adspace_id = 9043407;
+	sr_adspace_width = 160;
+	sr_adspace_height = 600;
+	sr_ad_new_window = true;
+	sr_adspace_type = "graphic";
+</script>
+<script src="http://ad.afy11.net/srad.js?azId=9043407" type="text/javascript">
+</script>
+<!-- End Adify tag for "PickyPalateAdSpace" Ad Space (160x600) ID #9043407 -->
+</center>
+<br />
+
+<center>
+<!-- Begin Adify tag for "Platefull Badge" Widget Space (159x80) ID #189972 -->
+<script type="text/javascript">
+	sr_widget_id = 189972;
+	sr_widget_width = 159;
+	sr_widget_height = 80;
+</script>
+<script src="http://feed.afy11.net/srwidget.js?wId=189972" type="text/javascript">
+</script>
+<!-- End Adify tag for "Platefull Badge" Widget Space (159x80) ID #189972 -->
+</center>
+<br />
+
+</div>
+
+<div class="side2">
+<!-- Right side starts here -->
+
+<h3><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/f9b92541cb78d1bf2a7afdd2936da7de.png" alt="Grab one to go" width="142" height="19" /><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/5eda077d1efaa42bbb5b8910ac88d60a.png" alt="...." width="23" height="2" /></h3>
+
+<form action="http://www.blogger.com/add-widget" method="POST">
+  <input value="Picky Palate" name="widget.title" type="hidden" /> <a href="http://picky-palate.com">   
+<img src="http://picky-palate.com/wp-content/uploads/PickyPalateBlinkieButton.gif" alt="Picky Palate" /></a><br />
+  <input value="&lt;a href=&#39;http://picky-palate.com&#39;&gt;&lt;img src=&#39;http://picky-palate.com/wp-content/uploads/PickyPalateBlinkieButton.gif&#39;/&gt;&lt;/a&gt;" name="widget.content" type="hidden" />
+  <input value="&lt;data:content/&gt;" name="widget.template" type="hidden" />
+  <input value="http://picky-palate.com" name="infoUrl" type="hidden" />
+  <input value="http://picky-palate.com/wp-content/uploads/PickyPalateBlinkieButton.gif" name="logoUrl" type="hidden" />
+  <input alt="Submit" src="http://www.blogger.com/img/add/add2blogger_sm_w.gif" value="Submit" type="image" />
+</form><br /><br />
+
+<!-- Sponsors start here -->
+<h3><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/4e5a2a81a960c8e8dc64d1a9de0a120b.png" alt="Sponsors" width="89" height="18" /><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/96e9fe342b5e8cb31d131a4f5454cb9d.png" alt="............." width="77" height="2" /></h3>
+
+<a rel="attachment wp-att-3882" href="http://www.twenty70hosting.com"><img class="aligncenter size-full wp-image-3882" title="advert_picky" src="http://picky-palate.com/wp-content/uploads/2010/03/advert_picky.gif" alt="" width="175" height="175" /></a>
+
+<script type="text/javascript"><!--
+amazon_ad_tag="pickpala-20"; 
+amazon_ad_width="120"; 
+amazon_ad_height="240"; 
+amazon_color_background="F3EBEB"; 
+amazon_color_border="080808"; 
+amazon_color_logo="F9F5F5"; 
+amazon_color_text="F30404"; 
+amazon_color_link="F30808"; 
+amazon_ad_logo="hide"; 
+amazon_ad_link_target="new"; 
+amazon_ad_title="My Associates Store"; //--></script>
+<script type="text/javascript" src="http://www.assoc-amazon.com/s/asw.js"></script>
+
+<!-- Right side ends here -->
+</div>
+
+<div class="clearit"></div>
+
+<a rel="attachment wp-att-7898" href="http://www.goodbite.com"><img class="aligncenter size-full wp-image-7898" title="GB-contributor-300x125" src="http://picky-palate.com/wp-content/uploads/2010/08/GB-contributor-300x125.png" alt="" width="300" height="125" /></a>
+
+<a rel="attachment wp-att-10871" href="http://picky-palate.com/?attachment_id=10871"><img class="aligncenter size-full wp-image-10871" title="REAL GOURMETS BADGE_HORIZONTAL" src="http://picky-palate.com/wp-content/uploads/2010/12/REAL-GOURMETS-BADGE_HORIZONTAL1.jpg" alt="" width="308" height="157" /></a>
+
+<!-- START Cooks Network Widget Code -->
+<div id='cn_recipe-slideshow_300x250'></div>
+<script type='text/javascript'>
+var _cn_widgets = _cn_widgets || [];
+_cn_widgets.push(['19', 'recipe-slideshow_300x250', '300', '250']);
+
+(function() {
+  var cooks_network = document.createElement('script');
+  cooks_network.type = 'text/javascript';
+  cooks_network.async = true;
+  cooks_network.src = 'http://cooks-network-production.s3.amazonaws.com/external/cooks_network.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(cooks_network);
+})();
+
+</script>
+<!-- END Cooks Network Widget Code --><br /><br />
+
+<h3><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/90b94c93cc26e0388aaa2fb77a21c129.png" alt="Featured Recipe" width="155" height="19" /><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/be14fb0dd8b51b76886a1c4636ca965b.png" alt="................................" width="191" height="2" /></h3>
+<div id="featured">
+          		<h4>Oreo Stuffed Chocolate Chip Cookies</h4>
+                <a href="http://picky-palate.com/2011/01/06/oreo-stuffed-chocolate-chip-cookies/" title="Oreo Stuffed Chocolate Chip Cookies"><img src="http://picky-palate.com/wp-content/uploads/2011/01/Oreo-Stuffed-Chocolate-Chip-Cookie-n31-140x140.jpg" alt="Oreo Stuffed Chocolate Chip Cookies" class="feature thumbnail fe-img" width="140" height="140" /></a>                
+<p><a rel="attachment wp-att-11904" href="http://picky-palate.com/2011/01/06/oreo-stuffed-chocolate-chip-cookies/oreo-stuffed-chocolate-chip-cookie-n/"></a></p>
+<p>Welcome to the ORIGINAL Oreo Stuffed Chocolate Chip Cookie recipe!  You&#8217;ll find my recipe that was taken all over the web, but please note, this is my original recipe <img src='http://picky-palate.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' />   Thanks!!</p>
+<p>I know it&#8217;s &#8230; <span class="more-link"><a href="http://picky-palate.com/2011/01/06/oreo-stuffed-chocolate-chip-cookies/#more-10934" title="Continue reading this entry">Continue Reading &raquo;</a></span></p>
+          </div>
+
+<center>
+<!-- Begin Adify tag for "PickyPalate" Ad Space (300x250) ID #1000002322307 -->
+<script type="text/javascript">
+    sr_adspace_id = 1000002322307;
+    sr_adspace_width = 300;
+    sr_adspace_height = 250;
+    sr_ad_new_window = true;
+    sr_adspace_type = "graphic";
+</script>
+<script type="text/javascript" src="http://ad.afy11.net/srad.js?azId=1000002322307">
+</script>
+<!-- End Adify tag for "PickyPalate" Ad Space (300x250) ID #1000002322307 -->
+</center><br /><br /><br />
+
+<script type="text/javascript" src="http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php/en_US"></script><script type="text/javascript">FB.init("13b558816b96bb81c9607e867f8f1186");</script><fb:fan profile_id="278387252484" stream="0" connections="10" logobar="1" width="300"></fb:fan><div style="font-size:8px; padding-left:10px"><a href="http://www.facebook.com/pages/Picky-Palate/278387252484" target="_blank" rel="nofollow">Picky Palate</a> on Facebook</div><br />
+
+<div class="side1">
+<!-- Left side starts here -->
+
+<h3><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/7e3c8eb375a2656bdfcf3ed0a31120b2.png" alt="Tweets" width="68" height="13" /><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/80f2b393fffe9bce1e48aa4ca5085496.png" alt="............" width="71" height="2" /></h3>
+<div class="aktt_tweets">
+	<ul>
+		<li>Whoa, I am in love!!  RT @<a href="http://twitter.com/ItalianDish" class="aktt_username">ItalianDish</a> New Post: Warm Chocolate Cakes with Toasted Marshmallow. You heard me. <a href="http://tinyurl.com/3elwa99" rel="nofollow">http://tinyurl.com/3elwa99</a> <a href="http://twitter.com/PickyPalate/statuses/55088662442020864" class="aktt_tweet_time">12 mins ago</a></li>
+		<li>Lol! You are right:) RT @<a href="http://twitter.com/MarlaMeridith" class="aktt_username">MarlaMeridith</a> @PickyPalate Your Ugliest Best Cookies Ever look like a fun &amp; messy treat! <a href="http://tinyurl.com/42gvt6a" rel="nofollow">http://tinyurl.com/42gvt6a</a> <a href="http://twitter.com/PickyPalate/statuses/55084877002973184" class="aktt_tweet_time">27 mins ago</a></li>
+		<li>Loving @<a href="http://twitter.com/allisonfishman" class="aktt_username">allisonfishman</a> &#039;s new cookbook I got in the mail today!  Gorgeous and YUM! <a href="http://plixi.com/p/89611100" rel="nofollow">http://plixi.com/p/89611100</a> <a href="http://twitter.com/PickyPalate/statuses/55080411847606272" class="aktt_tweet_time">45 mins ago</a></li>
+		<li class="aktt_more_updates"><a href="http://twitter.com/PickyPalate">More updates...</a></li>
+</ul></div>
+<a href="http://www.babble.com/babble-best/top-50-mommy-food-blogs/"><img class="aligncenter" title="Top 50 Mommy Food Bloggers 2010" src="http://picky-palate.com/wp-content/uploads/2010/04/Top-50-Mommy-Food-Bloggers1.jpg" alt="Top 50 Mommy Food Bloggers 2010" width="160" height="236" /></a>
+
+<a href="http://picky-palate.com/?attachment_id=12477"><img src="http://picky-palate.com/wp-content/uploads/2011/03/31.jpg" alt="Top 50 Mommy Food Bloggers 2011" title="Top 50 Mommy Food Bloggers 2011" width="160" height="236" class="aligncenter" /></a>
+
+<a href="http://www.pillsbury.com/BakeOff/Videos.aspx" target="_blank" rel="nofollow"><img class="centered" src="http://picky-palate.com/wp-content/uploads/barrelhead.png" alt="Catch my Pillsbury Bake-off Cooking Videos Here" /></a>
+
+<a rel="attachment wp-att-2713" href="http://www.saveur.com/article/Recipes/The-Motherload-Layered-Cookie-Bars"><img class="aligncenter" title="red-large-badge" src="http://picky-palate.com/wp-content/uploads/2010/01/red-large-badge1.gif" alt="" width="135" height="135" /></a>
+
+<a rel="attachment wp-att-9876" href="http://www.finecooking.com/item/24722/got-leftover-halloween-candy"><img class="aligncenter" title="FC_badge" src="http://picky-palate.com/wp-content/uploads/2010/11/FC_badge.gif" alt="" width="155" height="64" /></a>
+
+<!-- Left side ends here -->
+</div>
+
+
+<div class="side2">
+<!-- Right side starts here -->
+
+<h3><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/880be6cc322b14c75ff64aa0b194495f.png" alt="Categories" width="105" height="19" /><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/b66b5984c2efe89b3461c7fc15319980.png" alt=".........." width="59" height="2" /></h3>
+<ul>
+	<li class="cat-item cat-item-50"><a href="http://picky-palate.com/category/appetizer/" title="View all posts filed under Appetizers/Sides">Appetizers/Sides</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="http://picky-palate.com/category/breakfast/" title="View all posts filed under Breakfast/Brunch">Breakfast/Brunch</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="http://picky-palate.com/category/desserts/" title="View all posts filed under Desserts">Desserts</a>
+<ul class='children'>
+	<li class="cat-item cat-item-516"><a href="http://picky-palate.com/category/desserts/brownies-and-bars/" title="View all posts filed under Brownies and Bars">Brownies and Bars</a>
+</li>
+	<li class="cat-item cat-item-515"><a href="http://picky-palate.com/category/desserts/cakes-and-cupcakes/" title="View all posts filed under Cakes and Cupcakes">Cakes and Cupcakes</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="http://picky-palate.com/category/desserts/cookies/" title="View all posts filed under Cookies">Cookies</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-65"><a href="http://picky-palate.com/category/dinner/" title="View all posts filed under Dinner">Dinner</a>
+<ul class='children'>
+	<li class="cat-item cat-item-511"><a href="http://picky-palate.com/category/dinner/beef-dinner/" title="View all posts filed under Beef">Beef</a>
+</li>
+	<li class="cat-item cat-item-510"><a href="http://picky-palate.com/category/dinner/chicken-dinner/" title="View all posts filed under Chicken">Chicken</a>
+</li>
+	<li class="cat-item cat-item-513"><a href="http://picky-palate.com/category/dinner/sandwiches-and-burgers/" title="View all posts filed under Sandwiches and Burgers">Sandwiches and Burgers</a>
+</li>
+	<li class="cat-item cat-item-514"><a href="http://picky-palate.com/category/dinner/seafood-dinner/" title="View all posts filed under Seafood">Seafood</a>
+</li>
+	<li class="cat-item cat-item-512"><a href="http://picky-palate.com/category/dinner/soups-and-stews/" title="View all posts filed under Soups and Stews">Soups and Stews</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-232"><a href="http://picky-palate.com/category/giveaways/" title="View all posts filed under Giveaways">Giveaways</a>
+</li>
+	<li class="cat-item cat-item-414"><a href="http://picky-palate.com/category/reviews/" title="View all posts filed under Reviews">Reviews</a>
+</li>
+	<li class="cat-item cat-item-517"><a href="http://picky-palate.com/category/sponsored/" title="View all posts filed under Sponsored">Sponsored</a>
+</li>
+	<li class="cat-item cat-item-317"><a href="http://picky-palate.com/category/travel/" title="View all posts filed under Travel">Travel</a>
+</li>
+</ul>
+
+<h3><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/5fd3756633e768c2954659908bd539c2.png" alt="Archives" width="85" height="14" /><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/80f2b393fffe9bce1e48aa4ca5085496.png" alt="............" width="71" height="2" /></h3>
+<select name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> 
+<option value="">Select Month</option> 
+	<option value='http://picky-palate.com/2011/04/'> April 2011 </option>
+	<option value='http://picky-palate.com/2011/03/'> March 2011 </option>
+	<option value='http://picky-palate.com/2011/02/'> February 2011 </option>
+	<option value='http://picky-palate.com/2011/01/'> January 2011 </option>
+	<option value='http://picky-palate.com/2010/12/'> December 2010 </option>
+	<option value='http://picky-palate.com/2010/11/'> November 2010 </option>
+	<option value='http://picky-palate.com/2010/10/'> October 2010 </option>
+	<option value='http://picky-palate.com/2010/09/'> September 2010 </option>
+	<option value='http://picky-palate.com/2010/08/'> August 2010 </option>
+	<option value='http://picky-palate.com/2010/07/'> July 2010 </option>
+	<option value='http://picky-palate.com/2010/06/'> June 2010 </option>
+	<option value='http://picky-palate.com/2010/05/'> May 2010 </option>
+	<option value='http://picky-palate.com/2010/04/'> April 2010 </option>
+	<option value='http://picky-palate.com/2010/03/'> March 2010 </option>
+	<option value='http://picky-palate.com/2010/02/'> February 2010 </option>
+	<option value='http://picky-palate.com/2010/01/'> January 2010 </option>
+	<option value='http://picky-palate.com/2009/12/'> December 2009 </option>
+	<option value='http://picky-palate.com/2009/11/'> November 2009 </option>
+	<option value='http://picky-palate.com/2009/10/'> October 2009 </option>
+	<option value='http://picky-palate.com/2009/09/'> September 2009 </option>
+	<option value='http://picky-palate.com/2009/08/'> August 2009 </option>
+	<option value='http://picky-palate.com/2009/07/'> July 2009 </option>
+	<option value='http://picky-palate.com/2009/06/'> June 2009 </option>
+	<option value='http://picky-palate.com/2009/05/'> May 2009 </option>
+	<option value='http://picky-palate.com/2009/04/'> April 2009 </option>
+	<option value='http://picky-palate.com/2009/03/'> March 2009 </option>
+	<option value='http://picky-palate.com/2009/02/'> February 2009 </option>
+	<option value='http://picky-palate.com/2009/01/'> January 2009 </option>
+	<option value='http://picky-palate.com/2008/12/'> December 2008 </option>
+	<option value='http://picky-palate.com/2008/11/'> November 2008 </option>
+	<option value='http://picky-palate.com/2008/10/'> October 2008 </option>
+	<option value='http://picky-palate.com/2008/09/'> September 2008 </option>
+	<option value='http://picky-palate.com/2008/08/'> August 2008 </option>
+	<option value='http://picky-palate.com/2008/07/'> July 2008 </option>
+	<option value='http://picky-palate.com/2008/06/'> June 2008 </option>
+	<option value='http://picky-palate.com/2008/05/'> May 2008 </option>
+	<option value='http://picky-palate.com/2008/04/'> April 2008 </option>
+	<option value='http://picky-palate.com/2008/03/'> March 2008 </option>
+	<option value='http://picky-palate.com/2008/02/'> February 2008 </option>
+	<option value='http://picky-palate.com/2008/01/'> January 2008 </option>
+	<option value='http://picky-palate.com/2007/12/'> December 2007 </option>
+	<option value='http://picky-palate.com/2007/11/'> November 2007 </option>
+	<option value='http://picky-palate.com/2007/10/'> October 2007 </option>
+</select><br /><br />
+
+
+<!-- Begin Adify tag for "PickyPalateAdSpace" Ad Space (160x600) ID #9043407 -->
+<script type="text/javascript">
+	sr_adspace_id = 9043407;
+	sr_adspace_width = 160;
+	sr_adspace_height = 600;
+	sr_ad_new_window = true;
+	sr_adspace_type = "graphic";
+</script>
+<script src="http://ad.afy11.net/srad.js?azId=9043407" type="text/javascript">
+</script>
+<!-- End Adify tag for "PickyPalateAdSpace" Ad Space (160x600) ID #9043407 --><br /><br />
+
+<!-- Right side ends here -->
+</div>
+
+<div class="clearit"></div><br />
+
+<h3><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/78a923d5e3d92ea8ccc7b22405965b8d.png" alt="Copyright" width="96" height="19" /><img class="ttf" src="http://picky-palate.com/wp-content/plugins/ttftitles/cache/970e359e9b4c4f3183334ab43504cfdd.png" alt="........................................." width="245" height="2" /></h3>
+
+<a href="http://creativecommons.org/licenses/by/3.0/us/" rel="license" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="http://creativecommons.org/images/public/somerights20.png" /></a><br/>This work is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/us/" rel="license" target="_blank">Creative Commons Attribution 3.0 United States License</a>.<br /><br />
+
+<!-- Site Meter -->
+<script src="http://s11.sitemeter.com/js/counter.js?site=s1122222" type="text/javascript">
+</script>
+<noscript>
+<a href="http://s11.sitemeter.com/stats.asp?site=s1122222" target="_blank" rel="nofollow">
+<img border="0" alt="Site Meter" src="http://s11.sitemeter.com/meter.asp?site=s1122222"/></a>
+</noscript>
+<!-- Copyright (c)2006 Site Meter --><br /><br /><br />
+
+Brownie Stuffed Chocolate Chip Cookies
+<a rel="attachment wp-att-13133" href="http://picky-palate.com/2011/02/07/brownie-stuffed-chocolate-chip-cookies/" target="_blank"><img class="aligncenter size-full wp-image-13133" title="Brownie-Stuffed-Chocolate-Chip-Cookie-4" src="http://picky-palate.com/wp-content/uploads/2011/03/Brownie-Stuffed-Chocolate-Chip-Cookie-4.jpg" alt="" width="200" height="133" /></a>
+
+BBQ Chicken Pizza Soup
+<a rel="attachment wp-att-13123" href="http://picky-palate.com/2010/06/24/bbq-chicken-pizza-soup/" target="_blank"><img class="aligncenter size-full wp-image-13123" title="IMG_0707-2p" src="http://picky-palate.com/wp-content/uploads/2011/03/IMG_0707-2p.jpg" alt="" width="200" height="133" /></a></a>
+
+Crispy Southwest Chicken Wontons
+<a rel="attachment wp-att-13131" href="http://picky-palate.com/2008/01/23/crispy-southwest-chicken-wontons/" target="_blank"><img class="aligncenter size-full wp-image-13131" title="39ead57aa32b4ba623c9e126b521cb77" src="http://picky-palate.com/wp-content/uploads/2011/03/39ead57aa32b4ba623c9e126b521cb77.jpg" alt="" width="200" height="150" /></a>
+
+Bacon and Cheese Muffin Cups
+<a rel="attachment wp-att-13132" href="http://picky-palate.com/2010/05/06/bacon-and-cheese-egg-mcmuffin-cups/" target="_blank"><img class="aligncenter size-full wp-image-13132" title="IMG_6041p" src="http://picky-palate.com/wp-content/uploads/2011/03/IMG_6041p.jpg" alt="" width="200" height="178" /></a>
+
+Caramel Hazelnut Banana Bread
+<a rel="attachment wp-att-13124" href="http://picky-palate.com/2010/02/22/caramel-hazelnut-banana-bread-with-sweet-icing/" target="_blank"><img class="aligncenter size-full wp-image-13124" title="IMG_0243sma-pp" src="http://picky-palate.com/wp-content/uploads/2011/03/IMG_0243sma-pp1.jpg" alt="" width="200" height="153" /></a>
+
+Peanut Butter Hidden Chocolate Cupcakes
+<a rel="attachment wp-att-13125" href="http://picky-palate.com/2009/06/11/birthday-boy-peanut-butter-hidden/" target="_blank"><img class="aligncenter size-full wp-image-13125" title="IMG_2566picnik.jpeg-500x375" src="http://picky-palate.com/wp-content/uploads/2011/03/IMG_2566picnik.jpeg-500x375.jpg" alt="" width="200" height="150" /></a>
+
+Mexi-Chicken Campanelle Dinner
+<a rel="attachment wp-att-13135" href="http://picky-palate.com/2011/03/03/mexi-chicken-campanelle-dinner/" target="_blank"><img class="aligncenter size-full wp-image-13135" title="Mexi-Chicken-Campanelle-4" src="http://picky-palate.com/wp-content/uploads/2011/03/Mexi-Chicken-Campanelle-42.jpg" alt="" width="200" height="133" /></a>
+
+Mozzarella Stuffed Meatballs
+<a rel="attachment wp-att-13136" href="http://picky-palate.com/2011/03/07/mozzarella-stuffed-homemade-meatballs/" target="_blank"><img class="aligncenter size-full wp-image-13136" title="Mozzarella-Stuffed-Meatballs-4" src="http://picky-palate.com/wp-content/uploads/2011/03/Mozzarella-Stuffed-Meatballs-41.jpg" alt="" width="200" height="133" /></a>
+
+Turkey Burger Sliders
+<a rel="attachment wp-att-13126" href="http://picky-palate.com/2010/02/25/feta-sun-dried-tomato-turkey-burger-sliders/" target="_blank"><img class="aligncenter size-full wp-image-13126" title="IMG_0458a-pp1" src="http://picky-palate.com/wp-content/uploads/2011/03/IMG_0458a-pp1.jpg" alt="" width="170" height="210" /></a>
+
+Spinach Dip Bread Bowls
+<a rel="attachment wp-att-13128" href="http://picky-palate.com/2011/01/31/baked-spinach-dip-mini-bread-bowls/" target="_blank"><img class="aligncenter size-full wp-image-13128" title="Baked-Spinach-Dip-Bread-Bowls-4" src="http://picky-palate.com/wp-content/uploads/2011/03/Baked-Spinach-Dip-Bread-Bowls-41.jpg" alt="" width="150" height="225" /></a>
+
+Almond Lovers Chocolate Chip Cookies
+<a rel="attachment wp-att-13134" href="http://picky-palate.com/2010/03/11/almond-lovers-chocolate-chip-cookies/" target="_blank"><img class="aligncenter size-full wp-image-13134" title="IMG_1509p" src="http://picky-palate.com/wp-content/uploads/2011/03/IMG_1509p.jpg" alt="" width="150" height="200" /></a>
+
+<!-- Whole sidebar ends here -->
+</div><div class="clearit"></div><br />
+
+<center>
+<!-- Begin Adify tag for "PickyPalate" Ad Space (728x90) ID #1000002344607 -->
+<script type="text/javascript">
+	sr_adspace_id = 1000002344607;
+	sr_adspace_width = 728;
+	sr_adspace_height = 90;
+	sr_ad_new_window = true;
+	sr_adspace_type = "graphic";
+</script>
+<script type="text/javascript" src="http://ad.afy11.net/srad.js?azId=1000002344607">
+</script>
+<!-- End Adify tag for "PickyPalate" Ad Space (728x90) ID #1000002344607 -->
+</center>
+
+<script type="text/javascript">SHRSB_Settings = {"shr-publisher-179":{"link":"http:\/\/picky-palate.com\/2008\/09\/04\/slide-on-over\/","shortener":"tinyurl","title":"Picky Palate &#8211; Slide On Over&#8230;","notes":"%20%20%0D%0A%20%20%20%20Good%20late%20Wednesday%20night%2C%20I%20can%20hardly%20wait%20to%20jump%20into%20bed%2C%20but%20wanted%20to%20post%20while%20my%20little%20guys%20are%20sound%20asleep%21%0D%0A%20%20%20%20%20What%20a%20crack%20up%20little%20Kindergartners%20are.%20Every%20Wednesday%20morning%20I%20take%20my%20boys%20to%20school%20in%20their%20wagon%20a%20few%20minutes%20early%20so%20that%20my%203%20year%20old%20can%20play%20with%20hi","service":"38,5,7,2,40,3,195,201","apikey":"8afa39428933be41f8afdb8ea21a495c","expand":true,"src":"http:\/\/picky-palate.com\/wp-content\/plugins\/sexybookmarks\/spritegen","localize":true,"share_src":"http:\/\/www.shareaholic.com","rel":"nofollow","target":"_blank","bgimg":"http:\/\/picky-palate.com\/wp-content\/plugins\/sexybookmarks\/images\/share-enjoy.png","bgimg_padding":"26px 0 0 10px","center":true,"twitter_template":"${title} - ${short_link}","mode":"inject","shrlink":"1"},"shr-publisher-10934":{"link":"http:\/\/picky-palate.com\/2008\/09\/04\/slide-on-over\/","shortener":"tinyurl","title":"Picky Palate &#8211; Slide On Over&#8230;","notes":"%0D%0A%0D%0AOreo%20Stuffed%20Chocolate%20Chip%20Cookies%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A2%20sticks%20softened%20butter%0D%0A%0D%0A3%2F4%20Cup%20packed%20light%20brown%20sugar%0D%0A%0D%0A1%20Cup%20granulated%20sugar%0D%0A%0D%0A2%20large%20eggs%0D%0A%0D%0A1%20Tablespoon%20pure%20vanilla%0D%0A%0D%0A3%201%2F2%20Cups%20all%20purpose%20flour%0D%0A%0D%0A1%20teaspoon%20salt%0D%0A%0D%0A1%20teaspoon%20baking%20soda%0D%0A%0D%0A10%20oz%20bag%20chocolate%20chips%0D%0A%0D%0A1%20bag%20Oreo","service":"38,5,7,2,40,3,195,201","apikey":"8afa39428933be41f8afdb8ea21a495c","expand":true,"src":"http:\/\/picky-palate.com\/wp-content\/plugins\/sexybookmarks\/spritegen","localize":true,"share_src":"http:\/\/www.shareaholic.com","rel":"nofollow","target":"_blank","bgimg":"http:\/\/picky-palate.com\/wp-content\/plugins\/sexybookmarks\/images\/share-enjoy.png","bgimg_padding":"26px 0 0 10px","center":true,"twitter_template":"${title} - ${short_link}","mode":"inject","shrlink":"1"}}</script><script type='text/javascript' src='http://picky-palate.com/wp-content/plugins/si-captcha-for-wordpress/captcha-secureimage/si_captcha.js?ver=1.0'></script>
+<script type="text/javascript">
+//<![CDATA[
+var si_captcha_styles = "\
+<!-- begin SI Captcha Anti-Spam - comment form style -->\
+<style type='text/css'>\
+div#captchaImgDiv { display:block; }\
+.captchaSizeDivSmall { width:175px; height:45px; padding-top:10px; }\
+.captchaSizeDivLarge { width:250px; height:60px; padding-top:10px; }\
+img#si_image_com,#si_image_reg,#si_image_log,#si_image_side_login { border-style:none; margin:0; padding-right:5px; float:left; }\
+.captchaImgAudio { border-style:none; margin:0; vertical-align:top; }\
+.captchaImgRefresh { border-style:none; margin:0; vertical-align:bottom; }\
+div#captchaInputDiv { display:block; padding-top:15px; padding-bottom:5px; }\
+label#captcha_code_label { margin:0; }\
+input#captcha_code { width:65px; }\
+</style>\
+<!-- end SI Captcha Anti-Spam - comment form style -->\
+";
+jQuery(document).ready(function($) {
+$('head').append(si_captcha_styles);
+});
+//]]>
+</script>
+
+</div>
+
+<div id="footer">
+
+	<div class="copyright">
+		Copyright &copy; 2007-2011 | <a href="http://swankwebstyle.com/">Blog Design</a> by <a href="http://swankwebstyle.com/">Swank Web Style</a> | Powered by <a href="http://wordpress.org">WordPress</a>
+	</div>
+
+</div>
+
+<!-- Start Quantcast tag, part 2 -->
+<script type="text/javascript">
+_qevents.push({
+qacct:"p-b352_qxQ_5B9g"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-b352_qxQ_5B9g.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+
+</body>
+</html>	
+<!-- Dynamic page generated in 2.781 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2011-04-04 19:17:51 -->
+<!-- Compression = gzip -->

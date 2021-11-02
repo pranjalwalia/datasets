@@ -1,0 +1,2092 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js"> 
+  <head>
+  
+          <!-- Mobile redirector -->
+<script type="text/javascript">
+(function(){
+  
+  // get redirector to work in development
+  var tmp = /^(www\.)?([\w\.]+)?(refinery29|rf29)\.(\w+)(:\d+)?$/.exec(window.location.host.toLowerCase()),
+      
+      // sub domain
+      sub = tmp[2],
+      
+      // domain
+      dom = tmp[3],
+
+      // top level domain
+      tld = tmp[4],
+      
+      // cookie domain for mobile_referrer cookie
+      cookie_domain = dom+'.'+tld,
+      
+      // domain for mobile redirect
+      mobile_domain = 'm.'+(sub ? sub : '')+cookie_domain,
+      
+      // ignore direct traffic referrers
+      r29p = new RegExp('^(https?:\/\/)((www|m|touch)\.)'+sub+dom+'\.'+tld, 'i'),
+      
+      // validate referrer before overriding
+      r29v = function(d){
+        return !!(d && String(d).length && !String(d).match(r29p));
+      };
+
+  // quirksmode.org: JavaScript - Cookies
+  // http://www.quirksmode.org/js/cookies.html
+  
+  var cookie_create = function(name, value, days){
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      var expires = '; expires='+date.toGMTString();
+    }
+    else {
+      var expires = '';
+    }
+    var val = name+'='+value+expires+'; path=/; domain=.'+cookie_domain+';';
+    document.cookie = val;
+  },
+  
+  cookie_delete = function(name){
+    cookie_create(name,'',-1);
+  },
+  
+  cookie_read = function(name){
+    var nameEQ = name + '=';
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') {
+        c = c.substring(1,c.length);
+      }
+      if (c.indexOf(nameEQ) == 0) {
+        var val = c.substring(nameEQ.length,c.length);
+        return val;
+      }
+    }
+  	return null;
+  },
+  
+  show_mobile_link = function(){
+    var show_link = function(){
+      document.getElementById('mobile-link').style.display = 'block';
+    }
+    if (typeof window.onload != 'function') {
+      window.onload = show_link;
+    }
+    else {
+      var prev_onload = window.onload;
+      window.onload = function(){
+        prev_onload && prev_onload();
+        show_mobile_link();
+      };
+    }
+  };
+  
+  href = document.location.href.toString();
+  
+  // ignore mobile for thirty days
+  if (href.match(/mobile=false/i)) {
+    cookie_create('force_web', '1', 30);
+    show_mobile_link();
+    return;
+  }
+  
+  // URL param force mobile ver
+  var force_mobile = href.match(/mobile=true/i),
+
+      // Cookie to force web ver
+      ignore_mobile = cookie_read('force_web') && cookie_read('force_web') === '1',
+
+      // UA detection for mobile
+      is_mobile = navigator.userAgent.match(/iphone|ipod|android/i);
+      
+      if(navigator.userAgent.match(/ipad/i)) { 
+        // facebook user-agent stupidly calls iPad an iPhone
+        is_mobile = '';
+      }
+  
+  // forcing mobile on non-mobile browser or mobile browser and not forcing desktop
+  if (force_mobile || (is_mobile && !ignore_mobile)) {
+ 
+    force_mobile && cookie_delete('force_web');
+   
+    
+    // if we have valid referrer, write referrer cookie
+    if (r29v(document.referrer)) {
+      cookie_create('mobile_referrer', document.referrer, 1);
+    }
+   
+    // redirect
+    var mobile_location = 'http://'+mobile_domain+location.pathname.replace(/^(.*)\/slideshow/, '$1') + '?' + location.search.slice(1);
+    window.location = mobile_location;
+    return;
+  }
+  
+  // show mobile link if we didn't redirect
+  is_mobile && show_mobile_link();
+  
+})();
+</script>
+<!--/Mobile redirector -->
+    
+  
+        <script type="text/javascript">var _dc_tile = 1;var _dc_ts=_sf_startpt=(new Date()).getTime();WRInitTime=(new Date()).getTime();</script>
+    <link rel="stylesheet" href="http://static3.refinery29.com/blog/675bda/css/compiled/style.css" media="print, screen" />
+    <link rel="alternate" type="application/rss+xml" title="Refinery29" href="http://www.refinery29.com/index.xml" />
+    
+  	<!--[if lt IE 9]>
+  		<link rel="stylesheet" type="text/css" href="http://static2.refinery29.com/blog/675bda/css/compiled/ie.css" />
+      <script src="http://static3.refinery29.com/blog/675bda/js/html5.js"></script>
+    <![endif]-->
+
+    
+    <script type="text/javascript" src="http://static1.refinery29.com/blog/675bda/js/jquery.js"></script>
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/675bda/js/jquery/plugins/jcarousel/jcarousel.js"></script>
+    <!-- Pinterest Hover Pin -->  
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/675bda/js/jquery/plugins/jquery.autopin.js"></script>  
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/675bda/js/r29.js"></script>
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/675bda/js/api.js"></script>
+
+
+
+    <!-- Avoiding Flash of Unstyled Text -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    
+
+    
+    
+          <script type="text/javascript" src="http://static3.refinery29.com/blog/675bda/js/socket.io/socket.io.js"></script>
+    
+  
+    <title itemprop="name">
+			Copy These 4 Cute, Easy Fall Outfits Worn by Models Off Duty
+	
+</title> 
+    
+    <!-- Meta -->
+    
+  
+  
+   <!-- month of beauty -->
+
+  
+  <!-- Entry Meta -->
+	<meta name="description" content="Four refreshingly cute and easy fall outfits from ladies who know what it means to be in a hurry--models off duty!" itemprop="description">
+
+ 
+<meta name="keywords"    content="cute outfits, easy outfits, model off duty style" itemprop="keywords"> 
+
+  <!-- Facebook Meta -->
+  <meta property="og:title"       content="4 Cute Model-Off-Duty Outfits To Copy Now" itemprop="name" />
+  <meta property="og:type"        content="article"/>
+  <meta property="og:url"         content="http://www.refinery29.com/4-cute-easy-model-off-duty-outfits-for-fall.php"/>
+  <meta property="og:image"       content="http://static3.refinery29.com/bin/entry/cbe/300x/8461/image.jpg" itemprop="image" />
+  <meta property="og:site_name"   content="Refinery29" itemprop="publisher" />
+  <meta property="og:description" content="Fall is perhaps the best time to play dress-up. But given all the post-summer/pre-holiday running around we have to do, we don&#039;t always have the time to ponder thoughtfully in front of our closets the way that we&#039;d like. That&#039;s..." />
+
+
+<link rel="canonical" href="http://www.refinery29.com/4-cute-easy-model-off-duty-outfits-for-fall" />
+
+<!-- Slideshow Meta -->
+
+        
+<!-- Pagination Meta -->
+
+	
+
+  
+
+        
+    
+  </head>
+    
+  <body>
+    <div id="container">
+						
+		             	<header id="main">
+
+  <!-- Information Bar -->
+  <nav>
+    <div class="container">
+    
+      
+      
+                  <!-- Ad -->
+          <div class="ad-frame">
+            
+                        	
+            
+            
+                          
+<div class="ad ad-728x90" iframe-code="http://ad.doubleclick.net/adi/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;" iframe-size="728x90, 970x66"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+            
+          </div>
+        
+      
+    </div>
+    
+    <div class="container">
+    
+      <h1><a href="http://www.refinery29.com">Refinery29</a></h1>
+      
+              
+      
+      
+      
+      
+    
+      <ul class="features">
+        <li><a href="http://www.refinery29.com" data-track="nav:read" class="read active">Read</a></li>
+          <!-- Empty divs for gradient-ed vertical lines :/ -->
+          <li><div>&nbsp;</div></li>
+        <li><a href="http://www.refinery29.com/video" data-track="nav:watch" class="watch">Watch</a></li>
+          <li><div>&nbsp;</div></li>
+        <li><a href="http://reserve.refinery29.com" data-track="nav:shop" class="shop">Shop</a></li>
+<!--
+          <li><div>&nbsp;</div></li>
+        <li><a href="http://www.refinery29.com/find/stores" data-track="nav:find" class="find">Find</a></li>
+-->
+      </ul>
+      
+      <ul class="user">
+        
+                  <li class="user-login"><a href="https://welcome.refinery29.com/account?from=http%3A%2F%2Fwww.refinery29.com%2F4-cute-easy-model-off-duty-outfits-for-fall&amp;sig=062b4&amp;app=blog&amp;" class="user-login r29-login">Login</a></li>
+          <li class="user-login"><a href="https://welcome.refinery29.com/account?from=http%3A%2F%2Fwww.refinery29.com%2F4-cute-easy-model-off-duty-outfits-for-fall&amp;sig=062b4&amp;app=blog&amp;" class="user-login r29-register">Register</a></li>
+        
+        
+        <li class="search">
+          <a href="" class="trigger">Search</a>
+          <div id="search" class="display_none">
+            <div class="search" id="search-box">
+  <form method="get" action="/search">
+    <input type="text" name="q" value="" placeholder="Search" data-placeholder="Search" autocomplete="off" />
+    
+    
+  </form>
+  <div class="flap"></div>
+</div>
+
+          </div>
+        </li>
+        
+      </ul>
+      
+      <!-- I give up trying to avoid these, it's not worth it -->
+      <div class="clear"></div>
+      
+    </div>      
+  </nav>
+  
+  
+    <!--  -->
+    
+    <!-- Categories -->
+    <ul class="categories">
+      <div class="container">
+    
+        <!-- Cities Dropdown -->
+        <li class="cities">
+          <a>Cities</a>
+          <ul class="display_none">
+            
+                          <li>
+                <a href="http://www.refinery29.com/new-york" data-track="header:local:fashion:new-york">New York</a>
+              </li>
+                          <li>
+                <a href="http://www.refinery29.com/los-angeles" data-track="header:local:fashion:los-angeles">Los Angeles</a>
+              </li>
+                          <li>
+                <a href="http://www.refinery29.com/chicago" data-track="header:local:fashion:chicago">Chicago</a>
+              </li>
+                          <li>
+                <a href="http://www.refinery29.com/san-francisco" data-track="header:local:fashion:san-francisco">San Francisco</a>
+              </li>
+                          <li>
+                <a href="http://www.refinery29.com/washington-dc" data-track="header:local:fashion:washington-dc">Washington, D.C.</a>
+              </li>
+                          <li>
+                <a href="http://www.refinery29.com/miami" data-track="header:local:fashion:miami">Miami</a>
+              </li>
+            
+          </ul>
+        </li>
+        
+        
+      
+                  <li class="global active" data-cat="fashion">
+              <a href="http://www.refinery29.com/fashion" data-track="header:category:fashion:fashion"><span>Fashion</span></a>
+          </li>
+                  <li class="global" data-cat="beauty">
+              <a href="http://www.refinery29.com/beauty" data-track="header:category:fashion:beauty"><span>Beauty</span></a>
+          </li>
+                  <li class="global" data-cat="living">
+              <a href="http://www.refinery29.com/living" data-track="header:category:fashion:living"><span>Living</span></a>
+          </li>
+                  <li class="global" data-cat="entertainment">
+              <a href="http://www.refinery29.com/entertainment" data-track="header:category:fashion:entertainment"><span>Entertainment</span></a>
+          </li>
+                  <li class="global" data-cat="how-to">
+              <a href="http://www.refinery29.com/how-to" data-track="header:category:fashion:how-to"><span>How To</span></a>
+          </li>
+                  <li class="global" data-cat="news">
+              <a href="http://www.refinery29.com/news" data-track="header:category:fashion:news"><span>News</span></a>
+          </li>
+        
+      </div>
+    </ul> <!-- End Categories Content -->
+      
+    <!-- Subcategories Submenus -->
+    <div class="container">
+      <div class="subcat-content">
+
+        
+      
+                  <div class="display_none" data-cat="fashion">
+                          <!-- Sub-categories -->
+              <ul class="subcats">
+                                  <li data-subcat="shopping">
+                    <a  href="http://www.refinery29.com/fashion/shopping" data-track="header:subcategory:fashion:shopping">
+                      Shopping
+                    </a>
+                  </li>
+                                  <li data-subcat="designers">
+                    <a  href="http://www.refinery29.com/fashion/designers" data-track="header:subcategory:fashion:designers">
+                      Designers
+                    </a>
+                  </li>
+                                  <li data-subcat="street-style">
+                    <a  class="active" href="http://www.refinery29.com/fashion/street-style" data-track="header:subcategory:fashion:street-style">
+                      Street Style
+                    </a>
+                  </li>
+                                  <li data-subcat="stores">
+                    <a  href="http://www.refinery29.com/fashion/stores" data-track="header:subcategory:fashion:stores">
+                      Stores
+                    </a>
+                  </li>
+                                  <li data-subcat="trends">
+                    <a  href="http://www.refinery29.com/fashion/trends" data-track="header:subcategory:fashion:trends">
+                      Trends
+                    </a>
+                  </li>
+                                  <li data-subcat="college">
+                    <a  href="http://www.refinery29.com/fashion/college" data-track="header:subcategory:fashion:college">
+                      College
+                    </a>
+                  </li>
+                                  <li data-subcat="mens">
+                    <a  href="http://www.refinery29.com/fashion/mens" data-track="header:subcategory:fashion:mens">
+                      Men&#039;s
+                    </a>
+                  </li>
+                                  <li data-subcat="events">
+                    <a  href="http://www.refinery29.com/fashion/events" data-track="header:subcategory:fashion:events">
+                      Events
+                    </a>
+                  </li>
+                
+              </ul>
+              
+              <ul class="popular-trending">
+                <img src="http://static1.refinery29.com/blog/675bda/static/images/menu-loader-24.gif" class="loading" />
+              </ul>
+
+            
+          </div>
+                  <div class="display_none" data-cat="beauty">
+                          <!-- Sub-categories -->
+              <ul class="subcats">
+                                  <li data-subcat="hair">
+                    <a  href="http://www.refinery29.com/beauty/hair" data-track="header:subcategory:fashion:hair">
+                      Hair
+                    </a>
+                  </li>
+                                  <li data-subcat="nails">
+                    <a  href="http://www.refinery29.com/beauty/nails" data-track="header:subcategory:fashion:nails">
+                      Nails
+                    </a>
+                  </li>
+                                  <li data-subcat="makeup">
+                    <a  href="http://www.refinery29.com/beauty/makeup" data-track="header:subcategory:fashion:makeup">
+                      Makeup
+                    </a>
+                  </li>
+                                  <li data-subcat="skin-care">
+                    <a  href="http://www.refinery29.com/beauty/skin-care" data-track="header:subcategory:fashion:skin-care">
+                      Skin Care
+                    </a>
+                  </li>
+                                  <li data-subcat="wellness">
+                    <a  href="http://www.refinery29.com/beauty/wellness" data-track="header:subcategory:fashion:wellness">
+                      Wellness
+                    </a>
+                  </li>
+                                  <li data-subcat="fitness">
+                    <a  href="http://www.refinery29.com/beauty/fitness" data-track="header:subcategory:fashion:fitness">
+                      Fitness
+                    </a>
+                  </li>
+                
+              </ul>
+              
+              <ul class="popular-trending">
+                <img src="http://static1.refinery29.com/blog/675bda/static/images/menu-loader-24.gif" class="loading" />
+              </ul>
+
+            
+          </div>
+                  <div class="display_none" data-cat="living">
+                          <!-- Sub-categories -->
+              <ul class="subcats">
+                                  <li data-subcat="home">
+                    <a  href="http://www.refinery29.com/living/home" data-track="header:subcategory:fashion:home">
+                      Home
+                    </a>
+                  </li>
+                                  <li data-subcat="entertaining">
+                    <a  href="http://www.refinery29.com/living/entertaining" data-track="header:subcategory:fashion:entertaining">
+                      Entertaining
+                    </a>
+                  </li>
+                                  <li data-subcat="food-and-drink">
+                    <a  href="http://www.refinery29.com/living/food-and-drink" data-track="header:subcategory:fashion:food-and-drink">
+                      Food And Drink
+                    </a>
+                  </li>
+                                  <li data-subcat="travel">
+                    <a  href="http://www.refinery29.com/living/travel" data-track="header:subcategory:fashion:travel">
+                      Travel
+                    </a>
+                  </li>
+                                  <li data-subcat="gadgets">
+                    <a  href="http://www.refinery29.com/living/gadgets" data-track="header:subcategory:fashion:gadgets">
+                      Gadgets
+                    </a>
+                  </li>
+                
+              </ul>
+              
+              <ul class="popular-trending">
+                <img src="http://static1.refinery29.com/blog/675bda/static/images/menu-loader-24.gif" class="loading" />
+              </ul>
+
+            
+          </div>
+                  <div class="display_none" data-cat="entertainment">
+                          <!-- Sub-categories -->
+              <ul class="subcats">
+                                  <li data-subcat="music">
+                    <a  href="http://www.refinery29.com/entertainment/music" data-track="header:subcategory:fashion:music">
+                      Music
+                    </a>
+                  </li>
+                                  <li data-subcat="humor">
+                    <a  href="http://www.refinery29.com/entertainment/humor" data-track="header:subcategory:fashion:humor">
+                      Humor
+                    </a>
+                  </li>
+                                  <li data-subcat="art">
+                    <a  href="http://www.refinery29.com/entertainment/art" data-track="header:subcategory:fashion:art">
+                      Art
+                    </a>
+                  </li>
+                                  <li data-subcat="celebrities">
+                    <a  href="http://www.refinery29.com/entertainment/celebrities" data-track="header:subcategory:fashion:celebrities">
+                      Celebrities
+                    </a>
+                  </li>
+                                  <li data-subcat="influencers">
+                    <a  href="http://www.refinery29.com/entertainment/influencers" data-track="header:subcategory:fashion:influencers">
+                      Influencers
+                    </a>
+                  </li>
+                
+              </ul>
+              
+              <ul class="popular-trending">
+                <img src="http://static1.refinery29.com/blog/675bda/static/images/menu-loader-24.gif" class="loading" />
+              </ul>
+
+            
+          </div>
+                  <div class="display_none" data-cat="how-to">
+                          <!-- Sub-categories -->
+              <ul class="subcats">
+                                  <li data-subcat="i-diy">
+                    <a  href="http://www.refinery29.com/how-to/i-diy" data-track="header:subcategory:fashion:i-diy">
+                      I Diy
+                    </a>
+                  </li>
+                                  <li data-subcat="styling-tips">
+                    <a  href="http://www.refinery29.com/how-to/styling-tips" data-track="header:subcategory:fashion:styling-tips">
+                      Styling Tips
+                    </a>
+                  </li>
+                                  <li data-subcat="what-to-wear">
+                    <a  href="http://www.refinery29.com/how-to/what-to-wear" data-track="header:subcategory:fashion:what-to-wear">
+                      What To Wear
+                    </a>
+                  </li>
+                
+              </ul>
+              
+              <ul class="popular-trending">
+                <img src="http://static1.refinery29.com/blog/675bda/static/images/menu-loader-24.gif" class="loading" />
+              </ul>
+
+            
+          </div>
+                  <div class="display_none" data-cat="news">
+                          <!-- Sub-categories -->
+              <ul class="subcats">
+                                  <li data-subcat="fashion">
+                    <a  href="http://www.refinery29.com/news/fashion" data-track="header:subcategory:fashion:fashion">
+                      Fashion
+                    </a>
+                  </li>
+                                  <li data-subcat="beauty">
+                    <a  href="http://www.refinery29.com/news/beauty" data-track="header:subcategory:fashion:beauty">
+                      Beauty
+                    </a>
+                  </li>
+                                  <li data-subcat="celebrities">
+                    <a  href="http://www.refinery29.com/news/celebrities" data-track="header:subcategory:fashion:celebrities">
+                      Celebrities
+                    </a>
+                  </li>
+                
+              </ul>
+              
+              <ul class="popular-trending">
+                <img src="http://static1.refinery29.com/blog/675bda/static/images/menu-loader-24.gif" class="loading" />
+              </ul>
+
+            
+          </div>
+        
+
+      </div> <!-- End Subcategories Content -->
+      
+    </div> <!-- End Subcategories Container -->
+
+          
+    
+    
+    
+              <!-- Optional Subcategory Menu -->
+        <div class="container">
+                      <ul class="global">
+               <!-- Global -->
+                                  <li ><a href="/fashion/shopping">Shopping</a>&nbsp;&nbsp;</li>
+                                  <li ><a href="/fashion/designers">Designers</a>&nbsp;&nbsp;</li>
+                                  <li  class="active"><a href="/fashion/street-style">Street Style</a>&nbsp;&nbsp;</li>
+                                  <li ><a href="/fashion/stores">Stores</a>&nbsp;&nbsp;</li>
+                                  <li ><a href="/fashion/trends">Trends</a>&nbsp;&nbsp;</li>
+                                  <li ><a href="/fashion/college">College</a>&nbsp;&nbsp;</li>
+                                  <li ><a href="/fashion/mens">Men&#039;s</a>&nbsp;&nbsp;</li>
+                                  <li ><a href="/fashion/events">Events</a>&nbsp;&nbsp;</li>
+                
+              
+            </ul>
+          
+      
+          
+          <div class="clear"></div>
+        </div>
+      
+      
+    
+
+  
+
+</header>
+
+		    
+			
+			
+
+      <div id="skin"></div><!--need this for background skinz-->
+      
+  		            <div class="inner">
+        
+            
+								  
+				  
+    				
+  				
+    		  
+				
+				
+        <div id="content"> 
+        
+          					<!-- LEFT -->
+					<div class="col_2">
+						
+      <!-- Mini Signup Module on Entry Pages: For Once -->
+          <!-- Lil Mini Signup Module -->
+<div class="signup-mini" style="display:none;">
+  <div class="folded-corner"></div>
+  <img src="http://static1.refinery29.com/blog/675bda/images/signup/sample-email.png" width="195" height="163" alt="Get Your Free Daily Newsletter!" class="left" />
+  <h4>Get Your Free <br>Daily Newsletter!</h4>
+  <p>The freshest fashion, shopping, lifestyle news, beauty tips, and local deals you'll ever need!</p>
+  
+  <form action="/signup/new-york?source=sitebox&medium=organic" method="POST">
+  
+    <input type="email" name="email" required placeholder="Enter your Email Address" data-placeholder="Enter your Email Address">
+    
+    <input type="hidden" name="email_lists[everywhere]" value="true">
+          <input type="hidden" name="email_lists[fashion]" value="true">
+    
+      
+    <input type="submit" name="submit" value="Sign Up" data-track="signup-mini:submit" />
+  
+  
+  </form>
+
+  <a href="" class="close" data-track="signup-mini:close">Close<span></span></a>
+</div>
+
+
+<script type="text/javascript">
+
+  $('.signup-mini a.close').click(function(event) {
+    event.preventDefault();
+    $('.signup-mini').hide();
+    R29.cookie.set('signup_mini',1,3600*24*30);
+  });
+
+  $('.signup-mini input.submit').click(function(event) {
+    R29.cookie.set('signup_mini',1,-1);
+    return true;
+  });
+
+  if(!R29.cookie.get('signup_mini')) {
+    $('.signup-mini').show();
+  }
+
+</script>
+    
+    <div class="entry-block">
+      <aside class="social-sidebar">
+
+    <!-- R29 CLIP -->
+  
+  
+  <!-- FB -->
+  <div class="facebook" itemprop="interactionCount">
+    <fb:like layout="box_count" href="http://www.refinery29.com/4-cute-easy-model-off-duty-outfits-for-fall.php" send="false" width="50" ref="sidebar"></fb:like>
+  </div>
+  
+  <!-- Twitter -->
+  <div class="twitter" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'TwitterSidebar', 'tweet']);">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-text="4 Cute Model-Off-Duty Outfits To Copy Now" data-url="http://www.refinery29.com/4-cute-easy-model-off-duty-outfits-for-fall.php" data-count="vertical" data-via="refinery29">&nbsp;</a>
+  </div>
+
+  <!-- Pinterest -->
+  <div class="pinterest" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'Pinterest', 'pinned']);">
+    <a href="http://pinterest.com/pin/create/button/?url=http://www.refinery29.com/4-cute-easy-model-off-duty-outfits-for-fall.php&media=http://static2.refinery29.com/bin/entry/0aa/x/8461/image.jpg&description=4 Cute Model-Off-Duty Outfits To Copy Now" class="pin-it-button" count-layout="vertical">Pin It</a>
+  </div>
+  
+  <!-- Stumbleupon -->
+  <div class="stumbleupon" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'StumbleSidebar', 'stumble']);">
+    <iframe src="http://badge.stumbleupon.com/badge/embed/5/?url=http://www.refinery29.com/4-cute-easy-model-off-duty-outfits-for-fall.php" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:60px;" allowTransparency="true"></iframe>
+  </div>
+  
+</aside>
+    
+      
+  
+  
+   
+    
+        
+  
+
+  
+  <div class="entry-header">
+    
+    
+  	
+
+    
+          <div class="category">
+        <!--<a href="/fashion/street-style" data-track="entry:header:Street Style">-->
+          Street Style
+        <!--</a>-->
+      </div>
+    
+    
+    <div class="deliminator"></div>
+    
+    <div class="date">
+              Oct 8, 2010 10:00 AM
+        <!-- <span itemprop="datePublished">2010-10-08 10:00:00</span> -->
+      
+    </div>
+    <div class="asset-info">
+
+      <!-- Facebook Like -->
+      <div class="facebook" itemprop="interactionCount">
+        <fb:like layout="button_count" href="http://www.refinery29.com/4-cute-easy-model-off-duty-outfits-for-fall.php" width="90" ref="entrypage"></fb:like>
+      </div>
+      <!-- Twitter Share -->
+      <div class="twitter" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'TwitterSolo', 'Tweet']);">
+        <a href="http://twitter.com/share" class="twitter-share-button" data-text="4 Cute Model-Off-Duty Outfits To Copy Now" data-url="http://www.refinery29.com/4-cute-easy-model-off-duty-outfits-for-fall.php" data-count="horizontal" data-via="refinery29">&nbsp;</a>
+      </div>
+  
+      <!-- Comment Count -->
+<div class="comment-count" itemprop="interactionCount">
+  <!-- ben 1 -->
+      <a href="/4-cute-easy-model-off-duty-outfits-for-fall#disqus_thread" data-url="http://www.refinery29.com/4-cute-easy-model-off-duty-outfits-for-fall.php" class="comments"><span class="comment-count">0</span></a>
+  
+</div>
+  
+    </div>
+  </div>
+
+      
+      <!-- Sponsored Headline eMeta -->
+      
+    
+      <div class="entry">
+	<div itemscope itemtype="http://schema.org/Article">
+	  <div class="h1">4 Cute Model-Off-Duty Outfits To Copy Now</div>
+	  	    <p class="byline">
+
+      By 
+    
+    <a href="/author/christene-barberich" rel="author"><span itemprop="author">Christene Barberich</span></a>,     
+          Photos by
+    
+    <a href="http://altamiranyc.blogspot.com/" rel="nofollow" target="_blank"><span itemprop="author">Altamira</span></a>,     
+    
+    <a href="/author/piera-gelardi" rel="author"><span itemprop="author">Piera Gelardi</span></a>
+</p>
+	    <div class="body">
+	    	<span itemprop="articleBody">
+		      Fall is perhaps the best time to play dress-up. But given all the post-summer/pre-holiday running around we have to do, we don't always have the time to ponder thoughtfully in front of our closets the way that we'd like. That's why, we were particularly taken with these four refreshingly <strong>cute and easy fall outfits</strong> from ladies who know what it means to be in a hurry—models sprinting in between shows (as caught by lensman Craig Arend of our favorite model-off-duty site <a href="http://altamiranyc.blogspot.com/" rel="nofollow" target="_blank">Altamira</a>). An excellent reminder that A) old favorites can always, always, always be recycled in new ways, and B) an awesome outfit never has to be time-intensive. Read on for how to give this less-is-more approach your own spin.<br><br>
+
+1. Do like <strong>Charlotte Di Calypso</strong> and wake up your favorite basics like a tailored black blazer and skinny jeans with an elegantly patterned silk scarf. <em>
+  <a href="/assets_c/2010/10/charlotte-di-calypso-model-style-b-38932.php" onclick="window.open('http://www.refinery29.com/assets_c/2010/10/charlotte-di-calypso-model-style-b-38932.php','popup','width=600,height=900,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false">Enlarge Image</a>
+</em><br><br><img alt="charlotte-di-calypso-model-off-duty-style" src="/static/bin/entry/586/x/8487/charlotte-di-calypso-model-off-duty-style.jpg" width="600" height="400" class="mt-image-none" style=""><br><br><small><em>Above, from left:</em> <strong>Madewell</strong> Leggings Jeans, $95, available at <a href="http://www.shopstyle.com/action/apiVisitRetailer?id=185983084&amp;pid=uid8416-987304-72" rel="nofollow" target="_blank">Madewell</a>; <strong>Ralph Lauren</strong> Turquoise Mocassins Scarf, $220, available at <a href="http://www.shopstyle.com/action/apiVisitRetailer?id=141636630&amp;pid=uid8416-987304-72" rel="nofollow" target="_blank">Stylebop</a>; <strong>Marc by Marc Jacobs</strong> Helena Convertible Tote, $458, available at <a href="http://www.shopstyle.com/action/apiVisitRetailer?id=178750236&amp;pid=uid8416-987304-72" rel="nofollow" target="_blank">Saks Fifth Avenue</a>; <strong>Chelsea Crew</strong> Classic Oxfords, $58, available at <a href="http://www.shopstyle.com/action/apiVisitRetailer?id=153129160&amp;pid=uid8416-987304-72" rel="nofollow" target="_blank">Urban Outfitters</a>.</small><br><br><br><!--more-->
+
+
+
+
+2. Follow <strong>Alana Zimmer</strong>'s lead and give your tough-girl leather jacket a ladylike spin with a floral dress and a structured satchel. <em>
+  <a href="/assets_c/2010/10/alana-zimmer-model-style-b-38934.php" onclick="window.open('http://www.refinery29.com/assets_c/2010/10/alana-zimmer-model-style-b-38934.php','popup','width=600,height=900,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false">Enlarge Image</a>
+</em><br><br><img alt="alana-zimmer-model-off-duty-style" src="/static/bin/entry/7ca/x/8502/alana-zimmer-model-off-duty-style.jpg" width="600" height="400" class="mt-image-none" style=""><br><br><small><em>Above, from left:</em> <strong>Coach</strong> Tyler Leather Moto Jacket, $698, available at <a href="http://www.shopstyle.com/action/apiVisitRetailer?id=163793710&amp;pid=uid8416-987304-72" rel="nofollow" target="_blank">Coach</a>; <strong>Dolce Vita</strong> Mica Dress, $198, available at <a href="http://www.shopstyle.com/action/apiVisitRetailer?id=177422597&amp;pid=uid8416-987304-72" rel="nofollow" target="_blank">Urban Outfitters</a>; <strong>Proenza Schouler</strong> Large Suede PS1 Bag, $1,995, available at <a href="http://www.shopstyle.com/action/apiVisitRetailer?id=58617223&amp;pid=uid8416-987304-72" rel="nofollow" target="_blank">Barneys New York</a>.</small><br><br><br>
+
+3. Copy <strong>Karlie Kloss</strong> and use a statement coat and gorgeous bag as the focus for a truly simple daytime outfit. <em>
+  <a href="/assets_c/2010/10/karlie-kloss-style-model-b-38938.php" onclick="window.open('http://www.refinery29.com/assets_c/2010/10/karlie-kloss-style-model-b-38938.php','popup','width=600,height=900,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false">Enlarge Image</a>
+</em><br><br><img alt="karlie-kloss-model-off-duty-style" src="/static/bin/entry/a4a/x/8523/karlie-kloss-model-off-duty-style.jpg" width="600" height="400" class="mt-image-none" style=""><br><br><small><em>Above, from left:</em><strong> BCBG </strong>Essential Knit Turtleneck Dress, $68, available at <a href="http://www.shopstyle.com/action/apiVisitRetailer?id=185900046&amp;pid=uid8416-987304-72" rel="nofollow" target="_blank">BCBG</a>; <strong>Clinique</strong> High Impact Lip Colour in Red-Y To Wear, $14, available at <a href="http://www.shopstyle.com/action/apiVisitRetailer?id=185130621&amp;pid=uid8416-987304-72" rel="nofollow" target="_blank">Nordstrom</a>; <strong>Karen Millen</strong> Cape, $379.13, available at <a href="http://us.asos.com/countryid/2/Karen-Millen/Karen-Millen-Cape-With-Check-Lining/Prod/pgeproduct.aspx?iid=1365317&amp;MID=35719&amp;affid=2135&amp;siteID=J84DHJLQkR4-7kG838omCzbfPyBBf3jTow" rel="nofollow" target="_blank">ASOS</a>; <strong>Big Buddha</strong> Empire Bag, $86, available at <a href="http://www.lorisshoes.com/product.asp?lt=d&amp;deptid=8952&amp;pfid=LDS15322&amp;source=shopstyle" rel="nofollow" target="_blank">Lori's Shoes</a>.</small><br><br><br>
+
+4. Get inspired by <strong>Lindsey Wixson</strong> and skip the matchy-match and mix navy, gray, and black to get a more personalized and textured take on a classic fall look. <em>
+  <a href="/assets_c/2010/10/lindsey-wixson-model-style-b-38936.php" onclick="window.open('http://www.refinery29.com/assets_c/2010/10/lindsey-wixson-model-style-b-38936.php','popup','width=600,height=900,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false">Enlarge Image</a>
+</em><br><br><img alt="lindsey-wixon-model-off-duty-style" src="/static/bin/entry/46d/x/8552/lindsey-wixon-model-off-duty-style.jpg" width="600" height="400" class="mt-image-none" style=""><br><br><small><em>Above, from left:</em> <strong>Marc By Marc Jacobs </strong>Normany Pullover, $250, available at <a href="http://www.shopstyle.com/action/apiVisitRetailer?id=152737778&amp;pid=uid8416-987304-72" rel="nofollow" target="_blank">Stylebop</a>; <strong>Daftbird</strong> Side Pleats Skirt, $50, available at <a href="http://www.revolveclothing.com/b/Product.jsp?code=DAFT-WD43" rel="nofollow" target="_blank">Revolve Clothing</a>; <strong>HerCut</strong> The Ponytail Styling Lotion, $22, available at <a href="http://www.shopstyle.com/action/apiVisitRetailer?id=162547899&amp;pid=uid8416-987304-72" rel="nofollow" target="_blank">Sephora</a>; <strong>American Apparel</strong> Round Collar Button-Up, $46, available at <a href="http://www.shopstyle.com/action/apiVisitRetailer?id=148020503&amp;pid=uid8416-987304-72" rel="nofollow" target="_blank">American Apparel</a>; <strong>Nine West Boutique 9</strong> Cooper Boots, $169, available at <a href="http://www.ninewest.com/Cooper/5363173,default,pd.html?cgid=4216629&amp;itemNum=12&amp;variantSizeClass=&amp;variantColor=LBRLBLE" rel="nofollow" target="_blank">Nine West</a>.</small>
+		      
+		      		        
+
+
+
+
+		      
+		      
+		        <div class="index-pagination">
+
+  
+  
+  </div>
+
+		      
+		      
+		      
+	      </span>
+		  </div>
+	  
+	  
+	  <div class="clear"></div>
+  </div>
+</div>
+      
+      <div class="footer">
+      <div class="tags">
+              <a href="/fashion">Fashion</a> &raquo; 
+      
+      <a href="/fashion/street-style">Street Style</a> &raquo;
+            	<h1 class="sub">Copy These 4 Cute, Easy Fall Outfits Worn by Models Off Duty</h1>
+      
+      <br/>
+      
+      
+    </div>
+  
+  
+  
+
+  
+</div>
+    
+    
+      
+      
+      <!-- Related Stories -->
+<div class="related-stories">
+  <div class="hot-dimple">Related Stories</div>
+  <ul>
+          
+      
+                  
+                  
+          <li>
+            <div class="asset">
+              <a href="/dogs-in-san-francisco" data-track="entry:related"><img src="http://static1.refinery29.com/bin/entry/f9c/120x143/263397/opener.jpg" alt="opener" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/dogs-in-san-francisco" data-track="entry:related">Dog Stalking! Peep 14 Pretty Pups And Their Equally Adorable&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/spanish-speaking-bloggers" data-track="entry:related"><img src="http://static3.refinery29.com/bin/entry/f5d/120x143/172355/opener.jpg" alt="opener" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/spanish-speaking-bloggers" data-track="entry:related">The Best Spanish-Speaking Bloggers Anglophones Need To Know&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/leah-bershad" data-track="entry:related"><img src="http://static1.refinery29.com/bin/entry/e64/120x143/261553/opener.jpg" alt="opener" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/leah-bershad" data-track="entry:related">Closet Tour! Peep The Covetable Wardrobe Of Reliquary's&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/nanys-klozet-sale" data-track="entry:related"><img src="http://static2.refinery29.com/bin/entry/760/120x143/261042/nanys-opener.jpg" alt="nanys_opener" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/nanys-klozet-sale" data-track="entry:related">This Miami Blogger Is Hawking Her Favorite Street Style&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/street-style-jewelry-photos" data-track="entry:related"><img src="http://static2.refinery29.com/bin/entry/8b1/120x143/258946/opener.jpg" alt="opener" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/street-style-jewelry-photos" data-track="entry:related">Gem Dandies: 14 Snaps Of The Most Crush-Worthy Baubles In&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/do-division-street-style" data-track="entry:related"><img src="http://static2.refinery29.com/bin/entry/77e/120x143/257290/opener.jpg" alt="opener" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/do-division-street-style" data-track="entry:related">7 Street Style Snaps From Do Division Fest </a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/toronto-street-style" data-track="entry:related"><img src="http://static3.refinery29.com/bin/entry/1a2/120x143/257211/opener.jpg" alt="opener" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/toronto-street-style" data-track="entry:related">Oh, Canada! Toronto's Most Stellar Street Style</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/maureen-ukranian-village-street-style" data-track="entry:related"><img src="http://static1.refinery29.com/bin/entry/458/120x143/255220/maureen-mtalty-thumb.jpg" alt="Maureen_MTALTY-thumb" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/maureen-ukranian-village-street-style" data-track="entry:related">Street Style: Flirty Florals With A Bit Of Edge</a></h2>
+          </li>
+          
+        
+      
+                
+        
+      
+        
+    
+  </ul>
+
+  
+<div class="ad ad-related-stories-ccu" iframe-code="http://ad.doubleclick.net/adi/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=middle;tile=3;dcopt=;sz=300x251;" iframe-size="300x251"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=middle;tile=3;dcopt=;sz=300x251;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=middle;tile=3;dcopt=;sz=300x251;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=middle;tile=3;dcopt=;sz=300x251;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+
+</div>
+
+      <div id="comments">
+      <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    
+        var disqus_shortname = 'refinery'; // required: replace example with your forum shortname
+        var disqus_developer = 1;
+        var disqus_url = 'http://www.refinery29.com/4-cute-easy-model-off-duty-outfits-for-fall.php';
+        
+        $(function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('body')[0]).appendChild(dsq);
+        });
+        
+    </script>
+  
+</div>
+    </div>
+     
+
+					</div>
+            
+          <div class="col beta sidebar">
+            <!-- RIGHT -->
+                            
+                              
+                                  <!-- Signup -->
+<div class="widget" style="margin-bottom: 20px">
+   
+     
+  
+  
+  <a href="/signup/everywhere?source=sitearrow&amp;medium=organic" class="signup everywhere" alt="Sign Up Now!"></a>
+  <div class="fblike">
+    <fb:like href="http://www.facebook.com/refinery29" show_faces="false" width="220" height="28"></fb:like>
+  </div>
+</div>
+
+        				  
+                
+      				  
+                
+<div class="ad ad-sidebar-border" iframe-code="http://ad.doubleclick.net/adi/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;" iframe-size="300x250,300x600,300x1050"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+                
+                
+                                
+
+                                
+                
+                
+
+                
+                
+                                	<div class="m-o-m-widget">
+  <a href="/month-of-musts"><h3 class="headline">The Month of Summer Must-Haves</h3></a>
+      <div>
+    
+      
+      
+        <a href="/summer-must-haves-clutches"><img src="http://static1.refinery29.com/bin/entry/383/280x335/252887/opener-14.jpg" alt="Opener_14" width="280" height="335"  /></a>
+        
+    </div>
+      
+        
+</div>
+                
+
+                <!-- Connect Tools -->
+<div class="connect">
+	<h4>Follow R29</h4>
+	<div>
+		<a href="http://www.facebook.com/refinery29" class="fb"></a>
+		<a href="http://twitter.com/refinery29" class="twit"></a>
+		<a href="http://pinterest.com/refinery29/" class="pin"></a>
+		<a href="/index.xml" class="rss"></a>
+	</div>
+</div>
+
+                
+              
+              
+              
+              
+              
+              <!--Top Popular & Editor's Picks -->
+              
+              <!-- Top 5 Editor's Picks -->
+<div class="top-picks">
+  <div class="editors"></div>
+  <ul class="editors">
+          <li>
+      	<a href="/mature-fashion" data-track="top5:editors" class="title">
+	        <span><img src="http://static2.refinery29.com/bin/entry/574/60x70/266902/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					Chic Essentials 20- AND 40-Year-Olds Will Love
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/mature-fashion" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/fashion-muse-outfits" data-track="top5:editors" class="title">
+	        <span><img src="http://static3.refinery29.com/bin/entry/50c/60x70/258345/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					5 Iconic Muses, 5 Inspired Looks Perfect For Summer
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/fashion-muse-outfits" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/classic-fashion" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/public/2f2/60x70/254095/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					Update The Classics With These Modern Equivalents
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/classic-fashion" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/best-beach-bags" data-track="top5:editors" class="title">
+	        <span><img src="http://static3.refinery29.com/bin/entry/f57/60x70/245320/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					Hit The Beach With These All-Grown-Up Totes
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/best-beach-bags" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/sf-jewelry-designers" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/entry/019/60x70/237859/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					10 Rising Jewelry Stars To Put On Your Radar — Right Now!
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/sf-jewelry-designers" width="90"></fb:like>
+      </li>
+    
+        
+  </ul>
+</div>
+              
+                              <div class="r29tv">
+  <a href="http://www.refinery29.com/video"><img src="http://static3.refinery29.com/blog/675bda/images/widgets/r29tv-header.jpg" style="margin: 0pt auto; display: block;" alt="Refinery29 TV" /></a>               
+  
+  <div style="display:none"></div>
+  
+  <!--  Videos populated by 
+        Homepage & Index Page Right Rail Playlist in Brightcove Admin
+        Video Player with Horizontal Video List -->
+  
+  <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+  
+  <object id="myExperience" class="BrightcoveExperience">
+    <param name="bgcolor" value="#FFFFFF" />
+    <param name="width" value="300" />
+    <param name="height" value="340" />
+    <param name="playerID" value="1223625514001" />
+    <param name="playerKey" value="AQ~~,AAAAjP0iSQE~,RJXHfxnZT2gNv3dZGdjsA7BIfR73CLPe" />
+    <param name="isVid" value="true" />
+    <param name="isUI" value="true" />
+    <param name="dynamicStreaming" value="true" />
+    <param name="wmode" value="transparent" />
+  </object>
+  
+  <!-- 
+  This script tag will cause the Brightcove Players defined above it to be created as soon
+  as the line is read by the browser. If you wish to have the player instantiated only after
+  the rest of the HTML is processed and the page load is complete, remove the line.
+  -->
+  <script type="text/javascript">brightcove.createExperiences();</script>
+</div>
+              
+              
+              <!-- Top 5 Popular -->
+<div class="top-picks">
+  <div class="popular">
+    
+<div class="ad ad-top5" iframe-code="http://ad.doubleclick.net/adi/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=top;tile=6;dcopt=;sz=75x30;" iframe-size="75x30"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=top;tile=6;dcopt=;sz=75x30;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=top;tile=6;dcopt=;sz=75x30;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=top;tile=6;dcopt=;sz=75x30;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+  </div>
+  <ul>
+    <!-- CACHE 3f179 - ttl: 600 -->  
+              <li>
+        	<a href="/lingerie" class="title" data-track="top5:popular">
+	          <span><img src="http://static2.refinery29.com/bin/public/70e/60x70/264765/opener3.jpg" alt="opener3" width="60" height="70"  /></span>
+	          Pretty Underwear That's So Worth The Investment
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/lingerie" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/editor-picks-summer-2012" class="title" data-track="top5:popular">
+	          <span><img src="http://static2.refinery29.com/bin/entry/ba8/60x70/262364/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          Editors' Picks! What WE Want This Summer
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/editor-picks-summer-2012" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/bonnaroo-street-style" class="title" data-track="top5:popular">
+	          <span><img src="http://static3.refinery29.com/bin/entry/966/60x70/264285/opener-2-34.jpg" alt="opener-2-34" width="60" height="70"  /></span>
+	          12 Blockbuster Street Style Snaps From Bonnaroo
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/bonnaroo-street-style" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/mature-fashion" class="title" data-track="top5:popular">
+	          <span><img src="http://static2.refinery29.com/bin/entry/574/60x70/266902/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          Chic Essentials 20- AND 40-Year-Olds Will Love
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/mature-fashion" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/etsy-best-buys" class="title" data-track="top5:popular">
+	          <span><img src="http://static1.refinery29.com/bin/public/8ca/60x70/260781/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          Indie Love: 20 Etsy Buys We're Obsessing  
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/etsy-best-buys" width="90"></fb:like>
+        </li>
+      
+    <!-- /CACHE 3f179 - ttl: 600 -->
+  </ul>
+</div>
+              
+              <!-- CACHE d98d1 - ttl: 600 -->                <!-- Ad Editorial Module -->
+                
+                
+                <!-- Facebook Likes Widget -->
+<div class="facebook-likes">
+  <fb:like-box href="http://www.facebook.com/refinery29" width="300" height="255" show_faces="true" rows="1" stream="false" header="false"></fb:like-box>
+</div>
+<!-- /Facebook Widget -->
+                
+<!-- Reserve Widget -->
+  <div class="reserve-widget">
+    <a href="http://reserve.refinery29.com/" data-track="reserve_widget"><img src="http://static2.refinery29.com/blog/675bda/images/widgets/reserve-widget-header.png" width="300" height="auto" border="0" alt="Shop Now on Reserve" /></a>
+    <div class="subhead">Tailor-Made Deals. Get Them Now!</div>
+    <div class="ribbon pre"></div><div class="ribbon post"></div>
+    <ul>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/446/antipodes"  data-track="reserve_widget" class="less">
+	        <img src="//static1.refinery29.com/bin/deal/9cf/130x100/267351/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Glowing Summer Skin&hellip; Stat! The Must-Have Kit That&rsquo;ll Bust You Out Of Your Skin Rut</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/448/graham-and-spencer"  data-track="reserve_widget" class="less">
+	        <img src="//static1.refinery29.com/bin/deal/73e/130x100/267022/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">How To Succeed In Fashion Without Really Trying: Half-Off Fail-Proof Dresses, Shorts, And Tops</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/443/sweet-william"  data-track="reserve_widget" class="less">
+	        <img src="//static3.refinery29.com/bin/deal/df5/130x100/265994/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Cuteness Overload! Snag $40 To Shop Crazy-Precious Duds For Every Style-Setting Tot You Know</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/444/ettika"  data-track="reserve_widget" class="less">
+	        <img src="//static2.refinery29.com/bin/deal/a35/130x100/266181/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Save On The Stack-Happy, Rainbow-Bright Bracelets That Have Us Up In Arms</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/440/jay-godfrey"  data-track="reserve_widget" class="less">
+	        <img src="//static2.refinery29.com/bin/deal/d80/130x100/264763/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Jay Godfrey Wants You To Have A New Dress &mdash; Here are 71 Of &lsquo;Em To Steal For Less! </span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+    
+    </ul>
+  </div>
+ 
+                <!-- Street Style Widget -->
+<div class="street-fashion-widget">
+  <a href="/fashion/street-style/" class="header">Street Fashion</a>
+      <a href="/dogs-in-san-francisco">
+	    <span class="italic">Dog Stalking! Peep 14 Pretty Pups And Their Equally Adorable Owners</span>
+	    <span class="polaroid">
+	      <img src="http://static1.refinery29.com/bin/entry/718/158x190/263397/opener.jpg" alt="opener" width="158" height="190"  />
+	    </span>
+    </a>  
+  
+        
+</div>
+              <!-- /CACHE d98d1 - ttl: 600 -->
+                 
+              
+<div class="ad ad-sidebar" iframe-code="http://ad.doubleclick.net/adi/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=middle1;tile=7;dcopt=;sz=300x100;" iframe-size="300x100"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=middle1;tile=7;dcopt=;sz=300x100;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=middle1;tile=7;dcopt=;sz=300x100;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/street-style/;s1=street-style;s2=;sponsorship=;pagetype=entry;test=;pageid=4-cute-easy-model-off-duty-outfits-for-fall;tags=;pos=middle1;tile=7;dcopt=;sz=300x100;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+              
+            
+          </div>
+          
+          <div class="clear"></div>
+          <!-- CACHE 787e3 - ttl: 300 -->            <!-- Footer @More Stories -->
+<div class="footer-boxes">
+  <div class="hot-dimple">More Style At Your Fingertips</div>
+	<ul>
+    
+    <li>
+      <div>
+        <a href="/weddings" data-track="hotspot:footer-more:weddings">
+                      <img src="http://static2.refinery29.com/blog/675bda/images/collections/footer/weddings.jpg" width="120" height="143">
+            <span class="more_h2 footer_h2">Inspiration, Style Ideas, & Essentials For The Eternally Cool Bride</span>
+          
+        </a>
+				<div>
+					<a href="/weddings" class="category" data-track="hotspot:footer-more:weddings">Weddings</a>
+				</div>
+      </div>
+    </li>
+					<li>
+				<div> 
+  				<a href="/editor-picks-summer-2012" data-track="hotspot:footer-more">
+  					<img src="http://static2.refinery29.com/bin/entry/061/120x143/262364/opener.jpg" alt="opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">Editors' Picks! What WE Want This Summer</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/editor-picks-summer-2012#disqus_thread" data-url="http://www.refinery29.com/editor-picks-summer-2012" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/fashion/shopping" class="category" data-track="hotspot:footer-more">Shopping</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/how-to-color-block" data-track="hotspot:footer-more">
+  					<img src="http://static2.refinery29.com/bin/entry/098/120x143/260898/opener.jpg" alt="opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">5 Genius Steps To Colorblocking Perfection  </span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/how-to-color-block#disqus_thread" data-url="http://www.refinery29.com/how-to-color-block" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/how-to/styling-tips" class="category" data-track="hotspot:footer-more">Styling Tips</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/hairstyles-2012" data-track="hotspot:footer-more">
+  					<img src="http://static1.refinery29.com/bin/entry/567/120x143/251803/hairstyles-2012-opener.jpg" alt="hairstyles-2012-opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">8 Gorgeous, New Summer 'Do How-Tos</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/hairstyles-2012#disqus_thread" data-url="http://www.refinery29.com/hairstyles-2012" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/beauty/hair" class="category" data-track="hotspot:footer-more">Hair</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/summer-wardrobe-essentials" data-track="hotspot:footer-more">
+  					<img src="http://static1.refinery29.com/bin/entry/e59/120x143/238922/0-30-summer-essentials-opener.jpg" alt="0_30-summer_essentials_opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">30 Summer Wardrobe Musts: Collect 'Em All!</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/summer-wardrobe-essentials#disqus_thread" data-url="http://www.refinery29.com/summer-wardrobe-essentials" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/fashion/shopping" class="category" data-track="hotspot:footer-more">Shopping</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/summer-outfits" data-track="hotspot:footer-more">
+  					<img src="http://static1.refinery29.com/bin/public/a86/120x143/230820/opener.jpg" alt="Opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">Fashion Math! We Add Up 9 Foolproof Outfits</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/summer-outfits#disqus_thread" data-url="http://www.refinery29.com/summer-outfits" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/how-to/what-to-wear" class="category" data-track="hotspot:footer-more">What To Wear</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+        
+	</ul> 
+</div>
+          <!-- /CACHE 787e3 - ttl: 300 -->
+          
+
+        </div> <!-- /Content -->
+    
+        <!-- Footer -->
+<div id="footer">
+  <img src="http://static2.refinery29.com/blog/675bda/images/refinery29-logo.png" width="200" height="24" alt="Refinery29" />
+
+	<p><strong>&copy;2012 Refinery29. All Rights Reserved.</strong></p>
+	<ul>
+		<li><a href="/">Home</a> | </li>
+		<li><a href="http://www.refinery29.com/about">About</a> | </li>
+				<li><a href="http://www.refinery29.com/about">Contact</a> | </li>
+		
+		<li><a href="http://www.refinery29.com/careers">Careers</a> | </li>
+		<li><a href="http://www.refinery29.com/about">Advertise</a> | </li>
+		<li><script type="text/javascript">
+<!--
+document.write(String.fromCharCode(60,97,32,104,114,101,102,61,34,109,97,105,108,116,111,58,102,101,101,100,98,97,99,107,64,114,101,102,105,110,101,114,121,50,57,46,99,111,109,34,32,99,108,97,115,115,61,39,101,109,97,105,108,39,62,71,111,116,32,65,32,84,105,112,63,60,47,97,62));
+-->
+</script> | </li>
+		<li><a href="http://www.refinery29.com/signup/everywhere?source=footer&medium=organic">Sign Up</a> | </li>
+		  		<li><a href="http://www.refinery29.com/privacy">Privacy Policy</a> | </li>
+  		<li><a href="http://www.refinery29.com/terms-and-conditions">Terms and Conditions</a> | </li>
+		
+		<li><a href="http://the-rig.refinery29.com">The Rig</a> | </li>
+		<li><a href="http://www.refinery29.com/index.xml">RSS</a></li>
+	</ul>
+	
+	
+	<div id="mobile-link"><a href="/?mobile=true">Refinery29 Mobile</a></div>
+	
+</div>
+
+<!-- To make sure these fonts load! -->
+<div class="font-loader">
+  <span class="proximanovaregular">A</span>
+  <span class="proximanovabold">B</span>
+  <span class="opensansbold">C</span>
+  <span class="opensansitalic">D</span>
+  <span class="opensanslight">E</span>
+  <span class="opensansregular">F</span>
+  <span class="opensanssemibold">G</span>
+  <span class="opensanssemibolditalic">H</span>
+  <span class="raleway">I</span>
+</div>
+                
+      </div> <!-- /Inner -->
+      
+    </div> <!-- /Container -->
+
+    <!-- Comscore -->
+<script type="text/javascript">
+  var r29cookie = document.cookie;
+  var val;
+  
+  if (r29cookie.indexOf("r29comstore=") != -1)
+   {
+      i = r29cookie.indexOf("r29comstore=");
+      s = r29cookie.substring(i + 12);
+      j = s.indexOf(";");
+      if (j == -1)
+      {
+          val = s;
+      }
+      else {
+          val = s.substring(0, j);
+      }
+  } else {
+      val = Math.floor(Math.random() * 12345678);
+      var date = new Date();
+      date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+      document.cookie = 'r29comstore=' + val + '; expires=' + date.toGMTString() + '; path=/';
+  }
+  
+  var currentUrl = self.location.url;
+  document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb": "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+
+</script>
+<script type="text/javascript"> 
+  COMSCORE.beacon({ c1:2, c2:"7395029",c3:"www.refinery29.com", c4:currentUrl, c5:"", c6:"", c15: val });
+</script>
+<noscript>
+  <img src = "http://b.scorecardresearch.com/p?c1=2&amp;c2=7395029&amp;c3=www.refinery29.com&amp;c4=http://www.refinery29.com/&amp;c5=&amp;c6=&amp;c15=C67BD3C1&amp;cj=1" alt="Comscore" />
+</noscript>
+<!-- /Comscore -->
+<!-- Google Analytics -->
+<script type="text/javascript">
+  
+  var _gaq = _gaq || [];
+    
+  // break up host into app, subdomain and tld
+  var tmp = /^([^\.]+\.)([\w\.]+)?(refinery29|rf29)\.(\w+)(:\d+)?$/.exec(window.location.host.toLowerCase()),
+    
+      // application
+      app = tmp[1] ? tmp[1] : 'www',
+      
+      // subdomain
+      sub = tmp[2] ? tmp[2] : '',
+      
+      // domain
+      dom = tmp[3] ? tmp[3] : 'refinery29',
+
+      // top level domain
+      tld = tmp[4] ? tmp[4] : 'com';
+  
+  _gaq.push(['_setAccount', 'UA-315022-1']);
+  
+  _gaq.push(['_setDomainName', '.'+dom+'.' + tld]);
+
+  
+  
+  _gaq.push(['_setCustomVar',
+    1,                   // This custom var is set to slot #1.  Required parameter.
+    'Category',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'fashion\/street-style', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+   
+   
+  _gaq.push(['_setCustomVar',
+    2,                   // This custom var is set to slot #2.  Required parameter.
+    'Publication Date',     // The name acts as a kind of category for the user activity.  Required parameter.
+    '2010-10-08', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  
+  
+  _gaq.push(['_setCustomVar',
+    3,                   // This custom var is set to slot #3.  Required parameter.
+    'Author',// The name acts as a kind of category for the user activity.  Required parameter.
+    'Christene Barberich, Altamira, Piera Gelardi', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  _gaq.push(['_setCustomVar',
+    4,                   // This custom var is set to slot #4.  Required parameter.
+    'Entry Type',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'ARTICLE', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+
+   
+  _gaq.push(['_setCustomVar', //USE THIS  R29.cookie.get('R29_UID');
+    5,                   // This custom var is set to slot #5.  Required parameter.
+    'Log-in Status',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'Not Logged In', // This value of the custom variable.  Required parameter.
+    2                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+   
+  _gaq.push(['_trackEvent',
+    'Navigation Click', // category of activity
+    $(this).attr('data-track'),
+    'new-york:street-style:', // Action
+    ,
+    true
+  ]);
+  
+  R29.tracking.outbound();
+  
+  _gaq.push(['_trackPageview']);
+   
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- /Google Analytics -->
+
+<!-- Quantcast -->
+<script type="text/javascript">
+_qoptions={ qacct:"p-fesXMHo90Ka_A" };
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+  <img src="http://pixel.quantserve.com/pixel/p-fesXMHo90Ka_A.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- /Quantcast -->
+    <div id="js-cont"></div> 
+
+<!-- Facebook -->
+<div id="fb-root"></div> 
+<script type="text/javascript">
+
+  window.fbAsyncInit = function() {
+  
+    FB.init({ appId: '155023867867753', status: true, cookie: true, xfbml: false});
+    
+    /* Check if the user is NOT logged into R29, but IS logged into Facebook.  Fix it */
+    if (R29.url.param.getVar('fb') && !R29.user.token() && FB.getSession()) { //We have some sort of session, we *may* be logged in.
+      FB.getLoginStatus(function(response) {
+        if(response.status == 'connected') {
+          return document.location = 'https://welcome.refinery29.com/register?from=http%3A%2F%2Fwww.refinery29.com%2F4-cute-easy-model-off-duty-outfits-for-fall&amp;sig=062b4&amp;app=blog&amp;fb=1';
+        }    
+      });      
+    }
+        
+    //FACEBOOK LOGIN
+    $('a.fb_button, a.r29_fb_button').live('click', function() {
+      R29.FBLoginPopup();
+      return false;
+    });
+    
+    if (typeof window.fbAsyncOnInit == "function") {
+      window.fbAsyncOnInit();
+    }
+    
+    /* GOOGLE ANALYTICS */
+
+    FB.Event.subscribe('edge.create', function(targetUrl, fb_ref) {
+    	if (fb_ref._attr.ref == "homepage"){
+    		_gaq.push(['_trackEvent', 'FacebookIndex', 'like']);
+    	}
+    	else if (fb_ref._attr.ref == "entrypage"){
+    		_gaq.push(['_trackEvent', 'FacebookSolo', 'like']);
+    	}
+    	else if (fb_ref._attr.ref == "sidebar"){
+    		_gaq.push(['_trackEvent', 'FacebookSidebar', 'like']);
+    	}
+      _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
+    });
+    
+    FB.Event.subscribe('edge.remove', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'unlike', targetUrl]);
+    });
+    
+    FB.Event.subscribe('message.send', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'send', targetUrl]);
+    });
+    
+       
+  };
+  
+  R29.FBLoginPopup = function () {
+
+    FB.login(function(response) {
+    
+      if (response.session) {
+        //They *may* have given us perms, but who knows.
+        return document.location = 'https://welcome.refinery29.com/connect/fb?from=http%3A%2F%2Fwww.refinery29.com%2F4-cute-easy-model-off-duty-outfits-for-fall&amp;sig=062b4&amp;app=blog&amp;fb=1';
+      } else {
+        //Oh well, something is wrong, let's try the normal login
+        return document.location = 'https://welcome.refinery29.com/register?from=http%3A%2F%2Fwww.refinery29.com%2F4-cute-easy-model-off-duty-outfits-for-fall&amp;sig=062b4&amp;app=blog&amp;fb=1';
+      }
+      
+     },{ scope: 'email,offline_access,publish_stream,publish_actions' } );
+  }
+  
+  
+</script>
+
+<script type="text/javascript">
+  //
+  
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</script>
+<!-- /Facebook -->
+
+<!-- Twitter -->
+<script type="text/javascript">
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+
+  
+  //START GOOGLE ANALYTICS TWITTER TRACKING
+  function trackTwitter(intent_event) {
+    if (intent_event) {
+      var opt_pagePath;
+      if (intent_event.target && intent_event.target.nodeName == 'IFRAME') {
+            opt_target = extractParamFromUri(intent_event.target.src, 'url');
+      }
+      _gaq.push(['_trackSocial', 'twitter', 'tweet', opt_pagePath]);
+    }
+  }
+
+  //Wrap event bindings - Wait for async js to load
+  twttr.ready(function (twttr) {
+    //event bindings
+    twttr.events.bind('tweet', trackTwitter);
+  });
+  
+	function extractParamFromUri(uri, paramName) {
+	  if (!uri) {
+	    return;
+	  }
+	  var regex = new RegExp('[\\?&#]' + paramName + '=([^&#]*)');
+	  var params = regex.exec(uri);
+	  if (params != null) {
+	    return unescape(params[1]);
+	  }
+	  return;
+	}
+	//END GOOGLE ANALYTICS TWITTER TRACKING
+
+</script>
+<!-- /Twitter -->
+
+<!-- Pinterest -->
+  <script type="text/javascript">
+  (function() {
+      window.PinIt = window.PinIt || { loaded:false };
+      if (window.PinIt.loaded) return;
+      window.PinIt.loaded = true;
+      function async_load(){
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          if (window.location.protocol == "https:")
+              s.src = "https://assets.pinterest.com/js/pinit.js";
+          else
+              s.src = "http://assets.pinterest.com/js/pinit.js";
+          var x = document.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(s, x);
+      }
+      if (window.attachEvent)
+          window.attachEvent("onload", async_load);
+      else
+          window.addEventListener("load", async_load, false);
+  })();
+  </script>
+<!-- /Pinterest -->
+
+
+<!-- Disqus -->
+
+<script type="text/javascript">
+  var disqus_shortname = 'refinery';
+  var disqus_developer = 1;
+  
+
+var DISQUSWIDGETS;
+var disqus_domain;
+var disqus_shortname;
+if (typeof DISQUSWIDGETS == "undefined") {
+    DISQUSWIDGETS = (function () {
+        var d = {},
+            a = (document.getElementsByTagName("HEAD")[0] || document.getElementsByTagName("BODY")[0]),
+            c = 0,
+            f = {},
+            e = {
+                identifier: 1,
+                url: 2,
+                slug: 3
+            };
+
+        function b(i) {
+            var h, k;
+
+            function j(l) {
+                return i.hasAttribute ? i.hasAttribute(l) : i.getAttribute(l) !== null
+            }
+            
+            if (j("data-disqus-identifier")) {
+                h = e.identifier;
+                k = i.getAttribute("data-disqus-identifier")
+            } else {
+            
+                if (j("data-url")) {
+                    h = e.url;
+                    k = i.getAttribute("data-url")
+                } else if (j("data-disqus-slug")) {
+                    h = e.slug;
+                    k = i.getAttribute("data-disqus-slug")
+                } else {
+                    h = e.url;
+                    k = i.href.replace("#disqus_thread", "")
+                }
+                
+            }
+            f[c++] = {
+                element: i,
+                type: h,
+                value: k
+            }
+        }
+        function g(k) {
+            var j = document.getElementsByTagName("A");
+            for (var h = 0; h < j.length; h++) {
+                if (j[h].href.indexOf("#disqus_thread") >= 0) {
+                    k(j[h])
+                }
+            }
+        }
+        d.domain = "disqus.com";
+        d.forum = "";
+        d.getCount = function () {
+            var m, h, k, j;
+            var l = [],
+                o = 0,
+                i = 10;
+
+            function n(q, p) {
+                return encodeURIComponent(q) + "=" + encodeURIComponent(p.type) + "," + encodeURIComponent(p.value)
+            }
+            g(b);
+            for (m in f) {
+                if (f.hasOwnProperty(m)) {
+                    l.push(n(m, f[m]))
+                }
+            }
+            k = l.slice(o, i);
+            while (k.length > 0) {
+                j = document.createElement("script");
+                j.type = "text/javascript";
+                j.async = true;
+                j.src = "http://" + d.domain + "/forums/" + d.forum + "/count.js?q=1&" + k.join("&");
+                a.appendChild(j);
+                o += 10;
+                i += 10;
+                k = l.slice(o, i)
+            }
+        };
+        d.displayCount = function (j) {
+            var m, h, n, l;
+            for (var k = 0; k < j.counts.length; k++) {
+                m = j.counts[k];
+                h = f[m.uid];
+                if (h) {
+                    if (m.comments === 0) {
+                        n = j.text.comments.zero
+                    } else {
+                        if (m.comments == 1) {
+                            n = j.text.comments.one
+                        } else {
+                            n = j.text.comments.multiple
+                        }
+                    }
+                    l = n.replace("{num}", m.comments);
+                    if (j.showReactions) {
+                        n = "";
+                        if (m.reactions === 0) {
+                            n = j.text.reactions.zero
+                        } else {
+                            if (m.reactions == 1) {
+                                n = j.text.reactions.one
+                            } else {
+                                n = j.text.reactions.multiple
+                            }
+                        }
+                        if (n !== "") {
+                            l += " " + j.text.and + " " + n.replace("{num}", m.reactions)
+                        }
+                    }
+                    h.element.innerHTML = l
+                }
+            }
+        };
+        return d
+    }())
+}(function () {
+    if (typeof disqus_domain != "undefined") {
+        DISQUSWIDGETS.domain = disqus_domain
+    }
+    DISQUSWIDGETS.forum = disqus_shortname;
+    DISQUSWIDGETS.getCount()
+}());
+
+ 
+  
+</script>
+
+<!-- /Disqus -->
+
+<!-- R29 Schtufff -->
+<script type="text/javascript">
+
+$(function() {
+
+  // Variables
+  var tabs = $('div.top-five > ul > li');
+  var top5 = $('div.top-five > div');
+    
+  // On Click
+  $(tabs).click(function() {
+    
+    $(tabs).removeClass("active");
+    $(this).addClass("active");
+    
+    $(top5).hide();
+    var activeTab = $(this).find("a").attr("href");
+    $(activeTab).show();
+    
+    return false;
+  });
+  
+  
+  // Hot Carousel
+  $("#hot-carousel li").show();
+  $("#hot-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  auto: 6,
+  itemFallbackDimension: 280,
+  initCallback: 
+  function (carousel) {
+    $('.control div.slide-btn', carousel.container).bind('click', function() {
+      carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_id')));
+      $('.control div',carousel.container).removeClass('selected');
+      $(this).addClass('selected');
+      return false;
+    });
+    $('.control div.next', carousel.container).bind('click', function() {
+      carousel.next();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+    $('.control div.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+  },
+  itemVisibleInCallback: function(carousel, item, idx, state) {
+    $('.control div',carousel.container).removeClass('selected');
+    $('.control div[image_id='+idx+']',carousel.container).addClass('selected');  
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+
+  // Category Carousel
+  
+  $("#category-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  itemFallbackDimension: 562,
+  initCallback: 
+  function (carousel) {
+    $('.control a.next', carousel.container).bind('click', function() {
+      carousel.next();
+      return false;
+    });
+    $('.control a.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      return false;
+    });
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+  
+  // Hot Category Carousel
+  $("#category-hot-carousel li").show();
+  $("#category-hot-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  auto: 6,
+  itemFallbackDimension: 608,
+  initCallback: 
+  function (carousel) {
+    $('.control div.slide-btn', carousel.container).bind('click', function() {
+      carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_id')));
+      $('.control div',carousel.container).removeClass('selected');
+      $(this).addClass('selected');
+      return false;
+    });
+    $('.control div.next', carousel.container).bind('click', function() {
+      carousel.next();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+    $('.control div.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+  },
+  itemVisibleInCallback: function(carousel, item, idx, state) {
+    $('.control div',carousel.container).removeClass('selected');
+    $('.control div[image_id='+idx+']',carousel.container).addClass('selected');  
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+
+
+  // Related Videos Carousel
+  
+/*
+  $("#video-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  itemFallbackDimension: 562,
+  initCallback: 
+  function (carousel) {
+    $('.control img.next', carousel.container).bind('click', function() {
+      carousel.next();
+      return false;
+    });
+    $('.control img.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      return false;
+    });
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+*/
+  
+  //You know where the bottom line of the container shows while the page is loading, I hate it
+  $('#container .inner').css('border-bottom', '1px solid #ccc');
+  
+});
+
+</script>
+
+    <script type="text/javascript">
+  
+  var _chartbeat_loaded = false;
+  
+  $(function() {
+   
+    if (_chartbeat_loaded) return; 
+    
+    _chartbeat_loaded = true;
+    
+    var _sf_async_config={ uid:3552,domain:"refinery29.com" };
+    R29.remote.include_js("//a248.e.akamai.net/chartbeat.download.akamai.com/102508/js/chartbeat.js");
+      
+  });
+</script>
+          <!-- Crazy Egg -->
+<script type="text/javascript" src="//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/5055.js"></script>
+<!-- /Crazy Egg -->
+    
+          <!-- ClickTale -->
+<div id="ClickTaleDiv" style="display: none;"></div>
+<script type="text/javascript" src="http://static1.refinery29.com/blog/675bda/js/clicktale/WRc5.js"></script>
+<script type="text/javascript">
+  var ClickTaleSSL=1;var ClickTaleCookieDomain='.refinery29.com';
+  if(typeof ClickTale=='function') ClickTale(1528,0.0006+0,"www08");
+</script>
+<!-- /ClickTale -->  
+    
+    
+    <!-- Internal Stats -->
+<script type="text/javascript">
+
+      R29_STAT_DATA = $.extend({ app:'blog' },R29.url.param.getUTM());
+  
+  
+  try {
+    R29.stats.send([['user_page_load',R29_STAT_DATA, ((new Date()).getTime() - _sf_startpt)]]);
+  } catch (e) { };
+      
+</script>
+<!-- /Internal Stats -->
+    
+    
+    
+    
+    <script type="text/javascript">
+     try {
+        R29.stats.send([['user_page_view',{
+          app:  'blog',
+          page: 'entry',
+          entry_type: 'ARTICLE',
+          entry_id: 11856, 
+          market_id: 1, 
+          category_id: [704,701,1], 
+          author_id: [15,427,12]
+        }]]);
+        
+        
+      } catch (e) { };
+    </script> 
+    
+    
+    
+          <!-- Sailthru Horizon --> 
+      <script type="text/javascript">
+        (function() {
+          var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+          s.src = ('https:'==location.protocol?'https://d1gp8joe0evc8s.cloudfront.net':'http://cdn.sail-horizon.com')+'/horizon/v1.js';
+          var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+      </script>
+      <script type="text/javascript">
+        $(window).load(function() {
+          Sailthru.setup({
+            domain: 'horizon.refinery29.com',
+            tags: "cute-outfits,easy-outfits,model-off-duty-style,saks-fifth-avenue,barneys-new-york,marc-by-marc-jacobs,knit-turtleneck-dress,karen-millen,silk-scarf,ralph-lauren-turquoise,stylebop,skinny-jeans,urban-outfitters,nordstrom,marc-jacobs,lip-colour,cute-model,dolce-vita,floral-dress,tough-girl,arend,old-favorites,leggings,street-fashion,fashion,los-angeles,everywhere,new-york,the-perfect-outfit,shopping-and-sales,shopping-and-sales",
+            cookieDomain: '.refinery29.com'
+          });
+        });
+      </script>
+    
+
+
+  </body>
+<!-- Served in 431ms by web03.prod.rf29.net at Thu, 14 Jun 2012 16:56:43 -0400 -->
+</html>

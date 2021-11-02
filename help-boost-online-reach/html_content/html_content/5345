@@ -1,0 +1,649 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<!--<title>About the Uniform Project</title>-->
+		<title>Not Just Another Dress &laquo;  The Uniform Project Blog</title>
+		<link rel="icon" type="image/gif" href="/images/favicon.ico">
+		<link rel='stylesheet' type='text/css' href='/css/up_blog.css' />
+		<link rel='stylesheet' type='text/css' href='/css/menu.css' />
+		<link rel="alternate" type="text/xml" title="RSS 2.0" href="/home/feed"/>
+		
+
+		<!--[if IE 7]><style type="text/css" media="all">@import "/css/ie7.css";</style><![endif]-->		
+		<link rel='stylesheet' type='text/css' href='/css/up_blog_about.css' />
+		<style type="text/css">
+			ul#about_list li#project_statement{
+				background-image: url('../images/about_menu_arrow.png');
+				background-repeat: no-repeat;
+				background-position:0 12px;
+			}
+
+			ul#about_list li#project_statement a{
+				color:black;
+			}
+		</style>
+		<script type='text/javascript' src='/js/jquery-1.3.2.min.js'></script> 
+		<script type='text/javascript' src='/js/jquery.numberformatter-1.1.2.min.js'></script> 
+		<script type='text/javascript' src='/js/jquery.timers-1.2.js'></script> 
+		<script type="text/javascript"> 
+			  var _gaq = _gaq || [];
+			  _gaq.push(['_setAccount', 'UA-16609317-1']);
+			  _gaq.push(['_trackPageview']);
+
+			  (function() {
+			    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			  })();
+		</script> 
+		<script type="text/javascript"> 
+			function getDonations() {
+				$.getJSON("http://www.theuniformproject.com//service/donations?_callback=?",
+					function(data) {
+						//alert("total: " + data.total + ", kids: " + data.kids);
+						$ ("#money_total").html(data.total).format({format:"$#,###,###"});
+						$("#kids_total").html(data.kids).format({format:"#,###,###"});
+					}
+				);
+			}
+			$(document).ready(function() {
+				getDonations();
+				$(document).everyTime("30s", getDonations);
+			});
+		</script>
+		<!--[if IE 7]><style type="text/css" media="all">@import "/css/ie7_about.css";</style><![endif]-->
+	</head>
+	<body>
+		<div id="menu_encap">
+			<div class="up_navigation">
+				<ul>
+
+					<li>
+						<a href="http://theuniformproject.com/pilots">Pilots</a>
+					</li>
+					<li>
+						<a href="http://theuniformproject.com/about">About</a>
+					</li>
+					<li class="up_current_page">
+						<a href="http://theuniformprojectblog.com">Blog</a>
+
+					</li>
+					<li>
+						<a href="https://theuniformproject.com/store">Store</a>
+					</li>
+					<li>
+						<a href="http://theuniformproject.com/sponsor">Sponsor a Cause</a>
+					</li>
+					<li>
+
+						<a href="http://theuniformproject.com/diy">Do It Yourself</a>
+					</li>
+					<li>
+						<a href="http://theuniformproject.com/year1">Year 1</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="content">
+						<div id="left_nav">
+				
+				<!--
+				<div id="dailies"><a href="http://theuniformproject.com/home/daily.html"><img src="http://theuniformproject.com/images/dot.png" border="0"/>View Dailies</a></div>
+				<div class="left_category"><a href="http://theuniformproject.com/home/monthly.html"><img src="/images/dot.png" border="0"  style="margin-right:13px"/>View By Month</a></div>
+
+				<div id="left_category_donate">
+				  The funds raised from this project go to the Akanksha Foundation for the education of underprivileged children in India.
+				  <br/>
+				  <a href="http://theuniformproject.com/home/donate.html"><img src='/images/make_a_donation__v1245866280004.png' border='0' id="make_a_donation_img"/></a>
+				</div>
+
+				<div class="left_category" style="margin-top:47px"><img src='/images/rss__v1245866280004.png' border='0'/><a href="http://theuniformproject.com/home/feed.rss">RSS Feed</a></div>
+				<div class="left_category"><img src='/images/twitter__v1245866280004.png' border='0'/><a href="http://twitter.com/uniformproject">Follow On Twitter</a></div>
+				<div class="left_category"><img src='/images/fb__v1245866280004.png' border='0'/><a href="http://www.facebook.com/pages/The-Uniform-Project/143115358195">Join Facebook Fan Page</a></div>
+				<div class="left_category"><img src="/images/Vimeo_Icon.jpg" border='0'/><a href="http://theuniformproject.com/home/trailer.html">Watch U.P Trailer</a></div>
+				<div class="left_category"><img src="/images/envelope_Icon.jpg" border='0'/><a href="http://theuniformproject.com/home/subscribe.html">Get Email Updates</a></div>
+				<div class="left_category">&nbsp;</div>
+				<div class="left_category"><img src="/images/flower_icon.jpg" border='0'/><a href="http://theuniformprojectblog.com/annoucements/in-memory-of-jerry-fuchs">In Memory of Jerry Fuchs</a></div>
+				-->
+				<br/>
+				<br/>
+				<div class="left_category"><img src='/images/twitter__v1245866280004.png' border='0'/><a href="http://twitter.com/uniformproject">Twitter</a></div> 
+				<div class="left_category"><img src='/images/fb__v1245866280004.png' border='0'/><a href="http://www.facebook.com/pages/The-Uniform-Project/143115358195">Facebook Fanpage</a></div> 
+				<div class="left_category"><img src='/images/Vimeo_Icon.jpg' border='0'/><a href="http://www.theuniformproject.com/home/trailer.html">U.P Trailer</a></div> 
+				<div class="left_category"><img src='/images/Vimeo_Icon.jpg' border='0'/><a href="http://vimeo.com/11113046">U.P Picture Book</a></div> 
+				<div class="left_category"><img src='/images/envelope_Icon.jpg' border='0'/><a href="http://www.theuniformproject.com/home/subscribe.html">Subscribe to U.P</a></div> 
+				<div class="left_category"><img src='/images/envelope_Icon.jpg' border='0'/><a href="mailto:hello@theuniformproject.com">Contact Us</a></div> 
+			</div>
+
+	<div id="main">
+			
+		<div id="header_ad"><img src="/images/up-blog-header.gif" alt="U.P. Blog" /></div>
+		
+					<div id="about_body_container">
+
+	
+<h2 class="pagetitle"><a href="/">Blog Home</a> >  <span style="color:grey"><a href="http://theuniformprojectblog.com/category/dress-for-sale" title="View all posts in Dress for sale" rel="category tag">Dress for sale</a> > Not Just Another Dress</h2>
+
+
+		<div class="post-2983 post type-post hentry category-dress-for-sale" id="post-2983">
+				<span class="date" style="color:grey;display:block;margin-bottom:3px"> July 26th, 2010</span>
+			<h2>Not Just Another Dress</h2>
+
+			<div class="entry">
+				<p>We believe the only way to create a sizable and meaningful shift in consumption is to design products that are not only ethically sound, but also beautiful, imaginative, and inspiring. Hence we give you the new U.P LBD and our thoughts behind it.</p>
+<p><a href="https://theuniformproject.com/store"><img class="alignleft size-full wp-image-2998" title="Photo1" src="http://theuniformprojectblog.com/wp-content/uploads/2010/07/Photo1.jpg" alt="" width="500" height="670" /></a></p>
+<p><span style="color: #000000;"><strong><span style="color: #000000;">Turn Uniformity on its Head</span></strong></span></p>
+<p>With the help of our new inhouse fashion expert Tara St. James, we designed this dress keeping in mind what we think a staple design should be: versatile, yet basically simple. It is a classic A-line silhouette which is flattering to all body types. Take a minute to click-through our <a href="https://theuniformproject.com/index.html?section=store" target="blank">Look Book</a> at the store, where you can see Sheena and our friends, Aki, Laetitia, Janine, Mebrak, Jessica, Lainie, Siri and Slim, who donated a very hot and steamy Sunday to strike some poses in the dress. They all brought their own favorite accessories and put together some killer looks, sans stylist. With Sheena snapping away behind the camera, the shoot was fun and effortless, with the shots capturing the style and spirit that always comes with wearing a U.P dress!</p>
+<p><a href="https://theuniformproject.com/store"><img class="alignleft size-full wp-image-2999" title="LBDPhotos" src="http://theuniformprojectblog.com/wp-content/uploads/2010/07/LBDPhotos.jpg" alt="" /></a></p>
+<p>We approach each U.P release as a study in sustainable production. We&#8217;re carefully looking into every aspect of the design process that in turn impacts quality, footprint, durability and affordability. We plan to continue our exploration of new fibers and yarns as we learn more through practice. With this release, it was one of our goals to develop our own ideal fabric, so we decided to go to the source of the fiber. Since the range of eco-friendly fabrics developed in the US is very limited, we sourced the fiber in India where we were able to blend native silk with locally grown organic cotton and have them spun and woven. The result is a gorgeous, medium weight fabric in a 75% organic cotton and 25% silk blend.</p>
+<p>_____________________________________________________________</p>
+<p><strong><span style="color: #000000;">Make Your Own</span></strong></p>
+<p>We also believe that how this dress is made should be as versatile as the dress itself, so we are releasing the pattern to put the dress in your hands. Take it to your local tailor for a bespoke version, sew it yourself if you are handy with a presser foot, or even ask Grandma to make you one or two. If you feel like changing the pattern a bit, go for it, you can lengthen just about anywhere, adjust to your exact body measurements, make it in any color, print, and weave that you like. Or, you can purchase our proprietary fabric with the pattern for an identical match to the dresses we&#8217;re making.</p>
+<p><a href="https://theuniformproject.com/index.html?section=store&amp;item=pattern"><img class="alignleft size-full wp-image-3002" title="pattern" src="http://theuniformprojectblog.com/wp-content/uploads/2010/07/pattern.jpg" alt="" width="500" height="373" /></a></p>
+<p>Each U.P product is conceived as part of a charitable mission, this time we&#8217;re keeping with our fundraiser from year 1, and continuing to donate 10% of retail sales to the <a href="http://akanksha.org" target="_blank">Akanksha Foundation</a>, who provide education to underprivileged children in India. When you buy this dress you will be supporting our cause, and adding a versatile staple to your wardrobe. Let it be your personal styling canvas. Wear it over and over, again and again and join us in changing our world one outfit at a time.</p>
+<p><a href="http://theuniformproject.com/store"><img class="alignleft size-full wp-image-3006" title="GetTheDress" src="http://theuniformprojectblog.com/wp-content/uploads/2010/07/GetTheDress.jpg" alt="" width="152" height="59" /></a><a href="https://theuniformproject.com/index.html?section=store&amp;item=pattern"><img class="alignleft size-full wp-image-3016" title="MakeYourOwn" src="http://theuniformprojectblog.com/wp-content/uploads/2010/07/MakeYourOwn1.jpg" alt="" width="265" height="59" /></a></p>
+
+								
+	
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">27 Responses to &#8220;Not Just Another Dress&#8221;</h3>
+<hr/>
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+<div style="width:500px">
+	<ol class="commentlist" style="width:500px">
+			<li class="comment even thread-even depth-1" id="comment-1220">
+				<div id="div-comment-1220" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://radmephit.blogspot.com/' rel='external nofollow' class='url'>EmilyKennedy</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1220">
+			July 26, 2010 at 6:27 pm</a>		</div>
+
+		<p>Wow! My eyes welled up seeing this post! It&#8217;s so amazing that you are posting the pattern! And the Tara St. James design is divine. The details really make this!</p>
+<p>Also, your models are EXCELLENT. LOVE.</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1221">
+				<div id="div-comment-1221" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://sarahplusparis.blogspot.com' rel='external nofollow' class='url'>s.</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1221">
+			July 26, 2010 at 6:53 pm</a>		</div>
+
+		<p>this is wonderful.<br />
+all those shots are gorgeous (love the lady rocking the guitar) and it&#8217;s brave and awesome that you are letting the pattern out into the world.<br />
+much love,<br />
+s.</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="pingback even thread-even depth-1" id="comment-1222">
+				<div id="div-comment-1222" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://singsurfknit.wordpress.com/2010/07/26/up-day-5-geek-chic/' rel='external nofollow' class='url'>UP Day 5 Geek Chic &laquo; Sing Surf Knit (SSK)</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1222">
+			July 26, 2010 at 6:56 pm</a>		</div>
+
+		<p>[...] connection: The Uniform Project has just released a new iteration of the LBD in a slightly different fabric AND the pattern! Buyers [...]</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1223">
+				<div id="div-comment-1223" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://www.brokensaints.wordpress.com' rel='external nofollow' class='url'>brokensaint</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1223">
+			July 26, 2010 at 9:05 pm</a>		</div>
+
+		<p>thanks for releasing the pattern!  As a tall woman, I&#8217;d never be able to wear that without lengthening it&#8230;</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment even thread-even depth-1" id="comment-1224">
+				<div id="div-comment-1224" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn">Babs</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1224">
+			July 26, 2010 at 10:27 pm</a>		</div>
+
+		<p>Can your fabric be machine washed or is it dry-clean only?</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment byuser comment-author-admin bypostauthor odd alt thread-odd thread-alt depth-1" id="comment-1225">
+				<div id="div-comment-1225" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://theuniformproject.com/' rel='external nofollow' class='url'>Uniform Project</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1225">
+			July 26, 2010 at 10:34 pm</a>		</div>
+
+		<p>Hi Babs,</p>
+<p>Yes. The dress is totally machine washable and dryable. For maximum wear, we suggest hand washing the dress in cold water, or machine-washing on the cold delicate cycle. Rather than machine drying, hang your dress to dry in the shade to preserve the dyes and prevent fading. Hope this helps!</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment even thread-even depth-1" id="comment-1227">
+				<div id="div-comment-1227" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://www.bricolagista.com' rel='external nofollow' class='url'>mm</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1227">
+			July 27, 2010 at 9:35 am</a>		</div>
+
+		<p>pictures and design, amazing. it&#8217;s really remarkable how much you nail all the fine details. and to think other companies waste so much money on campaigns, it&#8217;s really impressive how you guys are doing this for basically nothing just amongst friends. i don&#8217;t think it&#8217;s hyperbole to say that when the world finds out, the &#8220;fashion industry&#8221; will have to change or give up.</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1228">
+				<div id="div-comment-1228" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://bloodysurgery.com' rel='external nofollow' class='url'>Britwatch</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1228">
+			July 27, 2010 at 2:26 pm</a>		</div>
+
+		<p>Dear Uniformproject, </p>
+<p>I printed the webpage with the pattern, and even filled in the shapes with black colour, but I can&#8217;t get it to look like in the pictures. Do you know why? Is it because I haven&#8217;t used the right printer? What glue should I be using to stick the pieces together?</p>
+<p>Please let me know. I think this is a great idea. Will you be making chocolate muffins anytime soon?</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment even thread-even depth-1" id="comment-1229">
+				<div id="div-comment-1229" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn">o</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1229">
+			July 27, 2010 at 2:37 pm</a>		</div>
+
+		<p>Do you have pictures of the dress worn without the button-on collar? (just wanted to see what it looked like&#8230;) Thanks</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1230">
+				<div id="div-comment-1230" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn">bamagrrl</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1230">
+			July 27, 2010 at 4:26 pm</a>		</div>
+
+		<p>This is beautiful, can&#8217;t wait to receive mine!  One question &#8212; what do you mean by button-on collar?  Do you mean that the collar is removable?  If so, it would be great to post a pic without the collar as well&#8230;there may be one, but if so it&#8217;s one where the model&#8217;s hair/accessories are obscuring this detail.</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="comment-1232">
+				<div id="div-comment-1232" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://theuniformproject.com/' rel='external nofollow' class='url'>Uniform Project</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1232">
+			July 27, 2010 at 7:35 pm</a>		</div>
+
+		<p>@o+bamagrrl ~ The collar is removable and is attached with small hidden buttons at the edge. Without the collar the neckline is a standard round neck and the buttons are not visible (they are on the inside of the dress). Hope this clarifies!</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1233">
+				<div id="div-comment-1233" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn">o</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1233">
+			July 27, 2010 at 8:10 pm</a>		</div>
+
+		<p>You don&#8217;t have to print this &#8211; just wanted to say thanks!</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment even thread-even depth-1" id="comment-1241">
+				<div id="div-comment-1241" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://www.bricolagista.com' rel='external nofollow' class='url'>mm</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1241">
+			July 28, 2010 at 11:11 am</a>		</div>
+
+		<p>in response number 11, o+bamagrrl makes obamagrrl. just saying. </p>
+<p>but it does beg the question, when are michelle and the girls gonna come on board??</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1248">
+				<div id="div-comment-1248" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://blog.verte-adelie.com' rel='external nofollow' class='url'>Adélie {Verte Adélie}</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1248">
+			July 28, 2010 at 6:48 pm</a>		</div>
+
+		<p>This dress is lovely! What would you say about the level required to sew it (sorry if it&#8217;s written somewhere, I haven&#8217;t found the information so far)? With those hidden buttons under a plaquet / removable collar and all that, would you say it&#8217;s for experts only, or would an intermediate sewer be ok with it?</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment even thread-even depth-1" id="comment-1256">
+				<div id="div-comment-1256" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn">Emmerelda</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1256">
+			July 28, 2010 at 9:50 pm</a>		</div>
+
+		<p>This is GRRRRRRRRRRRRRRRRRRRRRRRRRRRR-EAT!!!! It&#8217;s amazing to see girls with style, imagination and spunk! I tip my hat to you all.</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1270">
+				<div id="div-comment-1270" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn">George</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1270">
+			July 29, 2010 at 9:50 am</a>		</div>
+
+		<p>Britwatch you are not supposed to print it off the net!!!! you&#8217;re supposed to pay for it you cheapskate otherwise how will it help the children at Acknaksha?????</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment even thread-even depth-1" id="comment-1271">
+				<div id="div-comment-1271" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://greatergoodcommunication.com' rel='external nofollow' class='url'>Patti</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1271">
+			July 29, 2010 at 12:42 pm</a>		</div>
+
+		<p>Love the concept, love the dress. I am interested in buying it, but wondering if I can pull it off at age 40?!?</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1287">
+				<div id="div-comment-1287" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://bloodysurgery.com' rel='external nofollow' class='url'>Britwatch</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1287">
+			July 31, 2010 at 4:52 am</a>		</div>
+
+		<p>Dear George, Thanks for clarifying. I thought perhaps I could print lots of them on my own printer, and send them to India for the kids to wear too? No? Ce n&#8217;est pas possible?</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="pingback even thread-even depth-1" id="comment-1288">
+				<div id="div-comment-1288" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://www.mycakefinancialmanagement.co.uk/blog/?p=2319' rel='external nofollow' class='url'>The Uniform Project: Little Black Dresses for Charity | MyCake financial management</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1288">
+			July 31, 2010 at 7:52 am</a>		</div>
+
+		<p>[...] Plus you can get the LBD pattern to make your own ~ here. [...]</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1289">
+				<div id="div-comment-1289" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn">George</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1289">
+			July 31, 2010 at 10:56 am</a>		</div>
+
+		<p>Don&#8217;t mention it Britwatch! you seem like you have your heart in the right place but no knowledge how the fashion filandropy world works! and do not send those kids rags please!!!</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment even thread-even depth-1" id="comment-1295">
+				<div id="div-comment-1295" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn">sharon</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1295">
+			August 1, 2010 at 12:44 pm</a>		</div>
+
+		<p>@Patti<br />
+40 is young, girl!!! it seems like everyone looks great in this dress. in both photo shoots it looks like there were people in their 60s wearing it. and if you check out the LBDs around the world link, you&#8217;ll see all ages wearing the dress with style and flair.</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="pingback odd alt thread-odd thread-alt depth-1" id="comment-1309">
+				<div id="div-comment-1309" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://www.trueup.net/?p=11669' rel='external nofollow' class='url'>True Up &raquo; Blog Archive &raquo; New Release Tuesday</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1309">
+			August 3, 2010 at 8:06 pm</a>		</div>
+
+		<p>[...] releases every week, but these two are special! First, The Uniform Project will be offering kits of the now-famous dress, with a gorgeous custom cotton-silk blend jacquard weave fabric. Pre-order now for October [...]</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="pingback even thread-even depth-1" id="comment-1321">
+				<div id="div-comment-1321" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://www.greendump.net/treehugger/tara-st-james-designs-new-uniform-project-lbd-you-can-diy-too' rel='external nofollow' class='url'>Tara St. James Designs New Uniform Project LBD (You Can DIY, Too) | GREENDUMP</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1321">
+			August 5, 2010 at 11:58 am</a>		</div>
+
+		<p>[...] It&#039;s a little black dress. It&#039;s a Uniform Project dress by Tara St. James. Image courtesy of the Uniform Project. We&#039;re all about little black dresses (LBD) &#8212; or, as per the season, LWDs &#8212; they&#039;re the eco-chic [...]</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1360">
+				<div id="div-comment-1360" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn">Beth</cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1360">
+			August 12, 2010 at 2:24 pm</a>		</div>
+
+		<p>Wow &#8212; it&#8217;s a beautiful dress.  I wish it were longer, though.</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="pingback even thread-even depth-1" id="comment-1512">
+				<div id="div-comment-1512" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://www.podc-aster.nl/?p=269' rel='external nofollow' class='url'>Podc-Aster &raquo; Not Just Another Dress: The LBD Uniform Project</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1512">
+			September 9, 2010 at 7:00 pm</a>		</div>
+
+		<p>[...] wil je ook op the LBD Uniform Project wijzen. Het is misschien niet voor iedereen, maar de gedachte erachter is bewonderenswaardig. Haar [...]</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1522">
+				<div id="div-comment-1522" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://www.thedressimade.com' rel='external nofollow' class='url'>rensz</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1522">
+			September 21, 2010 at 1:14 pm</a>		</div>
+
+		<p>Wow! never heard of your project until today &#8211; I just spent half an hour clicking through all the pages and posts. Love it! It&#8217;s in fact similar to the challenge I set myself: to only wear clothes designed &amp; made by me and blog about it. I&#8217;ll let you know when my version of your LBD is ready!</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+		<li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="comment-1533">
+				<div id="div-comment-1533" class="comment-body">
+				<div class="comment-author vcard">
+				<cite class="fn"><a href='http://theuniformproject.com/' rel='external nofollow' class='url'>Uniform Project</a></cite> <span class="says">says:</span>		</div>
+
+		<div class="comment-meta commentmetadata"><a href="http://theuniformprojectblog.com/dress-for-sale/not-just-another-dress/comment-page-1#comment-1533">
+			September 28, 2010 at 6:13 pm</a>		</div>
+
+		<p>We sincerely apologize for the delay and are very sorry that you weren&#8217;t notified earlier! We&#8217;ve been working through a technical issue on pattern printing and will be sending everyone a detailed update and final delivery date this week. Rest assured your orders are safe and we are really sorry for the worry it&#8217;s caused. If anyone has any specific questions or concerns you can email us and we&#8217;ll fill you in personally.</p>
+<p>We truly appreciate your support and thank you for ordering the pattern and being part of the project!</p>
+
+		<div class="reply">
+				</div>
+				</div>
+		</li>
+	</ol>
+</div>
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+ 
+
+
+<div id="respond">
+
+<h3>Post a comment</h3>
+
+<div class="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="/dress-for-sale/not-just-another-dress#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+
+
+<form action="http://theuniformprojectblog.com/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
+<label for="author">Name (required)</label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' />
+<label for="email">Email (will not be published) (required)</label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url">Website</label></p>
+
+
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
+<p><input name="submit" type="image" src="/wp-content/themes/uniform-project/images/post_comment.jpg" style="width:106px; height:20px; margin-left:396px" id="submit" tabindex="5" value="Submit Comment" />
+<input type='hidden' name='comment_post_ID' value='2983' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p>
+
+</form>
+
+</div>
+
+
+	
+		</div>
+<div id="about_menu">
+	<h1 id="about">Uniform Project Blog</h1>
+	<hr id="about_hr"/>
+	<ul id="about_list">
+		<li class="cat-item cat-item-1"><a href="http://theuniformprojectblog.com/category/press" title="View all posts filed under Press">Press</a> (20)
+</li>
+	<li class="cat-item cat-item-91"><a href="http://theuniformprojectblog.com/category/pilots" title="View all posts filed under Year 2 Pilots">Year 2 Pilots</a> (4)
+</li>
+	<li class="cat-item cat-item-3"><a href="http://theuniformprojectblog.com/category/annoucements" title="Check in here for our latest news and updates regarding the uniform project.">Annoucements</a> (25)
+</li>
+	<li class="cat-item cat-item-104"><a href="http://theuniformprojectblog.com/category/making-the-lbd" title="View all posts filed under Making the LBD">Making the LBD</a> (3)
+</li>
+	<li class="cat-item cat-item-24"><a href="http://theuniformprojectblog.com/category/u-p-at-nyfw" title="View all posts filed under U.P at NYFW">U.P at NYFW</a> (10)
+</li>
+	<li class="cat-item cat-item-105"><a href="http://theuniformprojectblog.com/category/u-p-in-asia" title="View all posts filed under U.P in Asia">U.P in Asia</a> (1)
+</li>
+	<li class="cat-item cat-item-23"><a href="http://theuniformprojectblog.com/category/u-p-in-india" title="View all posts filed under U.P in India">U.P in India</a> (4)
+</li>
+	<li class="cat-item cat-item-14"><a href="http://theuniformprojectblog.com/category/up-in-london" title="all posts while uniform is traveling">U.P in London</a> (3)
+</li>
+	<li class="cat-item cat-item-9"><a href="http://theuniformprojectblog.com/category/designer-collaborations" title="View all posts filed under Designer Collaborations">Designer Collaborations</a> (12)
+</li>
+	<li class="cat-item cat-item-26"><a href="http://theuniformprojectblog.com/category/job-postings" title="View all posts filed under Job Postings">Job Postings</a> (3)
+</li>
+	<li class="cat-item cat-item-7"><a href="http://theuniformprojectblog.com/category/dress-for-sale" title="View all posts filed under Dress for sale">Dress for sale</a> (8)
+</li>
+	<li class="cat-item cat-item-11"><a href="http://theuniformprojectblog.com/category/up-events" title="View all posts filed under U.P Events">U.P Events</a> (12)
+</li>
+	<li class="cat-item cat-item-15"><a href="http://theuniformprojectblog.com/category/awards-and-grants" title="View all posts filed under Awards &amp; Grants">Awards &amp; Grants</a> (3)
+</li>
+	<li class="cat-item cat-item-18"><a href="http://theuniformprojectblog.com/category/akanksha-news" title="View all posts filed under Akanksha News">Akanksha News</a> (3)
+</li>
+	<li class="cat-item cat-item-12"><a href="http://theuniformprojectblog.com/category/behind-the-dailies" title="View all posts filed under Behind the Dailies">Behind the Dailies</a> (12)
+</li>
+	<li class="cat-item cat-item-6"><a href="http://theuniformprojectblog.com/category/faq-year-1" title="FAQs go here">FAQs Year 1</a> (1)
+</li>
+		<!--<li id="project_statement"><a href="http://theuniformproject.com/home/about.html">Project Statement</a></li>-->
+
+		
+	</ul>
+</div>
+
+
+			</div>
+
+
+
+			<div style="clear:both"></div>
+			<a href="http://www.theuniformproject.com"><img src='/images/spacer__v1245866280004.gif' border='0' id="spacer_gif"/></a>
+		</div>
+	</body>
+</html>

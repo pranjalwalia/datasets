@@ -1,0 +1,1324 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+	<!-- Produced by the Metropolitan Museum of Art and Cogapp, 2011 -->	
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" /><title>
+	The Metropolitan Museum of Art - Collections
+</title><link rel="shortcut icon" href="/content/img/presentation/icons/favicon.ico" /><link href="/content/css/metcombined-d5f2828d-470d-495c-90a8-048ecdc6fcad.css" rel="stylesheet" type="text/css" /><link rel="alternate stylesheet" type="text/css" media="screen" href="/content/css/print_document.css" title="confirm" /><link rel="stylesheet" type="text/css" media="print" href="/content/css/print.css" title="print" />
+    <!-- <link href="/content/css/jquery.countdown.css" type="text/css" rel="stylesheet" /> -->
+    <!-- <link href="/content/css/metmedia-form.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="/content/css/metmedia.css" rel="stylesheet" type="text/css" /> -->
+    <!--[if lte IE 7]>
+			<link href="/content/css/ie-lte7.css" type="text/css" rel="stylesheet" /><link href="/content/css/ie7print.css" type="text/css" rel="stylesheet" media="print" />
+		<![endif]-->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/content/js/jquery.blockUI.js?v2.31"></script>
+    <script type="text/javascript" src="/content/js/jquery.maskedinput-1.2.2.js"></script> 
+    <script type="text/javascript" src="/content/js/jquery.feedback-1.2.0.js"></script>
+    <script type="text/javascript">
+		/* <![CDATA[ */
+		$.fx.prototype.cur = function(){
+			if ( this.elem[this.prop] != null && (!this.elem.style || this.elem.style[this.prop] == null) ) { return this.elem[ this.prop ]; }
+			var r = parseFloat( jQuery.css( this.elem, this.prop ) );
+			return typeof r == 'undefined' ? 0 : r;
+		}
+		/* ]]> */
+	</script>
+    <script src="/content/js/metcombined-ddcc217c-505e-4470-aed8-5e72a3f1fe5d.js" type="text/javascript"></script><link href="/content/css/js-enabled.css" type="text/css" rel="stylesheet" media="screen" />
+
+    <!--[if lte IE 8]>
+        <link href="/content/css/ie-lte8.css" type="text/css" rel="stylesheet" />
+        <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            addCorners($(".button"));
+        });
+        function addCorners(element) {
+            element.prepend('<div class="tl"></div><div class="tr"></div>');
+            element.append('<div class="bl"></div><div class="br"></div>');
+        }
+        </script>
+        <![endif]-->
+    <!--[if IE 6]>
+			<script type="text/javascript" src="/content/js/ie6.js"></script>
+		<![endif]-->
+
+    <!-- GA tracking includes -->
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-3239288-2']);
+            _gaq.push(['_setDomainName', 'metmuseum.org']);
+            _gaq.push(['_setAllowLinker', true]);
+            _gaq.push(['_setAllowAnchor', true]);
+            _gaq.push(['_trackPageview']);
+            _gaq.push(['_trackPageLoadTime']);
+
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+        <!-- tracks file downloads and links as Events
+        reference: http://www.freshandnew.org/2011/07/fixing-document-download-and-link-tracking-with-the-google-analytics-asynchronous-tracking-code/
+        -->
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+                $('a').mouseup(function () {
+                    href = $(this).attr('href');
+
+                    href_lower = href.toLowerCase();
+                    if (href_lower.substr(-3) == "pdf" || href_lower.substr(-3) == "xls" || href_lower.substr(-3) == "doc" || href_lower.substr(-4) == "ashx" ||
+  			   href_lower.substr(-3) == "mp3" || href_lower.substr(-3) == "mp4" || href_lower.substr(-3) == "flv" ||
+  			   href_lower.substr(-3) == "txt" || href_lower.substr(-3) == "csv" || href_lower.substr(-3) == "zip") {
+                        _gaq.push(['_trackEvent', 'Downloads', href_lower.substr(-3), href]);
+                    }
+                    if (href_lower.substr(0, 4) == "http") {
+                        var domain = document.domain.replace("www.", '');
+                        if (href_lower.indexOf(domain) == -1) {
+                            href = href.replace("http://", '');
+                            href = href.replace("https://", '');
+                            _gaq.push(['_trackEvent', 'Outbound Traffic', href]);
+                        }
+                    }
+                });
+            });
+        </script>
+
+        </head>
+<body>
+    <script type="text/javascript">        jQuery("body").addClass("js-enabled");</script>
+    <div id="wrapper">
+		
+        
+        <div id="main-container">
+            
+<!--[if IE 7]>
+    <style type="text/css">
+        div.button{
+            width: 75px !important;
+            margin-top: 13px !important;
+        }
+        DIV#my-met .button-reg-mymet{
+            margin-bottom: 0px !important;
+        }
+    </style>	
+<![endif]-->
+
+<!--[if IE]>
+<style type="text/css">
+    DIV.my-met-header-box DIV.form-container P INPUT[type=checkbox]
+    {
+        margin-left: -3px !important;
+    }
+</style>
+<![endif]-->
+
+<div id="header"> 
+    <div id="my-met" class="my-met-mma">
+        
+        <div class="logged-out cleared">
+            <div class="my-met-header-box intro">
+                <div class="header black">
+<h3 class="urbano-light">WHAT IS MY<span class="urbano-regular">MET</span>?</h3>
+</div>
+&nbsp;&nbsp;&nbsp;
+<p style="text-align: center;"><a href="/mymet/sign-up"><img alt="" src="~/media/Images/mymet/videostill.ashx" /></a></p>
+<p style="text-align: center;">Watch a video to find out.</p>
+<p style="text-align: center;">We're inviting you to share your favorite works of art using MyMet. <br />
+See&nbsp;<a href="/mymet/whats-your-met">What's Your Met?</a> for more information.</p>
+<div class="button button-reg-mymet"><a href="/mymet/sign-up">Register</a></div>
+<p>&nbsp;</p>
+            </div>
+            <div class="my-met-header-box sign-in">
+                <div class="header gray">
+                    <h3 class="urbano-light">
+                        Already have a my<span class="urbano-regular">met</span> account&#63; Sign in</h3>
+                </div>
+                <div class="content">
+                    <div class="form-container">
+                        <form action="https://www.metmuseum.org/mymet/sign-up" method="post">
+                        <div class="column">
+                            <label for="my-met-email">
+                                Email Address:</label>
+                            <input type="text" id="my-met-email" class="my-met-input" name="email" />
+                            <a class="forgotDeets" href="/mymet/forgottendetails">Forgotten your details&#63;</a>
+                        </div>
+                        <div class="column align-right">
+                            <div>
+                            <label for="my-met-password">
+                                Password:</label>
+                            <input type="password" id="my-met-password" class="my-met-input" name="signinpwd" />           
+                            <p><input type="checkbox" id="my-met-logged-on" name="stayloggedin" class="my-met-checkbox" value="1" /><label for="my-met-logged-on" class="for-checkbox">Stay logged in</label><input name="__RequestVerificationToken" type="hidden" value="zvmr6TquB8YVk/KNC8MbT6YQFFjc/WKp7JDbe6qge0Vo2uCBUEOusSlFb7NEYup/ye0b0omHEzqMXmE36Gc5GkAR1/IlcXrCmaXoQ0HbPmsWsDtZLVLhz0j9NehPF2rXOvfAnILX0TI3jvkxGMTm+QG5FbA=" /></p> 
+                            </div>
+                            <div class="button grey align-right f1f1f0 ie7sucks">
+                             <div class="submit-container">
+                                <input type="submit" id="register-submit" name="mymetsignin" value="Sign In"  class="submit"style="margin:0px; padding: 2px 7px 2px 6px;"  onclick="_gaq.push(['_trackEvent', 'MyMet', 'Sign In']);"/>
+                             </div>
+                        </div>
+                        </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- end my-met -->
+    <div id="header-content">
+        <div id="logo-container" class="logo-container-mmaConfirm">
+            <a href="/">
+                <img id="logo" src="/content/img/presentation/icons/header-logo-icon.gif" alt="The Metropolitan Museum of Art Logo"
+                    height="45" width="44" />
+                <img id="logo-text" src="/content/img/presentation/icons/header-logo-text.gif" alt="The Metropolitan Museum of Art"
+                    height="17" width="362" />
+            </a>
+<span class="hide-content-mma"><img id="print-logo" src="/content/img/presentation/titles/print-header.gif" alt="The Metropolitan Museum of Art" height="44" width="416" class="hide-content" /></span>
+        </div>
+        <form id="searchForm" method="get" action="/search-results">
+        <div id="search-form" class="form-container">
+            <label class="hide-content" for="search-field">
+                Search this web site</label>
+            <div class="search-field">
+                <div class="search-field-bg">
+                    <input type="text" id="search-field" name="ft" value="" />
+                </div>
+            </div>
+            <div class="search-button">
+                <div class="search-button-bg">
+                    <input type="image" id="search-submit" src="/content/img/presentation/buttons/search-button.gif"
+                        alt="submit search" />
+                </div>
+            </div>
+        </div>
+        </form>
+        
+        <ul id="primary-navigation" class="primary-navigation-mmaConfirm">
+            
+        <li id="ctl03_ctl00_TopNav_ctrl0_navlink"><a href="/visit">
+            Visit</a>
+            
+                    <div class="shadow">
+                        <ul>
+                            
+                    <li><a href="/visit/hours-and-admission">
+                        Hours and Admission</a></li>
+                
+                    <li><a href="/visit/plan-your-visit">
+                        Plan Your Visit</a></li>
+                
+                    <li><a href="/visit/museum-map">
+                        Museum Map</a></li>
+                
+                    <li><a href="/visit/itineraries">
+                        Suggested Itineraries</a></li>
+                
+                    <li><a href="/visit/visit-the-cloisters">
+                        Visit The Cloisters</a></li>
+                
+                    <li><a href="/visit/accessibility">
+                        Accessibility</a></li>
+                
+                    <li><a href="/visit/contact">
+                        Contact Information</a></li>
+                
+                        </ul>
+                    </div>
+                
+        </li>
+    
+        <li id="ctl03_ctl00_TopNav_ctrl1_navlink"><a href="/exhibitions">
+            Exhibitions</a>
+            
+                    <div class="shadow">
+                        <ul>
+                            
+                    <li><a href="/exhibitions/current-exhibitions">
+                        Current Exhibitions</a></li>
+                
+                    <li><a href="/exhibitions/upcoming-exhibitions">
+                        Upcoming Exhibitions</a></li>
+                
+                    <li><a href="/exhibitions/past-exhibitions">
+                        Past Exhibitions</a></li>
+                
+                        </ul>
+                    </div>
+                
+        </li>
+    
+        <li id="ctl03_ctl00_TopNav_ctrl2_navlink" class=" selected"><a href="/collections">
+            Collections</a>
+            
+                    <div class="shadow">
+                        <ul>
+                            
+                    <li><a href="/collections/browse-highlights">
+                        Browse Highlights</a></li>
+                
+                    <li><a href="/collections/new-installations">
+                        New Installations</a></li>
+                
+                    <li><a href="/collections/recent-acquisitions">
+                        Recent Acquisitions</a></li>
+                
+                    <li><a href="/collections/galleries">
+                        Galleries</a></li>
+                
+                    <li><a href="/collections/search-the-collections">
+                        Search the Collections</a></li>
+                
+                    <li><a href="/collections/connections">
+                        Connections</a></li>
+                
+                    <li><a href="/collections/toah">
+                        Timeline of Art History</a></li>
+                
+                        </ul>
+                    </div>
+                
+        </li>
+    
+        <li id="ctl03_ctl00_TopNav_ctrl3_navlink"><a href="/events">
+            Events</a>
+            
+                    <div class="shadow">
+                        <ul>
+                            
+                    <li><a href="/events/find-events">
+                        Find Events</a></li>
+                
+                    <li><a href="/events/programs">
+                        Programs</a></li>
+                
+                    <li><a href="/events/travel-with-the-met">
+                        Travel with the Met</a></li>
+                
+                        </ul>
+                    </div>
+                
+        </li>
+    
+        <li id="ctl03_ctl00_TopNav_ctrl4_navlink"><a href="/learn">
+            Learn</a>
+            
+                    <div class="shadow">
+                        <ul>
+                            
+                    <li><a href="/learn/for-kids">
+                        For Kids</a></li>
+                
+                    <li><a href="/learn/for-teens">
+                        For Teens</a></li>
+                
+                    <li><a href="/learn/for-adults">
+                        For Adults</a></li>
+                
+                    <li><a href="/learn/for-college-students">
+                        For College Students</a></li>
+                
+                    <li><a href="/learn/for-educators">
+                        For Educators</a></li>
+                
+                        </ul>
+                    </div>
+                
+        </li>
+    
+        <li id="ctl03_ctl00_TopNav_ctrl5_navlink"><a href="/research">
+            Research</a>
+            
+                    <div class="shadow">
+                        <ul>
+                            
+                    <li><a href="/research/libraries-and-study-centers">
+                        Libraries and Study Centers</a></li>
+                
+                    <li><a href="/research/internships-and-fellowships">
+                        Internships and Fellowships</a></li>
+                
+                    <li><a href="/research/archaeological-fieldwork">
+                        Archaeological Fieldwork</a></li>
+                
+                    <li><a href="/research/conservation-and-scientific-research">
+                        Conservation and Scientific Research</a></li>
+                
+                    <li><a href="/research/curatorial-research">
+                        Curatorial Research</a></li>
+                
+                    <li><a href="/research/image-resources">
+                        Image Resources</a></li>
+                
+                    <li><a href="/research/provenance-research-project">
+                        Provenance Research Project</a></li>
+                
+                        </ul>
+                    </div>
+                
+        </li>
+    
+        <li id="ctl03_ctl00_TopNav_ctrl6_navlink"><a href="/give-and-join">
+            Give and Join</a>
+            
+                    <div class="shadow">
+                        <ul>
+                            
+                    <li><a href="/give-and-join/donate">
+                        Donate</a></li>
+                
+                    <li><a href="/give-and-join/membership">
+                        Membership</a></li>
+                
+                    <li><a href="/give-and-join/planned-giving">
+                        Planned Giving</a></li>
+                
+                    <li><a href="/give-and-join/benefit-parties">
+                        Benefit Parties</a></li>
+                
+                    <li><a href="/give-and-join/corporate-support">
+                        Corporate Support</a></li>
+                
+                    <li><a href="/give-and-join/curatorial-friends-groups">
+                        Curatorial Friends Groups</a></li>
+                
+                    <li><a href="/give-and-join/gift-in-honor">
+                        Gifts in Honor or Memory</a></li>
+                
+                        </ul>
+                    </div>
+                
+        </li>
+    
+        <li id="ctl03_ctl00_TopNav_ctrl7_navlink"><a href="/about-the-museum">
+            About the Museum</a>
+            
+                    <div class="shadow">
+                        <ul>
+                            
+                    <li><a href="/about-the-museum/now-at-the-met">
+                        Now at the Met</a></li>
+                
+                    <li><a href="/about-the-museum/met-around-the-world">
+                        The Met Around the World</a></li>
+                
+                    <li><a href="/about-the-museum/mission-statement">
+                        Museum Mission Statement</a></li>
+                
+                    <li><a href="/about-the-museum/history-of-the-museum">
+                        History of the Museum</a></li>
+                
+                    <li><a href="/about-the-museum/museum-departments">
+                        Museum Departments</a></li>
+                
+                    <li><a href="/about-the-museum/entertaining-at-the-met">
+                        Entertaining at the Met</a></li>
+                
+                    <li><a href="/about-the-museum/career-and-volunteer-opportunities">
+                        Career and Volunteer Opportunities</a></li>
+                
+                    <li><a href="/about-the-museum/annual-reports">
+                        Annual Reports</a></li>
+                
+                    <li><a href="/about-the-museum/collections-management-policy">
+                        Collections Management Policy</a></li>
+                
+                    <li><a href="/about-the-museum/contact">
+                        Contact Information</a></li>
+                
+                    <li><a href="/about-the-museum/press-room">
+                        Press Room</a></li>
+                
+                        </ul>
+                    </div>
+                
+        </li>
+    
+            <li class="last"><a href="http://store.metmuseum.org/?utm_source=mainmuseum&utm_medium=metmuseum.org&utm_content=shop&utm_campaign=top+nav">Shop</a></li>
+        </ul>
+    
+<div class="clear">
+</div>
+
+        <div id="header-topbar">
+            <div class="header-topbar-content">
+                <div class="form-container">
+                    <label class="hide-content" for="email-field">
+                        Sign up for emails</label>
+                    <div class="email-field">
+                        <div class="email-field-bg">
+                            <input type="text" value="Email address" id="email-field" name="email-field" />
+                        </div>
+                    </div>
+                    <div class="email-button">
+                        <div class="email-button-bg">
+                            <input type="submit" id="email-submit" name="email-submit" value="Sign up for emails" onclick="_gaq.push(['_trackEvent', 'MyMet', 'email lite']);_gaq.push(['_trackEvent', 'Home', 'Email']);" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-topbar-content">
+                <a href="/give-and-join/membership/categories" name="top" onclick="_gaq.push(['_trackEvent', 'Home', 'MyMet']);">Become a member</a>
+            </div>
+            <div class="my-met-topbar" onclick="_gaq.push(['_trackEvent', 'Home', 'email lite']);">
+                <a href="#"><span class="urbano-light">My<span class="urbano-regular">Met</span></span>
+                    <span>Sign in / Register</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- end header-content -->
+    
+<div id="breadcrumb">
+	<ul class="site-navigation">
+    
+	<li ><a href="/en">Home</a> &gt;</li>
+    
+    <li class="last">Collections</li>
+    </ul> 
+    
+ <script type="text/javascript" src="/content/js/jquery.cookie.js"></script>
+
+ <span id="spnShowCart" style="display:none;">             
+               <a href="/events/shopping-cart" class="carticon cell"><span class="hide-content">Shopping cart: </span><span id="spnTotalCartItems"></span><span id="cart-timer"></span></a>
+               <script type="text/javascript">
+                    /* <![CDATA[ */
+                   
+                   //$(function () {
+                   var hdnTimeFirstSeatAdded = jQuery.cookie("firstSeatAdded");
+                   var cartItemsTotal = 0;
+
+                   if (hdnTimeFirstSeatAdded != null) {
+                       var sessionExpiredTime = new Date();
+
+                       var expireTimeTemp = new Date(hdnTimeFirstSeatAdded);
+                       var expireTime = new Date(expireTimeTemp);
+
+                       sessionExpiredTime.setMinutes(expireTimeTemp.getMinutes() + 20);
+                       //sessionExpiredTime.setSeconds(expireTimeTemp.getSeconds() + 10);
+
+                       countdownTime = new Date(expireTime);
+
+                       jQuery('#cart-timer').countdown({ until: sessionExpiredTime, onExpiry: expire, alwaysExpire: true, onTick: isGreaterThanTwentyMins, layout: '<span class="icon-cart" />You have {mn} mins {sn} secs to complete your order' });
+
+                       cartItemsTotal = jQuery.cookie("cartItemsTotal");
+                       jQuery("#spnTotalCartItems").text(cartItemsTotal);
+
+                       var i = 0;
+                   }
+
+                   function expire() {
+                    jQuery("#spnShowCart").hide();
+                   }
+
+                   function isGreaterThanTwentyMins(periods){
+                    if (periods[5] > 20)
+                        jQuery("#spnShowCart").hide();
+                   }
+
+                   /* ]]> */
+               </script>
+           </span>
+
+    
+</div>
+
+</div>
+<!-- end header -->
+
+            <form method="post" action="/collections?dd1=64" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTUyODk3MzM0Ng9kFgQCAQ9kFgJmD2QWAgIBD2QWAmYPZBYCZg8UKwACDxYEHgtfIURhdGFCb3VuZGceC18hSXRlbUNvdW50AghkZBYCZg9kFhACAQ9kFgICAQ9kFgRmDxUCBi92aXNpdAVWaXNpdGQCAQ8UKwACDxYEHwBnHwECB2RkFgJmD2QWDgIBD2QWAmYPFQIaL3Zpc2l0L2hvdXJzLWFuZC1hZG1pc3Npb24TSG91cnMgYW5kIEFkbWlzc2lvbmQCAg9kFgJmDxUCFi92aXNpdC9wbGFuLXlvdXItdmlzaXQPUGxhbiBZb3VyIFZpc2l0ZAIDD2QWAmYPFQIRL3Zpc2l0L211c2V1bS1tYXAKTXVzZXVtIE1hcGQCBA9kFgJmDxUCEi92aXNpdC9pdGluZXJhcmllcxVTdWdnZXN0ZWQgSXRpbmVyYXJpZXNkAgUPZBYCZg8VAhovdmlzaXQvdmlzaXQtdGhlLWNsb2lzdGVycxNWaXNpdCBUaGUgQ2xvaXN0ZXJzZAIGD2QWAmYPFQIUL3Zpc2l0L2FjY2Vzc2liaWxpdHkNQWNjZXNzaWJpbGl0eWQCBw9kFgJmDxUCDi92aXNpdC9jb250YWN0E0NvbnRhY3QgSW5mb3JtYXRpb25kAgIPZBYCAgEPZBYEZg8VAgwvZXhoaWJpdGlvbnMLRXhoaWJpdGlvbnNkAgEPFCsAAg8WBB8AZx8BAgNkZBYCZg9kFgYCAQ9kFgJmDxUCIC9leGhpYml0aW9ucy9jdXJyZW50LWV4aGliaXRpb25zE0N1cnJlbnQgRXhoaWJpdGlvbnNkAgIPZBYCZg8VAiEvZXhoaWJpdGlvbnMvdXBjb21pbmctZXhoaWJpdGlvbnMUVXBjb21pbmcgRXhoaWJpdGlvbnNkAgMPZBYCZg8VAh0vZXhoaWJpdGlvbnMvcGFzdC1leGhpYml0aW9ucxBQYXN0IEV4aGliaXRpb25zZAIDD2QWAgIBDxYCHgVjbGFzcwUJIHNlbGVjdGVkFgRmDxUCDC9jb2xsZWN0aW9ucwtDb2xsZWN0aW9uc2QCAQ8UKwACDxYEHwBnHwECB2RkFgJmD2QWDgIBD2QWAmYPFQIeL2NvbGxlY3Rpb25zL2Jyb3dzZS1oaWdobGlnaHRzEUJyb3dzZSBIaWdobGlnaHRzZAICD2QWAmYPFQIeL2NvbGxlY3Rpb25zL25ldy1pbnN0YWxsYXRpb25zEU5ldyBJbnN0YWxsYXRpb25zZAIDD2QWAmYPFQIgL2NvbGxlY3Rpb25zL3JlY2VudC1hY3F1aXNpdGlvbnMTUmVjZW50IEFjcXVpc2l0aW9uc2QCBA9kFgJmDxUCFi9jb2xsZWN0aW9ucy9nYWxsZXJpZXMJR2FsbGVyaWVzZAIFD2QWAmYPFQIjL2NvbGxlY3Rpb25zL3NlYXJjaC10aGUtY29sbGVjdGlvbnMWU2VhcmNoIHRoZSBDb2xsZWN0aW9uc2QCBg9kFgJmDxUCGC9jb2xsZWN0aW9ucy9jb25uZWN0aW9ucwtDb25uZWN0aW9uc2QCBw9kFgJmDxUCES9jb2xsZWN0aW9ucy90b2FoF1RpbWVsaW5lIG9mIEFydCBIaXN0b3J5ZAIED2QWAgIBD2QWBGYPFQIHL2V2ZW50cwZFdmVudHNkAgEPFCsAAg8WBB8AZx8BAgNkZBYCZg9kFgYCAQ9kFgJmDxUCEy9ldmVudHMvZmluZC1ldmVudHMLRmluZCBFdmVudHNkAgIPZBYCZg8VAhAvZXZlbnRzL3Byb2dyYW1zCFByb2dyYW1zZAIDD2QWAmYPFQIbL2V2ZW50cy90cmF2ZWwtd2l0aC10aGUtbWV0E1RyYXZlbCB3aXRoIHRoZSBNZXRkAgUPZBYCAgEPZBYEZg8VAgYvbGVhcm4FTGVhcm5kAgEPFCsAAg8WBB8AZx8BAgVkZBYCZg9kFgoCAQ9kFgJmDxUCDy9sZWFybi9mb3Ita2lkcwhGb3IgS2lkc2QCAg9kFgJmDxUCEC9sZWFybi9mb3ItdGVlbnMJRm9yIFRlZW5zZAIDD2QWAmYPFQIRL2xlYXJuL2Zvci1hZHVsdHMKRm9yIEFkdWx0c2QCBA9kFgJmDxUCGy9sZWFybi9mb3ItY29sbGVnZS1zdHVkZW50cxRGb3IgQ29sbGVnZSBTdHVkZW50c2QCBQ9kFgJmDxUCFC9sZWFybi9mb3ItZWR1Y2F0b3JzDUZvciBFZHVjYXRvcnNkAgYPZBYCAgEPZBYEZg8VAgkvcmVzZWFyY2gIUmVzZWFyY2hkAgEPFCsAAg8WBB8AZx8BAgdkZBYCZg9kFg4CAQ9kFgJmDxUCJS9yZXNlYXJjaC9saWJyYXJpZXMtYW5kLXN0dWR5LWNlbnRlcnMbTGlicmFyaWVzIGFuZCBTdHVkeSBDZW50ZXJzZAICD2QWAmYPFQIlL3Jlc2VhcmNoL2ludGVybnNoaXBzLWFuZC1mZWxsb3dzaGlwcxtJbnRlcm5zaGlwcyBhbmQgRmVsbG93c2hpcHNkAgMPZBYCZg8VAiIvcmVzZWFyY2gvYXJjaGFlb2xvZ2ljYWwtZmllbGR3b3JrGEFyY2hhZW9sb2dpY2FsIEZpZWxkd29ya2QCBA9kFgJmDxUCLi9yZXNlYXJjaC9jb25zZXJ2YXRpb24tYW5kLXNjaWVudGlmaWMtcmVzZWFyY2gkQ29uc2VydmF0aW9uIGFuZCBTY2llbnRpZmljIFJlc2VhcmNoZAIFD2QWAmYPFQIdL3Jlc2VhcmNoL2N1cmF0b3JpYWwtcmVzZWFyY2gTQ3VyYXRvcmlhbCBSZXNlYXJjaGQCBg9kFgJmDxUCGS9yZXNlYXJjaC9pbWFnZS1yZXNvdXJjZXMPSW1hZ2UgUmVzb3VyY2VzZAIHD2QWAmYPFQIlL3Jlc2VhcmNoL3Byb3ZlbmFuY2UtcmVzZWFyY2gtcHJvamVjdBtQcm92ZW5hbmNlIFJlc2VhcmNoIFByb2plY3RkAgcPZBYCAgEPZBYEZg8VAg4vZ2l2ZS1hbmQtam9pbg1HaXZlIGFuZCBKb2luZAIBDxQrAAIPFgQfAGcfAQIHZGQWAmYPZBYOAgEPZBYCZg8VAhUvZ2l2ZS1hbmQtam9pbi9kb25hdGUGRG9uYXRlZAICD2QWAmYPFQIZL2dpdmUtYW5kLWpvaW4vbWVtYmVyc2hpcApNZW1iZXJzaGlwZAIDD2QWAmYPFQIdL2dpdmUtYW5kLWpvaW4vcGxhbm5lZC1naXZpbmcOUGxhbm5lZCBHaXZpbmdkAgQPZBYCZg8VAh4vZ2l2ZS1hbmQtam9pbi9iZW5lZml0LXBhcnRpZXMPQmVuZWZpdCBQYXJ0aWVzZAIFD2QWAmYPFQIgL2dpdmUtYW5kLWpvaW4vY29ycG9yYXRlLXN1cHBvcnQRQ29ycG9yYXRlIFN1cHBvcnRkAgYPZBYCZg8VAigvZ2l2ZS1hbmQtam9pbi9jdXJhdG9yaWFsLWZyaWVuZHMtZ3JvdXBzGUN1cmF0b3JpYWwgRnJpZW5kcyBHcm91cHNkAgcPZBYCZg8VAhwvZ2l2ZS1hbmQtam9pbi9naWZ0LWluLWhvbm9yGEdpZnRzIGluIEhvbm9yIG9yIE1lbW9yeWQCCA9kFgICAQ9kFgRmDxUCES9hYm91dC10aGUtbXVzZXVtEEFib3V0IHRoZSBNdXNldW1kAgEPFCsAAg8WBB8AZx8BAgtkZBYCZg9kFhYCAQ9kFgJmDxUCIC9hYm91dC10aGUtbXVzZXVtL25vdy1hdC10aGUtbWV0Dk5vdyBhdCB0aGUgTWV0ZAICD2QWAmYPFQImL2Fib3V0LXRoZS1tdXNldW0vbWV0LWFyb3VuZC10aGUtd29ybGQYVGhlIE1ldCBBcm91bmQgdGhlIFdvcmxkZAIDD2QWAmYPFQIjL2Fib3V0LXRoZS1tdXNldW0vbWlzc2lvbi1zdGF0ZW1lbnQYTXVzZXVtIE1pc3Npb24gU3RhdGVtZW50ZAIED2QWAmYPFQInL2Fib3V0LXRoZS1tdXNldW0vaGlzdG9yeS1vZi10aGUtbXVzZXVtFUhpc3Rvcnkgb2YgdGhlIE11c2V1bWQCBQ9kFgJmDxUCJC9hYm91dC10aGUtbXVzZXVtL211c2V1bS1kZXBhcnRtZW50cxJNdXNldW0gRGVwYXJ0bWVudHNkAgYPZBYCZg8VAikvYWJvdXQtdGhlLW11c2V1bS9lbnRlcnRhaW5pbmctYXQtdGhlLW1ldBdFbnRlcnRhaW5pbmcgYXQgdGhlIE1ldGQCBw9kFgJmDxUCNC9hYm91dC10aGUtbXVzZXVtL2NhcmVlci1hbmQtdm9sdW50ZWVyLW9wcG9ydHVuaXRpZXMiQ2FyZWVyIGFuZCBWb2x1bnRlZXIgT3Bwb3J0dW5pdGllc2QCCA9kFgJmDxUCIC9hYm91dC10aGUtbXVzZXVtL2FubnVhbC1yZXBvcnRzDkFubnVhbCBSZXBvcnRzZAIJD2QWAmYPFQIvL2Fib3V0LXRoZS1tdXNldW0vY29sbGVjdGlvbnMtbWFuYWdlbWVudC1wb2xpY3kdQ29sbGVjdGlvbnMgTWFuYWdlbWVudCBQb2xpY3lkAgoPZBYCZg8VAhkvYWJvdXQtdGhlLW11c2V1bS9jb250YWN0E0NvbnRhY3QgSW5mb3JtYXRpb25kAgsPZBYCZg8VAhwvYWJvdXQtdGhlLW11c2V1bS9wcmVzcy1yb29tClByZXNzIFJvb21kAgMPZBYCZg9kFgICAQ9kFgICAQ8PFgIeB1Zpc2libGVoZGQYCQUnY3RsMDMkY3RsMDAkVG9wTmF2JGN0cmw3JFRvcE5hdlN1Ykl0ZW1zDxQrAA5kZGRkZGRkPCsACwACC2RkZGYC/////w9kBSdjdGwwMyRjdGwwMCRUb3BOYXYkY3RybDEkVG9wTmF2U3ViSXRlbXMPFCsADmRkZGRkZGQUKwADZGRkAgNkZGRmAv////8PZAUnY3RsMDMkY3RsMDAkVG9wTmF2JGN0cmwzJFRvcE5hdlN1Ykl0ZW1zDxQrAA5kZGRkZGRkFCsAA2RkZAIDZGRkZgL/////D2QFJ2N0bDAzJGN0bDAwJFRvcE5hdiRjdHJsNiRUb3BOYXZTdWJJdGVtcw8UKwAOZGRkZGRkZDwrAAcAAgdkZGRmAv////8PZAUnY3RsMDMkY3RsMDAkVG9wTmF2JGN0cmw1JFRvcE5hdlN1Ykl0ZW1zDxQrAA5kZGRkZGRkPCsABwACB2RkZGYC/////w9kBSdjdGwwMyRjdGwwMCRUb3BOYXYkY3RybDAkVG9wTmF2U3ViSXRlbXMPFCsADmRkZGRkZGQ8KwAHAAIHZGRkZgL/////D2QFJ2N0bDAzJGN0bDAwJFRvcE5hdiRjdHJsMiRUb3BOYXZTdWJJdGVtcw8UKwAOZGRkZGRkZDwrAAcAAgdkZGRmAv////8PZAUSY3RsMDMkY3RsMDAkVG9wTmF2DxQrAA5kZGRkZGRkPCsACAACCGRkZGYC/////w9kBSdjdGwwMyRjdGwwMCRUb3BOYXYkY3RybDQkVG9wTmF2U3ViSXRlbXMPFCsADmRkZGRkZGQ8KwAFAAIFZGRkZgL/////D2TEaVAv00zMrmFaiyn3gU+NsB3xpQ==" />
+</div>
+
+            
+
+<!-- begin - Bug 2646 - White Background is not extending properly -->
+    
+<!-- end - Bug 2646 - White Background is not extending properly -->
+
+<div id="content-container" class="collections l1 browse-highlights">
+    <div class="full-width">
+        <h1>
+            Collections</h1>
+        <!-- <h1 class="georgia">Collections</h1> -->
+        <p class="browse-highlights">
+            
+        </p>
+        <ul class="tabs landing">
+            
+            <li class="front"><a href="#">Artwork of the Day</a></li>
+            
+            <li ><a href="#">Browse Highlights
+                (1,434)</a></li>
+        </ul>
+        <!-- end tabbed container -->
+        
+        <div class="collections-tabbed-content visible">
+            <h2 class="hidden-header">
+                Artwork of the day</h2>
+            <div class="artwork-day-container">
+                <div class="artwork">
+                    <div class="object-info">
+                        <a class="main-image" href="/collections/search-the-collections/90066120">
+                            <img src="http://images.metmuseum.org/CRDImages/dp/web-highlight/DP814397.jpg" alt="Saskia with Pearls in Her Hair" /></a>
+                        <div class="object-text-container">
+                            <h2>
+                                Saskia with Pearls in Her Hair</h2>
+                            
+                            <p>
+                                <a href="/collections/search-the-collections?ft=*&amp;who=Rembrandt+(Rembrandt+van+Rijn)" class="black-arrow">
+                                    Rembrandt (Rembrandt van Rijn)</a></p>
+                            
+                            <p>
+                                Date: 1634<br/>Medium: Etching<br/>Classification: Prints<br/>Credit Line: Harry G. Friedman Bequest, 1966<br/>Accession Number: 66.521.34</p>
+                            <ul class="buttons">
+                                <li class="button my-met learn-more white"><a class="white-arrow" href="/collections/search-the-collections/90066120">
+                                    <span>Learn More</span></a></li>
+                                <li class="button subscribe last"><a href="/collections/artwork-of-the-day?rss=1"><span>Subscribe</span></a></li>
+                                <li class="clear button my-met white">
+                                    <input type="hidden" name="fo" value="90066120" /><a class="js-enabled" href="#" onclick="document.getElementById(&#39;add&#39;).click();return false;">Add to MyMet</a><input class="non-js" id="add" name="addToMyMet" type="submit"></input></li>
+                                <li class="button share-this last"><a href="#"><span>Share</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- end tabbed container -->
+        <div class="collections-tabbed-content ">
+            <h2 class="hidden-header">
+                Browse Highlights</h2>
+            <div id="browse-highlights" class="make-me-scrollable">
+                <span class="hide-content totalObjectCount">
+                    1434</span>
+                <div class="navigate-left">
+                    <span></span>
+                </div>
+                <div class="navigate-right">
+                    <span></span>
+                </div>
+                <div class="scroll-wrapper">
+                    <div class="scrollable-area" style="left: 50px">
+                        
+                        <div class="object">
+                            <a href="/Collections/search-the-collections/50004871">
+                                <img src="http://images.metmuseum.org/CRDImages/ao/web-highlight/18 DP231468R2_98Q.jpg" alt="Head of an Oba" /></a>
+                            <div class="object-info">
+                                <h2>
+                                    Head of an Oba</h2>
+                                <p>Date: 16th century<br/>Accession Number: 1979.206.86</p>
+                            </div>
+                        </div>
+                        
+                        <div class="object">
+                            <a href="/Collections/search-the-collections/190024182">
+                                <img src="http://images.metmuseum.org/CRDImages/ph/web-highlight/DP217709.jpg" alt="Untitled" /></a>
+                            <div class="object-info">
+                                <h2>
+                                    Untitled</h2>
+                                <p>Francesca Woodman (American, Denver, Colorado 1958–1981 New York City) </p><p>Date: ca. 1980<br/>Accession Number: 1996.322</p>
+                            </div>
+                        </div>
+                        
+                        <div class="object">
+                            <a href="/Collections/search-the-collections/130015085">
+                                <img src="http://images.metmuseum.org/CRDImages/gr/web-highlight/DT252.jpg" alt="Marble seated harp player" /></a>
+                            <div class="object-info">
+                                <h2>
+                                    Marble seated harp player</h2>
+                                <p>Date: 2800–2700 B.C.<br/>Accession Number: 47.100.1</p>
+                            </div>
+                        </div>
+                        
+                        <div class="object">
+                            <a href="/Collections/search-the-collections/170004254">
+                                <img src="http://images.metmuseum.org/CRDImages/md/web-highlight/DT118.jpg" alt="Plate with the Battle of David and Goliath" /></a>
+                            <div class="object-info">
+                                <h2>
+                                    Plate with the Battle of David and Goliath</h2>
+                                <p>Date: 629–630<br/>Accession Number: 17.190.396</p>
+                            </div>
+                        </div>
+                        
+                        <div class="object">
+                            <a href="/Collections/search-the-collections/50004761">
+                                <img src="http://images.metmuseum.org/CRDImages/ao/web-highlight/DT1240.jpg" alt="Beete Mask: Ram (Bata)" /></a>
+                            <div class="object-info">
+                                <h2>
+                                    Beete Mask: Ram (Bata)</h2>
+                                <p>Date: 19th–20th century<br/>Accession Number: 1979.206.8</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- end browse highlights slider -->
+        </div>
+        <div class="search-area cleared">
+            <div class="left-col large-form">
+                <div class="form-container">
+                    <h2>
+                        Search the Collections</h2>
+                    <label class="hide-content" for="collection-search-field">
+                        Search the Collections:</label>
+                    <div class="search-field">
+                        <div class="search-field-bg">
+                            <input type="text" class="text" id="collection-search-field" name="ft" value="" />
+                        </div>
+                    </div>
+                    <div class="search-button">
+                        <div class="search-button-bg">
+                            <input type="image" id="collection-search-submit" name="collection-search-submit"
+                                src="/content/img/presentation/buttons/search-button-large.gif" alt="submit collections search" />
+                        </div>
+                    </div>
+                    <p class="adv-search">
+                        <!--<a href="#">Advanced Search</a>-->
+                    </p>
+                </div>
+                
+                <div class="image-container">
+                    
+                    <a href="http://www.metmuseum.org/toah/">
+                        <img src="~/media/Images/Collections/Timeline/timeline-ad4.ashx?mw=325" alt="" /></a>
+                    
+                </div>
+                
+                <div class="image-container">
+                    
+                    <a href="/connections">
+                        <img src="~/media/Images/Collections/Timeline/connections-ad1.ashx?mw=325" alt="" /></a>
+                    
+                </div>
+                
+            </div>
+            <div class="search-by cleared">
+                <h2>
+                    Search Collections By:</h2>
+                <div class="tabbed-container">
+                    <ul class="tabs tooltipped-tabs">
+                        <li class="front"><a href="#">Who</a><div class="tab-tooltip">
+                            <span class="tooltip-top"></span><span class="text">Search by artist, maker, or culture</span></div>
+                        </li>
+                        <li><a href="#">What</a><div class="tab-tooltip">
+                            <span class="tooltip-top"></span><span class="text">Search by technique or material</span></div>
+                        </li>
+                        <li><a href="#">Where</a><div class="tab-tooltip">
+                            <span class="tooltip-top"></span><span class="text">Search by geographic location</span></div>
+                        </li>
+                        <li><a href="#">When</a><div class="tab-tooltip">
+                            <span class="tooltip-top"></span><span class="text">Search era or date of art</span></div>
+                        </li>
+                        <li><a href="#">In the Museum</a><div class="tab-tooltip">
+                            <span class="tooltip-top"></span><span class="text">Search by department in the museum</span></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="search-terms front">
+                    <div class="form-container cleared">
+                        <label class="hide-content" for="search-by-who">
+                            Search by artist, maker and culture</label>
+                        <div class="search-field">
+                            <div class="search-field-bg">
+                                <input class="text" type="text" id="search-by-who" name="whosearcht" value="" />
+                            </div>
+                        </div>
+                        <div class="search-button">
+                            <div class="search-button-bg">
+                                <input type="image" name="search-by-who-submit" src="/content/img/presentation/buttons/search-button.gif"
+                                    alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Suggested Searches:</p>
+                    <ul>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=Maori&who=Maori&ao=on">
+                            Maori</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=Utagawa+Hiroshige&pg=1&who=Utagawa+Hiroshige&ao=on">
+                            Utagawa Hiroshige</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ft=Baule&ao=on">
+                            Baule Peoples</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=Maya&who=Maya&ao=on">
+                            Maya</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=Tiffany&ao=on">
+                            Tiffany</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ft=John+Singer+Sargent&who=John+Singer+Sargent&ao=on">
+                            John Singer Sargent</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=Sumerian&who=Sumerian&ao=on">
+                            Sumerian</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=Assyrian&who=Assyrian&ao=on">
+                            Assyrian</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;who=Kunz+%28Konrad%29+Lochner&amp;ft=Kunz+(Konrad)+Lochner&ao=on">
+                            Kunz (Konrad) Lochner</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=Christian+Dior&who=Christian Dior&ao=on">
+                            Christian Dior</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=William+Morris&who=William+Morris&ao=on">
+                            William Morris</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ft=Chantilly&ao=on&who=Chantilly">
+                            Chantilly</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=Rembrandt (Rembrandt van Rijn)&who=Rembrandt (Rembrandt van Rijn)&ao=on">
+                            Rembrandt</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=El Greco (Domenikos Theotokopoulos)&who=El Greco (Domenikos Theotokopoulos)&ao=on">
+                            El Greco (Domenikos Theotocopoulos)</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ft=Ennion&ao=on">
+                            Ennion</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=Claude Monet&who=Claude Monet&ao=on">
+                            Claude Monet</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=Georgia O'Keeffe&who=Georgia O'Keeffe&ao=on">
+                            Georgia O'Keeffe</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ft=Pablo Picasso&amp;who=Pablo Picasso&ao=on">
+                            Pablo Picasso</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ao=on&ft=Alfred Stieglitz&who=Alfred Stieglitz">
+                            Alfred Stieglitz</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ao=on&ft=Rosa Bonheur&who=Rosa Bonheur">
+                            Rosa Bonheur</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ao=on&ft=Julia Margaret Cameron&who=Julia Margaret Cameron">
+                            Julia Margaret Cameron</a></li>
+                        
+                    </ul>
+                    <p class="right-link">
+                        <span class="right-link"><a href="/collections/search-the-collections/collections-a-to-z?seltab=who">A-Z of Who terms</a></span></p>
+                </div>
+                <div class="search-terms">
+                    <div class="form-container cleared">
+                        <label class="hide-content" for="search-by-what">
+                            Search for material or method</label>
+                        <div class="search-field">
+                            <div class="search-field-bg">
+                                <input class="text" type="text" id="search-by-what" name="whatsearcht" value="" />
+                            </div>
+                        </div>
+                        <div class="search-button">
+                            <div class="search-button-bg">
+                                <input type="image" name="search-by-what-submit" src="/content/img/presentation/buttons/search-button.gif"
+                                    alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Suggested Searches:</p>
+                    <ul>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ao=on&ft=*&what=Cuneiform">
+                            Cuneiform</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ao=on&ft=*&what=Raffia">
+                            Raffia</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ao=on&ft=*&what=Daguerreotypes">
+                            Daguerreotype</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ao=on&ft=*&what=Jadeite">
+                            Jade</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ao=on&ft=*&what=Gold">
+                            Gold</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ao=on&ft=*&what=Furniture">
+                            Furniture</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ao=on&ft=*&pg=1&what=Ceramics">
+                            Ceramic</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=*&What=Steel">
+                            Steel</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ao=on&ft=*&what=Lacquer">
+                            Lacquer</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=*&ao=on&what=Robes">
+                            Robes</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=etching&what=Etchings&ao=on">
+                            Etchings</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ao=on&ft=*&what=Limestone">
+                            Limestone</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ao=on&ft=*&what=Shabti">
+                            Shabti</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ao=on&ft=*&what=Bronzes">
+                            Bronzes</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ft=*&what=Settees">
+                            Settees</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=*&what=Alabastra&ao=on">
+                            Alabastra</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ao=on&ft=*&what=Manuscripts">
+                            Manuscripts</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ft=Polychromy">
+                            Polychromy</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ao=on&ft=*&what=Mixed media">
+                            Mixed Media</a></li>
+                        
+                    </ul>
+                    <p class="right-link">
+                        <span class="right-link"><a href="/collections/search-the-collections/collections-a-to-z?seltab=what">A-Z of What terms</a></span></p>
+                </div>
+                <div class="search-terms">
+                    <div class="form-container cleared">
+                        <label class="hide-content" for="search-by-where">
+                            Search by geographic locations</label>
+                        <div class="search-field">
+                            <div class="search-field-bg">
+                                <input class="text" type="text" id="search-by-where" name="wheresearcht" value="" />
+                            </div>
+                        </div>
+                        <div class="search-button">
+                            <div class="search-button-bg">
+                                <input type="image" id="" name="search-by-where-submit" src="/content/img/presentation/buttons/search-button.gif"
+                                    alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Suggested Searches:</p>
+                    <ul>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=*&where=Papua New Guinea">
+                            Papua New Guinea</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=*&where=Easter Island">
+                            Rapa Nui (Easter Island)</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ft=Court of Benin">
+                            Court of Benin</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=*&where=Mexico">
+                            Mexico</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=United States">
+                            United States</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ft=New York City">
+                            New York City</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=Mesopotamia">
+                            Mesopotamia</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=Nimrud">
+                            Nimrud</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ft=*&where=Germany">
+                            Germany</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=*&where=France">
+                            France</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=Thailand">
+                            Thailand</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ft=Nubian">
+                            Nubia (Nubian)</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=Egyptian">
+                            Egypt (Egyptian)</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=dutch">
+                            Dutch</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ft=Byzantium">
+                            Byzantium</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=*&where=Cyprus">
+                            Cyprus</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=*&where=Paris">
+                            Paris</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ft=South America">
+                            South America</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=*&pg=1&where=Australia&ao=on">
+                            Australia</a></li>
+                        
+                    </ul>
+                    <p class="right-link">
+                        <span class="right-link"><a href="/collections/search-the-collections/collections-a-to-z?seltab=where">A-Z of Where terms</a></span></p>
+                </div>
+                <div class="search-terms">
+                    <div class="form-container cleared">
+                        <label class="hide-content" for="search-by-when">
+                            Search era or date of art</label>
+                        <div class="date-range-search">
+                            <select id="select-when" name="whenpicker" class="select when">
+                                <option>Before</option>
+                                <option>After</option>
+                                <option>Exactly</option>
+                                <option>Between</option>
+                            </select>
+                            
+                            <div id="single-date-field">
+								<div class="close-field">
+									<div class="search-field">
+										<div class="search-field-bg">
+											<input type="text" name="whenSearchA" id="text-date" class="text date" value="Enter date" />
+										</div>
+									</div>
+								</div>
+								
+								<label for="select-period" class="hide-content" >
+									Choose era:</label>
+								<select id="select-period" name="selectperiod" class="select">
+									<option>A.D.</option>
+									<option>B.C.</option>
+								</select>
+							</div>
+							
+                            <div class="date-range-between">
+                                <div class="close-field">
+                                    <div class="search-field">
+                                        <div class="search-field-bg">
+                                            <input type="text" name="whenSearchA" id="start-date" class="text date" value="Start date" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <label for="select-start-period" class="hide-content" >
+                                    Choose era:</label>
+                                <select id="select-start-period" name="selectstartperiod" class="select">
+                                    <option>A.D.</option>
+                                    <option>B.C.</option>
+                                </select>
+                                <p>
+                                    to</p>
+                                <div class="close-field">
+                                    <div class="search-field">
+                                        <div class="search-field-bg">
+                                            <label for="end-date" class="hide-content" >
+                                                Choose end date:</label>
+                                            <input type="text" name="whenSearchB" id="end-date" class="text date" value="End date" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <label for="select-end-period" class="hide-content" >
+                                    Choose era:</label>
+                                <select id="select-end-period" name="selectendperiod" class="select">
+                                    <option>A.D.</option>
+                                    <option>B.C.</option>
+                                </select>
+                            </div>
+                            <div class="search-button">
+                                <div class="search-button-bg">
+                                    <input type="image" name="search-by-when-submit" src="/content/img/presentation/buttons/search-button.gif"
+                                        alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>
+                        Suggested Searches:</p>
+                    <ul>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=%2A&amp;when=8000-2000 B.C.">
+                            8000-2000 B.C.</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=%2A&amp;when=2000-1000 B.C.">
+                            2000-1000 B.C.</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ft=%2A&amp;when=1000 B.C.-A.D. 1">
+                            1000 B.C.-A.D. 1</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=%2A&amp;when=A.D. 1-500">
+                            A.D. 1-500</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=%2A&amp;when=A.D. 500-1000">
+                            A.D. 500-1000</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ft=%2A&amp;when=A.D. 1000-1400">
+                            A.D. 1000-1400</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=%2A&amp;when=A.D. 1400-1600">
+                            A.D. 1400-1600</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;ft=%2A&amp;when=A.D. 1600-1800">
+                            A.D. 1600-1800</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;ft=%2A&amp;when=A.D. 1800-1900">
+                            A.D. 1800-1900</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=%2A&amp;when=A.D. 1900-present">
+                            A.D. 1900-present</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="search-terms">
+                    <div class="form-container cleared">
+                        <label class="hide-content" for="search-by-in-the-museum">
+                            Search by department in the museum</label>
+                    </div>
+                    <p>
+                        Museum Departments:</p>
+                    <ul>
+                        
+                        <li><a href="/collections/search-the-collections&#63;deptids=1">
+                            American Decorative Arts</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;deptids=2">
+                            American Paintings and Sculpture</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;deptids=3">
+                            Ancient Near Eastern Art</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;ft=*&amp;deptids=20">
+                            Antonio Ratti Textile Center</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;deptids=4">
+                            Arms and Armor</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;deptids=5">
+                            Arts of Africa, Oceania, and the Americas</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;deptids=6">
+                            Asian Art</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;deptids=8|62">
+                            Costume Institute and Brooklyn Museum Costume Collection</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;deptids=9">
+                            Drawings and Prints</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;deptids=10">
+                            Egyptian Art</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;deptids=11">
+                            European Paintings</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;deptids=12">
+                            European Sculpture and Decorative Arts</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;deptids=13">
+                            Greek and Roman Art</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;deptids=14">
+                            Islamic Art</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;deptids=17|7">
+                            Medieval Art and The Cloisters</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;deptids=21">
+                            Modern and Contemporary Art</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;deptids=18">
+                            Musical Instruments</a></li>
+                        
+                        <li class="last"><a href="/collections/search-the-collections&#63;deptids=19|44">
+                            Photographs and Walker Evans Archive</a></li>
+                        
+                        <li class="clear"><a href="/collections/search-the-collections&#63;deptids=52">
+                            Provenance Research Project</a></li>
+                        
+                        <li><a href="/collections/search-the-collections&#63;deptids=15">
+                            Robert Lehman Collection</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <!-- close .search-by -->
+        </div>
+        <!-- close .search-area -->
+        
+        <div class="secondary-sections">
+            
+            <div class="article-promo quarter-width  clear ">
+                
+                <h2 class="small-header">
+                    <a href="/collections/browse-highlights" class="black-arrow">
+                        Browse Highlights</a></h2>
+                
+                <p>
+                    <p>Browse collection highlights selected by curators from the Museum's seventeen curatorial departments.</p>
+</p>
+            </div>
+            
+            <div class="article-promo quarter-width ">
+                
+                <h2 class="small-header">
+                    <a href="/collections/new-installations" class="black-arrow">
+                        New Installations</a></h2>
+                
+                <p>
+                    In addition to temporary special exhibitions, the Museum often presents new installations of&nbsp;permanent collection galleries that have been&nbsp;renovated or reconfigured based on new scholarship, acquisitions, or research.</p>
+            </div>
+            
+            <div class="article-promo quarter-width ">
+                
+                <h2 class="small-header">
+                    <a href="/collections/recent-acquisitions" class="black-arrow">
+                        Recent Acquisitions</a></h2>
+                
+                <p>
+                    <p>The Metropolitan Museum acquires hundreds of works of art each year through gifts and purchases.</p></p>
+            </div>
+            
+            <div class="article-promo quarter-width  last ">
+                
+                <h2 class="small-header">
+                    <a href="/collections/galleries" class="black-arrow">
+                        Galleries</a></h2>
+                
+                <p>
+                    <p>Works of art in the Museum's collections are on display in more than four hundred numbered galleries throughout the Main Building and The Cloisters. Overview descriptions of the galleries are organized by curatorial department to help you plan your visit.</p></p>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+
+            
+<script type='text/javascript'>jQuery('#spnShowCart').hide()</script><script type="text/javascript">jQuery(document).ready(function () {jQuery("input#collection-search-field").autocomplete({source: "searchautosuggest.ashx?f=all",minLength: 3,select: function (event, ui) {}});});</script><script type="text/javascript">jQuery(document).ready(function () {jQuery("input#search-by-who").autocomplete({source: "searchautosuggest.ashx?f=who",minLength: 3,select: function (event, ui) {}});});</script><script type="text/javascript">jQuery(document).ready(function () {jQuery("input#search-by-what").autocomplete({source: "searchautosuggest.ashx?f=what",minLength: 3,select: function (event, ui) {}});});</script><script type="text/javascript">jQuery(document).ready(function () {jQuery("input#search-by-where").autocomplete({source: "searchautosuggest.ashx?f=where",minLength: 3,select: function (event, ui) {}});});</script></form>
+            
+
+        <div id="footer" class="footer-mmaConfirm"> 
+			<div id="ctl04_footerBox" class="footer-box-container">
+            
+				<div class="content-box">
+					<div class="header">
+						<h2 class="small-header"><a href="/metmedia"><span>Met Media</span></a></h2>
+					</div>
+					<a href="/metmedia"><img src="~/media/Images/Footer/Promos/MetMedia.ashx?mw=239" alt="Met Media" height="190" width="100%" /></a>
+				</div>
+            
+				<div class="content-box">
+					<div class="header">
+						<h2 class="small-header"><a href="http://www.metmuseum.org/learn/for-kids?utm_source=footer&amp;utm_medium=website&amp;utm_campaign=metkids"><span>Met Kids</span></a></h2>
+					</div>
+					<a href="http://www.metmuseum.org/learn/for-kids?utm_source=footer&amp;utm_medium=website&amp;utm_campaign=metkids"><img src="~/media/Images/Footer/Promos/mykids.ashx?mw=239" alt="Met Kids" height="190" width="100%" /></a>
+				</div>
+            
+				<div class="content-box">
+					<div class="header">
+						<h2 class="small-header"><a href="http://store.metmuseum.org/?utm_source=mainmuseum&amp;utm_medium=metmuseum.org&amp;utm_term=043012&amp;utm_content=schiaparelli+and+prada+impossible+conversation+catalogue&amp;utm_campaign=footer+image"><span>Met Store</span></a></h2>
+					</div>
+					<a href="http://store.metmuseum.org/?utm_source=mainmuseum&amp;utm_medium=metmuseum.org&amp;utm_term=043012&amp;utm_content=schiaparelli+and+prada+impossible+conversation+catalogue&amp;utm_campaign=footer+image"><img src="~/media/Images/Footer/Promos/metstore_pradafooter.ashx?mw=239" alt="Met Store" height="190" width="100%" /></a>
+				</div>
+            
+			
+			<div id="footer-links" class="footer-links">
+				<ul>
+                
+					<li ><a href="/visit/accessibility">Accessibility</a></li>
+                
+					<li ><a href="/information/site-index">Site Index</a></li>
+                
+					<li ><a href="/information/terms-and-conditions">Terms and Conditions</a></li>
+                
+					<li ><a href="/information/privacy-policy">Privacy Policy</a></li>
+                
+					<li ><a href="/information/acknowledgments">Acknowledgments</a></li>
+                
+					<li  class="last"><a href="/about-the-museum/press-room">Press</a></li>
+                
+				</ul>
+				<p class="copyright">
+					&#169; 2000–2012 The Metropolitan Museum of Art. All rights reserved.
+                </p>
+			</div>
+            </div>
+		</div>
+
+
+<style type="text/css">
+    .footer-mmaMeerkat
+    {
+       margin-bottom: 60px;
+    }
+    .dont-show
+    {
+        color: #000;
+        cursor: pointer;
+        display: block;
+        height: 18px;
+        position: absolute;
+        width: 105px;
+        left: 914px;
+        top: 100px;
+        z-index: 10;
+        font-size: .8em;
+    }
+    .close-meerkat
+    {
+        background-attachment: scroll;
+        background-color: transparent;
+        background: url('/content/img/close-x.gif') no-repeat right top;
+        background-position: 0;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        display: block;
+        height: 18px;
+        position: absolute;
+        text-indent: -9000px;
+        width: 18px;
+        top: 5px;
+        left: 964px;
+        z-index: 10;
+    }
+    #close-text
+    {
+       padding:8px 30px 0 0;float:right;font:bold; color: #A9B8C2;
+    }
+    .metMediaIE7Fix
+    {
+       margin-left:0 !important;
+    }
+</style>
+    
+
+
+
+
+ 
+
+
+           
+            
+        </div>
+        <!-- end main-container -->
+         
+    </div>
+    <!-- end wrapper -->
+     
+    
+    
+         
+          <script type="text/javascript">    var switchTo5x = false;</script>
+          <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+          <script type="text/javascript">stLight.options({ publisher: "3216b53b-e955-4db5-985e-cef2d59c745b", onhover: false, doneScreen: false }); </script>
+          <script type="text/javascript" src="/content/js/share-this.js"></script>
+        
+</body>
+</html>

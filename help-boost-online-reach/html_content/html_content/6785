@@ -1,0 +1,1139 @@
+<!-- google_ad_section_start(weight=ignore) -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<head>
+	
+	<title> Top 20 Wearable Technologies To Make You Geekier - Gizmo Watch</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="title" content="Top 20 Wearable Technologies To Make You Geekier - Gizmo Watch" />
+	<meta name="subject" content="Technology" />
+	<meta name="language" content="en" />
+	<meta name="keywords" content="Apple, art, Bluetooth, Computers, Concept, design, DIY, gadgets, Gaming, Innovations, intel, iPhone, ipod, japan, Microsoft, Music, PC, Pcs, Robot, robotics, Robots, Samsung, Sony, Technology, Video" />
+	<meta name="description" content="Wow Gadgets
+" />
+	<link rel="alternate" href="http://www.gizmowatch.com/rss.xml" type="application/rss+xml" title="Gizmo Watch's RSS Feed" />
+	<link rel="alternate" href="http://www.instablogs.com/feed/blog=Gizmo+Watch" type="application/rss+xml" title="Gizmo Watch's RSS Feed (Instablogs Community)" />
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+</script>
+<script type="text/javascript">
+GS_googleAddAdSenseService("ca-pub-9415440757655812");
+GS_googleEnableAllServices();
+</script>
+<script type="text/javascript">
+GA_googleAddSlot("ca-pub-9415440757655812", "7Blogs_Homepage_ATF_Button");
+GA_googleAddSlot("ca-pub-9415440757655812", "Gizmowatch_Martini_HalfPage");
+</script>
+<script type="text/javascript">
+GA_googleFetchAds();
+</script>
+
+<style type="text/css">
+	  @import url(/style.css);
+</style>
+
+<script type="text/javascript" src="/js/jquery-1.3.1.min.js"></script>
+<script type="text/javascript" src="http://www.instablogs.com/js/yui.js"></script>
+<script type="text/javascript" src="http://www.instablogs.com/js/connection.js"></script>
+
+<script type="text/javascript">
+	function on_blur()
+	{
+		if(document.getElementById('nav-search').value == "")
+		{
+		document.getElementById('nav-search').value = "search here...";
+		document.getElementById('nav-search').style.color = "#999";
+		}
+	}
+	function on_focus()
+	{
+		document.getElementById('nav-search').value = "";
+		document.getElementById('nav-search').style.color = "#444";
+	}
+
+	function open_reply_comment(comment_id, post_id, back_url, blog_name)
+	{
+		
+		var div = document.getElementById('reply-comment'+comment_id);	
+		var postdata ='comment_id='+ comment_id + '&post_id=' + post_id + '&back_url=' + back_url + '&blog_name=' + blog_name;
+		div.innerHTML = '<div style="font:bold 1.2em/1.2em Georgia, serif;padding:20px 0 35px;"><center><img src="/css-img/wheel.gif" /> &nbsp; &nbsp;Loading...</center></div>';
+
+		var handleSuccess = function(o){if(o.responseText !== undefined){div.innerHTML = o.responseText;}}
+		var handleFailure = function(o){if(o.responseText !== undefined){div.innerHTML=  o.statusText;}}
+		var Callback ={success:handleSuccess,failure: handleFailure};
+
+		var request = YAHOO.util.Connect.asyncRequest("POST", '/reply_comment.php', Callback, postdata);
+	}
+	
+	function lightboxImageOn(image_id, Image_title)
+	{
+		var comment_image = 'comment_image';
+		var Image_title = "Image uploaded by - " + Image_title;
+		var div = document.getElementById('lb-edit');
+		div.innerHTML = '<div style="font:bold 1.2em/1.2em Georgia, serif;padding:80px 0 35px;"><center><img src="/css-img/loading.gif" /> &nbsp; &nbsp;Loading...</center></div>';
+
+		$.ajax({
+		type: "POST",
+		url: "/show_media.php",
+		data: 'image_id='+image_id + '&type=' + comment_image + '&title=' + Image_title,
+		success: function(msg)
+		{
+			var id ='#lb-edit';
+			$(id).html(msg);
+		}
+		});
+
+		var black = document.getElementById('fade');
+		black.style.display = 'block';
+
+		div.style.display = 'block';
+		window.scrollTo(0,0);
+	}
+
+
+	function lightboxVideoOn(video_id, You_Tube_title)
+	{
+		var video='video';
+		var You_Tube_title = "Video uploaded by - " + You_Tube_title;
+		var div = document.getElementById('lb-edit');
+		div.innerHTML = '<div style="font:bold 1.2em/1.2em Georgia, serif;padding:80px 0 35px;"><center><img src="/css-img/loading.gif" /> &nbsp; &nbsp;Loading...</center></div>';
+
+		$.ajax({
+		type: "POST",
+		url: "/show_media.php",
+		data: 'video_id=' + video_id + '&type=' + video + '&title=' +  You_Tube_title,
+		success: function(msg)
+		{
+			var id ='#lb-edit';
+			$(id).html(msg);
+		}
+		});
+
+		var black = document.getElementById('fade');
+		black.style.display = 'block';
+
+		div.style.display = 'block';
+		window.scrollTo(0,0);
+	}
+
+	function lightboxoff(id)
+	{
+		var light = document.getElementById(id);
+		light.style.display = 'none';
+	}
+
+</script>
+<style>
+.black_overlay
+	{
+		display: none;
+		position: absolute;
+		top:0px;
+		left:0px;
+		width:100%;
+		height:100%;
+		/width:expression((document.body.clientWidth) + "px");
+		/height:expression((document.body.clientHeight)+ "px");
+		background-color: black;
+		z-index:1001;
+		-moz-opacity: 0.6;
+		opacity:.60;
+		filter: alpha(opacity=60);
+	}
+			
+	.white_content_video
+	{
+		display: none;
+		position: absolute;
+		top: 90px;
+		left: 37%;
+		min-width:400px;
+		min-height:330px;
+		border: 4px solid #333;
+		background-color: #E6EFF4;
+		z-index:1002;
+	}
+
+	.login-head{background:#333;color:#868686;font: bold 1.9em/1.3em georgia,verdana,arial,serif;padding:8px;}
+	.login-head .close {display:block;float:right;padding:0px;text-align:right;font-size:12px}
+</style>
+
+</head>
+
+<body>
+
+	<div id="container">
+	<div style="height:1px;"> </div>
+
+
+		<div class="ad-top">
+			
+						<div class="left-top-ad">
+				<script type="text/javascript" language="javascript" src="http://www2.glam.com/app/site/affiliate/viewChannelModule.act?mName=viewAdJs&affiliateId=318102576&adSize=728x90&zone=Marketplace"></script>			</div>
+			<div class="right-top-ad">
+							<a href="http://www.instablogs.com/ad_solutions.php?b=10"><img src="http://www.instablogs.com/css-img/120-x-90.jpg" /></a>
+			</div>
+			<div class="clear"></div>
+					</div><!-- EOF #ad-top -->
+			
+		<div id="header"> 
+
+			<div class="logo"> <a href="/" title="Home"><h1>Gizmo Watch</h1></a> </div>
+
+		</div><!-- EOF header -->
+
+			<div style="padding:5px;text-align:center;">
+				<script type="text/javascript"><!--
+google_ad_client = "pub-9415440757655812";
+/* Gizmowatch, Header, LinkUnit, 8Jan10 */
+google_ad_slot = "9487820033";
+google_ad_width = 728;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>			</div>
+		
+			<div class="extra-ads"></div>
+
+
+			<div class="top-nav">
+				<span class="home">
+					<a href="/">Home</a>
+				</span>
+
+				<span class="RSS">
+					<a href="http://feeds.feedburner.com/gizmowatch/YwQk">RSS</a> ::
+				</span>
+
+				<span>
+					<a href="/contact-us.php?q=tips">Send Tips</a> ::
+				</span>
+
+				<span>
+					<a href="http://www.instablogs.com/ad_solutions.php?b=10">Advertise</a> ::
+				</span>
+
+				<span>
+					<a href="/contact-us.php?q=general">Contact</a> ::
+				</span>
+
+				<span>
+					<form method="get" action="/search.php" id="cse-search-box">
+						<input type="hidden" name="cx" value="partner-pub-9415440757655812:rmjshe-hjke" />
+						<input type="hidden" name="cof" value="FORID:10" />
+						<input type="hidden" name="ie" value="UTF-8" />
+						<input type="text" name="q" size="25" />
+						<input type="submit" name="sa" value="Search" />
+					</form>
+					<script type="text/javascript" src="http://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+				</span>
+			</div><!-- EOF top-nav -->
+		<div id="content">
+			<div id="content-box">
+			
+
+				<div id="perma-content-main">
+				<div style="float:right">
+											</div>
+
+
+						<!--INFOLINKS_OFF-->
+						<!-- google_ad_section_end -->  
+						<!-- google_ad_section_start -->
+						
+						<div class="title">
+							Top 20 wearable technologies to make you geekier						</div>
+						<div class="clear"></div>
+
+					<div class="author">
+						<div class="retweet-title">
+							<div class="retweet">
+								<script type="text/javascript">
+									tweetmeme_style = 'compact';
+									tweetmeme_url = 'http://www.gizmowatch.com/entry/top-20-wearable-technologies-to-make-you-geekier/';
+									tweetmeme_source = 'Gizmowatch_com';
+								</script>
+								<script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>
+							</div>
+							<div class="fb">
+								<script>
+									var fbShare = {url: 'http://www.gizmowatch.com/entry/top-20-wearable-technologies-to-make-you-geekier/', size: 'small', google_analytics: 'false'}
+								</script>
+								<script src="http://widgets.fbshare.me/files/fbshare.js"></script>
+							</div>
+						</div>
+						<a href="http://bharat.instablogs.com/">Bharat</a>
+						| 
+						May 13 2010						<div class="spon-links" style="font:1.1em/1.2em arial, verdana,arial,serif;padding:10px 0 10px 0;text-decoration:underline;"> Sponsored Links </div>
+						<div class="perma_ads">
+							<div class="perma_ads2" style="float:left;"><script type="text/javascript"><!--
+google_ad_client = "pub-9415440757655812";
+/* Gizmowatch, Permalink, LargeRectangle, 8Jan10 */
+google_ad_slot = "9672476206";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+							<div class="perma_ads2" style="float:left;"></div>
+							<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+					</div><!--INFOLINKS_ON-->
+			
+				<div class="clear"></div>
+
+					<div class="post-content">
+							<p><img src="http://www.instablogsimages.com/images/2010/05/12/personal-force-field-suit_48_coKqT_1292.jpg" alt="personal force field suit_48"/><br />
+Wearable technology that is practical in real life and is commercially viable simultaneously represents the next frontier in our technological advancement. We geeks have imbibed wearable tech as the future of fashion, computing and entertainment, therefore it has become more than just an attention grabber for our hungry eyes.  Thus, to let all of you select some techie solution for the new day, we have dug the depths of the web to find out 20 of the best wearable technologies that’ll definitely add wonders to your geekdom. </p>
+	<p>•	<strong><a href="http://www.gizmag.com/vuzix-wrap-920-3d-glasses-release/14339/">Vuzix Wrap 920 3D glasses</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/920-3-d-glasses_hJkAH_1292.jpg" alt="920 3 d glasses"/><br />
+The Vuzix Wrap 920 video eyewear is a sunglass-style display that delivers a virtual 67-inch screen as seen from 10ft away. It displays 2D and 3D video and is claimed to be the most advanced wearable display available. The Vuzix Wrap 920 connects to all NTSC or PAL audio/video devices with video-out capabilities and composite video connections. The eyewear comes with a composite A/V adapter for iPod/iPhone for simple plug ‘n’ play connection to your portable media player.</p>
+	<p>•	<strong><a href="http://www.engadget.com/2008/12/11/wearable-toy-piano-makes-music-looks-good-doing-it/">Wearable toy piano</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/wearable-toy-piano_qmvqv_1292.jpg" alt="wearable toy piano"/><br />
+The Musical toy piano shirt is a musical shirt with enough transistors to make even the hardest of hardcore nerd blush, and a long-sleeve garment fashionable enough to make even the world-class design student stop and admire - mashed into one. Packing removable batteries, speakers and circuitry, the shirt enables the wearer to emit eight different notes from Do to Do. Now, is there anything as fun as playing a song on yourself?</p>
+	<p>•	<strong><a href="http://www.wired.com/gadgetlab/2010/01/new-watch-phone-w/">Dick Tracy-style watch phone</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/200-watch-phone_fQesK_1292.jpg" alt="200 watch phone"/><br />
+The W “phonewatch” from Kempler &#038; Strauss combines a touchscreen interface on a watch with basic phone functionality. GSM phone can work with both AT&#038;T and T-Mobile but it doesn’t have 3G capability or Wi-Fi. There is a microphone and a speaker on the phone, but it’s recommended that the user pairs the watch phone with a Bluetooth headset. The phone has a digital clock and a single touch brings out a basic menu that includes icons for phone, messages, address book and calendar. The watch phone even has a 1.4-megapixel camera that can do both still photos and videos.</p>
+	<p>•	<strong><a href="http://www.engadget.com/2006/09/25/symbol-technologies-wt4000-series-wearable-computer/">WT4000 wearable computer</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/wt4000_2SMRZ_1292.jpg" alt="wt4000"/><br />
+Symbol Technologies WT4000 wearable computer is a rugged make for extreme environments where handsfree operations are an advantage. Designed to run WinCE 5.0 Pro on a 520MHz Intel XScale PXA270 processor with Wi-Fi, Bluetooth for connectivity and a 2.8-inch QVGA display with backlight is made to be worn on the hip or wrist, this computer has been made to survive drops from as high as 4-feet high. </p>
+	<p>•	<strong><a href="http://www.engadget.com/2008/05/14/ubanana-announces-wearable-waterproof-ucan-mp3-player/">Waterproof uCan MP3 player</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/waterproof-ucan-mp3-player_BkOlL_1292.jpg" alt="waterproof ucan mp3 player"/><br />
+Ubanana uCan waterproof MP3 player is at by far the best looking wearable MP3 player we’ve seen. Stuffed in with only a GB of memory, this music player boasts about 15 hours of battery life all for a $150 price tag.  </p>
+	<p>•	<strong><a href="http://www.gizmowatch.com/entry/wearable-speakers-worthy-stand-ins-for-headphones/">Wearable speakers</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/soundwalk_ettcf_54_mIrQY_1292.jpg" alt="soundwalk_ettcf_54"/><br />
+Featuring fantastic sound quality, the Soundwalk, as the speakers are called, are worn right below the user’s ears, to enjoy the great sound output. The set of wearable speakers are identical to a water pack, and are a great choice for people who don’t like using headphones, they’ll actually like the idea of the wearable speakers.</p>
+	<p>•	<strong><a href="http://www.gizmowatch.com/entry/wearable-computer-weighs-less-than-15-kilograms/">Wearable computer</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/13/wearble-head-computer_DtYuL_54.jpg" alt="wearble head computer"/><br />
+Students of the University of Electronic Science and Technology of China have come up with a portable computer. The computer consists of a near-eye display, head-mounted camera, one-hand keyboard and mouse, the wearable computer weighs less than 1.5 kilograms.</p>
+	<p>•	<strong><a href="http://www.gizmowatch.com/entry/ifeel_im-robotic-wear-lets-your-real-emotions-flow-in-virtual-space/">iFeel_IM robotic wear</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/33-clipboard-1_qh4xh_54_LEtoO_1292.jpg" alt="33 clipboard 1_qh4xh_54"/><br />
+To help people communicate more emotionally over various ways of digital communication, a husband-and-wife team of scientists based in Japan have devised the iFeel_IM. This intensifies feeling and simulates emotions, which can be felt by partners (wearing iFeel_IM) during online communication, creating avatars in the virtual world. This prototype computer connected robot, which takes heart beat, chills of fear and sensation of warmth from the user’s body to transmit gestures as real emotions to the recipient in the virtual space is made of few sensors, small motors, vibrators and speakers.</p>
+	<p>•	<strong><a href="http://www.gizmowatch.com/entry/hp-is-developing-solar-powered-wearable-pc-display-for-soldiers/">Solar-powered wearable PC</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/hp-wearable-display_yilh6_54_xjfWm_1292.jpg" alt="hp wearable display_yilh6_54"/><br />
+Hewlett-Packard is developing a solar-powered lightweight computer display that’s flexible enough to be worn around the wrist. The prototype device is reported to measure only 200 microns thick, yet is capable of displaying battle-useful data like maps and directions etc on its e-ink display. HP says the prototypes will be made available early next year.</p>
+	<p>•	<strong><a href="http://www.gizmowatch.com/entry/holo-20-wearable-computer-displays-interactive-holographic-content/">HOLO 2.0</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/holo-2_lllvj_54_GX49i_1292.gif" alt="holo 2_lllvj_54"/><br />
+HOLO 2.0 is a fashionable and wearable computer for the year 2015. Living on the concept of technology as fashion accessory for the future, the HOLO 2.0 offers web connectivity just anywhere anytime. Featuring a kinetically chargeable battery which gets its juice movements of the hand, this computer can either be worn on the wrist or it can be carried in the pocket. Best feature of the PC, as the name suggests is its ability to produce interactive holographic displays besides offering complete functionality of a laptop. The system comes with a docking station and can thus be used to emit larger holographic images which allow the user to use this as a desktop computer.</p>
+	<p>•	<strong><a href="http://www.gizmowatch.com/entry/a-pendent-like-camera-in-the-neck-records-your-entire-life/">SenseCam-Pendent like camera</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/viconrevue-camera_yqamr_54_qnN86_1292.jpg" alt="viconrevue camera_yqamr_54"/><br />
+SenseCam by Microsoft, now ViconRevue, is a camera that can be worn around the neck, to shoot images every 30 seconds. The pendent-like camera click every moment of the wearer’s live and helps them build an e-memory, i.e. an imagery archive of the entire life. Microsoft’s researcher Gordon Bell has been a consistent user of the camera. Carrying it just everywhere to record everything he does, thus, electronically recording as much of his life as possible.  1GB of capacity the camera can easily fit about 30,000 images.</p>
+	<p>•	<strong><a href="http://www.gizmowatch.com/entry/gesture-controlled-golden-i-bluetooth-headset-pc-coming-real-soon/">Golden-I Bluetooth headset PC</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/kopin_golden-itm_gen_2_hud_7_hrcv1_54_4G581_1292.jpg" alt="kopin_golden itm_gen_2_hud_7_hrcv1_54"/><br />
+Kopin has ventured into freeing us from carrying our computing gadgetry everywhere with the Golden-I Bluetooth headset PC. This Bluetooth Headset with a 15-inch virtual PC display, is powered by an ARM Cortex A8 processor and running Windows Embedded CE 6.0, the Golden-i Gen 2 can remotely control up to seven devices or networks simultaneously, thanks to the headset’s head-gesture recognition and voice-control abilities. It can connect to phones, computers and electronic devices via Wi-Fi and Bluetooth, and is good to stream videos @ 30fps in 720 x 480 resolution, which can be stacked up in large quantities on the SSD and microSD memory cards.</p>
+	<p>•	<strong><a href="http://www.gizmowatch.com/entry/frog-vision-s-futuristic-cyber-suit-keeps-you-safe-down-dark-lanes/">Frog Vision&#8217;s Futuristic Cyber Suit</a> </strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/personal-force-field-suit_48_coKqT_1292.jpg" alt="personal force field suit_48"/><br />
+The ingenious Personal Force Field Suit from Frog Design has conductive filaments weaved into the dress which help provide power to gadgets by just slipping the devices into pockets. This smart, futuristic track suit not only charges all your gadgets, but act as personal force field to protect you. It senses your nervousness, monitors your heart rate and anxiety levels and automatically knows when to power-up its protection system, which employees the dress’ electrical forcefield to generate enough power to daze an attacker.</p>
+	<p>•	<strong><a href="http://www.gizmowatch.com/entry/a-walking-billboard-in-the-future-anyone/">Walking billboard</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/lunar-design-jacket_cnguk_5965_5MPaT_1292.jpg" alt="lunar design jacket_cnguk_5965"/><br />
+Lunar Design has sandwiched electronics, notably futuristic organic fabrics, into the BLU Jacket concept. These futuristic fabrics which can contain semiconductors will enable the BLU jacket display even your moods through signs and colours. This BLU Jacket also has a GPS module built into it. So, if you walking down the lane and someone asks you directions, you could be able to project a map onto your jacket’s sleeve through it’s flexible display and give directions, replete with imagery. Or how about getting paid for displaying advertisements on your jacket thus making yourself a moving billboard?</p>
+	<p>•	<strong><a href="http://www.gizmowatch.com/entry/wrist-worn-computer-is-a-marine-s-rugged-bracelet/">Wrist-worn computer</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/wrist-wearable-computer_ssrtc_54_1gdl8_1292.jpg" alt="wrist wearable computer_ssrtc_54"/><br />
+Zypad WR1100 is one of the best rugged wrist-worn wirelessly operated computer for the sturdy heads. Measuring 4.5 x 3.5 x 3-inches, the 23-ounce device is churned in special made fiberglass-reinforced nylon-magnesium alloy, a casing which helps the Zypad to attain the ruggedness that its purpose of design demands. Using Linux for its operating system, the shock- and dust-proof device features a touchscreen display with 640X480 resolution. With as little as 256MB RAM and 128MB flash memory the Zypad also features a GPS receiver, electronic compass, biometric fingerprint sensor, 802.11 and Bluetooth/Zigbee interfaces.</p>
+	<p>•	<strong><a href="http://dvice.com/archives/2010/01/rambler-shoes-t.php">Tweeting shoes</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/rambler-shoes_XmHEh_1292.jpg" alt="rambler shoes"/><br />
+Twitter is everywhere these days. And now, it’s in your shoes too, if your shoes are the Ramblers. These custom kicks come equipped with a sensor that knows when you&#8217;re walking, and Bluetooth sync with a cellphone sends out a tweet with every single step you take. Sound useless and annoying, but what more can a geek ask for? </p>
+	<p>•	<strong><a href="http://www.gizmowatch.com/entry/students-develop-tactile-gaming-vests-to-really-feel-the-virtual-pain/">Tactile Gaming Vest</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/gaming_vest_l3nay_54_NEJQj_1292.jpg" alt="gaming_vest_l3nay_54"/><br />
+Gaming vests that let us feel what our favorite game characters feel on screen each time they’re hit, may have got a facelift with the introduction of Tactile Gaming Vests developed by students at the University of Pennsylvania. Synced well with the onscreen action, this vest, tailor made to let gamers feel the gun shots, punches and kicks etc as it happens on the screen, would definitely add to the almost real-like gaming experience. Stuffed in with four solenoid actuators in the chest and front side of the shoulders with two on the backside of the shoulders, this vest is also embedded with vibrating motors clustered against the shoulder blades that simulate the action of getting stabbed.</p>
+	<p>•	<strong><a href="http://www.gizmowatch.com/entry/ping-onto-facebook-with-the-social-networking-garment/">Social networking garment</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/ping_social-networking-garment_8bw1v_54_qvVmh_1292.jpg" alt="ping_social networking garment_8bw1v_54"/><br />
+Jennifer Darmour has invented a social networking garment called Ping. Ping – is a hoodie – on which simple gestures like lifting up the hood, or wearing the hood, are identified to automatically update your status on Facebook. Using Lilypad and Lilypad Xbee with custom software, the garment requires a simple application to customize or interface with Facebook, so that added gestures like tying a bow, zip, button, moving, bending and swinging can be used to ping your friends naturally and automatically.</p>
+	<p>•	<strong><a href="http://www.gizmag.com/universal-gadget-wrist-charger/14551/">Universal Gadget Wrist Charger</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/universal-gadget-wrist-charger_MO2NG_1292.jpg" alt="universal gadget wrist charger"/><br />
+The Universal Gadget Wrist Charger provides a convenient way to carry around extra energy reserves to power the portable gadgets you carry around. Containing a 1500 mAh, 5.5V lithium ion battery the Wrist Charger features a mini USB port and connectors for a range of mobile devices including iPhone. The $35 device has four LED indicators which show how much power remains on the device and because the charger is located on your wrist you’re free to use your device while it’s charging.</p>
+	<p>•	<strong><a href="http://news.cnet.com/8301-17938_105-9693992-1.html">Code M</a></strong><br />
+<img src="http://www.instablogsimages.com/images/2010/05/12/code-m_R4KG4_1292.jpg" alt="code m"/><br />
+Dada footwear’s Code M MP3 player is the first from their line of wireless footwear systems. The Code M can connect with the wireless headphones to rely personal music or can even play out loud music courtesy their built-in speakers. The $200 shoe MP3 player can store up to 100 songs but there isn’t a real word on how the speakers of the shoes perform. Code M isn’t out in the market yet, but when they are, you could definitely have them to mark their performance for yourself.<span class="post.id" style="display:none">540882</span>
+</p>
+					</div>
+					
+						
+					<div class="other-site-links">
+
+	<span class="other-site4">
+		<script>
+			var fbShare = {url: 'http://www.gizmowatch.com/entry/top-20-wearable-technologies-to-make-you-geekier/', size: 'small', google_analytics: 'false'}
+		</script>
+		<script src="http://widgets.fbshare.me/files/fbshare.js"></script>
+	</span>
+
+	<span class="other-site5">
+		<script type="text/javascript">
+			tweetmeme_style = 'compact';
+			tweetmeme_url = 'http://www.gizmowatch.com/entry/top-20-wearable-technologies-to-make-you-geekier/';
+			tweetmeme_source = 'Gizmowatch_com';
+		</script>
+		<script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>
+	</span>
+
+	<span class="other-site1">
+		<a target='_blank' href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.gizmowatch.com%2Fentry%2Ftop-20-wearable-technologies-to-make-you-geekier%2F&title=Top+20+wearable+technologies+to+make+you+geekier"><img src="/css-img/stumble-upon.png"></a>
+	</span>
+
+	<span class="other-site2">
+		<a href="http://digg.com/submit?phase=2&url=http%3A%2F%2Fwww.gizmowatch.com%2Fentry%2Ftop-20-wearable-technologies-to-make-you-geekier%2F&title=Top+20+wearable+technologies+to+make+you+geekier&bodytext=Wearable+technology+that+is+practical+in+real+life+and+is+commercially+viable+simultaneously+represents+the+next+frontier+in+our+technological..."><img src="/css-img/digg.png"></a>
+	</span>
+
+	<span class="other-site3">
+		<a href="http://reddit.com/submit?url=http%3A%2F%2Fwww.gizmowatch.com%2Fentry%2Ftop-20-wearable-technologies-to-make-you-geekier%2F&title=Top+20+wearable+technologies+to+make+you+geekier"><img src="/css-img/reddit.png"></a>
+	</span>
+
+	<div class="clear"></div>
+</div>
+
+					<div class="perma_ads">
+						<div class="perma_ads2" style="float:left;"></div>
+							
+						<div class="perma_ads2" style="float:left;"><script type="text/javascript"><!--
+google_ad_client = "pub-9415440757655812";
+/* Gizmowatch, Permalink, LinkUnit, 20May10 */
+google_ad_slot = "9863367552";
+google_ad_width = 468;
+google_ad_height = 15;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+					</div>
+
+					<div class="clear"></div>
+					<div class="post-tags">
+						<span class="single-post-tag">Tags:</span>
+						<span class="single-post-tag"><a href="http://www.gizmowatch.com/tags/wearable-tech/">Wearable tech</a>, </span><span class="single-post-tag"><a href="http://www.gizmowatch.com/tags/gadgets/">Gadgets</a>, </span><span class="single-post-tag"><a href="http://www.gizmowatch.com/tags/technology/">Technology</a>, </span><span class="single-post-tag"><a href="http://www.gizmowatch.com/tags/innovations/">Innovations</a>, </span><span class="single-post-tag"><a href="http://www.gizmowatch.com/tags/designs/">Designs</a>, </span><span class="single-post-tag"><a href="http://www.gizmowatch.com/tags/concepts/">Concepts</a>, </span><span class="single-post-tag"><a href="http://www.gizmowatch.com/tags/wearable-computers/">Wearable Computers</a>, </span><span class="single-post-tag"><a href="http://www.gizmowatch.com/tags/pcs/">PCs</a>, </span><span class="single-post-tag"><a href="http://www.gizmowatch.com/tags/3d-eye-wear/">3D eye-wear</a>, </span><span class="single-post-tag"><a href="http://www.gizmowatch.com/tags/wearable-toy-piano/">Wearable toy piano</a>, </span><span class="single-post-tag"><a href="http://www.gizmowatch.com/tags/watch-phones/">Watch phones</a>, </span><span class="single-post-tag"><a href="http://www.gizmowatch.com/tags/music/">Music</a>, </span><span class="single-post-tag"><a href="http://www.gizmowatch.com/tags/mp3-players/">MP3 Players</a>, </span><span class="single-post-tag"><a href="http://www.gizmowatch.com/tags/wearable-speakers/">Wearable speakers</a></span>						<!-- google_ad_section_end --> 
+						<!-- google_ad_section_start(weight=ignore) -->
+						, Related : <a href="http://www.made-in-china.com/Consumer-Electronics-Catalog/Consumer-Electronics.html">Consumer Electronic Gadgets</a>, <a href="http://ezinearticles.com/?Free-Reverse-Cell-Phone-Lookup-Websites---Do-They-Exist?&amp;id=638191">Reverse Cell Phone Lookup</a>, <a href="http://www.allcellphone.com/">CELL PHONE ACCESSORIES</a>, <a href="http://www.optimize-your-pc.org/best-registry-cleaner-what-is-it-when-and-why-do-you-need-one">Best registry cleaner
+</a>					</div>
+
+					<div class="perma_ads">
+						<div class="perma_ads2" style="float:left;"><!-- BEGIN STANDARD TAG - 250 x 250 - gizmowatch::Default section - DO NOT MODIFY -->
+<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=250 HEIGHT=250 SRC="http://ad.103092804.com/st?ad_type=iframe&ad_size=250x250&section=810989"></IFRAME>
+<!-- END TAG --></div>
+					</div>
+					<div class="clear"></div>
+
+					<div class="advertisement"></div>					
+					<!--INFOLINKS_OFF--><div id="comments">
+
+						<div id="normal-comments">
+							<h1>Comments</h1><span id="comment-654566"></span>				<div class="comment-odd">										
+												
+			<div class="comment-content">
+				<img src="http://www.instablogsimages.com/user-img/m_sandiegoppc.jpg" />
+				<div class="comment-author-content">
+					<div class="comment-author">
+													<a href="http://sandiegoppc.instablogs.com/">June Summers</a>
+						
+						| <a href="#comment-654566">May 13 2010</a>
+					</div>
+						<p>I want a Vuzix Wrap 920 for my iphone now.
+</p>
+				</div>
+			</div>
+
+							<div class="reply-comment"><a href="javascript:open_reply_comment('654566', '540882','http://www.gizmowatch.com/entry/top-20-wearable-technologies-to-make-you-geekier/','gizmowatch')">Reply to this comment</a></div>
+
+								<div id="reply-comment654566"></div>		
+			</div>						</div>
+
+
+						<div class="insta-daily">
+
+						<div class="related-s">You might also like</div>
+															<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.techfemina.com/entry/top-10-stylish-cellphone-concepts-for-girls/"><img src="http://www.instablogsimages.com/images/2010/04/26/holo-mobile-computer-phone_szuxL_22974_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.techfemina.com/entry/top-10-stylish-cellphone-concepts-for-girls/">Top 10 stylish cellphone concepts for girls</a></div>
+								</div><!-- eof single-story -->
+																<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.gizmowatch.com/entry/instant-spray-on-fabric-sprayed-on-the-body-forms-any-dress-you-like/"><img src="http://www.instablogsimages.com/images/2010/09/16/article-1312399-0b327bd7000005dc-610_634x423_99ebC_54_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.gizmowatch.com/entry/instant-spray-on-fabric-sprayed-on-the-body-forms-any-dress-you-like/">Instant spray-on fabric sprayed on the body forms any dress you like</a></div>
+								</div><!-- eof single-story -->
+																<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.gizmowatch.com/entry/13-coolest-steampunk-phones-to-crank-a-metallic-accent/"><img src="http://www.instablogsimages.com/images/2010/04/02/steampunk-phone-by-schmitt-01_4evWM_54_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.gizmowatch.com/entry/13-coolest-steampunk-phones-to-crank-a-metallic-accent/">13 coolest Steampunk phones to crank a metallic accent</a></div>
+								</div><!-- eof single-story -->
+																<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.gizmowatch.com/entry/multi-touch-3d-interactive-table-lets-you-touch-3d-content/"><img src="http://www.instablogsimages.com/images/2010/08/06/3d-multi-touch-interactive-table_yBdmj_54_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.gizmowatch.com/entry/multi-touch-3d-interactive-table-lets-you-touch-3d-content/">Multi-touch 3D interactive table lets you touch 3D content</a></div>
+								</div><!-- eof single-story -->
+																<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.gizmowatch.com/entry/top-20-most-creatively-designed-pc-case-mods/"><img src="http://www.instablogsimages.com/images/2010/04/29/chernobyl-pc-mod1_3858_eFy86_54_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.gizmowatch.com/entry/top-20-most-creatively-designed-pc-case-mods/">Top 20 most creatively designed PC case mods</a></div>
+								</div><!-- eof single-story -->
+															<div class="clear"></div>
+						</div>
+						<div class="clear"></div>
+						<div class="clear"></div>
+
+														<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.gizmowatch.com/entry/intimacy-dress-reveals-a-woman-s-body-as-a-man-closes-in/"><img src="http://www.instablogsimages.com/images/2010/08/10/initimacy-dress-become-transparent_HNnrt_54_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.gizmowatch.com/entry/intimacy-dress-reveals-a-woman-s-body-as-a-man-closes-in/">Intimacy dress reveals a woman’s body as a man closes in</a></div>
+								</div><!-- eof single-story -->
+																<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.gizmowatch.com/entry/16-most-incredible-working-lego-creations/"><img src="http://www.instablogsimages.com/images/2010/04/12/lego_logo_u6sbb_54_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.gizmowatch.com/entry/16-most-incredible-working-lego-creations/">16 most incredible working Lego creations</a></div>
+								</div><!-- eof single-story -->
+																<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.gizmowatch.com/entry/15-best-wall-e-inspired-diy-creations/"><img src="http://www.instablogsimages.com/images/2010/04/14/wall-e-robot_niVvD_54_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.gizmowatch.com/entry/15-best-wall-e-inspired-diy-creations/">15 best Wall-E inspired DIY creations</a></div>
+								</div><!-- eof single-story -->
+																<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.gizmowatch.com/entry/10-diy-gloves-for-a-lot-more-than-just-wearing/"><img src="http://www.instablogsimages.com/images/2010/06/04/gloves_Crg4Q_54_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.gizmowatch.com/entry/10-diy-gloves-for-a-lot-more-than-just-wearing/">10 DIY Gloves for a lot more than just wearing</a></div>
+								</div><!-- eof single-story -->
+																<div class="single-story-insta">
+									<div class="stry-img-insta"><a href="http://www.gizmowatch.com/entry/custom-made-wall-mount-oak-wood-turntable-is-a-masterpiece/"><img src="http://www.instablogsimages.com/images/2010/08/16/wall-mountable-turntable-2_KTgV1_54_110x110.jpg"/></a></div>
+									<div class="stry-title-insta"><a href="http://www.gizmowatch.com/entry/custom-made-wall-mount-oak-wood-turntable-is-a-masterpiece/">Custom made wall mount oak wood turntable is a masterpiece</a></div>
+								</div><!-- eof single-story -->
+								
+						<div class="perm-ads">
+							<script src='http://www15.glam.com/glamIgm.act?igm=318102576;206935351;6062'></script>						</div>
+						<div class="clear"></div>
+
+						<div class="clear"></div>
+						<div id="add-comments">Add Your Comment</div>
+						<iframe src="http://www.instablogs.com/facebook_platform/fb_network_comment.php?post_id=540882&back_url=http://www.gizmowatch.com/entry/top-20-wearable-technologies-to-make-you-geekier/&css_file=gizmowatch.css" height="690px" width="590px" frameborder=0 scrolling="no"></iframe>
+					</div><!-- EOF comments -->
+
+					<div class="perma_ads">
+						<div class="perma_ads2" style="float:left;"></div>
+					</div>
+					<div class="clear"></div>
+
+				</div><!-- EOF perma-content-main -->
+
+			</div><!-- EOF #content-box -->
+
+			<div id="lb-edit" class="white_content_video" style="display:none;"></div><!-- EOF white_content -->
+			<div id="fade" class="black_overlay"></div>
+
+
+			<!--INFOLINKS_OFF--><div id="content-sidebar">
+
+
+
+<script>
+	function toggle_div(id)
+	{
+		var divid= document.getElementById(id);
+		if(divid.style.display == 'none')
+			divid.style.display = 'block';
+		else
+			divid.style.display = 'none';
+	}
+</script>
+
+<div class="side-ads" style="margin-left:20px; padding-bottom:10px; margin-right:10px;"><!-- ca-pub-9415440757655812/Gizmowatch_Martini_HalfPage -->
+<script type='text/javascript'>
+GA_googleFillSlot("Gizmowatch_Martini_HalfPage");
+</script></div><div class="clear"></div><div class="side-ads" style="margin-left:20px; padding-bottom:10px; margin-top:5px;"><script type="text/javascript" language="javascript" src="http://www2.glam.com/app/site/affiliate/viewChannelModule.act?mName=viewAdJs&affiliateId=318102576&adSize=300x250&zone=Marketplace"></script></div><div class="clear"></div><div class="side-ads"></div><div class="clear"></div><div class="side-ads"></div><div class="clear"></div>
+<div class="follow" style="margin-bottom:10px; margin-left:15px;">
+	<a href="http://twitter.com/gizmowatch_com"><img src="http://www.bornrich.org/images/twitter.jpg"/></a>
+	<a href="http://www.facebook.com/pages/Gizmowatch/133830250537"><img src="http://www.bornrich.org/images/facebook.jpg"/></a>
+</div>
+<div class="clear"></div>
+
+<div class="inner-sidebars">
+	<div class="inner-sidebar1">
+
+<div class="side-ads" style="margin-bottom:10px; margin-left:10px;"></div><div class="clear"></div><div class="side-ads" style="margin-bottom:10px; margin-left:10px;"></div><div class="clear"></div>	
+		<div style="padding-bottom:10px;text-align:center;">
+			<a href="http://www.instablogs.com/instablogs-club/"><img src="http://www.instablogs.com/css-img/insta_club_badge.gif" /></a>
+		</div>
+
+	<div class="side-ads" style="margin-bottom:10px; margin-left:10px;"><script type="text/javascript">
+				GA_googleFillSlot("7Blogs_Homepage_ATF_Button");
+			</script></div><div class="clear"></div><div class="side-ads" style="margin-bottom:10px; margin-left:10px;"><!-- BEGIN RICH-MEDIA Burst Direct CODE -->
+<script type="text/javascript" language="JavaScript">
+rnum=Math.round(Math.random() * 100000);
+ts=String.fromCharCode(60);
+if (window.self != window.top) {nf=''} else {nf='NF/'};
+document.write(ts+'script src="http://www.burstnet.com/cgi-bin/ads/ad15198k.cgi/v=2.3S/sz=125x125A/'+rnum+'/'+nf+'RETURN-CODE/JS/">'+ts+'/script>');
+</script><noscript><a href="http://www.burstnet.com/ads/ad15198k-map.cgi/ns/v=2.3S/sz=125x125A/" target="_top">
+<img src="http://www.burstnet.com/cgi-bin/ads/ad15198k.cgi/ns/v=2.3S/sz=125x125A/" border="0" alt="Click Here" /></a>
+</noscript>
+<!-- END Burst Direct CODE --></div><div class="clear"></div><div class="market-place">
+	<h2>Instablogs Club</h2>
+	<div class="club-data">
+	<span class="club-top-img"><a href="http://www.crickblog.com/entry/wi-v-ned-kemar-roach-teaches-ned-a-lesson-or-six-after-gayle-and-pollard-blast/"><img src="http://www.instablogsimages.com/images/2011/02/28/kemar-roach-v-ned_5gfKq_17022_160x120.jpg" /></a></span><div class="club-top-title"><a href="http://www.crickblog.com/entry/wi-v-ned-kemar-roach-teaches-ned-a-lesson-or-six-after-gayle-and-pollard-blast/">WI v Ned: Kemar Roach Teaches Ned A Lesson or Six After Gayle and Pollard Blast</a><span> (<a href="http://www.crickblog.com">Cricket Blog</a>)</span></div><span class="club-top-img"><a href="http://www.automotto.com/entry/morgans-3-wheel-for-a-sturdy-ride/"><img src="http://www.instablogsimages.com/images/2011/02/28/pic-1_zXJyY_37600_160x120.jpg" /></a></span><div class="club-top-title"><a href="http://www.automotto.com/entry/morgans-3-wheel-for-a-sturdy-ride/">Morgan's 3-Wheel for a sturdy ride</a><span> (<a href="http://www.automotto.com">Auto Motto</a>)</span></div><span class="club-top-img"><a href="http://www.hometone.com/entry/kitchen-remodeling-make-your-cooking-less-tiresome-with-cooking-comfort-3-in-1-solution/"><img src="http://www.instablogsimages.com/images/2011/02/28/cooking-comfort_ptByH_37821_160x120.jpg" /></a></span><div class="club-top-title"><a href="http://www.hometone.com/entry/kitchen-remodeling-make-your-cooking-less-tiresome-with-cooking-comfort-3-in-1-solution/">Kitchen Remodeling: Make your cooking less tiresome with Cooking Comfort 3-in-1 solution</a><span> (<a href="http://www.hometone.com">Hometone</a>)</span></div><span class="club-top-img"><a href="http://www.automotto.com/entry/for-an-ultra-luxury-experience-xenatec-ready-with-its-all-new-cruiserio-coupe/"><img src="http://www.instablogsimages.com/images/2011/02/28/top-image_UXlDG_37600_160x120.jpg" /></a></span><div class="club-top-title"><a href="http://www.automotto.com/entry/for-an-ultra-luxury-experience-xenatec-ready-with-its-all-new-cruiserio-coupe/">For an ultra-luxury experience, Xenatec ready with its all new Cruiserio Coupe</a><span> (<a href="http://www.automotto.com">Auto Motto</a>)</span></div><span class="club-top-img"><a href="http://www.ecofriend.com/entry/phoencia-yacht-design-from-history-blended-with-modern-techniques/"><img src="http://www.instablogsimages.com/images/2011/02/28/clipboard01_a1F28_37335_160x120.jpg" /></a></span><div class="club-top-title"><a href="http://www.ecofriend.com/entry/phoencia-yacht-design-from-history-blended-with-modern-techniques/">Phoencia Yacht design from history blended with modern techniques</a><span> (<a href="http://www.ecofriend.com">Ecofriend</a>)</span></div><span class="club-top-img"><a href="http://www.designbuzz.com/entry/vista-wallet-for-a-flexible-shopping-experience/"><img src="http://www.instablogsimages.com/images/2011/02/28/vistawallet_06_HJVur_37600_160x120.jpg" /></a></span><div class="club-top-title"><a href="http://www.designbuzz.com/entry/vista-wallet-for-a-flexible-shopping-experience/">Vista Wallet for a flexible shopping experience</a><span> (<a href="http://www.designbuzz.com">Designbuzz</a>)</span></div><span class="club-top-img"><a href="http://www.ecofriend.com/entry/ventile-electric-hybrid-with-miniature-windmills-in-the-wheels/"><img src="http://www.instablogsimages.com/images/2011/02/28/ventile-1_Z9yQe_7071_160x120.jpg" /></a></span><div class="club-top-title"><a href="http://www.ecofriend.com/entry/ventile-electric-hybrid-with-miniature-windmills-in-the-wheels/">Ventile: Electric hybrid with miniature windmills in the wheels!</a><span> (<a href="http://www.ecofriend.com">Ecofriend</a>)</span></div>	</div>
+	<div class="add-news"><a class="add-news-page" href="http://www.instablogs.com/instablogs-club/club_wp_plugin.php">Add This</a></div>
+</div><div class="clear"> </div>
+	<div class="border"></div>
+	<div class="side-ads"></div><div class="clear"></div><div class="side-ads"></div><div class="clear"></div><div id="content-sidebar-inner">
+
+</div><!-- EOF #content-sidebar-inner -->
+
+		<div class="side-ads" style="margin:15px;"><!-- BEGIN STANDARD TAG - 120 x 240 - gizmowatch::Default section - DO NOT MODIFY -->
+<SCRIPT TYPE="text/javascript" SRC="http://ad.103092804.com/st?ad_type=ad&ad_size=120x240&section=810989"></SCRIPT>
+<!-- END TAG --></div><div class="clear"></div>
+	<div id="tags">
+		<h2>Tags</h2>
+		<div class="tag-content">
+			<a href="http://www.gizmowatch.com/tags/apple/" class="ibn_tag9">Apple</a> <a href="http://www.gizmowatch.com/tags/art/" class="ibn_tag7">art</a> <a href="http://www.gizmowatch.com/tags/bluetooth/" class="ibn_tag2">Bluetooth</a> <a href="http://www.gizmowatch.com/tags/computers/" class="ibn_tag7">Computers</a> <a href="http://www.gizmowatch.com/tags/concept/" class="ibn_tag5">Concept</a> <a href="http://www.gizmowatch.com/tags/design/" class="ibn_tag10">design</a> <a href="http://www.gizmowatch.com/tags/diy/" class="ibn_tag9">DIY</a> <a href="http://www.gizmowatch.com/tags/gadgets/" class="ibn_tag10">gadgets</a> <a href="http://www.gizmowatch.com/tags/gaming/" class="ibn_tag5">Gaming</a> <a href="http://www.gizmowatch.com/tags/innovations/" class="ibn_tag7">Innovations</a> <a href="http://www.gizmowatch.com/tags/intel/" class="ibn_tag4">intel</a> <a href="http://www.gizmowatch.com/tags/iphone/" class="ibn_tag3">iPhone</a> <a href="http://www.gizmowatch.com/tags/ipod/" class="ibn_tag6">ipod</a> <a href="http://www.gizmowatch.com/tags/japan/" class="ibn_tag4">japan</a> <a href="http://www.gizmowatch.com/tags/microsoft/" class="ibn_tag5">Microsoft</a> <a href="http://www.gizmowatch.com/tags/music/" class="ibn_tag3">Music</a> <a href="http://www.gizmowatch.com/tags/pc/" class="ibn_tag6">PC</a> <a href="http://www.gizmowatch.com/tags/pcs/" class="ibn_tag4">Pcs</a> <a href="http://www.gizmowatch.com/tags/robot/" class="ibn_tag8">Robot</a> <a href="http://www.gizmowatch.com/tags/robotics/" class="ibn_tag8">robotics</a> <a href="http://www.gizmowatch.com/tags/robots/" class="ibn_tag9">Robots</a> <a href="http://www.gizmowatch.com/tags/samsung/" class="ibn_tag6">Samsung</a> <a href="http://www.gizmowatch.com/tags/sony/" class="ibn_tag8">Sony</a> <a href="http://www.gizmowatch.com/tags/technology/" class="ibn_tag10">Technology</a> <a href="http://www.gizmowatch.com/tags/video/" class="ibn_tag3">Video</a> 		</div>	
+		<div class="clear"></div>
+		<div class="more"><a href="/tags/">More&gt;&gt;</a></div>
+	</div><!-- EOF  tags-->
+
+	<div class="border"></div>
+
+					<div id="archives">
+		<h2>Archives</h2>
+		
+		<div class="year" style="cursor:pointer;text-decoration:underline;" onclick="toggle_div('arch-open0')">2011</div><div id="arch-open0">			<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/201102/">February 2011</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/201101/">January 2011</a>
+			</div>
+			</div><div class="year" style="cursor:pointer;text-decoration:underline;" onclick="toggle_div('arch-open1')">2010</div><div id="arch-open1" style="display:none;">			<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/201012/">December 2010</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/201011/">November 2010</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/201010/">October 2010</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/201009/">September 2010</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/201008/">August 2010</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/201007/">July 2010</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/201006/">June 2010</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/201005/">May 2010</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/201004/">April 2010</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/201003/">March 2010</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/201002/">February 2010</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/201001/">January 2010</a>
+			</div>
+			</div><div class="year" style="cursor:pointer;text-decoration:underline;" onclick="toggle_div('arch-open2')">2009</div><div id="arch-open2" style="display:none;">			<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200912/">December 2009</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200911/">November 2009</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200910/">October 2009</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200909/">September 2009</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200908/">August 2009</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200907/">July 2009</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200906/">June 2009</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200905/">May 2009</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200904/">April 2009</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200903/">March 2009</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200902/">February 2009</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200901/">January 2009</a>
+			</div>
+			</div><div class="year" style="cursor:pointer;text-decoration:underline;" onclick="toggle_div('arch-open3')">2008</div><div id="arch-open3" style="display:none;">			<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200812/">December 2008</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200811/">November 2008</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200810/">October 2008</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200809/">September 2008</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200808/">August 2008</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200807/">July 2008</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200806/">June 2008</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200805/">May 2008</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200804/">April 2008</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200803/">March 2008</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200802/">February 2008</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200801/">January 2008</a>
+			</div>
+			</div><div class="year" style="cursor:pointer;text-decoration:underline;" onclick="toggle_div('arch-open4')">2007</div><div id="arch-open4" style="display:none;">			<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200712/">December 2007</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200711/">November 2007</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200710/">October 2007</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200709/">September 2007</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200708/">August 2007</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200707/">July 2007</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200706/">June 2007</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200705/">May 2007</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200704/">April 2007</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200703/">March 2007</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200702/">February 2007</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200701/">January 2007</a>
+			</div>
+			</div><div class="year" style="cursor:pointer;text-decoration:underline;" onclick="toggle_div('arch-open5')">2006</div><div id="arch-open5" style="display:none;">			<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200612/">December 2006</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200611/">November 2006</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200610/">October 2006</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200609/">September 2006</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200608/">August 2006</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200607/">July 2006</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200606/">June 2006</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200605/">May 2006</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200604/">April 2006</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200603/">March 2006</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200602/">February 2006</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200601/">January 2006</a>
+			</div>
+			</div><div class="year" style="cursor:pointer;text-decoration:underline;" onclick="toggle_div('arch-open6')">2005</div><div id="arch-open6" style="display:none;">			<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200512/">December 2005</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200511/">November 2005</a>
+			</div>
+						<div class="archive-data">
+				<a href="http://www.gizmowatch.com/archives/200510/">October 2005</a>
+			</div>
+					</div>
+		</div><!-- EOF archives -->
+
+			
+		<div class="border"></div>
+
+		<div class="side-ads"></div><div class="clear"></div>
+	</div><!-- EOF inner-sidebar1 -->
+
+		<div class="inner-sidebar2">
+
+		<!-- PUT THIS TAG IN DESIRED LOCATION OF SLOT 7Blogs_Homepage_ATF_Button -->
+		<script type="text/javascript">
+			GA_googleFillSlot("7Blogs_Homepage_ATF_Button");
+		</script>
+		<!-- END OF TAG FOR SLOT 7Blogs_Homepage_ATF_Button -->
+
+			<div class="market-place">
+				 			</div><!-- EOF market-place -->
+
+		<div class="side-ads"><script type="text/javascript" language="javascript" src="http://www2.glam.com/app/site/affiliate/viewChannelModule.act?mName=viewAdJs&affiliateId=318102576&adSize=160x600&zone=Marketplace"></script></div><div class="clear"></div>
+			<div class="border"></div>
+			
+			
+			<div class="clear"></div>
+
+			<div class="side-ads"><!-- BEGIN STANDARD TAG - 160 x 600 - Technology: Run-of-site - DO NOT MODIFY -->
+<IFRAME FRAMEBORDER=0 MARGINWIDTH=0 MARGINHEIGHT=0 SCROLLING=NO WIDTH=160 HEIGHT=600 SRC="http://ad.foxnetworks.com/st?ad_type=iframe&ad_size=160x600&section=792558"></IFRAME>
+<!-- END TAG --></div><div class="clear"></div><div class="side-ads" style="margin-top:10px;"></div><div class="clear"></div><div class="side-ads" style="padding-top:20px;"></div><div class="clear"></div>
+			<div class="Comments">
+				<h2>Fresh Comments</h2>
+									<div class="image-content">
+						<div class="image"><img src="http://www.instablogsimages.com/user-img/t_justmeagain.jpg"/></div>
+						<div class="comment-content">
+							<div class="author">
+															<a href="http://justmeagain.instablogs.com/">JustMeAgain</a>
+															</div>
+							on <span><a href="http://www.gizmowatch.com/entry/a-japanese-robot-thatll-tweet-from-space/#comment-680565">A Japanese robot that'll...</a> Humans have too much time to waste! </span>
+						</div>
+					</div>
+					<div class="clear"></div>
+									<div class="image-content">
+						<div class="image"><img src="http://www.instablogsimages.com/user-img/t_indowaves.jpg"/></div>
+						<div class="comment-content">
+							<div class="author">
+															<a href="http://indowaves.instablogs.com/">ARVIND K.PANDEY</a>
+															</div>
+							on <span><a href="http://www.gizmowatch.com/entry/innovations-scientists-build-worlds-first-antilaser/#comment-680288">Innovations:  Scientists...</a> @JustMeAgain
+
+This day shall be remembered for quite a long time by me and others.... </span>
+						</div>
+					</div>
+					<div class="clear"></div>
+									<div class="image-content">
+						<div class="image"><img src="http://www.instablogsimages.com/user-img/t_justmeagain.jpg"/></div>
+						<div class="comment-content">
+							<div class="author">
+															<a href="http://justmeagain.instablogs.com/">JustMeAgain</a>
+															</div>
+							on <span><a href="http://www.gizmowatch.com/entry/innovations-scientists-build-worlds-first-antilaser/#comment-680283">Innovations:  Scientists...</a> The device that is capable of absorbing an incoming laser beam entirely in it&#8217;s... </span>
+						</div>
+					</div>
+					<div class="clear"></div>
+									<div class="image-content">
+						<div class="image"><img src="http://www.instablogsimages.com/user-img/t_stagueve.jpg"/></div>
+						<div class="comment-content">
+							<div class="author">
+															<a href="http://stagueve.instablogs.com/">Stag Eve</a>
+															</div>
+							on <span><a href="http://www.gizmowatch.com/entry/what-we-need-to-know-of-the-much-awaited-iphone-nano/#comment-679900">What we need to know about...</a> What we need to know about the iPhone Nano? Simply that there will never be an iPhone... </span>
+						</div>
+					</div>
+					<div class="clear"></div>
+									<div class="image-content">
+						<div class="image"><img src="http://www.instablogsimages.com/user-img/t_rajanservgmailcom.jpg"/></div>
+						<div class="comment-content">
+							<div class="author">
+															<a href="http://rajanservgmailcom.instablogs.com/">Ramachandran N.P.</a>
+															</div>
+							on <span><a href="http://www.gizmowatch.com/entry/allan-snyders-thinking-cap-to-accelerate-your-brain-power/#comment-679616">Allan Snyder's Thinking Cap...</a> &#8221;The results proved very much beneficial for the participants of the tests. After... </span>
+						</div>
+					</div>
+					<div class="clear"></div>
+							</div><!-- EOF Comments -->
+
+			<div class="clear"></div>
+			<div class="border"></div>
+
+			<div class="side-ads"></div><div class="clear"></div><div class="side-ads"></div><div class="clear"></div>
+			<div class="market-place">
+					<div class="buy"> To Advertise please <a href="http://www.instablogs.com/ad_solutions.php?b=10">Contact Us</a>.</div>
+			</div><!-- EOF market-place -->
+
+			<div class="border"></div>
+			
+				<div class="side-ads"></div><div class="clear"></div>	 
+	</div><!-- EOF inner-sidebar2 -->
+
+</div><!-- EOF inner-sidebars -->
+
+<div class="clear"></div>
+
+<div class="side-ads" style="padding-top:15px;padding-bottom:15px;margin-left:15px;"></div><div class="clear"></div><div style="margin:10px;">
+	<iframe src="http://www.facebook.com/plugins/fan.php?id=133830250537&amp;width=295&amp;height=250&amp;connections=10&amp;stream=false&amp;header=false" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:300px; height:250px"></iframe>
+</div>
+<script src="/js/prototype.js"></script>
+	<script src="/js/control.js"></script>
+<script>
+	function show_top_tabs(divid)
+		{
+			if(divid=='topic-voted')
+			{
+				$('topic-commented').style.display='none';
+				$('topic-voted').style.display='block';
+				$('1').addClassName('active');
+				$('2').removeClassName('active');
+
+			}
+			else
+			{
+				$('topic-commented').style.display='block';
+				$('topic-voted').style.display='none';
+				$('2').addClassName('active');
+				$('1').removeClassName('active');
+			}
+		}
+	</script>
+
+	<!-- 		<div class="breaking-news">
+			<h2>Do it Yourself</h2>
+					
+				<div class="breaking-content">
+					<img src="http://www.instablogsimages.com/images/2009/12/29/mitzy-the-rolling-robot-dog_Pn4O3_54_125x80.jpg" alt="mitzy the rolling robot dog Pn4O3" />
+					<div class="title"><a href="http://www.gizmowatch.com/entry/mitzy-the-rolling-robot-dog-made-in-recycled-materials/">MITZY - The Rolling Robot Dog made in recycled materials</a></div>
+					<div class="date">Dec 29 2009</div>
+				</div>
+				<div class="clear"> </div>
+					
+				<div class="breaking-content">
+					<img src="http://www.instablogsimages.com/images/2009/12/28/makerbot-watch_HJSOC_54_125x80.jpg" alt="makerbot watch HJSOC" />
+					<div class="title"><a href="http://www.gizmowatch.com/entry/arduino-based-makerbotwatch-all-exciting-and-unique/">Arduino based MakerBotWatch, all exciting and unique</a></div>
+					<div class="date">Dec 28 2009</div>
+				</div>
+				<div class="clear"> </div>
+					
+				<div class="breaking-content">
+					<img src="http://www.instablogsimages.com/images/2009/12/07/zenith_cobra_matic_casemod_uywWv_54_125x80.jpg" alt="zenith cobra matic casemod uywWv" />
+					<div class="title"><a href="http://www.gizmowatch.com/entry/cobra-matic-casemod-a-retro-freak-s-delight/">Cobra-Matic casemod - a retro freak’s delight</a></div>
+					<div class="date">Dec 7 2009</div>
+				</div>
+				<div class="clear"> </div>
+					
+				<div class="breaking-content">
+					<img src="http://www.instablogsimages.com/images/2009/12/07/homemade-flight-simulator_9VXBD_54_125x80.jpg" alt="homemade flight simulato 9VXBD" />
+					<div class="title"><a href="http://www.gizmowatch.com/entry/man-builds-flight-simulator-that-shoots-water-upto-25-meters/">Man builds flight simulator that shoots water up to 25 meters</a></div>
+					<div class="date">Dec 7 2009</div>
+				</div>
+				<div class="clear"> </div>
+					</div>
+	 -->
+
+	<div class="clear"></div>
+
+
+
+	<div class="breaking-news">
+		<h2>Top of Technology<span style="font:italic 10px/1.1em arial,serif;"> ( 7 days )</span></h2>
+					
+					<div class="topic">
+					( <a id=1 class="active" href="javascript:show_top_tabs('topic-voted')">Recent</a> | <a id=2 href="javascript:show_top_tabs('topic-commented')">Popular</a> )
+					</div>
+						<div id="topic-voted">
+						
+							<div class="breaking-content">
+							<img src="http://www.instablogsimages.com/images/2011/02/28/pic-1_zXJyY_37600_125x80.jpg" />								<div class="title"><a href=http://Jaazhh.instablogs.com/entry/morgans-3-wheel-for-a-sturdy-ride >Morgan's 3-Wheel for a sturdy ride</a></div>
+								<div class="date">5 hrs ago</div>
+							</div>
+							<div class="clear"> </div>
+							
+							<div class="breaking-content">
+							<img src="http://www.instablogsimages.com/images/2011/02/28/pic-1_vpseD_37600_125x80.jpg" />								<div class="title"><a href=http://Jaazhh.instablogs.com/entry/amphibious-trike-for-a-unique-ride-on-land-as-well-as-water >Amphibious Trike for a unique ride on land as well as water</a></div>
+								<div class="date">10 hrs ago</div>
+							</div>
+							<div class="clear"> </div>
+							
+							<div class="breaking-content">
+							<img src="http://www.instablogsimages.com/images/2011/02/28/top-image_UXlDG_37600_125x80.jpg" />								<div class="title"><a href=http://Jaazhh.instablogs.com/entry/for-an-ultra-luxury-experience-xenatec-ready-with-its-all-new-cruiserio-coupe >For an ultra-luxury experience, Xenatec ready with its all new Cruiserio Coupe</a></div>
+								<div class="date">5 hrs ago</div>
+							</div>
+							<div class="clear"> </div>
+							
+							<div class="breaking-content">
+							<img src="http://www.instablogsimages.com/images/2011/02/27/rzrchimaerahs01whtbg_YW5uJ_32853_125x80.jpg" />								<div class="title"><a href=http://www.gizmowatch.com/entry/razer-s-chimaera-51-wireless-xbox-headset-available-for-pre-order >Razer’s Chimaera 5.1 wireless Xbox headset available for pre-order</a></div>
+								<div class="date">2 days ago</div>
+							</div>
+							<div class="clear"> </div>
+							
+							<div class="breaking-content">
+							<img src="http://www.instablogsimages.com/images/2011/02/27/megatron-1_7uaPq_37600_125x80.jpg" />								<div class="title"><a href=http://Jaazhh.instablogs.com/entry/junk-crafted-into-an-alien-looking-megatron-tank >Junk crafted into an alien looking Megatron tank</a></div>
+								<div class="date">1 day ago</div>
+							</div>
+							<div class="clear"> </div>
+													</div>
+					
+						<div id="topic-commented" style="display:none;">
+							
+							<div class="breaking-content">
+							<img src="http://www.instablogsimages.com/images/2011/02/22/planetarium_5V1VJ_25581_125x80.jpg" />								<div class="title"><a href=http://zoy29.instablogs.com/entry/gudwahati-planetarium-upgraded-to-digital-hybrid >Gudwahati Planetarium upgraded to Digital Hybrid</a></div>
+								<div class="date">6 days ago</div>
+							</div>
+							<div class="clear"> </div>
+							
+							<div class="breaking-content">
+															<div class="title"><a href=http://BrendaPou.instablogs.com/entry/number-of-unmarried-girls-increases >Number of Unmarried Girls Increases</a></div>
+								<div class="date">6 days ago</div>
+							</div>
+							<div class="clear"> </div>
+							
+							<div class="breaking-content">
+							<img src="http://www.instablogsimages.com/images/2011/02/24/schedule-windows-shut-down-and-hibernate-options_fYjB7_25552_125x80.jpg" />								<div class="title"><a href=http://Desyljj.instablogs.com/entry/schedule-shut-down-and-hibernate-options-of-your-windows-system >Schedule Shut-down and Hibernate options of your Windows system</a></div>
+								<div class="date">4 days ago</div>
+							</div>
+							<div class="clear"> </div>
+							
+							<div class="breaking-content">
+							<img src="http://www.instablogsimages.com/images/2011/02/24/kinetia-lmx-vehicle1ti_AhpYG_32853_125x80.jpg" />								<div class="title"><a href=http://garima_goel.instablogs.com/entry/indian-designs-kinetia-lmx-a-batmobile-styled-racer >Indian designs Kinetia LMX: A Batmobile styled racer</a></div>
+								<div class="date">4 days ago</div>
+							</div>
+							<div class="clear"> </div>
+							
+							<div class="breaking-content">
+							<img src="http://www.instablogsimages.com/images/2011/02/26/1161854869_PLfB1_37804_125x80.jpg" />								<div class="title"><a href=http://veevas.instablogs.com/entry/biometric-technologies-are-they-safe >Biometric technologies – are they safe?</a></div>
+								<div class="date">2 days ago</div>
+							</div>
+							<div class="clear"> </div>
+													</div>
+
+			</div><!-- EOF local-main-->
+
+				<div class="clear"></div>
+
+</div><!-- EOF #content-sidebar -->
+		</div><!-- EOF #content -->
+
+		<img src="http://www.instablogs.com/permalink_pageviews_img.php?var=540882|54|2010-05-13|2|club|10|0|0|200|www.gizmowatch.com||||74.201.117.226|%2Fentry%2Ftop-20-wearable-technologies-to-make-you-geekier%2F|%2Fentry%2Ftop-20-wearable-technologies-to-make-you-geekier%2F">
+<!-- start Vibrant Media IntelliTXT script section -->
+<script type="text/javascript" src="http://gizmowatch.us.intellitxt.com/intellitxt/front.asp?ipid=19076"></script>
+<!-- end Vibrant Media IntelliTXT script section -->
+<!--INFOLINKS_OFF--><div class="clear"> </div>
+
+		
+		<div id="ad-footer">
+
+			<div class="side-ads"></div>
+
+			<div class="side-ads"></div>
+
+		</div><!-- EOF #ad-footer -->
+
+		<div id="footer">
+			
+			<div id="footer-main">
+				
+				<div class="publish">Published by The <a href="http://www.instablogs.com/">Instablogs Network</a>, <a href="http://www.citizenmedia.org">Citizen Media Pvt. Ltd.</a></div>
+				<div class="copyright">Copyright &copy; Instablogs Network 2005. All rights reserved.</div>
+				<div class="footer-links">
+				<a href="http://www.instablogs.com/ad_solutions.php?b=10">Advertising</a>  |  <a href="/about-us.php">About</a> |  <a href="/disclaimer.php">Disclaimer</a> | <a href="/privacy-policy.php">Privacy Policy</a> | <a href="/terms-of-use.php">Terms of Use</a> | <a href="/contact-us.php?q=general">Contact</a>
+				</div>
+			</div><!-- EOF #footer-main -->
+
+				<div class="side-ads"></div>
+
+				<div class="side-ads"></div>
+
+		</div><!-- EOF #footer -->
+
+		</div> <!-- EOF #container -->
+
+				<div class="side-ads">
+									</div>
+
+	<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=970674; 
+var sc_invisible=1; 
+var sc_partition=58; 
+var sc_click_stat=1; 
+var sc_security="a74d242b"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="myspace analytics"
+href="http://www.statcounter.com/myspace/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/970674/0/a74d242b/1/"
+alt="myspace analytics" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+<!-- Start of StatCounter Code Instablogs Network -->
+<script type="text/javascript">
+var sc_project=2497465; 
+var sc_invisible=1; 
+var sc_partition=66; 
+var sc_click_stat=1; 
+var sc_security="77633a20"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter.js"></script><noscript><div
+class="statcounter"><a title="web stats"
+href="http://www.statcounter.com/free_web_stats.html"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/2497465/0/77633a20/1/"
+alt="web stats" ></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+	<!-- Site Google Analytics -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-601944-5");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+	<!-- End of Site Google Analytics -->
+
+
+	<!-- Channel Google Analytics -->
+	<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-5515876-22");
+	pageTracker._trackPageview();
+	} catch(err) {}</script>
+	<!-- End of Channel Google Analytics -->
+
+<!-- Instablogs Network Google Analytics -->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-601944-10");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<!-- End of Instablogs Network Google Analytics -->
+  </body>
+</html>
+ 
+		<!-- google_ad_section_end --> 

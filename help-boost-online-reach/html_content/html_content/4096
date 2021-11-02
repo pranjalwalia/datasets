@@ -1,0 +1,340 @@
+
+
+<html>
+<head>
+	<title id="_ctl1_KBPageTitle">Generate a CSR for OpenSSL - (see tools.ssl.com)</title></title>
+	<link id="_ctl1_KBStyleSheet" href="http://info.ssl.com/scripts/style.css" rel="stylesheet" type="text/css"></link>
+	<script language="JavaScript" src="scripts/kbjs.js"></script>
+      <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4e89065557535325"></script>
+            <script src="https://secure.ssl.com/?js" type="text/javascript"></script>
+</head>
+<body id="thebody" bgcolor="#ffffff">
+<div style="padding:2px 0; text-align: center;width: 100%; background-color: orange; margin-bottom: .5em; font-family: sans-serif; font-size: .8em; font-weight: bold;" id="answers">
+Have a question or solution?
+<a style="text-decoration: underline; color: #111" href="http://answers.ssl.com">Be sure to visit the SSL.com IT Security Q&amp;A community site.</a>
+</div>
+<center>
+<table width="80%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td align="left" valign="baseline">
+			<a href="http://info.ssl.com/" class="small_link"><img src="images/logo.gif" border="0"></a>
+		</td>
+		<td align="right" valign="bottom">
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style addthis_32x32_style" style="float: right; padding-bottom: 1em;">
+<a class="addthis_button_google_plusone"></a>
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_linkedin"></a>
+<a class="addthis_button_email"></a>
+<a class="addthis_button_compact"></a>
+<a class="addthis_counter addthis_bubble_style"></a>
+</div>
+<!-- AddThis Button END -->
+<div style="float: left; text-align: center"><a href="https://www.ssl.com/site_seals/11665f53-4c3e2026/site_report" popup="site_report height=500, width=400, top=100, left=100" title="get free ssl certificates"><img alt="ssl certificate report" src="https://www.ssl.com/images/ssl_trust_logo.gif"></a>
+<div style=""><a style="font-family: sans-serif; font-size: .8em; font-weight: bold;text-align: center" href="https://www.ssl.com/certificates/free">click here for free ssl certificates</a></div></div>
+			<a title="shorten links with ssl links" href="https://links.ssl.com/" class="small_link" style="font-family: sans-serif; font-size: .8em; font-weight: bold;display: block; clear: right;">get your very own SSL link</a>
+		</td>
+	</tr>
+</table>
+<table class="tableOutline" width="80%" cellpadding="12" cellspacing="0">
+	<tr>
+		<td>
+			<br><form name="__aspnetForm" method="post" action="article.aspx?id=10082" id="__aspnetForm">
+<input type="hidden" name="__SCROLLPOS" value="0" />
+
+
+
+<table id="_ctl0_NavBar" width="100%" cellpadding="0" cellspacing="0">
+	<tr>
+		<td width="3"><img src="http://info.ssl.com/images/spacer.gif" alt="" border="0" style="height:1px;" /></td>
+		<td nowrap="nowrap" height="22" width="120" align="center" class="NavBar_TabOn"><a class="navbar_links" href="http://info.ssl.com/default.aspx">Browse</a></td>
+		<td width="1"><img src="http://info.ssl.com/images/spacer.gif" alt="" border="0" style="height:1px;" /></td>
+		<td nowrap="nowrap" height="22" width="120" align="center" class="NavBar_TabOff"><a class="navbar_links" href="http://info.ssl.com/search.aspx">Search</a></td>
+		<td width="1"><img src="http://info.ssl.com/images/spacer.gif" alt="" border="0" style="height:1px;" /></td>
+		<td nowrap="nowrap" height="22" width="120" align="center" class="NavBar_TabOff"><a class="navbar_links" href="http://info.ssl.com/ask.aspx">Ask a Question!</a></td>
+		<td width="1"><img src="http://info.ssl.com/images/spacer.gif" alt="" border="0" style="height:1px;" /></td>
+		<td nowrap="nowrap" height="22" width="120" align="center" class="NavBar_TabOff"><a class="navbar_links" href="http://info.ssl.com/login.aspx">Login</a></td>
+		<td width="90%"><img src="http://info.ssl.com/images/spacer.gif" alt="" border="0" style="height:1px;" /></td>
+		<td width="10%" align="right"><a title="RSS feed of last 50 articles added to the knowledge base." href="http://info.ssl.com/rssfeed.aspx" target="_blank"><img title="RSS feed of last 50 articles added to the knowledge base." src="http://info.ssl.com/images/rss.gif" alt="" border="0" /></a></td>
+	</tr>
+	<tr>
+		<td bgcolor="#7898B5" height="1"></td>
+		<td bgcolor="#FFFFFF" height="1"></td>
+		<td bgcolor="#7898B5" height="1"></td>
+		<td bgcolor="#7898B5" height="1"></td>
+		<td bgcolor="#7898B5" height="1"></td>
+		<td bgcolor="#7898B5" height="1"></td>
+		<td bgcolor="#7898B5" height="1"></td>
+		<td bgcolor="#7898B5" height="1"></td>
+		<td bgcolor="#7898B5" height="1"></td>
+		<td bgcolor="#7898B5" height="1"></td>
+	</tr>
+</table>
+
+
+<table width="100%" cellspacing="0" cellpadding="2">
+<tr><td class="small_blue_text">
+	<span id="_ctl0_BreadCrumbNavigation"><table width='100%' cellspacing='0'><tr><td><img src='images/spacer.gif' height='5' width='1'></td></tr></table><a href="http://info.ssl.com/" class="navbar_links">Home</a>  : <a href="http://info.ssl.com/Article.aspx?id=10082" class="navbar_links">Generate a CSR for OpenSSL - (see tools.ssl.com)</a></span>
+</td></tr></table>
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr><td class="tophoz_splitter"><img src="images/spacer.gif" alt="" border="0" style="height:15px;width:1px;" /></td></tr>
+	<tr><td><img src="images/spacer.gif" alt="" border="0" style="height:5px;width:1px;" /></td></tr>
+	<tr>
+		<td valign="top">		
+			
+				
+			<table width="100%" border="0" cellpadding="0" cellspacing="1" bgcolor="#7898B5"><tr><td>
+					
+				
+				<table width="100%" border="0" cellpadding="7" cellspacing="0">					
+					<tr><td nowrap class="header_cell">
+					<table width="100%" cellpadding="0" cellspacing="0">
+					<tr><td class="small_header"><img src="images/bullet.gif" alt="" border="0" /> <span id="_ctl0_ArticleRepeater__ctl1_ArticleTitle">Q10082 - HOWTO: Generate a CSR for OpenSSL - (see tools.ssl.com)</span></td>
+					</tr></table>					
+					</td></tr>
+					<tr><td bgcolor="#74BAF3"></td></tr>
+				</table>
+				
+				<table width="100%" cellpadding="0" border="0" cellspacing="0">		
+				<tr><td width="77%" bgcolor="#ffffff" valign="top">
+
+					<table width="100%" cellpadding="12" cellspacing="0">		
+					<tr><td class="article_text">
+					<span id="_ctl0_ArticleRepeater__ctl1_ArticleText"><SPAN id=_ctl1_ArticleRepeater__ctl1_ArticleText>A CSR is a file containing your certificate application information, including your Public Key. Generate your CSR and then copy and paste the CSR file into the webform in the enrollment process:
+<h2>*NEW* Try <a href="http://tools.ssl.com">http://tools.ssl.com</a> to automatically create your openssl request</h2>
+<P>or see below for manual instructions:</P>
+<h2>Generate keys and certificate (manually)</h2>
+<P>To generate a pair of private key and public Certificate Signing Request (CSR) for a webserver, "server", use the following command :</P>
+<P>       openssl req -new -nodes -keyout myserver.key -out server.csr -newkey rsa:2048</P>
+<P>This creates a two files. The file myserver.key contains a private key; do not disclose this file to anyone. Carefully protect the private key.</P>
+<P>In particular, be sure to backup the private key, as there is no means to recover it should it be lost. The private key is used as input in the command to generate a Certificate Signing Request (CSR).</P>
+<P>You will now be asked to enter details to be entered into your CSR. <BR>What you are about to enter is what is called a Distinguished Name or a DN. </P>
+<P>For some fields there will be a default value, If you enter '.', the field will be left blank. </P>
+<P>       ----- <BR>       Country Name (2 letter code) [US]: US<BR>       State or Province Name (full name) []: Texas<BR>       Locality Name (eg, city) []: Houston<BR>       Organization Name (eg, company) []: Your Company Inc<BR>       Organizational Unit Name (eg, section) []: Your Department<BR>       Common Name (eg, YOUR name) []: secure.yourcompanyname.com<BR>       Email Address []:</P>
+<P>Please enter the following 'extra' attributes to be sent with your certificate request</P>
+<P>       A challenge password []: <BR>       An optional company name []:<BR>        ----- </P>
+<P>Use the name of the webserver as Common Name (CN). If the domain name is mydomain.com append the domain to the hostname (use the fully qualified domain name).</P>
+<P>The fields email address, optional company name and challenge password can be left blank for a webserver certificate.</P>
+<P><BR>Your CSR will now have been created. Open the server.csr in a text editor and copy and paste the contents into the online enrollment form when requested.</P></SPAN></span>
+					</td></tr>
+					<tr><td>
+
+						<table width="100%" cellpadding="2" cellspacing="0">
+						<tr><td colspan="3" class="hoz_splitter"><img src="images/spacer.gif" alt="" border="0" style="height:15px;width:1px;" /></td></tr>	
+						<tr>
+							<td valign="top" class="white_tblcell">
+								<a name="relatedarticles"></a>
+								<table width="100%" cellpadding="0" cellspacing="1" bgcolor="#7898B5"><tr><td>
+									<table width="100%" cellpadding="7" cellspacing="0">
+									<tr><td class="header_cell" nowrap><b>Related Articles</b>
+									</td></tr><tr><td bgcolor="#74BAF3"></td></tr>
+									<tr><td bgcolor="#FFFFFF" class="small_gray_text">
+									<span id="_ctl0_ArticleRepeater__ctl1_RelatedArticles">No Related Articles Available.</span>
+									</td></tr></table>
+								</td></tr></table>
+								<a name="relatedattachments"></a><br>
+								<table width="100%" cellpadding="0" cellspacing="1" bgcolor="#7898B5"><tr><td>
+									<table width="100%" cellpadding="7" cellspacing="0">
+									<tr><td class="header_cell" nowrap><b>Article Attachments</b>
+									</td></tr><tr><td bgcolor="#74BAF3"></td></tr>
+									<tr><td bgcolor="#FFFFFF" class="small_gray_text">
+									<span id="_ctl0_ArticleRepeater__ctl1_RelatedAttachments">No Attachments Available.</span>
+									</td></tr></table>
+								</td></tr></table>
+								<a name="relatedlinks"></a><br>
+								<table width="100%" cellpadding="0" cellspacing="1" bgcolor="#7898B5"><tr><td>
+									<table width="100%" cellpadding="7" cellspacing="0">
+									<tr><td class="header_cell" nowrap><b>Related External Links</b>
+									</td></tr><tr><td bgcolor="#74BAF3"></td></tr>
+									<tr><td bgcolor="#FFFFFF" class="small_gray_text">
+									<span id="_ctl0_ArticleRepeater__ctl1_RelatedLinks"><table width='100%' cellpadding='1' cellspacing='0'><tr><td valign='top' width='18'><img src='http://info.ssl.com/admin/images/icons/rellinks.png' width='16' height='16' align='absmiddle'></td><td><a href="http://tools.ssl.com" class="small_link" target="_blank">http://tools.ssl.com</a></table></span>
+									</td></tr></table>
+								</td></tr></table>			
+														
+							</td></tr>
+							<tr><td colspan="3" class="hoz_splitter"><img src="images/spacer.gif" alt="" border="0" style="height:15px;width:1px;" /></td></tr>	
+							<tr><td valign="top" class="white_tblcell">
+							
+								<table width="100%" cellpadding="0" cellspacing="1" bgcolor="#7898B5"><tr><td>
+									<table width="100%" cellpadding="7" cellspacing="0">
+									<tr><td class="header_cell" nowrap><b>Help us improve this article...</b>
+									</td></tr>
+									<tr><td bgcolor="#74BAF3"></td></tr>
+									<tr><td bgcolor="#FFFFFF">	
+									
+										<table width="100%" cellpadding="4" cellspacing="0">
+										<tr><td class="small_gray_text">
+										
+											
+											
+											What did you think of this article?
+											
+											</td></tr>
+											<tr><td class="small_gray_text">
+											
+												<table cellpadding="0" width="335" border="0" cellspacing="0">
+												<tr><td width="10" class="small_gray_text"><br>
+												<font color="#7B95BB">poor&nbsp;</font></td>
+												<td class="small_gray_text" align="center">
+												1<br><input id="_ctl0_ArticleRepeater__ctl1_Radio1" type="radio" name="_ctl0:ArticleRepeater:_ctl1:rating" value="Radio1" /></td>
+												<td class="small_gray_text" align="center">
+												2<br><input id="_ctl0_ArticleRepeater__ctl1_Radio2" type="radio" name="_ctl0:ArticleRepeater:_ctl1:rating" value="Radio2" /></td>
+												<td class="small_gray_text" align="center">
+												3<br><input id="_ctl0_ArticleRepeater__ctl1_Radio3" type="radio" name="_ctl0:ArticleRepeater:_ctl1:rating" value="Radio3" /></td>
+												<td class="small_gray_text" align="center">
+												4<br><input id="_ctl0_ArticleRepeater__ctl1_Radio4" type="radio" name="_ctl0:ArticleRepeater:_ctl1:rating" value="Radio4" /></td>
+												<td class="small_gray_text" align="center">
+												5<br><input id="_ctl0_ArticleRepeater__ctl1_Radio5" type="radio" name="_ctl0:ArticleRepeater:_ctl1:rating" value="Radio5" /></td>
+												<td class="small_gray_text" align="center">
+												6<br><input id="_ctl0_ArticleRepeater__ctl1_Radio6" type="radio" name="_ctl0:ArticleRepeater:_ctl1:rating" value="Radio6" /></td>
+												<td class="small_gray_text" align="center">
+												7<br><input id="_ctl0_ArticleRepeater__ctl1_Radio7" type="radio" name="_ctl0:ArticleRepeater:_ctl1:rating" value="Radio7" /></td>
+												<td class="small_gray_text" align="center">
+												8<br><input id="_ctl0_ArticleRepeater__ctl1_Radio8" type="radio" name="_ctl0:ArticleRepeater:_ctl1:rating" value="Radio8" /></td>
+												<td class="small_gray_text" align="center">
+												9<br><input id="_ctl0_ArticleRepeater__ctl1_Radio9" type="radio" name="_ctl0:ArticleRepeater:_ctl1:rating" value="Radio9" /></td>
+												<td class="small_gray_text" align="center">
+												10<br><input id="_ctl0_ArticleRepeater__ctl1_Radio10" type="radio" name="_ctl0:ArticleRepeater:_ctl1:rating" value="Radio10" /></td>
+												<td class="small_gray_text">
+												<br><font color="#F57272">&nbsp;excellent</font></td>
+												</tr>
+												</table>
+
+										</td></tr>
+										<tr><td class="small_gray_text">
+										
+											Tell us why you rated the content this way. (optional)
+											
+										</td></tr>
+										
+								<tr><td class="small_gray_text">								
+								<textarea name="_ctl0:ArticleRepeater:_ctl1:comments" rows="4" id="_ctl0_ArticleRepeater__ctl1_comments" style="width:100%;"></textarea>
+								</td></tr>
+										
+										<tr><td class="small_gray_text">
+											<input type="submit" name="_ctl0:ArticleRepeater:_ctl1:lnkbut_comments" value=" Submit " id="_ctl0_ArticleRepeater__ctl1_lnkbut_comments" class="frmbutton" />&nbsp;
+										</td></tr></table>
+										
+									</td></tr></table>
+								</td></tr></table>
+											
+							</td></tr>
+							<tr><td colspan="3" class="hoz_splitter"><img id="_ctl0_ArticleRepeater__ctl1_Image1" src="images/spacer.gif" alt="" border="0" style="height:15px;width:1px;" /></td></tr>	
+							<tr><td valign="top" class="white_tblcell">
+							
+								<table width="100%" cellpadding="0" cellspacing="1" bgcolor="#7898B5"><tr><td>
+									<table width="100%" cellpadding="7" cellspacing="0">
+									<tr><td class="header_cell" nowrap><b>Comments...</b>
+									</td></tr>
+									<tr><td bgcolor="#74BAF3"></td></tr>
+									<tr><td bgcolor="#FFFFFF" class="small_gray_text" >	
+									
+										
+											
+									<table cellspacing="0" cellpadding="4" rules="all" border="0" border="1" id="_ctl0_ArticleRepeater__ctl1_CommentsDataGrid" style="width:100%;border-collapse:collapse;">
+	<tr>
+		<td class="small_gray_text" align="Left" valign="Top" style="width:2px;"><img src="images/bullet.gif" width="6" height="10">
+										</td><td class="small_darkblue_text" align="Left">									
+										<span id="_ctl0_ArticleRepeater__ctl1_CommentsDataGrid__ctl2_ArticleComments">Hey, im having torbule using this command:req -new -key digitss.key -out digitss.csr -config openssl.cnfWhen i do I get the following error:error on line -1 of openssl.cnf3900:error:02001002:system library:fopen:no such file or directory:.cryptoioss_file.c:122:fopen(openssl.cnf,rb)3900:error:2006d080:BIO routines:BIO_new_file:no such file:.cryptoioss_file.c:125:3900:error:0e078072:configuration file routines:DEF_LOAD:no such file:.cryptoconfconf_def.c:197:error in reqAny help would be greatly appreciatedBirco</span>						
+										</td><td class="small_gray_text" align="Right" valign="Top" style="width:150px;"><span id="_ctl0_ArticleRepeater__ctl1_CommentsDataGrid__ctl2_ArticleCommentsDate">Approved: 3/2/2012</span>	
+										</td>
+	</tr>
+</table>
+									
+									</td></tr></table>
+								</td></tr></table>
+								
+							</td></tr>							
+							</table>							
+	
+				</td></tr>
+				</table>
+
+				</td>
+				<td width="1" class="blue_1px_line_seperator"><img src="images/spacer.gif" alt="" border="0" style="height:1px;width:1px;" /></td>
+				<td width="26%" valign="top" align="right" class="lightblue_tblcell">
+
+				<table width="100%" border="0" cellpadding="6" cellspacing="0">					
+					
+					<tr><td nowrap class="lightblue_tblcell"> 
+					<span id="_ctl0_ArticleRepeater__ctl1_CreatedDate">Created on 10/1/2004.</span></td></tr>
+					<tr><td class="blue_1px_line_seperator"></td></tr>
+					<tr><td nowrap class="lightblue_tblcell">
+					<span id="_ctl0_ArticleRepeater__ctl1_LastModifiedDate">Last Modified on 4/20/2012.</span></td></tr>
+					<tr><td class="blue_1px_line_seperator"></td></tr>
+					<tr><td nowrap class="lightblue_tblcell">
+					<span id="_ctl0_ArticleRepeater__ctl1_LastModifiedBy">Last Modified by <a href="mailto:admin@ssl.com" class="small_link">Administrator</a>.</span></td></tr>
+					<tr id="_ctl0_ArticleRepeater__ctl1_trSuggestedBy1">
+	<td class="blue_1px_line_seperator"></td>
+</tr>
+
+					<tr id="_ctl0_ArticleRepeater__ctl1_trSuggestedBy2">
+	<td nowrap="nowrap" class="lightblue_tblcell">
+					<span id="_ctl0_ArticleRepeater__ctl1_SuggestedBy">Suggested by <a href="mailto:alvin@ssl.com" class="small_link">Alvin Ang</a></span></td>
+</tr>
+
+					
+										
+					
+					<!--tr><td class="blue_1px_line_seperator"></td></tr>						
+					<tr><td nowrap class="lightblue_tblcell">
+					<span id="_ctl0_ArticleRepeater__ctl1_ArticleViews"></span></td></tr-->
+					
+					<tr><td class="blue_1px_line_seperator"></td></tr>
+					<tr><td nowrap class="lightblue_tblcell">
+					<span id="_ctl0_ArticleRepeater__ctl1_ArticleRating">Rated 7 out of 10 based on 33 votes.</span></td></tr>
+					<tr><td class="blue_1px_line_seperator"></td></tr>
+					<tr><td nowrap class="lightblue_tblcell"><img src="images/print.gif" alt="" align="AbsMiddle" border="0" />	<a id="_ctl0_ArticleRepeater__ctl1_PrintArticle" class="small_link" href="javascript:ikb_PrintArticle('10082');">Print Article</a></td></tr>
+					<tr><td class="blue_1px_line_seperator"></td></tr>
+					<tr><td nowrap class="lightblue_tblcell"><img src="images/email.gif" alt="" align="AbsMiddle" border="0" />	<a id="_ctl0_ArticleRepeater__ctl1_EmailArticle" class="small_link" href="http://info.ssl.com/emailarticle.aspx?id=10082">Email Article</a>
+					</td></tr>
+					<tr><td class="blue_1px_line_seperator"></td></tr>
+				</table><br>
+
+			</td></tr>
+			</table>
+
+			</td></tr>
+			
+			
+			</table>
+			
+			
+			</TD></TR><script language='javascript'>function ikb_saveScrollPosition() {document.forms[0].__SCROLLPOS.value = thebody.scrollTop;}thebody.onscroll=ikb_saveScrollPosition;</script>
+<input type="hidden" name="__VIEWSTATE" value="dDwyOTEzOTcwNjQ7dDw7bDxpPDA+O2k8MT47PjtsPHQ8O2w8aTwxPjtpPDM+Oz47bDx0PHA8bDxpbm5lcmh0bWw7PjtsPEdlbmVyYXRlIGEgQ1NSIGZvciBPcGVuU1NMIC0gKHNlZSB0b29scy5zc2wuY29tKTs+Pjs7Pjt0PHA8bDxocmVmO3JlbDt0eXBlOz47bDxodHRwOi8vaW5mby5zc2wuY29tL3NjcmlwdHMvc3R5bGUuY3NzO3N0eWxlc2hlZXQ7dGV4dC9jc3M7Pj47Oz47Pj47dDw7bDxpPDA+Oz47bDx0PDtsPGk8Mz47aTw5Pjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxcPHRhYmxlIHdpZHRoPScxMDAlJyBjZWxsc3BhY2luZz0nMCdcPlw8dHJcPlw8dGRcPlw8aW1nIHNyYz0naW1hZ2VzL3NwYWNlci5naWYnIGhlaWdodD0nNScgd2lkdGg9JzEnXD5cPC90ZFw+XDwvdHJcPlw8L3RhYmxlXD5cPGEgaHJlZj0iaHR0cDovL2luZm8uc3NsLmNvbS8iIGNsYXNzPSJuYXZiYXJfbGlua3MiXD5Ib21lXDwvYVw+ICA6IFw8YSBocmVmPSJodHRwOi8vaW5mby5zc2wuY29tL0FydGljbGUuYXNweD9pZD0xMDA4MiIgY2xhc3M9Im5hdmJhcl9saW5rcyJcPkdlbmVyYXRlIGEgQ1NSIGZvciBPcGVuU1NMIC0gKHNlZSB0b29scy5zc2wuY29tKVw8L2FcPjs+Pjs+Ozs+O3Q8cDxsPF8hSXRlbUNvdW50Oz47bDxpPDE+Oz4+O2w8aTwxPjs+O2w8dDw7bDxpPDM+O2k8NT47aTw3PjtpPDExPjtpPDEzPjtpPDE1PjtpPDQ5PjtpPDUzPjtpPDU1PjtpPDU3PjtpPDYxPjtpPDYzPjtpPDY1PjtpPDY5PjtpPDczPjtpPDc3Pjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxRMTAwODIgLSBIT1dUTzogR2VuZXJhdGUgYSBDU1IgZm9yIE9wZW5TU0wgLSAoc2VlIHRvb2xzLnNzbC5jb20pOz4+Oz47Oz47dDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPFw8U1BBTiBpZD1fY3RsMV9BcnRpY2xlUmVwZWF0ZXJfX2N0bDFfQXJ0aWNsZVRleHRcPkEgQ1NSIGlzIGEgZmlsZSBjb250YWluaW5nIHlvdXIgY2VydGlmaWNhdGUgYXBwbGljYXRpb24gaW5mb3JtYXRpb24sIGluY2x1ZGluZyB5b3VyIFB1YmxpYyBLZXkuIEdlbmVyYXRlIHlvdXIgQ1NSIGFuZCB0aGVuIGNvcHkgYW5kIHBhc3RlIHRoZSBDU1IgZmlsZSBpbnRvIHRoZSB3ZWJmb3JtIGluIHRoZSBlbnJvbGxtZW50IHByb2Nlc3M6DQpcPGgyXD4qTkVXKiBUcnkgXDxhIGhyZWY9Imh0dHA6Ly90b29scy5zc2wuY29tIlw+aHR0cDovL3Rvb2xzLnNzbC5jb21cPC9hXD4gdG8gYXV0b21hdGljYWxseSBjcmVhdGUgeW91ciBvcGVuc3NsIHJlcXVlc3RcPC9oMlw+DQpcPFBcPm9yIHNlZSBiZWxvdyBmb3IgbWFudWFsIGluc3RydWN0aW9uczpcPC9QXD4NClw8aDJcPkdlbmVyYXRlIGtleXMgYW5kIGNlcnRpZmljYXRlIChtYW51YWxseSlcPC9oMlw+DQpcPFBcPlRvIGdlbmVyYXRlIGEgcGFpciBvZiBwcml2YXRlIGtleSBhbmQgcHVibGljIENlcnRpZmljYXRlIFNpZ25pbmcgUmVxdWVzdCAoQ1NSKSBmb3IgYSB3ZWJzZXJ2ZXIsICJzZXJ2ZXIiLCB1c2UgdGhlIGZvbGxvd2luZyBjb21tYW5kIDpcPC9QXD4NClw8UFw+wqDCoMKgwqDCoMKgIG9wZW5zc2wgcmVxIC1uZXcgLW5vZGVzIC1rZXlvdXQgbXlzZXJ2ZXIua2V5IC1vdXQgc2VydmVyLmNzciAtbmV3a2V5IHJzYToyMDQ4XDwvUFw+DQpcPFBcPlRoaXMgY3JlYXRlcyBhIHR3byBmaWxlcy4gVGhlIGZpbGUgbXlzZXJ2ZXIua2V5IGNvbnRhaW5zIGEgcHJpdmF0ZSBrZXlcOyBkbyBub3QgZGlzY2xvc2UgdGhpcyBmaWxlIHRvIGFueW9uZS4gQ2FyZWZ1bGx5IHByb3RlY3QgdGhlIHByaXZhdGUga2V5Llw8L1BcPg0KXDxQXD5JbiBwYXJ0aWN1bGFyLCBiZSBzdXJlIHRvIGJhY2t1cCB0aGUgcHJpdmF0ZSBrZXksIGFzIHRoZXJlIGlzIG5vIG1lYW5zIHRvIHJlY292ZXIgaXQgc2hvdWxkIGl0IGJlIGxvc3QuIFRoZSBwcml2YXRlIGtleSBpcyB1c2VkIGFzIGlucHV0IGluIHRoZSBjb21tYW5kIHRvIGdlbmVyYXRlIGEgQ2VydGlmaWNhdGUgU2lnbmluZyBSZXF1ZXN0IChDU1IpLlw8L1BcPg0KXDxQXD5Zb3Ugd2lsbCBub3cgYmUgYXNrZWQgdG8gZW50ZXIgZGV0YWlscyB0byBiZSBlbnRlcmVkIGludG8geW91ciBDU1IuIFw8QlJcPldoYXQgeW91IGFyZSBhYm91dCB0byBlbnRlciBpcyB3aGF0IGlzIGNhbGxlZCBhIERpc3Rpbmd1aXNoZWQgTmFtZSBvciBhIEROLiBcPC9QXD4NClw8UFw+Rm9yIHNvbWUgZmllbGRzIHRoZXJlIHdpbGwgYmUgYSBkZWZhdWx0IHZhbHVlLCBJZiB5b3UgZW50ZXIgJy4nLCB0aGUgZmllbGQgd2lsbCBiZSBsZWZ0IGJsYW5rLiBcPC9QXD4NClw8UFw+wqDCoMKgwqDCoMKgIC0tLS0tIFw8QlJcPsKgwqDCoMKgwqDCoCBDb3VudHJ5IE5hbWUgKDIgbGV0dGVyIGNvZGUpIFtVU106IFVTXDxCUlw+wqDCoMKgwqDCoMKgIFN0YXRlIG9yIFByb3ZpbmNlIE5hbWUgKGZ1bGwgbmFtZSkgW106IFRleGFzXDxCUlw+wqDCoMKgwqDCoMKgIExvY2FsaXR5IE5hbWUgKGVnLCBjaXR5KSBbXTogSG91c3Rvblw8QlJcPsKgwqDCoMKgwqDCoCBPcmdhbml6YXRpb24gTmFtZSAoZWcsIGNvbXBhbnkpIFtdOiBZb3VyIENvbXBhbnkgSW5jXDxCUlw+wqDCoMKgwqDCoMKgIE9yZ2FuaXphdGlvbmFsIFVuaXQgTmFtZSAoZWcsIHNlY3Rpb24pIFtdOiBZb3VyIERlcGFydG1lbnRcPEJSXD7CoMKgwqDCoMKgwqAgQ29tbW9uIE5hbWUgKGVnLCBZT1VSIG5hbWUpIFtdOiBzZWN1cmUueW91cmNvbXBhbnluYW1lLmNvbVw8QlJcPsKgwqDCoMKgwqDCoCBFbWFpbCBBZGRyZXNzIFtdOlw8L1BcPg0KXDxQXD5QbGVhc2UgZW50ZXIgdGhlIGZvbGxvd2luZyAnZXh0cmEnIGF0dHJpYnV0ZXMgdG8gYmUgc2VudCB3aXRoIHlvdXIgY2VydGlmaWNhdGUgcmVxdWVzdFw8L1BcPg0KXDxQXD7CoMKgwqDCoMKgwqAgQSBjaGFsbGVuZ2UgcGFzc3dvcmQgW106IFw8QlJcPsKgwqDCoMKgwqDCoCBBbiBvcHRpb25hbCBjb21wYW55IG5hbWUgW106XDxCUlw+wqDCoMKgwqDCoMKgwqAgLS0tLS0gXDwvUFw+DQpcPFBcPlVzZSB0aGUgbmFtZSBvZiB0aGUgd2Vic2VydmVyIGFzIENvbW1vbiBOYW1lIChDTikuIElmIHRoZSBkb21haW4gbmFtZSBpcyBteWRvbWFpbi5jb20gYXBwZW5kIHRoZSBkb21haW4gdG8gdGhlIGhvc3RuYW1lICh1c2UgdGhlIGZ1bGx5IHF1YWxpZmllZCBkb21haW4gbmFtZSkuXDwvUFw+DQpcPFBcPlRoZSBmaWVsZHMgZW1haWwgYWRkcmVzcywgb3B0aW9uYWwgY29tcGFueSBuYW1lIGFuZCBjaGFsbGVuZ2UgcGFzc3dvcmQgY2FuIGJlIGxlZnQgYmxhbmsgZm9yIGEgd2Vic2VydmVyIGNlcnRpZmljYXRlLlw8L1BcPg0KXDxQXD5cPEJSXD5Zb3VyIENTUiB3aWxsIG5vdyBoYXZlIGJlZW4gY3JlYXRlZC4gT3BlbiB0aGUgc2VydmVyLmNzciBpbiBhIHRleHQgZWRpdG9yIGFuZCBjb3B5IGFuZCBwYXN0ZSB0aGUgY29udGVudHMgaW50byB0aGUgb25saW5lIGVucm9sbG1lbnQgZm9ybSB3aGVuIHJlcXVlc3RlZC5cPC9QXD5cPC9TUEFOXD47Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7PjtsPE5vIFJlbGF0ZWQgQXJ0aWNsZXMgQXZhaWxhYmxlLjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8Tm8gQXR0YWNobWVudHMgQXZhaWxhYmxlLjs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8XDx0YWJsZSB3aWR0aD0nMTAwJScgY2VsbHBhZGRpbmc9JzEnIGNlbGxzcGFjaW5nPScwJ1w+XDx0clw+XDx0ZCB2YWxpZ249J3RvcCcgd2lkdGg9JzE4J1w+XDxpbWcgc3JjPSdodHRwOi8vaW5mby5zc2wuY29tL2FkbWluL2ltYWdlcy9pY29ucy9yZWxsaW5rcy5wbmcnIHdpZHRoPScxNicgaGVpZ2h0PScxNicgYWxpZ249J2Fic21pZGRsZSdcPlw8L3RkXD5cPHRkXD5cPGEgaHJlZj0iaHR0cDovL3Rvb2xzLnNzbC5jb20iIGNsYXNzPSJzbWFsbF9saW5rIiB0YXJnZXQ9Il9ibGFuayJcPmh0dHA6Ly90b29scy5zc2wuY29tXDwvYVw+XDwvdGFibGVcPjs+Pjs+Ozs+O3Q8QDA8cDxwPGw8XyFEYXRhU291cmNlSXRlbUNvdW50O18hSXRlbUNvdW50O1BhZ2VDb3VudDtEYXRhS2V5czs+O2w8aTwxPjtpPDE+O2k8MT47bDw+Oz4+Oz47Ozs7Ozs7Ozs7PjtsPGk8MD47PjtsPHQ8O2w8aTwxPjs+O2w8dDw7bDxpPDE+O2k8Mj47PjtsPHQ8O2w8aTwxPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxIZXksIGltIGhhdmluZyB0b3JidWxlIHVzaW5nIHRoaXMgY29tbWFuZDpyZXEgLW5ldyAta2V5IGRpZ2l0c3Mua2V5IC1vdXQgZGlnaXRzcy5jc3IgLWNvbmZpZyBvcGVuc3NsLmNuZldoZW4gaSBkbyBJIGdldCB0aGUgZm9sbG93aW5nIGVycm9yOmVycm9yIG9uIGxpbmUgLTEgb2Ygb3BlbnNzbC5jbmYzOTAwOmVycm9yOjAyMDAxMDAyOnN5c3RlbSBsaWJyYXJ5OmZvcGVuOm5vIHN1Y2ggZmlsZSBvciBkaXJlY3Rvcnk6LmNyeXB0bwhpbwhzc19maWxlLmM6MTIyOmZvcGVuKG9wZW5zc2wuY25mLHJiKTM5MDA6ZXJyb3I6MjAwNmQwODA6QklPIHJvdXRpbmVzOkJJT19uZXdfZmlsZTpubyBzdWNoIGZpbGU6LmNyeXB0bwhpbwhzc19maWxlLmM6MTI1OjM5MDA6ZXJyb3I6MGUwNzgwNzI6Y29uZmlndXJhdGlvbiBmaWxlIHJvdXRpbmVzOkRFRl9MT0FEOm5vIHN1Y2ggZmlsZTouY3J5cHRvY29uZmNvbmZfZGVmLmM6MTk3OmVycm9yIGluIHJlcUFueSBoZWxwIHdvdWxkIGJlIGdyZWF0bHkgYXBwcmVjaWF0ZWRCaXJjbzs+Pjs+Ozs+Oz4+O3Q8O2w8aTwwPjs+O2w8dDxwPHA8bDxUZXh0Oz47bDxBcHByb3ZlZDogMy8yLzIwMTI7Pj47Pjs7Pjs+Pjs+Pjs+Pjs+Pjt0PHA8cDxsPFRleHQ7PjtsPENyZWF0ZWQgb24gMTAvMS8yMDA0Ljs+Pjs+Ozs+O3Q8cDxwPGw8VGV4dDs+O2w8TGFzdCBNb2RpZmllZCBvbiA0LzIwLzIwMTIuOz4+Oz47Oz47dDxwPHA8bDxUZXh0Oz47bDxMYXN0IE1vZGlmaWVkIGJ5IFw8YSBocmVmPSJtYWlsdG86YWRtaW5Ac3NsLmNvbSIgY2xhc3M9InNtYWxsX2xpbmsiXD5BZG1pbmlzdHJhdG9yXDwvYVw+Ljs+Pjs+Ozs+O3Q8O2w8aTwwPjs+O2w8dDw7bDxpPDE+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPFN1Z2dlc3RlZCBieSBcPGEgaHJlZj0ibWFpbHRvOmFsdmluQHNzbC5jb20iIGNsYXNzPSJzbWFsbF9saW5rIlw+QWx2aW4gQW5nXDwvYVw+Oz4+Oz47Oz47Pj47Pj47dDxwPGw8VmlzaWJsZTs+O2w8bzxmPjs+Pjs7Pjt0PHA8bDxWaXNpYmxlOz47bDxvPGY+Oz4+O2w8aTwwPjs+O2w8dDw7bDxpPDE+Oz47bDx0PHA8cDxsPFRleHQ7PjtsPFNraWxsIExldmVsOiAuOz4+Oz47Oz47Pj47Pj47dDxwPHA8bDxUZXh0Oz47bDxSYXRlZCA3IG91dCBvZiAxMCBiYXNlZCBvbiAzMyB2b3Rlcy47Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7TmF2aWdhdGVVcmw7Q3NzQ2xhc3M7XyFTQjs+O2w8UHJpbnQgQXJ0aWNsZTtqYXZhc2NyaXB0OmlrYl9QcmludEFydGljbGUoJzEwMDgyJylcOztzbWFsbF9saW5rO2k8Mj47Pj47Pjs7Pjt0PHA8cDxsPFRleHQ7TmF2aWdhdGVVcmw7Q3NzQ2xhc3M7XyFTQjs+O2w8RW1haWwgQXJ0aWNsZTtodHRwOi8vaW5mby5zc2wuY29tL2VtYWlsYXJ0aWNsZS5hc3B4P2lkPTEwMDgyO3NtYWxsX2xpbms7aTwyPjs+Pjs+Ozs+Oz4+Oz4+Oz4+Oz4+Oz4+O2w8X2N0bDA6QXJ0aWNsZVJlcGVhdGVyOl9jdGwxOlJhZGlvMTtfY3RsMDpBcnRpY2xlUmVwZWF0ZXI6X2N0bDE6UmFkaW8xO19jdGwwOkFydGljbGVSZXBlYXRlcjpfY3RsMTpSYWRpbzI7X2N0bDA6QXJ0aWNsZVJlcGVhdGVyOl9jdGwxOlJhZGlvMjtfY3RsMDpBcnRpY2xlUmVwZWF0ZXI6X2N0bDE6UmFkaW8zO19jdGwwOkFydGljbGVSZXBlYXRlcjpfY3RsMTpSYWRpbzM7X2N0bDA6QXJ0aWNsZVJlcGVhdGVyOl9jdGwxOlJhZGlvNDtfY3RsMDpBcnRpY2xlUmVwZWF0ZXI6X2N0bDE6UmFkaW80O19jdGwwOkFydGljbGVSZXBlYXRlcjpfY3RsMTpSYWRpbzU7X2N0bDA6QXJ0aWNsZVJlcGVhdGVyOl9jdGwxOlJhZGlvNTtfY3RsMDpBcnRpY2xlUmVwZWF0ZXI6X2N0bDE6UmFkaW82O19jdGwwOkFydGljbGVSZXBlYXRlcjpfY3RsMTpSYWRpbzY7X2N0bDA6QXJ0aWNsZVJlcGVhdGVyOl9jdGwxOlJhZGlvNztfY3RsMDpBcnRpY2xlUmVwZWF0ZXI6X2N0bDE6UmFkaW83O19jdGwwOkFydGljbGVSZXBlYXRlcjpfY3RsMTpSYWRpbzg7X2N0bDA6QXJ0aWNsZVJlcGVhdGVyOl9jdGwxOlJhZGlvODtfY3RsMDpBcnRpY2xlUmVwZWF0ZXI6X2N0bDE6UmFkaW85O19jdGwwOkFydGljbGVSZXBlYXRlcjpfY3RsMTpSYWRpbzk7X2N0bDA6QXJ0aWNsZVJlcGVhdGVyOl9jdGwxOlJhZGlvMTA7X2N0bDA6QXJ0aWNsZVJlcGVhdGVyOl9jdGwxOlJhZGlvMTA7Pj70qNet7w4S8RzwzWg+ppi4BjHgEA==" />
+</form>
+			</TABLE>
+
+
+
+<table width="100%" cellpadding="0" cellspacing="0"><tr><td colspan="3" class="hoz_splitter"><img src="images/spacer.gif" width="1" height="15"></td></tr></table>
+
+</td>
+</tr>
+</table>
+<table width="80%" cellpadding="0" cellspacing="0">
+<tr>
+<td align="right">
+<font class="small_darkblue_text">SSL.com Knowledge Base. Copyright &#169; 2012<br></font>
+</td>
+</tr>
+</table>
+</center>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-30469369-1']);
+  _gaq.push(['_setDomainName', 'ssl.com']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

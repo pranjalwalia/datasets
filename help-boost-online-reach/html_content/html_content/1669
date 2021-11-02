@@ -1,0 +1,1291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr"
+ xmlns:og="http://opengraphprotocol.org/schema/"
+ xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="description" content="" />
+<meta name="generator" content="WordPress 2.8.4" /><!-- Please leave for stats -->
+
+<title>Seven Reasons You&#8217;ll Never Play Sports Again | Sportales</title>
+
+<link rel="stylesheet" href="http://sportales.com/wp-content/themes/sportales/style.css" type="text/css" media="screen" />
+<!--[if IE 6]>
+<link rel="stylesheet" href="http://sportales.com/wp-content/themes/sportales/ie6fix.css" type="text/css" media="screen" />
+<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="Sportales RSS Feed" href="http://sportales.com/feed/" />
+
+<script type="text/javascript" src="http://sportales.com/wp-content/themes/sportales/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="http://sportales.com/wp-content/themes/sportales/js/jquery-init.js"></script>
+
+<link rel="pingback" href="http://sportales.com/xmlrpc.php" />	
+
+<link rel="alternate" type="application/rss+xml" title="Sportales &raquo; Seven Reasons You&#8217;ll Never Play Sports Again Comments Feed" href="http://sportales.com/sports/seven-reasons-youll-never-play-sports-again/feed/" />
+	<link rel="icon" href="http://s3.amazonaws.com/readers/sportales/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="http://s3.amazonaws.com/readers/sportales/favicon.ico" type="image/x-icon" />
+<meta property="og:image" content="http://s3.amazonaws.com/readers/sportales/2008/10/05/371149.jpg" />
+<meta property="og:site_name" content="Sportales" />
+<meta property="og:title" content="Seven Reasons You’ll Never Play Sports Again" />
+<meta property="og:url" content="http://sportales.com/sports/seven-reasons-youll-never-play-sports-again/" />
+<meta property="og:description" content="Seven things you don't want to happen to you." />
+<meta property="og:type" content="article" />
+<script type='text/javascript' src='http://sportales.com/wp-includes/js/tw-sack.js?ver=1.6.1'></script>
+<script type="text/javascript">
+//<![CDATA[
+function doILikeIt( website_channel_article_id,blog_id,post_id )
+{
+   document.getElementById('iLikeItLinkDiv').innerHTML = '';
+   document.getElementById('iLikeItNumber').innerHTML = '<img src="http://sportales.com/wp-content/themes/sportales/images/i-like-it-load.gif" />';
+   var mysack = new sack( 
+       "/wp-content/mu-plugins/w4l/w4l_i_like_it_ajax.php" );    
+
+  mysack.execute = 1;
+  mysack.method = 'POST';
+  mysack.setVar( "website_channel_article_id", website_channel_article_id );
+  mysack.setVar( "blog_id", blog_id );
+  mysack.setVar( "post_id", post_id );
+  mysack.setVar( "results_div_id", "iLikeItNumber" );
+  mysack.onError = function() { alert('Ajax error in voting' )};
+  mysack.runAJAX();
+
+  return true;
+
+} // end of JavaScript function myplugin_cast_vote
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+function flagReasonChanged(article_id){
+	if (document.getElementById('flagReasonsSelect').value == '') return false;
+	
+	if (document.getElementById('flagReasonsSelect').value == 'redirect'){
+		document.getElementById('masterCategoriesDiv').style.display='block';
+		document.getElementById('palagrizedUrlDiv').style.display='none';
+	}
+	else if (document.getElementById('flagReasonsSelect').value == 'plagiarism'){
+		document.getElementById('palagrizedUrlDiv').style.display='block';
+		document.getElementById('masterCategoriesDiv').style.display='none';
+	}
+	else
+		doFlagIt(article_id);
+		
+}           
+           
+function doFlagIt( article_id)
+{
+   var reason = document.getElementById('flagReasonsSelect').value;
+   var to_master_category_id = document.getElementById('masterCategoriesSelect').value;
+   var palagrized_url = encodeURIComponent(document.getElementById('palagrizedUrl').value);
+
+   if (reason == 'plagiarism' && palagrized_url.indexOf('http') < 0) return false;
+   if (reason != 'plagiarism') palagrized_url = '';
+	
+   document.getElementById('flagit_div').innerHTML = '';
+   document.getElementById('flagit_div').innerHTML = '<p>Thank you!</p>';
+   var mysack = new sack( 
+       "/wp-content/mu-plugins/w4l/w4l_flag_it_ajax.php" );    
+
+  mysack.execute = 1;
+  mysack.method = 'POST';
+  mysack.setVar( "article_id", article_id );
+  mysack.setVar( "by_writer_id", triond_writer_id);
+  mysack.setVar( "reason", reason);
+  mysack.setVar( "to_master_category_id", to_master_category_id);
+  mysack.setVar( "palagrized_url", palagrized_url);
+  mysack.onError = function() { alert('Ajax error in flagging' )};
+  mysack.runAJAX();
+
+  return true;
+
+} // end of JavaScript function myplugin_cast_vote
+//]]>
+</script>
+<script type='text/javascript' src='/wp-content/mu-plugins/w4l/combined_js.js'></script> 
+	<script type="text/javascript" language="javascript">
+	<!--
+		if (top.location != self.location) {
+			top.location = self.location.href
+		}
+	//-->
+	</script>
+	<script type="text/javascript">window.google_analytics_uacct = "UA-1488967-12";</script><style type="text/css" media="screen">
+
+/* Begin Contact Form ][ CSS */
+.contactform {
+	position: static;
+	overflow: hidden;
+}
+
+.contactleft {
+	width: 25%;
+	text-align: right;
+	clear: both;
+	float: left;
+	display: inline;
+	padding: 4px;
+	margin: 5px 0;
+    font-weight: bold;
+}
+
+.contactright {
+	width: 70%;
+	text-align: left;
+	float: right;
+	display: inline;
+	padding: 4px;
+	margin: 5px 0;
+}
+
+.contacterror {
+	border: 2px solid #ff0000;
+}
+/* End Contact Form ][ CSS */
+
+	</style>
+
+
+<!-- all in one seo pack 1.4.6.15 [513,612] -->
+<meta name="description" content="Seven things you don't want to happen to you." />
+<meta name="keywords" content="break,game,hurt,injury,pain,sports" />
+<!-- /all in one seo pack -->
+<link rel="canonical" href="http://sportales.com/sports/seven-reasons-youll-never-play-sports-again/" />
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<script type="text/javascript">
+//<![CDATA[
+function showTriondSignupForm()
+{
+   var mysack = new sack( 
+       "/wp-content/plugins/triond-signup/triond_signup_form_ajax.php" );    
+
+  mysack.execute = 0;
+  mysack.method = 'GET';
+  mysack.onCompletion = function() {document.getElementById("triond-signup-div").innerHTML = mysack.response;};
+  mysack.runAJAX();
+
+  return true;
+
+} // end of JavaScript function myplugin_cast_vote
+//]]>
+</script>
+<meta name="google-site-verification" content="6GYysNHgU2gl8_aViO-hqwtiG9tc5TLv04iKA32rVxg" />
+</head>
+
+<body>
+		
+		<script type="text/javascript">
+			writer_triond_id = 60561;
+		</script>
+ 
+		<script type="text/javascript" src='http://www.triond.com/login/is-logged-in'></script>
+<script type='text/javascript'><!--//<![CDATA[
+				   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+				   var m3_r = Math.floor(Math.random()*99999999999);
+				   if (!document.MAX_used) document.MAX_used = ',';
+				   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+				   document.write ("?zoneid=1382");
+				   document.write ("&cntimp_url=http://wprest.triond.com/cntimp&home_channel_id=930&website_channel_article_id=284947&rand=1552675234");
+				   document.write ('&amp;cb=' + m3_r);
+				   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+				   document.write (document.charset ? '&amp;charset='+document.charset : (document.characterSet ? '&amp;charset='+document.characterSet : ''));
+				   document.write ("&amp;loc=" + escape(window.location));
+				   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+				   if (document.context) document.write ("&context=" + escape(document.context));
+				   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+				   document.write ("'><\/scr"+"ipt>");
+				//]]>--></script><noscript><a href='http://a.stanzapub.com/delivery/ck.php?n=a7a76663&amp;cb=INSERT_RANDOM_NUMBER_HERE' target='_blank'><img src='http://a.stanzapub.com/delivery/avw.php?zoneid=1281&amp;cb=INSERT_RANDOM_NUMBER_HERE&amp;n=a7a76663' border='0' alt='' /></a></noscript>
+<div id="wrapper">
+
+	
+	<div id="top">
+		<div class="leftcol" id="ad728">
+			
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   var 	is_triond_reader;
+					   if (typeof triond_writer_id=="undefined")
+					   	 is_triond_reader = 'nontriond';
+					   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+					     is_triond_reader = 'nontriond';
+					   else
+					     is_triond_reader = 'yestriond'; 
+					   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+					   var m3_r = Math.floor(Math.random()*99999999999);
+					   if (!document.MAX_used) document.MAX_used = ',';
+					   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					   document.write ("?zoneid=535");
+					   document.write ("&adsense_id=pub-2561481683982199&adsense_channel_code=4538464070&clr_link=F3682B&clr_title=2181BA&clr_bg=FFFFFF&clr_border=FFFFFF&clr_text=414141&source=is_adsense__acf=" + readCookie("w4lfc") + is_triond_reader);
+					   document.write ('&amp;cb=' + m3_r);
+					   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					   document.write ("&amp;loc=" + escape(window.location));
+					   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					   if (document.context) document.write ("&context=" + escape(document.context));
+					   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					   document.write ("'><\/scr"+"ipt>");
+					//]]>--></script><noscript><a href='http://a.stanzapub.com/delivery/ck.php?n=71fefe&amp;cb=6b43bec338cab8cfed01e214a7cca6d7' target='_blank'><img src='http://a.stanzapub.com/delivery/avw.php?zoneid=535&amp;cb=6b43bec338cab8cfed01e214a7cca6d7&amp;n=71fefe' border='0' alt='' /></a></noscript>			<script type='text/javascript'>antimalkar_detect('ad728')</script>	
+		</div>
+		<div class="rightcol">
+						<!--  <img src="http://sportales.com/wp-content/themes/sportales/images/promo.gif" alt="Promo" /> -->			
+		</div>
+	</div>
+	
+	<div id="pagemenu">
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/about">About</a></li>
+			<li><a href="/contact">Contact</a></li>
+			<li><a href="/advertise-with-us">Advertise With Us</a></li>
+			<li><a href="http://www.triond.com">Submit an Article</a></li>
+		</ul>
+		
+	</div>
+
+	<div id="header">
+					<span id="logo"><a href="http://sportales.com" title="Sportales"><span>Sportales</span></a></span>
+				
+		<div id="featured">			
+			<ul>
+									<li>						
+						<a href="http://sportales.com/soccer/england-player-goes-missing/" title="England Player Goes &quot;Missing&quot;.."><img src="http://s3.amazonaws.com/readers/gameolosophy/2008/07/06/207363.jpg" alt="" class="featured-image" /></a>			
+						<p class="featured-title"><a href="http://sportales.com/soccer/england-player-goes-missing/" title="England Player Goes &quot;Missing&quot;.." rel="bookmark">England Player Goes &quot;Missing&quot;..</a></p>
+					</li>
+											<li>						
+						<a href="http://sportales.com/golf/two-middle-aged-missouri-women-charged-in-court-with-the-crime-of-public-indecency/" title="Two Middle Aged Missouri Women Charged in Court with The Crime of  Public Indecency"><img src="http://s3.amazonaws.com/readers/sportales/2008/09/02/306163.jpg" alt="" class="featured-image" /></a>			
+						<p class="featured-title"><a href="http://sportales.com/golf/two-middle-aged-missouri-women-charged-in-court-with-the-crime-of-public-indecency/" title="Two Middle Aged Missouri Women Charged in Court with The Crime of  Public Indecency" rel="bookmark">Two Middle Aged Missouri Women Charged in Court wi...</a></p>
+					</li>
+											<li>						
+						<a href="http://sportales.com/soccer/ending-homophobia-germany-debuts-gay-kiss-soccer-ad-during-euro-2012/" title="Ending Homophobia &#8211; Germany Debuts Gay Kiss Soccer Ad During Euro 2012"><img src="http://s3.amazonaws.com/readers/gameolosophy/2008/07/06/207363.jpg" alt="" class="featured-image" /></a>			
+						<p class="featured-title"><a href="http://sportales.com/soccer/ending-homophobia-germany-debuts-gay-kiss-soccer-ad-during-euro-2012/" title="Ending Homophobia &#8211; Germany Debuts Gay Kiss Soccer Ad During Euro 2012" rel="bookmark">Ending Homophobia - Germany Debuts Gay Kiss Soccer...</a></p>
+					</li>
+									</ul>					
+		</div>	
+				
+	</div><!--  #header -->
+
+
+	<div id="mainmenu">
+		<ul>			
+				<li class="cat-item cat-item-5699"><a href="http://sportales.com/category/soccer/" title="View all posts filed under Soccer">Soccer</a>
+</li>
+	<li class="cat-item cat-item-3099"><a href="http://sportales.com/category/sports/" title="View all posts filed under Sports">Sports</a>
+</li>
+	<li class="cat-item cat-item-2807"><a href="http://sportales.com/category/football/" title="View all posts filed under Football">Football</a>
+</li>
+	<li class="cat-item cat-item-1583"><a href="http://sportales.com/category/basketball/" title="View all posts filed under Basketball">Basketball</a>
+</li>
+	<li class="cat-item cat-item-5443"><a href="http://sportales.com/category/wrestling/" title="View all posts filed under Wrestling">Wrestling</a>
+</li>
+	<li class="cat-item cat-item-33383"><a href="http://sportales.com/category/baseball/" title="View all posts filed under Baseball">Baseball</a>
+</li>
+	<li class="cat-item cat-item-36715"><a href="http://sportales.com/category/martial-arts/" title="View all posts filed under Martial Arts">Martial Arts</a>
+</li>
+			<li id="allcats-handle"><a href="javascript:void(0);">All sports &or;</a></li>
+		</ul>
+	</div>
+	
+	<div id="allcats">
+		<ul>			
+				<li class="cat-item cat-item-38947"><a href="http://sportales.com/category/archery/" title="View all posts filed under Archery">Archery</a>
+</li>
+	<li class="cat-item cat-item-33383"><a href="http://sportales.com/category/baseball/" title="View all posts filed under Baseball">Baseball</a>
+</li>
+	<li class="cat-item cat-item-1583"><a href="http://sportales.com/category/basketball/" title="View all posts filed under Basketball">Basketball</a>
+</li>
+	<li class="cat-item cat-item-49669"><a href="http://sportales.com/category/billiards/" title="View all posts filed under Billiards">Billiards</a>
+</li>
+	<li class="cat-item cat-item-49671"><a href="http://sportales.com/category/boating/" title="View all posts filed under Boating">Boating</a>
+</li>
+	<li class="cat-item cat-item-37093"><a href="http://sportales.com/category/boxing/" title="View all posts filed under Boxing">Boxing</a>
+</li>
+	<li class="cat-item cat-item-49637"><a href="http://sportales.com/category/cheerleading/" title="View all posts filed under Cheerleading">Cheerleading</a>
+</li>
+	<li class="cat-item cat-item-1567"><a href="http://sportales.com/category/cricket/" title="View all posts filed under Cricket">Cricket</a>
+</li>
+	<li class="cat-item cat-item-49651"><a href="http://sportales.com/category/cycling/" title="View all posts filed under Cycling">Cycling</a>
+</li>
+	<li class="cat-item cat-item-49653"><a href="http://sportales.com/category/equestrian/" title="View all posts filed under Equestrian">Equestrian</a>
+</li>
+	<li class="cat-item cat-item-49643"><a href="http://sportales.com/category/extreme/" title="View all posts filed under Extreme">Extreme</a>
+</li>
+	<li class="cat-item cat-item-14831"><a href="http://sportales.com/category/fishing/" title="View all posts filed under Fishing">Fishing</a>
+</li>
+	<li class="cat-item cat-item-2807"><a href="http://sportales.com/category/football/" title="View all posts filed under Football">Football</a>
+</li>
+	<li class="cat-item cat-item-5097"><a href="http://sportales.com/category/golf/" title="View all posts filed under Golf">Golf</a>
+</li>
+	<li class="cat-item cat-item-49639"><a href="http://sportales.com/category/gymnastics/" title="View all posts filed under Gymnastics">Gymnastics</a>
+</li>
+	<li class="cat-item cat-item-49649"><a href="http://sportales.com/category/hockey/" title="View all posts filed under Hockey">Hockey</a>
+</li>
+	<li class="cat-item cat-item-24909"><a href="http://sportales.com/category/hunting/" title="View all posts filed under Hunting">Hunting</a>
+</li>
+	<li class="cat-item cat-item-49657"><a href="http://sportales.com/category/lacrosse/" title="View all posts filed under Lacrosse">Lacrosse</a>
+</li>
+	<li class="cat-item cat-item-36715"><a href="http://sportales.com/category/martial-arts/" title="View all posts filed under Martial Arts">Martial Arts</a>
+</li>
+	<li class="cat-item cat-item-49659"><a href="http://sportales.com/category/motorsports/" title="View all posts filed under Motorsports">Motorsports</a>
+</li>
+	<li class="cat-item cat-item-49647"><a href="http://sportales.com/category/paintball/" title="View all posts filed under Paintball">Paintball</a>
+</li>
+	<li class="cat-item cat-item-1111"><a href="http://sportales.com/category/racing/" title="View all posts filed under Racing">Racing</a>
+</li>
+	<li class="cat-item cat-item-49641"><a href="http://sportales.com/category/rodeo/" title="View all posts filed under Rodeo">Rodeo</a>
+</li>
+	<li class="cat-item cat-item-49663"><a href="http://sportales.com/category/rugby/" title="View all posts filed under Rugby">Rugby</a>
+</li>
+	<li class="cat-item cat-item-29553"><a href="http://sportales.com/category/running/" title="View all posts filed under Running">Running</a>
+</li>
+	<li class="cat-item cat-item-49665"><a href="http://sportales.com/category/scuba-diving/" title="View all posts filed under Scuba Diving">Scuba Diving</a>
+</li>
+	<li class="cat-item cat-item-5539"><a href="http://sportales.com/category/shooting/" title="View all posts filed under Shooting">Shooting</a>
+</li>
+	<li class="cat-item cat-item-49655"><a href="http://sportales.com/category/skateboarding/" title="View all posts filed under Skateboarding">Skateboarding</a>
+</li>
+	<li class="cat-item cat-item-49645"><a href="http://sportales.com/category/skating/" title="View all posts filed under Skating">Skating</a>
+</li>
+	<li class="cat-item cat-item-49661"><a href="http://sportales.com/category/skiing/" title="View all posts filed under Skiing">Skiing</a>
+</li>
+	<li class="cat-item cat-item-49667"><a href="http://sportales.com/category/snowboarding/" title="View all posts filed under Snowboarding">Snowboarding</a>
+</li>
+	<li class="cat-item cat-item-5699"><a href="http://sportales.com/category/soccer/" title="View all posts filed under Soccer">Soccer</a>
+</li>
+	<li class="cat-item cat-item-3099"><a href="http://sportales.com/category/sports/" title="View all posts filed under Sports">Sports</a>
+</li>
+	<li class="cat-item cat-item-26787"><a href="http://sportales.com/category/surfing/" title="View all posts filed under Surfing">Surfing</a>
+</li>
+	<li class="cat-item cat-item-36779"><a href="http://sportales.com/category/swimming/" title="View all posts filed under Swimming">Swimming</a>
+</li>
+	<li class="cat-item cat-item-14731"><a href="http://sportales.com/category/tennis/" title="View all posts filed under Tennis">Tennis</a>
+</li>
+	<li class="cat-item cat-item-5443"><a href="http://sportales.com/category/wrestling/" title="View all posts filed under Wrestling">Wrestling</a>
+</li>
+			
+		</ul>		
+	</div>
+	
+	<div id="container">
+
+	<div id="content" class="leftcol">
+	
+		
+		<p id="breadcrumbs"><a href="http://sportales.com">Home</a> &raquo; <a href="http://sportales.com/category/sports/" title="View all posts in Sports">Sports</a> &raquo; <strong>Seven Reasons You&#8217;ll Never Play Sports Again</strong></p>		
+		<div id="post-3297" class="post">
+			<h1 id="post-title">Seven Reasons You&#8217;ll Never Play Sports Again</h1>
+			<div class="post-meta by-line-outer-div">
+				<img class="by-line-avatar" src="http://s3.amazonaws.com/triond/avatars/2008/07/26/60561_a.jpg"  />				<div class="by-line-inner-div">
+					Published on October 5, 2008 by <a href="http://sportales.com/author/Manny Munnez/" title="Posts by &lt;a target=&quot;_blank&quot; href=&quot;http://www.triond.com/users/Manny+Munnez&quot;&gt;Manny Munnez&lt;/a&gt;"><a target="_blank" href="http://www.triond.com/users/Manny+Munnez">Manny Munnez</a></a> in <a href="http://sportales.com/category/sports/" title="View all posts in Sports" rel="category tag">Sports</a>				</div>
+				<div class="clear"></div>
+			</div>
+			<div id="ad300-title">
+	 			
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   var 	is_triond_reader;
+					   if (typeof triond_writer_id=="undefined")
+					   	 is_triond_reader = 'nontriond';
+					   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+					     is_triond_reader = 'nontriond';
+					   else
+					     is_triond_reader = 'yestriond'; 
+					   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+					   var m3_r = Math.floor(Math.random()*99999999999);
+					   if (!document.MAX_used) document.MAX_used = ',';
+					   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					   document.write ("?zoneid=538");
+					   document.write ("&adsense_id=pub-2561481683982199&adsense_channel_code=4538464070&clr_link=F3682B&clr_title=2181BA&clr_bg=FFFFFF&clr_border=FFFFFF&clr_text=414141&source=is_adsense__acf=" + readCookie("w4lfc") + is_triond_reader);
+					   document.write ('&amp;cb=' + m3_r);
+					   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					   document.write ("&amp;loc=" + escape(window.location));
+					   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					   if (document.context) document.write ("&context=" + escape(document.context));
+					   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					   document.write ("'><\/scr"+"ipt>");
+					//]]>--></script><noscript><a href='http://a.stanzapub.com/delivery/ck.php?n=6dff06&amp;cb=e1c986374aa58d12236e654c58843918' target='_blank'><img src='http://a.stanzapub.com/delivery/avw.php?zoneid=538&amp;cb=e1c986374aa58d12236e654c58843918&amp;n=6dff06' border='0' alt='' /></a></noscript>  			</div>
+			<div id="post-excerpt">
+				<h2><p>Seven things you don&#8217;t want to happen to you.</p>
+</h2>
+				<p id="post-reaction"><a href="#comments">Comments (15)</a><span class="separator">|</span>34 Liked It</p>
+			</div>
+						
+			<div id="post-content">
+				<div class="KonaBody"><h3><!--[if gte mso 9]&gt;  Normal 0   false false false        MicrosoftInternetExplorer4  &lt;![endif]--><!--[if gte mso 9]&gt;   &lt;![endif]--> <!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --> <!--[if gte mso 10]&gt; &lt;!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--></p>
+<p><strong>Touchdown</strong></p>
+</h3>
+<p><img src="http://images.stanzapub.com/readers/2008/10/04/tyrone1_1.jpg" alt="" /></p>
+<p><!--[if gte mso 9]&gt;  Normal 0   false false false        MicrosoftInternetExplorer4  &lt;![endif]--><!--[if gte mso 9]&gt;   &lt;![endif]--> <!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --> <!--[if gte mso 10]&gt; &lt;!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--></p>
+<div style='float:right; width: 300px; margin-left:10px; margin-bottom:10px;'>
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   var 	is_triond_reader;
+					   if (typeof triond_writer_id=="undefined")
+					   	 is_triond_reader = 'nontriond';
+					   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+					     is_triond_reader = 'nontriond';
+					   else
+					     is_triond_reader = 'yestriond'; 
+					   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+					   var m3_r = Math.floor(Math.random()*99999999999);
+					   if (!document.MAX_used) document.MAX_used = ',';
+					   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					   document.write ("?zoneid=540");
+					   document.write ("&adsense_id=pub-2561481683982199&adsense_channel_code=4538464070&clr_link=F3682B&clr_title=2181BA&clr_bg=FFFFFF&clr_border=FFFFFF&clr_text=414141&source=is_adsense__acf=" + readCookie("w4lfc") + is_triond_reader);
+					   document.write ('&amp;cb=' + m3_r);
+					   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					   document.write ("&amp;loc=" + escape(window.location));
+					   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					   if (document.context) document.write ("&context=" + escape(document.context));
+					   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					   document.write ("'><\/scr"+"ipt>");
+					//]]&gt;--></script><noscript><a href='http://a.stanzapub.com/delivery/ck.php?n=907ac4&amp;cb=e727cdf1c0893477cc26d30eee290769' target='_blank'><img src='http://a.stanzapub.com/delivery/avw.php?zoneid=540&amp;cb=e727cdf1c0893477cc26d30eee290769&amp;n=907ac4' border='0' alt='' /></a></noscript></div><p>This is one touchdown this guy probably doesn&#8217;t want to repeat.&nbsp; Although I really don&#8217;t think he&#8217;ll be on the field anytime soon to score another one. No pain no gain has a whole new meaning.</p>
+<h3><!--[if gte mso 9]&gt;  Normal 0   false false false        MicrosoftInternetExplorer4  &lt;![endif]--><!--[if gte mso 9]&gt;   &lt;![endif]--> <!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --> <!--[if gte mso 10]&gt; &lt;!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--></p>
+<p><strong>Way to Use Your Head</strong></p>
+</h3>
+<p><img src="http://images.stanzapub.com/readers/2008/10/04/soccer_1.jpg" alt="" /></p>
+
+	<div class="single-prev-next-float" style="float:left;margin-bottom:10px;margin-right:10px;">
+		<div class="single-prev-next-title">Read more in <a href="http://sportales.com/category/sports/" title="View all posts in Sports" rel="category tag">Sports</a></div><div class="single-prev"><a href="http://sportales.com/sports/philadelphia-sports-teams-rising-to-the-top/">&laquo;&nbsp;Philadelphia Sports Teams Rising to the Top?</a></div><div class="single-next"><a href="http://sportales.com/sports/the-sporty-side-of-life/">The Sporty Side of Life&nbsp;&raquo;</a></div><div style="clear:both;"></div>
+	</div><p><!--[if gte mso 9]&gt;  Normal 0   false false false        MicrosoftInternetExplorer4  &lt;![endif]--><!--[if gte mso 9]&gt;   &lt;![endif]--> <!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --> <!--[if gte mso 10]&gt; &lt;!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--></p>
+<p>There&#8217;s more than one way to stop a shot but this is definitely the most painful.&nbsp;I bet when the coach said use your head out there this isn&rsquo;t what he meant. &nbsp;He might not know where he is after taking a hit like that.</p>
+<h3><!--[if gte mso 9]&gt;  Normal 0   false false false        MicrosoftInternetExplorer4  &lt;![endif]--><!--[if gte mso 9]&gt;   &lt;![endif]--> <!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --> <!--[if gte mso 10]&gt; &lt;!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--></p>
+<p><strong>Grab Life by the Horns</strong></p>
+</h3>
+<p><img src="http://images.stanzapub.com/readers/2008/10/04/bullfightingsportsinjuriesmatadorgoredinbutt_1.jpg" alt="" /></p>
+<p><!--[if gte mso 9]&gt;  Normal 0   false false false        MicrosoftInternetExplorer4  &lt;![endif]--><!--[if gte mso 9]&gt;   &lt;![endif]--></p>
+<p><!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --></p>
+<p><!--[if gte mso 10]&gt; &lt;!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--></p>
+<p>Personally I think it&rsquo;s stupid to get in a ring with a crazy animal especially one with horns.&nbsp; They are unpredictable and can attack without notice; unfortunately for this guy he learned that the hard way.&nbsp; It&#8217;s painful to look at to say the least.&nbsp;&nbsp; I&rsquo;m sure he never underestimate the power of angry bull again.</p>
+<h3><!--[if gte mso 9]&gt;  Normal 0   false false false        MicrosoftInternetExplorer4  &lt;![endif]--><!--[if gte mso 9]&gt;   &lt;![endif]--> <!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --> <!--[if gte mso 10]&gt; &lt;!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--></p>
+<p><strong>Game Breaker</strong></p>
+</h3>
+<p><img src="http://images.stanzapub.com/readers/2008/10/04/10_1.jpg" alt="" /></p>
+<p><!--[if gte mso 9]&gt;  Normal 0   false false false        MicrosoftInternetExplorer4  &lt;![endif]--><!--[if gte mso 9]&gt;   &lt;![endif]--> <!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --> <!--[if gte mso 10]&gt; &lt;!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--></p>
+<p>I&#8217;m sure this didn&#8217;t turn out good.&nbsp; I don&#8217;t think legs are supposed to bend that way.&nbsp; I&#8217;ve never seen an injury quite like this one.&nbsp; I can&rsquo;t even imagine how much pain he must have went through.</p>
+<p><!--[if gte mso 9]&gt;  Normal 0   false false false        MicrosoftInternetExplorer4  &lt;![endif]--><!--[if gte mso 9]&gt;   &lt;![endif]--></p>
+<p><!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --></p>
+<p><!--[if gte mso 10]&gt; &lt;!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--></p>
+<p><strong>Wrong Ball</strong></p>
+<p><img src="http://images.stanzapub.com/readers/2008/10/04/2835_1.jpg" alt="" /></p>
+<p><!--[if gte mso 9]&gt;  Normal 0   false false false        MicrosoftInternetExplorer4  &lt;![endif]--><!--[if gte mso 9]&gt;   &lt;![endif]--></p>
+<p><!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --></p>
+<p><!--[if gte mso 10]&gt; &lt;!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--></p>
+<p>This is one painful way to block a punt.&nbsp; Unfortunately it didn&#8217;t count because he got a flag for roughing the punter.&nbsp; I give him credit for the effort though.&nbsp; Sometimes you have to take one for the team.</p>
+<p><!--[if gte mso 9]&gt;  Normal 0   false false false        MicrosoftInternetExplorer4  &lt;![endif]--><!--[if gte mso 9]&gt;   &lt;![endif]--></p>
+<p><!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --></p>
+<p><!--[if gte mso 10]&gt; &lt;!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--></p>
+<p><strong>I Think He Needs Help</strong></p>
+<p><img src="http://images.stanzapub.com/readers/2008/10/04/sportspain11_1.jpg" alt="" /></p>
+<p><!--[if gte mso 9]&gt;  Normal 0   false false false        MicrosoftInternetExplorer4  &lt;![endif]--><!--[if gte mso 9]&gt;   &lt;![endif]--></p>
+<p><!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --></p>
+<p><!--[if gte mso 10]&gt; &lt;!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--><!--[if gte mso 9]&gt;  Normal 0   false false false        MicrosoftInternetExplorer4  &lt;![endif]--><!--[if gte mso 9]&gt;   &lt;![endif]--></p>
+<p><!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --></p>
+<p><!--[if gte mso 10]&gt; &lt;!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--></p>
+<p>When your lifting weights make sure that your spotter is strong enough to help you out.&nbsp; Also you probably shouldn&rsquo;t try to lift too much weight; you should know your limits.</p>
+<p><!--[if gte mso 9]&gt;  Normal 0   false false false        MicrosoftInternetExplorer4  &lt;![endif]--><!--[if gte mso 9]&gt;   &lt;![endif]--><!--[if !mso]&gt;--><br />
+<object classid="38481807-CA0E-42D2-BF39-B33AF135CC4D" id="ieooui"><br />
+</object><br />
+ <!--[endif]--></p>
+<p><!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --></p>
+<p><!--[if gte mso 10]&gt; &lt;!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes;  	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--></p>
+<p><strong>Run</strong><strong> Forest</strong></p>
+<p><img src="http://images.stanzapub.com/readers/2008/10/04/olympic-sports-injuries_1.jpg" alt="" /></p>
+<p><!--[if gte mso 9]&gt;  Normal 0   false false false        MicrosoftInternetExplorer4  &lt;![endif]--><!--[if gte mso 9]&gt;   &lt;![endif]--></p>
+<p><!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --></p>
+<p><!--[if gte mso 10]&gt; &lt;!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--><!--[if gte mso 9]&gt;  Normal 0   false false false        MicrosoftInternetExplorer4  &lt;![endif]--><!--[if gte mso 9]&gt;   &lt;![endif]--></p>
+<p><!--  /* Style Definitions */  p.MsoNormal, li.MsoNormal, div.MsoNormal 	{mso-style-parent:""; 	margin:0in; 	margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:12.0pt; 	font-family:"Times New Roman"; 	mso-fareast-font-family:"Times New Roman";} @page Section1 	{size:8.5in 11.0in; 	margin:1.0in 1.25in 1.0in 1.25in; 	mso-header-margin:.5in; 	mso-footer-margin:.5in; 	mso-paper-source:0;} div.Section1 	{page:Section1;} --></p>
+<p><!--[if gte mso 10]&gt; &lt;!   /* Style Definitions */  table.MsoNormalTable 	{mso-style-name:"Table Normal"; 	mso-tstyle-rowband-size:0; 	mso-tstyle-colband-size:0; 	mso-style-noshow:yes; 	mso-style-parent:""; 	mso-padding-alt:0in 5.4pt 0in 5.4pt; 	mso-para-margin:0in; 	mso-para-margin-bottom:.0001pt; 	mso-pagination:widow-orphan; 	font-size:10.0pt; 	font-family:"Times New Roman"; 	mso-ansi-language:#0400; 	mso-fareast-language:#0400; 	mso-bidi-language:#0400;} --> <!--[endif]--></p>
+<p>Some people might think that running is an injury free sport but this might make them reconsider.&nbsp; Stretching before you run and not pushing your self too hard might be ways to avoid some agonizing injuries like this one.</p>
+
+<!-- Facebook Like Button v1.9.5 BEGIN [http://blog.bottomlessinc.com] -->
+<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fsportales.com%2Fsports%2Fseven-reasons-youll-never-play-sports-again%2F&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:450px; height: 62px; align: left; margin: 2px 0px 2px 0px"></iframe>
+<!-- Facebook Like Button END -->
+<div id="flagit_div" class="flagItDiv" style="display:none;margin-top:3px;margin-bottom:10px;height:25px;"><div id="flagReasonsDiv" style="display:block;float:left;margin-right:5px;">
+					<select id="flagReasonsSelect" onChange="flagReasonChanged(371149);" style="font-size:11px;">
+						<option value="">Flag It</option>
+						<option value="spam">Spam</option>
+						<option value="adult">Adult Content</option>
+						<option value="plagiarism">Plagiarism</option>
+						<option value="insufficient-quality">Insufficient Quality</option>
+						<option value="redirect">Wrong Category</option>
+					</select>
+				</div><div id="palagrizedUrlDiv" style="display:none;float:left;">
+					<input type="text" id="palagrizedUrl" style="font-size:11px;" value="enter plagiarized url...">
+					<input type="button" onClick="doFlagIt(371149)" style="font-size:11px;" value="Go">
+				</div><div id="masterCategoriesDiv" style="display:none;float:left;">
+					<select id="masterCategoriesSelect" onchange="doFlagIt(371149);" style="font-size:11px;">
+						<option value="">Select the Right Category</option>
+						<option value="27">About Writing</option>
+						<option value="59">Autos</option>
+						<option value="21">Books</option>
+						<option value="16">Business</option>
+						<option value="22">Computers</option>
+						<option value="3">Creative Writing</option>
+						<option value="13">Domestic</option>
+						<option value="6">Gaming</option>
+						<option value="2">General</option>
+						<option value="8">Health</option>
+						<option value="20">Internet</option>
+						<option value="19">Movies</option>
+						<option value="26">Music</option>
+						<option value="30">News</option>
+						<option value="29">Offbeat</option>
+						<option value="55">Pets</option>
+						<option value="54">Poetry</option>
+						<option value="9">Recipes</option>
+						<option value="11">Religion</option>
+						<option value="32">Science</option>
+						<option value="57">Short Stories</option>
+						<option value="12">Society</option>
+						<option value="17">Sports</option>
+						<option value="18">Television</option>
+						<option value="15">Travel</option>
+						<option value="53">Women</option>
+					</select>
+				</div></div><script type="text/javascript">if (typeof triond_writer_id != "undefined") document.getElementById('flagit_div').style.display='block';</script></div>
+		<script type='text/javascript'>
+		fiveMinNotEmbedded = true;
+		</script>
+					</div>
+		</div><!-- .post -->
+		
+		<div id="adsense-468x60">
+			
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   var 	is_triond_reader;
+					   if (typeof triond_writer_id=="undefined")
+					   	 is_triond_reader = 'nontriond';
+					   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+					     is_triond_reader = 'nontriond';
+					   else
+					     is_triond_reader = 'yestriond'; 
+					   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+					   var m3_r = Math.floor(Math.random()*99999999999);
+					   if (!document.MAX_used) document.MAX_used = ',';
+					   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					   document.write ("?zoneid=539");
+					   document.write ("&adsense_id=pub-2561481683982199&adsense_channel_code=4538464070&clr_link=F3682B&clr_title=2181BA&clr_bg=FFFFFF&clr_border=FFFFFF&clr_text=414141&source=is_adsense__acf=" + readCookie("w4lfc") + is_triond_reader);
+					   document.write ('&amp;cb=' + m3_r);
+					   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					   document.write ("&amp;loc=" + escape(window.location));
+					   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					   if (document.context) document.write ("&context=" + escape(document.context));
+					   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					   document.write ("'><\/scr"+"ipt>");
+					//]]>--></script><noscript><a href='http://a.stanzapub.com/delivery/ck.php?n=a78905&amp;cb=eaa038f31e3a8c9d3e19ae50c85ac786' target='_blank'><img src='http://a.stanzapub.com/delivery/avw.php?zoneid=539&amp;cb=eaa038f31e3a8c9d3e19ae50c85ac786&amp;n=a78905' border='0' alt='' /></a></noscript>		</div>
+		
+		<div id="post-tags">
+			<strong>Tags:</strong> <a href="http://sportales.com/tag/break/" rel="tag">break</a>, <a href="http://sportales.com/tag/game/" rel="tag">game</a>, <a href="http://sportales.com/tag/hurt/" rel="tag">hurt</a>, <a href="http://sportales.com/tag/injury/" rel="tag">injury</a>, <a href="http://sportales.com/tag/pain/" rel="tag">pain</a>, <a href="http://sportales.com/tag/sports/" rel="tag">Sports</a>		</div>
+		
+		<div id="post-footer">
+			<div class="leftcol">
+				<div id="ilikeit_div" class="iLikeItDiv"><div class="iLikeItTextDiv"><span id="iLikeItNumber" class="iLikeItNumber">34</span><br/><span class="iLikeItText">Liked it</span></div><div id="iLikeItLinkDiv" class="iLikeItLinkDiv"><a class="iLikeItLink" 
+				  onClick="doILikeIt(284947,13,3297);">I Like It</a></div></div>
+				<div>
+					<script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#tabs=web%2Cpost%2Cemail&amp;charset=utf-8&amp;style=default&amp;publisher=d0691ed4-d9cb-4f64-ba1a-0e1b3ef4fd1f"></script>
+				</div>
+				<div><img src="http://sportales.com/wp-content/themes/sportales/images/ico_rss_small.png" alt="RSS" class="icon" /><a href="http://sportales.com/comments/feed/">Subscribe by RSS</a></div>
+				<div>
+					<form action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=sportales', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+						<input type="text" style="width: 150px; padding: 3px; float: left; color: #666666;" name="email" value="Subscribe by email" onblur="if(this.value==''){this.value='Subscribe by email'}" onfocus="if(this.value=='Subscribe by email'){this.value=''}" />
+						<input type="hidden" value="sportales" name="uri"/>
+						<input type="hidden" name="loc" value="en_US"/>
+						<input type="submit" style="float: left; margin-left: 5px;" value="GO!" />
+						<!-- add this line to clear floats --><div class="clear"></div>
+					</form>					
+				</div>
+			</div>
+			
+			<div class="rightcol" id="post-related">
+				<ol>
+											
+					<script language='JavaScript'>
+						var OutbrainPermaLink='http://sportales.com/sports/seven-reasons-youll-never-play-sports-again/';
+						var OB_Template = 'Triond';
+						var OB_demoMode = false;
+						var OB_langJS ='http://widgets.outbrain.com/lang_en.js';
+						if ( typeof(OB_Script)!='undefined' )
+							OutbrainStart();
+						else {
+							var OB_Script = true;
+							var str = '<script src="http://widgets.outbrain.com/OutbrainRater.js" type="text/javascript"><\/script>';
+							document.write(str);
+						}
+					</script>				
+				</ol>
+			</div>
+		</div>
+		
+		<div id="comments-wrapper">
+
+
+<!-- You can start editing here. -->
+
+	<div id="commentlist">
+
+		<div class="section-title">15 Comments</div>
+	
+		<ol>
+	
+			
+			<li class="alt" id="comment-6331">
+	
+				<div class="comment-gravatar">
+					<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+				</div>	
+			
+				<div class="comment-data">
+					<div class="comment-author">jo oliver</div>
+					<div class="comment-meta">Posted October 5, 2008 at 11:41 am</div>
+									
+					<p>oh wow! awesome pics. Sports have reaaly took a rough turn the last 10-15 years.</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li id="comment-6333">
+	
+				<div class="comment-gravatar">
+					<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+				</div>	
+			
+				<div class="comment-data">
+					<div class="comment-author">Kevin R Carr</div>
+					<div class="comment-meta">Posted October 5, 2008 at 1:15 pm</div>
+									
+					<p>Gamebreaker has my knee hurting with sympathetic pain.</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="alt" id="comment-6335">
+	
+				<div class="comment-gravatar">
+					<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+				</div>	
+			
+				<div class="comment-data">
+					<div class="comment-author">thestickman</div>
+					<div class="comment-meta">Posted October 6, 2008 at 4:41 pm</div>
+									
+					<p>
+&#8220;Gamebreaker&#8221; is the scariest. Well, the bull too, but, -ye-OW!!</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li id="comment-6337">
+	
+				<div class="comment-gravatar">
+					<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+				</div>	
+			
+				<div class="comment-data">
+					<div class="comment-author">larcha</div>
+					<div class="comment-meta">Posted October 6, 2008 at 6:20 pm</div>
+									
+					<p>ahhh, pretty nasty!</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="alt" id="comment-6339">
+	
+				<div class="comment-gravatar">
+					<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+				</div>	
+			
+				<div class="comment-data">
+					<div class="comment-author">KTBeth</div>
+					<div class="comment-meta">Posted October 6, 2008 at 8:26 pm</div>
+									
+					<p>Ouch! Glad Im not a dude&#8230;</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li id="comment-6341">
+	
+				<div class="comment-gravatar">
+					<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+				</div>	
+			
+				<div class="comment-data">
+					<div class="comment-author">JD Da Man</div>
+					<div class="comment-meta">Posted October 7, 2008 at 4:55 am</div>
+									
+					<p>Oh snap! The one with the bull&#8230; awe man&#8230; i can feel is pain&#8230;. damn, that&#8217;s GOTTA hurt!</p>
+<p>^_^</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="alt" id="comment-6343">
+	
+				<div class="comment-gravatar">
+					<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+				</div>	
+			
+				<div class="comment-data">
+					<div class="comment-author">Cyiara</div>
+					<div class="comment-meta">Posted October 7, 2008 at 10:46 am</div>
+									
+					<p>Oye, those made me cringe!</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li id="comment-6345">
+	
+				<div class="comment-gravatar">
+					<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+				</div>	
+			
+				<div class="comment-data">
+					<div class="comment-author">Hein Marais</div>
+					<div class="comment-meta">Posted October 7, 2008 at 5:18 pm</div>
+									
+					<p> <img src='http://sportales.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="alt" id="comment-6347">
+	
+				<div class="comment-gravatar">
+					<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/2008/10/01/84085_a.jpg" vanityvid="triond:84085"/>
+				</div>	
+			
+				<div class="comment-data">
+					<div class="comment-author"><a target="_blank" href="http://www.triond.com/users/Brian+Daniel+Stankich">Brian Daniel Stankich</a></div>
+					<div class="comment-meta">Posted November 15, 2008 at 10:57 pm</div>
+									
+					<p>Jimmy, very nice.  This has to be a Triond classic some day.  Give us more!  Brian</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li id="comment-6349">
+	
+				<div class="comment-gravatar">
+					<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+				</div>	
+			
+				<div class="comment-data">
+					<div class="comment-author">me</div>
+					<div class="comment-meta">Posted December 21, 2008 at 9:16 am</div>
+									
+					<p>Im glad the bull got him..</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="alt" id="comment-6351">
+	
+				<div class="comment-gravatar">
+					<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/2008/11/20/101439_a.jpg" vanityvid="triond:101439"/>
+				</div>	
+			
+				<div class="comment-data">
+					<div class="comment-author"><a target="_blank" href="http://www.triond.com/users/Matt+H">Matt H</a></div>
+					<div class="comment-meta">Posted December 21, 2008 at 3:41 pm</div>
+									
+					<p>Great pictures! Thanks!!</p>
+<p>-Matt</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li id="comment-6353">
+	
+				<div class="comment-gravatar">
+					<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/2008/07/10/54827_a.jpg" vanityvid="triond:54827"/>
+				</div>	
+			
+				<div class="comment-data">
+					<div class="comment-author"><a target="_blank" href="http://www.triond.com/users/Allison+Jae">Allison Jae</a></div>
+					<div class="comment-meta">Posted December 24, 2008 at 12:38 pm</div>
+									
+					<p>The pictures are great, but I could feel the pain in every one of them.</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="alt" id="comment-6355">
+	
+				<div class="comment-gravatar">
+					<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/2007/08/26/12468_a.jpg" vanityvid="triond:12468"/>
+				</div>	
+			
+				<div class="comment-data">
+					<div class="comment-author"><a target="_blank" href="http://www.triond.com/users/TP+Sage">TP Sage</a></div>
+					<div class="comment-meta">Posted December 24, 2008 at 10:08 pm</div>
+									
+					<p>OUCH!!  Great article.</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li id="comment-8903">
+	
+				<div class="comment-gravatar">
+					<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/0_a.jpg" />
+				</div>	
+			
+				<div class="comment-data">
+					<div class="comment-author">Diana</div>
+					<div class="comment-meta">Posted March 8, 2009 at 3:57 pm</div>
+									
+					<p>Oh goodness. I think the worst ones was the one with gamebreakers and the runner and the weight lifter. i&#8217;m not a guy, so I don&#8217;t know how much the bull and football one hurt, but from what I hear it&#8217;s pretty painful.</p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+			<li class="alt" id="comment-18819">
+	
+				<div class="comment-gravatar">
+					<img class="avatar" src="http://s3.amazonaws.com/triond/avatars/2009/01/24/129075_a.jpg" vanityvid="triond:129075"/>
+				</div>	
+			
+				<div class="comment-data">
+					<div class="comment-author"><a target="_blank" href="http://www.triond.com/users/Littlekid137">Littlekid137</a></div>
+					<div class="comment-meta">Posted June 23, 2009 at 9:45 am</div>
+									
+					<p>Cool pics, I am a swimmer no pains like this for me <img src='http://sportales.com/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+				</div>
+				<div class="clear"></div>
+			</li>
+	
+			
+			
+		</ol>
+	
+	</div>
+
+ 
+</div>
+
+
+
+
+<div id="respond">
+
+	<div class="section-title">Post Comment</div>
+
+		<script type="text/javascript" language="javascript">
+	hash = location.hash;
+	var lastHash = hash;
+	
+	function checkForMessages()
+	{
+		hash = location.hash;
+		if(hash != lastHash)
+		{
+			var oldHashIndex;
+			var oldUrl;
+			var reloadIndex;
+			
+			lastHash = hash;
+			
+			reloadIndex = hash.indexOf('&reload');
+			if (reloadIndex != -1)
+			{
+			
+				oldHashIndex = document.URL.indexOf('#');
+				if (oldHashIndex != -1)
+				{
+					oldUrl = document.URL.substring(0,oldHashIndex);
+				}
+				else
+				{
+					oldUrl = document.URL;
+				}
+				
+				
+				newUrl = oldUrl + hash.substr(0, hash.length - '&reload'.length);
+				document.location.replace(newUrl);
+				document.location.reload(true);
+				
+			}
+		}
+	}
+	setInterval(checkForMessages, 200);
+	</script>
+	<!--[if IE]>
+	<script type="text/javascript" language="javascript">
+	// IE hash reload fix
+	if (location.hash != "")
+		location.href=location.hash; 
+	</script>	
+	<![endif]-->
+	<iframe allowTransparency="true" id="triondCommentFrame" scrolling="auto" frameborder="0" width="100%" height="680" src="http://www.triond.com/comment/form/comment_post_id/3297/community_id/17/css/aHR0cDovL3Nwb3J0YWxlcy5jbXMudHJpb25kLmNvbS93cC1jb250ZW50L3RoZW1lcy9zcG9ydGFsZXMvc3R5bGUuY3Nz"></iframe>
+	
+</div>
+
+
+
+
+	</div><!-- #content -->
+
+		<div id="sidebar" class="rightcol">
+	
+		<div id="subscription">
+			<div id="subscribe-rss">
+				<h4><a href="http://sportales.com/feed/" target="_blank">Subscribe by RSS</a></h4>
+				<p>Join The Other Subscribers Now!</p>
+			</div>
+			<div id="subscribe-email">
+				<form action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=sportales', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+					<input type="text" style="width: 220px; padding: 3px; float: left; color: #666666;" name="email" value="Subscribe by email" onblur="if(this.value==''){this.value='Subscribe by email'}" onfocus="if(this.value=='Subscribe by email'){this.value=''}" />
+					<input type="hidden" value="sportales" name="uri"/>
+					<input type="hidden" name="loc" value="en_US"/>
+					<input type="submit" style="float: left; margin-left: 5px;" value="GO!" />
+					<!-- add this line to clear floats --><div class="clear"></div>
+				</form>
+			</div>
+		</div>
+	
+		<ul>
+			<li id="ad336">
+				
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   var 	is_triond_reader;
+					   if (typeof triond_writer_id=="undefined")
+					   	 is_triond_reader = 'nontriond';
+					   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+					     is_triond_reader = 'nontriond';
+					   else
+					     is_triond_reader = 'yestriond'; 
+					   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+					   var m3_r = Math.floor(Math.random()*99999999999);
+					   if (!document.MAX_used) document.MAX_used = ',';
+					   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					   document.write ("?zoneid=536");
+					   document.write ("&adsense_id=pub-2561481683982199&adsense_channel_code=4538464070&clr_link=F3682B&clr_title=2181BA&clr_bg=FFFFFF&clr_border=FFFFFF&clr_text=414141&source=is_adsense__acf=" + readCookie("w4lfc") + is_triond_reader);
+					   document.write ('&amp;cb=' + m3_r);
+					   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					   document.write ("&amp;loc=" + escape(window.location));
+					   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					   if (document.context) document.write ("&context=" + escape(document.context));
+					   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					   document.write ("'><\/scr"+"ipt>");
+					//]]>--></script><noscript><a href='http://a.stanzapub.com/delivery/ck.php?n=bed87e&amp;cb=767e86da74c932c559060b6bd6a07540' target='_blank'><img src='http://a.stanzapub.com/delivery/avw.php?zoneid=536&amp;cb=767e86da74c932c559060b6bd6a07540&amp;n=bed87e' border='0' alt='' /></a></noscript>				<script type='text/javascript'>antimalkar_detect('ad336')</script>			</li>
+			
+			<li id="google-search" style="margin-bottom: 20px;">
+				<div class="sidebar-title">Search Sportales</div>
+				<div id="cse" style="width: 100%;">Loading</div>
+				<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+				<script type="text/javascript">
+				  google.load('search', '1', {language : 'en', style : google.loader.themes.MINIMALIST});
+				  google.setOnLoadCallback(function() {
+				    var customSearchControl = new google.search.CustomSearchControl('008600977139321385175:4he4ogbxf6c');
+				    customSearchControl.setResultSetSize(google.search.Search.SMALL_RESULTSET);
+					customSearchControl.setLinkTarget(google.search.Search.LINK_TARGET_SELF);
+				    customSearchControl.draw('cse');
+				  }, true);
+				</script>
+			</li>
+			
+			<li id="popularposts">
+				<div class="sidebar-title">Popular Articles</div>
+				<ul class="sidebar-list">
+					<li><a href="http://sportales.com/soccer/england-player-goes-missing/" title="England Player Goes &quot;Missing&quot;.."> England Player Goes &quot;Missing&quot;..</a></li><li><a href="http://sportales.com/golf/two-middle-aged-missouri-women-charged-in-court-with-the-crime-of-public-indecency/" title="Two Middle Aged Missouri Women Charged in Court with The Crime of  Public Indecency"> Two Middle Aged Missouri Women Charged in Court with The Crime of  Public Indecency</a></li><li><a href="http://sportales.com/soccer/ending-homophobia-germany-debuts-gay-kiss-soccer-ad-during-euro-2012/" title="Ending Homophobia - Germany Debuts Gay Kiss Soccer Ad During Euro 2012"> Ending Homophobia - Germany Debuts Gay Kiss Soccer Ad During Euro 2012</a></li><li><a href="http://sportales.com/archery/donbass-arena-donetsk-seating-plan/" title="Donbass Arena, Donetsk, Seating Plan"> Donbass Arena, Donetsk, Seating Plan</a></li><li><a href="http://sportales.com/soccer/disgrace-of-soccer-chief-michel-platini-who-tries-to-ignore-racism/" title="Disgrace of Soccer Chief Michel Platini Who Tries to Ignore Racism"> Disgrace of Soccer Chief Michel Platini Who Tries to Ignore Racism</a></li><li><a href="http://sportales.com/hunting/joke-of-the-day-the-bear-hunter/" title="Joke of The Day -- The Bear Hunter"> Joke of The Day -- The Bear Hunter</a></li><li><a href="http://sportales.com/sports/collectible-supplies-com-your-partner-in-collecting-stuff/" title="Collectible-supplies.com, Your Partner in Collecting Stuff"> Collectible-supplies.com, Your Partner in Collecting Stuff</a></li><li><a href="http://sportales.com/soccer/best-england-keeper-my-top-five-england-goalkeepers/" title="Best England Keeper - My Top Five England Goalkeepers"> Best England Keeper - My Top Five England Goalkeepers</a></li><li><a href="http://sportales.com/wrestling/wwe-is-it-losing-spark/" title="WWE - is It Losing Spark?"> WWE - is It Losing Spark?</a></li><li><a href="http://sportales.com/soccer/uefa-euro-2012-basic-overview/" title="Uefa Euro 2012- Basic Overview"> Uefa Euro 2012- Basic Overview</a></li>				</ul> 
+			</li>			
+			<li id="ad160Container">
+				<div id="ad160left">
+					
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   var 	is_triond_reader;
+					   if (typeof triond_writer_id=="undefined")
+					   	 is_triond_reader = 'nontriond';
+					   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+					     is_triond_reader = 'nontriond';
+					   else
+					     is_triond_reader = 'yestriond'; 
+					   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+					   var m3_r = Math.floor(Math.random()*99999999999);
+					   if (!document.MAX_used) document.MAX_used = ',';
+					   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					   document.write ("?zoneid=821");
+					   document.write ("&adsense_id=pub-2561481683982199&adsense_channel_code=4538464070&clr_link=F3682B&clr_title=2181BA&clr_bg=FFFFFF&clr_border=FFFFFF&clr_text=414141&source=is_adsense__acf=" + readCookie("w4lfc") + is_triond_reader);
+					   document.write ('&amp;cb=' + m3_r);
+					   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					   document.write ("&amp;loc=" + escape(window.location));
+					   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					   if (document.context) document.write ("&context=" + escape(document.context));
+					   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					   document.write ("'><\/scr"+"ipt>");
+					//]]>--></script><noscript><a href='http://a.stanzapub.com/delivery/ck.php?n=aa1cd1&amp;cb=e8de01eda885745d2425854ad25fd193' target='_blank'><img src='http://a.stanzapub.com/delivery/avw.php?zoneid=821&amp;cb=e8de01eda885745d2425854ad25fd193&amp;n=aa1cd1' border='0' alt='' /></a></noscript>				</div>
+				<div id="ad160right">
+					
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   var 	is_triond_reader;
+					   if (typeof triond_writer_id=="undefined")
+					   	 is_triond_reader = 'nontriond';
+					   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+					     is_triond_reader = 'nontriond';
+					   else
+					     is_triond_reader = 'yestriond'; 
+					   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+					   var m3_r = Math.floor(Math.random()*99999999999);
+					   if (!document.MAX_used) document.MAX_used = ',';
+					   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					   document.write ("?zoneid=537");
+					   document.write ("&adsense_id=pub-2561481683982199&adsense_channel_code=4538464070&clr_link=F3682B&clr_title=2181BA&clr_bg=FFFFFF&clr_border=FFFFFF&clr_text=414141&source=is_adsense__acf=" + readCookie("w4lfc") + is_triond_reader);
+					   document.write ('&amp;cb=' + m3_r);
+					   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					   document.write ("&amp;loc=" + escape(window.location));
+					   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					   if (document.context) document.write ("&context=" + escape(document.context));
+					   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					   document.write ("'><\/scr"+"ipt>");
+					//]]>--></script><noscript><a href='http://a.stanzapub.com/delivery/ck.php?n=d8ae46&amp;cb=eaf905b32bce54f1b3bae7caa366e5ea' target='_blank'><img src='http://a.stanzapub.com/delivery/avw.php?zoneid=537&amp;cb=eaf905b32bce54f1b3bae7caa366e5ea&amp;n=d8ae46' border='0' alt='' /></a></noscript>					<script type='text/javascript'>antimalkar_detect('ad160right')</script>				</div>
+				<div class="clear"></div>
+			</li>
+		
+			
+						
+		<iframe src="http://www.facebook.com/plugins/activity.php?site=sportales.com&amp;width=336&amp;height=300&amp;header=true&amp;colorscheme=light&amp;recommendations=true&amp;ref=fb_activity" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:336px; height:300px;" allowTransparency="true"></iframe>
+			<li id="ad336">
+				
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   var 	is_triond_reader;
+					   if (typeof triond_writer_id=="undefined")
+					   	 is_triond_reader = 'nontriond';
+					   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+					     is_triond_reader = 'nontriond';
+					   else
+					     is_triond_reader = 'yestriond'; 
+					   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+					   var m3_r = Math.floor(Math.random()*99999999999);
+					   if (!document.MAX_used) document.MAX_used = ',';
+					   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					   document.write ("?zoneid=1484");
+					   document.write ("&adsense_id=pub-2561481683982199&adsense_channel_code=4538464070&clr_link=F3682B&clr_title=2181BA&clr_bg=FFFFFF&clr_border=FFFFFF&clr_text=414141&source=is_adsense__acf=" + readCookie("w4lfc") + is_triond_reader);
+					   document.write ('&amp;cb=' + m3_r);
+					   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					   document.write ("&amp;loc=" + escape(window.location));
+					   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					   if (document.context) document.write ("&context=" + escape(document.context));
+					   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					   document.write ("'><\/scr"+"ipt>");
+					//]]>--></script><noscript><a href='http://a.stanzapub.com/delivery/ck.php?n=66d7e4&amp;cb=1b0a0f111e81289da0bc7cd0e8dd69c6' target='_blank'><img src='http://a.stanzapub.com/delivery/avw.php?zoneid=1484&amp;cb=1b0a0f111e81289da0bc7cd0e8dd69c6&amp;n=66d7e4' border='0' alt='' /></a></noscript>			</li>
+			
+		</ul>
+
+	</div><!-- #sidebar -->
+	
+
+	</div><!-- #container -->
+	
+	<div id="footer">
+
+		<div class="rightcol"><a href="http://www.triond.com"><img src="http://sportales.com/wp-content/themes/sportales/images/triond.gif" alt="Powered by Triond" border="0"/></a></div>	
+		
+		<div id="footer-menu" class="leftcol">
+			Copyright &copy; 2008 Sportales.com&nbsp;&nbsp;&nbsp;<a href="/terms-of-use">Terms &amp; Conditions</a>&nbsp;&nbsp;&nbsp;<a href="/privacy-policy">Privacy Policy</a>
+			<ul>
+				<li><a href="http://sportales.com/">Home</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/contact">Contact</a></li>
+				<li><a href="/advertise-with-us">Advertise With Us</a></li>
+				<li><a href="http://www.triond.com">Submit an Article</a></li>
+			</ul>
+		</div>
+		
+		<div class="clear"></div>
+		
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+<!-- Start Quantcast By WP-Plugin: Quantcast-Quantifier -->
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<script type="text/javascript">_qacct="p-daj4ISsTm6BnE";quantserve();</script>
+<noscript>
+<a href="http://www.quantcast.com/p-daj4ISsTm6BnE" target="_blank"><img src="http://pixel.quantserve.com/pixel/p-daj4ISsTm6BnE.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/></a>
+</noscript>
+<img width="1" height="1" border="0" src="http://wprest.triond.com/cntimp?home_channel_id=930&website_channel_article_id=284947&rnd=3074504804"><script type="text/javascript">
+			document.write(unescape("%3Cscript src='/wp-content/mu-plugins/w4l/tiwik.js' type='text/javascript'%3E%3C/script%3E"));
+			</script><script type="text/javascript">
+			writer_id = 60561;
+			tiwik_log(writer_id);
+			</script><script type="text/javascript">
+					var _gaq = _gaq || [];
+					_gaq.push(['t12._setAccount', 'UA-1488967-12']);_gaq.push(['t12._setCustomVar',2,'publish_date','20081005',3]);_gaq.push(['t12._setCustomVar',3,'article_id','371149',3]);_gaq.push(['t12._setCustomVar',4,'wp_user_id','2073',3]);_gaq.push(['t12._trackPageview']);_gaq.push(['t29._setAccount', 'UA-1488967-29']);_gaq.push(['t29._setCustomVar',2,'publish_date','20081005',3]);_gaq.push(['t29._setCustomVar',3,'article_id','371149',3]);_gaq.push(['t29._setCustomVar',4,'wp_user_id','2073',3]);_gaq.push(['t29._trackPageview']);
+					(function() {
+					  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+					  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+					  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+					})();
+					
+					</script><script type="text/javascript">
+var _sf_async_config={uid:6902};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+       "static.chartbeat.com/js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+</script>
+
+
+ 
+	<div id="adIntext">
+		
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   var 	is_triond_reader;
+					   if (typeof triond_writer_id=="undefined")
+					   	 is_triond_reader = 'nontriond';
+					   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+					     is_triond_reader = 'nontriond';
+					   else
+					     is_triond_reader = 'yestriond'; 
+					   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+					   var m3_r = Math.floor(Math.random()*99999999999);
+					   if (!document.MAX_used) document.MAX_used = ',';
+					   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					   document.write ("?zoneid=406");
+					   document.write ("&adsense_id=pub-2561481683982199&adsense_channel_code=4538464070&clr_link=F3682B&clr_title=2181BA&clr_bg=FFFFFF&clr_border=FFFFFF&clr_text=414141&source=is_adsense__acf=" + readCookie("w4lfc") + is_triond_reader);
+					   document.write ('&amp;cb=' + m3_r);
+					   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					   document.write ("&amp;loc=" + escape(window.location));
+					   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					   if (document.context) document.write ("&context=" + escape(document.context));
+					   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					   document.write ("'><\/scr"+"ipt>");
+					//]]>--></script><noscript><a href='http://a.stanzapub.com/delivery/ck.php?n=e79f0c&amp;cb=557a26d8b5caa0733c6872a01e057bf2' target='_blank'><img src='http://a.stanzapub.com/delivery/avw.php?zoneid=406&amp;cb=557a26d8b5caa0733c6872a01e057bf2&amp;n=e79f0c' border='0' alt='' /></a></noscript>					</div>
+ 
+	<div id="ad-to">
+		
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   var 	is_triond_reader;
+					   if (typeof triond_writer_id=="undefined")
+					   	 is_triond_reader = 'nontriond';
+					   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+					     is_triond_reader = 'nontriond';
+					   else
+					     is_triond_reader = 'yestriond'; 
+					   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+					   var m3_r = Math.floor(Math.random()*99999999999);
+					   if (!document.MAX_used) document.MAX_used = ',';
+					   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					   document.write ("?zoneid=1370");
+					   document.write ("&adsense_id=pub-2561481683982199&adsense_channel_code=4538464070&clr_link=F3682B&clr_title=2181BA&clr_bg=FFFFFF&clr_border=FFFFFF&clr_text=414141&source=is_adsense__acf=" + readCookie("w4lfc") + is_triond_reader);
+					   document.write ('&amp;cb=' + m3_r);
+					   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					   document.write ("&amp;loc=" + escape(window.location));
+					   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					   if (document.context) document.write ("&context=" + escape(document.context));
+					   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					   document.write ("'><\/scr"+"ipt>");
+					//]]>--></script><noscript><a href='http://a.stanzapub.com/delivery/ck.php?n=2473bf&amp;cb=92fd6956f39bdffd995cf6ea4bfbbb19' target='_blank'><img src='http://a.stanzapub.com/delivery/avw.php?zoneid=1370&amp;cb=92fd6956f39bdffd995cf6ea4bfbbb19&amp;n=2473bf' border='0' alt='' /></a></noscript>	</div>
+	<div id="ad-slider">
+		
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   var 	is_triond_reader;
+					   if (typeof triond_writer_id=="undefined")
+					   	 is_triond_reader = 'nontriond';
+					   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+					     is_triond_reader = 'nontriond';
+					   else
+					     is_triond_reader = 'yestriond'; 
+					   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+					   var m3_r = Math.floor(Math.random()*99999999999);
+					   if (!document.MAX_used) document.MAX_used = ',';
+					   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					   document.write ("?zoneid=1076");
+					   document.write ("&adsense_id=pub-2561481683982199&adsense_channel_code=4538464070&clr_link=F3682B&clr_title=2181BA&clr_bg=FFFFFF&clr_border=FFFFFF&clr_text=414141&source=is_adsense__acf=" + readCookie("w4lfc") + is_triond_reader);
+					   document.write ('&amp;cb=' + m3_r);
+					   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					   document.write ("&amp;loc=" + escape(window.location));
+					   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					   if (document.context) document.write ("&context=" + escape(document.context));
+					   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					   document.write ("'><\/scr"+"ipt>");
+					//]]>--></script><noscript><a href='http://a.stanzapub.com/delivery/ck.php?n=e8259e&amp;cb=d58b74295d61c8eb042b160799e86fd3' target='_blank'><img src='http://a.stanzapub.com/delivery/avw.php?zoneid=1076&amp;cb=d58b74295d61c8eb042b160799e86fd3&amp;n=e8259e' border='0' alt='' /></a></noscript>	</div>
+<!-- start eXelate tag - Triond - Default Site -->
+
+<SCRIPT TYPE="text/javascript" SRC="http://loadus.exelator.com/load/?p=149&g=018&c=23705&ctg=sports&subctg=sports"></SCRIPT>
+<!--  end eXelate tag -->
+<script type="text/javascript">tyntVariables = {"ap":"Read more: "};</script> <script type="text/javascript" src="http://tcr.tynt.com/javascripts/Tracer.js?user=cGT2CKtumr36vRadbiUt4I&amp;s=130"></script>
+
+					<!--/* OpenX Javascript Tag v2.5.60-beta */-->
+					
+					<script type='text/javascript'><!--//<![CDATA[
+					   var 	is_triond_reader;
+					   if (typeof triond_writer_id=="undefined")
+					   	 is_triond_reader = 'nontriond';
+					   else if ((typeof writer_triond_id!="undefined") && (triond_writer_id == writer_triond_id))
+					     is_triond_reader = 'nontriond';
+					   else
+					     is_triond_reader = 'yestriond'; 
+					   var m3_u = (location.protocol=='https:'?'https://a.stanzapub.com/delivery/ajs.php':'http://a.stanzapub.com/delivery/ajs.php');
+					   var m3_r = Math.floor(Math.random()*99999999999);
+					   if (!document.MAX_used) document.MAX_used = ',';
+					   document.write ("<scr"+"ipt type='text/javascript' src='"+m3_u);
+					   document.write ("?zoneid=1576");
+					   document.write ("&adsense_id=pub-2561481683982199&adsense_channel_code=4538464070&clr_link=F3682B&clr_title=2181BA&clr_bg=FFFFFF&clr_border=FFFFFF&clr_text=414141&source=is_adsense__acf=" + readCookie("w4lfc") + is_triond_reader);
+					   document.write ('&amp;cb=' + m3_r);
+					   if (document.MAX_used != ',') document.write ("&amp;exclude=" + document.MAX_used);
+					   document.write ("&amp;loc=" + escape(window.location));
+					   if (document.referrer) document.write ("&amp;referer=" + escape(document.referrer));
+					   if (document.context) document.write ("&context=" + escape(document.context));
+					   if (document.mmm_fo) document.write ("&amp;mmm_fo=1");
+					   document.write ("'><\/scr"+"ipt>");
+					//]]>--></script><noscript><a href='http://a.stanzapub.com/delivery/ck.php?n=e0327b&amp;cb=1912549bdea7b042c51eef160a4da669' target='_blank'><img src='http://a.stanzapub.com/delivery/avw.php?zoneid=1576&amp;cb=1912549bdea7b042c51eef160a4da669&amp;n=e0327b' border='0' alt='' /></a></noscript></body>
+</html>

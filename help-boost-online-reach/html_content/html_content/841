@@ -1,0 +1,1092 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><!-- lid:  -->
+
+  <html><head>
+  <meta name="generator" content="webbler 3.4.0-5554 - http://tincan.co.uk/webbler"  />
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"  />
+    
+  <title>Journeyman Pictures : Documentary Distributor, Documentaries on Demand, DVD, Educational, Footage : Journeyman Pictures</title>
+  <script language="Javascript" src="/codelib/js/webblerlib.js" type="text/javascript"></script><script language="Javascript" src="/codelib/js/jquery/jquery-1.4.2.min.js" type="text/javascript"></script><meta http-equiv="Cache-Control" content="no-cache, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<script language="Javascript" src="/codelib/js/jslib.js" type="text/javascript"></script>
+<link href="/rss.php?id=1" rel="alternate" type="application/rss+xml" title="Documentaries RSS" />
+  <style type="text/css">
+    a { text-decoration: underline; color: #afafaf; font-size: 9pt; font-weight: bold; }
+    a:hover { text-decoration: underline; color: #ffffff; }
+    a:active { text-decoration: underline; color: #7f7f7f; }
+  </style>
+  <link rel="stylesheet" href="/styles/last.css">
+  <!--[if IE 7]>
+<link href="/styles/ie7.css" rel="stylesheet" type="text/css" media="screen" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link href="/styles/ie.css" rel="stylesheet" type="text/css" media="screen" />
+<![endif]-->
+<link rel="stylesheet" href="/styles/flowplayer-tabs.css">
+
+<script language="Javascript" type="text/javascript" src="/js/flowplayer-3.2.4.min.js"></script>
+<script language="Javascript" type="text/javascript" src="/js/flowplayer.ipad-3.2.1.js"></script>
+<script language="Javascript" type="text/javascript" src="/js/jquery.tools.min.js"></script>
+
+<style>
+#page {padding:80px; font-family:verdana}
+
+div.overlay {display: none; padding:20px; border: 1px solid #333333; background-color: #484848; -moz-box-shadow: 0 0 40px rgba(0,0,0,.9); -webkit-box-shadow: 0 0 40px rgba(0,0,0,.9); box-shadow: 0 0 40px rgba(0,0,0,.9)}
+
+div.overlay a.close {position: absolute; right: -15px; top: -15px; cursor:pointer; height: 35px; width: 35px; background-image: url(/images/player_close.png)}
+
+div.overlay a.player {display: block; /*height: 380px; width: 565px;*/ height: 360px; width: 640px }
+
+</style>
+	
+<script type="text/javascript">
+
+$(function() {
+      var isiDevice = /iPad|iPhone|iPod/i.test(navigator.userAgent);
+
+		// setup overlay actions to buttons
+		$("button[rel]").overlay({	
+			onLoad: function(content) {
+			// find the player contained inside this overlay and load it
+            if (!isiDevice){
+               this.getOverlay().find("a.player").flowplayer(0).load();
+            }
+			},
+		
+			onClose: function(content) {
+            //$("a.shotlistTab").removeClass("current");
+            if ($(".downloadPane").find("#content")){
+		         $(".downloadPane").find("#content").remove();
+               $(".downloadPane").hide(); 
+               $("a.player").show();
+            }
+
+            $(".shotlistPane").hide(); 
+
+            if (!isiDevice)
+            $f().unload();
+			}
+		});
+		
+		//hide / show overlay tabs
+		$(".shotlistPane").hide();
+
+		$("a.shotlistTab").toggle(
+		   function(){$(".shotlistPane").show();},
+		   function(){$(".shotlistPane").hide();}
+		);
+			
+		$("a.downloadTab").toggle(
+         function(){
+            $("a.player").hide();
+            $(".downloadPane").append("<div id=\"content\"></div>");
+            $(".downloadPane").find("#content").load("/?lid="+this.id+"&tmpl=shoppertypeselection&noga=1");
+		      $(".downloadPane").show();
+         },
+         function(){
+		      $(".downloadPane").find("#content").remove();
+		      $(".downloadPane").hide();
+            $("a.player").show();
+         }
+      );
+
+      $(".buydownload[rel]").overlay({
+         onBeforeLoad: function(content){
+            $("#paneTabs").hide(); 
+         },
+
+         onLoad: function(content){
+            var lid = this.getTrigger().attr("id");
+
+            $("a.player").hide();
+            $(".downloadPane").append("<div id=\"content\"></div>");
+            $(".downloadPane").find("#content").load("/?lid="+lid+"&tmpl=shoppertypeselection&noga=1");
+            $(".downloadPane").show();
+         },
+
+         onClose: function(content){
+            $("#paneTabs").show(); 
+            $("a.player").show();
+            $(".downloadPane").find("#content").remove();
+            $(".downloadPane").hide();
+         }
+      });
+
+		// install flowplayers (depends on if the user-agent is a PC browser
+
+      if (!isiDevice)
+		$("a.player").flowplayer("/player/flowplayer.commercial-3.2.5.swf", {
+		key: "#$b5b4b6eedbb628d0100",
+		clip: { 
+  			onStart: function(clip) { 
+    		var wrap = jQuery(this.getParent()); 
+    		wrap.css({width: clip.metaData.width, height: clip.metaData.height}); 
+  			} 
+			}
+		});		
+});
+</script>
+
+<!--Facebox-->
+<link href="/styles/facebox.css" media="screen" rel="stylesheet" type="text/css" />
+  <script src="/js/jquery-1.3.2.min.js" type="text/javascript"></script>
+  <script src="/js/facebox.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      $('a[rel*=facebox]').facebox({
+        loading_image : 'loading.gif',
+        close_image   : 'close.gif'
+      }) 
+    })
+  </script>
+  
+ <!--[if IE 6]>
+  <script type="text/javascript">
+  $(function(){
+    $('#themes ul.themelist1 li:first').addClass('first');
+	$('#themes ul.themelist2 li:first').addClass('first');    
+})
+
+</script>
+<![endif]--><!-- Hello Vero-->
+</head>
+<body text="#ffffff" link="#ffffff" alink="#ffffff" vlink="#ffffff" bgcolor="#484848" leftmargin="0" topmargin="0">
+<script language="Javascript" type="text/javascript" src="/codelib/js/jslib.js"></script>
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="44" background="sysimages/boundl.gif">&nbsp;
+        
+      </td>
+      <td align="center" bgcolor="#484848">
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+			  
+			  <tr valign="middle">
+			  	<td>
+				<div id="channels">
+				<ul>
+				<li class="facebook"><a href="http://www.facebook.com/pages/Journeyman-Pictures/112988392056072" title="Facebook (opens in a new window)" target="_blank">Facebook</a></li>
+				<li class="twitter"><a href="http://twitter.com/journeymanvod" title="Twitter (opens in a new window)" target="_blank">Twitter</a></li>
+				<li class="youtube"><a href="http://www.youtube.com/journeymanpictures" title="YouTube (opens in a new window)" target="_blank">YouTube</a></li>
+				</ul>
+				<h3>Join our channels</h3>
+				</div>
+				</td>
+			  </tr>
+			  
+        <tr>
+          <td align="center">
+            
+			<div id="widget">
+			<iframe id="fr" src="http://www.youtube.com/subscribe_widget?p=journeymanpictures" style="overflow: hidden; height: 95px; width: 300px; border: 0; background: #bbb" scrolling="no" frameBorder="0"></iframe>			</div>
+			
+			<a href="/">
+              <img src="/image.php?id=3" width="477" height="119" border="0" title="Journeyman Logo" alt="Journeyman Logo" /><br>
+            </a>
+          </td>
+        </tr>
+      </table>
+        <table width="100%" height="3" border="0" cellpadding="0" cellspacing="0" class="menulite">
+          <tr>
+            <td height="3" class="spacer">
+              <img src="/spacer.gif" width="1" height="3" border="0"><br>
+            </td>
+          </tr>
+        </table>
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td align="center" colspan="2">
+          	<ul id="mainNav">
+<li>[<a href="/" title="Home">Home</a>]</li>
+<li>[<a href="/58441/documentaries/documentaries.html" title="Documentaries"  >Documentaries</a>]</li>
+<li>[<a href="/60697/footage-minisite/footage.html" title="Footage"  >Footage</a>]</li>
+<!--<li><a href="/12731/clips/search.html" title="Search"  >Search</a></li>-->
+<li>[<a href="/?tmpl=recentstories&noga=1" rel="facebox" title="Recent Sories">Recent Stories</a>]</li>
+<li>[<a href="/12716/download-catalogue/download.html" title="Download Catalogues"  >Download Catalogues</a>]</li>
+<li>[<a href="/distribution" title="Distribution">Distribution</a>]</li>
+<li>[<a href="/aboutus" title="About Us">About Us</a>]</li>
+<li>[<a href="#search" title="Programme Search" rel="facebox">Programme Search</a>]</li>
+</ul>
+
+<div id="search" style="display:none;">
+<h3>Programme Search</h3>
+
+<div class="search-freetext">
+<h4>Keywords:</h4>
+<form method="get" action="/?" name="searchbox" id="searchbox"><input type="hidden" name="lid" value="58637" /><p><input type="text" name="query" value=""
+       maxlength="50" class="searchBoxinput autoclear"
+       size="30" /></p>
+<p><span class="phrase"><input name="exact" value="1" checked="checked" class="checkbox" type="checkbox">Exact Phrase</span></p>
+<input align="top" type="submit" value="Go" class="submit">
+</form>
+</div>
+
+<div class="search-country">
+<h4>Country:</h4>
+<div class="keywordsearch">
+<form method="get" action="/?">
+<input type="hidden" name="lid" value="58637" /><div class="keywordsearchlibrary"><label for="Country">Country</label><select name="Country[]" class="kwsearchdropdown"  multiple size="7" id="Country">     <option value="1" >Afghanistan</option> 
+     <option value="2" >Africa</option> 
+     <option value="2396" >Alaska</option> 
+     <option value="3" >Albania</option> 
+     <option value="4" >Algeria</option> 
+     <option value="5" >Angola</option> 
+     <option value="880" >Antarctica</option> 
+     <option value="624" >Antigua</option> 
+     <option value="6" >Argentina</option> 
+     <option value="7" >Armenia</option> 
+     <option value="8" >Asia</option> 
+     <option value="9" >Australia</option> 
+     <option value="10" >Austria</option> 
+     <option value="11" >Azerbaijan</option> 
+     <option value="2346" >Azores</option> 
+     <option value="630" >Bahamas</option> 
+     <option value="2428" >Balkans</option> 
+     <option value="13" >Bangladesh</option> 
+     <option value="14" >Belarus</option> 
+     <option value="15" >Belgium</option> 
+     <option value="16" >Benin</option> 
+     <option value="596" >Bermuda</option> 
+     <option value="17" >Bhutan</option> 
+     <option value="18" >Bolivia</option> 
+     <option value="19" >Borneo</option> 
+     <option value="20" >Bosnia</option> 
+     <option value="21" >Bosnia/Serbia</option> 
+     <option value="22" >Botswana</option> 
+     <option value="23" >Brazil</option> 
+     <option value="24" >Bulgaria</option> 
+     <option value="25" >Burkina Faso</option> 
+     <option value="26" >Burma</option> 
+     <option value="27" >Burundi</option> 
+     <option value="28" >Cambodia</option> 
+     <option value="29" >Cameroon</option> 
+     <option value="30" >Canada</option> 
+     <option value="31" >Cape Verde</option> 
+     <option value="32" >Caribbean</option> 
+     <option value="769" >Chad</option> 
+     <option value="33" >Chagos Islands</option> 
+     <option value="34" >Chechnya</option> 
+     <option value="35" >Chile</option> 
+     <option value="36" >China</option> 
+     <option value="37" >Colombia</option> 
+     <option value="603" >Congo (Brazzaville)</option> 
+     <option value="38" >Cook Islands</option> 
+     <option value="39" >Croatia</option> 
+     <option value="40" >Cuba</option> 
+     <option value="41" >Cyprus</option> 
+     <option value="42" >Czech Republic</option> 
+     <option value="840" >Denmark</option> 
+     <option value="2399" >Dominican Republic</option> 
+     <option value="43" >DRC</option> 
+     <option value="2358" >Dubai</option> 
+     <option value="44" >East Timor</option> 
+     <option value="45" >Eastern Europe</option> 
+     <option value="46" >Ecuador</option> 
+     <option value="47" >Egypt</option> 
+     <option value="602" >El Salvador</option> 
+     <option value="761" >Equatorial Guinea</option> 
+     <option value="48" >Eritrea</option> 
+     <option value="1644" >Estonia</option> 
+     <option value="49" >Ethiopia</option> 
+     <option value="50" >Europe</option> 
+     <option value="1790" >Faroe Islands</option> 
+     <option value="51" >Fiji</option> 
+     <option value="600" >Finland</option> 
+     <option value="52" >France</option> 
+     <option value="53" >French Guiana</option> 
+     <option value="816" >French Polynesia</option> 
+     <option value="54" >Georgia</option> 
+     <option value="55" >Germany</option> 
+     <option value="56" >Ghana</option> 
+     <option value="57" >Gibraltar</option> 
+     <option value="58" >Greece</option> 
+     <option value="59" >Guatemala</option> 
+     <option value="632" >Guayana</option> 
+     <option value="60" >Guinea Bissau</option> 
+     <option value="61" >Haiti</option> 
+     <option value="62" >Holland</option> 
+     <option value="2324" >Honduras</option> 
+     <option value="63" >Hong Kong</option> 
+     <option value="64" >Hungary</option> 
+     <option value="65" >Ibiza</option> 
+     <option value="66" >Iceland</option> 
+     <option value="67" >India</option> 
+     <option value="68" >Indonesia</option> 
+     <option value="69" >Iran</option> 
+     <option value="70" >Iraq</option> 
+     <option value="71" >Ireland</option> 
+     <option value="72" >Israel/Palestine</option> 
+     <option value="73" >Italy</option> 
+     <option value="598" >Ivory Coast (Cote D'Ivoire)</option> 
+     <option value="74" >Jamaica</option> 
+     <option value="75" >Japan</option> 
+     <option value="76" >Jordan</option> 
+     <option value="77" >Kazakhstan</option> 
+     <option value="78" >Kenya</option> 
+     <option value="883" >Kiribati</option> 
+     <option value="79" >Kosovo</option> 
+     <option value="80" >Kuwait</option> 
+     <option value="81" >Kyrgyzstan</option> 
+     <option value="82" >Laos</option> 
+     <option value="83" >Lebanon</option> 
+     <option value="84" >Liberia</option> 
+     <option value="85" >Libya</option> 
+     <option value="86" >Lithuania</option> 
+     <option value="87" >Macedonia</option> 
+     <option value="88" >Madagascar</option> 
+     <option value="90" >Malawi</option> 
+     <option value="91" >Malaysia</option> 
+     <option value="877" >Maldives</option> 
+     <option value="92" >Mali</option> 
+     <option value="93" >Malta</option> 
+     <option value="94" >Mauritania</option> 
+     <option value="634" >Mauritius</option> 
+     <option value="95" >Mexico</option> 
+     <option value="96" >Moldova</option> 
+     <option value="97" >Monaco</option> 
+     <option value="98" >Mongolia</option> 
+     <option value="99" >Montenegro</option> 
+     <option value="100" >Morocco</option> 
+     <option value="101" >Mozambique</option> 
+     <option value="102" >Namibia</option> 
+     <option value="103" >Nauru</option> 
+     <option value="104" >Nepal</option> 
+     <option value="105" >New Zealand</option> 
+     <option value="106" >Nicaragua</option> 
+     <option value="891" >Niger</option> 
+     <option value="107" >Nigeria</option> 
+     <option value="108" >North Korea</option> 
+     <option value="109" >Norway</option> 
+     <option value="879" >Pacific Ocean</option> 
+     <option value="110" >Pakistan</option> 
+     <option value="111" >Palau</option> 
+     <option value="1803" >Panama</option> 
+     <option value="112" >Papua New Guinea</option> 
+     <option value="113" >Peru</option> 
+     <option value="114" >Philippines</option> 
+     <option value="115" >Poland</option> 
+     <option value="116" >Portugal</option> 
+     <option value="117" >Puerto Rico</option> 
+     <option value="118" >Qatar</option> 
+     <option value="631" >Reunion Island</option> 
+     <option value="119" >Romania</option> 
+     <option value="120" >Russia</option> 
+     <option value="121" >Rwanda</option> 
+     <option value="2329" >Sao Tome and Principe</option> 
+     <option value="122" >Saudi Arabia</option> 
+     <option value="2409" >Scotland</option> 
+     <option value="123" >Senegal</option> 
+     <option value="124" >Serbia</option> 
+     <option value="125" >Seychelles</option> 
+     <option value="126" >Sierra Leone</option> 
+     <option value="127" >Singapore</option> 
+     <option value="128" >Slovakia</option> 
+     <option value="129" >Slovenia</option> 
+     <option value="130" >Solomon Islands</option> 
+     <option value="131" >Somalia</option> 
+     <option value="132" >South Africa</option> 
+     <option value="134" >South Korea</option> 
+     <option value="135" >Spain</option> 
+     <option value="136" >Sri Lanka</option> 
+     <option value="137" >Sudan</option> 
+     <option value="138" >Surinam</option> 
+     <option value="139" >Swaziland</option> 
+     <option value="140" >Sweden</option> 
+     <option value="141" >Switzerland</option> 
+     <option value="142" >Syria</option> 
+     <option value="847" >Tahiti</option> 
+     <option value="143" >Taiwan</option> 
+     <option value="144" >Tajikistan</option> 
+     <option value="611" >Tanzania</option> 
+     <option value="145" >Thailand</option> 
+     <option value="146" >Tibet</option> 
+     <option value="147" >Togo</option> 
+     <option value="760" >Tonga</option> 
+     <option value="653" >Tunisia</option> 
+     <option value="148" >Turkey</option> 
+     <option value="149" >Turkmenistan</option> 
+     <option value="764" >Tuvalu</option> 
+     <option value="150" >U.A.E</option> 
+     <option value="151" >Uganda</option> 
+     <option value="152" >UK</option> 
+     <option value="153" >UK/New Zealand</option> 
+     <option value="154" >Ukraine</option> 
+     <option value="155" >Uruguay</option> 
+     <option value="156" >USA</option> 
+     <option value="157" >Uzbekistan</option> 
+     <option value="599" >Vanuatu</option> 
+     <option value="881" >Vatican City</option> 
+     <option value="158" >Venezuela</option> 
+     <option value="159" >Vietnam</option> 
+     <option value="160" >World</option> 
+     <option value="161" >Yemen</option> 
+     <option value="163" >Zambia</option> 
+     <option value="1722" >Zanzibar</option> 
+     <option value="164" >Zimbabwe</option> 
+</select>
+<button type="submit" value="Go" class="kwsearchgo" ><span>Go</span></button>
+</div>
+</form></div></div>
+
+<div class="search-ref">
+<h4>Ref No.:</h4>
+<form method="get" action="/?">
+<input type=hidden name="type" value="leaf">
+<input type=hidden name="field" value="refno">
+<input type=text name="value" value="" class="searchBoxinput">
+<input type="submit" name="Go" value="Go" class="submit">
+</form>
+</div>
+
+</div><span class="rss"><!--<link href="/rss.php" rel="alternate" type="application/rss+xml">
+<a href="/rss.php?id=1" title="Documentaries RSS"><img src="/codelib/rss.gif"></a></span><a href="/56957/what-is-rss/untitled-document.html"   title="What is RSS"  >What is RSS</a>-->
+          </td>
+        </tr>
+      </table>
+	  
+<table border="0" width="90%" align="center" cellspacing="0" cellpadding="0" class="maincontent">
+<tr valign="top">
+<td align="right">
+<div id="functions">
+<!--
+<a class="normal" title="normal text" href="#" onclick="setActiveStyleSheet('', 1);return false;"><img src="/images/funct_size.gif" width="15" height="14" alt="normal text" border="0" /></a>
+<a class="large" title="large text" href="#" onclick="setActiveStyleSheet('Large Text', 1);return false;"><img src="/images/funct_size1.gif" width="15" height="14" alt="large text" border="0" /></a>
+<a class="large" title="larger text" href="#" onclick="setActiveStyleSheet('Larger Text', 1);return false;"><img src="/images/funct_size2.gif" width="15" height="14" alt="larger text" border="0" /></a>
+<a href="/textonly" title="text only"><img src="/images/funct_textonly.gif" width="15" height="14" alt="text only" border="0" /></a>
+<a href="/?lid=1&amp;tmpl=journeyman_print" title="printer friendly"><img src="/images/funct_print.gif" width="15" height="14" alt="printer friendly" border="0" /></a>
+-->
+</div>
+</td></tr>
+				
+</table>
+
+                  <div align="center">
+<table width="80%" border="0" cellpadding="0" cellspacing="0">
+<tr valign="top">
+<td align="right" colspan="2"><!--				<table cellpadding="0" cellspacing="0" border="0">
+<tr align="center"><td><a href="/4105/search-documentaries/search-documentaries.html"  class="search_big" >SEARCH DOCUMENTARIES</a></td></tr>
+<tr align="center"><td><a href="/12718/latest-20/latest-50-documentaries.html"  class="search_big" >VIEW LAST 20</a></td></tr>
+<tr align="center"><td><a href="/12716/download-catalogue/download.html"  class="search_big" >DOWNLOAD CATALOGUES</a></td></tr>
+</table>
+-->
+<div id="ppv_button_sm"><a href="http://journeyman.booserver.com/" title="Watch Docs Now">Watch Docs Now</a></div>
+
+
+
+</td>
+</tr>
+<tr><td align="left"><center>Journeyman Pictures is London's leading independent distributor of topical news features, documentaries and footage. We're like a video encyclopedia of the world. Use this web site to preview our latest films, as advertised in '<a href="/61658/journeyman-weekly/040411.html"   >The Journeyman Weekly</a>', or to <a href="/12731/clips/search.html"   >search our archive</a> of over 5,000 films. And now you can view documentaries on our high quality viewing platform <a href="http://journeyman.booserver.com/" title="here">here</a>.</center></td></tr>
+<tr><td>&nbsp;</td></tr>
+</table>
+      </div>
+      <div align="left">
+
+      <br>
+        <table width="100%" border="0" cellpadding="2" cellspacing="0">
+          <r>
+            <td align="center">
+            <!-- W E E K L Y +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <table width="95%" border="0" cellpadding="2" cellspacing="0">
+    <tr>
+      <td>
+        <a href="/61658/journeyman-weekly/040411.html"  ><img src="/image.php?id=8" width="384" height="50" border="0" title="The Journeyman Weekly" alt="The Journeyman Weekly" /></a><br>
+      </td>
+     </tr>
+  </table>
+  <table width="80%" border="0" cellpadding="2" cellspacing="0">
+    <tr>
+    
+            <td width="20%" valign="top">
+              <b></b> <a href="/?lid=61658#61655">LIBYA<!-- - Border Crisis--></a><br/><br/>
+              <!--a href="/?lid=61658#61655"><img src="/image.php?id=56676" width="305" height="238" border="0" title="" alt="" /><br/><br/-->
+              <a href="/?lid=61658#61655">
+              <img src="/thumbnail.php?id=56676&amp;max=120" width="120" height="90" border=1>
+              <br/><br/>
+              <div class="whiteline">
+                <b></b>
+                <a href="/?lid=61658#61655" class="infosubtitle">Border Crisis</a>
+		          <p><b>Since the start of Libya's conflict more than 200,000 people have fled the country, over half crossing into neighbouring Tunisia. Arriving in a country suffering its own turmoil, the prospects are grim. 
+<br /></b>
+              </div>
+            </td>
+            <td width="20%" valign="top">
+              <b></b> <a href="/?lid=61658#61654">ITALY<!-- - Berlusconi's Women--></a><br/><br/>
+              <!--a href="/?lid=61658#61654"><img src="/image.php?id=56677" width="305" height="238" border="0" title="" alt="" /><br/><br/-->
+              <a href="/?lid=61658#61654">
+              <img src="/thumbnail.php?id=56677&amp;max=120" width="120" height="90" border=1>
+              <br/><br/>
+              <div class="whiteline">
+                <b></b>
+                <a href="/?lid=61658#61654" class="infosubtitle">Berlusconi's Women</a>
+		          <p><b>As Italy prepares itself for Berlusconi's long-awaited sex trial this week, opinion is divided across the nation. Is their Prime Minister a sexist philanderer or is he in fact a champion of women's rights?
+<br /></b>
+              </div>
+            </td>
+            <td width="20%" valign="top">
+              <b></b> <a href="/?lid=61658#61653">KAZAKHSTAN<!-- - Beyond Borat--></a><br/><br/>
+              <!--a href="/?lid=61658#61653"><img src="/image.php?id=56678" width="305" height="238" border="0" title="" alt="" /><br/><br/-->
+              <a href="/?lid=61658#61653">
+              <img src="/thumbnail.php?id=56678&amp;max=120" width="120" height="90" border=1>
+              <br/><br/>
+              <div class="whiteline">
+                <b></b>
+                <a href="/?lid=61658#61653" class="infosubtitle">Beyond Borat</a>
+		          <p><b>Sacha Baron Cohen's alter ego 'Borat' was a Hollywood hit. But his portrayal of Kazakhstan as a backward and impoverished country has led the Kazakhs to fight against this damaging misconception. </b>
+              </div>
+            </td>
+            <td width="20%" valign="top">
+              <b></b> <a href="/?lid=61658#61652">SPAIN<!-- - Tomato Slave Trade--></a><br/><br/>
+              <!--a href="/?lid=61658#61652"><img src="/image.php?id=56679" width="305" height="238" border="0" title="" alt="" /><br/><br/-->
+              <a href="/?lid=61658#61652">
+              <img src="/thumbnail.php?id=56679&amp;max=120" width="120" height="90" border=1>
+              <br/><br/>
+              <div class="whiteline">
+                <b></b>
+                <a href="/?lid=61658#61652" class="infosubtitle">Tomato Slave Trade</a>
+		          <p><b>The Costa del Sol is famous for its tourists and beaches - not for slavery. But an investigation into Spain's treatment of migrant workers has uncovered a shocking reality.</b>
+              </div>
+            </td>
+            <td width="20%" valign="top">
+              <b></b> <a href="/?lid=61658#61651">ISRAEL/PALESTINE<!-- - What Hitler Gave to Tel Aviv--></a><br/><br/>
+              <!--a href="/?lid=61658#61651"><img src="/image.php?id=56680" width="305" height="238" border="0" title="" alt="" /><br/><br/-->
+              <a href="/?lid=61658#61651">
+              <img src="/thumbnail.php?id=56680&amp;max=120" width="120" height="90" border=1>
+              <br/><br/>
+              <div class="whiteline">
+                <b></b>
+                <a href="/?lid=61658#61651" class="infosubtitle">What Hitler Gave to Tel Aviv</a>
+		          <p><b>Tel Aviv represented a new start for Jews fleeing the Nazis. So why does it resemble Berlin so closely? Through the eyes of one Tel Avivian in Berlin we see the two cities' powerful connection.
+<br /></b>
+              </div>
+            </td><tr>	   
+		   <td>
+		   <!--a href="/download.php?id=18341" onclick="pageTracker._trackPageview(' Downloads: 5112.mp4 (id:18341)'); "><img src="/sysimages/icon_realclip.gif" width=32 height=24 alt="view" border="0">view</a-->
+                   <p class="flowplayer_button"><button rel="#overlay18341">Flash Clip</button></p>
+               <div class="overlay" id="overlay18341">
+                   <div id="playerCont">
+                   <a id="ipatch18341" class="player" href="http://www.journeyman.co.uk/media/video/5112.mp4">
+                           &nbsp;
+                   </a>
+                   <div class="downloadPane"></div>
+                   </div>
+                   <ul id="paneTabs">
+                   
+                   </ul>
+               </div>
+             
+		   <br/>
+		   <a href="javascript:openWin('/?lid=61655&tmpl=transcript');"><img src="/sysimages/icon_transcript.gif" width=32 height=20 alt="view transcript" border="0">view transcript</a>
+           </td>
+          	   
+		   <td>
+		   <!--a href="/download.php?id=18340" onclick="pageTracker._trackPageview(' Downloads: 5111.mp4 (id:18340)'); "><img src="/sysimages/icon_realclip.gif" width=32 height=24 alt="view" border="0">view</a-->
+                   <p class="flowplayer_button"><button rel="#overlay18340">Flash Clip</button></p>
+               <div class="overlay" id="overlay18340">
+                   <div id="playerCont">
+                   <a id="ipatch18340" class="player" href="http://www.journeyman.co.uk/media/video/5111.mp4">
+                           &nbsp;
+                   </a>
+                   <div class="downloadPane"></div>
+                   </div>
+                   <ul id="paneTabs">
+                   
+                   </ul>
+               </div>
+             
+		   <br/>
+		   <a href="javascript:openWin('/?lid=61654&tmpl=transcript');"><img src="/sysimages/icon_transcript.gif" width=32 height=20 alt="view transcript" border="0">view transcript</a>
+           </td>
+          	   
+		   <td>
+		   <!--a href="/download.php?id=18339" onclick="pageTracker._trackPageview(' Downloads: 5110.mp4 (id:18339)'); "><img src="/sysimages/icon_realclip.gif" width=32 height=24 alt="view" border="0">view</a-->
+                   <p class="flowplayer_button"><button rel="#overlay18339">Flash Clip</button></p>
+               <div class="overlay" id="overlay18339">
+                   <div id="playerCont">
+                   <a id="ipatch18339" class="player" href="http://www.journeyman.co.uk/media/video/5110.mp4">
+                           &nbsp;
+                   </a>
+                   <div class="downloadPane"></div>
+                   </div>
+                   <ul id="paneTabs">
+                   
+                   </ul>
+               </div>
+             
+		   <br/>
+		   <a href="javascript:openWin('/?lid=61653&tmpl=transcript');"><img src="/sysimages/icon_transcript.gif" width=32 height=20 alt="view transcript" border="0">view transcript</a>
+           </td>
+          	   
+		   <td>
+		   <!--a href="/download.php?id=18337" onclick="pageTracker._trackPageview(' Downloads: 5109.mp4 (id:18337)'); "><img src="/sysimages/icon_realclip.gif" width=32 height=24 alt="view" border="0">view</a-->
+                   <p class="flowplayer_button"><button rel="#overlay18337">Flash Clip</button></p>
+               <div class="overlay" id="overlay18337">
+                   <div id="playerCont">
+                   <a id="ipatch18337" class="player" href="http://www.journeyman.co.uk/media/video/5109.mp4">
+                           &nbsp;
+                   </a>
+                   <div class="downloadPane"></div>
+                   </div>
+                   <ul id="paneTabs">
+                   
+                   </ul>
+               </div>
+             
+		   <br/>
+		   <a href="javascript:openWin('/?lid=61652&tmpl=transcript');"><img src="/sysimages/icon_transcript.gif" width=32 height=20 alt="view transcript" border="0">view transcript</a>
+           </td>
+          	   
+		   <td>
+		   <!--a href="/download.php?id=18338" onclick="pageTracker._trackPageview(' Downloads: 5108.mp4 (id:18338)'); "><img src="/sysimages/icon_realclip.gif" width=32 height=24 alt="view" border="0">view</a-->
+                   <p class="flowplayer_button"><button rel="#overlay18338">Flash Clip</button></p>
+               <div class="overlay" id="overlay18338">
+                   <div id="playerCont">
+                   <a id="ipatch18338" class="player" href="http://www.journeyman.co.uk/media/video/5108.mp4">
+                           &nbsp;
+                   </a>
+                   <div class="downloadPane"></div>
+                   </div>
+                   <ul id="paneTabs">
+                   
+                   </ul>
+               </div>
+             
+		   <br/>
+		   <a href="javascript:openWin('/?lid=61651&tmpl=transcript');"><img src="/sysimages/icon_transcript.gif" width=32 height=20 alt="view transcript" border="0">view transcript</a>
+           </td>
+          </tr>    </tr>
+  </table>
+    <script type="text/javascript">
+  $(function(){
+       var isiDevice = /iPad|iPhone|iPod/i.test(navigator.userAgent);
+
+       if (isiDevice){
+          var elems = document.links;
+          var ipatchs = new Array();
+          var j=0;
+
+          for (var i=0; i< elems.length; i++){
+              if (elems[i].id.substring(0,6) == "ipatch"){
+                 ipatchs[j] = elems[i].id;
+                 j++;
+              }
+          }
+
+          for (var i=0; i < ipatchs.length; i++){
+              flowplayer(ipatchs[i],"player/flowplayer.commercial-3.2.5.swf",{key: "#$b5b4b6eedbb628d0100"}).ipad();
+          }
+       }
+  });
+
+  </script>
+
+
+            <!-- L A T E S T +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <table width="95%" border="0" cellpadding="2" cellspacing="0">
+    <tr>
+      <td>
+        <br>
+        <a href="/58441/documentaries/documentaries.html"  ><img src="/image.php?id=21278" width="384" height="50" border="0" title="Latest Documentaries" alt="Latest Documentaries" /></a><br>
+      </td>
+    </tr>
+  </table>
+ 
+      <table width="80%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="20%" valign="top">
+        <a href="/61643/documentaries/benghazi-stories.html"  >
+          <img src="/thumbnail.php?id=56675&amp;max=320" width=320 height=240 border=0>        </a>
+      </td>
+      <td width="3%">&nbsp;
+        
+      </td>
+<td valign="top">
+<table><tr>
+<td>
+	<b></b> <a href="/61643/documentaries/benghazi-stories.html"  >Libya - Benghazi Stories</a> -
+ 45' min00'' sec - 30&nbsp;March&nbsp;2011   <br/><br/>   
+</td>
+</tr>
+
+<tr>
+
+      <td>
+			The conflict that erupted in Benghazi on the 15th of February was as unexpected as it was cataclysmic, but at its heart lay years of hurt and political repression. Through personal stories told by the people of Benghazi, we trace the conflict from its beginnings in a small protest over one lawyers imprisonment, and capture the inspiring story of how the unarmed people of Libya rocked the titanium police state built by Colonel Gaddafi.              </td>
+</tr>
+</table>
+</td>
+    </tr>
+  </table><br>
+<!-- end of one documentary -->
+  <table width="80%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="20%" valign="top">
+        <a href="/61585/documentaries/fables-of-birth.html"  >
+          <img src="/thumbnail.php?id=56664&amp;max=320" width=320 height=240 border=0>        </a>
+      </td>
+      <td width="3%">&nbsp;
+        
+      </td>
+<td valign="top">
+<table><tr>
+<td>
+	<b></b> <a href="/61585/documentaries/fables-of-birth.html"  >India - Fables Of Birth</a> -
+ 52' min00'' sec - 24&nbsp;March&nbsp;2011   <br/><br/>   
+</td>
+</tr>
+
+<tr>
+
+      <td>
+			In the remote and forgotten villages of Eastern India, separated from civilization by a vast roadless plain, Dai is delivering a baby exactly as her ancestors would hundreds of years ago. She is a midwife and in this region that is to be a representative of an ancient and mysterious art, often employing methods unthinkable to us in the West. Our heroines, two ancient and delightful midwives, are never short of a saucy joke - or a wise word. Humorous and uplifting, beautifully shot and poignant, an intimate glimpse into a disappearing world.              </td>
+</tr>
+</table>
+</td>
+    </tr>
+  </table><br>
+<!-- end of one documentary -->
+  <table width="80%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="20%" valign="top">
+        <a href="/58942/documentaries/atomic-wounds.html"  >
+          <img src="/thumbnail.php?id=55961&amp;max=320" width=320 height=240 border=0>        </a>
+      </td>
+      <td width="3%">&nbsp;
+        
+      </td>
+<td valign="top">
+<table><tr>
+<td>
+	<b></b> <a href="/58942/documentaries/atomic-wounds.html"  >Japan - Atomic Wounds</a> -
+ 53 min - 20&nbsp;June&nbsp;2008   <br/><br/>   
+</td>
+</tr>
+
+<tr>
+
+      <td>
+			At  89, Doctor Hida, a survivor of the 1945 atomic bomb at Hiroshima, continues to care for some of the other quarter of a million survivors. Atomic Wounds retraces his dedicated journey and highlights how the terrible danger of radiation was concealed by successive American administrations in  the 50's - 70's so that nuclear power could be freely developed, with no concern for public health.               </td>
+</tr>
+</table>
+</td>
+    </tr>
+  </table><br>
+<!-- end of one documentary -->
+ 
+             <table width="70%" border="0" cellpadding="2" cellspacing="0">
+<tr>
+	<td align="center">
+	<a href="http://www.journeyman.tv/lists/?p=subscribe" title="Subscribe to our mailshots">Subscribe to our mailshots</a>
+	</td>
+</tr>
+<tr>
+	<td align="center">
+	<a href="mailto:info@journeyman.tv" class="email">info@journeyman.tv</a><br>
+	Tel: <b>44 208 398 4616</b><br>
+	Fax: <b>44 208 972 9100</b><br>
+	4-6 High Street, Thames Ditton, Surrey, KT7 0RY, United Kingdom<br>
+	</td>
+</tr>
+</table>
+            <br>
+            </td>
+          </tr>
+        </table>
+              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+			  <tr>
+          <td align="center" colspan="2">
+          	<ul id="mainNav">
+<li>[<a href="/" title="Home">Home</a>]</li>
+<li>[<a href="/58441/documentaries/documentaries.html" title="Documentaries"  >Documentaries</a>]</li>
+<li>[<a href="/60697/footage-minisite/footage.html" title="Footage"  >Footage</a>]</li>
+<!--<li><a href="/12731/clips/search.html" title="Search"  >Search</a></li>-->
+<li>[<a href="/?tmpl=recentstories&noga=1" rel="facebox" title="Recent Sories">Recent Stories</a>]</li>
+<li>[<a href="/12716/download-catalogue/download.html" title="Download Catalogues"  >Download Catalogues</a>]</li>
+<li>[<a href="/distribution" title="Distribution">Distribution</a>]</li>
+<li>[<a href="/aboutus" title="About Us">About Us</a>]</li>
+<li>[<a href="#search" title="Programme Search" rel="facebox">Programme Search</a>]</li>
+</ul>
+
+<div id="search" style="display:none;">
+<h3>Programme Search</h3>
+
+<div class="search-freetext">
+<h4>Keywords:</h4>
+<form method="get" action="/?" name="searchbox" id="searchbox"><input type="hidden" name="lid" value="58637" /><p><input type="text" name="query" value=""
+       maxlength="50" class="searchBoxinput autoclear"
+       size="30" /></p>
+<p><span class="phrase"><input name="exact" value="1" checked="checked" class="checkbox" type="checkbox">Exact Phrase</span></p>
+<input align="top" type="submit" value="Go" class="submit">
+</form>
+</div>
+
+<div class="search-country">
+<h4>Country:</h4>
+<div class="keywordsearch">
+<form method="get" action="/?">
+<input type="hidden" name="lid" value="58637" /><div class="keywordsearchlibrary"><label for="Country">Country</label><select name="Country[]" class="kwsearchdropdown"  multiple size="7" id="Country">     <option value="1" >Afghanistan</option> 
+     <option value="2" >Africa</option> 
+     <option value="2396" >Alaska</option> 
+     <option value="3" >Albania</option> 
+     <option value="4" >Algeria</option> 
+     <option value="5" >Angola</option> 
+     <option value="880" >Antarctica</option> 
+     <option value="624" >Antigua</option> 
+     <option value="6" >Argentina</option> 
+     <option value="7" >Armenia</option> 
+     <option value="8" >Asia</option> 
+     <option value="9" >Australia</option> 
+     <option value="10" >Austria</option> 
+     <option value="11" >Azerbaijan</option> 
+     <option value="2346" >Azores</option> 
+     <option value="630" >Bahamas</option> 
+     <option value="2428" >Balkans</option> 
+     <option value="13" >Bangladesh</option> 
+     <option value="14" >Belarus</option> 
+     <option value="15" >Belgium</option> 
+     <option value="16" >Benin</option> 
+     <option value="596" >Bermuda</option> 
+     <option value="17" >Bhutan</option> 
+     <option value="18" >Bolivia</option> 
+     <option value="19" >Borneo</option> 
+     <option value="20" >Bosnia</option> 
+     <option value="21" >Bosnia/Serbia</option> 
+     <option value="22" >Botswana</option> 
+     <option value="23" >Brazil</option> 
+     <option value="24" >Bulgaria</option> 
+     <option value="25" >Burkina Faso</option> 
+     <option value="26" >Burma</option> 
+     <option value="27" >Burundi</option> 
+     <option value="28" >Cambodia</option> 
+     <option value="29" >Cameroon</option> 
+     <option value="30" >Canada</option> 
+     <option value="31" >Cape Verde</option> 
+     <option value="32" >Caribbean</option> 
+     <option value="769" >Chad</option> 
+     <option value="33" >Chagos Islands</option> 
+     <option value="34" >Chechnya</option> 
+     <option value="35" >Chile</option> 
+     <option value="36" >China</option> 
+     <option value="37" >Colombia</option> 
+     <option value="603" >Congo (Brazzaville)</option> 
+     <option value="38" >Cook Islands</option> 
+     <option value="39" >Croatia</option> 
+     <option value="40" >Cuba</option> 
+     <option value="41" >Cyprus</option> 
+     <option value="42" >Czech Republic</option> 
+     <option value="840" >Denmark</option> 
+     <option value="2399" >Dominican Republic</option> 
+     <option value="43" >DRC</option> 
+     <option value="2358" >Dubai</option> 
+     <option value="44" >East Timor</option> 
+     <option value="45" >Eastern Europe</option> 
+     <option value="46" >Ecuador</option> 
+     <option value="47" >Egypt</option> 
+     <option value="602" >El Salvador</option> 
+     <option value="761" >Equatorial Guinea</option> 
+     <option value="48" >Eritrea</option> 
+     <option value="1644" >Estonia</option> 
+     <option value="49" >Ethiopia</option> 
+     <option value="50" >Europe</option> 
+     <option value="1790" >Faroe Islands</option> 
+     <option value="51" >Fiji</option> 
+     <option value="600" >Finland</option> 
+     <option value="52" >France</option> 
+     <option value="53" >French Guiana</option> 
+     <option value="816" >French Polynesia</option> 
+     <option value="54" >Georgia</option> 
+     <option value="55" >Germany</option> 
+     <option value="56" >Ghana</option> 
+     <option value="57" >Gibraltar</option> 
+     <option value="58" >Greece</option> 
+     <option value="59" >Guatemala</option> 
+     <option value="632" >Guayana</option> 
+     <option value="60" >Guinea Bissau</option> 
+     <option value="61" >Haiti</option> 
+     <option value="62" >Holland</option> 
+     <option value="2324" >Honduras</option> 
+     <option value="63" >Hong Kong</option> 
+     <option value="64" >Hungary</option> 
+     <option value="65" >Ibiza</option> 
+     <option value="66" >Iceland</option> 
+     <option value="67" >India</option> 
+     <option value="68" >Indonesia</option> 
+     <option value="69" >Iran</option> 
+     <option value="70" >Iraq</option> 
+     <option value="71" >Ireland</option> 
+     <option value="72" >Israel/Palestine</option> 
+     <option value="73" >Italy</option> 
+     <option value="598" >Ivory Coast (Cote D'Ivoire)</option> 
+     <option value="74" >Jamaica</option> 
+     <option value="75" >Japan</option> 
+     <option value="76" >Jordan</option> 
+     <option value="77" >Kazakhstan</option> 
+     <option value="78" >Kenya</option> 
+     <option value="883" >Kiribati</option> 
+     <option value="79" >Kosovo</option> 
+     <option value="80" >Kuwait</option> 
+     <option value="81" >Kyrgyzstan</option> 
+     <option value="82" >Laos</option> 
+     <option value="83" >Lebanon</option> 
+     <option value="84" >Liberia</option> 
+     <option value="85" >Libya</option> 
+     <option value="86" >Lithuania</option> 
+     <option value="87" >Macedonia</option> 
+     <option value="88" >Madagascar</option> 
+     <option value="90" >Malawi</option> 
+     <option value="91" >Malaysia</option> 
+     <option value="877" >Maldives</option> 
+     <option value="92" >Mali</option> 
+     <option value="93" >Malta</option> 
+     <option value="94" >Mauritania</option> 
+     <option value="634" >Mauritius</option> 
+     <option value="95" >Mexico</option> 
+     <option value="96" >Moldova</option> 
+     <option value="97" >Monaco</option> 
+     <option value="98" >Mongolia</option> 
+     <option value="99" >Montenegro</option> 
+     <option value="100" >Morocco</option> 
+     <option value="101" >Mozambique</option> 
+     <option value="102" >Namibia</option> 
+     <option value="103" >Nauru</option> 
+     <option value="104" >Nepal</option> 
+     <option value="105" >New Zealand</option> 
+     <option value="106" >Nicaragua</option> 
+     <option value="891" >Niger</option> 
+     <option value="107" >Nigeria</option> 
+     <option value="108" >North Korea</option> 
+     <option value="109" >Norway</option> 
+     <option value="879" >Pacific Ocean</option> 
+     <option value="110" >Pakistan</option> 
+     <option value="111" >Palau</option> 
+     <option value="1803" >Panama</option> 
+     <option value="112" >Papua New Guinea</option> 
+     <option value="113" >Peru</option> 
+     <option value="114" >Philippines</option> 
+     <option value="115" >Poland</option> 
+     <option value="116" >Portugal</option> 
+     <option value="117" >Puerto Rico</option> 
+     <option value="118" >Qatar</option> 
+     <option value="631" >Reunion Island</option> 
+     <option value="119" >Romania</option> 
+     <option value="120" >Russia</option> 
+     <option value="121" >Rwanda</option> 
+     <option value="2329" >Sao Tome and Principe</option> 
+     <option value="122" >Saudi Arabia</option> 
+     <option value="2409" >Scotland</option> 
+     <option value="123" >Senegal</option> 
+     <option value="124" >Serbia</option> 
+     <option value="125" >Seychelles</option> 
+     <option value="126" >Sierra Leone</option> 
+     <option value="127" >Singapore</option> 
+     <option value="128" >Slovakia</option> 
+     <option value="129" >Slovenia</option> 
+     <option value="130" >Solomon Islands</option> 
+     <option value="131" >Somalia</option> 
+     <option value="132" >South Africa</option> 
+     <option value="134" >South Korea</option> 
+     <option value="135" >Spain</option> 
+     <option value="136" >Sri Lanka</option> 
+     <option value="137" >Sudan</option> 
+     <option value="138" >Surinam</option> 
+     <option value="139" >Swaziland</option> 
+     <option value="140" >Sweden</option> 
+     <option value="141" >Switzerland</option> 
+     <option value="142" >Syria</option> 
+     <option value="847" >Tahiti</option> 
+     <option value="143" >Taiwan</option> 
+     <option value="144" >Tajikistan</option> 
+     <option value="611" >Tanzania</option> 
+     <option value="145" >Thailand</option> 
+     <option value="146" >Tibet</option> 
+     <option value="147" >Togo</option> 
+     <option value="760" >Tonga</option> 
+     <option value="653" >Tunisia</option> 
+     <option value="148" >Turkey</option> 
+     <option value="149" >Turkmenistan</option> 
+     <option value="764" >Tuvalu</option> 
+     <option value="150" >U.A.E</option> 
+     <option value="151" >Uganda</option> 
+     <option value="152" >UK</option> 
+     <option value="153" >UK/New Zealand</option> 
+     <option value="154" >Ukraine</option> 
+     <option value="155" >Uruguay</option> 
+     <option value="156" >USA</option> 
+     <option value="157" >Uzbekistan</option> 
+     <option value="599" >Vanuatu</option> 
+     <option value="881" >Vatican City</option> 
+     <option value="158" >Venezuela</option> 
+     <option value="159" >Vietnam</option> 
+     <option value="160" >World</option> 
+     <option value="161" >Yemen</option> 
+     <option value="163" >Zambia</option> 
+     <option value="1722" >Zanzibar</option> 
+     <option value="164" >Zimbabwe</option> 
+</select>
+<button type="submit" value="Go" class="kwsearchgo" ><span>Go</span></button>
+</div>
+</form></div></div>
+
+<div class="search-ref">
+<h4>Ref No.:</h4>
+<form method="get" action="/?">
+<input type=hidden name="type" value="leaf">
+<input type=hidden name="field" value="refno">
+<input type=text name="value" value="" class="searchBoxinput">
+<input type="submit" name="Go" value="Go" class="submit">
+</form>
+</div>
+
+</div>          </td>
+        </tr>
+      </table>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" class="menulite">
+          <tr>
+            <td class="spacer">
+              <img src="/spacer.gif" width="1" height="3" border="0"><br>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="center" class="copy">
+                          </td>
+          </tr>
+        </table>
+        <br>
+      </td>
+      <td width="44" background="sysimages/boundr.gif">&nbsp;
+        
+      </td>
+    </tr>
+  </table>
+
+
+
+
+<!-- GA code -->
+
+
+      <script type="text/javascript">
+      //<![CDATA[
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-613191-1");
+      pageTracker._initData();
+      pageTracker._trackPageview("");
+      
+      
+      //]]>
+      </script>
+<!-- end GA code -->
+</body></html>
+
+
+<!--
+PCE:0.001536
+450 db queries in 0.666174 seconds-->
+
+<!--
+PCE:0.001172
+0 db queries in 0.002389 seconds-->

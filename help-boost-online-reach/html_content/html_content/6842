@@ -1,0 +1,2087 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/" lang="en" xml:lang="en">
+    <head>
+                    <script type="text/javascript">
+        if (((document.domain.indexOf("smh.com.au") != -1) || (document.domain.indexOf("theage.com.au") != -1) ||
+                (document.domain.indexOf("watoday.com.au") != -1) ||
+                (document.domain.indexOf("brisbanetimes.com.au") != -1) ||
+                (document.domain.indexOf("canberratimes.com.au") != -1) ||
+                (document.domain.indexOf("businessday.com.au") != -1)) && (isSmartPhone()) &&
+                (document.cookie.indexOf("iphone_redirect=false") == -1)) {
+            var currentLocation = document.location.href;
+            if (currentLocation.indexOf("www.") != -1 && currentLocation.indexOf("/lifestyle/cuisine") == -1) {
+                currentLocation = currentLocation.replace("www.", "m.");
+                window.location = currentLocation;
+            }
+        }
+
+        /**
+         * Returns a <code>Boolean</code> indicating whether or not the user agent represents a smart phone.
+         *
+         * @return True if the user agent represents a smart phone; otherwise false.
+         */
+        function isSmartPhone() {
+            var userAgent = navigator.userAgent
+            return ((matchesSmartPhoneUserAgentRegularExpressions(userAgent)) &&
+                    (!matchesTabletUserAgentRegularExpressions(userAgent)));
+        }
+
+        /**
+         * Returns a <code>Boolean</code> indicating whether or not the specified user agent represents a smart phone.
+         * If any of the regular expressions are updated then they should be updated in
+         * <code>SmartPhoneHelper.java</code>.
+         *
+         * @param userAgent User agent to test.
+         * @return True if the user agent represents a smart phone; otherwise false.
+         */
+        function matchesSmartPhoneUserAgentRegularExpressions(userAgent) {
+            var smartPhoneUserAgentRegularExpressions = ["^Mozilla/5.0.*iPhone.*", "^Mozilla/5.0.*iPod.*",
+                "^Mozilla/5.0.*Android [1-3].*", "^Mozilla/5.0.*SymbianOS/9.*", "^Mozilla/5.0.*Symbian/3.*",
+                "^Mozilla/5.0.*Mobile Safari/.*5[2-3][0-9].*", ".*Dolfin/[1-2].[0-9].*", "^Mozilla/[4-5].0.*Windows Phone OS 7.[0-5].*", "^Opera/9.*Android; Opera Mini.*"];
+            if ((userAgent) && (userAgent.length > 0)) {
+                var index = 0;
+                for (; index < smartPhoneUserAgentRegularExpressions.length; index++) {
+                    if (userAgent.match(smartPhoneUserAgentRegularExpressions[index])) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+        /**
+         * Returns a <code>Boolean</code> indicating whether or not the specified user agent represents a tablet. If any
+         * of the regular expressions are updated then they should be updated in <code>SmartPhoneHelper.java</code>.
+         *
+         * @param userAgent User agent to test.
+         * @return True if the user agent represents a tablet; otherwise false.
+         */
+        function matchesTabletUserAgentRegularExpressions(userAgent) {
+            var tableUserAgentRegularExpressions = ["^Mozilla/5.0.*iPad.*", "^Mozilla/5.0.*GT-P1000.*","^Mozilla/5.0.*GT-P7500.*", "^Mozilla/5.0.*MZ601.*"];
+            if ((userAgent) && (userAgent.length > 0)) {
+                var index = 0;
+                for (; index < tableUserAgentRegularExpressions.length; index++) {
+                    if (userAgent.match(tableUserAgentRegularExpressions[index])) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+    </script>
+
+        <title>Pan-fried chicken with mustard cream sauce recipe</title>
+
+        <meta http-equiv="content-language" content="en" />
+<meta http-equiv="imagetoolbar" content="no" />
+    <link rel="canonical" href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/panfried-chicken-with-mustard-cream-sauce-20111018-1lvoe.html"/>
+<meta name="robots" content="noarchive,noodp" />
+<meta name="robots" content="ACAP allow-index" />
+<meta name="robots" content="ACAP allow-follow" />
+<meta name="robots" content="ACAP disallow-preserve" />
+<meta name="robots" content="ACAP allow-present prohibited-modification=annotation" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+<meta name="application-name" content="The Sydney Morning Herald" />
+<meta name="msapplication-tooltip" content="Open The Sydney Morning Herald" />
+<meta name="msapplication-starturl" content="http://www.smh.com.au" />
+
+    <meta name="msapplication-task" content="name=National;action-uri=http://www.smh.com.au/national;icon-uri=http://www.smh.com.au/favicon.ico;" />
+    <meta name="msapplication-task" content="name=World;action-uri=http://www.smh.com.au/world;icon-uri=http://www.smh.com.au/favicon.ico;" />
+    <meta name="msapplication-task" content="name=Sport;action-uri=http://www.smh.com.au/sport;icon-uri=http://www.smh.com.au/favicon.ico;" />
+    <meta name="msapplication-task" content="name=Weather;action-uri=http://www.smh.com.au/weather;icon-uri=http://www.smh.com.au/favicon.ico;" />
+        
+
+        <meta property="og:title" content="Pan-fried chicken with mustard cream sauce"/>
+<meta property="og:description" content="Pan-fried chicken with mustard cream sauce"/>
+<meta property="og:site_name" content="The Sydney Morning Herald"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/panfried-chicken-with-mustard-cream-sauce-20111018-1lvoe.html"/>
+<meta property="og:image" content="http://images.smh.com.au/2012/02/17/3050000/art-pan-fried-chicken.jpg"/>
+<meta property="fb:app_id" content="263567390324418"/>
+
+                <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.smh.com.au/common/media-common-1.0/css/output/common.skin.news_min.css" />
+
+            <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.smh.com.au/common/media-common-1.0/css/output/common.skin.smh_min.css" />
+
+            <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.smh.com.au/common/media-common-1.0/css/output/common.skin.lifestyle_min.css" />
+
+            <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.smh.com.au/common/media-common-1.0/css/output/skin.promotions_min.css" />
+
+        <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.smh.com.au/common/media-common-1.0/css/output/common.skin.mysite_min.css" />
+
+
+<!-- Initialise Google Analytics event queue -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+</script>
+        
+    </head>
+    <body class="smh lifestyle cuisine" >
+        <script type="text/javascript">
+// <![CDATA[
+	document.body.className += " scriptable";
+// ]]>
+</script>
+
+        <a class="skipLink" href="#nav">Skip to navigation</a>
+<a class="skipLink" href="#content">Skip to content</a>
+<a class="skipLink" href="http://www.smh.com.au/siteguide/accessibility">Help using this website - Accessibility statement</a>
+
+                <esi:include src="/ugc/dock.html"/>
+        <esi:remove><div class="mySite" role="document" aria-live="polite" aria-relevant="additions removals" aria-atomic="true">
+    <div class="ms-toolbarWrap">
+        <div class="ms-toolbar clearfix">
+            <p class="hiddenWithJS alert"><em>JavaScript disabled.</em> Please enable JavaScript to use My News, My Clippings, My Comments and user settings.</p>
+<p><em>New <span class="hiddenVisually">feature</span></em> Personalise your news, save articles to read later and customise settings <a href="javascript:;" class="btn alt" title="View demo">View Demo</a></p>
+<em class="profile">Hi there!</em>
+<ul>
+    <li class="account secondLast"><a class="gaTrackable" href="https://smh.myfairfax.com.au/members/members/signup?channel_key=Dks89-tJMqw6zsOGPU5c5Q&callback_uri=http://www.smh.com.au/ugc/login.html" data-gaAction="Sign-up" data-gaCategory="MyMasthead" data-gaLabel="Dock Bar">Sign-up</a></li>
+    <li class="account last login"><a class="gaTrackable" href="https://smh.myfairfax.com.au/members/session/new?channel_key=Dks89-tJMqw6zsOGPU5c5Q&callback_uri=http://www.smh.com.au/ugc/login.html" data-gaAction="Login" data-gaCategory="MyMasthead" data-gaLabel="Dock Bar" data-dialogHref="https://smh.myfairfax.com.au/members/session/dialog?channel_key=Dks89-tJMqw6zsOGPU5c5Q&callback_uri=http://www.smh.com.au/ugc/login.html">Log in</a></li>
+</ul>
+<span class="beta">Beta <span class="hiddenVisually">version</span></span>
+<div id="ms-dialogLogin" class="dialogWrap hiddenVisually">
+	<div class="dialogContent main">
+		<p class="hiddenVisually">If you have trouble accessing our login form below, you can go to our <a href="https://smh.myfairfax.com.au/members/session/new?channel_key=Dks89-tJMqw6zsOGPU5c5Q&callback_uri=http://www.smh.com.au/ugc/login.html" title="This link will open in a new window" target="_parent">login page</a>.</p>
+		<iframe id="loginIframe" width="625" height="425" frameborder="0" scrolling="no"></iframe>
+	</div>
+</div>        </div>
+    </div>
+</div></esi:remove>
+    <div data-brandTimezone="Australia/Sydney"></div>
+
+
+
+        <div id="sponsorLink_cA-helmet" class="cA-helmet">
+    <div></div>
+</div><!-- id:sponsorLink_cA-helmet -->
+        <div class="outerWrap">
+            <div class="wrap cfix">
+                <div class="nN-whiteStrip">
+    <ul class="linksLeft" id="nN-whiteStrip-linksLeft">
+            <li id="whiteStrip-time"><em>1:10AM</em> Saturday Feb 18, 2012</li>
+        <li id="whiteStrip-users" class="online last">    1,650
+ online now</li>
+            <li class="last"><a href="http://www.smh.com.au/todays-paper" title="See today's paper">See today's paper</a></li>
+
+</ul>
+    <a class="logo" href="http://www.fairfaxdigital.com.au/">Fairfax Digital</a>
+        <ul class="linksRight">
+        
+<li><a href="http://www.smh.com.au" onclick="trackCode(this, 'ws-top');">SMH</a></li>
+                <li><a href="http://www.domain.com.au/" onclick="linktop(this);">Real Estate</a></li>
+                <li><a href="http://www.drive.com.au/" onclick="linktop(this);">Cars</a></li>
+                <li><a href="http://mycareer.com.au/" onclick="linktop(this);">Jobs</a></li>
+                <li><a href="http://www.rsvp.com.au/" onclick="linktop(this);">Dating</a></li>
+                <li><a href="https://membercentre.fairfax.com.au/NewsletterSubscription.aspx" onclick="linktop(this);">Newsletters</a></li>
+
+            <li class="hasDropdown last"><a href="javascript:;">More</a>
+                <ul>
+                            <li><a href="http://www.essentialbaby.com.au/" onclick="linktop(this);">Essential Baby</a></li>
+                            <li><a href="http://www.stayz.com.au/" onclick="linktop(this);">Stayz</a></li>
+                            <li><a href="http://www.investsmart.com.au/" onclick="linktop(this);">InvestSMART</a></li>
+                            <li><a href="http://www.tradingroom.com.au" onclick="linktop(this);">Trading Room</a></li>
+                            <li><a href="http://www.weatherzone.com.au/" onclick="linktop(this);">Weatherzone</a></li>
+                    <li class="last"><a onclick="linktop(this);" href="http://www.fairfax.com.au/">More sites &raquo;</a></li>
+                </ul>
+            </li>
+    </ul>
+
+</div><!-- class:nN-whiteStrip -->
+<!-- Header (class according to new HTML5 element 'header'; was 'masthead') (scope: network-wide) -->
+<div class="header span-24">
+    <div id="adspot-728x90,468x60-pos-1" class="ad">
+<script type="text/javascript">
+    function getAdCookie(name) {
+        var regex = new RegExp(name + "=(.*?)(; |&|$)", "gi");
+        var value = regex.exec(document.cookie);
+        if (value && value.length == 3) {
+           value = value[1];
+        } else {
+            value = "";
+        }
+        return value;
+    }
+    function getFrameDocument(fr) {
+        var doc = fr.contentWindow || fr.contentDocument;
+        if (doc && doc.document) {
+            doc = doc.document;
+        }
+        return doc;
+    }
+    function closeDoc(doc) {
+        doc.close();
+    }
+    function closeOpenDocuments(openDocs) {
+        for (var i=0;i< openDocs.length; i++) {
+            closeDoc(getFrameDocument(document.getElementById(openDocs[i])))
+        }
+    }
+
+    function isIE()
+    {
+      return /msie/i.test(navigator.userAgent) && !/opera/i.test(navigator.userAgent);
+    }
+
+    function setHash (element, hash) {
+        if(element.hash) {
+            element.hash = element.hash + "," + hash;
+        } else {
+            element.hash = hash;
+        }
+    }
+    function renderIFAd(holderID, adID, srcUrl, width, height, hash) {
+        setHash(document.getElementById(holderID), hash);
+        document.dcdAdsR.push(adID);
+        if (ie) {
+            var sizePart = srcUrl.substring(srcUrl.indexOf("sz=")+3);
+            sizePart = sizePart.substring(0, sizePart.indexOf(";"));
+            var multiSizes = sizePart.split(",");
+            var minSize = multiSizes[0];
+            if (multiSizes.length > 1) {
+                for(var i=1; i< multiSizes.length; i++) {
+                    if (minSize > multiSizes[i]) {
+                        minSize = multiSizes[i];
+                    }
+                }
+                var sizeParts = minSize.toLowerCase().split("x");
+                width = sizeParts[0];
+                height = sizeParts[1];
+                srcUrl = srcUrl.replace(sizePart, minSize);
+            }
+        }
+        document.write('<iframe id="' + adID + '" src="' + srcUrl + '" width="' + width +
+                '" height="' + height + '" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0"><\/iframe>');
+    }
+
+    function renderJIFAd(holderID, adID, srcUrl, width, height, hash) {
+        setHash(document.getElementById(holderID), hash);
+        document.dcdAdsR.push(adID);
+        document.write('<iframe id="' + adID +'" src="javascript: ;" width="' + width +
+                '" height="' + height + '" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0"><\/iframe>');
+        var body = '<html><head></head><body><scr' + 'ipt src="' + srcUrl + '"></sc' + 'ript></body></html>';
+        var fr = document.getElementById(adID);
+        setHash(fr, hash);
+        fr.body = body;
+        var doc = getFrameDocument(fr);
+        doc.open();
+        doc.write(body);
+        setTimeout(function() {closeDoc(getFrameDocument(document.getElementById(adID)))}, 2000);
+    }
+
+    function renderJAd(holderID, adID, srcUrl, hash) {
+        document.dcdAdsAA.push(holderID);
+        setHash(document.getElementById(holderID), hash);
+        document.dcdAdsH.push(holderID);
+        document.dcdAdsI.push(adID);
+        document.dcdAdsU.push(srcUrl);
+    }
+
+    function er_showAd() {
+        var regex = new RegExp("externalReferrer=(.*?)(; |&|$)", "gi");
+        var value = regex.exec(document.cookie);
+        if (value && value.length == 3) {
+           var externalReferrer = value[1];
+           return (!FD.isInternalReferrer() || ((externalReferrer) && (externalReferrer > 0)));
+        }
+        return false;
+    }
+
+    function isHome() {
+        var loc = "" + window.location;
+        loc = loc.replace("//", "");
+        var tokens = loc.split("/");
+        if (tokens.length == 1) {
+            return true;
+        } else if (tokens.length == 2) {
+            if (tokens[1].trim().length == 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+    function checkAds(checkStrings) {
+        var cs = checkStrings.split(",");
+        for (var i=0;i< document.dcdAdsAA.length; i++) {
+            var cAd = document.getElementById(document.dcdAdsAA[i]);
+            document.dcdAdsAG.push(cAd.hash);            
+            for (var j=0; j<cs.length; j++) {
+                var c = cs[j].trim();
+                if (c.length > 0 && cAd.innerHTML.indexOf(c)>0) {
+                    document.dcdAdsAI.push(cAd.hash);
+                }
+            }
+        }
+        //Check iframes
+        if (!ie) {
+            for (var i=0;i< document.dcdAdsR.length; i++) {
+                var fr = document.getElementById(document.dcdAdsR[i]);
+                if (fr) {
+                    document.dcdAdsAG.push(fr.hash);
+                    var doc = getFrameDocument(fr);
+                    for (var j=0; j<cs.length; j++) {
+                        var c = cs[j].trim();
+                        if (c.length > 0 && doc.body.innerHTML.indexOf(c)>0) {
+                            document.dcdAdsAI.push(fr.hash);
+                        }
+                    }
+                }
+            }
+        }
+
+        if (document.dcdAdsAI.length > 0 || document.dcdAdsAG.length > 0) {
+            var pingServerParams = "i="
+            var sep = "";
+            for (var i=0;i< document.dcdAdsAI.length; i++) {
+                pingServerParams += sep + document.dcdAdsAI[i];
+                sep = ",";
+            }
+        }
+        document.pingServerAdParams = pingServerParams;
+    }
+
+    function pingAdStatus() {
+        if (isHome ()) {
+            return;
+        }
+        if (document.pingServerAdParams && document.pingServerAdParams.length > 0) {
+            var pingServerUrl = "/action/pingServerAction?" + document.pingServerAdParams;
+            var xmlHttp = null;
+            try
+            {
+                xmlHttp = new XMLHttpRequest();
+            }   catch(e)             {
+                try
+                {
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHttp");
+                } catch(e) {
+                    xmlHttp = null;
+                }
+            }
+            if (xmlHttp != null) {
+                xmlHttp.open( "GET", pingServerUrl, true);
+                xmlHttp.send( null );
+            }
+        } 
+    }
+
+    function initAds(log) {
+        for (var i=0;i< document.dcdAdsU.length; i++) {
+            var shadowHolder = document.getElementById("adShD" + i);
+            var targetHolder = document.getElementById(document.dcdAdsH[i]);
+            if (shadowHolder && targetHolder) {
+                var adNodes = new Array();
+                for (var j=0; j<shadowHolder.childNodes.length; j++) {
+                    var child = shadowHolder.childNodes[j];
+                    if (child.nodeName.toLowerCase() != "script") {
+                        adNodes.push(child);
+                    }
+                }
+                for (var j=0; j<adNodes.length; j++) {
+                    targetHolder.appendChild(shadowHolder.removeChild(adNodes[j]));
+                }
+            }
+        }
+        if (er_showAd()) {
+            for (var i=0;i< document.dcdAdsE.length; i++) {
+                var erAd = document.getElementById(document.dcdAdsEH[i]);
+                erAd.className = document.dcdAdsEC[i];
+                erAd.appendChild(document.dcdAdsE[i]);
+            }
+        }
+        if (log) {
+            console.log(document.igCount + "/" + document.tCount);
+        }
+    }
+
+    document.refreshAds = function rAds(adID) {
+        if (document.dcdAdsR) {
+            document.dcdsAdsToClose =  new Array();
+            for (var i=0;i< document.dcdAdsR.length; i++) {
+                var fr = document.getElementById(document.dcdAdsR[i]);
+                if (fr) {
+                    if (!ie) {
+                        if (!adID || adID =="*" || fr.parentNode.id==adID ) {
+                            var chNodes = new Array();
+                            for (var j=0; j<fr.parentNode.childNodes.length; j++) {
+                                var child = fr.parentNode.childNodes[j];
+                                if (!(child.nodeName.toLowerCase() == "script" ||
+                                        child.nodeName.toLowerCase() == "iframe")) {
+                                    chNodes.push(child);
+                                }
+                            }
+                            for (var j=0; j<chNodes.length; j++) {
+                                chNodes[j].parentNode.removeChild(chNodes[j]);
+                            }
+                            var doc = getFrameDocument(fr);
+                            while (doc.childNodes.length > 0) {
+                                doc.removeChild(doc.childNodes[0]);
+                            }
+                            doc.open();
+                            doc.write(fr.body);
+                            document.dcdsAdsToClose.push(fr.id);
+                        }
+                    } else {
+                        fr.src = fr.src;    
+                    }
+                }
+            }
+            if (document.dcdsAdsToClose.length > 0) {
+                setTimeout(function() {closeOpenDocuments(document.dcdsAdsToClose)}, 500);
+            }
+        }
+    }
+    var ie = isIE();
+    if(ie && typeof String.prototype.trim !== 'function') {
+      String.prototype.trim = function() {
+        return this.replace(/^\s+|\s+$/g, '');
+      }
+    }
+    document.dcdAdsH = new Array();
+    document.dcdAdsI = new Array();
+    document.dcdAdsU = new Array();
+    document.dcdAdsR = new Array();
+    document.dcdAdsEH = new Array();
+    document.dcdAdsE = new Array();
+    document.dcdAdsEC = new Array();
+    document.dcdAdsAA = new Array();
+    document.dcdAdsAI = new Array();
+    document.dcdAdsAG = new Array();
+    document.dcdAdsToClose = new Array();
+
+    document.igCount = 0;
+    document.tCount = 0;
+    var dcOrd = Math.floor(100000000*Math.random());
+    document.dcAdsCParams = "";
+
+    var savValue = getAdCookie("sav");
+    if (savValue != null && savValue.length > 2) {
+        document.dcAdsCParams = savValue + ";";
+    }
+</script>        <script>
+            renderJAd("adspot-728x90,468x60-pos-1", "dcAd-1", 'http://ad-apac.doubleclick.net/adj/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;pos=1;dcopt=ist;' + document.dcAdsCParams +'sz=728x90,468x60;tile=1;ord=' + dcOrd + '?', -769769921);
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;pos=1;dcopt=ist;sz=728x90,468x60;tile=1;ord=2.8956669E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;pos=1;dcopt=ist;sz=728x90,468x60;tile=1;ord=2.8956669E7?' border="0" alt="">
+            </a>
+        </noscript>
+</div>
+    <p class="mh-logo"><a href="http://www.smh.com.au" title="The Sydney Morning Herald">The Sydney Morning Herald</a></p>
+        <h2><a href="/lifestyle/cuisine" title="Cuisine">Cuisine</a></h2>
+        <ul id="nav" role="navigation"  class="hasSubNav">
+        
+                <li>
+                    <a href="http://www.smh.com.au/lifestyle/beauty" title="Beauty">Beauty</a>
+                </li>
+                <li>
+                    <a href="http://www.smh.com.au/lifestyle/diet-and-fitness" title="Diet &amp; Fitness">Diet &amp; Fitness</a>
+                </li>
+                <li>
+                    <a href="http://www.smh.com.au/lifestyle/fashion" title="Fashion">Fashion</a>
+                </li>
+                <li>
+                    <a href="http://www.smh.com.au/lifestyle/celebrity" title="Celebrity">Celebrity</a>
+                </li>
+                <li>
+                    <a href="http://www.smh.com.au/lifestyle/homestyle" title="Home &amp; Style">Home &amp; Style</a>
+                </li>
+                <li>
+                    <a href="http://www.smh.com.au/lifestyle/life" title="Life">Life</a>
+                </li>
+                <li>
+                    <a href="http://www.smh.com.au/lifestyle/weddings" title="Weddings">Weddings</a>
+                </li>
+                <li>
+                    <a href="http://www.smh.com.au/lifestyle/horoscopes" title="Horoscopes">Horoscopes</a>
+                </li>
+                <li>
+                    <a href="http://www.smh.com.au/lifestyle/parties" title="Parties">Parties</a>
+                </li>
+                <li class="selected">
+                    <a href="http://www.smh.com.au/lifestyle/cuisine" title="Cuisine">Cuisine</a>
+                        <ol>
+                                <li>
+                                    <a href="http://www.smh.com.au/lifestyle/cuisine/meat" title="Meat">Meat</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.smh.com.au/lifestyle/cuisine/poultry" title="Poultry">Poultry</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.smh.com.au/lifestyle/cuisine/seafood" title="Seafood">Seafood</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.smh.com.au/lifestyle/cuisine/vegetarian" title="Vegetarian">Vegetarian</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.smh.com.au/lifestyle/cuisine/desserts" title="Desserts">Desserts</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.smh.com.au/lifestyle/cuisine/baking" title="Baking">Baking</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.smh.com.au/lifestyle/cuisine/drinks" title="Drinks">Drinks</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.smh.com.au/lifestyle/cuisine/share" title="Share Your Recipe">Share Your Recipe</a>
+                                </li>
+                                <li class="last">
+                                    <a href="/newsletters/subscription.html" title="Cuisine Newsletter">Cuisine Newsletter</a>
+                                </li>
+                        </ol>
+                </li>
+                <li>
+                    <a href="http://www.essentialbaby.com.au#utm_source=FD&utm_medium=nav&utm_campaign=lifestyle" title="Essential Baby">Essential Baby</a>
+                </li>
+                <li>
+                    <a href="http://www.thevine.com.au/?utm_source=FD&utm_medium=nav&utm_campaign=lifeandstyle" title="TheVine">TheVine</a>
+                </li>
+    </ul>
+
+        <p class="breadcrumb">
+        <span>You are here:</span>
+			<a href="http://www.smh.com.au" >Home</a>
+			<a href="http://www.smh.com.au/lifestyle" >Life & Style</a>
+			<a href="http://www.smh.com.au/lifestyle/cuisine" >Cuisine</a>
+			<a href="http://www.smh.com.au/lifestyle/cuisine/poultry" >Poultry</a>
+			<a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/panfried-chicken-with-mustard-cream-sauce-20111018-1lvoe.html" class="last">Pan-fried chicken with mustard cream ...</a>
+    </p>
+
+        <div class="cN-searchBox cfix">
+    <form action="http://www.smh.com.au/execute_search.html" method="get">
+        <h2>Search smh:</h2>
+        <label for="search">
+            <input type="text" name="text" id="search" placeholder='Search here...' onfocus="this.value='';" />
+        </label>
+        <h3>Search in:</h3>
+        <ul id="ddown" class="ddown">
+            <li><a class="selected" href="#">Life & Style</a>
+                <div class="srch-wrap">
+					<div></div>
+                    <ul class="cfix">
+                            <li class="first"><a href="#">smh.com.au</a></li>
+                            <li><a href="#">Web</a></li>
+                            <li><a href="#">Life & Style</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <input type="hidden" name="ss" value="Life & Style" />
+        <input type="submit" class="btnSubmit" value="Search" />
+    </form>
+    </div>
+
+</div>
+<!-- End component: Header -->
+
+                
+                
+                <div id="adspot-940x20-pos-1" class="ad adPageTop">
+</div>
+                <div id="content" class="main span-16" role="main">
+                    <h1 class="cN-headingPage articleHeading prepend-5 span-11 last">
+                        Pan-fried chicken with mustard cream sauce
+                    </h1>
+                    <div class="push-0 span-11 last">
+                            <div class="ratingFeedbackContainer " data-ratingId="2700446">
+            <form class="ratingSelection" action="http://feedback.smh.com.au/action/postRatingFeedback#makeRating" method="post">
+        <input type="hidden" name="id" value="2700446"/>
+        <input type="hidden" name="next" value="readerRatingThanks"/>
+        <input type="hidden" name="requestedUrl" value="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/panfried-chicken-with-mustard-cream-sauce-20111018-1lvoe.html"/>
+        <input type="hidden" name="headComponentTemplateLocation" value=""/>
+        <div class="cS-rateThis">
+            <fieldset>
+                <legend><span>Rate this recipe</span></legend>
+                <!-- JavaScript enabled rating feedback -->
+                <p><strong>Rate this recipe:</strong></p>
+                <p class="raterLegend">Use [left] and [right] keys to rate, [enter] to submit, [esc] to cancel.</p>
+                <p class="cN-rating rater">
+                    <a class="half" title="Rate this recipe with 0.5 a star" href="">Rate this recipe with 0.5 a star</a>
+                    <a title="Rate this recipe with 1 star" href="">Rate this recipe with 1 star</a>
+                    <a class="half" title="Rate this recipe with 1.5 stars" href="">Rate this recipe with 1.5 stars</a>
+                    <a title="Rate this recipe with 2 stars" href="">Rate this recipe with 2 stars</a>
+                    <a class="half" title="Rate this recipe with 2.5 stars" href="">Rate this recipe with 2.5 stars</a>
+                    <a title="Rate this recipe with 3 stars" href="">Rate this recipe with 3 stars</a>
+                    <a class="half" title="Rate this recipe with 3.5 stars" href="">Rate this recipe with 3.5 stars</a>
+                    <a title="Rate this recipe with 4 stars" href="">Rate this recipe with 4 stars</a>
+                    <a class="half" title="Rate this recipe with 4.5 stars" href="">Rate this recipe with 4.5 stars</a>
+                    <a title="Rate this recipe with 5 stars" href="">Rate this recipe with 5 stars</a>
+                </p>
+                    <p class="rating"></p>
+                <!-- JavaScript disabled rating feedback -->
+                <label for="readerRatingStarCount">Rate this recipe:</label>
+                <select id="readerRatingStarCount" name="readerRatingStarCount">
+                    <option selected="selected" value="">Select a rating</option>
+                    <option value="1">.5 stars</option>
+                    <option value="2">1 star</option>
+                    <option value="3">1.5 stars</option>
+                    <option value="4">2 stars</option>
+                    <option value="5">2.5 stars</option>
+                    <option value="6">3 stars</option>
+                    <option value="7">3.5 stars</option>
+                    <option value="8">4 stars</option>
+                    <option value="9">4.5 stars</option>
+                    <option value="10">5 stars</option>
+                </select>
+                <input type="submit" value="Submit rating" name="Submit rating"/>
+                    <p class="writeReview"><a href="#comments">Write a review</a></p>
+                
+            </fieldset>
+        </div>
+    </form>
+
+        <div class="cS-rated">
+    <p>Thanks for voting!</p>
+            <p class="writeReview"><a href="#comments">Write a review</a></p>
+
+</div><!-- class:cS-rated -->
+    </div><!-- class:ratingFeedbackContainer -->
+
+
+<div class="cT-storyDetails cfix">
+            <h5>
+                Jill Dupleix
+            </h5>
+    <cite>October 18, 2011</cite>
+        <p class="publication pubCuisine">Cuisine</p>
+    <ul>
+            <li class="comments">
+            <a href="#comments">Be the first to write a review</a>
+    </li>
+
+    
+    </ul>
+</div>
+<BOD>
+    <div class="articleBody">
+                            <!-- cT-imageLandscape -->
+        <div class="cT-imageLandscape">
+            <img src="http://images.smh.com.au/2012/02/17/3050000/art-pan-fried-chicken-420x0.jpg" alt="Chicken with mustard cream sauce." />
+                <p><em>Photo: Marina Oliphant</em></p>
+        </div>
+
+
+
+
+        <div class="cS-ratings" rel="v:Review">
+            <div rel="v:rating">
+                        <p>Reader rating:</p>
+    <p class="cN-rating rValue-35">
+        <em>
+            <span>Rating: 35 out of 5 stars</span>
+        </em>
+            <cite>
+                (2
+                    votes)
+            </cite>
+    </p>
+
+            </div>
+        </div>
+        <div class="fbLike">
+            <iframe frameborder="0" scrolling="no" style="border: medium none; overflow: hidden; width: 420px; height: 35px;" src="http://www.facebook.com/plugins/like.php?href=http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/panfried-chicken-with-mustard-cream-sauce-20111018-1lvoe.html&layout=standard&show_faces=false&width=420&action=like&colorscheme=light&height=35"></iframe>
+        </div>
+        <dl class="cS-rateMetadata metaCuisine metaCuisineEasy">
+                <dt>Cooking time</dt>
+                <dd>Ready in
+                    <span content="PT2H" property="v:totalTime">20-40 minutes</span>
+                </dd>
+                <dt class="last">Difficulty</dt>
+                <dd class="last">Medium</dd>
+        </dl>
+        <dl class="cS-rateMetadata">
+                <dt>Course</dt>
+                <dd><a href="/lifestyle/cuisine/allcourse/main-course">Main-course</a></dd>
+        </dl>
+        <div class="cT-storyTools cfix storyToolsCuisine">
+            <!-- cT-strapHeading -->
+            <h3 class="cT-strapHeading">Recipe Tools</h3>
+            <ul>
+                <li class="email"><a href="/action/emailToFriend?id=2700446" title="Email recipe to a friend" rel="nofollow" data-emailSocialLink="true" data-emailUrl="/action/emailToFriend?id=2700446">Email recipe</a></li>
+                <li class="print"><a href="javascript:window.print();" title="Print this recipe" rel="nofollow">Print recipe</a></li>
+            </ul>
+        </div>
+        <p>
+            A brilliant display of the versatility of the frying pan, with the entire dish cooked in the one pan. To test the chicken for doneness, press gently on the thickest part. It will give if there is more cooking to be done, and spring back if cooked - when in doubt, cut into a piece and check.
+        </p>
+        <div class="cN-simpleList listIngredients listIngredientsFirst">
+            <h3>Ingredients
+            </h3>
+            <ul>
+                <li class="first">Serves 4</li>
+            </ul>
+        </div>
+
+            <div class="cN-simpleList listIngredients">
+                <h4></h4>
+                <ul>
+                    <li class="first">1 tbsp olive oil</li>
+                    <li class="">1 tbsp butter</li>
+                    <li class="">8 chicken pieces</li>
+                    <li class="">4 thick rashers rindless bacon, chopped</li>
+                    <li class="">1 onion, halved and finely sliced</li>
+                    <li class="">250g small mushrooms, finely sliced</li>
+                    <li class="">1 tbsp thyme leaves</li>
+                    <li class="">100ml dry white wine</li>
+                    <li class="">2 bay leaves</li>
+                    <li class="">250 ml chicken stock</li>
+                    <li class="">1 tbsp Dijon mustard</li>
+                    <li class="">2 tbsp creme fraiche or sour cream</li>
+                    <li class="">sea salt and pepper</li>
+                    <li class="">50g baby spinach</li>
+                    <li class="">1 tsp paprika</li>
+                </ul>
+            </div>
+
+            <p>
+            <b>Method</b>
+            </p>
+                <h2></h2>
+                <p>Melt the butter and oil in a strong frying pan and fry the chicken for 5 minutes on each side until golden. Remove to a warm plate, and add the bacon and onion to the pan. Cook for 5 minutes or until the onion is soft. Add the mushrooms and thyme, tossing well, then add the wine and bay leaves. Boil for 2 minutes, then return the chicken to the pan and add the stock. Simmer, covered, for 30 minutes, or until the chicken is tender and cooked through. If you find it too soupy, simmer uncovered for another 10 minutes. Just before serving, remove the chicken to a warm plate, and whisk the cream and mustard, salt and pepper into the mushrooms over gentle heat. Return the chicken to the pan, scatter with baby spinach and heat through. Dust with paprika and serve.</p>
+        <div class="fbLike">
+            <iframe frameborder="0" scrolling="no" style="border: medium none; overflow: hidden; width: 420px; height: 35px;" src="http://www.facebook.com/plugins/like.php?href=http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/panfried-chicken-with-mustard-cream-sauce-20111018-1lvoe.html&layout=standard&show_faces=false&width=420&action=like&colorscheme=light&height=35"></iframe>
+        </div>
+        <h3 class="cT-strapHeading strapHeadingNarrow">More recipes like this...</h3>
+<div class="cS-browseWidget browseWidgetNarrow">
+    <ul class="featured">
+        <li class="last">
+            <div class="cN-storyRated">
+                    <a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/cured-rockmelon-smoked-duck-breast-and-mizuna-20120213-1t0db.html"><img height="60" width="90" alt="Smoked duck breast is sold at good delis and food stores. Smoked chicken is a good substitute but isn't as rich or colourful." src="http://images.smh.com.au/2012/02/13/3033146/Ms-th-miz_20120213090413550515-90x60.jpg"></a>
+                <div class="wof">
+                    <h4><a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/cured-rockmelon-smoked-duck-breast-and-mizuna-20120213-1t0db.html">Cured rockmelon, smoked duck ...</a></h4>
+                                <p></p>
+        <p class="cN-rating">
+            <cite></cite>
+        </p>
+
+                </div>
+            </div>
+        </li>
+        <li class="last">
+            <div class="cN-storyRated">
+                    <a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/sarahs-chicken-salad-20120125-1qh0p.html"><img height="60" width="90" alt="I think of Australia as a sunny summer carefree place and I think my dish mirrors that – and that’s its fresh and healthy." src="http://images.smh.com.au/2012/01/25/2914733/th-sarahs-chicken-salad_01-5-90x60.jpg"></a>
+                <div class="wof">
+                    <h4><a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/sarahs-chicken-salad-20120125-1qh0p.html">Sarah's chicken salad</a></h4>
+                                <p></p>
+        <p class="cN-rating">
+            <cite></cite>
+        </p>
+
+                </div>
+            </div>
+        </li>
+        <li class="last">
+            <div class="cN-storyRated">
+                    <a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/roast-chicken-burger-20120206-1r0nl.html"><img height="60" width="90" alt="You can roast a chicken for the burger, but when you're in a hurry, a good quality barbecued chicken is a fine substitute." src="http://images.smh.com.au/2012/02/06/2940157/ms-th-burg-90x60.jpg"></a>
+                <div class="wof">
+                    <h4><a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/roast-chicken-burger-20120206-1r0nl.html">Roast chicken burger</a></h4>
+                            <p></p>
+    <p class="cN-rating rValue-30">
+        <em>
+            <span>Rating: 30 out of 5 stars</span>
+        </em>
+    </p>
+
+                </div>
+            </div>
+        </li>
+        <li class="last">
+            <div class="cN-storyRated">
+                    <a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/roast-duck-legs-with-apricots-20120123-1qd1i.html"><img height="60" width="90" alt="Spicy duck paired with luscious, in-season apricots." src="http://images.smh.com.au/2012/01/23/2909620/ms-th-duck-90x60.jpg"></a>
+                <div class="wof">
+                    <h4><a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/roast-duck-legs-with-apricots-20120123-1qd1i.html">Roast duck legs with apricots</a></h4>
+                                <p></p>
+        <p class="cN-rating">
+            <cite></cite>
+        </p>
+
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+    
+        <h3 class="cT-strapHeading strapHeadingNarrow strapHeadingBrandCuisine">Find a recipe <span>(Cuisine)</span></h3>
+<div class="cS-browseWidget browseWidgetNarrow">
+    <div class="browseOptions">
+        <h4>Browse Recipes</h4>
+        <form action="/lifestyle/cuisine/search" method="get">
+            <fieldset>
+                <legend>Browse Recipes</legend>
+                <ol>
+                    <!-- UI NOTE: Added class "formElDefaultText" to use the existing toggletext JS -->
+                    <li class="formElDefaultText">
+                        <label for="frmTextfield">Search</label>
+                        <input type="text" placeholder="e.g. chicken, dinner, stir fry" name="text">
+                    </li>
+                    <li class="last"><span class="btn"><input type="submit" value="Find Recipes"
+                                                              class="button orange"><span></span></span></li>
+                </ol>
+            </form>
+        </fieldset>
+    </div>
+    
+<div class="cS-linkList cfix">
+    <h4>Browse:</h4>
+        <ul>
+            <li><a href="/lifestyle/cuisine/search?text=Soup" >Soups</a></li>
+            <li><a href="/lifestyle/cuisine/search?text=Cheesecake" >Cheesecakes</a></li>
+            <li><a href="/lifestyle/cuisine/search?text=Risotto" >Risottos</a></li>
+            <li><a href="/lifestyle/cuisine/search?text=Pasta" >Pastas</a></li>
+            <li><a href="/lifestyle/cuisine/search?text=Pie" >Pies</a></li>
+            <li><a class="last" href="/lifestyle/cuisine/search?text=Meatloaf" >Meatloaf</a></li>
+        </ul>    
+</div>
+
+
+
+</div>
+    </div>
+    <!-- articleBody -->
+</BOD>
+
+
+
+
+
+
+                        
+                        <div id="moreGoogleAds" class="ad adSpot-textBox"></div><!-- id:moreGoogleAds -->
+                            <div id="comments" class="cT-comments">
+    <div id="adSpot-sponsor3" class="ad"></div>
+    <a id="makeComment" name="makeComment"></a>
+                <h2>Reviews</h2>
+            <h3>Be the first to write a review.</h3>
+        <noscript>
+    <h4>Would you like to write a review?</h4>
+    You will need Javascript enabled to use our Reviewing Feature.
+</noscript>
+        
+<div class="commentLogin">
+    <div class="comment-signup signUpAlt">
+            <a class="btn" href="javascript:;">Login to Review</a>
+        <p>New user? <a href="javascript:;">Sign up</a></p>
+    </div><!-- class:comment-signup signUpAlt -->
+</div><!-- class:commentLogin -->
+        <div class="commentForm">
+            <h4>Write a review</h4>
+    <div class="comments-profile">
+        <p>You are logged in as <a href="javascript:;"></a>[<a href="javascript;;">Logout</a>]</p>
+        <p class="note">All information entered below may be published.</p>
+    </div><!-- class:comments-profile -->
+    <form name="submitComment" action="/ugc/postComment.ajax" method="post" data-validatable="true" data-ajaxSubmit="true">
+        <input type="hidden" name="assetId" value="d-1lvoe"/>
+        <input type="hidden" name="requestedUrl" value="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/panfried-chicken-with-mustard-cream-sauce-20111018-1lvoe.html"/>
+        <input type="hidden" name="replyCommentId" id="replyCommentId"/>
+        <input type="hidden" name="ignoredForStatistics" id="ignoredForStatistics" value="false"/>
+            <input type="hidden" name="isReview" id="isReview" value="true"/>
+        <fieldset>
+            <div class="frmSnippet">
+                <label for="frmScreenName">Screen name <span>(required)</span></label>
+                <input type="text" id="frmScreenName" name="commenterName" class="input-txt placeholder" data-validations="mandatory tooLong" data-inlineError="true" data-inputError="true" data-mandatoryMessage="A Screen name is required." data-tooLongLength="255" data-tooLongMessage="Your Screen name must be less than 255 characters."/>
+                <p class="error mandatory">Error: Please enter your screen name.</p>
+                <p class="error tooLong">Error: Your Screen Name must be less than 255 characters.</p>
+            </div><!-- class:frmSnippet -->
+        </fieldset>
+        <fieldset>
+            <div class="frmSnippet">
+                <label for="frmLocation">Location <span>(optional)</span></label>
+                <input type="text" id="frmLocation" name="commenterLocation" class="input-txt placeholder" data-validations="tooLong" data-inlineError="true" data-inputError="true" data-tooLongLength="255" data-tooLongMessage="Your Location must be less than 255 characters."/>
+                <p class="error">Error: Your Location must be less than 255 characters.</p>
+            </div><!-- class:frmSnippet -->
+        </fieldset>
+            <fieldset>
+                <div class="frmSnippet">
+                    <label>Your rating <span>(required)</span></label>
+                    <!-- Start: cS-rateThis -->
+<div class="cS-rateThis">
+    <fieldset>
+        <legend>Rate Pan-fried chicken with mustard cream sauce</legend>
+        <p><strong>Rate Pan-fried chicken with mustard cream sauce:</strong></p>
+        <p class="raterLegend">Use [left] and [right] keys to rate, [enter] to submit, [esc] to cancel.</p>
+        <p class="cN-rating rater">
+            <a class="half " title="Rate Pan-fried chicken with mustard cream sauce with half a star" href="javascript:;">Rate Pan-fried chicken with mustard cream sauce with half a star</a>
+            <a title="Rate Pan-fried chicken with mustard cream sauce with 1 star" href="javascript:;">Rate Pan-fried chicken with mustard cream sauce with 1 star</a>
+            <a class="half " title="Rate Pan-fried chicken with mustard cream sauce with 1.5 stars" href="javascript:;">Rate Pan-fried chicken with mustard cream sauce with 1.5 stars</a>
+            <a title="Rate Pan-fried chicken with mustard cream sauce with 2 stars" href="javascript:;">Rate Pan-fried chicken with mustard cream sauce with 2 stars</a>
+            <a class="half " title="Rate Pan-fried chicken with mustard cream sauce with 2.5 stars" href="javascript:;">Rate Pan-fried chicken with mustard cream sauce with 2.5 stars</a>
+            <a title="Rate Pan-fried chicken with mustard cream sauce with 3 stars" href="javascript:;">Rate Pan-fried chicken with mustard cream sauce with 3 stars</a>
+            <a class="half " title="Rate Pan-fried chicken with mustard cream sauce with 3.5 stars" href="javascript:;">Rate Pan-fried chicken with mustard cream sauce with 3.5 stars</a>
+            <a title="Rate Pan-fried chicken with mustard cream sauce with 4 stars" href="javascript:;">Rate Pan-fried chicken with mustard cream sauce with 4 stars</a>
+            <a class="half " title="Rate Pan-fried chicken with mustard cream sauce with 4.5 stars" href="javascript:;">Rate Pan-fried chicken with mustard cream sauce with 4.5 stars</a>
+            <a title="Rate Pan-fried chicken with mustard cream sauce with 5 stars" href="javascript:;">Rate Pan-fried chicken with mustard cream sauce with 5 stars</a>
+        </p>
+            <p class="rating"></p>
+        <label for="readerReviewStarCount">Rate Pan-fried chicken with mustard cream sauce:</label>
+        <select id="readerReviewStarCount" name="readerReviewStarCount" data-validations="mandatory" data-inlineError="true" data-inlineErrorParentSelector=".cS-rateThis:first">
+            <option selected="selected" value="">Select a rating</option>
+            <option value="1">0.5 stars</option>
+            <option value="2">1 star</option>
+            <option value="3">1.5 stars</option>
+            <option value="4">2 stars</option>
+            <option value="5">2.5 stars</option>
+            <option value="6">3 stars</option>
+            <option value="7">3.5 stars</option>
+            <option value="8">4 stars</option>
+            <option value="9">4.5 stars</option>
+            <option value="10">5 stars</option>
+        </select>
+            <span class="error mandatory ">Error: Please select your rating for 'Pan-fried chicken with mustard cream sauce'.</span>
+    </fieldset>
+</div>
+<!-- End: cS-rateThis -->
+                    <p class="error">Error: Please select a rating.</p>
+                </div><!-- class:frmSnippet -->
+            </fieldset>
+        <fieldset>
+            <div class="frmSnippet">
+                <label for="frmComment">
+                    Your review
+                    <span>(required)</span>
+                    <span class="chars"><strong id="wordCountRemaining">300</strong> words remaining</span>
+                </label>
+                <textarea id="frmComment" cols="15" rows="5" name="body" class="placeholder" data-validations="mandatory tooManyWords" data-inlineError="true" data-errorContainer="true" data-mandatoryMessage="A Message is required." data-tooManyWordsLength="300" data-tooManyWordsMessage="Your Message must be less than 300 words."></textarea>
+                <p class="error mandatory">Error: Please enter your review.</p>
+                <p class="error tooManyWords">Error: Your Message must be less than 300 words.</p>
+            </div><!-- class:frmSnippet -->
+        </fieldset>
+        <fieldset>
+            <div class="frmSnippet socialSelect">
+                <dl>
+                    <dt><span>Post to</span></dt>
+                    <dd>
+                        <input id="frmFacebook" type="checkbox" value="frmFacebook" name="frmFacebook"/>
+                        <label class="facebook" for="frmFacebook">Facebook</label>
+                    </dd>
+                    <dd>
+                        <input id="frmTwitter" type="checkbox" value="frmTwitter" name="frmTwitter"/>
+                        <label class="twitter" for="frmTwitter">Twitter</label>
+                    </dd>
+                    <dd>
+                        <input id="frmLinkedIn" type="checkbox" value="frmlinkedin" name="frmlinkedin"/>
+                        <label class="linked_in" for="frmlinkedin">LinkedIn</label>
+                    </dd>
+                </dl>
+            </div><!-- class:frmSnippet socialSelect -->
+        </fieldset>
+        <fieldset>
+            <div class="frmSnippet">
+                <input id="frmCond" name="cond" class="terms" type="checkbox" data-validations="checked" data-inlineError="true" data-errorContainer="true" data-checkedMessage="Terms and conditions need to be agreed to."/>
+                <label class="lblTerms" for="frmCond">I understand that submission of this content is covered by the <a href="http://www.fairfax.com.au/conditions.ac" target="_blank">Conditions of Use</a> by which I am bound.<a href="http://www.smh.com.au/opinion/comments-on-fairfax-articles-and-blogs-20090923-g1sg.html">Commenting Rules</a></label>
+                <p class="error">You need to have read and accepted the Conditions of Use.</p>
+            </div><!-- class:frmSnippet -->
+        </fieldset>
+        <div class="frmSnippet frmSnippetLast">
+                <input class="btn" type="submit" value="Post review"/>
+            <img src="http://resources.smh.com.au/common/media-common-1.0/images/spin.gif" width="32" height="32" alt="Please wait..." id="loader" class="hidden"/>
+        </div><!-- class:frmSnippet frmSnippetLast -->
+    </form>
+</div><!-- class:commentForm -->
+        <div class="commentThanks">
+    <h2>Thank you</h2>
+    <h3>Your review has been submitted for approval.</h3>
+    <p>Reviews are moderated and are generally published if they are on-topic and not abusive.</p>
+    <div class="frmSnippet frmSnippetLast">
+        <a href="#comment" class="btn">Post another review</a>
+    </div><!-- class:frmSnippet frmSnippetLast -->
+</div><!-- class:commentThanks -->
+</div><!-- id:comments -->
+
+                        
+                    </div><!-- class:push-0 span-11 last -->
+                    <div class="sidebar span-5">
+                        
+                        <div class="cT-socialCommenting accessibleSocialComment">
+        <h3>Start a conversation</h3>
+        <p class="people"><em>4</em> people are reading this now.</p>
+            <p><a href="#commentStart">Be the first to review on SMH</a>.</p>
+        <p class="facebookBtn"><fb:like href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/panfried-chicken-with-mustard-cream-sauce-20111018-1lvoe.html" send="false" layout="button_count" width="180" show_faces="false" action="recommend" font="arial"></fb:like></p>
+        <p class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/panfried-chicken-with-mustard-cream-sauce-20111018-1lvoe.html" data-count="horizontal" data-via="smh" data-text="Pan-fried chicken with mustard cream sauce">Tweet</a></p>
+</div>
+
+                        <div id="emptyAdspot-180x150"></div>
+                                 
+                        
+                        
+
+                        
+                            
+                        
+                        <div class="cT-storyTools cfix">
+    <h3 class="cT-strapHeading">SMH Jobs</h3>
+    <div id="jobs" data-jobsBrand="smh" data-jobsSkew="lifestyle"></div><!-- id:jobs -->
+</div><!-- class:cT-storyTools cfix -->
+                    </div><!-- class:sidebar span-5 -->
+                    <div class="span-16 last">
+                        
+                        
+                        
+                        
+                    </div><!-- class:span-16 last -->
+                </div><!-- id:content -->
+                <div class="aside span-8 last" role="complementary">
+                    
+                    
+                    <div id="adspot-300x600,300x250-pos-1" class="ad">
+            <small>Advertisement</small>
+        <script>
+            renderJAd("adspot-300x600,300x250-pos-1", "dcAd-3", 'http://ad-apac.doubleclick.net/adj/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;pos=1;' + document.dcAdsCParams +'sz=300x600,300x250;tile=3;ord=' + dcOrd + '?', 1126513466);
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;pos=1;sz=300x600,300x250;tile=3;ord=2.8956669E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;pos=1;sz=300x600,300x250;tile=3;ord=2.8956669E7?' border="0" alt="">
+            </a>
+        </noscript>
+</div>
+                    <!--@List: shared: false name: The Sydney Morning Herald LifeStyle Content Page RHS Text List -->
+<!--/@List-->
+                    <h3 class="cS-headingOnly">
+    Top 10 Poultry
+</h3>    
+
+<div class="cN-tabPages cS-top10">
+    <div class="cfix">
+        <ol>
+                        <li class="first">
+                <p class="number">1</p>
+                <div class="cN-storyRated">
+                             <a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/chicken-liver-and-broad-bean-crostini-20111019-1m2jf.html" ><img src="http://images.smh.com.au/2011/10/19/2708793/Chicken_liver_and_broad_bean_crostini_320x214-90x60.jpg" width="90" alt="Chicken liver and broad bean crostini"/></a>
+
+                    <div class="wof">
+                        <h4><a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/chicken-liver-and-broad-bean-crostini-20111019-1m2jf.html" title="Chicken liver and broad bean crostini">Chicken liver and broad bean crostini</a></h4>
+                            <p class="cN-rating rValue-50">
+        <em>
+            <span>Rating: 50 out of 5 stars</span>
+        </em>
+    </p>
+
+                            <p>Some of those who don't usually like offal or the thought of eating it will quite happily tuck into chicken liver pate. Perhaps it's the way chicken liver's texture is creamy and spreadable in its pate form and no longer resembles internal organs. But pan-fried so they are still pink and tender inside, with a crust made firm from a searing hot pan, is my favourite way of eating them. Be sure to choose livers that are shiny and plump and preferably from organic chickens.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p class="number">2</p>
+                <div class="cN-storyRated">
+                    <div class="wof">
+                        <h4><a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/steamed-chicken-with-hot-and-sour-dressing-20111019-1m391.html" title="Steamed chicken with hot and sour dressing">Steamed chicken with hot and sour dressing</a></h4>
+                            <p class="cN-rating rValue-50">
+        <em>
+            <span>Rating: 50 out of 5 stars</span>
+        </em>
+    </p>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p class="number">3</p>
+                <div class="cN-storyRated">
+                    <div class="wof">
+                        <h4><a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/chicken-fricassee-in-white-sauce-with-peas-and-carrots-20111019-1m3p3.html" title="Chicken fricassee in white sauce with peas and carrots">Chicken fricassee in white sauce with peas and carrots</a></h4>
+                            <p class="cN-rating rValue-50">
+        <em>
+            <span>Rating: 50 out of 5 stars</span>
+        </em>
+    </p>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p class="number">4</p>
+                <div class="cN-storyRated">
+                    <div class="wof">
+                        <h4><a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/chicken-saltimbocca-20111019-1m3u5.html" title="Chicken saltimbocca">Chicken saltimbocca</a></h4>
+                            <p class="cN-rating rValue-50">
+        <em>
+            <span>Rating: 50 out of 5 stars</span>
+        </em>
+    </p>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p class="number">5</p>
+                <div class="cN-storyRated">
+                    <div class="wof">
+                        <h4><a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/grilled-fig-and-duck-salad-20111019-1m4dj.html" title="Grilled fig and duck salad">Grilled fig and duck salad</a></h4>
+                            <p class="cN-rating rValue-50">
+        <em>
+            <span>Rating: 50 out of 5 stars</span>
+        </em>
+    </p>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p class="number">6</p>
+                <div class="cN-storyRated">
+                    <div class="wof">
+                        <h4><a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/sams-roast-chicken-with-potatoes-and-lemon-20111019-1m6jb.html" title="Sam's roast chicken with potatoes and lemon">Sam's roast chicken with potatoes and lemon</a></h4>
+                            <p class="cN-rating rValue-50">
+        <em>
+            <span>Rating: 50 out of 5 stars</span>
+        </em>
+    </p>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p class="number">7</p>
+                <div class="cN-storyRated">
+                    <div class="wof">
+                        <h4><a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/tasty-chicken-balls-20111201-1o7y9.html" title="Tasty chicken balls">Tasty chicken balls</a></h4>
+                            <p class="cN-rating rValue-50">
+        <em>
+            <span>Rating: 50 out of 5 stars</span>
+        </em>
+    </p>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p class="number">8</p>
+                <div class="cN-storyRated">
+                    <div class="wof">
+                        <h4><a href="http://www.smh.com.au/lifestyle/cuisine/christmas-feasts/recipe/julie-goodwins-stuffed-christmas-turkey-20111209-1omo8.html" title="Julie Goodwin's stuffed Christmas turkey">Julie Goodwin's stuffed Christmas turkey</a></h4>
+                            <p class="cN-rating rValue-50">
+        <em>
+            <span>Rating: 50 out of 5 stars</span>
+        </em>
+    </p>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p class="number">9</p>
+                <div class="cN-storyRated">
+                    <div class="wof">
+                        <h4><a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/roast-turkey-breast-with-chestnut-stuffing-20111019-1m2l0.html" title="Roast turkey breast with chestnut stuffing">Roast turkey breast with chestnut stuffing</a></h4>
+                            <p class="cN-rating rValue-50">
+        <em>
+            <span>Rating: 50 out of 5 stars</span>
+        </em>
+    </p>
+
+                    </div>
+                </div>
+            </li>
+            <li class="ten">
+                <p class="number">10</p>
+                <div class="cN-storyRated">
+                    <div class="wof">
+                        <h4><a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/lemonroasted-chicken-with-soy-and-garlic-20111018-1lxni.html" title="Lemon-roasted chicken with soy and garlic">Lemon-roasted chicken with soy and garlic</a></h4>
+                            <p class="cN-rating rValue-50">
+        <em>
+            <span>Rating: 50 out of 5 stars</span>
+        </em>
+    </p>
+
+                    </div>
+                </div>
+            </li>
+
+            <li class="last">
+                <a href="/lifestyle/cuisine/poultry/recipe/panfried-chicken-with-mustard-cream-sauce-20111018-1lvoe.html/type/recipe-review">
+                    Browse all recipe reviews
+                </a>
+            </li>
+        </ol>
+    </div>
+</div>
+
+                    <div id="adspot-149x170" class="ad adSpot-twin cfix">
+                    <small>Featured advertisers</small>
+                <script type="text/javascript">
+                    if (ie) {
+                        renderIFAd("adspot-149x170", "dcAd-1-4", "http://ad-apac.doubleclick.net/adi/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;" + document.dcAdsCParams + "pos=1;sz=149x170;tile=4;ord=" + dcOrd + "?", 149, 170, 1696049077);
+                    } else {
+                        renderJIFAd("adspot-149x170","dcAd-1-4", "http://ad-apac.doubleclick.net/adj/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;" + document.dcAdsCParams + "pos=1;sz=149x170;tile=4;ord=" + dcOrd + "?", 149, 170, 1696049077);
+                    }
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-4" src="http://ad-apac.doubleclick.net/adi/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;pos=1;sz=149x170;tile=4;ord=2.8956669E7?"
+                        width='149'
+                        height='170'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+                <script type="text/javascript">
+                    if (ie) {
+                        renderIFAd("adspot-149x170", "dcAd-2-5", "http://ad-apac.doubleclick.net/adi/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;" + document.dcAdsCParams + "pos=2;sz=149x170;tile=5;ord=" + dcOrd + "?", 149, 170, 1287224883);
+                    } else {
+                        renderJIFAd("adspot-149x170","dcAd-2-5", "http://ad-apac.doubleclick.net/adj/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;" + document.dcAdsCParams + "pos=2;sz=149x170;tile=5;ord=" + dcOrd + "?", 149, 170, 1287224883);
+                    }
+                </script>
+            <noscript>
+                <iframe id="dcAd-2-5" src="http://ad-apac.doubleclick.net/adi/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;pos=2;sz=149x170;tile=5;ord=2.8956669E7?"
+                        width='149'
+                        height='170'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+</div>
+                    
+    <div class="cS-storyImageLeadRotator rotator cfix">
+        <h3>Recipe Ideas</h3>
+            <div class="cN-storyImageLead media-image tab1 selected">
+                        
+    <div class="media">
+<a title="Barbecued beef sirloin with onion, parsley and lemon salad" href="http://www.smh.com.au/lifestyle/cuisine/meat/recipe/barbecued-beef-sirloin--with-onion-parsley-and-lemon-salad-20111121-1nq4i.html" > <img src="http://images.smh.com.au/2011/11/21/2786718/MS-Index-bbqbeef-300x200.jpg" width="300" alt="Barbecued beef sirloin with onion, parsley and lemon salad"/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.smh.com.au/lifestyle/cuisine/meat/recipe/barbecued-beef-sirloin--with-onion-parsley-and-lemon-salad-20111121-1nq4i.html" title="Barbecued beef sirloin  with onion, parsley and lemon salad">Barbecued beef sirloin  with onion, parsley and lemon salad</a></h3>
+                    <p>This barbecued steak goes down a treat served with chips or roast potatoes and a green salad.</p>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab1 selected -->
+            <div class="cN-storyImageLead media-image tab2">
+                        
+    <div class="media">
+<a title="Grilled coriander pepper chicken" href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/grilled-coriander-pepper-chicken-20111019-1m224.html" > <img src="http://images.smh.com.au/2011/10/19/2708423/Grilled_coriander_pepper_chicken_460x307-300x200.jpg" width="300" alt="Grilled coriander pepper chicken"/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.smh.com.au/lifestyle/cuisine/poultry/recipe/grilled-coriander-pepper-chicken-20111019-1m224.html" title="Grilled coriander pepper chicken">Grilled coriander pepper chicken</a></h3>
+                    <p>The fire should be hot but not flaring, so that the chicken pieces grill steadily rather than ferociously and develop a deep-golden-brown crust.</p>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab2 -->
+            <div class="cN-storyImageLead media-image tab3">
+                        
+    <div class="media">
+<a title="Warm salmon, potato and dill salad" href="http://www.smh.com.au/lifestyle/cuisine/seafood/recipe/warm-salmon-potato-and-dill-salad-20111019-1m2mm.html" > <img src="http://images.smh.com.au/2011/10/19/2709106/Warm_salmon%2C_potato_and_dill_salad_460x307-300x200.jpg" width="300" alt="Warm salmon, potato and dill salad"/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.smh.com.au/lifestyle/cuisine/seafood/recipe/warm-salmon-potato-and-dill-salad-20111019-1m2mm.html" title="Warm salmon, potato and dill salad">Warm salmon, potato and dill salad</a></h3>
+                    <p>Warm salmon, potato and dill salad</p>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab3 -->
+            <div class="cN-storyImageLead media-image tab4">
+                        
+    <div class="media">
+<a title="Cous cous, chickpea and avocado pilaf with lemon tahini sauce" href="http://www.smh.com.au/lifestyle/cuisine/vegetarian/recipe/cous-cous-chickpea-and-avocado-pilaf-with-lemon-tahini-sauce-20111019-1m6k3.html" > <img src="http://images.smh.com.au/2011/10/19/2714241/Cous_cous%2C_chickpea_and_avocado_pilaf_with_lemon_tahini_sauce_460x307-300x200.jpg" width="300" alt="Cous cous, chickpea and avocado pilaf with lemon tahini sauce"/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.smh.com.au/lifestyle/cuisine/vegetarian/recipe/cous-cous-chickpea-and-avocado-pilaf-with-lemon-tahini-sauce-20111019-1m6k3.html" title="Cous cous, chickpea and avocado pilaf with lemon tahini sauce">Cous cous, chickpea and avocado pilaf with lemon tahini sauce</a></h3>
+                    <p>Try this as a complete meal or serve it at a picnic as the stand out salad of the day.</p>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab4 -->
+            <div class="cN-storyImageLead media-image tab5">
+                        
+    <div class="media">
+<a title="Mango with coconut milk granita" href="http://www.smh.com.au/lifestyle/cuisine/desserts/recipe/mango-with-coconut-milk-granita-20111111-1naqw.html" > <img src="http://images.smh.com.au/2011/11/11/2766806/ms-index-mango_20111111151924582201-300x200.jpg" width="300" alt="Mango with coconut milk granita."/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.smh.com.au/lifestyle/cuisine/desserts/recipe/mango-with-coconut-milk-granita-20111111-1naqw.html" title="Mango with coconut milk granita">Mango with coconut milk granita</a></h3>
+                    <p>Ripe mangoes inspired this fresh, bright-tasting dessert, teamed with a slushy coconut milk granita spiked with lime. Serve on dessert plates or pile into cocktail glasses.</p>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab5 -->
+            <div class="cN-storyImageLead media-image tab6">
+                        
+    <div class="media">
+<a title="Prawn, ginger and lemon grass stir-fry" href="http://www.smh.com.au/lifestyle/cuisine/baking/recipe/prawn-ginger-and-lemon-grass-stirfry-20111019-1lzn0.html" > <img src="http://images.smh.com.au/2012/02/13/3034059/Ms-ind-stir_20120213125642853708-300x200.jpg" width="300" alt="Prawn ginger and lemongrass stir-fry."/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.smh.com.au/lifestyle/cuisine/baking/recipe/prawn-ginger-and-lemon-grass-stirfry-20111019-1lzn0.html" title="Prawn, ginger and lemon grass stir-fry">Prawn, ginger and lemon grass stir-fry</a></h3>
+                    <p>A simple and healthy stir-fry that allows the fragrant ginger, lemon grass and thai basil to shine</p>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab6 -->
+            <div class="cN-storyImageLead media-image tab7">
+                        
+    <div class="media">
+<a title="Fruit muffins" href="http://www.smh.com.au/lifestyle/cuisine/baking/recipe/fruit-muffins-20111018-1lxnp.html" > <img src="http://images.smh.com.au/2011/10/18/2702623/Fruit_muffins_460x307-300x200.jpg" width="300" alt="Fruit muffins"/> </a>    </div>
+
+                <div class="wof">
+                    <h3><a href="http://www.smh.com.au/lifestyle/cuisine/baking/recipe/fruit-muffins-20111018-1lxnp.html" title="Fruit muffins">Fruit muffins</a></h3>
+                    <p>This is a simple recipe that works - keep a stash of home-made muffins in the freezer to use for snacks and packed lunches.</p>
+                </div><!-- class:wof -->
+            </div><!-- class:cN-storyImageLead media-image tab7 -->
+        <ul>
+            <li class="previous">
+                <a href="javascript:;">Prev</a>
+            </li>
+            <li class="next last">
+                <a href="javascript:;">Next</a>
+            </li>
+        </ul>
+    </div><!-- class:cS-storyImageLeadRotator rotator cfix -->
+
+<h3 class="cT-strapSubHeading">Recipes by email</h3>
+<div class="cN-storyImageLead media-image storyImgLeadNewsletter">
+    <div class="media">
+        <a href="http://www.smh.com.au/newsletters/subscription.html"><img width="300" height="100" alt="Subscribe to our Cuisine newsletter" src="http://images.smh.com.au/2011/10/13/2688122/cuisine-eNewsletter-banner.jpg"></a>
+    </div>
+    <div class="wof">
+        <h3><a href="http://www.smh.com.au/newsletters/subscription.html">Subscribe to our Cuisine newsletter</a></h3>
+        <p>A weekly source of inspiration for your home cooking, with recipes from Australia's top chefs.</p>
+    </div>
+</div>
+
+<div id="adspot-295x60" class="ad ">
+                    <small>Sponsored links</small>
+                <script type="text/javascript">
+                    if (ie) {
+                        renderIFAd("adspot-295x60", "dcAd-1-6", "http://ad-apac.doubleclick.net/adi/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;" + document.dcAdsCParams + "pos=1;sz=295x60;tile=6;ord=" + dcOrd + "?", 295, 60, 679498667);
+                    } else {
+                        renderJIFAd("adspot-295x60","dcAd-1-6", "http://ad-apac.doubleclick.net/adj/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;" + document.dcAdsCParams + "pos=1;sz=295x60;tile=6;ord=" + dcOrd + "?", 295, 60, 679498667);
+                    }
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-6" src="http://ad-apac.doubleclick.net/adi/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;pos=1;sz=295x60;tile=6;ord=2.8956669E7?"
+                        width='295'
+                        height='60'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+                <script type="text/javascript">
+                    if (ie) {
+                        renderIFAd("adspot-295x60", "dcAd-2-7", "http://ad-apac.doubleclick.net/adi/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;" + document.dcAdsCParams + "pos=2;sz=295x60;tile=7;ord=" + dcOrd + "?", 295, 60, -164973173);
+                    } else {
+                        renderJIFAd("adspot-295x60","dcAd-2-7", "http://ad-apac.doubleclick.net/adj/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;" + document.dcAdsCParams + "pos=2;sz=295x60;tile=7;ord=" + dcOrd + "?", 295, 60, -164973173);
+                    }
+                </script>
+            <noscript>
+                <iframe id="dcAd-2-7" src="http://ad-apac.doubleclick.net/adi/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;pos=2;sz=295x60;tile=7;ord=2.8956669E7?"
+                        width='295'
+                        height='60'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+</div>
+                    <div id="adspot-1x4" class="ad">
+                    <small>Advertisement</small>
+                <script type="text/javascript">
+                    if (ie) {
+                        renderIFAd("adspot-1x4", "dcAd-1-9", "http://ad-apac.doubleclick.net/adi/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;" + document.dcAdsCParams + "sz=1x4;tile=9;ord=" + dcOrd + "?", 300, 150, 1881410786);
+                    } else {
+                        renderJIFAd("adspot-1x4","dcAd-1-9", "http://ad-apac.doubleclick.net/adj/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;" + document.dcAdsCParams + "sz=1x4;tile=9;ord=" + dcOrd + "?", 300, 150, 1881410786);
+                    }
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-9" src="http://ad-apac.doubleclick.net/adi/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;sz=1x4;tile=9;ord=2.8956669E7?"
+                        width='300'
+                        height='150'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+</div>
+                    <div id="adspot-300x250-pos-2" class="ad">
+                    <small>Advertisement</small>
+                <script type="text/javascript">
+                    if (ie) {
+                        renderIFAd("adspot-300x250-pos-2", "dcAd-1-10", "http://ad-apac.doubleclick.net/adi/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;pos=2;" + document.dcAdsCParams + "sz=300x250;tile=10;ord=" + dcOrd + "?", 300, 250, -1823968241);
+                    } else {
+                        renderJIFAd("adspot-300x250-pos-2","dcAd-1-10", "http://ad-apac.doubleclick.net/adj/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;pos=2;" + document.dcAdsCParams + "sz=300x250;tile=10;ord=" + dcOrd + "?", 300, 250, -1823968241);
+                    }
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-10" src="http://ad-apac.doubleclick.net/adi/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;pos=2;sz=300x250;tile=10;ord=2.8956669E7?"
+                        width='300'
+                        height='250'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+</div>
+                    
+                    
+                </div><!-- class:aside span-8 last -->
+                <!-- Footer fN-footerNetwork (class according to new HTML5 element 'footer'; scope: network-wide) -->
+<!-- TODO: it needs to be reviewed to remove the the hack for daily life (http://jira.web.fairfax.com.au/browse/EDPROJ-3860). -->
+<div class="footer span-24" role="contentinfo">
+    
+    <div class="c5 classifieds cfix">
+                            <div class="s1 cSmh">
+                            <!-- Campaign ID: 1262294 -->
+                            <h2><a title="Life & Style" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip" href="http://www.smh.com.au">Life & Style</a></h2>
+                                        <div class="puff">
+                                                <a href="http://www.smh.com.au/lifestyle/fashion/blogs/style-files/style-stars-of-2012-20120126-1qidk.html#utm_source=FD&utm_medium=rainbow&utm_campaign=ls-stylestars1feb12" rel="nofollow" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip"  >
+    <img src="http://images.smh.com.au/2012/02/01/2929189/heidi172x115-172x115.jpg" width="172" alt="heidi172x115"/></a>
+
+                                            <h5><a href="http://www.smh.com.au/lifestyle/fashion/blogs/style-files/style-stars-of-2012-20120126-1qidk.html#utm_source=FD&utm_medium=rainbow&utm_campaign=ls-stylestars1feb12" rel="nofollow" title="top5celebritywardrobesfor2012" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Top 5 celebrity wardrobes for 2012</a></h5>
+                                        </div><!-- class:puff -->
+                                        <ul><li class="lSmh"><a href="http://www.smh.com.au" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Smh.com.au</a></li>
+                                        <li><a href="http://www.smh.com.au/lifestyle/people" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">People</a></li>
+                                        <li><a href="http://www.smh.com.au/lifestyle/fashion" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Fashion</a></li>
+                                        <li><a href="http://www.smh.com.au/lifestyle/beauty" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Beauty</a></li>
+                                </ul>
+                        </div><!-- class:s1 cSmh -->
+                        <div class="s2 cDrive">
+                            <!-- Campaign ID: 1262297 -->
+                            <h2><a title="Motoring" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip" href="http://www.drive.com.au">Motoring</a></h2>
+                                        <div class="puff">
+                                                <a href="http://news.drive.com.au/drive/motor-news/cars-of-2012--calendar-20111223-1p7sn.html" rel="nofollow" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip"  >
+    <img src="http://images.smh.com.au/2012/01/09/2880943/cars-of-2012-172x115.gif" width="172" alt="New cars for 2012"/></a>
+
+                                            <h5><a href="http://news.drive.com.au/drive/motor-news/cars-of-2012--calendar-20111223-1p7sn.html" rel="nofollow" title="newcarsfor2012" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">New Cars for 2012</a></h5>
+                                        </div><!-- class:puff -->
+                                        <ul><li class="lDrive"><a href="http://www.drive.com.au" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Drive.com.au</a></li>
+                                        <li><a href="http://news.drive.com.au/drive/motor-news/memories-of-the-great-aussie-road-trip-20120105-1plm5.html" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Great Aussie Road Trip</a></li>
+                                        <li><a href="https://selfservice.drive.com.au/" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Sell your car easily</a></li>
+                                        <li><a href="http://www.facebook.com/Drive.com.au" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Find us on Facebook</a></li>
+                                </ul>
+                        </div><!-- class:s2 cDrive -->
+                        <div class="s3 cTheVine">
+                            <!-- Campaign ID: 1262300 -->
+                            <h2><a title="TheVine" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip" href="http://www.thevine.com.au">TheVine</a></h2>
+                                        <div class="puff">
+                                                <a href="http://www.thevine.com.au/blog/nadinevoncohen/the-ten-things-every-model-has-said-in-an-interview20120217.aspx?utm_source=FD&utm_medium=rainbow&utm_campaign=modelssay" rel="nofollow" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip"  >
+    <img src="http://images.smh.com.au/2012/02/17/3049539/MODELS-172x115.jpg" width="172" alt="Models"/></a>
+
+                                            <h5><a href="http://www.thevine.com.au/blog/nadinevoncohen/the-ten-things-every-model-has-said-in-an-interview20120217.aspx?utm_source=FD&utm_medium=rainbow&utm_campaign=modelssay" rel="nofollow" title="stuffmodelssay" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Stuff Models Say</a></h5>
+                                        </div><!-- class:puff -->
+                                        <ul><li class="lTheVine"><a href="http://www.thevine.com.au" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Thevine.com.au</a></li>
+                                        <li><a href="http://www.thevine.com.au/entertainment/" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Entertainment & celebrity news</a></li>
+                                        <li><a href="http://www.thevine.com.au/fashion/?utm_source=FD&utm_medium=rainbow&utm_campaign=fashion" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Latest fashion coverage</a></li>
+                                        <li><a href="http://www.thevine.com.au/music/?utm_source=FD&utm_medium=rainbow&utm_campaign=music" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Music news and reviews</a></li>
+                                </ul>
+                        </div><!-- class:s3 cTheVine -->
+                        <div class="s4 cStayz">
+                            <!-- Campaign ID: 1262303 -->
+                            <h2><a title="Holiday Rentals" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip" href="http://www.stayz.com.au">Holiday Rentals</a></h2>
+                                        <div class="puff">
+                                                <a href="http://www.stayz.com.au/pet-friendly-accommodation?utm_source=rainbowstrip&utm_medium=header&utm_content=pets&utm_campaign=rainbow" rel="nofollow" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip"  >
+    <img src="http://images.smh.com.au/2011/11/17/2779359/happydog-172x115.jpg" width="172" alt="stayz pet friendly"/></a>
+
+                                            <h5><a href="http://www.stayz.com.au/pet-friendly-accommodation?utm_source=rainbowstrip&utm_medium=header&utm_content=pets&utm_campaign=rainbow" rel="nofollow" title="bringthepettooonyournextholiday!" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Bring the pet too on your next holiday!</a></h5>
+                                        </div><!-- class:puff -->
+                                        <ul><li class="lStayz"><a href="http://www.stayz.com.au" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Stayz.com.au</a></li>
+                                        <li><a href="http://www.stayz.com.au/accommodation/qld/gold-coast" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Gold Coast getaways</a></li>
+                                        <li><a href="http://www.stayz.com.au/accommodation/nsw/south-coast" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Holiday on the South Coast</a></li>
+                                        <li><a href="http://www.stayz.com.au/pet-friendly-accommodation" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Pet-friendly rentals</a></li>
+                                </ul>
+                        </div><!-- class:s4 cStayz -->
+                        <div class="s5 cTheVine">
+                            <!-- Campaign ID: 1262309 -->
+                            <h2><a title="TheVine" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip" href="http://www.thevine.com.au">TheVine</a></h2>
+                                        <div class="puff">
+                                                <a href="http://www.thevine.com.au/entertainment/top10/top-10-weirdest-awards-ceremonies20120216.aspx?utm_source=FD&utm_medium=rainbow&utm_campaign=weirdest-awards" rel="nofollow" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip"  >
+    <img src="http://images.smh.com.au/2012/02/17/3049243/BADAWARDS-172x115.jpg" width="172" alt="Weird award ceremonies"/></a>
+
+                                            <h5><a href="http://www.thevine.com.au/entertainment/top10/top-10-weirdest-awards-ceremonies20120216.aspx?utm_source=FD&utm_medium=rainbow&utm_campaign=weirdest-awards" rel="nofollow" title="top10weirdestawardsceremonies" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Top 10 weirdest awards ceremonies</a></h5>
+                                        </div><!-- class:puff -->
+                                        <ul><li class="lTheVine"><a href="http://www.thevine.com.au" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Thevine.com.au</a></li>
+                                        <li><a href="http://www.thevine.com.au/entertainment/" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Entertainment & celebrity news</a></li>
+                                        <li><a href="http://www.thevine.com.au/fashion/?utm_source=FD&utm_medium=rainbow&utm_campaign=fashion" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Latest fashion coverage</a></li>
+                                        <li><a href="http://www.thevine.com.au/music/?utm_source=FD&utm_medium=rainbow&utm_campaign=music" class="gaTrackable" data-gaAction="RainbowStrip Click" data-gaCategory="RainbowStrip">Music news and reviews</a></li>
+                                </ul>
+                        </div><!-- class:s5 cTheVine -->
+</div><!-- class:c5 classifieds cfix -->
+
+
+    <div class="fN-affiliateStrip">
+	<h2>Compare and Save</h2>
+    <div class="cN-tabPages affiliateStrip cfix">
+        <p class="access">Skip to:</p>
+        <ul class="nav" role="navigation">
+            <li class="tab-1 selected"><a id="link-tab-1" href="#tab-1">Best Deals</a></li>
+            <li class="tab-2"><a id="link-tab-2" data-remote="true" data-remote-url="/action/displayComponent?name=au.com.fairfaxdigital.common.media.webapp.ui.StaticIncludeComponent&designVersionName=media-common-1.0&params=tab-cands-2.html" href="#tab-2">Mobile</a></li>
+            <li class="tab-3"><a id="link-tab-3" data-remote="true" data-remote-url="/action/displayComponent?name=au.com.fairfaxdigital.common.media.webapp.ui.StaticIncludeComponent&designVersionName=media-common-1.0&params=tab-cands-3.html" href="#tab-3">Broadband</a></li>
+            <li class="tab-4"><a id="link-tab-4" data-remote="true" data-remote-url="/action/displayComponent?name=au.com.fairfaxdigital.common.media.webapp.ui.StaticIncludeComponent&designVersionName=media-common-1.0&params=tab-cands-4.html" href="#tab-4">Credit Cards</a></li>
+            <li class="tab-5"><a id="link-tab-5" data-remote="true" data-remote-url="/action/displayComponent?name=au.com.fairfaxdigital.common.media.webapp.ui.StaticIncludeComponent&designVersionName=media-common-1.0&params=tab-cands-5.html" href="#tab-5">Rewards Cards</a></li>
+            <li class="tab-6"><a id="link-tab-6" data-remote="true" data-remote-url="/action/displayComponent?name=au.com.fairfaxdigital.common.media.webapp.ui.StaticIncludeComponent&designVersionName=media-common-1.0&params=tab-cands-6.html" href="#tab-6">Low Rate Cards</a></li>
+            <li class="tab-7"><a id="link-tab-7" data-remote="true" data-remote-url="/action/displayComponent?name=au.com.fairfaxdigital.common.media.webapp.ui.StaticIncludeComponent&designVersionName=media-common-1.0&params=tab-cands-7.html" href="#tab-7">Home Loans</a></li>
+            <li class="tab-8"><a id="link-tab-8" data-remote="true" data-remote-url="/action/displayComponent?name=au.com.fairfaxdigital.common.media.webapp.ui.StaticIncludeComponent&designVersionName=media-common-1.0&params=tab-cands-8.html" href="#tab-8">Deposits</a></li>
+            <li class="tab-9"><a id="link-tab-9" data-remote="true" data-remote-url="/action/displayComponent?name=au.com.fairfaxdigital.common.media.webapp.ui.StaticIncludeComponent&designVersionName=media-common-1.0&params=tab-cands-9.html" href="#tab-9">Bank Accounts</a></li>
+            <li class="tab-10 last"><a id="link-tab-10" data-remote="true" data-remote-url="/action/displayComponent?name=au.com.fairfaxdigital.common.media.webapp.ui.StaticIncludeComponent&designVersionName=media-common-1.0&params=tab-cands-10.html" href="#tab-10">Loans</a></li>
+        </ul>
+
+        <div id="tab-1" class="tab selected cfix" aria-live="polite">
+            <h3>Check out today's best deals</h3>
+            <div class="one">
+                <h3><a href="http://compare.smh.com.au/home-loans?utm_source=CS_front&utm_medium=CnS&utm_campaign=HL_uhomeloan623" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="1">UHomeLoan</a></h3>
+                <a href="http://compare.smh.com.au/home-loans?utm_source=CS_front&utm_medium=CnS&utm_campaign=HL_uhomeloan623" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="1"><img src="http://images.smh.com.au/compareandsave/623-ubank(CS).gif" width="60" height="50" /></a>
+                <p><a href="http://compare.smh.com.au/home-loans?utm_source=CS_front&utm_medium=CnS&utm_campaign=HL_uhomeloan623" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="1">No application fees. No ongoing admin fees</a></p>
+                <span></span>
+                <p class="links"><a href="http://compare.smh.com.au/home-loans?utm_source=CS_front&utm_medium=CnS&utm_campaign=HL_uhomeloan623" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="1">Compare now >>></a></p>
+            </div>
+            <div class="two">
+                <h3><a href="http://compare.smh.com.au/credit-cards/rewards?utm_source=CS_front&utm_medium=CnS&utm_campaign=CC_AmexPlat" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="2">20,000 Bonus Points</a></h3>
+                <a href="http://compare.smh.com.au/credit-cards/rewards?utm_source=CS_front&utm_medium=CnS&utm_campaign=CC_AmexPlat" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="2"><img src="http://images.smh.com.au/compareandsave/AmexPlatEdge(CS).gif" width="60" height="50" /></a>
+                <p><a href="http://compare.smh.com.au/credit-cards/rewards?utm_source=CS_front&utm_medium=CnS&utm_campaign=CC_AmexPlat" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="2">0% for 6 months + complimentary domestic flight</a></p>
+                <span></span>
+                <p class="links"><a href="http://compare.smh.com.au/credit-cards/rewards?utm_source=CS_front&utm_medium=CnS&utm_campaign=CC_AmexPlat" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="2">Compare now >>></a></p>
+            </div>
+            <div class="three">
+                <h3><a href="http://compare.smh.com.au/credit-cards?utm_source=CS_front&utm_medium=CnS&utm_campaign=CC_bwzero" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="3">Online Exclusive</a></h3>
+                <a href="http://compare.smh.com.au/credit-cards?utm_source=CS_front&utm_medium=CnS&utm_campaign=CC_bwzero" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="3"><img src="http://images.smh.com.au/compareandsave/BankwestBreeze(CS).gif" width="60" height="50" /></a>
+                <p><a href="http://compare.smh.com.au/credit-cards?utm_source=CS_front&utm_medium=CnS&utm_campaign=CC_bwzero" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="3">Pay only 1% interest for 6 months. $0 annual fee</a></p>
+                <span></span>
+                <p class="links"><a href="http://compare.smh.com.au/credit-cards?utm_source=CS_front&utm_medium=CnS&utm_campaign=CC_bwzero" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="3">Compare now >>></a></p>
+            </div>
+            <div class="four">
+                <h3><a href="http://mobile-phones.smh.com.au/MobilePhones/Phones/Apple/Apple-iPhone-4-8GB?utm_source=Widget_Fairfax_SMH_CompareAndSave&utm_medium=referral&utm_campaign=iPhone_4_%2434%2fMonth" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="4">iPhone 4 $34/Month</a></h3>
+                <a href="http://mobile-phones.smh.com.au/MobilePhones/Phones/Apple/Apple-iPhone-4-8GB?utm_source=Widget_Fairfax_SMH_CompareAndSave&utm_medium=referral&utm_campaign=iPhone_4_%2434%2fMonth" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="4"><img src="http://images.smh.com.au/compareandsave/mobile_160x70_iphone4.jpg" width="60" height="50" /></a>
+                <p><a href="http://mobile-phones.smh.com.au/MobilePhones/Phones/Apple/Apple-iPhone-4-8GB?utm_source=Widget_Fairfax_SMH_CompareAndSave&utm_medium=referral&utm_campaign=iPhone_4_%2434%2fMonth" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="4">New deals on the iPhone 4 8GB, online only</a></p>
+                <span></span>
+                <p class="links"><a href="http://mobile-phones.smh.com.au/MobilePhones/Phones/Apple/Apple-iPhone-4-8GB?utm_source=Widget_Fairfax_SMH_CompareAndSave&utm_medium=referral&utm_campaign=iPhone_4_%2434%2fMonth" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="4">iPhone 4 8GB Deals</a></p>
+            </div>
+            <div class="five">
+                <h3><a href="http://mobile-phones.smh.com.au/MobilePhones/Vodafone-Mobile-Phone-Clearance-Sale?utm_source=Widget_Fairfax_SMH_CompareAndSave&utm_medium=referral&utm_campaign=%2419_Clearance_Sale" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="5">$19 Clearance Sale</a></h3>
+                <a href="http://mobile-phones.smh.com.au/MobilePhones/Vodafone-Mobile-Phone-Clearance-Sale?utm_source=Widget_Fairfax_SMH_CompareAndSave&utm_medium=referral&utm_campaign=%2419_Clearance_Sale" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="5"><img src="http://images.smh.com.au/compareandsave/mobile_160x70_androiddeals.jpg" width="60" height="50" /></a>
+                <p><a href="http://mobile-phones.smh.com.au/MobilePhones/Vodafone-Mobile-Phone-Clearance-Sale?utm_source=Widget_Fairfax_SMH_CompareAndSave&utm_medium=referral&utm_campaign=%2419_Clearance_Sale" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="5">5 day sale with 8 phones available at just $19 for 12 months. </a></p>
+                <span></span>
+                <p class="links"><a href="http://mobile-phones.smh.com.au/MobilePhones/Vodafone-Mobile-Phone-Clearance-Sale?utm_source=Widget_Fairfax_SMH_CompareAndSave&utm_medium=referral&utm_campaign=%2419_Clearance_Sale" class="gaTrackable" data-gaAction="1" data-gaCategory="CompareSave" data-gaLabel="5">Clearance Sale</a></p>
+            </div>
+        </div>
+
+        <div id="tab-2" class="tab cfix" aria-live="polite">
+        </div>
+
+        <div id="tab-3" class="tab cfix" aria-live="polite">
+        </div>
+
+        <div id="tab-4" class="tab cfix" aria-live="polite">
+        </div>
+
+        <div id="tab-5" class="tab cfix" aria-live="polite">
+        </div>
+
+        <div id="tab-6" class="tab cfix" aria-live="polite">
+        </div>
+
+        <div id="tab-7" class="tab cfix" aria-live="polite">
+        </div>
+
+        <div id="tab-8" class="tab cfix" aria-live="polite">
+        </div>
+
+        <div id="tab-9" class="tab cfix" aria-live="polite">
+        </div>
+
+        <div id="tab-10" class="tab cfix" aria-live="polite">
+        </div>
+
+    </div>
+</div>
+            
+<!-- Reader's most viewed -->
+<div class="c5 top5 cfix">
+    <h2 class="cfix">Readers' most viewed</h2>
+
+            <div class="s1 lBT">
+                <a href="http://www.brisbanetimes.com.au">Most viewed articles on Brisbane Times</a>
+                <h5>Top 5 <a href="http://www.brisbanetimes.com.au/lifestyle">Life & Style</a> articles</h5>
+    <ol>
+            <li><a href="http://www.brisbanetimes.com.au/lifestyle/fitness-cult-work-out-til-you-vomit-20120217-1tdc3.html" title="Fitness 'cult': Work out 'til you vomit" style="">Fitness 'cult': Work out 'til you vomit</a></li>
+            <li><a href="http://www.brisbanetimes.com.au/lifestyle/life/blogs/citykat/state-of-love-and-trust-20120216-1tbrg.html" title="State of love and trust" style="">State of love and trust</a></li>
+            <li><a href="http://www.brisbanetimes.com.au/lifestyle/life/the-real-rules-of-attraction-20120214-1t3kz.html" title="The real rules of attraction" style="">The real rules of attraction</a></li>
+            <li><a href="http://www.brisbanetimes.com.au/lifestyle/diet-and-fitness/regulator-weighs-into-fatfree-claims-as-labels-fail-taste-test-20120216-1tbwj.html" title="Regulator weighs into fat-free claims as labels fail taste test" style="">Regulator weighs into fat-free claims as labels fail taste test</a></li>
+            <li><a href="http://www.brisbanetimes.com.au/lifestyle/fashion/blogs/style-files/the-hot-five-autumn-trends-20120216-1tbz7.html" title="The hot five autumn trends" style="">The hot five autumn trends</a></li>
+    </ol>
+
+            </div>
+            <div class="s2 lWAToday">
+                <a href="http://www.watoday.com.au">Most viewed articles on WA Today</a>
+                <h5>Top 5 <a href="http://www.watoday.com.au/lifestyle">Life & Style</a> articles</h5>
+    <ol>
+            <li><a href="http://www.watoday.com.au/lifestyle/fashion/who-invited-the-highvis-perths-flammable-fashion-awards-20120217-1tcw6.html" title="Who invited the high-vis? Perth's flammable fashion awards" style="">Who invited the high-vis? Perth's flammable fashion awards</a></li>
+            <li><a href="http://www.watoday.com.au/lifestyle/life/the-real-rules-of-attraction-20120214-1t3kz.html" title="The real rules of attraction" style="">The real rules of attraction</a></li>
+            <li><a href="http://www.watoday.com.au/lifestyle/diet-and-fitness/regulator-weighs-into-fatfree-claims-as-labels-fail-taste-test-20120216-1tbwj.html" title="Regulator weighs into fat-free claims as labels fail taste test" style="">Regulator weighs into fat-free claims as labels fail taste test</a></li>
+            <li><a href="http://www.watoday.com.au/lifestyle/fashion/blogs/style-files/the-hot-five-autumn-trends-20120216-1tbz7.html" title="The hot five autumn trends" style="">The hot five autumn trends</a></li>
+            <li><a href="http://www.watoday.com.au/lifestyle/diet-and-fitness/fertility-facts-v-furphies-20120214-1t3ko.html" title="Fertility: facts v furphies" style="">Fertility: facts v furphies</a></li>
+    </ol>
+
+            </div>
+            <div class="s3 lAge">
+                <a href="http://www.theage.com.au">Most viewed articles on The Age</a>
+                <h5>Top 5 <a href="http://www.theage.com.au/lifestyle">Life & Style</a> articles</h5>
+    <ol>
+            <li><a href="http://www.theage.com.au/lifestyle/diet-and-fitness/fatfree-foods-fail-the-test-20120216-1tbn7.html" title="'Fat-free' foods fail the test" style="">'Fat-free' foods fail the test</a></li>
+            <li><a href="http://www.theage.com.au/lifestyle/life/the-real-rules-of-attraction-20120214-1t3kz.html" title="The real rules of attraction" style="">The real rules of attraction</a></li>
+            <li><a href="http://www.theage.com.au/lifestyle/fashion/blogs/style-files/the-hot-five-autumn-trends-20120216-1tbz7.html" title="The hot five autumn trends" style="">The hot five autumn trends</a></li>
+            <li><a href="http://www.theage.com.au/lifestyle/celebrity/george-clooney-on-the-wagon-20120217-1tdc2.html" title="George Clooney on the wagon" style="">George Clooney on the wagon</a></li>
+            <li><a href="http://www.theage.com.au/lifestyle/diet-and-fitness/fertility-facts-v-furphies-20120214-1t3ko.html" title="Fertility: facts v furphies" style="">Fertility: facts v furphies</a></li>
+    </ol>
+
+            </div>
+            <div class="s4 lSmh">
+                <a href="http://www.smh.com.au">Most viewed articles on The Sydney Morning Herald</a>
+                <h5>Top 5 <a href="http://www.smh.com.au/lifestyle">Life & Style</a> articles</h5>
+    <ol>
+            <li><a href="http://www.smh.com.au/lifestyle/life/the-real-rules-of-attraction-20120214-1t3kz.html" title="The real rules of attraction" style="">The real rules of attraction</a></li>
+            <li><a href="http://www.smh.com.au/lifestyle/diet-and-fitness/regulator-weighs-into-fatfree-claims-as-labels-fail-taste-test-20120216-1tbwj.html" title="Regulator weighs into fat-free claims as labels fail taste test" style="">Regulator weighs into fat-free claims as labels fail taste test</a></li>
+            <li><a href="http://www.smh.com.au/lifestyle/fashion/blogs/style-files/the-hot-five-autumn-trends-20120216-1tbz7.html" title="The hot five autumn trends" style="">The hot five autumn trends</a></li>
+            <li><a href="http://www.smh.com.au/lifestyle/celebrity/george-clooney-on-the-wagon-20120217-1tdc2.html" title="George Clooney on the wagon" style="">George Clooney on the wagon</a></li>
+            <li><a href="http://www.smh.com.au/lifestyle/diet-and-fitness/fertility-facts-v-furphies-20120214-1t3ko.html" title="Fertility: facts v furphies" style="">Fertility: facts v furphies</a></li>
+    </ol>
+
+            </div>
+            <div class="s5">
+                <h5>Videos</h5>
+    <ol>
+            <li><a href="http://media.smh.com.au/news/national-times/is-julia-gillard-a-dead-duck-3046718.html" title="Is Julia Gillard a dead duck?" style="">Is Julia Gillard a dead duck?</a></li>
+            <li><a href="http://media.smh.com.au/news/national-times/thousands-stranded-as-airline-goes-bust-3049857.html" title="Thousands stranded as airline goes bust" style="">Thousands stranded as airline goes bust</a></li>
+            <li><a href="http://media.smh.com.au/entertainment/weird-week/whoops-texting-accident-goes-viral-3050318.html" title="Whoops! Texting accident goes viral" style="">Whoops! Texting accident goes viral</a></li>
+            <li><a href="http://media.smh.com.au/business/businessday/air-australia-placed-into-administration-3048998.html" title="Air Australia placed into administration" style="">Air Australia placed into administration</a></li>
+            <li><a href="http://media.smh.com.au/news/world-news/olympus-scandal-approaches-end-game-3048970.html" title="Olympus scandal approaches end game" style="">Olympus scandal approaches end game</a></li>
+    </ol>
+
+            </div>
+</div>
+   
+
+        <div id="adspot-728x90,468x60-pos-2" class="ad">
+        <script>
+            renderJAd("adspot-728x90,468x60-pos-2", "dcAd-11", 'http://ad-apac.doubleclick.net/adj/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;pos=2;' + document.dcAdsCParams +'sz=728x90,468x60;tile=11;ord=' + dcOrd + '?', 1958544577);
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;pos=2;sz=728x90,468x60;tile=11;ord=2.8956669E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.smh.lands/lands/cuisine;cat1=cuisine;course=maincourse;cat2=poultry;ctype=article;cat=lands;pos=2;sz=728x90,468x60;tile=11;ord=2.8956669E7?' border="0" alt="">
+            </a>
+        </noscript>
+</div>
+    <!-- Footer section links -->
+    <ul class="fSectionLinks cfix">
+            <li ><a href="http://www.smh.com.au/" title="SMH Home">SMH Home</a></li>
+            <li ><a href="http://www.smh.com.au/nsw" title="NSW">NSW</a></li>
+            <li ><a href="http://www.smh.com.au/national" title="National">National</a></li>
+            <li ><a href="http://www.smh.com.au/environment" title="Environment">Environment</a></li>
+            <li ><a href="http://www.smh.com.au/opinion" title="National Times">National Times</a></li>
+            <li ><a href="http://www.smh.com.au/business" title="Business">Business</a></li>
+            <li ><a href="http://www.smh.com.au/technology" title="Technology">Technology</a></li>
+            <li ><a href="http://www.smh.com.au/digital-life" title="Digital Life">Digital Life</a></li>
+            <li ><a href="http://www.smh.com.au/entertainment/" title="Entertainment">Entertainment</a></li>
+            <li ><a href="http://www.smh.com.au/lifestyle" title="Life &amp; Style">Life &amp; Style</a></li>
+            <li ><a href="http://www.smh.com.au/travel" title="Travel">Travel</a></li>
+            <li ><a href="http://www.smh.com.au/drive" title="Cars">Cars</a></li>
+            <li ><a href="http://www.smh.com.au/executive-style" title="Exec Style">Exec Style</a></li>
+            <li ><a href="http://www.smh.com.au/sport" title="Sport">Sport</a></li>
+            <li class="last"><a href="http://weather.smh.com.au/local.jsp" title="Weather">Weather</a></li>
+    </ul>
+
+    <!-- Footer masthead links and copyright -->
+<div class="fMastheadLinks cfix">
+        <ul class="span-4 cfix">
+        <li class="first"><h5>Sydney Morning Herald</h5></li>
+            <li><a href="http://www.smh.com.au/siteguide/" title="Sitemap">Sitemap</a></li>
+            <li><a href="http://www.smh.com.au/aboutsmh/index.html" title="About Us">About Us</a></li>
+            <li><a href="http://www.smh.com.au/support/" title="Contact Us">Contact Us</a></li>
+            <li><a href="http://www.fairfax.com.au/privacy" title="Privacy">Privacy</a></li>
+            <li><a href="http://www.fairfax.com.au/conditions" title="Conditions">Conditions</a></li>
+            <li><a href="http://www.adcentre.com.au/fairfax-digital-network.aspx" title="Advertise with Us">Advertise with Us</a></li>
+            <li><a href="http://www.fairfaxsyndication.com/" title="Photo Sales">Photo Sales</a></li>
+            <li><a href="http://www.goodguides.com.au/" title="Good Food Guide">Good Food Guide</a></li>
+    </ul>
+
+        <ul class="span-4 cfix">
+        <li class="first"><h5>Products & Services</h5></li>
+            <li><a href="http://www.smh.com.au/am/" title="AM Today">AM Today</a></li>
+            <li><a href="http://www.smh.com.au/newsstore/index.html" title="Last 8 days">Last 8 days</a></li>
+            <li><a href="http://www.smh.com.au/text/" title="Text">Text</a></li>
+            <li><a href="http://subscriptions.fairfax.com.au/smhlanding/" title="Newspaper subscription">Newspaper subscription</a></li>
+            <li><a href="http://www.smhshop.com.au/" title="Shop">Shop</a></li>
+            <li><a href="http://www.fairfaxevents.com.au/" title="Events">Events</a></li>
+            <li><a href="http://www.smh.com.au/siteguide/accessibility" title="Help using this website">Help using this website</a></li>
+    </ul>
+
+        <ul class="span-4 cfix">
+        <li class="first"><h5>Connect</h5></li>
+            <li><a href="http://m.smh.com.au" title="Mobile">Mobile</a></li>
+            <li><a href="https://membercentre.fairfax.com.au/NewsletterSubscription.aspx" title="Newsletters">Newsletters</a></li>
+            <li><a href="http://www.smh.com.au/rssheadlines" title="RSS">RSS</a></li>
+            <li><a href="http://twitter.com/smh_news" title="Twitter">Twitter</a></li>
+            <li><a href="http://www.facebook.com/sydneymorningherald" title="Facebook">Facebook</a></li>
+            <li><a href="http://www.smh.com.au/digitaledition " title="Digital Edition">Digital Edition</a></li>
+    </ul>
+
+        <ul class="span-4 cfix">
+        <li class="first"><h5>Classifieds</h5></li>
+            <li><a href="http://www.stayz.com.au/" title="Accommodation">Accommodation</a></li>
+            <li><a href="http://www.drive.com.au/" title="Cars">Cars</a></li>
+            <li><a href="http://www.rsvp.com.au/" title="Dating">Dating</a></li>
+            <li><a href="http://mycareer.com.au/" title="Jobs">Jobs</a></li>
+            <li><a href="http://www.domain.com.au/" title="Real Estate">Real Estate</a></li>
+            <li><a href="http://www.tradingpost.com.au/ffhome?referrer=af_fairfax_smh" title="Trading Post">Trading Post</a></li>
+            <li><a href="http://apm.com.au/" title="Property Price Data">Property Price Data</a></li>
+            <li><a href="http://tributes.smh.com.au/" title="Tributes & Celebrations">Tributes & Celebrations</a></li>
+            <li><a href="http://classifieds.fairfax.com.au/advertise/index.html" title="Place an ad">Place an ad</a></li>
+            <li><a href="http://www.smhfeatures.com.au" title="Special Reports">Special Reports</a></li>
+    </ul>
+
+</div>
+<!-- This comment fixes IE6's logo problem. Might be temporary until we've got content below this point -->
+    <div class="nN-footerLinks">
+	<a href="http://www.fairfaxdigital.com.au" class="logo">Fairfax Media</a>
+	<div>
+        <h3>Our Sites</h3>
+    <ul>
+            <li class="first">
+                <a title="The Sydney Morning Herald" href="http://www.smh.com.au/">The Sydney Morning Herald</a>
+            </li>
+            <li>
+                <a title="The Age" href="http://www.theage.com.au/">The Age</a>
+            </li>
+            <li>
+                <a title="MyCareer" href="http://mycareer.com.au/">MyCareer</a>
+            </li>
+            <li>
+                <a title="Domain" href="http://www.domain.com.au/">Domain</a>
+            </li>
+            <li>
+                <a title="Drive" href="http://www.drive.com.au/">Drive</a>
+            </li>
+            <li>
+                <a title="RSVP" href="http://www.rsvp.com.au/">RSVP</a>
+            </li>
+            <li>
+                <a title="Essential Baby" href="http://www.essentialbaby.com.au/">Essential Baby</a>
+            </li>
+            <li>
+                <a title="InvestSMART" href="http://www.investsmart.com.au/">InvestSMART</a>
+            </li>
+            <li>
+                <a title="APM" href="http://apm.com.au/">APM</a>
+            </li>
+            <li>
+                <a title="Stayz" href="http://www.stayz.com.au/">Stayz</a>
+            </li>
+            <li>
+                <a title="Weatherzone" href="http://www.weatherzone.com.au/">Weatherzone</a>
+            </li>
+            <li>
+                <a title="The Vine" href="http://www.thevine.com.au/">The Vine</a>
+            </li>
+    </ul>
+
+        <h3>Our Partners</h3>
+    <ul>
+            <li class="first">
+                <a title="Business" href="http://www.business.com.au/">Business</a>
+            </li>
+            <li>
+                <a title="Dental Surgery" href="http://www.dentalsurgery.com.au/">Dental Surgery</a>
+            </li>
+            <li>
+                <a title="Fitness" href="http://www.fitness.com.au/">Fitness</a>
+            </li>
+            <li>
+                <a title="Gardens" href="http://www.gardens.com.au/">Gardens</a>
+            </li>
+            <li>
+                <a title="Hair salon" href="http://www.hairsalon.com.au/">Hair salon</a>
+            </li>
+            <li>
+                <a title="Jogging" href="http://www.jogging.com.au/">Jogging</a>
+            </li>
+            <li>
+                <a title="Physicians" href="http://www.physicians.com.au/">Physicians</a>
+            </li>
+            <li>
+                <a title="Wedding" href="http://www.wedding.com.au/">Wedding</a>
+            </li>
+            <li>
+                <a title="Wine" href="http://www.wine.com.au/">Wine</a>
+            </li>
+            <li>
+                <a title="Florists" href="http://www.floristdirectory.com.au">Florists</a>
+            </li>
+    </ul>
+
+    </div>
+    <cite>Copyright &copy; 2012 Fairfax Media</cite>
+</div>
+        <div class="Kampyle" data-kampyleFormId="43595" data-kampyleSiteCode="9067101">
+        <a id="kampylink" class="k_static" href="http://www.kampyle.com/feedback_form/ff-feedback-form.php?site_code=9067101&lang=en&form_id=43595" target="kampyleWindow">
+            <img src="http://resources.smh.com.au/smh/media-common-1.0/images/feedback-button.gif" alt="Feedback Form" style="border:0"/>
+        </a>
+    </div><!-- class:Kampyle -->
+
+</div>
+  
+<!-- End fN-footerNetwork -->
+                <div id="adspot-1x1" class="ad">
+</div>
+                <div id="adspot-1x11" class="ad">
+</div>
+            </div><!-- class:wrap cfix -->
+        </div><!-- class:outerWrap -->
+                <script type="text/javascript" src="http://resources.smh.com.au/common/media-common-1.0/js/fdjsf/output/fd_min.js"></script>
+
+        
+                <script type="text/javascript" src="http://resources.smh.com.au/common/media-common-1.0/js/fdjsf/output/fd.google_min.js"></script>
+
+                <script type="text/javascript" src="http://resources.smh.com.au/common/media-common-1.0/js/fdjsf/output/fd.registrars_min.js"></script>
+
+                <script type="text/javascript" src="http://resources.smh.com.au/common/media-common-1.0/js/fdjsf/output/fd.videoplayer_min.js"></script>
+
+                <script type="text/javascript" src="http://resources.smh.com.au/common/media-common-1.0/js/fdjsf/output/fd.registrars.mymasthead_min.js"></script>
+
+        <div data-brandName="smh"></div>
+        <script type="text/javascript" src="http://resources.smh.com.au/common/media-common-1.0/js/fdjsf/output/fd.flashinflash_min.js"></script>
+
+        <script type="text/javascript">
+    function getGoogleAdChannel(showAboveArticle) {
+        var googleAdChannel = "LifeStyle";
+        if (showAboveArticle) {
+            googleAdChannel += " abovearticle";
+        }
+        return googleAdChannel;
+    }
+    function google_ad_request_done(google_ads) {
+        var googleAd = new FD.GoogleAd({
+                adBlockTitle: "Ads by Google",
+                maximumAdsInBlock: 3,
+                checkExternalReferrer: true,
+                split: 1,
+            googleAds: google_ads,
+            googleAdsId: "googleAds",
+            moreGoogleAdsId: "moreGoogleAds"
+        });
+        googleAd.insertGoogleAds();
+    }
+    var google_ad_client = "ca-fairfax-smh_js";
+    var google_ad_channel = "National";
+        if (!FD.isInternalReferrer()) {
+            google_ad_channel = getGoogleAdChannel(true);
+        }
+    var google_ad_output = "js";
+    var google_max_num_ads = "4";
+    var google_ad_type = "text";
+    var google_encoding = "utf8";
+    var google_safe = "high";
+    var google_ad_section = "default";
+</script>
+<!-- The JavaScript returned from the following page uses the parameter values assigned above to populate an array of
+ad objects. Once that array has been populated, the JavaScript will call the google_ad_request_done function to display
+the ads. -->
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script> 
+        <script type="text/javascript">
+    (function() {
+        
+    })();
+</script>
+        <script type="text/javascript">
+    (function() {
+                (function() {
+        FD.VideoPlayers.push(new FD.VideoPlayer({
+            adServerUrl: "http://ad-apac.doubleclick.net/pfadx/vid.smh/lifeandstyle/essentials;channel=lifeandstyle;show=essentials;ctype=rhs;cat3=fdp;sz=4x1,4x2;dcmt=text/html;ord=365050",
+            clipId: "3049040",
+                clips: [
+                    "http://mediadownload2.f2.com.au/flash/media/2012/02/17/3049040/3049040_low.mp4",
+                    "http://mediadownload2.f2.com.au/flash/media/2012/02/17/3049040/3049040_mid.mp4",
+                    "http://mediadownload2.f2.com.au/flash/media/2012/02/17/3049040/3049040_high.mp4"
+                ],
+            divId: "video-player-latest",
+            playerId: "video-player-latest-player",
+                playerType: "article_rhs",
+            playerUrl: "http://resources.smh.com.au/common/media-common-1.0/swf/flowplayer/flowplayer.commercial-3.2.7.swf",
+            trackingDefinition: {
+                ga: {
+    headline: "Game of Thrones gets tasty"
+}
+,
+                nielsen: {
+    brand: "smh",
+    ou: "video/life-and-style/essentials",
+    vc: "vc-smh-Video_Life_and_Style-article_rhs-Video_Essentials-The_Age_Selections-Amanda_Hoh-3049040-Game_of_Thrones_gets_tasty-00:01:56"
+}
+            }
+        }, {
+                width: 300,
+                height: 170,
+            clip: {
+        ads: [
+        {
+            request: {
+                adTagUrl: "http%3A%2F%2Fad-apac.doubleclick.net%2Fpfadx%2Fvid.smh%2Flifeandstyle%2Fessentials%3Bchannel%3Dlifeandstyle%3Bshow%3Dessentials%3Bctype%3Drhs%3Bcat3%3Dfdp%3Bsz%3D4x1%2C4x2%3Bdcmt%3Dtext%2Fhtml%3Bord%3D365050"
+            },
+            time: 0
+        }
+    ],
+
+        url: "http://mediadownload2.f2.com.au/flash/media/2012/02/17/3049040/3049040_high.mp4"
+},
+plugins: {
+    advertisementLabel: {
+        url: "http://resources.smh.com.au/common/media-common-1.0/swf/flowplayer/flowplayer.content-3.2.0.swf"
+    },
+    controls: {
+            fullscreen: false,
+        url: "http://resources.smh.com.au/common/media-common-1.0/swf/flowplayer/flowplayer.controls-3.2.5.swf"
+    },
+    dfp: {
+        url: "http://resources.smh.com.au/common/media-common-1.0/swf/flowplayer/dfp/flowplayer.dfp-smh.com.au-1.6.3.swf"
+    }
+}
+        }));
+     })();
+
+
+    })();
+</script>
+        <script type="text/javascript">
+if(document.location.protocol=='http:'){
+ var Tynt=Tynt||[];Tynt.push('aBfWCmwwCr37XTadbiUzgI');
+ (function(){var s=document.createElement('script');s.async="async";s.type="text/javascript";s.src='http://tcr.tynt.com/ti.js';var h=document.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})();
+}
+</script>
+
+        <script type="text/javascript">
+    if (window["FD"]) {
+        (function() {
+            // Check that the user is at least logged in before attempting to say that they have read an article.
+            var myMastheadWeather = $("div.mySite div.ms-toolbar ul[data-weatherPostcode]");
+            if (myMastheadWeather.length) {
+                FD.trigger("FDArticleRead");
+            }
+        })();
+    }
+</script>
+        <div class="hidden" id="adShD0"><script type="text/javascript">if (0 < document.dcdAdsU.length) {document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[0] + '" src="' + document.dcdAdsU[0] + '"><\/scr' + 'ipt>');}</script></div><div class="hidden" id="adShD1"><script type="text/javascript">if (1 < document.dcdAdsU.length) {document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[1] + '" src="' + document.dcdAdsU[1] + '"><\/scr' + 'ipt>');}</script></div><div class="hidden" id="adShD2"><script type="text/javascript">if (2 < document.dcdAdsU.length) {document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[2] + '" src="' + document.dcdAdsU[2] + '"><\/scr' + 'ipt>');}</script></div><div class="hidden" id="adShD3"><script type="text/javascript">if (3 < document.dcdAdsU.length) {document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[3] + '" src="' + document.dcdAdsU[3] + '"><\/scr' + 'ipt>');}</script></div><div class="hidden" id="adShD4"><script type="text/javascript">if (4 < document.dcdAdsU.length) {document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[4] + '" src="' + document.dcdAdsU[4] + '"><\/scr' + 'ipt>');}</script></div><div class="hidden" id="adShD5"><script type="text/javascript">if (5 < document.dcdAdsU.length) {document.write('<scr' + 'ipt type="text\/javascript" id="' + document.dcdAdsI[5] + '" src="' + document.dcdAdsU[5] + '"><\/scr' + 'ipt>');}</script></div>
+<script type="text/javascript">
+    initAds(false);
+    checkAds("817-grey.gif");
+    window.setTimeout('pingAdStatus()', 10000);
+</script>
+
+
+        
+<!-- START Google Analytics Tracking -->
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22700242-1']);
+    _gaq.push(['_setDomainName', '.smh.com.au']);
+    _gaq.push(['_addIgnoredRef', 'smh.com.au']);
+    _gaq.push(['_setAllowAnchor', true]);
+    _gaq.push(['_setCustomVar', 1, 'Section', 'LifeStyle', 3]);
+    _gaq.push(['_setCustomVar', 2, 'Sub-Section', 'Cuisine', 3]);
+    _gaq.push(['_setCustomVar', 3, 'Byline', '', 3]);
+    _gaq.push(['_setCustomVar', 4, 'Page Type', 'Recipe', 3]);
+    // Check whether the user is logged in.
+    var loggedIn = false;
+    if (window["FD"]) {
+        loggedIn = FD.isLoggedIn();
+    }
+    if (loggedIn) {
+        _gaq.push(['_setCustomVar', 5, 'Login Status', 'Logged In', 2]);
+    } else {
+        _gaq.push(['_setCustomVar', 5, 'Login Status', ' ', 2]);
+    }
+    _gaq.push(['_trackPageview']);
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+<!-- END Google Analytics Tracking -->
+
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2009 Nielsen Online -->
+<script type="text/javascript" src="//secure-au.imrworldwide.com/v60.js"></script>
+<script type="text/javascript">
+    var pvar = {cid:"f2", content:"SMH-lifestyle-cuisine-poultry-cuisine", server:"secure-au"};
+    var trac = nol_t(pvar);
+    trac.record().post();
+    window.s_pageName = "smh:cuisine:lifestyle:cuisine:poultry:pan-fried chicken with mustard cream sauce";
+</script>
+<noscript>
+    <div>
+        <img src="//secure-au.imrworldwide.com/cgi-bin/m?ci=f2&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt=""/>
+    </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+
+<!-- START ComScore tags tracking-->
+    <script type="text/javascript">
+        var _comscore = _comscore || [];
+        _comscore.push({ c1: "2", c2: "7949952", c3: "", c4: "" });
+
+    (function() {
+        var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+        s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") +".scorecardresearch.com/beacon.js";
+        el.parentNode.insertBefore(s, el);
+        })();
+    </script>
+    <noscript>
+        <img src="http://b.scorecardresearch.com/p?c1=2&c2=7949952&c3=&c4=&c5=&c6=&c15=&cv=2.0&cj=1" />
+    </noscript>
+<!-- END ComScore tags tracking -->        
+
+
+    <script type="text/javascript">
+	if (window["FD"]) {
+		/**
+		 * Updates the white strip with the new time and number of users.
+		 *
+		 * @param data Date to extract new time and number of users from.
+		 * @private
+		 */
+		function updateWhiteStrip(data) {
+			var response = $.parseJSON(data);
+			var whiteStripTimeElement = $("whiteStrip-time");
+			if ((whiteStripTimeElement) && (whiteStripTimeElement.length > 0)) {
+				whiteStripTimeElement.empty();
+				whiteStripTimeElement.html(response.time);
+			}
+			var whiteStripPeopleElement = $("whiteStrip-users");
+			if ((whiteStripPeopleElement) && (whiteStripPeopleElement.length > 0)) {
+				whiteStripPeopleElement.empty();
+				whiteStripPeopleElement.html(response.people + " online now");
+			}
+		}
+		/**
+		 * Initiates the client side asset view tracking component (self executing).
+		 */
+		(function() {
+			FD.pingServerWithSuccessCallback("2700446", "CustomAsset", "LifeStyle", updateWhiteStrip);
+		})();
+	}
+</script>
+
+        <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
+
+<!-- Track Facebook like -->
+<script type="text/javascript">
+    if (typeof(FB) != "undefined") {
+        FB.Event.subscribe('edge.create', function(targetUrl) {
+             if(typeof(_gaq) != "undefined") {
+                _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
+             }
+        });
+    }
+</script>        
+        <script type="text/javascript" src="http://platform.linkedin.com/in.js">
+            api_key: 9av1epdechow
+    authorize: true
+</script>
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+        
+<!-- Track Tweeting  -->
+<script type="text/javascript">
+    if (typeof(twttr) != "undefined") {
+        twttr.events.bind('tweet', function(event) {
+            if (event) {
+                var targetUrl;
+                if (event.target && event.target.nodeName == 'IFRAME') {
+                    targetUrl = FD.getUrlParam('url',event.target.src);
+                    if(typeof(_gaq) != "undefined") {
+                        _gaq.push(['_trackSocial', 'twitter', 'tweet', targetUrl]);
+                    }
+                }
+            }
+        });
+    }
+ </script>
+        
+
+ 
+    <script type="text/javascript" src="http://secure-au.imrworldwide.com/cgi-bin/j?ci=rj0093-stayz&amp;se=1&amp;te=0"> </script>
+
+    </body>
+</html>

@@ -1,0 +1,572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	 
+	<!-- Meta Data -->
+		<meta name="generator" content="Simple PHP Blog" />
+	<link rel="alternate" type="application/rss+xml" title="Get RSS 2.0 Feed" href="rss.php" />
+	<link rel="alternate" type="application/rdf+xml" title="Get RDF 1.0 Feed" href="rdf.php" />
+	<link rel="alternate" type="application/atom+xml" title="Get Atom 0.3 Feed" href="atom.php" />
+	
+	<!-- Meta Data -->
+	<!-- http://dublincore.org/documents/dces/ -->
+	<meta name="dc.title"       content="Fitness Diet And Exercise Tips And Information" />
+	<meta name="author"         content="Resources For Attorneys dh@resourcesforattorneys.com" />
+	<meta name="dc.creator"     content="Resources For Attorneys dh@resourcesforattorneys.com" />
+	<meta name="dc.subject"     content="fitness,diet,exercise,health,nutrition,vitamins,arobics,anarobics,lifestyle" />
+	<meta name="keywords"       content="fitness,diet,exercise,health,nutrition,vitamins,arobics,anarobics,lifestyle" />
+	<meta name="dc.description" content="The Fitness Diet And Exercise Blog from the Lifestyle directory of Resources For Attorneys is a collection of tips, information, posts, articles and editorials about becoming and or staying fit and healthy" />
+	<meta name="description"    content="The Fitness Diet And Exercise Blog from the Lifestyle directory of Resources For Attorneys is a collection of tips, information, posts, articles and editorials about becoming and or staying fit and healthy" />
+	<meta name="dc.type"        content="weblog" />
+	<meta name="dc.type"        content="blog" />
+	<meta name="resource-type"  content="document" />
+	<meta name="dc.format"      scheme="IMT" content="text/html" />
+	<meta name="dc.source"      scheme="URI" content="http://fitness.resourcesforattorneys.com/index.php" />
+	<meta name="dc.language"    scheme="RFC1766" content="Array" />
+	<meta name="dc.coverage"    content="global" />
+	<meta name="distribution"   content="GLOBAL" /> 
+	<meta name="dc.rights"      content="Copyright, Resources For Attorneys" />
+	<meta name="copyright"      content="Copyright, Resources For Attorneys" />
+	
+	<!-- Robots -->
+	<meta name="robots" content="ALL,INDEX,FOLLOW,ARCHIVE" />
+	<meta name="revisit-after" content="7 days" />
+	
+	<!-- Fav Icon -->
+	<link rel="shortcut icon" href="interface/favicon.ico" />
+	
+	<link rel="stylesheet" type="text/css" href="themes/modern/style.css" />
+	<style type="text/css">
+  /* OVERRIDE COLORS */
+
+  /* GENERAL SETTINGS */
+  body {
+    background-color: #4F7748;
+    color: #4D4D4D;
+  }
+
+  hr  
+  {
+    color: #E6E6E6;
+    background-color: #E6E6E6;
+  }
+  
+  /* TYPEOGRAPHY */
+  
+  a:link, a:visited { color: #5977B3; }
+  a:hover { color: #829FD9; }
+  a:active { color: #829FD9; }
+  
+  pre {
+    width: 480px;
+    border-color: #E6E6E6;
+  }
+  
+  /* HEADERS */
+  
+  h1, h2, h3, h4, h5, h6 {
+    /* color: #000000; */
+  }
+  
+  blockquote {
+    color: #4D4D4D;
+    border-color: #E6E6E6;
+  }
+  
+  /* LAYOUT / PLACEMENT */
+  
+  #page {
+    background-color: #FFFFFF;
+    border-color: #CCCCCC;
+  }
+  
+  #popup {
+    background-color: #FFFFFF;
+    border-color: #CCCCCC;
+  }
+  
+  #header {
+    border-color: #CCCCCC;
+  }
+  
+  #title {
+    color: #FFFFFF;
+    border-color: #CCCCCC;
+    background-color: #4F7748;
+  }
+  
+  #footer {
+    color: #FFFFFF;
+    border-color: #CCCCCC;
+    background: #4F7748;
+  }
+  
+  /* CONTENT */
+  
+  /* REGULAR ENTRY */
+  #content .entry .blog_title
+  {
+    border-color: #CCCCCC;
+    color: #FFFFFF;
+    background-color: #4F7748;
+  }
+  
+  #content .entry .blog_body
+  {
+    border-color: #CCCCCC;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+
+  #content .entry .blog_body_solid  {
+    border-color: #CCCCCC;
+    color: #000000;
+    background-color: #CCCCCC;
+  }
+  
+  #content .entry .blog_comment
+  {
+    border-color: #CCCCCC;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+  
+  #content .entry .blog_date,
+  #content .static .blog_date,
+  #content .comment .blog_date
+  {
+    color: #999999;
+  }
+  
+  /* STATIC ENTRY */
+  #content .static .blog_title
+  {
+    border-color: #95958C;
+    color: #666661;
+    background-color: #BEBEB5;
+  }
+  
+  #content .static .blog_body
+  {
+    border-color: #95958C;
+    color: #4F4F48;
+    background-color: #F2F2EB;
+  }
+  
+  #content .static .blog_comment
+  {
+    border-color: #95958C;
+    color: #4F4F48;
+    background-color: #F2F2EB;
+  }
+  
+  /* COMMENT ENTRY */
+  #content .comment .blog_title
+  {
+    border-color: #95958C;
+    color: #666661;
+    background-color: #BEBEB5;
+  }
+  
+  #content .comment .blog_body
+  {
+    border-color: #95958C;
+    color: #4F4F48;
+    background-color: #F2F2EB;
+  }
+  
+  #content .comment .blog_comment
+  {
+    border-color: #95958C;
+    color: #4F4F48;
+    background-color: #F2F2EB;
+  }
+  
+  /* SIDEBAR */
+  
+  #sidebar {
+    border-color: #E6E6E6;
+    background-color: #FFFFFF;
+  }
+  
+  #sidebar .menu_body a:link { color: #5977B3; }
+  #sidebar .menu_body a:visited { color: #5977B3; }
+  #sidebar .menu_body a:hover { color: #829FD9; }
+  #sidebar .menu_body a:active { color: #829FD9; }
+  
+  #sidebar .menu_title {
+    border-color: #CCCCCC;
+    color: #FFFFFF;
+    background-color: #4F7748;
+  }
+  
+  #sidebar .menu_body {
+    border-color: #CCCCCC;
+    color: #4D4D4D;
+    background-color: #FFFFFF;
+  }
+</style>
+	
+<script type="text/javascript">
+	<!--
+	// BLOG SETTINGS
+	var blogSettings = Array();
+	blogSettings['theme'] = 'modern';
+	blogSettings['img_path'] = 'themes/modern/images/';
+	blogSettings['content_width'] = 550;
+	blogSettings['menu_width'] = 200;
+	-->
+</script>
+	<script language="javascript" src="scripts/sb_javascript.js" type="text/javascript"></script>
+	
+	<title>Fitness Diet And Exercise Tips And Information</title>    <style type="text/css">@import "addto/addto.css";
+</style>
+</head>
+	    <body>
+    
+    <P>
+    
+    <center><a href="http://www.creditreport.com/"><img src="http://www.resourcesforattorneys.com/creditreport.jpg" target="noframes" alt="Free Credit Report"></a><br /><a href="http://www.creditreport.com/">Free Credit Report</a></center> 
+    
+    <P>
+
+<center><script type="text/javascript"><!--
+google_ad_client = "pub-9363496469772843";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_channel ="";
+google_ad_type = "text";
+google_color_border = "538131";
+google_color_bg = "FFFFFF";
+google_color_link = "0000FF";
+google_color_url = "0000FF";
+google_color_text = "000000";
+//--></script>
+ <script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></center><br /> 
+      <div id="page">
+        <div id="header"><img src="themes/modern/images/header750x100.jpg" alt="" border="0" /></div>
+        <div id="title">Fitness Diet And Exercise Tips And Information</div>        <div id="innerpage">
+          <div id="content">
+            
+<!-- BLOG ENTRY BEGIN -->
+<div class="entry">
+
+<!-- BLOG TITLE BEGIN -->
+<div class="blog_title">Fish Oil Recommended - The Things You Should Know<a name="entry090722-215734">&nbsp;</a><br />
+</div>
+<!-- BLOG TITLE END -->
+
+<!-- BLOG BODY BEGIN -->
+<div class="blog_body">
+	<div class="blog_date">Wednesday, July 22, 2009, 09:57 PM - <a href="index.php?category=6">Supplements</a><br />Posted by Administrator</div>
+		<img src="images/fish-oil-supplement.jpg" align="right" alt="Fish Oil Recommended">Fish oil recommended as an omega 3 fish oil supplement. This is important to us, because the average person does not obtain enough omega 3 in their diet.<br /><br />We used to get all of the Omega 3 we needed by eating two or more meals of fish per week. Now however with the worlds fish supply so polluted, we can no longer consume as much fish. So, now we need to obtain our DHA and EPA fatty acids from an Omega 3 supplement on a daily basis.<br /><br />Fish oil recommended because the fatty acids DHA and EPA can be used directly by our bodies instead of having to be converted like ALA does. The ALA is found in flaxseed and leafy greens such as purslane. The ALA needs to be converted by our body over to DHA and EPA, as this does not always happen smoothly, especially if you are elderly or in poor health.<br /><br />Fish oil recommended is an Omega 3 dosage of between 2,000 mg per day to 4,000 mg per day, for a healthy thirty five year old. You should not take more than this unless you have consulted with a health professional. If you are a diabetic you should take no more than 2,000 mg per day without consulting your doctor.<br /><br />This oil is a natural blood thinner. If you are already on a blood thinner such as aspirin or prescription type drugs to thin your blood, you should consult your doctor before starting a course of omega 3 supplements. In any case, you should not take more than 2,000 mg per day.<br /><br />Internal bleeding was a worry for some people, but a study of people with heart disease who took 8,000 mg per day of fish oil found no traces of internal bleeding, even though they were on aspirin ( an anticoagulant).<br /><br />An older person may require a higher dose to offset his or her declining years. It has been found that taking an omega 3 supplement helps to refresh your memory and your recall functions. It also helps to improve your cardiovascular system.<br /><br />One of the side effects that may be found when you take exceptionally high doses of this oil is diarrhea, but this can be stopped by lowering the dose you are taking. I hope that this article on the fish oil recommended dosage has been of some benefit to you.<br /><br />By: Gordon P Hall<br />Gordon Hall is fervent about enabling you and everyone to live a healthy lifestyle, and is an ardent reviewer of fish oil supplements. To discover which supplements Gordon recommends after far ranging and extensive research. Visit his website now at: <a href="http://www.elite-fish-oil-supplement.com" target="_blank" >http://www.elite-fish-oil-supplement.com</a><br clear="all" />
+	</div>
+<!-- BLOG BODY END -->
+
+<!-- BLOG FOOTER BEGIN -->
+
+	<div class="blog_comment"><a href="comments.php?y=09&amp;m=07&amp;entry=entry090722-215734"><img src="themes/modern/images/box_add.png" alt="" width="14" height="14" align="top"/> 6 comments </a>
+ ( 12719 views )
+&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://fitness.resourcesforattorneys.com/index.php?entry=entry090722-215734">permalink</a>
+</div>
+
+<!-- BLOG FOOTER END -->
+</div>
+
+<!-- BLOG ENTRY END -->
+
+<!-- BLOG ENTRY BEGIN -->
+<div class="entry">
+
+<!-- BLOG TITLE BEGIN -->
+<div class="blog_title">Yoga Styles - Which is the Best Fit For You?<a name="entry090722-215211">&nbsp;</a><br />
+</div>
+<!-- BLOG TITLE END -->
+
+<!-- BLOG BODY BEGIN -->
+<div class="blog_body">
+	<div class="blog_date">Wednesday, July 22, 2009, 09:52 PM - <a href="index.php?category=12">Yoga</a><br />Posted by Administrator</div>
+		<img src="images/yoga-styles.jpg" align="right" alt="Which Yoga Style is Best for You?">People all over the world have discovered the powerful physical and mental benefits of yoga and yoga meditation. Yoga studios and classes as well as yoga DVDs, books, and home programs can be easily found online. However, before you roll out your yoga mat, get familiar with the many different types of yoga practices that are available to get the best fit for you:<br /><br />Hatha Yoga: Hatha yoga refers to general yoga practice and includes other types of yoga, such as Iyengar and Ashtanga. General Hatha yoga classes focus on proper breathing, gentle movement, static poses, balance, relaxation, and centering.<br /><br />Vinyasa Yoga: Vinyasa yoga is a dynamic, flowing form of yoga that focuses on connecting posture, or linking movement to breath. Many times Vinyasa yoga is performed in a heated room to induce sweating, detoxification, and purification.<br /><br />Iyengar Yoga: Iyengar yoga focuses on alignment of the body and precise movements, Iyengar yoga instructors assist students in alignment of their body while promoting an inner awareness. Many times blocks and straps are used to assist injured or less flexible students properly perform the poses. Iyengar yoga may be ideal for people with neck and back pain.<br /><br />Ashtanga Yoga: Ashtanga yoga is also known as &quot;power yoga&quot;, which uses flowing movements to increase strength and stamina. Pushup and lunge-like movements are common in this vigorous and athletic practice.<br /><br />Bikram Yoga: Bikram yoga refers to yoga done in a hot environment (approximately 105 degrees Fahrenheit), which not only promotes a detoxifying sweat, but also aids in flexibility.<br /><br />Prenatal Yoga: Prenatal yoga is yoga practice specifically designed for pregnant women who need exercises that are safe for them and their babies. Prenatal yoga also focuses on keeping muscles strong, which aids in posture and helps when delivery time comes. Yoga is an excellent way for expectant mothers to keep muscles toned, which not only makes them feel better during their pregnancy, but also helps them get back into shape faster after the baby is delivered.<br /><br />Many yoga classes will combine several different styles of yoga to get the benefits of all the different practices, but not all programs use the same combinations. Yoga DVDs and other in-home programs are a great way to try different styles or focus on the style that best suits you.<br /><br />By: James Anthony Peterson<br />James Peterson is a life-long athlete and the founder of Total Fitness Made Easy and MarketFox, LLC. James researches and searches for some of the best methods and products for total fitness of the mind and body. For some of his great health and exercise tips and information visit us at  <a href="http://www.totalfitnessmadeeasy.com" target="_blank" >http://www.totalfitnessmadeeasy.com</a><br clear="all" />
+	</div>
+<!-- BLOG BODY END -->
+
+<!-- BLOG FOOTER BEGIN -->
+
+	<div class="blog_comment"><a href="comments.php?y=09&amp;m=07&amp;entry=entry090722-215211"><img src="themes/modern/images/box_add.png" alt="" width="14" height="14" align="top"/> 2 comments </a>
+ ( 267 views )
+&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://fitness.resourcesforattorneys.com/index.php?entry=entry090722-215211">permalink</a>
+</div>
+
+<!-- BLOG FOOTER END -->
+</div>
+
+<!-- BLOG ENTRY END -->
+
+<!-- BLOG ENTRY BEGIN -->
+<div class="entry">
+
+<!-- BLOG TITLE BEGIN -->
+<div class="blog_title">The Benefits of Practicing Yoga<a name="entry090722-214830">&nbsp;</a><br />
+</div>
+<!-- BLOG TITLE END -->
+
+<!-- BLOG BODY BEGIN -->
+<div class="blog_body">
+	<div class="blog_date">Wednesday, July 22, 2009, 09:48 PM - <a href="index.php?category=12">Yoga</a><br />Posted by Administrator</div>
+		<img src="images/yoga-benefits.jpg" align="right" alt="Benefits of Practicing Yoga">Why practice yoga? Is it to live longer, sleep better, alleviate stress, or simply to feel good? Whatever your reason is for wanting to practice yoga, there are many benefits to keep you going!<br /><br />The benefits of yoga have been touted for thousands of years. Scientific studies have confirmed that a regular yoga practice can improve overall health and wellbeing. It&#039;s also sometimes prescribed by doctors as a therapeutic approach for chronic illness and injuries.<br /><br />Not only can a regular yoga practice reward you with a healthy glow, but it can relieve fatigue and increase your energy levels. With a regular yoga practice, you&#039;ll wake up more refreshed and walk with a lighter step.<br /><br />What are some of the other benefits of yoga? For starters, it stimulates your glands, increases your immune system and you&#039;ll recover from illness faster than someone who&#039;s a couch potato. If you get a cold, you may be able to shake it off a lot sooner than someone who doesn&#039;t practice yoga at all.<br /><br />Yoga can reduce stress, and improve your focus, concentration and mood, especially if you take the time to meditate as well. Yoga can also help you to lose weight and shed inches, although the process is much slower than if you take on a more rigorous exercise program, such as aerobics or running. Adding a yoga practice to a cardiovascular workout, however, can improve balance and coordination. Many runners who do yoga improve their performance, especially while training for a marathon.<br /><br />A regular yoga practice will help you to stand taller by improving your posture, and certain yoga poses counter the effects of aging on the spine. If practiced regularly and over time, some yoga poses can also build bone, prevent osteoporosis, and increase balance. This is especially important for women as they age.<br /><br />The look and feel of your body will also change over time if you practice yoga regularly. You&#039;ll become stronger, your muscles will take shape, and your skin will improve. People may tell you that you look younger than you are. And you&#039;ll feel younger, too.<br /><br />Yoga is known for its healing effects and can be used to manage back pain, breathing disorders such as asthma, and help with sinus conditions. Women in the throes of menopause can reap the benefits in more ways than one as some yoga poses are designed to prevent or manage hot flashes and minimize erratic mood swings.<br /><br />If you keep to a regular yoga practice it will change your life for the better.<br /><br />By: Caryn Kelly<br />Caryn Kelly has been practicing yoga for over eight years. She has been teaching a beginner hatha yoga class at Wasatch Presbyterian Church in Salt Lake City, Utah, for over three years, and welcomes visitors to her blog at  <a href="http://myyogamylife.com" target="_blank" >http://myyogamylife.com</a><br clear="all" />
+	</div>
+<!-- BLOG BODY END -->
+
+<!-- BLOG FOOTER BEGIN -->
+
+	<div class="blog_comment"><a href="comments.php?y=09&amp;m=07&amp;entry=entry090722-214830"><img src="themes/modern/images/box_add.png" alt="" width="14" height="14" align="top"/> 3 comments </a>
+ ( 3 views )
+&nbsp;&nbsp;|&nbsp;&nbsp;<a href="http://fitness.resourcesforattorneys.com/index.php?entry=entry090722-214830">permalink</a>
+</div>
+
+<!-- BLOG FOOTER END -->
+</div>
+
+<!-- BLOG ENTRY END -->
+<br /><center><b> <span><a href="index.php?m=05&amp;y=09&amp;d=03&amp;entry=entry090503-014654">Next&#62;&#32;&#32;</a></span> <span><a href="index.php?m=09&amp;y=06&amp;d=03&amp;entry=entry060916-172045">&#32;&#32;Last&#62;&#62;</a></span></b></center><br />          </div>
+          <div id="sidebar">
+          
+          <!-- Search Google -->
+<center>
+<style type="text/css">
+@import url(http://www.google.com/cse/api/branding.css);
+</style>
+<div class="cse-branding-left" style="background-color:#ffffff;color:#000000">
+  <div class="cse-branding-form">
+    <form action="http://www.google.com/cse" id="cse-search-box" target="_blank">
+      <div>
+        <input type="hidden" name="cx" value="partner-pub-9363496469772843:fr341lytykq" />
+        <input type="hidden" name="ie" value="ISO-8859-1" />
+        <input type="text" name="q" size="26" />
+        <input type="submit" name="sa" value="Search" />
+      </div>
+    </form>
+  </div>
+  <div class="cse-branding-logo">
+    <img src="http://www.google.com/images/poweredby_transparent/poweredby_FFFFFF.gif" alt="Google" />
+  </div>
+  <div class="cse-branding-text">
+    Custom Search
+  </div>
+</div>
+</center>
+<!-- Search Google -->	
+          
+<br />
+
+
+<!-- SIDEBAR MENU BEGIN -->
+
+<!-- SEARCH -->
+<div class="menu_title">
+	<a id="linkSidebarSearch" href="javascript:toggleBlock('SidebarSearch');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Search this Site</a>
+</div>
+<div id="toggleSidebarSearch" class="menu_body">
+	<form method="get" action="search.php"><input type="text" size="16" name="q" />&nbsp;<input type="submit" value="Go" /></form>
+</div>
+<br />
+
+<!-- LINKS -->
+<div class="menu_title">
+Links
+</div>
+<div class="menu_body">
+	<a href="index.php">Home</a><br /><a href="contact.php">Contact Me</a><br /><a href="http://animaljokes.resourcesforattorneys.com/index.php" target="_blank">Animal Jokes and Humor</a><br /><a href="http://www.californiawineries.info/index.php" target="_blank">California Wineries</a><br /><a href="http://lifestyle.resourcesforattorneys.com/camping/index.php" target="_blank">Camping Tips and Information</a><br /><a href="http://computerjokes.searchenginedirectory.net/index.php" target="_blank">Computer Jokes and Humor</a><br /><a href="http://lifestyle.resourcesforattorneys.com/fishing/index.php" target="_blank">Fishing Tips and Information</a><br /><a href="http://forums.resourcesforattorneys.com" target="_blank">Forums</a><br /><a href="http://www.resourcesforattorneys.com/reversedirectories.html" target="_blank">Free Reverse Directories</a><br /><a href="http://gardening.resourcesforattorneys.com/index.php" target="_blank">Gardening Tips and Information</a><br /><a href="http://lifestyle.resourcesforattorneys.com/golfing/index.php" target="_blank">Golf - Golfing Tips</a><br /><a href="http://healthcare.informationresourcenetwork.com/index.php" target="_blank">Healthcare Information</a><br /><a href="http://homeimprovement.resourcesforattorneys.com/index.php" target="_blank">Home Improvement and Repair</a><br /><a href="http://lifestyle.resourcesforattorneys.com/jokeindex.html" target="_blank">Humor and Jokes</a><br /><a href="http://www.informationresourcenetwork.com/index.php" target="_blank">Information Resource</a><br /><a href="http://www.resourcesforattorneys.com/issues/index.php" target="_blank">Issues Blog</a><br /><a href="http://legalblog.resourcesforattorneys.com/index.php" target="_blank">Legal Information</a><br /><a href="http://www.californiapersonalinjuryattorneys.us/legalhumor/index.php" target="_blank">Legal Jokes and Humor</a><br /><a href="http://www.resourcesforattorneys.com" target="_blank">Legal Resources</a><br /><a href="http://lifestyle.resourcesforattorneys.com" target="_blank">Lifestyle Resources</a><br /><a href="http://travel.resourcesforattorneys.com/mexico/index.php" target="_blank">Mexico Travel Destinations</a><br /><a href="http://officejokes.resourcesforattorneys.com/index.php" target="_blank">Office Jokes and Humor</a><br /><a href="http://politicaljokes.resourcesforattorneys.com/index.php" target="_blank">Political Jokes and Humor</a><br /><a href="http://politics.californiapersonalinjuryattorneys.us/index.php" target="_blank">Politics In America</a><br /><a href="http://realestatejokes.nationalrealtorsdirectory.com/index.php" target="_blank">Real Estate Jokes and Humor</a><br /><a href="http://www.findrealtors.net/" target="_blank">Realtors - Real Estate Brokers</a><br /><a href="http://schooljokes.informationresourcenetwork.com/index.php" target="_blank">School Jokes and Humor</a><br /><a href="http://sportsjokes.resourcesforattorneys.com/index.php" target="_blank">Sports Jokes and Humor</a><br /><a href="http://www.resourcesforattorneys.com/stress/index.php" target="_blank">Stress Management</a><br /><a href="http://www.usacitydirectories.com/travelamerica/index.php" target="_blank">Travel America</a><br /><a href="http://travel.resourcesforattorneys.com/index.php" target="_blank">Travel Destinations</a><br /><a href="http://traveleurope.findairlines.net/index.php" target="_blank">Travel Europe</a><br /><a href="http://traveljokes.resourcesforattorneys.com/index.php" target="_blank">Travel Jokes and Humor</a><br /><hr /><a href="login.php">Login</a>
+</div>
+<br />
+
+<!-- RANDOM ENTRY -->
+<div class="menu_title">
+	<a id="linkSidebarRandomEntry" href="javascript:toggleBlock('SidebarRandomEntry');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> </a>
+</div>
+<div id="toggleSidebarRandomEntry" class="menu_body">
+	<a href="index.php?entry=entry071011-202254">Omega 3 Fatty Acids - Key to a Healthy Life</a>
+</div>
+<br />
+
+<!-- CATEGORIES -->
+<div class="menu_title">
+	<a id="linkSidebarCategories" href="javascript:toggleBlock('SidebarCategories');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Categories</a>
+</div>
+<div id="toggleSidebarCategories" class="menu_body">
+	<a href="index.php?d=22&amp;m=07&amp;y=09&amp;category=1">Aerobics - Cardio</a><br />
+<a href="index.php?d=22&amp;m=07&amp;y=09&amp;category=14">Bicycling</a><br />
+<a href="index.php?d=22&amp;m=07&amp;y=09&amp;category=9">Equipment</a><br />
+<a href="index.php?d=22&amp;m=07&amp;y=09&amp;category=8">General</a><br />
+<a href="index.php?d=22&amp;m=07&amp;y=09&amp;category=3">Injury Prevention</a><br />
+<a href="index.php?d=22&amp;m=07&amp;y=09&amp;category=7">Pilates</a><br />
+<a href="index.php?d=22&amp;m=07&amp;y=09&amp;category=13">Running</a><br />
+<a href="index.php?d=22&amp;m=07&amp;y=09&amp;category=6">Supplements</a><br />
+<a href="index.php?d=22&amp;m=07&amp;y=09&amp;category=15">Tai Chi</a><br />
+<a href="index.php?d=22&amp;m=07&amp;y=09&amp;category=10">Walking</a><br />
+<a href="index.php?d=22&amp;m=07&amp;y=09&amp;category=2">Weight Loss - General</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php?d=22&amp;m=07&amp;y=09&amp;category=11">Diets</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;<a href="index.php?d=22&amp;m=07&amp;y=09&amp;category=5">Popular Diets</a><br />
+<a href="index.php?d=22&amp;m=07&amp;y=09&amp;category=4">Weight Training</a><br />
+<a href="index.php?d=22&amp;m=07&amp;y=09&amp;category=12">Yoga</a>
+
+</div>
+<br />
+
+<!-- ARCHIVE TREE -->
+<div class="menu_title">
+	<a id="linkSidebarArchives" href="javascript:toggleBlock('SidebarArchives');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Archives</a>
+</div>
+<div id="toggleSidebarArchives" class="menu_body">
+	<a href="archives.php">View Archives</a><br />
+<div id="archive_tree_menu"><ul><li>
+2009
+<ul>
+<li>
+<a href="index.php?m=07&amp;y=09">July</a>
+<ul>
+<li>
+<a href="index.php?m=07&amp;y=09&amp;entry=entry090722-215734">Fish Oil Recommended - The Things You Should Know</a><br />
+<b>07/22/09</b></li>
+<li>
+<a href="index.php?m=07&amp;y=09&amp;entry=entry090722-215211">Yoga Styles - Which is the Best Fit For You?</a><br />
+<b>07/22/09</b></li>
+<li>
+<a href="index.php?m=07&amp;y=09&amp;entry=entry090722-214830">The Benefits of Practicing Yoga</a><br />
+<b>07/22/09</b></li>
+
+</ul>
+</li>
+<li>
+<a href="index.php?m=05&amp;y=09">May</a>
+</li>
+<li>
+<a href="index.php?m=02&amp;y=09">February</a>
+</li>
+
+</ul>
+</li>
+<li>
+2008
+<ul>
+<li>
+<a href="index.php?m=10&amp;y=08">October</a>
+</li>
+<li>
+<a href="index.php?m=07&amp;y=08">July</a>
+</li>
+<li>
+<a href="index.php?m=06&amp;y=08">June</a>
+</li>
+<li>
+<a href="index.php?m=05&amp;y=08">May</a>
+</li>
+<li>
+<a href="index.php?m=04&amp;y=08">April</a>
+</li>
+<li>
+<a href="index.php?m=03&amp;y=08">March</a>
+</li>
+<li>
+<a href="index.php?m=02&amp;y=08">February</a>
+</li>
+<li>
+<a href="index.php?m=01&amp;y=08">January</a>
+</li>
+
+</ul>
+</li>
+<li>
+2007
+<ul>
+<li>
+<a href="index.php?m=12&amp;y=07">December</a>
+</li>
+<li>
+<a href="index.php?m=11&amp;y=07">November</a>
+</li>
+<li>
+<a href="index.php?m=10&amp;y=07">October</a>
+</li>
+<li>
+<a href="index.php?m=09&amp;y=07">September</a>
+</li>
+<li>
+<a href="index.php?m=08&amp;y=07">August</a>
+</li>
+<li>
+<a href="index.php?m=07&amp;y=07">July</a>
+</li>
+<li>
+<a href="index.php?m=06&amp;y=07">June</a>
+</li>
+<li>
+<a href="index.php?m=05&amp;y=07">May</a>
+</li>
+<li>
+<a href="index.php?m=04&amp;y=07">April</a>
+</li>
+<li>
+<a href="index.php?m=03&amp;y=07">March</a>
+</li>
+<li>
+<a href="index.php?m=02&amp;y=07">February</a>
+</li>
+<li>
+<a href="index.php?m=01&amp;y=07">January</a>
+</li>
+
+</ul>
+</li>
+<li>
+2006
+<ul>
+<li>
+<a href="index.php?m=12&amp;y=06">December</a>
+</li>
+<li>
+<a href="index.php?m=11&amp;y=06">November</a>
+</li>
+<li>
+<a href="index.php?m=10&amp;y=06">October</a>
+</li>
+<li>
+<a href="index.php?m=09&amp;y=06">September</a>
+</li>
+
+</ul>
+</li>
+</ul></div>
+</div>
+<br />
+
+<!-- RECENT ENTRIES -->
+<div class="menu_title">
+	<a id="linkSidebarRecentEntries" href="javascript:toggleBlock('SidebarRecentEntries');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Most Recent Entries</a>
+</div>
+<div id="toggleSidebarRecentEntries" class="menu_body">
+	<a href="http://fitness.resourcesforattorneys.com/index.php?entry=entry090722-215734">Fish Oil Recommended - The Things You Should Know</a><br /><a href="http://fitness.resourcesforattorneys.com/index.php?entry=entry090722-215211">Yoga Styles - Which is the Best Fit For You?</a><br /><a href="http://fitness.resourcesforattorneys.com/index.php?entry=entry090722-214830">The Benefits of Practicing Yoga</a><br /><a href="http://fitness.resourcesforattorneys.com/index.php?entry=entry090503-014654">Aerobics For Beginners</a><br /><a href="http://fitness.resourcesforattorneys.com/index.php?entry=entry090503-014140">All About Step Aerobics</a><br /><a href="http://fitness.resourcesforattorneys.com/index.php?entry=entry090503-013048">Benefits of Resistance Training For Women</a><br />
+</div>
+<br />
+<p /><div align="center">
+<a href="http://sourceforge.net/projects/sphpblog/"><img style="margin-bottom: 5px;" src="interface/button_sphpblog.png" alt="Powered by Simple PHP Blog" title="Powered by Simple PHP Blog" border="0" /></a> <a href="rss.php"><img style="margin-bottom: 5px;" src="interface/button_rss20.png" alt="Get RSS 2.0 Feed" title="Get RSS 2.0 Feed" border="0" /></a><br /><a href="http://php.net/"><img style="margin-bottom: 5px;" src="interface/button_php.png" alt="Powered by PHP 5.1.6" title="Powered by PHP 5.1.6" border="0" /></a> <a href="atom.php"><img style="margin-bottom: 5px;" src="interface/button_atom03.png" alt="Get Atom 0.3 Feed" title="Get Atom 0.3 Feed" border="0" /></a><br /><img style="margin-bottom: 5px;" src="interface/button_txt.png" alt="Powered by Plain text files" title="Powered by Plain Text Files" border="0" /> <a href="rdf.php"><img style="margin-bottom: 5px;" src="interface/button_rdf10.png" alt="Get RDF 1.0 Feed" title="Get RDF 1.0 Feed" border="0" /></a><br /></div>
+<center>
+<!-- AddThis Button BEGIN -->
+<a href="http://www.addthis.com/bookmark.php" onClick="window.open('http://www.addthis.com/bookmark.php?wt=nw&pub=lawstud&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no,screenX=200,screenY=100,left=200,top=100'); return false;" title="Bookmark and Share" target="_blank"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" border="0" alt="Bookmark and Share" /></a>
+<!-- AddThis Button END -->		
+
+<br />
+
+</td></tr></table></center>
+										</div>
+        </div>
+        <div id="footer">
+          The Fitness Diet And Exercise Blog from the Lifestyle directory of Resources For Attorneys is a collection of tips, information, posts, articles and editorials about becoming and or staying fit and healthy - Page Generated in 0.3794 seconds        </div>
+      </div>
+    </body>
+    </html>

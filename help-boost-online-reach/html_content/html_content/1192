@@ -1,0 +1,612 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon"> 
+<title>Camping Recipes - Pita bread Pizza</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Pita bread Pizza recipe at CampRecipes.com. Camp Recipes is your place to find great camping recipes.">
+<meta name="keywords" content="Pita bread Pizza, camping recipes,camping,camp cooking,camp food,camp,campfire,outdoors,outdoor cooking,camp recipes,backpacking,hiking">
+<META name="verify-v1" content="+QhghU4H09qj+zsHRsgq+l74HsfW5kbaL03v1QS7sjo=" />
+ <script>
+	var RecaptchaOptions = {
+	   theme : 'white'
+	};
+</script>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_validateForm() { //v4.0
+  var i,p,q,nm,test,num,min,max,errors='',args=MM_validateForm.arguments;
+  for (i=0; i<(args.length-2); i+=3) { test=args[i+2]; val=MM_findObj(args[i]);
+    if (val) { nm=val.name; if ((val=val.value)!="") {
+      if (test.indexOf('isEmail')!=-1) { p=val.indexOf('@');
+        if (p<1 || p==(val.length-1)) errors+='- '+nm+' must contain an e-mail address.\\n';
+      } else if (test!='R') { num = parseFloat(val);
+        if (isNaN(val)) errors+='- '+nm+' must contain a number.\\n';
+        if (test.indexOf('inRange') != -1) { p=test.indexOf(':');
+          min=test.substring(8,p); max=test.substring(p+1);
+          if (num<min || max<num) errors+='- '+nm+' must contain a number between '+min+' and '+max+'.\\n';
+    } } } else if (test.charAt(0) == 'R') errors += '- '+nm+' is required.\\n'; }
+  } if (errors) alert("The following error(s) occurred:\\n"+errors);
+  document.MM_returnValue = (errors == '');
+}
+
+function showuser(url) 
+ {
+ window.open(url,"","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=yes,copyhistory=no,width=425,height=220");
+ }
+
+function re_print(url)
+ {
+  window.open(url,"","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width=500,height=700");
+ }
+ 
+function re_mail(url)
+ {
+  window.open(url,"","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width=500,height=400");
+ }
+
+function forwardifconfirm(message,url1,url2)
+ {
+  if (window.confirm(message))
+   {
+    return window.location.href=url1;
+   }
+  return window.location.href=url2;
+ }
+
+function submituserform(newuser)
+ {
+   var errors='',sendform=true;
+   
+   // check teh fields completition
+   if ((document.reguser.usFirstName.value=="")||(document.reguser.usLastName.value=="")||(document.reguser.usUserName.value=="")||((document.reguser.usPassword.value=="")&&(newuser))
+      ||((document.reguser.usPasswordre.value=="")&&(newuser))||(document.reguser.usEMail.value=="")||(document.reguser.usEMailre.value=="")
+      ||(document.reguser.usCountry.value=="")||(document.reguser.usNewsletter.value==""))
+     {
+      errors+='- not completed all the fields\\n';
+      sendform=false;
+     }
+   
+   // check the password length
+   if (document.reguser.usPassword.value!="") {
+      erteke=document.reguser.usPassword.value;
+      if (erteke.length<6) {
+	     errors+='- the password is short\\n';
+         sendform=false;
+      }
+   }
+   
+   // check the password confirmation
+   if ((newuser)||(document.reguser.usPassword.value!="")) {
+     pw=document.reguser.usPassword.value;
+     pwre=document.reguser.usPasswordre.value;
+     pnc=false;
+     if (pw.length==pwre.length) {
+	   h1=pw.length;
+	   h2=pwre.length;
+	   for (j=0;j<=(h1-1);j++) {
+		 if (pw.charAt(j)!=pwre.charAt(j)) {
+	        pnc=true;
+		 }
+	   }
+	  
+     } else {
+	   pnc=true;
+     }	 			 
+     if (pnc==true) {
+	   errors+='- the password is not confirmed correctly\\n';
+	   sendform=false;
+     }
+   } 	 
+   
+   // check the e-mail
+   if (document.reguser.usEMail.value!="") {
+      emailvalue=document.reguser.usEMail.value;
+      searched1=emailvalue.indexOf("@");searched2=emailvalue.indexOf(".");
+      if ((searched1==-1)||(searched2==-1)) {
+         az=1;
+		 errors+='- the E-mail field is not contain a valid e-mail address\\n';
+         searched1=0;searched2=0;
+         sendform=false;
+      }
+   }
+   
+   // check the e-mail confirmation
+   if (document.reguser.usEMail.value!="") {
+     em=document.reguser.usEMail.value;
+     emre=document.reguser.usEMailre.value;
+     emnc=false;
+     if (em.length==emre.length) {
+	   h1=em.length;
+	   h2=emre.length;
+	   for (j=0;j<=(h1-1);j++) {
+		 if (em.charAt(j)!=emre.charAt(j)) {
+	        emnc=true;
+		 }
+	   }
+	  
+     } else {
+	   emnc=true;
+     }	 			 
+     if (emnc==true) {
+	   errors+='- the e-mail is not confirmed correctly\\n';
+	   sendform=false;
+     }
+   } 
+   
+   if (sendform==false) {
+     window.alert('The following error(s) occurred:\\n'+errors);
+   }
+   return sendform;
+ } 
+ //-->
+</script>
+<link href="linkek2.css" rel="stylesheet" type="text/css">
+</head>
+<body> 
+<div id="adbar"><center><a href="http://camprecipes.com/cookbook.php" target="_new">Click here for The Big Book of Camp Recipes cookbook!</a></center></div>
+<div id="adbar-spacer"></div>
+<a name="top" id="top"></a>
+<table width="760" border="0" align="center" cellpadding="0" cellspacing="0"> 
+  <tr> 
+    <td colspan="3"><img src="images/top6a.jpg" width="180" height="171"><img src="images/top6b.jpg" width="192" height="171"><img src="images/top6c.jpg" width="196" height="171"><img src="images/top6d.jpg" width="192" height="171"></td>
+  </tr> 
+  <tr> 
+    <td width="135" align="center" valign="top" class="table_blue_all"><br> 
+	
+<!-- BEGIN STATIC LINKS -->
+	      <table width="110" border="0" align="center" cellpadding="0" cellspacing="0"> 
+        <tr> 
+          <td colspan="2"><img src="images/index_bline7.jpg" width="110" height="1"></td> 
+        </tr> 
+        <tr> 
+          <td width="24">&nbsp;</td> 
+          <td width="86" align="right"><a href="http://www.camprecipes.com/home" class="links" title="Home Page">home</a> &nbsp;</td> 
+        </tr> 
+        <tr> 
+          <td height="5" colspan="2"><img src="images/index_bline7.jpg" width="110" height="1"></td> 
+        </tr> 
+        <tr> 
+          <td width="24">&nbsp;</td> 
+          <td width="86" align="right"><a href="http://www.camprecipes.com/recipes" class="links" title="Camping Recipes">camp recipes</a>&nbsp;</td> 
+        </tr> 
+        <tr> 
+          <td height="5" colspan="2"><img src="images/index_bline7.jpg" width="110" height="1"></td> 
+        </tr> 
+				  <tr> 
+          <td width="24">&nbsp;</td> 
+          <td width="86" align="right"><a href="http://blog.camprecipes.com" class="links" target="_blank" title="Camp Recipes Blog">camping blog</a>&nbsp;</td> 
+        </tr>
+
+        <tr> 
+          <td height="5" colspan="2"><img src="images/index_bline7.jpg" width="110" height="1"></td> 
+        </tr> 
+		        <tr> 
+          <td width="24">&nbsp;</td> 
+          <td width="86" align="right"><a href="http://www.camprecipes.com/camp-store" class="links" title="Camping Gear">gear store</a>&nbsp;</td> 
+        </tr> 
+        <tr> 
+          <td colspan="2"><img src="images/index_bline7.jpg" width="110" height="1"></td> 
+        </tr>
+		         <tr> 
+          <td width="24">&nbsp;</td> 
+          <td width="86" align="right"><a href="http://www.camprecipes.com/contact" class="links" title="Contact information">contact</a>&nbsp;</td> 
+        </tr> 
+        <tr> 
+          <td colspan="2"><img src="images/index_bline7.jpg" width="110" height="1"></td> 
+        </tr>
+        <tr> 
+          <td width="24">&nbsp;</td> 
+          <td width="86" align="right"><a href="http://www.camprecipes.com/about" class="links" title="About Camp Recipes">about us</a>&nbsp;</td> 
+        </tr> 
+        <tr> 
+          <td colspan="2"><img src="images/index_bline7.jpg" width="110" height="1"></td> 
+        </tr> 
+ 
+		  <tr> 
+          <td width="24">&nbsp;</td> 
+          <td width="86" align="right"><a href="http://www.camprecipes.com/faq" class="links" title="Frequently Asked Questions">faq</a>&nbsp;</td> 
+        </tr> 
+        <tr> 
+          <td colspan="2"><img src="images/index_bline7.jpg" width="110" height="1"></td> 
+        </tr>
+		
+		<tr> 
+          <td width="24">&nbsp;</td> 
+          <td width="86" align="right"><a href="http://www.camprecipes.com/links" class="links" title="Other Great Sites">outdoor links</a>&nbsp;</td> 
+        </tr> 
+        <tr> 
+          <td colspan="2"><img src="images/index_bline7.jpg" width="110" height="1"></td> 
+        </tr>
+
+      </table> 
+	  <br>
+      <table width="110" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="24" bgcolor="#2555A9">&nbsp;</td>
+          <td width="86" align="right" bgcolor="#DDE6EF" class="titles"><a href="http://www.camprecipes.com/addrecipe" class="links" title="Add your own recipe">add a recipe</a>&nbsp; </td>
+        </tr>
+        <tr>
+          <td height="5" colspan="2"><img src="images/index_bline7.jpg" width="110" height="1"></td>
+        </tr>
+        <tr>
+          <td width="24" bgcolor="#2555A9">&nbsp;</td>
+          <td width="86" align="right" bgcolor="#DDE6EF" class="titles"><a href="http://www.camprecipes.com/addtip" class="links" title="Add your own tip">add a tip</a>&nbsp; </td>
+        </tr>
+      </table>
+<!-- END STATIC LINKS -->   
+      <br>
+
+	  
+<!-- BEGIN LOGIN -->
+       
+	   
+<form name="login" method="post" action="http://www.camprecipes.com/home"><input type="hidden" name="PHPSESSID" value="1ddc5adaf5bb58c6876523111cdd72a6" /> 
+        <table width="115" border="0" align="center" cellpadding="0" cellspacing="0"> 
+          <tr align="left"> 
+            <td colspan="2" class="smalltext">Username:</td> 
+          </tr> 
+          <tr align="left"> 
+            <td colspan="2"><input name="usUserName" type="text" class="category" id="usUserName" size="13" maxlength="13"></td> 
+          </tr> 
+          <tr align="left"> 
+            <td colspan="2" class="smalltext">Password:</td> 
+          </tr> 
+          <tr align="left"> 
+            <td colspan="2"><input name="usPassword" type="password" class="category" id="usPassword" size="13" maxlength="13"></td> 
+          </tr> 
+          <tr> 
+            <td height="19" align="left" class="smalltext"><a href="http://www.camprecipes.com/forgotpass" class="smallink">Forgot your password?</a> </td> 
+            <td align="right" class="smalltext"><input name="login" type="submit" class="smalltext" id="login3" value="Login"></td> 
+          </tr> 
+          <tr align="center"> 
+            <td height="9" colspan="2"><img src="images/index_bline7.jpg" width="110" height="1"></td> 
+          </tr> 
+          <tr align="center"> 
+            <td height="19" colspan="2"><a href="http://www.camprecipes.com/signup" class="smallink">Sign up!</a> </td> 
+          </tr> 
+  </table> 
+      </form>
+
+
+<!-- END LOGIN -->
+
+<!-- BEGIN MEMBER LINKS -->
+     
+	 	
+	  
+<!-- END MEMBER LINKS -->
+<br>
+<!-- BEGIN ADMIN LINKS -->
+
+		
+
+<!-- END ADMIN LINKS -->
+      <br> 
+      <img src="images/index_25.jpg" alt="camping" width="110" height="285" border="0" align="middle" class="border_lightblue"> <br> 
+    <br>
+	<table width="120" border="0" align="center" cellpadding="5" cellspacing="0"
+	<tr> 
+          <td colspan="2"><img src="images/index_bline7.jpg" width="110" height="1"></td> 
+        </tr> 
+	<tr>
+	<td align="center" valign="top">
+	<p align="left" class="category"><strong>Click to see our</strong>
+	</td>
+	<tr>
+	<td>
+	<a href="cookbook.php?PHPSESSID=1ddc5adaf5bb58c6876523111cdd72a6" target="_blank"><img src="images/ecoversm.jpg" alt="Camping Cookbook" align="left" height="169" width="110" border="0"></a></td>
+	 </tr>
+	 <tr>
+	 <td class="category"?><strong>Camp Cookbook!</strong></td></tr>
+	 </p>
+	</td></tr></table>
+        
+         </td><br> 
+    <td width="488" align="left" valign="top" class="table_blue_top_bottom"> <table width="488"  border="0" cellpadding="0" cellspacing="0" id="content_holder"> 
+        <tr> 
+          <td align="left" valign="top"><img src="images/index_corner_l.jpg" width="12" height="12"></td> 
+          <td align="right" valign="top"><img src="images/index_corner_r.jpg" width="12" height="12"></td> 
+        </tr>
+        <tr>
+          <td colspan="2" align="center" valign="top">
+<!-- BEGIN GOOGLE SEARCH FORM -->			 <table width="467" border="0" align="center" cellpadding="0" cellspacing="2" bgcolor="#F7F7F7" class="table_blue_all">		<tr>		<td width="50%" rowspan="1" align="left" valign="middle" class="category"> <strong>719</strong> camping recipes in our database...</td>		<td width="50%" align="right" valign="middle" class="category">        	<form action="http://camprecipes.com/found.htm" id="cse-search-box"><input type="hidden" name="PHPSESSID" value="1ddc5adaf5bb58c6876523111cdd72a6" />  <div>    <input type="hidden" name="cx" value="partner-pub-8461797775035765:xuhsoakzbvo" />    <input type="hidden" name="cof" value="FORID:11" />    <input type="hidden" name="ie" value="ISO-8859-1" />    <input type="text" name="q" size="18" />    <input type="submit" name="sa" value="Search" />  </div></form><script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script></td></tr>    </table><!-- END GOOGLE SEARCH FORM --><!-- BEGIN SEARCH FORM --><!--
+<form name="simple_search" method="post" action="http://www.camprecipes.com/recipelist"><input type="hidden" name="PHPSESSID" value="1ddc5adaf5bb58c6876523111cdd72a6" />
+  	  <table width="467" border="0" align="center" cellpadding="0" cellspacing="2" bgcolor="#F7F7F7" class="table_blue_all">
+        <tr>
+          <td width="61%" rowspan="2" align="left" valign="middle" class="category">There are <strong>719</strong> camping recipes in our database.</td>
+          <td width="39%" align="right" class="category"><input name="text" type="text" class="smalltext" id="text2" size="15" maxlength="40">
+            <input type="submit" class="smalltext" name="search" id="submitform" value="Search"></td>
+        </tr>
+		<tr>
+          <td align="right"><a href="advancedsearch?PHPSESSID=1ddc5adaf5bb58c6876523111cdd72a6" class="smallink">Advanced search</a></td>
+		</tr>  
+  </table>
+</form>-->
+<!-- END SEARCH FORM -->
+</td>
+        </tr>
+        <tr> 
+          <td colspan="2" align="center" valign="top"> 
+<!-- BEGIN CONTENT -->  
+		  
+		
+<script language="javascript">
+<!--
+function del_recipe(reID){
+	if (confirm("Are you sure, you want to delete this recipe?")){
+		get = "?comm=18&reID="+reID+"&redel="+reID;
+		document.location.search = get;
+	}
+}
+
+function re_blog(reID){
+	if (confirm("Do you want to send this recipe to blog?")){
+		
+		url = "sendtoblog.php?reID="+reID;
+ 		document.location.href = url;
+	}
+}
+
+-->
+</script>
+<!-- BEGIN RECIPE -->
+<table width="467" border="0" align="center" cellpadding="0" cellspacing="0" id="recipe">
+          <tr>
+            <td width="426" align="left" class="titles_big"><strong>Pita bread Pizza</strong></td>
+						<td width="223" align="right" valign="bottom"><a href="javascript:re_print('');" class="adminlinks"></a>  <a href="javascript:del_recipe();" class="adminlinks"></a> <a href="javascript:re_blog();" class="adminlinks"></a> <a href="?PHPSESSID=1ddc5adaf5bb58c6876523111cdd72a6" class="memberlinks"></a></td>
+		  </tr>
+		  <tr>
+            <td width="426" align="left" class="titles_mid"><strong>camping recipe</strong></td>
+		  </tr>
+		  <tr>
+		  <td colspan="2" align="center">
+<hr width="95%">
+		 </td>
+		 </tr>	
+    
+		  
+			<tr>
+			<td colspan="2" align="center">
+			<!-- BEGIN GOOGLE -->
+<script type="text/javascript"><!--
+google_ad_client = "pub-8461797775035765";
+/* recipetop, created 3/12/08 */
+google_ad_slot = "2919673408";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<!-- END GOOGLE -->
+			</td>
+			</tr>
+			
+			<tr>
+		        <td colspan="2" align="center" valign="top" class="table_gray_all"><table width="445" border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr align="left" valign="middle">
+                  <td width="66" height="22" class="table_gray_bottom"> <font size="2" face="Arial, Helvetica, sans-serif" class="titles">Category:</font></td>
+                  <td height="22" colspan="4" class="table_gray_bottom"><font class="category" ><b>Breads</b></font></td>
+                  <td width="54" height="22" class="table_gray_bottom">&nbsp;</td>
+                  <td width="67" height="22" class="table_gray_bottom"><font face="Arial, Helvetica, sans-serif" size="2" class="titles">Rating:</font></td>
+                  <td width="57" height="22" class="table_gray_bottom"><span class="category">10</span></td>
+                </tr>
+                <tr align="left" valign="middle">
+                  <td height="22" align="left" class="table_gray_bottom"> <font face="Arial, Helvetica, sans-serif" size="2" class="titles">Backpacking</font><font face="Arial, Helvetica, sans-serif" size="2" class="titles">:</font></td>
+                  <td width="52" height="22" align="left" class="table_gray_bottom"><span class="category">No</span></td>
+                  <td width="35" height="22" align="left" class="table_gray_bottom"><span class="titles"><font size="2" face="Arial, Helvetica, sans-serif" class="cimek">Effort:</font></span></td>
+                  <td width="69" height="22" align="left" class="table_gray_bottom"><span class="category">easy</span></td>
+                  <td width="45" height="22" align="left" class="table_gray_bottom"><font size="2" face="Arial, Helvetica, sans-serif" class="titles">Serves:</font></td>
+                  <td height="22" align="left" class="table_gray_bottom"><span class="category">any</span></td>
+                  <td height="22" align="left" class="table_gray_bottom"><font face="Arial, Helvetica, sans-serif" size="2" class="titles">Prep time:</font></td>
+                  <td height="22" align="left" class="table_gray_bottom"><span class="category">1-30m</span></td>
+                </tr>
+                <tr>
+                  <td height="30" colspan="8">&nbsp;</td>
+                </tr>
+                <tr align="left" valign="middle">
+                  <td colspan="8" class="table_gray_bottom"> <font face="Arial, Helvetica, sans-serif" class="titles">Ingredients:</font></td>
+                </tr>
+                <tr align="left">
+                  <td height="15" colspan="8" class="category"><ul><li> 1 Package (6) Pita rounds.</li><li>1 14 oz. jar prepared pizza sauce.</li><li>1 8 oz. package shredded mozzarella cheese.</li><li>Any other toppings you like.</li></ul></td>
+                </tr>
+                <tr>
+                  <td height="30" colspan="8">&nbsp;</td>
+                </tr>
+                <tr align="left" valign="middle">
+                  <td colspan="8" class="table_gray_bottom"> <font face="Arial, Helvetica, sans-serif" class="titles">How to Prepare:</font></td>
+                </tr>
+                <tr align="left">
+                  <td colspan="8" class="category">Place pita bread on hot grill and toast to desired doneness. Turn over, add pizza sauce, cheese and any other toppings you desire. Grill till cheese melts.</td>
+                </tr>
+                <tr align="left" valign="middle">
+                  <td colspan="8" class="table_gray_bottom">&nbsp; </td>
+                </tr>
+                <tr align="left" valign="middle">
+                  <td height="22" class="titles">Sent by: </td>
+                  <td height="22" colspan="3"><a href="JavaScript:showuser('showuser.php?usID=131');" class="links" title="View user's information">Lee </a></td>
+                  <td height="22" colspan="2" align="right" class="titles">Date:</td>
+                  <td height="22" colspan="2" align="center" class="category">2002-08-30</td>
+                </tr>
+            </table></td>
+          </tr>
+</table>		
+<!-- END RECIPE -->
+
+<!-- BEGIN RATING & PRINT -->	  
+	  <form name="rating" method="post" action=""><input type="hidden" name="PHPSESSID" value="1ddc5adaf5bb58c6876523111cdd72a6" />
+	  <table width="467" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr bgcolor="#F5F5F5">
+		
+		<!-- RATE -->
+			
+        <!-- END RATE -->
+		  
+		  <td align="left" valign="middle" bgcolor="#F5F5F5"><a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php">Share</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></td>
+		  <td align="right" valign="middle" bgcolor="#F5F5F5"><a href="javascript:re_print('re_print.php?reID=180');" class="smallink">Print the Recipe</a></td>
+          <td width="17" align="right" valign="middle" bgcolor="#F5F5F5"><img src="images/printer.gif" width="16" height="16" align="texttop"></td>
+          <td width="69" align="right" valign="middle"><a href="javascript:re_mail('re_mail.php?reID=180');" class="smallink">Email Recipe</a> </td>
+          <td width="18" align="right" valign="middle"><img src="images/mail.gif" width="16" height="11" align="texttop"></td>
+        </tr>
+      </table>
+	  </form>
+<!-- END OF RATING & PRINT-->	  
+<!-- BEGIN COMMENTS -->	  
+		
+        <br>
+		
+<!-- END COMMENTS -->
+<!-- BEGIN GOOGLE CODE -->
+<script type="text/javascript"><!--
+google_ad_client = "pub-8461797775035765";
+/* recipebot, created 3/13/08 */
+google_ad_slot = "7670464469";
+google_ad_width = 336;
+google_ad_height = 280;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<!-- END GOOGLE CODE -->
+<!-- LinkShare Banner -->
+<br>
+<br>
+ <a href="http://click.linksynergy.com/fs-bin/click?id=p5ljDUSTWLE&offerid=46111.10000126&subid=0&type=4"><IMG border="0"   alt="Sierra Club" src="http://ad.linksynergy.com/fs-bin/show?id=p5ljDUSTWLE&bids=46111.10000126&subid=0&type=4&gridnum=1"></a>
+			
+<!-- END CONTENT -->		  </td> 
+        </tr> 
+      </table> 
+      <br>
+    <br></td> 
+	
+	
+	
+<!-- BEGIN RIGHT COLUMN -->
+    <td width="135" valign="top" bgcolor="#788AAE" class="table_blue_all"><br>
+	<!-- AddThis Bookmark Button BEGIN -->
+<p><DIV ALIGN="center">
+   <!-- AddThis Button BEGIN --><div class="addthis_toolbox">       <div class="custom_images">            <a class="addthis_button_stumbleupon"><img src="http://camprecipes.com/images/stumbleupon40.png" width="40" height="40" alt="StumbleUpon" /></a>			<a class="addthis_button_digg"><img src="http://camprecipes.com/images/digg40.png" width="40" height="40" alt="Digg" /></a>            <a class="addthis_button_facebook"><img src="http://camprecipes.com/images/facebook40.png" width="40" height="40" alt="Facebook" /></a>    </div></div><script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=smdlc"></script><!-- AddThis Button END --><!-- AddThis Button END -->
+</p></DIV>
+<!-- AddThis Bookmark Button END -->
+	<!-- BEGIN iTunes CODE SECTION -->	<table width="120" border="0" align="center" cellpadding="5" cellspacing="0">	<tr><td align="center" valign="top" bgcolor="#AEC3E0" class="smalltext">          <p align="left"><strong><font color="#9D0000">OUR iPHONE APP! 		  </font></strong></br></p></td>		 	<tr>	<td align="center" valign="top" bgcolor="#AEC3E0" class="smalltext">	<img src="images/CRIcon.png" alt="Iphone App" width="100" height="100" border="0" align="middle"> </br>	<a href="http://click.linksynergy.com/fs-bin/stat?id=p5ljDUSTWLE&offerid=146261&type=3&subid=0&tmpid=1826&RD_PARM1=http%253A%252F%252Fitunes.apple.com%252Fus%252Fapp%252Fcamp-recipes%252Fid412996497%253Fmt%253D8%2526uo%253D4%2526partnerId%253D30" target="itunes_store"><img src="http://ax.phobos.apple.com.edgesuite.net/images/web/linkmaker/badge_appstore-lrg.gif" alt="Camp Recipes! - The App Sack" style="border: 0;"/></a></tr></td><tr><td align="center" valign="top" bgcolor="#AEC3E0" class="smalltext"><p align="left">Wow your campers with 700+ creative campfire recipes.</p></tr>	</td> 		</table>	<!-- END iTunes CODE SECTION -->	<!-- BEGIN GAME CODE SECTION -->
+	
+	<!-- END GAME CODE SECTION -->
+	<p><DIV ALIGN="center">
+<!-- BEGIN TRAILMUNCHIES CODE -->
+<table width="120" border="0" align="center" cellpadding="1" cellspacing="0">
+      <tr>
+        <td align="center" valign="top" bgcolor="#AEC3E0">
+    <a href="http://trailmunchies.camprecipes.com"><img src="images/promo_1_color_small.jpg" alt="Comics" align="left" height="196" width="120" border="0"></a>
+		</td>
+	</tr>
+	
+          </table>	
+<!-- END TRAILMUNCHIES CODE -->	
+</p></DIV>
+<p><DIV ALIGN="center">
+		<!-- BEGIN TIP -->
+      <table width="120" border="0" align="center" cellpadding="5" cellspacing="0" id="tip">
+      <tr>
+        <td align="center" valign="top" bgcolor="#AEC3E0" class="smalltext">
+          <p align="left"><strong><font color="#9D0000">CAMPING TIP</font></strong><br>
+              <br>
+        Don't like huge numbers of moths, mayflies, etc around your lantern at night? Hang that bright fuel lantern 30 feet or more to the side of your site, then use a softer light battery lantern in the human zone. You'll still benefit some from the big lantern, and the battery one will suffice in any case, but all the night bugs will be drawn to the brighter light, leaving you more than relatively bug-free.
+          </p></td>
+      </tr>
+      <tr>
+        <td align="right" valign="top" bgcolor="#AEC3E0" class="smalltext"><a href="JavaScript:showuser('showuser.php?usID=1');" class="smallink"  title="View user's information">Guest </a></td>
+      </tr>
+    </table>
+	<!-- END TIP -->
+	</p></DIV>
+	<p><DIV ALIGN="center">
+	<!--
+	 <table width="120" border="0" align="center" cellpadding="5" cellspacing="0">
+      <tr>
+        <td align="center" valign="top" bgcolor="#AEC3E0" class="smalltext">
+          <p align="left"><strong><font color="#9D0000">Bugged by Mosquitoes?</font></strong>
+	</p></td>
+	</tr>
+	<tr>
+	<td align="left" valign="top" bgcolor="#AEC3E0" class="smalltext">
+	<a href="http://www.northlineexpress.com/items.asp?cc=MosquitoTraps" title="Mosquito Traps" target= "new">Mosquito Traps </a>
+       </p></td>
+      </tr>
+          </table>
+	-->
+</p></DIV>
+<p><DIV ALIGN="center">
+	<!-- BEGIN WILDERNESSDINING CODE SECTION -->
+ <table width="120" border="0" align="center" cellpadding="5" cellspacing="0">
+      <tr>
+        <td align="center" valign="top" bgcolor="#AEC3E0" class="smalltext">
+          <p align="left"><strong><font color="#9D0000">Looking for Backpacking Food?</font></strong>
+	</p></td>
+	</tr>
+	<tr>
+	<td align="left" valign="top" bgcolor="#AEC3E0" class="smalltext">
+	The folks at <a href="http://store.yahoo.com/cgi-bin/clink?wildernessdining+aUugn3+index.html+" title="Visit Wilderness Dining" target= "new">Wilderness Dining </a>
+              are experts in Adventure Cuisine. Simply the best and most popular camping food and cookware for your backcountry needs!
+          </p></td>
+      </tr>
+          </table>
+	<!-- END WILDERNESSDINING CODE SECTION -->
+      </p></DIV>
+
+<p><DIV ALIGN="center">
+</p></DIV>
+			</td>
+	<!-- END RIGHT COLUMN -->	
+	
+	
+  </tr> 
+<!-- BEGIN FOOTER-->
+  <tr> 
+    <td align="center" colspan="3">
+    <a href="http://www.camprecipes.com/home" class="links" title="Home Page">home</a> | 
+	<a href="http://www.camprecipes.com/recipes" class="links" title="Browse Recipes">recipes</a> | 
+	<a href="http://blog.camprecipes.com" class="links" target="_blank" title="Camping Recipes Blog">blog</a> |
+	<a href="http://www.camprecipes.com/camp-store" class="links" title="Camping Gear">gear store</a> | 
+	<a href="http://www.camprecipes.com/contact" class="links" title="Contact Information">contact</a> | 
+	<a href="http://www.camprecipes.com/about" class="links" title="About Camp Recipes">about us</a> | 
+	<a href="http://www.camprecipes.com/faq" class="links" title="Frequently Asked Questions">faq</a> |
+	<a href="http://www.camprecipes.com/terms" class="links" title="Terms of Service: User Agreement and Privacy Policy">terms of service - privacy policy</a> |
+	<a href="http://www.camprecipes.com/allrecipes" title="A List of All Our Camping Recipes" class="links">all recipes</a>
+	</td>
+   </tr>
+   <tr>
+   	<td align="center" colspan="3" class="smalltext">
+	created by <a href="http://e-scape.ro" title="Visit e-scape website" class="smallink">e-scape ltd</a>.
+	</td>
+  </tr> 
+  <tr> 
+    <td align="center" class="smalltext" colspan="3">&copy; Camprecipes, 2008</td>
+  </tr> 
+</table> 
+<!--Google Analytics-->
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3906490-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<!--/Google Analytics-->
+</body>
+</html>

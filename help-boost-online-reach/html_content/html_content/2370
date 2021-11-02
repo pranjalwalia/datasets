@@ -1,0 +1,520 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Health Pyramid from 1949 to 2011 | Banquets and Catering</title>
+<script type="text/javascript">
+//<![CDATA[
+var BrowserDetect = {
+init: function () {
+this.browser = this.searchString(this.dataBrowser) || "An unknown browser";
+this.version = this.searchVersion(navigator.userAgent)|| this.searchVersion(navigator.appVersion)|| "an unknown version";
+this.OS = this.searchString(this.dataOS) || "an unknown OS";
+},
+searchString: function (data) {
+for (var i=0;i<data.length;i++)	{
+        var dataString = data[i].string;
+        var dataProp = data[i].prop;
+        this.versionSearchString = data[i].versionSearch || data[i].identity;
+        if (dataString) {if (dataString.indexOf(data[i].subString) != -1)
+                return data[i].identity;}
+        else if (dataProp){return data[i].identity;}
+}
+},
+searchVersion: function (dataString) {
+var index = dataString.indexOf(this.versionSearchString);
+if (index == -1) return;
+return parseFloat(dataString.substring(index+this.versionSearchString.length+1));
+},
+dataBrowser: [
+        {string: navigator.userAgent,subString: "Chrome",identity: "Chrome"},
+        {string: navigator.userAgent,subString: "OmniWeb",versionSearch: "OmniWeb/",identity: "OmniWeb"},
+        {string: navigator.vendor,subString: "Apple",identity: "Safari",versionSearch: "Version"},
+        {prop: window.opera,identity: "Opera"},
+        {string: navigator.vendor,subString: "iCab",identity: "iCab"},
+        {string: navigator.vendor,subString: "KDE",identity: "Konqueror"},
+        {string: navigator.userAgent,subString: "Firefox",identity: "Firefox"},
+        {string: navigator.vendor,subString: "Camino",identity: "Camino"},
+        {string: navigator.userAgent,subString: "Netscape",identity: "Netscape"},
+        {string: navigator.userAgent,subString: "MSIE",identity: "Explorer",versionSearch: "MSIE"},
+        {string: navigator.userAgent,subString: "Gecko",identity: "Mozilla",versionSearch: "rv"},
+        {string: navigator.userAgent,subString: "Mozilla",identity: "Netscape",versionSearch: "Mozilla"}],
+dataOS:[{string: navigator.platform,subString: "Win",identity: "Windows"},
+        {string: navigator.platform,subString: "Mac",identity: "Mac"},
+        {string: navigator.userAgent,subString: "iPhone",identity: "iPhone/iPod"},
+        {string: navigator.platform,subString: "Linux",identity: "Linux"}]
+};
+BrowserDetect.init();
+
+function bookMark(theurl, thetitle, browser){
+    switch(browser){
+        case "Firefox":
+            window.sidebar.addPanel(thetitle, theurl,"");
+            break;
+        case "Explorer":
+            window.external.AddFavorite( theurl, thetitle);
+            break;
+        case "Chrome":
+        case "Safari":
+        case "Opera":
+        case "Netscape":
+            switch(BrowserDetect.OS){
+            case "Windows":
+            case "Linux":
+            alert('press ctrl+D to bookmark this page');
+            break;
+            case "Mac":
+                alert('press cmd+D to bookmark this page');
+            break;
+            }
+            break;
+    }
+}
+//]]>
+</script>
+                        <style type="text/css" media="screen" >
+                                .socialwrap li.icon_text a img, .socialwrap li.iconOnly a img, .followwrap li.icon_text a img, .followwrap li.iconOnly a img{border-width:0 !important;background-color:none;}#follow.right {width:32px;position:fixed; right:0; top:100px;background-color:#878787;padding:10px 0;font-family:impact,charcoal,arial, helvetica,sans-serif;-moz-border-radius-topleft: 5px;-webkit-border-top-left-radius:5px;-moz-border-radius-bottomleft:5px;-webkit-border-bottom-left-radius:5px;border:2px solid #fff;border-right-width:0}#follow.right ul {padding:0; margin:0; list-style-type:none !important;font-size:24px;color:black;}
+#follow.right ul li {padding-bottom:10px;list-style-type:none !important;padding-left:4px;padding-right:4px}
+#follow img{border:none;}#follow.right ul li.follow {margin:0 4px;}
+#follow.right ul li.follow img {border-width:0;display:block;overflow:hidden; background:transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/impact/follow-right.png) no-repeat -0px 0px;height:79px;width:20px;}
+#follow.right ul li a {display:block;}
+#follow.right ul li.follow span, #follow ul li a span {display:none}.share {margin:0 3px 3px 0;}
+.phat span {display:inline;}
+ul.row li {float:left;list-style-type:none;}
+li.iconOnly a span.head {display:none}
+#follow.left ul.size16 li.follow{margin:0px auto !important}
+li.icon_text a {padding-left:0;margin-right:3px}
+li.text_only a {background-image:none !important;padding-left:0;}
+li.text_only a img {display:none;}
+li.icon_text a span{background-image:none !important;padding-left:0 !important; }
+li.iconOnly a span.head {display:none}
+ul.socialwrap li {margin:0 3px 3px 0 !important;}
+ul.socialwrap li a {text-decoration:none;}ul.row li {float:left;line-height:auto !important;}
+ul.row li a img {padding:0}.size16 li a,.size24 li a,.size32 li a, .size48 li a, .size60 li a {display:block}ul.socialwrap {list-style-type:none !important;margin:0; padding:0;text-indent:0 !important;}
+ul.socialwrap li {list-style-type:none !important;background-image:none;padding:0;list-style-image:none !important;}
+ul.followwrap {list-style-type:none !important;margin:0; padding:0}
+ul.followwrap li {margin-right:3px;margin-bottom:3px;list-style-type:none !important;}
+#follow.right ul.followwrap li, #follow.left ul.followwrap li {margin-right:0px;margin-bottom:0px;}
+.shareinpost {clear:both;padding-top:0px}.shareinpost ul.socialwrap {list-style-type:none !important;margin:0 !important; padding:0 !important}
+.shareinpost ul.socialwrap li {padding-left:0 !important;background-image:none !important;margin-left:0 !important;list-style-type:none !important;text-indent:0 !important}
+.socialwrap li.icon_text a img, .socialwrap li.iconOnly a img{border-width:0}ul.followrap li {list-style-type:none;list-style-image:none !important;}
+div.clean {clear:left;}
+div.display_none {display:none;}
+                        </style>
+                                                <style type="text/css" media="print" >
+                                body {background: white;font-size: 12pt;color:black;}
+ * {background-image:none;}
+ #wrapper, #content {width: auto;margin: 0 5%;padding: 0;border: 0;float: none !important;color: black;background: transparent none;}
+ a { text-decoration : underline; color : #0000ff; }
+#menu, #navigation, #navi, .menu {display:none}
+                        </style>
+                        <link rel="image_src" href="http://www.gravatar.com/avatar/0e964e7685dccea5ac6f97ab886e1d2f?default=&amp;size=110.jpg" /> 
+				
+	<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.2.2 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-6877358-72']);
+	_gaq.push(['_trackPageview'],['_trackPageLoadTime']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]></script>
+<link rel="alternate" type="application/rss+xml" title="Banquets and Catering &raquo; Health Pyramid from 1949 to 2011 Comments Feed" href="http://www.banquetsandcatering.net/banquet-planner/menus/health-pyramid-1949-2011/feed/" />
+<link rel='stylesheet' id='sociablecss-css'  href='http://www.banquetsandcatering.net/wp-content/plugins/sociable/css/sociable.css?ver=3.2.1' type='text/css' media='all' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://www.banquetsandcatering.net/wp-content/plugins/contact-form-7/styles.css?ver=3.0.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.banquetsandcatering.net/wp-includes/js/l10n.js?ver=20101110'></script>
+<script type='text/javascript' src='http://www.banquetsandcatering.net/wp-includes/js/prototype.js?ver=1.6.1'></script>
+<script type='text/javascript' src='http://www.banquetsandcatering.net/wp-includes/js/scriptaculous/wp-scriptaculous.js?ver=1.8.3'></script>
+<script type='text/javascript' src='http://www.banquetsandcatering.net/wp-includes/js/scriptaculous/effects.js?ver=1.8.3'></script>
+<script type='text/javascript' src='http://www.banquetsandcatering.net/wp-content/plugins/lightbox-2/lightbox.js?ver=1.8'></script>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js?ver=3.2.1'></script>
+<script type='text/javascript' src='http://www.banquetsandcatering.net/wp-content/plugins/sociable/js/sociable.js?ver=3.2.1'></script>
+<script type='text/javascript' src='http://www.banquetsandcatering.net/wp-content/plugins/sociable/js/addtofavorites.js?ver=3.2.1'></script>
+<script type='text/javascript' src='http://www.banquetsandcatering.net/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.banquetsandcatering.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.banquetsandcatering.net/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='Banquets and Catering' href='http://www.banquetsandcatering.net/' />
+<link rel='start' title='Why Banquet and Catering is better than Fast Food' href='http://www.banquetsandcatering.net/catering/banquet-catering-fast-food/' />
+<link rel='prev' title='The Amount of Sugar in Your Food' href='http://www.banquetsandcatering.net/banquet-planner/drinks/amount-sugar-food/' />
+<link rel='next' title='US vs the World' href='http://www.banquetsandcatering.net/banquet/world/' />
+<meta name="generator" content="WordPress 3.2.1" />
+<link rel='shortlink' href='http://www.banquetsandcatering.net/?p=379' />
+
+<!-- All in One SEO Pack - Pro Version 1.72 by Michael Torbert of Semper Fi Web Designob_start_detected [-1,-1] -->
+<meta name="description" content="It's 1949 and you see this sign everywhere. It's the health sign for  food provided by the U.S. department of Agriculture. It tells you the" />
+<link rel="canonical" href="http://www.banquetsandcatering.net/banquet-planner/menus/health-pyramid-1949-2011/" />
+<!-- /all in one seo pack Pro Version-->
+<script type="text/javascript">
+//<![CDATA[
+var _wpcf7 = { cached: 1 };
+//]]>
+</script>
+<link rel="stylesheet" href="http://www.banquetsandcatering.net/wp-content/plugins/digg-digg/include/../css/diggdigg-style.css?ver=4.5.3.3" type="text/css" media="screen" />
+	<!-- begin lightbox scripts -->
+	<script type="text/javascript">
+    //<![CDATA[
+    document.write('<link rel="stylesheet" href="http://www.banquetsandcatering.net/wp-content/plugins/lightbox-2/Themes/Black/lightbox.css" type="text/css" media="screen" />');
+    //]]>
+    </script>
+	<!-- end lightbox scripts -->
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style><link rel="stylesheet" href="http://www.banquetsandcatering.net/wp-content/themes/BnC/stylePurple.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Banquets and Catering RSS Feed" href="http://www.banquetsandcatering.net/feed/" />
+<link rel="alternate" type="application/atom+xml" title="Banquets and Catering Atom Feed" href="http://www.banquetsandcatering.net/feed/atom/" />
+<link rel="pingback" href="http://www.banquetsandcatering.net/xmlrpc.php" />
+<!--[if IE 7]>	
+<link rel="stylesheet" type="text/css" media="all" href="http://www.banquetsandcatering.net/wp-content/themes/BnC/iestylePurple.css" />
+<![endif]-->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="http://www.banquetsandcatering.net/wp-content/themes/BnC/ie6stylePurple.css" />
+<script defer type="text/javascript" src="http://www.banquetsandcatering.net/wp-content/themes/BnC/js/pngfix/unitpngfix.js"></script>
+<![endif]-->
+<script type="text/javascript" src="http://www.banquetsandcatering.net/wp-content/themes/BnC/js/superfish.js"></script>
+<script type="text/javascript" src="http://www.banquetsandcatering.net/wp-content/themes/BnC/js/scrollTo.js"></script>
+<script type="text/javascript" src="http://www.banquetsandcatering.net/wp-content/themes/BnC/js/serialScroll.js"></script>
+<script type="text/javascript" src="http://www.banquetsandcatering.net/wp-content/themes/BnC/js/prototype.js"></script>
+<script type="text/javascript" src="http://www.banquetsandcatering.net/wp-content/themes/BnC/js/mailingList.js"></script>
+<script type="text/javascript">
+jQuery(function(){
+jQuery('ul.superfish').superfish();
+});
+</script>
+</head>
+<body>
+<!--This controls pages navigation bar-->
+<div id="pages">
+    <ul class="nav superfish">
+        <li class="page_item"><a href="http://www.banquetsandcatering.net" class="title" title="Banquets and Catering Home">Home</a></li>
+        	<li class="cat-item cat-item-3"><a href="http://www.banquetsandcatering.net/category/banquet/" title="The Comprehensive Resources on Banquet Organizing">Banquet</a>
+<ul class='children'>
+	<li class="cat-item cat-item-13"><a href="http://www.banquetsandcatering.net/category/banquet/corporate-banquet/" title="The Comprehensive Resources on Corporate Banquet Organizing">Corporate Banquet</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://www.banquetsandcatering.net/category/banquet/party/" title="The Comprehensive Resources on Party Organizing">Party</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="http://www.banquetsandcatering.net/category/banquet/picnic/" title="The Comprehensive Resources on Picnic Organizing">Picnic</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="http://www.banquetsandcatering.net/category/banquet/wedding/" title="The Comprehensive Resources on Wedding Organizing">Wedding</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://www.banquetsandcatering.net/category/catering/" title="The Ultimate Resources on Event Catering, Banquet Catering, Wedding Catering, Picnic Catering.">Catering</a>
+<ul class='children'>
+	<li class="cat-item cat-item-17"><a href="http://www.banquetsandcatering.net/category/catering/delivery-and-setup-catering/" title="The Ultimate Resources on Event Delivery &amp; Setup, Banquet Delivery &amp; Setup, Wedding Delivery &amp; Setup, Picnic Delivery &amp; Setup.">Delivery &amp; Setup</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://www.banquetsandcatering.net/category/catering/drop-off-catering/" title="The Ultimate Resources on Event Drop-off Catering, Banquet Drop-off Catering, Wedding Drop-off Catering, Picnic Drop-off Catering.">Drop Off</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="http://www.banquetsandcatering.net/category/catering/full-service-catering/" title="The Ultimate Resources on Event Full Service Catering, Banquet Full Service Catering, Wedding Full Service Catering, Picnic Full Service Catering">Full Service</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://www.banquetsandcatering.net/category/catering/general-catering/" title="The Ultimate Resources on Event Catering, Banquet Catering, Wedding Catering, Picnic Catering">General</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="http://www.banquetsandcatering.net/category/catering/mobile-catering/" title="The Ultimate Resources on Event Mobile Catering, Banquet Mobile Catering, Wedding Mobile Catering, Picnic Mobile Catering">Mobile</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://www.banquetsandcatering.net/category/find-a-banquet-hall/" title="The Comprehensive Resources to find a banquet hall or event venue">Find a Banquet Hall</a>
+<ul class='children'>
+	<li class="cat-item cat-item-36"><a href="http://www.banquetsandcatering.net/category/find-a-banquet-hall/banquet-halls/" title="The Comprehensive Resources and Advice on How to find a banquet hall or event venue">Banquet Halls</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="http://www.banquetsandcatering.net/category/find-a-banquet-hall/hotels-and-resorts/" title="The Comprehensive Resources to find a hotel or resort for banquet and event organizing">Hotels &amp; Resorts</a>
+</li>
+	<li class="cat-item cat-item-38"><a href="http://www.banquetsandcatering.net/category/find-a-banquet-hall/outdoor-venues/" title="The Comprehensive Resources to find outdoor venues for a banquet">Outdoor Venues</a>
+</li>
+	<li class="cat-item cat-item-39"><a href="http://www.banquetsandcatering.net/category/find-a-banquet-hall/yachts-and-boats/" title="The Comprehensive Resources to find yachts and boats for a banquet">Yachts &amp; Boats</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://www.banquetsandcatering.net/category/find-a-caterer/" title="The Comprehensive Resources to find an event caterer">Find a Caterer</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://www.banquetsandcatering.net/category/banquet-photography/" title="The Ultimate Resources on Event Photography, Banquet Photography, Wedding Photography, Picnic Photography">Photography</a>
+<ul class='children'>
+	<li class="cat-item cat-item-34"><a href="http://www.banquetsandcatering.net/category/banquet-photography/event-photographers/" title="The Ultimate Resources on Event Photographers, Banquet Photographers, Wedding Photographers, Picnic Photographers">Event Photographers</a>
+</li>
+	<li class="cat-item cat-item-35"><a href="http://www.banquetsandcatering.net/category/banquet-photography/event-videographers/" title="The Ultimate Resources on Event Videographers, Banquet Videographers, Wedding Videographers, Picnic Videographers">Event Videographers</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://www.banquetsandcatering.net/category/banquet-planner/" title="The Comprehensive Resources For Banquet Planners">Planning</a>
+<ul class='children'>
+	<li class="cat-item cat-item-33"><a href="http://www.banquetsandcatering.net/category/banquet-planner/beauty-salons/" title="Resources, Advice and Directories of Beauty Salons To Go For a Banquet">Beauty Salons</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="http://www.banquetsandcatering.net/category/banquet-planner/banquet-cakes/" title="Resources and Advice on Where to Get a Cake For a Banquet">Cakes</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="http://www.banquetsandcatering.net/category/banquet-planner/banquet-decorations/" title="The Ultimate Resources on Banquet Decorations">Decorations</a>
+	<ul class='children'>
+	<li class="cat-item cat-item-27"><a href="http://www.banquetsandcatering.net/category/banquet-planner/banquet-decorations/floral-decor/" title="The Ultimate Resources on Banquet Floral Decorations">Floral Decor</a>
+</li>
+	<li class="cat-item cat-item-40"><a href="http://www.banquetsandcatering.net/category/banquet-planner/banquet-decorations/banquet-photo-gallery/" title="Showcase Photo Gallery on Banquet Setup and Decorations">Photo Gallery</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="http://www.banquetsandcatering.net/category/banquet-planner/banquet-decorations/theme-designs/" title="The Ultimate Resources on Banquet Theme Designs">Theme Designs</a>
+</li>
+	</ul>
+</li>
+	<li class="cat-item cat-item-24"><a href="http://www.banquetsandcatering.net/category/banquet-planner/drinks/" title="Resources and Advice on Drink Selection for Banquet, Parties, Picnics, Weddings and others">Drinks</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="http://www.banquetsandcatering.net/category/banquet-planner/equipment-rentals/" title="The Ultimate Resources on Banquet Equipment Rentals">Equipment Rentals</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="http://www.banquetsandcatering.net/category/banquet-planner/gift-baskets/" title="Resources and Advice on How and Where to Buy Banquet Gift Baskets">Gift Baskets</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="http://www.banquetsandcatering.net/category/banquet-planner/gowns-and-tuxedos/" title="Resources and Advice on Where and How to Buy or Rent Banquet Gowns and Tuxedos">Gowns &amp; Tuxedos</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="http://www.banquetsandcatering.net/category/banquet-planner/menus/" title="Resources and Advice on Banquet Menus, Party Menus, Picnic Menus, Wedding Menus.">Menus</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="http://www.banquetsandcatering.net/category/banquet-planner/sculptures/" title="Resources and Advice on Where and How To Order or Rent Banquet Sculptures">Sculptures</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://www.banquetsandcatering.net/category/event-transportation/" title="The Ultimate Resources on Event Transportation, Banquet Transportation, Wedding Transportation, Picnic Transportation.">Transportation</a>
+<ul class='children'>
+	<li class="cat-item cat-item-21"><a href="http://www.banquetsandcatering.net/category/event-transportation/charter-buses/" title="The Ultimate Resources on Event Charter Buses, Banquet Charter Buses, Wedding Charter Buses, Picnic Charter Buses.">Charter Buses</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="http://www.banquetsandcatering.net/category/event-transportation/limousines/" title="The Ultimate Resources on Event Limousines, Banquet Limousines, Wedding Limousines, Picnic Limousines.">Limousines</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="http://www.banquetsandcatering.net/category/event-transportation/party-busses/" title="The Ultimate Resources on Event Party Buses, Banquet Party Buses, Wedding Party Buses, Picnic Party Buses.">Party Busses</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://www.banquetsandcatering.net/category/event-transportation/regular-cars/" title="The Ultimate Resources on Event Regular Cars, Banquet Regular Cars, Wedding Regular Cars, Picnic Regular Cars.">Regular Cars</a>
+</li>
+</ul>
+</li>
+    </ul>
+</div>
+<!--End pages navigation-->
+<div id="wrapper2">
+<a href="http://www.banquetsandcatering.net"><img src="http://www.banquetsandcatering.net/wp-content/themes/BnC/images/logo.gif" alt="logo" class="logo" /></a> 
+<div id="container">
+<div id="left-div">
+    <div id="left-inside">
+                        <!--Begin Post-->
+        <div class="post-wrapper">
+            <h1><a href="http://www.banquetsandcatering.net/banquet-planner/menus/health-pyramid-1949-2011/" rel="bookmark" title="Permanent Link to Health Pyramid from 1949 to 2011">
+                Health Pyramid from 1949 to 2011                </a></h1> 
+            <div style="clear: both;"></div>
+            <div style="float:right;padding: 0 0 10px 10px" class="interactive_right"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;text=Health Pyramid from 1949 to 2011&amp;count=vertical&amp;lang=  " style="width:65px; height:65px;"></iframe><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;layout=box_count&amp;show_faces=false&amp;width=65&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:65px; height:65px;" allowTransparency="true"></iframe><script src="http://www.stumbleupon.com/hostedbadge.php?s=5&amp;r=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F"></script></div><div style="width: 585px; height: 70px;">
+<div style="padding: 0px 0px 0pt 0pt; float: left;"><script src="http://digg.com/tools/diggthis.js" type="text/javascript"></script></div>
+<div style="padding: 5px 5px 5pt 5pt; float: left;"><a name="fb_share"></a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
+<div style="padding: 0px 0px 0pt 0pt; float: left;"><script src="http://tweetmeme.com/i/scripts/button.js" type="text/javascript"></script></div>
+<div style="padding: 0px 0px 0pt 0pt; float: left;"><script src="http://platform.linkedin.com/in.js" type="text/javascript"></script><script type="in/share"></script></div>
+<div style="padding: 0px 0px 0pt 0pt; float: left;"><script src="http://www.stumbleupon.com/hostedbadge.php?s=1"></script></div>
+<div style="padding: 0px 0px 0pt 0pt; float: left;"><script src="http://apis.google.com/js/plusone.js" type="text/javascript"></script></div>
+</div>
+<p style="text-align: center;"><a rel="attachment wp-att-380" href="http://www.banquetsandcatering.net/banquet-planner/menus/health-pyramid-1949-2011/attachment/health_1949/"><img class="size-full wp-image-380 aligncenter" title="health_1949" src="http://www.banquetsandcatering.net/wp-content/uploads/2011/06/health_1949.png" alt="" width="558" height="701" /></a></p>
+<p>It&#8217;s 1949 and you see this sign everywhere. It&#8217;s the health sign for  food provided by the U.S. department of Agriculture. It tells you the correct amount of food to eat and the right number of proportions sizes. It&#8217;s old fashion. Well, it&#8217;s 1949. </p>
+<p><a rel="attachment wp-att-382" href="http://www.banquetsandcatering.net/banquet-planner/menus/health-pyramid-1949-2011/attachment/plate/"><img class="alignleft size-full wp-image-382" title="plate" src="http://www.banquetsandcatering.net/wp-content/uploads/2011/06/plate.jpg" alt="" width="650" height="591" /></a></p>
+<p>It&#8217;s 2011 and U.S. department of agriculture releases this plate to tell you the correct amount of food to eat. What a difference sixty two years makes as the new sign looks a lot more modern and doesn&#8217;t contain any information about proper serving numbers, but shows you the correct size that it should fill in within your plate. </p>
+<div class="linkwithin_hook" id="http://www.banquetsandcatering.net/banquet-planner/menus/health-pyramid-1949-2011/"></div><script>
+<!-- //LinkWithinCodeStart
+var linkwithin_site_id = 837883;
+var linkwithin_div_class = "linkwithin_hook";
+//LinkWithinCodeEnd -->
+</script>
+<script src="http://www.linkwithin.com/widget.js"></script>
+<a href="http://www.linkwithin.com/"><img src="http://www.linkwithin.com/pixel.png" alt="Related Posts Plugin for WordPress, Blogger..." style="border: 0" /></a><div class='shareinpost'><ul class="socialwrap row"><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.blogger.com/blog_this.pyra?t&amp;u=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;n=Health+Pyramid+from+1949+to+2011&amp;pli=1" title="Share this post : Health Pyramid from 1949 to 2011 on Blogger" ><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-66px 0px" class="image-32" width="32" alt="blogger"/> <span class="head">Blog this!</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://delicious.com/post?url=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;title=Health+Pyramid+from+1949+to+2011" title="Bookmark this post : Health Pyramid from 1949 to 2011 on Delicious" ><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-198px 0px" class="image-32" width="32" alt="delicious"/> <span class="head">Bookmark on Delicious</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://digg.com/submit?url=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;title=Health+Pyramid+from+1949+to+2011&amp;bodytext=%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AIt%27s+1949+and+you+see+this+sign+everywhere.+It%27s+the+health+sign+for%C2%A0+food+provided+by+the+U.S.+department+of+Agriculture.+It+tells+you+the+correct+amount+of+food+to+eat+and+the+right+number+of+proportions+sizes.+It%27s+old+fashion.+Well%2C+it%27s+1949.+%0D%0A%0D%0A%0D%0A%0D%0AIt%27s+2011+and+U.S.+department+of+agriculture+" title="Digg this post : Health Pyramid from 1949 to 2011" ><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-264px 0px" class="image-32" width="32" alt="digg"/> <span class="head">Digg this post</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;t=Health+Pyramid+from+1949+to+2011" title="Recommend this post : Health Pyramid from 1949 to 2011 on Facebook" ><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-363px 0px" class="image-32" width="32" alt="facebook"/> <span class="head">Recommend on Facebook</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;title=Health+Pyramid+from+1949+to+2011&amp;&amp;summary=%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AIt%27s+1949+and+you+see+this+sign+everywhere.+It%27s+the+health+sign+for%C2%A0+food+provided+by+the+U.S.+department+of+Agriculture.+It+tells+you+the+correct+amount+of+food+to+eat+and+the+right+number+of+proportions+sizes.+It%27s+old+fashion.+Well%2C+it%27s+1949.+%0D%0A%0D%0A%0D%0A%0D%0AIt%27s+2011+and+U.S.+department+of+agriculture+" title="Share this post : Health Pyramid from 1949 to 2011 on Linkedin" ><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-891px 0px" class="image-32" width="32" alt="linkedin"/> <span class="head">Share on Linkedin</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.myspace.com/Modules/PostTo/Pages/?u=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F" title="Share this post : Health Pyramid from 1949 to 2011 via MySpace" ><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1056px 0px" class="image-32" width="32" alt="myspace"/> <span class="head">Share via MySpace</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://promote.orkut.com/preview?nt=orkut.com&amp;du=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;tt=Health+Pyramid+from+1949+to+2011" title="Share this post : Health Pyramid from 1949 to 2011 on Orkut" ><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1221px 0px" class="image-32" width="32" alt="orkut"/> <span class="head">Share on Orkut</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.reddit.com/submit?url=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;title=Health+Pyramid+from+1949+to+2011" title="Share this post : Health Pyramid from 1949 to 2011 on Reddit" ><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1419px 0px" class="image-32" width="32" alt="reddit"/> <span class="head">share via Reddit</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.sphinn.com/share?v=3&amp;u=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;t=Health+Pyramid+from+1949+to+2011" title="Share this post : Health Pyramid from 1949 to 2011 on sphinn" ><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1551px 0px" class="image-32" width="32" alt="sphinn"/> <span class="head">Share this on sphinn</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;title=Health+Pyramid+from+1949+to+2011" title="Share this post : Health Pyramid from 1949 to 2011 with Stumblers" ><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1617px 0px" class="image-32" width="32" alt="stumble"/> <span class="head">Share with Stumblers</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://twitter.com/home/?status=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F" title="Tweet this post : Health Pyramid from 1949 to 2011 on Twitter" ><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1749px 0px" class="image-32"  width="32"  alt="twitter"/> <span class="head">Tweet about it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://buzz.yahoo.com/buzz?targetUrl=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F" title="Buzz up this post : Health Pyramid from 1949 to 2011 " ><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1980px 0px" class="image-32" width="32" alt="yahoo_buzz"/> <span class="head">Buzz it up</span></a></li><li class="iconOnly"><a rel="_self" href="http://www.banquetsandcatering.net/banquet-planner/menus/health-pyramid-1949-2011/feed" title="Follow this post : Health Pyramid from 1949 to 2011 comments"><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="32"  width="32" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1452px 0px" class="image-32"  alt="rss" /> <span class="head">Subscribe to the comments on this post</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.print();" title="Print this post : Health Pyramid from 1949 to 2011 for reading later" ><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-1386px 0px" class="image-32" width="32" alt="print"/> <span class="head">Print for later</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.bookMark('http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F', 'Health+Pyramid+from+1949+to+2011', BrowserDetect.browser);" title="Bookmark this post : Health Pyramid from 1949 to 2011" ><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="32" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-99px 0px" class="image-32" width="32" alt="bookmark"/> <span class="head">Bookmark in Browser</span></a></li><li class="iconOnly"><a rel="_self" href="mailto:?subject=Banquets%20and%20Catering%20:%20Health%20Pyramid%20from%201949%20to%202011&amp;body=here%20is%20a%20link%20to%20a%20site%20I%20really%20like.%20%20%20http://www.banquetsandcatering.net/banquet-planner/menus/health-pyramid-1949-2011/" title="Tell a friend about this post : Health Pyramid from 1949 to 2011 "><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="32"  width="32" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/32/sprite-32.png) no-repeat;padding:0;margin:0;height:32px;width:32px;background-position:-330px 0px" class="image-32"  alt="email" /> <span class="head">Tell a friend</span></a></li></ul><div class="clean"></div> </div><!-- Start Sociable --><div class="sociable"><div class="sociable_tagline"><a class='sociable_tagline' target='_blank' href='http://blogplay.com' style='color:#333333;text-decoration:none'>Be Sociable, Share!</a></div><ul class='clearfix'><li><a title="Twitter" class="option1_32" style="background-position:-288px -32px" rel="nofollow" target="_blank" href="http://twitter.com/intent/tweet?text=Health%20Pyramid%20from%201949%20to%202011%20-%20http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F%20(via%20@sociablesite)"></a></li><li><a title="Facebook" class="option1_32" style="background-position:-96px 0px" rel="nofollow" target="_blank" href="http://www.facebook.com/share.php?u=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;t=Health%20Pyramid%20from%201949%20to%202011"></a></li><li><a title="email" class="option1_32" style="background-position:-160px 0px" rel="nofollow" target="_blank" href="https://mail.google.com/mail/?view=cm&fs=1&to&su=Health%20Pyramid%20from%201949%20to%202011&body=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&ui=2&tf=1&shva=1"></a></li><li><a class="option1_32" style="cursor:pointer;background-position:-128px 0px" rel="nofollow" title="Add to favorites - doesn't work in Chrome"  onClick="javascript:AddToFavorites();"></a></li><li><a title="StumbleUpon" class="option1_32" style="background-position:-224px -32px" rel="nofollow" target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&title=Health%20Pyramid%20from%201949%20to%202011"></a></li><li><a title="Delicious" class="option1_32" style="background-position:-32px 0px" rel="nofollow" target="_blank" href="http://delicious.com/post?url=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;title=Health%20Pyramid%20from%201949%20to%202011&amp;notes=%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AIt%27s%201949%20and%20you%20see%20this%20sign%20everywhere.%20It%27s%20the%20health%20sign%20for%C2%A0%20food%20provided%20by%20the%20U.S.%20department%20of%20Agriculture.%20It%20tells%20you%20the%20correct%20amount%20of%20food%20to%20eat%20and%20the%20right%20number%20of%20proportions%20sizes.%20It%27s%20old%20fashion.%20"></a></li><li><a title="Google Reader" class="option1_32" style="background-position:-224px 0px" rel="nofollow" target="_blank" href="http://www.google.com/reader/link?url=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;title=Health%20Pyramid%20from%201949%20to%202011&amp;srcURL=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;srcTitle=Banquets+and+Catering+"></a></li><li><a title="LinkedIn" class="option1_32" style="background-position:-288px 0px" rel="nofollow" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;title=Health%20Pyramid%20from%201949%20to%202011&amp;source=Banquets+and+Catering+&amp;summary=%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AIt%27s%201949%20and%20you%20see%20this%20sign%20everywhere.%20It%27s%20the%20health%20sign%20for%C2%A0%20food%20provided%20by%20the%20U.S.%20department%20of%20Agriculture.%20It%20tells%20you%20the%20correct%20amount%20of%20food%20to%20eat%20and%20the%20right%20number%20of%20proportions%20sizes.%20It%27s%20old%20fashion.%20"></a></li><li><a title="BlinkList" class="option1_32" style="background-position:0px 0px" rel="nofollow" target="_blank" href="http://www.blinklist.com/index.php?Action=Blink/addblink.php&amp;Url=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;Title=Health%20Pyramid%20from%201949%20to%202011"></a></li><li><a style="cursor:pointer" rel="nofollow" onMouseOut="fixOnMouseOut(document.getElementById('sociable-post-379'), event, 'post-379')" onMouseOver="more(this,'post-379')"><img style='margin-top:9px' src='http://www.banquetsandcatering.net/wp-content/plugins/sociable/images/more.png'></a></li></ul><div onMouseout="fixOnMouseOut(this,event,'post-379')" id="sociable-post-379" style="display:none;">   
+
+    <div style="top: auto; left: auto; display: block;" id="sociable">
+
+
+
+		<div class="popup">
+
+			<div class="content">
+
+				<ul><li style="heigth:32px;width:32px"><a title="Myspace" class="option1_32" style="background-position:0px -32px" rel="nofollow" target="_blank" href="http://www.myspace.com/Modules/PostTo/Pages/?u=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;t=Health%20Pyramid%20from%201949%20to%202011"></a></li><li style="heigth:32px;width:32px"><a title="Digg" class="option1_32" style="background-position:-64px 0px" rel="nofollow" target="_blank" href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;title=Health%20Pyramid%20from%201949%20to%202011&amp;bodytext=%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AIt%27s%201949%20and%20you%20see%20this%20sign%20everywhere.%20It%27s%20the%20health%20sign%20for%C2%A0%20food%20provided%20by%20the%20U.S.%20department%20of%20Agriculture.%20It%20tells%20you%20the%20correct%20amount%20of%20food%20to%20eat%20and%20the%20right%20number%20of%20proportions%20sizes.%20It%27s%20old%20fashion.%20"></a></li><li style="heigth:32px;width:32px"><a title="Reddit" class="option1_32" style="background-position:-128px -32px" rel="nofollow" target="_blank" href="http://reddit.com/submit?url=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;title=Health%20Pyramid%20from%201949%20to%202011"></a></li><li style="heigth:32px;width:32px"><a title="Google Bookmarks" class="option1_32" style="background-position:-192px 0px" rel="nofollow" target="_blank" href="http://www.google.com/bookmarks/mark?op=edit&amp;bkmk=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;title=Health%20Pyramid%20from%201949%20to%202011&amp;annotation=%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AIt%27s%201949%20and%20you%20see%20this%20sign%20everywhere.%20It%27s%20the%20health%20sign%20for%C2%A0%20food%20provided%20by%20the%20U.S.%20department%20of%20Agriculture.%20It%20tells%20you%20the%20correct%20amount%20of%20food%20to%20eat%20and%20the%20right%20number%20of%20proportions%20sizes.%20It%27s%20old%20fashion.%20"></a></li><li style="heigth:32px;width:32px"><a title="HackerNews" class="option1_32" style="background-position:-256px 0px" rel="nofollow" target="_blank" href="http://news.ycombinator.com/submitlink?u=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;t=Health%20Pyramid%20from%201949%20to%202011"></a></li><li style="heigth:32px;width:32px"><a title="MSNReporter" class="option1_32" style="background-position:-352px 0px" rel="nofollow" target="_blank" href="http://reporter.es.msn.com/?fn=contribute&amp;Title=Health%20Pyramid%20from%201949%20to%202011&amp;URL=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;cat_id=6&amp;tag_id=31&amp;Remark=%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AIt%27s%201949%20and%20you%20see%20this%20sign%20everywhere.%20It%27s%20the%20health%20sign%20for%C2%A0%20food%20provided%20by%20the%20U.S.%20department%20of%20Agriculture.%20It%20tells%20you%20the%20correct%20amount%20of%20food%20to%20eat%20and%20the%20right%20number%20of%20proportions%20sizes.%20It%27s%20old%20fashion.%20"></a></li><li style="heigth:32px;width:32px"><a title="Sphinn" class="option1_32" style="background-position:-192px -32px" rel="nofollow" target="_blank" href="http://sphinn.com/index.php?c=post&amp;m=submit&amp;link=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F"></a></li><li style="heigth:32px;width:32px"><a title="Posterous" class="option1_32" style="background-position:-64px -32px" rel="nofollow" target="_blank" href="http://posterous.com/share?linkto=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;title=Health%20Pyramid%20from%201949%20to%202011&amp;selection=%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AIt%27s%201949%20and%20you%20see%20this%20sign%20everywhere.%20It%27s%20the%20health%20sign%20for%C2%A0%20food%20provided%20by%20the%20U.S.%20department%20of%20Agriculture.%20It%20tells%20you%20the%20correct%20amount%20of%20food%20to%20eat%20and%20the%20right%20number%20of%20proportions%20sizes.%20It%27s%20old%20fashion.%20"></a></li><li style="heigth:32px;width:32px"><a title="Tumblr" class="option1_32" style="background-position:-256px -32px" rel="nofollow" target="_blank" href="http://www.tumblr.com/share?v=3&amp;u=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&amp;t=Health%20Pyramid%20from%201949%20to%202011&amp;s=%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0A%0D%0AIt%27s%201949%20and%20you%20see%20this%20sign%20everywhere.%20It%27s%20the%20health%20sign%20for%C2%A0%20food%20provided%20by%20the%20U.S.%20department%20of%20Agriculture.%20It%20tells%20you%20the%20correct%20amount%20of%20food%20to%20eat%20and%20the%20right%20number%20of%20proportions%20sizes.%20It%27s%20old%20fashion.%20"></a></li></ul>			
+
+			</div>        
+
+		  <a style="cursor:pointer" onclick="hide_sociable('post-379',true)" class="close">
+
+
+
+		  <img onclick="hide_sociable('post-379',true)" title="close" src="http://www.banquetsandcatering.net/wp-content/plugins/sociable/images/closelabel.png">
+
+		  </a>
+
+		</div>
+
+	</div> 
+
+  </div></div><div class='sociable' style='float:none'><ul class='clearfix'><li id="Twitter_Counter"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script></li><li id="Facebook_Counter"><iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.banquetsandcatering.net%2Fbanquet-planner%2Fmenus%2Fhealth-pyramid-1949-2011%2F&send=false&layout=button_count&show_faces=false&action=like&colorscheme=light&font" scrolling="no" frameborder="0" style="border:none; overflow:hidden;height:32px;width:100px" allowTransparency="true"></iframe></li><li id="Google_+"><g:plusone annotation="bubble" size="medium"></g:plusone></li><li id="LinkedIn_Counter"><script src="http://platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/Share" data-counter="right"></script></li><li id="StumbleUpon_Counter"><script src="http://www.stumbleupon.com/hostedbadge.php?s=2"></script></li></ul></div><!-- End Sociable -->                        <div style="clear: both;"></div>
+            ﻿<!-- You can start editing here. -->
+<!-- If comments are open, but there are no comments. -->
+<div id="respond">
+    <h3>
+        Leave a Reply    </h3>
+    <div class="cancel-comment-reply"> <small>
+        <a rel="nofollow" id="cancel-comment-reply-link" href="/banquet-planner/menus/health-pyramid-1949-2011/#respond" style="display:none;">Click here to cancel reply.</a>        </small> </div>
+        <form action="http://www.banquetsandcatering.net/wp-comments-post.php" method="post" id="commentform">
+                <p>
+            <input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' />
+            <label for="author"><small>Name
+                (required)                </small></label>
+        </p>
+        <p>
+            <input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' />
+            <label for="email"><small>Mail (will not be published)
+                (required)                </small></label>
+        </p>
+        <p>
+            <input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+            <label for="url"><small>Website</small></label>
+        </p>
+                <!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+        <p>
+            <textarea name="comment-d2d65cbd" id="comment" cols="100%" rows="10" tabindex="4"></textarea><textarea name="comment" style="display:none" rows="1" cols="1"></textarea>
+        </p>
+        <p>
+            <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+            <input type='hidden' name='comment_post_ID' value='379' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+        </p>
+        
+<div id="captchaImgDiv">
+
+<div class="captchaSizeDivLarge"><img id="si_image_com" class="si-captcha" src="http://www.banquetsandcatering.net/wp-content/plugins/si-captcha-for-wordpress/captcha/securimage_show.php?si_form_id=com&amp;prefix=50qaAsnmbrpyVEcg" width="175" height="60" alt="CAPTCHA Image" title="CAPTCHA Image" />
+    <input id="si_code_com" name="si_code_com" type="hidden"  value="50qaAsnmbrpyVEcg" />
+    <div id="si_refresh_com">
+<a href="#" rel="nofollow" title="Refresh Image" onclick="si_captcha_refresh('si_image_com','com','/wp-content/plugins/si-captcha-for-wordpress/captcha','http://www.banquetsandcatering.net/wp-content/plugins/si-captcha-for-wordpress/captcha/securimage_show.php?si_form_id=com&amp;prefix='); return false;">
+      <img class="captchaImgRefresh" src="http://www.banquetsandcatering.net/wp-content/plugins/si-captcha-for-wordpress/captcha/images/refresh.png" width="22" height="20" alt="Refresh Image" onclick="this.blur();" /></a>
+  </div>
+  </div>
+<div id="captchaInputDiv"><input id="captcha_code" name="captcha_code" type="text" value="" tabindex="4"  />
+ <label id="captcha_code_label" for="captcha_code">CAPTCHA Code</label><span class="required"> *</span>
+ </div>
+</div>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d9fe752727" /></p>    </form>
+    </div>
+<div style="clear: both;"></div>
+                    </div>
+            </div>
+</div>
+<!--Begin Sidebar-->
+<div id="sidebar">
+        
+    <div class="sidebar-box">			<div class="textwidget"><div class="sidebar-box">
+        <h2>Find Your Interested Topics</h2>
+        <div style="margin-left: 20px;">
+            <form action="http://www.banquetsandcatering.net/" id="searchform" method="get">
+    <div>
+        <input type="text" id="s" name="s" value=""/>
+        <input type="submit" value="Search" id="searchsubmit"/>
+    </div>
+</form>
+        </div>
+    </div></div>
+		</div><div class="sidebar-box"><h2>Topics</h2>		<ul>
+	<li class="cat-item cat-item-3"><a href="http://www.banquetsandcatering.net/category/banquet/" title="The Comprehensive Resources on Banquet Organizing">Banquet</a>
+</li>
+	<li class="cat-item cat-item-36"><a href="http://www.banquetsandcatering.net/category/find-a-banquet-hall/banquet-halls/" title="The Comprehensive Resources and Advice on How to find a banquet hall or event venue">Banquet Halls</a>
+</li>
+	<li class="cat-item cat-item-33"><a href="http://www.banquetsandcatering.net/category/banquet-planner/beauty-salons/" title="Resources, Advice and Directories of Beauty Salons To Go For a Banquet">Beauty Salons</a>
+</li>
+	<li class="cat-item cat-item-29"><a href="http://www.banquetsandcatering.net/category/banquet-planner/banquet-cakes/" title="Resources and Advice on Where to Get a Cake For a Banquet">Cakes</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://www.banquetsandcatering.net/category/catering/" title="The Ultimate Resources on Event Catering, Banquet Catering, Wedding Catering, Picnic Catering.">Catering</a>
+</li>
+	<li class="cat-item cat-item-21"><a href="http://www.banquetsandcatering.net/category/event-transportation/charter-buses/" title="The Ultimate Resources on Event Charter Buses, Banquet Charter Buses, Wedding Charter Buses, Picnic Charter Buses.">Charter Buses</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://www.banquetsandcatering.net/category/banquet/corporate-banquet/" title="The Comprehensive Resources on Corporate Banquet Organizing">Corporate Banquet</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="http://www.banquetsandcatering.net/category/banquet-planner/banquet-decorations/" title="The Ultimate Resources on Banquet Decorations">Decorations</a>
+</li>
+	<li class="cat-item cat-item-17"><a href="http://www.banquetsandcatering.net/category/catering/delivery-and-setup-catering/" title="The Ultimate Resources on Event Delivery &amp; Setup, Banquet Delivery &amp; Setup, Wedding Delivery &amp; Setup, Picnic Delivery &amp; Setup.">Delivery &amp; Setup</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="http://www.banquetsandcatering.net/category/banquet-planner/drinks/" title="Resources and Advice on Drink Selection for Banquet, Parties, Picnics, Weddings and others">Drinks</a>
+</li>
+	<li class="cat-item cat-item-15"><a href="http://www.banquetsandcatering.net/category/catering/drop-off-catering/" title="The Ultimate Resources on Event Drop-off Catering, Banquet Drop-off Catering, Wedding Drop-off Catering, Picnic Drop-off Catering.">Drop Off</a>
+</li>
+	<li class="cat-item cat-item-28"><a href="http://www.banquetsandcatering.net/category/banquet-planner/equipment-rentals/" title="The Ultimate Resources on Banquet Equipment Rentals">Equipment Rentals</a>
+</li>
+	<li class="cat-item cat-item-34"><a href="http://www.banquetsandcatering.net/category/banquet-photography/event-photographers/" title="The Ultimate Resources on Event Photographers, Banquet Photographers, Wedding Photographers, Picnic Photographers">Event Photographers</a>
+</li>
+	<li class="cat-item cat-item-35"><a href="http://www.banquetsandcatering.net/category/banquet-photography/event-videographers/" title="The Ultimate Resources on Event Videographers, Banquet Videographers, Wedding Videographers, Picnic Videographers">Event Videographers</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://www.banquetsandcatering.net/category/featured-articles/" title="View all posts filed under Featured Articles">Featured Articles</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://www.banquetsandcatering.net/category/find-a-banquet-hall/" title="The Comprehensive Resources to find a banquet hall or event venue">Find a Banquet Hall</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://www.banquetsandcatering.net/category/find-a-caterer/" title="The Comprehensive Resources to find an event caterer">Find a Caterer</a>
+</li>
+	<li class="cat-item cat-item-27"><a href="http://www.banquetsandcatering.net/category/banquet-planner/banquet-decorations/floral-decor/" title="The Ultimate Resources on Banquet Floral Decorations">Floral Decor</a>
+</li>
+	<li class="cat-item cat-item-18"><a href="http://www.banquetsandcatering.net/category/catering/full-service-catering/" title="The Ultimate Resources on Event Full Service Catering, Banquet Full Service Catering, Wedding Full Service Catering, Picnic Full Service Catering">Full Service</a>
+</li>
+	<li class="cat-item cat-item-14"><a href="http://www.banquetsandcatering.net/category/catering/general-catering/" title="The Ultimate Resources on Event Catering, Banquet Catering, Wedding Catering, Picnic Catering">General</a>
+</li>
+	<li class="cat-item cat-item-31"><a href="http://www.banquetsandcatering.net/category/banquet-planner/gift-baskets/" title="Resources and Advice on How and Where to Buy Banquet Gift Baskets">Gift Baskets</a>
+</li>
+	<li class="cat-item cat-item-32"><a href="http://www.banquetsandcatering.net/category/banquet-planner/gowns-and-tuxedos/" title="Resources and Advice on Where and How to Buy or Rent Banquet Gowns and Tuxedos">Gowns &amp; Tuxedos</a>
+</li>
+	<li class="cat-item cat-item-37"><a href="http://www.banquetsandcatering.net/category/find-a-banquet-hall/hotels-and-resorts/" title="The Comprehensive Resources to find a hotel or resort for banquet and event organizing">Hotels &amp; Resorts</a>
+</li>
+	<li class="cat-item cat-item-22"><a href="http://www.banquetsandcatering.net/category/event-transportation/limousines/" title="The Ultimate Resources on Event Limousines, Banquet Limousines, Wedding Limousines, Picnic Limousines.">Limousines</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="http://www.banquetsandcatering.net/category/banquet-planner/menus/" title="Resources and Advice on Banquet Menus, Party Menus, Picnic Menus, Wedding Menus.">Menus</a>
+</li>
+	<li class="cat-item cat-item-16"><a href="http://www.banquetsandcatering.net/category/catering/mobile-catering/" title="The Ultimate Resources on Event Mobile Catering, Banquet Mobile Catering, Wedding Mobile Catering, Picnic Mobile Catering">Mobile</a>
+</li>
+	<li class="cat-item cat-item-38"><a href="http://www.banquetsandcatering.net/category/find-a-banquet-hall/outdoor-venues/" title="The Comprehensive Resources to find outdoor venues for a banquet">Outdoor Venues</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://www.banquetsandcatering.net/category/banquet/party/" title="The Comprehensive Resources on Party Organizing">Party</a>
+</li>
+	<li class="cat-item cat-item-20"><a href="http://www.banquetsandcatering.net/category/event-transportation/party-busses/" title="The Ultimate Resources on Event Party Buses, Banquet Party Buses, Wedding Party Buses, Picnic Party Buses.">Party Busses</a>
+</li>
+	<li class="cat-item cat-item-40"><a href="http://www.banquetsandcatering.net/category/banquet-planner/banquet-decorations/banquet-photo-gallery/" title="Showcase Photo Gallery on Banquet Setup and Decorations">Photo Gallery</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://www.banquetsandcatering.net/category/banquet-photography/" title="The Ultimate Resources on Event Photography, Banquet Photography, Wedding Photography, Picnic Photography">Photography</a>
+</li>
+	<li class="cat-item cat-item-12"><a href="http://www.banquetsandcatering.net/category/banquet/picnic/" title="The Comprehensive Resources on Picnic Organizing">Picnic</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://www.banquetsandcatering.net/category/banquet-planner/" title="The Comprehensive Resources For Banquet Planners">Planning</a>
+</li>
+	<li class="cat-item cat-item-19"><a href="http://www.banquetsandcatering.net/category/event-transportation/regular-cars/" title="The Ultimate Resources on Event Regular Cars, Banquet Regular Cars, Wedding Regular Cars, Picnic Regular Cars.">Regular Cars</a>
+</li>
+	<li class="cat-item cat-item-30"><a href="http://www.banquetsandcatering.net/category/banquet-planner/sculptures/" title="Resources and Advice on Where and How To Order or Rent Banquet Sculptures">Sculptures</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="http://www.banquetsandcatering.net/category/banquet-planner/banquet-decorations/theme-designs/" title="The Ultimate Resources on Banquet Theme Designs">Theme Designs</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://www.banquetsandcatering.net/category/event-transportation/" title="The Ultimate Resources on Event Transportation, Banquet Transportation, Wedding Transportation, Picnic Transportation.">Transportation</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="http://www.banquetsandcatering.net/category/banquet/wedding/" title="The Comprehensive Resources on Wedding Organizing">Wedding</a>
+</li>
+	<li class="cat-item cat-item-39"><a href="http://www.banquetsandcatering.net/category/find-a-banquet-hall/yachts-and-boats/" title="The Comprehensive Resources to find yachts and boats for a banquet">Yachts &amp; Boats</a>
+</li>
+		</ul>
+</div></div>
+</div>
+<!--End Sidebar-->
+<!--Begin Footer-->
+<div id="footer"> <p id="copyright"> Copyright &copy; 2012 Banquets &amp; Catering | <a href="/terms-of-use/" alt="Terms of Use">Terms of Use</a> | <a href="/privacy-policy/" alt="Privacy Policy">Privacy Policy</a> | <a href="/contact-us/" alt="Contact Us">Contact Us</a></p> </div>
+<div style="clear: both;"></div>
+</div>
+<div><div id="follow" class="right"><ul class="tab down"><li class="follow"><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif"  alt="follow:"/><span>follow:</span></li><li class="iconOnly"><a rel="nofollow me" target="_blank" href="http://www.banquetsandcatering.net/feed/rss/" title="RSS" ><img src="http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/images/blank.gif" height="24"  width="24" style="background: transparent url(http://www.banquetsandcatering.net/wp-content/plugins/share-and-follow/default/24/sprite-24.png) no-repeat;padding:0;margin:0;height:24px;width:24px;background-position:-1100px 0px"  alt="RSS"/> <span class="head">RSS</span></a></li></ul></div><script type='text/javascript' src='http://w.sharethis.com/button/buttons.js?ver=3.2.1'></script>
+<script type='text/javascript' src='http://www.banquetsandcatering.net/wp-content/plugins/contact-form-7/jquery.form.js?ver=2.52'></script>
+<script type='text/javascript' src='http://www.banquetsandcatering.net/wp-content/plugins/contact-form-7/scripts.js?ver=3.0.1'></script>
+<script type='text/javascript' src='http://www.banquetsandcatering.net/wp-content/plugins/si-captcha-for-wordpress/captcha/si_captcha.js?ver=1.0'></script>
+<script type="text/javascript">
+//<![CDATA[
+var si_captcha_styles = "\
+<!-- begin SI CAPTCHA Anti-Spam - comment form style -->\
+<style type='text/css'>\
+div#captchaImgDiv { display:block; }\
+.captchaSizeDivSmall { width:175px; height:45px; padding-top:10px; }\
+.captchaSizeDivLarge { width:250px; height:60px; padding-top:10px; }\
+img#si_image_com,#si_image_reg,#si_image_log,#si_image_side_login { border-style:none; margin:0; padding-right:5px; float:left; }\
+.captchaImgRefresh { border-style:none; margin:0; vertical-align:bottom; }\
+div#captchaInputDiv { display:block; padding-top:15px; padding-bottom:5px; }\
+label#captcha_code_label { margin:0; }\
+input#captcha_code { width:65px; }\
+</style>\
+<!-- end SI CAPTCHA Anti-Spam - comment form style -->\
+";
+jQuery(document).ready(function($) {
+$('head').append(si_captcha_styles);
+});
+//]]>
+</script>
+</div>
+<!--End Footer-->
+</body>
+</html>

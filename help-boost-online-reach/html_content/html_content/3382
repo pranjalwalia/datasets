@@ -1,0 +1,1253 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+
+  
+  
+  
+      
+  
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js"> 
+  <head>
+  
+          <!-- Mobile redirector -->
+<script type="text/javascript">
+(function(){
+  
+  // get redirector to work in development
+  var tmp = /^(www\.)?([\w\.]+)?refinery29\.(\w+)(:\d+)?$/.exec(window.location.host.toLowerCase()),
+      
+      // sub domain
+      sub = tmp[2],
+      
+      // top level domain
+      tld = tmp[3],
+      
+      // cookie domain for mobile_referrer cookie
+      cookie_domain = 'refinery29.'+tld,
+      
+      // domain for mobile redirect
+      mobile_domain = 'm.'+(sub ? sub : '')+cookie_domain,
+      
+      // ignore direct traffic referrers
+      r29p = new RegExp('^(https?:\/\/)((www|m|touch)\.)'+sub+'refinery29\.'+tld, 'i'),
+      
+      // validate referrer before overriding
+      r29v = function(d){
+        return !!(d && String(d).length && !String(d).match(r29p));
+      };
+
+  // quirksmode.org: JavaScript - Cookies
+  // http://www.quirksmode.org/js/cookies.html
+  
+  var cookie_create = function(name, value, days){
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      var expires = '; expires='+date.toGMTString();
+    }
+    else {
+      var expires = '';
+    }
+    var val = name+'='+value+expires+'; path=/; domain=.'+cookie_domain+';';
+    document.cookie = val;
+  },
+  
+  cookie_delete = function(name){
+    cookie_create(name,'',-1);
+  },
+  
+  cookie_read = function(name){
+    var nameEQ = name + '=';
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') {
+        c = c.substring(1,c.length);
+      }
+      if (c.indexOf(nameEQ) == 0) {
+        var val = c.substring(nameEQ.length,c.length);
+        return val;
+      }
+    }
+  	return null;
+  },
+  
+  show_mobile_link = function(){
+    var show_link = function(){
+      document.getElementById('mobile-link').style.display = 'block';
+    }
+    if (typeof window.onload != 'function') {
+      window.onload = show_link;
+    }
+    else {
+      var prev_onload = window.onload;
+      window.onload = function(){
+        prev_onload && prev_onload();
+        show_mobile_link();
+      };
+    }
+  };
+  
+  href = document.location.href.toString();
+  
+  // ignore mobile for thirty days
+  if (href.match(/mobile=false/i)) {
+    cookie_create('force_web', '1', 30);
+    show_mobile_link();
+    return;
+  }
+  
+  // URL param force mobile ver
+  var force_mobile = href.match(/mobile=true/i),
+
+      // Cookie to force web ver
+      ignore_mobile = cookie_read('force_web') && cookie_read('force_web') === '1',
+
+      // UA detection for mobile
+      is_mobile = navigator.userAgent.match(/iphone|ipod|android/i);
+      
+      if(navigator.userAgent.match(/ipad/i)) { 
+        // facebook user-agent stupidly calls iPad an iPhone
+        is_mobile = '';
+      }
+  
+  // forcing mobile on non-mobile browser or mobile browser and not forcing desktop
+  if (force_mobile || (is_mobile && !ignore_mobile)) {
+  
+    force_mobile && cookie_delete('force_web');
+    
+    // Setup for GA in case cookie fails
+    var referrer = encodeURIComponent(document.referrer);
+    var blankReferrer = (referrer == '') ? '&utm_source=unknown-source&utm_medium=unknown-medium&utm_campaign=Empty%2BReferrer' : '';
+    var searchURL = '?garef=' + referrer + blankReferrer + '&' + location.search.slice(1);
+
+    
+    // if we have valid referrer, write referrer cookie
+    if (r29v(document.referrer)) {
+      cookie_create('mobile_referrer', referrer, 1);
+    }
+    
+    // redirect
+    var mobile_location = 'http://'+mobile_domain+location.pathname.replace(/^(.*)\/slideshow/, '$1')+searchURL;
+    window.location = mobile_location;
+    return;
+  }
+  
+  // show mobile link if we didn't redirect
+  is_mobile && show_mobile_link();
+  
+})();
+</script>
+<!--/Mobile redirector -->
+    
+  
+    <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+    <script type="text/javascript">var _dc_tile = 1;var _dc_ts=_sf_startpt=(new Date()).getTime();WRInitTime=(new Date()).getTime();</script>
+    <link rel="stylesheet" href="http://static3.refinery29.com/blog/828386/css/compiled/style.css" media="print, screen" />
+    <link rel="alternate" type="application/rss+xml" title="Refinery29" href="http://www.refinery29.com/index.xml" />
+    
+  	<!--[if lt IE 9]>
+  		<link rel="stylesheet" type="text/css" href="http://static2.refinery29.com/blog/828386/css/compiled/ie.css" />
+      <script src="http://static3.refinery29.com/blog/828386/js/html5.js"></script>
+    <![endif]-->
+
+    
+    <script type="text/javascript" src="http://static1.refinery29.com/blog/828386/js/jquery.js"></script>
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/828386/js/jquery/plugins/jcarousel/jcarousel.js"></script>
+    <!-- Pinterest Hover Pin -->  
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/828386/js/jquery/plugins/jquery.autopin.js"></script>  
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/828386/js/r29.js"></script>
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/828386/js/api.js"></script>
+
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/828386/js/r29.clip.js"></script>
+    <script type="text/javascript" src="http://static3.refinery29.com/blog/828386/js/jquery/jquery.form.js"></script>
+
+
+    <!-- Avoiding Flash of Unstyled Text -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    
+
+    
+    
+          <script type="text/javascript" src="http://static3.refinery29.com/blog/828386/js/socket.io/socket.io.js"></script>
+    
+  
+    <title itemprop="name">Eyeliner Tutorial - Summer Eyeliner Trends</title> 
+    
+    <!-- Meta -->
+    
+  <!-- Entry Meta -->
+	<meta name="description" content="Learn how to create two gorgeous, summer-ready looks with your eyeliner. Refinery29.com teaches you how to do two stunning liner looks in this video." itemprop="description">
+
+ 
+<meta name="keywords"    content="eyeliner, makeup, video tutorial, cat-eye, liner, raychel wade, cheek to chic, makeup how-to" itemprop="keywords"> 
+
+  <!-- Facebook Meta -->
+  <meta property="og:title"       content="Learn How To Get Creative With Your Liner" itemprop="name" />
+  <meta property="og:type"        content="article"/>
+  <meta property="og:url"         content="http://www.refinery29.com/eyeliner-tutorial-video"/>
+  <meta property="og:image"       content="http://static3.refinery29.com/bin/entry/040/300x/244181/summer-eyeliner-video.jpg" itemprop="image" />
+  <meta property="og:site_name"   content="Refinery29" itemprop="publisher" />
+  <meta property="og:description" content="The eyeliner is the unsung hero of your makeup bag. With just a flick of your wrist, it can help you create a multitude of makeup masterpieces. But, lately, if you&#039;re like us, you may have been suffering from some serious cat-eye fatigue.  
+
+That&#039;s why we asked makeup artist Raychel Wade of&hellip;" />
+
+
+<link rel="canonical" href="http://www.refinery29.com/eyeliner-tutorial-video" />
+
+<!-- Slideshow Meta -->
+
+        
+<!-- Pagination Meta -->
+
+	
+
+
+        
+    
+  </head>
+    
+  <body>
+    <div id="container">
+    <div id="skin"></div><!--need this for background skinz-->
+      <div class="inner">
+      
+          
+<div class="ad ad-pre-header" iframe-code="http://ad.doubleclick.net/adi/r29.ny.oao/news/video;s1=news;s2=video;s3=;sponsorship=;pagetype=entry;test=;pageid=eyeliner-tutorial-video;tags=;pos=top;tile=1;dcopt=;sz=728x90, 970x66;" iframe-size="728x90, 970x66"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.ny.oao/news/video;s1=news;s2=video;s3=;sponsorship=;pagetype=entry;test=;pageid=eyeliner-tutorial-video;tags=;pos=top;tile=1;dcopt=;sz=728x90, 970x66;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.ny.oao/news/video;s1=news;s2=video;s3=;sponsorship=;pagetype=entry;test=;pageid=eyeliner-tutorial-video;tags=;pos=top;tile=1;dcopt=;sz=728x90, 970x66;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.ny.oao/news/video;s1=news;s2=video;s3=;sponsorship=;pagetype=entry;test=;pageid=eyeliner-tutorial-video;tags=;pos=top;tile=1;dcopt=;sz=728x90, 970x66;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+				 	<div id="header" > <!-- Header -->
+
+      
+
+  <!-- Information Bar -->
+  <nav>
+  
+          
+    
+    
+    
+          
+    
+  
+    <ul class="features">
+      <li><a href="http://www.refinery29.com" data-track="nav:r29" class="r29">R29</a></li>
+      <!-- Empty divs for gradient-ed vertical lines :/ -->
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com" data-track="nav:read" class="read">Read</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com/video" data-track="nav:watch" class="watch active">Watch</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://reserve.refinery29.com" data-track="nav:shop" class="shop">Shop</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com/find/stores" data-track="nav:find" class="find">Find</a></li>
+      <li><div>&nbsp;</div></li>
+    </ul>
+    
+    
+    
+    <ul class="tooltips">
+  <li class="new_browse">
+    <p><span>New</span> Browse better with our new Refinery29 shortcuts!</p>
+    <div class="close"></div>
+  </li>
+  
+</ul>
+
+    
+    <div class="search" id="search-box">
+  <form method="get" action="/search">
+    <input type="text" name="q" value="" placeholder="Search" data-placeholder="Search" autocomplete="off" />
+    
+    
+  </form>
+  <div class="flap"></div>
+</div>
+
+    
+  </nav>
+  
+  
+  
+  
+  
+  
+  <script type="text/javascript">
+    
+      var R29 = R29 || {};
+    
+    
+    R29.BASE_URL = "refinery29.com";
+    
+  </script>
+      
+</div> <!-- /Header -->
+
+  <ul class="video-header">
+  <li><a href="/video">R29 TV</a></li>
+  
+  
+            
+      
+    
+    <li class="fashion"><a href="/video/fashion" class="cat">Fashion</a></li>
+    
+            
+              
+      
+    
+    <li class="beauty selected"><a href="/video/beauty" class="cat">Beauty</a></li>
+    
+            
+      
+    
+    <li class="news"><a href="/video/news" class="cat">News</a></li>
+    
+  
+</ul>
+
+
+
+				
+				
+        <div id="content"> 
+        
+                      <div class="col_3">
+              
+  <div id="video">
+    <!-- Entry -->
+    <div class="col_2">
+      <!-- Sponsored Headline eMeta -->
+      
+      
+
+      <aside class="social-sidebar">
+
+    <!-- R29 CLIP -->
+      <div class="r29-clip disabled" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'R29ClipSidebar', 'clipped']);">
+      <p class="count">0 clips</p>
+      <div class="button"></div>
+    </div>
+  
+  
+  <!-- FB -->
+  <div class="facebook" itemprop="interactionCount">
+    <fb:like layout="box_count" href="http://www.refinery29.com/eyeliner-tutorial-video" send="false" width="50" ref="sidebar"></fb:like>
+  </div>
+  
+  <!-- Twitter -->
+  <div class="twitter" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'TwitterSidebar', 'tweet']);">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-text="Learn How To Get Creative With Your Liner" data-url="http://www.refinery29.com/eyeliner-tutorial-video" data-count="vertical" data-via="refinery29">&nbsp;</a>
+  </div>
+
+  <!-- Pinterest -->
+  <div class="pinterest" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'Pinterest', 'pinned']);">
+    <a href="http://pinterest.com/pin/create/button/?url=http://www.refinery29.com/eyeliner-tutorial-video&media=http://static2.refinery29.com/bin/entry/b69/x/244181/summer-eyeliner-video.jpg&description=Learn How To Get Creative With Your Liner" class="pin-it-button" count-layout="vertical">Pin It</a>
+  </div>
+  
+  <!-- Stumbleupon -->
+  <div class="stumbleupon" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'StumbleSidebar', 'stumble']);">
+    <iframe src="http://badge.stumbleupon.com/badge/embed/5/?url=http://www.refinery29.com/eyeliner-tutorial-video" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:60px;" allowTransparency="true"></iframe>
+  </div>
+  
+</aside>
+
+<div class="entry-header">
+  
+  
+	
+  <div class="category"><!--<a href="/video/beauty" data-track="entry:header:Beauty">-->Beauty<!--</a>--></div>
+  
+  <div class="deliminator"></div>
+  
+  <div class="date">
+          May 23, 2012 7:20 AM
+      <!-- <span itemprop="datePublished">2012-05-23 07:20:00</span> -->
+    
+  </div>
+  <div class="asset-info">
+      <!-- Facebook Like -->
+      <div class="facebook" itemprop="interactionCount">
+        <fb:like layout="button_count" href="http://www.refinery29.com/eyeliner-tutorial-video" width="90" ref="entrypage"></fb:like>
+      </div>
+      <!-- Twitter Share -->
+      <div class="twitter" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'TwitterSolo', 'tweet']);">
+        <a href="http://twitter.com/share" class="twitter-share-button" data-text="Learn How To Get Creative With Your Liner" data-url="http://www.refinery29.com/eyeliner-tutorial-video" data-count="horizontal" data-via="refinery29">&nbsp;</a>
+      </div>
+    <!-- Comment Count -->
+    <div class="comment-count" itemprop="interactionCount">
+      <!-- ben 1 -->
+              <a href="/eyeliner-tutorial-video#disqus_thread" data-url="http://www.refinery29.com/eyeliner-tutorial-video" class="comments"><span class="comment-count">0</span></a>
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+ 
+  <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+  <div class="video-embed center">
+    <object id="myExperience" class="BrightcoveExperience">
+      <param name="bgcolor" value="#FFFFFF" />
+      <param name="wmode" value="transparent" />
+      <param name="width" value="620"  />
+      <param name="height" value="380" />
+      <param name="playerID" value="605729455001" />
+      <param name="playerKey" value="AQ~~,AAAAjP0iSQE~,RJXHfxnZT2hEQ1Q5LfvYmoGCQR0lWUAT" />
+      <param name="isVid" value="true" />
+      <param name="isUI" value="true" />
+      <param name="dynamicStreaming" value="true" />
+      <param name="videoSmoothing" value="true" />
+      <param name="autoStart" value="true" />
+      <param name="@videoPlayer" value="1648589766001" />  
+    </object>
+  </div>
+
+<div class="entry">
+  <h1><a href="/eyeliner-tutorial-video">Learn How To Get Creative With Your Liner</a></h1>
+  <p class="byline">
+
+      By 
+    
+    <a href="/author/us" rel="author"><span itemprop="author">Us</span></a>,     
+          Video by
+    
+    <a href="/author/ryan-hines" rel="author"><span itemprop="author">Ryan Hines</span></a>
+</p>
+
+  <div class="body">
+    The eyeliner is the unsung hero of your makeup bag. With just a flick of your wrist, it can help you create a multitude of makeup masterpieces. But, lately, if you're like us, you may have been suffering from some serious cat-eye fatigue.<p></p> 
+
+That's why we asked makeup artist Raychel Wade of <a href="http://cheektochic.com/" target="_blank" rel="nofollow">Cheek to Chic</a> to show us <strong>two fun new looks you can do with those prettifying pencils</strong>. Watch this easy tutorial to learn her tricks for upgrading your eye makeupm stat.<br><br><em>
+  <small>Makeup by <a href="http://cheektochic.com/" target="_blank" rel="nofollow">Raychel Wade</a>, Model <a href="http://hellojunevintage.com/" target="_blank" rel="nofollow">Keshawna Boone</a></small>
+</em>
+  </div>
+  
+
+  <div class="related">
+  <h3 class="headline"><span>You May Also Like...</span></h3>
+  
+  
+  		
+  
+    		      
+
+
+  
+  
+
+
+<article id="entry-31758" class="preview">
+  <div class="img">
+    
+    <aside class="category"><div></div><a href="/video/beauty">Beauty</a></aside>
+    <a href="/caviar-nails" class="img">
+      <img src="http://static3.refinery29.com/bin/entry/2fb/200x130/236142/caviarnails01.jpg" alt="caviarnails01" width="200" height="130"  />
+    </a>
+  </div>
+  <a href="/caviar-nails">
+    <h2 class="italic">Beauty Test Lab: Caviar Nail Art</h2>
+  </a>
+    <div class="talking-about">
+  		<a href="/caviar-nails#disqus_thread" data-url="http://www.refinery29.com/caviar-nails" class="talking"><span class="comment-count">0</span></a><a href="/caviar-nails"> Talking About This</a>
+    </div>
+</article>
+      
+      
+      
+    
+  
+    		      
+
+
+  
+  
+
+
+<article id="entry-31488" class="preview">
+  <div class="img">
+    
+    <aside class="category"><div></div><a href="/video/beauty">Beauty</a></aside>
+    <a href="/curling-hair-flat-iron" class="img">
+      <img src="http://static3.refinery29.com/bin/entry/398/200x130/228468/curls-flat-iron-tutorial.jpg" alt="curls-flat-iron-tutorial" width="200" height="130"  />
+    </a>
+  </div>
+  <a href="/curling-hair-flat-iron">
+    <h2 class="italic">R29 TV: How To Create Curls With A Flat Iron</h2>
+  </a>
+    <div class="talking-about">
+  		<a href="/curling-hair-flat-iron#disqus_thread" data-url="http://www.refinery29.com/curling-hair-flat-iron" class="talking"><span class="comment-count">0</span></a><a href="/curling-hair-flat-iron"> Talking About This</a>
+    </div>
+</article>
+      
+      
+      
+    
+  
+    		      
+
+
+  
+  
+
+
+<article id="entry-31061" class="preview">
+  <div class="img">
+    
+    <aside class="category"><div></div><a href="/everywhere/beauty/new-beauty-products">New Beauty Products</a></aside>
+    <a href="/product-reviews-curling-iron-beachwaver" class="img">
+      <img src="http://static3.refinery29.com/bin/entry/e11/200x130/211857/product-reviews-beachwaver-opener.jpg" alt="product-reviews-beachwaver-opener" width="200" height="130"  />
+    </a>
+  </div>
+  <a href="/product-reviews-curling-iron-beachwaver">
+    <h2 class="italic">Beauty Test Lab: Rotating Curling Iron</h2>
+  </a>
+    <div class="talking-about">
+  		<a href="/product-reviews-curling-iron-beachwaver#disqus_thread" data-url="http://www.refinery29.com/product-reviews-curling-iron-beachwaver" class="talking"><span class="comment-count">0</span></a><a href="/product-reviews-curling-iron-beachwaver"> Talking About This</a>
+    </div>
+</article>
+      
+      
+      
+    
+  
+    		
+  
+        
+
+  
+  
+</div>
+</div>
+      
+      <!-- Entry Footer -->    
+      <div id="comments">
+      <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    
+        var disqus_shortname = 'refinery'; // required: replace example with your forum shortname
+        var disqus_developer = 1;
+        var disqus_url = 'http://www.refinery29.com/eyeliner-tutorial-video';
+        
+        $(function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('body')[0]).appendChild(dsq);
+        });
+        
+    </script>
+  
+</div>
+    </div>
+    
+        <!-- Sidebar -->
+    <div class="col beta sidebar">
+      
+<div class="ad ad-sidebar-border" iframe-code="http://ad.doubleclick.net/adi/r29.ny.oao/news/video;s1=news;s2=video;s3=;sponsorship=;pagetype=entry;test=;pageid=eyeliner-tutorial-video;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;" iframe-size="300x250,300x600,300x1050"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.ny.oao/news/video;s1=news;s2=video;s3=;sponsorship=;pagetype=entry;test=;pageid=eyeliner-tutorial-video;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.ny.oao/news/video;s1=news;s2=video;s3=;sponsorship=;pagetype=entry;test=;pageid=eyeliner-tutorial-video;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.ny.oao/news/video;s1=news;s2=video;s3=;sponsorship=;pagetype=entry;test=;pageid=eyeliner-tutorial-video;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+      <div class="popular">
+  <h3 class="headline"><span>Most Popular</span></h3>
+      <a href="/curling-hair-flat-iron">
+      <img src="http://static3.refinery29.com/bin/entry/595/120x80/228468/curls-flat-iron-tutorial.jpg" alt="curls-flat-iron-tutorial" width="120" height="80"  />
+      <div></div>
+      <h2 class="italic">R29 TV: How To Create Curls With A Flat Iron</h2>
+    </a>
+      <a href="/caviar-nails">
+      <img src="http://static3.refinery29.com/bin/entry/ef2/120x80/236142/caviarnails01.jpg" alt="caviarnails01" width="120" height="80"  />
+      <div></div>
+      <h2 class="italic">Beauty Test Lab: Caviar Nail Art</h2>
+    </a>
+      <a href="/trade-secrets-kimberly-ovitz">
+      <img src="http://static3.refinery29.com/bin/entry/0c1/120x80/238303/kimberlyopener.jpg" alt="kimberlyopener" width="120" height="80"  />
+      <div></div>
+      <h2 class="italic">Designer Kim Ovitz's Words Of Wisdom For Aspiring Creatives (Like You)</h2>
+    </a>
+      <a href="/fifth-avenue-street-style">
+      <img src="http://static1.refinery29.com/bin/entry/ff9/120x80/232228/opener.jpg" alt="opener" width="120" height="80"  />
+      <div></div>
+      <h2 class="italic">Street Style Video: What's Fresh On 5th Avenue</h2>
+    </a>
+      <a href="/smoky-eye-video-tutorial">
+      <img src="http://static2.refinery29.com/bin/public/96e/120x80/118840/smoky-eye-video-how-to.jpg" alt="smoky-eye-video-how-to" width="120" height="80"  />
+      <div></div>
+      <h2 class="italic">Insta-Makeover: The Two-Step Smoky Eye</h2>
+    </a>
+  
+</div>
+    </div>
+    
+  </div>
+
+
+              
+              <div class="clear"></div>
+              
+            </div>
+          
+
+        </div> <!-- /Content -->
+    
+        <!-- Footer -->
+<div id="footer">
+  <img src="http://static2.refinery29.com/blog/828386/images/refinery29-logo.png" width="200" height="24" alt="Refinery29" />
+
+	<p><strong>&copy;2012 Refinery29. All Rights Reserved.</strong></p>
+	<ul>
+		<li><a href="/">Home</a> | </li>
+		<li><a href="http://www.refinery29.com/about">About</a> | </li>
+				<li><a href="http://www.refinery29.com/about">Contact</a> | </li>
+		
+		<li><a href="http://www.refinery29.com/careers">Careers</a> | </li>
+		<li><a href="http://www.refinery29.com/about">Advertise</a> | </li>
+		<li><script type="text/javascript">
+<!--
+document.write(String.fromCharCode(60,97,32,104,114,101,102,61,34,109,97,105,108,116,111,58,102,101,101,100,98,97,99,107,64,114,101,102,105,110,101,114,121,50,57,46,99,111,109,34,32,99,108,97,115,115,61,39,101,109,97,105,108,39,62,71,111,116,32,65,32,84,105,112,63,60,47,97,62));
+-->
+</script> | </li>
+		<li><a href="http://www.refinery29.com/signup/everywhere?source=footer&medium=organic">Sign Up</a> | </li>
+		  		<li><a href="http://www.refinery29.com/privacy">Privacy Policy</a> | </li>
+  		<li><a href="http://www.refinery29.com/terms-and-conditions">Terms and Conditions</a> | </li>
+		
+		<li><a href="http://the-rig.refinery29.com">The Rig</a> | </li>
+		<li><a href="http://www.refinery29.com/index.xml">RSS</a></li>
+	</ul>
+	
+	
+	<div id="mobile-link"><a href="/?mobile=true">Refinery29 Mobile</a></div>
+	
+</div>
+
+                
+      </div> <!-- /Inner -->
+      
+    </div> <!-- /Container -->
+
+    <!-- Comscore -->
+<script type="text/javascript">
+  var r29cookie = document.cookie;
+  var val;
+  
+  if (r29cookie.indexOf("r29comstore=") != -1)
+   {
+      i = r29cookie.indexOf("r29comstore=");
+      s = r29cookie.substring(i + 12);
+      j = s.indexOf(";");
+      if (j == -1)
+      {
+          val = s;
+      }
+      else {
+          val = s.substring(0, j);
+      }
+  } else {
+      val = Math.floor(Math.random() * 12345678);
+      var date = new Date();
+      date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+      document.cookie = 'r29comstore=' + val + '; expires=' + date.toGMTString() + '; path=/';
+  }
+  
+  var currentUrl = self.location.url;
+  document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb": "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+
+</script>
+<script type="text/javascript"> 
+  COMSCORE.beacon({ c1:2, c2:"7395029",c3:"www.refinery29.com", c4:currentUrl, c5:"", c6:"", c15: val });
+</script>
+<noscript>
+  <img src = "http://b.scorecardresearch.com/p?c1=2&amp;c2=7395029&amp;c3=www.refinery29.com&amp;c4=http://www.refinery29.com/&amp;c5=&amp;c6=&amp;c15=C67BD3C1&amp;cj=1" alt="Comscore" />
+</noscript>
+<!-- /Comscore -->
+<!-- Google Analytics -->
+<script type="text/javascript">
+  
+  var _gaq = _gaq || [];
+    
+  // break up host into app, subdomain and tld
+  var tmp = /^([^\.]+\.)([\w\.]+)?refinery29\.(\w+)(:\d+)?$/.exec(window.location.host.toLowerCase()),
+    
+      // application
+      app = tmp[1] ? tmp[1] : 'www',
+      
+      // subdomain
+      sub = tmp[2] ? tmp[2] : '',
+      
+      // top level domain
+      tld = tmp[3] ? tmp[3] : 'com';
+  
+  _gaq.push(['_setAccount', 'UA-315022-1']);
+  
+  _gaq.push(['_setDomainName', '.refinery29.' + tld]);
+
+  
+  
+  _gaq.push(['_setCustomVar',
+    1,                   // This custom var is set to slot #1.  Required parameter.
+    'Category',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'video\/beauty', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+   
+   
+  _gaq.push(['_setCustomVar',
+    2,                   // This custom var is set to slot #2.  Required parameter.
+    'Publication Date',     // The name acts as a kind of category for the user activity.  Required parameter.
+    '2012-05-23', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  
+  
+  _gaq.push(['_setCustomVar',
+    3,                   // This custom var is set to slot #3.  Required parameter.
+    'Author',// The name acts as a kind of category for the user activity.  Required parameter.
+    'Us, Ryan Hines', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  _gaq.push(['_setCustomVar',
+    4,                   // This custom var is set to slot #4.  Required parameter.
+    'Entry Type',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'VIDEO', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+
+   
+  _gaq.push(['_setCustomVar', //USE THIS  R29.cookie.get('R29_UID');
+    5,                   // This custom var is set to slot #5.  Required parameter.
+    'Log-in Status',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'Not Logged In', // This value of the custom variable.  Required parameter.
+    2                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+   
+  _gaq.push(['_trackEvent',
+    'Navigation Click', // category of activity
+    $(this).attr('data-track'),
+    'new-york:news:video', // Action
+    ,
+    true
+  ]);
+  
+  _gaq.push(['_trackPageview']);
+   
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- /Google Analytics -->
+
+<!-- Quantcast -->
+<script type="text/javascript">
+_qoptions={ qacct:"p-fesXMHo90Ka_A" };
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+  <img src="http://pixel.quantserve.com/pixel/p-fesXMHo90Ka_A.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- /Quantcast -->
+    <div id="js-cont"></div> 
+
+<!-- Facebook -->
+<div id="fb-root"></div> 
+<script type="text/javascript">
+
+  window.fbAsyncInit = function() {
+  
+    FB.init({ appId: '155023867867753', status: true, cookie: true, xfbml: false});
+    
+    /* Check if the user is NOT logged into R29, but IS logged into Facebook.  Fix it */
+    if (R29.url.param.getVar('fb') && !R29.user.token() && FB.getSession()) { //We have some sort of session, we *may* be logged in.
+      FB.getLoginStatus(function(response) {
+        if(response.status == 'connected') {
+          return document.location = 'https://welcome.refinery29.com/register?from=http%3A%2F%2Fwww.refinery29.com%2Feyeliner-tutorial-video&amp;sig=a63a5&amp;app=blog&amp;fb=1';
+        }    
+      });      
+    }
+        
+    //FACEBOOK LOGIN
+    $('a.fb_button, a.r29_fb_button').live('click', function() {
+      R29.FBLoginPopup();
+      return false;
+    });
+    
+    if (typeof window.fbAsyncOnInit == "function") {
+      window.fbAsyncOnInit();
+    }
+    
+    /* GOOGLE ANALYTICS */
+
+    FB.Event.subscribe('edge.create', function(targetUrl, fb_ref) {
+    	if (fb_ref._attr.ref == "homepage"){
+    		_gaq.push(['_trackEvent', 'FacebookIndex', 'like']);
+    	}
+    	else if (fb_ref._attr.ref == "entrypage"){
+    		_gaq.push(['_trackEvent', 'FacebookSolo', 'like']);
+    	}
+    	else if (fb_ref._attr.ref == "sidebar"){
+    		_gaq.push(['_trackEvent', 'FacebookSidebar', 'like']);
+    	}
+      _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
+    });
+    
+    FB.Event.subscribe('edge.remove', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'unlike', targetUrl]);
+    });
+    
+    FB.Event.subscribe('message.send', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'send', targetUrl]);
+    });
+    
+       
+  };
+  
+  R29.FBLoginPopup = function () {
+
+    FB.login(function(response) {
+    
+      if (response.session) {
+        //They *may* have given us perms, but who knows.
+        return document.location = 'https://welcome.refinery29.com/connect/fb?from=http%3A%2F%2Fwww.refinery29.com%2Feyeliner-tutorial-video&amp;sig=a63a5&amp;app=blog&amp;fb=1';
+      } else {
+        //Oh well, something is wrong, let's try the normal login
+        return document.location = 'https://welcome.refinery29.com/register?from=http%3A%2F%2Fwww.refinery29.com%2Feyeliner-tutorial-video&amp;sig=a63a5&amp;app=blog&amp;fb=1';
+      }
+      
+     },{ scope: 'email,offline_access,publish_stream,publish_actions' } );
+  }
+  
+  
+</script>
+
+<script type="text/javascript">
+  //
+  
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</script>
+<!-- /Facebook -->
+
+<!-- Twitter -->
+<script type="text/javascript">
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+
+  
+  //START GOOGLE ANALYTICS TWITTER TRACKING
+  function trackTwitter(intent_event) {
+    if (intent_event) {
+      var opt_pagePath;
+      if (intent_event.target && intent_event.target.nodeName == 'IFRAME') {
+            opt_target = extractParamFromUri(intent_event.target.src, 'url');
+      }
+      _gaq.push(['_trackSocial', 'twitter', 'tweet', opt_pagePath]);
+    }
+  }
+
+  //Wrap event bindings - Wait for async js to load
+  twttr.ready(function (twttr) {
+    //event bindings
+    twttr.events.bind('tweet', trackTwitter);
+  });
+  
+	function extractParamFromUri(uri, paramName) {
+	  if (!uri) {
+	    return;
+	  }
+	  var regex = new RegExp('[\\?&#]' + paramName + '=([^&#]*)');
+	  var params = regex.exec(uri);
+	  if (params != null) {
+	    return unescape(params[1]);
+	  }
+	  return;
+	}
+	//END GOOGLE ANALYTICS TWITTER TRACKING
+
+</script>
+<!-- /Twitter -->
+
+<!-- Pinterest -->
+  <script type="text/javascript">
+  (function() {
+      window.PinIt = window.PinIt || { loaded:false };
+      if (window.PinIt.loaded) return;
+      window.PinIt.loaded = true;
+      function async_load(){
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          if (window.location.protocol == "https:")
+              s.src = "https://assets.pinterest.com/js/pinit.js";
+          else
+              s.src = "http://assets.pinterest.com/js/pinit.js";
+          var x = document.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(s, x);
+      }
+      if (window.attachEvent)
+          window.attachEvent("onload", async_load);
+      else
+          window.addEventListener("load", async_load, false);
+  })();
+  </script>
+<!-- /Pinterest -->
+
+
+<!-- Disqus -->
+
+<script type="text/javascript">
+  var disqus_shortname = 'refinery';
+  var disqus_developer = 1;
+  
+
+var DISQUSWIDGETS;
+var disqus_domain;
+var disqus_shortname;
+if (typeof DISQUSWIDGETS == "undefined") {
+    DISQUSWIDGETS = (function () {
+        var d = {},
+            a = (document.getElementsByTagName("HEAD")[0] || document.getElementsByTagName("BODY")[0]),
+            c = 0,
+            f = {},
+            e = {
+                identifier: 1,
+                url: 2,
+                slug: 3
+            };
+
+        function b(i) {
+            var h, k;
+
+            function j(l) {
+                return i.hasAttribute ? i.hasAttribute(l) : i.getAttribute(l) !== null
+            }
+            
+            if (j("data-disqus-identifier")) {
+                h = e.identifier;
+                k = i.getAttribute("data-disqus-identifier")
+            } else {
+            
+                if (j("data-url")) {
+                    h = e.url;
+                    k = i.getAttribute("data-url")
+                } else if (j("data-disqus-slug")) {
+                    h = e.slug;
+                    k = i.getAttribute("data-disqus-slug")
+                } else {
+                    h = e.url;
+                    k = i.href.replace("#disqus_thread", "")
+                }
+                
+            }
+            f[c++] = {
+                element: i,
+                type: h,
+                value: k
+            }
+        }
+        function g(k) {
+            var j = document.getElementsByTagName("A");
+            for (var h = 0; h < j.length; h++) {
+                if (j[h].href.indexOf("#disqus_thread") >= 0) {
+                    k(j[h])
+                }
+            }
+        }
+        d.domain = "disqus.com";
+        d.forum = "";
+        d.getCount = function () {
+            var m, h, k, j;
+            var l = [],
+                o = 0,
+                i = 10;
+
+            function n(q, p) {
+                return encodeURIComponent(q) + "=" + encodeURIComponent(p.type) + "," + encodeURIComponent(p.value)
+            }
+            g(b);
+            for (m in f) {
+                if (f.hasOwnProperty(m)) {
+                    l.push(n(m, f[m]))
+                }
+            }
+            k = l.slice(o, i);
+            while (k.length > 0) {
+                j = document.createElement("script");
+                j.type = "text/javascript";
+                j.async = true;
+                j.src = "http://" + d.domain + "/forums/" + d.forum + "/count.js?q=1&" + k.join("&");
+                a.appendChild(j);
+                o += 10;
+                i += 10;
+                k = l.slice(o, i)
+            }
+        };
+        d.displayCount = function (j) {
+            var m, h, n, l;
+            for (var k = 0; k < j.counts.length; k++) {
+                m = j.counts[k];
+                h = f[m.uid];
+                if (h) {
+                    if (m.comments === 0) {
+                        n = j.text.comments.zero
+                    } else {
+                        if (m.comments == 1) {
+                            n = j.text.comments.one
+                        } else {
+                            n = j.text.comments.multiple
+                        }
+                    }
+                    l = n.replace("{num}", m.comments);
+                    if (j.showReactions) {
+                        n = "";
+                        if (m.reactions === 0) {
+                            n = j.text.reactions.zero
+                        } else {
+                            if (m.reactions == 1) {
+                                n = j.text.reactions.one
+                            } else {
+                                n = j.text.reactions.multiple
+                            }
+                        }
+                        if (n !== "") {
+                            l += " " + j.text.and + " " + n.replace("{num}", m.reactions)
+                        }
+                    }
+                    h.element.innerHTML = l
+                }
+            }
+        };
+        return d
+    }())
+}(function () {
+    if (typeof disqus_domain != "undefined") {
+        DISQUSWIDGETS.domain = disqus_domain
+    }
+    DISQUSWIDGETS.forum = disqus_shortname;
+    DISQUSWIDGETS.getCount()
+}());
+
+ 
+  
+</script>
+
+<!-- /Disqus -->
+
+<!-- R29 Schtufff -->
+<script type="text/javascript">
+
+$(function() {
+
+  // Variables
+  var tabs = $('div.top-five > ul > li');
+  var top5 = $('div.top-five > div');
+    
+  // On Click
+  $(tabs).click(function() {
+    
+    $(tabs).removeClass("active");
+    $(this).addClass("active");
+    
+    $(top5).hide();
+    var activeTab = $(this).find("a").attr("href");
+    $(activeTab).show();
+    
+    return false;
+  });
+  
+  
+  // Hot Carousel
+  $("#hot-carousel li").show();
+  $("#hot-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  auto: 6,
+  itemFallbackDimension: 280,
+  initCallback: 
+  function (carousel) {
+    $('.control div.slide-btn', carousel.container).bind('click', function() {
+      carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_id')));
+      $('.control div',carousel.container).removeClass('selected');
+      $(this).addClass('selected');
+      return false;
+    });
+    $('.control div.next', carousel.container).bind('click', function() {
+      carousel.next();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+    $('.control div.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+  },
+  itemVisibleInCallback: function(carousel, item, idx, state) {
+    $('.control div',carousel.container).removeClass('selected');
+    $('.control div[image_id='+idx+']',carousel.container).addClass('selected');  
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+
+  // Category Carousel
+  
+  $("#category-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  itemFallbackDimension: 562,
+  initCallback: 
+  function (carousel) {
+    $('.control a.next', carousel.container).bind('click', function() {
+      carousel.next();
+      return false;
+    });
+    $('.control a.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      return false;
+    });
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+  
+  // Hot Category Carousel
+  $("#category-hot-carousel li").show();
+  $("#category-hot-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  auto: 6,
+  itemFallbackDimension: 608,
+  initCallback: 
+  function (carousel) {
+    $('.control div.slide-btn', carousel.container).bind('click', function() {
+      carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_id')));
+      $('.control div',carousel.container).removeClass('selected');
+      $(this).addClass('selected');
+      return false;
+    });
+    $('.control div.next', carousel.container).bind('click', function() {
+      carousel.next();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+    $('.control div.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+  },
+  itemVisibleInCallback: function(carousel, item, idx, state) {
+    $('.control div',carousel.container).removeClass('selected');
+    $('.control div[image_id='+idx+']',carousel.container).addClass('selected');  
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+
+
+  // Related Videos Carousel
+  
+/*
+  $("#video-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  itemFallbackDimension: 562,
+  initCallback: 
+  function (carousel) {
+    $('.control img.next', carousel.container).bind('click', function() {
+      carousel.next();
+      return false;
+    });
+    $('.control img.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      return false;
+    });
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+*/
+  
+  //You know where the bottom line of the container shows while the page is loading, I hate it
+  $('#container .inner').css('border-bottom', '1px solid #ccc');
+  
+});
+
+</script>
+
+    <script type="text/javascript">
+  
+  var _chartbeat_loaded = false;
+  
+  $(function() {
+   
+    if (_chartbeat_loaded) return; 
+    
+    _chartbeat_loaded = true;
+    
+    var _sf_async_config={ uid:3552,domain:"refinery29.com" };
+    R29.remote.include_js("//a248.e.akamai.net/chartbeat.download.akamai.com/102508/js/chartbeat.js");
+      
+  });
+</script>
+          <!-- Crazy Egg -->
+<script type="text/javascript" src="//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/5055.js"></script>
+<!-- /Crazy Egg -->
+    
+    
+    
+    <!-- Internal Stats -->
+<script type="text/javascript">
+
+      R29_STAT_DATA = $.extend({ app:'blog' },R29.url.param.getUTM());
+  
+  
+  try {
+    R29.stats.send([['user_page_load',R29_STAT_DATA, ((new Date()).getTime() - _sf_startpt)]]);
+  } catch (e) { };
+      
+</script>
+<!-- /Internal Stats -->
+    
+    
+    
+    
+<script>
+try {
+    R29.stats.send([['user_page_view',{
+      app:  'blog',
+      page: 'entry',
+      entry_id: 31924, 
+      market_id: 1, 
+      category_id: [662,486], 
+      author_id: [2,975]
+    }]]);
+  } catch (e) { };
+</script>  
+
+  </body>
+<!-- Served in 256ms by web02.prod.refinery29.net at Wed, 23 May 2012 07:37:51 -0400 -->
+<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://d1ros97qkrwjf5.cloudfront.net/33/eum/rum.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrf2","beacon-1.newrelic.com","9aa3407800",298763,"b1cHZBcEW0dZVRZbXVYdMEIMSkNVShkQV1RRXABCHFcMG1lGEl5bW1MRWQoLGlVIRhEdUFRdAh8NEVFbW0VNW1xcVx0eFQ1F",0,254,new Date().getTime()]);</script>
+</html>

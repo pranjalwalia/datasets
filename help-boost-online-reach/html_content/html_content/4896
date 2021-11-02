@@ -1,0 +1,1765 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js"> 
+  <head>
+  
+          <!-- Mobile redirector -->
+<script type="text/javascript">
+(function(){
+  
+  // get redirector to work in development
+  var tmp = /^(www\.)?([\w\.]+)?refinery29\.(\w+)(:\d+)?$/.exec(window.location.host.toLowerCase()),
+      
+      // sub domain
+      sub = tmp[2],
+      
+      // top level domain
+      tld = tmp[3],
+      
+      // cookie domain for mobile_referrer cookie
+      cookie_domain = 'refinery29.'+tld,
+      
+      // domain for mobile redirect
+      mobile_domain = 'm.'+(sub ? sub : '')+cookie_domain,
+      
+      // ignore direct traffic referrers
+      r29p = new RegExp('^(https?:\/\/)((www|m|touch)\.)'+sub+'refinery29\.'+tld, 'i'),
+      
+      // validate referrer before overriding
+      r29v = function(d){
+        return !!(d && String(d).length && !String(d).match(r29p));
+      };
+
+  // quirksmode.org: JavaScript - Cookies
+  // http://www.quirksmode.org/js/cookies.html
+  
+  var cookie_create = function(name, value, days){
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      var expires = '; expires='+date.toGMTString();
+    }
+    else {
+      var expires = '';
+    }
+    var val = name+'='+value+expires+'; path=/; domain=.'+cookie_domain+';';
+    document.cookie = val;
+  },
+  
+  cookie_delete = function(name){
+    cookie_create(name,'',-1);
+  },
+  
+  cookie_read = function(name){
+    var nameEQ = name + '=';
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') {
+        c = c.substring(1,c.length);
+      }
+      if (c.indexOf(nameEQ) == 0) {
+        var val = c.substring(nameEQ.length,c.length);
+        return val;
+      }
+    }
+  	return null;
+  },
+  
+  show_mobile_link = function(){
+    var show_link = function(){
+      document.getElementById('mobile-link').style.display = 'block';
+    }
+    if (typeof window.onload != 'function') {
+      window.onload = show_link;
+    }
+    else {
+      var prev_onload = window.onload;
+      window.onload = function(){
+        prev_onload && prev_onload();
+        show_mobile_link();
+      };
+    }
+  };
+  
+  href = document.location.href.toString();
+  
+  // ignore mobile for thirty days
+  if (href.match(/mobile=false/i)) {
+    cookie_create('force_web', '1', 30);
+    show_mobile_link();
+    return;
+  }
+  
+  // URL param force mobile ver
+  var force_mobile = href.match(/mobile=true/i),
+
+      // Cookie to force web ver
+      ignore_mobile = cookie_read('force_web') && cookie_read('force_web') === '1',
+
+      // UA detection for mobile
+      is_mobile = navigator.userAgent.match(/iphone|ipod|android/i);
+      
+      if(navigator.userAgent.match(/ipad/i)) { 
+        // facebook user-agent stupidly calls iPad an iPhone
+        is_mobile = '';
+      }
+  
+  // forcing mobile on non-mobile browser or mobile browser and not forcing desktop
+  if (force_mobile || (is_mobile && !ignore_mobile)) {
+  
+    force_mobile && cookie_delete('force_web');
+    
+    // Setup for GA in case cookie fails
+    var referrer = encodeURIComponent(document.referrer);
+    var blankReferrer = (referrer == '') ? '&utm_source=unknown-source&utm_medium=unknown-medium&utm_campaign=Empty%2BReferrer' : '';
+    var searchURL = '?garef=' + referrer + blankReferrer + '&' + location.search.slice(1);
+
+    
+    // if we have valid referrer, write referrer cookie
+    if (r29v(document.referrer)) {
+      cookie_create('mobile_referrer', referrer, 1);
+    }
+    
+    // redirect
+    var mobile_location = 'http://'+mobile_domain+location.pathname.replace(/^(.*)\/slideshow/, '$1')+searchURL;
+    window.location = mobile_location;
+    return;
+  }
+  
+  // show mobile link if we didn't redirect
+  is_mobile && show_mobile_link();
+  
+})();
+</script>
+<!--/Mobile redirector -->
+    
+  
+    <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+    <script type="text/javascript">var _dc_tile = 1;var _dc_ts=_sf_startpt=(new Date()).getTime();WRInitTime=(new Date()).getTime();</script>
+    <link rel="stylesheet" href="http://static3.refinery29.com/blog/be97a9/css/compiled/style.css" media="print, screen" />
+    <link rel="alternate" type="application/rss+xml" title="Refinery29" href="http://www.refinery29.com/index.xml" />
+    
+  	<!--[if lt IE 9]>
+  		<link rel="stylesheet" type="text/css" href="http://static2.refinery29.com/blog/be97a9/css/compiled/ie.css" />
+      <script src="http://static3.refinery29.com/blog/be97a9/js/html5.js"></script>
+    <![endif]-->
+
+          <script type="text/javascript" src="http://cdn.onswipe.com/synapse/on.js?usr=refinery29" id="onswipe_synapse"></script>
+    
+    <script type="text/javascript" src="http://static1.refinery29.com/blog/be97a9/js/jquery.js"></script>
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/be97a9/js/jquery/plugins/jcarousel/jcarousel.js"></script>
+    <!-- Pinterest Hover Pin -->  
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/be97a9/js/jquery/plugins/jquery.autopin.js"></script>  
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/be97a9/js/r29.js"></script>
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/be97a9/js/api.js"></script>
+
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/be97a9/js/r29.clip.js"></script>
+    <script type="text/javascript" src="http://static3.refinery29.com/blog/be97a9/js/jquery/jquery.form.js"></script>
+
+
+    <!-- Avoiding Flash of Unstyled Text -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    
+
+    
+    
+          <script type="text/javascript" src="http://static3.refinery29.com/blog/be97a9/js/socket.io/socket.io.js"></script>
+    
+  
+    <title itemprop="name">
+			Marble Nails DIY - Miami Nail Art
+	
+</title> 
+    
+    <!-- Meta -->
+    
+  
+  
+   <!-- month of beauty -->
+
+  
+  <!-- Entry Meta -->
+	<meta name="description" content="Get Nailed shows us a super simple way to make marble nails out of saran wrap!" itemprop="description">
+
+ 
+<meta name="keywords"    content="saran wrap nails, nails DIY, DIY nail art, miami nails, chelsea get nailed, easy nail art, marble nails" itemprop="keywords"> 
+
+  <!-- Facebook Meta -->
+  <meta property="og:title"       content="DIY Saran Wrap Nails For A Perfect, Easy Miami Mani" itemprop="name" />
+  <meta property="og:type"        content="article"/>
+  <meta property="og:url"         content="http://www.refinery29.com/marble-nails-diy"/>
+  <meta property="og:image"       content="http://static3.refinery29.com/bin/entry/6dd/300x/234617/getnailed.jpg" itemprop="image" />
+  <meta property="og:site_name"   content="Refinery29" itemprop="publisher" />
+  <meta property="og:description" content="
+Maybe you feel like you have two left hands (or right!) when it comes to experimenting with nail art. Or maybe you just can&#039;t come up with weird enough ideas to emblazon on your paws. Never fear, because this simple (and we do mean simple) nail art DIY courtesy of mani maven Get Nailed is a cinch&hellip;" />
+
+
+<link rel="canonical" href="http://www.refinery29.com/marble-nails-diy" />
+
+<!-- Slideshow Meta -->
+
+        
+<!-- Pagination Meta -->
+
+	
+
+  
+
+        
+    
+  </head>
+    
+  <body>
+    <div id="container">
+    <div id="skin"></div><!--need this for background skinz-->
+      <div class="inner">
+      
+                
+				         	<div id="header" > <!-- Header -->
+
+      
+
+  <!-- Information Bar -->
+  <nav>
+  
+          
+    
+    
+    
+          
+          
+    
+  
+    <ul class="features">
+      <li><a href="http://www.refinery29.com" data-track="nav:r29" class="r29">R29</a></li>
+      <!-- Empty divs for gradient-ed vertical lines :/ -->
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com" data-track="nav:read" class="read active">Read</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com/video" data-track="nav:watch" class="watch">Watch</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://reserve.refinery29.com" data-track="nav:shop" class="shop">Shop</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com/find/stores" data-track="nav:find" class="find">Find</a></li>
+      <li><div>&nbsp;</div></li>
+    </ul>
+    
+    
+    
+    <ul class="tooltips">
+  <li class="new_browse">
+    <p><span>New</span> Browse better with our new Refinery29 shortcuts!</p>
+    <div class="close"></div>
+  </li>
+  
+</ul>
+
+    
+    <div class="search" id="search-box">
+  <form method="get" action="/search">
+    <input type="text" name="q" value="" placeholder="Search" data-placeholder="Search" autocomplete="off" />
+    
+    
+  </form>
+  <div class="flap"></div>
+</div>
+
+    
+  </nav>
+  
+      <!-- Banner Bar -->
+    <div class="banner">
+      <!-- Edition Background -->
+                  <a href="/miami" class="logo miami" data-track="header:logo"></a>
+            
+    </div>
+  
+  
+  
+      <!-- Editions Navigation -->
+    <ul class="editions">
+                        <li class="everywhere"><a  href="http://www.refinery29.com/" data-track="header:everywhere">Everywhere</a></li>
+        
+                        <li class="new-york"><a  href="http://www.refinery29.com/new-york" data-track="header:new-york">New York</a></li>
+        
+                        <li class="los-angeles"><a  href="http://www.refinery29.com/los-angeles" data-track="header:los-angeles">Los Angeles</a></li>
+        
+                        <li class="chicago"><a  href="http://www.refinery29.com/chicago" data-track="header:chicago">Chicago</a></li>
+        
+                        <li class="san-francisco"><a  href="http://www.refinery29.com/san-francisco" data-track="header:san-francisco">San Francisco</a></li>
+        
+                        <li class="washington-dc"><a  href="http://www.refinery29.com/washington-dc" data-track="header:washington-dc">Washington, D.C.</a></li>
+        
+              
+                        <li class="miami"><a  class="active" href="http://www.refinery29.com/miami" data-track="header:miami">Miami</a></li>
+        
+              
+              
+      
+    </ul>
+    
+    <div class="clear"></div>
+    
+    <!-- Subnavigation -->
+      
+      
+      <ul class="categories miami"> <!-- Categories -->
+                    <li class="news
+                              
+                              
+              "><a href="http://www.refinery29.com/miami/news" data-track="header:category:miami:news">News</a>
+                            <ul>
+                <!-- Sub-categories -->
+                                  <li><a href="http://www.refinery29.com/festival-tracker" data-track="header:news:festival-tracker">Festival Tracker</a></li>
+                
+                                  <li><a href="http://www.refinery29.com/miami/news/art-basel" data-track="header:subcategory:miami:art-basel">Art Basel</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/news/beauty-news" data-track="header:subcategory:miami:beauty-news">Beauty News</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/news/drinking-and-dining" data-track="header:subcategory:miami:drinking-and-dining">Drinking &amp; Dining</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/news/fashion-news" data-track="header:subcategory:miami:fashion-news">Fashion News</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/news/special-features" data-track="header:subcategory:miami:special-features">Special Features</a></li>
+                
+              </ul>
+              
+              
+            </li>
+                    <li class="fashion
+                              
+                              
+              "><a href="http://www.refinery29.com/miami/fashion" data-track="header:category:miami:fashion">Fashion</a>
+                            <ul>
+                <!-- Sub-categories -->
+                
+                                  <li><a href="http://www.refinery29.com/miami/fashion/college-fashion" data-track="header:subcategory:miami:college-fashion">College Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/designers" data-track="header:subcategory:miami:designers">Designers</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/diy-and-tips" data-track="header:subcategory:miami:diy-and-tips">Diy And Tips</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/fashion-trends" data-track="header:subcategory:miami:fashion-trends">Fashion Trends</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/lookbooks" data-track="header:subcategory:miami:lookbooks">Lookbooks</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/models" data-track="header:subcategory:miami:models">Models</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/my-style" data-track="header:subcategory:miami:my-style">My Style</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/spring-fashion" data-track="header:subcategory:miami:spring-fashion">Spring Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/street-fashion" data-track="header:subcategory:miami:street-fashion">Street Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/summer-fashion" data-track="header:subcategory:miami:summer-fashion">Summer Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/fashion/winter-fashion" data-track="header:subcategory:miami:winter-fashion">Winter Fashion</a></li>
+                
+              </ul>
+              
+              
+            </li>
+                    <li class="shopping
+                              
+                              
+              "><a href="http://www.refinery29.com/miami/shopping" data-track="header:category:miami:shopping">Shopping</a>
+                            <ul>
+                <!-- Sub-categories -->
+                                  <li><a href="http://reserve.refinery29.com/" data-track="header:subcategory:miami:reserve">Reserve: Shop Our Store</a></li>
+                  <li><a href="http://www.refinery29.com/find/stores/miami" data-track="header:shopping:find-stores-we-love:miami">Stores We Love</a></li>
+                
+                                  <li><a href="http://www.refinery29.com/miami/shopping/hot-new-products" data-track="header:subcategory:miami:hot-new-products">Hot New Products</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/shopping/hot-sales" data-track="header:subcategory:miami:hot-sales">Hot Sales</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/shopping/online-deals" data-track="header:subcategory:miami:online-deals">Online Deals</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/shopping/outfits" data-track="header:subcategory:miami:outfits">Outfits</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/shopping/shopping-guides" data-track="header:subcategory:miami:shopping-guides">Shopping Guides</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/shopping/store-news" data-track="header:subcategory:miami:store-news">Store News</a></li>
+                
+              </ul>
+              
+              
+            </li>
+                    <li class="beauty
+                               active selected
+                              
+              "><a href="http://www.refinery29.com/miami/beauty" data-track="header:category:miami:beauty">Beauty</a>
+                            <ul>
+                <!-- Sub-categories -->
+                
+                                  <li><a href="http://www.refinery29.com/miami/beauty/diy-and-tips" data-track="header:subcategory:miami:diy-and-tips">Diy And Tips</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/beauty/hair-trends" data-track="header:subcategory:miami:hair-trends">Hair Trends</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/beauty/makeup-trends" data-track="header:subcategory:miami:makeup-trends">Makeup Trends</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/beauty/nail-trends" data-track="header:subcategory:miami:nail-trends">Nail Trends</a></li>
+                                  <li><a href="http://www.refinery29.com/miami/beauty/new-beauty-products" data-track="header:subcategory:miami:new-beauty-products">New Beauty Products</a></li>
+                
+              </ul>
+              
+              
+            </li>
+        
+      </ul>
+      
+    
+  
+  <script type="text/javascript">
+    
+      var R29 = R29 || {};
+    
+    
+    R29.BASE_URL = "refinery29.com";
+    
+  </script>
+      
+</div> <!-- /Header -->
+
+				
+								    				  <!-- Top Ad, Signup, Facebook -->
+<div class="top-ad">
+  
+    	
+  
+  
+      
+<div class="ad ad-728x90" iframe-code="http://ad.doubleclick.net/adi/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;" iframe-size="728x90, 970x66"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+  
+  
+  <div class="ribbon-tail-left"></div>
+
+  <!-- Signup -->
+<div class="widget">
+   
+  
+  
+  <a href="/signup/miami?source=sitearrow&amp;medium=organic" class="signup miami" alt="Sign Up Now!"></a>
+  <div class="fblike">
+    <fb:like href="http://www.facebook.com/refinery29" show_faces="false" width="220" height="28"></fb:like>
+  </div>
+</div>
+
+
+</div>
+
+  				
+  				
+  				
+				
+				
+        <div id="content"> 
+        
+          					<!-- LEFT -->
+					<div class="col_2">
+						
+  <!-- CACHE d65fc - ttl: 180 -->    <!-- Mini Signup Module on Entry Pages: For Once -->
+          <!-- Lil Mini Signup Module -->
+<div class="signup-mini" style="display:none;">
+  <div class="folded-corner"></div>
+  <img src="http://static1.refinery29.com/blog/be97a9/images/signup/sample-email.png" width="195" height="163" alt="Get Your Free Daily Newsletter!" class="left" />
+  <h4>Get Your Free <br>Daily Newsletter!</h4>
+  <p>The freshest fashion, shopping, lifestyle news, beauty tips, and local deals you'll ever need!</p>
+  
+  <form action="/signup/miami?source=sitebox&medium=organic" method="POST">
+  
+    <input type="email" name="email" required placeholder="Enter your Email Address" data-placeholder="Enter your Email Address">
+    
+    <input type="hidden" name="email_lists[everywhere]" value="true">
+          <input type="hidden" name="email_lists[miami]" value="true">
+    
+      
+    <input type="submit" name="submit" value="Sign Up" data-track="signup-mini:submit" />
+  
+  
+  </form>
+
+  <a href="" class="close" data-track="signup-mini:close">Close<span></span></a>
+</div>
+
+
+<script type="text/javascript">
+
+  $('.signup-mini a.close').click(function(event) {
+    event.preventDefault();
+    $('.signup-mini').hide();
+    R29.cookie.set('signup_mini',1,3600*24*30);
+  });
+
+  $('.signup-mini input.submit').click(function(event) {
+    R29.cookie.set('signup_mini',1,-1);
+    return true;
+  });
+
+  if(!R29.cookie.get('signup_mini')) {
+    $('.signup-mini').show();
+  }
+
+</script>
+    
+    <div class="entry-block">
+      <aside class="social-sidebar">
+
+    <!-- R29 CLIP -->
+      <div class="r29-clip disabled" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'R29ClipSidebar', 'clipped']);">
+      <p class="count">0 clips</p>
+      <img src="/static/images/stylebook/clip.png" alt="CLIP It" height="50px" width="50px">
+    </div>
+  
+  
+  <!-- FB -->
+  <div class="facebook" itemprop="interactionCount">
+    <fb:like layout="box_count" href="http://www.refinery29.com/marble-nails-diy" send="false" width="50" ref="sidebar"></fb:like>
+  </div>
+  
+  <!-- Twitter -->
+  <div class="twitter" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'TwitterSidebar', 'tweet']);">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-text="DIY Saran Wrap Nails For A Perfect, Easy Miami Mani" data-url="http://www.refinery29.com/marble-nails-diy" data-count="vertical" data-via="refinery29">&nbsp;</a>
+  </div>
+
+  <!-- Pinterest -->
+  <div class="pinterest" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'Pinterest', 'pinned']);">
+    <a href="http://pinterest.com/pin/create/button/?url=http://www.refinery29.com/marble-nails-diy&media=http://static3.refinery29.com/bin/entry/dbf/x/234617/getnailed.jpg&description=DIY Saran Wrap Nails For A Perfect, Easy Miami Mani" class="pin-it-button" count-layout="vertical">Pin It</a>
+  </div>
+  
+  <!-- Stumbleupon -->
+  <div class="stumbleupon" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'StumbleSidebar', 'stumble']);">
+    <iframe src="http://badge.stumbleupon.com/badge/embed/5/?url=http://www.refinery29.com/marble-nails-diy" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:60px;" allowTransparency="true"></iframe>
+  </div>
+  
+</aside>
+    
+      
+  
+  
+   
+    
+      <div class="entry-header">
+  
+  
+	
+  <div class="category"><!--<a href="/miami/beauty/nail-trends" data-track="entry:header:Nail Trends">-->Nail Trends<!--</a>--></div>
+  
+  <div class="deliminator"></div>
+  
+  <div class="date">
+          May 14, 2012 2:30 PM
+      <!-- <span itemprop="datePublished">2012-05-14 14:30:00</span> -->
+    
+  </div>
+  <div class="asset-info">
+      <!-- Facebook Like -->
+      <div class="facebook" itemprop="interactionCount">
+        <fb:like layout="button_count" href="http://www.refinery29.com/marble-nails-diy" width="90" ref="entrypage"></fb:like>
+      </div>
+      <!-- Twitter Share -->
+      <div class="twitter" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'TwitterSolo', 'tweet']);">
+        <a href="http://twitter.com/share" class="twitter-share-button" data-text="DIY Saran Wrap Nails For A Perfect, Easy Miami Mani" data-url="http://www.refinery29.com/marble-nails-diy" data-count="horizontal" data-via="refinery29">&nbsp;</a>
+      </div>
+    <!-- Comment Count -->
+    <div class="comment-count" itemprop="interactionCount">
+      <!-- ben 1 -->
+              <a href="/marble-nails-diy#disqus_thread" data-url="http://www.refinery29.com/marble-nails-diy" class="comments"><span class="comment-count">0</span></a>
+      
+    </div>
+  </div>
+</div>
+
+
+      
+      <!-- Sponsored Headline eMeta -->
+      
+    
+      <div class="entry">
+	<div itemscope itemtype="http://schema.org/Article">
+	  <div class="h1">DIY Saran Wrap Nails For A Perfect, Easy Miami Mani</div>
+	  	    <p class="byline">
+
+      By 
+    
+    <a href="/author/leila-brillson" rel="author"><span itemprop="author">Leila Brillson</span></a>
+</p>
+	    <div class="body">
+	    	<span itemprop="articleBody">
+		      <img src="//static3.refinery29.com/bin/entry/698/x/234618/getnailed-main.jpg" alt="getnailed_main" class="left">
+Maybe you feel like you have two left hands (or right!) when it comes to experimenting with nail art. Or maybe you just can't come up with weird enough ideas to emblazon on your paws. Never fear, because t<strong>his simple (and we do mean <em>simple</em>) nail art DIY</strong> courtesy of mani maven <a href="http://chelseasgetnailed.com/" rel="nofollow" target="_blank">Get Nailed</a> is a cinch...and perfect for the MIA day-to-day.
+<br><br>
+By using a peachy orange by OPI ("Bright Lights, Big Color") with a contrasting aqua from Orly (in "Frisky"), Chelsea of Get Nailed painted her nails, let them dry, and then used the saran wrap to literally "sponge" on the top coat for a <strong>coral-infused marble effect</strong>. The result is perfect for a shopping afternoon in Coral Gables (and will even look smart for a night out) — and can be done by anyone who is capable of painting a solid nail. Let us know if you've tried this clever marble-ing trick: We'd love to see the results!<br><br><br><br><iframe width="600" height="305" src="http://www.youtube.com/embed/lWvIFNkyhk4" frameborder="0" allowfullscreen=""></iframe><br><br><em>
+  <small>Photo/Video: Via Get Nailed. </small>
+</em>
+		      
+		      		        
+
+
+
+
+		      
+		      
+		        <div class="index-pagination">
+
+  
+  
+  </div>
+
+		      
+		      
+		      
+	      </span>
+		  </div>
+	  
+	  
+	  <div class="clear"></div>
+  </div>
+</div>
+      
+      <div class="footer">
+      <div class="tags">
+              <a href="/miami">Miami</a> &raquo; 
+              <a href="/miami/beauty">Beauty</a> &raquo; 
+      
+      <a href="/miami/beauty/nail-trends">Nail Trends</a> &raquo;
+            	<h1 class="sub">Marble Nails DIY - Miami Nail Art</h1>
+      
+      <br/>
+      
+      
+    </div>
+  
+
+  
+</div>
+    <!-- /CACHE d65fc - ttl: 180 -->
+    
+      
+      
+      <!-- Related Stories -->
+<div class="related-stories">
+  <div class="hot-dimple">Related Stories</div>
+  <ul>
+    <!-- CACHE ac90b - ttl: 180 -->      
+      
+                  
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/nail-art-salons" data-track="entry:related"><img src="http://static3.refinery29.com/bin/entry/e67/120x143/165333/nailart.jpg" alt="nailart" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/nail-art-salons" data-track="entry:related">Kitties And Kawaii! Top 5 Places To Score Amazing Nail Art</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/anselm-reyle-dior-beauty-event" data-track="entry:related"><img src="http://static2.refinery29.com/bin/entry/a1c/120x143/103619/anselm-reyle-dior-shadow-palette-thumb.jpg" alt="Anselm-Reyle-Dior-Shadow-Palette-thumb" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/anselm-reyle-dior-beauty-event" data-track="entry:related">Missed The Anselm Reyle For Dior Pop-Up At Basel? Here's&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/nail-art-kit" data-track="entry:related"><img src="http://static3.refinery29.com/bin/entry/a3c/120x143/103617/nail-art-kit-thumb.jpg" alt="nail art kit -thumb" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/nail-art-kit" data-track="entry:related">Nail Art Anxiety? Try This Nifty DIY Kit</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/nail-art-standard-spa-miami-beach" data-track="entry:related"><img src="http://static3.refinery29.com/bin/entry/940/120x143/94482/nailed-by-dzine-standard-spa-miami-thumb.jpg" alt="Nailed-by-Dzine-Standard Spa-Miami-thumb" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/nail-art-standard-spa-miami-beach" data-track="entry:related">The Ultimate In Nail Bling: The Standard Spa's Sculpture&hellip;</a></h2>
+          </li>
+          
+        
+      
+        
+    <!-- /CACHE ac90b - ttl: 180 -->
+  </ul>
+
+  
+<div class="ad ad-related-stories-ccu" iframe-code="http://ad.doubleclick.net/adi/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=middle;tile=3;dcopt=;sz=300x251;" iframe-size="300x251"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=middle;tile=3;dcopt=;sz=300x251;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=middle;tile=3;dcopt=;sz=300x251;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=middle;tile=3;dcopt=;sz=300x251;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+
+</div>
+
+      <div id="comments">
+      <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    
+        var disqus_shortname = 'refinery'; // required: replace example with your forum shortname
+        var disqus_developer = 1;
+        var disqus_url = 'http://www.refinery29.com/marble-nails-diy';
+        
+        $(function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('body')[0]).appendChild(dsq);
+        });
+        
+    </script>
+  
+</div>
+    </div>
+     
+
+					</div>
+            
+          <div class="col beta sidebar">
+            <!-- RIGHT -->
+                            
+              <!-- CACHE 740d3 - ttl: 600 -->                 
+      				  
+      				  
+                
+<div class="ad ad-sidebar-border" iframe-code="http://ad.doubleclick.net/adi/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;" iframe-size="300x250,300x600,300x1050"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+                
+                
+                                
+
+                                
+                
+                
+
+                
+
+                <!-- Connect Tools -->
+<div class="connect">
+	<h4>Follow R29</h4>
+	<div>
+		<a href="http://www.facebook.com/refinery29" class="fb"></a>
+		<a href="http://twitter.com/refinery29" class="twit"></a>
+		<a href="/index.xml" class="rss"></a>
+	</div>
+</div>
+
+                
+              <!-- /CACHE 740d3 - ttl: 600 -->
+              
+              
+              
+              
+              <!--Top Popular & Editor's Picks -->
+              
+              <!-- Top 5 Editor's Picks -->
+<div class="top-picks">
+  <div class="editors"></div>
+  <ul class="editors">
+          <li>
+      	<a href="/best-summer-cocktails" data-track="top5:editors" class="title">
+	        <span><img src="http://static2.refinery29.com/bin/entry/8b5/60x70/204761/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					5 Cocktails Made For The Summer Shade (Plus, Bar-Approved Recipes)!
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/best-summer-cocktails" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/cropped-tops-summer" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/entry/60a/60x70/176789/cropped-opener.jpg" alt="cropped_opener" width="60" height="70"  /></span>
+					Short-Sighted! 15 Cropped Tops That Look Stylish, Not Sloppy
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/cropped-tops-summer" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/spring-palm-floral" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/entry/770/60x70/169171/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					How To Rock The Palm Floral Without Looking Like Grandma
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/spring-palm-floral" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/spring-salad-recipes" data-track="top5:editors" class="title">
+	        <span><img src="http://static3.refinery29.com/bin/entry/b28/60x70/167288/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					29 Super-Fresh Salad Recipes For Your Spring Slim Down
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/spring-salad-recipes" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/nail-art-salons" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/entry/89b/60x70/165333/nailart.jpg" alt="nailart" width="60" height="70"  /></span>
+					Kitties And Kawaii! Top 5 Places To Score Amazing Nail Art
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/nail-art-salons" width="90"></fb:like>
+      </li>
+    
+        
+  </ul>
+</div>
+              
+                              <div class="r29tv">
+  <a href="http://www.refinery29.com/video"><img src="http://static3.refinery29.com/blog/be97a9/images/widgets/r29tv-header.jpg" style="margin: 0pt auto; display: block;" alt="Refinery29 TV" /></a>               
+  
+  <div style="display:none"></div>
+  
+  <!--  Videos populated by 
+        Homepage & Index Page Right Rail Playlist in Brightcove Admin
+        Video Player with Horizontal Video List -->
+  
+  <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+  
+  <object id="myExperience" class="BrightcoveExperience">
+    <param name="bgcolor" value="#FFFFFF" />
+    <param name="width" value="300" />
+    <param name="height" value="340" />
+    <param name="playerID" value="1223625514001" />
+    <param name="playerKey" value="AQ~~,AAAAjP0iSQE~,RJXHfxnZT2gNv3dZGdjsA7BIfR73CLPe" />
+    <param name="isVid" value="true" />
+    <param name="isUI" value="true" />
+    <param name="dynamicStreaming" value="true" />
+    <param name="wmode" value="transparent" />
+  </object>
+  
+  <!-- 
+  This script tag will cause the Brightcove Players defined above it to be created as soon
+  as the line is read by the browser. If you wish to have the player instantiated only after
+  the rest of the HTML is processed and the page load is complete, remove the line.
+  -->
+  <script type="text/javascript">brightcove.createExperiences();</script>
+</div>
+              
+              
+              <!-- Top 5 Popular -->
+<div class="top-picks">
+  <div class="popular">
+    
+<div class="ad ad-top5" iframe-code="http://ad.doubleclick.net/adi/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=top;tile=6;dcopt=;sz=75x30;" iframe-size="75x30"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=top;tile=6;dcopt=;sz=75x30;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=top;tile=6;dcopt=;sz=75x30;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=top;tile=6;dcopt=;sz=75x30;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+  </div>
+  <ul>
+    <!-- CACHE 73cec - ttl: 600 -->  
+              <li>
+        	<a href="/easy-braid-hairstyles" class="title" data-track="top5:popular">
+	          <span><img src="http://static1.refinery29.com/bin/entry/9f6/60x70/112826/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          You Totally Got This: 4 Easy Braids For Rookies
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/easy-braid-hairstyles" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/summer-collared-shirts" class="title" data-track="top5:popular">
+	          <span><img src="http://static1.refinery29.com/bin/entry/486/60x70/228904/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          8 Ways To Rock Summer's Coolest Top — The Sleeveless Button Up! 
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/summer-collared-shirts" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/sunglasses-face-shapes" class="title" data-track="top5:popular">
+	          <span><img src="http://static2.refinery29.com/bin/entry/64e/60x70/206336/opener.jpg" alt="Opener" width="60" height="70"  /></span>
+	          How To Find Sunglasses That Actually Fit: 5 Face Shapes, Tons Of Shades
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/sunglasses-face-shapes" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/pitusa-miami" class="title" data-track="top5:popular">
+	          <span><img src="http://static3.refinery29.com/bin/entry/86a/60x70/232195/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          U.K. Style Plus Peruvian Craftsmanship Equals One Hot Miami Brand
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/pitusa-miami" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/cute-workout-clothes" class="title" data-track="top5:popular">
+	          <span><img src="http://static1.refinery29.com/bin/entry/c64/60x70/175558/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          Workout Gear You'll Actually WANT To Wear 
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/cute-workout-clothes" width="90"></fb:like>
+        </li>
+      
+    <!-- /CACHE 73cec - ttl: 600 -->
+  </ul>
+</div>
+              
+              <!-- CACHE e49f2 - ttl: 600 -->                <!-- Ad Editorial Module -->
+                
+                
+                <!-- Facebook Likes Widget -->
+<div class="facebook-likes">
+  <fb:like-box href="http://www.facebook.com/refinery29" width="300" height="255" show_faces="true" rows="1" stream="false" header="false"></fb:like-box>
+</div>
+<!-- /Facebook Widget -->
+                
+<!-- Reserve Widget -->
+  <div class="reserve-widget">
+    <a href="http://reserve.refinery29.com/" data-track="reserve_widget"><img src="http://static2.refinery29.com/blog/be97a9/images/widgets/reserve-widget-header.png" width="300" height="auto" border="0" alt="Shop Now on Reserve" /></a>
+    <div class="subhead">Tailor-Made Deals. Get Them Now!</div>
+    <div class="ribbon pre"></div><div class="ribbon post"></div>
+    <ul>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/389/rachel-pally"  data-track="reserve_widget" class="less">
+	        <img src="//static1.refinery29.com/bin/deal/e86/130x100/232309/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Rachel Pally Exclusive: SJP And Beyonce&rsquo;s Fave Frocks Are Now $100 Off</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/392/loeffler-randall"  data-track="reserve_widget" class="less">
+	        <img src="//static3.refinery29.com/bin/deal/502/130x100/231813/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Loeffler Randall NYC Sample Sale: Score $50 Off AND Early Access Now!</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/390/amala-beauty"  data-track="reserve_widget" class="less">
+	        <img src="//static3.refinery29.com/bin/deal/a21/130x100/231702/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">The Ultimate Last-Minute Mother&rsquo;s Day Gift: $45 Off Amala&rsquo;s Life-Changing Organic Beauty Line</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/391/elaina-badro"  data-track="reserve_widget" class="less">
+	        <img src="//static3.refinery29.com/bin/deal/8f2/130x100/231753/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">The Right Way To Put On Makeup: $49 Off Elaina Badro&rsquo;s Essential Brush Set</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/387/fresh-dog"  data-track="reserve_widget" class="less">
+	        <img src="//static1.refinery29.com/bin/deal/9b1/130x100/232251/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">So Fresh, So Clean: The Easiest Way To De-Stink Your Pooch (Sans Suds!)</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+    
+    </ul>
+  </div>
+ 
+                <!-- Street Style Widget -->
+<div class="street-fashion-widget">
+  <a href="/everywhere/fashion/street-fashion/" class="header">Street Fashion</a>
+      <a href="/fifth-avenue-street-style">
+	    <span class="italic">Street Style Video: What's Fresh On 5th Avenue</span>
+	    <span class="polaroid">
+	      <img src="http://static3.refinery29.com/bin/entry/eea/158x190/232228/opener.jpg" alt="opener" width="158" height="190"  />
+	    </span>
+    </a>  
+  
+        
+</div>
+              <!-- /CACHE e49f2 - ttl: 600 -->
+                 
+              
+<div class="ad ad-sidebar" iframe-code="http://ad.doubleclick.net/adi/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=middle1;tile=7;dcopt=;sz=300x100;" iframe-size="300x100"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=middle1;tile=7;dcopt=;sz=300x100;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=middle1;tile=7;dcopt=;sz=300x100;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.mia.oao/beauty/nail-trends;s1=beauty;s2=nail-trends;s3=nail-trends;sponsorship=;pagetype=entry;test=;pageid=marble-nails-diy;tags=;pos=middle1;tile=7;dcopt=;sz=300x100;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+              
+            
+          </div>
+          
+          <div class="clear"></div>
+          <!-- CACHE b2376 - ttl: 300 -->            <!-- Footer @More Stories -->
+<div class="footer-boxes">
+  <div class="hot-dimple">More Style At Your Fingertips</div>
+	<ul>
+    
+    <li>
+      <div>
+        <a href="/weddings" data-track="hotspot:footer-more:weddings">
+                      <img src="http://static2.refinery29.com/blog/be97a9/images/collections/footer/weddings.jpg" width="120" height="143">
+            <span class="more_h2 footer_h2">Inspiration, Style Ideas, & Essentials For The Eternally Cool Bride</span>
+          
+        </a>
+				<div>
+					<a href="/weddings" class="category" data-track="hotspot:footer-more:weddings">Weddings</a>
+				</div>
+      </div>
+    </li>
+					<li>
+				<div> 
+  				<a href="/summer-outfits" data-track="hotspot:footer-more">
+  					<img src="http://static1.refinery29.com/bin/public/a86/120x143/230820/opener.jpg" alt="Opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">Fashion Math! We Add Up 9 Foolproof Outfits</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/summer-outfits#disqus_thread" data-url="http://www.refinery29.com/summer-outfits" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/shopping" class="category" data-track="hotspot:footer-more">Shopping</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/summer-shoes-under-50" data-track="hotspot:footer-more">
+  					<img src="http://static3.refinery29.com/bin/public/7e8/120x143/213849/opener.jpg" alt="opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">12 Summer Shoes That Ring In Under $50! </span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/summer-shoes-under-50#disqus_thread" data-url="http://www.refinery29.com/summer-shoes-under-50" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/shopping" class="category" data-track="hotspot:footer-more">Shopping</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/city-hall-wedding-style" data-track="hotspot:footer-more">
+  					<img src="http://static3.refinery29.com/bin/entry/dc9/120x143/206019/opener.jpg" alt="opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">City Hall Weddings: 14 Duos Who Said 'I Do'</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/city-hall-wedding-style#disqus_thread" data-url="http://www.refinery29.com/city-hall-wedding-style" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/fashion" class="category" data-track="hotspot:footer-more">Fashion</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/dresses-for-your-body-type" data-track="hotspot:footer-more">
+  					<img src="http://static2.refinery29.com/bin/entry/63c/120x143/180858/opener.jpg" alt="Opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">15 Perfect Spring Dresses For 15 Body Types</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/dresses-for-your-body-type#disqus_thread" data-url="http://www.refinery29.com/dresses-for-your-body-type" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/fashion" class="category" data-track="hotspot:footer-more">Fashion</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/artists-in-residence" data-track="hotspot:footer-more">
+  					<img src="http://static3.refinery29.com/bin/entry/237/120x143/178878/opener.jpg" alt="opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">The 10 Most Inspiring Young Artists In NYC Right Now</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/artists-in-residence#disqus_thread" data-url="http://www.refinery29.com/artists-in-residence" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/new-york/news" class="category" data-track="hotspot:footer-more">News</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+        
+	</ul> 
+</div>
+          <!-- /CACHE b2376 - ttl: 300 -->
+          
+
+        </div> <!-- /Content -->
+    
+        <!-- Footer -->
+<div id="footer">
+  <img src="http://static2.refinery29.com/blog/be97a9/images/refinery29-logo.png" width="200" height="24" alt="Refinery29" />
+
+	<p><strong>&copy;2012 Refinery29. All Rights Reserved.</strong></p>
+	<ul>
+		<li><a href="/">Home</a> | </li>
+		<li><a href="http://www.refinery29.com/about">About</a> | </li>
+				<li><a href="http://www.refinery29.com/about">Contact</a> | </li>
+		
+		<li><a href="http://www.refinery29.com/careers">Careers</a> | </li>
+		<li><a href="http://www.refinery29.com/about">Advertise</a> | </li>
+		<li><script type="text/javascript">
+<!--
+document.write(String.fromCharCode(60,97,32,104,114,101,102,61,34,109,97,105,108,116,111,58,102,101,101,100,98,97,99,107,64,114,101,102,105,110,101,114,121,50,57,46,99,111,109,34,32,99,108,97,115,115,61,39,101,109,97,105,108,39,62,71,111,116,32,65,32,84,105,112,63,60,47,97,62));
+-->
+</script> | </li>
+		<li><a href="http://www.refinery29.com/signup/everywhere?source=footer&medium=organic">Sign Up</a> | </li>
+		  		<li><a href="http://www.refinery29.com/privacy">Privacy Policy</a> | </li>
+  		<li><a href="http://www.refinery29.com/terms-and-conditions">Terms and Conditions</a> | </li>
+		
+		<li><a href="http://the-rig.refinery29.com">The Rig</a> | </li>
+		<li><a href="http://www.refinery29.com/index.xml">RSS</a></li>
+	</ul>
+	
+	
+	<div id="mobile-link"><a href="/?mobile=true">Refinery29 Mobile</a></div>
+	
+</div>
+
+                
+      </div> <!-- /Inner -->
+      
+    </div> <!-- /Container -->
+
+    <!-- Comscore -->
+<script type="text/javascript">
+  var r29cookie = document.cookie;
+  var val;
+  
+  if (r29cookie.indexOf("r29comstore=") != -1)
+   {
+      i = r29cookie.indexOf("r29comstore=");
+      s = r29cookie.substring(i + 12);
+      j = s.indexOf(";");
+      if (j == -1)
+      {
+          val = s;
+      }
+      else {
+          val = s.substring(0, j);
+      }
+  } else {
+      val = Math.floor(Math.random() * 12345678);
+      var date = new Date();
+      date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+      document.cookie = 'r29comstore=' + val + '; expires=' + date.toGMTString() + '; path=/';
+  }
+  
+  var currentUrl = self.location.url;
+  document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb": "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+
+</script>
+<script type="text/javascript"> 
+  COMSCORE.beacon({ c1:2, c2:"7395029",c3:"www.refinery29.com", c4:currentUrl, c5:"", c6:"", c15: val });
+</script>
+<noscript>
+  <img src = "http://b.scorecardresearch.com/p?c1=2&amp;c2=7395029&amp;c3=www.refinery29.com&amp;c4=http://www.refinery29.com/&amp;c5=&amp;c6=&amp;c15=C67BD3C1&amp;cj=1" alt="Comscore" />
+</noscript>
+<!-- /Comscore -->
+<!-- Google Analytics -->
+<script type="text/javascript">
+  
+  var _gaq = _gaq || [];
+    
+  // break up host into app, subdomain and tld
+  var tmp = /^([^\.]+\.)([\w\.]+)?refinery29\.(\w+)(:\d+)?$/.exec(window.location.host.toLowerCase()),
+    
+      // application
+      app = tmp[1] ? tmp[1] : 'www',
+      
+      // subdomain
+      sub = tmp[2] ? tmp[2] : '',
+      
+      // top level domain
+      tld = tmp[3] ? tmp[3] : 'com';
+  
+  _gaq.push(['_setAccount', 'UA-315022-1']);
+  
+  _gaq.push(['_setDomainName', '.refinery29.' + tld]);
+
+  
+  
+  _gaq.push(['_setCustomVar',
+    1,                   // This custom var is set to slot #1.  Required parameter.
+    'Category',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'miami\/beauty\/nail-trends', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+   
+   
+  _gaq.push(['_setCustomVar',
+    2,                   // This custom var is set to slot #2.  Required parameter.
+    'Publication Date',     // The name acts as a kind of category for the user activity.  Required parameter.
+    '2012-05-14', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  
+  
+  _gaq.push(['_setCustomVar',
+    3,                   // This custom var is set to slot #3.  Required parameter.
+    'Author',// The name acts as a kind of category for the user activity.  Required parameter.
+    'Leila Brillson', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  _gaq.push(['_setCustomVar',
+    4,                   // This custom var is set to slot #4.  Required parameter.
+    'Entry Type',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'ARTICLE', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+
+   
+  _gaq.push(['_setCustomVar', //USE THIS  R29.cookie.get('R29_UID');
+    5,                   // This custom var is set to slot #5.  Required parameter.
+    'Log-in Status',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'Not Logged In', // This value of the custom variable.  Required parameter.
+    2                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+   
+  _gaq.push(['_trackEvent',
+    'Navigation Click', // category of activity
+    $(this).attr('data-track'),
+    'miami:beauty:nail-trends', // Action
+    ,
+    true
+  ]);
+  
+  _gaq.push(['_trackPageview']);
+   
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- /Google Analytics -->
+
+<!-- Quantcast -->
+<script type="text/javascript">
+_qoptions={ qacct:"p-fesXMHo90Ka_A" };
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+  <img src="http://pixel.quantserve.com/pixel/p-fesXMHo90Ka_A.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- /Quantcast -->
+    <div id="js-cont"></div> 
+
+<!-- Facebook -->
+<div id="fb-root"></div> 
+<script type="text/javascript">
+
+  window.fbAsyncInit = function() {
+  
+    FB.init({ appId: '155023867867753', status: true, cookie: true, xfbml: false});
+    
+    /* Check if the user is NOT logged into R29, but IS logged into Facebook.  Fix it */
+    if (R29.url.param.getVar('fb') && !R29.user.token() && FB.getSession()) { //We have some sort of session, we *may* be logged in.
+      FB.getLoginStatus(function(response) {
+        if(response.status == 'connected') {
+          return document.location = 'https://welcome.refinery29.com/register?from=http%3A%2F%2Fwww.refinery29.com%2Fmarble-nails-diy&amp;sig=8e896&amp;app=blog&amp;fb=1';
+        }    
+      });      
+    }
+        
+    //FACEBOOK LOGIN
+    $('a.fb_button, a.r29_fb_button').live('click', function() {
+      R29.FBLoginPopup();
+      return false;
+    });
+    
+    if (typeof window.fbAsyncOnInit == "function") {
+      window.fbAsyncOnInit();
+    }
+    
+    /* GOOGLE ANALYTICS */
+
+    FB.Event.subscribe('edge.create', function(targetUrl, fb_ref) {
+    	if (fb_ref._attr.ref == "homepage"){
+    		_gaq.push(['_trackEvent', 'FacebookIndex', 'like']);
+    	}
+    	else if (fb_ref._attr.ref == "entrypage"){
+    		_gaq.push(['_trackEvent', 'FacebookSolo', 'like']);
+    	}
+    	else if (fb_ref._attr.ref == "sidebar"){
+    		_gaq.push(['_trackEvent', 'FacebookSidebar', 'like']);
+    	}
+      _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
+    });
+    
+    FB.Event.subscribe('edge.remove', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'unlike', targetUrl]);
+    });
+    
+    FB.Event.subscribe('message.send', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'send', targetUrl]);
+    });
+    
+       
+  };
+  
+  R29.FBLoginPopup = function () {
+
+    FB.login(function(response) {
+    
+      if (response.session) {
+        //They *may* have given us perms, but who knows.
+        return document.location = 'https://welcome.refinery29.com/connect/fb?from=http%3A%2F%2Fwww.refinery29.com%2Fmarble-nails-diy&amp;sig=8e896&amp;app=blog&amp;fb=1';
+      } else {
+        //Oh well, something is wrong, let's try the normal login
+        return document.location = 'https://welcome.refinery29.com/register?from=http%3A%2F%2Fwww.refinery29.com%2Fmarble-nails-diy&amp;sig=8e896&amp;app=blog&amp;fb=1';
+      }
+      
+     },{ scope: 'email,offline_access,publish_stream,publish_actions' } );
+  }
+  
+  
+</script>
+
+<script type="text/javascript">
+  //
+  
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</script>
+<!-- /Facebook -->
+
+<!-- Twitter -->
+<script type="text/javascript">
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+
+  
+  //START GOOGLE ANALYTICS TWITTER TRACKING
+  function trackTwitter(intent_event) {
+    if (intent_event) {
+      var opt_pagePath;
+      if (intent_event.target && intent_event.target.nodeName == 'IFRAME') {
+            opt_target = extractParamFromUri(intent_event.target.src, 'url');
+      }
+      _gaq.push(['_trackSocial', 'twitter', 'tweet', opt_pagePath]);
+    }
+  }
+
+  //Wrap event bindings - Wait for async js to load
+  twttr.ready(function (twttr) {
+    //event bindings
+    twttr.events.bind('tweet', trackTwitter);
+  });
+  
+	function extractParamFromUri(uri, paramName) {
+	  if (!uri) {
+	    return;
+	  }
+	  var regex = new RegExp('[\\?&#]' + paramName + '=([^&#]*)');
+	  var params = regex.exec(uri);
+	  if (params != null) {
+	    return unescape(params[1]);
+	  }
+	  return;
+	}
+	//END GOOGLE ANALYTICS TWITTER TRACKING
+
+</script>
+<!-- /Twitter -->
+
+<!-- Pinterest -->
+  <script type="text/javascript">
+  (function() {
+      window.PinIt = window.PinIt || { loaded:false };
+      if (window.PinIt.loaded) return;
+      window.PinIt.loaded = true;
+      function async_load(){
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          if (window.location.protocol == "https:")
+              s.src = "https://assets.pinterest.com/js/pinit.js";
+          else
+              s.src = "http://assets.pinterest.com/js/pinit.js";
+          var x = document.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(s, x);
+      }
+      if (window.attachEvent)
+          window.attachEvent("onload", async_load);
+      else
+          window.addEventListener("load", async_load, false);
+  })();
+  </script>
+<!-- /Pinterest -->
+
+
+<!-- Disqus -->
+
+<script type="text/javascript">
+  var disqus_shortname = 'refinery';
+  var disqus_developer = 1;
+  
+
+var DISQUSWIDGETS;
+var disqus_domain;
+var disqus_shortname;
+if (typeof DISQUSWIDGETS == "undefined") {
+    DISQUSWIDGETS = (function () {
+        var d = {},
+            a = (document.getElementsByTagName("HEAD")[0] || document.getElementsByTagName("BODY")[0]),
+            c = 0,
+            f = {},
+            e = {
+                identifier: 1,
+                url: 2,
+                slug: 3
+            };
+
+        function b(i) {
+            var h, k;
+
+            function j(l) {
+                return i.hasAttribute ? i.hasAttribute(l) : i.getAttribute(l) !== null
+            }
+            
+            if (j("data-disqus-identifier")) {
+                h = e.identifier;
+                k = i.getAttribute("data-disqus-identifier")
+            } else {
+            
+                if (j("data-url")) {
+                    h = e.url;
+                    k = i.getAttribute("data-url")
+                } else if (j("data-disqus-slug")) {
+                    h = e.slug;
+                    k = i.getAttribute("data-disqus-slug")
+                } else {
+                    h = e.url;
+                    k = i.href.replace("#disqus_thread", "")
+                }
+                
+            }
+            f[c++] = {
+                element: i,
+                type: h,
+                value: k
+            }
+        }
+        function g(k) {
+            var j = document.getElementsByTagName("A");
+            for (var h = 0; h < j.length; h++) {
+                if (j[h].href.indexOf("#disqus_thread") >= 0) {
+                    k(j[h])
+                }
+            }
+        }
+        d.domain = "disqus.com";
+        d.forum = "";
+        d.getCount = function () {
+            var m, h, k, j;
+            var l = [],
+                o = 0,
+                i = 10;
+
+            function n(q, p) {
+                return encodeURIComponent(q) + "=" + encodeURIComponent(p.type) + "," + encodeURIComponent(p.value)
+            }
+            g(b);
+            for (m in f) {
+                if (f.hasOwnProperty(m)) {
+                    l.push(n(m, f[m]))
+                }
+            }
+            k = l.slice(o, i);
+            while (k.length > 0) {
+                j = document.createElement("script");
+                j.type = "text/javascript";
+                j.async = true;
+                j.src = "http://" + d.domain + "/forums/" + d.forum + "/count.js?q=1&" + k.join("&");
+                a.appendChild(j);
+                o += 10;
+                i += 10;
+                k = l.slice(o, i)
+            }
+        };
+        d.displayCount = function (j) {
+            var m, h, n, l;
+            for (var k = 0; k < j.counts.length; k++) {
+                m = j.counts[k];
+                h = f[m.uid];
+                if (h) {
+                    if (m.comments === 0) {
+                        n = j.text.comments.zero
+                    } else {
+                        if (m.comments == 1) {
+                            n = j.text.comments.one
+                        } else {
+                            n = j.text.comments.multiple
+                        }
+                    }
+                    l = n.replace("{num}", m.comments);
+                    if (j.showReactions) {
+                        n = "";
+                        if (m.reactions === 0) {
+                            n = j.text.reactions.zero
+                        } else {
+                            if (m.reactions == 1) {
+                                n = j.text.reactions.one
+                            } else {
+                                n = j.text.reactions.multiple
+                            }
+                        }
+                        if (n !== "") {
+                            l += " " + j.text.and + " " + n.replace("{num}", m.reactions)
+                        }
+                    }
+                    h.element.innerHTML = l
+                }
+            }
+        };
+        return d
+    }())
+}(function () {
+    if (typeof disqus_domain != "undefined") {
+        DISQUSWIDGETS.domain = disqus_domain
+    }
+    DISQUSWIDGETS.forum = disqus_shortname;
+    DISQUSWIDGETS.getCount()
+}());
+
+ 
+  
+</script>
+
+<!-- /Disqus -->
+
+<!-- R29 Schtufff -->
+<script type="text/javascript">
+
+$(function() {
+
+  // Variables
+  var tabs = $('div.top-five > ul > li');
+  var top5 = $('div.top-five > div');
+    
+  // On Click
+  $(tabs).click(function() {
+    
+    $(tabs).removeClass("active");
+    $(this).addClass("active");
+    
+    $(top5).hide();
+    var activeTab = $(this).find("a").attr("href");
+    $(activeTab).show();
+    
+    return false;
+  });
+  
+  
+  // Hot Carousel
+  $("#hot-carousel li").show();
+  $("#hot-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  auto: 6,
+  itemFallbackDimension: 280,
+  initCallback: 
+  function (carousel) {
+    $('.control div.slide-btn', carousel.container).bind('click', function() {
+      carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_id')));
+      $('.control div',carousel.container).removeClass('selected');
+      $(this).addClass('selected');
+      return false;
+    });
+    $('.control div.next', carousel.container).bind('click', function() {
+      carousel.next();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+    $('.control div.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+  },
+  itemVisibleInCallback: function(carousel, item, idx, state) {
+    $('.control div',carousel.container).removeClass('selected');
+    $('.control div[image_id='+idx+']',carousel.container).addClass('selected');  
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+
+  // Category Carousel
+  
+  $("#category-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  itemFallbackDimension: 562,
+  initCallback: 
+  function (carousel) {
+    $('.control a.next', carousel.container).bind('click', function() {
+      carousel.next();
+      return false;
+    });
+    $('.control a.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      return false;
+    });
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+  
+  // Hot Category Carousel
+  $("#category-hot-carousel li").show();
+  $("#category-hot-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  auto: 6,
+  itemFallbackDimension: 608,
+  initCallback: 
+  function (carousel) {
+    $('.control div.slide-btn', carousel.container).bind('click', function() {
+      carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_id')));
+      $('.control div',carousel.container).removeClass('selected');
+      $(this).addClass('selected');
+      return false;
+    });
+    $('.control div.next', carousel.container).bind('click', function() {
+      carousel.next();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+    $('.control div.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+  },
+  itemVisibleInCallback: function(carousel, item, idx, state) {
+    $('.control div',carousel.container).removeClass('selected');
+    $('.control div[image_id='+idx+']',carousel.container).addClass('selected');  
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+
+
+  // Related Videos Carousel
+  
+/*
+  $("#video-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  itemFallbackDimension: 562,
+  initCallback: 
+  function (carousel) {
+    $('.control img.next', carousel.container).bind('click', function() {
+      carousel.next();
+      return false;
+    });
+    $('.control img.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      return false;
+    });
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+*/
+  
+  //You know where the bottom line of the container shows while the page is loading, I hate it
+  $('#container .inner').css('border-bottom', '1px solid #ccc');
+  
+});
+
+</script>
+
+    <script type="text/javascript">
+  
+  var _chartbeat_loaded = false;
+  
+  $(function() {
+   
+    if (_chartbeat_loaded) return; 
+    
+    _chartbeat_loaded = true;
+    
+    var _sf_async_config={ uid:3552,domain:"refinery29.com" };
+    R29.remote.include_js("//a248.e.akamai.net/chartbeat.download.akamai.com/102508/js/chartbeat.js");
+      
+  });
+</script>
+          <!-- Crazy Egg -->
+<script type="text/javascript" src="//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/5055.js"></script>
+<!-- /Crazy Egg -->
+    
+    
+    
+    <!-- Internal Stats -->
+<script type="text/javascript">
+
+      R29_STAT_DATA = $.extend({ app:'blog' },R29.url.param.getUTM());
+  
+  
+  try {
+    R29.stats.send([['user_page_load',R29_STAT_DATA, ((new Date()).getTime() - _sf_startpt)]]);
+  } catch (e) { };
+      
+</script>
+<!-- /Internal Stats -->
+    
+    
+    
+    
+    <script type="text/javascript">
+     try {
+        R29.stats.send([['user_page_view',{
+          app:  'blog',
+          page: 'entry',
+          entry_type: 'ARTICLE',
+          entry_id: 31722, 
+          market_id: 7, 
+          category_id: [590,587,561], 
+          author_id: [9]
+        }]]);
+        
+        
+      } catch (e) { };
+    </script> 
+    
+    
+    
+          <!-- Sailthru Horizon --> 
+      <script type="text/javascript">
+        (function() {
+          var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+          s.src = ('https:'==location.protocol?'https://d1gp8joe0evc8s.cloudfront.net':'http://cdn.sail-horizon.com')+'/horizon/v1.js';
+          var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+      </script>
+      <script type="text/javascript">
+        $(window).load(function() {
+          Sailthru.setup({
+            domain: 'horizon.refinery29.com',
+            tags: "saran-wrap-nails,nails-diy,diy-nail-art,miami-nails,chelsea-get-nailed,easy-nail-art,marble-nails,saran-wrap,marble-effect,left-hands,nail-art,bright-lights,orly,cinch,coral-gables,paws,nails,diy,chelsea,aqua,orange,love,photo,shopping,nail-polish-colors,beauty,everywhere,nail-trends,miami",
+            cookieDomain: '.refinery29.com'
+          });
+        });
+      </script>
+    
+
+
+  </body>
+<!-- Served in 263ms by web02.prod.refinery29.net at Mon, 14 May 2012 14:38:06 -0400 -->
+<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://d1ros97qkrwjf5.cloudfront.net/32/eum/rum.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrf2","beacon-1.newrelic.com","9aa3407800",298763,"b1cHZBcEW0dZVRZbXVYdMEIMSkNVShkQV1RRXABCHFcMG1lGEl5bW1MRWQoLGlVIRhEdUFRdAh8NEVFbW0VNW1xcVx0eFQ1F",0,262,new Date().getTime()]);</script>
+</html>

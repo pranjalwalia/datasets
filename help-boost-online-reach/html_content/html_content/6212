@@ -1,0 +1,763 @@
+<script type="text/javascript">
+      function ___loadFeedback(cb) {
+          if(typeof feedBack === "undefined") {
+              head.js("/static/js/feedback.jq.js");
+              head.ready(cb());
+          }
+          else
+              cb();
+      }
+
+      function subscribe(type, subscriptionId, button) {
+          var el = $(button);
+          el.val("following");
+          el.attr("disabled", "true");
+          el.addClass("disabled");
+          el.click(function(){return false;});
+
+          $.ajax('/you/subscriptions/',{
+              type: 'POST',
+              data: {
+                  subscriptionId: subscriptionId,
+                  type : type,
+                  posted: new Date().getTime(),
+                  action: "ADD"
+              },
+              success: function( data ) {
+                  ___loadFeedback(function() {feedBack.add(data);});
+              },
+              error: function( jqXHR ) {
+                  ___loadFeedback(function() {feedBack.addFromJSON( jqXHR.responseText );});
+              }
+          });
+      }
+
+      function addToGuide( guideId, instructableId ) {
+          $.ajax( '/edit/guideAdd', {
+              type: 'POST',
+              data : {
+                  guideId: guideId,
+                  instructableId: instructableId,
+                  posted: new Date().getTime()
+              },
+              success: function( data ) {
+                  ___loadFeedback(function() {feedBack.add(data);});
+              },
+              error: function( jqXHR, statusText, errorThrown ) {
+                  ___loadFeedback(function() {feedBack.add( jqXHR.status + ' -- ' + errorThrown );});
+              }
+          } );
+      }
+  
+  </script><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title>Final thoughts</title><link rel="stylesheet" type="text/css" href="/static/css/instructables.css?39ccdfe" /><link rel="stylesheet" type="text/css" href="/static/css/instructabot.css?39ccdfe" /><link rel="stylesheet" type="text/css" href="/static/css/imagenotes.css?39ccdfe" /><link rel="stylesheet" type="text/css" href="/static/css/lightbox.css?39ccdfe" /><link rel="stylesheet" type="text/css" href="/static/css/starbox.css?39ccdfe" /><link rel="stylesheet" type="text/css" href="/static/css/swfupload.css?39ccdfe" />
+  
+  <!--[if lte IE 8]>
+      <link rel="stylesheet" type="text/css" href="/static/css/ie.css"/>
+  <![endif]-->
+  
+
+<link rel="stylesheet" type="text/css" href="/static/js/jqplugins/fancybox/source/jquery.fancybox.css" /><script type="text/javascript" charset="utf-8">
+      var pageStartTime = new Date();
+    </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta http-equiv="imagetoolbar" content="no" /><meta name="title" content="Final thoughts" /><meta name="description" content="I hope you enjoyed this instructable, it is the first I've written. I still have alot more tabs to go before I will be able to finish anything.  I wil..." />
+
+ 
+<!--
+  <PageMap>
+     <DataObject type="document">
+	
+        <Attribute name="author" value="quixotiCfluX" /><Attribute name="published" value="8/28/09" /><Attribute name="category" value="play" /><Attribute name="channel" value="props" />
+	 
+     </DataObject>
+     <DataObject type="thumbnail">
+        <Attribute name="src" value="http://img.instructables.com/files/deriv/F8M/KF07/FYTCGXPN/F8MKF07FYTCGXPN.SQUARE.jpg" />
+        <Attribute name="width" value="75" />
+        <Attribute name="height" value="75" />
+     </DataObject>
+  </PageMap>
+-->
+  
+
+
+<link rel="image_src" href="http://img.instructables.com/files/deriv/F8M/KF07/FYTCGXPN/F8MKF07FYTCGXPN.THUMB.jpg" /><link rel="canonical" href="http://www.instructables.com/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/" /><script type="text/javascript" language="javascript">
+    (function () {
+        var empty_function = function () {};
+        if (typeof window.console === "undefined") {
+            window.console = {
+                "log": empty_function,
+                "debug": empty_function,
+                "info": empty_function,
+                "warn": empty_function,
+                "error": empty_function,
+                "assert": empty_function,
+                "dir": empty_function,
+                "dirxml": empty_function,
+                "trace": empty_function,
+                "group": empty_function,
+                "groupCollapsed": empty_function,
+                "groupEnd": empty_function,
+                "time": empty_function,
+                "timeEnd": empty_function,
+                "profile": empty_function,
+                "profileEnd": empty_function,
+                "count": empty_function
+            };
+        }
+    })();
+  </script><script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script><script type="text/javascript">___saveJQFromPrototype = $; $ = undefined; jQuery = undefined;</script><script type="text/javascript">$ = ___saveJQFromPrototype; jQuery = ___saveJQFromPrototype;</script><script type="text/javascript" src="/static/js/head.min.js"></script><script type="text/javascript">
+  //This is a set of JS that absolutely, positively must be loaded synchronously before the page loads.
+  //If something is here, that means it's probably a candidate for reengineering.
+      (function() {
+          var $ = ___saveJQFromPrototype;
+
+          LogHit = function( entryId, entryType, authorId ) {
+              $(function() {
+                  var data = {'id':entryId, 'type':entryType, 'authorId':authorId};
+                  if (document.referrer&&document.referrer!=""){
+                      data['referrer']=escape(document.referrer);
+                  }
+
+                  // turn off global events triggering just for this call (prevents loading indicator)
+                  $.ajaxSettings.global = false;
+
+                  $.ajax({
+                      url:'/counter',
+                      'data': data,
+                      success: function(){}
+                  });
+
+                  // turn back on global events triggering
+                  $.ajaxSettings.global = true;
+              });
+          }
+
+      })();
+  </script><script class="tier1" type="text/deferscript" defersrc="http://partner.googleadservices.com/gampad/google_service.js"></script><script class="tier1" type="text/deferscript">
+  GS_googleAddAdSenseService("ca-pub-1783560022203827");
+  GS_googleEnableAllServices();
+</script><script class="tier1" type="text/deferscript">
+  GA_googleAddAttr("content", "Step by St");
+  GA_googleAddAttr("id", "4DFYTCPBAU");
+  GA_googleAddAttr("category", "play");
+  GA_googleAddAttr("channel", "props");
+  GA_googleAddAttr("author", "quixotiCfl");
+  GA_googleAddAttr("step", "step 8");
+  GA_googleAddAttr("featured", "true");
+  GA_googleAddAttr("status", "PUBLISHED");
+  GA_googleAddAttr("loggedin", "false");
+  GA_googleAddAttr("adtest", "");
+
+  
+      GA_googleAddAttr("keyword", "pop tab");
+    
+      GA_googleAddAttr("keyword", "poptab");
+    
+      GA_googleAddAttr("keyword", "chain mail");
+    
+      GA_googleAddAttr("keyword", "maille");
+    
+      GA_googleAddAttr("keyword", "chainmail");
+    
+      GA_googleAddAttr("keyword", "chainmaill");
+    
+      GA_googleAddAttr("keyword", "weaving");
+    
+      GA_googleAddAttr("keyword", "armor");
+    </script><script class="tier1" type="text/deferscript">
+  GA_googleAddSlot("ca-pub-1783560022203827", "play_leaderboard");
+  GA_googleAddSlot("ca-pub-1783560022203827", "play_med_rectangle");
+  GA_googleAddSlot("ca-pub-1783560022203827", "_video");
+  GA_googleAddSlot("ca-pub-1783560022203827", "_house");
+
+  
+    GA_googleAddSlot("ca-pub-1783560022203827", "play_inline_med_rectangle");
+    GA_googleAddSlot("ca-pub-1783560022203827", "rightside_inline_med_rectangle");
+  </script><script class="tier1" type="text/deferscript">
+  GA_googleUseSyncSRARendering();
+  GA_googleFetchAds();
+</script><link rel="search" type="application/opensearchdescription+xml" title="Instructables" href="/openSearch.xml" />
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-306473-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+	
+</head><body id="you"><div id="omni"><div id="modalMask"></div><div id="modal"></div><script type="text/deferscript" class="tier1" defersrc="/static/js/jqplugins/jquery-cookie/jquery.cookie.js"></script><script type="text/deferscript" class="tier1" defersrc="/static/js/promodal.jq.js"></script>
+
+  <!-- google_ad_section_start(weight=ignore) -->
+
+  <div class="header"><div class="nav"><div class="container"><a href="/" class="robot"><img src="/static/img/header/robot.png" alt="Instructables" /></a><a href="/" class="logo"><img src="/static/img/header/instructables-logo.png" alt="Instructables" /></a><a href="/" class="share-make explore-head">Share What You Make</a><div class="nav-container"><div class="login" id="loginshower"><a href="/account/gopro?sourcea=nav&nxtPgName=Genuine+chainmaille+from+pop+tabs&nxtPg=/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/"><b>sign up</b></a>
+              or
+              <a href="/account/login" id="logintoggle"><b>login</b></a><span id="or">or</span><a id="facebook-login" href="https://www.facebook.com/dialog/oauth?client_id=102697913136381&redirect_uri=http://www.instructables.com/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/"><img src="/static/img/facebook-login.png" alt="Login with Facebook" /></a></div><ul id="tabnav" class="tabnav">
+<li><a href="/radioshack/"><img src="/static/img/promo/radioshack.png" alt="Radio Shack Robotics"/></a></li>
+<li><a href="/ace/"><img src="http://www.instructables.com/files/orig/FL8/AT0G/H0KL0O5O/FL8AT0GH0KL0O5O.png" alt="Ace Quick Fixes"/></a></li>
+<li><a href="http://store.instructables.com"><img id="promo-store" src="/static/img/promo/store.png" alt="Store"/>Store</a></li>
+</ul><div id="searchbar" class="searchbar"><form action="/pages/search/search.jsp" method="get" id="searchbarform"><div class="searchformcontainer"><input type="hidden" name="cx" value="partner-pub-1783560022203827:npr2q7v5m6t" /><input type="hidden" name="cof" value="FORID:11" /><input type="hidden" name="ie" value="ISO-8859-1" /><input type="text" class="barinput" name="q" id="q" value="" /></div></form><a href="#" onclick="document.getElementById('searchbarform').submit(); return false;" class="searchbutton"><span>Go</span></a></div></div></div></div><link href="http://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet" type="text/css" /><div class="categories"><div class="container"><ul><li class="header-button" id="create"><a href="/about/submit.jsp"><span>Create</span></a></li><li class="header-button" id="explore"><a href="/tag/type-id/"><span>Explore</span></a></li><li class="header-button" id="contests"><a href="/contest/"><span>Contests</span></a></li><li class="header-button" id="more"><a href="/community/"><span>More</span></a></li></ul></div></div><div class="header-menu" id="create-menu"><div class="slick-column explore-section"><p class="explore-head">3 Simple Ways to<br /> Share What You Make</p><p>With Instructables you can share what you make with the world &#8212; and tap into an ever-growing community of creative experts. </p><div class="share"><p class="explore-head">Other ways to share:&nbsp;&nbsp;</p><ul><li class="tooltipByID ttid_share-ask"><a href="/account/register?sourcea=submit_q&nxtPgName=Ask+a+Question&nxtPg=%2Fanswers%2Fask&skipPro=true"><span>Ask a Question</span></a><div class="sharetip" id="share-ask-tip"><strong>What is a Question?</strong><br />
+                Questions are a super-easy way to get answers from the Instructables community. Learn how to build, do, or make anything! You just ask a question and the community will provide answers. You choose the best answer!
+                </div></li><li class="tooltipByID ttid_share-forum"><a href="/account/register?sourcea=submit_f&nxtPgName=Submit+Forum+Topic&nxtPg=%2Fedit%2Fnew%3Ftype%3DforumTopic&skipPro=true"><span>Forum Topic</span></a><div class="sharetip" id="share-forum-tip"><strong>Submit a Forum Topic!</strong><br />The forums are the place to ask questions, share a cool project from another site, find collaborators for your latest project, or discuss anything of interest to the Instructables community. </div></li><li class="tooltipByID ttid_share-guide"><a href="/edit/new?type=guide"><span>Guides</span></a><div class="sharetip" id="share-guide-tip"><strong>What is a guide?</strong><br />
+                Guides are a collection of Instructables, such as '5 Minute Recipes' or 'Father's Day Gifts'.
+                Start creating your own now!</div></li><li class="tooltipByID ttid_share-group"><a href="/account/register?sourcea=submit_g&nxtPgName=Submit+Group&nnav_conxtPg=%2Fedit%2Fnew%3Ftype%3Dgroup&skipPro=true"><span>Group</span></a><div class="sharetip" id="share-group-tip"><strong>Start a new group</strong></div></li><li class="tooltipByID ttid_share-upload"><a href="/account/register?sourcea=submit_f&nxtPgName=Upload+Images&nxtPg=%2Fupload&skipPro=true"><span>Upload Images</span></a><div class="sharetip" id="share-upload-tip"><strong>Do you have a lot of images to upload?</strong><br />
+                If you prefer to upload your images before you submit, then this is for you.
+                Remember to tag them so they will be easier for you to find when you are viewing your library.
+                You can also upload images when you are creating your posts.
+                </div></li><li class="tooltipByID ttid_share-bug"><a href="/community?categoryGroup=help&category=bugs"><span>Bug Report</span></a><div class="sharetip" id="share-bug-tip"><strong>Did you find a bug or have a suggestion for us?</strong><br />
+                We appreciate all the help our users give us in tracking down bugs and making the site better for everyone.
+                </div></li></ul></div></div><div class="slick-column"><div class="magic-box"><div class="magic-box-top"></div><div class="magic-box-content"><span class="box-icon" id="made-it-icon"><span>Photos</span></span><span class="explore-head">Photos</span><p>Share one or more photos of a project, recipe, or whatever you've made, quickly and easily.</p><div class="magic-actions"><p><a class="big-button" href="/account/register?sourcea=submit_s&nxtPgName=Submit+Photos&nxtPg=%2Fid%2Fedit%3Ftype%3Dphotos&skipPro=true">Get Started</a></p><p class="itips"><a href="#" onclick="javascript:window.open('/about/photos_tips.jsp','stepbystep','status=yes,scrollbars=yes,resizable=yes,width=750,height=500');return false;">Learn more &amp; Get Tips</a></p></div></div><div class="magic-box-bottom"></div></div></div><div class="slick-column"><div class="magic-box"><div class="magic-box-top"></div><div class="magic-box-content"><span class="box-icon" id="step-by-icon"><span>Step by Step</span></span><span class="explore-head">Step-By-Step</span><p>Share your step-by-step photos with text instructions of what you made so others can do it too!</p><div class="magic-actions"><p><a class="big-button" href="/account/register?sourcea=submit_i&nxtPgName=Submit+Step+by+Step&nxtPg=%2Fid%2Fedit&skipPro=true">Get Started</a></p><p class="stips"><a href="#" onclick="javascript:window.open('/about/stepbystep_tips.jsp','photos','status=yes,scrollbars=yes,resizable=yes,width=750,height=500');return false;">Learn more &amp; Get Tips</a></p></div></div><div class="magic-box-bottom"></div></div></div><div class="slick-column"><div class="magic-box"><div class="magic-box-top"></div><div class="magic-box-content"><span class="box-icon" id="video-icon"><span>Video</span></span><span class="explore-head">Video</span><p>Share your how-to video. You'll need your embed code from a video site such as YouTube.</p><div class="magic-actions"><p class="vtips"><a class="big-button" href="/account/register?sourcea=submit_v&nxtPgName=Submit+Video&nxtPg=%2Fid%2Fedit%3Ftype%3Dvideo&skipPro=true">Get Started</a></p><p class="vtips"><a href="#" onclick="javascript:window.open('/about/video_tips.jsp','video','status=yes,scrollbars=yes,resizable=yes,width=750,height=500');return false;">Learn more &amp; Get Tips</a></p></div></div><div class="magic-box-bottom"></div></div></div></div><div class="header-menu" id="explore-menu"><img class="menu-loading" src="/static/img/lb_loading.gif" /></div><div class="header-menu" id="contests-menu"><img class="menu-loading" src="/static/img/lb_loading.gif" /></div><div class="header-menu" id="more-menu"><img class="menu-loading" src="/static/img/lb_loading.gif" /></div><script type="text/javascript">
+          (function() {
+              function getInternetExplorerVersion()
+                // Returns the version of Internet Explorer or a -1 (indicating the use of another browser).
+              {
+                  var rv = -1; // Return value assumes failure.
+                  if (navigator.appName == 'Microsoft Internet Explorer')
+                  {
+                      var ua = navigator.userAgent;
+                      var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+                      if (re.exec(ua) != null)
+                          rv = parseFloat( RegExp.$1 );
+                  }
+                  return rv;
+              }
+
+              var iev = getInternetExplorerVersion();
+              if(iev === -1 || iev >= 8.0) {
+                  ___saveJQFromPrototype(function() {
+                      var $ = ___saveJQFromPrototype;
+                      $(".header-button").each(function() {
+                          (function(that) {
+                              var buttonElem = $(that);
+                              var menuElem = $("#"+that.id+"-menu");
+                              var onButton = false;
+                              var onMenu = false;
+                              var loaded = that.id == "create";
+                              var delay = 500;
+                              $(that).hover(
+                                function() {
+                                    onButton = true;
+
+                                    if(!loaded) {
+                                        loaded = true;
+                                        menuElem.innerHTML = '<div class="menu-load">Loading...</div>';
+                                        $.ajax( "/dynjsp/nav_"+that.id+".jsp",
+                                                {
+                                                    success: function(data, textStatus, jqXHR) {
+                                                        menuElem.html(data);
+                                                    },
+                                                    error: function() {
+                                                        menuElem.html('<div class="menu-load-error">An error occurred while loading this content.</div>');
+                                                    }
+                                                });
+                                    }
+
+                                    setTimeout(function() {
+                                        if(onButton) {
+                                            //$(".header-menu").each( function() {$(this).hide()} );
+                                            //$(".header-button").each( function() {$(this).removeClass("selected")} );
+                                            menuElem.show();
+                                        }
+                                    }, delay);
+                                },
+                                function() {
+                                    onButton = false;
+                                    setTimeout(function() {
+                                        if(!onMenu)
+                                            menuElem.hide();
+                                    }, delay);
+                                }
+                              );
+
+                              menuElem.hover(
+                                function() {
+                                    onMenu = true;
+                                    buttonElem.addClass('selected');
+                                },
+                                function() {
+                                    onMenu = false;
+                                    setTimeout(function() {
+                                        if(!onButton && !onMenu) {
+                                            menuElem.hide();
+                                            buttonElem.removeClass('selected');
+                                        }
+                                    }, 250);
+                                }
+                              );
+                          })(this);
+                      });
+                  });
+              }
+          })();
+      </script><div class="channels"><div class="container" id="channelnavcontainer"><ul class="clearfix"><li class="selected"><h1><a href="/tag/type-id/category-play/channel-props/"><span>Props</span></a></h1></li><li><a href="/tag/type-id/category-play/channel-card-games/"><span>Card Games</span></a></li><li><a href="/tag/type-id/category-play/channel-guitars/"><span>Guitars</span></a></li><li><a href="/tag/type-id/category-play/channel-magic-tricks/"><span>Magic Tricks</span></a></li><li><a href="/tag/type-id/category-play/channel-music/"><span>Music</span></a></li><li><a href="/tag/type-id/category-play/channel-office-supplies/"><span>Office Supplies</span></a></li><li><a href="/tag/type-id/category-play/channel-party-tricks/"><span>Party Tricks</span></a></li><li id="see-more"><a href="/tag/type-id/category-play/" id="seemore"><span>See More &raquo;</span></a></li><li id="see-less"><a href="/tag/type-id/category-play/" id="seemore"><span>See Less &laquo;</span></a></li></ul><ul class="clearfix" id="see-more-channels"><li><a href="/tag/type-id/category-play/channel-airsoft/"><span>Airsoft</span></a></li><li><a href="/tag/type-id/category-play/channel-computer-games/"><span>Computer Games</span></a></li><li><a href="/tag/type-id/category-play/channel-guitar-hero/"><span>Guitar Hero</span></a></li><li><a href="/tag/type-id/category-play/channel-instruments/"><span>Instruments</span></a></li><li><a href="/tag/type-id/category-play/channel-knex/"><span>K'NEX</span></a></li><li><a href="/tag/type-id/category-play/channel-lego/"><span>Lego</span></a></li><li><a href="/tag/type-id/category-play/channel-nerf/"><span>Nerf</span></a></li><li><a href="/tag/type-id/category-play/channel-nintendo/"><span>Nintendo</span></a></li><li><a href="/tag/type-id/category-play/channel-offbeat/"><span>Offbeat</span></a></li><li><a href="/tag/type-id/category-play/channel-paintball/"><span>Paintball</span></a></li><li><a href="/tag/type-id/category-play/channel-paper-airplanes/"><span>Paper Airplanes</span></a></li><li><a href="/tag/type-id/category-play/channel-playstation/"><span>PlayStation</span></a></li><li><a href="/tag/type-id/category-play/channel-pranks-and-humor/"><span>Pranks & Humor</span></a></li><li><a href="/tag/type-id/category-play/channel-psp/"><span>PSP</span></a></li><li><a href="/tag/type-id/category-play/channel-puzzles/"><span>Puzzles</span></a></li><li><a href="/tag/type-id/category-play/channel-rockets/"><span>Rockets</span></a></li><li><a href="/tag/type-id/category-play/channel-siege-engines/"><span>Siege Engines</span></a></li><li><a href="/tag/type-id/category-play/channel-sports/"><span>Sports</span></a></li><li><a href="/tag/type-id/category-play/channel-table-top/"><span>Table Top</span></a></li><li><a href="/tag/type-id/category-play/channel-toys/"><span>Toys</span></a></li><li><a href="/tag/type-id/category-play/channel-video-games/"><span>Video Games</span></a></li><li><a href="/tag/type-id/category-play/channel-wallets/"><span>Wallets</span></a></li><li><a href="/tag/type-id/category-play/channel-wii/"><span>Wii</span></a></li><li><a href="/tag/type-id/category-play/channel-xbox/"><span>Xbox</span></a></li><li><a href="/tag/type-id/category-play/channel-yo-yo/"><span>Yo-Yo</span></a></li></ul></div></div></div><div class="aspace"><div class="container"><div id="aplace">
+          
+            <script class="tier2" type="text/deferscript">
+            if (typeof GA_googleFillSlot != "undefined") {
+              GA_googleFillSlot("play_leaderboard");
+            }
+            </script>
+          
+          </div></div></div><script type="text/javascript" language="javascript">
+
+function makeHelpBubbleLoginHTML(loginContinueParams, doRedirectLocation, source, fb) {
+
+    var loginHTML = '<form method="post" action="/account/login?' + loginContinueParams + '">';
+    loginHTML += '<input id="RememberME_hb" type="hidden" name="RememberME" />';
+    loginHTML += '<table style="margin-top:5px;">';
+    loginHTML += '<tr style="margin-top:5px;"><td>Username </td>';
+    loginHTML += '<td><input id="username_hb" type="text" style="width:100px;" name="u"/></td></tr>';
+    loginHTML += '<tr><td>Password </td>';
+    loginHTML += '<td><input id="password_hb" type="password" style="width:67px;" name="p"/>';
+    loginHTML += '<input class="ml5" class="button" type="submit" value="go" name="Submit"/></td></tr>';
+    loginHTML += '<tr><td colspan="2" class="center">';
+    loginHTML += '<a class="fs-1" href="/account/forgot?' + loginContinueParams + '">(forgot username/password?)</a></td></tr>';
+    if (typeof fb === "undefined" || fb !== false) {
+        loginHTML += '<tr><td colspan="2" class="center"> OR </td></tr>';
+        loginHTML += '<tr><td colspan="2" class="center">';
+        if (typeof doRedirectLocation === "undefined" || doRedirectLocation === "") {
+            loginHTML += '<fb:login-button size="medium" scope="email,user_birthday,publish_stream" onlogin="doRedirect(\'' + loginContinueParams + '\', \'' + source + '\');">';
+        } else {
+            loginHTML += '<fb:login-button size="medium" scope="email,user_birthday,publish_stream" onlogin="doRedirect(\'' + doRedirectLocation + '\', \'' + source + '\');">';
+        }
+        loginHTML += 'Log In with Facebook</fb:login-button></td></tr>';
+    }
+    loginHTML += '</table></form>';
+
+    return loginHTML;
+
+}
+
+function focusOnHelpBubbleLogin() {
+    if (typeof FB !== "undefined") {
+        FB.XFBML.parse(document.getElementById("login5"));
+    }
+    setTimeout(function() {
+        $( "username_hb" ).focus();
+    }, 10 );
+    }
+</script>
+
+  <!-- google_ad_section_end -->
+
+  <div id="feedback" class="feedback" style="display:none;"></div><script language="JavaScript" type="text/javascript"></script><div id="container">
+      
+               <script type="text/deferscript">
+               if (typeof GA_googleFillSlot != "undefined") {
+               GA_googleFillSlot("_video");
+               }
+               </script>
+      
+    <div id="instructable-title"><div id="top-actions"><script type="text/javascript">
+      //Helper text and dummy fxn for non-logged-in users
+      function makeHelpBubbleTextFlag(anchor) {
+          return '<div><strong>Flag Inappropriate Content!</strong><br />'
+              + 'This action requires you to<br />'
+              + '<a class="bright bold" href="/account/gopro?sourcea=flagging&nxtPgName=Genuine+chainmaille+from+pop+tabs&nxtPg=/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/%3Fflag%23flagging">'
+              + 'sign up</a> or login:'
+              + makeHelpBubbleLoginHTML('nxtPgName=Genuine+chainmaille+from+pop+tabs&nxtPg=/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/?flag#flagging', '', 'flagging')
+              + '</div>'
+      }
+
+      function makeHelpBubbleTextFav(anchor) {
+          return '<div><strong>Add this to your Favorites!</strong><br />'
+              + 'This action requires you to<br />'
+              + '<a class="bright bold" href="/account/gopro?sourcea=favorites&nxtPgName=Genuine+chainmaille+from+pop+tabs&nxtPg=/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/%3Ffavorite%23favorite">'
+              + 'sign up</a> or login:'
+              + makeHelpBubbleLoginHTML('nxtPgName=Genuine+chainmaille+from+pop+tabs&nxtPg=/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/?favorite#favorite', '', 'favorites')
+              + '</div>'
+      }
+
+    </script><script type="text/javascript">
+    function makeHelpBubblePDFAction(anchor) {
+        return '<div id="login5"><strong><img src="/static/img/pro2.gif" class="actions_top_img_0" />Membership Benefit!</strong><br />'
+            + 'To download or print PDF\'s, become a '
+            + '<a class="bright bold" href="/account/gopro?sourcea=pdf&proReq=true&nxtPgName=Genuine+chainmaille+from+pop+tabs&nxtPg=/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/%3Fdownload=pdf">Pro member today</a>!'
+            + makeHelpBubbleLoginHTML('nxtPgName=Genuine+chainmaille+from+pop+tabs&nxtPg=/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/?download=pdf', '/account/gopro?sourcea=printPDF&nxtPgName=Genuine+chainmaille+from+pop+tabs&nxtPg=/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/?download=pdf')
+            + '</div>'
+    }
+    </script><a name="favorite"></a><div id="actionLinksTop" class="fr"><a name="pdfaction"></a><span id="pdf_actions"><a href="#"><img src="/static/img/pdf-icon.png" alt="Print" />Print PDF</a></span><a name="favorite"></a><span id="favoritelink"><a href="#" onclick="makeHelpBubbleTextFav('favorite'); return false;"><img src="/static/img/fav-icon.png" alt="Make this a favorite!" />Favorite</a></span><a href="mailto:?subject=Final thoughts&body=http%3A%2F%2Fwww.instructables.com%2Fid%2FGenuine-chainmaille-from-pop-tabs%2F" title="Send this Instructable to a friend"><img src="/static/img/email-icon.png" alt="Send this to a friend" />Email</a>
+
+
+    <a href="#" onclick="javascript:window.open('http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.instructables.com%2Fid%2FGenuine-chainmaille-from-pop-tabs%2F&t=Genuine+chainmaille+from+pop+tabs','facebook-halloween','status=yes,scrollbars=yes,resizable=yes,width=650,height=450'); return false;">
+    <img src="/static/img/fb-icon.png" alt="Facebook" />&nbsp;</a>
+
+    <a href="#" onclick="javascript:window.open('http://twitter.com/home/?status=Genuine+chainmaille+from+pop+tabs%20http%3A%2F%2Fwww.instructables.com%2Fid%2FGenuine-chainmaille-from-pop-tabs%2F','twitter','status=yes,scrollbars=yes,resizable=yes,width=800,height=600'); return false;">
+    <img src="/static/img/twitter-icon.png" alt="Twitter" />&nbsp;</a>
+
+
+    </div><script type="text/javascript">
+          $("#pdf_actions a").click(function (evt) {
+            evt.preventDefault();
+            navoperator.makeLoginByJquery();
+          });
+        
+      
+        $("#favoritelink a").click(function (evt) {
+          evt.preventDefault();
+          navoperator.makeLoginByJquery();          
+        });
+      </script></div><h1 class="fn">Genuine chainmaille from pop tabs</h1></div><script type="text/javascript">
+
+          function makeHelpBubblePDF(anchor) {
+              return '<div id="login5"><strong><img src="/static/img/pro2.gif" style="margin-right:3px;" />Pro Membership Benefit!</strong><br />'
+	          + 'To download or print PDF\'s, become a '
+	          + '<a class="bright bold" href="/account/gopro?sourcea=pdf&proReq=true&nxtPgName=Genuine+chainmaille+from+pop+tabs&nxtPg=/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/%3Fdownload=pdf">Pro member today</a>!'
+	          + makeHelpBubbleLoginHTML('nxtPgName=Genuine+chainmaille+from+pop+tabs&nxtPg=/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/?download=pdf', '/account/gopro?sourcea=pdf&nxtPgName=Genuine+chainmaille+from+pop+tabs&nxtPg=/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/?download=pdf', 'pdf', false)
+	          + '</div>'
+          }
+
+	</script><div id="steps-container" class="stepsContainer steps clearfix"><a name="allstepslogin"></a><div class="tooltipByID ttid_ALLSTEPSTT"><a href="/id/Genuine-chainmaille-from-pop-tabs/?ALLSTEPS"><img src="/static/IMGS/allsteps.gif" alt="" /></a></div><a name="pdflogin"></a><div class="tooltipByID ttid_PDF"><div id="pdf_top"><a href="#" onclick="makeHelpBubblePDF('pdf'); _gaq.push(['_trackPageview', '/event/actions/pdf/']); return false;"><img src="/static/defaultIMG/file/PDF.gif" alt="" /></a></div></div><div class="tooltipByID ttid_SDB36F5FYTCPBAT"><a href="/id/Genuine-chainmaille-from-pop-tabs/"><img src="http://img.instructables.com/files/deriv/FKN/2QWM/FYTCPBKU/FKN2QWMFYTCPBKU.TINY.jpg" alt="" /></a></div><div class="tooltipByID ttid_SAPV1S8FYTCPBO4"><a href="/id/Genuine-chainmaille-from-pop-tabs/#step1"><img src="http://img.instructables.com/files/deriv/F84/HREA/FYTCPBOI/F84HREAFYTCPBOI.TINY.jpg" alt="" /></a></div><div class="tooltipByID ttid_SVYNTOIFYTCPBS8"><a href="/id/Genuine-chainmaille-from-pop-tabs/step2/Prepare-the-tabs/"><img src="http://img.instructables.com/files/deriv/FWB/E64M/FYTCPBST/FWBE64MFYTCPBST.TINY.jpg" alt="" /></a></div><div class="tooltipByID ttid_SZ0RT29FYTCPC5S"><a href="/id/Genuine-chainmaille-from-pop-tabs/step3/Cut/"><img src="http://img.instructables.com/files/deriv/F1F/5SL6/FYTCPC90/F1F5SL6FYTCPC90.TINY.jpg" alt="" /></a></div><div class="tooltipByID ttid_SR58KZGFYTCPC9C"><a href="/id/Genuine-chainmaille-from-pop-tabs/step4/Bend/"><img src="http://img.instructables.com/files/deriv/FGT/9E0A/FYTCPC9Q/FGT9E0AFYTCPC9Q.TINY.jpg" alt="" /></a></div><div class="tooltipByID ttid_S0G4OKMFYTCPCBN"><a href="/id/Genuine-chainmaille-from-pop-tabs/step5/Repeat/"><img src="http://img.instructables.com/files/deriv/FNU/B5UH/FYTCPCD5/FNUB5UHFYTCPCD5.TINY.jpg" alt="" /></a></div><div class="tooltipByID ttid_SD2OUZAFYTCGXI6"><a href="/id/Genuine-chainmaille-from-pop-tabs/step6/Weave/"><img src="http://img.instructables.com/files/deriv/FTY/AI64/FYTCGXIB/FTYAI64FYTCGXIB.TINY.jpg" alt="" /></a></div><div class="tooltipByID ttid_S4D517EFYTCGXN3"><a href="/id/Genuine-chainmaille-from-pop-tabs/step7/Continue-weaving/"><img src="http://img.instructables.com/files/deriv/F9Z/KKX7/FYTCGXNU/F9ZKKX7FYTCGXNU.TINY.jpg" alt="" /></a></div><div class="tooltipByID ttid_SGJ6SLFFYTCGXPE"><img class="selectedStep" src="http://img.instructables.com/files/deriv/F8M/KF07/FYTCGXPN/F8MKF07FYTCGXPN.TINY.jpg" alt="" /></div><div class="featured_titlebar"><img src="/static/img/featuredr.gif" width="56" height="56" /></div></div><script type="text/javascript">
+          $("#pdf_top a").click(function (evt) {
+              evt.preventDefault();
+              navoperator.makeLoginByJquery();
+          });
+	    </script><div id="main_content"><div id="author-bio"></div><script type="text/javascript">
+      window.notesArray = {};
+    </script>
+  <!-- google_ad_section_start -->
+  <div class="stepdescription"><h2><span class="stepLabel">Step 8</span><span class="stepTitle">Final thoughts</span></h2><div class="images-holder"><a name="images"></a><div class="spot-holder"><div id="spot86961" class="image-spot"><div class='sizer'><img id='img_spot86961' class='photo id_F8MKF07FYTCGXPN' src='/image/F8MKF07FYTCGXPN/Final-thoughts.jpg' GALLERYIMG='NO' alt='Final thoughts' /></div></div>
+</div><div id="spot86961_spots" class="image-show-container"><a id="spot86961_spots_prev_row" href="#" class="prev-row">&laquo;</a><div class="spotThumbs image-show clearfix"><ul><li><a class="spot-thumb" href="/files/deriv/F8M/KF07/FYTCGXPN/F8MKF07FYTCGXPN.MEDIUM.jpg" id="imgThumb_spot86961_F8MKF07FYTCGXPN"><img id="id_F8MKF07FYTCGXPN" src="http://img.instructables.com/files/deriv/F8M/KF07/FYTCGXPN/F8MKF07FYTCGXPN.SQUARE.jpg" alt="DSCF6738.JPG" /></a></li><li><a class="spot-thumb" href="/files/deriv/F80/E4DS/FYTCGXPM/F80E4DSFYTCGXPM.MEDIUM.jpg" id="imgThumb_spot86961_F80E4DSFYTCGXPM"><img id="id_F80E4DSFYTCGXPM" src="http://img.instructables.com/files/deriv/F80/E4DS/FYTCGXPM/F80E4DSFYTCGXPM.SQUARE.jpg" alt="DSCF6739.JPG" /></a></li></ul></div></div></div><div class="txt">I hope you enjoyed this instructable, it is the first I've written. I still have alot more tabs to go before I will be able to finish anything.  I will probably make a pixane, and create a new Instructable for it.  I will leave you with some pictures of this cool looking chainmaille.</div><div id="files"><a name="files"></a></div></div><table class="nextprev"><tr><td><a id="prevstepbutton" class="big-button" href="/id/Genuine-chainmaille-from-pop-tabs/step7/Continue-weaving/">&laquo; Previous Step</a></td><td width="100%" class="upsell"><span id="pdf_steps"><a href="#" class="gray-btn">Download PDF</a></span><script type="text/javascript">
+                $("#pdf_steps a").click(function (evt) {
+                    evt.preventDefault();
+                    navoperator.makeLoginByJquery();
+                });
+	          </script><a href="/id/Genuine-chainmaille-from-pop-tabs/?ALLSTEPS" class="gray-btn">View All Steps</a></td><td><a id="nextstepbutton" class="big-button disabled" href="/about/submit.jsp" onclick="return false">Next Step &raquo;</a></td></tr></table>
+   <!-- google_ad_section_end -->
+
+  <!-- google_ad_section_start(weight=ignore) -->
+
+  <a id="DISCUSS" name="DISCUSS"></a><div class="comments" id="comments"><a name="comments"></a><div id="CommentSpinner" class="progress-indicator"></div><div class="comments-container clearfix"><table width="100%" cellpadding="0" cellspacing="0"><tr valign="top"><td><div class="commentsHeader comments_div_0">100
+                      comments
+                    </div></td><td id="NewCommentWrapper_top" width="99%" class="comments_td_1"><div id="NewCommentLINK_top" class="comment-bucket"><a class="stepLabel new-comment login-required" href="#">
+                      Add Comment
+                    </a></div></td></tr></table><div class="comments-pagination clearfix"><table cellpadding="3"><tr><td><span class="label">1-40 of 100</span></td><td></td><td><a rel="nofollow" href="http://www.instructables.com/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/?&amp;sort=ACTIVE&amp;limit=40&amp;offset=40" class="med-button">next &raquo;</a></td></tr></table></div></div><div id="ajax_newcomment_placeholder"></div><a name="CGDJWJUGVZP1SK2"></a><div class="comment entryList clearfix toplevel " style="margin-left:0px;"><div class="comment-authorpic"><a href="/member/jgerardy/"><img src="http://graph.facebook.com/100002719431712/picture" alt="" /></a></div><div class="comment-info"><span>Dec 11, 2011. 2:23 PM</span><a href="/member/jgerardy/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">jgerardy</a>
+        says:
+      </div><div class="txt commenttxt">i have been working for about a month and i have made a tuxedo from this pop tab chain mail.<br></div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CGDJWJUGVZP1SK2" class="comment-actions"><div style="float:right;"><a id="replytolink_CGDJWJUGVZP1SK2" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CGDJWJUGVZP1SK2"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="C1BEB1JGTO4OXIY"></a><div class="comment entryList clearfix toplevel " style="margin-left:0px;"><div class="comment-authorpic"><a href="/member/pmaxey/"><img src="http://graph.facebook.com/100000096358000/picture" alt="" /></a></div><div class="comment-info"><span>Oct 12, 2011. 7:03 PM</span><a href="/member/pmaxey/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">pmaxey</a>
+        says:
+      </div><div class="txt commenttxt">So, the whole problem with the links coming apart. I might have an easy solution. Move the cut from right in the center, to the edge. I tried it and it seemed to work fine for me. =D</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_C1BEB1JGTO4OXIY" class="comment-actions"><div style="float:right;"><a id="replytolink_C1BEB1JGTO4OXIY" class="med-button reply-comment replylink commentloop_a_5 login-required" href="C1BEB1JGTO4OXIY"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CPTFP09GJQEI6GR"></a><div class="comment entryList clearfix toplevel " style="margin-left:0px;"><div class="comment-authorpic"><a href="/member/Nancy+London/"><img src="/static/defaultIMG/user.TINY.gif" alt="" /></a></div><div class="comment-info"><span>Feb 18, 2011. 9:06 AM</span><a href="/member/Nancy+London/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">Nancy London</a>
+        says:
+      </div><div class="txt commenttxt">How flexible is this stuff?</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CPTFP09GJQEI6GR" class="comment-actions"><div style="float:right;"><a id="replytolink_CPTFP09GJQEI6GR" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CPTFP09GJQEI6GR"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CQIO602GRSXG2J0"></a><div class="comment entryList clearfix  " style="margin-left:10px;"><div class="comment-authorpic"><a href="/member/Mythbuster009/"><img src="http://img.instructables.com/files/deriv/F6B/Z7ID/FZHLBCW9/F6BZ7IDFZHLBCW9.TINY.jpg" alt="" /></a></div><div class="comment-info"><span>Aug 26, 2011. 10:24 AM</span><a href="/member/Mythbuster009/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">Mythbuster009</a>
+        says:
+      </div><div class="txt commenttxt">depends on the way you fold it (vertically/horizontally)<br>, one way you can fold it in half, the other way you might get about 30-40 degrees out of it</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CQIO602GRSXG2J0" class="comment-actions"><div style="float:right;"><a id="replytolink_CQIO602GRSXG2J0" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CQIO602GRSXG2J0"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CYCED9MGQYGLIOS"></a><div class="comment entryList clearfix toplevel " style="margin-left:0px;"><div class="comment-authorpicstats"><a class="memberstats id-Oi23" href="/member/Oi23/"><img src="http://img.instructables.com/files/deriv/F1S/PE34/GQP9Q6OG/F1SPE34GQP9Q6OG.TINY.jpg" alt="" /><div class="count">1</div></a></div><div class="comment-info"><span>Aug 8, 2011. 3:02 PM</span><a href="/member/Oi23/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">Oi23</a>
+        says:
+      </div><div class="txt commenttxt">If you want chainmail,why not just buy it? They sell shark-proof chainmail at some scuba diving shops.</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CYCED9MGQYGLIOS" class="comment-actions"><div style="float:right;"><a id="replytolink_CYCED9MGQYGLIOS" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CYCED9MGQYGLIOS"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CHN23SSGR6XJGQK"></a><div class="comment entryList clearfix  " style="margin-left:10px;"><div class="comment-authorpic"><a href="/member/Mythbuster009/"><img src="http://img.instructables.com/files/deriv/F6B/Z7ID/FZHLBCW9/F6BZ7IDFZHLBCW9.TINY.jpg" alt="" /></a></div><div class="comment-info"><span>Aug 10, 2011. 10:40 PM</span><a href="/member/Mythbuster009/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">Mythbuster009</a>
+        says:
+      </div><div class="txt commenttxt">the point isn't to use it as chainmail, its to say that you made an entire chainmail suit out of soda can tabs and impress your friends. I got a great reaction at halloween a couple years ago after wearing it to school</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CHN23SSGR6XJGQK" class="comment-actions"><div style="float:right;"><a id="replytolink_CHN23SSGR6XJGQK" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CHN23SSGR6XJGQK"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CBANPTCGRSXCB6H"></a><div class="comment entryList clearfix  " style="margin-left:20px;"><div class="comment-authorpicstats"><a class="memberstats id-Oi23" href="/member/Oi23/"><img src="http://img.instructables.com/files/deriv/F1S/PE34/GQP9Q6OG/F1SPE34GQP9Q6OG.TINY.jpg" alt="" /><div class="count">1</div></a></div><div class="comment-info"><span>Aug 26, 2011. 9:35 AM</span><a href="/member/Oi23/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">Oi23</a>
+        says:
+      </div><div class="txt commenttxt">That makes a lot more sense than what I thought the point was.:P <br> <br> <br> <br> <br></div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CBANPTCGRSXCB6H" class="comment-actions"><div style="float:right;"><a id="replytolink_CBANPTCGRSXCB6H" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CBANPTCGRSXCB6H"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CPJPA4AGINP1A4J"></a><div class="comment entryList clearfix toplevel " style="margin-left:0px;"><div class="comment-authorpic"><a href="/member/11rex11/"><img src="http://img.instructables.com/files/deriv/FAW/QJW7/FTRJ77SD/FAWQJW7FTRJ77SD.TINY.jpg" alt="" /></a></div><div class="comment-info"><span>Jan 8, 2011. 7:57 PM</span><a href="/member/11rex11/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">11rex11</a>
+        says:
+      </div><div class="txt commenttxt">While making mine i came into a problem with it getting all tangled. I fixed it by butting a piece of ducktape on the back it keeps it nice and organised and still lets you work with it</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CPJPA4AGINP1A4J" class="comment-actions"><div style="float:right;"><a id="replytolink_CPJPA4AGINP1A4J" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CPJPA4AGINP1A4J"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CSMJW7QGCHHSYY5"></a><div class="comment entryList clearfix toplevel " style="margin-left:0px;"><div class="comment-authorpic"><a href="/member/shaka999/"><img src="/static/defaultIMG/user.TINY.gif" alt="" /></a></div><div class="comment-info"><span>Aug 5, 2010. 9:01 AM</span><a href="/member/shaka999/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">shaka999</a>
+        says:
+      </div><div class="txt commenttxt">Nice instructable.  I've started playing building a sheet with the hope of having something for my son for Halloween.  One thing I've noticed is that the weave seems to come apart pretty easy because of the cut in the tabs.  Has anyone found a good way to seal the links back up?    I was wondering if a drop of super glue on each tab might help it hold together?  </div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CSMJW7QGCHHSYY5" class="comment-actions"><div style="float:right;"><a id="replytolink_CSMJW7QGCHHSYY5" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CSMJW7QGCHHSYY5"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CW9KG5UGGPEXJT5"></a><div class="comment entryList clearfix  " style="margin-left:10px;"><div class="comment-authorpic"><a href="/member/moosofa/"><img src="/static/defaultIMG/user.TINY.gif" alt="" /></a></div><div class="comment-info"><span>Nov 22, 2010. 12:20 AM</span><a href="/member/moosofa/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">moosofa</a>
+        says:
+      </div><div class="txt commenttxt">I just use hot glue. It works well and keeps the sharp edges off of wherever you're planning on placing the maille on.</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CW9KG5UGGPEXJT5" class="comment-actions"><div style="float:right;"><a id="replytolink_CW9KG5UGGPEXJT5" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CW9KG5UGGPEXJT5"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CWPSMS7GGMMR38H"></a><div class="comment entryList clearfix  " style="margin-left:10px;"><div class="comment-authorpicstats"><a class="memberstats id-slipknotfan979" href="/member/slipknotfan979/"><img src="/static/defaultIMG/user.TINY.gif" alt="" /><div class="count">1</div></a></div><div class="comment-info"><span>Nov 18, 2010. 3:37 PM</span><a href="/member/slipknotfan979/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">slipknotfan979</a>
+        says:
+      </div><div class="txt commenttxt">just take pinch the to ends together until they overlap...that is what i did </div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CWPSMS7GGMMR38H" class="comment-actions"><div style="float:right;"><a id="replytolink_CWPSMS7GGMMR38H" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CWPSMS7GGMMR38H"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CIFB78ZGE39MHEY"></a><div class="comment entryList clearfix  " style="margin-left:10px;"><div class="comment-authorpic"><a href="/member/Lacy701/"><img src="/static/defaultIMG/user.TINY.gif" alt="" /></a></div><div class="comment-info"><span>Sep 14, 2010. 8:40 PM</span><a href="/member/Lacy701/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">Lacy701</a>
+        says:
+      </div><div class="txt commenttxt">I am a Grandmother of six and all are boys but one, so I have a lot of different types of craft items,which include a little electric smelting bowl to make little skulls , robots ,and birds,and so on. well I cut a few pieces off of the non painted  part of the pop cans and melted them and sealed the back of the cut pop tabs,this keeps them from coming apart,do this as soon as you join each piece,you may be able to use a torch to do the same thing .But that would kick up the safety factor !! and would be a good idea to do that in a vented or open garage,or workshop,or even outside,with gloves and safety goggles.make sure if you have any little helpers ,or watchers they are at a safe distance as most helpers like to be on top of your elbows.I hope that this helps some.Good luck !!!!</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CIFB78ZGE39MHEY" class="comment-actions"><div style="float:right;"><a id="replytolink_CIFB78ZGE39MHEY" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CIFB78ZGE39MHEY"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CDK7JQVGE7L4F77"></a><div class="comment entryList clearfix  " style="margin-left:20px;"><div class="comment-authorpic"><a href="/member/MargEllen/"><img src="/static/defaultIMG/user.TINY.gif" alt="" /></a></div><div class="comment-info"><span>Sep 20, 2010. 1:45 PM</span><a href="/member/MargEllen/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">MargEllen</a>
+        says:
+      </div><div class="txt commenttxt">could you go into more detail as to how to do this? i am having the problem of my tabs becoming unlinked overtime. i have tried soldering (failed horribly), super glue, and adhesives and none work well. i wold be very interested in hearing how to do this. could i do this with a stove and throwaway pot or do i need a proper smelting bowl? i would greatly appreciate your assistance</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CDK7JQVGE7L4F77" class="comment-actions"><div style="float:right;"><a id="replytolink_CDK7JQVGE7L4F77" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CDK7JQVGE7L4F77"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CSMOJ1LGFA3YEGZ"></a><div class="comment entryList clearfix  " style="margin-left:30px;"><div class="comment-authorpic"><a href="/member/Lacy701/"><img src="/static/defaultIMG/user.TINY.gif" alt="" /></a></div><div class="comment-info"><span>Oct 14, 2010. 10:10 PM</span><a href="/member/Lacy701/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">Lacy701</a>
+        says:
+      </div><div class="txt commenttxt">The little machine I have is to melt little bead like metal pieces.<br><br><br>I have a metal molder ,bytoymax<br><br>I have a metal molder by toymax inc. it melts tiny metal pellets.It is electric<br>and melts the pellets.I dip a 10 penny nail into the melted metal and use it to seal the cut in the  tab . My son bought plumbing plomeria by  Amazing Goop.He said it works ok to, it glues what ever, bonds forever,clear &amp; waterproof, and he was very happy with it and said it went very fast,and he worked on a clean dry surface,outdoors or in a well ventilated area,and he let it dry flat,back side up for 24 hours. The metal molder machine may not still be sold in the stores.I bought mine  a few years ago. I hope this helps some.My son and I are testing both ways to seal the cut to see which one works best ,and is the easiest ,and the fastest ,I will try to let you know what we find out ,If I can get the  time .I still have other costumes to make.So good luck<br><br><br></div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CSMOJ1LGFA3YEGZ" class="comment-actions"><div style="float:right;"><a id="replytolink_CSMOJ1LGFA3YEGZ" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CSMOJ1LGFA3YEGZ"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CBQZOT8GE7L49PY"></a><div class="comment entryList clearfix  " style="margin-left:20px;"><div class="comment-authorpic"><a href="/member/raen714/"><img src="/static/defaultIMG/user.TINY.gif" alt="" /></a></div><div class="comment-info"><span>Sep 19, 2010. 9:07 PM</span><a href="/member/raen714/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">raen714</a>
+        says:
+      </div><div class="txt commenttxt">This method won't work on pieces already put together, though, will it? My hauberk is the size and shape of a vest already, I'd hate to take it apart and start over.</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CBQZOT8GE7L49PY" class="comment-actions"><div style="float:right;"><a id="replytolink_CBQZOT8GE7L49PY" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CBQZOT8GE7L49PY"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CJMZRH1GDRPMTGN"></a><div class="comment entryList clearfix  " style="margin-left:10px;"><div class="comment-authorpic"><a href="/member/raen714/"><img src="/static/defaultIMG/user.TINY.gif" alt="" /></a></div><div class="comment-info"><span>Sep 6, 2010. 9:54 PM</span><a href="/member/raen714/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">raen714</a>
+        says:
+      </div><div class="txt commenttxt">I've been having this problem, too, have you come up with any solutions? I would love to use something like a soldering iron to melt the cuts back together, but I can't find anything that will heat up to 660C.</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CJMZRH1GDRPMTGN" class="comment-actions"><div style="float:right;"><a id="replytolink_CJMZRH1GDRPMTGN" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CJMZRH1GDRPMTGN"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CNOUIJCGF7B3EDI"></a><div class="comment entryList clearfix toplevel " style="margin-left:0px;"><div class="comment-authorpic"><a href="/member/tinkertot252/"><img src="/static/defaultIMG/user.TINY.gif" alt="" /></a></div><div class="comment-info"><span>Oct 13, 2010. 8:57 PM</span><a href="/member/tinkertot252/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">tinkertot252</a>
+        says:
+      </div><div class="txt commenttxt">I am amazed. I used to have thousands of pop tabs and after spending three years attempting to figure out how to make chainmaille and failing, I donated them. I appreciate your ingenuity. Soldering was too much. hehe</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CNOUIJCGF7B3EDI" class="comment-actions"><div style="float:right;"><a id="replytolink_CNOUIJCGF7B3EDI" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CNOUIJCGF7B3EDI"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CAEUM7SGEG58KRH"></a><div class="comment entryList clearfix toplevel " style="margin-left:0px;"><div class="comment-authorpicstats"><a class="memberstats id-baz561" href="/member/baz561/"><img src="http://img.instructables.com/files/deriv/FMR/QKIG/G2WM14RR/FMRQKIGG2WM14RR.TINY.jpg" alt="" /><div class="count">1</div></a></div><div class="comment-info"><span>Sep 25, 2010. 12:06 AM</span><a href="/member/baz561/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">baz561</a>
+        says:
+      </div><div class="txt commenttxt">I used some soder and it worked just fine.</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CAEUM7SGEG58KRH" class="comment-actions"><div style="float:right;"><a id="replytolink_CAEUM7SGEG58KRH" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CAEUM7SGEG58KRH"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CUSCAC7GE7LF8AN"></a><div class="comment entryList clearfix toplevel " style="margin-left:0px;"><div class="comment-authorpic"><a href="/member/x+burn/"><img src="http://img.instructables.com/files/deriv/FU9/X5PD/GB5HD603/FU9X5PDGB5HD603.TINY.jpg" alt="" /></a></div><div class="comment-info"><span>Sep 20, 2010. 11:33 AM</span><a href="/member/x+burn/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">x burn</a>
+        says:
+      </div><div class="txt commenttxt">nice ...</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CUSCAC7GE7LF8AN" class="comment-actions"><div style="float:right;"><a id="replytolink_CUSCAC7GE7LF8AN" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CUSCAC7GE7LF8AN"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CKV8V8NGAKTWATX"></a><div class="comment entryList clearfix toplevel " style="margin-left:0px;"><div class="comment-authorpic"><a href="/member/nck_munoz/"><img src="http://img.instructables.com/files/deriv/F0X/02HM/GJQEFTPO/F0X02HMGJQEFTPO.TINY.jpg" alt="" /></a></div><div class="comment-info"><span>Jun 18, 2010. 12:48 PM</span><a href="/member/nck_munoz/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">nck_munoz</a>
+        says:
+      </div><div class="txt commenttxt">lol wow easiest ible yet! i literally did this with stuff i had in my nightstand ( - pop tabs ) i hav  big black garbage bags full (idk how many gallons) full of crushed cans, think of all those tabs! i could make a chain mall blanket (idk how warm or comfortable or quiet it would be tho =P) lol but think of tha posibilites!</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CKV8V8NGAKTWATX" class="comment-actions"><div style="float:right;"><a id="replytolink_CKV8V8NGAKTWATX" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CKV8V8NGAKTWATX"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CMUJ5TWG7DYYHKQ"></a><div class="comment entryList clearfix toplevel " style="margin-left:0px;"><div class="comment-authorpicstats"><a class="memberstats id-rhaubejoi" href="/member/rhaubejoi/"><img src="http://img.instructables.com/files/deriv/F3V/WRMJ/GX8SHN3F/F3VWRMJGX8SHN3F.TINY.jpg" alt="" /><div class="count">1</div></a></div><div class="comment-info"><span>Apr 4, 2010. 2:05 PM</span><img src="/static/img/pro2.gif" class="commentloop_img_2" /><a href="/member/rhaubejoi/" class="entryListTitle" style="line-height:16px;padding-left:0px;">rhaubejoi</a>
+        says:
+      </div><div class="txt commenttxt">Wow, very creative and well written instructible.&nbsp; However, speaking as someone who has had a friend and also a relative die from cancer recently, I can't help but see whole lot of free cancer treatments in&nbsp; your chain maille. ( I don't know if they do this everywhere, but our hospitals here will do a free treatment for a gallon of coke tabs).<br> Seriously, very creative and well thought out.</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CMUJ5TWG7DYYHKQ" class="comment-actions"><div style="float:right;"><a id="replytolink_CMUJ5TWG7DYYHKQ" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CMUJ5TWG7DYYHKQ"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CPTFGCRGAA0EKQA"></a><div class="comment entryList clearfix  " style="margin-left:10px;"><div class="comment-authorpic"><a href="/member/SlashmasterAeoniX/"><img src="http://img.instructables.com/files/deriv/FEI/3CQK/G0UPQIUF/FEI3CQKG0UPQIUF.TINY.jpg" alt="" /></a></div><div class="comment-info"><span>Jun 11, 2010. 8:50 AM</span><a href="/member/SlashmasterAeoniX/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">SlashmasterAeoniX</a>
+        says:
+      </div><div class="txt commenttxt">Um, that seems a bit rude. He can choose to use his tabs how he sees fit. It's a nice tutorial for people who are on low income and need such a piece. Not every place uses poptabs to earn money for cancer patients. I sympathize, but this isn't the place to mention it.</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CPTFGCRGAA0EKQA" class="comment-actions"><div style="float:right;"><a id="replytolink_CPTFGCRGAA0EKQA" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CPTFGCRGAA0EKQA"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CXO3VBPGAB5Q5V5"></a><div class="comment entryList clearfix  " style="margin-left:20px;"><div class="comment-authorpicstats"><a class="memberstats id-rhaubejoi" href="/member/rhaubejoi/"><img src="http://img.instructables.com/files/deriv/F3V/WRMJ/GX8SHN3F/F3VWRMJGX8SHN3F.TINY.jpg" alt="" /><div class="count">1</div></a></div><div class="comment-info"><span>Jun 11, 2010. 3:31 PM</span><img src="/static/img/pro2.gif" class="commentloop_img_2" /><a href="/member/rhaubejoi/" class="entryListTitle" style="line-height:16px;padding-left:0px;">rhaubejoi</a>
+        says:
+      </div><div class="txt commenttxt">I didnt even attempt to tell him how to use his tabs. I complimented him on his instructable (twice!) and mentioned what we use them for locally. I was not in the slightest trying to tell him what to do the way you seem to be trying to tell me.  And, I think if he found it offensive he would have said so in April, when I left the comment.   I find your comment inflammatory and I think you only left it to make waves. </div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CXO3VBPGAB5Q5V5" class="comment-actions"><div style="float:right;"><a id="replytolink_CXO3VBPGAB5Q5V5" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CXO3VBPGAB5Q5V5"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="C7JEPFNGAA0ENAO"></a><div class="comment entryList clearfix  " style="margin-left:30px;"><div class="comment-authorpic"><a href="/member/SlashmasterAeoniX/"><img src="http://img.instructables.com/files/deriv/FEI/3CQK/G0UPQIUF/FEI3CQKG0UPQIUF.TINY.jpg" alt="" /></a></div><div class="comment-info"><span>Jun 12, 2010. 9:11 AM</span><a href="/member/SlashmasterAeoniX/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">SlashmasterAeoniX</a>
+        says:
+      </div><div class="txt commenttxt">I'm sorry if it came off that way, but that's completely not what I meant. I just found the way you worded your comment:   &quot; However, speaking as someone who has had a friend and also a relative die from cancer recently, I can't help but see whole lot of free cancer treatments in  your chain maille.&quot;  sounded as if you were chastising the man for using his poptabs for chain maille, rather than for cancer treatments. I didn't  mean to offend you, but this is my personal opinion, not inflammatory spamming. Despite the compliments, your positive message is just drowned out in the middle half where you seem to reveal too much information in a somewhat accusatory manner. It's just how it comes across online, and it's not my fault if I read such a thing and take it that way. I'm not telling you what to do, I'm just saying that you must be careful what you post because it may come off offensively to others, like myself. He may have left it stand, but it seemed to me like you were saying that if other people like myself were to sit at home and make this chain maille, we're being terrible because there are people out there dying from the lack of my poptabs. If you had simply said, &quot;In my area, we use old poptabs for cancer treatment,&quot; rather than, &quot;I had a friend and relative die from this, and I see all those free treatments in your craft,&quot; it would have come out much nicer, and I wouldn't have responded. As someone who is poor, and needs instructables like these for her own hobbies, because she must feed her family, telling me I can't even make chain maille without a guilty concious is just a slap in the face. Just try to understand how I saw it. I'm a genuine person. I get offended. I do not spam. In fact, I HATE spam, and this place doens't need it.   Just in case you were wondering, I do plan to donate the poptabs to the Ronald McDonald House for Children after the armor has fallen apart, and have donated thousands of poptabs to other such charities before via my work with the Girl Scouts. I believe in your cause, but I believe that, like political affiliation and religion, it should not appear in public forums.  For the sake of ending things, because frankly, I no longer care, I will no longer respond to this comment thread.</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_C7JEPFNGAA0ENAO" class="comment-actions"><div style="float:right;"><a id="replytolink_C7JEPFNGAA0ENAO" class="med-button reply-comment replylink commentloop_a_5 login-required" href="C7JEPFNGAA0ENAO"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CFCCNMXG7DYQG9P"></a><div class="comment entryList clearfix toplevel " style="margin-left:0px;"><div class="comment-authorpic"><a href="/member/Gripper103/"><img src="/static/defaultIMG/user.TINY.gif" alt="" /></a></div><div class="comment-info"><span>Apr 11, 2010. 12:44 AM</span><a href="/member/Gripper103/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">Gripper103</a>
+        says:
+      </div><div class="txt commenttxt">&nbsp;Great instuctable,tried making real chain for my St Georges costume but this will be easier,will post pics when done.</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CFCCNMXG7DYQG9P" class="comment-actions"><div style="float:right;"><a id="replytolink_CFCCNMXG7DYQG9P" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CFCCNMXG7DYQG9P"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CPKJ9ZOG7DY7YKC"></a><div class="comment entryList clearfix toplevel " style="margin-left:0px;"><div class="comment-authorpic"><a href="/member/BuilderMan001/"><img src="/static/defaultIMG/user.TINY.gif" alt="" /></a></div><div class="comment-info"><span>Apr 9, 2010. 6:58 PM</span><a href="/member/BuilderMan001/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">BuilderMan001</a>
+        says:
+      </div><div class="txt commenttxt">DUDE!!! this is tight...but you must have had a lot of spare time to a-think of this and b- do it...<br></div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CPKJ9ZOG7DY7YKC" class="comment-actions"><div style="float:right;"><a id="replytolink_CPKJ9ZOG7DY7YKC" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CPKJ9ZOG7DY7YKC"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CKKE67JG616YCEK"></a><div class="comment entryList clearfix toplevel " style="margin-left:0px;"><div class="comment-authorpic"><a href="/member/lalaluluwe/"><img src="/static/defaultIMG/user.TINY.gif" alt="" /></a></div><div class="comment-info"><span>Feb 23, 2010. 2:15 PM</span><a href="/member/lalaluluwe/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">lalaluluwe</a>
+        says:
+      </div><div class="txt commenttxt">You have now inspired me to make a skirt out of coke tabs for my schools fashion show :) thanks!<br></div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CKKE67JG616YCEK" class="comment-actions"><div style="float:right;"><a id="replytolink_CKKE67JG616YCEK" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CKKE67JG616YCEK"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CGM4C11G23UMMNM"></a><div class="comment entryList clearfix toplevel " style="margin-left:0px;"><div class="comment-authorpic"><a href="/member/Sparky664/"><img src="http://img.instructables.com/files/deriv/FA8/8DNP/G23UMMNP/FA88DNPG23UMMNP.TINY.jpg" alt="" /></a></div><div class="comment-info"><span>Nov 21, 2009. 6:30 AM</span><a href="/member/Sparky664/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">Sparky664</a>
+        says:
+      </div><div class="txt commenttxt">Chainmaille guitar strap?</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CGM4C11G23UMMNM" class="comment-actions"><div style="float:right;"><a id="replytolink_CGM4C11G23UMMNM" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CGM4C11G23UMMNM"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="C1VYU46G5FRAULD"></a><div class="comment entryList clearfix  " style="margin-left:10px;"><div class="comment-authorpicstats"><a class="memberstats id-smattman22" href="/member/smattman22/"><img src="http://img.instructables.com/files/deriv/FNR/GV38/G23UTO4O/FNRGV38G23UTO4O.TINY.jpg" alt="" /><div class="count">6</div></a></div><div class="comment-info"><span>Feb 9, 2010. 3:07 PM</span><a href="/member/smattman22/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">smattman22</a>
+        says:
+      </div><div class="txt commenttxt">good idea!<br></div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_C1VYU46G5FRAULD" class="comment-actions"><div style="float:right;"><a id="replytolink_C1VYU46G5FRAULD" class="med-button reply-comment replylink commentloop_a_5 login-required" href="C1VYU46G5FRAULD"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CNZMXHCG56ZQC2W"></a><div class="comment entryList clearfix  " style="margin-left:10px;"><div class="comment-authorpic"><a href="/member/MisterHankie/"><img src="http://img.instructables.com/files/deriv/FQE/KIQU/FF5ATNG7/FQEKIQUFF5ATNG7.TINY.jpg" alt="" /></a></div><div class="comment-info"><span>Feb 5, 2010. 8:07 PM</span><a href="/member/MisterHankie/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">MisterHankie</a>
+        says:
+      </div><div class="txt commenttxt">&nbsp;u should try putting chain mail over a piece of leather</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CNZMXHCG56ZQC2W" class="comment-actions"><div style="float:right;"><a id="replytolink_CNZMXHCG56ZQC2W" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CNZMXHCG56ZQC2W"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CIPQ9FUG4NVTD3M"></a><div class="comment entryList clearfix  " style="margin-left:10px;"><div class="comment-authorpicstats"><a class="memberstats id-someniceguyon" href="/member/someniceguyon/"><img src="http://img.instructables.com/files/deriv/FHE/E4E9/FT18158M/FHEE4E9FT18158M.TINY.jpg" alt="" /><div class="count">1</div></a></div><div class="comment-info"><span>Jan 20, 2010. 7:58 PM</span><a href="/member/someniceguyon/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">someniceguyon</a>
+        says:
+      </div><div class="txt commenttxt">hell ya, that would be pimp... i hate that word, why did i say it? (puts gun in mouth)</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CIPQ9FUG4NVTD3M" class="comment-actions"><div style="float:right;"><a id="replytolink_CIPQ9FUG4NVTD3M" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CIPQ9FUG4NVTD3M"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="C8SSSANG47KOS03"></a><div class="comment entryList clearfix  " style="margin-left:10px;"><div class="comment-authorpic"><a href="/member/Forevirknight/"><img src="http://img.instructables.com/files/deriv/FNJ/DGM7/G47KORZS/FNJDGM7G47KORZS.TINY.jpg" alt="" /></a></div><div class="comment-info"><span>Jan 11, 2010. 11:17 PM</span><a href="/member/Forevirknight/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">Forevirknight</a>
+        says:
+      </div><div class="txt commenttxt">Good idea, sparky. it might be a little hard on your shoulders tho. Then again it depends on the weight of your guitar. I play blues, but not much.</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_C8SSSANG47KOS03" class="comment-actions"><div style="float:right;"><a id="replytolink_C8SSSANG47KOS03" class="med-button reply-comment replylink commentloop_a_5 login-required" href="C8SSSANG47KOS03"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="C3PXVPRG4OV5LU5"></a><div class="comment entryList clearfix  " style="margin-left:20px;"><div class="comment-authorpicstats"><a class="memberstats id-someniceguyon" href="/member/someniceguyon/"><img src="http://img.instructables.com/files/deriv/FHE/E4E9/FT18158M/FHEE4E9FT18158M.TINY.jpg" alt="" /><div class="count">1</div></a></div><div class="comment-info"><span>Jan 20, 2010. 8:04 PM</span><a href="/member/someniceguyon/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">someniceguyon</a>
+        says:
+      </div><div class="txt commenttxt">you could find a way to sew it over a stap so it wont be as harsh. sorry if this is commone sence for you guys... im no smarticles =(</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_C3PXVPRG4OV5LU5" class="comment-actions"><div style="float:right;"><a id="replytolink_C3PXVPRG4OV5LU5" class="med-button reply-comment replylink commentloop_a_5 login-required" href="C3PXVPRG4OV5LU5"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CHU2JNVG4PBWOKZ"></a><div class="comment entryList clearfix  " style="margin-left:30px;"><div class="comment-authorpicstats"><a class="memberstats id-dany man148" href="/member/dany+man148/"><img src="/static/defaultIMG/user.TINY.gif" alt="" /><div class="count">1</div></a></div><div class="comment-info"><span>Jan 21, 2010. 8:19 AM</span><a href="/member/dany+man148/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">dany man148</a>
+        says:
+      </div><div class="txt commenttxt">yah there you go make a gutar hero gutar strap :D...<br> <br> <br> yah what i am going to do is make a hackey sack out of this with extra tabs i the middle in sted of beads</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CHU2JNVG4PBWOKZ" class="comment-actions"><div style="float:right;"><a id="replytolink_CHU2JNVG4PBWOKZ" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CHU2JNVG4PBWOKZ"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="C3SBJJ9G43EFKTM"></a><div class="comment entryList clearfix  " style="margin-left:10px;"><div class="comment-authorpic"><a href="/member/adris8/"><img src="/static/defaultIMG/user.TINY.gif" alt="" /></a></div><div class="comment-info"><span>Jan 6, 2010. 8:10 AM</span><a href="/member/adris8/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">adris8</a>
+        says:
+      </div><div class="txt commenttxt">that'll be cool, but gotta be quite wide to take off the stress because of the tabs being pretty hard.<br></div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_C3SBJJ9G43EFKTM" class="comment-actions"><div style="float:right;"><a id="replytolink_C3SBJJ9G43EFKTM" class="med-button reply-comment replylink commentloop_a_5 login-required" href="C3SBJJ9G43EFKTM"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="C60JSVAG3KYGKC2"></a><div class="comment entryList clearfix  " style="margin-left:10px;"><div class="comment-authorpic"><a href="/member/Pbyrd/"><img src="http://img.instructables.com/files/deriv/FFO/SOBF/F0LKLJY2/FFOSOBFF0LKLJY2.TINY.jpg" alt="" /></a></div><div class="comment-info"><span>Dec 29, 2009. 10:15 AM</span><a href="/member/Pbyrd/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">Pbyrd</a>
+        says:
+      </div><div class="txt commenttxt">That is an awesome idea, I'm going to try that.</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_C60JSVAG3KYGKC2" class="comment-actions"><div style="float:right;"><a id="replytolink_C60JSVAG3KYGKC2" class="med-button reply-comment replylink commentloop_a_5 login-required" href="C60JSVAG3KYGKC2"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CMR539BG3KY0Q64"></a><div class="comment entryList clearfix  " style="margin-left:10px;"><div class="comment-authorpic"><a href="/member/unreal_ed/"><img src="http://graph.facebook.com/513924223/picture" alt="" /></a></div><div class="comment-info"><span>Dec 27, 2009. 2:30 PM</span><a href="/member/unreal_ed/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">unreal_ed</a>
+        says:
+      </div><div class="txt commenttxt">You could make the strap and put it on top of your normal strap, attach it with wires going through the tabs' loops.<br> <br> It would also probably hurt if u didn't have anything between you and the chainmail anyway.</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CMR539BG3KY0Q64" class="comment-actions"><div style="float:right;"><a id="replytolink_CMR539BG3KY0Q64" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CMR539BG3KY0Q64"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CE5HYUZG4OV5LUG"></a><div class="comment entryList clearfix  " style="margin-left:20px;"><div class="comment-authorpicstats"><a class="memberstats id-someniceguyon" href="/member/someniceguyon/"><img src="http://img.instructables.com/files/deriv/FHE/E4E9/FT18158M/FHEE4E9FT18158M.TINY.jpg" alt="" /><div class="count">1</div></a></div><div class="comment-info"><span>Jan 20, 2010. 8:09 PM</span><a href="/member/someniceguyon/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">someniceguyon</a>
+        says:
+      </div><div class="txt commenttxt">I wouldnt worrie about it hurting, a shirt would help that. I think the tabs by themselfs might be a little too weak though.</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CE5HYUZG4OV5LUG" class="comment-actions"><div style="float:right;"><a id="replytolink_CE5HYUZG4OV5LUG" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CE5HYUZG4OV5LUG"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CMQGSVFG29ZFC7P"></a><div class="comment entryList clearfix  " style="margin-left:10px;"><div class="comment-authorpic"><a href="/member/phillybusta/"><img src="/static/defaultIMG/user.TINY.gif" alt="" /></a></div><div class="comment-info"><span>Nov 22, 2009. 3:43 PM</span><a href="/member/phillybusta/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">phillybusta</a>
+        says:
+      </div><div class="txt commenttxt">&nbsp;that would be an effective way to drop your guitar a lot lol.</div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CMQGSVFG29ZFC7P" class="comment-actions"><div style="float:right;"><a id="replytolink_CMQGSVFG29ZFC7P" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CMQGSVFG29ZFC7P"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><a name="CGXSZ7TG29ZFA6P"></a><div class="comment entryList clearfix  " style="margin-left:10px;"><div class="comment-authorpicstats"><a class="memberstats id-Maxaxle" href="/member/Maxaxle/"><img src="http://img.instructables.com/files/deriv/FEK/96OL/GMIGGH61/FEK96OLGMIGGH61.TINY.jpg" alt="" /><div class="count">4</div></a></div><div class="comment-info"><span>Nov 22, 2009. 11:36 AM</span><a href="/member/Maxaxle/" class="entryListTitle" style="line-height:16px;padding-right:4px;padding-left:0px;">Maxaxle</a>
+        says:
+      </div><div class="txt commenttxt">Just make sure it's sturdy first. Maybe it could be made of beer tabs and it could be used to tally how long you've been on tour (same amount of beer tabs/day).<br></div><div id="files"><a name="files"></a></div><div id="commentactioncontainer_CGXSZ7TG29ZFA6P" class="comment-actions"><div style="float:right;"><a id="replytolink_CGXSZ7TG29ZFA6P" class="med-button reply-comment replylink commentloop_a_5 login-required" href="CGXSZ7TG29ZFA6P"><b>Reply</b></a></div><div class="commentloop_div_4 mt5"></div></div></div><div class="comments_div_4"><div class="comments-pagination clearfix"><table cellpadding="3"><tr><td><span class="label">1-40 of 100</span></td><td></td><td><a rel="nofollow" href="http://www.instructables.com/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/?&amp;sort=ACTIVE&amp;limit=40&amp;offset=40" class="med-button">next &raquo;</a></td></tr></table></div></div><a name="POST" id="POST"></a><table class="comments_table_5"><tr valign="top"><td><img src="/static/defaultIMG/comment.TINY.gif" alt="" /></td><td class="comments_td_6"><div id="NewCommentLINK" class="comment-bucket"><a class="stepLabel new-comment login-required" href="#" onclick="return false;">
+                    Add Comment
+                  </a></div></td></tr></table><script type="text/javascript">
+          $(function () {
+              $(".login-required").click(function (evt) {
+                  evt.preventDefault();
+                  navoperator.makeLoginByJquery();
+              });
+          });
+        </script></div>
+
+  <!-- google_ad_section_end -->
+
+</div><div id="sidebar"><div class="newrightbar_div_10"><script class="tier2" type="text/deferscript">
+      GA_googleFillSlot("play_med_rectangle");
+    </script></div><div class="newrightbar_div_11"><script class="tier2" type="text/deferscript">
+      GA_googleFillSlot("_house");
+    </script></div><div class="hatbox" id="related_content"><h3>Related</h3><div class="hatbox-content instructable"><p class="clearfix related_item"><a href="/id/Fingerless-Chainmaille-Gloves/" class="imglink" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:0/']);"><img src="http://img.instructables.com/files/deriv/FLG/YT8U/G8LWKPFM/FLGYT8UG8LWKPFM.SQUARE.jpg" alt="Fingerless Chainmaille Gloves" title="" /></a><a href="/id/Fingerless-Chainmaille-Gloves/" class="title" title="Fingerless Chainmaille Gloves" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:0/']);">Fingerless Chainmaille Gloves</a><br />
+  		    by
+  		  <a href="/member/Kenta-Rin/" class="user" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/memberLink/']);">Kenta-Rin</a><br /></p><p class="clearfix related_item"><a href="/id/Maille-and-plate-leg-armour/" class="imglink" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:1/']);"><img src="http://img.instructables.com/files/deriv/FB0/9HSI/FY1YZQAF/FB09HSIFY1YZQAF.SQUARE.jpg" alt="Maille and plate leg armour" title="" /></a><a href="/id/Maille-and-plate-leg-armour/" class="title" title="Maille and plate leg armour" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:1/']);">Maille and plate leg armour</a><br />
+  		    by
+  		  <a href="/member/armourkris/" class="user" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/memberLink/']);">armourkris</a><br /></p><p class="clearfix related_item"><a href="/id/Chain-maille-embroidered-Shirt/" class="imglink" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:2/']);"><img src="http://img.instructables.com/files/deriv/F20/HT9B/FZG43ID8/F20HT9BFZG43ID8.SQUARE.jpg" alt="Chain maille embroidered Shirt" title="" /></a><a href="/id/Chain-maille-embroidered-Shirt/" class="title" title="Chain maille embroidered Shirt" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:2/']);">Chain maille embroidered Shirt</a><br />
+  		    by
+  		  <a href="/member/Lizander/" class="user" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/memberLink/']);">Lizander</a><br /></p><p class="clearfix related_item"><a href="/id/Riveted-Maille-from-Scratch/" class="imglink" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:3/']);"><img src="http://img.instructables.com/files/deriv/FH7/U3TY/G5W7CR2T/FH7U3TYG5W7CR2T.SQUARE.jpg" alt="Riveted Maille from Scratch." title="" /></a><a href="/id/Riveted-Maille-from-Scratch/" class="title" title="Riveted Maille from Scratch." onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:3/']);">Riveted Maille from Scratch.</a><br />
+  		    by
+  		  <a href="/member/armourkris/" class="user" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/memberLink/']);">armourkris</a><br /></p><p class="clearfix related_item"><a href="/id/Chain-Maille-Laptop-Bag/" class="imglink" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:4/']);"><img src="http://img.instructables.com/files/deriv/FBC/6VG6/FSIJKIK9/FBC6VG6FSIJKIK9.SQUARE.jpg" alt="Soda Tab Chainmail Laptop Bag" title="" /></a><a href="/id/Chain-Maille-Laptop-Bag/" class="title" title="Soda Tab Chainmail Laptop Bag" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:4/']);">Soda Tab Chainmail Laptop Bag</a><br />
+  		    by
+  		  <a href="/member/shesparticular/" class="user" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/memberLink/']);">shesparticular</a><br /></p><p class="clearfix related_item"><a href="/id/ChainMaille-101-Hoodoo-Hex-Sheet/" class="imglink" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:5/']);"><img src="/files/deriv/FXV/IJS3/H166UWB0/FXVIJS3H166UWB0.SQUARE.jpg" alt="ChainMaille 101: Hoodoo Hex Sheet" title="" /></a><a href="/id/ChainMaille-101-Hoodoo-Hex-Sheet/" class="title" title="ChainMaille 101: Hoodoo Hex Sheet" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:5/']);">ChainMaille 101: Hoodoo Hex Sheet</a><br />
+  		    by
+  		  <a href="/member/maxumx/" class="user" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/memberLink/']);">maxumx</a><br /></p><p class="clearfix related_item"><a href="/id/Byzantine-Chainmaille-Speed-weaving/" class="imglink" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:6/']);"><img src="http://img.instructables.com/files/deriv/FMY/CIRM/F4IX6H4I/FMYCIRMF4IX6H4I.SQUARE.jpg" alt="Byzantine Chainmail(le) Speed-weaving" title="" /></a><a href="/id/Byzantine-Chainmaille-Speed-weaving/" class="title" title="Byzantine Chainmail(le) Speed-weaving" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:6/']);">Byzantine Chainmail(le) Speed-weaving</a><br />
+  		    by
+  		  <a href="/member/ryzellon/" class="user" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/memberLink/']);">ryzellon</a><br /></p><p class="clearfix related_item"><a href="/id/Can-Tab-Chainmaille-Hand-Guard/" class="imglink" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:7/']);"><img src="http://img.instructables.com/files/deriv/F4N/IU4W/GLXHSDK6/F4NIU4WGLXHSDK6.SQUARE.jpg" alt="Can Tab Chainmaille Hand Guard" title="" /></a><a href="/id/Can-Tab-Chainmaille-Hand-Guard/" class="title" title="Can Tab Chainmaille Hand Guard" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:7/']);">Can Tab Chainmaille Hand Guard</a><br />
+  		    by
+  		  <a href="/member/reddevved/" class="user" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/memberLink/']);">reddevved</a><br /></p><p class="clearfix related_item"><a href="/id/Volume-7-How-to-Weave-Japanese-2-in-1/" class="imglink" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:8/']);"><img src="http://img.instructables.com/files/deriv/FQO/ZZJF/GB4CYP8I/FQOZZJFGB4CYP8I.SQUARE.jpg" alt="Volume 7 - How to Weave Japanese 2-in-1" title="" /></a><a href="/id/Volume-7-How-to-Weave-Japanese-2-in-1/" class="title" title="Volume 7 - How to Weave Japanese 2-in-1" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:8/']);">Volume 7 - How to Weave Japanese 2-in-1</a><br />
+  		    by
+  		  <a href="/member/jbb3141/" class="user" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/memberLink/']);">jbb3141</a><br /></p><p class="clearfix related_item"><a href="/id/Volume-1-Introduction-to-Chainmail/" class="imglink" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:9/']);"><img src="http://img.instructables.com/files/deriv/FG8/H67U/GB5HCXE5/FG8H67UGB5HCXE5.SQUARE.jpg" alt="Volume 1 - Introduction to Chainmail" title="" /></a><a href="/id/Volume-1-Introduction-to-Chainmail/" class="title" title="Volume 1 - Introduction to Chainmail" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/position:9/']);">Volume 1 - Introduction to Chainmail</a><br />
+  		    by
+  		  <a href="/member/jbb3141/" class="user" onclick="_gaq.push(['_trackPageview', '/event/related/rhs/memberLink/']);">jbb3141</a><br /></p><div class="clearfix"><p class="viewall pager relatedItems_p_9" id="viewallLink_id"><a class="gray-btn" href="/tag/type-id/?q=" class="med-button">More Related</a></p></div><script language="javascript" type="text/JavaScript">
+    $(function () {
+      var id = "EHL7L4DFYTCPBAU";
+      var keywords = ["pop tab","poptab","chain mail","maille","chainmail","chainmaille","weaving","armor"];
+      var categories = ["play props"];
+
+      //
+
+      // Set up View All link
+      // We do this in script because we need to do the output of keywords
+      // as <c:out escapeXml="false"/> calls, which cannot be placed inside
+      // another element's attribute (<a href>.)
+        var viewall =  $("#viewallLink_id"),
+      viewAllParams = {
+        q: (keywords.length > 0 || categories.length > 0 ?
+            keywords.join(" ") + " " + categories.join(" ") : "*:*"),
+        handler: "standard",
+        relatedToId: id,
+        sort: "none"
+      };
+        viewall.find("a").attr("href", "/tag/type-id/?" + $.param(viewAllParams));
+      viewall.show();
+      //
+    });
+  </script></div></div><ul id="meta-tabs" class="small-tabs clearfix"><li class="active"><a href="meta-info">Info</a></li><li><a href="meta-stats">Stats</a></li></ul><div class="hatbox" id="meta-info-sidebar-box"><div id="meta-info" class="hatbox-content info meta-tab"><p class="hits-count"><span>300,999</span><br />
+          views
+        </p><div id="rate_EHL7L4DFYTCPBAU" class="login-required">
+    &nbsp;</div><script type="text/deferscript" class="tier1" defersrc="/static/js/jqplugins/raty/js/jquery.raty.min.js"></script><script type="text/deferscript" class="tier1" defersrc="/static/js/RatingStars.js"></script><script type="text/deferscript" class="tier1">
+      $(function () {
+    
+      var readonly = true;
+    
+    var stars = new RatingStars($("#rate_EHL7L4DFYTCPBAU"), {
+        rating: 5.0,
+        readonly: readonly,
+        id: "EHL7L4DFYTCPBAU",
+        category: "INSTRUCTABLE"
+    });
+    
+    });
+  </script><div id="ratersDiv" class="rating_div_2" style="display: none">Ratings:<br /></div><div class="author-info clearfix"><div class="following"><div class="bubble">124<br /><span>Followers</span><img src="/static/img/probox-bubble-point.png" class="bubble-point" /></div><input type="button" class="big-button" value="Follow" id="subscribe-info" /><script type="text/javascript" language="javascript">
+                    $("#subscribe-info").click(function (evt) {
+                        evt.preventDefault();
+                        navoperator.makeLoginByJquery();
+                    });
+                  </script></div><div class="about-author"><p><span class="faded">Author:</span><img class="pro-img" src="/static/img/pro2.gif" /><a href="/member/quixotiCfluX/" title="view quixotiCfluX's profile">quixotiCfluX</a></p><p><span class="faded">Published:</span><span class="published">Aug 28, 2009</span></p><p><span class="faded">License:</span><span class="license"><a href="#" onclick="window.open('/static/entry/license/BY.html','LICENSE','status=yes,scrollbars=yes,resizable=yes,width=450,height=400'); return false;"><img alt="Attribution" src="/static/img/license/by_small.png" /></a></span></p></div></div><p class="related"><span class="faded">Related: </span><a class="related" href="/tag/type-id/category-play/keyword-pop tab/">pop tab</a>, <a class="related" href="/tag/type-id/category-play/keyword-poptab/">poptab</a>, <a class="related" href="/tag/type-id/category-play/keyword-chain mail/">chain mail</a>, <a class="related" href="/tag/type-id/category-play/keyword-maille/">maille</a>, <a class="related" href="/tag/type-id/category-play/keyword-chainmail/">chainmail</a>, <a class="related" href="/tag/type-id/category-play/keyword-chainmaille/">chainmaille</a>, <a class="related" href="/tag/type-id/category-play/keyword-weaving/">weaving</a>, <a class="related" href="/tag/type-id/category-play/keyword-armor/">armor</a></p></div><div id="meta-stats" class="hatbox-content meta-tab"><p>Total Views: <strong>300,999</strong></p><p>Today Views: <strong>92</strong></p><p>Comments: <strong>770</strong></p><p>Rating: <strong>5</strong></p></div></div><script type="text/javascript" language="javascript">
+          $(".small-tabs a").click(function (evt) {
+              evt.preventDefault();
+              var el = $(this);
+              var tab = $("#" + el.attr("href"));
+              el.parent("li").siblings(".active").removeClass("active");
+              el.parent("li").addClass("active");
+              $(".meta-tab").hide();
+              tab.show();
+          });
+    </script><div class="hatbox"><h3>Guides</h3><div class="hatbox-content hugeThumbs guides_div_0"><div class="image-display-wrapper guide guides_div_1 ml15"><p class="image-display guides"><h2><a href="/id/Best-of-2009-Top-Rated-Insructables/">Best of 2009: Top-Rated Instructables</a></h2><a href="/id/Best-of-2009-Top-Rated-Insructables/"><img src="http://img.instructables.com/files/deriv/F88/QBJM/G3KYGBD3/F88QBJMG3KYGBD3.SMALL.jpg" class="guides_img_2" /></a></p></div><br class="clear" /><div class="image-display-wrapper guide guides_div_1 ml15"><p class="image-display guides"><h2><a href="/id/Best-of-2009-Most-Commented/">Best of 2009: Most Commented</a></h2><a href="/id/Best-of-2009-Most-Commented/"><img src="http://img.instructables.com/files/deriv/FCC/D20N/G3JELCEF/FCCD20NG3JELCEF.SMALL.jpg" class="guides_img_2" /></a></p></div><br class="clear" /><div class="image-display-wrapper guide guides_div_1 ml15"><p class="image-display guides"><h2><a href="/id/Best-of-2009-Top-Viewed-Instructables/">Best of 2009: Top Viewed Instructables</a></h2><a href="/id/Best-of-2009-Top-Viewed-Instructables/"><img src="http://img.instructables.com/files/deriv/FU2/1PXU/G3KY0KXA/FU21PXUG3KY0KXA.SMALL.jpg" class="guides_img_2" /></a></p></div><br class="clear" /><div class="image-display-wrapper guide guides_div_1 ml15"><p class="image-display guides"><h2><a href="/id/Cheap-Costumes/">Cheap Costumes</a></h2><a href="/id/Cheap-Costumes/"><img src="http://img.instructables.com/files/deriv/F21/EWVL/GE39I95B/F21EWVLGE39I95B.SMALL.jpg" class="guides_img_2" /></a></p></div><br class="clear" /><div class="pager guides_div_3"><a class="gray-btn" href="/tag/type-id/guide-true/">More Guides</a></div><br class="clear" /></div></div></div><br clear="all" /></div></div><div id="footer"><div id="footer-search"><div id="other-locations"><a target="_blank" href="http://www.facebook.com/instructables"><img src="/static/img/home/fb.png" /></a><a target="_blank" href="http://www.twitter.com/instructables"><img src="/static/img/home/twitter.png" /></a></div><div id="searchbox"><form action="http://www.instructables.com/pages/search/search.jsp" method="get" id="footer-search-form"><input type="hidden" name="cx" value="partner-pub-1783560022203827:npr2q7v5m6t" /><input type="hidden" name="cof" value="FORID:11" /><input type="hidden" name="ie" value="ISO-8859-1" /><input type="text" class="barinput" name="q" id="q2" value="" /><a href="#" onclick="document.getElementById('footer-search-form').submit();" id="searchbutton"><span>Search</span></a></form></div></div><div id="footerstuff"><div id="morefrom" class="col"><h3>Explore Channels in Play</h3><div class="footerchannels"><ul><li><a href="/tag/type-id/category-play/channel-airsoft/"><span>Airsoft</span></a></li><li><a href="/tag/type-id/category-play/channel-card-games/"><span>Card Games</span></a></li><li><a href="/tag/type-id/category-play/channel-computer-games/"><span>Computer Games</span></a></li><li><a href="/tag/type-id/category-play/channel-guitar-hero/"><span>Guitar Hero</span></a></li><li><a href="/tag/type-id/category-play/channel-guitars/"><span>Guitars</span></a></li><li><a href="/tag/type-id/category-play/channel-instruments/"><span>Instruments</span></a></li><li><a href="/tag/type-id/category-play/channel-knex/"><span>K'NEX</span></a></li><li><a href="/tag/type-id/category-play/channel-lego/"><span>Lego</span></a></li><li><a href="/tag/type-id/category-play/channel-magic-tricks/"><span>Magic Tricks</span></a></li><li><a href="/tag/type-id/category-play/channel-music/"><span>Music</span></a></li><li><a href="/tag/type-id/category-play/channel-nerf/"><span>Nerf</span></a></li><li><a href="/tag/type-id/category-play/channel-nintendo/"><span>Nintendo</span></a></li></ul><ul><li><a href="/tag/type-id/category-play/channel-offbeat/"><span>Offbeat</span></a></li><li><a href="/tag/type-id/category-play/channel-office-supplies/"><span>Office Supplies</span></a></li><li><a href="/tag/type-id/category-play/channel-paintball/"><span>Paintball</span></a></li><li><a href="/tag/type-id/category-play/channel-paper-airplanes/"><span>Paper Airplanes</span></a></li><li><a href="/tag/type-id/category-play/channel-party-tricks/"><span>Party Tricks</span></a></li><li><a href="/tag/type-id/category-play/channel-playstation/"><span>PlayStation</span></a></li><li><a href="/tag/type-id/category-play/channel-pranks-and-humor/"><span>Pranks & Humor</span></a></li><li><a href="/tag/type-id/category-play/channel-props/"><span>Props</span></a></li><li><a href="/tag/type-id/category-play/channel-psp/"><span>PSP</span></a></li><li><a href="/tag/type-id/category-play/channel-puzzles/"><span>Puzzles</span></a></li><li><a href="/tag/type-id/category-play/channel-rockets/"><span>Rockets</span></a></li><li><a href="/tag/type-id/category-play/channel-siege-engines/"><span>Siege Engines</span></a></li></ul><ul><li><a href="/tag/type-id/category-play/channel-sports/"><span>Sports</span></a></li><li><a href="/tag/type-id/category-play/channel-table-top/"><span>Table Top</span></a></li><li><a href="/tag/type-id/category-play/channel-toys/"><span>Toys</span></a></li><li><a href="/tag/type-id/category-play/channel-video-games/"><span>Video Games</span></a></li><li><a href="/tag/type-id/category-play/channel-wallets/"><span>Wallets</span></a></li><li><a href="/tag/type-id/category-play/channel-wii/"><span>Wii</span></a></li><li><a href="/tag/type-id/category-play/channel-xbox/"><span>Xbox</span></a></li><li><a href="/tag/type-id/category-play/channel-yo-yo/"><span>Yo-Yo</span></a></li></ul></div></div><div id="newsletter-column" class="col"><h3>Join Our Newsletter</h3><p>Join over 800,000 Instructable fans who receive our DIY newsletter.</p><p><input type="text" id="newslettersignuptext" class="text" value="enter email" onfocus="if(this.value == 'enter email')this.value='';" /><a id="join-btn" href="#" onclick="openSubscribePopUp(document.getElementById('newslettersignuptext'));return false;"><img src="/static/img/home/join.png" /></a></p><script type="text/javascript">
+
+	      function openSubscribePopUp(src){
+
+              if (src.value == 'enter email') {
+		          alert('Please enter your email address');
+              } else {
+		          window.open("/newsletter/newslettersignup?email=" + src.value,"newslettersignup","status=yes,scrollbars=yes,resizable=yes,width=420,height=250");
+              }
+	      }
+
+	    </script></div><div id="footer-about" class="col"><h3>About Us</h3><ul><li><a href="/about/">About</a></li><li><a href="/advertise/">Advertise</a></li><li><a href="/community/Instructables-in-the-News/">Press</a></li><li><a href="/about/contact.jsp">Contact</a></li><li><a href="/community?categoryGroup=marketplace&category=jobs_internships">Jobs</a></li><li><a onclick="window.open('/tos.html','TOS','status=yes,scrollbars=yes,resizable=yes,width=600,height=480'); return false;" href="/tos.html">Legal</a></li><li><a href="/community?categoryGroup=Help">Help</a></li><li><a href="http://usa.autodesk.com/privacy/">Privacy Policy</a></li></ul></div><div class="col"><a class="pro-btns" href="/account/gopro?sourcea=footer"><img src="/static/img/home/go-pro.png" alt="Go Pro!" /></a><a class="pro-btns" href="/account/give?sourcea=footer"><img src="/static/img/home/give-pro.png" alt="Give Pro" /></a></div></div><p id="copyright" class="copyright">&copy; 2012 Instructables</p></div><div class="promodal" id="login-modal"><div class="promodal-inner"><div class="promodal-top"><img class="promodal-proburst" src="/static/img/promodal-proburst.png" alt="Pro" /><h3>Get More Out of Instructables</h3><h3 id="login-account-h">Already have an Account?</h3><a class="promodal-close" href="#"><img src="/static/img/promodal-close.png" alt="close" /></a></div><div id="upgrade-features"><img id="login-allsteps" src="/static/img/login_allsteps.png" /><p><strong>All Steps Viewing</strong><br />
+        View all steps of an Instructable on the same page when you're a Pro Member.</p><a id="login-upgrade" href="/account/gopro?sourcea=login"><span>Upgrade to Pro today!</span></a></div><div class="login loginform" id="loginform"><form id="login" method="post" action="/account/login?nxtPgName=Genuine+chainmaille+from+pop+tabs&nxtPg=/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/"><div class="username"><label for="username_nav" id="username_label">Username</label><input id="username_nav" type="text" name="u" /></div><div class="password"><label for="password_nav" id="password_label">Password</label><input id="password_nav" type="password" name="p" /></div><div class="loginbutton"><input type="hidden" name="RememberME" value="checked" /><input type="submit" class="login-btn" value="Login" /></div><p class="forgot"><a href="/account/forgot?nxtPgName=Genuine+chainmaille+from+pop+tabs&nxtPg=/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/">(forgot username/password?)</a></p></form></div></div></div><div id="fb-root"></div><script type="text/deferscript" class="tier1" defersrc="/static/js/nav.js"></script><script type="text/deferscript" class="tier1" defersrc="//connect.facebook.net/en_US/all.js"></script><script class="tier1" type="text/deferscript">
+          FB.init({
+            appId: '140028286058792',
+            cookie: true,
+            xfbml: false,
+            oauth: true
+          });
+          (function () {
+              var el = document.getElementById("facebook-login");
+              if (el != null) {
+                  el.onclick = function (evt) {
+                      evt.preventDefault();
+                      FB.getLoginStatus(function(response) {
+                          if (response.status === 'connected') {
+                              if (response.authResponse) {
+                                  document.cookie = 'fbat_140028286058792=' + response.authResponse.accessToken + '; domain=.instructables.com; path=/';
+                                  window.location.reload(true);
+                              }
+                          } else {
+                              // not logged into Facebook or not authorized
+                              FB.login(function(response) {
+                                  if (response.authResponse) {
+                                      document.cookie = 'fbat_140028286058792=' + response.authResponse.accessToken + '; domain=.instructables.com; path=/';
+                                      window.location.reload(true);
+                                  }
+                              }, {
+                                  scope: "email,user_birthday,publish_stream",
+                                  redirect_url: "http://www.instructables.com/id/Genuine-chainmaille-from-pop-tabs/step8/Final-thoughts/"
+                              });
+                          };
+                      })
+                  }
+              }
+          })();
+        
+            doRedirect = function (params, source) {
+                var o = {};
+                o.location = window.location.href;
+                o.host = window.location.host;
+                o.protocol = window.location.protocol;
+                o.doit = function(){
+                    if (typeof params === "undefined") { // no params, redirect to current page
+                        window.location = o.location;
+                        return; // we don't bother processing the rest of this, just immediately redirect
+                    } else if (params.indexOf("/account/gopro") !== -1) { // found "/account/gopro" in params, so redirect there
+                        o.nextHref = o.protocol + "//" + o.host + params;
+                    } else if (params.indexOf("nxtPg=") === -1) { // we have a URL declared as a string
+                        o.nextHref = params;
+                    } else { // a string of query parameters, we need to parse out the values
+                        o.nextPage = params.substring(params.indexOf("nxtPg=") + 6);
+                        o.nextHref = o.protocol + "//" + o.host + o.nextPage;
+                    }
+                    window.location = o.nextHref;
+                }();
+                if (typeof source !== "undefined" && source !== "" && typeof _gaq !== "undefined") {
+                    _gaq.push(['_trackPageview', '/event/fb_login/' + source + '/']);
+                }
+                return o.doit;
+            };
+        
+    </script><script type="text/javascript" src="/static/js/gw-11.6.4/lib/gw.min.js"></script><script type="text/javascript"> setTimeout(ghostwriter.loadscripts, 2500); </script><script type="text/deferscript"></script><script type="text/javascript">
+_qoptions={
+qacct:"p-d6RKK49nWAdvA",
+labels:"play.props"
+};
+</script><script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script><noscript><a href="http://www.quantcast.com/p-d6RKK49nWAdvA" target="_blank"><img src="http://pixel.quantserve.com/pixel/p-d6RKK49nWAdvA.gif?labels=play.props" border="0" height="1" width="1" alt="Quantcast" class="quantcast_img_0" /></a></noscript>
+
+
+
+ 
+<script type="text/javascript" src="http://b.scorecardresearch.com/beacon.js"></script>
+<script type="text/javascript">
+  COMSCORE.beacon({
+    c1:2,
+    c2:7732561,
+    c3:"",
+    c4:"",
+    c5:"",
+    c6:"",
+    c15:""
+  });
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=7732561&c3=&c4=&c5=&c6=&c15=&cj=1" />
+</noscript>
+
+
+
+<script type="text/deferscript">
+    _gaq.push(['_trackPageview', '/event/play/props/Step by Step/featured:homepage/contest-/']);
+  </script>
+
+  <!-- google_ad_section_start(weight=ignore) -->
+
+  <div id="authorBio" class="clearfix"><div class="following"><div class="bubble">124<br /><span>Followers</span><img src="/static/img/probox-bubble-point.png" class="bubble-point" /></div><input type="button" class="big-button" value="Follow" id="subscribe" /><script type="text/javascript" language="javascript">
+              $("#subscribe").click(function (evt) {
+                  navoperator.makeLoginByJquery();
+              });
+            </script></div><div id="bio-statbox"><a href="/member/quixotiCfluX/" title="view quixotiCfluX's profile" class="authorImg memberstats id-quixotiCfluX"><img src="http://img.instructables.com/files/deriv/FRD/ZZBM/FYTCPM4L/FRDZZBMFYTCPM4L.TINY.jpg" /><div class="count">1</div></a></div><div class="byline"><span class="pro_author_ajax_span_0">Author:</span><img src="/static/img/pro2.gif" class="pro_author_ajax_img_1" /><a href="/member/quixotiCfluX/" title="view quixotiCfluX's profile">quixotiCfluX</a><a href="http://www.hagermanstudios.com" target="_blank" title="view quixotiCfluX's website" class="char pro_author_ajax_a_2">(Hagerman Studios)</a></div><div class="text cropped">You know me. I am that one guy that everybody knows, who is there on the outskirts of the group. Just close enough to be friends with the group, and just far enough to be friends with the outsiders. N...</div><div class="text full" style="display: none">You know me. I am that one guy that everybody knows, who is there on the outskirts of the group. Just close enough to be friends with the group, and just far enough to be friends with the outsiders. Not because I want or try to, but I'm just that guy....I can't help it. Because I don't even see the group...I just see people.</div><a class="moreLink">
+            more &raquo;
+          </a></div>
+
+  <!-- google_ad_section_end -->
+
+<script class="tier1" type="text/deferscript">
+  $(function () {
+        $("#author-bio").replaceWith($("#authorBio"));
+        
+        $("#authorBio .moreLink").click(function (evt) {
+                evt.preventDefault();
+                $("#authorBio .cropped").toggle();
+                $("#authorBio .full").toggle();
+                if ($(this).text().indexOf("more") !== -1) {
+                        $(this).html("&laquo; less");
+                } else {
+                        $(this).html("&raquo; more");
+                }
+          });
+          
+  });
+</script><script type="text/javascript" src="/static/js/jqplugins/jquery.notes.js"></script><script type="text/javascript" src="/static/js/imagespot.js"></script><script type="text/javascript">
+  /*  */
+  $(function () {
+        function exists(thing) {
+            return (typeof thing !== "undefined");
+        }
+        $(".images-holder").each(function () {
+            var spotid = $(this).find(".image-spot").attr("id");
+            var first_img = $("#img_" + spotid);
+            var first_img_id = first_img && first_img.attr("class") && first_img.attr("class").split(" ")[1].substring(3);
+            if(first_img_id) {
+                if (exists(notesArray[first_img_id])) {
+                    $("#img_" + spotid).notes(notesArray[first_img_id], false, $(this));
+                }
+                if (exists(spotid) && exists(notesArray)) {
+                    var spot = new ImageSpot(7, spotid, notesArray);
+                }
+            }
+        });
+       $(".image-show-container .next-row").show();
+  });
+  /*  */
+</script><script class="tier1" type="text/deferscript" defersrc="/static/js/statcard.jq.js"></script></body></html>

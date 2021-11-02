@@ -1,0 +1,470 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Quit Smoking Counter - Online counter that measures smoking cessation and the length of time the person has stopped smoking, money you saved and extra live gained!.</title>
+<meta name="description" content="Online quit smoking counter that measures smoking cessation and the length of time the person has stopped smoking, money you saved and extra live gained!.">
+<meta name="keywords" content="smoking, cessation, quit, stop, counter, meter, silkquit, quitnet, quit smoking, smoker, smoke, cigarette butt, smoking cessation, save money, stop smoking">
+<meta name="Author" content="vidal.dewit@gmail.com">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="shortcut icon" href="favicon.ico">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="lib/jsProgressBarHandler.css" media="screen">
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="lib/prototype.js"></script>
+<script type="text/javascript" src="lib/jsProgressBarHandler.js"></script>
+<script type="text/javascript" src="js/quitsmoking.js"></script>
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="js/pngfix.js"></script>
+<![endif]-->
+
+</head>
+<body onLoad="cookieForms('open', 'yourform');startCount();" onunload="cookieForms('save', 'yourform')">
+<div id="container">
+  <form name="yourform">
+    <div id="demo"><div id="swf">
+<!-- AddThis Bookmark Button BEGIN -->
+<a href="http://www.addthis.com/bookmark.php" onclick="addthis_url   = location.href; addthis_title = document.title; return addthis_click(this);" target="_blank"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" border="0" alt="AddThis Social Bookmark Button" /></a> <script type="text/javascript">var addthis_pub = 'vidaldewit';</script><script type="text/javascript" src="http://s9.addthis.com/js/widget.php?v=10"></script>  
+<!-- AddThis Bookmark Button END -->
+</div>
+      <div id="label">Smoking</div>
+      <a href="index.php" title="Quit Smoking counter">
+      <h1><span>Quit Smoking counter</span></h1>
+      </a>
+      <div id="settings" >
+        <div id="window">
+          <div class="header"></div>
+          <div class="container">
+            <h3>Quit Smoking Counter</h3>
+            <div style="margin-bottom:4px;">My stop smoking settings:</div>
+            <div class="left">
+              <label for="StopYear">Year:</label>
+              <br>
+              <select name="StopYear" id="StopYear" onChange="changed();">
+                <option value="1980">1980</option>
+                <option value="1981">1981</option>
+                <option value="1982">1982</option>
+                <option value="1983">1983</option>
+                <option value="1984">1984</option>
+                <option value="1985">1985</option>
+                <option value="1986">1986</option>
+                <option value="1987">1987</option>
+                <option value="1988">1988</option>
+                <option value="1989">1989</option>
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+                <option value="1992">1992</option>
+                <option value="1993">1993</option>
+                <option value="1994">1994</option>
+                <option value="1995">1995</option>
+                <option value="1996">1996</option>
+                <option value="1997">1997</option>
+                <option value="1998">1998</option>
+                <option value="1999">1999</option>
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+                <option value="2003">2003</option>
+                <option value="2004">2004</option>
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008" selected>2008</option>
+              </select>
+            </div>
+            <div class="left" style="width:45px">
+              <label for="StopMonth">Month:</label>
+              <br>
+              <select name="StopMonth" id="StopMonth" onChange="changed();" style="width:40px;">
+                <option value="0">1</option>
+                <option value="1">2</option>
+                <option value="2">3</option>
+                <option value="3">5</option>
+                <option value="4">5</option>
+                <option value="5">6</option>
+                <option value="6">7</option>
+                <option value="7">8</option>
+                <option value="8">9</option>
+                <option value="9">10</option>
+                <option value="10">11</option>
+                <option value="11">12</option>
+              </select>
+            </div>
+            <div class="left" style="width:45px">
+              <label for="StopDay">Day:</label>
+              <br>
+              <select name="StopDay" id="StopDay" onChange="changed();" style="width:40px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">5</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31" selected>31</option>
+              </select>
+            </div>
+            <div class="left">
+              <label for="StopDay">Hour:</label>
+              <br>
+              <select name="StopHour" id="StopHour" onChange="changed();">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">5</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23" selected>23</option>
+                <option value="24">24</option>
+              </select>
+            </div>
+            <div class="left">
+              <label for="StopMinute">Minute:</label>
+              <br>
+              <select name="StopMinute" id="StopMinute" onChange="changed();">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">5</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+                <option value="45">45</option>
+                <option value="46">46</option>
+                <option value="47">47</option>
+                <option value="48">48</option>
+                <option value="49">49</option>
+                <option value="50">50</option>
+                <option value="51">51</option>
+                <option value="52">52</option>
+                <option value="53">53</option>
+                <option value="54">54</option>
+                <option value="55">55</option>
+                <option value="56">56</option>
+                <option value="57">57</option>
+                <option value="58">58</option>
+                <option value="59" selected>59</option>
+                <option value="60">60</option>
+              </select>
+            </div>
+            <div class="clear"></div>
+            <div class="left" style="width:54px" >
+              <label for="PerDay">Cig.  daily:</label>
+              <br>
+              <select name="PerDay" id="PerDay" onChange="changed();" style="width:48px" >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">5</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19" selected>19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+                <option value="31">31</option>
+                <option value="32">32</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+                <option value="45">45</option>
+                <option value="46">46</option>
+                <option value="47">47</option>
+                <option value="48">48</option>
+                <option value="49">49</option>
+                <option value="50">50</option>
+              </select>
+            </div>
+            <div class="left">
+              <label for="PerPack">Cost p/pack:</label>
+              <br>
+              <input type="text" name="PerPack" id="PerPack" value="3.40">
+            </div>
+            <div class="left" style="width:60px">
+              <label for="InPack">Cig. p/pack:</label>
+              <br>
+              <input type="text" name="InPack" id="InPack" value="19">
+            </div>
+            <div class="clear"></div>
+
+
+
+          </div>
+          <div class="clear"></div>
+          <div class="bottom"></div>
+        </div>
+        <a href="pregnancy.php" class="button"><span class="icon"><img src="images/icons/pregnancy32x32.png" width="32" height="32" border="0"></span><span class="text"> Pregnancy Countdown</span></a><a href="holidays.php" class="button"><span class="icon"><img src="images/icons/Wreath-32x32.png" width="32" height="32" border="0"></span><span class="text"> Holidays Countdown</span></a><a href="birthday.php" class="button"><span class="icon"><img src="images/icons/cookie.png" width="32" height="32" border="0"></span><span class="text"> My Birthday Countdown</span></a><a href="#" class="button"><span class="icon"><img src="images/icons/moon.png" width="32" height="32" border="0"></span><span class="text"> Moon Phase Countdown</span></a>
+
+
+                    <div style="margin:12px;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6630109012927307";
+/* quitcounter skyscraper 160x600, gemaakt 19-10-09 */
+google_ad_slot = "8679510392";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<br>
+<br>
+<script type="text/javascript"><!--
+google_ad_client = "pub-6630109012927307";
+/* quitcounter skyscraper 160x600, gemaakt 19-10-09 */
+google_ad_slot = "8679510392";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+      </div>
+      <div id="statistics">
+        <div id="counter">Loading...</div>
+
+        <div style="margin:12px;">
+
+</div>
+<div style="margin:12px;">
+<script type="text/javascript"><!--
+google_ad_client = "pub-6630109012927307";
+/* quitcounter top banner 468x60, gemaakt 19-10-09 */
+google_ad_slot = "7067706437";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+
+
+        <h3>After You Quit Smoking The Healing Begins...</h3>
+        When you quit smoking, the benefits begin within minutes of your last cigarette.<br>
+        <br>
+        <div class="checked"> <img style="display:none" id="elementimg1" src="images/checked.gif"  border="0" alt=""> </div>
+        <div class="landmarks">
+          <div class="time"><strong>After 8 hrs </strong></div>
+          <span class="progressBar percentImage1" id="element1">0%</span>
+          <div class="description">Nicotine and Carbon Monoxide level reduce by half, oxygen levels return to normal</div>
+        </div>
+        <div class="checked"> <img style="display:none" id="elementimg2" src="images/checked.gif"  border="0" alt=""> </div>
+        <div class="landmarks">
+          <div class="time"><strong>After 24 hrs </strong></div>
+          <span class="progressBar percentImage1" id="element2">0%</span>
+          <div class="description">Carbon Monoxide eliminated from the body. Lungs start to clear out mucus and debris.</div>
+        </div>
+        <div class="checked"> <img style="display:none" id="elementimg3" src="images/checked.gif"  border="0" alt=""> </div>
+        <div class="landmarks">
+          <div class="time"><strong>After 48 hrs </strong></div>
+          <span class="progressBar percentImage1" id="element3">0%</span>
+          <div class="description">There is no nictotine left in the body. Ability to smell and taste greatly improved.</div>
+        </div>
+        <div class="checked"><img style="display:none" id="elementimg4" src="images/checked.gif"  border="0" alt=""> </div>
+        <div class="landmarks">
+          <div class="time"><strong>After 72 hrs </strong></div>
+          <span class="progressBar percentImage1" id="element4">0%</span>
+          <div class="description">Breathing becomes easier. Bronchial tubes begin to relax and energy levels increase.</div>
+        </div>
+        <div class="checked"><img style="display:none" id="elementimg5" src="images/checked.gif"  border="0" alt=""> </div>
+        <div class="landmarks">
+          <div class="time"><strong>After 2-12 wks </strong></div>
+          <span class="progressBar percentImage1" id="element5">0%</span>
+          <div class="description">Circulation improves, making walking and running a lot easier.</div>
+        </div>
+        <div class="checked"><img style="display:none" id="elementimg6" src="images/checked.gif"  border="0" alt=""> </div>
+        <div class="landmarks">
+          <div class="time"><strong>After 3-9 months </strong></div>
+          <span class="progressBar percentImage1" id="element6">0%</span>
+          <div class="description">Coughs, wheezing and breathing problems improve.</div>
+        </div>
+        <div class="checked"><img style="display:none" id="elementimg7" src="images/checked.gif"  border="0" alt=""> </div>
+        <div class="landmarks">
+          <div class="time"><strong>After 1 year </strong></div>
+          <span class="progressBar percentImage1" id="element7">0%</span>
+          <div class="description">Your excess risk of coronary heart disease is decreased to half that of a smoker after one year.</div>
+        </div>
+        <div class="checked"><img style="display:none" id="elementimg8" src="images/checked.gif"  border="0" alt=""> </div>
+        <div class="landmarks">
+          <div class="time"><strong>After 2 year </strong></div>
+          <span class="progressBar percentImage1" id="element8">0%</span>
+          <div class="description">Your chance of achieving long-term success with quitting tobacco increases significantly after two years.</div>
+        </div>
+        <div class="checked"><img style="display:none" id="elementimg9" src="images/checked.gif"  border="0" alt=""> </div>
+        <div class="landmarks">
+          <div class="time"><strong>After 5 years </strong></div>
+          <span class="progressBar percentImage1" id="element9">0%</span>
+          <div class="description">From 5 to 15 years after quitting tobacco, stroke risk is reduced to that of people who have never smoked.</div>
+        </div>
+        <div class="checked"><img style="display:none" id="elementimg10" src="images/checked.gif"  border="0" alt=""> </div>
+        <div class="landmarks">
+          <div class="time"><strong>After 10 years </strong></div>
+          <span class="progressBar percentImage1" id="element10">0%</span>
+          <div class="description">* Risk of lung cancer drops to as little as one-half that of continuing smokers<br>
+            * Risk of cancer of the mouth, throat, esophagus, bladder, kidney, and pancreas decreases<br>
+            * Risk of ulcers decreases</div>
+        </div>
+        <div class="checked"><img style="display:none" id="elementimg11" src="images/checked.gif"  border="0" alt=""> </div>
+        <div class="landmarks">
+          <div class="time"><strong>After 15 years </strong></div>
+          <span class="progressBar percentImage1" id="element11">0%</span>
+          <div class="description"> * Risk of coronary heart disease is now similar to that of people who have never smoked<br>
+            * Risk of death returns to nearly the level of people who have never smoked</div>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <br>
+    </div>
+  </form>
+  <div class="clear"></div>
+  <div id="footer"><div id="footer">
+      <div class="footer-copyright">
+        <div class="footer-logo"></div>
+        <h4>&copy;2010&nbsp;QuitCounter</h4>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="http://www.my1stname.com" target="_blank" title="First name for your baby?">Baby name search</a></li>
+          <li><a href="http://www.quitsmokingcounter.com" target="_blank" title="Smoking tools to quit">Stop smoking software</a></li>          
+          <li><a href="/disclaimer.php">Disclaimer</a></li>
+        </ul>
+      </div>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-8448110-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=3224928;
+var sc_invisible=0;
+var sc_partition=35;
+var sc_security="feeb2e07";
+</script>
+
+<script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><a class="statcounter" href="http://www.statcounter.com/"><img class="statcounter" src="http://c36.statcounter.com/3224928/0/feeb2e07/0/" alt="hit counter" /></a></div></noscript>
+<!-- End of StatCounter Code -->
+
+</div>
+</div>
+</body>
+</html>

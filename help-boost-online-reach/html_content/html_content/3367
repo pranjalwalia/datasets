@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Bloglovin Muffin" />
+<meta name="description" content="NIICE" />
+<meta name="title" content="Bloglovin" />
+<meta name="description" content="NIICE" />
+<meta name="medium" content="blog" />
+<link rel="image_src" href=""/ >
+<title>Bloglovin</title>
+<link href="/css/muffin-04.css" rel="stylesheet"
+	type="text/css" media="all" />
+	
+
+<script type="text/javascript" src="/script/jquery-05.js"></script>
+<script type="text/javascript">
+
+	var glob_ajax_key = "";
+	var searchedfornew = true;	
+	var ret = ;
+	var posts = ret.posts;
+	var active_frame = 0;
+	var numberofframes = 0;
+	var active_post = 0;
+	var lastpostloaded = 0;	//Keep in mind that this is just the key in the temporary array
+	var next_post = 1;
+	var numberofposts = 0;
+	var totalposts = 0;
+	var offset_post_value = '0_1';
+
+	var is_fetching_posts = false;
+	
+	function nextPost()
+	{
+		active_post++;
+	
+		//Mark new post as read
+		markasread(posts[active_post][0]);
+		
+		if(active_frame < numberofframes)
+		{
+			new_frame = active_frame+1;
+		}
+		else
+		{
+			new_frame = 0;
+		}
+	
+		//Set things in the window appropriately
+		document.title = posts[active_post][5];
+		$('#close').attr('href',posts[active_post][4]);
+		$('#frame_row_'+active_frame).hide();
+		$('#frame_row_'+new_frame).show();
+		
+		if(posts[active_post][3] == 1) //Saved or not
+		{
+			$('#savebutton').html('<a class="ospar" href="javascript:void(0)" onclick="unsavepost(\''+posts[active_post][0]+'\',\''+posts[active_post][1]+'\');"><span><img src="/images/muffin-fave.gif" alt="Like" style="margin-right:5px;" />Unlike</span></a>');
+		}
+		else
+		{
+			$('#savebutton').html('<a class="link" href="javascript:void(0)" onclick="savepost(\''+posts[active_post][0]+'\',\''+posts[active_post][1]+'\');"><span><img src="/images/muffin-fave.gif" alt="Unlike" style="margin-right:5px;" />Like</span></a>');
+		}
+		if(lastpostloaded+4 >= numberofposts)
+		{
+			getNewPosts();
+		}
+		
+		//console.log("active_post", active_post);
+		//console.log("numberofposts", numberofposts);
+		if(active_post >= numberofposts-1)
+		{
+			//alert('disabled');
+			nextbutton_disable();
+		}
+	
+		if(++lastpostloaded < numberofposts)
+		{
+			//Start loading next post in the current iframe	
+			$('#frame_'+active_frame).attr('src',posts[lastpostloaded][4]);
+		}
+		//alert(posts[lastpostloaded][4]);
+		active_frame = new_frame;
+		unread = (totalposts-active_post);
+		setUnread();
+		
+		//Switch eniro add
+		eniroclick();
+		//Track page view
+		 _gaq.push(['bl._trackPageview',"/m/awesomebar"]);
+		 _gaq.push(['bl_local._trackPageview',"/m/awesomebar"]);
+		
+		//Set href on the next button
+		$('#next').attr('href','#b='+posts[active_post][1]+'&p='+posts[active_post][0]);
+	}
+	function nextbutton_enable()
+	{
+		$('#next-li').removeClass('disabled');
+		$('#next').click(nextPost);
+		$('#right').attr('src','/images/arrow-right.gif');
+	}
+	function nextbutton_disable()
+	{
+		$('#next-li').addClass('disabled');
+		$('#next').unbind('click');
+		$('#right').attr('src','/images/arrow-right-disabled.gif');
+	}
+	function getNewPosts()
+	{
+		if (is_fetching_posts == true || searchedfornew != false)
+		{
+			return;
+		}
+
+		//console.log("GET NEW POSTS", searchedfornew);
+		is_fetching_posts = true;
+			
+		$.post('/ajax/muffin/next/306559/a/\'+offset_post_value+\'/30/?ajax_key='+glob_ajax_key,{},function(ret) {
+			is_fetching_posts = false;
+
+			$.merge(posts,ret.posts);
+			numberofposts = posts.length;
+			
+			if (numberofposts>(totalposts + 1))
+			{
+				totalposts = numberofposts - 1;
+			}
+			if (ret.ff != 1)
+			{
+				searchedfornew = true;
+			} else {
+				offset_post_value = ret.offset;
+				nextbutton_enable();
+			}
+		},'json');
+	}
+	
+	function setUnread()
+	{
+		if(unread < 1)
+		{
+			unread = 0;
+		}
+		
+		if(unread == 1)
+		{
+			$('#olasta').html(unread + ' Unread posts');
+		}
+		else
+		{
+			$('#olasta').html(unread + ' Unread posts');
+		}
+	}
+	
+	function markasread(inlagg)
+	{
+		$.post('/ajax/read/'+inlagg+'/?ajax_key='+glob_ajax_key,{},function(){});
+	}
+	function savepost(inlagg,blogg)
+	{
+		$('#savebutton').html('<a onclick="unsavepost(\''+inlagg+'\', \''+blogg+'\');"><span><img src="/images/muffin-fave.gif" alt="Like" style="margin-right:5px;" />Unlike</span></a>');
+		$.post('/ajax/save/'+inlagg+'/'+blogg+'/?ajax_key='+glob_ajax_key,{},function(){});
+	}
+	function unsavepost(inlagg,blogg)
+	{
+		$('#savebutton').html('<a onclick="savepost(\''+inlagg+'\', \''+blogg+'\');"><span><img src="/images/muffin-fave.gif" alt="Unlike" style="margin-right:5px;" />Like</span></a>');
+		$.post('/ajax/unsave/'+inlagg+'/'+blogg+'/?ajax_key='+glob_ajax_key,{},function(){});
+	}
+	function eniroclick()
+	{
+		return false;
+	}
+	</script>
+
+
+			<script type="text/javascript" src="/script/ads-02.js"></script>
+			<style type="text/css">
+				.ad_placement {
+					margin: 0;
+					padding: 0;
+				}
+				.ad_placement iframe {
+					width: 0px;
+					height: 0px;
+				}
+			</style>
+			</head>
+<body style="overflow: hidden;">
+<table height="100%" width="100%" cellspacing="0" cellpadding="0"
+	style="border: 1px; border-collapse: collapse;">
+		<tr id="row_frames">
+		<td valign="top" id="keeperoftheiframes" style="border: 1px;">		<div class="iframe_div" id="frame_row_0"
+		><iframe
+			id="frame_0" allowtransparency="true" scrolling="auto"
+			class="container" style="border: none;"
+			src="http://feedproxy.google.com/~r/cococozy/zOlp/~3/RmRY4SSnv-k/see-this-house-barn-raising-style.html"></iframe></div>
+			</td>
+	</tr>
+
+	<tr height="1%">
+		<td id="bar"><a target="_top" href="http://www.bloglovin.com"><img id="logo" src="/images/muffin_logo.gif" alt="logo" /></a>
+<ul class="top-links">
+			<li>
+				<a target="_top" href="http://www.bloglovin.com/signup/"><span>Become a member</span></a>
+			</li>
+			<li>
+				<a target="_top" href="http://www.bloglovin.com/login/"><span>Login</span></a>
+			</li>
+		<li style="margin-right:5px;"><a id="close" target="_top" href="http://feedproxy.google.com/~r/cococozy/zOlp/~3/RmRY4SSnv-k/see-this-house-barn-raising-style.html" title="Close"><span>X</span></a></li>
+</ul>
+
+		<div style="float: right; width: 490px;">
+			<span id="enirolinks">
+			<div 
+						id="ad_zone_muffin_0"
+						class="ad_placement">
+					</div>			</span>
+		</div>
+		</td>
+	</tr>
+	
+</table>
+<div style="display: none;"><script type="text/javascript">
+					$(function() {
+					BL.Ads.setAdSlots([{"placement":"muffin","div_id":"ad_zone_muffin_0","size":[1,1],"resize":false}]);
+					BL.Ads.loadAds();	
+					});
+				</script>
+<script type="text/javascript">
+					  var _gaq = _gaq || [];
+					  _gaq.push(['bl._setAccount', 'UA-3062524-1']);
+					 
+					  _gaq.push(['bl._trackPageview']);_gaq.push(['bl_local._setAccount', 'UA-3062524-10']);
+_gaq.push(['bl_local._trackPageview']);
+_gaq.push(['bl_page_1._setAccount', 'UA-3062524-12']);
+_gaq.push(['bl_page_1._trackPageview']);
+(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+		  })();
+		</script>
+					<!-- Quantcast Tag -->
+					<script type="text/javascript">
+					var _qevents = _qevents || [];
+					(function() {
+					var elem = document.createElement('script');
+					elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+					elem.async = true;
+					elem.type = "text/javascript";
+					var scpt = document.getElementsByTagName('script')[0];
+					scpt.parentNode.insertBefore(elem, scpt);
+					})();
+					_qevents.push({
+					qacct:"p-059uJkkcr_xiY"
+					});
+					</script>
+					<noscript>
+					<div style="display:none;">
+					<img src="//pixel.quantserve.com/pixel/p-059uJkkcr_xiY.gif" border="0" height="1" width="1" alt="Quantcast"/>
+					</div>
+					</noscript>
+					<!-- End Quantcast tag -->
+				<!-- Begin comScore Tag -->
+				<script>
+				  var _comscore = _comscore || [];
+				  _comscore.push({ c1: "2", c2: "8568956" });
+				  (function() {
+				    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+				    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+				    el.parentNode.insertBefore(s, el);
+				  })();
+				</script>
+				<noscript>
+				  <img src="http://b.scorecardresearch.com/p?c1=2&c2=8568956&cv=2.0&cj=1" />
+				</noscript>
+				<!-- End comScore Tag --></div>
+</body>
+</html>

@@ -1,0 +1,2509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+            <script type="text/javascript">
+        if (((document.domain.indexOf("smh.com.au") != -1) || (document.domain.indexOf("theage.com.au") != -1) ||
+                (document.domain.indexOf("watoday.com.au") != -1) ||
+                (document.domain.indexOf("brisbanetimes.com.au") != -1) ||
+                (document.domain.indexOf("businessday.com.au") != -1)) && (isSmartPhone()) &&
+                (document.cookie.indexOf("iphone_redirect=false") == -1)) {
+            var currentLocation = document.location.href;
+            if (currentLocation.indexOf("www.") != -1) {
+                currentLocation = currentLocation.replace("www.", "m.");
+                window.location = currentLocation;
+            }
+        }
+
+        /**
+         * Returns a <code>Boolean</code> indicating whether or not the user agent represents a smart phone.
+         *
+         * @return True if the user agent represents a smart phone; otherwise false.
+         */
+        function isSmartPhone() {
+            var userAgent = navigator.userAgent
+            return ((matchesSmartPhoneUserAgentRegularExpressions(userAgent)) &&
+                    (!matchesTabletUserAgentRegularExpressions(userAgent)));
+        }
+
+        /**
+         * Returns a <code>Boolean</code> indicating whether or not the specified user agent represents a smart phone.
+         * If any of the regular expressions are updated then they should be updated in
+         * <code>SmartPhoneHelper.java</code>.
+         *
+         * @param userAgent User agent to test.
+         * @return True if the user agent represents a smart phone; otherwise false.
+         */
+        function matchesSmartPhoneUserAgentRegularExpressions(userAgent) {
+            var smartPhoneUserAgentRegularExpressions = ["^Mozilla/5.0.*iPhone.*", "^Mozilla/5.0.*iPod.*",
+                "^Mozilla/5.0.*Android [1-2].*", "^Mozilla/5.0.*SymbianOS/9.*", "^Mozilla/5.0.*Symbian/3.*",
+                "^Mozilla/5.0.*Mobile Safari/.*5[2-3][0-9].*", ".*Dolfin/[1-2].[0-9].*"];
+            if ((userAgent) && (userAgent.length > 0)) {
+                var index = 0;
+                for (; index < smartPhoneUserAgentRegularExpressions.length; index++) {
+                    if (userAgent.match(smartPhoneUserAgentRegularExpressions[index])) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+        /**
+         * Returns a <code>Boolean</code> indicating whether or not the specified user agent represents a tablet. If any
+         * of the regular expressions are updated then they should be updated in <code>SmartPhoneHelper.java</code>.
+         *
+         * @param userAgent User agent to test.
+         * @return True if the user agent represents a tablet; otherwise false.
+         */
+        function matchesTabletUserAgentRegularExpressions(userAgent) {
+            var tableUserAgentRegularExpressions = ["^Mozilla/5.0.*iPad.*", "^Mozilla/5.0.*GT-P1000.*"];
+            if ((userAgent) && (userAgent.length > 0)) {
+                var index = 0;
+                for (; index < tableUserAgentRegularExpressions.length; index++) {
+                    if (userAgent.match(tableUserAgentRegularExpressions[index])) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+
+    </script>
+
+        <title>Australian Wikileak founder's passport confiscated</title>
+        <meta http-equiv="content-language" content="en" />
+<meta http-equiv="imagetoolbar" content="no" />
+    <meta name="robots" content="noarchive,noodp" />
+<meta name="robots" content="ACAP allow-index" />
+<meta name="robots" content="ACAP allow-follow" />
+<meta name="robots" content="ACAP disallow-preserve" />
+<meta name="robots" content="ACAP allow-present prohibited-modification=annotation" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+
+
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+<meta name="application-name" content="The Age" />
+<meta name="msapplication-tooltip" content="Open The Age" />
+<meta name="msapplication-starturl" content="http://www.theage.com.au" />
+
+    <meta name="msapplication-task" content="name=National;action-uri=http://www.theage.com.au/national;icon-uri=http://www.theage.com.au/favicon.ico;" />
+    <meta name="msapplication-task" content="name=World;action-uri=http://www.theage.com.au/world;icon-uri=http://www.theage.com.au/favicon.ico;" />
+    <meta name="msapplication-task" content="name=Sport;action-uri=http://www.theage.com.au/sport;icon-uri=http://www.theage.com.au/favicon.ico;" />
+    <meta name="msapplication-task" content="name=Weather;action-uri=http://www.theage.com.au/weather;icon-uri=http://www.theage.com.au/favicon.ico;" />
+        
+
+                <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.theage.com.au/common/media-common-1.0/css/output/common.skin.news_min.css" />
+
+            <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.theage.com.au/common/media-common-1.0/css/output/common.skin.age_min.css" />
+
+            <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.theage.com.au/common/media-common-1.0/css/output/common.skin.technology_min.css" />
+
+            <link rel="stylesheet" type="text/css" media="screen,print" href="http://resources.theage.com.au/common/media-common-1.0/css/output/skin.promotions_min.css" />
+
+        <link rel="alternate stylesheet" type="text/css" media="screen" title="High contrast" href="http://resources.theage.com.au/common/media-common-1.0/css/output/common.skin.low.vision.news_min.css" />
+
+
+    </head>
+    <body class="theage technology" >
+        <script type="text/javascript">
+// <![CDATA[
+	document.body.className += " scriptable";
+// ]]>
+</script>
+
+        <a class="skipLink" href="#nav">Skip to navigation</a>
+<a class="skipLink" href="#content">Skip to content</a>
+<a class="skipLink" href="http://www.theage.com.au/siteguide/accessibility">Help using this website - Accessibility statement</a>
+
+        <div class="wrap cfix">
+            <div id="adspot-1x10" class="">
+    <script type="text/javascript">
+        document.dcdAdsH = new Array();
+        document.dcdAdsI = new Array();
+        document.dcdAdsU = new Array();
+        document.dcdAdsR = new Array();
+        document.dcdAdsEH = new Array();
+        document.dcdAdsE = new Array();
+        document.dcdAdsEC = new Array();
+        document.dcdAdsAA = new Array();
+        document.dcdAdsAI = new Array();
+        var igCount = 0;
+        var dcOrd = Math.floor(100000000*Math.random());
+
+        function getAdCookie(name) {
+            var regex = new RegExp(name + "=(.*?)(; |&|$)", "gi");
+            var value = regex.exec(document.cookie);
+            if (value && value.length == 3) {
+               value = value[1];
+            } else {
+                value = "";
+            }
+            return value;
+        }
+        document.dcAdsCParams = "";
+
+        var savValue = getAdCookie("sav");
+        if (savValue != null && savValue.length > 2) {
+            document.dcAdsCParams = savValue + ";";
+        }
+    </script>
+                <script type="text/javascript">
+                    document.dcdAdsR.push("dcAd-1-1");
+                    document.write('<iframe id="dcAd-1-1" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;dcopt=ist;' + document.dcAdsCParams + 'sz=1x10;tile=1;ord=' + dcOrd + '?" width="1" height="1" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0"><\/iframe>');
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-1" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;dcopt=ist;sz=1x10;tile=1;ord=5.3564812E7?"
+                        width='1'
+                        height='1'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-1x10");
+    document.getElementById("adspot-1x10").hash = 958343426;
+</script>
+</div>
+            <!-- nN-whiteStrip -->
+<div class="nN-whiteStrip">
+    <ul class="linksLeft" id="nN-whiteStrip-linksLeft">
+    <li id="whiteStrip-time"><em>10:47AM</em> Tuesday Mar 01, 2011</li>
+    <li id="whiteStrip-users" class="online last">    2,439
+ online now</li>
+            <li class="last"><a href="http://www.theage.com.au/todays-paper" title="See today's paper">See today's paper</a></li>
+
+</ul>
+    <a class="logo" href="http://www.fairfaxdigital.com.au/" onclick="linktop(this);">Fairfax Digital</a>
+        <ul class="linksRight">
+        
+<li><a href="http://www.theage.com.au" onclick="trackCode(this, 'ws-top');">The Age</a></li>
+            <li><a href="http://www.domain.com.au/" onclick="linktop(this);">Domain</a></li>
+            <li><a href="http://www.drive.com.au/" onclick="linktop(this);">Drive</a></li>
+            <li><a href="http://mycareer.com.au/" onclick="linktop(this);">MyCareer</a></li>
+            <li><a href="http://www.rsvp.com.au/" onclick="linktop(this);">RSVP</a></li>
+            <li><a href="https://membercentre.fairfax.com.au/NewsletterSubscription.aspx" onclick="linktop(this);">Newsletters</a></li>
+            <li class="hasDropdown last"><a href="javascript:;">More</a>
+                <ul>
+                        <li><a href="http://www.essentialbaby.com.au/" onclick="linktop(this);">Essential Baby</a></li>
+                        <li><a href="http://www.stayz.com.au/" onclick="linktop(this);">Stayz</a></li>
+                        <li><a href="http://www.investsmart.com.au/" onclick="linktop(this);">InvestSMART</a></li>
+                        <li><a href="http://www.tradingroom.com.au" onclick="linktop(this);">Trading Room</a></li>
+                        <li><a href="http://www.weatherzone.com.au/" onclick="linktop(this);">Weatherzone</a></li>
+                    <li class="last"><a onclick="linktop(this);" href="http://www.fairfax.com.au/">More sites &raquo;</a></li>
+                </ul>
+            </li>
+    </ul>
+
+</div>
+<!-- End: nN-whiteStrip -->
+
+
+<!-- Header (class according to new HTML5 element 'header'; was 'masthead') (scope: network-wide) -->
+<div class="header span-24">
+    <div id="adspot-728x90,468x60-pos-1" class="ad">
+        <script>
+            document.dcdAdsH.push("adspot-728x90,468x60-pos-1");
+            document.dcdAdsI.push("dcAd-2");
+            document.dcdAdsU.push('http://ad-apac.doubleclick.net/adj/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=1;' + document.dcAdsCParams +'sz=728x90,468x60;tile=2;ord=' + dcOrd + '?');
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=1;sz=728x90,468x60;tile=2;ord=5.3564812E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=1;sz=728x90,468x60;tile=2;ord=5.3564812E7?' border="0" alt="">
+            </a>
+        </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-728x90,468x60-pos-1");
+    document.getElementById("adspot-728x90,468x60-pos-1").hash = -946299027;
+</script>
+</div>
+    <p class="mh-logo"><a href="http://www.theage.com.au" title="The Age">The Age</a></p>
+            <h2><a href="http://www.theage.com.au/technology" title="Technology">Technology</a></h2>
+        <!-- Navigation (scope: network-wide) -->
+    <ul id="nav">
+ 
+
+
+
+                <li class="selected">
+                    <a href="http://www.theage.com.au/technology/technology-news" title="News">News</a>
+
+
+
+                    </li>
+                    
+            
+ 
+
+
+
+                <li>
+                    <a href="http://www.theage.com.au/technology/biz-tech" title="Biz-Tech">Biz-Tech</a>
+
+
+
+                    </li>
+                    
+            
+ 
+
+
+
+                <li>
+                    <a href="http://www.theage.com.au/technology/security" title="Security">Security</a>
+
+
+
+                    </li>
+                    
+            
+ 
+
+
+
+                <li>
+                    <a href="http://www.theage.com.au/technology/enterprise" title="Enterprise ">Enterprise </a>
+
+
+
+                    </li>
+                    
+            
+ 
+
+
+
+                <li>
+                    <a href="http://www.theage.com.au/technology/sci-tech" title="Sci-Tech">Sci-Tech</a>
+
+
+
+                    </li>
+                    
+            
+ 
+
+
+
+                <li class=" hasDropdown ">
+                    <a href="/" title="Blogs">Blogs</a>
+
+
+                        <ul>
+                                <li class="first">
+                                    <a href="http://www.theage.com.au/digital-life/games/blog/screenplay" title="Screen Play">Screen Play</a>
+                                </li>
+                                <li class="last">
+                                    <a href="http://www.theage.com.au/digital-life/computers/blog/gadgets-on-the-go" title="Gadgets on the Go">Gadgets on the Go</a>
+                                </li>
+                        </ul>
+
+                    </li>
+                    
+            
+ 
+
+
+
+                <li class=" hasDropdown ">
+                    <a href="http://www.theage.com.au/digital-life" title="Digital Life">Digital Life</a>
+
+
+                        <ul>
+                                <li class="first">
+                                    <a href="http://www.theage.com.au/digital-life/hometech" title="Home Tech">Home Tech</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.theage.com.au/digital-life/cartech" title="Car Tech">Car Tech</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.theage.com.au/digital-life/cameras" title="Cameras">Cameras</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.theage.com.au/digital-life/mp3s" title="MP3s">MP3s</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.theage.com.au/digital-life/mobiles" title="Mobiles">Mobiles</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.theage.com.au/digital-life/computers" title="Computers">Computers</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.theage.com.au/digital-life/games" title="Games">Games</a>
+                                </li>
+                                <li class="last">
+                                    <a href="http://www.theage.com.au/digital-life/how-to" title="How-To">How-To</a>
+                                </li>
+                        </ul>
+
+                    </li>
+                    
+            
+ 
+
+
+
+                <li class=" hasDropdown ">
+                    <a href="http://mobile-phones.theage.com.au/MobilePhones" title="Compare & Save">Compare & Save</a>
+
+
+                        <ul>
+                                <li class="first">
+                                    <a href="http://mobile-phones.theage.com.au/MobilePhones" title="Mobile Plans">Mobile Plans</a>
+                                </li>
+                                <li class="last">
+                                    <a href="http://broadband.theage.com.au/Broadband" title="Broadband Plans">Broadband Plans</a>
+                                </li>
+                        </ul>
+
+                    </li>
+                    
+            
+    </ul>
+    <!-- End module Navigation -->
+
+        <p class="breadcrumb">
+        <span>You are here:</span>
+                <a href="http://www.theage.com.au">
+            Home
+                </a>
+                <a href="http://www.theage.com.au/technology">
+            Technology
+                </a>
+                <a href="http://www.theage.com.au/technology/technology-news">
+            Technology News
+                </a>
+                <a href="http://www.theage.com.au/technology/technology-news/australian-wikileak-founders-passport-confiscated-20100516-v6dw.html">
+            Article
+                </a>
+    </p>
+
+        <div class="cN-searchBox cfix">
+    <form action="http://www.theage.com.au/execute_search.html" method="get">
+        <h2>Search age:</h2>
+        <label for="search">
+            <input type="text" name="text" id="search" value='Search here...' onfocus="this.value='';" />
+        </label>
+        <h3>Search in:</h3>
+        <ul id="ddown" class="ddown">
+            <li><a class="selected" href="#">Technology</a>
+                <div class="srch-wrap">
+					<div></div>
+                    <ul class="cfix">
+                            <li class="first"><a href="#">theage.com.au</a></li>
+                            <li><a href="#">Web</a></li>
+                            <li><a href="#">Technology</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <input type="hidden" name="ss" value="Technology" />
+        <input type="submit" class="btnSubmit" value="Search" />
+    </form>
+    </div>
+
+</div>
+<!-- End component: Header -->
+
+            
+            
+            <div id="adspot-940x20-pos-1" class="ad adPageTop">
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-940x20-pos-1");
+    document.getElementById("adspot-940x20-pos-1").hash = -240454589;
+</script>
+</div>            
+            <div id="content" class="span-16">
+                <h1 class="cN-headingPage prepend-5 span-11 last">
+                    Australian Wikileak founder's passport confiscated
+                </h1>
+                <div class="push-0 span-11 last">
+                        <!-- cT-storyDetails -->
+<div class="cT-storyDetails cfix">
+            <h5>
+                Tom Arup
+            </h5>
+    <cite>May 17, 2010</cite>
+    <ul>
+            <p class="comments">
+            <a href="#comments">Comments <span>116</span></a>
+    </p>
+
+
+    </ul>
+</div>
+<div class="ad adSpot-textBox" id="googleAds">
+</div>
+<BOD>
+    <div class="articleBody">
+                                    <!-- cT-imageLandscape -->
+        <div class="cT-imageLandscape">
+            <img src="http://images.theage.com.au/2010/04/10/1305382/assange-420x0.jpg" alt="Australian-born Julian Assange" />
+                <p>Australian-born Julian Assange </p>
+        </div>
+
+
+
+                
+            <p>Julian Assange, the Australian founder of the whistleblower website Wikileaks, says he had his passport taken away from him at Melbourne Airport and was later told by  customs  officials that it was about to be cancelled.</p>
+
+            <p>Last year Wikileaks published a confidential Australian blacklist of websites to be banned under the government's proposed internet filter.</p>
+
+            <p><em>The Age</em> has been told that Assange's passport is classified ''normal'' on the immigration database, meaning the Wikileaks director can travel freely on it.</p>
+
+                <div id="adspot-300x250-pos-3" class="hidden">
+                    <small>Advertisement: Story continues below</small>
+                <script type="text/javascript">
+                    var erA = document.createElement('iframe');
+                    erA.setAttribute("id", "dcAd-1-4");
+                    erA.setAttribute("src", "http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=3;" + document.dcAdsCParams +"sz=300x250;tile=4;ord=" + dcOrd + "?");
+                    erA.setAttribute("width", "300");
+                    erA.setAttribute("height", "250");
+                    erA.setAttribute("scrolling", "no");
+                    erA.setAttribute("marginheight", "0");
+                    erA.setAttribute("marginwidth", "0");
+                    erA.setAttribute("allowtransparency", "true");
+                    erA.setAttribute("frameborder", "0");
+                    erA.frameBorder = 0;
+                    document.dcdAdsE.push(erA);
+                    document.dcdAdsEH.push("adspot-300x250-pos-3");
+                    document.dcdAdsEC.push("ad adCentred");
+                    document.dcdAdsR.push("dcAd-1-4");
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-4" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=3;sz=300x250;tile=4;ord=5.3564812E7?"
+                        width='300'
+                        height='250'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-300x250-pos-3");
+    document.getElementById("adspot-300x250-pos-3").hash = -1090441508;
+</script>
+</div>
+            <p>Assange told <em>The Age</em> his passport was taken  from him by customs officials at Melbourne Airport when he entered the country last week after he was told ''it was looking worn''.</p>
+
+            <p>When the passport was returned to  him after about 15 minutes, he says he was told by authorities  that it was going to be or was cancelled.</p>
+
+            <p>Passports are routinely taken from travellers for short periods by immigration officials if they are damaged.</p>
+
+            <p>Wikileaks has risen to prominence for posting leaked footage of US forces laughing at the dead bodies of 12 people they had just killed in Iraq in 2007.</p>
+
+            <p>It was in the Australian spotlight last year after publishing a confidential blacklist of websites that forms the basis of the government's proposed internet filter.</p>
+
+            <p>The list as published by Wikileaks then blocked links to YouTube clips, sites on euthanasia, fringe religions, and traditional pornography -  as well as the websites of a tour operator and a dentist.</p>
+
+            <p>The government says the intention is  to block extreme  sites depicting such things as child pornography, bestiality and  rape.</p>
+
+            <p>The Australian  Communications and Media Authority has also asked the Australian Federal Police to investigate the leaking and publishing of the Australian internet blacklist.</p>
+
+            <p>But a spokeswoman for the AFP said yesterday the federal police had dropped the case earlier this year because it was ''not in our jurisdiction''.</p>
+
+            <p>Assange said half an hour after his passport was returned to him, he was approached by an Australian Federal Police officer who searched one of his  bags  and asked him about his  criminal record relating to computer hacking offences in 1991.</p>
+
+            <p>Assange's allegations about his passport were first  made on SBS current affairs program  <em>Dateline</em>, which aired a story on the Wikileaks founder.</p>
+
+            <p><strong>The Age</strong></p>
+    </div>
+    <!-- articleBody -->
+</BOD>
+
+
+
+
+
+
+
+                    
+                    <div id="moreGoogleAds" class="ad adSpot-textBox"></div><!-- id:moreGoogleAds -->
+                        <div id="comments" class="cT-comments">
+    <a id="makeComment" name="makeComment"></a>
+                <h3>Comments</h3>
+            <p class="cfix"><span><strong>116</strong> comments</span></p>
+                <blockquote>
+        <p>
+            <p>This is why political anonymity is important when you are online.</p>
+        </p>
+        <cite>
+            <b>tester@test.com</b>
+            - May 17, 2010, 8:29AM
+        </cite>
+    </blockquote>
+    <blockquote>
+        <p>
+            <p>Something is definitely wrong with this government. Free speech could well be a thing of the past for Australians if we allow them to go ahead with censoring of the internet.</p>
+        </p>
+        <cite>
+            <b>Jayness</b>
+                | Newtown
+            - May 17, 2010, 9:03AM
+        </cite>
+    </blockquote>
+    <blockquote>
+        <p>
+            <p>Every politician that utters the phrase "transparent governance" or "open and honest government" in the election campaigns must put their support behind this website. Australians love to show what they are made of on the sporting field, now it is time to show ourselves on the world political stage as having courage, strength and integrity. We must not merely tolerate this site, but promote it. Simply by being there, it will provide an added incentive for large companies, governments, sporting teams and religious organisations to act in a more responsible and humane way.</p>
+        </p>
+        <cite>
+            <b>securitythreatmyarse</b>
+            - May 17, 2010, 9:03AM
+        </cite>
+    </blockquote>
+    <blockquote>
+        <p>
+            <p>And people still ask why governments and faceless bureaucrats making decisions that they don't have to justify, explain or publicise - under the protection of stupid laws - is a problem?</p>
+        </p>
+        <cite>
+            <b>DC</b>
+                | Melbourne
+            - May 17, 2010, 8:58AM
+        </cite>
+    </blockquote>
+    <blockquote>
+        <p>
+            <p>Shouldn't the Federal Police be chasing all the paedophiles that Senator Conroy says inhabit the internet?</p>
+        </p>
+        <cite>
+            <b>rich</b>
+                | darebin
+            - May 17, 2010, 8:57AM
+        </cite>
+    </blockquote>
+    <blockquote>
+        <p>
+            <p>Those in power need checks and restraints lest they come to identify the common good for their own tastes and desires, and their continuation in office as essential to the preservation of the nation. (Justice William O Douglas, US Supreme Court)</p>
+        </p>
+        <cite>
+            <b>Tony</b>
+                | Melbourne
+            - May 17, 2010, 8:56AM
+        </cite>
+    </blockquote>
+    <blockquote>
+        <p>
+            <p>The results of Conroys new censorship/dictatorship regime. Surely if the government is protecting me (a 43 yo) I have a right to know what I am being protected from - or do they think I am a child. Conroy - the more this happens I am getting very worried about you and your christian right. Labour voter all my life I will now vote Green then direct my preferences elsewhere.</p>
+        </p>
+        <cite>
+            <b>ARobinson</b>
+                | Elwood
+            - May 17, 2010, 8:54AM
+        </cite>
+    </blockquote>
+    <blockquote>
+        <p>
+            <p>it was great of wikileaks to publish that list, it exposes the governments censorpship bill to be as useless as the filter itself will be. Its about time KRudd reversed his standing on this and sacked removed Conroy from the Communications portfolio for incompetence.</p>
+        </p>
+        <cite>
+            <b>blue</b>
+                | bris
+            - May 17, 2010, 8:53AM
+        </cite>
+    </blockquote>
+    <blockquote>
+        <p>
+            <p>Whistleblowers must be protected not villified..</p>
+        </p>
+        <cite>
+            <b>jayell</b>
+            - May 17, 2010, 8:41AM
+        </cite>
+    </blockquote>
+    <blockquote>
+        <p>
+            <p>Wake up Australia.<br>
+Will it take an Australian to be internationally recognised as a political refugee before we realise what the hell is going on?</p>
+        </p>
+        <cite>
+            <b>Jack</b>
+                | Sydney
+            - May 17, 2010, 8:39AM
+        </cite>
+    </blockquote>
+    <p class="cfix">
+        <span>
+            <a href="http://www.theage.com.au/technology/technology-news/australian-wikileak-founders-passport-confiscated-20100516-v6dw.html?comments=116#comments">
+                    Show more comments
+            </a>
+        </span>
+    </p>
+
+            <b>Comments are now closed</b>
+</div><!-- id:comments -->
+
+                    <div class="adSpot-textBoxGraphicRight ad cfix">
+    <div id="adspot-1x8-pos-1" class="ad">
+                <script type="text/javascript">
+                    document.dcdAdsR.push("dcAd-1-5");
+                    document.write('<iframe id="dcAd-1-5" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=1;' + document.dcAdsCParams + 'sz=1x8;tile=5;ord=' + dcOrd + '?" width="278" height="160" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0"><\/iframe>');
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-5" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=1;sz=1x8;tile=5;ord=5.3564812E7?"
+                        width='278'
+                        height='160'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-1x8-pos-1");
+    document.getElementById("adspot-1x8-pos-1").hash = 1959350950;
+</script>
+</div>
+</div>
+
+                </div><!-- class:push-0 span-11 last -->
+                <div class="sidebar span-5">
+                    
+                    <div class="cT-socialCommenting accessibleSocialComment">
+        <h3>Join the conversation</h3>
+        <p class="tellFriends">
+            You're the only person reading this now.
+            <a href="javascript:;">Tell your friends</a>
+        </p>
+        <ul>
+            <li class="facebook"><a href="http://www.facebook.com/share.php?u=http://www.theage.com.au/technology/technology-news/australian-wikileak-founders-passport-confiscated-20100516-v6dw.html" rel="nofollow" data-facebookSocialLink="true" data-assetUrl="http://www.theage.com.au/technology/technology-news/australian-wikileak-founders-passport-confiscated-20100516-v6dw.html">Add to Facebook</a></li>
+            <li class="email"><a href="/action/emailToFriend?id=1454612" title="Email to a friend" rel="nofollow" data-emailSocialLink="true" data-emailUrl="/action/emailToFriend?id=1454612">Email this story</a></li>
+        </ul>
+            <p class="comments">
+                <a href="#comments"><em>116</em> comments</a>.
+            </p>
+        <p class="twitter">
+            <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="theage">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+        </p>
+</div>
+                    <div id="emptyAdspot-180x150"></div>
+                    
+                        <div class="cT-relatedCoverageContentPage">
+        <div class="cN-relatedCoverage cfix">
+            <h3>Related Coverage</h3>
+                            <!-- cN-story -->
+<div class="cN-story cfix last">
+    <div class="wof">
+        <h3>
+                
+                <a href="http://www.theage.com.au/technology/technology-news/wanted-by-the-us-wikileaks-founder-keeps-his-head-down-20100613-y652.html" title="Wanted by the US: WikiLeaks founder keeps his head down">Wanted by the US: WikiLeaks founder keeps his head down</a>
+                
+        </h3>
+                <p> IT READS like a James Bond novel: an enigmatic white-haired computer ...</p>
+    </div>
+</div>
+
+        </div><!-- cN-relatedCoverage cfix -->
+    </div><!-- cT-relatedCoverageContentPage -->
+
+                            <div class="cN-linkList">
+        <h3>Top Technology articles</h3>
+        <ol>
+                    <li class="first">
+                <a href="http://www.theage.com.au/technology/blogs/the-geek/why-games-can-be-so-dangerous-for-kids/20110228-1bann.html" title="Why games can be so dangerous for kids" style="">Why games can be so dangerous for kids</a>
+                </li>
+                    <li>
+                <a href="http://www.theage.com.au/technology/technology-news/trading-glitch-stalls-asx-20110228-1bbv8.html" title="Trading glitch stalls ASX" style="">Trading glitch stalls ASX</a>
+                </li>
+                    <li>
+                <a href="http://www.theage.com.au/technology/technology-news/online-study-kills-uni-life-20110226-1b98l.html" title="Online study kills uni life" style="">Online study kills uni life</a>
+                </li>
+                    <li>
+                <a href="http://www.theage.com.au/technology/technology-news/teaching-the-facebook-generation-20110227-1ba19.html" title="Teaching the Facebook generation" style="">Teaching the Facebook generation</a>
+                </li>
+                    <li>
+                <a href="http://www.theage.com.au/technology/technology-news/google-search-formula-gets-more-discerning-20110228-1badr.html" title="Google search formula gets more discerning" style="">Google search formula gets more discerning</a>
+                </li>
+                <li class="last"><a href="http://www.theage.com.au/technology">More Technology articles</a></li>
+        </ol>
+    </div>
+
+
+
+                    
+                            <blockquote class="cN-storyCommentLatest">
+            <h3>
+                Latest Comment
+            </h3>
+            <p>
+                To all those people who think we have 'freedom of speech' you're all dreaming. There's no ...
+                <span>
+                    &nbsp;
+                </span>
+            </p>
+            <cite>
+                glenp, Melbourne
+            </cite>
+            <a href="#comments">See comments (116)</a>
+    </blockquote>
+
+                    <div class="cT-storyTools cfix">
+	<h3 class="cT-strapHeading">Story Tools</h3>
+    <ul class="accessibleStoryTools">
+        <li class="facebook"><a href="http://www.facebook.com/share.php?u=http://www.theage.com.au/technology/technology-news/australian-wikileak-founders-passport-confiscated-20100516-v6dw.html" rel="nofollow" data-facebookSocialLink="true" data-assetUrl="http://www.theage.com.au/technology/technology-news/australian-wikileak-founders-passport-confiscated-20100516-v6dw.html">Share on Facebook</a></li>
+		<li class="email"><a href="/action/emailToFriend?id=1454612" title="Email to a friend" rel="nofollow" data-emailSocialLink="true" data-emailUrl="/action/emailToFriend?id=1454612">Email this story</a></li>
+		<li class="print"><a href="/action/printArticle?id=1454612" title="Print this story" rel="nofollow" data-printSocialLink="true" data-printUrl="/action/printArticle?id=1454612">Print this story</a></li>
+            <li class="reprints"><a href="https://s100.copyright.com/AppDispatchServlet?publisherName=fxj&publication=TAG&contentID=http%3A%2F%2Fwww.theage.com.au%2Ftechnology%2Ftechnology-news%2Faustralian-wikileak-founders-passport-confiscated-20100516-v6dw.html&title=Australian+Wikileak+founder%27s+passport+confiscated&publicationDate=May+17%2C+2010&author=Tom+Arup&charCnt=2461&orderBeanReset=true" target="_blank" title="Reprints and permissions" rel="nofollow">Reprints &amp; permissions</a></li>
+	</ul>
+    <div id="adspot-180x44" class="ad">
+        <script>
+            document.dcdAdsH.push("adspot-180x44");
+            document.dcdAdsI.push("dcAd-6");
+            document.dcdAdsU.push('http://ad-apac.doubleclick.net/adj/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;' + document.dcAdsCParams +'sz=180x44;tile=6;ord=' + dcOrd + '?');
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;sz=180x44;tile=6;ord=5.3564812E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;sz=180x44;tile=6;ord=5.3564812E7?' border="0" alt="">
+            </a>
+        </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-180x44");
+    document.getElementById("adspot-180x44").hash = 1258477089;
+</script>
+</div>
+</div><!-- class:cT-storyTools cfix -->
+                    <div class="cT-storyTools cfix">
+    <h3 class="cT-strapHeading">The Age Jobs</h3>
+    <div data-jobsBrand="age" data-jobsSkew="male">
+        <div id="adspot-180x60-pos-1" class="ad">
+        <script>
+            document.dcdAdsH.push("adspot-180x60-pos-1");
+            document.dcdAdsI.push("dcAd-7");
+            document.dcdAdsU.push('http://ad-apac.doubleclick.net/adj/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=1;' + document.dcAdsCParams +'sz=180x60;tile=7;ord=' + dcOrd + '?');
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=1;sz=180x60;tile=7;ord=5.3564812E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=1;sz=180x60;tile=7;ord=5.3564812E7?' border="0" alt="">
+            </a>
+        </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-180x60-pos-1");
+    document.getElementById("adspot-180x60-pos-1").hash = 1844348487;
+</script>
+</div>
+        <div id="adspot-180x60-pos-2" class="ad">
+        <script>
+            document.dcdAdsH.push("adspot-180x60-pos-2");
+            document.dcdAdsI.push("dcAd-8");
+            document.dcdAdsU.push('http://ad-apac.doubleclick.net/adj/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=2;' + document.dcAdsCParams +'sz=180x60;tile=8;ord=' + dcOrd + '?');
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=2;sz=180x60;tile=8;ord=5.3564812E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=2;sz=180x60;tile=8;ord=5.3564812E7?' border="0" alt="">
+            </a>
+        </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-180x60-pos-2");
+    document.getElementById("adspot-180x60-pos-2").hash = 999876647;
+</script>
+</div>
+        <div id="adspot-180x60-pos-3" class="ad">
+        <script>
+            document.dcdAdsH.push("adspot-180x60-pos-3");
+            document.dcdAdsI.push("dcAd-9");
+            document.dcdAdsU.push('http://ad-apac.doubleclick.net/adj/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=3;' + document.dcAdsCParams +'sz=180x60;tile=9;ord=' + dcOrd + '?');
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=3;sz=180x60;tile=9;ord=5.3564812E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=3;sz=180x60;tile=9;ord=5.3564812E7?' border="0" alt="">
+            </a>
+        </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-180x60-pos-3");
+    document.getElementById("adspot-180x60-pos-3").hash = 155404807;
+</script>
+</div>
+        <div id="adspot-180x60-pos-4" class="ad">
+        <script>
+            document.dcdAdsH.push("adspot-180x60-pos-4");
+            document.dcdAdsI.push("dcAd-10");
+            document.dcdAdsU.push('http://ad-apac.doubleclick.net/adj/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=4;' + document.dcAdsCParams +'sz=180x60;tile=10;ord=' + dcOrd + '?');
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=4;sz=180x60;tile=10;ord=5.3564812E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=4;sz=180x60;tile=10;ord=5.3564812E7?' border="0" alt="">
+            </a>
+        </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-180x60-pos-4");
+    document.getElementById("adspot-180x60-pos-4").hash = 113749526;
+</script>
+</div>
+        <div id="adspot-180x85" class="ad">
+        <script>
+            document.dcdAdsH.push("adspot-180x85");
+            document.dcdAdsI.push("dcAd-11");
+            document.dcdAdsU.push('http://ad-apac.doubleclick.net/adj/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;' + document.dcAdsCParams +'sz=180x85;tile=11;ord=' + dcOrd + '?');
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;sz=180x85;tile=11;ord=5.3564812E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;sz=180x85;tile=11;ord=5.3564812E7?' border="0" alt="">
+            </a>
+        </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-180x85");
+    document.getElementById("adspot-180x85").hash = 1563694690;
+</script>
+</div>
+    </div>
+</div><!-- class:cT-storyTools cfix -->
+                </div><!-- class:sidebar span-5 -->
+                <div class="span-16 last">
+                    
+                    <div id="adspot-620x250" class="ad">
+                    <small>Advertisement</small>
+                <script type="text/javascript">
+                    document.dcdAdsR.push("dcAd-1-12");
+                    document.write('<iframe id="dcAd-1-12" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;' + document.dcAdsCParams + 'sz=620x250;tile=12;ord=' + dcOrd + '?" width="620" height="250" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0"><\/iframe>');
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-12" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;sz=620x250;tile=12;ord=5.3564812E7?"
+                        width='620'
+                        height='250'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-620x250");
+    document.getElementById("adspot-620x250").hash = 330167381;
+</script>
+</div>
+<!-- IE 6 fix for ad gap -->
+                        <!-- cT-relatedCoverageContentPage -->
+    <div class="cT-relatedCoverageContentPage prepend-5 span-11 last cfix">
+        <!-- cN-relatedCoverage -->
+        <div id="moreRelatedCoverage" class="cN-relatedCoverage">
+            <h3 class="pull-5">More Related Coverage</h3>
+                    <!-- cN-story -->
+<div class="cN-story cfix last">
+    <div class="wof">
+        <h3>
+                
+                <a href="http://www.theage.com.au/technology/technology-news/wanted-by-the-us-wikileaks-founder-keeps-his-head-down-20100613-y652.html" title="Wanted by the US: WikiLeaks founder keeps his head down">Wanted by the US: WikiLeaks founder keeps his head down</a>
+                
+        </h3>
+                <p> IT READS like a James Bond novel: an enigmatic white-haired computer hacker; a soldier turned whistleblower; secret government correspondence; and the world's most powerful country desperate to contain the situation.</p>
+    </div>
+</div>
+
+        </div><!-- cN-relatedCoverage -->
+    </div><!--cT-relatedCoverageContentPage -->
+
+                    
+                </div><!-- class:span-16 last -->
+            </div><!-- id:content -->
+            <div class="aside span-8 last">
+                
+                <div id="adspot-300x600,300x250-pos-1" class="ad">
+            <small>Advertisement</small>
+        <script>
+            document.dcdAdsH.push("adspot-300x600,300x250-pos-1");
+            document.dcdAdsI.push("dcAd-13");
+            document.dcdAdsU.push('http://ad-apac.doubleclick.net/adj/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=1;' + document.dcAdsCParams +'sz=300x600,300x250;tile=13;ord=' + dcOrd + '?');
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=1;sz=300x600,300x250;tile=13;ord=5.3564812E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=1;sz=300x600,300x250;tile=13;ord=5.3564812E7?' border="0" alt="">
+            </a>
+        </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-300x600,300x250-pos-1");
+    document.getElementById("adspot-300x600,300x250-pos-1").hash = 1259468670;
+</script>
+</div>
+				<!--@List: shared: false name: The Age Technology Content Page RHS Text List -->
+<!--/@List-->
+                <!-- START digihub js  -->
+<script type="text/javascript">//<![CDATA[
+	// source: http://snippets.dzone.com/posts/show/2630
+	function removeClass(objElement, strClass) {
+	   // if there is a class
+	   if ( objElement.className ) {
+		  // the classes are just a space separated list, so first get the list
+		  var arrList = objElement.className.split(' ');
+		  // get uppercase class for comparison purposes
+		  var strClassUpper = strClass.toUpperCase();
+		  // find all instances and remove them
+		  for ( var i = 0; i < arrList.length; i++ ) {
+			 // if class found
+			 if ( arrList[i].toUpperCase() == strClassUpper ) {
+				// remove array item
+				arrList.splice(i, 1);
+				// decrement loop counter as we have adjusted the array's contents
+				i--;
+			 }
+		  }
+		  // assign modified class name attribute
+		  objElement.className = arrList.join(' ');
+	   }
+	}
+
+
+	function get_random_number(elemsLength) {
+	  var number = parseInt(elemsLength);
+	  var ranNum= Math.floor(Math.random()*number);
+	  return ranNum;
+	}
+	
+	function random_select(ulID, classname) {
+	  var elems = select_child_elements_by_classname(ulID, classname);
+	  var whichElem = get_random_number(elems.length);
+	  for(var i = 0; i < elems.length; i++) {
+//		elems[i].className.replace(/selected$/, '');
+		removeClass(elems[i], "selected"); 		// UI NOTE: Replaced with function due to malfunction of 'replace' method
+	  }
+	  elems[whichElem].className += ' selected';
+	}
+	
+	function select_child_elements_by_classname(ulID, classname) {
+	  var ulEl = document.getElementById(ulID);
+	  var elemsarr = ulEl.getElementsByTagName('li');
+	  var elems = Array();
+	  for(var i = 0; i < elemsarr.length; i++){
+		if (elemsarr[i].className.match(classname)) {
+		  elems.push(elemsarr[i]);
+		}
+	  }
+	  return elems;
+	}
+	
+	function navigateSmallDigihubBlock(ulID, prev, next) {
+	  var selectedSet = false;
+	  var nextEl = '';
+	  var elems = select_child_elements_by_classname(ulID, 'tab');
+	  while (selectedSet == false) {
+		for(var i = 0; i < elems.length; i++){
+		  var class_array = elems[i].className.split(' ');
+		  if (class_array[1] == 'selected') {
+			elems[i].className = class_array[0];
+			if (prev == true) {
+			  var nextEl = i-1;
+			  if (nextEl == -1) {
+				nextEl = elems.length - 1;
+			  }
+			}
+			if (next == true) {
+			  var nextEl = i+1;
+			  if (nextEl == elems.length) {
+				nextEl = 0;
+			  }
+			}
+		  }
+		  if (i === nextEl) {
+			elems[i].className += ' selected';
+			selectedSet = true;
+			break;
+		  }
+		}
+	  }
+	}
+	
+	window.onload = function() {
+          var dh = $("digiHub");
+          if (dh) {
+	    dh.className.replace(/accessibleTab$/, '');
+          }
+
+
+	  random_select('digiHub', 'tab');
+	  interval = setInterval("navigateSmallDigihubBlock('digiHub', false, true)", 7500 );
+	};
+//]]></script>
+<!-- END digihub js  -->
+<!-- START digihub external_export_large  -->
+
+
+<ul id="digiHub" class="digiHub cN-tabBox accessibleTab">
+  <li class="tab1 selected">
+    <h4><a href="javascript:;">Blogs</a></h4>
+    <div class="cfix">
+      <h3>Latest blogs</h3>
+      <div class="wof first">
+        <h5><a href="http://digihub.theage.com.au/node/2016">Do TV networks stick to their schedules?</a></h5>
+        <cite>February 24th</cite>
+      </div>
+      <div class="wof">
+        <h5><a href="http://digihub.theage.com.au/node/2015">Will you switch telco for a new phone?</a></h5>
+        <cite>February 22nd</cite>
+      </div>
+      <div class="puff">
+        <a href="http://digihub.theage.com.au/node/2010"><img src="http://www.theage.com.au/images/files/blogs/pictures/thumbnail/cat5-90_1.jpg" width="90" height="60" alt="Can we take the politics out of technology?" /></a>
+        <cite>February 17th</cite>
+        <h5><a href="http://digihub.theage.com.au/node/2010">Can we take the politics out of technology?</a></h5>
+        <a href="http://digihub.theage.com.au/blog" class="more">More blogs</a>
+      </div>
+    </div>
+
+  </li>
+  <li class="tab2">
+    <h4><a href="javascript:;">Comments</a></h4>
+    <div class="cfix">
+      <h3>Latest comments</h3>
+      <ul>
+        <li><h5><a href="http://digihub.theage.com.au/node/1111">AVG changed my default search to Yahoo!</a></h5>
+            Trying to keep my computer virus free, I downloaded the latest AVG toolbar for Firefox. Never would  ...        </li>
+        <li><h5><a href="http://digihub.theage.com.au/node/128">How much should I be paying for HDMI cables? Where are the cheapest options?</a></h5>
+        <li><h5><a href="http://digihub.theage.com.au/node/2004">What is it with Australia?</a></h5>
+      </ul>
+      <a href="http://digihub.theage.com.au/forum" class="more">More forums</a>
+    </div>
+  </li>
+
+  <li class="tab3">
+    <h4><a href="javascript:;">Latest</a></h4>
+    <div>
+      <h3>Featured products</h3>
+      <div>
+        <h5><a href="http://digihub.theage.com.au/node/1933">U31JG</a></h5>
+        <a href="http://digihub.theage.com.au/node/1933"><img src="http://www.theage.com.au/images/files/products/thumbnails/U31JG 90.jpg" width="90" height="60" alt="U31JG" /></a>
+        <p>
+•Powered by a Super Hybrid Engine-boosted standard voltage Intel® Core™ i3 or i5  ...</p>
+      </div>
+      <div>
+        <h5><a href="http://digihub.theage.com.au/node/1764">U43JC </a></h5>
+        <a href="http://digihub.theage.com.au/node/1764"><img src="http://www.theage.com.au/images/files/products/thumbnails/Luxury_U43JC 90.jpg" width="90" height="60" alt="U43JC " /></a>
+        <p>
+•The beauty of design: Elegant smoky brown bamboo exterior exudes an organic  ...</p>
+      </div>
+
+      <a href="http://digihub.theage.com.au/products" class="more">More products</a>
+    </div>
+  </li>
+  <li class="tab4">
+    <h4><a href="javascript:;">News</a></h4>
+    <div class="cfix">
+      <h3>Latest news</h3>
+      <div class="wof first">
+        <h5><a href="http://digihub.theage.com.au/node/1999">Intel Teams with will.i.am, Black Eyed Peas  ...</a></h5>
+        <cite>February 2nd</cite>
+      </div>
+      <div class="wof">
+        <h5><a href="http://digihub.theage.com.au/node/1944">Move Over TV, Laptops Are Top Dogs in  ...</a></h5>
+        <cite>December 7th</cite>
+      </div>
+      <div class="puff">
+        <a href="http://digihub.theage.com.au/node/1943"><img src="http://www.theage.com.au/images/files/news/pictures/thumbnail/HDD-unlocker90.jpg" width="90" height="60" alt="Disk Unlocker to tap full storage potential  ..." /></a>
+        <cite>December 7th</cite>
+        <h5><a href="http://digihub.theage.com.au/node/1943">Disk Unlocker to tap full storage potential  ...</a></h5>
+        <a href="http://digihub.theage.com.au/news" class="more">More news</a>
+      </div>
+    </div>
+  </li>
+</ul>
+<!-- END digihub external_export_large  -->
+
+
+
+    <div class="cS-quoteRotator">
+            <h3>Blogs</h3>
+            
+            <div class="tab tab1">
+
+                
+                <h4><a href="http://www.theage.com.au/digital-life/games/blogs/screenplay/money-for-nothing/20110301-1bc25.html">Money for nothing</a></h4>
+                
+
+                    <a href="http://www.theage.com.au/digital-life/games/blog/screenplay"><img height="127" width="127" alt="Jason Hill - Screen Play" src="http://images.theage.com.au/2010/05/20/1477672/jason-hill-127x127-127x127.jpg"/></a>
+
+                <blockquote>
+                    <p><a href="http://www.theage.com.au/digital-life/games/blogs/screenplay/money-for-nothing/20110301-1bc25.html">An Australian video games retailer has questioned ...</a><span>&nbsp;</span></p>
+                </blockquote>
+
+                <div>
+                        <cite class="byline">Posted in: <span><a href="http://www.theage.com.au/digital-life/games/blog/screenplay">Screen Play</a></span></cite>
+                    <cite class="date">Date: <span>Today, 7:35AM</span></cite>
+                        <p class="comments"><a href="http://www.theage.com.au/digital-life/games/blogs/screenplay/money-for-nothing/20110301-1bc25.html#comments">Comments 3</a></p>
+                </div>
+            </div>
+            
+            
+            <div class="tab tab2">
+
+                
+                <h4><a href="http://www.theage.com.au/digital-life/games/blogs/screenplay/game-to-act-up/20110301-1bc1w.html">Game to act up</a></h4>
+                
+
+                    <a href="http://www.theage.com.au/digital-life/games/blog/screenplay"><img height="127" width="127" alt="Jason Hill - Screen Play" src="http://images.theage.com.au/2010/05/20/1477672/jason-hill-127x127-127x127.jpg"/></a>
+
+                <blockquote>
+                    <p><a href="http://www.theage.com.au/digital-life/games/blogs/screenplay/game-to-act-up/20110301-1bc1w.html">The world’s gaze has been on Hollywood over the past 24 ...</a><span>&nbsp;</span></p>
+                </blockquote>
+
+                <div>
+                        <cite class="byline">Posted in: <span><a href="http://www.theage.com.au/digital-life/games/blog/screenplay">Screen Play</a></span></cite>
+                    <cite class="date">Date: <span>Today, 7:32AM</span></cite>
+                        <p class="comments"><a href="http://www.theage.com.au/digital-life/games/blogs/screenplay/game-to-act-up/20110301-1bc1w.html#comments">Comments 2</a></p>
+                </div>
+            </div>
+            
+            
+            <div class="tab tab3">
+
+                
+                <h4><a href="http://www.theage.com.au/digital-life/games/blogs/screenplay/replay-the-best-japanese-games-ever/20110228-1bb64.html">Re-Play: The best Japanese ...</a></h4>
+                
+
+                    <a href="http://www.theage.com.au/digital-life/games/blog/screenplay"><img height="127" width="127" alt="Jason Hill - Screen Play" src="http://images.theage.com.au/2010/05/20/1477672/jason-hill-127x127-127x127.jpg"/></a>
+
+                <blockquote>
+                    <p><a href="http://www.theage.com.au/digital-life/games/blogs/screenplay/replay-the-best-japanese-games-ever/20110228-1bb64.html">The article below first ran on the eve of the 2006 Tokyo ...</a><span>&nbsp;</span></p>
+                </blockquote>
+
+                <div>
+                        <cite class="byline">Posted in: <span><a href="http://www.theage.com.au/digital-life/games/blog/screenplay">Screen Play</a></span></cite>
+                    <cite class="date">Date: <span>Feb 28, 2011, 2:37PM</span></cite>
+                        <p class="comments"><a href="http://www.theage.com.au/digital-life/games/blogs/screenplay/replay-the-best-japanese-games-ever/20110228-1bb64.html#comments">Comments 7</a></p>
+                </div>
+            </div>
+            
+            
+            <div class="tab tab4">
+
+                
+                <h4><a href="http://www.theage.com.au/technology/blogs/the-geek/why-games-can-be-so-dangerous-for-kids/20110228-1bann.html">Why games can be so dangerous ...</a></h4>
+                
+
+                    <a href="http://www.theage.com.au/technology/blog/the-geek"><img height="127" width="127" alt="John Birmingham  - The Geek" src="http://images.theage.com.au/2010/05/13/1447404/thegeek-127x127-127x127.jpg"/></a>
+
+                <blockquote>
+                    <p><a href="http://www.theage.com.au/technology/blogs/the-geek/why-games-can-be-so-dangerous-for-kids/20110228-1bann.html">I was going to write about DRM today, but decided to save ...</a><span>&nbsp;</span></p>
+                </blockquote>
+
+                <div>
+                        <cite class="byline">Posted in: <span><a href="http://www.theage.com.au/technology/blog/the-geek">The Geek</a></span></cite>
+                    <cite class="date">Date: <span>Feb 28, 2011, 2:52PM</span></cite>
+                        <p class="comments"><a href="http://www.theage.com.au/technology/blogs/the-geek/why-games-can-be-so-dangerous-for-kids/20110228-1bann.html#comments">Comments 43</a></p>
+                </div>
+            </div>
+            
+    </div>
+        
+
+                <div id="adspot-149x170" class="ad adSpot-twin cfix">
+                    <small>Featured advertisers</small>
+                <script type="text/javascript">
+                    document.dcdAdsR.push("dcAd-1-14");
+                    document.write('<iframe id="dcAd-1-14" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;' + document.dcAdsCParams + 'pos=1;sz=149x170;tile=14;ord=' + dcOrd + '?" width="149" height="170" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0"><\/iframe>');
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-14" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=1;sz=149x170;tile=14;ord=5.3564812E7?"
+                        width='149'
+                        height='170'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+                <script type="text/javascript">
+                    document.dcdAdsR.push("dcAd-2-15");
+                    document.write('<iframe id="dcAd-2-15" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;' + document.dcAdsCParams + 'pos=2;sz=149x170;tile=15;ord=' + dcOrd + '?" width="149" height="170" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0"><\/iframe>');
+                </script>
+            <noscript>
+                <iframe id="dcAd-2-15" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=2;sz=149x170;tile=15;ord=5.3564812E7?"
+                        width='149'
+                        height='170'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-149x170");
+    document.getElementById("adspot-149x170").hash = -877039775;
+</script>
+</div>
+                
+<!--@List: shared: false name: Technology - White Site - The Age -->
+    <div class="cS-compare">
+                <h3><a href="http://mobile-phones.theage.com.au/MobilePhones">Compare & Save</a> <span id="adSpot-sponsor3" class="ad"></span></h3>
+
+        <link rel="stylesheet" type="text/css" href="http://whistleout.s3.amazonaws.com/public/css/widget-v3/widget.css" />
+<link rel="stylesheet" type="text/css" href="http://whistleout.s3.amazonaws.com/public/css/widget-v3/widget_age_tech.css" />
+
+<script type="text/javascript" src="http://whistleout.s3.amazonaws.com/public/script/widget/widget.js"></script>
+
+<script type="text/javascript">
+<!--
+    var _wo_Tabs = 3;
+    var _wo_Carousel_Visible = new Array(0, 0, 0);
+    var _wo_TabWeightings = new Array(5, 0, 0);
+    var _wo_Carousel = new Array(5, 4, 0);
+    var _wo_CarouselWeightings = wo_GetCarouselWeightings();
+    var _wo_PI = wo_GetPI();
+-->
+</script>
+
+<div class="wo-widget-wrap">
+    <div class="wo-widget-header">
+        <h3 class="wo-widget-heading">
+            Compare &amp; Save</h3>
+        <ul id="wo-widget-tabs" class="wo-widget-tabs">
+            <li id="wo-widget-tab-0" class="wo-active"><a href="javascript:wo_ShowTab(0);">Mobile
+                Phones</a></li>
+            <li id="wo-widget-tab-1"><a href="javascript:wo_ShowTab(1);">Broadband</a></li>
+            <li id="wo-widget-tab-2"><a href="javascript:wo_ShowTab(2);">Popular</a></li>
+        </ul>
+    </div>
+    <div id="wo-widget-tab-content-0">
+        <div id="wo-widget-carousel-item-0-0">
+<a onclick="try { wo_TrackWidgetClick(this, 'Widget_Fairfax_AGE_Technology');  } catch (err) { }" href="http://mobile-phones.theage.com.au/MobilePhones/Carriers/Virgin/Deals" class="wo-widget-deal">
+<img src="http://whistleout.s3.amazonaws.com/public/images/deals/widget_130x161_deals_galaxys.jpg" alt="Deal - 3 Months FREE" class="wo-widget-deal-image"/>
+<h3 class="wo-widget-deal-heading">Deal - 3 Months FREE</h3>
+Get 3 Months Free on Virgin Mobile when you buy online
+<div class="wo-widget-supplier">
+<img src="http://whistleout.s3.amazonaws.com/public/images/suppliers/small/supplier253.gif" alt="Virgin Mobile" />
+</div>
+<span class="wo-widget-shadow">&nbsp;</span><!--[if lte IE 6]><style type="text/css">.wo-widget-shadow {display:none}</style><![endif]-->
+</a>
+</div>
+<div id="wo-widget-carousel-item-0-1" class="wo-widget-hide">
+<a onclick="try { wo_TrackWidgetClick(this, 'Widget_Fairfax_AGE_Technology');  } catch (err) { }" href="http://mobile-phones.theage.com.au/MobilePhones/Phones/HTC/HTC-7-Trophy" class="wo-widget-deal">
+<img src="http://whistleout.s3.amazonaws.com/public/images/deals/widget_130x161_htctrophydeals.jpg" alt="HTC 7 Trophy - Deals" class="wo-widget-deal-image"/>
+<h3 class="wo-widget-deal-heading">HTC 7 Trophy - Deals</h3>
+Exclusive online deals from Vodafone.
+<div class="wo-widget-supplier">
+<img src="http://whistleout.s3.amazonaws.com/public/images/suppliers/small/supplier251.gif" alt="Vodafone" />
+</div>
+<span class="wo-widget-shadow">&nbsp;</span><!--[if lte IE 6]><style type="text/css">.wo-widget-shadow {display:none}</style><![endif]-->
+</a>
+</div>
+<div id="wo-widget-carousel-item-0-2" class="wo-widget-hide">
+<a onclick="try { wo_TrackWidgetClick(this, 'Widget_Fairfax_AGE_Technology');  } catch (err) { }" href="http://mobile-phones.theage.com.au/MobilePhones/Phones/HTC/HTC-Desire-HD" class="wo-widget-deal">
+<img src="http://whistleout.s3.amazonaws.com/public/images/deals/widget_130x161_htcdesiredeals.jpg" alt="HTC Desire HD Deals" class="wo-widget-deal-image"/>
+<h3 class="wo-widget-deal-heading">HTC Desire HD Deals</h3>
+Exclusive online deals with Vodafone
+<div class="wo-widget-supplier">
+<img src="http://whistleout.s3.amazonaws.com/public/images/suppliers/small/supplier251.gif" alt="Vodafone" />
+</div>
+<span class="wo-widget-shadow">&nbsp;</span><!--[if lte IE 6]><style type="text/css">.wo-widget-shadow {display:none}</style><![endif]-->
+</a>
+</div>
+<div id="wo-widget-carousel-item-0-3" class="wo-widget-hide">
+<a onclick="try { wo_TrackWidgetClick(this, 'Widget_Fairfax_AGE_Technology');  } catch (err) { }" href="http://mobile-phones.theage.com.au/MobilePhones/Carriers/Vodafone/Phones/Apple/Apple-iPhone-4-16GB" class="wo-widget-deal">
+<img src="http://whistleout.s3.amazonaws.com/public/images/deals/widget_130x161_deals_iphone.jpg" alt="iPhone 4 Vodafone - Exclusive Deals" class="wo-widget-deal-image"/>
+<h3 class="wo-widget-deal-heading">iPhone 4 Vodafone - Exclusive Deals</h3>
+Get a direct deal from Vodafone that you can't get in store!
+<div class="wo-widget-supplier">
+<img src="http://whistleout.s3.amazonaws.com/public/images/suppliers/small/supplier251.gif" alt="Vodafone" />
+</div>
+<span class="wo-widget-shadow">&nbsp;</span><!--[if lte IE 6]><style type="text/css">.wo-widget-shadow {display:none}</style><![endif]-->
+</a>
+</div>
+<div id="wo-widget-carousel-item-0-4" class="wo-widget-hide">
+<a onclick="try { wo_TrackWidgetClick(this, 'Widget_Fairfax_AGE_Technology');  } catch (err) { }" href="http://mobile-phones.theage.com.au/MobilePhones/Phones/BlackBerry/Blackberry-Bold-9780" class="wo-widget-deal">
+<img src="http://whistleout.s3.amazonaws.com/public/images/deals/widget_130x161_deals_bold9780.jpg" alt="NEW BlackBerry 9780 on Vodafone" class="wo-widget-deal-image"/>
+<h3 class="wo-widget-deal-heading">NEW BlackBerry 9780 on Vodafone</h3>
+Get a direct deal from Vodafone that you can't get in store!
+<div class="wo-widget-supplier">
+<img src="http://whistleout.s3.amazonaws.com/public/images/suppliers/small/supplier251.gif" alt="Vodafone" />
+</div>
+<span class="wo-widget-shadow">&nbsp;</span><!--[if lte IE 6]><style type="text/css">.wo-widget-shadow {display:none}</style><![endif]-->
+</a>
+</div>
+<script type="text/javascript">
+_wo_PI[0][0] = 'http://www.s2d6.com/x/?x=i&z=s&v=1055528&r=905093816&k=1';
+_wo_CarouselWeightings[0][0] = 10;
+_wo_PI[0][1] = 'http://www.s2d6.com/x/?x=i&z=s&v=2363498&r=2026993635&k=1';
+_wo_PI[0][2] = 'http://www.s2d6.com/x/?x=i&z=s&v=2363498&r=2026993635&k=1';
+_wo_PI[0][3] = 'http://www.s2d6.com/x/?x=i&z=s&v=2363498&r=1001409807&k=1';
+_wo_CarouselWeightings[0][3] = 10;
+_wo_PI[0][4] = 'http://www.s2d6.com/x/?x=i&z=s&v=2363498&r=1001409807&k=1';
+</script>
+
+
+        <div class="wo-widget-carousel">
+            <a href="javascript:wo_PreviousCarouselItem(0);"><span>&laquo;</span></a> <strong
+                id="wo-carousel-status-0">1 <span>of</span> 5</strong> <a href="javascript:wo_NextCarouselItem(0);">
+                    <span>&raquo;</span></a>
+        </div>
+        <span class="wo-widget-compare-heading"><a onclick="try { wo_TrackWidgetClick(this, 'Widget_Fairfax_AGE_Technology');  } catch (err) { }" href="http://www.whistleout.com.au/MobilePhones">Mobile deals</a> compared by:</span>
+    </div>
+    <div id="wo-widget-tab-content-1" class="wo-widget-hide">
+        <div id="wo-widget-carousel-item-1-0">
+<a onclick="try { wo_TrackWidgetClick(this, 'Widget_Fairfax_AGE_Technology');  } catch (err) { }" href="http://broadband.theage.com.au/Broadband" class="wo-widget-deal">
+<img src="http://whistleout.s3.amazonaws.com/public/images/deals/widget_130x161_telstra1gb.jpg" alt="Compare Telstra's NEW Pricing" class="wo-widget-deal-image"/>
+<h3 class="wo-widget-deal-heading">Compare Telstra's NEW Pricing</h3>
+Big Mobile Broadband Discounts if you bundle more than one Telstra product. 
+<div class="wo-widget-supplier">
+<img src="http://whistleout.s3.amazonaws.com/public/images/suppliers/small/supplier217.gif" alt="Telstra BigPond" />
+</div>
+<span class="wo-widget-shadow">&nbsp;</span><!--[if lte IE 6]><style type="text/css">.wo-widget-shadow {display:none}</style><![endif]-->
+</a>
+</div>
+<div id="wo-widget-carousel-item-1-1" class="wo-widget-hide">
+<a onclick="try { wo_TrackWidgetClick(this, 'Widget_Fairfax_AGE_Technology');  } catch (err) { }" href="http://broadband.theage.com.au/Broadband/Providers/Internode" class="wo-widget-deal">
+<img src="http://whistleout.s3.amazonaws.com/public/images/deals/widget_130x161_internode.jpg" alt="No Off-Peak Data with Internode" class="wo-widget-deal-image"/>
+<h3 class="wo-widget-deal-heading">No Off-Peak Data with Internode</h3>
+Use all of your data allowance at any time of the day with Internode. Compare plans here.
+<div class="wo-widget-supplier">
+<img src="http://whistleout.s3.amazonaws.com/public/images/suppliers/small/supplier137.gif" alt="Internode" />
+</div>
+<span class="wo-widget-shadow">&nbsp;</span><!--[if lte IE 6]><style type="text/css">.wo-widget-shadow {display:none}</style><![endif]-->
+</a>
+</div>
+<div id="wo-widget-carousel-item-1-2" class="wo-widget-hide">
+<a onclick="try { wo_TrackWidgetClick(this, 'Widget_Fairfax_AGE_Technology');  } catch (err) { }" href="http://broadband.theage.com.au/Broadband/Telstra-BigPond-ADSL-2-Cable-Plans" class="wo-widget-deal">
+<img src="http://whistleout.s3.amazonaws.com/public/images/deals/widget_130x161_50gbanytime.jpg" alt="Telstra - NEW Broadband Prices" class="wo-widget-deal-image"/>
+<h3 class="wo-widget-deal-heading">Telstra - NEW Broadband Prices</h3>
+New BigPond prices and usage allowances, Telstra is back!
+<div class="wo-widget-supplier">
+<img src="http://whistleout.s3.amazonaws.com/public/images/suppliers/small/supplier217.gif" alt="Telstra BigPond" />
+</div>
+<span class="wo-widget-shadow">&nbsp;</span><!--[if lte IE 6]><style type="text/css">.wo-widget-shadow {display:none}</style><![endif]-->
+</a>
+</div>
+<div id="wo-widget-carousel-item-1-3" class="wo-widget-hide">
+<a onclick="try { wo_TrackWidgetClick(this, 'Widget_Fairfax_AGE_Technology');  } catch (err) { }" href="http://broadband.theage.com.au/Broadband/Providers/Telstra/Mobile" class="wo-widget-deal">
+<img src="http://whistleout.s3.amazonaws.com/public/images/deals/widget_130x161_telstra400mb.jpg" alt="Telstra's NEW Mobile Broadband" class="wo-widget-deal-image"/>
+<h3 class="wo-widget-deal-heading">Telstra's NEW Mobile Broadband</h3>
+Great new entry level plan price for Next G&trade; mobile broadband. Compare...
+<div class="wo-widget-supplier">
+<img src="http://whistleout.s3.amazonaws.com/public/images/suppliers/small/supplier217.gif" alt="Telstra BigPond" />
+</div>
+<span class="wo-widget-shadow">&nbsp;</span><!--[if lte IE 6]><style type="text/css">.wo-widget-shadow {display:none}</style><![endif]-->
+</a>
+</div>
+<script type="text/javascript">
+</script>
+
+
+        <div class="wo-widget-carousel">
+            <a href="javascript:wo_PreviousCarouselItem(1);"><span>&laquo;</span></a> <strong
+                id="wo-carousel-status-1">1 <span>of</span> 4</strong> <a href="javascript:wo_NextCarouselItem(1);">
+                    <span>&raquo;</span></a>
+        </div>
+        <span class="wo-widget-compare-heading"><a onclick="try { wo_TrackWidgetClick(this, 'Widget_Fairfax_AGE_Technology');  } catch (err) { }" href="http://www.whistleout.com.au/Broadband">Broadband plans</a> compared by:</span>
+    </div>
+    <div id="wo-widget-tab-content-2" class="wo-widget-hide">
+        <table class="wo-widget-table">
+<tr class="wo-widget-row">
+<th><a href="http://mobile-phones.theage.com.au/MobilePhones/Phones/Apple">Popular iPhone Models</a></th>
+</tr>
+<tr class="wo-widget-row">
+<td class="wo-widget-product">
+<span class="wo-widget-number">1)</span> <a href="http://mobile-phones.theage.com.au/MobilePhones/Phones/Apple/Apple-iPhone-4-16GB">Apple iPhone 4 16GB</a><br/>
+50 plans and 19 deals</td>
+</tr>
+<tr class="wo-widget-row">
+<td class="wo-widget-product">
+<span class="wo-widget-number">2)</span> <a href="http://mobile-phones.theage.com.au/MobilePhones/Phones/Apple/Apple-iPhone-4-32GB">Apple iPhone 4 32GB</a><br/>
+50 plans and 19 deals</td>
+</tr>
+<tr class="wo-widget-row">
+<td class="wo-widget-product">
+<span class="wo-widget-number">3)</span> <a href="http://mobile-phones.theage.com.au/MobilePhones/Phones/Apple/Apple-iPhone-3GS-8GB">Apple iPhone 3GS 8GB</a><br/>
+42 plans and 28 deals</td>
+</tr>
+</table>
+
+        <span class="wo-widget-compare-heading"><a onclick="try { wo_TrackWidgetClick(this, 'Widget_Fairfax_AGE_Technology');  } catch (err) { }" href="http://www.whistleout.com.au/MobilePhones/iPhone-Deals">iPhone deals & plans</a> by:</span>
+    </div>
+    <a onclick="try { wo_TrackWidgetClick(this, 'Widget_Fairfax_AGE_Technology');  } catch (err) { }" href="http://www.whistleout.com.au/" class="wo-widget-wolink"><b>WhistleOut</b></a>
+</div>
+
+<script type="text/javascript">
+<!--
+    try
+    {
+        wo_Randomise();
+    }
+    catch (wo_Error)
+    {
+    }
+-->
+</script>
+
+    </div>
+<!--/@List-->
+
+                <div id="adspot-295x60" class="ad ">
+                    <small>Sponsored links</small>
+                <script type="text/javascript">
+                    document.dcdAdsR.push("dcAd-1-16");
+                    document.write('<iframe id="dcAd-1-16" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;' + document.dcAdsCParams + 'pos=1;sz=295x60;tile=16;ord=' + dcOrd + '?" width="295" height="60" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0"><\/iframe>');
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-16" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=1;sz=295x60;tile=16;ord=5.3564812E7?"
+                        width='295'
+                        height='60'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+                <script type="text/javascript">
+                    document.dcdAdsR.push("dcAd-2-17");
+                    document.write('<iframe id="dcAd-2-17" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;' + document.dcAdsCParams + 'pos=2;sz=295x60;tile=17;ord=' + dcOrd + '?" width="295" height="60" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0"><\/iframe>');
+                </script>
+            <noscript>
+                <iframe id="dcAd-2-17" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=2;sz=295x60;tile=17;ord=5.3564812E7?"
+                        width='295'
+                        height='60'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+                <script type="text/javascript">
+                    document.dcdAdsR.push("dcAd-3-18");
+                    document.write('<iframe id="dcAd-3-18" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;' + document.dcAdsCParams + 'pos=3;sz=295x60;tile=18;ord=' + dcOrd + '?" width="295" height="60" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0"><\/iframe>');
+                </script>
+            <noscript>
+                <iframe id="dcAd-3-18" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=3;sz=295x60;tile=18;ord=5.3564812E7?"
+                        width='295'
+                        height='60'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-295x60");
+    document.getElementById("adspot-295x60").hash = -880979467;
+</script>
+</div>
+                <div id="adspot-1x4" class="ad">
+                    <small>Advertisement</small>
+                <script type="text/javascript">
+                    document.dcdAdsR.push("dcAd-1-19");
+                    document.write('<iframe id="dcAd-1-19" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;' + document.dcAdsCParams + 'sz=1x4;tile=19;ord=' + dcOrd + '?" width="300" height="150" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0"><\/iframe>');
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-19" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;sz=1x4;tile=19;ord=5.3564812E7?"
+                        width='300'
+                        height='150'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-1x4");
+    document.getElementById("adspot-1x4").hash = -48475958;
+</script>
+</div>
+                <div id="adspot-300x250-pos-2" class="ad">
+                    <small>Advertisement</small>
+                <script type="text/javascript">
+                    document.dcdAdsR.push("dcAd-1-20");
+                    document.write('<iframe id="dcAd-1-20" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=2;' + document.dcAdsCParams + 'sz=300x250;tile=20;ord=' + dcOrd + '?" width="300" height="250" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0"><\/iframe>');
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-20" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=2;sz=300x250;tile=20;ord=5.3564812E7?"
+                        width='300'
+                        height='250'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-300x250-pos-2");
+    document.getElementById("adspot-300x250-pos-2").hash = 344698503;
+</script>
+</div>
+                
+                
+            </div>
+            <!-- Footer fN-footerNetwork (class according to new HTML5 element 'footer'; scope: network-wide) -->
+<div class="footer span-24">
+    <script type="text/javascript">
+    function trackOmnitureClick(anchor, identifier, trackInTransit) {
+        var hash = "";
+        var hashIndex = anchor.href.indexOf("#");
+        if (hashIndex > -1) {
+            hash = anchor.href.substring(hashIndex);
+            anchor.href = anchor.href.substring(0, hashIndex);
+        }
+        if (anchor.href.indexOf("s_rid") > -1) {
+            // Remove any s_rid's
+            anchor.href = anchor.href.replace(/[\??|&?]s_rid=(.*)/i, "");
+        }
+        if (anchor.href.indexOf("s_cid") > -1) {
+            // Strip any s_cid's
+            anchor.href = anchor.href.replace(/[\??|&?]s_cid=(.*)/i, "");
+        }
+        var query = (anchor.href.indexOf("?") > -1) ? "&" : "?";
+        anchor.href += query + "s_rid=" + identifier;
+        if (hashIndex > -1) {
+            anchor.href += hash;
+        }
+        if (trackInTransit) {
+            var s = s_gi(s_account);
+            s.usePlugins = false;
+            s.linkTrackVars = 'eVar10';
+            s.eVar10 = s.getValOnce(identifier, "s_eVar10", 0);
+            s.tl(anchor, 'o', 'trackOmnitureClick');
+            s.usePlugins = true;
+        }
+        return true;
+    }
+</script>
+
+<div class="c5 classifieds cfix">
+
+                  <div class="s1 cAge">
+                      <h2><a title="Money" onclick="trackOmnitureClick(this,'age:rainbowstrip:box1:campaign3:label:reward-yourself--rb-');" href="http://www.theage.com.au">Money</a></h2>
+                                <div class="puff">
+                                        <a href="http://compare.theage.com.au/credit-cards/rewards?utm_source=The_Age&utm_medium=Rainbow&utm_campaign=CC_60k_rewardyourself" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:content1:28-02:reward-yourself--rb-');" ><img src="http://images.theage.com.au/2011/02/28/2206455/Reward-yourself--RB--172x115.jpg" width="172" alt="Reward-yourself--RB-"/></a>
+
+                                    <h5><a href="http://compare.theage.com.au/credit-cards/rewards?utm_source=The_Age&utm_medium=Rainbow&utm_campaign=CC_60k_rewardyourself" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:box1:campaign3:content2:28-02:reward-yourself--rb-:rewardyourself...60,000freepoints!');" title="rewardyourself...60,000freepoints!">Reward yourself... 60,000 free points!</a></h5>
+                                </div>
+                                <ul>
+                                    <li class="lAge"><a href="http://www.theage.com.au" onclick="trackOmnitureClick(this,'age:rainbowstrip:box1:campaign3:logo:28-02:reward-yourself--rb-');">Theage.com.au</a></li>
+                               <li><a href="http://compare.theage.com.au/credit-cards" onclick="trackOmnitureClick(this,'age:rainbowstrip:box1:campaign3:bullet1:22-04:reward-yourself--rb-:compareallcreditcards');">Compare All Credit Cards</a></li>
+                               <li><a href="http://compare.theage.com.au/home-loans" onclick="trackOmnitureClick(this,'age:rainbowstrip:box1:campaign3:bullet2:22-04:reward-yourself--rb-:compareallhomeloans');">Compare All Home Loans</a></li>
+                               <li><a href="http://compare.theage.com.au/savings-accounts" onclick="trackOmnitureClick(this,'age:rainbowstrip:box1:campaign3:bullet3:22-04:reward-yourself--rb-:compareallsavingsaccounts');">Compare All Savings Accounts</a></li>
+                      </ul>
+                  </div>
+                  <div class="s2 cMycareer">
+                      <h2><a title="Jobs" onclick="trackOmnitureClick(this,'age:rainbowstrip:box2:campaign2:label:iphoneapp');" href="http://www.mycareer.com.au">Jobs</a></h2>
+                                <div class="puff">
+                                        <a href="http://content.mycareer.com.au/iphone.aspx" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:content1:01-03:iphoneapp');" ><img src="http://images.theage.com.au/2011/03/01/2208629/iphoneapp-172x115.jpg" width="172" alt="FREE MyCareer iPhone app"/></a>
+
+                                    <h5><a href="http://content.mycareer.com.au/iphone.aspx" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:box2:campaign2:content2:01-03:iphoneapp:freemycareeriphoneapp');" title="freemycareeriphoneapp">FREE MyCareer iPhone app</a></h5>
+                                </div>
+                                <ul>
+                                    <li class="lMycareer"><a href="http://www.mycareer.com.au" onclick="trackOmnitureClick(this,'age:rainbowstrip:box2:campaign2:logo:01-03:iphoneapp');">Mycareer.com.au</a></li>
+                               <li><a href="http://www.facebook.com/pages/MyCareercomau/105272595403?ref=ts" onclick="trackOmnitureClick(this,'age:rainbowstrip:box2:campaign2:bullet1:01-03:iphoneapp:followmycareeronfacebook');">Follow MyCareer on Facebook</a></li>
+                               <li><a href="http://content.mycareer.com.au/advice-research/workplace/come-clean.aspx" onclick="trackOmnitureClick(this,'age:rainbowstrip:box2:campaign2:bullet2:01-03:iphoneapp:comeclean');">Come Clean</a></li>
+                               <li><a href="http://content.mycareer.com.au/advice-research/workplace/overtime-money.aspx" onclick="trackOmnitureClick(this,'age:rainbowstrip:box2:campaign2:bullet3:01-03:iphoneapp:overtimeismoney…');">Overtime is money…</a></li>
+                      </ul>
+                  </div>
+                  <div class="s3 cTheVine">
+                      <h2><a title="TheVine" onclick="trackOmnitureClick(this,'age:rainbowstrip:box3:campaign1:label:celebrity photos that time forgot');" href="http://www.thevine.com.au">TheVine</a></h2>
+                                <div class="puff">
+                                        <a href="http://www.thevine.com.au/entertainment/celebrity/the-best-celebrity-photos-ever20110225.aspx " rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:content1:28-02:celebrity photos that time forgot');" ><img src="http://images.theage.com.au/2011/02/28/2207118/Celebrity%20photos%20that%20time%20forgot-172x115.jpg" width="172" alt="Celebrity photos that time forgot"/></a>
+
+                                    <h5><a href="http://www.thevine.com.au/entertainment/celebrity/the-best-celebrity-photos-ever20110225.aspx " rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:box3:campaign1:content2:28-02:celebrity photos that time forgot:celebrityphotosthattimeforgot');" title="celebrityphotosthattimeforgot">Celebrity photos that time forgot </a></h5>
+                                </div>
+                                <ul>
+                                    <li class="lTheVine"><a href="http://www.thevine.com.au" onclick="trackOmnitureClick(this,'age:rainbowstrip:box3:campaign1:logo:28-02:celebrity photos that time forgot');">Thevine.com.au</a></li>
+                               <li><a href="http://www.thevine.com.au/entertainment/" onclick="trackOmnitureClick(this,'age:rainbowstrip:box3:campaign1:bullet1:08-09:celebrity photos that time forgot:entertainment&celebritynews');">Entertainment & celebrity news</a></li>
+                               <li><a href="http://www.thevine.com.au/sport/" onclick="trackOmnitureClick(this,'age:rainbowstrip:box3:campaign1:bullet2:17-01:celebrity photos that time forgot:weirdandwonderfulworldofsport');">Weird and wonderful world of sport</a></li>
+                               <li><a href="http://www.thevine.com.au/gig-guide/" onclick="trackOmnitureClick(this,'age:rainbowstrip:box3:campaign1:bullet3:09-12:celebrity photos that time forgot:musicfestivalsandsideshows');">Music festivals and sideshows</a></li>
+                      </ul>
+                  </div>
+                  <div class="s4 cRsvp">
+                      <h2><a title="Relationships" onclick="trackOmnitureClick(this,'age:rainbowstrip:box4:campaign3:label:rsvp_pumaloverun');" href="http://www.rsvp.com.au">Relationships</a></h2>
+                                <div class="puff">
+                                        <a href="http://www.rsvp.com.au/content/zine/puma+love+run/33177.jsp" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:content1:07-01:rsvp_pumaloverun');" ><img src="http://images.theage.com.au/2011/01/07/2123536/RSVP_pumaloverun-172x115.gif" width="172" alt="Puma Love Run"/></a>
+
+                                    <h5><a href="http://www.rsvp.com.au/content/zine/puma+love+run/33177.jsp" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:box4:campaign3:content2:07-01:rsvp_pumaloverun:runthecourseoflove2011pumaloverun');" title="runthecourseoflove2011pumaloverun">Run the course of love 2011 PUMA Love Run </a></h5>
+                                </div>
+                                <ul>
+                                    <li class="lRsvp"><a href="http://www.rsvp.com.au" onclick="trackOmnitureClick(this,'age:rainbowstrip:box4:campaign3:logo:07-01:rsvp_pumaloverun');">Rsvp.com.au</a></li>
+                               <li><a href="http://www.rsvp.com.au/singles+events.jsp" onclick="trackOmnitureClick(this,'age:rainbowstrip:box4:campaign3:bullet1:24-06:rsvp_pumaloverun:funsingleseventscomingup');">Fun Singles Events Coming Up</a></li>
+                               <li><a href="http://www.rsvp.com.au" onclick="trackOmnitureClick(this,'age:rainbowstrip:box4:campaign3:bullet2:06-01:rsvp_pumaloverun:internetdating');">Internet Dating</a></li>
+                               <li><a href="http://www.rsvp.com.au/quick+find/meet+singles.jsp" onclick="trackOmnitureClick(this,'age:rainbowstrip:box4:campaign3:bullet3:27-04:rsvp_pumaloverun:meetmelbournesingles');">Meet Melbourne singles</a></li>
+                      </ul>
+                  </div>
+                  <div class="s5 cEssentialBaby">
+                      <h2><a title="Essential Baby" onclick="trackOmnitureClick(this,'age:rainbowstrip:box5:campaign1:label:mary_twins_172x115');" href="http://www.essentialbaby.com.au">Essential Baby</a></h2>
+                                <div class="puff">
+                                        <a href="http://www.essentialbaby.com.au/life-style/family-entertainment/a-right-royal-pair-marys-twins-pose-for-official-portait-20110228-1bacb.html" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:content1:28-02:mary_twins_172x115');" ><img src="http://images.theage.com.au/2011/02/28/2206270/mary_twins_172x115-172x115.jpg" width="172" alt="Mary Twins"/></a>
+
+                                    <h5><a href="http://www.essentialbaby.com.au/life-style/family-entertainment/a-right-royal-pair-marys-twins-pose-for-official-portait-20110228-1bacb.html" rel="nofollow" onclick="trackOmnitureClick(this,'age:rainbowstrip:box5:campaign1:content2:28-02:mary_twins_172x115:cuteoverload!marystwinsposeforphotos');" title="cuteoverload!marystwinsposeforphotos">Cute overload! Mary's twins pose for photos</a></h5>
+                                </div>
+                                <ul>
+                                    <li class="lEssentialBaby"><a href="http://www.essentialbaby.com.au" onclick="trackOmnitureClick(this,'age:rainbowstrip:box5:campaign1:logo:28-02:mary_twins_172x115');">Essentialbaby.com.au</a></li>
+                               <li><a href="http://www.essentialbaby.com.au/conception/ovulation-calculator" onclick="trackOmnitureClick(this,'age:rainbowstrip:box5:campaign1:bullet1:29-09:mary_twins_172x115:ovulationcalculator');">Ovulation calculator</a></li>
+                               <li><a href="http://www.essentialbaby.com.au/pregnancy/baby-names" onclick="trackOmnitureClick(this,'age:rainbowstrip:box5:campaign1:bullet2:14-09:mary_twins_172x115:babynames');">Baby names</a></li>
+                               <li><a href="http://www.essentialbaby.com.au" onclick="trackOmnitureClick(this,'age:rainbowstrip:box5:campaign1:bullet3:14-09:mary_twins_172x115:parentingessentials');">Parenting essentials</a></li>
+                      </ul>
+                  </div>
+
+</div>
+
+
+    <div class="fN-affiliateStrip">
+    <h2>Compare and Save</h2>
+    <ul>
+        <li ><a href="http://Broadband.theage.com.au/Broadband" onclick="trackOmnitureClick(this, 'age:affiliatestrip:link')">Broadband</a></li>
+        <li ><a href="http://theage.goswitch.com.au" onclick="trackOmnitureClick(this, 'age:affiliatestrip:link')">Energy</a></li>
+        <li ><a href="http://mobile-phones.theage.com.au/MobilePhones" onclick="trackOmnitureClick(this, 'age:affiliatestrip:link')">Mobile</a></li>
+        <li ><a href="http://compare.theage.com.au/home-loans" onclick="trackOmnitureClick(this, 'age:affiliatestrip:link')">Home Loans</a></li>
+        <li class="last"><a href="http://compare.theage.com.au/savings-accounts" onclick="trackOmnitureClick(this, 'age:affiliatestrip:link')">Savings Accounts</a></li>
+</ul>
+
+    <span></span>
+        <div class="one">
+            <h3><a href="http://compare.theage.com.au/home-loans" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content0')">New Home Loan</a></h3>
+                <a href="http://compare.theage.com.au/home-loans" rel="nofollow" onclick="trackOmnitureClick(this,'age:affiliatestrip:content0:698-uhomeloan--ncs-');" ><img src="http://images.theage.com.au/2011/02/28/2206414/698-UhomeLoan--NCS--60x50.jpg" width="60" alt="698-UhomeLoan--NCS-"/></a>
+
+            <p><a href="http://compare.theage.com.au/home-loans" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content0')">UBank's brand new UHomeLoan shakes up the market</a></p>
+            <span></span>
+            <p class="links"><a href="http://compare.theage.com.au/home-loans" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content0')">Compare all Home Loans</a></p>
+    </div>
+    <div class="two">
+            <h3><a href="http://compare.theage.com.au/savings-accounts" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content1')">Red Hot Deal!</a></h3>
+                <a href="http://compare.theage.com.au/savings-accounts" rel="nofollow" onclick="trackOmnitureClick(this,'age:affiliatestrip:content1:50-free-money--ncs-');" ><img src="http://images.theage.com.au/2011/02/28/2206412/50-free-money--NCS--60x50.jpg" width="60" alt="50-free-money--NCS-"/></a>
+
+            <p><a href="http://compare.theage.com.au/savings-accounts" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content1')">6.51% savings and $50 bonus interest from Virgin</a></p>
+            <span></span>
+            <p class="links"><a href="http://compare.theage.com.au/savings-accounts" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content1')">Compare Savings Accounts</a></p>
+    </div>
+    <div class="three">
+            <h3><a href="http://mobile-phones.theage.com.au/MobilePhones/Optus-Bonus-Deals" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content2')">BONUS Xbox 360. Last Days!</a></h3>
+                <a href="http://mobile-phones.theage.com.au/MobilePhones/Optus-Bonus-Deals" rel="nofollow" onclick="trackOmnitureClick(this,'age:affiliatestrip:content2:mobile_60x50_xboxkinect');" ><img src="http://images.theage.com.au/2011/02/25/2203005/mobile_60x50_xboxkinect-60x50.gif" width="60" alt="mobile_60x50_xboxkinect"/></a>
+
+            <p><a href="http://mobile-phones.theage.com.au/MobilePhones/Optus-Bonus-Deals" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content2')">Touchscreen mobile phone + Xbox 360 Kinect deal ends Feb 28</a></p>
+            <span></span>
+            <p class="links"><a href="http://mobile-phones.theage.com.au/MobilePhones/Optus-Bonus-Deals" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content2')">Compare Mobile Phones</a></p>
+    </div>
+    <div class="four">
+            <h3><a href="http://Broadband.theage.com.au/Broadband" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content3')">Broadband. Wireless in Home</a></h3>
+                <a href="http://Broadband.theage.com.au/Broadband" rel="nofollow" onclick="trackOmnitureClick(this,'age:affiliatestrip:content3:bband_60x50_modem1');" ><img src="http://images.theage.com.au/2011/02/25/2203003/bband_60x50_modem1-60x50.gif" width="60" alt="bband_60x50_modem1"/></a>
+
+            <p><a href="http://Broadband.theage.com.au/Broadband" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content3')">New wireless modem within your home</a></p>
+            <span></span>
+            <p class="links"><a href="http://Broadband.theage.com.au/Broadband" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content3')">Compare Broadband Plans</a></p>
+    </div>
+    <div class="five">
+            <h3><a href="http://mobile-phones.theage.com.au/MobilePhones" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content4')">iPhone 4 Price Alert</a></h3>
+                <a href="http://mobile-phones.theage.com.au/MobilePhones" rel="nofollow" onclick="trackOmnitureClick(this,'age:affiliatestrip:content4:mobile_60x50_iphone4c');" ><img src="http://images.theage.com.au/2011/03/01/2208672/mobile_60x50_iphone4c-60x50.gif" width="60" alt="mobile_60x50_iphone4c"/></a>
+
+            <p><a href="http://mobile-phones.theage.com.au/MobilePhones" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content4')">Carriers adjusted prices on iPhone 4</a></p>
+            <span></span>
+            <p class="links"><a href="http://mobile-phones.theage.com.au/MobilePhones" onclick="trackOmnitureClick(this, 'age:affiliatestrip:content4')">Compare Mobile Phones</a></p>
+    </div>
+
+</div>
+
+            
+<!-- Reader's most viewed -->
+<div class="c5 top5 cfix">
+    <h2 class="cfix">Readers' most viewed</h2>
+
+            <div class="s1 lBT">
+                <a href="http://www.brisbanetimes.com.au">Most viewed articles on Brisbane Times</a>
+                <h5>Top 5 <a href="http://www.brisbanetimes.com.au/technology">Technology</a> articles</h5>
+    <ol>
+            <li><a href="http://www.brisbanetimes.com.au/technology/blogs/the-geek/why-games-can-be-so-dangerous-for-kids/20110228-1bann.html" title="Why games can be so dangerous for kids" style="">Why games can be so dangerous for kids</a></li>
+            <li><a href="http://www.brisbanetimes.com.au/technology/technology-news/google-search-formula-gets-more-discerning-20110228-1badr.html" title="Google search formula gets more discerning" style="">Google search formula gets more discerning</a></li>
+            <li><a href="http://www.brisbanetimes.com.au/technology/technology-news/teaching-the-facebook-generation-20110227-1ba19.html" title="Teaching the Facebook generation" style="">Teaching the Facebook generation</a></li>
+            <li><a href="http://www.brisbanetimes.com.au/technology/technology-news/online-study-kills-uni-life-20110226-1b98l.html" title="Online study kills uni life" style="">Online study kills uni life</a></li>
+            <li><a href="http://www.brisbanetimes.com.au/technology/security/hacked-boys-facebook-page-4000-respond-to-open-house-party-20110225-1b886.html" title="'Hacked' boy's Facebook page: 4000 respond to open house party" style="">'Hacked' boy's Facebook page: 4000 respond to open house party</a></li>
+    </ol>
+
+            </div>
+            <div class="s2 lWAToday">
+                <a href="http://www.watoday.com.au">Most viewed articles on WA Today</a>
+                <h5>Top 5 <a href="http://www.watoday.com.au/technology">Technology</a> articles</h5>
+    <ol>
+            <li><a href="http://www.watoday.com.au/technology/blogs/the-geek/why-games-can-be-so-dangerous-for-kids/20110228-1bann.html" title="Why games can be so dangerous for kids" style="">Why games can be so dangerous for kids</a></li>
+            <li><a href="http://www.watoday.com.au/technology/technology-news/julian-me-and-dr-seuss-20110226-1b97c.html" title="Julian, me and Dr Seuss" style="">Julian, me and Dr Seuss</a></li>
+            <li><a href="http://www.watoday.com.au/technology/technology-news/teaching-the-facebook-generation-20110227-1ba19.html" title="Teaching the Facebook generation" style="">Teaching the Facebook generation</a></li>
+            <li><a href="http://www.watoday.com.au/technology/technology-news/online-study-kills-uni-life-20110226-1b98l.html" title="Online study kills uni life" style="">Online study kills uni life</a></li>
+            <li><a href="http://www.watoday.com.au/technology/technology-news/google-search-formula-gets-more-discerning-20110228-1badr.html" title="Google search formula gets more discerning" style="">Google search formula gets more discerning</a></li>
+    </ol>
+
+            </div>
+            <div class="s3 lSmh">
+                <a href="http://www.smh.com.au">Most viewed articles on The Sydney Morning Herald</a>
+                <h5>Top 5 <a href="http://www.smh.com.au/technology">Technology</a> articles</h5>
+    <ol>
+            <li><a href="http://www.smh.com.au/technology/blogs/the-geek/why-games-can-be-so-dangerous-for-kids/20110228-1bann.html" title="Why games can be so dangerous for kids" style="">Why games can be so dangerous for kids</a></li>
+            <li><a href="http://www.smh.com.au/technology/technology-news/trading-glitch-stalls-asx-20110228-1bbv8.html" title="Trading glitch stalls ASX" style="">Trading glitch stalls ASX</a></li>
+            <li><a href="http://www.smh.com.au/technology/technology-news/problems-for-bus-text-service-20110228-1bbsa.html" title="Problems for bus text service" style="">Problems for bus text service</a></li>
+            <li><a href="http://www.smh.com.au/technology/technology-news/teaching-the-facebook-generation-20110227-1ba19.html" title="Teaching the Facebook generation" style="">Teaching the Facebook generation</a></li>
+            <li><a href="http://www.smh.com.au/technology/technology-news/online-study-kills-uni-life-20110226-1b98l.html" title="Online study kills uni life" style="">Online study kills uni life</a></li>
+    </ol>
+
+            </div>
+            <div class="s4 lAge">
+                <a href="http://www.theage.com.au">Most viewed articles on The Age</a>
+                <h5>Top 5 <a href="http://www.theage.com.au/technology">Technology</a> articles</h5>
+    <ol>
+            <li><a href="http://www.theage.com.au/technology/blogs/the-geek/why-games-can-be-so-dangerous-for-kids/20110228-1bann.html" title="Why games can be so dangerous for kids" style="">Why games can be so dangerous for kids</a></li>
+            <li><a href="http://www.theage.com.au/technology/technology-news/trading-glitch-stalls-asx-20110228-1bbv8.html" title="Trading glitch stalls ASX" style="">Trading glitch stalls ASX</a></li>
+            <li><a href="http://www.theage.com.au/technology/technology-news/online-study-kills-uni-life-20110226-1b98l.html" title="Online study kills uni life" style="">Online study kills uni life</a></li>
+            <li><a href="http://www.theage.com.au/technology/technology-news/teaching-the-facebook-generation-20110227-1ba19.html" title="Teaching the Facebook generation" style="">Teaching the Facebook generation</a></li>
+            <li><a href="http://www.theage.com.au/technology/technology-news/google-search-formula-gets-more-discerning-20110228-1badr.html" title="Google search formula gets more discerning" style="">Google search formula gets more discerning</a></li>
+    </ol>
+
+            </div>
+            <div class="s5">
+                <h5>Videos</h5>
+    <ol>
+            <li><a href="http://media.theage.com.au/national/selections/oscars-win-this-ones-for-perth-and-melbourne-2207247.html" title="Oscars win: 'This one's for Perth and Melbourne'" style="">Oscars win: 'This one's for Perth and Melbourne'</a></li>
+            <li><a href="http://media.theage.com.au/the-oscars-verdict-6-out-of-10-2207704.html" title="The Oscars verdict? 6 out of 10" style="">The Oscars verdict? 6 out of 10</a></li>
+            <li><a href="http://media.theage.com.au/national/selections/lost-diver-highly-experienced-2207078.html" title="Lost diver highly experienced" style="">Lost diver highly experienced</a></li>
+            <li><a href="http://media.theage.com.au/man-killed-in-middle-park-shooting-2206130.html" title="Man killed in Middle Park shooting" style="">Man killed in Middle Park shooting</a></li>
+            <li><a href="http://media.theage.com.au/qld-news/saxon-bird-inquest-begins-2207284.html" title="Saxon Bird inquest begins" style="">Saxon Bird inquest begins</a></li>
+    </ol>
+
+            </div>
+</div>
+   
+
+        <div id="adspot-728x90,468x60-pos-2" class="ad">
+        <script>
+            document.dcdAdsH.push("adspot-728x90,468x60-pos-2");
+            document.dcdAdsI.push("dcAd-21");
+            document.dcdAdsU.push('http://ad-apac.doubleclick.net/adj/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=2;' + document.dcAdsCParams +'sz=728x90,468x60;tile=21;ord=' + dcOrd + '?');
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=2;sz=728x90,468x60;tile=21;ord=5.3564812E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;pos=2;sz=728x90,468x60;tile=21;ord=5.3564812E7?' border="0" alt="">
+            </a>
+        </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-728x90,468x60-pos-2");
+    document.getElementById("adspot-728x90,468x60-pos-2").hash = 1691115001;
+</script>
+</div>
+    <!-- Footer section links -->
+    <ul class="fSectionLinks cfix">
+            <li ><a href="http://www.theage.com.au/" title="The Age Home">The Age Home</a></li>
+            <li ><a href="http://www.theage.com.au/victoria" title="Victoria">Victoria</a></li>
+            <li ><a href="http://www.theage.com.au/national" title="National">National</a></li>
+            <li ><a href="http://www.theage.com.au/world" title="World">World</a></li>
+            <li ><a href="http://www.theage.com.au/environment" title="Environment">Environment</a></li>
+            <li ><a href="http://www.theage.com.au/opinion" title="Opinion">Opinion</a></li>
+            <li ><a href="http://www.theage.com.au/business" title="Business">Business</a></li>
+            <li ><a href="http://www.theage.com.au/technology" title="Technology">Technology</a></li>
+            <li ><a href="http://www.theage.com.au/digital-life" title="Digital Life">Digital Life</a></li>
+            <li ><a href="http://www.theage.com.au/entertainment/" title="Entertainment">Entertainment</a></li>
+            <li ><a href="http://www.theage.com.au/lifestyle" title="Life &amp; Style">Life &amp; Style</a></li>
+            <li ><a href="http://www.theage.com.au/travel" title="Travel">Travel</a></li>
+            <li ><a href="http://www.theage.com.au/drive" title="Cars">Cars</a></li>
+            <li ><a href="http://www.theage.com.au/executive-style" title="Exec Style">Exec Style</a></li>
+            <li ><a href="http://www.theage.com.au/sport" title="Sport">Sport</a></li>
+            <li class="last"><a href="http://www.theage.com.au/weather/" title="Weather">Weather</a></li>
+    </ul>
+
+    <!-- Footer masthead links and copyright -->
+<div class="fMastheadLinks cfix">
+        <ul class="span-4 cfix">
+        <li class="first"><h5>The Age</h5></li>
+            <li><a href="http://www.theage.com.au/siteguide/" title="Sitemap">Sitemap</a></li>
+            <li><a href="http://about.theage.com.au/" title="About Us">About Us</a></li>
+            <li><a href="http://www.theage.com.au/support/" title="Contact Us">Contact Us</a></li>
+            <li><a href="http://www.fairfax.com.au/privacy" title="Privacy">Privacy</a></li>
+            <li><a href="http://www.fairfax.com.au/conditions" title="Conditions">Conditions</a></li>
+            <li><a href="http://www.adcentre.com.au/fairfax-digital-network.aspx" title="Advertise with Us">Advertise with Us</a></li>
+            <li><a href="http://www.fairfaxphotos.com" title="Photo Sales">Photo Sales</a></li>
+            <li><a href="http://www.goodguides.com.au/" title="Good Food Guide">Good Food Guide</a></li>
+    </ul>
+
+        <ul class="span-4 cfix">
+        <li class="first"><h5>Products & Services</h5></li>
+            <li><a href="http://www.theage.com.au/am/" title="AM Today">AM Today</a></li>
+            <li><a href="http://newsstore.theage.com.au/apps/newsSearch.ac?/index.html" title="Last 8 days">Last 8 days</a></li>
+            <li><a class="vision" href="#" title="High Contrast">High Contrast</a></li>
+            <li><a href="http://www.theage.com.au/text/" title="Text">Text</a></li>
+            <li><a href="http://subscribers.theage.com.au/index.asp" title="Newspaper subscription">Newspaper subscription</a></li>
+            <li><a href="http://www.theageshop.com.au/" title="Shop">Shop</a></li>
+            <li><a href="http://www.fairfaxevents.com.au/" title="Events">Events</a></li>
+            <li><a href="http://www.advantate.com.au" title="SEO">SEO</a></li>
+            <li><a href="http://www.theage.com.au/siteguide/accessibility" title="Help using this website">Help using this website</a></li>
+    </ul>
+
+        <ul class="span-4 cfix">
+        <li class="first"><h5>Connect</h5></li>
+            <li><a href="http://mobile.fairfax.com.au/age" title="Mobile">Mobile</a></li>
+            <li><a href="http://www.theage.com.au/newsletters/subscription.html" title="Newsletters">Newsletters</a></li>
+            <li><a href="http://www.theage.com.au/rssheadlines" title="RSS">RSS</a></li>
+            <li><a href="http://twitter.com/theage" title="Twitter">Twitter</a></li>
+            <li><a href="http://www.facebook.com/theageAustralia" title="Facebook">Facebook</a></li>
+    </ul>
+
+        <ul class="span-4 cfix">
+        <li class="first"><h5>Classifieds</h5></li>
+            <li><a href="http://www.stayz.com.au/" title="Accommodation">Accommodation</a></li>
+            <li><a href="http://www.drive.com.au/" title="Cars">Cars</a></li>
+            <li><a href="http://www.rsvp.com.au/" title="Dating">Dating</a></li>
+            <li><a href="http://mycareer.com.au/" title="Jobs">Jobs</a></li>
+            <li><a href="http://www.domain.com.au/" title="Real Estate">Real Estate</a></li>
+            <li><a href="http://apm.com.au/" title="Property Price Data">Property Price Data</a></li>
+            <li><a href="http://tributes.theage.com.au/" title="Tributes & Celebrations">Tributes & Celebrations</a></li>
+            <li><a href="http://classifieds.fairfax.com.au/advertise/index.html" title="Place an ad">Place an ad</a></li>
+    </ul>
+
+</div>
+<!-- This comment fixes IE6's logo problem. Might be temporary until we've got content below this point -->
+    <div class="nN-footerLinks">
+	<a href="http://www.fairfaxdigital.com.au" class="logo">Fairfax Media</a>
+	<div>
+        <h3>Our Sites</h3>
+    <ul>
+            <li class="first">
+                <a title="The Sydney Morning Herald" href="http://www.smh.com.au/">The Sydney Morning Herald</a>
+            </li>
+            <li>
+                <a title="The Age" href="http://www.theage.com.au/">The Age</a>
+            </li>
+            <li>
+                <a title="MyCareer" href="http://mycareer.com.au/">MyCareer</a>
+            </li>
+            <li>
+                <a title="Domain" href="http://www.domain.com.au/">Domain</a>
+            </li>
+            <li>
+                <a title="Drive" href="http://www.drive.com.au/">Drive</a>
+            </li>
+            <li>
+                <a title="RSVP" href="http://www.rsvp.com.au/">RSVP</a>
+            </li>
+            <li>
+                <a title="Essential Baby" href="http://www.essentialbaby.com.au/">Essential Baby</a>
+            </li>
+            <li>
+                <a title="InvestSMART" href="http://www.investsmart.com.au/">InvestSMART</a>
+            </li>
+            <li>
+                <a title="APM" href="http://apm.com.au/">APM</a>
+            </li>
+            <li>
+                <a title="Stayz" href="http://www.stayz.com.au/">Stayz</a>
+            </li>
+            <li>
+                <a title="Weatherzone" href="http://www.weatherzone.com.au/">Weatherzone</a>
+            </li>
+            <li>
+                <a title="The Vine" href="http://www.thevine.com.au/">The Vine</a>
+            </li>
+    </ul>
+
+        <h3>Our Partners</h3>
+    <ul>
+            <li class="first">
+                <a title="Business" href="http://www.business.com.au/">Business</a>
+            </li>
+            <li>
+                <a title="Canberra" href="http://www.canberra.com.au/">Canberra</a>
+            </li>
+            <li>
+                <a title="Darwin" href="http://www.darwin.com.au/">Darwin</a>
+            </li>
+            <li>
+                <a title="Fitness" href="http://www.fitness.com.au/">Fitness</a>
+            </li>
+            <li>
+                <a title="Homebuilders" href="http://www.homebuilders.com.au/">Homebuilders</a>
+            </li>
+            <li>
+                <a title="Lawyers" href="http://www.lawyers.com.au/">Lawyers</a>
+            </li>
+            <li>
+                <a title="Mechanics" href="http://www.mechanics.com.au/">Mechanics</a>
+            </li>
+            <li>
+                <a title="Perth" href="http://www.perth.com.au/">Perth</a>
+            </li>
+            <li>
+                <a title="Wedding" href="http://www.wedding.com.au/">Wedding</a>
+            </li>
+            <li>
+                <a title="Wine" href="http://www.wine.com.au/">Wine</a>
+            </li>
+    </ul>
+
+    </div>
+    <cite>Copyright &copy; 2011 Fairfax Media</cite>
+</div>
+    <!-- ED-7772 Add Nielsen code across sites -->
+<!-- TODO: Remove these survey codes on 31/3/2011 -->
+<script type="text/javascript" src="//secure-au.imrworldwide.com/survey/survey-launch.js?rj0059-fairfax-general"></script>
+<script type="text/javascript" src="//secure-au.imrworldwide.com/survey/survey-launch.js?rj0062-fairfax-general"></script>
+<!-- END: ED-7772 -->
+                                                
+
+
+    <div class="Kampyle" data-brandName="theage" data-staticResource="http://resources.theage.com.au" data-kampyleSiteCode="8954894" data-kampyleFormId="43614"></div>
+
+</div>
+<!-- End fN-footerNetwork -->
+            <div><!-- Empty div fixes IE6 --></div>
+<div class="cN-flyIn" data-assetId="1454612">
+    <div class="flyInContent">
+        <a href="#" class="flyInClose">Close</a>
+                <div class="cN-storyHeadlineLead cfix hidden" data-assetId="2205837">
+            <h4>Also in Technology:</h4>
+            <h3><a href="http://www.theage.com.au/technology/technology-news/teaching-the-facebook-generation-20110227-1ba19.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')">Teaching the Facebook generation</a></h3>
+                <a href="http://www.theage.com.au/technology/technology-news/teaching-the-facebook-generation-20110227-1ba19.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')"><img src="http://images.theage.com.au/2011/02/08/2172905/th_facebook-90x60.jpg" width="90" height="60" alt="Facebook"/></a>
+            <p>Schools have had to act fast to try to manage the widespread use of Facebook and other social media by students and teachers, writes Ainslie Macgibbon.</p>
+        </div><!-- class:cN-storyHeadlineLead cfix hidden -->
+        <div class="cN-storyHeadlineLead cfix hidden" data-assetId="2206287">
+            <h4>Also in Technology:</h4>
+            <h3><a href="http://www.theage.com.au/technology/technology-news/google-search-formula-gets-more-discerning-20110228-1badr.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')">Google search formula gets more discerning</a></h3>
+                <a href="http://www.theage.com.au/technology/technology-news/google-search-formula-gets-more-discerning-20110228-1badr.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')"><img src="http://images.theage.com.au/2011/02/15/2185432/th_googlemystery-90x60.jpg" width="90" height="60" alt="Google"/></a>
+            <p>Google has changed its secret search formula to be more discerning when it comes to which websites are worth recommending and which should sink in the rankings.</p>
+        </div><!-- class:cN-storyHeadlineLead cfix hidden -->
+        <div class="cN-storyHeadlineLead cfix hidden" data-assetId="2208212">
+            <h4>Also in Technology:</h4>
+            <h3><a href="http://www.theage.com.au/technology/technology-news/trading-glitch-stalls-asx-20110228-1bbv8.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')">Trading glitch stalls ASX</a></h3>
+            <p>Australia's sharemarket halted trading more than an hour early today because of a technical glitch involving its new trading system.</p>
+        </div><!-- class:cN-storyHeadlineLead cfix hidden -->
+        <div class="cN-storyHeadlineLead cfix hidden" data-assetId="2204805">
+            <h4>Also in Technology:</h4>
+            <h3><a href="http://www.theage.com.au/technology/technology-news/online-study-kills-uni-life-20110226-1b98l.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')">Online study kills uni life</a></h3>
+                <a href="http://www.theage.com.au/technology/technology-news/online-study-kills-uni-life-20110226-1b98l.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')"><img src="http://images.theage.com.au/2010/10/04/1965340/th_online-90x60.jpg" width="90" height="60" alt="Internet"/></a>
+            <p>THE push towards web-based learning at universities has halved student attendance rates in some courses and dramatically increased working hours for lecturers, a survey of academics by this website has found.</p>
+        </div><!-- class:cN-storyHeadlineLead cfix hidden -->
+        <div class="cN-storyHeadlineLead cfix hidden" data-assetId="2200930">
+            <h4>Also in Technology:</h4>
+            <h3><a href="http://www.theage.com.au/technology/technology-news/despicable-website-blames-christchurch-quake-on-gay-community-20110224-1b68y.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')">'Despicable': website blames Christchurch quake on gay community</a></h3>
+                <a href="http://www.theage.com.au/technology/technology-news/despicable-website-blames-christchurch-quake-on-gay-community-20110224-1b68y.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')"><img src="http://images.theage.com.au/2011/02/24/2200437/quake320-90x60.jpg" width="90" height="60" alt="Earthquake"/></a>
+            <p>A website that claims Christchurch's devastating earthquake was an act of God triggered by the tolerance of homosexual behaviour in the city has been denounced as ''despicable and appalling'' by New Zealand's gay and lesbian community.</p>
+        </div><!-- class:cN-storyHeadlineLead cfix hidden -->
+        <div class="cN-storyHeadlineLead cfix hidden" data-assetId="2200669">
+            <h4>Also in Technology:</h4>
+            <h3><a href="http://www.theage.com.au/technology/technology-news/secret-sell-brands-exploit-viral-videos-20110224-1b61p.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')">Secret sell: brands exploit viral videos</a></h3>
+                <a href="http://www.theage.com.au/technology/technology-news/secret-sell-brands-exploit-viral-videos-20110224-1b61p.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')"><img src="http://images.theage.com.au/2011/02/21/2194727/th_asscam-90x60.jpg" width="90" height="60" alt="ass cam"/></a>
+            <p>Viral videos are now big business for brands around the world but marketing experts warn the trend towards deceiving viewers could backfire spectacularly.</p>
+        </div><!-- class:cN-storyHeadlineLead cfix hidden -->
+        <div class="cN-storyHeadlineLead cfix hidden" data-assetId="2203965">
+            <h4>Also in Technology:</h4>
+            <h3><a href="http://www.theage.com.au/technology/technology-news/any-prosecution-delay-might-be-assanges-best-hope-20110225-1b8l9.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')">Any prosecution delay might be Assange's best hope</a></h3>
+                <a href="http://www.theage.com.au/technology/technology-news/any-prosecution-delay-might-be-assanges-best-hope-20110225-1b8l9.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')"><img src="http://images.theage.com.au/2011/01/06/2122137/th_assange-90x60.jpg" width="90" height="60" alt="assange"/></a>
+            <p>LONDON: As a judge pronounced that Julian Assange should be extradited to Sweden, there was an audible gasp from watching journalists. The renowned composure of the Australian founder of the WikiLeaks website was momentarily broken, for he was a step closer to standing trial for rape and sexual assault.</p>
+        </div><!-- class:cN-storyHeadlineLead cfix hidden -->
+        <div class="cN-storyHeadlineLead cfix hidden" data-assetId="2172841">
+            <h4>Also in Technology:</h4>
+            <h3><a href="http://www.theage.com.au/technology/technology-news/facebook-privacy-10-settings-every-user-needs-to-know-20110208-1akkp.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')">Facebook privacy: 10 settings every user needs to know</a></h3>
+                <a href="http://www.theage.com.au/technology/technology-news/facebook-privacy-10-settings-every-user-needs-to-know-20110208-1akkp.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')"><img src="http://images.theage.com.au/2011/02/08/2172859/th_320_facebook2-90x60.jpg" width="90" height="60" alt="Facebook."/></a>
+            <p>Facebook’s privacy settings are extremely detailed, giving you the ability to fine-tune the privacy aspects of almost every little part of your Facebook account. Unfortunately, for most users, this level of micromanagement makes Facebook’s privacy settings a convoluted mess.</p>
+        </div><!-- class:cN-storyHeadlineLead cfix hidden -->
+        <div class="cN-storyHeadlineLead cfix hidden" data-assetId="2165704">
+            <h4>Also in Technology:</h4>
+            <h3><a href="http://www.theage.com.au/technology/sci-tech/amazing-scientific-breakthrough-paper-clip-made-invisible-20110203-1af2g.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')">Amazing scientific breakthrough: paper clip made invisible</a></h3>
+                <a href="http://www.theage.com.au/technology/sci-tech/amazing-scientific-breakthrough-paper-clip-made-invisible-20110203-1af2g.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')"><img src="http://images.theage.com.au/2011/02/03/2165705/clip320-90x60.jpg" width="90" height="60" alt="clip"/></a>
+            <p>Scientists are a step closer to creating a  cloaking device after making an object visible to the naked eye disappear for the first time.</p>
+        </div><!-- class:cN-storyHeadlineLead cfix hidden -->
+        <div class="cN-storyHeadlineLead cfix hidden" data-assetId="1902110">
+            <h4>Also in Technology:</h4>
+            <h3><a href="http://www.theage.com.au/technology/technology-news/screening-out-the-empathy-20100902-14roe.html" onclick="s.linkTrackVars='prop10';s.prop10='also_in';s.tl(this,'o','Media Div Click')">Screening out the empathy</a></h3>
+            <p>The impact of screen culture on the human brain merits the same debate and funding for research as climate change, says an eminent neuroscientist.</p>
+        </div><!-- class:cN-storyHeadlineLead cfix hidden -->
+
+    </div><!-- class:flyInContent -->
+</div><!-- class:cN-flyIn -->
+<div><!-- Empty div fixes IE6 --></div>
+            <div id="adspot-1x1" class="ad">
+                <script type="text/javascript">
+                    document.dcdAdsR.push("dcAd-1-22");
+                    document.write('<iframe id="dcAd-1-22" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;' + document.dcAdsCParams + 'sz=1x1;tile=22;ord=' + dcOrd + '?" width="1" height="1" scrolling="no" marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0"><\/iframe>');
+                </script>
+            <noscript>
+                <iframe id="dcAd-1-22" src="http://ad-apac.doubleclick.net/adi/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;sz=1x1;tile=22;ord=5.3564812E7?"
+                        width='1'
+                        height='1'
+                        scrolling="no"
+                        marginheight="0" marginwidth="0" allowtransparency="true" frameborder="0">
+                </iframe>
+            </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-1x1");
+    document.getElementById("adspot-1x1").hash = 541065301;
+</script>
+</div>
+            <div id="adspot-1x11" class="ad">
+        <script>
+            document.dcdAdsH.push("adspot-1x11");
+            document.dcdAdsI.push("dcAd-23");
+            document.dcdAdsU.push('http://ad-apac.doubleclick.net/adj/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;' + document.dcAdsCParams +'sz=1x11;tile=23;ord=' + dcOrd + '?');
+        </script>
+        <noscript>
+            <a href='http://ad-apac.doubleclick.net/jump/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;sz=1x11;tile=23;ord=5.3564812E7?' target="_blank">
+                <img src='http://ad-apac.doubleclick.net/ad/onl.age.tech/tech/technews;ctype=article;cat1=technews;cat=tech;sz=1x11;tile=23;ord=5.3564812E7?' border="0" alt="">
+            </a>
+        </noscript>
+<script type="text/javascript">
+    document.dcdAdsAA.push("adspot-1x11");
+    document.getElementById("adspot-1x11").hash = 1853564326;
+</script>
+</div>
+        </div><!-- class:wrap cfix -->
+                <script type="text/javascript" src="http://resources.theage.com.au/common/media-common-1.0/js/fdjsf/output/fd_min.js"></script>
+
+                <script type="text/javascript" src="http://resources.theage.com.au/common/media-common-1.0/js/fdjsf/output/fd.google_min.js"></script>
+
+                <script type="text/javascript" src="http://resources.theage.com.au/common/media-common-1.0/js/fdjsf/output/fd.registrars_min.js"></script>
+
+                <script type="text/javascript" src="http://resources.theage.com.au/common/media-common-1.0/js/fdjsf/output/fd.videoplayer_min.js"></script>
+
+        <script type="text/javascript">
+    /**
+     * Kills the flash in flash ad that has been loaded.
+     */
+    function killAd() {
+        FD.trigger("FDVideoPlayerFlashAdCompleted");
+    }
+    /**
+     * Pauses the video players content clip.
+     */
+    function pauseContent() {
+        FD.trigger("FDVideoPlayerFlashAdPause");
+    }
+    /**
+     * Plays the video players content clip.
+     */
+    function playContent() {
+        FD.trigger("FDVideoPlayerFlashAdPlay");
+    }
+    /**
+     * Kills the flash in flash ad that has completed, and plays the video players content clip.
+     */
+    function videoComplete() {
+        FD.trigger("FDVideoPlayerFlashAdCompleted");
+        FD.trigger("FDVideoPlayerFlashAdPlay");
+    }
+    /**
+     * Loads explosive flash ad with the specified url.
+     *
+     * @param url URL of the explosive flash ad.
+     * @param width Width of the explosive flash ad.
+     * @param height Height of the explosive flash ad.
+     */
+    function loadExplosion(url, width, height) {
+        if ((url) && (width) && (height)) {
+            new FD.VideoPlayerFlashInFlashAdHelper({
+                height: height,
+                url: url,
+                width: width
+            });
+        } else if (url) {
+            new FD.VideoPlayerFlashInFlashAdHelper({
+                url: url
+            });
+        }
+    }
+    /**
+     * Closes the explosive flash ad.
+     */
+    function closeExplosion() {
+        FD.trigger("FDVideoPlayerFlashAdCompleted");
+        FD.trigger("FDVideoPlayerFlashAdPlay");
+    }
+    /**
+     * Replaces specified companion ad with specified image and click through url.
+     *
+     * @param companionAdId Identifier of the <code>div</code> that contains the companion ad to replace.
+     * @param imageUrl URL of the image to use as the companion ad.
+     * @param linkUrl URL of the click through for the companion ad.
+     */
+    function replaceCompanionAd(companionAdId, imageUrl, linkUrl) {
+        new FD.VideoPlayerCompanionAdHelper({
+            companionAdId: companionAdId,
+            imageUrl: imageUrl,
+            linkUrl: linkUrl
+        });
+    }
+</script>
+        <script type="text/javascript">
+    function getGoogleAdChannel(showAboveArticle) {
+        var googleAdChannel = "Technology";
+        if (showAboveArticle) {
+            googleAdChannel += " abovearticle";
+        }
+        return googleAdChannel;
+    }
+    function google_ad_request_done(google_ads) {
+        var googleAd = new FD.GoogleAd({
+                adBlockTitle: "Ads by Google",
+                maximumAdsInBlock: 3,
+                checkExternalReferrer: true,
+                split: 1,
+            googleAds: google_ads,
+            googleAdsId: "googleAds",
+            moreGoogleAdsId: "moreGoogleAds"
+        });
+        googleAd.insertGoogleAds();
+    }
+    var google_ad_client = "ca-fairfax-age_js";
+    var google_ad_channel = "National";
+        if (!FD.isInternalReferrer()) {
+            google_ad_channel = getGoogleAdChannel(true);
+        }
+    var google_ad_output = "js";
+    var google_max_num_ads = "4";
+    var google_ad_type = "text";
+    var google_encoding = "utf8";
+    var google_safe = "high";
+    var google_ad_section = "default";
+</script>
+<!-- The JavaScript returned from the following page uses the parameter values assigned above to populate an array of
+ad objects. Once that array has been populated, the JavaScript will call the google_ad_request_done function to display
+the ads. -->
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script> 
+        <script type="text/javascript">
+    FD.register(function() {
+        
+    });
+</script>
+        <script type="text/javascript">
+    FD.register(function() {
+                (function() {
+        FD.VideoPlayers.push(new FD.VideoPlayer({
+            "adServerUrl": "http://ad-apac.doubleclick.net/pfadx/vid.age/tech/techtalk;channel=tech;show=techtalk;ctype=rhs;cat3=reuters;sz=4x1;dcmt=text/html;ord=933462",
+            "assetId": 2203019,
+            "bitRateImageUrl": "http://resources.theage.com.au/common/media-common-1.0/images/media_62k.gif?rand=",
+            "id": "video-player-latest",
+            "mainVideo": {
+    "bitRates": [
+            100,
+            1000,
+            28,
+            300
+    ],
+    "clips": {
+                "100": "rtmp://mediastream.f2.com.au/ondemand/mp4:flash/media/2011/02/25/74035/74035_2.flv",
+                "1000": "rtmp://mediastream.f2.com.au/ondemand/mp4:flash/media/2011/02/25/74035/74035_4.flv",
+                "28": "rtmp://mediastream.f2.com.au/ondemand/mp4:flash/media/2011/02/25/74035/74035_2.flv",
+                "300": "rtmp://mediastream.f2.com.au/ondemand/mp4:flash/media/2011/02/25/74035/74035_3.flv"
+    },
+    "clipDuration": "02:02",
+    "clipId": "2203019",
+    "instreamAdBreaks": [
+    ],
+    "nielsen": {
+    "brand": "age",
+        "ou1": "news",
+        "ou2": "Technology",
+
+
+    "vc": "vc-age-Technology-article_rhs-Tech_Talk-Tech_Talk-Reuters_Leon_Batchelor-74035-Xoom_hits_the_stores-02:02"
+},
+    "omniture": {
+    "account": "f2ntheage",
+    "assetId": "2203019",
+    "channel": "Technology",
+    "contentType": "video",
+    "context": "article_rhs",
+    "headline": "iPad rival Xoom hits the stores",
+    "masthead": "age",
+        "milestones": "25,50,75",
+        "seconds": "",
+    "show": "Tech_Talk"
+}
+},
+                "playerType": "article_rhs",
+            "playerId": "video-player-latest-player",
+            "playerUrl": "http://resources.theage.com.au/common/media-common-1.0/swf/flowplayer/flowplayer.commercial-3.2.5.swf"
+        }, {
+            "canvas": {
+                "backgroundColor": "#000000",
+                "backgroundGradient": "none"
+            },
+            "clip": {
+                "ads": [],
+                "provider": "rtmp",
+                "scaling": "fit"
+            },
+                "width": 300,
+                "height": 170,
+            "key": ["#@bf031429ed9f0dfe904", "#@53c3da205e97d481958", "#@abcecd558f4a4d77890", "#@723b85c8a619907ae87", "#@d92898b5d9ad99b3409", "#@a88e92c0bb52808f85d", "#@a43fc3099cb4a6144d7", "#@4b734d76f34621ab328", "#@658810cc83406a698ce"],
+            "plugins": {
+                "akamai": {
+                    "rtmpStreamServers": ["mediastream.f2.com.au", "tv.f2.com.au"],
+                    "url": "http://resources.theage.com.au/common/media-common-1.0/swf/flowplayer/flowplayer.akamai-3.2.2.swf"
+                },
+                "advertisementLabel": {
+                    "backgroundColor": "rgba(20, 20, 20, 0.5)",
+                    "backgroundGradient": "none",
+                    "border": "none",
+                    "display": "none",
+                    "height": 24,
+                    "style": {
+                        "body": {
+                            "color": "#ffffff",
+                            "textAlign": "center"
+                        }
+                    },
+                    top: 0,
+                    "url": "http://resources.theage.com.au/common/media-common-1.0/swf/flowplayer/flowplayer.content-3.2.0.swf"
+                },
+                "controls": {
+                        "fullscreen": false,
+                    "url": "http://resources.theage.com.au/common/media-common-1.0/swf/flowplayer/flowplayer.controls-3.2.3.swf"
+                },
+                "dfp": {
+                    "linearAdLabel": {
+                        "advertisementLabel": "advertisementLabel",
+                        "content": "Advertisement : Your video will resume in {time-left} seconds.",
+                        "type": "top"
+                    },
+                    "onAdLoaded": function(event) {
+                        var videoPlayer = $f("video-player-latest-player");
+                        if ((event) && (event.ad) && (event.ad.type == "flash") && (videoPlayer)) {
+                            if ((event.request) && (event.request.adTagUrl) &&
+                                ((event.request.adTagUrl.indexOf("show=localexperts") > -1) || (event.request.adTagUrl.indexOf("show=economicupdate") > -1) ||
+                                (event.request.adTagUrl.indexOf("show=homebuyinghappiness") > -1) || (event.request.adTagUrl.indexOf("show=domain") > -1))) {
+                            } else {
+                                FD.trigger("FDVideoPlayerFlashAdLoaded");
+                            }
+                        }
+                    },
+                    "onCustomAdEvent": function(event) {
+                        var videoPlayer = $f("video-player-latest-player");
+                        if ((event) && (event.name == "killAd") && (videoPlayer)) {
+                            FD.trigger("FDVideoPlayerFlashAdCompleted");
+                        } else if ((event) && (event.name == "pauseContent") && (videoPlayer)) {
+                            FD.trigger("FDVideoPlayerFlashAdPause");
+                        } else if ((event) && (event.name == "playContent") && (videoPlayer)) {
+                            FD.trigger("FDVideoPlayerFlashAdPlay");
+                        } else if ((event) && (event.name == "videoComplete") && (videoPlayer)) {
+                            FD.trigger("FDVideoPlayerFlashAdCompleted");
+                            FD.trigger("FDVideoPlayerFlashAdPlay");
+                        }
+                    },
+                    "url": "http://resources.theage.com.au/common/media-common-1.0/swf/flowplayer/dfp/flowplayer.dfp-theage.com.au-1.3.swf"
+                },
+                "rtmp": {
+                    "url": "http://resources.theage.com.au/common/media-common-1.0/swf/flowplayer/flowplayer.rtmp-3.2.1.swf"
+                }
+            }
+        }));
+     })();
+
+
+    });
+</script>
+            <div class="hidden" id="adShD0">
+        <script type="text/javascript">
+            if (0 < document.dcdAdsU.length) {
+                document.write('<script type="text\/javascript" id="' + document.dcdAdsI[0] + '" src="' + document.dcdAdsU[0] + '"><\/script>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD1">
+        <script type="text/javascript">
+            if (1 < document.dcdAdsU.length) {
+                document.write('<script type="text\/javascript" id="' + document.dcdAdsI[1] + '" src="' + document.dcdAdsU[1] + '"><\/script>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD2">
+        <script type="text/javascript">
+            if (2 < document.dcdAdsU.length) {
+                document.write('<script type="text\/javascript" id="' + document.dcdAdsI[2] + '" src="' + document.dcdAdsU[2] + '"><\/script>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD3">
+        <script type="text/javascript">
+            if (3 < document.dcdAdsU.length) {
+                document.write('<script type="text\/javascript" id="' + document.dcdAdsI[3] + '" src="' + document.dcdAdsU[3] + '"><\/script>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD4">
+        <script type="text/javascript">
+            if (4 < document.dcdAdsU.length) {
+                document.write('<script type="text\/javascript" id="' + document.dcdAdsI[4] + '" src="' + document.dcdAdsU[4] + '"><\/script>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD5">
+        <script type="text/javascript">
+            if (5 < document.dcdAdsU.length) {
+                document.write('<script type="text\/javascript" id="' + document.dcdAdsI[5] + '" src="' + document.dcdAdsU[5] + '"><\/script>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD6">
+        <script type="text/javascript">
+            if (6 < document.dcdAdsU.length) {
+                document.write('<script type="text\/javascript" id="' + document.dcdAdsI[6] + '" src="' + document.dcdAdsU[6] + '"><\/script>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD7">
+        <script type="text/javascript">
+            if (7 < document.dcdAdsU.length) {
+                document.write('<script type="text\/javascript" id="' + document.dcdAdsI[7] + '" src="' + document.dcdAdsU[7] + '"><\/script>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD8">
+        <script type="text/javascript">
+            if (8 < document.dcdAdsU.length) {
+                document.write('<script type="text\/javascript" id="' + document.dcdAdsI[8] + '" src="' + document.dcdAdsU[8] + '"><\/script>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD9">
+        <script type="text/javascript">
+            if (9 < document.dcdAdsU.length) {
+                document.write('<script type="text\/javascript" id="' + document.dcdAdsI[9] + '" src="' + document.dcdAdsU[9] + '"><\/script>');
+            }
+        </script>
+    </div>
+    <div class="hidden" id="adShD10">
+        <script type="text/javascript">
+            if (10 < document.dcdAdsU.length) {
+                document.write('<script type="text\/javascript" id="' + document.dcdAdsI[10] + '" src="' + document.dcdAdsU[10] + '"><\/script>');
+            }
+        </script>
+    </div>
+<script type="text/javascript">
+    function er_showAd() {
+        var regex = new RegExp("externalReferrer=(.*?)(; |&|$)", "gi");
+        var value = regex.exec(document.cookie);
+        if (value && value.length == 3) {
+           var externalReferrer = value[1];
+           return (!FD.isInternalReferrer() || ((externalReferrer) && (externalReferrer > 0)));
+        }
+        return false;
+    }
+    function cA () {
+        var cs = "817-grey.gif".split(",");
+        for (var i=0;i< document.dcdAdsAA.length; i++) {
+            var cAd = document.getElementById(document.dcdAdsAA[i]);
+            for (var j=0; j<cs.length; j++) {
+                var c = cs[j].trim();
+                if (c.length > 0 && cAd.innerHTML.indexOf(c)>0) {
+                    document.dcdAdsAI.push(cAd.hash);
+                }
+            }
+        }
+    }
+    function initAds() {
+        for (var i=0;i< document.dcdAdsI.length; i++) {
+            var shadowHolder = document.getElementById("adShD" + i);
+            if (shadowHolder) {
+                shadowHolder.removeChild(document.getElementById(document.dcdAdsI[i]));
+                while (shadowHolder.childNodes.length > 0) {
+                    var child = shadowHolder.childNodes[0];
+                    shadowHolder.removeChild(child);
+                    document.getElementById(document.dcdAdsH[i]).appendChild(child);
+                }
+            }
+        }
+        if (er_showAd()) {
+            for (var i=0;i< document.dcdAdsE.length; i++) {
+                var erAd = document.getElementById(document.dcdAdsEH[i]);
+                erAd.className = document.dcdAdsEC[i];
+                erAd.appendChild(document.dcdAdsE[i]);
+            }
+        }
+        cA();
+        if (document.dcdAdsAI.length > 0) {
+            var pingServerUrl = "/action/pingServerAction?i="
+            var sep = "";
+            for (var i=0;i< document.dcdAdsAI.length; i++) {
+                pingServerUrl += sep + document.dcdAdsAI[i];
+                sep = ",";
+            }
+            var xmlHttp = null;
+            try
+            {
+                xmlHttp = new XMLHttpRequest();
+            }   catch(e)             {
+                try
+                {
+                    xmlHttp = new ActiveXObject("Microsoft.XMLHttp");
+                } catch(e) {
+                    xmlHttp = null;
+                }
+            }
+            if (xmlHttp != null) {
+                xmlHttp.open( "GET", pingServerUrl, true);
+                xmlHttp.send( null );
+            }
+        }
+
+    }
+    document.refreshAds = function rAds(adID) {
+        if (document.dcdAdsR) {
+            for (var i=0;i< document.dcdAdsR.length; i++) {
+                var f = document.getElementById(document.dcdAdsR[i]);
+                if (f) {
+                    if (!adID || adID =="*" || f.parentNode.id==adID ) {
+                        f.parentNode.innerHTML = f.parentNode.innerHTML;
+                    }
+                }
+            }
+        }
+    }
+    window.setTimeout(initAds, 1);
+</script>
+
+
+        <!-- BEGIN EFFECTIVE MEASURE CODE -->
+<!-- COPYRIGHT EFFECTIVE MEASURE -->
+<script type="text/javascript">
+  (function() {
+    var em = document.createElement('script'); em.type = 'text/javascript'; em.async = true;
+    em.src = ('https:' == document.location.protocol ? 'https://au-ssl' : 'http://au-cdn') + '.effectivemeasure.net/em.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
+  })();
+</script>
+<noscript>
+<img src="//au.effectivemeasure.net/em_image" alt="" style="position:absolute; left:-5px;" />
+</noscript>
+<!--END EFFECTIVE MEASURE CODE -->
+        <!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2009 Nielsen Online -->
+<script type="text/javascript" src="//secure-au.imrworldwide.com/v60.js"></script>
+<script type="text/javascript">
+    var pvar = {cid:"f2", content:"TheAge-technology-technologynews-story-print", server:"secure-au"};
+    var trac = nol_t(pvar);
+    trac.record().post();
+</script>
+<noscript>
+    <div>
+        <img src="//secure-au.imrworldwide.com/cgi-bin/m?ci=f2&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt=""/>
+    </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+<!-- Start SiteCatalyst code version: H.20.2. -->
+<!-- Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
+        <script type="text/javascript" src="http://resources.theage.com.au/common/media-common-1.0/js/fdjsf/output/fd.omniture.theage_min.js"></script>
+
+<script type="text/javascript">
+    s.pageName="age:article:technology:technology news:australian wikileak founder's passport confiscated";
+    s.server="";
+    s.channel="technology";
+    s.pageType="";
+            s.prop3="age:technology:technology news";
+            s.prop2="paper";
+            s.prop1="technology:australian wikileak founder's passport confiscated";
+            s.prop5="1454612";
+            s.prop4="dcds:common templates";
+            s.prop13="tom arup";
+    s.campaign="";
+    s.state="";
+    s.zip="";
+    s.events="event1";
+    s.products="";
+    s.purchaseID="";
+    s.hier1="technology|technology news|australian wikileak founder's passport confiscated";
+    var s_code=s.t();
+    if (s_code) {
+        document.write(s_code);
+    }
+</script>
+<script type="text/javascript">
+    if (navigator.appVersion.indexOf("MSIE") >= 0) {
+        document.write(unescape("%3C") + "\!-" + "-");
+    }
+</script>
+<noscript>
+    <img src="http://f2ntheage.112.2O7.net/b/ss/f2ntheage/1/H.20.2--NS/0?[AQB]&cdp=3&[AQE]" width="1" height="1" border="0" alt=""/>
+</noscript>
+<!-- End SiteCatalyst code version: H.20.2. -->
+        <script type="text/javascript">
+        if (window["FD"]) {
+            /**
+             * Updates the white strip with the new time and number of users.
+             *
+             * @param data Date to extract new time and number of users from.
+             * @private
+             */
+            function updateWhiteStrip(data) {
+                var response = $.parseJSON(data);
+                var whiteStripTimeElement = $("whiteStrip-time");
+                if ((whiteStripTimeElement) && (whiteStripTimeElement.length > 0)) {
+                    whiteStripTimeElement.empty();
+                    whiteStripTimeElement.html(response.time);
+                }
+                var whiteStripPeopleElement = $("whiteStrip-users");
+                if ((whiteStripPeopleElement) && (whiteStripPeopleElement.length > 0)) {
+                    whiteStripPeopleElement.empty();
+                    whiteStripPeopleElement.html(response.people + " online now");
+                }
+            }
+            /**
+             * Initiates the client side asset view tracking component (self executing).
+             */
+            (function() {
+                FD.pingServerWithSuccessCallback("1454612", "Article", "Technology", updateWhiteStrip);
+            })();
+        }
+    </script>
+
+
+    </body>
+</html>

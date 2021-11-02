@@ -1,0 +1,1061 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Fabulous Winter Trends 2011~2012 | Cocktails With Mom</title>
+<link rel="Shortcut Icon" href="http://cocktailswithmom.com/wp-content/themes/fabric/images/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="http://cocktailswithmom.com/wp-content/themes/fabric/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Cocktails With Mom &raquo; Feed" href="http://cocktailswithmom.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Cocktails With Mom &raquo; Comments Feed" href="http://cocktailswithmom.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Cocktails With Mom &raquo; {Fabulous Finds} Winter Trends 2011 &#8211; 2012 Comments Feed" href="http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/feed/" />
+<link rel='stylesheet' id='sociablecss-css'  href='http://cocktailswithmom.com/wp-content/plugins/sociable/css/sociable.css?ver=3.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='pinterest-pin-it-button-css'  href='http://cocktailswithmom.com/wp-content/plugins/pinterest-pin-it-button/css/pinterest-pin-it-button.css?ver=3.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-postratings-css'  href='http://cocktailswithmom.com/wp-content/plugins/wp-postratings/postratings-css.css?ver=1.50' type='text/css' media='all' />
+<link rel='stylesheet' id='socialize-css'  href='http://cocktailswithmom.com/wp-content/plugins/socialize/frontend/css/socialize.css?ver=3.3.1' type='text/css' media='all' />
+
+<!-- Multi-level Navigation Plugin v2.2.4 by PixoPoint Web Development ... http://pixopoint.com/multi-level-navigation/ -->
+<link rel="stylesheet" type="text/css" href="http://cocktailswithmom.com/wp-content/plugins/multi-level-navigation-plugin/style.php" />
+<script type="text/javascript">
+var blenza_ifr = null;
+var blenza_whoName = null;
+var blenza_whoURL = null;
+
+function blenza_setwho(n, e, u)
+{
+  blenza_whoName = n;
+  blenza_whoEmail = e;
+  blenza_whoURL = u;
+}
+
+function blenza_mylink(postid, entrid)
+{
+  try {
+    var e = document.getElementById("mylink-" + postid + "-" + entrid);
+    if (e == null) return;
+    e.style.display = "inline";
+  }
+  catch (e) {
+    //alert("trouble with blenza_mylink(" + postid + ", " + entrid + ")");
+  }
+}
+
+function blenza_submitdata( data, xurl )
+{
+  if ( data == null ) return;
+  var url = xurl;
+  for ( i = 0; i < data.length; i++ ) {
+    if ( i == 0 ) {
+      url += "?";
+    }
+    else {
+      url += "&";
+    }
+    var name = data[i].name;
+    if ( name == "" ) {
+      name = "xyzzy";
+    }
+    var val = data[i].value;
+    url += name;
+    url += "=";
+    url += escape( val );
+  }
+  var ifr = document.createElement( "iframe" );
+  blenza_ifr = ifr;
+  // comment out next for debugging
+  ifr.style.visibility = "hidden";
+  ifr.style.position = "absolute";
+  ifr.style.top = "100px";
+  ifr.style.left = "100px";
+  ifr.style.width = "400px";
+  ifr.style.height = "400px";
+  ifr.style.background = "#00aa00";
+  ifr.style.color = "#000000";
+  document.body.appendChild( ifr );
+  var nf = frames[frames.length - 1];
+  var nd = nf.document;
+  nd.write( "<html>\n<head><title>Submit Data</title>\n</head>\n<body><span onclick=\"javascript:parent.blenza_ifr.style.visibility=\'hidden\';\">Hide This Window</span>.\n<iframe src=\"" + url + "\"/></iframe>\n<p>" + url.replace(/&/g,"&amp;") + "</p></body></html>\n" );
+  nd.close();
+}
+
+function blenza_doSubmit( form, op, action )
+{
+  var xurl;
+  if ( form.ml_xurl ) {
+    xurl = form.ml_xurl.value + "/" + action + ".php";
+  }
+  else if ( form.xurl ) {
+    xurl = form.xurl.value + "/" + action + ".php";
+  }
+  else {
+    xurl = "http://{$blenza_host}{$blenza_root}/" + action + ".php";
+  }
+  var data = new Array();
+  for ( i = 0; i < form.elements.length; i++ ) {
+    var name = form.elements[i].name;
+    if ( name == "" ) {
+      name = "xyzzy";
+    }
+    if ( name.substring(0,3) == "ml_" ) {
+      name = name.substring(3);
+    }
+    var val;
+    if ( form.elements[i].type == "checkbox" ) {
+      if ( form.elements[i].checked ) {
+        val = form.elements[i].value;
+      }
+      else {
+        val = "";
+      }
+    }
+    else {
+      val = form.elements[i].value;
+    }
+
+    data.push( { "name": name, "value": val } );
+  }
+  blenza_submitdata( data, xurl );
+}
+
+function blenza_switcheroo( off, on )
+{
+  var ele1 = document.getElementById( off );
+  ele1.style.display = "none";
+  var ele2 = document.getElementById( on );
+  ele2.style.display = "block";
+}
+
+function blenza_setNextone( pi, name, url )
+{
+  var nx = document.getElementById( "nextone-" + pi );
+  if ( nx != null ) {
+    nx.innerHTML = '<a class="blenza-link" href="' + url + '">' + name + '</a>';
+  }
+}
+
+function blenza_doEnter( form )
+{
+  var name;
+  if ( form.ml_name ) {
+    name = form.ml_name.value;
+  }
+  else {
+    name = form.name.value;
+  }
+  var url;
+  if ( form.ml_url ) {
+    url = form.ml_url.value;
+  }
+  else {
+    url = form.url.value;
+  }
+  if ( ! blenza_checkName( name ) ) {
+    return false;
+  }
+  if ( ! blenza_checkUrl( url ) ) {
+    return false;
+  }
+  blenza_doSubmit( form, "Entry", "entry_do" );
+  var pi;
+  if ( form.ml_postid ) {
+    pi = form.ml_postid.value;
+  }
+  else {
+    pi = form.postid.value;
+  }
+  blenza_setNextone( pi, name, url );
+  blenza_switcheroo( "theform-" + pi, "theform2-" + pi );
+  return false;
+}
+
+function blenza_checkName( name )
+{
+  if ( name.length == 0 ) {
+    alert( "Please enter your name." );
+    return false;
+  }
+
+  return true;
+}
+
+function blenza_checkUrl( url )
+{
+  if ( url.length == 0 ) {
+    alert( "Please enter your link URL." );
+    return false;
+    return true;
+  }
+  var test = "http://"
+  if ( url.substring( 0, test.length ) != test ) {
+    alert( "Link URL must begin with 'http://'" );
+    return false;
+  }
+  if ( url == "http://www." ) {
+    alert( "Please enter your link URL." );
+    return false;
+  }
+  return true;
+}
+</script>
+
+<style type="text/css">
+.blenza-box { border: 2px solid #000; text-align: center; padding: 4px }
+.blenza-td { font-size: 12px; }
+.blenza-td a { font-size: 12px; }
+</style>
+<script type='text/javascript' src='http://cocktailswithmom.com/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
+<script type='text/javascript' src='http://cocktailswithmom.com/wp-content/plugins/sociable/js/sociable.js?ver=3.3.1'></script>
+<script type='text/javascript' src='http://cocktailswithmom.com/wp-content/plugins/sociable/js/addtofavorites.js?ver=3.3.1'></script>
+<script type='text/javascript' src='http://cocktailswithmom.com/wp-content/plugins/pinterest-pin-it-button/js/pinterest-pin-it-button.js?ver=3.3.1'></script>
+<script type='text/javascript' src='http://cocktailswithmom.com/wp-includes/js/comment-reply.js?ver=20090102'></script>
+<script type='text/javascript' src='http://cocktailswithmom.com/wp-includes/js/hoverIntent.js?ver=20090102'></script>
+<script type='text/javascript' src='http://cocktailswithmom.com/wp-content/plugins/multi-level-navigation-plugin/scripts/superfish.js?ver=1.4.8'></script>
+<script type='text/javascript' src='http://cocktailswithmom.com/wp-content/plugins/multi-level-navigation-plugin/scripts/superfish_settings.js.php?ver=1.0'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://cocktailswithmom.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://cocktailswithmom.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Holidays in the Kitchen with Kids' href='http://cocktailswithmom.com/2011/12/holidays-in-the-kitchen-with-kids/' />
+<link rel='next' title='Kid Friendly Holiday Crafts' href='http://cocktailswithmom.com/2011/12/kid-friendly-holiday-crafts/' />
+<meta name="generator" content="WordPress 3.3.1" />
+<link rel='canonical' href='http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/' />
+<link rel='shortlink' href='http://cocktailswithmom.com/?p=11935' />
+
+<!-- Start Of Script Generated By cforms v11.3 [Oliver Seidel | www.deliciousdays.com] -->
+<link rel="stylesheet" type="text/css" href="http://cocktailswithmom.com/wp-content/plugins/cforms/styling/wide_open_nb_blue.css" />
+<script type="text/javascript" src="http://cocktailswithmom.com/wp-content/plugins/cforms/js/cforms.js"></script>
+<!-- End Of Script Generated By cforms -->
+
+
+<!-- Start Of Additions Generated By Greg's Threaded Comment Numbering Plugin 1.4.8 -->
+<link rel='stylesheet' id='gtcn-plugin-css'  href='http://cocktailswithmom.com/wp-content/plugins/gregs-threaded-comment-numbering/gtcn-css.css?ver=1.4.8' type='text/css' media='all' />
+<!-- End Of Additions Generated By Greg's Threaded Comment Numbering Plugin 1.4.8 -->
+
+<!-- platinum seo pack 1.3.7 -->
+<meta name="robots" content="index,follow,noodp,noydir" />
+<meta name="description" content="&nbsp; &nbsp; &nbsp; Although you’ve already been bundling up this season, winter is here to stay for  awhile! Now is about the time when it’s time to" />
+<meta name="keywords" content="fashionista, personal style, fashion blog, purses, handbags, style tips, winter trends, winter wardrobe" />
+<link rel="canonical" href="http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/" />
+<!-- /platinum one seo pack -->
+<script type='text/javascript'>var base_url_sociable = 'http://cocktailswithmom.com/wp-content/plugins/sociable/'</script><script type='text/javascript' src='http://apis.google.com/js/plusone.js'></script><meta property="og:title" content="{Fabulous Finds} Winter Trends 2011 - 2012"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/"/>
+<meta property="og:site_name" content="Cocktails With Mom"/>
+
+<!-- Multi-level Navigation Plugin v2.2.4 by PixoPoint Web Development ... http://pixopoint.com/multi-level-navigation/ -->
+<link rel="stylesheet" type="text/css" href="http://cocktailswithmom.com/wp-content/plugins/multi-level-navigation-plugin/style.php" />
+<script type="text/javascript">
+var blenza_ifr = null;
+var blenza_whoName = null;
+var blenza_whoURL = null;
+
+function blenza_setwho(n, e, u)
+{
+  blenza_whoName = n;
+  blenza_whoEmail = e;
+  blenza_whoURL = u;
+}
+
+function blenza_mylink(postid, entrid)
+{
+  try {
+    var e = document.getElementById("mylink-" + postid + "-" + entrid);
+    if (e == null) return;
+    e.style.display = "inline";
+  }
+  catch (e) {
+    //alert("trouble with blenza_mylink(" + postid + ", " + entrid + ")");
+  }
+}
+
+function blenza_submitdata( data, xurl )
+{
+  if ( data == null ) return;
+  var url = xurl;
+  for ( i = 0; i < data.length; i++ ) {
+    if ( i == 0 ) {
+      url += "?";
+    }
+    else {
+      url += "&";
+    }
+    var name = data[i].name;
+    if ( name == "" ) {
+      name = "xyzzy";
+    }
+    var val = data[i].value;
+    url += name;
+    url += "=";
+    url += escape( val );
+  }
+  var ifr = document.createElement( "iframe" );
+  blenza_ifr = ifr;
+  // comment out next for debugging
+  ifr.style.visibility = "hidden";
+  ifr.style.position = "absolute";
+  ifr.style.top = "100px";
+  ifr.style.left = "100px";
+  ifr.style.width = "400px";
+  ifr.style.height = "400px";
+  ifr.style.background = "#00aa00";
+  ifr.style.color = "#000000";
+  document.body.appendChild( ifr );
+  var nf = frames[frames.length - 1];
+  var nd = nf.document;
+  nd.write( "<html>\n<head><title>Submit Data</title>\n</head>\n<body><span onclick=\"javascript:parent.blenza_ifr.style.visibility=\'hidden\';\">Hide This Window</span>.\n<iframe src=\"" + url + "\"/></iframe>\n<p>" + url.replace(/&/g,"&amp;") + "</p></body></html>\n" );
+  nd.close();
+}
+
+function blenza_doSubmit( form, op, action )
+{
+  var xurl;
+  if ( form.ml_xurl ) {
+    xurl = form.ml_xurl.value + "/" + action + ".php";
+  }
+  else if ( form.xurl ) {
+    xurl = form.xurl.value + "/" + action + ".php";
+  }
+  else {
+    xurl = "http://{$blenza_host}{$blenza_root}/" + action + ".php";
+  }
+  var data = new Array();
+  for ( i = 0; i < form.elements.length; i++ ) {
+    var name = form.elements[i].name;
+    if ( name == "" ) {
+      name = "xyzzy";
+    }
+    if ( name.substring(0,3) == "ml_" ) {
+      name = name.substring(3);
+    }
+    var val;
+    if ( form.elements[i].type == "checkbox" ) {
+      if ( form.elements[i].checked ) {
+        val = form.elements[i].value;
+      }
+      else {
+        val = "";
+      }
+    }
+    else {
+      val = form.elements[i].value;
+    }
+
+    data.push( { "name": name, "value": val } );
+  }
+  blenza_submitdata( data, xurl );
+}
+
+function blenza_switcheroo( off, on )
+{
+  var ele1 = document.getElementById( off );
+  ele1.style.display = "none";
+  var ele2 = document.getElementById( on );
+  ele2.style.display = "block";
+}
+
+function blenza_setNextone( pi, name, url )
+{
+  var nx = document.getElementById( "nextone-" + pi );
+  if ( nx != null ) {
+    nx.innerHTML = '<a class="blenza-link" href="' + url + '">' + name + '</a>';
+  }
+}
+
+function blenza_doEnter( form )
+{
+  var name;
+  if ( form.ml_name ) {
+    name = form.ml_name.value;
+  }
+  else {
+    name = form.name.value;
+  }
+  var url;
+  if ( form.ml_url ) {
+    url = form.ml_url.value;
+  }
+  else {
+    url = form.url.value;
+  }
+  if ( ! blenza_checkName( name ) ) {
+    return false;
+  }
+  if ( ! blenza_checkUrl( url ) ) {
+    return false;
+  }
+  blenza_doSubmit( form, "Entry", "entry_do" );
+  var pi;
+  if ( form.ml_postid ) {
+    pi = form.ml_postid.value;
+  }
+  else {
+    pi = form.postid.value;
+  }
+  blenza_setNextone( pi, name, url );
+  blenza_switcheroo( "theform-" + pi, "theform2-" + pi );
+  return false;
+}
+
+function blenza_checkName( name )
+{
+  if ( name.length == 0 ) {
+    alert( "Please enter your name." );
+    return false;
+  }
+
+  return true;
+}
+
+function blenza_checkUrl( url )
+{
+  if ( url.length == 0 ) {
+    alert( "Please enter your link URL." );
+    return false;
+    return true;
+  }
+  var test = "http://"
+  if ( url.substring( 0, test.length ) != test ) {
+    alert( "Link URL must begin with 'http://'" );
+    return false;
+  }
+  if ( url == "http://www." ) {
+    alert( "Please enter your link URL." );
+    return false;
+  }
+  return true;
+}
+</script>
+
+<style type="text/css">
+.blenza-box { border: 2px solid #000; text-align: center; padding: 4px }
+.blenza-td { font-size: 12px; }
+.blenza-td a { font-size: 12px; }
+</style>
+<link rel="pingback" href="http://cocktailswithmom.com/xmlrpc.php" />
+<link href='http://fonts.googleapis.com/css?family=Antic+Slab' rel='stylesheet' type='text/css'><script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22282197-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script><style type="text/css">
+body.custom-background { background-color: #58afaa; background-image: url('http://cocktailswithmom.com/wp-content/uploads/2012/02/header-bg91.png'); background-repeat: repeat-x; background-position: top center; background-attachment: scroll; }
+</style>
+<style type="text/css">#header { background: url(http://cocktailswithmom.com/wp-content/uploads/2012/03/test6.png) no-repeat; }</style>	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+<style type="text/css">.broken_link, a.broken_link {
+	text-decoration: line-through;
+}</style><!-- wp thread comment 1.4.9.4.002 -->
+<style type="text/css" media="screen">
+.editComment, .editableComment, .textComment{
+	display: inline;
+}
+.comment-childs{
+	border: 1px solid #999;
+	margin: 5px 2px 2px 4px;
+	padding: 4px 2px 2px 4px;
+	background-color: white;
+}
+.chalt{
+	background-color: #E2E2E2;
+}
+#newcomment{
+	border:1px dashed #777;width:90%;
+}
+#newcommentsubmit{
+	color:red;
+}
+.adminreplycomment{
+	border:1px dashed #777;
+	width:99%;
+	margin:4px;
+	padding:4px;
+}
+.mvccls{
+	color: #999;
+}
+			
+</style>
+</head>
+<body class="single single-post postid-11935 single-format-standard custom-background header-image content-sidebar">
+<div id="wrap">
+<div id="nav"><div class="wrap"><ul id="menu-main-navbar" class="menu menu-primary superfish"><li id="menu-item-12454" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-12454"><a href="http://cocktailswithmom.com/">Home</a></li>
+<li id="menu-item-12452" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12452"><a href="http://cocktailswithmom.com/about/">About</a>
+<ul class="sub-menu">
+	<li id="menu-item-12453" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12453"><a href="http://cocktailswithmom.com/about/who-am-i/">Who Am I?</a></li>
+	<li id="menu-item-12447" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12447"><a href="http://cocktailswithmom.com/contact-me/disclosure-policy/">Disclosure Policy</a></li>
+</ul>
+</li>
+<li id="menu-item-12446" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12446"><a href="http://cocktailswithmom.com/contact-me/privacy/">Advertise</a>
+<ul class="sub-menu">
+	<li id="menu-item-12442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12442"><a href="http://cocktailswithmom.com/write-for-cwm/">Write for CWM</a></li>
+</ul>
+</li>
+<li id="menu-item-12445" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12445"><a href="http://cocktailswithmom.com/contact-me/pr-friendly/">PR Friendly</a></li>
+<li id="menu-item-12449" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12449"><a href="http://cocktailswithmom.com/fun-stuff/relax-relate-release/">Relax. Relate. Release!</a>
+<ul class="sub-menu">
+	<li id="menu-item-12441" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12441"><a href="http://cocktailswithmom.com/2011-holiday-gift-guide/">2011 Holiday Gift Guide</a></li>
+	<li id="menu-item-12450" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12450"><a href="http://cocktailswithmom.com/fun-stuff/cocktail-spotlight/">Cocktail Spotlight</a></li>
+	<li id="menu-item-12448" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12448"><a href="http://cocktailswithmom.com/fun-stuff/">Fun Stuff</a></li>
+	<li id="menu-item-12451" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12451"><a href="http://cocktailswithmom.com/blogroll/">Blog Roll</a></li>
+</ul>
+</li>
+<li id="menu-item-12443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12443"><a href="http://cocktailswithmom.com/winning-cocktails/">Winners</a></li>
+<li id="menu-item-12444" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12444"><a href="http://cocktailswithmom.com/contact-me/">Contact Me!</a></li>
+</ul></div><!-- end .wrap --></div><div id="header"><div class="wrap"><div id="title-area"><p id="title"><a href="http://cocktailswithmom.com/" title="Cocktails With Mom">Cocktails With Mom</a></p><p id="description">A Mom Blogs from Texas..Your guide to gifts,gadget, product reviews and giveaways!</p></div><!-- end #title-area --><div class="widget-area"><div id="text-49" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><IMG SRC = "http://i963.photobucket.com/albums/ae112/DesignPress_Unlimited/sociables.jpg" USEMAP = "#sociables" BORDER = "0">
+<MAP NAME = "sociables">
+<AREA SHAPE = "RECT" COORDS = " 68, -1,  130,  110" HREF = "http://www.facebook.com/pages/Cocktails-With-Mom/129512543729321" TARGET = "_blank">
+<AREA SHAPE = "RECT" COORDS = " 1,  0,  65,  109" HREF = "http://feeds.feedburner.com/CocktailsWithMom" TARGET = "_blank">
+<AREA SHAPE = "RECT" COORDS = " 137,  0,  201,  110" HREF = "http://twitter.com/MomCocktails" TARGET = "_blank">
+<AREA SHAPE = "RECT" COORDS = " 210,  0,  273,  109" HREF = "http://www.stumbleupon.com/stumbler/CocktailswithMOM/" TARGET = "_blank">
+<AREA SHAPE = "RECT" COORDS = " 282,  0,  345,  109" HREF = "http://cocktailswithmom.com/contact-me/" TARGET = "_blank">
+<AREA SHAPE = "DEFAULT" NOHREF>
+<!--  Image map created with Meracl ImageMap Generator, get it for free at http://come.to/meracl  -->
+</MAP>
+</div>
+		</div></div>
+</div><!-- end .widget-area --></div><!-- end .wrap --></div><!--end #header--><div id="subnav"><div class="wrap"><ul id="menu-subnav" class="menu menu-secondary superfish"><li id="menu-item-12934" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-12934"><a title="Very Random, Spur of the moment and interesting topics." href="http://cocktailswithmom.com/category/open-bar/">Open Bar</a></li>
+<li id="menu-item-12935" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12935"><a title="The Fun Stuff. Entertainment, Freebies, Contests and More!" href="http://cocktailswithmom.com/category/happy-hour/">Happy Hour</a></li>
+<li id="menu-item-12936" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-12936"><a href="http://cocktailswithmom.com/category/featured/">Featured</a></li>
+<li id="menu-item-12937" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12937"><a title="Breathe In! &#8211; Breathe Out! Here you will find ways to Relax-Relate-Release! " href="http://cocktailswithmom.com/category/oxygen-bar/">Oxygen Bar</a></li>
+<li id="menu-item-12938" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12938"><a title="All things family! Any and all things family related." href="http://cocktailswithmom.com/category/juice-bar/">Juice Bar</a></li>
+<li id="menu-item-12939" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12939"><a href="http://cocktailswithmom.com/category/headline/">Headline</a></li>
+<li id="menu-item-12940" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-12940"><a title="Just for us Moms! Anything and all things Mom." href="http://cocktailswithmom.com/category/ladies-night/">Ladies Night</a></li>
+</ul></div><!-- end .wrap --></div><div id="inner-top"></div><div id="inner">	<div id="content-sidebar-wrap">
+		<center>	<!-- BEGIN RICH-MEDIA Burst Media CODE -->
+<script type="text/javascript" language="JavaScript">
+rnum=Math.round(Math.random() * 100000);
+ts=String.fromCharCode(60);
+if (window.self != window.top) {nf=''} else {nf='NF/'};
+document.write(ts+'script src="http://www.burstnet.com/cgi-bin/ads/ad21726a.cgi/v=2.3S/sz=728x90A/K=pid_270882/'+rnum+'/'+nf+'RETURN-CODE/JS/">'+ts+'/script>');
+</script><noscript><a href="http://www.burstnet.com/ads/ad21726a-map.cgi/ns/v=2.3S/sz=728x90A/" target="_top">
+<img src="http://www.burstnet.com/cgi-bin/ads/ad21726a.cgi/ns/v=2.3S/sz=728x90A/" border="0" alt="Click Here" /></a>
+</noscript>
+<!-- END Burst Media CODE --></center>
+<br/>		<div id="content" class="hfeed">
+				<div class="post-11935 post type-post status-publish format-standard hentry category-featured category-ladies-night category-open-bar tag-fashion tag-fashion-trends tag-winter-fashion tag-women-accesories">
+
+				<h1 class="entry-title">{Fabulous Finds} Winter Trends 2011 &#8211; 2012</h1>
+		
+		<div class="post-info"><span class="date published time" title="2011-12-13T22:08:08+00:00">December 13, 2011</span>  by <span class="author vcard"><span class="fn"><a href="http://cocktailswithmom.com/author/admin/" class="fn n" title="Dee" rel="author">Dee</a></span></span> &middot; <span class="post-comments"><a href="http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/#comments">2 Comments</a></span> </div>		<div class="entry-content">
+			<div class="socialize-in-content" style="float:left;"><div class="socialize-in-button socialize-in-button-vertical"><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/" data-text="{Fabulous Finds} Winter Trends 2011 &#8211; 2012" data-count="vertical" data-via="MomCocktails" ><!--Tweetter--></a></div><div class="socialize-in-button socialize-in-button-vertical"><iframe src="http://www.facebook.com/plugins/like.php?href=http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/&amp;layout=box_count&amp;show_faces=false&amp;width=50&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px !important; height:65px;" allowTransparency="true"></iframe></div><div class="socialize-in-button socialize-in-button-vertical"><script src="http://www.stumbleupon.com/hostedbadge.php?s=5&r=http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/"></script></div></div><div class="pin-it-btn-wrapper"><a href="javascript:void(0)" class="pin-it-btn" title="Pin It on Pinterest"></a></div>
+<!--Ad Injection mfunc mode ad include code--><!--mfunc include_once('/homepages/11/d370049012/htdocs/wp-content/plugins/ad-injection/adshow.php') --><!--/mfunc-->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Although you’ve already been bundling up this season, winter is here to stay for  awhile! Now is about the time when it’s time to breathe some life back into your winter wardrobe and spice things up for the new year &#8211; especially if you’ll have some extra Christmas money to play around with!</p>
+<p>Here are some winter trends worth looking into!</p>
+<p>&nbsp;</p>
+<p><img src="https://lh4.googleusercontent.com/VhnHT_6gidTAJqw-uKoi6ZNe-zOCDKq94icwwW3SL50IqH2nACu1f9ThNuC-bkMHSZ9H4pjDiJYqTdMR7NZPKviWATUekdwDzzJ09z-ABo0-NwPIyJs" alt="" width="603" height="369" /></p>
+<p>&nbsp;</p>
+<p>[<a href="http://www.handbagheaven.com/kathleen-quilted-satchel.html">quilted handbags</a>] [buckle <a href="http://www.handbagheaven.com/dakota-buckle-hobo.html">leather handbags</a>] [color block <a href="http://www.handbagheaven.com/paddinton-colorblock-satchel.html">handbag</a>] [<a href="http://www.handbagheaven.com/foldover-turn-lock-clutch.html">clutch purses</a> with handle] [<a href="http://www.affordablescarves.com/products/vivian-ruffle-loop-scarf.html?on=Navy+Blue">scarf]</a> [watch] [riding boots] [socks] [wedge booties]</p>
+<p>Boots  have been big this year! Practical AND fashionable, these should be a staple in every woman’s wardrobe. Whether you prefer wedge booties, riding boots, or another variety, they’re definitely hot. Add some tall socks for extra warmth and texture, and if they’re just the right height they’ll add a fun pop or contrast of color. Handbags are another important staple. Quilted handbags, the color blocking trend, and pretty  details like metal clasps and buckles have been popular winter trends.  And don’t forget to add warmth and style with, my favorite winter accessory, the scarf!</p>
+<p>&nbsp;</p>
+<p><img src="https://lh4.googleusercontent.com/k-P-vCNxzkjSEHs6VLcxqNVxxtCWxcnt1dq4HYkV8OSBEwWWjjfH8YQ9ElXeSktfyJo3VamV3glZ--y6iErvUaWdzi8KOcAftg7PAwZoqHvzw9p9r60" alt="" width="600" height="442" /></p>
+<p>&nbsp;</p>
+<p>[cable knit wrap cardigan] [plaid cape] [classic white button down] [faux fur coat] [colored jeans] [pencil skirt] [pleated skirt] [leggings]</p>
+<p>When it comes to foundational pieces of a wardrobe, color and texture are good indications of a season. That means cable knit, fur, wool, and tweed for wintertime. These are classic pieces that have gotten a major highlight on the runways recently. Capes and fur are two trends that I personally love, but would have been wary of wearing before. Once you take the plunge, you’ll be glad you did! Maybe you won’t be comfortable in a full fur coat, but try a vest or a scarf. You may fall in love!</p>
+<!--Ad Injection mfunc mode ad code--><!--mfunc adshow_display_ad_file_v2(array('ad_random_1.txt'), array(100), array('align' => '', 'clear' => '', 'margin_top' => '', 'margin_bottom' => '', 'padding_top' => '', 'padding_bottom' => ''), array(), array()) -->
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-8869039930154778";
+/* In posts */
+google_ad_slot = "7332482052";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script><!--/mfunc-->
+
+<p>In general, winter trends are giving a huge nod to classic trends of the past, so if you’re lucky enough to have a grandmother who held onto her wardrobe, sneak some classic pieces from her! If not, you’ll find all of  these pieces in mainstream stores at any price point!</p>
+<p>Author Bio: I’m a true fashionista at heart, and I love sharing my thoughts on fashion and personal style in my fashion blog. While my love for all things fashion runs deep, my affinity for hoarding<a href="http://www.handbagheaven.com/satchel-handbags.html"> </a><a href="http://www.handbagheaven.com/satchel-handbags.html">purses</a> has  grown as a writer for Handbagheaven.com. I and enjoy sharing fashion and personal style tips and I’ve been eyeing some of these<a href="http://www.handbagheaven.com/hobo-handbags.html"> </a><a href="http://www.handbagheaven.com/hobo-handbags.html">hobo handbags</a> for my next purchase!</p>
+<div class="pin-it-btn-wrapper"><a href="javascript:void(0)" class="pin-it-btn" title="Pin It on Pinterest"></a></div><div class="socialize-containter" style="background-color:#f2f0ee; border: 2px solid #ddd;"><!-- Place this tag where you want the +1 button to render -->
+<g:plusone size="tall"></g:plusone><div class="socialize-buttons"><div class="socialize-button"><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/" data-text="{Fabulous Finds} Winter Trends 2011 &#8211; 2012" data-count="vertical" data-via="MomCocktails" ><!--Tweetter--></a></div><div class="socialize-button"><iframe src="http://www.facebook.com/plugins/like.php?href=http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/&amp;layout=box_count&amp;show_faces=false&amp;width=50&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px !important; height:65px;" allowTransparency="true"></iframe></div><div class="socialize-button"><script src="http://www.stumbleupon.com/hostedbadge.php?s=5&r=http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/"></script></div></div><div class="socialize-text">If you enjoyed this post, please consider <a href="#comments">leaving a comment</a> or <a href="http://cocktailswithmom.com/feed/" title="Syndicate this site using RSS">subscribing to the <abbr title="Really Simple Syndication">RSS</abbr> feed</a> to have future articles delivered to your feed reader.</div></div><p>Related posts:</p><ol>
+<li><a href='http://cocktailswithmom.com/2011/12/fabulous-finds-christmas-tree-decorating-ideas/' rel='bookmark' title='{Fabulous Finds} Christmas Tree Decorating Ideas'>{Fabulous Finds} Christmas Tree Decorating Ideas</a></li>
+<li><a href='http://cocktailswithmom.com/2010/12/softlips-winter-collection-review/' rel='bookmark' title='Softlips Winter Collection Review'>Softlips Winter Collection Review</a></li>
+<li><a href='http://cocktailswithmom.com/2011/06/summer-nautical-style/' rel='bookmark' title='Summer Nautical Style'>Summer Nautical Style</a></li>
+<li><a href='http://cocktailswithmom.com/2010/09/youll-love-crocs-fall-and-winter-styles/' rel='bookmark' title='You&#8217;ll Love Crocs Fall and Winter Styles'>You&#8217;ll Love Crocs Fall and Winter Styles</a></li>
+<li><a href='http://cocktailswithmom.com/2011/11/moms-christmas-list/' rel='bookmark' title='Moms Christmas List'>Moms Christmas List</a></li>
+</ol><!--<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+			xmlns:dc="http://purl.org/dc/elements/1.1/"
+			xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+		<rdf:Description rdf:about="http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/"
+    dc:identifier="http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/"
+    dc:title="{Fabulous Finds} Winter Trends 2011 &#8211; 2012"
+    trackback:ping="http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/trackback/" />
+</rdf:RDF>-->
+	<div id="tools">
+
+<div style="float:left;"><a href=" http://digg.com/submit?phase=2&url= http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/&title={Fabulous Finds} Winter Trends 2011 &#8211; 2012" target="_blank"><img src="http://cocktailswithmom.com/wp-content/themes/arthemia/images/sociable/digg.png" title="Digg this!"></a><a href=" http://del.icio.us/post?v=4&noui&jump=close
+
+&url=http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/
+&title={Fabulous Finds} Winter Trends 2011 &#8211; 2012" target="_blank"><img src="http://cocktailswithmom.com/wp-content/themes/arthemia/images/sociable/delicious.png" title="Add to del.icio.us!"></a><a href="http://www.stumbleupon.com/submit?url=http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/&title={Fabulous Finds} Winter Trends 2011 &#8211; 2012" target="_blank"><img src="http://cocktailswithmom.com/wp-content/themes/arthemia/images/sociable/stumbleupon.png" title="Stumble this!"></a><a href=" http://technorati.com/faves?add=http://cocktailswithmom.com" target="_blank"><img src="http://cocktailswithmom.com/wp-content/themes/arthemia/images/sociable/technorati.png" title="Add to Techorati!"></a><a href="http://www.facebook.com/sharer.php?u=http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/&t={Fabulous Finds} Winter Trends 2011 &#8211; 2012" target="_blank"><img src="http://cocktailswithmom.com/wp-content/themes/arthemia/images/sociable/facebook.png" title="Share on Facebook!"></a><a href=" http://www.newsvine.com/_tools/seed&save? u=http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/&h={Fabulous Finds} Winter Trends 2011 &#8211; 2012" target="_blank"><img src="http://cocktailswithmom.com/wp-content/themes/arthemia/images/sociable/newsvine.png" title="Seed Newsvine!"></a><a href=" http://reddit.com/submit?url=
+
+http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/&title={Fabulous Finds} Winter Trends 2011 &#8211; 2012" target="_blank"><img src="http://cocktailswithmom.com/wp-content/themes/arthemia/images/sociable/reddit.png" title="Reddit!"></a><a href=" http://myweb.yahoo.com/myresults/bookmarklet? t={Fabulous Finds} Winter Trends 2011 &#8211; 2012&u=http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/&ei=UTF" target="_blank"><img src="http://cocktailswithmom.com/wp-content/themes/arthemia/images/sociable/yahoomyweb.png" title="Add to Yahoo!"></a>
+
+</div>
+
+
+
+	<div style="float:right;display:block;"><div id="post-ratings-11935" class="post-ratings"><img id="rating_11935_1" src="http://cocktailswithmom.com/wp-content/plugins/wp-postratings/images/stars/rating_off.gif" alt="1 Star" title="1 Star" onmouseover="current_rating(11935, 1, '1 Star');" onmouseout="ratings_off(0, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /><img id="rating_11935_2" src="http://cocktailswithmom.com/wp-content/plugins/wp-postratings/images/stars/rating_off.gif" alt="2 Stars" title="2 Stars" onmouseover="current_rating(11935, 2, '2 Stars');" onmouseout="ratings_off(0, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /><img id="rating_11935_3" src="http://cocktailswithmom.com/wp-content/plugins/wp-postratings/images/stars/rating_off.gif" alt="3 Stars" title="3 Stars" onmouseover="current_rating(11935, 3, '3 Stars');" onmouseout="ratings_off(0, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /><img id="rating_11935_4" src="http://cocktailswithmom.com/wp-content/plugins/wp-postratings/images/stars/rating_off.gif" alt="4 Stars" title="4 Stars" onmouseover="current_rating(11935, 4, '4 Stars');" onmouseout="ratings_off(0, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /><img id="rating_11935_5" src="http://cocktailswithmom.com/wp-content/plugins/wp-postratings/images/stars/rating_off.gif" alt="5 Stars" title="5 Stars" onmouseover="current_rating(11935, 5, '5 Stars');" onmouseout="ratings_off(0, 0, 0);" onclick="rate_post();" onkeypress="rate_post();" style="cursor: pointer; border: 0px;" /> (No Ratings Yet)<br /><span class="post-ratings-text" id="ratings_11935_text"></span></div>
+<div id="post-ratings-11935-loading"  class="post-ratings-loading"><img src="http://cocktailswithmom.com/wp-content/plugins/wp-postratings/images/loading.gif" width="16" height="16" alt="Loading ..." title="Loading ..." class="post-ratings-image" />&nbsp;Loading ...</div>
+</div>
+
+	</div>		</div><!-- end .entry-content -->
+		<div class="post-meta"><span class="categories">Filed Under: <a href="http://cocktailswithmom.com/category/featured/" title="View all posts in Featured" rel="category tag">Featured</a>, <a href="http://cocktailswithmom.com/category/ladies-night/" title="View all posts in Ladies Night" rel="category tag">Ladies Night</a>, <a href="http://cocktailswithmom.com/category/open-bar/" title="View all posts in Open Bar" rel="category tag">Open Bar</a></span>  <span class="tags">Tagged With: <a href="http://cocktailswithmom.com/tag/fashion/" rel="tag">fashion</a>, <a href="http://cocktailswithmom.com/tag/fashion-trends/" rel="tag">fashion trends</a>, <a href="http://cocktailswithmom.com/tag/winter-fashion/" rel="tag">winter fashion</a>, <a href="http://cocktailswithmom.com/tag/women-accesories/" rel="tag">women accesories</a></span> </div>
+	</div><!-- end .postclass -->
+			<div id="comments">
+			<h3>Comments</h3>			<ol class="comment-list">
+				
+	<li class="comment even thread-even depth-1" id="comment-49855">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/31ee68791ce74e25be52b3b588a494fc?s=48&amp;d=wavatar&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://www.texastypeamom.com' rel='external nofollow' class='url'>Kelly</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/comment-page-1/#comment-49855">December 14, 2011 at 10:44 am</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>So cute and fashionable!  I love those riding boots!</p>
+<p class="thdrpy">[<a href="javascript:void(0)" onclick="movecfm(event,49855,1,'Kelly');">Reply</a>]</p>		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2011/12/fabulous-finds-winter-trends-2011-2012/?replytocom=49855#respond' onclick='return addComment.moveForm("comment-49855", "49855", "respond", "11935")'>Reply</a>		</div>
+
+		</li>
+
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-49914">
+
+		
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/b2e5ebf8e91c1130225e018aee492c16?s=48&amp;d=wavatar&amp;r=G' class='avatar avatar-48 photo' height='48' width='48' />			<cite class="fn"><a href='http://www.MyaMaternity.com' rel='external nofollow' class='url'>Mya Maternity</a></cite> <span class="says">says:</span>	 	</div><!-- end .comment-author -->
+
+		<div class="comment-meta commentmetadata">
+			<a href="http://cocktailswithmom.com/2011/12/fabulous-finds-winter-trends-2011-2012/comment-page-1/#comment-49914">December 16, 2011 at 5:30 pm</a>
+					</div><!-- end .comment-meta -->
+
+		<div class="comment-content">
+			
+			<p>Great choices.  I love experimenting with clothes in the winter season.</p>
+<p class="thdrpy">[<a href="javascript:void(0)" onclick="movecfm(event,49914,1,'Mya Maternity');">Reply</a>]</p>		</div><!-- end .comment-content -->
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2011/12/fabulous-finds-winter-trends-2011-2012/?replytocom=49914#respond' onclick='return addComment.moveForm("comment-49914", "49914", "respond", "11935")'>Reply</a>		</div>
+
+		</li>
+			</ol>
+			<div class="navigation">
+				<div class="alignleft"></div>
+				<div class="alignright"></div>
+			</div>
+		</div><!--end #comments-->
+										<div id="respond">
+				<h3 id="reply-title">Speak Your Mind <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2011/12/fabulous-finds-winter-trends-2011-2012/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://cocktailswithmom.com/wp-comments-post.php" method="post" id="commentform">
+																										<p class="comment-form-author"><input id="author" name="author" type="text" value="" size="30" tabindex="1" aria-required="true" /><label for="author">Name</label> <span class="required">*</span></p><!-- #form-section-author .form-section -->
+<p class="comment-form-email"><input id="email" name="email" type="text" value="" size="30" tabindex="2" aria-required="true" /><label for="email">Email</label> <span class="required">*</span></p><!-- #form-section-email .form-section -->
+<p class="comment-form-url"><input id="url" name="url" type="text" value="" size="30" tabindex="3" /><label for="url">Website</label></p><!-- #form-section-url .form-section -->
+												<p class="comment-form-comment"><textarea id="comment" name="comment" cols="45" rows="8" tabindex="4" aria-required="true"></textarea></p><!-- #form-section-comment .form-section -->												<p class="form-submit">
+							<input name="submit" type="submit" id="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='11935' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="c2b3eea51e" /></p><p><input type="hidden" id="comment_reply_ID" name="comment_reply_ID" value="0" /><input type="hidden" id="comment_reply_dp" name="comment_reply_dp" value="0" /></p><div id="cancel_reply" style="display:none;"><a href="javascript:void(0)" onclick="movecfm(null,0,1,null);" style="color:red;">Click to cancel reply</a></div><p><input type="checkbox" name="comment_mail_notify" id="comment_mail_notify" value="comment_mail_notify" checked="checked" style="width: auto;" /><label for="comment_mail_notify" style="display: inline;">Notify me of follow-up comments via e-mail</label></p><script type="text/javascript">
+/* <![CDATA[ */
+var commentformid = "commentform";
+var USERINFO = false;
+var atreply = "none";
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://cocktailswithmom.com/wp-content/plugins/wordpress-thread-comment/wp-thread-comment.js.php?jsver=common"></script>
+					</form>
+							</div><!-- #respond -->
+								</div><!-- end #content -->
+		<div id="sidebar" class="sidebar widget-area">
+<div id="search-2" class="widget widget_search"><div class="widget-wrap">
+		<form method="get" class="searchform" action="http://cocktailswithmom.com/" >
+			
+			<input type="text" value="Search this website &hellip;" name="s" class="s" onfocus="if (this.value == 'Search this website &hellip;') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Search this website &hellip;';}" />
+			<input type="submit" class="searchsubmit" value="Search" />
+		</form>
+	</div></div>
+<div id="text-51" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">New!  Section</h4>
+			<div class="textwidget"><a href= "http://cocktailswithmom.com/new-video-section/"> Click HERE to Check out our New Video Section! </a></div>
+		</div></div>
+<div id="text-41" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><!-- BEGIN RICH-MEDIA Burst Media CODE -->
+<script type="text/javascript" language="JavaScript">
+rnum=Math.round(Math.random() * 100000);
+ts=String.fromCharCode(60);
+if (window.self != window.top) {nf=''} else {nf='NF/'};
+document.write(ts+'script src="http://www.burstnet.com/cgi-bin/ads/ad21726a.cgi/v=2.3S/sz=300x250A/K=pid_270882/NZ/'+rnum+'/'+nf+'RETURN-CODE/JS/">'+ts+'/script>');
+</script><noscript><a href="http://www.burstnet.com/ads/ad21726a-map.cgi/ns/v=2.3S/sz=300x250A/" target="_top">
+<img src="http://www.burstnet.com/cgi-bin/ads/ad21726a.cgi/ns/v=2.3S/sz=300x250A/" border="0" alt="Click Here" /></a>
+</noscript>
+<!-- END Burst Media CODE --></div>
+		</div></div>
+<div id="text-47" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><script id="herchannel_widget" language="JavaScript" src="http://www.herchannel.com/vehicle/widget/cocktailswithmom/parents.js" type="text/javascript" async="async"></script></div>
+		</div></div>
+<div id="text-16" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Current Giveaways</h4>
+			<div class="textwidget"><p><a href= "http://cocktailswithmom.com/2012/02/valentines-day-gift-guide-loaded-questions-adult/">Loaded Questions Adult Board Game  ends 2/26</a>  </p>
+<p><a href= "http://cocktailswithmom.com/"> More Coming Soon!"</a>.</p>
+</div>
+		</div></div>
+<div id="execphp-3" class="widget widget_execphp"><div class="widget-wrap"><h4 class="widgettitle">Join Me For Cocktails!</h4>
+			
+			<div class="execphpwidget"><center>
+<table width="340">
+
+  <tr>
+    <td width="32" align="center" rowspan="2">
+    <a href=" http://feeds.feedburner.com/CocktailsWithMom " target="_blank"><img src=" http://cocktailswithmom.com/wp-content/uploads/2011/04/rss_32.png "></a>
+    </td>
+    <td width="57" align="left">
+    <span style="font-size:20px;"> </span>
+    </td>
+    <td width="32" align="center" rowspan="2">
+    <a href="http://twitter.com/MomCocktails" target="_blank"><img src=" http://cocktailswithmom.com/wp-content/uploads/2011/04/twitter_32.png "></a>
+    </td>
+    <td width="57" align="left">
+    <span style="font-size:20px;"></span>
+    </td>
+    <td width="32" align="center" rowspan="2">
+    <a href="http://www.facebook.com/pages/Cocktails-With-Mom/129512543729321" target="_blank"><img src="http://cocktailswithmom.com/wp-content/uploads/2011/04/facebook_32.png"></a>
+    </td>
+    <td width="57" align="left">
+    <span style="font-size:20px;"> </span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+    <span style="font-size:12px; line-height: 9px;"></span>
+    </td>
+    <td>
+    <span style="font-size:12px; line-height: 10px;"></span>
+    </td>
+    <td>
+    <span style="font-size:12px; line-height: 10px"></span>
+    </td>
+  </tr>
+</table>
+<table width="300">
+<tr>
+<td>
+<span style="line-height:22px;"><b>Subscribe for Daily Cocktails</b></span>
+</td>
+</tr>
+<tr>
+<td>
+<form action="http://feedburner.google.com/fb/a/mailverify" style="border:1px solid #ccc;padding:3px;text-align:center;" target="popupwindow" method="post" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CocktailsWithMom', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p> Enter your email address:</p><p><input style="width:125px" name="email" type="text"/></p><input value="CocktailsWithMom" name="uri" type="hidden"/><input value="en_US" name="loc" type="hidden"/><input value="Subscribe" type="submit"/><p>Delivered by <a href="http://feedburner.google.com" target="_blank">FeedBurner</a></p></form> </td>
+</tr>
+</table>
+</center>
+</div>
+		</div></div>
+<div id="text-50" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><center><a href="http://pinterest.com/dee_cwm/"><img src="http://passets-cdn.pinterest.com/images/follow-on-pinterest-button.png" width="156" height="26" alt="Follow Me on Pinterest" /></a></center></div>
+		</div></div>
+<div id="text-29" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Sites to check out!</h4>
+			<div class="textwidget"><center>&nbsp:<a href="http://cocktailswithmom.com/contact-me/privacy/" target="_blank"><img border="0" alt="Cocktails With Mom" src="http://cocktailswithmom.com/wp-content/uploads/2012/02/AD.png"></a>&nbsp:<a href="http://cocktailswithmom.com/contact-me/privacy/" target="_blank"><img border="0" alt="Cocktails With Mom" src="http://cocktailswithmom.com/wp-content/uploads/2012/02/AD.png"></a></center>
+
+
+
+
+</div>
+		</div></div>
+<div id="text-48" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><center><!-- BEGIN RICH-MEDIA Burst Media CODE -->
+<script type="text/javascript" language="JavaScript">
+rnum=Math.round(Math.random() * 100000);
+ts=String.fromCharCode(60);
+if (window.self != window.top) {nf=''} else {nf='NF/'};
+document.write(ts+'script src="http://www.burstnet.com/cgi-bin/ads/ad21726a.cgi/v=2.3S/sz=120x600A|160x600A/'+rnum+'/'+nf+'RETURN-CODE/JS/">'+ts+'/script>');
+</script><noscript><a href="http://www.burstnet.com/ads/ad21726a-map.cgi/ns/v=2.3S/sz=120x600A|160x600A/" target="_top">
+<img src="http://www.burstnet.com/cgi-bin/ads/ad21726a.cgi/ns/v=2.3S/sz=120x600A|160x600A/" border="0" alt="Click Here" /></a>
+</noscript>
+<!-- END Burst Media CODE -->
+</center></div>
+		</div></div>
+<div id="text-46" class="widget widget_text"><div class="widget-wrap">			<div class="textwidget"><p><center></p>
+<p><a href="http://www.couponcodes4u.com/discounts/soccer.com" name="Eurosport" title="Eurosport" target="_blank"><strong>Eurosport</strong></a></p>
+<p>Gorgeous <a href="http://www.freemans.com/Dresses/productlist.stm?N=426+4294965462"name="dresses" title=dresses "target="_blank"> dresses</a> at Freemans</p>
+<p></center></p>
+</div>
+		</div></div>
+<div id="text-5" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Grab a Cocktail!</h4>
+			<div class="textwidget"><center>
+<table width="100%">
+
+<tr>
+<td align="center">
+<a target="_blank" href="http://cocktailswithmom.com/"><img border="0" width="125" alt="\" src="http://cocktailswithmom.com/wp-content/uploads/2012/02/CWM-Button.png" height="125"/></a> <textarea id="textarea" rows="5" cols="14"><a target="_blank" href="http://cocktailswithmom.com/"><img border="0" width="125" src="http://cocktailswithmom.com/wp-content/uploads/2012/02/CWM-Button.png" height="125"/></a></textarea><br/>
+</tr>
+</tr>
+
+</table></div>
+		</div></div>
+<div id="text-35" class="widget widget_text"><div class="widget-wrap"><h4 class="widgettitle">Cocktail Spotlight</h4>
+			<div class="textwidget">What better way to wind down at the end of the day with your favorite cocktail or beverage. Whether you are preparing for some "Me Time", a special party or just spending time with family and friends - I'm sure you can find a great recipe by visiting our Very own <a href="http://cocktailswithmom.com/fun-stuff/cocktail-spotlight/">Cocktail Spotlight</a>.</div>
+		</div></div>
+<div id="categories-4" class="widget widget_categories"><div class="widget-wrap"><h4 class="widgettitle">Categories</h4>
+<select name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="30">Featured</option>
+	<option class="level-0" value="27">Happy Hour</option>
+	<option class="level-0" value="29">Headline</option>
+	<option class="level-0" value="25">Juice Bar</option>
+	<option class="level-0" value="28">Ladies Night</option>
+	<option class="level-0" value="26">Open Bar</option>
+	<option class="level-0" value="24">Oxygen Bar</option>
+</select>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+	var dropdown = document.getElementById("cat");
+	function onCatChange() {
+		if ( dropdown.options[dropdown.selectedIndex].value > 0 ) {
+			location.href = "http://cocktailswithmom.com/?cat="+dropdown.options[dropdown.selectedIndex].value;
+		}
+	}
+	dropdown.onchange = onCatChange;
+/* ]]> */
+</script>
+
+</div></div>
+</div>
+	</div><!-- end #content-sidebar-wrap -->
+	</div><!-- end #inner --><div id="footer-widgets-top"></div><div id="footer-widgets" class="footer-widgets"><div class="wrap"><div class="footer-widgets-1 widget-area">		<div id="recent-posts-2" class="widget widget_recent_entries"><div class="widget-wrap">		<h4 class="widgettitle">Recent Posts</h4>
+		<ul>
+				<li><a href="http://cocktailswithmom.com/2012/03/mcclain-sisters-inspirational-rise-video-from-disneynatures-chimpanzee/" title="McClain Sisters Inspirational &#8220;Rise&#8221; Video from Disneynature&#8217;s CHIMPANZEE">McClain Sisters Inspirational &#8220;Rise&#8221; Video from Disneynature&#8217;s CHIMPANZEE</a></li>
+				<li><a href="http://cocktailswithmom.com/2012/03/new-kraft-products-to-help-energize-your-day/" title="New Kraft Products To Help Energize Your Day">New Kraft Products To Help Energize Your Day</a></li>
+				<li><a href="http://cocktailswithmom.com/2012/03/fun-edutainment-for-kids/" title="Fun Edutainment for Kids">Fun Edutainment for Kids</a></li>
+				</ul>
+		</div></div>
+</div><div class="footer-widgets-2 widget-area"><div id="recent-comments-2" class="widget widget_recent_comments"><div class="widget-wrap"><h4 class="widgettitle">Recent Mumblings</h4>
+<ul id="recentcomments"><li class="recentcomments">laurie on <a href="http://cocktailswithmom.com/2012/03/kirklands-ultra-coconut-sea-foam-pillows-giveaway/comment-page-1/#comment-51881">Kirklands Ultra Coconut Sea Foam Pillows Giveaway</a></li><li class="recentcomments">laurie on <a href="http://cocktailswithmom.com/2012/03/kirklands-ultra-coconut-sea-foam-pillows-giveaway/comment-page-1/#comment-51880">Kirklands Ultra Coconut Sea Foam Pillows Giveaway</a></li><li class="recentcomments">laurie on <a href="http://cocktailswithmom.com/2012/03/kirklands-ultra-coconut-sea-foam-pillows-giveaway/comment-page-1/#comment-51879">Kirklands Ultra Coconut Sea Foam Pillows Giveaway</a></li></ul></div></div>
+</div><div class="footer-widgets-3 widget-area"><div id="meta-3" class="widget widget_meta"><div class="widget-wrap"><h4 class="widgettitle">Meta</h4>
+			<ul>
+						<li><a rel="nofollow" href="http://cocktailswithmom.com/wp-login.php">Log in</a></li>
+			<li><a href="http://cocktailswithmom.com/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://cocktailswithmom.com/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+						</ul>
+</div></div>
+</div></div><!-- end .wrap --></div><div id="footer" class="footer"><div class="wrap"><a href="http://designpressunlimited.com" target="_blank"><img class="aligncenter size-full wp-image-13215" title="designer icon" src="http://cocktailswithmom.com/wp-content/uploads/2012/02/designer-icon.png" alt="" width="300" height="101" /></a></div><!-- end .wrap --></div><!-- end #footer -->
+</div><!-- end #wrap -->
+	<!-- Start of StatCounter Code -->
+	<script type="text/javascript">
+	<!-- 
+		var sc_project=5426902; 
+		var sc_security="f3b7acc3"; 
+		var sc_invisible=1;
+	//-->
+	</script>
+	<script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
+<noscript><div class="statcounter"><a title="web analytics" href="http://statcounter.com/"><img class="statcounter" src="http://c.statcounter.com/5426902/0/f3b7acc3/1/" alt="web analytics" /></a></div></noscript>	
+	<!-- End of StatCounter Code -->
+
+<!-- Multi-level Navigation Plugin v2.2.4 by PixoPoint Web Development ... http://pixopoint.com/multi-level-navigation/ -->
+<link rel="stylesheet" type="text/css" href="http://cocktailswithmom.com/wp-content/plugins/multi-level-navigation-plugin/style.php" />
+<script type="text/javascript">
+var blenza_ifr = null;
+var blenza_whoName = null;
+var blenza_whoURL = null;
+
+function blenza_setwho(n, e, u)
+{
+  blenza_whoName = n;
+  blenza_whoEmail = e;
+  blenza_whoURL = u;
+}
+
+function blenza_mylink(postid, entrid)
+{
+  try {
+    var e = document.getElementById("mylink-" + postid + "-" + entrid);
+    if (e == null) return;
+    e.style.display = "inline";
+  }
+  catch (e) {
+    //alert("trouble with blenza_mylink(" + postid + ", " + entrid + ")");
+  }
+}
+
+function blenza_submitdata( data, xurl )
+{
+  if ( data == null ) return;
+  var url = xurl;
+  for ( i = 0; i < data.length; i++ ) {
+    if ( i == 0 ) {
+      url += "?";
+    }
+    else {
+      url += "&";
+    }
+    var name = data[i].name;
+    if ( name == "" ) {
+      name = "xyzzy";
+    }
+    var val = data[i].value;
+    url += name;
+    url += "=";
+    url += escape( val );
+  }
+  var ifr = document.createElement( "iframe" );
+  blenza_ifr = ifr;
+  // comment out next for debugging
+  ifr.style.visibility = "hidden";
+  ifr.style.position = "absolute";
+  ifr.style.top = "100px";
+  ifr.style.left = "100px";
+  ifr.style.width = "400px";
+  ifr.style.height = "400px";
+  ifr.style.background = "#00aa00";
+  ifr.style.color = "#000000";
+  document.body.appendChild( ifr );
+  var nf = frames[frames.length - 1];
+  var nd = nf.document;
+  nd.write( "<html>\n<head><title>Submit Data</title>\n</head>\n<body><span onclick=\"javascript:parent.blenza_ifr.style.visibility=\'hidden\';\">Hide This Window</span>.\n<iframe src=\"" + url + "\"/></iframe>\n<p>" + url.replace(/&/g,"&amp;") + "</p></body></html>\n" );
+  nd.close();
+}
+
+function blenza_doSubmit( form, op, action )
+{
+  var xurl;
+  if ( form.ml_xurl ) {
+    xurl = form.ml_xurl.value + "/" + action + ".php";
+  }
+  else if ( form.xurl ) {
+    xurl = form.xurl.value + "/" + action + ".php";
+  }
+  else {
+    xurl = "http://{$blenza_host}{$blenza_root}/" + action + ".php";
+  }
+  var data = new Array();
+  for ( i = 0; i < form.elements.length; i++ ) {
+    var name = form.elements[i].name;
+    if ( name == "" ) {
+      name = "xyzzy";
+    }
+    if ( name.substring(0,3) == "ml_" ) {
+      name = name.substring(3);
+    }
+    var val;
+    if ( form.elements[i].type == "checkbox" ) {
+      if ( form.elements[i].checked ) {
+        val = form.elements[i].value;
+      }
+      else {
+        val = "";
+      }
+    }
+    else {
+      val = form.elements[i].value;
+    }
+
+    data.push( { "name": name, "value": val } );
+  }
+  blenza_submitdata( data, xurl );
+}
+
+function blenza_switcheroo( off, on )
+{
+  var ele1 = document.getElementById( off );
+  ele1.style.display = "none";
+  var ele2 = document.getElementById( on );
+  ele2.style.display = "block";
+}
+
+function blenza_setNextone( pi, name, url )
+{
+  var nx = document.getElementById( "nextone-" + pi );
+  if ( nx != null ) {
+    nx.innerHTML = '<a class="blenza-link" href="' + url + '">' + name + '</a>';
+  }
+}
+
+function blenza_doEnter( form )
+{
+  var name;
+  if ( form.ml_name ) {
+    name = form.ml_name.value;
+  }
+  else {
+    name = form.name.value;
+  }
+  var url;
+  if ( form.ml_url ) {
+    url = form.ml_url.value;
+  }
+  else {
+    url = form.url.value;
+  }
+  if ( ! blenza_checkName( name ) ) {
+    return false;
+  }
+  if ( ! blenza_checkUrl( url ) ) {
+    return false;
+  }
+  blenza_doSubmit( form, "Entry", "entry_do" );
+  var pi;
+  if ( form.ml_postid ) {
+    pi = form.ml_postid.value;
+  }
+  else {
+    pi = form.postid.value;
+  }
+  blenza_setNextone( pi, name, url );
+  blenza_switcheroo( "theform-" + pi, "theform2-" + pi );
+  return false;
+}
+
+function blenza_checkName( name )
+{
+  if ( name.length == 0 ) {
+    alert( "Please enter your name." );
+    return false;
+  }
+
+  return true;
+}
+
+function blenza_checkUrl( url )
+{
+  if ( url.length == 0 ) {
+    alert( "Please enter your link URL." );
+    return false;
+    return true;
+  }
+  var test = "http://"
+  if ( url.substring( 0, test.length ) != test ) {
+    alert( "Link URL must begin with 'http://'" );
+    return false;
+  }
+  if ( url == "http://www." ) {
+    alert( "Please enter your link URL." );
+    return false;
+  }
+  return true;
+}
+</script>
+
+<style type="text/css">
+.blenza-box { border: 2px solid #000; text-align: center; padding: 4px }
+.blenza-td { font-size: 12px; }
+.blenza-td a { font-size: 12px; }
+</style>
+<script type='text/javascript' src='http://platform.twitter.com/widgets.js?ver=21'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ratingsL10n = {"plugin_url":"http:\/\/cocktailswithmom.com\/wp-content\/plugins\/wp-postratings","ajax_url":"http:\/\/cocktailswithmom.com\/wp-content\/plugins\/wp-postratings\/wp-postratings.php","text_wait":"Please rate only 1 post at a time.","image":"stars","image_ext":"gif","max":"5","show_loading":"1","show_fading":"1","custom":"0"};
+var ratings_mouseover_image=new Image();ratings_mouseover_image.src=ratingsL10n.plugin_url+"/images/"+ratingsL10n.image+"/rating_over."+ratingsL10n.image_ext;
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://cocktailswithmom.com/wp-content/plugins/wp-postratings/postratings-js.js?ver=1.50'></script>
+<script type='text/javascript' src='http://cocktailswithmom.com/wp-content/themes/genesis/lib/js/menu/superfish.args.js?ver=1.8.0'></script>
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Served from: cocktailswithmom.com @ 2012-03-28 18:46:35 -->

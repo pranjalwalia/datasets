@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>WHERE THE FUCK SHOULD I GO TO EAT?</title>
+<meta property="og:title" content="WHERE THE FUCK SHOULD I GO TO EAT?"/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="http://www.wherethefuckshouldigotoeat.com"/>
+<meta property="og:image" content="http://www.wherethefuckshouldigotoeat.com/apple-touch-icon-114x114-precomposed.png"/>
+<meta name="og:site_name" content="WTFSIGTE"/>
+<meta name="og:description" content="WHERE THE FUCK SHOULD I GO TO EAT"/>
+<meta name="description" content="WHERE THE FUCK SHOULD I GO TO EAT?"/>
+<meta name="keywords" content="where the fuck should i go to eat? food, recommendations, restaurants, dining, takeaway, eat, hungry, maps, directions, google, api, html5, css3, jquery, responsive, cool, coolography, "/>
+<meta name="author" content="coolography"/>
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<!-- Included CSS Files -->
+<link rel="stylesheet" href="stylesheets/foundation.css"/>
+<link rel="stylesheet" href="stylesheets/app.css?v=2"/>
+<!-- IE Fix for HTML5 Tags -->
+<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script src="js/modernizr-2.0.min.js"></script>
+</head>
+<body>
+<!-- container -->
+<div class="container"> <a  id="wait">WAIT THE FUCK UP <span></span></a> 
+    <!-- GEOLOCATION-->
+    <div id="locate" class="row">
+        <div class="twelve columns">
+            <form id="locationBar" action="javascript:codeAddress()">
+                <div id="error">can't find your fucking location. try again</div>
+                <input id="location" placeholder="WHERE THE FUCK ARE YOU?" type="text">
+                <input type="submit" class="submit" value="find me a place to fucking eat">
+            </form>
+        </div>
+    </div>
+    <!--RECOMMENDATION-->
+    <div id="recommendation" class="row">
+        <div class="twelve columns"> <span id="destination"></span>
+            <div id="mapcontainer">
+                <div id="address"></div>
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    <!--ACTIONS-->
+    <div id="actions" class="row">
+
+         
+
+
+        <div class="four columns"> <a href="?wherethefuck" id="wrong" title="BLAME YOUR FUCKING DEVICE">my location is fucking wrong</a> </div>
+       
+        <div class="four columns"> <a href="#" id="shit" title="FUCK YOU">No, That place looks like shit</a> </div>
+
+         <div class="four columns"> <a href="http://www.wherethefuckshouldigofordrinks.com" id="wtf" title="WHERE THE FUCK SHOULD I GO FOR DRINKS?">ACTUALLY, I'M FUCKING THIRSTY</a> </div>
+    </div>
+    <!--ABOUT-->
+    <div id="about" class="row">
+        <div class="social">
+            <div class="fb two columns">
+            
+            
+            <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.wherethefuckshouldigotoeat.com%2F&amp;send=false&amp;layout=button_count&amp;width=100&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=arial&amp;height=21&amp" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe>
+            
+            
+            </div>
+            <div class="tw two columns"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a> 
+                <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script> 
+            </div>
+            <div class="gplus two columns">
+                <div class="g-plusone" data-width="120" data-href="http://www.wherethefuckshouldigotoeat.com/"></div>
+            </div>
+        </div>
+         <div class="links"><div class="inspire two columns">
+
+            <a href="/app/" title="APP COMING SOON"> <img src="images/badge.png" alt="APP COMING SOON"></a>
+        </div>
+        
+            <div class="at two columns"> <a href="http://www.twitter.com/wtfsigte" title="#FUCKOFF">@wtfsigte</a> </div>
+          
+            <div class="created two columns"> <a href="http://www.coolography.co.uk" title="FUCKING COOL">created by </a></div>
+          
+           
+        </div>
+    </div>
+</div>
+<!-- MAPS --> 
+<script src="https://maps.googleapis.com/maps/api/js?v=3&libraries=places,adsense&sensor=true&key=AIzaSyCTxiWhuS0yb-zBc11xjfNlFubjdYkZtp8" type="text/javascript"></script> 
+<!-- G+ --> 
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script> 
+<!-- ANALYTICS --> 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29890981-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- Included JS Files --> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script> 
+<script src="js/script.js"></script>
+</body>
+</html>

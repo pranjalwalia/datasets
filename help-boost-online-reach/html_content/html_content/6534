@@ -1,0 +1,1842 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://ogp.me/ns/fb#" xmlns:og="http://opengraphprotocol.org/schema/" class="no-js"> 
+  <head>
+  
+          <!-- Mobile redirector -->
+<script type="text/javascript">
+(function(){
+  
+  // get redirector to work in development
+  var tmp = /^(www\.)?([\w\.]+)?refinery29\.(\w+)(:\d+)?$/.exec(window.location.host.toLowerCase()),
+      
+      // sub domain
+      sub = tmp[2],
+      
+      // top level domain
+      tld = tmp[3],
+      
+      // cookie domain for mobile_referrer cookie
+      cookie_domain = 'refinery29.'+tld,
+      
+      // domain for mobile redirect
+      mobile_domain = 'm.'+(sub ? sub : '')+cookie_domain,
+      
+      // ignore direct traffic referrers
+      r29p = new RegExp('^(https?:\/\/)((www|m|touch)\.)'+sub+'refinery29\.'+tld, 'i'),
+      
+      // validate referrer before overriding
+      r29v = function(d){
+        return !!(d && String(d).length && !String(d).match(r29p));
+      };
+
+  // quirksmode.org: JavaScript - Cookies
+  // http://www.quirksmode.org/js/cookies.html
+  
+  var cookie_create = function(name, value, days){
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime()+(days*24*60*60*1000));
+      var expires = '; expires='+date.toGMTString();
+    }
+    else {
+      var expires = '';
+    }
+    var val = name+'='+value+expires+'; path=/; domain=.'+cookie_domain+';';
+    document.cookie = val;
+  },
+  
+  cookie_delete = function(name){
+    cookie_create(name,'',-1);
+  },
+  
+  cookie_read = function(name){
+    var nameEQ = name + '=';
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+      var c = ca[i];
+      while (c.charAt(0)==' ') {
+        c = c.substring(1,c.length);
+      }
+      if (c.indexOf(nameEQ) == 0) {
+        var val = c.substring(nameEQ.length,c.length);
+        return val;
+      }
+    }
+  	return null;
+  },
+  
+  show_mobile_link = function(){
+    var show_link = function(){
+      document.getElementById('mobile-link').style.display = 'block';
+    }
+    if (typeof window.onload != 'function') {
+      window.onload = show_link;
+    }
+    else {
+      var prev_onload = window.onload;
+      window.onload = function(){
+        prev_onload && prev_onload();
+        show_mobile_link();
+      };
+    }
+  };
+  
+  href = document.location.href.toString();
+  
+  // ignore mobile for thirty days
+  if (href.match(/mobile=false/i)) {
+    cookie_create('force_web', '1', 30);
+    show_mobile_link();
+    return;
+  }
+  
+  // URL param force mobile ver
+  var force_mobile = href.match(/mobile=true/i),
+
+      // Cookie to force web ver
+      ignore_mobile = cookie_read('force_web') && cookie_read('force_web') === '1',
+
+      // UA detection for mobile
+      is_mobile = navigator.userAgent.match(/iphone|ipod|android/i);
+      
+      if(navigator.userAgent.match(/ipad/i)) { 
+        // facebook user-agent stupidly calls iPad an iPhone
+        is_mobile = '';
+      }
+  
+  // forcing mobile on non-mobile browser or mobile browser and not forcing desktop
+  if (force_mobile || (is_mobile && !ignore_mobile)) {
+  
+    force_mobile && cookie_delete('force_web');
+    
+    // Setup for GA in case cookie fails
+    var referrer = encodeURIComponent(document.referrer);
+    var searchURL = '?garef=' + referrer + '&' + location.search.slice(1);
+    
+    // if we have valid referrer, write referrer cookie
+    if (r29v(document.referrer)) {
+      cookie_create('mobile_referrer', referrer, 1);
+    }
+    
+    // redirect
+    var mobile_location = 'http://'+mobile_domain+location.pathname.replace(/^(.*)\/slideshow/, '$1')+searchURL;
+    window.location = mobile_location;
+    return;
+  }
+  
+  // show mobile link if we didn't redirect
+  is_mobile && show_mobile_link();
+  
+})();
+</script>
+<!--/Mobile redirector -->
+    
+  
+    <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+    <script type="text/javascript">var _dc_tile = 1;var _dc_ts=_sf_startpt=(new Date()).getTime();WRInitTime=(new Date()).getTime();</script>
+    <link rel="stylesheet" href="http://static3.refinery29.com/blog/84d7e7/css/compiled/style.css" media="print, screen" />
+    <link rel="alternate" type="application/rss+xml" title="Refinery29" href="http://www.refinery29.com/index.xml" />
+    
+  	<!--[if lt IE 9]>
+  		<link rel="stylesheet" type="text/css" href="http://static2.refinery29.com/blog/84d7e7/css/compiled/ie.css" />
+      <script src="http://static3.refinery29.com/blog/84d7e7/js/html5.js"></script>
+    <![endif]-->
+
+          <script type="text/javascript" src="http://cdn.onswipe.com/synapse/on.js?usr=refinery29" id="onswipe_synapse"></script>
+    
+    <script type="text/javascript" src="http://static1.refinery29.com/blog/84d7e7/js/jquery.js"></script>
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/84d7e7/js/jquery/plugins/jcarousel/jcarousel.js"></script>
+    <!-- Pinterest Hover Pin -->  
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/84d7e7/js/jquery/plugins/jquery.autopin.js"></script>  
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/84d7e7/js/r29.js"></script>
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/84d7e7/js/api.js"></script>
+
+    <script type="text/javascript" src="http://static2.refinery29.com/blog/84d7e7/js/r29.clip.js"></script>
+    <script type="text/javascript" src="http://static3.refinery29.com/blog/84d7e7/js/jquery/jquery.form.js"></script>
+
+
+    <!-- Avoiding Flash of Unstyled Text -->
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    
+
+    
+    
+          <script type="text/javascript" src="http://static3.refinery29.com/blog/84d7e7/js/socket.io/socket.io.js"></script>
+    
+  
+    <title itemprop="name">
+			Avengers Movie Eye Makeup &mdash; Superhero-Inspired Beauty Looks
+	
+</title> 
+    
+    <!-- Meta -->
+    
+  
+  
+   <!-- month of beauty -->
+
+  
+  <!-- Entry Meta -->
+	<meta name="description" content="Eye makeup takes on The Hulk, Captain America, and Iron Man to mark the release of The Avengers." itemprop="description">
+
+ 
+<meta name="keywords"    content="avengers movie, avengers makeup, avengers fashion, the hulk avengers," itemprop="keywords"> 
+
+  <!-- Facebook Meta -->
+  <meta property="og:title"       content="Superhero Style? <em>Avengers</em>-Themed Eye Makeup Exists" itemprop="name" />
+  <meta property="og:type"        content="article"/>
+  <meta property="og:url"         content="http://www.refinery29.com/avengers-eye-makeup"/>
+  <meta property="og:image"       content="http://static3.refinery29.com/bin/entry/b9a/300x/212880/avengers-makeup-open.jpg" itemprop="image" />
+  <meta property="og:site_name"   content="Refinery29" itemprop="publisher" />
+  <meta property="og:description" content="  
+
+It&#039;s nowhere near as hot (or juicy... or delicious...) as our favorite hamburger-themed combo of eyeshadow and mascara, but there&#039;s still something to be said for this similarly styled superheroic Avengers-themed eye art  (yes, we&#039;re coining the phrase).  
+Marking this week&#039;s&hellip;" />
+
+
+<link rel="canonical" href="http://www.refinery29.com/avengers-eye-makeup" />
+
+<!-- Slideshow Meta -->
+
+        
+<!-- Pagination Meta -->
+
+	
+
+  
+
+        
+    
+  </head>
+    
+  <body>
+    <div id="container">
+    <div id="skin"></div><!--need this for background skinz-->
+      <div class="inner">
+      
+                
+				         	<div id="header" > <!-- Header -->
+
+      
+
+  <!-- Information Bar -->
+  <nav>
+  
+          
+    
+    
+    
+          
+          
+    
+  
+    <ul class="features">
+      <li><a href="http://www.refinery29.com" data-track="nav:r29" class="r29">R29</a></li>
+      <!-- Empty divs for gradient-ed vertical lines :/ -->
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com" data-track="nav:read" class="read active">Read</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com/video" data-track="nav:watch" class="watch">Watch</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://reserve.refinery29.com" data-track="nav:shop" class="shop">Shop</a></li>
+      <li><div>&nbsp;</div></li>
+      <li><a href="http://www.refinery29.com/find/stores" data-track="nav:find" class="find">Find</a></li>
+      <li><div>&nbsp;</div></li>
+    </ul>
+    
+    
+    
+    <ul class="tooltips">
+  <li class="new_browse">
+    <p><span>New</span> Browse better with our new Refinery29 shortcuts!</p>
+    <div class="close"></div>
+  </li>
+  
+</ul>
+
+    
+    <div class="search" id="search-box">
+  <form method="get" action="/search">
+    <input type="text" name="q" value="" placeholder="Search" data-placeholder="Search" autocomplete="off" />
+    
+    
+  </form>
+  <div class="flap"></div>
+</div>
+
+    
+  </nav>
+  
+      <!-- Banner Bar -->
+    <div class="banner">
+      <!-- Edition Background -->
+                  <a href="/everywhere" class="logo everywhere" data-track="header:logo"></a>
+            
+    </div>
+  
+  
+  
+      <!-- Editions Navigation -->
+    <ul class="editions">
+                        <li class="everywhere"><a  class="active" href="http://www.refinery29.com/" data-track="header:everywhere">Everywhere</a></li>
+        
+                        <li class="new-york"><a  href="http://www.refinery29.com/new-york" data-track="header:new-york">New York</a></li>
+        
+                        <li class="los-angeles"><a  href="http://www.refinery29.com/los-angeles" data-track="header:los-angeles">Los Angeles</a></li>
+        
+                        <li class="chicago"><a  href="http://www.refinery29.com/chicago" data-track="header:chicago">Chicago</a></li>
+        
+                        <li class="san-francisco"><a  href="http://www.refinery29.com/san-francisco" data-track="header:san-francisco">San Francisco</a></li>
+        
+                        <li class="washington-dc"><a  href="http://www.refinery29.com/washington-dc" data-track="header:washington-dc">Washington, D.C.</a></li>
+        
+              
+                        <li class="miami"><a  href="http://www.refinery29.com/miami" data-track="header:miami">Miami</a></li>
+        
+              
+              
+      
+    </ul>
+    
+    <div class="clear"></div>
+    
+    <!-- Subnavigation -->
+      
+      
+      <ul class="categories everywhere"> <!-- Categories -->
+                    <li class="news
+                              
+                              
+              "><a href="http://www.refinery29.com/everywhere/news" data-track="header:category:everywhere:news">News</a>
+                            <ul>
+                <!-- Sub-categories -->
+                                  <li><a href="http://www.refinery29.com/festival-tracker" data-track="header:news:festival-tracker">Festival Tracker</a></li>
+                
+                                  <li><a href="http://www.refinery29.com/everywhere/news/art-and-culture" data-track="header:subcategory:everywhere:art-and-culture">Art &amp; Culture</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/celebrities" data-track="header:subcategory:everywhere:celebrities">Celebrities</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/dedicated-feature" data-track="header:subcategory:everywhere:dedicated-feature">Dedicated Feature</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/drinking-and-dining" data-track="header:subcategory:everywhere:drinking-and-dining">Drinking &amp; Dining</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/fashion-news" data-track="header:subcategory:everywhere:fashion-news">Fashion News</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/friends-of-r29" data-track="header:subcategory:everywhere:friends-of-r29">Friends of R29</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/hot-new-products" data-track="header:subcategory:everywhere:hot-new-products">Hot New Products</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/itineraries" data-track="header:subcategory:everywhere:itineraries">Itineraries</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/link-love" data-track="header:subcategory:everywhere:link-love">Link Love</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/music" data-track="header:subcategory:everywhere:music">Music</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/news/parties" data-track="header:subcategory:everywhere:parties">Parties</a></li>
+                
+              </ul>
+              
+              
+            </li>
+                    <li class="fashion
+                              
+                              
+              "><a href="http://www.refinery29.com/everywhere/fashion" data-track="header:category:everywhere:fashion">Fashion</a>
+                            <ul>
+                <!-- Sub-categories -->
+                
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/college-fashion" data-track="header:subcategory:everywhere:college-fashion">College Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/designers" data-track="header:subcategory:everywhere:designers">Designers</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/diy-fashion" data-track="header:subcategory:everywhere:diy-fashion">Diy Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/fall-fashion" data-track="header:subcategory:everywhere:fall-fashion">Fall Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/fashion-tips" data-track="header:subcategory:everywhere:fashion-tips">Fashion Tips</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/fashion-week" data-track="header:subcategory:everywhere:fashion-week">Fashion Week</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/i-love-my" data-track="header:subcategory:everywhere:i-love-my">I Love My...</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/living" data-track="header:subcategory:everywhere:living">Living</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/lookbooks" data-track="header:subcategory:everywhere:lookbooks">Lookbooks</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/magazines" data-track="header:subcategory:everywhere:magazines">Magazines</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/models" data-track="header:subcategory:everywhere:models">Models</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/my-style" data-track="header:subcategory:everywhere:my-style">My Style</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/petites" data-track="header:subcategory:everywhere:petites">Petites</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/plus-size" data-track="header:subcategory:everywhere:plus-size">Plus Size</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/spring-fashion" data-track="header:subcategory:everywhere:spring-fashion">Spring Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/spring-trends" data-track="header:subcategory:everywhere:spring-trends">Spring Trends</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/street-fashion" data-track="header:subcategory:everywhere:street-fashion">Street Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/summer-fashion" data-track="header:subcategory:everywhere:summer-fashion">Summer Fashion</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/trend-watch" data-track="header:subcategory:everywhere:trend-watch">Trend Watch</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/fashion/weddings" data-track="header:subcategory:everywhere:weddings">Weddings</a></li>
+                
+              </ul>
+              
+              
+            </li>
+                    <li class="shopping
+                              
+                              
+              "><a href="http://www.refinery29.com/everywhere/shopping" data-track="header:category:everywhere:shopping">Shopping</a>
+                            <ul>
+                <!-- Sub-categories -->
+                                  <li><a href="http://reserve.refinery29.com/" data-track="header:subcategory:everywhere:reserve">Reserve: Shop Our Store</a></li>
+                  <li><a href="http://www.refinery29.com/find/stores/" data-track="header:shopping:find-stores-we-love:everywhere">Stores We Love</a></li>
+                
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/dresses" data-track="header:subcategory:everywhere:dresses">Dresses</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/gifts" data-track="header:subcategory:everywhere:gifts">Gifts</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/holiday" data-track="header:subcategory:everywhere:holiday">Holiday</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/hot-sales" data-track="header:subcategory:everywhere:hot-sales">Hot Sales</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/online-deals" data-track="header:subcategory:everywhere:online-deals">Online Deals</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/shopping-guides" data-track="header:subcategory:everywhere:shopping-guides">Shopping Guides</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/shopping-roundups" data-track="header:subcategory:everywhere:shopping-roundups">Shopping Roundups</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/store-news" data-track="header:subcategory:everywhere:store-news">Store News</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/store-openings" data-track="header:subcategory:everywhere:store-openings">Store Openings</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/shopping/the-perfect-outfit" data-track="header:subcategory:everywhere:the-perfect-outfit">The Perfect Outfit</a></li>
+                
+              </ul>
+              
+              
+            </li>
+                    <li class="beauty
+                               active selected
+                              
+              "><a href="http://www.refinery29.com/everywhere/beauty" data-track="header:category:everywhere:beauty">Beauty</a>
+                            <ul>
+                <!-- Sub-categories -->
+                
+                                  <li><a href="http://www.refinery29.com/everywhere/beauty/hair-trends" data-track="header:subcategory:everywhere:hair-trends">Hair Trends</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/beauty/health-and-wellness" data-track="header:subcategory:everywhere:health-and-wellness">Health &amp; Wellness</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/beauty/makeup-trends" data-track="header:subcategory:everywhere:makeup-trends">Makeup Trends</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/beauty/nail-polish-colors" data-track="header:subcategory:everywhere:nail-polish-colors">Nail Polish Colors</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/beauty/new-beauty-products" data-track="header:subcategory:everywhere:new-beauty-products">New Beauty Products</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/beauty/new-makeup-products" data-track="header:subcategory:everywhere:new-makeup-products">New Makeup Products</a></li>
+                                  <li><a href="http://www.refinery29.com/everywhere/beauty/skincare" data-track="header:subcategory:everywhere:skincare">Skincare</a></li>
+                
+              </ul>
+              
+              
+            </li>
+        
+      </ul>
+      
+    
+  
+  <script type="text/javascript">
+    
+      var R29 = R29 || {};
+    
+    
+    R29.BASE_URL = "refinery29.com";
+    
+  </script>
+      
+</div> <!-- /Header -->
+
+				
+								    				  <!-- Top Ad, Signup, Facebook -->
+<div class="top-ad">
+  
+    	
+  
+  
+      
+<div class="ad ad-728x90" iframe-code="http://ad.doubleclick.net/adi/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;" iframe-size="728x90, 970x66"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=top;tile=1;dcopt=ist;sz=728x90, 970x66;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+  
+  
+  <div class="ribbon-tail-left"></div>
+
+  <!-- Signup -->
+<div class="widget">
+   
+  
+  
+  <a href="/signup/everywhere?source=sitearrow&amp;medium=organic" class="signup everywhere" alt="Sign Up Now!"></a>
+  <div class="fblike">
+    <fb:like href="http://www.facebook.com/refinery29" show_faces="false" width="220" height="28"></fb:like>
+  </div>
+</div>
+
+
+</div>
+
+  				
+  				
+  				
+				
+				
+        <div id="content"> 
+        
+          					<!-- LEFT -->
+					<div class="col_2">
+						
+  <!-- CACHE d4900 - ttl: 180 -->    <!-- Mini Signup Module on Entry Pages: For Once -->
+          <!-- Lil Mini Signup Module -->
+<div class="signup-mini" style="display:none;">
+  <div class="folded-corner"></div>
+  <img src="http://static1.refinery29.com/blog/84d7e7/images/signup/sample-email.png" width="195" height="163" alt="Get Your Free Daily Newsletter!" class="left" />
+  <h4>Get Your Free <br>Daily Newsletter!</h4>
+  <p>The freshest fashion, shopping, lifestyle news, beauty tips, and local deals you'll ever need!</p>
+  
+  <form action="/signup/new-york?source=sitebox&medium=organic" method="POST">
+  
+    <input type="email" name="email" required placeholder="Enter your Email Address" data-placeholder="Enter your Email Address">
+    
+    <input type="hidden" name="email_lists[everywhere]" value="true">
+    
+      
+    <input type="submit" name="submit" value="Sign Up" data-track="signup-mini:submit" />
+  
+  
+  </form>
+
+  <a href="" class="close" data-track="signup-mini:close">Close<span></span></a>
+</div>
+
+
+<script type="text/javascript">
+
+  $('.signup-mini a.close').click(function(event) {
+    event.preventDefault();
+    $('.signup-mini').hide();
+    R29.cookie.set('signup_mini',1,3600*24*30);
+  });
+
+  $('.signup-mini input.submit').click(function(event) {
+    R29.cookie.set('signup_mini',1,-1);
+    return true;
+  });
+
+  if(!R29.cookie.get('signup_mini')) {
+    $('.signup-mini').show();
+  }
+
+</script>
+    
+    <div class="entry-block">
+      <aside class="social-sidebar">
+
+    <!-- R29 CLIP -->
+      <div class="r29-clip disabled" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'R29ClipSidebar', 'clipped']);">
+      <p class="count">0 clips</p>
+      <img src="/static/images/stylebook/clip.png" alt="CLIP It" height="50px" width="50px">
+    </div>
+  
+  
+  <!-- FB -->
+  <div class="facebook" itemprop="interactionCount">
+    <fb:like layout="box_count" href="http://www.refinery29.com/avengers-eye-makeup" send="false" width="50" ref="sidebar"></fb:like>
+  </div>
+  
+  <!-- Twitter -->
+  <div class="twitter" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'TwitterSidebar', 'tweet']);">
+    <a href="http://twitter.com/share" class="twitter-share-button" data-text="Superhero Style? <em>Avengers</em>-Themed Eye Makeup Exists" data-url="http://www.refinery29.com/avengers-eye-makeup" data-count="vertical" data-via="refinery29">&nbsp;</a>
+  </div>
+
+  <!-- Pinterest -->
+  <div class="pinterest" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'Pinterest', 'pinned']);">
+    <a href="http://pinterest.com/pin/create/button/?url=http://www.refinery29.com/avengers-eye-makeup&media=http://static1.refinery29.com/bin/entry/507/x/212880/avengers-makeup-open.jpg&description=Superhero Style? <em>Avengers</em>-Themed Eye Makeup Exists" class="pin-it-button" count-layout="vertical">Pin It</a>
+  </div>
+  
+  <!-- Stumbleupon -->
+  <div class="stumbleupon" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'StumbleSidebar', 'stumble']);">
+    <iframe src="http://badge.stumbleupon.com/badge/embed/5/?url=http://www.refinery29.com/avengers-eye-makeup" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:50px; height:60px;" allowTransparency="true"></iframe>
+  </div>
+  
+</aside>
+    
+      
+  
+  
+   
+    
+      <div class="entry-header">
+  
+  
+	
+  <div class="category"><!--<a href="/everywhere/beauty/makeup-trends" data-track="entry:header:Makeup Trends">-->Makeup Trends<!--</a>--></div>
+  
+  <div class="deliminator"></div>
+  
+  <div class="date">
+          May 1, 2012 11:20 AM
+      <!-- <span itemprop="datePublished">2012-05-01 11:20:00</span> -->
+    
+  </div>
+  <div class="asset-info">
+      <!-- Facebook Like -->
+      <div class="facebook" itemprop="interactionCount">
+        <fb:like layout="button_count" href="http://www.refinery29.com/avengers-eye-makeup" width="90" ref="entrypage"></fb:like>
+      </div>
+      <!-- Twitter Share -->
+      <div class="twitter" itemprop="interactionCount" onclick="_gaq.push(['_trackEvent', 'TwitterSolo', 'tweet']);">
+        <a href="http://twitter.com/share" class="twitter-share-button" data-text="Superhero Style? <em>Avengers</em>-Themed Eye Makeup Exists" data-url="http://www.refinery29.com/avengers-eye-makeup" data-count="horizontal" data-via="refinery29">&nbsp;</a>
+      </div>
+    <!-- Comment Count -->
+    <div class="comment-count" itemprop="interactionCount">
+      <!-- ben 1 -->
+              <a href="/avengers-eye-makeup#disqus_thread" data-url="http://www.refinery29.com/avengers-eye-makeup" class="comments"><span class="comment-count">0</span></a>
+      
+    </div>
+  </div>
+</div>
+
+
+      
+      <!-- Sponsored Headline eMeta -->
+      
+    
+      <div class="entry">
+	<div itemscope itemtype="http://schema.org/Article">
+	  <div class="h1">Superhero Style? <em>Avengers</em>-Themed Eye Makeup Exists</div>
+	  	    <p class="byline">
+
+      By 
+    
+    <a href="/author/gabriel-bell" rel="author"><span itemprop="author">Gabriel Bell</span></a>
+</p>
+	    <div class="body">
+	    	<span itemprop="articleBody">
+		      <img src="//static2.refinery29.com/bin/entry/a45/x/212881/avengers-makeup-1.jpg" alt="avengers-makeup-1"><br><br>
+
+It's nowhere near as hot (or juicy... or delicious...) as our favorite <a href="/burger-king-eye-makeup">hamburger-themed combo of eyeshadow and mascara</a>, but there's still something to be said for this similarly styled <strong>superheroic <em>Avengers</em>-themed eye art </strong> (yes, we're coining the phrase).<br><br>
+Marking this week's release of the sci-fi summer blockbuster (Hi Robert Downey, Jr. — have we mentioned recently how much we're <em>still</em> enjoying your comeback?), these fanciful takes on color combinations copped from <em>Captain America</em>, <em>Iron Man</em>, and <em>The Hulk</em> must have taken some very special superpowers (and a true geek's obsession) to execute.<p></p> 
+
+Granted, these looks are only appropriate for a trip to Comic-Con, but nonetheless, we salute makeup artist <a href="http://jangsara.blogspot.com/" rel="nofollow" target="_blank">Jangsara</a> and her dedication to "Earth's Mightiest Heroes". You're braver than Thor himself! (<a href="http://laughingsquid.com/avengers-inspired-eye-makeup-designs/" rel="nofollow" target="_blank">Laughing Squid</a>)<br><br><em>
+  <small>Image: via Makeup Your Jangsara.</small>
+</em>
+
+
+		      
+		      		        
+
+
+
+
+		      
+		      
+		        <div class="index-pagination">
+
+  
+  
+  </div>
+
+		      
+		      
+		      
+	      </span>
+		  </div>
+	  
+	  
+	  <div class="clear"></div>
+  </div>
+</div>
+      
+      <div class="footer">
+      <div class="tags">
+              <a href="/">Everywhere</a> &raquo; 
+              <a href="/everywhere/beauty">Beauty</a> &raquo; 
+      
+      <a href="/everywhere/beauty/makeup-trends">Makeup Trends</a> &raquo;
+            	<h1 class="sub">Avengers Movie Eye Makeup &mdash; Superhero-Inspired Beauty Looks</h1>
+      
+      <br/>
+      
+      
+    </div>
+  
+
+  
+</div>
+    <!-- /CACHE d4900 - ttl: 180 -->
+    
+      
+      
+      <!-- Related Stories -->
+<div class="related-stories">
+  <div class="hot-dimple">Related Stories</div>
+  <ul>
+    <!-- CACHE 6d698 - ttl: 180 -->      
+      
+                  
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/waterproof-mascara-guide" data-track="entry:related"><img src="http://static2.refinery29.com/bin/entry/1e2/120x143/207986/opener.jpg" alt="opener" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/waterproof-mascara-guide" data-track="entry:related">All You Need To Know About Waterproof Mascara</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/makeup-artist-favorite-products" data-track="entry:related"><img src="http://static2.refinery29.com/bin/entry/3f0/120x143/207892/opener.jpg" alt="opener" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/makeup-artist-favorite-products" data-track="entry:related">4 Beauty Pros, 16 Must-Try Products — & Tons Of Genius&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/gold-makeup-trend" data-track="entry:related"><img src="http://static3.refinery29.com/bin/entry/0cc/120x143/206628/opener.jpg" alt="opener" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/gold-makeup-trend" data-track="entry:related">Beauty DIY: Work The Sun-Kissed (And Fog-Proof) Look</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/bronzer-makeup-tutorial" data-track="entry:related"><img src="http://static3.refinery29.com/bin/public/933/120x143/203653/opener.jpg" alt="opener" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/bronzer-makeup-tutorial" data-track="entry:related">How To Fake Model-Worthy Cheekbones</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/prom-beauty-fashion-week" data-track="entry:related"><img src="http://static1.refinery29.com/bin/entry/ab1/120x143/201516/prom-opener.jpg" alt="prom-opener" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/prom-beauty-fashion-week" data-track="entry:related">Get Your Prom On: Inventive Hair & Makeup Ideas For Any&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/carine-roitfeld-mac-makeup" data-track="entry:related"><img src="http://static2.refinery29.com/bin/entry/91a/120x143/200405/carine-roitfeld-mac-makeup.jpg" alt="carine-roitfeld-mac-makeup" width="120" height="143"  />
+              
+              </a>
+            </div>
+            <h2><a href="/carine-roitfeld-mac-makeup" data-track="entry:related">Carine Roitfeld Teams Up With MAC, Makes Us Even More Envious&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/summer-sun-lipstick-guide" data-track="entry:related"><img src="http://static3.refinery29.com/bin/entry/d41/120x143/180428/opener.jpg" alt="opener" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/summer-sun-lipstick-guide" data-track="entry:related">These Editor-Approved Bright Lipsticks Get Even Better In&hellip;</a></h2>
+          </li>
+          
+        
+      
+                
+                  
+          <li>
+            <div class="asset">
+              <a href="/spring-makeup-purple-eyeshadow" data-track="entry:related"><img src="http://static2.refinery29.com/bin/public/1e7/120x143/179339/purple-makeup-spring-opener.jpg" alt="purple-makeup-spring-opener" width="120" height="143"  />
+                              <div class="slideshow-ribbon"></div>
+              
+              </a>
+            </div>
+            <h2><a href="/spring-makeup-purple-eyeshadow" data-track="entry:related">How To Rock Purple On Your Lids, Lips, & Tips</a></h2>
+          </li>
+          
+        
+      
+        
+    <!-- /CACHE 6d698 - ttl: 180 -->
+  </ul>
+
+  
+<div class="ad ad-related-stories-ccu" iframe-code="http://ad.doubleclick.net/adi/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=middle;tile=3;dcopt=;sz=300x251;" iframe-size="300x251"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=middle;tile=3;dcopt=;sz=300x251;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=middle;tile=3;dcopt=;sz=300x251;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=middle;tile=3;dcopt=;sz=300x251;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+
+</div>
+
+      <div id="comments">
+      <div id="disqus_thread"></div>
+    <script type="text/javascript">
+    
+        var disqus_shortname = 'refinery'; // required: replace example with your forum shortname
+        var disqus_developer = 1;
+        var disqus_url = 'http://www.refinery29.com/avengers-eye-makeup';
+        
+        $(function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('body')[0]).appendChild(dsq);
+        });
+        
+    </script>
+  
+</div>
+    </div>
+     
+
+					</div>
+            
+          <div class="col beta sidebar">
+            <!-- RIGHT -->
+                            
+              <!-- CACHE e4d67 - ttl: 600 -->                 
+      				  
+      				  
+                
+<div class="ad ad-sidebar-border" iframe-code="http://ad.doubleclick.net/adi/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;" iframe-size="300x250,300x600,300x1050"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=top;tile=2;dcopt=;sz=300x250,300x600,300x1050;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+                
+                
+                                
+
+                                
+                
+                
+
+                
+
+                <!-- Connect Tools -->
+<div class="connect">
+	<h4>Follow R29</h4>
+	<div>
+		<a href="http://www.facebook.com/refinery29" class="fb"></a>
+		<a href="http://twitter.com/refinery29" class="twit"></a>
+		<a href="/index.xml" class="rss"></a>
+	</div>
+</div>
+
+                
+              <!-- /CACHE e4d67 - ttl: 600 -->
+              
+              <!--Top Popular & Editor's Picks -->
+              
+              <!-- Top 5 Editor's Picks -->
+<div class="top-picks">
+  <div class="editors"></div>
+  <ul class="editors">
+          <li>
+      	<a href="/how-to-get-a-job" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/entry/71d/60x70/204035/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					How To Score A Dream Job: Advice From 5 Successful Chicagoans
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/how-to-get-a-job" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/summer-trends-nail-polish" data-track="top5:editors" class="title">
+	        <span><img src="http://static3.refinery29.com/bin/entry/53e/60x70/201191/summer-trends-nail-polish-opener.jpg" alt="summer-trends-nail-polish-opener" width="60" height="70"  /></span>
+					Deck Out Your Digits In Summer's Hottest Hues
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/summer-trends-nail-polish" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/plus-size-cocktail-dresses" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/entry/012/60x70/180810/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					Plus-Size Cocktail Dresses: 12 Fancy Frocks To Flaunt Your Curves
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/plus-size-cocktail-dresses" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/artists-in-residence" data-track="top5:editors" class="title">
+	        <span><img src="http://static1.refinery29.com/bin/entry/654/60x70/178878/opener.jpg" alt="opener" width="60" height="70"  /></span>
+					The 10 Most Inspiring Young Artists In NYC Right Now
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/artists-in-residence" width="90"></fb:like>
+      </li>
+    
+          <li>
+      	<a href="/real-zoolander-fashion-moments" data-track="top5:editors" class="title">
+	        <span><img src="http://static2.refinery29.com/bin/entry/3bf/60x70/176532/opener-home.jpg" alt="opener_home" width="60" height="70"  /></span>
+					10 Real-Life Moments Right Out Of Zoolander
+				</a>
+        <fb:like layout="button_count" href="http://www.refinery29.com/real-zoolander-fashion-moments" width="90"></fb:like>
+      </li>
+    
+        
+  </ul>
+</div>
+              
+                              <div class="r29tv">
+  <a href="http://www.refinery29.com/video"><img src="http://static3.refinery29.com/blog/84d7e7/images/widgets/r29tv-header.jpg" style="margin: 0pt auto; display: block;" alt="Refinery29 TV" /></a>               
+  
+  <div style="display:none"></div>
+  
+  <!--  Videos populated by 
+        Homepage & Index Page Right Rail Playlist in Brightcove Admin
+        Video Player with Horizontal Video List -->
+  
+  <script language="JavaScript" type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+  
+  <object id="myExperience" class="BrightcoveExperience">
+    <param name="bgcolor" value="#FFFFFF" />
+    <param name="width" value="300" />
+    <param name="height" value="340" />
+    <param name="playerID" value="1223625514001" />
+    <param name="playerKey" value="AQ~~,AAAAjP0iSQE~,RJXHfxnZT2gNv3dZGdjsA7BIfR73CLPe" />
+    <param name="isVid" value="true" />
+    <param name="isUI" value="true" />
+    <param name="dynamicStreaming" value="true" />
+    <param name="wmode" value="transparent" />
+  </object>
+  
+  <!-- 
+  This script tag will cause the Brightcove Players defined above it to be created as soon
+  as the line is read by the browser. If you wish to have the player instantiated only after
+  the rest of the HTML is processed and the page load is complete, remove the line.
+  -->
+  <script type="text/javascript">brightcove.createExperiences();</script>
+</div>
+              
+              
+              <!-- Top 5 Popular -->
+<div class="top-picks">
+  <div class="popular">
+    
+<div class="ad ad-top5" iframe-code="http://ad.doubleclick.net/adi/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=top;tile=6;dcopt=;sz=75x30;" iframe-size="75x30"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=top;tile=6;dcopt=;sz=75x30;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=top;tile=6;dcopt=;sz=75x30;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=top;tile=6;dcopt=;sz=75x30;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+  </div>
+  <ul>
+    <!-- CACHE 8d8f5 - ttl: 600 -->  
+              <li>
+        	<a href="/city-hall-wedding-style" class="title" data-track="top5:popular">
+	          <span><img src="http://static1.refinery29.com/bin/entry/c6c/60x70/206019/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          City Hall Weddings: 14 Duos Who Said 'I Do'
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/city-hall-wedding-style" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/mothers-day-gifts" class="title" data-track="top5:popular">
+	          <span><img src="http://static1.refinery29.com/bin/public/c2b/60x70/209852/opener.jpg" alt="opener" width="60" height="70"  /></span>
+	          18 Mother's Day Gifts As Wonderful As She Is
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/mothers-day-gifts" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/wedding-hairstyle-tutorials" class="title" data-track="top5:popular">
+	          <span><img src="http://static1.refinery29.com/bin/public/7c4/60x70/212722/wedding-hair-tutorial-opener.jpg" alt="wedding-hair-tutorial-opener" width="60" height="70"  /></span>
+	          3 Pretty 'Dos To DIY For Wedding Season
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/wedding-hairstyle-tutorials" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/summer-weight-loss-tips" class="title" data-track="top5:popular">
+	          <span><img src="http://static1.refinery29.com/bin/public/177/60x70/209407/summer-weight-loss-tips-opener.jpg" alt="summer-weight-loss-tips-opener" width="60" height="70"  /></span>
+	          9 Healthy Ways To Lose Those Last Few Pounds
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/summer-weight-loss-tips" width="90"></fb:like>
+        </li>
+              <li>
+        	<a href="/how-to-wear-drop-waists" class="title" data-track="top5:popular">
+	          <span><img src="http://static2.refinery29.com/bin/entry/b04/60x70/212890/4.jpg" alt="4" width="60" height="70"  /></span>
+	          5 Outfits To Try This Week: Sweats, Prom, And More
+          </a>
+          <fb:like layout="button_count" href="http://www.refinery29.com/how-to-wear-drop-waists" width="90"></fb:like>
+        </li>
+      
+    <!-- /CACHE 8d8f5 - ttl: 600 -->
+  </ul>
+</div>
+              
+              <!-- CACHE 4481b - ttl: 600 -->                <!-- Ad Editorial Module -->
+                
+                
+                <!-- Facebook Likes Widget -->
+<div class="facebook-likes">
+  <fb:like-box href="http://www.facebook.com/refinery29" width="300" height="255" show_faces="true" rows="1" stream="false" header="false"></fb:like-box>
+</div>
+<!-- /Facebook Widget -->
+                
+<!-- Reserve Widget -->
+  <div class="reserve-widget">
+    <a href="http://reserve.refinery29.com/" data-track="reserve_widget"><img src="http://static2.refinery29.com/blog/84d7e7/images/widgets/reserve-widget-header.png" width="300" height="auto" border="0" alt="Shop Now on Reserve" /></a>
+    <div class="subhead">Tailor-Made Deals. Get Them Now!</div>
+    <div class="ribbon pre"></div><div class="ribbon post"></div>
+    <ul>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/356/matt-bernson"  data-track="reserve_widget" class="less">
+	        <img src="//static2.refinery29.com/bin/deal/1f1/130x100/211753/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Matt Bernson Fuels Our Summer Shoe Obsession With A Super-Sweet Deal &mdash; Hurry, Limited Quantity!</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/367/luv-aj"  data-track="reserve_widget" class="less">
+	        <img src="//static1.refinery29.com/bin/deal/716/130x100/211771/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Up To Half-Off The Heavy Metal Jewels Rachel Bilson And Nicole Richie Are Obsessing Over</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/366/deux-lux"  data-track="reserve_widget" class="less">
+	        <img src="//static3.refinery29.com/bin/deal/455/130x100/205573/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">From Wallets To Weekenders: Steal Over 35 Must-Have Bags For You And Your BFFs</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/365/jules-smith"  data-track="reserve_widget" class="less">
+	        <img src="//static3.refinery29.com/bin/deal/225/130x100/204630/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Meet Your New Jewelry Staples: Half-Off Pendants, Hoops, And Bangles You Can Wear With Anything</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+          <li>
+        <a href="http://reserve.refinery29.com/offer/363/hampden-clothing"  data-track="reserve_widget" class="less">
+	        <img src="//static1.refinery29.com/bin/deal/c18/130x100/204461/image.jpg" width="130" height="100" class="left" alt="Shop Now on Reserve"/>
+	        <span class="reserveh4">Up To $400 Off Your Dream Designer Roster &mdash; Alexander Wang and Opening Ceremony, We&rsquo;re Looking At You</span>     
+	          <span class="buy"></span>
+        </a>
+      </li>
+    
+    </ul>
+  </div>
+ 
+                <!-- Street Style Widget -->
+<div class="street-fashion-widget">
+  <a href="/everywhere/fashion/street-fashion/" class="header">Street Fashion</a>
+      <a href="/how-to-wear-stripes">
+	    <span class="italic">6 Girls, 1 Look: S.F.'s Blogger Babes Show Us How To Rock Stripes!</span>
+	    <span class="polaroid">
+	      <img src="http://static3.refinery29.com/bin/entry/34b/158x190/213214/opener.jpg" alt="opener" width="158" height="190"  />
+	    </span>
+    </a>  
+  
+        
+</div>
+              <!-- /CACHE 4481b - ttl: 600 -->
+                 
+              
+<div class="ad ad-sidebar" iframe-code="http://ad.doubleclick.net/adi/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=middle1;tile=7;dcopt=;sz=300x100;" iframe-size="300x100"> 
+<script type="text/javascript">document.write(unescape("%3Cscript src='http://ad.doubleclick.net/adj/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=middle1;tile=7;dcopt=;sz=300x100;ord="+_dc_ts+"?'%3E%3C/script%3E"));</script> 
+<noscript><a href="http://ad.doubleclick.net/jump/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=middle1;tile=7;dcopt=;sz=300x100;ord=12345678?" target="_blank"><img src="http://ad.doubleclick.net/ad/r29.oao/beauty/makeup-trends;s1=beauty;s2=makeup-trends;s3=makeup-trends;sponsorship=;pagetype=entry;test=;pageid=avengers-eye-makeup;tags=;pos=middle1;tile=7;dcopt=;sz=300x100;ord=12345678?" border="0" alt=""/></a></noscript> 
+</div> 
+
+              
+            
+          </div>
+          
+          <div class="clear"></div>
+          <!-- CACHE d36e1 - ttl: 300 -->            <!-- Footer @More Stories -->
+<div class="footer-boxes">
+  <div class="hot-dimple">More Style At Your Fingertips</div>
+	<ul>
+    
+    <li>
+      <div>
+        <a href="/weddings" data-track="hotspot:footer-more:weddings">
+                      <img src="http://static2.refinery29.com/blog/84d7e7/images/collections/footer/weddings.jpg" width="120" height="143">
+            <span class="more_h2 footer_h2">Inspiration, Style Ideas, & Essentials For The Eternally Cool Bride</span>
+          
+        </a>
+				<div>
+					<a href="/weddings" class="category" data-track="hotspot:footer-more:weddings">Weddings</a>
+				</div>
+      </div>
+    </li>
+					<li>
+				<div> 
+  				<a href="/city-hall-wedding-style" data-track="hotspot:footer-more">
+  					<img src="http://static3.refinery29.com/bin/entry/dc9/120x143/206019/opener.jpg" alt="opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">City Hall Weddings: 14 Duos Who Said 'I Do'</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/city-hall-wedding-style#disqus_thread" data-url="http://www.refinery29.com/city-hall-wedding-style" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/fashion" class="category" data-track="hotspot:footer-more">Fashion</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/dresses-for-your-body-type" data-track="hotspot:footer-more">
+  					<img src="http://static2.refinery29.com/bin/entry/63c/120x143/180858/opener.jpg" alt="Opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">15 Perfect Spring Dresses For 15 Body Types</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/dresses-for-your-body-type#disqus_thread" data-url="http://www.refinery29.com/dresses-for-your-body-type" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/fashion" class="category" data-track="hotspot:footer-more">Fashion</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/best-spring-beauty-products" data-track="hotspot:footer-more">
+  					<img src="http://static1.refinery29.com/bin/public/8f8/120x143/169793/opener2.jpg" alt="opener2" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">Editors' Picks: 50 Fresh Beauty Buys For Spring</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/best-spring-beauty-products#disqus_thread" data-url="http://www.refinery29.com/best-spring-beauty-products" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/beauty" class="category" data-track="hotspot:footer-more">Beauty</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/spring-must-haves" data-track="hotspot:footer-more">
+  					<img src="http://static1.refinery29.com/bin/entry/260/120x143/169054/opener2.jpg" alt="Opener2" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">29 Magical Buys To Transform Your Look</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/spring-must-haves#disqus_thread" data-url="http://www.refinery29.com/spring-must-haves" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/shopping" class="category" data-track="hotspot:footer-more">Shopping</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+    			<li>
+				<div> 
+  				<a href="/burning-fashion-questions-answered" data-track="hotspot:footer-more">
+  					<img src="http://static2.refinery29.com/bin/public/891/120x143/162504/annadellarusso-opener.jpg" alt="AnnadellaRusso_opener" width="120" height="143"  />
+  					<span class="more_h2 footer_h2">29 Of Fashion's Biggest Mysteries, Solved!</span>
+  				</a> 
+					<div>
+						<div class="comment-count">
+							<div class="asset-info"> 
+								<a href="/burning-fashion-questions-answered#disqus_thread" data-url="http://www.refinery29.com/burning-fashion-questions-answered" class="comments"><span class="comment-count">0</span></a> 
+							</div>
+						</div>
+													<a href="/everywhere/fashion" class="category" data-track="hotspot:footer-more">Fashion</a>
+						
+					</div>
+				</div>
+			</li> 
+		
+        
+	</ul> 
+</div>
+          <!-- /CACHE d36e1 - ttl: 300 -->
+          
+
+        </div> <!-- /Content -->
+    
+        <!-- Footer -->
+<div id="footer">
+  <img src="http://static2.refinery29.com/blog/84d7e7/images/refinery29-logo.png" width="200" height="24" alt="Refinery29" />
+
+	<p><strong>&copy;2012 Refinery29. All Rights Reserved.</strong></p>
+	<ul>
+		<li><a href="/">Home</a> | </li>
+		<li><a href="http://www.refinery29.com/about">About</a> | </li>
+				<li><a href="http://www.refinery29.com/about">Contact</a> | </li>
+		
+		<li><a href="http://www.refinery29.com/careers">Careers</a> | </li>
+		<li><a href="http://www.refinery29.com/about">Advertise</a> | </li>
+		<li><script type="text/javascript">
+<!--
+document.write(String.fromCharCode(60,97,32,104,114,101,102,61,34,109,97,105,108,116,111,58,102,101,101,100,98,97,99,107,64,114,101,102,105,110,101,114,121,50,57,46,99,111,109,34,32,99,108,97,115,115,61,39,101,109,97,105,108,39,62,71,111,116,32,65,32,84,105,112,63,60,47,97,62));
+-->
+</script> | </li>
+		<li><a href="http://www.refinery29.com/signup/everywhere?source=footer&medium=organic">Sign Up</a> | </li>
+		  		<li><a href="http://www.refinery29.com/privacy">Privacy Policy</a> | </li>
+  		<li><a href="http://www.refinery29.com/terms-and-conditions">Terms and Conditions</a> | </li>
+		
+		<li><a href="http://the-rig.refinery29.com">The Rig</a> | </li>
+		<li><a href="http://www.refinery29.com/index.xml">RSS</a></li>
+	</ul>
+	
+	
+	<div id="mobile-link"><a href="/?mobile=true">Refinery29 Mobile</a></div>
+	
+</div>
+
+                
+      </div> <!-- /Inner -->
+      
+    </div> <!-- /Container -->
+
+    <!-- Comscore -->
+<script type="text/javascript">
+  var r29cookie = document.cookie;
+  var val;
+  
+  if (r29cookie.indexOf("r29comstore=") != -1)
+   {
+      i = r29cookie.indexOf("r29comstore=");
+      s = r29cookie.substring(i + 12);
+      j = s.indexOf(";");
+      if (j == -1)
+      {
+          val = s;
+      }
+      else {
+          val = s.substring(0, j);
+      }
+  } else {
+      val = Math.floor(Math.random() * 12345678);
+      var date = new Date();
+      date.setTime(date.getTime() + (365 * 24 * 60 * 60 * 1000));
+      document.cookie = 'r29comstore=' + val + '; expires=' + date.toGMTString() + '; path=/';
+  }
+  
+  var currentUrl = self.location.url;
+  document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb": "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+
+</script>
+<script type="text/javascript"> 
+  COMSCORE.beacon({ c1:2, c2:"7395029",c3:"www.refinery29.com", c4:currentUrl, c5:"", c6:"", c15: val });
+</script>
+<noscript>
+  <img src = "http://b.scorecardresearch.com/p?c1=2&amp;c2=7395029&amp;c3=www.refinery29.com&amp;c4=http://www.refinery29.com/&amp;c5=&amp;c6=&amp;c15=C67BD3C1&amp;cj=1" alt="Comscore" />
+</noscript>
+<!-- /Comscore -->
+<!-- Google Analytics -->
+<script type="text/javascript">
+  
+  var _gaq = _gaq || [];
+    
+  // break up host into app, subdomain and tld
+  var tmp = /^([^\.]+\.)([\w\.]+)?refinery29\.(\w+)(:\d+)?$/.exec(window.location.host.toLowerCase()),
+    
+      // application
+      app = tmp[1] ? tmp[1] : 'www',
+      
+      // subdomain
+      sub = tmp[2] ? tmp[2] : '',
+      
+      // top level domain
+      tld = tmp[3] ? tmp[3] : 'com';
+  
+  _gaq.push(['_setAccount', 'UA-315022-1']);
+  
+  _gaq.push(['_setDomainName', '.refinery29.' + tld]);
+
+  
+  
+  _gaq.push(['_setCustomVar',
+    1,                   // This custom var is set to slot #1.  Required parameter.
+    'Category',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'everywhere\/beauty\/makeup-trends', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+   
+   
+  _gaq.push(['_setCustomVar',
+    2,                   // This custom var is set to slot #2.  Required parameter.
+    'Publication Date',     // The name acts as a kind of category for the user activity.  Required parameter.
+    '2012-05-01', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  
+  
+  _gaq.push(['_setCustomVar',
+    3,                   // This custom var is set to slot #3.  Required parameter.
+    'Author',// The name acts as a kind of category for the user activity.  Required parameter.
+    'Gabriel Bell', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+  _gaq.push(['_setCustomVar',
+    4,                   // This custom var is set to slot #4.  Required parameter.
+    'Entry Type',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'ARTICLE', // This value of the custom variable.  Required parameter.
+    3                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+  
+
+   
+  _gaq.push(['_setCustomVar', //USE THIS  R29.cookie.get('R29_UID');
+    5,                   // This custom var is set to slot #5.  Required parameter.
+    'Log-in Status',     // The name acts as a kind of category for the user activity.  Required parameter.
+    'Not Logged In', // This value of the custom variable.  Required parameter.
+    2                    // Sets the scope to page-level.  Optional parameter.
+  ]);
+   
+  _gaq.push(['_trackEvent',
+    'Navigation Click', // category of activity
+    $(this).attr('data-track'),
+    'new-york:beauty:makeup-trends', // Action
+    ,
+    true
+  ]);
+  
+  _gaq.push(['_trackPageview']);
+   
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- /Google Analytics -->
+
+<!-- Quantcast -->
+<script type="text/javascript">
+_qoptions={ qacct:"p-fesXMHo90Ka_A" };
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+  <img src="http://pixel.quantserve.com/pixel/p-fesXMHo90Ka_A.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- /Quantcast -->
+    <div id="js-cont"></div> 
+
+<!-- Facebook -->
+<div id="fb-root"></div> 
+<script type="text/javascript">
+
+  window.fbAsyncInit = function() {
+  
+    FB.init({ appId: '155023867867753', status: true, cookie: true, xfbml: false});
+    
+    /* Check if the user is NOT logged into R29, but IS logged into Facebook.  Fix it */
+    if (R29.url.param.getVar('fb') && !R29.user.token() && FB.getSession()) { //We have some sort of session, we *may* be logged in.
+      FB.getLoginStatus(function(response) {
+        if(response.status == 'connected') {
+          return document.location = 'https://welcome.refinery29.com/register?from=http%3A%2F%2Fwww.refinery29.com%2Favengers-eye-makeup&amp;sig=e5ea3&amp;app=blog&amp;fb=1';
+        }    
+      });      
+    }
+        
+    //FACEBOOK LOGIN
+    $('a.fb_button, a.r29_fb_button').live('click', function() {
+      R29.FBLoginPopup();
+      return false;
+    });
+    
+    if (typeof window.fbAsyncOnInit == "function") {
+      window.fbAsyncOnInit();
+    }
+    
+    /* GOOGLE ANALYTICS */
+
+    FB.Event.subscribe('edge.create', function(targetUrl, fb_ref) {
+    	if (fb_ref._attr.ref == "homepage"){
+    		_gaq.push(['_trackEvent', 'FacebookIndex', 'like']);
+    	}
+    	else if (fb_ref._attr.ref == "entrypage"){
+    		_gaq.push(['_trackEvent', 'FacebookSolo', 'like']);
+    	}
+    	else if (fb_ref._attr.ref == "sidebar"){
+    		_gaq.push(['_trackEvent', 'FacebookSidebar', 'like']);
+    	}
+      _gaq.push(['_trackSocial', 'facebook', 'like', targetUrl]);
+    });
+    
+    FB.Event.subscribe('edge.remove', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'unlike', targetUrl]);
+    });
+    
+    FB.Event.subscribe('message.send', function(targetUrl) {
+      _gaq.push(['_trackSocial', 'facebook', 'send', targetUrl]);
+    });
+    
+       
+  };
+  
+  R29.FBLoginPopup = function () {
+
+    FB.login(function(response) {
+    
+      if (response.session) {
+        //They *may* have given us perms, but who knows.
+        return document.location = 'https://welcome.refinery29.com/connect/fb?from=http%3A%2F%2Fwww.refinery29.com%2Favengers-eye-makeup&amp;sig=e5ea3&amp;app=blog&amp;fb=1';
+      } else {
+        //Oh well, something is wrong, let's try the normal login
+        return document.location = 'https://welcome.refinery29.com/register?from=http%3A%2F%2Fwww.refinery29.com%2Favengers-eye-makeup&amp;sig=e5ea3&amp;app=blog&amp;fb=1';
+      }
+      
+     },{ scope: 'email,offline_access,publish_stream,publish_actions' } );
+  }
+  
+  
+</script>
+
+<script type="text/javascript">
+  //
+  
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+</script>
+<!-- /Facebook -->
+
+<!-- Twitter -->
+<script type="text/javascript">
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+
+  
+  //START GOOGLE ANALYTICS TWITTER TRACKING
+  function trackTwitter(intent_event) {
+    if (intent_event) {
+      var opt_pagePath;
+      if (intent_event.target && intent_event.target.nodeName == 'IFRAME') {
+            opt_target = extractParamFromUri(intent_event.target.src, 'url');
+      }
+      _gaq.push(['_trackSocial', 'twitter', 'tweet', opt_pagePath]);
+    }
+  }
+
+  //Wrap event bindings - Wait for async js to load
+  twttr.ready(function (twttr) {
+    //event bindings
+    twttr.events.bind('tweet', trackTwitter);
+  });
+  
+	function extractParamFromUri(uri, paramName) {
+	  if (!uri) {
+	    return;
+	  }
+	  var regex = new RegExp('[\\?&#]' + paramName + '=([^&#]*)');
+	  var params = regex.exec(uri);
+	  if (params != null) {
+	    return unescape(params[1]);
+	  }
+	  return;
+	}
+	//END GOOGLE ANALYTICS TWITTER TRACKING
+
+</script>
+<!-- /Twitter -->
+
+<!-- Pinterest -->
+  <script type="text/javascript">
+  (function() {
+      window.PinIt = window.PinIt || { loaded:false };
+      if (window.PinIt.loaded) return;
+      window.PinIt.loaded = true;
+      function async_load(){
+          var s = document.createElement("script");
+          s.type = "text/javascript";
+          s.async = true;
+          if (window.location.protocol == "https:")
+              s.src = "https://assets.pinterest.com/js/pinit.js";
+          else
+              s.src = "http://assets.pinterest.com/js/pinit.js";
+          var x = document.getElementsByTagName("script")[0];
+          x.parentNode.insertBefore(s, x);
+      }
+      if (window.attachEvent)
+          window.attachEvent("onload", async_load);
+      else
+          window.addEventListener("load", async_load, false);
+  })();
+  </script>
+<!-- /Pinterest -->
+
+
+<!-- Disqus -->
+
+<script type="text/javascript">
+  var disqus_shortname = 'refinery';
+  var disqus_developer = 1;
+  
+
+var DISQUSWIDGETS;
+var disqus_domain;
+var disqus_shortname;
+if (typeof DISQUSWIDGETS == "undefined") {
+    DISQUSWIDGETS = (function () {
+        var d = {},
+            a = (document.getElementsByTagName("HEAD")[0] || document.getElementsByTagName("BODY")[0]),
+            c = 0,
+            f = {},
+            e = {
+                identifier: 1,
+                url: 2,
+                slug: 3
+            };
+
+        function b(i) {
+            var h, k;
+
+            function j(l) {
+                return i.hasAttribute ? i.hasAttribute(l) : i.getAttribute(l) !== null
+            }
+            
+            if (j("data-disqus-identifier")) {
+                h = e.identifier;
+                k = i.getAttribute("data-disqus-identifier")
+            } else {
+            
+                if (j("data-url")) {
+                    h = e.url;
+                    k = i.getAttribute("data-url")
+                } else if (j("data-disqus-slug")) {
+                    h = e.slug;
+                    k = i.getAttribute("data-disqus-slug")
+                } else {
+                    h = e.url;
+                    k = i.href.replace("#disqus_thread", "")
+                }
+                
+            }
+            f[c++] = {
+                element: i,
+                type: h,
+                value: k
+            }
+        }
+        function g(k) {
+            var j = document.getElementsByTagName("A");
+            for (var h = 0; h < j.length; h++) {
+                if (j[h].href.indexOf("#disqus_thread") >= 0) {
+                    k(j[h])
+                }
+            }
+        }
+        d.domain = "disqus.com";
+        d.forum = "";
+        d.getCount = function () {
+            var m, h, k, j;
+            var l = [],
+                o = 0,
+                i = 10;
+
+            function n(q, p) {
+                return encodeURIComponent(q) + "=" + encodeURIComponent(p.type) + "," + encodeURIComponent(p.value)
+            }
+            g(b);
+            for (m in f) {
+                if (f.hasOwnProperty(m)) {
+                    l.push(n(m, f[m]))
+                }
+            }
+            k = l.slice(o, i);
+            while (k.length > 0) {
+                j = document.createElement("script");
+                j.type = "text/javascript";
+                j.async = true;
+                j.src = "http://" + d.domain + "/forums/" + d.forum + "/count.js?q=1&" + k.join("&");
+                a.appendChild(j);
+                o += 10;
+                i += 10;
+                k = l.slice(o, i)
+            }
+        };
+        d.displayCount = function (j) {
+            var m, h, n, l;
+            for (var k = 0; k < j.counts.length; k++) {
+                m = j.counts[k];
+                h = f[m.uid];
+                if (h) {
+                    if (m.comments === 0) {
+                        n = j.text.comments.zero
+                    } else {
+                        if (m.comments == 1) {
+                            n = j.text.comments.one
+                        } else {
+                            n = j.text.comments.multiple
+                        }
+                    }
+                    l = n.replace("{num}", m.comments);
+                    if (j.showReactions) {
+                        n = "";
+                        if (m.reactions === 0) {
+                            n = j.text.reactions.zero
+                        } else {
+                            if (m.reactions == 1) {
+                                n = j.text.reactions.one
+                            } else {
+                                n = j.text.reactions.multiple
+                            }
+                        }
+                        if (n !== "") {
+                            l += " " + j.text.and + " " + n.replace("{num}", m.reactions)
+                        }
+                    }
+                    h.element.innerHTML = l
+                }
+            }
+        };
+        return d
+    }())
+}(function () {
+    if (typeof disqus_domain != "undefined") {
+        DISQUSWIDGETS.domain = disqus_domain
+    }
+    DISQUSWIDGETS.forum = disqus_shortname;
+    DISQUSWIDGETS.getCount()
+}());
+
+ 
+  
+</script>
+
+<!-- /Disqus -->
+
+<!-- R29 Schtufff -->
+<script type="text/javascript">
+
+$(function() {
+
+  // Variables
+  var tabs = $('div.top-five > ul > li');
+  var top5 = $('div.top-five > div');
+    
+  // On Click
+  $(tabs).click(function() {
+    
+    $(tabs).removeClass("active");
+    $(this).addClass("active");
+    
+    $(top5).hide();
+    var activeTab = $(this).find("a").attr("href");
+    $(activeTab).show();
+    
+    return false;
+  });
+  
+  
+  // Hot Carousel
+  $("#hot-carousel li").show();
+  $("#hot-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  auto: 6,
+  itemFallbackDimension: 280,
+  initCallback: 
+  function (carousel) {
+    $('.control div.slide-btn', carousel.container).bind('click', function() {
+      carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_id')));
+      $('.control div',carousel.container).removeClass('selected');
+      $(this).addClass('selected');
+      return false;
+    });
+    $('.control div.next', carousel.container).bind('click', function() {
+      carousel.next();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+    $('.control div.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+  },
+  itemVisibleInCallback: function(carousel, item, idx, state) {
+    $('.control div',carousel.container).removeClass('selected');
+    $('.control div[image_id='+idx+']',carousel.container).addClass('selected');  
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+
+  // Category Carousel
+  
+  $("#category-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  itemFallbackDimension: 562,
+  initCallback: 
+  function (carousel) {
+    $('.control a.next', carousel.container).bind('click', function() {
+      carousel.next();
+      return false;
+    });
+    $('.control a.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      return false;
+    });
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+  
+  // Hot Category Carousel
+  $("#category-hot-carousel li").show();
+  $("#category-hot-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  auto: 6,
+  itemFallbackDimension: 608,
+  initCallback: 
+  function (carousel) {
+    $('.control div.slide-btn', carousel.container).bind('click', function() {
+      carousel.scroll(jQuery.jcarousel.intval($(this).attr('image_id')));
+      $('.control div',carousel.container).removeClass('selected');
+      $(this).addClass('selected');
+      return false;
+    });
+    $('.control div.next', carousel.container).bind('click', function() {
+      carousel.next();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+    $('.control div.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      $('.control div',carousel.container).removeClass('selected');
+      $('.control div[image_id='+carousel.first+']',carousel.container).addClass('selected');
+      return false;
+    });
+  },
+  itemVisibleInCallback: function(carousel, item, idx, state) {
+    $('.control div',carousel.container).removeClass('selected');
+    $('.control div[image_id='+idx+']',carousel.container).addClass('selected');  
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+
+
+  // Related Videos Carousel
+  
+/*
+  $("#video-carousel").jcarousel({
+  scroll: 1,
+  wrap: 'both',
+  itemFallbackDimension: 562,
+  initCallback: 
+  function (carousel) {
+    $('.control img.next', carousel.container).bind('click', function() {
+      carousel.next();
+      return false;
+    });
+    $('.control img.prev', carousel.container).bind('click', function() {
+      carousel.prev();
+      return false;
+    });
+  },
+  buttonNextHTML: null,buttonPrevHTML: null
+  });
+*/
+  
+  //You know where the bottom line of the container shows while the page is loading, I hate it
+  $('#container .inner').css('border-bottom', '1px solid #ccc');
+  
+});
+
+</script>
+
+    <script type="text/javascript">
+  
+  var _chartbeat_loaded = false;
+  
+  $(function() {
+   
+    if (_chartbeat_loaded) return; 
+    
+    _chartbeat_loaded = true;
+    
+    var _sf_async_config={ uid:3552,domain:"refinery29.com" };
+    R29.remote.include_js("//a248.e.akamai.net/chartbeat.download.akamai.com/102508/js/chartbeat.js");
+      
+  });
+</script>
+          <!-- Crazy Egg -->
+<script type="text/javascript" src="//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/5055.js"></script>
+<!-- /Crazy Egg -->
+    
+    
+    
+    <!-- Internal Stats -->
+<script type="text/javascript">
+
+      R29_STAT_DATA = $.extend({ app:'blog' },R29.url.param.getUTM());
+  
+  
+  try {
+    R29.stats.send([['user_page_load',R29_STAT_DATA, ((new Date()).getTime() - _sf_startpt)]]);
+  } catch (e) { };
+      
+</script>
+<!-- /Internal Stats -->
+    
+    
+    
+    
+    <script type="text/javascript">
+     try {
+        R29.stats.send([['user_page_view',{
+          app:  'blog',
+          page: 'entry',
+          entry_type: 'ARTICLE',
+          entry_id: 31100, 
+          market_id: 1, 
+          category_id: [69,5,2], 
+          author_id: [46]
+        }]]);
+        
+        
+      } catch (e) { };
+    </script> 
+    
+    
+    
+          <!-- Sailthru Horizon --> 
+      <script type="text/javascript">
+        (function() {
+          var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+          s.src = ('https:'==location.protocol?'https://d1gp8joe0evc8s.cloudfront.net':'http://cdn.sail-horizon.com')+'/horizon/v1.js';
+          var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+        })();
+      </script>
+      <script type="text/javascript">
+        $(window).load(function() {
+          Sailthru.setup({
+            domain: 'horizon.refinery29.com',
+            tags: "avengers-movie,avengers-makeup,avengers-fashion,the-hulk-avengers,robert-downey-jr,summer-blockbuster,robert-downey,eye-makeup,true-geek,makeup-artist,eye-art,color-combinations,sci-fi,captain-america,eyeshadow,iron-man,superpowers,mascara,squid,hulk,thor,obsession,salute,dedication,makeup-trends,beauty,everywhere",
+            cookieDomain: '.refinery29.com'
+          });
+        });
+      </script>
+    
+
+
+  </body>
+<!-- Served in 378ms by web02.prod.refinery29.net at Tue, 01 May 2012 14:39:03 -0400 -->
+<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://d1ros97qkrwjf5.cloudfront.net/30/eum/rum.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrf2","beacon-1.newrelic.com","9aa3407800",298763,"b1cHZBcEW0dZVRZbXVYdMEIMSkNVShkQV1RRXABCHFcMG1lGEl5bW1MRWQoLGlVIRhEdUFRdAh8NEVFbW0VNW1xcVx0eFQ1F",0,377,new Date().getTime()]);</script>
+</html>

@@ -1,0 +1,1521 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="/res/real/css/style.css" /><link rel="stylesheet" type="text/css" href="/res/real/css/header.css" /><link rel="stylesheet" type="text/css" href="/jQuery/plugins/autocomplete/autocomplete.css" /><link rel="stylesheet" type="text/css" href="/res/real/css/pantry.css" /><link rel="stylesheet" type="text/css" href="/js/customizeControllers.css" /><link rel="stylesheet" type="text/css" href="/js/jquery.tooltip.css" /><link rel="stylesheet" type="text/css" href="/res/real/css/window.css" />    <script type="text/javascript" src="/jQuery/jquery.js"></script>
+<script type="text/javascript" src="/res/real/js/header.js"></script>
+<script type="text/javascript" src="/jQuery/plugins/autocomplete/autocomplete.js"></script>
+<script type="text/javascript" src="/js/events.js"></script>
+<script type="text/javascript" src="/jQuery/plugins/ui/jquery.dimensions.js"></script>
+<script type="text/javascript" src="/jQuery/plugins/ui/ui.mouse.js"></script>
+<script type="text/javascript" src="/jQuery/plugins/ui/ui.draggable.js"></script>
+<script type="text/javascript" src="/jQuery/plugins/ui/ui.draggable.ext.js"></script>
+<script type="text/javascript" src="/jQuery/plugins/ui/ui.droppable.js"></script>
+<script type="text/javascript" src="/jQuery/plugins/ui/ui.droppable.ext.js"></script>
+<script type="text/javascript" src="/jQuery/plugins/jquery-tooltip/lib/jquery.bgiframe.js"></script>
+<script type="text/javascript" src="/jQuery/plugins/jquery-tooltip/lib/jquery.dimensions.js"></script>
+<script type="text/javascript" src="/js/jquery.tooltip.js"></script>
+<script type="text/javascript" src="/js/calorie.js"></script>
+<script type="text/javascript" src="/js/designSelectObject.js"></script>
+<script type="text/javascript" src="/js/CustomizeInput.js"></script>
+<script type="text/javascript" src="/res/real/js/main_pantry.js"></script>
+<script type="text/javascript" src="/res/real/js/serch.js"></script>
+<script type="text/javascript" src="/js/my_tooltip.js"></script>
+<script type="text/javascript" src="/res/real/js/jquery_dimensions.js"></script>
+<script type="text/javascript" src="/js/jquery_customContext.js"></script>
+<script type="text/javascript" src="/res/real/js/script.js"></script>
+
+    	
+	      
+           
+    <script>
+    
+      $(document).ready(function(){
+      
+        setShadow('imagecontextmenu');setShadow('food805');setShadow('food30');setShadow('food1639');setShadow('food519');setShadow('food317');setShadow('food337');setShadow('food819');setShadow('food879');        
+      });
+    
+    </script>
+  
+</head>
+
+<body>
+
+<input id="n_current_item" value='-1' style="display:none">
+
+<table cellpadding="0" cellspacing="0" border="0" class="main">
+	<tr class="top">
+
+		<td class="top_left">
+		
+		</td>
+		
+		<td class="top_center">
+			<div class="top_content">
+				<a href="/">
+                  <img src="/images/cg_logo.gif" class="logo" width="300" height="56" border="" alt="CalorieGallery" />
+                </a>
+				
+				<div class="search_block">
+					
+				  <script>                
+  current_item_search = -1;
+  
+  function onSearchKeyUp(event) {
+
+    //if(event.keyCode < 36 || event.keyCode > 40) {
+    if((event.keyCode == 8) || ((event.keyCode > 48) && (event.keyCode > 93 || event.keyCode < 91) && (event.keyCode > 157 || event.keyCode < 112))) {
+        
+        current_item_search = -1;
+        
+        var io = event.keyCode;
+        
+        if( typeof(identifierSetTimeout)=='undefined' ) 
+          identifierSetTimeout = 0; 
+        else
+          clearTimeout(identifierSetTimeout);
+          
+        identifierSetTimeout = window.setTimeout("get_suggs()", 50);
+    }    
+    
+    highlightItem(event.keyCode);
+    
+  }//This is a last punched card of get_suggs function
+  
+
+  function get_suggs() { 
+    
+    current_item_search = -1;
+    
+    if(document.getElementById('input_s').value.length < 3) {
+    
+      if(document.getElementById('blockSearch')!==null)
+        document.getElementById('blockSearch').parentNode.removeChild(document.getElementById('blockSearch'));
+        
+      return true;
+    }
+    
+    if(document.getElementById('blockSearch')!==null)
+       document.getElementById('blockSearch').parentNode.removeChild(document.getElementById('blockSearch')); 
+       
+    var a = new Array();
+    var mas_food= new Array();
+    
+    var  val = document.getElementById('input_s').value;   
+   
+    $.post("/pantry.htm", 
+    { 
+        "action[PagePantry_SearchForm:quickSearch]":true, 
+        data: val
+        
+    }, function cb (sResult) {
+      
+         str = sResult.results;
+         
+         //str = sResult;
+         
+         var  sCurrentInputValue = document.getElementById('input_s').value;   
+         
+         if((str.length > 10) && (sResult.input == sCurrentInputValue)) { 
+     
+           var bodies = $('body');
+       
+           var body = bodies[0];
+       
+           $('body').append(str);
+       
+           var searchBox = document.getElementById('input_s');
+       
+           var topSearch = getTop(searchBox);
+       
+           topSearch = topSearch+27;
+       
+           var leftSearch = getLeft(searchBox)-5;
+       
+           
+           $('#blockSearch').click(function(e) { e.stopPropagation(); });
+           
+           $('body').bind("click",function(e) {
+           
+//               debugger;
+               //oOnClickElement = e.originalTarget.parentNode.className;
+
+               //if((oOnClickElement != 'rezult_of_search') && (oOnClickElement != 'spisok_rezultatov_poiska'))
+                 setTimeout("if(document.getElementById('blockSearch')!==null)document.getElementById('blockSearch').parentNode.removeChild(document.getElementById('blockSearch'));document.getElementById('n_current_item').value=-1;current_item_search=-1 ",50);     
+           });
+           
+/*           $("#input_s").bind("blur", function() {    
+             
+             setTimeout("if(document.getElementById('blockSearch')!==null)document.getElementById('blockSearch').parentNode.removeChild(document.getElementById('blockSearch'));document.getElementById('n_current_item').value=-1;current_item_search=-1 ",50);     
+             
+           });*/
+   
+           $('#blockSearch').css({top:topSearch, left:leftSearch, display:"", position:"absolute"});
+       
+           fg_result = $('.rezult_of_search');
+         
+           return a;
+         }
+     
+         return true;
+
+     }, 'json')    
+     
+   }//This is a last punched card of get_suggs function
+   
+                       
+   function bindSearchKeyUp() {
+   
+     $('input.complete').bind("keyup",onSearchKeyUp);
+     
+   }//This is a last punched card of bindSearchKeyUp function
+                      
+   $(bindSearchKeyUp);          
+    
+</script>                
+
+
+<form name="search" method="GET" id="quicksearchform" class="search_form" action="/search.htm"  onsubmit=" if(onSubmitForm()) return false;else {location.href = '/s/'+this.elements['q'].value.replace(/\s/g, '-'); return false;}" id="submit_serch">
+
+  <div class="search_input_block">
+  
+    <div class="search_input_lc"></div>
+                            
+        
+      <input type="text" name="q" autocomplete="off"  class="complete search_input" class="complete" id="input_s" value="Search CalorieGallery"
+             onfocus="if (this.value=='Search CalorieGallery') this.value='';"
+             onblur="this.value= !this.value ? 'Search CalorieGallery' : this.value;" autocomplete="off"/>
+             
+         
+ 
+
+    <div class="search_input_rc"></div>
+    
+  </div>
+  
+  <a href="javascript:void(0);" onclick="if(onSubmitForm()) return false;else {location.href = '/s/'+$('#input_s').val().replace(/\s/g, '-'); return false;} $('#quicksearchform').submit();">
+    <img src="/res/real/i/search_button.gif" alt="ok" title="ok" style="border: 0px; margin-left: 3px;" />
+  </a>
+  
+  <br />
+  
+</form> 
+                						
+				</div>
+			</div>
+		</td>
+
+		<td class="top_right">
+		
+		</td>
+
+	</tr>
+
+
+	<tr class="mainmenu">
+
+		<td><div class="sizer_1x1"></div></td>
+		
+		<td>
+			
+					
+			<div class="mainmenu_holder">
+				<a href="/" class="mainmenu_item ">
+					
+                    
+                    <div class="mainmenu_left"></div>
+					<div class="mainmenu_center">Home</div>
+					<div class="mainmenu_right"></div>
+				</a>
+				
+				<a href="/foods/" class="mainmenu_item ">
+					<div class="mainmenu_left"></div>
+					<div class="mainmenu_center">Foods</div>
+					<div class="mainmenu_right"></div>
+				</a>
+				
+				<a href="/calories-burned.htm" class="mainmenu_item">
+					<div class="mainmenu_left"></div>
+					<div class="mainmenu_center">Calories Burned</div>
+					<div class="mainmenu_right"></div>
+				</a>
+	
+				<a href="/pantry.htm" class="mainmenu_item active_menu_item" id="pantry_menu_link_id" >
+					<div class="mainmenu_left"></div>
+					<div id="pantry_button_id" class="mainmenu_center">My Pantry</div>
+					<div class="mainmenu_right"></div>
+				</a>
+				
+				<a href="/meal.htm" class="mainmenu_item ">
+					<div class="mainmenu_left"></div>
+					<div class="mainmenu_center">My Meal</div>
+					<div class="mainmenu_right"></div>
+				</a>
+				
+                <a href="/whats-new.htm" class="mainmenu_item ">
+                    <div class="mainmenu_left"></div>
+                    <div class="mainmenu_center">What's New</div>
+                    <div class="mainmenu_right"></div>
+                </a>
+                
+			</div>	
+			
+			<div class="tabs_holder">
+				
+				<!--<div class="inactive_tab">
+					<div class="tab_lbc"></div>
+					<div class="tab_ltc"></div>
+					<div class="tab_text">
+										  <a href="/user-settings.htm?setWeightSystem=SI">Grams</a>
+										</div>
+					<div class="tab_rtc"></div>
+					<div class="tab_rbc"></div>
+				</div>
+			
+				<div class="inactive_tab">
+					<div class="tab_ltc"></div>
+					<div class="tab_text">
+										  <a href="/user-settings.htm?setWeightSystem=US">Ounces</a>
+  									</div>
+					<div class="tab_rtc"></div>
+				</div>-->
+                
+                                
+<script>                
+
+  function changeWeight(sWeight) {
+  
+    
+    $.post("/pantry.htm", 
+    {
+      "action[PagePantry_changeWeightSystem:ChangeWeightSystem]":true,
+      sWeightSystem:sWeight
+    }, function cb(){ document.location.reload(); });
+    
+    return false;
+    
+  }//This is a last punched card of changeWeight function
+
+</script>                
+
+
+<div class="tab">
+    <div class="tab_lbc"></div>
+    <div class="tab_ltc"></div>
+    <div class="tab_text">
+          <span>Grams</span>
+        </div>
+    <div class="tab_rtc"></div>
+    <div class="tab_rbc"></div>
+</div>
+
+<div class="inactive_tab">
+    <div class="tab_ltc"></div>
+    <div class="tab_text">
+          <a href="javascript:void(0);" onclick="changeWeight('US')">Ounces</a>
+      </div>
+    <div class="tab_rtc"></div>
+</div>
+			
+			</div>
+		</td>
+	
+		<td><div class="sizer_1x1"></div></td>
+
+	</tr>
+
+	<tr class="middle">
+
+		<td class="middle_left_cell"><div class="sizer_1x1"></div></td>
+		
+		<td class="middle_cell" id="middle_cell">
+<script>
+
+  function initcontextmenu() {
+
+    $("#id_main_food_image, .pantryImg, .custom_context_menu").showMenu({
+
+        query: "#foodImageMenu",
+        
+        onShow: function (e) { 
+        
+                  oTargetElement = $(e.currentTarget);
+                  
+                  sFFPUrl = oTargetElement.attr('ffpurl');
+                  
+                  if(sFFPUrl) {
+                    
+                    $('#foodImageMenu #foodImageMenuLink a').attr('href', 'http://freefoodpictures.caloriegallery.com/'+'free-pictures-of-'+sFFPUrl+'.htm');
+                    
+                    return true;
+                                      
+                  } else {
+                  
+                    return false;
+                  
+                  }
+                                    
+                }
+        
+    });         
+     
+  }
+  
+ $(initcontextmenu);
+  
+</script>
+
+  <div id="foodImageMenu" style="width: 300px;">
+
+    <!--------------------------------------->
+
+<div style="cursor:  default;"  class="shadow_panel_block " id="panel_imagecontextmenu"   >
+
+  <table class="light" cellpadding="0" cellspacing="0" border="0" >
+    <tr>
+      <td class="top_border left"> 
+        <div class="left">
+          <div class="inside_round"></div>
+        </div>
+			</td>
+			<td class="top_border t">
+ 				<div class="center">
+          <div class="inside_x"></div>
+ 			  </div>
+			</td>
+			<td class="top_border right">
+        <div class="right">
+   				<div class="inside_round"></div>  
+  			</div>
+			</td>
+			</tr>
+		<tr>
+		<td class="left l"> 
+			<div class="center">
+				 <div class="inside_y"></div>
+			</div>
+		</td>
+		<td class="Epanel_content_cell">
+			<div class="Epanel_content_cell">
+    
+     <center>
+     
+      <p style="margin: 0px 5px 10px 5px; ">
+        Want to use this picture for free on your blog, website or profile?
+      </p>
+      
+      <div id="foodImageMenuLink" style="float: left;">
+        <!--<a href="#">&nbsp;share this image for free!&nbsp;</a>-->
+        
+        <a href="#" class="action_button" style="font-size:80%; align:center; display: block;">
+          <ul class="ButtonUl">
+            <li class="ButtonLeftSide"></li>
+            <li>
+              <span class="Button aButton">
+                Yes
+              </span>
+            </li>
+            <li class="ButtonRightSide"></li>
+          </ul>
+        </a>
+     </div>
+      
+     <div style="float: right; margin-right: 4px;">
+      <a href="javascript:void(0);" class="action_button" style="font-size:80%; align:center; display: block;">
+        <ul class="ButtonUl">
+          <li class="ButtonLeftSide"></li>
+          <li>
+            <span class="Button aButton">
+              Cancel
+            </span>
+          </li>
+          <li class="ButtonRightSide"></li>
+        </ul>
+      </a>
+     </div>
+     
+    </center>      
+    
+          	</div>
+			</td>
+			<td class="right r">
+				<div class="center">
+					<div class="inside_y"></div>  
+				</div>
+			</td>
+			</tr>
+            <tr>
+						<td class="bottom_border left"> 
+							 <div class="left">
+  				 				 <div class="inside_round"></div>
+							  </div>
+						</td>
+						<td class="bottom_border b">
+ 							<div class="center">
+  								 <div class="inside_x"></div>
+ 							</div>
+						</td>
+						<td class="bottom_border right">
+							<div class="right">
+   								<div class="inside_round"></div>  
+  							</div>
+						</td>
+					</tr>
+	</table>
+</div>
+
+<!--------------------------------------->    
+  </div>
+
+<script>
+
+$(init)
+
+function init()
+{
+  if (0 == 1) 
+    hideBlock(1)
+  else
+    showBlock(1)  
+
+ create_dr(".block")
+ var elem=document.getElementById("start").innerHTML;
+ pos()   
+    
+  $("#dop_bl_1").css('height',15);
+  $("#dop_bl_2").css('height',15);
+  $("#dop_bl_3").css('height',15);
+}
+
+function sub()
+{
+  $.post("/pantry.htm", 
+  {
+    "action[PagePantry:permalink]":true,
+    notInt:1
+  }, function(str)
+    {
+      var result = str;
+      $('#buttonPermalinkBlue').css('display','none');
+      $('#buttonPermalinkGray').css('display','');
+      $('#permalink_send').css('display','');
+      $("#permalink_url")[0].value=result;
+    } 
+   ); 
+}
+
+function save_order()
+{
+  var data="";
+  var mas_id_food=$(".id_food");
+  var mas_nom=$(".nomber");
+  var food_id='';
+  var line='';
+  var column='';
+  for (var i=0;i<mas_id_food.length;i++)
+  {
+    var id=mas_id_food[i].innerHTML;
+    var id_mas = document.getElementById('trans_box_'+id).parentNode.id;
+    var l=mas_position[id_mas]['left'];
+    var t=mas_position[id_mas]['top'];
+    food_id = food_id+id+',';
+    line = line+t+',';
+    column = column+l+',';
+  }
+
+  hide_permalink();     
+  $.post("/pantry.htm", 
+  {
+    "action[PagePantry:save_order]":true,
+    food_id:food_id,
+    line:line,
+    notInt:1,
+    column:column
+   }, function(str)
+    {
+ 
+    } 
+   ); 
+}   
+
+function addId(par)
+{
+  var id=par.id.replace("span_add_", "");
+  $.post("/pantry.htm", 
+  {
+    "action[PagePantry:addId]":true,
+    notInt:1,
+    id:id
+  }, function(str)
+    {
+/**/      location.reload();
+    } 
+   ); 
+}
+
+function removeId(e)
+{
+  if (e.target) el=e.target;
+  else el=event.srcElement; 
+  var id=el.id.replace("span_remove_", "")
+  var elem_del = document.getElementById("trans_box_"+id);
+  var elem_del = elem_del.parentNode;
+  $.post("/pantry.htm", 
+  {
+    "action[PagePantry:removeId]":true,
+    notInt:1,
+    id:id
+  }, function(str)
+    {
+      elem_del.innerHTML="<span class='hand'></span>";
+      del_dop_block();
+      var coll = $("#foodColl")[0].innerHTML;
+      $("#foodColl")[0].innerHTML = coll-1;
+      delLastFood()
+    } 
+   ); 
+  hide_permalink();
+  //del_dop_block()
+}
+
+function hideBlock(par)
+{
+  $("#blockTitle").hide(10, function(){
+    $("#buttonHideBlock")[0].style.display='none';
+    $("#buttonShowBlock")[0].style.display='';
+  });
+  
+  if (par!=1)
+  {
+    $.post("/pantry.htm", 
+    {
+      "action[PagePantry:hidePanel]":true,
+      notInt:1
+    });
+  } 
+}
+
+function showBlock(par)
+{
+ // $("#blockTitle").show("slow", function(){
+  $("#blockTitle").show(10, function(){
+    $("#buttonHideBlock")[0].style.display='';
+    $("#buttonShowBlock")[0].style.display='none';    
+  });
+  if (par!=1)
+  {
+    $.post("/pantry.htm", 
+    {
+      "action[PagePantry:showPanel]":true,
+      notInt:1
+    });
+  } 
+}
+
+ function delInterstice()
+  {
+    
+    $.post("/pantry.htm", 
+    {
+      "action[PagePantry:delInterstice]":true,
+      notInt:1
+    }, function(str)
+    {
+      //http://www.caloriegallery.com/pantry.htm
+      location.href="/pantry.htm";
+      //window.history.go();
+      
+    }); 
+  }
+</script>
+<link rel="stylesheet" href="/js/customizeControllers.css" type="text/css"/>
+<span style="display:none" id="foodColl">0</span>
+<div class="panel_content_cell">
+<div class="divInBlock" style="font-size:9.6pt; font-family:'Arial',sans-serif; font-weight: bold;">
+
+
+<!--------------------------------------->
+
+<div style="cursor:  default;"  class="shadow_panel_block " id="panel_01"  onclick=""   >
+
+  <table class="light" cellpadding="0" cellspacing="0" border="0"  width="100%">
+    <tr>
+      <td class="top_border left"> 
+        <div class="left">
+          <div class="inside_round"></div>
+        </div>
+			</td>
+			<td class="top_border t">
+ 				<div class="center">
+          <div class="inside_x"></div>
+ 			  </div>
+			</td>
+			<td class="top_border right">
+        <div class="right">
+   				<div class="inside_round"></div>  
+  			</div>
+			</td>
+			</tr>
+		<tr>
+		<td class="left l"> 
+			<div class="center">
+				 <div class="inside_y"></div>
+			</div>
+		</td>
+		<td class="Epanel_content_cell">
+			<div class="Epanel_content_cell">
+
+<!--------------------------------------------------->				
+<div class="image_block">
+
+  <table class="light" width="100%" style="border-bottom:1px solid #dae3e9;">
+  <tr>
+  </td>
+  <td class="panel_block_header_l">
+  <td class="panel_block_header">
+                <h1 class='image_text_header' style='font-size:18px; font-family:'Arial',sans-serif';>
+            <span id='food_title' style='margin-left:5px'> My Pantry </span>
+            <span style='position:absolute; right:0px; top:0px;//right:0px;' >
+                  <img src='/res/real/i/button_circle_c.gif' style='cursor:pointer; ' id='buttonHideBlock' onclick='hideBlock(0)'>
+                  <img src='/res/real/i/button_circle_cd.gif' style='cursor:pointer; display:none' id='buttonShowBlock' onclick='showBlock(0)'>
+             </span>
+        </h1>  </td>
+  <td style="z-index:10 !important;" class="panel_block_header_r" >
+  </td>
+  </tr>
+  </table>
+  <div class="image_text_descr"></div>          <div id="blockTitle" style="display:block">
+                <div align="left" style="padding:5px">
+        You can add food to your pantry from our individual food pages or by clicking on one of the recommendations pictured below. Once you have some food in your pantry, drag and drop the items so you can make the side-by-side comparisons you want. And don't worry, your pantry will be saved for you when you come back!
+                <span>
+          Start adding foods to your pantry to make side-by-side comparisons!
+        </span>  
+        <!--Start adding foods to your pantry to make side-by-side comparisons!-->
+        <div align="right">
+          
+        </div> 
+                          <!--<div>Start adding foods to your pantry to make side-by-side comparisons!</div>-->
+          	
+          <div id="start" style="display:none">1</div>
+          <div id="col_el" class='block block_s' style="position:absolute;visibility: hidden"><span class="hand"></span></div>
+          
+        </div>
+								
+</div>
+<!------------------------------------------------>
+      	</div>
+			</td>
+			<td class="right r">
+				<div class="center">
+					<div class="inside_y"></div>  
+				</div>
+			</td>
+			</tr>
+            <tr>
+						<td class="bottom_border left"> 
+							 <div class="left">
+  				 				 <div class="inside_round"></div>
+							  </div>
+						</td>
+						<td class="bottom_border b">
+ 							<div class="center">
+  								 <div class="inside_x"></div>
+ 							</div>
+						</td>
+						<td class="bottom_border right">
+							<div class="right">
+   								<div class="inside_round"></div>  
+  							</div>
+						</td>
+					</tr>
+	</table>
+</div>
+
+<!--------------------------------------->        
+</div>
+</div>
+
+
+
+   
+
+ 
+ </div>
+ <div id="first_el" style=" height: -320px;"></div>
+
+<span id="col_el" style="display:none">0</span>
+<input type="hidden" name="action" value="permalink">
+
+<div class="panel_content_cell">
+  
+<div class="divInBlock" style="font-size:9.6pt; font-family:'Arial',sans-serif; font-weight: bold">
+
+
+<!--------------------------------------->
+
+<div style="cursor:  default;"  class="shadow_panel_block " id="panel_1"  onclick=""   >
+
+  <table class="light" cellpadding="0" cellspacing="0" border="0"  width="100%">
+    <tr>
+      <td class="top_border left"> 
+        <div class="left">
+          <div class="inside_round"></div>
+        </div>
+			</td>
+			<td class="top_border t">
+ 				<div class="center">
+          <div class="inside_x"></div>
+ 			  </div>
+			</td>
+			<td class="top_border right">
+        <div class="right">
+   				<div class="inside_round"></div>  
+  			</div>
+			</td>
+			</tr>
+		<tr>
+		<td class="left l"> 
+			<div class="center">
+				 <div class="inside_y"></div>
+			</div>
+		</td>
+		<td class="Epanel_content_cell">
+			<div class="Epanel_content_cell">
+
+<!--------------------------------------------------->				
+<div class="image_block">
+
+  <table class="light" width="100%" style="border-bottom:1px solid #dae3e9;">
+  <tr>
+  </td>
+  <td class="panel_block_header_l">
+  <td class="panel_block_header">
+                <div style='text-align:center; margin:0px; padding:10px 0px; font-size:18px; font-weight:bold; position:relative;'>
+            Other foods you might want to add to your pantry:
+        </div>  </td>
+  <td style="z-index:10 !important;" class="panel_block_header_r" >
+  </td>
+  </tr>
+  </table>
+  <div class="image_text_descr"></div>        <table style="width:100%;align:center">
+      <tr>
+          
+      <td style="text-align:left">
+       <div onclick="addId(span_add_805);" id="span_add_805" align="center">
+        <!--------------------------------------->
+
+<div style="cursor:  pointer;"  class="shadow_panel_block " id="panel_food805"  onclick=""   >
+
+  <table class="light" cellpadding="0" cellspacing="0" border="0" >
+    <tr>
+      <td class="top_border left"> 
+        <div class="left">
+          <div class="inside_round"></div>
+        </div>
+			</td>
+			<td class="top_border t">
+ 				<div class="center">
+          <div class="inside_x"></div>
+ 			  </div>
+			</td>
+			<td class="top_border right">
+        <div class="right">
+   				<div class="inside_round"></div>  
+  			</div>
+			</td>
+			</tr>
+		<tr>
+		<td class="left l"> 
+			<div class="center">
+				 <div class="inside_y"></div>
+			</div>
+		</td>
+		<td class="Epanel_content_cell">
+			<div class="Epanel_content_cell">
+          
+
+  
+    <img id='imgMiniphotoBlockId_805' oncontextmenu="return false" galleryimg="no" class="post_h2 my_tooltip custom_context_menu" ffpurl="vitamin-water" style="display: block; border:0;" tooltip_content_el="span_tooltip_805" title="<span>Click to add to your pantry:</span> <br> <span>946.35 ml of Beverage =&nbsp;200&nbsp;Calories</span>"    src="/img/mini/glaceau-vitamin-water-energy-tropical-citrus-bottle.jpg"   alt="" />
+  
+
+
+<span id="span_tooltip_805" style="display:none"><span>Click to add to your pantry:</span> <br> <span>946.35 ml of Beverage =&nbsp;200&nbsp;Calories</span></span>
+ 
+
+              	</div>
+			</td>
+			<td class="right r">
+				<div class="center">
+					<div class="inside_y"></div>  
+				</div>
+			</td>
+			</tr>
+            <tr>
+						<td class="bottom_border left"> 
+							 <div class="left">
+  				 				 <div class="inside_round"></div>
+							  </div>
+						</td>
+						<td class="bottom_border b">
+ 							<div class="center">
+  								 <div class="inside_x"></div>
+ 							</div>
+						</td>
+						<td class="bottom_border right">
+							<div class="right">
+   								<div class="inside_round"></div>  
+  							</div>
+						</td>
+					</tr>
+	</table>
+</div>
+
+<!--------------------------------------->  
+       </div>   
+        <span id="span_tooltip_805" style="display:none"><span>Click to add to your pantry:</span> <br> <span>946.35 ml of Beverage =&nbsp;200&nbsp;Calories</span>
+</span>
+      </td>         
+        
+      <td style="text-align:left">
+       <div onclick="addId(span_add_30);" id="span_add_30" align="center">
+        <!--------------------------------------->
+
+<div style="cursor:  pointer;"  class="shadow_panel_block " id="panel_food30"  onclick=""   >
+
+  <table class="light" cellpadding="0" cellspacing="0" border="0" >
+    <tr>
+      <td class="top_border left"> 
+        <div class="left">
+          <div class="inside_round"></div>
+        </div>
+			</td>
+			<td class="top_border t">
+ 				<div class="center">
+          <div class="inside_x"></div>
+ 			  </div>
+			</td>
+			<td class="top_border right">
+        <div class="right">
+   				<div class="inside_round"></div>  
+  			</div>
+			</td>
+			</tr>
+		<tr>
+		<td class="left l"> 
+			<div class="center">
+				 <div class="inside_y"></div>
+			</div>
+		</td>
+		<td class="Epanel_content_cell">
+			<div class="Epanel_content_cell">
+          
+
+  
+    <img id='imgMiniphotoBlockId_30' oncontextmenu="return false" galleryimg="no" class="post_h2 my_tooltip custom_context_menu" ffpurl="michelob-ultra-beer" style="display: block; border:0;" tooltip_content_el="span_tooltip_30" title="<span>Click to add to your pantry:</span> <br> <span>773.25 ml of Beer  =&nbsp;200&nbsp;Calories</span>"    src="/img/mini/michelob-ultra-beer.jpg"   alt="" />
+  
+
+
+<span id="span_tooltip_30" style="display:none"><span>Click to add to your pantry:</span> <br> <span>773.25 ml of Beer  =&nbsp;200&nbsp;Calories</span></span>
+ 
+
+              	</div>
+			</td>
+			<td class="right r">
+				<div class="center">
+					<div class="inside_y"></div>  
+				</div>
+			</td>
+			</tr>
+            <tr>
+						<td class="bottom_border left"> 
+							 <div class="left">
+  				 				 <div class="inside_round"></div>
+							  </div>
+						</td>
+						<td class="bottom_border b">
+ 							<div class="center">
+  								 <div class="inside_x"></div>
+ 							</div>
+						</td>
+						<td class="bottom_border right">
+							<div class="right">
+   								<div class="inside_round"></div>  
+  							</div>
+						</td>
+					</tr>
+	</table>
+</div>
+
+<!--------------------------------------->  
+       </div>   
+        <span id="span_tooltip_30" style="display:none"><span>Click to add to your pantry:</span> <br> <span>773.25 ml of Beer  =&nbsp;200&nbsp;Calories</span>
+</span>
+      </td>         
+        
+      <td style="text-align:left">
+       <div onclick="addId(span_add_1639);" id="span_add_1639" align="center">
+        <!--------------------------------------->
+
+<div style="cursor:  pointer;"  class="shadow_panel_block " id="panel_food1639"  onclick=""   >
+
+  <table class="light" cellpadding="0" cellspacing="0" border="0" >
+    <tr>
+      <td class="top_border left"> 
+        <div class="left">
+          <div class="inside_round"></div>
+        </div>
+			</td>
+			<td class="top_border t">
+ 				<div class="center">
+          <div class="inside_x"></div>
+ 			  </div>
+			</td>
+			<td class="top_border right">
+        <div class="right">
+   				<div class="inside_round"></div>  
+  			</div>
+			</td>
+			</tr>
+		<tr>
+		<td class="left l"> 
+			<div class="center">
+				 <div class="inside_y"></div>
+			</div>
+		</td>
+		<td class="Epanel_content_cell">
+			<div class="Epanel_content_cell">
+          
+
+  
+    <img id='imgMiniphotoBlockId_1639' oncontextmenu="return false" galleryimg="no" class="post_h2 my_tooltip custom_context_menu" ffpurl="" style="display: block; border:0;" tooltip_content_el="span_tooltip_1639" title="<span>Click to add to your pantry:</span> <br> <span>43 grams of Puffed Rice and Corn =&nbsp;200&nbsp;Calories</span>"    src="/img/mini/roberts-american-gourmet-pirates-booty-puffed-rice-and-corn-package.jpg"   alt="" />
+  
+
+
+<span id="span_tooltip_1639" style="display:none"><span>Click to add to your pantry:</span> <br> <span>43 grams of Puffed Rice and Corn =&nbsp;200&nbsp;Calories</span></span>
+ 
+
+              	</div>
+			</td>
+			<td class="right r">
+				<div class="center">
+					<div class="inside_y"></div>  
+				</div>
+			</td>
+			</tr>
+            <tr>
+						<td class="bottom_border left"> 
+							 <div class="left">
+  				 				 <div class="inside_round"></div>
+							  </div>
+						</td>
+						<td class="bottom_border b">
+ 							<div class="center">
+  								 <div class="inside_x"></div>
+ 							</div>
+						</td>
+						<td class="bottom_border right">
+							<div class="right">
+   								<div class="inside_round"></div>  
+  							</div>
+						</td>
+					</tr>
+	</table>
+</div>
+
+<!--------------------------------------->  
+       </div>   
+        <span id="span_tooltip_1639" style="display:none"><span>Click to add to your pantry:</span> <br> <span>43 grams of Puffed Rice and Corn =&nbsp;200&nbsp;Calories</span>
+</span>
+      </td>         
+        
+      <td style="text-align:left">
+       <div onclick="addId(span_add_519);" id="span_add_519" align="center">
+        <!--------------------------------------->
+
+<div style="cursor:  pointer;"  class="shadow_panel_block " id="panel_food519"  onclick=""   >
+
+  <table class="light" cellpadding="0" cellspacing="0" border="0" >
+    <tr>
+      <td class="top_border left"> 
+        <div class="left">
+          <div class="inside_round"></div>
+        </div>
+			</td>
+			<td class="top_border t">
+ 				<div class="center">
+          <div class="inside_x"></div>
+ 			  </div>
+			</td>
+			<td class="top_border right">
+        <div class="right">
+   				<div class="inside_round"></div>  
+  			</div>
+			</td>
+			</tr>
+		<tr>
+		<td class="left l"> 
+			<div class="center">
+				 <div class="inside_y"></div>
+			</div>
+		</td>
+		<td class="Epanel_content_cell">
+			<div class="Epanel_content_cell">
+          
+
+  
+    <img id='imgMiniphotoBlockId_519' oncontextmenu="return false" galleryimg="no" class="post_h2 my_tooltip custom_context_menu" ffpurl="" style="display: block; border:0;" tooltip_content_el="span_tooltip_519" title="<span>Click to add to your pantry:</span> <br> <span>213 grams of Cooked Barley =&nbsp;200&nbsp;Calories</span>"    src="/img/mini/cooked-pearled-barley.jpg"   alt="" />
+  
+
+
+<span id="span_tooltip_519" style="display:none"><span>Click to add to your pantry:</span> <br> <span>213 grams of Cooked Barley =&nbsp;200&nbsp;Calories</span></span>
+ 
+
+              	</div>
+			</td>
+			<td class="right r">
+				<div class="center">
+					<div class="inside_y"></div>  
+				</div>
+			</td>
+			</tr>
+            <tr>
+						<td class="bottom_border left"> 
+							 <div class="left">
+  				 				 <div class="inside_round"></div>
+							  </div>
+						</td>
+						<td class="bottom_border b">
+ 							<div class="center">
+  								 <div class="inside_x"></div>
+ 							</div>
+						</td>
+						<td class="bottom_border right">
+							<div class="right">
+   								<div class="inside_round"></div>  
+  							</div>
+						</td>
+					</tr>
+	</table>
+</div>
+
+<!--------------------------------------->  
+       </div>   
+        <span id="span_tooltip_519" style="display:none"><span>Click to add to your pantry:</span> <br> <span>213 grams of Cooked Barley =&nbsp;200&nbsp;Calories</span>
+</span>
+      </td>         
+          </tr>
+      <tr>
+          
+      <td style="text-align:left">
+       <div onclick="addId(span_add_317);" id="span_add_317" align="center">
+        <!--------------------------------------->
+
+<div style="cursor:  pointer;"  class="shadow_panel_block " id="panel_food317"  onclick=""   >
+
+  <table class="light" cellpadding="0" cellspacing="0" border="0" >
+    <tr>
+      <td class="top_border left"> 
+        <div class="left">
+          <div class="inside_round"></div>
+        </div>
+			</td>
+			<td class="top_border t">
+ 				<div class="center">
+          <div class="inside_x"></div>
+ 			  </div>
+			</td>
+			<td class="top_border right">
+        <div class="right">
+   				<div class="inside_round"></div>  
+  			</div>
+			</td>
+			</tr>
+		<tr>
+		<td class="left l"> 
+			<div class="center">
+				 <div class="inside_y"></div>
+			</div>
+		</td>
+		<td class="Epanel_content_cell">
+			<div class="Epanel_content_cell">
+          
+
+  
+    <img id='imgMiniphotoBlockId_317' oncontextmenu="return false" galleryimg="no" class="post_h2 my_tooltip custom_context_menu" ffpurl="" style="display: block; border:0;" tooltip_content_el="span_tooltip_317" title="<span>Click to add to your pantry:</span> <br> <span>25.02 ml of Olive Oil =&nbsp;200&nbsp;Calories</span>"    src="/img/mini/extra-virgin-olive-oil.jpg"   alt="" />
+  
+
+
+<span id="span_tooltip_317" style="display:none"><span>Click to add to your pantry:</span> <br> <span>25.02 ml of Olive Oil =&nbsp;200&nbsp;Calories</span></span>
+ 
+
+              	</div>
+			</td>
+			<td class="right r">
+				<div class="center">
+					<div class="inside_y"></div>  
+				</div>
+			</td>
+			</tr>
+            <tr>
+						<td class="bottom_border left"> 
+							 <div class="left">
+  				 				 <div class="inside_round"></div>
+							  </div>
+						</td>
+						<td class="bottom_border b">
+ 							<div class="center">
+  								 <div class="inside_x"></div>
+ 							</div>
+						</td>
+						<td class="bottom_border right">
+							<div class="right">
+   								<div class="inside_round"></div>  
+  							</div>
+						</td>
+					</tr>
+	</table>
+</div>
+
+<!--------------------------------------->  
+       </div>   
+        <span id="span_tooltip_317" style="display:none"><span>Click to add to your pantry:</span> <br> <span>25.02 ml of Olive Oil =&nbsp;200&nbsp;Calories</span>
+</span>
+      </td>         
+        
+      <td style="text-align:left">
+       <div onclick="addId(span_add_337);" id="span_add_337" align="center">
+        <!--------------------------------------->
+
+<div style="cursor:  pointer;"  class="shadow_panel_block " id="panel_food337"  onclick=""   >
+
+  <table class="light" cellpadding="0" cellspacing="0" border="0" >
+    <tr>
+      <td class="top_border left"> 
+        <div class="left">
+          <div class="inside_round"></div>
+        </div>
+			</td>
+			<td class="top_border t">
+ 				<div class="center">
+          <div class="inside_x"></div>
+ 			  </div>
+			</td>
+			<td class="top_border right">
+        <div class="right">
+   				<div class="inside_round"></div>  
+  			</div>
+			</td>
+			</tr>
+		<tr>
+		<td class="left l"> 
+			<div class="center">
+				 <div class="inside_y"></div>
+			</div>
+		</td>
+		<td class="Epanel_content_cell">
+			<div class="Epanel_content_cell">
+          
+
+  
+    <img id='imgMiniphotoBlockId_337' oncontextmenu="return false" galleryimg="no" class="post_h2 my_tooltip custom_context_menu" ffpurl="" style="display: block; border:0;" tooltip_content_el="span_tooltip_337" title="<span>Click to add to your pantry:</span> <br> <span>43 grams of Nilla Wafers =&nbsp;200&nbsp;Calories</span>"    src="/img/mini/nabisco-nilla-wafers.jpg"   alt="" />
+  
+
+
+<span id="span_tooltip_337" style="display:none"><span>Click to add to your pantry:</span> <br> <span>43 grams of Nilla Wafers =&nbsp;200&nbsp;Calories</span></span>
+ 
+
+              	</div>
+			</td>
+			<td class="right r">
+				<div class="center">
+					<div class="inside_y"></div>  
+				</div>
+			</td>
+			</tr>
+            <tr>
+						<td class="bottom_border left"> 
+							 <div class="left">
+  				 				 <div class="inside_round"></div>
+							  </div>
+						</td>
+						<td class="bottom_border b">
+ 							<div class="center">
+  								 <div class="inside_x"></div>
+ 							</div>
+						</td>
+						<td class="bottom_border right">
+							<div class="right">
+   								<div class="inside_round"></div>  
+  							</div>
+						</td>
+					</tr>
+	</table>
+</div>
+
+<!--------------------------------------->  
+       </div>   
+        <span id="span_tooltip_337" style="display:none"><span>Click to add to your pantry:</span> <br> <span>43 grams of Nilla Wafers =&nbsp;200&nbsp;Calories</span>
+</span>
+      </td>         
+        
+      <td style="text-align:left">
+       <div onclick="addId(span_add_819);" id="span_add_819" align="center">
+        <!--------------------------------------->
+
+<div style="cursor:  pointer;"  class="shadow_panel_block " id="panel_food819"  onclick=""   >
+
+  <table class="light" cellpadding="0" cellspacing="0" border="0" >
+    <tr>
+      <td class="top_border left"> 
+        <div class="left">
+          <div class="inside_round"></div>
+        </div>
+			</td>
+			<td class="top_border t">
+ 				<div class="center">
+          <div class="inside_x"></div>
+ 			  </div>
+			</td>
+			<td class="top_border right">
+        <div class="right">
+   				<div class="inside_round"></div>  
+  			</div>
+			</td>
+			</tr>
+		<tr>
+		<td class="left l"> 
+			<div class="center">
+				 <div class="inside_y"></div>
+			</div>
+		</td>
+		<td class="Epanel_content_cell">
+			<div class="Epanel_content_cell">
+          
+
+  
+    <img id='imgMiniphotoBlockId_819' oncontextmenu="return false" galleryimg="no" class="post_h2 my_tooltip custom_context_menu" ffpurl="" style="display: block; border:0;" tooltip_content_el="span_tooltip_819" title="<span>Click to add to your pantry:</span> <br> <span>83 grams of Carl&#039;s Jr.&reg; Cheeseburger =&nbsp;200&nbsp;Calories</span>"    src="/img/mini/carls-jr-super-star-with-cheese-package.jpg"   alt="" />
+  
+
+
+<span id="span_tooltip_819" style="display:none"><span>Click to add to your pantry:</span> <br> <span>83 grams of Carl&#039;s Jr.&reg; Cheeseburger =&nbsp;200&nbsp;Calories</span></span>
+ 
+
+              	</div>
+			</td>
+			<td class="right r">
+				<div class="center">
+					<div class="inside_y"></div>  
+				</div>
+			</td>
+			</tr>
+            <tr>
+						<td class="bottom_border left"> 
+							 <div class="left">
+  				 				 <div class="inside_round"></div>
+							  </div>
+						</td>
+						<td class="bottom_border b">
+ 							<div class="center">
+  								 <div class="inside_x"></div>
+ 							</div>
+						</td>
+						<td class="bottom_border right">
+							<div class="right">
+   								<div class="inside_round"></div>  
+  							</div>
+						</td>
+					</tr>
+	</table>
+</div>
+
+<!--------------------------------------->  
+       </div>   
+        <span id="span_tooltip_819" style="display:none"><span>Click to add to your pantry:</span> <br> <span>83 grams of Carl&#039;s Jr.&reg; Cheeseburger =&nbsp;200&nbsp;Calories</span>
+</span>
+      </td>         
+        
+      <td style="text-align:left">
+       <div onclick="addId(span_add_879);" id="span_add_879" align="center">
+        <!--------------------------------------->
+
+<div style="cursor:  pointer;"  class="shadow_panel_block " id="panel_food879"  onclick=""   >
+
+  <table class="light" cellpadding="0" cellspacing="0" border="0" >
+    <tr>
+      <td class="top_border left"> 
+        <div class="left">
+          <div class="inside_round"></div>
+        </div>
+			</td>
+			<td class="top_border t">
+ 				<div class="center">
+          <div class="inside_x"></div>
+ 			  </div>
+			</td>
+			<td class="top_border right">
+        <div class="right">
+   				<div class="inside_round"></div>  
+  			</div>
+			</td>
+			</tr>
+		<tr>
+		<td class="left l"> 
+			<div class="center">
+				 <div class="inside_y"></div>
+			</div>
+		</td>
+		<td class="Epanel_content_cell">
+			<div class="Epanel_content_cell">
+          
+
+  
+    <img id='imgMiniphotoBlockId_879' oncontextmenu="return false" galleryimg="no" class="post_h2 my_tooltip custom_context_menu" ffpurl="rainbow-trout" style="display: block; border:0;" tooltip_content_el="span_tooltip_879" title="<span>Click to add to your pantry:</span> <br> <span>118 grams of Raw Farmed Rainbow Trout =&nbsp;200&nbsp;Calories</span>"    src="/img/mini/raw-farmed-rainbow-trout-whole-rainbow-trout.jpg"   alt="" />
+  
+
+
+<span id="span_tooltip_879" style="display:none"><span>Click to add to your pantry:</span> <br> <span>118 grams of Raw Farmed Rainbow Trout =&nbsp;200&nbsp;Calories</span></span>
+ 
+
+              	</div>
+			</td>
+			<td class="right r">
+				<div class="center">
+					<div class="inside_y"></div>  
+				</div>
+			</td>
+			</tr>
+            <tr>
+						<td class="bottom_border left"> 
+							 <div class="left">
+  				 				 <div class="inside_round"></div>
+							  </div>
+						</td>
+						<td class="bottom_border b">
+ 							<div class="center">
+  								 <div class="inside_x"></div>
+ 							</div>
+						</td>
+						<td class="bottom_border right">
+							<div class="right">
+   								<div class="inside_round"></div>  
+  							</div>
+						</td>
+					</tr>
+	</table>
+</div>
+
+<!--------------------------------------->  
+       </div>   
+        <span id="span_tooltip_879" style="display:none"><span>Click to add to your pantry:</span> <br> <span>118 grams of Raw Farmed Rainbow Trout =&nbsp;200&nbsp;Calories</span>
+</span>
+      </td>         
+    	
+    </tr>
+    </table>
+								
+</div>
+<!------------------------------------------------>
+      	</div>
+			</td>
+			<td class="right r">
+				<div class="center">
+					<div class="inside_y"></div>  
+				</div>
+			</td>
+			</tr>
+            <tr>
+						<td class="bottom_border left"> 
+							 <div class="left">
+  				 				 <div class="inside_round"></div>
+							  </div>
+						</td>
+						<td class="bottom_border b">
+ 							<div class="center">
+  								 <div class="inside_x"></div>
+ 							</div>
+						</td>
+						<td class="bottom_border right">
+							<div class="right">
+   								<div class="inside_round"></div>  
+  							</div>
+						</td>
+					</tr>
+	</table>
+</div>
+
+<!--------------------------------------->        
+
+</div>
+
+    
+  
+
+<!--<span onclick="delInterstice()">test</span>-->		</td>
+	
+		<td class="middle_right_cell"><div class="sizer_1x1"></div></td>
+
+	</tr>
+	
+	
+	<tr class="bottom">
+
+		<td><div class="sizer_1x1"></div></td>
+		
+		<td class="bottom_center">
+			<div class="bottom_info">
+				<div class="bottom_info_lc"></div>
+				<div class="bottom_info_content">
+                
+                    <a href="#">About</a>
+                    <a href="/FAQ.htm">FAQ</a>
+                    <a href="/contact.htm">Contact</a>
+                    <a href="/terms-and-conditions.htm">Terms &amp; Conditions</a>
+                    <a href="/privacy-policy.htm">Privacy Policy</a>
+                
+                
+                </div>
+				<div class="bottom_info_rc"></div>
+			</div>
+			<div class="menu_logo_block">
+				<div class="conjecture_logo">
+					Copyright &copy; 2007 - 2011<br />
+					<a href="http://www.conjecture.com" rel="nofollow">
+                      <img src="/res/real/i/conjecture_logo_darkblue.gif" />
+                    </a>  
+				</div>
+			</div>
+		</td>
+	
+		<td><div class="sizer_1x1"></div></td>
+
+	</tr>
+	
+
+</table>
+
+
+<!-- Start Quantcast tag -->
+<script type="text/javascript">
+_qoptions={
+qacct:"p-e39qsVhukR7DA"
+};
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-e39qsVhukR7DA.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast tag -->  
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-176713-10";
+urchinTracker();
+</script>
+
+</body>
+</html>

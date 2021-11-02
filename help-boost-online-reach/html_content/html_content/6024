@@ -1,0 +1,1401 @@
+<!DOCTYPE HTML><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:pas="http://sitelife.vanityfair.com/2009/pluckApplicationServer">
+    <head>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/etc/designs/vanityfair/favicon.ico"/>
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/etc/designs/vanityfair/favicon.ico"/>
+    <link rel="stylesheet" href="/etc/designs/vanityfair/styles/global-min.css"/>
+
+    <link rel="stylesheet" media="print" href="/etc/designs/vanityfair/styles/print.css"/>
+
+    
+
+
+
+<!--
+
+--><script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
+<script type="text/javascript" src="/etc/designs/foundation/js/groupings/top.js"></script>
+<script type="text/javascript">
+
+    CN.site.init({
+        env             : 'PROD',
+        code            : 'VYF',
+        title           : '',
+        tld             : 'vanityfair.com',
+        name            : 'vanityfair',
+        siteRoot        : 'vanityfair',
+        allowedDomains  : 'www.vanityfair.com',
+        pageId          : '26d7389e-e44e-42e9-aa4d-9370ecec404e'
+    });
+
+    CN.pluck.main.serverUrl = "http://sitelife.vanityfair.com/ver1.0/Direct/Process";
+    CN.pluck.main.photoUrl = "http://sitelife.vanityfair.com/ver1.0/Photo/Upload";
+    CN.pluck.main.siteUrl = "http://www.vanityfair.com/";
+    CN.pluck.main.hostUrl = "http://sitelife.vanityfair.com/ver1.0";
+    CN.pluck.main.mostpopularEntries = 5;
+    if (typeof(CN.pluck.serverUrl) =="undefined") {
+            CN.pluck.serverUrl="http://sitelife.vanityfair.com/ver1.0/Direct/Process";
+    }
+    if (typeof PluckSDK !== "undefined") {
+        PluckSDK.SetEnv(CN.pluck.main.hostUrl);
+    }
+
+    var pluckHandler = new Pluck();
+    var gateway = new RegisteredGateway("/user/login", "/user/registration");
+    pluckHandler.addGatewayListener(gateway);
+    pluckHandler.init('26d7389e-e44e-42e9-aa4d-9370ecec404e',CN.pluck.main.serverUrl, 10, "/user/registration");
+
+    jQuery.noConflict();
+    CN.config.set({
+        reg     : {
+            urls : {
+                login:    "/user/login",
+                logout:   "/user/logout",
+                reg  :    "/user/registration",
+                profile : "/user/update",
+                base :    "/"
+            }
+        },
+        pluckApps : {
+            swapCountDisplay   : false,
+            disableFriends     : true,
+            disableMiniPersona : true,
+            clickableAvatar    : false,
+            hideAbused         : true,
+            countComponent     : true,
+            personaSetup       : true,
+            useSlauth          : false,
+            useOmniture        : true,
+            disablePersonaLink : false
+        }
+    });
+
+
+</script>
+
+<script type="text/javascript" src="/etc/designs/foundation/js/groupings/core.js"></script>
+<script type="text/javascript">
+    var _ghearst_vars = (function() {
+        var metaKeyWords = '', metaCollection;
+        metaCollection = document.getElementsByTagName('meta');
+        for (i = 0; i < metaCollection.length; i++) {
+            nameAttribute = metaCollection[i].name.search(/keywords/);
+            if (nameAttribute != -1) {
+                metaKeyWords = metaCollection[i].content;
+                metaKeyWords = metaKeyWords.replace(/,/g, '%2C'); // to replace ,
+                metaKeyWords = metaKeyWords.replace(/ /g, ''); // to replace space
+            }
+        }
+        return {
+            'ams_ads_script_src' : 'http://subscribe.vanityfair.com/ams/page-ads.js?ad_category_prefix=content&browser_path=%2Fcontent%2Fvanityfair%2Fculture%2Ffeatures%2F2011%2F08%2Felvis-kiss-concert-photographs.html&cat_prefixes=%2Ccontent%2Cvanityfair%2Cculture%2Cfeatures%2C2011%2C08%2Celvis-kiss-concert-photographs.html&keywords=' + metaKeyWords + '&position_list=AMS_VYF_GLOBAL_NAVBAR%2CAMS_VYF_GLOBAL_NAVBAR_ROLLOVER%2CAMS_VYF_MAGAZINE_SUBNAV%2CAMS_VYF_GLOBAL_HEADER%2CAMS_VYF_GLOBAL_HEADERCALLOUT%2CAMS_VYF_GLOBAL_ZRAIL%2CAMS_VYF_POPUP_ENTRY%2CAMS_VYF_POPUP_EXIT%2CAMS_VYF_SITE_FOOTER_SUBSCRIBE%2CAMS_VYF_GLOBAL_SLIDESHOW&site_prefix=vanityfair&subdomain=www&url_name=elvis-kiss-concert-photographs'
+        };
+    })();
+    if (!window.$h) {
+        window.$h = {}
+    }
+    (function() {
+        if (!$h.util) {
+            $h.util = {buildScriptTag: function(src) {
+                if (!!src) {
+                    document.write('<scr' + 'ipt src="' + src + '" language="javascript"></scr' + 'ipt>')
+                }
+            }}
+        }
+        $h.util.buildScriptTag(_ghearst_vars.ams_ads_script_src)
+    })();
+
+    /***************************************
+     * Validate Registration URL
+     * and Show Popup when validated success
+     *
+     */
+    CN.validateRegistration = (function() {
+        var url_Param_ecomUpsellURL, url_window = window.location.href;
+        return {
+            checkSuccessURL : function() {
+                if (CN.url.params("ecomupsell", url_window) == "true") {
+                    url_Param_ecomUpsellURL = decodeURIComponent(decodeURIComponent(CN.url.params("ecomupsellurl", url_window)));
+                    url_Param_ecomUpsellURL = url_Param_ecomUpsellURL.replace(/^https*:\/\//g, window.location.protocol + "//");
+                    window.open(url_Param_ecomUpsellURL, "PaymentPage", "menubar=1,status=0,resizable=0,toolbar=0,scrollbars=0,width=910,height=560,left=" + ((screen.width) / 3) + ",top=" + ((screen.height) / 3));
+                }
+            }
+        };
+    })();
+
+    jQuery(document).ready(function() {
+        CN.validateRegistration.checkSuccessURL();
+    });
+
+</script>
+<script type="text/javascript" src="http://fonts.condenast.com/okl1mtk.js"></script>
+            <script type="text/javascript">
+                // Initialize CN.foundry with Typekit loader.
+                CN.foundry.init(Typekit || {});
+            </script>
+<script type="text/javascript" src="/_jcr_content/ads_config.plugin_loader.js"></script>
+    <script type="text/javascript">
+        CN.dart.init({site:'vanityfair.dart', zone: 'culture;', kws: ["culture", "features", "2011", "08", "elvis-kiss-concert-photographs"],charmap: {' ' : '+', '-' : '_'} });
+    </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+
+/*
+  //deprecated to allow a page level tracker object to be used from components during their events.
+  _gaq.push(['_setAccount', 'UA-8293713-15']);
+  _gaq.push(['_trackPageview']);
+*/
+  _gaq.push(function() {
+      //global page tracker object
+      var pageTracker = _gat._createTracker('UA-8293713-15', 'CNTracker');
+  });
+  _gaq.push(['CNTracker._trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+    CN.config.set({
+      facebook     : {pageid: "8810407571", appId: "", apiKey: ""}
+    });
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="description" content="From world affairs to entertainment, business to fashion, crime to society, Vanity Fair is a cultural catalyst that drives the popular dialogue globally." />
+    <meta name="keywords" content="" />
+    <meta name="Author" content="Vanity Fair Magazine" />
+    <meta name="Copyright" content="Copyright (c) Cond&#233;Net 2012" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <meta property="fb:page_id" content="8810407571" />
+    <meta property="fb:admins" content="648235154, 688620285, 789168297" />
+    <meta property="og:image" content="http://www.vanityfair.com/dam/migration2011/elvis-kiss-ss/s-elvis-kiss-ss.jpg"/>
+    <meta property="og:site_name" content="Vanity Fair"/>
+    <meta property="og:title" content="Elvis Presley: The Story Behind His Iconic ‘Kiss’ Photograph"/>
+    <meta property="og:url" content="http://www.vanityfair.com/culture/features/2011/08/elvis-kiss-concert-photographs"/>
+    <meta property="og:type" content="article"/>
+    <meta name="ROBOTS" content="NOARCHIVE" />
+        <link rel="canonical" href="http://www.vanityfair.com/culture/features/2011/08/elvis-kiss-concert-photographs"/>
+<title>Elvis Presley: The Story Behind His Iconic ‘Kiss’ Photograph | Culture | Vanity Fair</title>
+
+</head>
+<body class="page cn_page  cinematic">
+    <div class="parbase cn_page_metadata">
+</div>
+<div class="cn_parsys parsys cn_ecom_placement"><div id="floatingAd" style="display:none;">
+                <div id="floatingAd_header">
+                    <a href="#">Close</a>
+                </div>
+                <div id="floatingAd_content">
+                    <div id="AMS_VYF_POPUP_FLOATINGAD">
+                        <div id="layer_offer_link">
+                            <a href="https://w1.buysub.com/loc/VYF/ATGFailsafe" target="_blank"><img src="/etc/designs/vanityfair/images/ecom/VYF_floating_ad.gif" alt="Subscribe to Vanityfair" border="0"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+<script>
+    jQuery(document).ready(function () {
+        if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_POPUP_FLOATINGAD !== 'undefined') && (CN.url.params('nojoy') != 1)) {
+            jQuery('#AMS_VYF_POPUP_FLOATINGAD').html('');
+            jQuery('#AMS_VYF_POPUP_FLOATINGAD').html(pageAds.AMS_VYF_POPUP_FLOATINGAD);
+
+            if ('AMS_VYF_POPUP_FLOATINGAD' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_POPUP_FLOATINGAD').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_POPUP_FLOATINGAD);
+                    jQuery('#AMS_VYF_POPUP_FLOATINGAD').hide();
+                }
+            }
+        } else {
+             if ('AMS_VYF_POPUP_FLOATINGAD' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                // For failsafe content.
+                jQuery('#mag_subnav_subscribe')
+                    .attr('href',   jQuery('#AMS_VYF_POPUP_FLOATINGAD').find('a').attr('href'))
+                    .attr('target', jQuery('#AMS_VYF_POPUP_FLOATINGAD').find('a').attr('target'))
+                    .attr('title',  jQuery('#AMS_VYF_POPUP_FLOATINGAD').find('a').attr('title'));
+            }
+        }
+    });
+</script>
+</div>
+<div class="cn_parsys parsys cn_ecom_placement"><div id="rolloverAd" class="rolloverAd"  data-timeout="" style="display:none;">
+                    <div id="rolloverAd_header" class="rolloverAd_header">
+                        <a href="#">Close</a>
+                    </div>
+                    <div id="rolloverAd_content" class="rolloverAd_content">
+                        <div id="AMS_VYF_GLOBAL_NAVBAR_ROLLOVER"></div>
+                    </div>
+                    <div id="rolloverAd_footer" class="rolloverAd_footer"></div>
+                </div>
+            <script>
+                            CN.ecom.rolloverAd.init('rolloverAd');
+                        </script>
+                    
+
+<script>
+    jQuery(document).ready(function () {
+        if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_GLOBAL_NAVBAR_ROLLOVER !== 'undefined') && (CN.url.params('nojoy') != 1)) {
+            jQuery('#AMS_VYF_GLOBAL_NAVBAR_ROLLOVER').html('');
+            jQuery('#AMS_VYF_GLOBAL_NAVBAR_ROLLOVER').html(pageAds.AMS_VYF_GLOBAL_NAVBAR_ROLLOVER);
+
+            if ('AMS_VYF_GLOBAL_NAVBAR_ROLLOVER' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_GLOBAL_NAVBAR_ROLLOVER').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_GLOBAL_NAVBAR_ROLLOVER);
+                    jQuery('#AMS_VYF_GLOBAL_NAVBAR_ROLLOVER').hide();
+                }
+            }
+        } else {
+             if ('AMS_VYF_GLOBAL_NAVBAR_ROLLOVER' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                // For failsafe content.
+                jQuery('#mag_subnav_subscribe')
+                    .attr('href',   jQuery('#AMS_VYF_GLOBAL_NAVBAR_ROLLOVER').find('a').attr('href'))
+                    .attr('target', jQuery('#AMS_VYF_GLOBAL_NAVBAR_ROLLOVER').find('a').attr('target'))
+                    .attr('title',  jQuery('#AMS_VYF_GLOBAL_NAVBAR_ROLLOVER').find('a').attr('title'));
+            }
+        }
+    });
+</script>
+</div>
+<div id="wrapper" class="section-culture subsection-features">
+
+        <div class="cn_parsys cn_page_header cn_iparsys"><div class="iparys_inherited">
+            <div class="cn_parsys cn_page_header cn_iparsys"><div class="section"><div class="cn_parsys cn_path_include"><div class="cn_page_include"><header id="site-header" role="banner" class="snippet">
+    <div class="cn_parsys"><div class="parbase cn_site_logo"><hgroup>
+    <h2><a href="/" title="Go to Vanity Fair homepage">Vanity Fair</a></h2>
+    </hgroup>
+
+<div class="print-logo">
+    <img src="/etc/designs/vanityfair/images/shell/print-logo.png" alt=""/>
+</div>
+
+
+</div>
+<div class="parbase rollover-scroll-subnav cn_main_nav"><nav role="navigation" class="global-nav">
+    <ul class="gnav-list">
+        <li id="nav-subscribe">
+                <div class="cn_parsys parsys cn_ecom_placement"><div id="global_navBar">
+                        <div id="AMS_VYF_GLOBAL_NAVBAR">
+                            <a href="https://w1.buysub.com/loc/VYF/ATGFailsafe" target="_blank" title="Subscribe to Vanityfair magazine"><span>Subscribe</span></a>
+                        </div>
+                    </div>
+                
+
+<script>
+    jQuery(document).ready(function () {
+        if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_GLOBAL_NAVBAR !== 'undefined') && (CN.url.params('nojoy') != 1)) {
+            jQuery('#AMS_VYF_GLOBAL_NAVBAR').html('');
+            jQuery('#AMS_VYF_GLOBAL_NAVBAR').html(pageAds.AMS_VYF_GLOBAL_NAVBAR);
+
+            if ('AMS_VYF_GLOBAL_NAVBAR' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_GLOBAL_NAVBAR').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_GLOBAL_NAVBAR);
+                    jQuery('#AMS_VYF_GLOBAL_NAVBAR').hide();
+                }
+            }
+        } else {
+             if ('AMS_VYF_GLOBAL_NAVBAR' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                // For failsafe content.
+                jQuery('#mag_subnav_subscribe')
+                    .attr('href',   jQuery('#AMS_VYF_GLOBAL_NAVBAR').find('a').attr('href'))
+                    .attr('target', jQuery('#AMS_VYF_GLOBAL_NAVBAR').find('a').attr('target'))
+                    .attr('title',  jQuery('#AMS_VYF_GLOBAL_NAVBAR').find('a').attr('title'));
+            }
+        }
+    });
+</script>
+</div>
+</li>
+        <li class="gnav-1 "><a href="/trending">Trending</a></li><li class="gnav-2 "><a href="/sections">Sections</a></li><li class="gnav-3 "><a href="/photos">Photos</a></li><li class="gnav-4 "><a href="/video">Video</a></li><li class="gnav-5 "><a href="/online/daily">Blogs</a></li><li class="gnav-6 "><a href="/magazine">Magazine</a></li><li class="gnav-7 "><a href="http://promotions.vf.com/">Promotions</a></li><li class="gnav-8 "><a href="http://www.twitter.com/vanityfair">@vanityfair</a></li><li class="gnav-9 "><a href="/app">Vanity Fair iPad App</a></li></ul> <div class="sub-nav">
+            <ul class="snav-list snav-1 "><li class=""><a href="/magazine/toc/contents-201203">The Hollywood Issue</a></li><li class=""><a href="/online/oscars/2012/02/julia-roberts-vanity-fair-cover-sam-kashner">Julia Roberts</a></li><li class=""><a href="/hollywood/2012/02/vanity-fair-oscar-party-photos-2012">Oscar Party Photos</a></li><li class=""><a href="/hollywood/features/2011/12/hunger-games-201112">Hunger Games</a></li></ul><ul class="snav-list snav-2 "><li class=""><a href="/hollywood">Hollywood</a></li><li class=""><a href="/business">Business</a></li><li class=""><a href="/politics">Politics</a></li><li class="current"><a href="/culture">Culture</a></li><li class=""><a href="/society">Society</a></li><li class=""><a href="/style">Style</a></li></ul><ul class="snav-list snav-3 "><li class=""><a href="/contributors/annie-leibovitz">Annie Leibovitz</a></li><li class=""><a href="/hollywood/2012/02/vanity-fair-oscar-party-photos-2012">2012 Oscar Party</a></li><li class=""><a href="/style/features/2011/09/the-international-best-dressed-list-2011">Best Dressed List</a></li></ul><ul class="snav-list snav-4 "><li class=""><a href="http://www.vanityfair.com/video/2012/01/1424132712001?playlistid=608390182001">The Hollywood Issue</a></li><li class=""><a href="http://www.vanityfair.com/video/2012/02/1476568419001?playlistid=10713949001">Oscar Party</a></li><li class=""><a href="http://www.vanityfaihttp://www.vanityfair.com/video/2012/02/1471940557001?playlistid=14120492001r.com/video/2011/11/1303281438001?playlistid=14020158001">Hollywood Style Stars</a></li></ul><ul class="snav-list snav-5 "><li class=""><a href="/online/daily">VF Daily</a></li><li class=""><a href="/online/wolcott">James Wolcott's Blog</a></li><li class=""><a href="/online/oscars">Hollywood Blog</a></li><li class=""><a href="/online/beauty">Beauty</a></li></ul><ul class="snav-list snav-6 "><li class=""><a href="/magazine/toc/contents-201204">Current Issue</a></li><li class=""><a href="/magazine/digital">Digital Edition</a></li><li class=""><a href="http://www.condenaststore.com/-st/Vanity-Fair-Prints_c146152_.htm?utm_medium=referral&utm_source=VanityFair&utm_content=VFFooter&AID=476153609">V.F. Store</a></li><li class=""><a href="/hollywood/features/app">Hollywood App</a></li></ul></div> </nav>
+
+
+</div>
+<div class="parbase cn_search_box"><section class="search-box">
+    <form name="search-box-form-par" id="search-box-form-par" action="/search" method="get" role="search">
+        <h4><label for="search-box-query-par">Search</label></h4>
+
+        <input type="search" name="query" id="search-box-query-par" placeholder="Search" />
+        <input type="hidden" name="sort" value="score desc" />
+
+        <button type="submit" title="Search">Search</button>
+    </form>
+</section>
+
+</div>
+<div class="cn_parsys parsys cn_share_bar cn_componentContainer"><div class="utilities "> <div class="section">
+                <div class="parbase cn_share_facebook_like"><div class="share utility-like"
+    data-fbcolorscheme="light"
+    data-fbfont="arial"
+    data-fblink="site"
+    data-fblayout="button_count"
+    id="e1a912d6-9517-4c96-b87f-f8de3b65a9d9"
+    data-fbshowfaces="false"
+    data-fbwidth="90"
+    data-fbheight="20"
+    data-fbaction="like"
+    data-fbtargetpath="http://www.facebook.com/vanityfairmagazine"
+    
+    data-fbtitle="">
+</div>
+</div>
+</div> </div>
+
+
+</div>
+<div class="cn_parsys parsys cn_ecom_placement"><div id="AMS_VYF_GLOBAL_HEADER">
+                    <!-- Added the following ATG div because the css is depending in the div name -->
+                      <div id="global_header">
+                <h2 id="subs-hdr"><a target="_blank" href="https://w1.buysub.com/loc/VYF/ATGFailsafe" rel="nofollow">Subscribe to Vanity Fair</a></h2>
+                <nav title="Subscription Resources" id="subs-nav-container">
+                    <ul id="subs-nav-menu">
+                        <li id="subs-nav-subscribe">
+                            <a title="Subscribe to Vanity Fair" target="_blank" href="https://w1.buysub.com/loc/VYF/ATGFailsafe">Subscribe</a>
+                        </li>
+                        <li id="subs-nav-gift">
+                            <a title="Give a Subscription to Vanity Fair as a Gift" target="_blank" href="https://w1.buysub.com/loc/VYF/ATGFailsafeGift">Give a gift</a>
+                        </li>
+                        <li id="subs-nav-renew">
+                            <a title="Renew your Subscription to Vanity Fair" target="_blank" href="https://w1.buysub.com/servlet/CSGateway?cds_mag_code=VYF">Renew</a>
+                        </li>
+                        <li id="subs-nav-questions">
+                            <a title="Subscription Questions and Answers for Vanity Fair" target="_blank" href="https://w1.buysub.com/servlet/CSGateway?cds_mag_code=VYF">Questions</a>
+                        </li>
+                        <li id="subs-nav-rewards">
+                            <a title="Vanity Fair subscribers get cash back for shopping" href="http://www.vanityfairrewards.com/?xmailerid=4883" target="_blank">Vanity Fair Rewards</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+          </div>
+            
+
+<script>
+    jQuery(document).ready(function () {
+        if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_GLOBAL_HEADER !== 'undefined') && (CN.url.params('nojoy') != 1)) {
+            jQuery('#AMS_VYF_GLOBAL_HEADER').html('');
+            jQuery('#AMS_VYF_GLOBAL_HEADER').html(pageAds.AMS_VYF_GLOBAL_HEADER);
+
+            if ('AMS_VYF_GLOBAL_HEADER' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_GLOBAL_HEADER').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_GLOBAL_HEADER);
+                    jQuery('#AMS_VYF_GLOBAL_HEADER').hide();
+                }
+            }
+        } else {
+             if ('AMS_VYF_GLOBAL_HEADER' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                // For failsafe content.
+                jQuery('#mag_subnav_subscribe')
+                    .attr('href',   jQuery('#AMS_VYF_GLOBAL_HEADER').find('a').attr('href'))
+                    .attr('target', jQuery('#AMS_VYF_GLOBAL_HEADER').find('a').attr('target'))
+                    .attr('title',  jQuery('#AMS_VYF_GLOBAL_HEADER').find('a').attr('title'));
+            }
+        }
+    });
+</script>
+</div>
+<div class="cn_parsys parsys cn_ecom_placement"><div id="AMS_VYF_GLOBAL_HEADERCALLOUT">
+                    <!-- Added the following ATG div because the css is depending in the div name -->
+                       <div id="global_headerCallout">
+                <div id="subs-teaser">
+                    <a href="https://w1.buysub.com/loc/VYF/ATGFailsafe" target="_blank" title="Subscribe to Vanityfair" rel="nofollow"><img src="/etc/designs/vanityfair/images/ecom/VYF_header_callout.png" alt="Subscribe to Vanityfair"/></a>
+                </div>
+                <div id="subs-cover">
+                    <a href="https://w1.buysub.com/loc/VYF/ATGFailsafe" target="_blank" title="Subscribe to Vanityfair" rel="nofollow">Subscribe to Vanityfair</a>
+                </div>
+           </div>
+             </div>
+            
+
+<script>
+    jQuery(document).ready(function () {
+        if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_GLOBAL_HEADERCALLOUT !== 'undefined') && (CN.url.params('nojoy') != 1)) {
+            jQuery('#AMS_VYF_GLOBAL_HEADERCALLOUT').html('');
+            jQuery('#AMS_VYF_GLOBAL_HEADERCALLOUT').html(pageAds.AMS_VYF_GLOBAL_HEADERCALLOUT);
+
+            if ('AMS_VYF_GLOBAL_HEADERCALLOUT' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_GLOBAL_HEADERCALLOUT').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_GLOBAL_HEADERCALLOUT);
+                    jQuery('#AMS_VYF_GLOBAL_HEADERCALLOUT').hide();
+                }
+            }
+        } else {
+             if ('AMS_VYF_GLOBAL_HEADERCALLOUT' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                // For failsafe content.
+                jQuery('#mag_subnav_subscribe')
+                    .attr('href',   jQuery('#AMS_VYF_GLOBAL_HEADERCALLOUT').find('a').attr('href'))
+                    .attr('target', jQuery('#AMS_VYF_GLOBAL_HEADERCALLOUT').find('a').attr('target'))
+                    .attr('title',  jQuery('#AMS_VYF_GLOBAL_HEADERCALLOUT').find('a').attr('title'));
+            }
+        }
+    });
+</script>
+</div>
+<div class="parbase cn_login_bar"><div id="loginbar">
+    <div id="login"></div>
+</div>
+
+</div>
+</div>
+</header>
+</div>
+</div>
+</div><div class="section"><div class="cn_parsys cn_path_include"><link rel="stylesheet" href="/dam/temporary/small-thumbnail-grid-fix.css"/>
+            </div>
+</div></div>
+</div> </div>
+<section id="site-body">
+    <div class="cn_parsys par"><div class="cn_parsys parsys cn_componentContainer cn_contentwell"><div id="page" class="triad">
+            <aside id="top-rail">
+                <div class="cn_parsys par-top_rail cn_iparsys"><div class="iparys_inherited">
+            <div class="cn_parsys par-top_rail cn_iparsys"><div class="section"><div class="parbase cn_ad_placement"><div id="topBanner728x90_frame" class="displayAd 728x90 displayAd728x90Js"></div>
+    <script type="text/javascript">
+        CN.dart.call('topBanner', {sz:'728x90', kws:["top"]});</script>
+
+</div>
+</div></div>
+</div> </div>
+</aside>
+
+            <header id="triad-primary">
+                <div class="cn_parsys par-triad-primary"><div class="super-rubric-section cn_rubric"><h5 class="rubric super-rubric-section">Culture</h5>
+    </div>
+<div class="parbase cn_date_time"><time datetime="2011-08-08T16:57:00.000-04:00">August 8, 2011</time>
+
+</div>
+<div class="cn_parsys button-count parsys utilities-top cn_share_bar cn_componentContainer Article-Share-Bar"><div class="utilities utilities-top    button-count"> <div class="section">
+                <div class="cn_share_facebook_li parbase cn_share_facebook_like"><div class="share utility-like"
+    data-fbcolorscheme="light"
+    data-fbfont="arial"
+    data-fblink="page"
+    data-fblayout="button_count"
+    id="ef89f63c-e97d-41cd-89c5-72be15bc625b"
+    data-fbshowfaces="false"
+    data-fbwidth="90"
+    data-fbheight="20"
+    data-fbaction="like"
+    data-fbtargetpath=""
+    
+    data-fbtitle="">
+</div>
+</div>
+</div> <div class="section">
+                <div class="parbase cn_share_tweet"><div
+    class="share utility-tweet"
+    data-twlayout="horizontal"
+    data-twaction="tweet"
+    id="057cbd89-e20f-49ef-89a2-5bad7b04dd8e"
+    data-show-count=""
+    
+            data-twurl="http://www.vanityfair.com/culture/features/2011/08/elvis-kiss-concert-photographs"
+        
+    data-twtitle=""
+      data-twvia="VanityFair">
+</div>
+</div>
+</div> <div class="section">
+                <div class="parbase cn_share_email"><div class="share utility-email">
+
+     <a title="E-mail this page to a friend" onclick="if (typeof CN !== 'undefined' && CN.stats) { CN.stats.trackAction('emailAFriend',this); }" href="/user/emailfriend?referringPage=http://www.vanityfair.com/services/lookup/26d7389e-e44e-42e9-aa4d-9370ecec404e" rel="nofollow">E-Mail</a>
+
+</div>
+</div>
+</div> <div class="section">
+                <div class="parbase cn_share_comments_co cn_share_comments_count"><div class="share comments-count">
+    <span class="commentstotal" data-uid="vanityfair_26d7389e-e44e-42e9-aa4d-9370ecec404e"><a href="#pluck-comments"><span>0</span></a></span>
+</div>
+
+</div>
+</div> </div>
+
+
+</div>
+<div class="title cn_title"><h1 class="headline ">
+    The Lady and the King</h1>
+
+</div>
+<div class="parbase cn_subheader"><h2 class="subheader ">On the threshold of becoming rock ’n’ roll’s King, Elvis Presley—at the ripe age of 21—was often in the company of mysterious women, but perhaps none so famously mysterious as the blonde in black in photographer Alfred Wertheimer’s widely reproduced “The Kiss” photograph, taken backstage before a concert in Richmond, Virginia, in the summer of 1956. Nearly 55 years after Elvis touched tongues with his date du jour, writer Alanna Nash—the author of <i>Baby, Let’s Play House: Elvis Presley and the Women Who Loved Him</i>—at last reveals the identity of <i>the</i> Mystery Woman, now 75, in this VF.com exclusive. Wertheimer—whose seductive image is the centerpiece of a traveling national exhibit of his work, <i>Elvis at 21: New York to Memphis</i>—brings to light rare frames from the infamous two-day tryst. 
+<br />
+<br />
+<i>Related:</i> <a href="/culture/features/2011/08/elvis-kiss-201108">Read the backstory of &ldquo;The Kiss&rdquo; in Alanna Nash&rsquo;s full report, &ldquo;The Elvis-Kiss Mystery&mdash;Solved!&rdquo;</a></h2></div>
+<div class="cn_contributors parbase"><div class="byline">
+        <span class="contributor first last" data-contributor-type="writer"><label>By</label>
+        <span class="name"><a href="/contributors/lenora-jane-estes">Lenora Jane Estes</a></span></span></div>
+</div>
+</div>
+</header>
+
+            <div class="content-container">
+                <div id="content">
+                    <div id="main" role="main">
+                        <div class="cn_parsys par-main"><div class="cn_slideshow parbase"><script type="text/javascript">
+var wordCounting='50';
+</script>
+
+<article id="items-container" class="wideslideshow" data-path="/culture/features/2011/08/elvis-kiss-concert-photographs/jcr:content/par/cn_contentwell/par-main/cn_slideshow.2.json">
+    <section class="items">
+        <article class="item horizontal">
+                    <figure class="media"> <img class="photo" src="/culture/features/2011/08/elvis-kiss-concert-photographs/_jcr_content/par/cn_contentwell/par-main/cn_slideshow/item0.rendition.slideshowWideHorizontal.elvis-kiss-ss01.jpg" alt="file" title="">
+                        <figcaption class="caption">Photograph © Alfred Wertheimer, all rights reserved.</figcaption> </figure>
+
+                    </article>
+            </section>
+    <script type="text/javascript">
+                // We need to disable the controls immediately, placing this in external script requires a delay until yrail ads come back.
+                // There MUST be an error handler for the slideshow ajax call that deletes this div if data fails, otherwise the
+                // slideshow will be unusable!
+                jQuery('<div class="slideshow-loading"></div>').appendTo('.control-bar');
+                jQuery('<div class="slideshow-loading-message">Loading Slideshow</div>').appendTo('.items');
+            </script>
+        <section class="cr-item"> </section>
+
+            </article>
+
+<div class="last-slide">
+    <div class="cn_ecom_placement">
+        <div class="slideshow-cm-subsoffer">
+            <div class="cn_parsys header_ecom_placement parsys cn_ecom_placement"><div id="AMS_VYF_GLOBAL_SLIDESHOW">
+                <a href="https://w1.buysub.com/loc/VYF/ATGFailsafe" target="_blank"><img border="0" src="/etc/designs/vanityfair/images/ecom/VYF_slideshow.jpg" alt="Subscribe to Vanityfair"/></a>
+            </div>
+        
+
+<script>
+    jQuery(document).ready(function () {
+        if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_GLOBAL_SLIDESHOW !== 'undefined') && (CN.url.params('nojoy') != 1)) {
+            jQuery('#AMS_VYF_GLOBAL_SLIDESHOW').html('');
+            jQuery('#AMS_VYF_GLOBAL_SLIDESHOW').html(pageAds.AMS_VYF_GLOBAL_SLIDESHOW);
+
+            if ('AMS_VYF_GLOBAL_SLIDESHOW' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_GLOBAL_SLIDESHOW').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_GLOBAL_SLIDESHOW);
+                    jQuery('#AMS_VYF_GLOBAL_SLIDESHOW').hide();
+                }
+            }
+        } else {
+             if ('AMS_VYF_GLOBAL_SLIDESHOW' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                // For failsafe content.
+                jQuery('#mag_subnav_subscribe')
+                    .attr('href',   jQuery('#AMS_VYF_GLOBAL_SLIDESHOW').find('a').attr('href'))
+                    .attr('target', jQuery('#AMS_VYF_GLOBAL_SLIDESHOW').find('a').attr('target'))
+                    .attr('title',  jQuery('#AMS_VYF_GLOBAL_SLIDESHOW').find('a').attr('title'));
+            }
+        }
+    });
+</script>
+</div>
+</div>
+    </div>
+
+    <div class="_cq_template cn_slideshow_share"><div>
+   <div class="share utility-email">
+
+     <a title="E-mail this page to a friend" onclick="if (typeof CN !== 'undefined' && CN.stats) { CN.stats.trackAction('emailAFriend',this); }" href="/user/emailfriend?referringPage=http://www.vanityfair.com/services/lookup/26d7389e-e44e-42e9-aa4d-9370ecec404e" rel="nofollow">E-Mail</a>
+
+</div>
+</div>
+<div>
+   <div class="share utility-share">
+    <a href="http://www.addthis.com/bookmark.php?pub=vanityfair&amp;url=http%3a%2f%2fwww.vanityfair.com%2fculture%2ffeatures%2f2011%2f08%2felvis-kiss-concert-photographs&amp;title=Elvis+Presley%3a+The+Story+Behind+His+Iconic+%e2%80%98Kiss%e2%80%99+Photograph+%7c+Culture+%7c+Vanity+Fair" target="addthis" rel="nofollow" onclick="window.open(this.href, this.target, 'scrollbars=yes,menubar=no,width=620,height=420,resizable=yes,toolbar=no,location=no,status=no,screenX=200,screenY=100,left=200,top=100');" title="Bookmark using any bookmark manager!">Share</a>
+</div>
+
+</div>
+<div>
+    <div class="share slideshow-replay">
+    <a href="?slide=1" title="Replay Slideshow">Replay</a>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<div class="cn_parsys parsys cn_componentContainer"><div class="cn_parsys thumbnail-grid parsys cn_features_container cn_componentContainer small-thumbnail-grid black-bg"><div class="small-header title cn_title"><h2 class="headline small-header">
+    More Slide Shows</h2>
+
+</div>
+<div class="cn_search_features parbase"><section class="feature search-result  ">
+                                <figure class="media ">
+    <a href="/hollywood/2012/03/emilia-clarke-daenerys-danny-targaryan-game-of-thrones-season-two-slideshow"> <img src="/hollywood/2012/03/emilia-clarke-daenerys-danny-targaryan-game-of-thrones-season-two-slideshow/_jcr_content/cn_page_metadata/search.rendition.thumb.s-game-of-thrones-ss.jpg" alt="" title=""/></a> </figure>
+
+
+
+<h2 class="headline ">
+    <a href="/hollywood/2012/03/emilia-clarke-daenerys-danny-targaryan-game-of-thrones-season-two-slideshow">Photos: <i>Game of Thrones</i> Actress Emilia Clarke as Dany</a>
+    </h2>
+
+</section>
+                        <section class="feature search-result  ">
+                                <figure class="media ">
+    <a href="/hollywood/2012/04/johnny-depp-michelle-pfeiffer-helena-bonham-carter-tim-burton-dark-shadows"> <img src="/hollywood/2012/04/johnny-depp-michelle-pfeiffer-helena-bonham-carter-tim-burton-dark-shadows/_jcr_content/cn_page_metadata/search.rendition.thumb.s-dark-shadows.jpg" alt="" title=""/></a> </figure>
+
+
+
+<h2 class="headline ">
+    <a href="/hollywood/2012/04/johnny-depp-michelle-pfeiffer-helena-bonham-carter-tim-burton-dark-shadows">An Exclusive Look at Johnny Depp in Tim Burton’s <i>Dark Shadows</i></a>
+    </h2>
+
+</section>
+                        <section class="feature search-result  ">
+                                <figure class="media ">
+    <a href="/hollywood/2012/mad-men-fashion-photos-mod-1960s-dresses"> <img src="/hollywood/2012/mad-men-fashion-photos-mod-1960s-dresses/_jcr_content/cn_page_metadata/search.rendition.thumb.s-mad-men-fashion-ss.jpg" alt="" title=""/></a> </figure>
+
+
+
+<h2 class="headline ">
+    <a href="/hollywood/2012/mad-men-fashion-photos-mod-1960s-dresses">Photos: The Fashion of <i>Mad Men’</i>s Season-Five Premiere</a>
+    </h2>
+
+</section>
+                        <section class="feature search-result  ">
+                                <figure class="media ">
+    <a href="/hollywood/2012/03/mad-men-season-five-photos-trunk-archive"> <img src="/hollywood/2012/03/mad-men-season-five-photos-trunk-archive/_jcr_content/cn_page_metadata/search.rendition.thumb.s-mad-men-trunk-ss.jpg" alt="" title=""/></a> </figure>
+
+
+
+<h2 class="headline ">
+    <a href="/hollywood/2012/03/mad-men-season-five-photos-trunk-archive">Photos: <i>Mad Men’</i>s Glamorous 1960s Lifestyle </a>
+    </h2>
+
+</section>
+                        <section class="feature search-result  ">
+                                <figure class="media ">
+    <a href="/hollywood/2012/03/judy-garland-imitators-kristen-wiig-rufus-wainwright-tracie-bennett"> <img src="/hollywood/2012/03/judy-garland-imitators-kristen-wiig-rufus-wainwright-tracie-bennett/_jcr_content/cn_page_metadata/search.rendition.thumb.s-judy-garland-ss.jpg" alt="" title=""/></a> </figure>
+
+
+
+<h2 class="headline ">
+    <a href="/hollywood/2012/03/judy-garland-imitators-kristen-wiig-rufus-wainwright-tracie-bennett">Photos: The Many Impersonators of Judy Garland</a>
+    </h2>
+
+</section>
+                        <section class="feature search-result  ">
+                                <figure class="media ">
+    <a href="/hollywood/2012/03/21-jump-street-movie-johnny-depp-tv-show"> <img src="/hollywood/2012/03/21-jump-street-movie-johnny-depp-tv-show/_jcr_content/cn_page_metadata/search.rendition.thumb.s-21-jump-street-ss.jpg" alt="" title=""/></a> </figure>
+
+
+
+<h2 class="headline ">
+    <a href="/hollywood/2012/03/21-jump-street-movie-johnny-depp-tv-show">Photos: <i>21 Jump Street’</i>s Vintage Johnny Depp</a>
+    </h2>
+
+</section>
+                        <section class="feature search-result  ">
+                                <figure class="media ">
+    <a href="/business/2012/04/washington-post-watergate-slideshow"> <img src="/business/2012/04/washington-post-watergate-slideshow/_jcr_content/cn_page_metadata/search.rendition.thumb.s-washington-post-ss.jpg" alt="" title=""/></a> </figure>
+
+
+
+<h2 class="headline ">
+    <a href="/business/2012/04/washington-post-watergate-slideshow">Photos: <i>The Washington Post</i> Newsroom as Immortalized in Movies</a>
+    </h2>
+
+</section>
+                        <section class="feature search-result  ">
+                                <figure class="media ">
+    <a href="/society/2012/04/sunnylands-ronald-reagan-prince-charles-annenberg-slideshow"> <img src="/society/2012/04/sunnylands-ronald-reagan-prince-charles-annenberg-slideshow/_jcr_content/cn_page_metadata/search.rendition.thumb.s-annenberg-ss.jpg" alt="" title=""/></a> </figure>
+
+
+
+<h2 class="headline ">
+    <a href="/society/2012/04/sunnylands-ronald-reagan-prince-charles-annenberg-slideshow">Photos: Inside Sunnylands, the Haute-Moderne Annenberg Haunt of Ronald Reagan and Prince Charles</a>
+    </h2>
+
+</section>
+                        </div>
+</div>
+</div>
+<div class="cn_parsys parsys cn_componentContainer"><div class="parbase cn_reactions_comments"><aside class="pluck-comments pluck-enabled pluck-app-container" id="pluck-comments">
+    <h4>Post a Comment</h4>
+<pas:pluck_comments plckCommentOnKeyType="article" plckCommentOnKey="vanityfair_26d7389e-e44e-42e9-aa4d-9370ecec404e" plckArticleTitle="Elvis Presley: The Story Behind His Iconic ‘Kiss’ Photograph" plckArticleUrl="http://www.vanityfair.com/services/lookup/d80ec780-e943-4352-a7cd-2f8c4af6a16d" class="pluck-app-tag"></pas:pluck_comments>
+</aside>
+
+
+</div>
+</div>
+</div>
+</div>
+
+                    <aside id="u-rail">
+                    </aside>
+                </div>
+
+                <aside id="y-rail">
+                    <aside id="triad-tertiary">
+                        <div class="cn_parsys par-triad-tertiary"><div class="parbase cn_slideshow_controls"><div class="slideshow-controls control-bar slideshow-remote">
+    <div class="previous"><a href="http://www.vanityfair.com/culture/features/2011/08/elvis-kiss-concert-photographs?slide=0" title="Previous slide">Previous</a></div>
+    <div class="count">1 of 0</div>
+    <div class="next"><a href="http://www.vanityfair.com/culture/features/2011/08/elvis-kiss-concert-photographs?slide=2" title="Next slide">Next</a></div>
+    <div class="slideshow-loading"></div>
+</div>
+
+</div>
+<div class="cn_parsys parsys cn_componentContainer cn_slideshow_intro"><div class="parbase cn_slideshow_text"><div class="item-inner slideshow-text">
+    <header class="item-header">
+        <hgroup>
+                <h5 class="rubric"></h5>
+                <h2 class="header"><a href="#" class="headerLink"></a></h2>
+                <h3 class="sub-header"></h3>
+        </hgroup>
+    </header>
+    <div class="body">
+    </div>
+    <footer class="item-footer">
+            <p class="footer-text"></p>
+            <p class="photo-credits"></p>
+    </footer>
+</div>
+
+</div>
+</div>
+<div class="parbase cn_ad_placement"><div id="rightRailTop300x250_frame" class="displayAd 300x250 displayAd300x250Js"></div>
+    <script type="text/javascript">
+        CN.dart.call('rightRailTop', {sz:'300x250', kws:["top"]});</script>
+
+</div>
+</div>
+</aside>
+                    <div class="cn_parsys par-y_rail cn_iparsys"><div class="iparys_inherited">
+                <div class="cn_parsys par-y_rail cn_iparsys"></div>
+</div> </div>
+</aside>
+            </div>
+
+            <div id="bottom-rail">
+                <div class="cn_parsys cn_iparsys par-bottom"><div class="iparys_inherited">
+            <div class="cn_parsys cn_iparsys par-bottom"><div class="section"><div class="cn_parsys parsys cn_componentContainer cn_colctrl count2-width66_33"><div class="cols count2-width66_33">
+    <div class="col c1">
+            <div class="cn_parsys par-col1"><div class="parbase cn_breadcrumb"><div id="bc"> <a href="/">&nbsp;</a> &nbsp;&bull; &nbsp;<a href="/culture">Culture</a> &nbsp;&bull; &nbsp;The Lady and the King</div>
+
+
+</div>
+<div class="cn_parsys align-left-georgia-16 parsys cn_features_container cn_componentContainer"><div class="title cn_title"><h2 class="headline ">
+    The Latest on VF.com</h2>
+
+</div>
+<div class="cn_search_features parbase"><section class="feature search-result  ">
+                                <figure class="media ">
+    <a href="/hollywood/2012/04/sam-kashner-julia-roberts-mike-nichols-cover-story"> <img src="/hollywood/2012/04/sam-kashner-julia-roberts-mike-nichols-cover-story/_jcr_content/cn_page_metadata/search.rendition.thumb.s-julia-roberts.jpg" alt="" title=""/></a> </figure>
+
+
+
+<h2 class="headline ">
+    <a href="/hollywood/2012/04/sam-kashner-julia-roberts-mike-nichols-cover-story">Cover Story: Julia Roberts on <i>Mirror, Mirror,</i> Mike Nichols, and Young Fame</a>
+    </h2>
+
+</section>
+                        <section class="feature search-result  ">
+                                <figure class="media ">
+    <a href="/politics/2012/04/maya-lin-vietnam-wall-memorial"> <img src="/politics/2012/04/maya-lin-vietnam-wall-memorial/_jcr_content/cn_page_metadata/search.rendition.thumb.s-vietnam-memorial.jpg" alt="" title=""/></a> </figure>
+
+
+
+<h2 class="headline ">
+    <a href="/politics/2012/04/maya-lin-vietnam-wall-memorial">On Its 30th Anniversary, Revisiting the Controversy of Maya Lin’s Vietnam Veterans Wall</a>
+    </h2>
+
+</section>
+                        <section class="feature search-result  ">
+                                <figure class="media ">
+    <a href="/culture/2012/04/paul-taylor-aureole-modern-dance"> <img src="/culture/2012/04/paul-taylor-aureole-modern-dance/_jcr_content/cn_page_metadata/search.rendition.thumb.s-paul-taylor.jpg" alt="" title=""/></a> </figure>
+
+
+
+<h2 class="headline ">
+    <a href="/culture/2012/04/paul-taylor-aureole-modern-dance">Dance: <i>Aureole,</i> Paul Taylor’s Modern Masterpiece</a>
+    </h2>
+
+</section>
+                        </div>
+</div>
+<div class="divider3 cn_parsys parsys cn_features_container center-align cn_componentContainer"><div class="title cn_title"><h2 class="headline ">
+    <span>The Latest from</span> VF Daily</h2>
+
+</div>
+<div class="cn_search_features parbase"><section class="feature search-result  ">
+                                <h2 class="headline ">
+    <a href="/online/daily/2012/03/Where-Do-Your-Campaign-Contributions-Actually-Go">Where Do Your Campaign Contributions Actually Go?</a>
+    </h2>
+
+</section>
+                        <section class="feature search-result  ">
+                                <h2 class="headline ">
+    <a href="/online/daily/2012/03/kim-kardashian-vs-kim-jong-il-world-superpowers">Fallen World Superpowers: Kim Kardashian vs. Kim Jong Il</a>
+    </h2>
+
+</section>
+                        <section class="feature search-result  ">
+                                <h2 class="headline ">
+    <a href="/online/daily/2012/03/sarah-ellison-on-rupert-murdoch-news-of-the-world-phone-hacking"><i>Vanity Fair</i> Contributing Editor Sarah Ellison to Live-Chat About Rupert Murdoch's Downfall Today</a>
+    </h2>
+
+</section>
+                        </div>
+<div class="parbase cn_search_view_all"><div class="view-all ">
+    <a href="/online/daily?queryString=sitename_s%3A%22vanityfair%22+AND+pagepath_s%3A%2Fcontent%2Fvanityfair%2Fonline%2Fdaily*&sort=publishdate_dt+desc">Go to VF Daily</a>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+    <div class="col c2">
+            <div class="cn_parsys par-col2"><div class="parbase cn_ad_placement"><div id="footerBottom300x250_frame" class="displayAd 300x250 displayAd300x250Js"></div>
+    <script type="text/javascript">
+        CN.dart.call('footerBottom', {sz:'300x250', kws:["bottom"]});</script>
+
+</div>
+</div>
+</div>
+    </div>
+
+
+</div>
+</div><div class="section"><div class="cn_parsys parsys cn_componentContainer count2-width33_66 black-bg cn_colctrl"><div class="cols count2-width33_66 black-bg">
+    <div class="col c1">
+            <div class="cn_parsys par-col1"><div class="cn_parsys parsys cn_ecom_placement"><div id="AMS_VYF_GLOBAL_ZRAIL">
+                <div id="global_zRail">
+</div></div>
+        
+
+<script>
+    jQuery(document).ready(function () {
+        if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_GLOBAL_ZRAIL !== 'undefined') && (CN.url.params('nojoy') != 1)) {
+            jQuery('#AMS_VYF_GLOBAL_ZRAIL').html('');
+            jQuery('#AMS_VYF_GLOBAL_ZRAIL').html(pageAds.AMS_VYF_GLOBAL_ZRAIL);
+
+            if ('AMS_VYF_GLOBAL_ZRAIL' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_GLOBAL_ZRAIL').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_GLOBAL_ZRAIL);
+                    jQuery('#AMS_VYF_GLOBAL_ZRAIL').hide();
+                }
+            }
+        } else {
+             if ('AMS_VYF_GLOBAL_ZRAIL' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                // For failsafe content.
+                jQuery('#mag_subnav_subscribe')
+                    .attr('href',   jQuery('#AMS_VYF_GLOBAL_ZRAIL').find('a').attr('href'))
+                    .attr('target', jQuery('#AMS_VYF_GLOBAL_ZRAIL').find('a').attr('target'))
+                    .attr('title',  jQuery('#AMS_VYF_GLOBAL_ZRAIL').find('a').attr('title'));
+            }
+        }
+    });
+</script>
+</div>
+</div>
+</div>
+    <div class="col c2">
+            <div class="cn_parsys par-col2"><div class="cn_parsys thumbnail-grid parsys cn_features_container cn_componentContainer"><div class="title cn_title"><h2 class="headline ">
+    <a href="#">Featured on VF.com</a>
+    </h2>
+
+</div>
+<div class="cn_parsys cn_manual_feature parsys cn_componentContainer"><section class="feature "> <div class="parbase image cn_image"><figure class="media ">
+    <a href="/hollywood/2012/02/vanity-fair-oscar-party-photos-2012"> <img src="/_jcr_content/par/cn_contentwell/par-bottom/cn_colctrl_0/par-col2/cn_features_containe/cn_manual_feature/cn_image.size.r-amyadams-2.jpg" alt="" title=""/></a> </figure>
+
+
+
+</div>
+<div class="title cn_title"><h3 class="headline ">
+    <a href="/hollywood/2012/02/vanity-fair-oscar-party-photos-2012">The 2012 <i>Vanity Fair</i> Oscar Party </a>
+    </h3>
+
+</div>
+</section>
+
+
+</div>
+<div class="cn_parsys cn_manual_feature parsys cn_componentContainer"><section class="feature "> <div class="parbase image cn_image"><figure class="media ">
+    <a href="/hollywood/2012/02/julia-roberts-dresses-fashion-style-slideshow-201202"> <img src="/_jcr_content/par/cn_contentwell/par-bottom/cn_colctrl_0/par-col2/cn_features_containe/cn_manual_feature_0/cn_image.size.julia-roberts-ss24.png" alt="" title=""/></a> </figure>
+
+
+
+</div>
+<div class="title cn_title"><h3 class="headline ">
+    <a href="/hollywood/2012/02/julia-roberts-dresses-fashion-style-slideshow-201202">Julia Roberts’s Fashion Through the Years</a>
+    </h3>
+
+</div>
+</section>
+
+
+</div>
+<div class="cn_parsys cn_manual_feature parsys cn_componentContainer"><section class="feature "> <div class="parbase image cn_image"><figure class="media ">
+    <a href="/hollywood/2012/03/tim-tebow-vanity-fair-oscar-party-kate-upton"> <img src="/_jcr_content/par/cn_contentwell/par-bottom/cn_colctrl_0/par-col2/cn_features_containe/cn_manual_feature_2/cn_image.size.s-tim-tebow.jpg" alt="" title=""/></a> </figure>
+
+
+
+</div>
+<div class="title cn_title"><h3 class="headline ">
+    <a href="/hollywood/2012/03/tim-tebow-vanity-fair-oscar-party-kate-upton">Tim Tebow Is the <i>Vanity Fair</i> Oscar Party M.V.P.</a>
+    </h3>
+
+</div>
+</section>
+
+
+</div>
+<div class="cn_parsys cn_manual_feature parsys cn_componentContainer"><section class="feature "> <div class="parbase image cn_image"><figure class="media ">
+    <a href="/hollywood/2012/03/21-jump-street-movie-johnny-depp-tv-show"> <img src="/_jcr_content/par/cn_contentwell/par-bottom/cn_colctrl_0/par-col2/cn_features_containe/cn_manual_feature_3/cn_image.size.s-21-jump-street-ss.jpg" alt="" title=""/></a> </figure>
+
+
+
+</div>
+<div class="title cn_title"><h3 class="headline ">
+    <a href="/hollywood/2012/03/21-jump-street-movie-johnny-depp-tv-show"><i>21 Jump Street'</i>s Vintage Johnny Depp</a>
+    </h3>
+
+</div>
+</section>
+
+
+</div>
+<div class="cn_parsys cn_manual_feature parsys cn_componentContainer"><section class="feature "> <div class="parbase image cn_image"><figure class="media ">
+    <a href="/hollywood/2012/04/sopranos-exclusive-slideshow"> <img src="/_jcr_content/par/cn_contentwell/par-bottom/cn_colctrl_0/par-col2/cn_features_containe/cn_manual_feature_4/cn_image.size.s-sopranos-ss.jpg" alt="" title=""/></a> </figure>
+
+
+
+</div>
+<div class="title cn_title"><h3 class="headline ">
+    <a href="/hollywood/2012/04/sopranos-exclusive-slideshow">Annie Leibovitz Portraits of <i>The Sopranos</i> Cast</a>
+    </h3>
+
+</div>
+</section>
+
+
+</div>
+<div class="cn_parsys cn_manual_feature parsys cn_componentContainer"><section class="feature "> <div class="parbase image cn_image"><figure class="media ">
+    <a href="/hollywood/2012/03/brigitte-bardot-slideshow-1950s-201203"> <img src="/_jcr_content/par/cn_contentwell/par-bottom/cn_colctrl_0/par-col2/cn_features_containe/cn_manual_feature_1/cn_image.size.s-brigitte-bardot-ss.jpg" alt="" title=""/></a> </figure>
+
+
+
+</div>
+<div class="title cn_title"><h3 class="headline ">
+    <a href="/hollywood/2012/03/brigitte-bardot-slideshow-1950s-201203">Brigitte Bardot in Her Sex-Kitten Years</a>
+    </h3>
+
+</div>
+</section>
+
+
+</div>
+</div>
+</div>
+</div>
+    </div>
+
+
+</div>
+</div></div>
+</div> </div>
+</div>
+        </div>
+    </div>
+</div>
+</section>
+<div class="cn_parsys parsys cn_componentContainer cn_site_footer"><footer id="site-footer">
+
+<div class="cn_parsys cn_iparsys"><div class="iparys_inherited">
+            <div class="cn_parsys cn_iparsys"><div class="section"><div class="parbase global-footer-section-1 cn_global_footer_text"><div class="global-footer global-footer-section-1">
+    <p>Vanity Fair Worldwide:</p>
+<ul>
+<li><a href="http://www.vanityfair.co.uk/">United Kingdom</a></li>
+<li><a href="http://www.vanityfair.it">Italy</a></li>
+<li><a href="http://www.revistavanityfair.es/">Spain</a></li>
+</ul>
+<p>VF On:</p>
+<ul>
+<li><a href="http://www.facebook.com/vanityfairmagazine">Facebook</a></li>
+<li><a href="https://twitter.com/VanityFair">Twitter</a></li>
+<li><a href="http://vanityfair.tumblr.com/">Tumblr</a></li>
+</ul></div>
+
+<script>
+        var isHearstEnabled = 'true',
+            isFooterSubscribe = 'true';
+
+        if (isHearstEnabled !== '' && isHearstEnabled !== 'undefined' && isHearstEnabled === 'true' && isFooterSubscribe !== '' && isFooterSubscribe !== 'undefined' && isFooterSubscribe === 'true') {
+            jQuery(document).ready(function () {
+                jQuery(function () {
+                    if (pageAds.AMS_VYF_SITE_FOOTER_SUBSCRIBE && (CN.url.params('nojoy') != 1 )) {
+                        jQuery('.footer-subscribe-link').parent().html(pageAds.AMS_VYF_SITE_FOOTER_SUBSCRIBE);
+                        jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').hide();
+                    } else {
+                        jQuery('.footer-subscribe-link')
+                            .attr({
+                                'href' : jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').find('a').attr('href'),
+                                'target' : jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').find('a').attr('target'),
+                                'title' : jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').find('a').attr('title')
+                            });
+                    }
+
+                });
+            });
+        }
+    </script>
+</div>
+</div><div class="section"><div class="cn_dropdown parbase"><div class="cn-dropdown cn-dropdown-standard">
+    <h3 class="cn-dropdown-standard-header">Visit our sister sites</h3><ul>
+                        <li><a href="http://www.allure.com">Allure</a></li>
+                        <li><a href="http://www.architecturaldigest.com">Architectural Digest</a></li>
+                        <li><a href="http://www.arstechnica.com">Ars Technica</a></li>
+
+                        <li><a href="http://www.bonappetit.com">Bon App&eacute;tit</a></li>
+                        <li><a href="http://www.brides.com">Brides.com</a></li>
+                        <li><a href="http://www.concierge.com/cntraveler">Cond&eacute; Nast Traveler</a></li>
+                        <li><a href="http://www.concierge.com">Concierge</a></li>
+                        <li><a href="http://www.details.com">Details</a></li>
+
+                        <li><a href="http://www.epicurious.com">Epicurious</a></li>
+                        <li><a href="http://www.glamour.com">Glamour</a></li>
+                        <li><a href="http://www.golfdigest.com">Golf Digest</a></li>
+                        <li><a href="http://www.golfworld.com">Golf World</a></li>
+                        <li><a href="http://www.gq.com">GQ</a></li>
+                        <li><a href="http://www.hotelchatter.com">Hotel Chatter</a></li>
+
+                        <li><a href="http://www.jaunted.com">Jaunted</a></li>
+                        <li><a href="http://www.luckymag.com">Lucky</a></li>
+                        <li><a href="http://www.nutritiondata.com">NutritionData</a></li>
+                        <li><a href="http://www.reddit.com">Reddit</a></li>
+                        <li><a href="http://www.self.com">Self</a></li>
+                        <li><a href="http://www.style.com">Style</a></li>
+
+                        <li><a href="http://www.teenvogue.com">Teen Vogue</a></li>
+                        <li><a href="http://www.newyorker.com">The New Yorker</a></li>
+                        <li><a href="http://www.vanityfair.com">Vanity Fair</a></li>
+                        <li><a href="http://www.vegaschatter.com">Vegas Chatter</a></li>
+                        <li><a href="http://www.vogue.com">Vogue</a></li>
+                        <li><a href="http://www.wmagazine.com">W</a></li>
+
+                        <li><a href="http://www.wired.com">Wired</a></li>
+                    </ul>
+                </div>
+
+</div>
+</div><div class="section"><div class="parbase global-footer-section-2 cn_global_footer_text"><div class="global-footer global-footer-section-2">
+    <ul>
+<li><a href="http://www.condenaststore.com/">Condé Nast Store</a></li>
+<li><a href="mailto:permissions@condenast.com">Reprint/Permissions</a></li>
+<li><a href="http://www.condenastmediakit.com/vf/">VF Media Kit</a></li>
+<li><a href="http://promotions.vf.com/">Promotions</a></li>
+</ul></div>
+
+<script>
+        var isHearstEnabled = 'true',
+            isFooterSubscribe = 'true';
+
+        if (isHearstEnabled !== '' && isHearstEnabled !== 'undefined' && isHearstEnabled === 'true' && isFooterSubscribe !== '' && isFooterSubscribe !== 'undefined' && isFooterSubscribe === 'true') {
+            jQuery(document).ready(function () {
+                jQuery(function () {
+                    if (pageAds.AMS_VYF_SITE_FOOTER_SUBSCRIBE && (CN.url.params('nojoy') != 1 )) {
+                        jQuery('.footer-subscribe-link').parent().html(pageAds.AMS_VYF_SITE_FOOTER_SUBSCRIBE);
+                        jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').hide();
+                    } else {
+                        jQuery('.footer-subscribe-link')
+                            .attr({
+                                'href' : jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').find('a').attr('href'),
+                                'target' : jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').find('a').attr('target'),
+                                'title' : jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').find('a').attr('title')
+                            });
+                    }
+
+                });
+            });
+        }
+    </script>
+</div>
+</div><div class="section"><div class="global-footer-section-3 parbase cn_global_footer_text"><div class="global-footer global-footer-section-3">
+    <ul>
+<li><a href="/services/sitemap.html">Site Map</a></li>
+<li><a href="/contact/contact-us.html">Contact VF</a></li>
+<li><a href="/services/newsletters/demographics.html">Newsletter Sign Up</a></li>
+<li><a href="#">Press Center</a></li>
+<li><a href="http://www.vanityfair.com/subscribe" class="footer-subscribe-link">Subscribe</a></li>
+<li><a href="http://w1.buysub.com/servlet/CSGateway?cds_mag_code=VYF">Subscription Customer Service</a></li>
+<li><a href="http://www.condenastdigital.com/vanityfair.html">Advertising</a></li>
+<li><a href="http://www.condenastcareers.com/">Conde Nast Careers</a></li>
+<li><a href="http://www.vanityfair.com/app">Digital Edition</a></li>
+</ul>
+<p></p></div>
+
+<script>
+        var isHearstEnabled = 'true',
+            isFooterSubscribe = 'true';
+
+        if (isHearstEnabled !== '' && isHearstEnabled !== 'undefined' && isHearstEnabled === 'true' && isFooterSubscribe !== '' && isFooterSubscribe !== 'undefined' && isFooterSubscribe === 'true') {
+            jQuery(document).ready(function () {
+                jQuery(function () {
+                    if (pageAds.AMS_VYF_SITE_FOOTER_SUBSCRIBE && (CN.url.params('nojoy') != 1 )) {
+                        jQuery('.footer-subscribe-link').parent().html(pageAds.AMS_VYF_SITE_FOOTER_SUBSCRIBE);
+                        jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').hide();
+                    } else {
+                        jQuery('.footer-subscribe-link')
+                            .attr({
+                                'href' : jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').find('a').attr('href'),
+                                'target' : jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').find('a').attr('target'),
+                                'title' : jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').find('a').attr('title')
+                            });
+                    }
+
+                });
+            });
+        }
+    </script>
+</div>
+</div><div class="section"><div class="parbase global-footer-copyright cn_global_footer_text"><div class="global-footer global-footer-copyright">
+    <p style="text-align: center;">Registration on or use of this site constitutes acceptance of our <a href="http://www.condenast.com/privacy-policy" style="color: rgb(224, 0, 0);" target="_blank">User Agreement</a> (Effectve March 21, 2012) and <a href="http://www.condenast.com/privacy-policy#privacypolicy" style="color: rgb(224, 0, 0);" target="_blank">Privacy Policy</a> (Effective March 21, 2012).<br>
+Vanity Fair © Condé Nast Digital. <a target="_blank" href="http://www.condenast.com/privacy-policy#privacypolicy-california">Your California Privacy Rights</a>. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used,<br>
+except with the prior written permission of Condé Nast Digital.<br>
+<a href="http://www.condenast.com/privacy-policy#privacypolicy-optout" style="color: rgb(224, 0, 0);" target="_blank" class="ad choices">Ad Choices</a></p></div>
+
+<script>
+        var isHearstEnabled = 'true',
+            isFooterSubscribe = 'true';
+
+        if (isHearstEnabled !== '' && isHearstEnabled !== 'undefined' && isHearstEnabled === 'true' && isFooterSubscribe !== '' && isFooterSubscribe !== 'undefined' && isFooterSubscribe === 'true') {
+            jQuery(document).ready(function () {
+                jQuery(function () {
+                    if (pageAds.AMS_VYF_SITE_FOOTER_SUBSCRIBE && (CN.url.params('nojoy') != 1 )) {
+                        jQuery('.footer-subscribe-link').parent().html(pageAds.AMS_VYF_SITE_FOOTER_SUBSCRIBE);
+                        jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').hide();
+                    } else {
+                        jQuery('.footer-subscribe-link')
+                            .attr({
+                                'href' : jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').find('a').attr('href'),
+                                'target' : jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').find('a').attr('target'),
+                                'title' : jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').find('a').attr('title')
+                            });
+                    }
+
+                });
+            });
+        }
+    </script>
+</div>
+</div><div class="section"><div class="cn_parsys parsys cn_ecom_placement"><div id="AMS_VYF_SITE_FOOTER_SUBSCRIBE">
+                <div id="site_footer_subscribe">
+            <a href="https://w1.buysub.com/loc/VYF/ATGFailsafe" target="_blank"></a>
+</div></div>
+        
+
+<script>
+    jQuery(document).ready(function () {
+        if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_SITE_FOOTER_SUBSCRIBE !== 'undefined') && (CN.url.params('nojoy') != 1)) {
+            jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').html('');
+            jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').html(pageAds.AMS_VYF_SITE_FOOTER_SUBSCRIBE);
+
+            if ('AMS_VYF_SITE_FOOTER_SUBSCRIBE' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_SITE_FOOTER_SUBSCRIBE);
+                    jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').hide();
+                }
+            }
+        } else {
+             if ('AMS_VYF_SITE_FOOTER_SUBSCRIBE' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                // For failsafe content.
+                jQuery('#mag_subnav_subscribe')
+                    .attr('href',   jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').find('a').attr('href'))
+                    .attr('target', jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').find('a').attr('target'))
+                    .attr('title',  jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').find('a').attr('title'));
+            }
+        }
+    });
+</script>
+</div>
+</div></div>
+</div> </div>
+</footer>
+
+</div>
+</div>
+
+    <script src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script>
+<script src="http://admin.brightcove.com/js/APIModules_all.js"></script>
+
+<script type="text/javascript">
+/* CONFIGURATION
+ * For objects, components, and features that require configuration before invocation.
+ * This will be dumped into a script element just before the inclusion of cn.bottom
+*/
+
+    // CN Slideshow config
+    CN.config.set({
+        template : 'variableItem',
+        templateParams :{horizontal:"slideshowWideHorizontal", vertical:"slideshowWideVertical"},
+        useInterstitial : false,
+        showInterstitialTimer : 15,
+        hasIntro : 'false'
+    });</script>
+
+<script type="text/javascript" src="/etc/designs/foundation/js/groupings/bottom.js"></script>
+<script type="text/javascript">
+
+CN.features.render({
+    features : (function() {
+        var
+            i,
+            feature = null,
+            render = [],
+            featuresOnPage = "thumbnail-grid black-bg small-thumbnail-grid  align-left-georgia-16 center-align   divider3 thumbnail-grid".replace(/\s{2,}/g, ' ').split(' '),
+            len = featuresOnPage.length,
+            cssClass;
+
+        featuresOnPage = jQuery.grep(featuresOnPage,function(el,idx){
+            return jQuery.inArray(el, featuresOnPage) === idx;
+        });
+
+        for(i = 0; i < len; i++){
+            cssClass = featuresOnPage[i];
+            if (CN.features.types.hasOwnProperty(cssClass)) {
+                render.push(cssClass);
+            }
+        }
+
+        return render;
+    }())
+});
+
+/* INITIALIZATION
+ * Call init and render functions here, or attach DOM.ready handlers.
+ * (You can also call Stowe's momma here, too.)
+*/
+        CN.mainnav.render();
+
+        // CN Share Facebook Like
+        CN.facebook.init();
+
+        // CN.login_bar start
+        CN.login.init();
+
+        // CN Twitter
+        CN.twitter.init();
+
+        // CN Slideshow init
+        // Adds classes for rendering based on intro and hash state
+        CN.slideshow.render('#items-container', '/culture/features/2011/08/elvis-kiss-concert-photographs/jcr:content/par/cn_contentwell/par-main/cn_slideshow.2.json');
+
+        // CN Slideshow
+// CN Slideshow Controls begin
+    CN.slideshow.controls.render('.slideshow-remote');
+// CN Slideshow Controls end
+// CN Slideshow Text begin
+    CN.slideshow.text.render('.slideshow-text');
+// CN Slideshow Text end
+        // CN.dropdown start
+        CN.dropdown.init();
+CN.pluck.commentCountsComponent(["vanityfair_26d7389e-e44e-42e9-aa4d-9370ecec404e"]);
+</script>
+
+<script type="text/javascript">
+CN.popups.setArriving(true).setExiting(false).setLayer(true).setForceLayer(false).setCookieLife(24).setPopDelay(3).init();
+</script>
+<script type="text/javascript" src="http://event.vanityfair.com/js/eventTracker.js"></script>
+<div id="eventListHolder" style="display:none;"></div>
+<script type="text/javascript">
+    (function(){
+        var
+            i   = 0,
+            ns  = CN,
+            len = 0,
+            absoluteUrl    = false,
+            trackingUrl    = "/services/lookup/d80ec780-e943-4352-a7cd-2f8c4af6a16d",
+            allowedDomains = [],
+            domain         = location.protocol + "//" + location.host;
+
+        if (CN.site && CN.site.allowedDomains) {
+            allowedDomains = CN.site.allowedDomains.split(",");
+            len            = allowedDomains.length
+        }
+
+        for(; i < len; i++) {
+            if (domain.indexOf(allowedDomains[i]) >= 0) {
+                absoluteUrl = true;
+            }
+        }
+
+        if (absoluteUrl) {
+
+            trackingUrl = domain + trackingUrl;
+            ns.site     = ns.site || {};
+
+            ns.site.eventTrackingList   = new EventList("eventListHolder");
+            ns.site.eventTrackingList.setBaseUrl("http://event.vanityfair.com/");
+            ns.site.eventTrackingEvent  = new EventObject("VYF", "most_viewed");
+            ns.site.eventTrackingEvent.setEnvironment("PROD");
+
+            if (CN.site.pageId && CN.site.pageId !== "null") {
+                ns.site.eventTrackingEvent.setContentId(CN.site.pageId);
+            }
+
+            ns.site.eventTrackingEvent.setFullUrl(trackingUrl);
+            ns.site.eventTrackingEvent.setContentTitle(CN.utils.trim("Elvis Presley: The Story Behind His Iconic ‘Kiss’ Photograph"));
+
+            
+                ns.site.eventTrackingEvent.setProperty("pd","2012/02/07 00:00:00");
+            
+
+            ns.site.eventTrackingList.addEvent(ns.site.eventTrackingEvent);
+            ns.site.eventTrackingList.writeImageTags();
+        }
+    }());
+</script>
+<div id="stats">
+        <div class="clickstreamcloud">
+<script type="text/javascript" src="/etc/clientlibs/foundation/librarymanager.js"></script>
+<script type="text/javascript">
+CQClientLibraryManager.write([{"p":"/etc/clientlibs/foundation/shared.js","c":[]},{"p":"/libs/cq/personalization/clientlib.js","c":[]},{"p":"/libs/cq/personalization/clientlib/themes/default.css","c":[]},{"p":"/libs/cq/personalization/clientlib/ie6/themes/default.css","c":["ie6"]}],false);
+</script>
+<script type="text/javascript" src="/etc/segmentation.segment.js"></script>
+
+<script type="text/javascript">
+CQ_Analytics.PageDataMgr.addInitProperty('sitesection', 'culture');
+CQ_Analytics.PageDataMgr.addInitProperty('url', 'http://www.vanityfair.com/culture/features/2011/08/elvis-kiss-concert-photographs');
+CQ_Analytics.PageDataMgr.addInitProperty('urlType', 'standard');
+</script>
+
+<div id="clickstreamcloud-gui"></div></div>
+<div class="analytics">
+
+<!-- SiteCatalyst code version: H.22.1.
+Copyright 1996-2010 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="/_jcr_content/analytics.sitecatalyst.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+CQ_Analytics.Sitecatalyst.updateEvars = function() {
+    // user defined mappings
+     
+}
+
+CQ_Analytics.ClickstreamcloudMgr.addListener("storesloaded", function(e) {
+    // set page name
+    s.pageName="culture:features:2011:08:elvis-kiss-concert-photographs";
+    // collect component events
+    CQ_Analytics.Sitecatalyst.collect();
+    // base mappings
+    CQ_Analytics.Sitecatalyst.getBaseMappings();	
+ 	// set basic variables
+    
+ 	// update 
+    CQ_Analytics.Sitecatalyst.updateEvars();
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s_code=s.t();if(s_code)document.write(s_code)
+});
+
+//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+
+<noscript><img src="http://stats2.vanityfair.com/b/ss/conde-vanityfair/1/H.22.1--NS/1332976494282?cdp=0&gn=culture%3Afeatures%3A2011%3A08%3Aelvis-kiss-concert-photographs" height="1" width="1" border="0" alt=""/></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.22.1. -->
+
+
+</div>
+</div>
+<!--<cn:pi>a:FB8BGE</cn:pi>-->
+    </body>
+</html>

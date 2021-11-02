@@ -1,0 +1,2558 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html lang="en" prefix="og: http://ogp.me/ns#" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <script type="text/javascript">
+//<![CDATA[
+
+  (function() { 
+    var fcb_referrers = [
+      "fcbarcelona.com", "fcbarcelona.cat", "fcbarcelona.es",
+      "fcbarab.com", "fcbarcelona.fr", "fcbarcelona.jp",
+      "fcbarcelona.cn", "fcbarcelona.qq.com"
+    ];
+    var current_language = "en";
+    var routes = {"ar":"http://www.fcbarcelona.com/ar","ca":"http://www.fcbarcelona.cat","en":"http://www.fcbarcelona.com","fr":"http://www.fcbarcelona.com/fr","ja":"http://www.fcbarcelona.jp","id":"http://www.fcbarcelona.co.id","zh":"http://fcbarcelona.cn"};
+    var navigator_language = navigator.language || navigator.userLanguage;
+    var language = (navigator_language || "").split("-")[0];
+          var s = "^https?:\/\/[^\/]*(" + fcb_referrers.join("|").replace(/\./g, '\\.') + ")";
+      var fcb_referrer = document.referrer.match(new RegExp(s));
+        var redirect_url = routes[language];
+    
+    if (language && language != current_language && !fcb_referrer && redirect_url) {
+      window.location = redirect_url;
+    }
+  })();
+
+//]]>
+</script>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta property="og:image" content="/images/og-logo.png"/>
+    <link rel="home" title="Inici" href="index.html" />
+    <link href="http://assets3.fcbarcelona.com/images/favicon.803dfe28a.ico" rel="shortcut icon" />
+    <link href="http://assets4.fcbarcelona.com/stylesheets/allpro.20efe14f4.css" media="screen" rel="stylesheet" type="text/css" />
+    
+    
+    <style type="text/css">
+                        </style>
+    
+    
+    <!--[if IE]>
+      <link href="http://assets1.fcbarcelona.com/stylesheets/fcbiepro.2dd8fbbd2.css" media="screen" rel="stylesheet" type="text/css" />
+      
+    <![endif]-->
+    <!--[if lte IE 7]>
+      <link href="http://assets2.fcbarcelona.com/stylesheets/fcbie7pro.7f25b761d.css" media="screen" rel="stylesheet" type="text/css" />
+      
+    <![endif]-->
+        
+    
+    <script src="http://assets1.fcbarcelona.com/javascripts/all.c40d75ab8.js" type="text/javascript"></script>
+    
+    <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+          var _home_page = "http://www.fcbarcelona.com";
+        
+//]]>
+</script>
+    <title>Official FC Barcelona Web Site - Barça | FCBarcelona.com</title>
+    <meta content="Football, Tickets, Section, Members, Supporters, News, Camp Nou, Club" name="keywords" />
+    <meta content="Official FC Barcelona website. All news about the team, ticket sales, member services, supporters club services and information about Barça and the Club" name="description" />
+    <META property="fb:admins" content="100000490546033" />
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  
+  _gaq.push(['_setAccount', "UA-26518457-3"]);
+  _gaq.push(['rollup._setAccount', "UA-2261150-10"]);
+  _gaq.push(['_setDomainName', "fcbarcelona.com"]);
+  _gaq.push(['rollup._setDomainName', "fcbarcelona.com"]);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['rollup._setAllowLinker', true]);
+  _gaq.push(["_setCustomVar", 1, 'Idioma', "en", 3]);
+  _gaq.push(["rollup._setCustomVar", 1, 'Idioma', "en", 3]);
+
+  
+
+  
+
+  _gaq.push(["_setCustomVar", 2, 'Seccio', "FC Barcelona", 3]);
+  _gaq.push(["rollup._setCustomVar", 2, 'Seccio', "FC Barcelona", 3]);
+  _gaq.push(["_setCustomVar", 3, 'Segments', "home", 3]);
+  _gaq.push(["rollup._setCustomVar", 3, 'Segments', "home", 3]);
+  
+  
+  
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['rollup._trackPageview']);
+  
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  function extractParamFromUri(uri, paramName) {
+    if (!uri) {
+      return;
+    }
+    var regex = new RegExp('[\\?&#]' + paramName + '=([^&#]*)');
+    var params = regex.exec(uri);
+    if (params != null) {
+      return unescape(params[1]);
+    }
+    return;
+  }
+  
+  /* Social networks: Facebook and Twitter */
+  
+  window.fbAsyncInitExtra = function() {
+    var subscribe = function(event_name, tag, targetUrl) {
+      FB.Event.subscribe(event_name, function(targetUrl) { 
+        _gaq.push(['_trackSocial', 'facebook', tag, targetUrl]);
+      });
+    };
+    
+    subscribe('edge.create', "like");
+    subscribe('edge.remove', "unlike");
+    subscribe('message.send', "send");
+  }
+  
+  $(function() {
+    if (window.twttr) { 
+      twttr.ready(function(twttr) {
+        var bind_event = function(event_name, tag, param, event) {
+          twttr.events.bind(event_name, function(event) {
+            if (event) {
+              var targetUrl;
+              if (event.target && event.target.nodeName == 'IFRAME') {
+                targetUrl = extractParamFromUri(event.target.src, param);
+              }
+              _gaq.push(['_trackSocial', 'twitter', tag, targetUrl]);
+            }
+          });
+        };
+
+        bind_event('tweet', "tweet", "url");
+        bind_event('follow', "follow", "screen_name");
+      });
+    }
+  });
+</script>
+
+    <script type="text/javascript">
+sas_tmstp=Math.round(Math.random()*10000000000);
+sas_pageid='41747/282514';  // Página : FC_Barcelona.com/home
+var sas_formatids = '18079,18198,18199,18200,18202,18203,20063,19949,18201,17036';
+sas_target='';   // Targeting
+document.write('<scr'+'ipt  src="http://www6.smartadserver.com/call2/pubjall/' + sas_pageid + '/' + sas_formatids + '/' + sas_tmstp + '/' + escape(sas_target) + '?"></scr'+'ipt>');
+</script><!-- correcció --><style type="text/css">
+
+#sites-navigation .left a { 	  background-position: -131px -64px; }
+#sites-navigation .left a:hover { background-position:-131px -87px;  }
+#sites-navigation .middle { 	  width: 65em;  }
+#sites-navigation .middle #top-carrousel li a { padding: 0.4em 0.5em; text-decoration: none; }
+
+#footer div.social div.right ul li a.marca { display:none; }
+</style><!-- fi correcció -->
+    
+  </head>
+
+  <body style="background: url('http://media2.fcbarcelona.com/media/asset_publics/resources/000/058/069/original_rgb/background-generic-iniesta-messi.v1372661789.jpg') no-repeat fixed center top #d9dfdf;">
+    <div id="fb-root"></div>
+
+<script type="text/javascript">
+//<![CDATA[
+
+  
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId: 533651033333204,
+      channelUrl: '//' + window.location.hostname + '/channel',
+      status: true, // check login status
+      cookie: true, // enable cookies to allow the server to access the session
+      xfbml: true  // parse XFBML
+    });
+    
+    // Run extra init callbacks
+    $(function() {
+      if (window.fbAsyncInitExtra)
+        window.fbAsyncInitExtra();
+    });
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+
+//]]>
+</script>
+
+      
+
+<div id="sites-navigation">
+  <div class="left-bg"></div>
+  <div class="inner-content">
+    <div class="left">
+      <a href="http://www.fcbarcelona.com/" absolute="true">FCB</a>
+    </div>
+    <div class="middle">
+      <div id="top-carrousel">
+  <div class="content">
+    <ul>
+      
+        
+          <li class=""><a href="http://foundation.fcbarcelona.com" id="menu_item_556">Foundation</a><span></span></li>
+        
+      
+        
+          <li class=""><a href=" http://penyes.fcbarcelona.com" id="menu_item_557">Supporters Club</a><span></span></li>
+        
+      
+        
+          <li class=""><a href="http://fans.fcbarcelona.com" id="menu_item_558">Fans</a><span></span></li>
+        
+      
+        
+          <li class=""><a href="http://barcatv.fcbarcelona.com" id="menu_item_559">Barça TV</a><span></span></li>
+        
+      
+        
+          <li class=""><a href="http://business.fcbarcelona.com" id="menu_item_560">Business</a><span></span></li>
+        
+      
+        
+          <li class=""><a href="http://arxiu.fcbarcelona.cat/web/english/botiga/pre_home.html" id="menu_item_561" onclick="_gaq.push([&quot;_link&quot;,&quot;http://arxiu.fcbarcelona.cat/web/english/botiga/pre_home.html&quot;]); return false;">Store</a><span></span></li>
+        
+      
+        
+          <li class=""><a href="http://fcbapps.fcbarcelona.com/" id="menu_item_1893">Apps</a><span></span></li>
+        
+      
+        
+          <li class=""><a href="http://www.fcbviatges.com/eng/" id="menu_item_2898">Travels</a><span></span></li>
+        
+      
+    </ul>
+  </div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+top_carrousel();
+//]]>
+</script>
+    </div>
+    <div class="right">
+      <ul>
+        
+
+        <li class="language">
+          <ul id="language"><li class=""><a href="http://www.fcbarcelona.cat" onclick="_gaq.push([&quot;_link&quot;,&quot;http://www.fcbarcelona.cat&quot;]); return false;"><span>Català</span></a></li><li class=""><a href="http://www.fcbarcelona.es" onclick="_gaq.push([&quot;_link&quot;,&quot;http://www.fcbarcelona.es&quot;]); return false;"><span>Castellano</span></a></li><li class="current"><a href="http://www.fcbarcelona.com"><span>English</span></a></li><li class=""><a href="http://www.fcbarcelona.com/ar"><span>&#1575;&#1604;&#1593;&#1585;&#1576;&#1610;&#1577;</span></a></li><li class=""><a href="http://www.fcbarcelona.com/fr"><span>Français</span></a></li><li class=""><a href="http://www.fcbarcelona.jp" onclick="_gaq.push([&quot;_link&quot;,&quot;http://www.fcbarcelona.jp&quot;]); return false;"><span>&#26085;&#26412;&#35486;</span></a></li><li class=""><a href="http://www.fcbarcelona.co.id" onclick="_gaq.push([&quot;_link&quot;,&quot;http://www.fcbarcelona.co.id&quot;]); return false;"><span>Indonesia</span></a></li><li class=""><a href="http://fcbarcelona.cn" onclick="_gaq.push([&quot;_link&quot;,&quot;http://fcbarcelona.cn&quot;]); return false;" title="Chinese website"><span>中文</span></a></li></ul>
+          <script type="text/javascript">
+//<![CDATA[
+language_drop_down();
+//]]>
+</script>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="right-bg"></div>
+</div>
+
+
+<div id="bottom-container">
+  <div id="top-container">
+    <div id="center-container">
+      <div id="pre-header">
+        <div class="left">
+          <h2><a href="http://www.fcbarcelona.com"><img alt="FC Barcelona" src="http://media1.fcbarcelona.com/media/asset_publics/resources/000/008/556/original_rgb/logo_fcbarcelona.v1324401548.png" title="FC Barcelona" /></a></h2>
+        </div>
+        <div class="right">
+          <div class="ad"><script type="text/javascript">
+if (typeof sas_manager != 'undefined') {
+ sas_manager.render(18201);
+}
+</script><noscript>
+<a href="http://www6.smartadserver.com/call/pubjumpi/41747/282514/18201/S/%5Btimestamp%5D/?" target="_blank" onclick='_gaq.push(["_link","http://www6.smartadserver.com/call/pubjumpi/41747/282514/18201/S/%5Btimestamp%5D/?"]); return false;'>
+<img src="http://www6.smartadserver.com/call/pubi/41747/282514/18201/S/%5Btimestamp%5D/?" border="0" alt=""></a>
+</noscript></div>
+        </div>
+      </div>
+      <div id="container">
+        <div id="top">
+          <map class="advanced-menu expanded-menu" id="navigation"><ul><li class="has-submenu"><a href="http://www.fcbarcelona.com">Home</a><ul><li class=""><a href="http://www.fcbarcelona.com/list/articles">News</a></li><li class=""><a href="http://www.fcbarcelona.com/list/image_galleries/">Photos</a></li><li class=""><a href="http://www.fcbarcelona.com/all-about-neymar">Neymar da Silva</a></li><li class=""><a href="http://www.fcbarcelona.com/football/first-team/searcher?tag=2013+FIFA+Confederations+Cup">Confederations Cup 2013</a></li><li class=""><a href="http://www.fcbvirtualtour.com/content2/?idioma=en&amp;utm_source=web-fcb-en&amp;utm_medium=hot-topic-en&amp;utm_campaign=virtual-tour">FCB Virtual Tour</a></li><li class=""><a href="http://www.fcbarcelona.com/club/first-team-kit-2013-2014">First Team Kit 2013/2014</a></li><li class=""><a href="http://www.fcbarcelona.com/asia-tour-2013">Asia Tour 2013</a></li><li class=""><a href="http://www.fcbarcelona.com/football/first-team/spanish-football-league-champions-2012-2013">La Liga Champions! </a></li><li class=""><a href="http://www.fcbarcelona.com/football/formative/best-formative-goals">Youth Team Goals</a></li><li class=""><a href="http://www.fcbarcelona.com/barcelona-legends-players-goals">Legendary Goals</a></li><li class=""><a href="http://www.fcbarcelona.com/club/wallpapers">Wallpapers</a></li><li class=""><a href="http://www.fcbarcelona.com/football/first-team/staff">Players</a></li><li class=""><a href="http://www.fcbarcelona.com/specials">Specials</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/club">Club</a><ul><li class="has-submenu"><a href="http://www.fcbarcelona.com/club/identity">Identity</a><ul><li class=""><a href="http://www.fcbarcelona.com/club/board-members/detail/card/more-than-a-club">More than a Club</a></li><li class=""><a href="http://www.fcbarcelona.com/club/identity/detail/card/values">Values</a></li><li class=""><a href="http://www.fcbarcelona.com/club/identity/detail/card/anthem">Anthem</a></li><li class=""><a href="http://www.fcbarcelona.com/club/identity/detail/card/the-crest">The crest</a></li><li class=""><a href="http://www.fcbarcelona.com/club/identity/detail/card/club-in-figures">Club in figures</a></li><li class=""><a href="http://www.fcbarcelona.com/club/identity/detail/card/the-colours">The colours</a></li><li class=""><a href="http://www.fcbarcelona.com/club/identity/detail/card/soundmap">Soundmap</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/club/history">History</a><ul><li class=""><a href="http://www.fcbarcelona.com/club/history/legends">Legends</a></li><li class=""><a href="http://www.fcbarcelona.com/club/history/presidents">Presidents</a></li><li class=""><a href="http://www.fcbarcelona.com/club/history/the-coaches">Coaches</a></li><li class=""><a href="http://www.fcbarcelona.com/club/history/centre-documentation">Centre for documentation</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/club/facilites-and-services">Installations and services</a><ul><li class=""><a href="http://www.fcbarcelona.com/club/facilites-and-services/camp_nou">Camp Nou</a></li><li class=""><a href="http://www.fcbarcelona.com/club/facilites-and-services/palau">Palau Blaugrana</a></li><li class=""><a href="http://www.fcbarcelona.com/club/facilites-and-services/miniestadi">Miniestadi</a></li><li class=""><a href="http://www.fcbarcelona.com/club/facilites-and-services/detail/card/fcb-sports-city-in-detail">Ciutat Esportiva</a></li><li class=""><a href="http://www.fcbarcelona.com/club/facilites-and-services/masia">Masia</a></li><li class=""><a href="http://www.fcbarcelona.com/club/facilites-and-services/ice-skating">Ice Skating Rink</a></li><li class=""><a href="http://www.fcbarcelona.com/club/facilites-and-services/medical-services">Medical services</a></li><li class=""><a href="http://www.fcbarcelona.com/info-tickets/detail/card/away-games">Travels</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/club/the-honours">Honours</a><ul><li class=""><a href="http://www.fcbarcelona.com/club/the-honours/fc-barcelona-honours">FC Barcelona honours</a></li><li class=""><a href="http://www.fcbarcelona.com/club/the-honours/detail/card/fc-barcelona-individual-records">Individual records</a></li><li class=""><a href="http://www.fcbarcelona.com/club/the-honours/detail/card/fc-barcelona-team-records">Team records</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/club/board-members">Board members</a><ul><li class=""><a href="http://www.fcbarcelona.com/club/detail/card/board-members">Board Members</a></li><li class=""><a href="http://www.fcbarcelona.com/club/board-members/detail/card/ethical-code-of-fc-barcelona">Ethical code</a></li><li class=""><a href="http://www.fcbarcelona.com/club/board-members/detail/card/annual-reports">Annual reports</a></li><li class=""><a href="http://www.fcbarcelona.com/club/board-members/detail/card/executive-structure">Executive structure</a></li></ul></li><li class=""><a href="http://www.fcbarcelona.com/club/detail/card/comissions-and-organs">Comissions and organs</a></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/club/press">Press</a><ul><li class=""><a href="http://www.fcbarcelona.com/club/press/detail/card/press-passes-football">Football press passes</a></li><li class=""><a href="http://www.fcbarcelona.com/club/press/detail/card/press-passes-barca-b">Barça B press passes</a></li><li class=""><a href="http://www.fcbarcelona.com/club/press/detail/card/press-passes-basketball-handball-roller-hockey-and-futsal">Palau Blaugrana press passes</a></li><li class=""><a href="http://barcatv.fcbarcelona.com">Barça TV</a></li><li class=""><a href="http://www.fcbarcelona.com/club/press/detail/card/revista-barca">Revista Barça</a></li><li class=""><a href="http://www.fcbarcelona.com/club/press/detail/card/radio-barca">Radio Barça</a></li></ul></li><li class=""><a href="http://www.fcbarcelona.com/Sponsors">Sponsors</a></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/club/barca-2-0">Barça 2.0</a><ul><li class=""><a href="http://www.fcbarcelona.com/club/barca-2-0/social-media">Social Media</a></li></ul></li><li class=""><a href="http://www.fcbarcelona.com/club/list/articles">News</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/football">Football</a><ul><li class="has-submenu"><a href="http://www.fcbarcelona.com/football/first-team">First team</a><ul><li class=""><a href="http://www.fcbarcelona.com/football/first-team/staff">Squad</a></li><li class=""><a href="http://www.fcbarcelona.com/football/first-team/calendar">Calendar</a></li><li class=""><a href="http://www.fcbarcelona.com/football/first-team/spanish-league">Classification</a></li><li class=""><a href="http://www.fcbarcelona.com/football/list/articles">News</a></li><li class=""><a href="http://www.fcbarcelona.com/football/list/image_galleries/">Photos</a></li><li class=""><a href="http://www.fcbarcelona.com/football/list/video_galleries/">Videos</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/football/barca-b">Barça B</a><ul><li class=""><a href="http://www.fcbarcelona.com/football/barca-b/squad-barca-b">Squad</a></li><li class=""><a href="http://www.fcbarcelona.com/football/barca-b/calendar">Calendar</a></li><li class=""><a href="http://www.fcbarcelona.com/football/barca-b/spanish-league">Classification</a></li><li class=""><a href="http://www.fcbarcelona.com//football/barca-b//list/articles">News</a></li></ul></li><li class=""><a href="http://www.fcbarcelona.com/football/juvenil-a">Juvenil A</a></li><li class=""><a href="http://www.fcbarcelona.com/football/formative">Formative</a></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/football/feminine">Feminine</a><ul><li class=""><a href="http://www.fcbarcelona.com/football/feminine/detail/card/women-s-football-a">Women A</a></li><li class=""><a href="http://www.fcbarcelona.com/football/feminine/detail/card/women-s-football-b">Women B</a></li><li class=""><a href="http://www.fcbarcelona.com/football/feminine/detail/card/women-s-juvenil-cadete">Juvenil-Cadet</a></li><li class=""><a href="http://www.fcbarcelona.com/football/feminine/detail/card/women-s-infantil-alevin">Infantil-Alevin</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/football/fcbescola">FCB Escola</a><ul><li class=""><a href="http://www.fcbarcelona.com/football/fcbescola/detail/card/fcbescola-enjoy-learning-to-play-football">Enjoy learning</a></li><li class=""><a href="http://www.fcbarcelona.com/football/fcbescola/detail/card/fcbescola-technical-training-improving-the-quality-of-your-moves">Technical training</a></li><li class=""><a href="http://www.fcbarcelona.com/football/fcbescola/detail/card/learn-with-barca-enjoy-learning-to-play-football">Learn with Barça</a></li><li class=""><a href="http://www.fcbarcelona.com/football/fcbescola/detail/card/international-schools-fcbescola-worlwide">Internacional Schools</a></li><li class=""><a href="http://www.fcbarcelona.com/football/fcbescola/detail/card/fcb-camp-discover-the-best-barca-training-camp">Discover FCB Campus</a></li><li class=""><a href="http://www.fcbarcelona.com/football/fcbescola/detail/card/access-exams-for-fcbescola">Access exams</a></li></ul></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/sections">Sections</a><ul><li class="has-submenu"><a href="http://www.fcbarcelona.com/basketball">Basketball</a><ul><li class=""><a href="http://www.fcbarcelona.com/basketball/barca-regal">First Team</a></li><li class=""><a href="http://www.fcbarcelona.com/basketball/calendar">Calendar</a></li><li class=""><a href="http://www.fcbarcelona.com/basketball/endesa-league">Classification</a></li><li class=""><a href="http://www.fcbarcelona.com/basketball/barca-regal-b-calendar">FCB Basketball B</a></li><li class=""><a href="http://www.fcbarcelona.com/basketball/list/articles">News</a></li><li class=""><a href="http://www.fcbarcelona.com/basketball//list/image_galleries/">Photos</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/handball">Handball</a><ul><li class=""><a href="http://www.fcbarcelona.com/handball/handball-team">First Team</a></li><li class=""><a href="http://www.fcbarcelona.com/handball/calendar">Calendar</a></li><li class=""><a href="http://www.fcbarcelona.com/handball/asobal-league">Classification</a></li><li class=""><a href="http://www.fcbarcelona.com/handball/barca-b-intersport-calendar">FCB Handball B</a></li><li class=""><a href="http://www.fcbarcelona.com/handball/list/articles">News</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/futsal-1">Futsal</a><ul><li class=""><a href="http://www.fcbarcelona.com/futsal-1/futsal">First Team</a></li><li class=""><a href="http://www.fcbarcelona.com/futsal-1/calendar">Calendar</a></li><li class=""><a href="http://www.fcbarcelona.com/futsal-1/first-division">Classification</a></li><li class=""><a href="http://www.fcbarcelona.com/futsal-1/fc-barcelona-b-alusport-calendar">FCB Alusport B</a></li><li class=""><a href="http://www.fcbarcelona.com/futsal-1/list/articles">News</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/hockey">Roller Hockey</a><ul><li class=""><a href="http://www.fcbarcelona.com/hockey/hockey-team">First Team</a></li><li class=""><a href="http://www.fcbarcelona.com/hockey/calendar">Calendar</a></li><li class=""><a href="http://www.fcbarcelona.com/hockey/ok-league">Classification</a></li><li class=""><a href="http://www.fcbarcelona.com/hockey/barca-b-hockey-calendar">FC Barcelona B</a></li><li class=""><a href="http://www.fcbarcelona.com/hockey/list/articles">News</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/amateur-sports">Amateur Sports</a><ul><li class="has-submenu"><a href="http://www.fcbarcelona.com/amateur-sports/athletics/detail/card/men-s-team">Athletics</a><ul><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/athletics/detail/card/women-s-team">Women's team</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/amateur-sports/ice-hockey/detail/card/first-team-squad">Ice hockey</a><ul><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/ice-hockey/calendar-ice-hockey">Calendar</a></li><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/ice-hockey/classification-ice-hockey">Classification</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/amateur-sports/field-hockey/detail/card/men-s-team">Field Hockey</a><ul><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/field-hockey/calendar-field-hockey">Calendar</a></li><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/field-hockey/classification-field-hockey">Classification</a></li><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/field-hockey/detail/card/women-s-team">Women's team</a></li></ul></li><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/skating/detail/card/figure-skating">Figure skating</a></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/amateur-sports/rugby/detail/card/first-team-squad">Rugby</a><ul><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/rugby/calendar-rugby">Calendar</a></li><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/rugby/classification-rugby">Classification</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/amateur-sports/voleyball/detail/card/men-s-team">Volleyball</a><ul><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/voleyball/calendar-masculine-volleyball">Calendar</a></li><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/voleyball/classification-masculine-volleyball">Classification</a></li><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/voleyball/detail/card/women-s-team-cvb">Women's volleyball </a></li><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/voleyball/calendar-femenine-volleyball">Women's calendar</a></li><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/voleyball/classification-femenine-volleyball">Women's classification</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/amateur-sports/wheelchair-basketball/detail/card/first-team-squad">Wheelchair basketball</a><ul><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/wheelchair-basketball/calendar">Calendar</a></li><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/wheelchair-basketball/classification-wheelchair-basketball">Classification</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/amateur-sports/basketball-feminine/detail/card/basketball-femenine">Women's basketball</a><ul><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/basketball-feminine/calendar">Calendar</a></li><li class=""><a href="http://www.fcbarcelona.com/amateur-sports/basketball-feminine/classification-femenine-basketball">Classification</a></li></ul></li></ul></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/info-tickets">Tickets</a><ul><li class=""><a href="http://www.fcbarcelona.com/info-tickets/next-matches-football">Football tickets</a></li><li class=""><a href="http://www.fcbarcelona.com/info-tickets/next-matches-basketball">Basketball tickets</a></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/info-tickets/detail/card/most-exclusive-seats">VIP tickets</a><ul><li class=""><a href="http://www.fcbarcelona.com/info-tickets/detail/card/vip-tickets-football">VIP Football tickets</a></li><li class=""><a href="http://www.fcbarcelona.com/info-tickets/detail/card/vip-tickets-basket">VIP Basketball tickets</a></li></ul></li><li class=""><a href="http://www.fcbarcelona.com/info-tickets/barca-b-ticket">Barça B tickets</a></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/info-tickets/sections-tickets">Section tickets</a><ul><li class=""><a href="http://www.fcbarcelona.com/info-tickets/basketball-tickets">Basketball</a></li><li class=""><a href="http://www.fcbarcelona.com/info-tickets/next-matches-handball">Handball</a></li><li class=""><a href="http://www.fcbarcelona.com/info-tickets/next-matches-futsal">Futsal</a></li><li class=""><a href="http://www.fcbarcelona.com/info-tickets/next-matches-roller-hockey">Hockey</a></li></ul></li><li class=""><a href="https://entrades.fcbarcelona.cat/Ticketing/gestionURL?bean=entradasPendientesBean&amp;accion=listado&amp;lang=en" onclick="_gaq.push([&quot;_link&quot;,&quot;https://entrades.fcbarcelona.cat/Ticketing/gestionURL?bean=entradasPendientesBean&amp;accion=listado&amp;lang=en&quot;]); return false;">Tickets pending to recovery</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/members">Members</a><ul><li class="has-submenu"><a href="http://www.fcbarcelona.com/members/membership/detail/card/membership-inscription">Membership inscription</a><ul><li class=""><a href="http://www.fcbarcelona.com/members/detail/card/update-your-membership-information">Update your information</a></li><li class=""><a href="http://www.fcbarcelona.com/members/detail/card/season-ticket-waiting-list">Season ticket waiting list</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/members/oab">OAB</a><ul><li class=""><a href="http://www.fcbarcelona.com/oab-online">OAB Online</a></li><li class=""><a href="http://www.fcbarcelona.com/members/oab/detail/card/fc-barcelona-supporter-services-office-oab">Supporter services office</a></li><li class=""><a href="http://www.fcbarcelona.com/members/oab/detail/card/membership-administration-guide">Membership administration guide</a></li><li class=""><a href="http://www.fcbarcelona.com/members/oab/detail/card/general-information">General information</a></li><li class=""><a href="http://www.fcbarcelona.com/members/oab/detail/card/telephone-and-email-service">Telephone and email service</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/members/seient-lliure">Seient lliure</a><ul><li class=""><a href="http://www.fcbarcelona.com/members/detail/card/seient-lliure">Information</a></li><li class=""><a href="http://www.fcbarcelona.com/members/detail/card/abonament-camp-ple-2012-13">Abonament Camp Ple</a></li><li class=""><a href="http://www.fcbarcelona.com/members/detail/card/abonament-palau-ple">Abonament Palau Ple</a></li></ul></li><li class=""><a href="http://www.fcbarcelona.com/members/advantages/detail/card/advantages-and-services">Advantages and services</a></li><li class=""><a href="http://www.fcbarcelona.com/members/fidelity-card/detail/card/commitment-card">Commitment card</a></li><li class=""><a href="http://www.fcbarcelona.com/members/detail/card/special-member-offers">Special member offers</a></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/members/oab/detail/card/frequently-asked-questions">Frequently asked questions</a><ul><li class=""><a href="http://www.fcbarcelona.com/members/oab/detail/card/frequently-asked-questions-oab-online">OAB Online</a></li><li class=""><a href="http://www.fcbarcelona.com/members/oab/detail/card/frequently-asked-questions-queries-about-the-membership-card">Membership card</a></li><li class=""><a href="http://www.fcbarcelona.com/members/oab/detail/card/frequently-asked-questions-queries-about-season-ticket">Season ticket</a></li><li class=""><a href="http://www.fcbarcelona.com/members/oab/detail/card/frequently-asked-questions-other-membership-queries">Other membership queries</a></li><li class=""><a href="http://www.fcbarcelona.com/members/oab/detail/card/frequently-asked-questions-general-enquiries">General enquiries</a></li></ul></li><li class=""><a href="http://www.fcbarcelona.com/club/press/detail/card/estatuts-fc-barcelona">Estatuts FCB</a></li><li class=""><a href="http://www.fcbarcelona.com/members/season-tickets">Season tickets</a></li></ul></li><li class="has-submenu"><a href="http://www.fcbarcelona.com/camp-nou">Camp Nou</a><ul><li class="has-submenu"><a href="http://www.fcbarcelona.com/camp-nou/camp-nou-experience">Camp Nou Experience</a><ul><li class=""><a href="http://www.fcbarcelona.com/camp-nou/camp-nou-experience/opening-times-and-prices">Opening times and prices</a></li><li class=""><a href="http://www.fcbarcelona.com/camp-nou/camp-nou-experience/getting-to-the-camp-nou">Getting to the Camp Nou</a></li><li class=""><a href="http://www.fcbarcelona.com/camp-nou/camp-nou-experience/complementary-services">Complementary services</a></li><li class=""><a href="http://www.fcbarcelona.com/camp-nou/camp-nou-experience/catering-services">Catering services</a></li><li class=""><a href="http://www.fcbarcelona.com/camp-nou/camp-nou-experience/frequently-asked-questions">FAQs</a></li><li class=""><a href="http://www.fcbarcelona.com/camp-nou/camp-nou-experience/news">Conditions for entrance</a></li></ul></li><li class=""><a href="http://business.fcbarcelona.com/hospitality">Boxes and VIP seats</a></li><li class=""><a href="http://business.fcbarcelona.com/meetings-and-events">Meeting & Events</a></li></ul></li><li class=""><a href="http://arxiu.fcbarcelona.cat/web/english/botiga/pre_home.html" onclick="_gaq.push([&quot;_link&quot;,&quot;http://arxiu.fcbarcelona.cat/web/english/botiga/pre_home.html&quot;]); return false;">Store</a></li></ul></map><script type="text/javascript">
+//<![CDATA[
+initAdvancedMenu();
+//]]>
+</script>
+        </div>
+
+        
+          <div id="content-top">
+            
+            
+  <div class="widget_embed_code_item margin widget" id="widget_embed_code_item_202727">
+    <script type="text/javascript">
+if (typeof sas_manager != 'undefined') {
+	sas_manager.render(17036);	// Formato : DHTML 1x1
+}
+</script>
+<noscript>
+<a href="http://www6.smartadserver.com/call/pubjumpi/41747/282514/17036/M/[timestamp]/?" target="_blank">
+<img src="http://www6.smartadserver.com/call/pubi/41747/282514/17036/M/[timestamp]/?" border="0" alt="" /></a>
+</noscript>
+
+  </div>
+
+  <div id="ticker-module">
+    <div class="inner-container">
+      
+      <div class="sponsor"><a href="http://www.seikowatches.com/index.html" rel="external"></a></div>
+      
+      <div class="ticker">
+        <ul class="messages">
+          
+            <li>
+              <span class="date-time">
+                
+                  <strong class="time">
+                    23:53
+                  </strong>
+                  <em class="date">
+                    (06/27/2013)
+                  </em>
+                
+              </span>
+              <a href="http://www.fcbarcelona.com/club/detail/image_gallery/first-team-kit-2013-14" target="_blank">FC Barcelona 2013/14 home kit</a>
+            </li>
+          
+            <li>
+              <span class="date-time">
+                
+                  <strong class="time">
+                    23:53
+                  </strong>
+                  <em class="date">
+                    (06/27/2013)
+                  </em>
+                
+              </span>
+              <a href="http://www.fcbarcelona.com/club/detail/image_gallery/first-team-away-kit-2013-14" target="_blank">FC Barcelona 2013/14 away kit</a>
+            </li>
+          
+            <li>
+              <span class="date-time">
+                
+                  <strong class="time">
+                    23:52
+                  </strong>
+                  <em class="date">
+                    (06/27/2013)
+                  </em>
+                
+              </span>
+              <a href="http://www.fcbarcelona.com/best-videos-neymar-da-silva" target="_blank">The best videos of Neymar Jr.</a>
+            </li>
+          
+            <li>
+              <span class="date-time">
+                
+                  <strong class="time">
+                    23:51
+                  </strong>
+                  <em class="date">
+                    (06/27/2013)
+                  </em>
+                
+              </span>
+              <a href="http://www.fcbarcelona.com/football/first-team/detail/article/interactive-review-of-fc-barcelona-s-100-point-season" target="_blank">Interactive review of FC Barcelona's 100-point season</a>
+            </li>
+          
+            <li>
+              <span class="date-time">
+                
+                  <strong class="time">
+                    23:51
+                  </strong>
+                  <em class="date">
+                    (06/27/2013)
+                  </em>
+                
+              </span>
+              <a href="http://www.fcbarcelona.com/football/first-team/fc-barcelona-players-during-holidays" target="_blank">Find out what Barça's players are up to this summer</a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+//<![CDATA[
+
+    new Ticker('#ticker-module .ticker', {
+      direction: "left",
+      autoplay: true,
+      move_duration: 1.0
+    }).init();
+  
+//]]>
+</script>
+
+  <div class="widget_embed_code_item margin widget" id="widget_embed_code_item_109735">
+    <script type="text/javascript">
+function manage_popups(){
+
+$('.radioplayer').bind('click',function(){
+	  var link = $(this).find('a');
+	  
+	  var measures = [570,260];
+	  window.open(link.attr('href'), 'radiobanner','location=0,status=0,scrollbars=0,menubar=0,resizable=0,width='+measures[0]+',height='+measures[1]); //spaces in window name are forbidden!
+    return false;
+  })
+
+}
+</script> 
+
+  </div>
+
+
+<div class="widget_news_carousel widget" id="widget_news_carousel_230773">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <div id="interactive-module" class="today carousel horizontal today-image">
+    <div class="inner-container">
+      
+      
+  <div class="top">
+    <ul>
+      
+      
+      
+        <li>
+          
+
+<div class="left">
+  
+
+
+
+  <a href="http://www.fcbarcelona.com/football/first-team/detail/article/club-reach-deal-in-principal-to-sell-david-villa-to-atletico-madrid" is_link_text_field_method="true" link_text_field="short_title">
+    
+      <img alt="David Villa v Atlético de Madrid / PHOTO: ARXIU FCB" src="http://media4.fcbarcelona.com/media/asset_publics/resources/000/058/737/size_640x360/FCB_-_AT_MADRID_24_.v1373295133.JPG" title="David Villa v Atlético de Madrid / PHOTO: ARXIU FCB" />
+    
+  </a>
+
+
+  <div class="read-more">
+    <a href="http://www.fcbarcelona.com/football/first-team/detail/article/club-reach-deal-in-principal-to-sell-david-villa-to-atletico-madrid" is_link_text_field_method="true" link_text_field="short_title">
+      View more
+      <i class="icon-read-more"></i>
+    </a>
+  </div>
+</div>
+
+<div class="right">
+  <div class="box">
+    <div class="header">
+      <h4 class=" ">
+        <a href="http://www.fcbarcelona.com/football/first-team/detail/article/club-reach-deal-in-principal-to-sell-david-villa-to-atletico-madrid" class="document" is_link_text_field_method="true" link_text_field="short_title">David Villa to Atletico Madrid</a>
+      </h4>
+    </div>
+  </div>
+</div>
+
+        </li>
+      
+        <li>
+          
+
+<div class="left">
+  
+
+
+
+  <a href="http://www.fcbarcelona.com/football/first-team/detail/article/7-great-nights-from-barca-number-7-david-villa" is_link_text_field_method="true" link_text_field="short_title">
+    
+      
+      <img alt="Villa celebrates a goal against AC Milan / PHOTO: ARXIU FCB" class="stub" real_src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/058/742/size_640x360/2013-03-12_FCB_-_AC_MILAN_011.v1373299167.jpg" src="http://assets1.fcbarcelona.com/images/" title="Villa celebrates a goal against AC Milan / PHOTO: ARXIU FCB" />
+    
+  </a>
+
+
+  <div class="read-more">
+    <a href="http://www.fcbarcelona.com/football/first-team/detail/article/7-great-nights-from-barca-number-7-david-villa" is_link_text_field_method="true" link_text_field="short_title">
+      View more
+      <i class="icon-read-more"></i>
+    </a>
+  </div>
+</div>
+
+<div class="right">
+  <div class="box">
+    <div class="header">
+      <h4 class=" ">
+        <a href="http://www.fcbarcelona.com/football/first-team/detail/article/7-great-nights-from-barca-number-7-david-villa" class="document" is_link_text_field_method="true" link_text_field="short_title">7 great nights from Barça number 7, David Villa</a>
+      </h4>
+    </div>
+  </div>
+</div>
+
+        </li>
+      
+        <li>
+          
+
+<div class="left">
+  
+
+
+
+  <a href="http://www.fcbarcelona.com/football/first-team/detail/article/tickets-for-the-second-leg-of-the-super-cup-on-sale-from-tuesday" is_link_text_field_method="true" link_text_field="short_title">
+    
+      
+      <img alt="Barça will host Atletico Madrid on August 28th  / PHOTO ARXIU FCB" class="stub" real_src="http://media1.fcbarcelona.com/media/asset_publics/resources/000/058/738/size_640x360/2012-12-16_FCB_-_ATLETICO_DE_MADRID_014.v1373296336.jpg" src="http://assets1.fcbarcelona.com/images/" title="Barça will host Atletico Madrid on August 28th  / PHOTO ARXIU FCB" />
+    
+  </a>
+
+
+  <div class="read-more">
+    <a href="http://www.fcbarcelona.com/football/first-team/detail/article/tickets-for-the-second-leg-of-the-super-cup-on-sale-from-tuesday" is_link_text_field_method="true" link_text_field="short_title">
+      View more
+      <i class="icon-read-more"></i>
+    </a>
+  </div>
+</div>
+
+<div class="right">
+  <div class="box">
+    <div class="header">
+      <h4 class=" ">
+        <a href="http://www.fcbarcelona.com/football/first-team/detail/article/tickets-for-the-second-leg-of-the-super-cup-on-sale-from-tuesday" class="document" is_link_text_field_method="true" link_text_field="short_title">Tickets for Super Cup on sale from Tuesday</a>
+      </h4>
+    </div>
+  </div>
+</div>
+
+        </li>
+      
+        <li>
+          
+
+<div class="left">
+  
+
+
+
+  <a href="http://www.fcbarcelona.com/football/first-team/detail/article/eric-abidal-joins-monaco" is_link_text_field_method="true" link_text_field="short_title">
+    
+      
+      <img alt="Abidal joins Monaco / PHOTO: ASM-FC.COM" class="stub" real_src="http://media4.fcbarcelona.com/media/asset_publics/resources/000/058/733/size_640x360/abidal.v1373284815.JPG" src="http://assets1.fcbarcelona.com/images/" title="Abidal joins Monaco / PHOTO: ASM-FC.COM" />
+    
+  </a>
+
+
+  <div class="read-more">
+    <a href="http://www.fcbarcelona.com/football/first-team/detail/article/eric-abidal-joins-monaco" is_link_text_field_method="true" link_text_field="short_title">
+      View more
+      <i class="icon-read-more"></i>
+    </a>
+  </div>
+</div>
+
+<div class="right">
+  <div class="box">
+    <div class="header">
+      <h4 class=" ">
+        <a href="http://www.fcbarcelona.com/football/first-team/detail/article/eric-abidal-joins-monaco" class="document" is_link_text_field_method="true" link_text_field="short_title">Éric Abidal joins Monaco</a>
+      </h4>
+    </div>
+  </div>
+</div>
+
+        </li>
+      
+        <li>
+          
+
+<div class="left">
+  
+
+
+
+  <a href="http://www.fcbarcelona.com/football/first-team/detail/article/10-highlights-from-the-joan-gamper-trophy" is_link_text_field_method="true" link_text_field="short_title">
+    
+      
+      <img alt="Messi, celebrant el seu gol al Gamper del 2005. FOTO: Arxiu FCB" class="stub" real_src="http://media1.fcbarcelona.com/media/asset_publics/resources/000/058/734/size_640x360/LY6M3913.v1373290912.jpg" src="http://assets1.fcbarcelona.com/images/" title="Messi, celebrant el seu gol al Gamper del 2005. FOTO: Arxiu FCB" />
+    
+  </a>
+
+
+  <div class="read-more">
+    <a href="http://www.fcbarcelona.com/football/first-team/detail/article/10-highlights-from-the-joan-gamper-trophy" is_link_text_field_method="true" link_text_field="short_title">
+      View more
+      <i class="icon-read-more"></i>
+    </a>
+  </div>
+</div>
+
+<div class="right">
+  <div class="box">
+    <div class="header">
+      <h4 class=" ">
+        <a href="http://www.fcbarcelona.com/football/first-team/detail/article/10-highlights-from-the-joan-gamper-trophy" class="document" is_link_text_field_method="true" link_text_field="short_title">10 highlights from the Joan Gamper Trophy</a>
+      </h4>
+    </div>
+  </div>
+</div>
+
+        </li>
+      
+        <li>
+          
+
+<div class="left">
+  
+
+
+
+  <a href="http://www.fcbarcelona.com/football/first-team/detail/article/squad-back-at-work-in-a-weeks-time" is_link_text_field_method="true" link_text_field="short_title">
+    
+      
+      <img alt="Adriano / PHOTO: ARXIU FCB" class="stub" real_src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/024/740/size_640x360/2012-07-26_ENTRENO_11.v1344244060.JPG" src="http://assets1.fcbarcelona.com/images/" title="Adriano / PHOTO: ARXIU FCB" />
+    
+  </a>
+
+
+  <div class="read-more">
+    <a href="http://www.fcbarcelona.com/football/first-team/detail/article/squad-back-at-work-in-a-weeks-time" is_link_text_field_method="true" link_text_field="short_title">
+      View more
+      <i class="icon-read-more"></i>
+    </a>
+  </div>
+</div>
+
+<div class="right">
+  <div class="box">
+    <div class="header">
+      <h4 class=" ">
+        <a href="http://www.fcbarcelona.com/football/first-team/detail/article/squad-back-at-work-in-a-weeks-time" class="document" is_link_text_field_method="true" link_text_field="short_title">Squad back at work in a week’s time</a>
+      </h4>
+    </div>
+  </div>
+</div>
+
+        </li>
+      
+        <li>
+          
+
+<div class="left">
+  
+
+
+
+  <a href="http://www.fcbarcelona.com/club/detail/article/neymar-jr-messi-rafinha-and-bojan-were-the-barca-footballers-in-the-news-this-week" is_link_text_field_method="true" link_text_field="short_title">
+    
+      
+      <img alt="The draw for next season’s Euroleague took place this Thursday / PHOTO: GERMÁN PARGA-FCB" class="stub" real_src="http://media4.fcbarcelona.com/media/asset_publics/resources/000/058/624/size_640x360/2013-07-04_SORTEIG_EUROLLIGA_-_15.v1373197029.JPG" src="http://assets1.fcbarcelona.com/images/" title="The draw for next season’s Euroleague took place this Thursday / PHOTO: GERMÁN PARGA-FCB" />
+    
+  </a>
+
+
+  <div class="read-more">
+    <a href="http://www.fcbarcelona.com/club/detail/article/neymar-jr-messi-rafinha-and-bojan-were-the-barca-footballers-in-the-news-this-week" is_link_text_field_method="true" link_text_field="short_title">
+      View more
+      <i class="icon-read-more"></i>
+    </a>
+  </div>
+</div>
+
+<div class="right">
+  <div class="box">
+    <div class="header">
+      <h4 class=" ">
+        <a href="http://www.fcbarcelona.com/club/detail/article/neymar-jr-messi-rafinha-and-bojan-were-the-barca-footballers-in-the-news-this-week" class="document" is_link_text_field_method="true" link_text_field="short_title">Week summary in 10 news</a>
+      </h4>
+    </div>
+  </div>
+</div>
+
+        </li>
+      
+        <li>
+          
+
+<div class="left">
+  
+
+
+
+  <a href="http://www.fcbarcelona.com/football/first-team/detail/article/messi-hat-trick-in-chicago-exhibition-game" is_link_text_field_method="true" link_text_field="short_title">
+    
+      
+      <img alt="Messi, during the game in Chicago / PHOTO: AP / CLARÍN.COM" class="stub" real_src="http://media2.fcbarcelona.com/media/asset_publics/resources/000/058/595/size_640x360/MESSI_amistoso.v1373180573.jpg" src="http://assets1.fcbarcelona.com/images/" title="Messi, during the game in Chicago / PHOTO: AP / CLARÍN.COM" />
+    
+  </a>
+
+
+  <div class="read-more">
+    <a href="http://www.fcbarcelona.com/football/first-team/detail/article/messi-hat-trick-in-chicago-exhibition-game" is_link_text_field_method="true" link_text_field="short_title">
+      View more
+      <i class="icon-read-more"></i>
+    </a>
+  </div>
+</div>
+
+<div class="right">
+  <div class="box">
+    <div class="header">
+      <h4 class=" ">
+        <a href="http://www.fcbarcelona.com/football/first-team/detail/article/messi-hat-trick-in-chicago-exhibition-game" class="document" is_link_text_field_method="true" link_text_field="short_title">Messi hat trick in Chicago exhibition game</a>
+      </h4>
+    </div>
+  </div>
+</div>
+
+        </li>
+      
+        <li>
+          
+
+<div class="left">
+  
+
+
+
+  <a href="http://www.fcbarcelona.com/basketball/barca-regal/detail/article/juan-carlos-navarro-will-get-a-summer-break-for-the-first-time-in-15-years" is_link_text_field_method="true" link_text_field="short_title">
+    
+      
+      <img alt="Navarro in a photo from 2001/2002. Photo: Arxiu FCB" class="stub" real_src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/058/625/size_640x360/Navarro.v1373198440.jpg" src="http://assets1.fcbarcelona.com/images/" title="Navarro in a photo from 2001/2002. Photo: Arxiu FCB" />
+    
+  </a>
+
+
+  <div class="read-more">
+    <a href="http://www.fcbarcelona.com/basketball/barca-regal/detail/article/juan-carlos-navarro-will-get-a-summer-break-for-the-first-time-in-15-years" is_link_text_field_method="true" link_text_field="short_title">
+      View more
+      <i class="icon-read-more"></i>
+    </a>
+  </div>
+</div>
+
+<div class="right">
+  <div class="box">
+    <div class="header">
+      <h4 class=" ">
+        <a href="http://www.fcbarcelona.com/basketball/barca-regal/detail/article/juan-carlos-navarro-will-get-a-summer-break-for-the-first-time-in-15-years" class="document" is_link_text_field_method="true" link_text_field="short_title">A summer break for the first time in 15 years</a>
+      </h4>
+    </div>
+  </div>
+</div>
+
+        </li>
+      
+        <li>
+          
+
+<div class="left">
+  
+
+
+
+  <a href="http://www.fcbarcelona.com/hockey/hockey-team/detail/article/40-years-since-barcas-first-european-cup" is_link_text_field_method="true" link_text_field="short_title">
+    
+      
+      <img alt=" FC Barcelona celebrate one of the goals in the first leg / PHOTO: ARXIU FCB" class="stub" real_src="http://media1.fcbarcelona.com/media/asset_publics/resources/000/058/596/size_640x360/8_-_ANADA_FINAL_COPA_EUROPA_HOQUEI_PATINS_-_BAR_A_5_BENFICA_3_1_JULIOL_1973_042.v1373187836.jpg" src="http://assets1.fcbarcelona.com/images/" title=" FC Barcelona celebrate one of the goals in the first leg / PHOTO: ARXIU FCB" />
+    
+  </a>
+
+
+  <div class="read-more">
+    <a href="http://www.fcbarcelona.com/hockey/hockey-team/detail/article/40-years-since-barcas-first-european-cup" is_link_text_field_method="true" link_text_field="short_title">
+      View more
+      <i class="icon-read-more"></i>
+    </a>
+  </div>
+</div>
+
+<div class="right">
+  <div class="box">
+    <div class="header">
+      <h4 class=" ">
+        <a href="http://www.fcbarcelona.com/hockey/hockey-team/detail/article/40-years-since-barcas-first-european-cup" class="document" is_link_text_field_method="true" link_text_field="short_title">40 Years since Barça’s first European Cup</a>
+      </h4>
+    </div>
+  </div>
+</div>
+
+        </li>
+      
+        <li>
+          
+
+<div class="left">
+  
+
+
+
+  <a href="http://www.fcbarcelona.com/football/first-team/detail/article/goals-galore-from-barcas-brazilian-newcomers" is_link_text_field_method="true" link_text_field="short_title">
+    
+      
+      <img alt="PHOTO: ARCHIVE FCB" class="stub" real_src="http://media4.fcbarcelona.com/media/asset_publics/resources/000/058/554/size_640x360/B-puchov_15-10.v1373103632.jpg" src="http://assets1.fcbarcelona.com/images/" title="PHOTO: ARCHIVE FCB" />
+    
+  </a>
+
+
+  <div class="read-more">
+    <a href="http://www.fcbarcelona.com/football/first-team/detail/article/goals-galore-from-barcas-brazilian-newcomers" is_link_text_field_method="true" link_text_field="short_title">
+      View more
+      <i class="icon-read-more"></i>
+    </a>
+  </div>
+</div>
+
+<div class="right">
+  <div class="box">
+    <div class="header">
+      <h4 class=" ">
+        <a href="http://www.fcbarcelona.com/football/first-team/detail/article/goals-galore-from-barcas-brazilian-newcomers" class="document" is_link_text_field_method="true" link_text_field="short_title">Goals from Brazilian newcomers</a>
+      </h4>
+    </div>
+  </div>
+</div>
+
+        </li>
+      
+        <li>
+          
+
+<div class="left">
+  
+
+
+
+  <a href="http://www.fcbarcelona.com/basketball/barca-regal/detail/image_gallery/sarunas-jasikevicius-al-barca" is_link_text_field_method="true" link_text_field="short_title">
+    
+      
+      <img alt="Sarunas Jasikevicius / FOTO: ARXIU FCB" class="stub" real_src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/035/670/size_640x360/2012-10-25_FC_BARCELONA_REGAL_-_BESIKTAS_JK_-_017.v1354271013.JPG" src="http://assets1.fcbarcelona.com/images/" title="Sarunas Jasikevicius / FOTO: ARXIU FCB" />
+    
+  </a>
+
+
+  <div class="read-more">
+    <a href="http://www.fcbarcelona.com/basketball/barca-regal/detail/image_gallery/sarunas-jasikevicius-al-barca" is_link_text_field_method="true" link_text_field="short_title">
+      View more
+      <i class="icon-read-more"></i>
+    </a>
+  </div>
+</div>
+
+<div class="right">
+  <div class="box">
+    <div class="header">
+      <h4 class=" ">
+        <a href="http://www.fcbarcelona.com/basketball/barca-regal/detail/image_gallery/sarunas-jasikevicius-al-barca" class="document" is_link_text_field_method="true" link_text_field="short_title">Jasikevicius career at Barça</a>
+      </h4>
+    </div>
+  </div>
+</div>
+
+        </li>
+      
+    </ul>
+  </div>
+
+  
+    <div class="bottom">
+      
+      <div class="thumbs">
+  <div class="inner-list">
+    <ul>
+      
+                  <li>
+            <a href="http://www.fcbarcelona.com/football/first-team/detail/article/club-reach-deal-in-principal-to-sell-david-villa-to-atletico-madrid" is_link_text_field_method="true" link_text_field="short_title">              <div class="caption">
+                <p class="category">FOOTBALL</p>
+                <h4 class=" ">David Villa to Atletico Madrid</h4>
+              </div>
+            </a>          </li>
+                  <li>
+            <a href="http://www.fcbarcelona.com/football/first-team/detail/article/7-great-nights-from-barca-number-7-david-villa" is_link_text_field_method="true" link_text_field="short_title">              <div class="caption">
+                <p class="category">FOOTBALL</p>
+                <h4 class=" ">7 great nights from Barça number 7, David Villa</h4>
+              </div>
+            </a>          </li>
+                  <li>
+            <a href="http://www.fcbarcelona.com/football/first-team/detail/article/tickets-for-the-second-leg-of-the-super-cup-on-sale-from-tuesday" is_link_text_field_method="true" link_text_field="short_title">              <div class="caption">
+                <p class="category">FOOTBALL</p>
+                <h4 class=" ">Tickets for Super Cup on sale from Tuesday</h4>
+              </div>
+            </a>          </li>
+                  <li>
+            <a href="http://www.fcbarcelona.com/football/first-team/detail/article/eric-abidal-joins-monaco" is_link_text_field_method="true" link_text_field="short_title">              <div class="caption">
+                <p class="category">FOOTBALL</p>
+                <h4 class=" ">Éric Abidal joins Monaco</h4>
+              </div>
+            </a>          </li>
+                  <li>
+            <a href="http://www.fcbarcelona.com/football/first-team/detail/article/10-highlights-from-the-joan-gamper-trophy" is_link_text_field_method="true" link_text_field="short_title">              <div class="caption">
+                <p class="category">FOOTBALL</p>
+                <h4 class=" ">10 highlights from the Joan Gamper Trophy</h4>
+              </div>
+            </a>          </li>
+                  <li>
+            <a href="http://www.fcbarcelona.com/football/first-team/detail/article/squad-back-at-work-in-a-weeks-time" is_link_text_field_method="true" link_text_field="short_title">              <div class="caption">
+                <p class="category">FOOTBALL</p>
+                <h4 class=" ">Squad back at work in a week’s time</h4>
+              </div>
+            </a>          </li>
+                  <li>
+            <a href="http://www.fcbarcelona.com/club/detail/article/neymar-jr-messi-rafinha-and-bojan-were-the-barca-footballers-in-the-news-this-week" is_link_text_field_method="true" link_text_field="short_title">              <div class="caption">
+                <p class="category">CLUB</p>
+                <h4 class=" ">Week summary in 10 news</h4>
+              </div>
+            </a>          </li>
+                  <li>
+            <a href="http://www.fcbarcelona.com/football/first-team/detail/article/messi-hat-trick-in-chicago-exhibition-game" is_link_text_field_method="true" link_text_field="short_title">              <div class="caption">
+                <p class="category">FOOTBALL</p>
+                <h4 class=" ">Messi hat trick in Chicago exhibition game</h4>
+              </div>
+            </a>          </li>
+                  <li>
+            <a href="http://www.fcbarcelona.com/basketball/barca-regal/detail/article/juan-carlos-navarro-will-get-a-summer-break-for-the-first-time-in-15-years" is_link_text_field_method="true" link_text_field="short_title">              <div class="caption">
+                <p class="category">BASKETBALL</p>
+                <h4 class=" ">A summer break for the first time in 15 years</h4>
+              </div>
+            </a>          </li>
+                  <li>
+            <a href="http://www.fcbarcelona.com/hockey/hockey-team/detail/article/40-years-since-barcas-first-european-cup" is_link_text_field_method="true" link_text_field="short_title">              <div class="caption">
+                <p class="category">ROLLER HOCKEY</p>
+                <h4 class=" ">40 Years since Barça’s first European Cup</h4>
+              </div>
+            </a>          </li>
+                  <li>
+            <a href="http://www.fcbarcelona.com/football/first-team/detail/article/goals-galore-from-barcas-brazilian-newcomers" is_link_text_field_method="true" link_text_field="short_title">              <div class="caption">
+                <p class="category">FOOTBALL</p>
+                <h4 class=" ">Goals from Brazilian newcomers</h4>
+              </div>
+            </a>          </li>
+                  <li>
+            <a href="http://www.fcbarcelona.com/basketball/barca-regal/detail/image_gallery/sarunas-jasikevicius-al-barca" is_link_text_field_method="true" link_text_field="short_title">              <div class="caption">
+                <p class="category">BASKETBALL</p>
+                <h4 class=" ">Jasikevicius career at Barça</h4>
+              </div>
+            </a>          </li>
+        
+          </ul>
+  </div>
+</div>
+
+    </div>
+  
+
+
+    </div>
+    <div class="right">
+  
+    <div class="small">
+  
+    
+  <div class="widget_next_game margin widget" id="widget_next_game_230773">
+    
+      
+
+      <div class="next-match-module">
+        <div class="header">
+          <h2>Next Game</h2>
+          <div class="competition-info">
+            <span class="competition-name">
+              Friendly
+              
+            </span>
+          </div>
+        </div>
+        <div class="content">
+          <div class="versus-shields">
+            <span class="home">
+              
+                <a href="http://www.fcbarcelona.com/football/first-team/match-archive/2013-2014/friendly/lechia-gdansk_fc-barcelona/info"><img alt="Lechia Gdansk" src="http://media1.fcbarcelona.com/media/asset_publics/resources/000/057/320/original_rgb/escut_lechia_95x95.v1371718195.png" title="Lechia Gdansk" /></a>
+              
+            </span>
+            <span class="away">
+              
+                <a href="http://www.fcbarcelona.com/football/first-team/match-archive/2013-2014/friendly/lechia-gdansk_fc-barcelona/info"><img alt="FC Barcelona" src="http://media2.fcbarcelona.com/media/asset_publics/resources/000/004/670/original_rgb/FCB.v1319559431.png" title="FC Barcelona" /></a>
+              
+            </span>
+          </div>
+          <h3 class="versus-names">
+            
+              <a href="http://www.fcbarcelona.com/football/first-team/match-archive/2013-2014/friendly/lechia-gdansk_fc-barcelona/info">
+                <span class="home">Lechia Gdansk</span><span class="away">FC Barcelona</span>
+              </a>
+            
+          </h3>          
+        </div>
+        <div class="match-info-box">
+          <p class="match-info">
+              <a href="http://www.fcbarcelona.com/football/first-team/match-archive/2013-2014/friendly/lechia-gdansk_fc-barcelona/info" >                
+                <span class="venue">PGE Arena Gdansk</span>
+                <span class="date">07/20/2013</span>
+                <span class="date">20:30</span>
+                <span class="date"></span>
+              </a>
+          </p>
+					
+          
+					
+          
+            <p class="tv-info">Ninguna</p>
+          
+
+          <div class="match-options">
+            
+            
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+  
+</div>
+
+  
+  <div class="main-propaganda-box">
+    
+      <div class="medium">
+        <script type="text/javascript">
+if (typeof sas_manager != 'undefined') {
+ sas_manager.render(18079);
+}
+</script><noscript>
+<a href="http://www6.smartadserver.com/call/pubjumpi/41747/282514/18079/S/%5Btimestamp%5D/?" target="_blank" onclick='_gaq.push(["_link","http://www6.smartadserver.com/call/pubjumpi/41747/282514/18079/S/%5Btimestamp%5D/?"]); return false;'>
+<img src="http://www6.smartadserver.com/call/pubi/41747/282514/18079/S/%5Btimestamp%5D/?" border="0" alt=""></a>
+</noscript>
+      </div>
+    
+    
+      <div class="big">
+        <script type="text/javascript">
+if (typeof sas_manager != 'undefined') {
+ sas_manager.render(18202);
+}
+</script><noscript>
+<a href="http://www6.smartadserver.com/call/pubjumpi/41747/282514/18202/S/%5Btimestamp%5D/?" target="_blank" onclick='_gaq.push(["_link","http://www6.smartadserver.com/call/pubjumpi/41747/282514/18202/S/%5Btimestamp%5D/?"]); return false;'>
+<img src="http://www6.smartadserver.com/call/pubi/41747/282514/18202/S/%5Btimestamp%5D/?" border="0" alt=""></a>
+</noscript>
+      </div>
+    
+  </div>
+</div>
+
+  </div>
+</div>
+<div class="widget_free margin widget" id="widget_free_126343">
+  <div class="quick-access">
+  <ul>
+    <li>
+      <a class="crew" href="http://www.fcbarcelona.com/fcb-teams#squads" onClick="_gaq.push (['_trackEvent', 'veure-plantilles', 'barra-home-en', 'plantilles-fcbequips']);">
+        Squads
+      </a>
+    </li>
+    <li>
+      <a class="calendar" href="http://www.fcbarcelona.com/fcb-teams#fixtures" onClick="_gaq.push (['_trackEvent', 'veure-calendaris', 'barra-home-en', 'calendaris-fcbequips']);">
+        Calendars and results
+      </a>
+    </li>
+    <li>
+      <a class="clasification" href="http://www.fcbarcelona.com/fcb-teams#season-rankings" onClick="_gaq.push (['_trackEvent', 'veure-classificacions', 'barra-home-en', 'classificacions-fcbequips']);">
+        Classifications
+      </a>
+    </li>
+    <li>
+      <a class="museum" href="http://www.fcbarcelona.com/camp-nou/camp-nou-experience" onClick="_gaq.push (['_trackEvent', 'veure-museu', 'barra-home-en', 'ah-museu-tour']);">
+        Museum & Tour
+      </a>
+    </li>
+    <li>
+      <a class="seats" href="http://www.fcbarcelona.com/members/seient-lliure" onClick="_gaq.push (['_trackEvent', 'veure-seient-lliure', 'barra-home-en', 'ah-seient-lliure']);">
+        Seient Lliure
+      </a>
+    </li>
+    <li>
+      <a class="online" href="http://www.fcbarcelona.com/club/facilites-and-services/application-forms" onClick="_gaq.push (['_trackEvent', 'veure-tramits', 'barra-home-en', 'ah-tramits-online']);">
+        Application forms
+      </a>
+    </li>
+  </ul>
+</div>
+  <div class="free-content margin">
+    
+  </div>
+</div>
+
+          </div>
+        
+
+        
+          <div id="content" class="two-col">
+            
+              
+              
+              <div class="left">
+                <div class="widget_tabbed_nodeable margin widget" id="widget_tabbed_nodeable_195796">
+  <div class="highlighted-item two-col margin thumbnails">
+    <ul class="tabs-navigation">
+      
+        <li class='current' id="tab_24281">
+          <a href="#" 
+             id="highlights"
+             onclick="changeTabbedWidgetTab('195796',
+                                            'widget_tabbed_nodeable_195796',
+                                             0);return false">HIGHLIGHTS</a>
+        </li>
+      
+        <li  id="tab_24282">
+          <a href="#" 
+             id="neymar-da-silva"
+             onclick="changeTabbedWidgetTab('195796',
+                                            'widget_tabbed_nodeable_195796',
+                                             1);return false">NEYMAR DA SILVA</a>
+        </li>
+      
+        <li  id="tab_24283">
+          <a href="#" 
+             id="new-apps"
+             onclick="changeTabbedWidgetTab('195796',
+                                            'widget_tabbed_nodeable_195796',
+                                             2);return false">NEW APPS</a>
+        </li>
+      
+      
+    </ul>
+    <div class="ajax-tabs">
+      <ul>
+        <li class="current">
+  <div class="inner-content common-list">
+    <div class="inner-list">
+      <ul>
+        
+          <li class="current">
+            <div class="content">              
+              <div class="detail">
+                <a href="http://www.fcbarcelona.com/football/first-team/detail/article/messi-and-neymar-jr-a-duo-worthy-of-fc-barcelona-s-history" is_link_text_field_method="true" link_text_field="short_title">
+                                                      <img alt="Neymar Jr and Messi " src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/058/363/size_349x196/640x360_messi_neymar_v2.v1372853666.jpg" title="Neymar Jr and Messi " />                </a>
+              </div>
+              <div class="description">
+                <h4><a href="http://www.fcbarcelona.com/football/first-team/detail/article/messi-and-neymar-jr-a-duo-worthy-of-fc-barcelona-s-history" is_link_text_field_method="true" link_text_field="title">Messi and Neymar Jr, a duo worthy of FC Barcelona's history </a> </h4>
+                
+                
+                
+                  <p>Leo Messi and Neymar Jr will feature for the same team next season. The two footballers, who recently played against each other in a charity match, will form an attacking duo that could very well<a href="http://www.fcbarcelona.com/football/first-team/detail/article/messi-and-neymar-jr-a-duo-worthy-of-fc-barcelona-s-history">... <span>Read more &#187;</span></a></p>
+                
+              </div>
+            </div>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="widget_thumbs_list margin widget" id="widget_thumbs_list_139091">
+  
+    
+    <div class="galleries-list margin news-gallery-list two-col">
+      <div class="header">
+        
+        
+        <h4>PHOTO GALLERIES</h4>
+        
+          <div class="paginator dot-paginator">
+            <ul>
+              
+                <li class="current"><a href="#" onclick="paginate_thumbs_list(139091, 1); return false;; return false;"></a></li>
+              
+                <li><a href="#" onclick="paginate_thumbs_list(139091, 2); return false;; return false;"></a></li>
+              
+            </ul>
+          </div>
+        
+        <div class="related">
+          
+        </div>
+      </div>
+      <ul class="tabs">
+        <li class="current">
+          <div class="inner-content">
+            <div class="inner-list">
+              <ul>
+                <li class="current">
+                  
+                    <div class="col">
+                      <ul>
+                        
+                          <li>
+                            <div class="content">
+                              <div class="detail detail-shaped">
+                                <a href="http://www.fcbarcelona.com/football/first-team/detail/image_gallery/bojan-krkic-s-trajectory-in-fc-barcelona" is_link_text_field_method="true" link_text_field="short_title">
+                                  
+                                    <img alt="Bojan Krkic's trajectory in FC Barcelona" src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/058/572/size_96x54/Bojan_Krkic_2_Rafa_Villalgordo_-Optimized.v1373107627.jpg" title="Bojan Krkic's trajectory in FC Barcelona" />
+                                  
+                                </a>
+                              </div>
+                              <div class="description">
+                                <p class="category">
+                                  First Team
+                                </p>
+                                <h4><a href="http://www.fcbarcelona.com/football/first-team/detail/image_gallery/bojan-krkic-s-trajectory-in-fc-barcelona" is_link_text_field_method="true" link_text_field="short_title">Bojan Krkic's trajectory in FC Barcelona</a></h4>
+                              </div>
+                            </div>
+                          </li>
+                        
+                          <li>
+                            <div class="content">
+                              <div class="detail detail-shaped">
+                                <a href="http://www.fcbarcelona.com/football/barca-b/detail/image_gallery/rafa-alcantara-s-trajectory-in-fc-barcelona" is_link_text_field_method="true" link_text_field="short_title">
+                                  
+                                    <img alt="Rafa Alcántara's trajectory in FC Barcelona" src="http://media4.fcbarcelona.com/media/asset_publics/resources/000/058/534/size_96x54/Infantil_A-Optimized.v1373036715.jpg" title="Rafa Alcántara's trajectory in FC Barcelona" />
+                                  
+                                </a>
+                              </div>
+                              <div class="description">
+                                <p class="category">
+                                  Barça B
+                                </p>
+                                <h4><a href="http://www.fcbarcelona.com/football/barca-b/detail/image_gallery/rafa-alcantara-s-trajectory-in-fc-barcelona" is_link_text_field_method="true" link_text_field="short_title">Rafa Alcántara's trajectory in FC Barcelona</a></h4>
+                              </div>
+                            </div>
+                          </li>
+                        
+                          <li>
+                            <div class="content">
+                              <div class="detail detail-shaped">
+                                <a href="http://www.fcbarcelona.com/football/first-team/detail/image_gallery/marc-muniesa-s-trajectory-in-fc-barcelona" is_link_text_field_method="true" link_text_field="short_title">
+                                  
+                                    <img alt="Marc Muniesa's trajectory in FC Barcelona" src="http://media1.fcbarcelona.com/media/asset_publics/resources/000/058/341/size_96x54/Muniesa1-Optimized.v1372847073.JPG" title="Marc Muniesa's trajectory in FC Barcelona" />
+                                  
+                                </a>
+                              </div>
+                              <div class="description">
+                                <p class="category">
+                                  First Team
+                                </p>
+                                <h4><a href="http://www.fcbarcelona.com/football/first-team/detail/image_gallery/marc-muniesa-s-trajectory-in-fc-barcelona" is_link_text_field_method="true" link_text_field="short_title">Marc Muniesa's trajectory in FC Barcelona</a></h4>
+                              </div>
+                            </div>
+                          </li>
+                        
+                      </ul>
+                    </div>
+                  
+                    <div class="col">
+                      <ul>
+                        
+                          <li>
+                            <div class="content">
+                              <div class="detail detail-shaped">
+                                <a href="http://www.fcbarcelona.com/basketball/barca-regal/detail/image_gallery/sarunas-jasikevicius-al-barca" is_link_text_field_method="true" link_text_field="short_title">
+                                  
+                                    <img alt="Jasikevicius career at Barça" src="http://media2.fcbarcelona.com/media/asset_publics/resources/000/058/215/size_96x54/2012-08-27_ENTREVISTA_SARUNAS_JASIKEVICIUS_002-Optimized.v1372696782.jpg" title="Jasikevicius career at Barça" />
+                                  
+                                </a>
+                              </div>
+                              <div class="description">
+                                <p class="category">
+                                  Barça Regal 
+                                </p>
+                                <h4><a href="http://www.fcbarcelona.com/basketball/barca-regal/detail/image_gallery/sarunas-jasikevicius-al-barca" is_link_text_field_method="true" link_text_field="short_title">Jasikevicius career at Barça</a></h4>
+                              </div>
+                            </div>
+                          </li>
+                        
+                          <li>
+                            <div class="content">
+                              <div class="detail detail-shaped">
+                                <a href="http://www.fcbarcelona.com/football/first-team/detail/image_gallery/marc-bartra-at-his-campus" is_link_text_field_method="true" link_text_field="short_title">
+                                  
+                                    <img alt="Marc Bartra, at his Campus" src="http://media2.fcbarcelona.com/media/asset_publics/resources/000/058/027/size_96x54/300613_CAMPUSMARCBARTRA_VIC_2922-Optimized.v1372605610.JPG" title="Marc Bartra, at his Campus" />
+                                  
+                                </a>
+                              </div>
+                              <div class="description">
+                                <p class="category">
+                                  First Team
+                                </p>
+                                <h4><a href="http://www.fcbarcelona.com/football/first-team/detail/image_gallery/marc-bartra-at-his-campus" is_link_text_field_method="true" link_text_field="short_title">Marc Bartra, at his Campus</a></h4>
+                              </div>
+                            </div>
+                          </li>
+                        
+                          <li>
+                            <div class="content">
+                              <div class="detail detail-shaped">
+                                <a href="http://www.fcbarcelona.com/football/first-team/detail/image_gallery/season/2012-2013/messi-s-best-goal-celebrations" is_link_text_field_method="true" link_text_field="short_title">
+                                  
+                                    <img alt="Messi's best goal celebrations " src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/057/707/size_96x54/2012-08-19_FCB_-_REAL_SOCIEDAD_002-Optimized.v1372341014.jpg" title="Messi's best goal celebrations " />
+                                  
+                                </a>
+                              </div>
+                              <div class="description">
+                                <p class="category">
+                                  First Team
+                                </p>
+                                <h4><a href="http://www.fcbarcelona.com/football/first-team/detail/image_gallery/season/2012-2013/messi-s-best-goal-celebrations" is_link_text_field_method="true" link_text_field="short_title">Messi's best goal celebrations </a></h4>
+                              </div>
+                            </div>
+                          </li>
+                        
+                      </ul>
+                    </div>
+                  
+                </li>
+              </ul>
+            </div>            
+          </div>
+        </li>
+      </ul>
+    </div>
+  
+</div>
+<!-- Put your widget view here. Variables defined on locals on the widget are available here -->
+
+  <div class="widget_highlighted_list margin widget" id="widget_highlighted_list_228974">
+    <div class="highlighted-list common-list margin">
+      <div class="inner-list">
+        <ul>
+          <li>
+            
+              <div class="header first">
+                <h4>JOAN GAMPER TROPHY</h4>
+                
+              </div>
+            
+            
+            <div class="row">
+              
+              
+                <div class="box">
+  
+  <div class="content">
+    <div class="detail">
+      <a href="http://www.fcbarcelona.com/football/first-team/detail/article/squad-to-be-presented-at-the-gamper" is_link_text_field_method="true" link_text_field="short_title">
+        
+        
+          <img alt="Bartra, amb Tévez, durant el Gamper del 2009 / FOTO: ARXIU FCB" src="http://media2.fcbarcelona.com/media/asset_publics/resources/000/058/356/size_200x112/20090819_M3_0276.v1372846807.jpg" title="Bartra, amb Tévez, durant el Gamper del 2009 / FOTO: ARXIU FCB" />
+        
+      </a>
+    </div>
+    <div class="description">
+      <h5>
+        <a href="http://www.fcbarcelona.com/football/first-team/detail/article/squad-to-be-presented-at-the-gamper" is_link_text_field_method="true" link_text_field="short_title">Squad to be presented at the Gamper</a>
+      </h5>
+    </div>
+  </div>
+</div>
+
+              
+                <div class="box">
+  
+  <div class="content">
+    <div class="detail">
+      <a href="http://www.fcbarcelona.com/football/first-team/detail/article/joan-gamper-trophy-tickets-to-go-on-sale-this-wednesday" is_link_text_field_method="true" link_text_field="short_title">
+        
+        
+          <img alt="Trofeu Joan Gamper to be played on August 2 at 21.30 " src="http://media2.fcbarcelona.com/media/asset_publics/resources/000/058/301/size_200x112/640x360_not_GAMPER.v1372777771.jpg" title="Trofeu Joan Gamper to be played on August 2 at 21.30 " />
+        
+      </a>
+    </div>
+    <div class="description">
+      <h5>
+        <a href="http://www.fcbarcelona.com/football/first-team/detail/article/joan-gamper-trophy-tickets-to-go-on-sale-this-wednesday" is_link_text_field_method="true" link_text_field="short_title">Gamper tickets to go on sale this Wednesday</a>
+      </h5>
+    </div>
+  </div>
+</div>
+
+              
+                <div class="box">
+  
+  <div class="content">
+    <div class="detail">
+      <a href="http://www.fcbarcelona.com/football/first-team/detail/article/season/2012-2013/santos-fc-will-play-in-the-gamper-for-the-second-time-in-its-history" is_link_text_field_method="true" link_text_field="short_title">
+        
+        
+          <img alt="Pelé with Santos in 1963 Gamper Trophy / FOTO: ARXIU FCB" src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/056/471/size_200x112/0917_01_17.v1371026991.jpg" title="Pelé with Santos in 1963 Gamper Trophy / FOTO: ARXIU FCB" />
+        
+      </a>
+    </div>
+    <div class="description">
+      <h5>
+        <a href="http://www.fcbarcelona.com/football/first-team/detail/article/season/2012-2013/santos-fc-will-play-in-the-gamper-for-the-second-time-in-its-history" is_link_text_field_method="true" link_text_field="short_title">Santos FC, a rival with history </a>
+      </h5>
+    </div>
+  </div>
+</div>
+
+              
+            </div>
+            
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+
+<!-- Put your widget view here. Variables defined on locals on the widget are available here -->
+
+
+<div class="widget_highlighted margin widget" id="widget_highlighted_205644">
+<div class="special-highlighted common-list margin bottom">
+  <div class="inner-list">
+    <ul>
+      
+      <li>
+        <div class="detail">
+          <a href="http://www.fcbarcelona.com/club/barca-2-0/detail/article/season/2012-2013/fc-barcelona-youtube-channel-breaks-record-more-than-10-million-views-in-june" is_link_text_field_method="true" link_text_field="short_title">
+                                    <img alt="Todos los vídeos de Neymar" src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/055/634/size_320x250/Tots_els_v_deos_de_Neymar.v1370347007.JPG" title="Todos los vídeos de Neymar" />
+          </a>
+        </div>
+        <div class="description">
+          <p class="category">
+            BARÇA 2.0
+          </p>
+          <h4>
+            <a href="http://www.fcbarcelona.com/club/barca-2-0/detail/article/season/2012-2013/fc-barcelona-youtube-channel-breaks-record-more-than-10-million-views-in-june" is_link_text_field_method="true" link_text_field="short_title">Barça breaks another record on YouTube</a>
+          </h4>
+          <a href="http://www.fcbarcelona.com/club/barca-2-0/detail/article/season/2012-2013/fc-barcelona-youtube-channel-breaks-record-more-than-10-million-views-in-june" class="category_description category" is_link_text_field_method="true" link_text_field="short_title">
+            
+          </a>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+</div>
+
+<!-- Put your widget view here. Variables defined on locals on the widget are available here -->
+
+
+<div class="widget_highlighted margin widget" id="widget_highlighted_205643">
+<div class="special-highlighted common-list margin bottom">
+  <div class="inner-list">
+    <ul>
+      
+      <li>
+        <div class="detail">
+          <a href="http://www.fcbarcelona.com/club/wallpapers" is_link_text_field_method="true" link_text_field="short_title">
+                                    <img alt="Wallpapers" src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/047/397/size_320x250/wallpapers.v1365073748.jpg" title="Wallpapers" />
+          </a>
+        </div>
+        <div class="description">
+          <p class="category">
+            WALLPAPERS
+          </p>
+          <h4>
+            <a href="http://www.fcbarcelona.com/club/wallpapers" is_link_text_field_method="true" link_text_field="short_title">Wallpapers FCB</a>
+          </h4>
+          <a href="http://www.fcbarcelona.com/club/wallpapers" class="category_description category" is_link_text_field_method="true" link_text_field="short_title">
+            
+          </a>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+</div>
+
+<!-- Put your widget view here. Variables defined on locals on the widget are available here -->
+
+  <div class="widget_highlighted_list margin widget" id="widget_highlighted_list_224593">
+    <div class="highlighted-list common-list margin">
+      <div class="inner-list">
+        <ul>
+          <li>
+            
+              <div class="header first">
+                <h4>NEW KIT 2013-14</h4>
+                
+              </div>
+            
+            
+            <div class="row">
+              
+              
+                <div class="box">
+  
+  <div class="content">
+    <div class="detail">
+      <a href="http://www.fcbarcelona.com/club/detail/image_gallery/season/2012-2013/first-team-kit-2013-14" is_link_text_field_method="true" link_text_field="short_title">
+        
+        
+          <img alt="Fa13_FB_ClubKits_Barca_Authentic_Home_HERO_0476-Optimized" src="http://media4.fcbarcelona.com/media/asset_publics/resources/000/053/437/size_200x112/Fa13_FB_ClubKits_Barca_Authentic_Home_HERO_0476-Optimized.v1369143739.jpeg" title="Fa13_FB_ClubKits_Barca_Authentic_Home_HERO_0476-Optimized" />
+        
+      </a>
+    </div>
+    <div class="description">
+      <h5>
+        <a href="http://www.fcbarcelona.com/club/detail/image_gallery/season/2012-2013/first-team-kit-2013-14" is_link_text_field_method="true" link_text_field="short_title">Home kit 2013/14</a>
+      </h5>
+    </div>
+  </div>
+</div>
+
+              
+                <div class="box">
+  
+  <div class="content">
+    <div class="detail">
+      <a href="http://www.fcbarcelona.com/club/detail/article/season/2012-2013/fc-barcelonas-2013-14-kits-go-on-sale-today" is_link_text_field_method="true" link_text_field="short_title">
+        
+        
+          <img alt="FC Barcelona 2013/14 home kit  / PHOTO: G.Parga - FCB" src="http://media4.fcbarcelona.com/media/asset_publics/resources/000/053/749/size_200x112/2013-05-23_NOVA_SAMARRETA_TENDA_NIKE_-_08.v1369306357.JPG" title="FC Barcelona 2013/14 home kit  / PHOTO: G.Parga - FCB" />
+        
+      </a>
+    </div>
+    <div class="description">
+      <h5>
+        <a href="http://www.fcbarcelona.com/club/detail/article/season/2012-2013/fc-barcelonas-2013-14-kits-go-on-sale-today" is_link_text_field_method="true" link_text_field="short_title">On sale!</a>
+      </h5>
+    </div>
+  </div>
+</div>
+
+              
+                <div class="box">
+  
+  <div class="content">
+    <div class="detail">
+      <a href="http://www.fcbarcelona.com/club/detail/image_gallery/season/2012-2013/first-team-away-kit-2013-14" is_link_text_field_method="true" link_text_field="short_title">
+        
+        
+          <img alt="Fa13_FB_ClubKits_Barca_Authentic_Away_HERO_0472-Optimized" src="http://media2.fcbarcelona.com/media/asset_publics/resources/000/053/447/size_200x112/Fa13_FB_ClubKits_Barca_Authentic_Away_HERO_0472-Optimized.v1369128880.jpeg" title="Fa13_FB_ClubKits_Barca_Authentic_Away_HERO_0472-Optimized" />
+        
+      </a>
+    </div>
+    <div class="description">
+      <h5>
+        <a href="http://www.fcbarcelona.com/club/detail/image_gallery/season/2012-2013/first-team-away-kit-2013-14" is_link_text_field_method="true" link_text_field="short_title">Away kit 2013/14</a>
+      </h5>
+    </div>
+  </div>
+</div>
+
+              
+            </div>
+            
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+
+<!-- Put your widget view here. Variables defined on locals on the widget are available here -->
+
+
+<div class="widget_highlighted margin widget" id="widget_highlighted_220257">
+<div class="special-highlighted common-list margin bottom">
+  <div class="inner-list">
+    <ul>
+      
+      <li>
+        <div class="detail">
+          <a href="http://www.fcbarcelona.com/asia-tour-2013" is_link_text_field_method="true" link_text_field="short_title">
+                                    <img alt="Asia on Tour" src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/052/648/size_320x250/01_ASIA_ON_TOUR_2013-01.v1368634302.jpg" title="Asia on Tour" />
+          </a>
+        </div>
+        <div class="description">
+          <p class="category">
+            PRESEASON 2013/14
+          </p>
+          <h4>
+            <a href="http://www.fcbarcelona.com/asia-tour-2013" is_link_text_field_method="true" link_text_field="short_title">Preseason Asia Tour </a>
+          </h4>
+          <a href="http://www.fcbarcelona.com/asia-tour-2013" class="category_description category" is_link_text_field_method="true" link_text_field="short_title">
+            
+          </a>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+</div>
+
+<!-- Put your widget view here. Variables defined on locals on the widget are available here -->
+
+
+<div class="widget_highlighted margin widget" id="widget_highlighted_220258">
+<div class="special-highlighted common-list margin bottom">
+  <div class="inner-list">
+    <ul>
+      
+      <li>
+        <div class="detail">
+          <a href="http://www.fcbarcelona.com/football/first-team/spanish-football-league-champions-2012-2013" is_link_text_field_method="true" link_text_field="short_title">
+                                    <img alt="Campions de Lliga 2012/13." src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/051/518/size_320x250/640x360_CAMPIONS.v1368025208.jpg" title="Campions de Lliga 2012/13." />
+          </a>
+        </div>
+        <div class="description">
+          <p class="category">
+            FOOTBALL
+          </p>
+          <h4>
+            <a href="http://www.fcbarcelona.com/football/first-team/spanish-football-league-champions-2012-2013" is_link_text_field_method="true" link_text_field="short_title">2012/13 Champions!</a>
+          </h4>
+          <a href="http://www.fcbarcelona.com/football/first-team/spanish-football-league-champions-2012-2013" class="category_description category" is_link_text_field_method="true" link_text_field="short_title">
+            
+          </a>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+</div>
+
+
+  <div class="widget_youtube_gallery margin widget" id="widget_youtube_gallery_73360">
+        <div class="youtube-gallery galleries-list two-col margin thumbnails">
+      <ul class="tabs-navigation">    
+        <li id="tab_youtube_gallery" class="current">
+          <a href="#"
+             onclick="changeTabbedWidgetTab('73360',
+               'widget_youtube_gallery_73360',
+               ''); return false">
+               Videos
+          </a>
+        </li>
+        
+        <li class="options last">
+          
+            <a href="http://www.youtube.com/playlist?list=PLD2D0A410133B01FE">Watch more videos</a>
+            &nbsp;
+            <a href="http://www.fcbarcelona.com/list/video_galleries" link_text="Video galleries">Video galleries</a>
+          
+        </li>
+      </ul>
+
+      <ul class="tabs-for-galleries videos-content">
+        
+          <div class="content">
+            <div class="col preview-col">
+              <div class="preview">
+                <object width="100%" height="100%">
+                  <param value="transparent" name="wmode">
+                  <param value="http://www.youtube.com/v/cKeLpdRIL2w?version=3&hd=1&rel=0" name="movie">
+                  <param value="true" name="allowFullScreen">
+                  <param value="always" name="allowscriptaccess">
+                  <embed width="100%" height="100%" hd="1" wmode="transparent" allowfullscreen="true" allowscriptaccess="always" type="application/x-shockwave-flash" src="http://www.youtube.com/v/WnDDAYMdgp0?version=3&amp;hd=1&amp;rel=0"></embed>
+                </object>
+              </div>
+
+              <div class="image">
+                <img alt="FC Barcelona - El portero del Infantil A azulgrana para 6 penaltis y marca uno" src="http://i1.ytimg.com/vi/cKeLpdRIL2w/0.jpg" title="FC Barcelona - El portero del Infantil A azulgrana para 6 penaltis y marca uno" />
+              </div>
+            </div>
+
+            <div class="col gallery-col">
+              <ul>
+                
+                  <li>
+                    <div class="content">
+                      <div class="detail">
+                        <a href="http://www.youtube.com/v/cKeLpdRIL2w?version=3&amp;hd=1&amp;rel=0"><img alt="2" src="http://i1.ytimg.com/vi/cKeLpdRIL2w/2.jpg" /><span class="caption">FC Barcelona - El portero del Infantil A azulgrana para 6 penaltis y marca uno</span></a>
+                      </div>
+                    </div>
+                  </li>
+                
+                  <li>
+                    <div class="content">
+                      <div class="detail">
+                        <a href="http://www.youtube.com/v/I_zY78UJEVI?version=3&amp;hd=1&amp;rel=0"><img alt="2" src="http://i1.ytimg.com/vi/I_zY78UJEVI/2.jpg" /><span class="caption">FC Barcelona - 30 años de esta genialidad de Maradona en el Bernabéu</span></a>
+                      </div>
+                    </div>
+                  </li>
+                
+                  <li>
+                    <div class="content">
+                      <div class="detail">
+                        <a href="http://www.youtube.com/v/VFnpyP16A5M?version=3&amp;hd=1&amp;rel=0"><img alt="2" src="http://i1.ytimg.com/vi/VFnpyP16A5M/2.jpg" /><span class="caption">FC Barcelona - Felicitats campions!</span></a>
+                      </div>
+                    </div>
+                  </li>
+                
+                  <li>
+                    <div class="content">
+                      <div class="detail">
+                        <a href="http://www.youtube.com/v/2zWjN1aDMZ8?version=3&amp;hd=1&amp;rel=0"><img alt="2" src="http://i1.ytimg.com/vi/2zWjN1aDMZ8/2.jpg" /><span class="caption">FC Barcelona - La segona samarreta del Barça 2013/14, a l'FCBotiga</span></a>
+                      </div>
+                    </div>
+                  </li>
+                
+                  <li>
+                    <div class="content">
+                      <div class="detail">
+                        <a href="http://www.youtube.com/v/KrUzCSrFGFQ?version=3&amp;hd=1&amp;rel=0"><img alt="2" src="http://i1.ytimg.com/vi/KrUzCSrFGFQ/2.jpg" /><span class="caption">FC Barcelona - Puyol hopes to be back for FC Barcelona's preseason</span></a>
+                      </div>
+                    </div>
+                  </li>
+                
+                  <li>
+                    <div class="content">
+                      <div class="detail">
+                        <a href="http://www.youtube.com/v/yZH5EQtfCKU?version=3&amp;hd=1&amp;rel=0"><img alt="2" src="http://i1.ytimg.com/vi/yZH5EQtfCKU/2.jpg" /><span class="caption">FC Barcelona - El FC Barcelona i l'ABJ celebren el Memorial Kubala</span></a>
+                      </div>
+                    </div>
+                  </li>
+                
+              </ul>
+            </div>
+          </div>
+        
+      </ul>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+  $(document).ready(function() {
+    prepare_youtube_galleries();
+  });
+
+//]]>
+</script>
+              </div>
+            
+
+            
+              <div class="right">
+                
+  <div class="widget_embed_code_item margin widget" id="widget_embed_code_item_224647">
+    <script>
+var slideWidth = 320;
+var currentPosition = 0;
+var numberOfSlides = 0;
+var count = 0;
+var slideshow = null;
+
+function galeriaInterval(numberOfSlides) {
+    currentPosition = counter(currentPosition, numberOfSlides);
+    nextSlide(currentPosition, numberOfSlides);
+}
+
+function nextSlide(currentPosition, numberOfSlides){
+
+    manageControls(currentPosition, numberOfSlides);
+    $('.fcbotigaSlider .images').animate({
+        'marginLeft' : slideWidth*(-currentPosition)
+    });
+
+    $('.navigation ul li a').each(function(ev){
+        if($(this).attr('rel') == currentPosition){
+            $(this).addClass('active');
+        }else {
+            $(this).removeClass('active');
+        }
+    }
+    );
+}
+
+function counter(count, numberOfSlides){
+    count++;
+    if(count >= numberOfSlides){
+        count = 0;
+    }
+    return count;
+} 
+function manageControls(position, numberOfSlides){
+    if(position<=0){ $('#leftControl').hide(); $('#leftControlArrow').show(); } else{ $('#leftControl').show();$('#leftControlArrow').hide(); }
+    if(position==numberOfSlides-1){ $('#rightControl').hide(); $('#rightControlArrow').show(); } else{ $('#rightControl').show();$('#rightControlArrow').hide();}
+}
+$(document).ready(function(){
+
+    var tmp = 0;
+
+    tmp = $('.fcbotigaSlider .navigation ul li').length;
+
+    $('.fcbotigaSlider .navigation ul').css({
+        'width' : (tmp*19), 
+        'right' : '30px'
+    });
+
+    $('.fcbotigaSlider .navigation #leftControl').css({
+        'right' : (20) + (tmp*19)
+    });
+    $('.fcbotigaSlider .navigation #leftControlArrow').css({
+        'right' : (20) + (tmp*19)
+    });
+  var slides = $('.fcbotigaSlider .images img');
+  numberOfSlides = slides.length;
+  $('.fcbotigaSlider .images').css('overflow', 'visible');
+
+  $('.fcbotigaSlider .images').css('width', slideWidth * numberOfSlides);
+
+  slideshow = window.setInterval('galeriaInterval('+numberOfSlides+')', 5000);
+
+  $('.control')
+    .bind('click', function(){
+        if($(this).attr('id') =='leftControlArrow'){return;}
+        if($(this).attr('id') =='rightControlArrow'){return;}
+
+        window.clearInterval(slideshow);
+
+if(($(this).attr('id')=='rightControl')){
+            currentPosition = parseInt(currentPosition)+1;
+        }else{
+            currentPosition = parseInt(currentPosition)-1;
+            if(currentPosition < 0){
+                currentPosition = 0;
+            }
+        }
+
+      nextSlide(currentPosition, numberOfSlides);
+
+      slideshow = window.setInterval('galeriaInterval('+numberOfSlides+')', 5000);
+  });
+
+  $('.fcbotigaSlider .navigation ul li a').click(function(){
+
+      window.clearInterval(slideshow);
+
+    currentPosition = $(this).attr('rel');
+    nextSlide(currentPosition, numberOfSlides);
+
+    slideshow = window.setInterval('galeriaInterval('+numberOfSlides+')', 5000); 
+  });
+
+}); 
+
+</script>
+    <style type="text/css">
+.fcBotigaSliderBox .fcbotigaSlider {
+	width: 320px;
+	height: 290px;
+	display:block;
+	overflow: hidden;
+	margin: 0px 0px 0px 0px;
+}
+.fcBotigaSliderBox .fcbotigaSlider .images {
+	float: left;
+	width: 3200px; 
+	height: 250; 
+	overflow: hidden; 
+	margin-top: 0;
+}
+.fcBotigaSliderBox .fcbotigaSlider img {
+	float:left;
+}
+.fcBotigaSliderBox .fcbotigaSlider .navigation {
+	position: relative;
+	display:block;
+	top: 0px;
+	left: 0px;
+	width: 320px;
+	height: 31px;
+	background-color: transparent;
+	background-image:url(http://assets1.fcbarcelona.com/images/new_design/match_title_bg.26ce80e52.png);
+	background-position:0px 0px;
+	background-repeat:repeat;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+}
+.fcBotigaSliderBox .fcbotigaSlider .navigation .click_area{
+	height: 30px;
+	width:125px;
+	position:absolute;
+	margin:0 0 0 8px;
+	display:block;
+	cursor:pointer;
+	text-decoration:none;
+}
+.fcBotigaSliderBox .fcbotigaSlider .navigation ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none; 
+	width: 290px!important; 
+}
+.fcBotigaSliderBox .fcbotigaSlider .navigation ul li {
+	float: left;
+	margin: 0px;
+	padding: 10px 0 0 0;
+	width: 14px;
+	height: 20px;
+}
+.fcBotigaSliderBox .fcbotigaSlider .navigation ul li a {
+	outline: none;
+	float: left;
+	line-height: 12px;
+	height: 19px;
+	width:19px;
+	background: transparent url(http://fcbmediapre1.gnuinepath.com/media/asset_publics/resources/000/034/340/original/dots.v1355079882.png) 0 0px no-repeat;
+	cursor:pointer;
+}
+.fcBotigaSliderBox .fcbotigaSlider .navigation ul li a.hover {
+	background: transparent url(http://fcbmediapre1.gnuinepath.com/media/asset_publics/resources/000/034/340/original/dots.v1355079882.png) 0 -20px no-repeat;
+}
+.fcBotigaSliderBox .fcbotigaSlider .navigation ul li a.active {
+	background: transparent url(http://fcbmediapre1.gnuinepath.com/media/asset_publics/resources/000/034/340/original/dots.v1355079882.png) 0 -20px no-repeat;
+}
+.box_gray {
+	border: #ccc solid 1px;
+	background: #fff!important;
+        padding-bottom: 0px;
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Google Chrome y Safari */
+	border-radius: 5px; /* CSS3 (Opera 10.5 e Internet Explorer 9) */
+}
+.navigation ul li.tit {
+    border: medium none;
+    color: #E9EEF6;
+    display: block;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-left: 14px!important;
+	margin-right: 5px!important;
+    outline: medium none;
+    padding: 0;
+    text-decoration: none;
+    text-shadow: 1px 0 1px #0F2C46;
+    text-transform: uppercase;
+	width: 80px!important;
+	background: url("http://assets4.fcbarcelona.com/images/new_design/element_border.8e0014eab.png") no-repeat scroll right top transparent;
+
+}
+
+</style>
+
+<div class="fcBotigaSliderBox">
+<div class="fcbotigaSlider box_gray" xtclib="fcBotigaSlider">
+    <div class="navigation"> 
+        <ul>
+          <li class="tit">FCBOTIGA</li>    
+          <li><a class="active" rel="0" title="" onClick="r"></a></li>
+          <li><a rel="1" title="" onClick="e"></a></li>  
+          <li><a rel="2" title="" onClick="e"></a></li>
+          <li><a rel="3" title="" onClick="e"></a></li>        
+        </ul>
+
+    </div>    
+  <div class="images">    
+                <div class="content">
+                    <a href="http://shop.fcbarcelona.com/stores/barcelona/products/kit_selector.aspx?pid=131420&lid=1&portal=I6OSJQOC&CMP=PSC-I6OSJQOC" onClick="_gaq.push (['_trackEvent', 'comprar-botiga', 'carrussel-botiga-maxi-en', 'nova-samarreta-senyera-13-14']);" target="_blank">
+                    <img src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/056/393/original/300x250_creatividadesbotiga_2equipacion_eng.v1370936024.jpg" alt="Segona samarreta del FCBarcelona a la FCBotiga" width="320" height="250" /> 
+                    </a>
+                </div>
+                <div class="content">
+                    <a href="http://shop.fcbarcelona.com/stores/barcelona/products/kit_selector.aspx?pid=1000581&lid=1&portal=I6OSJQOC&CMP=PSC-I6OSJQOC" onClick="_gaq.push (['_trackEvent', 'comprar-botiga', 'carrussel-botiga-maxi-en', 'nova-samarreta-13-14']);" target="_blank">
+                    <img src="http://media2.fcbarcelona.com/media/asset_publics/resources/000/053/882/original/creatividades_botiga_003_001_320_ENG.v1369402705.jpg" alt="La nova samarreta del FCBarcelona a la FCBotiga" width="320" height="250" /> 
+                    </a>
+                </div>
+                <div class="content">
+                    <a href="http://shop.fcbarcelona.com/stores/barcelona/products/product_browse.aspx?category%7ccategory_root%7c20855=nike&category%7ccat_20855%7c20898=mens%20training&category%7ccat_20898%7c20913=jackets&lid=1&portal=I6OSJQOC&CMP=PSC-I6OSJQOC" onClick="_gaq.push (['_trackEvent', 'comprar-botiga', 'carrussel-botiga-maxi-en', 'samarreta-verda']);" target="_blank">
+                    <img src="http://media2.fcbarcelona.com/media/asset_publics/resources/000/053/884/original/creatividades_botiga_003_003_320_ENG.v1369402776.jpg" alt="Totes les novetats del FC Barcelona a la FCBotiga" width="320" height="250" />  
+                    </a>
+                </div>
+                 <div class="content">
+<a href="http://shop.fcbarcelona.com/stores/barcelona/products/product_browse.aspx?category%7ccategory_root%7c20855=nike&category%7ccat_20855%7c20898=mens%20training&lid=1&portal=I6OSJQOC&CMP=PSC-I6OSJQOC" onClick="_gaq.push (['_trackEvent', 'comprar-botiga', 'carrussel-botiga-maxi-en', 'jaqueta']);" target="_blank">
+                    <img src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/053/883/original/creatividades_botiga_003_002_320_ENG.v1369402744.jpg" alt="L'Equipació d'entrenament dels teus ídols a la FCBotiga" width="320" height="250" /> 
+                    </a>
+                </div>
+                             
+  </div>
+</div>
+</div>
+  </div>
+<div class="widget_calendar margin widget" id="widget_calendar_246948">
+      <div class="calendar one-col common-list">      
+      
+      <div class="header">
+        <h4>Football / FC Barcelona</h4>
+        <p> Season 2013 - 2014  <a href="/football/first-team/i-calendar/2013-2014" class="ical">iCal</a></p>
+      </div>
+
+      <div class="content">
+        
+          <div class="inner-list">
+        <ul>
+              <li>
+          <ul>
+                            <li class=" visitor">
+    <div class="icon">
+      <img alt="Friendly" src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/004/749/original_rgb/th_futbol_no_logo.v1319644367.jpg" title="Friendly" />
+    </div>
+    <div class="info">
+      <h6>
+        <a href="http://www.fcbarcelona.com/football/first-team/match-archive/2013-2014/friendly/lechia-gdansk_fc-barcelona">Lechia Gdansk - FC Barcelona</a>
+                
+        
+          <span class="place">Friendly</span>
+          <span class="date">Sat 07/20/2013<em>20:30</em>&nbsp;</span>
+          
+          
+
+                    
+        
+      </h6>
+    </div>
+    
+    <div class="actions">
+      <div class="buy-tickets">
+        
+        
+      </div>
+      
+      
+    </div>
+  </li>
+
+                            <li class=" visitor">
+    <div class="icon">
+      <img alt="Friendly" src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/004/749/original_rgb/th_futbol_no_logo.v1319644367.jpg" title="Friendly" />
+    </div>
+    <div class="info">
+      <h6>
+        <a href="http://www.fcbarcelona.com/football/first-team/match-archive/2013-2014/friendly/bayern-munich_fc-barcelona">Bayern Munich - FC Barcelona</a>
+                
+        
+          <span class="place">Friendly</span>
+          <span class="date">Wed 07/24/2013<em>20:30</em>&nbsp;</span>
+          
+          
+
+                    
+        
+      </h6>
+    </div>
+    
+    <div class="actions">
+      <div class="buy-tickets">
+        
+        
+      </div>
+      
+      
+    </div>
+  </li>
+
+                            <li class=" visitor">
+    <div class="icon">
+      <img alt="Friendly" src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/004/749/original_rgb/th_futbol_no_logo.v1319644367.jpg" title="Friendly" />
+    </div>
+    <div class="info">
+      <h6>
+        <a href="http://www.fcbarcelona.com/football/first-team/match-archive/2013-2014/friendly/valerenga_fc-barcelona">Valerenga - FC Barcelona</a>
+                
+        
+          <span class="place">Friendly</span>
+          <span class="date">Sat 07/27/2013<em>19:00</em>&nbsp;</span>
+          
+          
+
+                    
+        
+      </h6>
+    </div>
+    
+    <div class="actions">
+      <div class="buy-tickets">
+        
+        
+      </div>
+      
+      
+    </div>
+  </li>
+
+                            <li class=" local">
+    <div class="icon">
+      <img alt="Joan Gamper Trophy" src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/004/749/original_rgb/th_futbol_no_logo.v1319644367.jpg" title="Joan Gamper Trophy" />
+    </div>
+    <div class="info">
+      <h6>
+        <a href="http://www.fcbarcelona.com/football/first-team/match-archive/2013-2014/joan-gamper-trophy/fc-barcelona_santos">FC Barcelona - Santos</a>
+                
+        
+          <span class="place">Joan Gamper Trophy</span>
+          <span class="date">Fri 08/ 2/2013<em>21:30</em>&nbsp;</span>
+          
+          
+
+                    
+        
+      </h6>
+    </div>
+    
+    <div class="actions">
+      <div class="buy-tickets">
+        
+        <a href="https://entrades.fcbarcelona.cat/Ticketing/gestionURL?bean=estadoCompra&amp;accion=iniciarCompra&amp;aforo=&amp;idCompeticion=008&amp;jornada=99&amp;lang=en" class="btn btn-calendar" onclick="_gaq.push(['_trackEvent', 'comprar-entrades', 'boto-calendari-en', 'fugm-san']);">Tickets<i class="icon-trash icon-white"></i></a>
+      </div>
+      
+      
+    </div>
+  </li>
+
+                            <li class=" visitor">
+    <div class="icon">
+      <img alt="Friendly" src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/004/749/original_rgb/th_futbol_no_logo.v1319644367.jpg" title="Friendly" />
+    </div>
+    <div class="info">
+      <h6>
+        <a href="http://www.fcbarcelona.com/football/first-team/match-archive/2013-2014/friendly/tailandia_fc-barcelona">Thailand - FC Barcelona</a>
+                
+        
+          
+  
+          
+
+          <span class="place">Friendly</span>
+          <span class="date-before-extra-info">Wed 08/ 7/2013</span>
+          <span class="date-extra-info">
+            14:00&nbsp;GMT+7
+          </span>
+        
+      </h6>
+    </div>
+    
+    <div class="actions">
+      <div class="buy-tickets">
+        
+        
+      </div>
+      
+      
+    </div>
+  </li>
+
+                      </ul>
+        </li>
+          </ul>
+    <script type="text/javascript">
+//<![CDATA[
+$(document).ready(function() {    // load list paginator
+    common_list();
+
+    // ajax class for calendar navigation links
+    $('a.data-calendar').click(function () {
+      var url = $(this).attr('href');
+      $('#widget_calendar_246948').load(url);
+      return false;
+    });
+  })
+//]]>
+</script></div>
+
+
+
+<ul class="actions bottom" lang="en">
+  
+    <li><a href="http://www.fcbarcelona.com/football/first-team/calendar" class="btn-more">Show complete<i class="icon-arrow-side"></i></a></li>
+    
+</ul>
+
+
+
+        
+      </div>
+    </div>  </div><div class="widget_free margin widget" id="widget_free_98028">
+  <style type="text/css">
+.border_agenda {
+	border: #b5bbc4 solid 1px;
+	background:url(http://media3.fcbarcelona.com/media/asset_publics/resources/000/026/976/original/agenda_eng.v1346175165.jpg) no-repeat;
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Google Chrome y Safari */
+	border-radius: 5px; /* CSS3 (Opera 10.5 e Internet Explorer 9) */
+	display:block;
+	width:320px;
+	height:86px;
+	cursor:pointer
+}
+</style><div class="border_agenda" onclick="location.href='http://www.fcbarcelona.com/detail/card/events-calendar'"></div>
+  <div class="free-content margin">
+    
+  </div>
+</div>
+
+  
+  <div class="widget_banner_item margin widget" id="widget_banner_item_2170">
+    <div class="ad-container bars">
+      <div class="content">
+        <script type="text/javascript">
+if (typeof sas_manager != 'undefined') {
+ sas_manager.render(18203);
+}
+</script><noscript>
+<a href="http://www6.smartadserver.com/call/pubjumpi/41747/282514/18203/S/%5Btimestamp%5D/?" target="_blank" onclick='_gaq.push(["_link","http://www6.smartadserver.com/call/pubjumpi/41747/282514/18203/S/%5Btimestamp%5D/?"]); return false;'>
+<img src="http://www6.smartadserver.com/call/pubi/41747/282514/18203/S/%5Btimestamp%5D/?" border="0" alt=""></a>
+</noscript>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="widget_embed_code_item margin widget" id="widget_embed_code_item_203070">
+    <a class="twitter-timeline" href="https://twitter.com/FCBarcelona" data-widget-id="324478910005903361">Tweets by @FCBarcelona</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </div>
+<div class="widget_social_webs_counter margin widget" id="widget_social_webs_counter_11491">
+  <div class="social-counter">
+    <div class="inner-list">
+      <ul>
+        <li class="facebook">
+          <a href="http://www.facebook.com/fcbarcelona"><strong>FC Barcelona</strong> in Facebook
+          </a>
+          <div class="facebook-counter">
+            <div id="fb-root"></div>
+            <fb:like href="http://www.facebook.com/fcbarcelona" send="false" layout="button_count" width="200" show_faces="false" action="like" font="arial"></fb:like>
+          </div>
+        </li>
+        <li class="twitter">
+          <a href="http://www.twitter.com/#!/fcbarcelona"><strong>FC Barcelona</strong> in Twitter</a>
+          <div class="twitter-counter">
+               <a href="http://www.twitter.com/#!/fcbarcelona" class="twitter-follow-button" data-show-count="false" data-lang="en">
+                 Follow @fcbarcelona
+               </a>
+               <script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+  
+  <div class="widget_banner_item margin widget" id="widget_banner_item_202705">
+    <div class="ad-container bars">
+      <div class="content">
+        <script type="text/javascript">
+if (typeof sas_manager != 'undefined') {
+                sas_manager.render(20063);    // Formato : 300x250 - 3 300x250
+}
+</script><noscript>
+<a href="http://www6.smartadserver.com/call/pubjumpi/41747/282514/20063/M/%5Btimestamp%5D/?" target="_blank" onclick='_gaq.push(["_link","http://www6.smartadserver.com/call/pubjumpi/41747/282514/20063/M/%5Btimestamp%5D/?"]); return false;'>
+<img src="http://www6.smartadserver.com/call/pubi/41747/282514/20063/M/%5Btimestamp%5D/?" border="0" alt=""></a>
+</noscript>
+      </div>
+    </div>
+  </div>
+
+
+
+              </div>
+            
+          </div>
+        
+
+        
+          <div id="content-bottom">
+            
+  
+  <div class="widget_banner_item margin widget" id="widget_banner_item_25197">
+    <div class="ad-container frame">
+      <div class="content">
+        <script type="text/javascript">
+if (typeof sas_manager != 'undefined') {
+ sas_manager.render(18199);
+}
+</script><noscript>
+<a href="http://www6.smartadserver.com/call/pubjumpi/41747/282514/18199/S/%5Btimestamp%5D/?" target="_blank" onclick='_gaq.push(["_link","http://www6.smartadserver.com/call/pubjumpi/41747/282514/18199/S/%5Btimestamp%5D/?"]); return false;'>
+<img src="http://www6.smartadserver.com/call/pubi/41747/282514/18199/S/%5Btimestamp%5D/?" border="0" alt=""></a>
+</noscript>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <div class="widget_banner_item margin widget" id="widget_banner_item_25196">
+    <div class="ad-container frame">
+      <div class="content">
+        <script type="text/javascript">
+if (typeof sas_manager != 'undefined') {
+ sas_manager.render(18198);
+}
+</script><noscript>
+<a href="http://www6.smartadserver.com/call/pubjumpi/41747/282514/18198/S/%5Btimestamp%5D/?" target="_blank" onclick='_gaq.push(["_link","http://www6.smartadserver.com/call/pubjumpi/41747/282514/18198/S/%5Btimestamp%5D/?"]); return false;'>
+<img src="http://www6.smartadserver.com/call/pubi/41747/282514/18198/S/%5Btimestamp%5D/?" border="0" alt=""></a>
+</noscript>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <div class="widget_banner_item margin widget" id="widget_banner_item_25195">
+    <div class="ad-container frame">
+      <div class="content">
+        <script type="text/javascript">
+if (typeof sas_manager != 'undefined') {
+ sas_manager.render(18200);
+}
+</script><noscript>
+<a href="http://www6.smartadserver.com/call/pubjumpi/41747/282514/18200/S/%5Btimestamp%5D/?" target="_blank" onclick='_gaq.push(["_link","http://www6.smartadserver.com/call/pubjumpi/41747/282514/18200/S/%5Btimestamp%5D/?"]); return false;'>
+<img src="http://www6.smartadserver.com/call/pubi/41747/282514/18200/S/%5Btimestamp%5D/?" border="0" alt=""></a>
+</noscript>
+      </div>
+    </div>
+  </div>
+
+
+
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div id="footer">
+  <div class="inner-content">
+    <div class="sponsor">
+      <ul class="js-hover">
+        
+          <li><a href="http://www.nikefootball.com/" target="_blank" rel="http://assets.fcbarcelona.com/images/sponsor/01nike_color.193317c15.png" onclick='_gaq.push(["_link","http://www.nikefootball.com/"]); return false;'><img alt="Nike" src="http://assets.fcbarcelona.com/images/sponsor/01nike_gris.f27f17156.png" class="js-original" style="display: inline; "><img src="http://assets.fcbarcelona.com/images/sponsor/01nike_color.193317c15.png" alt="Nike" class="js-hovered" style="display: none; "></a></li>
+          
+<li><a href="http://www.qatarairways.com" target="_blank" rel="http://media4.fcbarcelona.com/media/asset_publics/resources/000/058/073/original/02qatar_airways_color.v1372664865.png" onclick='_gaq.push(["_link","http://www.qatarairways.com"]); return false;'><img alt="Qatar Airways" src="http://media4.fcbarcelona.com/media/asset_publics/resources/000/058/071/original/02qatar_airways_gris.v1372663019.png" class="js-original" style="display: inline; "><img src="http://assets.fcbarcelona.com/images/sponsor/02qatar_color.d63fd5e22.png" alt="Qatar" class="js-hovered" style="display: none; "></a></li>
+
+<li class="tiny"><a href="http://www.estrelladamm.es/" target="_blank" rel="http://assets.fcbarcelona.com/images/sponsor/07damm_color.163540e2c.png" onclick='_gaq.push(["_link","http://www.estrelladamm.es/"]); return false;'><img alt="Damm" src="http://assets.fcbarcelona.com/images/sponsor/07damm_gris.afb5d37fc.png" class="js-original" style="display: inline; "><img src="http://assets.fcbarcelona.com/images/sponsor/07damm_color.163540e2c.png" alt="Damm" class="js-hovered" style="display: none; "></a></li>
+          
+<li class="tiny"><a href="http://www.lacaixa.com/" target="_blank" rel="http://assets.fcbarcelona.com/images/sponsor/04la_caixa_color.41a24b422.png" onclick='_gaq.push(["_link","http://www.lacaixa.com/"]); return false;'><img alt="La Caixa" src="http://assets.fcbarcelona.com/images/sponsor/04la_caixa_gris.abf844f66.png" class="js-original" style="display: inline; "><img src="http://assets.fcbarcelona.com/images/sponsor/04la_caixa_color.41a24b422.png" alt="La Caixa" class="js-hovered" style="display: none; "></a></li>
+          
+<li class="tiny"><a href="http://www.audi.es/" target="_blank" rel="http://assets.fcbarcelona.com/images/sponsor/03audi_color.87dff7adf.png" onclick='_gaq.push(["_link","http://www.audi.es/"]); return false;'><img alt="Audi" src="http://assets.fcbarcelona.com/images/sponsor/03audi_gris.68cdcce5f.png" class="js-original" style="display: inline; "><img src="http://assets.fcbarcelona.com/images/sponsor/03audi_color.87dff7adf.png" alt="Audi" class="js-hovered" style="display: none; "></a></li>
+
+
+<li style="text-align:right;  width: 950px; float: right;">
+<a href="http://www.fcbarcelona.com/Sponsors" target="_blank" rel="http://media3.fcbarcelona.com/media/asset_publics/resources/000/032/607/original/px.v1351504657.png">Full list of Sponsors
+<img alt="tots els patrocinadors" src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/032/607/original/px.v1351504657.png" class="js-original" style="display: inline; "><img src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/032/607/original/px.v1351504657.png" alt="tots els patrocinadors" class="js-hovered js-original" style="display: none; "><img style="display: none;" src="http://media3.fcbarcelona.com/media/asset_publics/resources/000/032/607/original/px.v1351504657.png" alt="tots els patrocinadors" class="js-hovered"></a>
+</li>
+        
+      </ul>
+    </div>
+    
+    
+      <div class="content">
+        <div class="left">
+          <div class="list">
+            <div class="left">
+              <ul><li class=""><a href="http://www.fcbarcelona.com">Home</a></li><li class=""><a href="http://www.fcbarcelona.com/club">Club</a></li><li class=""><a href="http://www.fcbarcelona.com/football">Football</a></li><li class=""><a href="http://www.fcbarcelona.com/sections">Sections</a></li><li class=""><a href="http://www.fcbarcelona.com/info-tickets">Tickets</a></li><li class=""><a href="http://www.fcbarcelona.com/members">Members</a></li><li class=""><a href="http://www.fcbarcelona.com/camp-nou">Camp Nou</a></li><li class=""><a href="http://arxiu.fcbarcelona.cat/web/english/botiga/pre_home.html" onclick="_gaq.push([&quot;_link&quot;,&quot;http://arxiu.fcbarcelona.cat/web/english/botiga/pre_home.html&quot;]); return false;">Store</a></li><li class=""><a href="/sitemap">Sitemap</a></li><li class=""><a href="http://www.fcbarcelona.com/members/accesibility">ACCESIBILITY</a></li></ul>
+            </div>
+            <div class="right">
+              <div class="col">
+                <h4>FCB WEBS</h4>
+<ul>
+  
+    
+      <li class=""><a href="http://foundation.fcbarcelona.com" id="menu_item_540">Foundation</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://penyes.fcbarcelona.com" id="menu_item_541">Supporters Clubs</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://fans.fcbarcelona.com" id="menu_item_542">Fans</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://barcatv.fcbarcelona.com" id="menu_item_543">Barça TV</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://business.fcbarcelona.com" id="menu_item_629">Business</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://arxiu.fcbarcelona.cat/web/english/botiga/pre_home.html" id="menu_item_544" onclick="_gaq.push([&quot;_link&quot;,&quot;http://arxiu.fcbarcelona.cat/web/english/botiga/pre_home.html&quot;]); return false;">Shop</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://www.fcbviatges.com/eng/" id="menu_item_2964">Travels</a><span></span></li>
+    
+  
+</ul>
+
+              </div>
+              <div class="col">
+                <h4>SECTIONS</h4>
+<ul>
+  
+    
+      <li class=""><a href="http://www.fcbarcelona.com/basketball" id="menu_item_3258">Basketball</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://www.fcbarcelona.com/handball" id="menu_item_3259">Handball</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://www.fcbarcelona.com/futsal-1" id="menu_item_3260">Futsal</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://www.fcbarcelona.com/hockey" id="menu_item_3261">Roller Hockey</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://www.fcbarcelona.com/amateur-sports" id="menu_item_3262">Amateur Sports</a><span></span></li>
+    
+  
+</ul>
+
+                <h4>CONTENTS</h4>
+<ul>
+  
+    
+      <li class=""><a href="http://www.fcbarcelona.com/list/articles" id="menu_item_545">News</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://www.fcbarcelona.com/list/image_galleries/" id="menu_item_546">Images</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://www.fcbarcelona.com/list/video_galleries/" id="menu_item_547">Videos</a><span></span></li>
+    
+  
+</ul>
+
+              </div>
+              <div class="col">
+                <h4>ARCHIVE</h4>
+<ul>
+  
+    
+      <li class=""><a href="http://www.fcbarcelona.com/season-2012-2013" id="menu_item_3587">Season 12-13</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://www.fcbarcelona.com/season-2011-2012" id="menu_item_2666">Season 11-12</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://arxiu.fcbarcelona.cat/web/english/futbol/temporada_10-11/home/temporada1011.html" id="menu_item_1142" onclick="_gaq.push([&quot;_link&quot;,&quot;http://arxiu.fcbarcelona.cat/web/english/futbol/temporada_10-11/home/temporada1011.html&quot;]); return false;">Season 10-11</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://arxiu.fcbarcelona.cat/web/english/futbol/temporada_09-10/home/temporada0910.html" id="menu_item_1143" onclick="_gaq.push([&quot;_link&quot;,&quot;http://arxiu.fcbarcelona.cat/web/english/futbol/temporada_09-10/home/temporada0910.html&quot;]); return false;">Season 09-10</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://arxiu.fcbarcelona.cat/web/english/futbol/temporada_08-09/home/temporada0809.html" id="menu_item_1144" onclick="_gaq.push([&quot;_link&quot;,&quot;http://arxiu.fcbarcelona.cat/web/english/futbol/temporada_08-09/home/temporada0809.html&quot;]); return false;">Season 08-09</a><span></span></li>
+    
+  
+    
+      <li class=""><a href="http://arxiu.fcbarcelona.cat/web/english/futbol/temporada_07-08/home/temporada0708.html" id="menu_item_1146" onclick="_gaq.push([&quot;_link&quot;,&quot;http://arxiu.fcbarcelona.cat/web/english/futbol/temporada_07-08/home/temporada0708.html&quot;]); return false;">Season 07-08</a><span></span></li>
+    
+  
+</ul>
+
+              </div>
+            </div>
+          </div>
+          <div class="social">
+            
+              <div class="left">
+                <div class="facebook_button_footer">
+                  <div id="fb-root"></div>
+                  <fb:like href="http://www.facebook.com/fcbarcelona" layout="button_count" show_faces="true" font=""></fb:like>
+                </div>
+                <div class="twitter_button_footer">
+                  <a href="http://www.twitter.com/#!/fcbarcelona" class="twitter-follow-button" data-show-count="false" data-lang="en" data-button="grey" data-text-color="#FFFFFF" data-link-color="#FFFFFF"></a>
+                  <script src="//platform.twitter.com/widgets.js" type="text/javascript"></script>
+                </div>
+                <div class="pinterest_button_footer">
+                  <a href="http://pinterest.com/fcbarcelona" data-pin-do="buttonFollow">
+                    Follow me on Pinterest
+                  </a>                
+                  <script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
+                </div>
+                <div class="instagram_button_footer">
+                  <a href="http://instagram.com/fcbarcelona" class="instagram-follow-button">
+                    <img src="//badges.instagram.com/static/images/ig-badge-view-24.png" alt="Instagram" />
+                  </a>
+                </div>
+              </div>
+              <div class="right">
+                <ul>
+                  <li><a href="http://www.facebook.com/fcbarcelona" class="facebook" onclick="_gaq.push([&quot;_trackSocial&quot;,&quot;Facebook&quot;,&quot;Ver Perfil&quot;,&quot;http://www.facebook.com/fcbarcelona&quot;,&quot;http://www.fcbarcelona.com/&quot;]);" title="Facebook">Facebook</a></li>
+                  <li><a href="http://www.twitter.com/#!/fcbarcelona" class="twitter" onclick="_gaq.push([&quot;_trackSocial&quot;,&quot;Twitter&quot;,&quot;Ver Perfil&quot;,&quot;http://www.twitter.com/#!/fcbarcelona&quot;,&quot;http://www.fcbarcelona.com/&quot;]);" title="Twitter">Twitter</a></li>
+                  <li><a href="https://plus.google.com/116151548242653888082/posts" class="googleplus" onclick="_gaq.push([&quot;_trackSocial&quot;,&quot;Google+&quot;,&quot;Ver Perfil&quot;,&quot;https://plus.google.com/116151548242653888082/posts&quot;,&quot;http://www.fcbarcelona.com/&quot;]);" title="Google+">Google+</a></li>
+                  <li><a href="http://t.qq.com/FCBarcelona" class="weibo" onclick="_gaq.push([&quot;_trackSocial&quot;,&quot;Tencent Weibo&quot;,&quot;Ver Perfil&quot;,&quot;http://t.qq.com/FCBarcelona&quot;,&quot;http://www.fcbarcelona.com/&quot;]);" title="Tencent Weibo">Tencent Weibo</a></li>
+                  <li><a href="http://pinterest.com/fcbarcelona" class="pinterest" onclick="_gaq.push([&quot;_trackSocial&quot;,&quot;Pinterest&quot;,&quot;Ver Perfil&quot;,&quot;http://pinterest.com/fcbarcelona&quot;,&quot;http://www.fcbarcelona.com/&quot;]);" title="Pinterest">Pinterest</a></li>
+                  <li><a href="http://instagram.com/fcbarcelona" class="instagram" onclick="_gaq.push([&quot;_trackSocial&quot;,&quot;Instagram&quot;,&quot;Ver Perfil&quot;,&quot;http://instagram.com/fcbarcelona&quot;,&quot;http://www.fcbarcelona.com/&quot;]);" title="Instagram">Instagram</a></li>
+                  <li><a href="http://fans.fcbarcelona.com/" class="logo-barca-fan" title="Barça Fans">Barça Fans</a></li>
+                  <li><a href="http://www.youtube.com/fcbarcelona" class="youtube" onclick="_gaq.push([&quot;_trackSocial&quot;,&quot;Youtube&quot;,&quot;Ver Perfil&quot;,&quot;http://www.youtube.com/fcbarcelona&quot;,&quot;http://www.fcbarcelona.com/&quot;]);" title="Youtube">Youtube</a></li>
+                  <li><a href="http://www.fcbarcelona.com/club/barca-2-0/detail/card/rss" class="rss" title="RSS">RSS</a></li>
+                </ul>
+              </div>
+            
+          </div>          
+        </div>
+        <div class="right">
+          
+            <div class="featured default">
+            </div>
+          
+        </div>
+      </div>
+    
+     
+    <div class="bottom ">
+      
+        <ul>
+          <li><p>&copy; Copyright FC Barcelona</p></li>
+          <li><a href="http://www.fcbarcelona.com/club/detail/card/legal-terms" class="underline" is_link_text_field_method="true" link_text_field="short_title">Legal Terms</a></li>
+          <li><p>FC Barcelona Official site</p></li>
+          <li><a href="http://www.fcbarcelona.com/club/facilites-and-services/detail/card/contact-fc-barcelona" class="underline" is_link_text_field_method="true" link_text_field="short_title">Contact FC Barcelona</a></li>
+        </ul>
+        
+          <div class="agreement">
+            Alliance FC Barcelona with
+            <a href="http://www.unicef.org" onclick="_gaq.push([&quot;_trackEvent&quot;,&quot;footer&quot;,&quot;unicef&quot;,&quot;veure-acord&quot;]);">unicef</a> 
+          </div>
+        
+      
+    </div>
+  </div>
+</div>
+
+
+    <!-- <span id="version">v1.6.38</span> -->
+    <!-- Codi Crazzy Egg-->
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0013/4715.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+  </body>
+</html>

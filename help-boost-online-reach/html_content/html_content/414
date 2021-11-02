@@ -1,0 +1,544 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!--Main:  contents/unrulyPlacement.vm -->
+	<!--Controller:  ChartController -->
+	<!--Controller Method:  showUnrulyPlacementPage -->
+    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+	<head>
+		<title>Viral Video Chart</title>
+		<meta name="description" content="Chart of the most popular viral videos on the world wide interweb.  The hottest stuff from YouTube, MySpace, Google, Metacafe, Daily Motion and Break.com" />
+		<meta name="verify-v1" content="PNVQ/9eVr1A6eZp5axR4oQ6j9M136dcJYg31Rm83GP4=" >
+		<meta name="keywords" content="viral, social, video, chart, funny" />
+		<meta http-equiv="Content-Script-Type" content="text/javascript"/>
+		<meta name="alexaVerifyID" content="uV3_CemaRTysL-94lZwo7vTe00U" />
+		<meta name="google-site-verification" content="-i0o4nejVVuxfW3tFj7AyhUyNpJrOXx7Mo-lsKd12e8" />
+		<meta property="fb:app_id" content="110783655689083"/>
+					<link rel="alternate" type="application/atom+xml" title="viralvideochart.com" target="_blank" href="http://feeds.feedburner.com/viralvideochart" />
+		
+		  <link href="/resource/styles/stylesheets/screen.css?27" media="screen, projection" rel="stylesheet" type="text/css" />
+          <link href="/resource/styles/stylesheets/print.css?10" media="print" rel="stylesheet" type="text/css" />
+		  <link href="/resource/styles/stylesheets/ellipsis.css?10" rel="stylesheet" type="text/css" />
+		  <link href="/resource/styles/stylesheets/jquery.tools.tabs.css?10" rel="stylesheet" type="text/css" />
+          <!--[if lt IE 8]>
+              <link href="/resource/styles/stylesheets/ie.css?9" media="screen, projection" rel="stylesheet" type="text/css" />
+          <![endif]-->
+
+		<link rel="icon" href="/resource/favicon.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="/resource/favicon.ico" type="image/x-icon" />
+		<link rel="search" type="application/opensearchdescription+xml" title="ViralVideoChart" href="/resource/search.xml" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.3/jquery-ui.min.js"></script>
+		<script src="http://cdn.jquerytools.org/1.1.2/jquery.tools.min.js"></script>
+        <script type="text/javascript">
+            jQuery.noConflict();
+            var $j = jQuery;
+			(function() {
+				$j(document).ready(function(){
+        			$j(function() {
+        				$j("ul.tabs").tabs("div.panes > div");
+    				});
+				});
+			}());
+        </script>
+		<script type="text/javascript" src="http://video.unrulymedia.com/jquery.qtip-1.0.0-rc3.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js"></script>
+        <script type="text/javascript" src="/resource/js/effects.js"></script>
+		<script type="text/javascript" src="/resource/js/commands.js?2"></script>
+		<script type="text/javascript" src="/resource/js/lightbox.js"></script>
+
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-341315-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type="text/javascript">
+  function recordOutboundLink(link, category, action) {
+    _gat._getTrackerByName()._trackEvent(category, action);
+    setTimeout('document.location = "' + link.href + '"', 100);
+  }
+</script>	<style type="text/css">
+</style>	
+	</head>
+	<body class="two-col">
+		<div id="container">
+			<div id="header">
+				<div class="logo">
+					<a href="/"><img src="/resource/img/VVC_Logo_2011.png"/></a>
+                </div>
+				
+				<div class="search">
+    									
+										<form action="/video_search">
+						<div>
+							<input name="q" type="text" size="25" value=""/>
+							<input type="submit" value="Search" />
+						</div>
+					</form>
+									</div>
+            </div>
+			<div id="wrapper">
+                <div class="spacer">&nbsp;</div>
+				        			<div id="content">
+        				<div>
+	<h1><span id="videoTitle"></span></h1>
+			<script type="text/javascript">
+		wildfireAddParams = "&autoplay=true";
+    </script>
+	<div id="video_player">
+		<script type="text/javascript" src="http://video.unrulymedia.com/wildfire_70529096.js?autoplay=true"></script>
+	</div>
+			<div>
+			<p class="description"><span id="unrulyvideo_description"></span></p>
+			<p class="description"><span id="unrulyvideo_info"></span></p>
+		</div>
+		
+	<script type="text/javascript">
+    new Ajax.Request('/unruly_proxy?id=70529096', {
+      onSuccess: function(req) {
+         var json = eval(req.responseText);
+    	 $('videoTitle').replace(json[0].videoTitle);
+		 
+		 $('unrulyvideo_description').replace(json[0].description);
+		 $('unrulyvideo_info').replace(json[0].info);
+       }
+    });
+	
+    </script>
+	
+</div>
+	                     </div>
+        			<div id="sidebar">
+        					        <h3>More videos</h3>
+        <div id="mini_chart">
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Ron_Burgundy%27s_%26quot%3BAnchorman%26quot%3B_Announcement_-_CONAN_on_TBS?id=MrNA7RjU91I">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">1</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">1</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/MrNA7RjU91I/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: Spreading across the interweb like Wildfire!">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Ron_Burgundy%27s_%26quot%3BAnchorman%26quot%3B_Announcement_-_CONAN_on_TBS?id=MrNA7RjU91I">Ron Burgundy's &quot;Anchorman&quot; Announcement - CONAN on TBS</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Katy_Perry_-_Part_Of_Me?id=uuwfgXD8qV8">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">2</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">2</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/uuwfgXD8qV8/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: Increasing slowly, it's getting more popular">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Katy_Perry_-_Part_Of_Me?id=uuwfgXD8qV8">Katy Perry - Part Of Me</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Para_nossa_alegria_%3D%29?id=K02Cxo3fAC8">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">3</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">3</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/K02Cxo3fAC8/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: Well past its viral peak">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Para_nossa_alegria_%3D%29?id=K02Cxo3fAC8">Para nossa alegria =)</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Arrested_Drunk_Guy_Sings_Queen%27s_Bohemian_Rhapsody%21?id=fqymcJRSbxI">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">4</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">4</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/fqymcJRSbxI/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: Spreading across the interweb like Wildfire!">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Arrested_Drunk_Guy_Sings_Queen%27s_Bohemian_Rhapsody%21?id=fqymcJRSbxI">Arrested Drunk Guy Sings Queen's Bohemian Rhapsody!</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Assassin%27s_Creed_for_Kinect_Announced%21?id=7NufHsmITjM">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">5</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">5</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/7NufHsmITjM/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: Spreading across the interweb like Wildfire!">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Assassin%27s_Creed_for_Kinect_Announced%21?id=7NufHsmITjM">Assassin's Creed for Kinect Announced!</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Google_Maps_8-bit_for_NES?id=rznYifPHxDg">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">6</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">6</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/rznYifPHxDg/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: Spreading across the interweb like Wildfire!">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Google_Maps_8-bit_for_NES?id=rznYifPHxDg">Google Maps 8-bit for NES</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Gotye_-_Somebody_That_I_Used_To_Know_%28feat._Kimbra%29_-_official_video?id=8UVNT4wvIGY">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">7</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">7</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/8UVNT4wvIGY/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: At a fairly constant rate">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Gotye_-_Somebody_That_I_Used_To_Know_%28feat._Kimbra%29_-_official_video?id=8UVNT4wvIGY">Gotye - Somebody That I Used To Know (feat. Kimbra) - official video</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Michel_Tel%26oacute%3B_-_Ai_Se_Eu_Te_Pego_-_Oficial_%28Assim_voc%26ecirc%3B_me_mata%29?id=hcm55lU9knw">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">8</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">8</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/hcm55lU9knw/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: At a fairly constant rate">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Michel_Tel%26oacute%3B_-_Ai_Se_Eu_Te_Pego_-_Oficial_%28Assim_voc%26ecirc%3B_me_mata%29?id=hcm55lU9knw">Michel Tel&oacute; - Ai Se Eu Te Pego - Oficial (Assim voc&ecirc; me mata)</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Barack_Obama_Singing_Sexy_and_I_Know_It_by_LMFAO_%5BOFFICIAL%5D?id=OWgO9-AIROI">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">9</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">9</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/OWgO9-AIROI/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: Spreading across the interweb like Wildfire!">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Barack_Obama_Singing_Sexy_and_I_Know_It_by_LMFAO_%5BOFFICIAL%5D?id=OWgO9-AIROI">Barack Obama Singing Sexy and I Know It by LMFAO [OFFICIAL]</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/BOYFRIEND_-_Teaser_-_Song_out_MONDAY_MARCH_26th?id=IfTLD8q6n3U">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">10</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">10</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/IfTLD8q6n3U/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: Spreading across the interweb like Wildfire!">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/BOYFRIEND_-_Teaser_-_Song_out_MONDAY_MARCH_26th?id=IfTLD8q6n3U">BOYFRIEND - Teaser - Song out MONDAY MARCH 26th</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Rafet_El_Roman_-_Senden_Sonra_%282012%29?id=ojNV4Mpndoo">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">11</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">11</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/ojNV4Mpndoo/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: At a fairly constant rate">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Rafet_El_Roman_-_Senden_Sonra_%282012%29?id=ojNV4Mpndoo">Rafet El Roman - Senden Sonra (2012)</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Jesse_%26amp%3B_Joy_-_%26iexcl%3BCorre%21_%28Video_Oficial%29?id=P2hM9CLAMu4">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">12</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">12</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/P2hM9CLAMu4/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: At a fairly constant rate">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Jesse_%26amp%3B_Joy_-_%26iexcl%3BCorre%21_%28Video_Oficial%29?id=P2hM9CLAMu4">Jesse &amp; Joy - &iexcl;Corre! (Video Oficial)</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Introducing_Gmail_Tap?id=1KhZKNZO8mQ">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">13</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">13</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/1KhZKNZO8mQ/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: Spreading across the interweb like Wildfire!">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Introducing_Gmail_Tap?id=1KhZKNZO8mQ">Introducing Gmail Tap</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Adele_-_Someone_Like_You?id=hLQl3WQQoQ0">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">14</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">14</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/hLQl3WQQoQ0/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: Probably peaked, being shared less often">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Adele_-_Someone_Like_You?id=hLQl3WQQoQ0">Adele - Someone Like You</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Ricardo_Arjona_-_Fuiste_t%26uacute%3B_feat._Gaby_Moreno_%28Video_Oficial%29?id=I9cCPQVPv8o">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">15</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">15</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/I9cCPQVPv8o/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: At a fairly constant rate">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Ricardo_Arjona_-_Fuiste_t%26uacute%3B_feat._Gaby_Moreno_%28Video_Oficial%29?id=I9cCPQVPv8o">Ricardo Arjona - Fuiste t&uacute; feat. Gaby Moreno (Video Oficial)</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Pitbull_-_International_Love_ft._Chris_Brown?id=CdXesX6mYUE">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">16</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">16</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/CdXesX6mYUE/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: At a fairly constant rate">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Pitbull_-_International_Love_ft._Chris_Brown?id=CdXesX6mYUE">Pitbull - International Love ft. Chris Brown</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Coldplay_-_Paradise?id=1G4isv_Fylg">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">17</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">17</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/1G4isv_Fylg/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: At a fairly constant rate">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Coldplay_-_Paradise?id=1G4isv_Fylg">Coldplay - Paradise</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Lil_Wayne_-_Mirror_ft._Bruno_Mars?id=OZLUa8JUR18">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">18</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">18</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/OZLUa8JUR18/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: At a fairly constant rate">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Lil_Wayne_-_Mirror_ft._Bruno_Mars?id=OZLUa8JUR18">Lil Wayne - Mirror ft. Bruno Mars</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/One_Direction_-_What_Makes_You_Beautiful?id=QJO3ROT-A4E">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">19</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">19</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/QJO3ROT-A4E/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: At a fairly constant rate">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/One_Direction_-_What_Makes_You_Beautiful?id=QJO3ROT-A4E">One Direction - What Makes You Beautiful</a>
+        		</div>
+        	</div>
+                	<div class="chart_line">
+        		<div class="thumb">
+            		<a href="http://viralvideochart.unrulymedia.com/youtube/Somebody_That_I_Used_to_Know_-_Walk_off_the_Earth_%28Gotye_-_Cover%29?id=d9NF2edxy-M">
+                        <span>
+                        	<div class="overlay">
+                                <div class="chart_entry_number">20</div>
+                        	</div>
+        					<div class="overlay_num">
+        						<div class="chart_entry_number">20</div>
+        					</div>
+                        	<img src="http://i.ytimg.com/vi/d9NF2edxy-M/hqdefault.jpg" alt="Thumbnail" title="Viral sharing: Probably peaked, being shared less often">
+                        </span>
+            		</a>
+        		</div>
+                <div class="title">
+        			<a href="http://viralvideochart.unrulymedia.com/youtube/Somebody_That_I_Used_to_Know_-_Walk_off_the_Earth_%28Gotye_-_Cover%29?id=d9NF2edxy-M">Somebody That I Used to Know - Walk off the Earth (Gotye - Cover)</a>
+        		</div>
+        	</div>
+                </div>		
+	                    </div>
+					            <div class="spacer">&nbsp;</div>
+			</div>
+			<div id="footer">
+				<div id="footer_content">
+    				<div id="footer_about">
+    					<h2>About</h2>
+    					<ul>
+    						<li><a target="_blank" href="http://www.unrulymedia.com/about/" target="_blank">About Us</a></li>
+    						<li><a target="_blank" href="http://www.unrulymedia.com/blog/" target="_blank">Our Blog</a></li>
+    						<li><a href="http://www.unrulymedia.com/privacy/">Privacy Policy</a></li>
+    						<li><a href="http://www.unrulymedia.com/contact-us">Contact Us</a></li>
+					    	<li><a href="http://www.unrulymedia.com/talent">Jobs</a></li>
+    					</ul>
+    				</div>
+    				<div id="footer_subscribe">
+    					<h2>Follow</h2>
+    					<ul>
+    						<li><a target="_blank" href="http://www.youtube.com/profile?user=viralvideochart">YouTube</a></li>
+    						<li><a target="_blank" href="http://www.facebook.com/pages/Viral-Video-Chart/17053070909">Facebook</a></li>
+    						<li><a target="_blank" href="http://twitter.com/videochart">Twitter</a></li>
+    						<li><a target="_blank" href="http://feeds.feedburner.com/ViralVideoChart">RSS</a></li>
+    					</ul>
+    				</div>
+    				<div id="footer_republish">
+    					<h2>Republish</h2>
+    					<ul>
+    						<li><a target="_blank" href="/widget">Widget</a></li>
+    						<li><a target="_blank" href="http://www.viralvideochart.com/?format=atomB">Atom Feed</a></li>
+    					</ul>
+    				</div>
+    				<div id="footer_advertise">
+    					<h2>Advertise</h2>
+    					<ul>
+    						<li><a target="_blank" href="http://www.unrulymedia.com/advertisers/">Video Seeding</a></li>
+    					</ul>
+    				</div>
+    				<hr/>
+    				<div id="footer_end">
+    					<div id="copyright">
+    						Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear())</script> Unruly Media
+    					</div>
+    				</div>
+				</div>
+            </div>
+		</div>
+		<div class="spacer">&nbsp;</div>
+		<div class="spacer">&nbsp;</div>
+		<div class="spacer">&nbsp;</div>
+
+		<!-- Start Quantcast tag -->
+<script type="text/javascript">
+_qoptions={
+qacct:"p-5enBZ6cMdOXt2"
+};
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-5enBZ6cMdOXt2.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast tag -->	</body>
+</html>

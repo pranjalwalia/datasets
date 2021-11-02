@@ -1,0 +1,1160 @@
+<!-- select sum(sl.total) as count, sl.storyID, s.title, s.date_start, s.type, so.name as source
+                from story s left join source so on so.sourceID = s.sourceID, story_log sl
+               where s.storyID = sl.storyID
+                        and s.date_start >= '2011-03-30 00:00:01'
+                     and s.date_start <= '2011-04-06 23:59:59'
+                     and s.public = 1
+                     and s.type != 'wire'
+            group by sl.storyID
+            order by count desc
+               limit 10 | array (
+  0 => 
+  array (
+    'count' => '77,298',
+    'storyID' => '150407',
+    'title' => '4 Fish We Should Never Eat',
+    'date_start' => '2011-03-30 07:00:01',
+    'type' => 'story',
+    'source' => 'AlterNet',
+    'author' => 'Casson Trenor',
+    'coverage' => 
+    array (
+      'name' => 'Food',
+      'url' => 'food',
+    ),
+  ),
+  1 => 
+  array (
+    'count' => '46,959',
+    'storyID' => '150473',
+    'title' => 'Slut Shame: Attacking Women for Their Sex Lives',
+    'date_start' => '2011-04-01 12:00:01',
+    'type' => 'story',
+    'source' => 'AlterNet',
+    'author' => 'Rachel Kramer Bussel',
+    'coverage' => 
+    array (
+      'name' => 'Sex &amp; Relationships',
+      'url' => 'sex',
+    ),
+  ),
+  2 => 
+  array (
+    'count' => '45,218',
+    'storyID' => '150431',
+    'title' => 'Rift in the Right: Many Conservatives Reject the Tea Party\'s Paranoid Views',
+    'date_start' => '2011-03-30 00:00:01',
+    'type' => 'story',
+    'source' => 'AlterNet',
+    'author' => 'Adele M. Stan',
+    'coverage' => 
+    array (
+      'name' => ' Tea Party and the Right',
+      'url' => 'teaparty',
+    ),
+  ),
+  3 => 
+  array (
+    'count' => '30,513',
+    'storyID' => '150419',
+    'title' => 'The Dirty Truth Behind America\'s Obsession With Shrimp',
+    'date_start' => '2011-04-01 16:00:01',
+    'type' => 'story',
+    'source' => 'Island Press',
+    'author' => 'Kennedy Warne',
+    'coverage' => 
+    array (
+      'name' => 'Food',
+      'url' => 'food',
+    ),
+  ),
+  4 => 
+  array (
+    'count' => '30,346',
+    'storyID' => '150378',
+    'title' => 'Winner-Take-All Politics: How Washington Made the Rich Richer -- And Turned Its Back on the Middle Class',
+    'date_start' => '2011-04-01 14:00:01',
+    'type' => 'story',
+    'source' => 'Simon & Schuster',
+    'author' => 'Jacob S. Hacker, Paul Pierson',
+    'coverage' => 
+    array (
+      'name' => 'Books',
+      'url' => 'books',
+    ),
+  ),
+  5 => 
+  array (
+    'count' => '29,668',
+    'storyID' => '150453',
+    'title' => 'Botox, Bingeing, Bullying and Breast-Ironing: We Must Stop the War on Women\'s Bodies',
+    'date_start' => '2011-03-31 07:00:01',
+    'type' => 'story',
+    'source' => 'AlterNet',
+    'author' => 'Courtney E. Martin',
+    'coverage' => 
+    array (
+      'name' => 'Personal Health',
+      'url' => 'health',
+    ),
+  ),
+  6 => 
+  array (
+    'count' => '25,673',
+    'storyID' => '150461',
+    'title' => 'One-Two Punch: Man Is Beaten In Anti-Gay Hate Crime and Also by America\'s Sick Health-Care System',
+    'date_start' => '2011-03-31 14:00:01',
+    'type' => 'story',
+    'source' => 'AlterNet',
+    'author' => 'Joseph Huff-Hannon',
+    'coverage' => 
+    array (
+      'name' => 'Civil Liberties',
+      'url' => 'rights',
+    ),
+  ),
+  7 => 
+  array (
+    'count' => '25,450',
+    'storyID' => '150497',
+    'title' => 'Why We Must Raise Taxes on the Rich, ASAP!',
+    'date_start' => '2011-04-04 15:00:01',
+    'type' => 'story',
+    'source' => 'RobertReich.org',
+    'author' => 'Robert Reich',
+    'coverage' => 
+    array (
+      'name' => 'Economy',
+      'url' => 'economy',
+    ),
+  ),
+  8 => 
+  array (
+    'count' => '24,731',
+    'storyID' => '150481',
+    'title' => 'Greedy Corporations and the Wealthy Fatten Themselves on the Rest of Us -- Join "We Are One" Rallies to Stop the Freeloaders',
+    'date_start' => '2011-04-03 14:00:01',
+    'type' => 'story',
+    'source' => 'AlterNet',
+    'author' => 'Leo Gerard',
+    'coverage' => 
+    array (
+      'name' => 'Economy',
+      'url' => 'economy',
+    ),
+  ),
+  9 => 
+  array (
+    'count' => '24,265',
+    'storyID' => '150444',
+    'title' => 'Welcome to the Shari\'ah Conspiracy Theory Industry ',
+    'date_start' => '2011-04-01 14:00:01',
+    'type' => 'story',
+    'source' => 'Religion Dispatches',
+    'author' => 'Sarah Posner',
+    'coverage' => 
+    array (
+      'name' => ' Tea Party and the Right',
+      'url' => 'teaparty',
+    ),
+  ),
+) --><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+      
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="keywords" content="AlterNet.org, Independent Media, Alternative News, Media Activism, The Drug War" />
+      
+      <meta property="fb:page_id" content="17108852506" />
+      
+                <title>Okla. Residents Refuse to Help Hate-Spewing Westboro Baptist Church Members After Tires Slashed | AlterNet</title>
+          <meta name="title" content="Okla. Residents Refuse to Help Hate-Spewing Westboro Baptist Church Members After Tires Slashed" />
+          <meta name="description" content="" />
+          <meta name="author" content="Lauren Kelley"/>
+          <meta name="source" content=""/>
+          <link rel="alternate" type="application/atom+xml" href="http://feeds.feedblitz.com/alternet_breaking_news" title="AlterNet.org: Breaking News">
+          <link rel="alternate" type="application/atom+xml" href="http://feeds.feedblitz.com/alternet_all" title="All AlterNet Headlines">
+            
+      <link rel="image_src" type="image/jpeg" href="http://images.alternet.org/images/site/logo_2.jpg" />
+                                        
+      <!-- start: chartbeat code-->              
+
+                <script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+            <!-- START: STYLESHEETS -->
+
+            
+          <!-- main stylesheets -->
+          
+          <style type="text/css">@import url("http://files.alternet.org/css/master3.6.css");</style>
+          <style type="text/css">@import url("http://files.alternet.org/css/blogads2_v5.min.css");</style>
+                                   
+          <!-- style sheets to increase/ decrease text size -->
+
+          <link rel="alternate stylesheet" title="text-small" class="text-size" href="http://files.alternet.org/css/text-small.css" type="text/css" media="screen, projection" />
+          <link rel="alternate stylesheet" title="text-medium" class="text-size" href="http://files.alternet.org/css/text-medium.css" type="text/css" media="screen, projection" />
+          <link rel="alternate stylesheet" title="text-large" class="text-size" href="http://files.alternet.org/css/text-large.css" type="text/css" media="screen, projection" />
+          
+          <!-- ie6 stylesheet -->
+
+          <!--[if IE 6]><style type="text/css">@import url("http://c0573252.cdn.cloudfiles.rackspacecloud.com/IE6.1.0.css");</style><![endif]-->
+          <!--[if IE 7]><style type="text/css">@import url("http://c0573252.cdn.cloudfiles.rackspacecloud.com/IE7.1.1.css");</style><![endif]-->
+      
+          <!-- splash page stylesheet ( if needed ) -->  
+
+          
+             
+                  
+          <script type="text/javascript" src="http://files.alternet.org/js/jquery-1.4.2.js"></script>
+          
+                    
+          <script type="text/javascript" src="http://files.alternet.org/js/application_min.js"></script>
+          
+          
+          <!--ad code for interstitial ad-->
+          <script language="JavaScript" src="http://partner.googleadservices.com/gampad/google_service.js"></script>
+          <script language="JavaScript">
+              GS_googleAddAdSenseService("ca-pub-2202292528164382");
+              GS_googleEnableAllServices();
+          </script>
+          <script language="JavaScript">                                               
+              GA_googleAddSlot("ca-pub-2202292528164382", "interstitial-controller");
+              GA_googleAddSlot("ca-pub-2202292528164382", "pop-under-controller");
+              //GA_googleAddSlot("ca-pub-2202292528164382", "Pop_Over_Controller");
+              GA_googleFetchAds();
+          </script>
+          <!--end ad code-->
+        
+          
+          
+                              
+           
+          
+          
+                                            
+          
+             
+      
+      <!--preload list style images -->
+      <script type="text/javascript">
+          <!--
+          pic1= new Image(5,10); 
+          pic1.src="https://images.alternet.org/images/site/arrow_economy_hover.gif"; 
+
+          pic2= new Image(5,10); 
+          pic2.src="https://images.alternet.org/images/site/arrow_environment_hover.gif"; 
+
+            pic3= new Image(5,10); 
+            pic3.src="https://images.alternet.org/images/site/arrow_investigations_hover.gif"; 
+
+            pic4= new Image(5,10); 
+            pic4.src="https://images.alternet.org/images/site/arrow_living_hover.gif"; 
+
+            pic5= new Image(5,10); 
+            pic5.src="https://images.alternet.org/images/site/arrow_media_hover.gif";
+
+            pic6= new Image(5,10); 
+            pic6.src="https://images.alternet.org/images/site/arrow_news_hover.gif";
+
+            pic7= new Image(5,10); 
+            pic7.src="https://images.alternet.org/images/site/arrow_rights_hover.gif";
+
+            pic8= new Image(5,10); 
+            pic8.src="https://images.alternet.org/images/site/arrow_vision_hover.gif";
+
+            pic9= new Image(5,10); 
+            pic9.src="https://images.alternet.org/images/site/arrow_world_hover.gif";
+
+            pic10= new Image(5,10); 
+            pic10.src="https://images.alternet.org/images/site/arrow.gif";
+            //-->
+      </script>
+          
+    </head>
+    
+    <body>
+                  
+        <div id='topad' style='background-color: #fff; width: 728px; height: 90px; margin: 0px auto;'></div>          
+        <div id="wing_topbar_div" style="display: none; z-index: 1;"></div>
+          
+        <div id="root_header">
+              
+              <div class="container">
+              
+                  <div class="subscribe">
+                      <span>
+                          <form method="post" action="/newsletter/subscribe/"  class="main_email_subscribe">
+                              <input type="hidden" name="group[]" value="26451" />
+                              <input type="hidden" name="refcode" value="HOME_"  />
+                              <input type="text" name="email" value="E-mail address" onfocus="if (this.value == 'E-mail address') this.value = '';" size="24" style="width:110px;" class="searcha" />
+                              <input type="image" src="http://images.alternet.org/images/site/submit_arrow_yellow.jpg" border="0" alt="Submit Form">
+                          </form>
+                      </span>
+                      <ul id="social">
+                          <li class="twitter"><a href="http://twitter.com/AlterNet"><img src="http://images.alternet.org/images/site/spacer.gif" width="22px" height="20px" border="0" alt="follow AlterNet on twitter"></a></li>
+                          <li class="facebook"><a href="http://www.facebook.com/pages/AlterNet/17108852506"><img src="http://images.alternet.org/images/site/spacer.gif" width="22px" height="20px" border="0" alt="be an AlterNet facebook fan"></a></li>
+                          <li class="rss"><a href="http://feeds.feedblitz.com/alternet_breaking_news"><img src="http://images.alternet.org/images/site/spacer.gif" width="22px" border="0" alt="subscribe to our rss" height="20px"></a></li>
+                      </ul>
+                  </div>
+                  
+              </div>
+              
+                            <div id="banner" class='banner_'>
+                
+                  <div id="banner_container">
+                  
+                      <div class="logo"><a href="/"><span class="story_tools_text">AlterNet.org</span></a></div>
+
+                      <!-- org nav-->
+
+                      <div class="org_nav">
+                          <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                          <span><a href="/">HOME</a></span>
+                          <span><a href="http://blogs.alternet.org/about/">ABOUT</a></span>
+                          <span><a href="/feedback/">CONTACT</a></span>
+                          <span><a href="http://blogs.alternet.org/advertise/">ADVERTISE</a></span>
+                          <span><a href="https://www.alternet.org/donate/">DONATE</a></span>
+                          <span><a href="http://blogs.alternet.org/wp-admin/">LOGIN</a></span>
+                      </div>
+                      
+                      <div class="banner_search">
+                          <span> SEARCH: </span>
+                      </div>
+                      
+                      <div class="banner_search_box">
+                          <span>
+                              <form action="http://www.alternet.org/search/search_results.html">
+                                  <input type="hidden" name="cx" value="000785083761953554347:o4hm7xdztnc" />
+                                  <input type="hidden" name="cof" value="FORID:10" />
+                                  <input type="hidden" name="ie" value="UTF-8" />
+                                  <input type="text" name="q" class="searcha" size="17" />
+                                  <input type="image" src="http://images.alternet.org/images/site/submit_arrow_yellow.jpg" border="0" alt="Submit Form">
+                              </form>
+                          </span>
+                      </div>
+
+                      <ul id="nav"> 
+    <li class='news'><span>News & Politics</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/news/'>NEWS &AMP; POLITICS</a></li>        		</ul>
+           	    </li>
+    <li class='world'><span>World</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/world/'>WORLD</a></li>        		</ul>
+           	    </li>
+    <li class='economy'><span>Economy</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/economy/'>ECONOMY</a></li>        		</ul>
+           	    </li>
+    <li class='rights'><span>Rights</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/rights/'>CIVIL LIBERTIES</a></li><li><a href='/reproductivejustice/'>GENDER</a></li><li><a href='/immigration/'>IMMIGRATION</a></li>        		</ul>
+           	    </li>
+    <li class='environment'><span>Environment</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/environment/'>ENVIRONMENT</a></li><li><a href='/food/'>FOOD</a></li><li><a href='/water/'>WATER</a></li>        		</ul>
+           	    </li>
+    <li class='media'><span>Media & Culture</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/books/'>BOOKS</a></li><li><a href='/culture/'>CULTURE</a></li><li><a href='/media/'>MEDIA</a></li>        		</ul>
+           	    </li>
+    <li class='living'><span>Living</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/belief/'>BELIEF</a></li><li><a href='/drugs/'>DRUGS</a></li><li><a href='/food/'>FOOD</a></li><li><a href='/health/'>PERSONAL HEALTH</a></li><li><a href='/sex/'>SEX &AMP; RELATIONSHIPS</a></li>        		</ul>
+           	    </li>
+    <li class='vision'><span>Vision</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/vision/'>VISION</a></li>        		</ul>
+           	    </li>
+    <li class='investigations'><span>Investigations</span>
+        	        		<ul class="shadow2">
+            		<li><a href='/investigations/'>INVESTIGATIONS</a></li>        		</ul>
+           	    </li>
+</ul>
+
+                  
+                  </div>                 
+              </div> 
+              <div class="banner_shadow_outer_container"></div>
+
+              <div class="banner_shadow_container"></div>
+
+        </div> 
+        
+        <!-- start: body -->
+        <div id="body_main">
+<!-- GENERIC NEWS AND VIEWS ARTICLE PAGE -->
+<div class='main_left_column'>
+
+    <!-- start: coverage header bar -->               
+
+	<div class="" style='width: 472px; min-height: 400px; float: left; background: #fff; padding-right: 5px; border-right: 1px solid #ccc;'>
+
+            <div class="byline"></div>
+            
+            <div class="story_comments">
+                <span class="small">
+                    <img src="http://images.alternet.org/images/site/talk_box_.jpg" alt="comments_image" border="0"> <a class=' comments_link' href="#disqus_thread" dsqid="alternet-instant336300">-</a>
+                </span>
+            </div>
+            
+			<!-- start: headline -->
+			
+            <div class="headline"><h1>Okla. Residents Refuse to Help Hate-Spewing Westboro Baptist Church Members After Tires Slashed</h1></div>
+			                      
+			<!-- start: teaser -->
+            
+						
+			<!-- start: body -->
+			<div id="the_body" class="body_" style="margin: 10px 0px;">
+                
+                                
+                <p name='paragraph1' id='paragraph1'>Several members of Westboro Baptist Church -- best known for their despicable &quot;God Hates Fags&quot; protests -- showed up in McAlester, Oklahoma, over the weekend to picket outside the funeral of Army Sgt. Jason James McCluskey. When they returned to their car, they found that the front and rear tires had been slashed.</p><p name='paragraph2' id='paragraph2'>What happened next was pure karma:&nbsp;&quot;[A]s their minivan slowly hobbled away on two flat tires, with a McAlester  police car following behind, the protesters were unable to find anyone  in town who would repair their vehicle,&quot;&nbsp;<em>Tulsa World </em><a href="http://www.tulsaworld.com/news/article.aspx?subjectid=11&amp;articleid=20101114_11_A12_CUTLIN105145">reported</a>.</p><p name='paragraph3' id='paragraph3'>What's more, Assistant Police Chief Darrell Miller told the local paper that a counter-protest of some 1,000 people showed up at the funeral to taunt and jeer at the half-dozen church members.</p><p name='paragraph4' id='paragraph4'>McAlester, Oklahoma:&nbsp;No friend to Westboro Baptist Church.</p><p name='paragraph5' id='paragraph5'>Read more at <a href="http://www.rawstory.com/rs/2010/11/fix-slashed-tires-antigay-protesters-report/">Raw Story</a>.</p>
+                
+           	</div>
+			
+            <div id="published">
+                                                    By <span style='color: #DE4900;'>Lauren Kelley</span> 
+                                     |                                     Sourced from 
+                                        <span style='color: #DE4900;'>                                        AlterNet</a>
+                                        </span>                                                                        <br>
+                                                <h3>Posted at November 16, 2010, 5:18 am</h3>
+            </div>
+           
+			<!-- end rss content -->
+			<div class="rss_break"></div>	
+			
+  			<div class="big_story_tools_bottom_container">
+                
+                <div class="redditit">
+                    <a href="http://www.reddit.com/submit" onclick="window.location = 'http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"><img src="http://images.alternet.org/images/site/reddit.gif" alt="submit to reddit" border="0"></a>
+                </div>
+                
+                <div class="diggthis"><a class="DiggThisButton DiggLarge" href="http://digg.com/submit"></a></div>
+				
+                <div id='bstb_stumbleupon' class="stumblebutton"></div>
+                
+                <div id='bstb_tweetmeme' class="tweetmeme-sharer"></div>
+                
+                <div class="facebook-sharer"><a name="fb_share" type="box_count" href="http://www.facebook.com/sharer.php">Share</a></div>
+                
+				<div class="talk_box">
+                    <a onmouseover="document.big_talk_box.src='http://images.alternet.org/images/site/big_talk_box_hover.jpg'" onmouseout="document.big_talk_box.src='http://images.alternet.org/images/site/big_talk_box_.jpg'" href="#comments" ><img src="http://images.alternet.org/images/site/big_talk_box_.jpg" name="big_talk_box" border="0"></a><br />
+                    <span class="small"><a class=' comments_link'  href="#disqus_thread" dsqid="alternet-instant336300">-</a></span>
+                </div>
+                
+            </div>    
+            
+            <!-- story tools bottom -->
+            <div class="story_tools_bottom">
+                
+                <div class="text-size">
+                    <ul><li class="text-small"><a onclick="setActiveStyleSheet('text-small'); return false;" title="Smaller text size" href="#">A</a></li><li class="text-medium"><a onclick="setActiveStyleSheet('text-medium'); return false;" title="Normal text size" href="#">A</a></li><li class="last text-large"><a onclick="setActiveStyleSheet('text-large'); return false;" title="Larger text size" href="#">A</a></li></ul>
+                </div>
+                
+                <div class="story_tools_email">
+					<a class="addthis_button_email" title="Email this story to a friend" ><span class="story_tools_text">Email</span></a>
+        			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=markristaino"></script>
+        		</div>
+                
+                <div class="story_tools_print">
+                    <a href="/module/printversion/newsandviews/336300" title="Print-friendly version" onclick="window.open('/module/printversion/newsandviews/336300','print336300','width=600,height=400,scrollbars=yes,resizable=yes,toolbar=yes,directories=yes,location=no,menubar=yes,status=yes'); return false"><span class="story_tools_text">Print</span></a>
+                </div>
+                
+                <div class="story_tools_share"><a class="addthis_button" href="http://www.addthis.com/bookmark.php?v=250&amp;pub=markristaino"><span class="story_tools_text">Share</span></a></div>
+                
+                <div class="story_tools_social_buttons"></div>
+                
+            </div>
+            
+             <!-- if tagged posts -->
+                        <div class="tags">
+                <em>See more stories tagged with:</em> <a class="" href="/tags/lgbt/">lgbt</a>, <a class="" href="/tags/oklahoma/">oklahoma</a>, <a class="" href="/tags/westboro baptist church/">westboro baptist church</a>            </div>
+            			
+            <!-- comment page link -->
+            <div style='margin: 15px 0px;'>
+                <a href="http://www.alternet.org/newsandviews/article/336300/okla._residents_refuse_to_help_hate-spewing_westboro_baptist_church_members_after_tires_slashed/comments/"><img src='http://images.alternet.org/images/buttons/button_jointhediscussion.gif' style='border: 0px;'></a>
+            </div>
+            
+            <!-- start: top stories -->
+<div id="todays_stories" style="border-top: 1px solid #A9A9A9; margin: 15px 5px 5px 0px; padding-top: 15px; background-image: url('http://www.alternet.org/images/site/article_top_stories.gif')">
+            <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="/teaparty/150520/you_thought_the_koch_brothers_were_bad_turns_out_they%27re_even_worse_than_you_thought"><img src="http://images.alternet.org/images/managed/storyimages_1302062393_screenshot20110405at8.59.16pm.png_640x432_95x68" alt="" width="95" height="67" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="no_coverage"><li style='width: 400px !important;'><span><a href="/teaparty/150520/you_thought_the_koch_brothers_were_bad_turns_out_they%27re_even_worse_than_you_thought"> TEA PARTY AND THE RIGHT</a> &nbsp;</span></li></ul></div>  
+        <a href="/teaparty/150520/you_thought_the_koch_brothers_were_bad_turns_out_they%27re_even_worse_than_you_thought"><h2 class="no_coverage"><a href="/teaparty/150520/you_thought_the_koch_brothers_were_bad_turns_out_they%27re_even_worse_than_you_thought">You Thought the Koch Brothers Were Bad? Turns Out They're Even Worse Than You Thought</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="/economy/150515/the_republicans%27_incredible_bait-and-switch_--_truly_trying_to_screw_you_when_you_get_older"><img src="http://images.alternet.org/images/managed/storyimages_1295895253_screenshot20110124at10.53.49am.png_640x453_95x68" alt="" width="95" height="67" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="economy"><li style='width: 400px !important;'><span><a href="/economy/150515/the_republicans%27_incredible_bait-and-switch_--_truly_trying_to_screw_you_when_you_get_older">ECONOMY</a> &nbsp;</span></li></ul></div>  
+        <a href="/economy/150515/the_republicans%27_incredible_bait-and-switch_--_truly_trying_to_screw_you_when_you_get_older"><h2 class="economy"><a href="/economy/150515/the_republicans%27_incredible_bait-and-switch_--_truly_trying_to_screw_you_when_you_get_older">The Republicans' Incredible Bait-and-Switch -- Truly Trying to Screw You When You Get Older</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="http://www.alternet.org/newsandviews/article/551168/10_of_the_biggest_corporate_tax_cheats_in_america"><img src="http://images.alternet.org/images/managed/storyimages_1302040754_110224googlesignap328.jpg_640x347_95x68" alt="" width="95" height="67" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="no_coverage"><li style='width: 400px !important;'><span><a href="http://www.alternet.org/newsandviews/article/551168/10_of_the_biggest_corporate_tax_cheats_in_america">Hot News and Views</a> &nbsp;</span></li></ul></div>  
+        <a href="http://www.alternet.org/newsandviews/article/551168/10_of_the_biggest_corporate_tax_cheats_in_america"><h2 class="no_coverage"><a href="http://www.alternet.org/newsandviews/article/551168/10_of_the_biggest_corporate_tax_cheats_in_america">10 of the Biggest Corporate Tax Cheats In America</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="/world/150517/the_slippery_slope_of_%22humane_intervention%22%3A_why_do_liberals_keep_talking_themselves_into_war"><img src="http://images.alternet.org/images/managed/storyimages_picture14_1273261681.jpg_95x68" alt="" width="95" height="68" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="world"><li style='width: 400px !important;'><span><a href="/world/150517/the_slippery_slope_of_%22humane_intervention%22%3A_why_do_liberals_keep_talking_themselves_into_war">WORLD</a> &nbsp;</span></li></ul></div>  
+        <a href="/world/150517/the_slippery_slope_of_%22humane_intervention%22%3A_why_do_liberals_keep_talking_themselves_into_war"><h2 class="world"><a href="/world/150517/the_slippery_slope_of_%22humane_intervention%22%3A_why_do_liberals_keep_talking_themselves_into_war">The Slippery Slope of "Humane Intervention": Why Do Liberals Keep Talking Themselves into War?</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="/environment/150443/breasts_at_7_years_old%3A_how_chemical_hazards_may_wreak_havoc_on_children%27s_bodies"><img src="http://images.alternet.org/images/managed/storyimages_1301520716_littlegirl.jpg_640x802_95x68" alt="" width="95" height="67" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="environment"><li style='width: 400px !important;'><span><a href="/environment/150443/breasts_at_7_years_old%3A_how_chemical_hazards_may_wreak_havoc_on_children%27s_bodies">ENVIRONMENT</a> &nbsp;</span></li></ul></div>  
+        <a href="/environment/150443/breasts_at_7_years_old%3A_how_chemical_hazards_may_wreak_havoc_on_children%27s_bodies"><h2 class="environment"><a href="/environment/150443/breasts_at_7_years_old%3A_how_chemical_hazards_may_wreak_havoc_on_children%27s_bodies">Breasts at 7 Years Old: How Chemical Hazards May Wreak Havoc on Children's Bodies</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="/economy/150500/wwjd_the_religious_right%27s_backing_of_walker%27s_union-busting"><img src="http://images.alternet.org/images/managed/storyimages_blindfaith.gif_640x514_95x68" alt="" width="95" height="67" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="economy"><li style='width: 400px !important;'><span><a href="/economy/150500/wwjd_the_religious_right%27s_backing_of_walker%27s_union-busting">ECONOMY</a> &nbsp;</span></li></ul></div>  
+        <a href="/economy/150500/wwjd_the_religious_right%27s_backing_of_walker%27s_union-busting"><h2 class="economy"><a href="/economy/150500/wwjd_the_religious_right%27s_backing_of_walker%27s_union-busting">WWJD? The Religious Right's Backing of Walker's Union-Busting</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                <div class="container" style='border-bottom: 1px solid #eaeaea; padding: 10px 0px;'>
+        <a href="/sex/150506/my_first_%28and_second_and_third_and_fourth...%29_threesome"><img src="http://images.alternet.org/images/managed/storyimages_1296172818_screenshot20110127at3.57.32pm.png_640x450_95x68" alt="" width="95" height="67" border="0" class="teaser_image" align="left" hspace="5px" /></a>        <div id="ie8_fix"><ul class="living"><li style='width: 400px !important;'><span><a href="/sex/150506/my_first_%28and_second_and_third_and_fourth...%29_threesome">SEX &AMP; RELATIONSHIPS</a> &nbsp;</span></li></ul></div>  
+        <a href="/sex/150506/my_first_%28and_second_and_third_and_fourth...%29_threesome"><h2 class="living"><a href="/sex/150506/my_first_%28and_second_and_third_and_fourth...%29_threesome">My First (and Second and Third and Fourth...) Threesome</h2></a>                                                                                                                                                                       
+        </div> 
+            
+                </div>            	
+	    </div>
+	        
+        <!-- INSERTS -->
+        
+        <div id='coverage_insert_container'>
+        	
+            <div class="article_tools_top"></div>
+        	
+            <div class="story_tools_email_top">
+				<a class="addthis_button_email" title="Email this story to a friend" ><span class="story_tools_text">Email</span></a>
+        		<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=markristaino"></script>
+        	</div>
+        	
+            <div class="story_tools_print_top">
+        		<a href="/module/printversion/newsandviews/336300" title="Print-friendly version" onclick="window.open('/module/printversion/newsandviews/336300','print336300','width=600,height=400,scrollbars=yes,resizable=yes,toolbar=yes,directories=yes,location=no,menubar=yes,status=yes'); return false"><span class="story_tools_text">Print</span></a>
+        	</div>
+            
+        	<div class="text_size">
+        		<ul><li class="text-small"><a onclick="setActiveStyleSheet('text-small'); return false;" title="Smaller text size" href="#">A</a></li><li class="text-medium"><a onclick="setActiveStyleSheet('text-medium'); return false;" title="Normal text size" href="#">A</a></li><li class="last text-large"><a onclick="setActiveStyleSheet('text-large'); return false;" title="Larger text size" href="#">A</a></li></ul>
+        	</div>
+            
+        	<div class="share_top"></div>
+            
+            <div class="story_tools_social_buttons_top">
+            	
+                <div class="facebook-sharer-top"><a name="fb_share" type="box_count" href="http://www.facebook.com/sharer.php">Share</a></div>  
+                
+                <div id='sttb_tweetmeme' class="tweetmeme-sharer-top"></div>     
+				
+                <div id='sttb_stumbleupon' class="stumblebutton-top"></div>
+
+				<div class="redditit-top"><a href="http://www.reddit.com/submit" onclick="window.location = 'http://www.reddit.com/submit?url=' + encodeURIComponent(window.location); return false"><img src="http://images.alternet.org/images/site/reddit.gif" alt="submit to reddit" border="0"></a></div>
+                
+                <div class="diggthis-top"><a class="DiggThisButton DiggMedium" href="http://digg.com/submit"><span style="display:none;"></span></a></div> 
+                
+                <div class="googlebuzz-top"><a title="Post on Google Buzz" class="google-buzz-button" href="http://www.google.com/buzz/post" data-button-style="normal-count"></a></div>
+                
+            </div>
+            
+            <div class='first_insert'><div id="progressive_wire_story">
+    <div class='banner_' style="height:5px;"></div>
+	<div class="title">PROGRESSIVE WIRE</div>
+    <div style='border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; margin: 5px; height: 1px;'>&nbsp;</div> 
+	<div style='margin: 5px 5px 0px 10px;'>
+	 
+    	        
+        	<div class="progressive_wire_article_view">
+         	     
+              
+            	<a class='anylink' href='/rss/breaking_news/550960/wisconsin_republicans_consider_re-passing_bill_stripping_collective_bargaining_rights/'>Wisconsin Republicans consider re-passing bill stripping collective bargaining rights</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='anylink' href='/rss/breaking_news/551027/ceo_pay_shoots_up_at_expense_of_workers/'>CEO Pay Shoots Up At Expense of Workers</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='anylink' href='/rss/breaking_news/550989/uk_to_pressure_us_on_treatment_of_british_citizen_bradley_manning/'>UK to Pressure US on Treatment of British Citizen Bradley Manning</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='anylink' href='/rss/breaking_news/550988/reuters%3A_gbagbo_has_surrendered_in_ivory_coast/'>Reuters: Gbagbo Has Surrendered in Ivory Coast</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='anylink' href='/rss/breaking_news/550990/debbie_wasserman_schultz_picked_to_head_dnc%2C_replacing_senate_candidate_kaine/'>Debbie Wasserman Schultz Picked to Head DNC, Replacing Senate Candidate Kaine</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='anylink' href='/rss/breaking_news/550791/libya_rebels%3A_nato_%27disappointed_us%27_with_slow_response/'>Libya Rebels: NATO 'Disappointed Us' With Slow Response</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='anylink' href='/rss/breaking_news/550418/wis._gov._takes_heat_over_lobbyist%27s_son%27s_job/'>Wis. Gov. Takes Heat Over Lobbyist's Son's Job</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='anylink' href='/rss/breaking_news/550792/as_budget_battle_climaxes%2C_civil_rights_groups_tally_potential_damage/'>As Budget Battle Climaxes, Civil Rights Groups Tally Potential Damage</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='anylink' href='/rss/breaking_news/550793/join_us_at_the_national_conference_for_media_reform/'>Join Us at the National Conference for Media Reform</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+             
+                
+        	<div class="progressive_wire_article_view">
+         	              <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div>   
+               
+              
+            	<a class='anylink' href='/rss/breaking_news/550837/obama_rejects_gop%E2%80%99s_one-week_stopgap%2C_path_to_shutdown_clear/'>Obama Rejects GOP’s One-Week Stopgap, Path to Shutdown Clear</a>
+                        
+            </div>
+          <div style='border-top: 1px solid #ccc; margin: 4px 0px 0px 0px; height: 1px;'>&nbsp;</div>
+                    <div style='border-top: 1px solid #ccc; margin: 1px 0px 4px 0px; height: 1px;'>&nbsp;</div> 
+               
+                	
+	</div>
+    
+    <div class='banner_' style='margin: 5px 0px; height: 2px;'>&nbsp;</div>
+    
+    <div class="more_" style='text-align: right;'><a href="/rss/breaking_news/"><span class="story_tools_text">MORE</span></a></div>
+    
+</div></div>
+            
+            <div class="alternet_originals" style="display:none;">
+                         
+                                    <div class="coverage_overlay">
+                        <a href='/story/150520/you_thought_the_koch_brothers_were_bad_turns_out_theyre_even_worse_than_you_thought'><img border="0" src='http://images.alternet.org/images/managed/storyimages_1302062393_screenshot20110405at8.59.16pm.png_640x432_150x107' width="150" class="photo" height="106" align="left" style="margin: 0px 10px 3px 0px;"></a><h5><ul class=""><li><a href="/story/150520/you_thought_the_koch_brothers_were_bad_turns_out_theyre_even_worse_than_you_thought"></a></li></ul></h5>
+                    </div>
+                    <h2 class=""><a href="/story/150520/you_thought_the_koch_brothers_were_bad_turns_out_theyre_even_worse_than_you_thought">You Thought the Koch Brothers Were Bad? Turns Out They're Even Worse Than You Thought</a></h2>  
+                                    <div class="coverage_overlay">
+                        <a href='/story/150517/the_slippery_slope_of_humane_intervention_why_do_liberals_keep_talking_themselves_into_war'><img border="0" src='http://images.alternet.org/images/managed/storyimages_picture14_1273261681.jpg_150x107' width="150" class="photo" height="107" align="left" style="margin: 0px 10px 3px 0px;"></a><h5><ul class=""><li><a href="/story/150517/the_slippery_slope_of_humane_intervention_why_do_liberals_keep_talking_themselves_into_war"></a></li></ul></h5>
+                    </div>
+                    <h2 class=""><a href="/story/150517/the_slippery_slope_of_humane_intervention_why_do_liberals_keep_talking_themselves_into_war">The Slippery Slope of "Humane Intervention": Why Do Liberals Keep Talking Themselves into War?</a></h2>  
+                                    <div class="coverage_overlay">
+                        <a href='/story/150508/gop_unveils_radical_new_budget_gutting_medicare_medicaid__taking_from_the_poor_giving_to_the_rich'><img border="0" src='http://images.alternet.org/images/managed/storyimages_1302020920_ryan.jpg_640x394_150x107' width="150" class="photo" height="107" align="left" style="margin: 0px 10px 3px 0px;"></a><h5><ul class=""><li><a href="/story/150508/gop_unveils_radical_new_budget_gutting_medicare_medicaid__taking_from_the_poor_giving_to_the_rich"></a></li></ul></h5>
+                    </div>
+                    <h2 class=""><a href="/story/150508/gop_unveils_radical_new_budget_gutting_medicare_medicaid__taking_from_the_poor_giving_to_the_rich">GOP Unveils Radical New Budget Gutting Medicare, Medicaid -- Taking from the Poor, Giving to the Rich</a></h2>  
+                                        </div>
+            
+			<div id='blog_ads_insert_container' class='insert' style="clear:left;"></div>
+			
+        </div>
+        
+        <div style="clear:both;"><img src="http://images.alternet.org/images/site/spacer.gif" /></div>
+                            
+    </div>
+
+<script type="text/javascript">
+    
+    
+    // Disqus comment count JS
+        (function() {
+            var links = document.getElementsByTagName('a');
+            var query = '?';
+            for(var i = 0; i < links.length; i++) {
+                var dsqid = links[i].getAttribute('dsqid');
+                if(dsqid) {
+                    query += 'dsqid' + i + '=' + dsqid + '&';
+                }
+            }
+            document.write('<script charset="utf-8" type="text/javascript" src="http://alternet.disqus.com/get_num_replies_from_dsqid.js' + query + '"></' + 'script>');
+            
+            // retarget disqus comment url to go to comment page
+            $(".comments_link").click(function () { 
+                window.location.replace("http://www.alternet.org/newsandviews/article/336300/okla._residents_refuse_to_help_hate-spewing_westboro_baptist_church_members_after_tires_slashed/comments/");
+            });
+        })();
+        
+        // DIGG button JS
+        (function() {
+            var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+            s.type = 'text/javascript';
+            s.src = 'http://widgets.digg.com/buttons.js';
+            s1.parentNode.insertBefore(s, s1);
+        })();
+
+    
+</script>        
+    
+                  
+<div class='main_right_column'>
+
+        <!-- start: top right ad -->
+        <div class="premium-container">
+            <div id="premium"></div>
+            <div class="rightadnote">Advertisement</div>
+        </div>
+        
+        <!-- start: tabs -->
+        <div id='tabs_cluster' style='width: 300px; margin-left: 5px;'>  
+        
+        <div class='tab_container' onclick="activate_tab('read')">
+            <div class='tab_on' id='tab_read' >
+                <div class='tab_border'><span class="story_tools_text">Most Read</span></div>
+            </div>
+        </div>
+                                                                                                                                                                                                                     
+        <div class='tab_container' onclick="activate_tab('emailed')">
+            <div id='tab_emailed' class='tab_off'>
+                <div class='tab_border'><span class="story_tools_text">Most Emailed</span></div>
+            </div>
+        </div>
+                                                                                                                                                                                                                     
+        <div class='tab_container' onclick="activate_tab('discussed'); load_most_disqus('tab_content_discussed', '270');">
+            <div id='tab_discussed' class='tab_off'>
+                <div class='tab_border'><span class="story_tools_text">Most Discussed</span></div>
+            </div>
+        </div>
+                                                                                                                                                                                                                     
+        <div class='tab_container' onclick="activate_tab('reddit'); load_reddit('tab_content_reddit', '270');">
+                <div id='tab_reddit' class='tab_off'>
+                    <div class='tab_border'><span class="story_tools_text">On REDDIT</span></div>
+                </div>
+            </div>
+                                                                                                                       
+        <div class='tab_container' onclick="activate_tab('digg'); load_digg('tab_content_digg', '270');"> 
+                <div id='tab_digg' class='tab_off'>
+                    <div class='tab_border'><span class="story_tools_text">On DIGG</span></div>
+                </div>
+            </div>
+            
+        <div style='clear: both; height: 1px;'>&nbsp;</div>
+            
+        <div id='tabs_content_container' style='margin: -2px 0px 0px; background: #eaeaea; border: 1px solid #fff;'>
+                                                                                        
+                <div id='tabs_content' class="article" style='margin: 2px; padding: 10px; border: 1px solid #fff;'>
+                
+                    <div id='tab_content_read' style='display: block;'>
+                                            <ol style='margin: 0px;'>
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/food/150407/4_fish_we_should_never_eat/">4 Fish We Should Never Eat</a>
+                                <br /><span class='author'>Casson Trenor</span>, </span><span class='source'>AlterNet</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/sex/150473/slut_shame%3A_attacking_women_for_their_sex_lives/">Slut Shame: Attacking Women for Their Sex Lives</a>
+                                <br /><span class='author'>Rachel Kramer Bussel</span>, </span><span class='source'>AlterNet</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/teaparty/150431/rift_in_the_right%3A_many_conservatives_reject_the_tea_party%27s_paranoid_views/">Rift in the Right: Many Conservatives Reject the Tea Party's Paranoid Views</a>
+                                <br /><span class='author'>Adele M. Stan</span>, </span><span class='source'>AlterNet</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/food/150419/the_dirty_truth_behind_america%27s_obsession_with_shrimp/">The Dirty Truth Behind America's Obsession With Shrimp</a>
+                                <br /><span class='author'>Kennedy Warne</span>, </span><span class='source'>Island Press</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/books/150378/winner-take-all_politics%3A_how_washington_made_the_rich_richer_--_and_turned_its_back_on_the_middle_class/">Winner-Take-All Politics: How Washington Made the Rich Richer -- And Turned Its Back on the Middle Class</a>
+                                <br /><span class='author'>Jacob S. Hacker, Paul Pierson</span>, </span><span class='source'>Simon & Schuster</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/health/150453/botox%2C_bingeing%2C_bullying_and_breast-ironing%3A_we_must_stop_the_war_on_women%27s_bodies/">Botox, Bingeing, Bullying and Breast-Ironing: We Must Stop the War on Women's Bodies</a>
+                                <br /><span class='author'>Courtney E. Martin</span>, </span><span class='source'>AlterNet</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/rights/150461/one-two_punch%3A_man_is_beaten_in_anti-gay_hate_crime_and_also_by_america%27s_sick_health-care_system/">One-Two Punch: Man Is Beaten In Anti-Gay Hate Crime and Also by America's Sick Health-Care System</a>
+                                <br /><span class='author'>Joseph Huff-Hannon</span>, </span><span class='source'>AlterNet</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/economy/150497/why_we_must_raise_taxes_on_the_rich%2C_asap%21/">Why We Must Raise Taxes on the Rich, ASAP!</a>
+                                <br /><span class='author'>Robert Reich</span>, </span><span class='source'>RobertReich.org</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/economy/150481/greedy_corporations_and_the_wealthy_fatten_themselves_on_the_rest_of_us_--_join_%22we_are_one%22_rallies_to_stop_the_freeloaders/">Greedy Corporations and the Wealthy Fatten Themselves on the Rest of Us -- Join "We Are One" Rallies to Stop the Freeloaders</a>
+                                <br /><span class='author'>Leo Gerard</span>, </span><span class='source'>AlterNet</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a class="most_blah" href="/teaparty/150444/welcome_to_the_shari%27ah_conspiracy_theory_industry_/">Welcome to the Shari'ah Conspiracy Theory Industry </a>
+                                <br /><span class='author'>Sarah Posner</span>, </span><span class='source'>Religion Dispatches</span></div>
+                            </li>                       
+                                                </ol>
+                                        </div>
+                   
+                    <div id='tab_content_emailed' style='display: none;'>
+                                            <ol style='margin: 0px;'>  
+                                                    <li>
+                                <div class='title'><a href="/food/150407/4_fish_we_should_never_eat/">4 Fish We Should Never Eat</a>
+                                <br /><span class='author'>241&nbsp;emails sent</a> since March 30, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/economy/150497/why_we_must_raise_taxes_on_the_rich%2C_asap%21/">Why We Must Raise Taxes on the Rich, ASAP!</a>
+                                <br /><span class='author'>238&nbsp;emails sent</a> since April  4, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/books/150378/winner-take-all_politics%3A_how_washington_made_the_rich_richer_--_and_turned_its_back_on_the_middle_class/">Winner-Take-All Politics: How Washington Made the Rich Richer -- And Turned Its Back on the Middle Class</a>
+                                <br /><span class='author'>139&nbsp;emails sent</a> since April  1, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/news/150451/why_is_obama%27s_treasury_dept._perversely_siding_with_big_banks_against_elizabeth_warren_and_the_state_ags_/">Why Is Obama's Treasury Dept. Perversely Siding With Big Banks Against Elizabeth Warren and the State AGs? </a>
+                                <br /><span class='author'>119&nbsp;emails sent</a> since March 31, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/economy/150481/greedy_corporations_and_the_wealthy_fatten_themselves_on_the_rest_of_us_--_join_%22we_are_one%22_rallies_to_stop_the_freeloaders/">Greedy Corporations and the Wealthy Fatten Themselves on the Rest of Us -- Join "We Are One" Rallies to Stop the Freeloaders</a>
+                                <br /><span class='author'>118&nbsp;emails sent</a> since April  3, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/economy/150435/how_to_take_on_wall_street_and_win/">How to Take on Wall Street and Win</a>
+                                <br /><span class='author'>110&nbsp;emails sent</a> since March 30, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/economy/150483/is_a_real_resistance_movement_to_the_big_banks_finally_on_the_rise/">Is a Real Resistance Movement to the Big Banks Finally on the Rise?</a>
+                                <br /><span class='author'>104&nbsp;emails sent</a> since April  3, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/media/150440/an_open_letter_to_cbs%27_60_minutes_following_its_pitch_for_more_corporate_handouts/">An Open Letter to CBS' 60 Minutes Following Its Pitch for More Corporate Handouts</a>
+                                <br /><span class='author'>102&nbsp;emails sent</a> since March 30, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/world/150470/us-saudi_deal_on_libya_exposed%3A_obama_ok%27ed_bahrain_invasion_in_exchange_for_yes_vote_on_no-fly_zone/">US-Saudi Deal on Libya Exposed: Obama OK'ed Bahrain Invasion in Exchange for Yes Vote on No-Fly Zone</a>
+                                <br /><span class='author'>100&nbsp;emails sent</a> since April  1, 2011.</span></div>
+                            </li>                       
+                                                    <li>
+                                <div class='title'><a href="/food/150419/the_dirty_truth_behind_america%27s_obsession_with_shrimp/">The Dirty Truth Behind America's Obsession With Shrimp</a>
+                                <br /><span class='author'>98&nbsp;emails sent</a> since April  1, 2011.</span></div>
+                            </li>                       
+                                                </ol>
+                        <div><span class="small"><a href="/email/">More Most Emailed Stories&nbsp;&#187;</a></div>
+                                        </div>
+                    
+                    <div id='tab_content_discussed' style='display: none;'>   
+                                        </div>
+                         
+                    <div id='tab_content_reddit' style='display: none;'>
+                        <div style='margin: 10px 0px;'>loading reddit content ..</div>
+                    </div>
+                    
+                    <div id='tab_content_digg' style='display: none;'> 
+                        <div style='margin: 10px 0px;'>loading digg content ..</div>
+                    </div>
+                         
+                </div> 
+            
+    </div></div>
+        <!-- end: tabs -->
+                      
+                
+                
+        <!-- facebook like box -->
+        <div id='facebook_like_box' style="margin: 10px 0 0 5px;">&nbsp;</div>  
+        
+        <!-- include upcoming on dig -->    
+        <!-- start: upcoming on digg -->                                  
+<div style='min-height: 100px; margin-left: 5px; margin-top: 25px;'>
+    <div><img src="http://images.alternet.org/images/site/alternet_upcoming_on_digg_with_bg.gif"/></div>
+    <div id='digg_upcoming_content' style='min-height: 50px;'>loading ...</div>
+    <div style="margin-top: 10px; margin-bottom: 25px; padding: 5px 0px; border-top: 1px solid #ccc; border-bottom: 4px solid #ccc; line-height: 16px;">
+        <div class="small" style="float: right; border-left: 1px solid #ccc; padding-left: 5px;"><img src="http://images.alternet.org/images/site/spacer.gif"/></div>                                                                                                                         
+        <div class="small" style="float: left; border-right: 1px solid #ccc; padding-right: 5px; font-family: Arial,Sans-Serif,Georgia; color #333; font-size: 10px; font-weight: bold;">POWERED BY DIGG'S USERS</div>     
+        <div class="small" style="float: left; padding-left: 5px; font-family: Arial,Sans-Serif,Georgia; font-size: 10px; font-weight: bold;"><a href='http://digg.com/tour?OTC-widget'>ABOUT DIGG</a></div>
+        <div class='clear: both;'>&nbsp;</div>
+    </div>
+</div>                     
+    </div>
+                  
+    <div style="clear:both;"><img src="http://images.alternet.org/images/site/spacer.gif" /></div>
+    
+</div>
+
+<!-- javascripts for add this share button -->
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pub=markristaino"></script>
+
+<!-- google buzz js -->
+<script type="text/javascript" src="http://www.google.com/buzz/api/button.js"></script>
+
+<!-- FB share js -->
+<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+
+<script type="text/javascript">
+    
+                             
+        
+        var page_type = 'article';
+        var str = '';
+        
+        if( page_type == 'comments' ){
+            
+            // comments page specific ads goes here
+                                  
+            if( is_object( $('#topad') ) ){
+                str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_Comments_728&profile=ca-pub-5155643920455169' class='topad' width='728' height='90' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+                $('#topad').append( str );
+            }
+        
+            if( is_object( $('#premium') ) ){
+                str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_Comments_300&profile=ca-pub-5155643920455169' width='300' height='250' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+                $('#premium').append( str );
+            }
+            
+            // CHANGE AD
+            //if( is_object( $('#premium2') ) ){
+            //str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_News_300&profile=ca-pub-5155643920455169' width='300' height='250' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+            //$('#premium2').append( str );
+            //}
+            
+            if( is_object( $('#story_comment_slot1') ) ){ 
+                str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_Comments_300&profile=ca-pub-5155643920455169' width='300' height='250' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+                $('#story_comment_slot1').append( str );
+            }
+            
+            if( is_object( $('#story_comment_slot2') ) ){
+                str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_Comments_300&profile=ca-pub-5155643920455169' width='300' height='250' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+                $('#story_comment_slot2').append( str );
+            }
+            
+        }
+        
+        else if( page_type == 'article' ){
+            
+            // article page specific ads goes here
+                                  
+            if( is_object( $('#topad') ) ){
+                str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_News_728&profile=ca-pub-5155643920455169' class='topad' width='728' height='90' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+                $('#topad').append( str );
+            }
+        
+            if( is_object( $('#premium') ) ){
+                str = "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_News_300&profile=ca-pub-5155643920455169' width='300' height='250' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>";
+                $('#premium').append( str );
+            }
+            
+            // article tools
+            
+            var page_url = 'http://www.alternet.org/newsandviews/article/336300/okla._residents_refuse_to_help_hate-spewing_westboro_baptist_church_members_after_tires_slashed/';
+            
+            if( is_object( $('#sttb_tweetmeme') ) ){ 
+                str = "<iframe src='http://files.alternet.org/givememystorytools.php?tool_code=tweetmeme&page_url="+page_url+"' width='50' height='70' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #ccc;'></iframe>";
+                $('#sttb_tweetmeme').append( str );
+            }
+            
+            if( is_object( $('#sttb_stumbleupon') ) ){ 
+                str = "<iframe src='http://files.alternet.org/givememystorytools.php?tool_code=stumbleupon&page_url="+page_url+"' width='50' height='70' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #ccc;'></iframe>";
+                $('#sttb_stumbleupon').append( str );
+            }
+            
+            if( is_object( $('#bstb_tweetmeme') ) ){ 
+                str = "<iframe src='http://files.alternet.org/givememystorytools.php?tool_code=tweetmeme&page_url="+page_url+"' width='50' height='70' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #ccc;'></iframe>";
+                $('#bstb_tweetmeme').append( str );
+            }
+             
+            if( is_object( $('#bstb_stumbleupon') ) ){ 
+                str = "<iframe src='http://files.alternet.org/givememystorytools.php?tool_code=stumbleupon&page_url="+page_url+"' width='50' height='70' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #ccc;'></iframe>";
+                $('#bstb_stumbleupon').append( str );
+            }
+            
+        }
+        
+    
+</script></div>
+        <!-- end: body -->
+        
+        
+        <!-- start: footer -->
+        <div id="root_footer" style='height: 300px;'>
+            <div class="break_container">
+                <div class="break"></div>
+                <div id='btf_ad_slot' style='width: 728px; margin: 10px auto 0px auto;'></div>
+                <ul id="footer"> 
+    <li class='news'><a href="/news/"><span class="story_tools_text">News & Politics</span></a>
+        	        		<ul>
+            		<li><a href='/news/'>NEWS &AMP; POLITICS</a></li>        		</ul>
+           	    </li>
+    <li class='world'><a href="/world/"><span class="story_tools_text">World</span></a>
+        	        		<ul>
+            		<li><a href='/world/'>WORLD</a></li>        		</ul>
+           	    </li>
+    <li class='economy'><a href="/economy/"><span class="story_tools_text">Economy</span></a>
+        	        		<ul>
+            		<li><a href='/economy/'>ECONOMY</a></li>        		</ul>
+           	    </li>
+    <li class='rights'><a href="/rights/"><span class="story_tools_text">Rights</span></a>
+        	        		<ul>
+            		<li><a href='/rights/'>CIVIL LIBERTIES</a></li><li><a href='/reproductivejustice/'>GENDER</a></li><li><a href='/immigration/'>IMMIGRATION</a></li>        		</ul>
+           	    </li>
+    <li class='environment'><a href="/environment/"><span class="story_tools_text">Environment</span></a>
+        	        		<ul>
+            		<li><a href='/environment/'>ENVIRONMENT</a></li><li><a href='/food/'>FOOD</a></li><li><a href='/water/'>WATER</a></li>        		</ul>
+           	    </li>
+    <li class='media'><a href="/media/"><span class="story_tools_text">Media & Culture</span></a>
+        	        		<ul>
+            		<li><a href='/books/'>BOOKS</a></li><li><a href='/culture/'>CULTURE</a></li><li><a href='/media/'>MEDIA</a></li>        		</ul>
+           	    </li>
+    <li class='living'><a href="/living/"><span class="story_tools_text">Living</span></a>
+        	        		<ul>
+            		<li><a href='/belief/'>BELIEF</a></li><li><a href='/drugs/'>DRUGS</a></li><li><a href='/food/'>FOOD</a></li><li><a href='/health/'>PERSONAL HEALTH</a></li><li><a href='/sex/'>SEX &AMP; RELATIONSHIPS</a></li>        		</ul>
+           	    </li>
+    <li class='vision'><a href="/vision/"><span class="story_tools_text">Vision</span></a>
+        	        		<ul>
+            		<li><a href='/vision/'>VISION</a></li>        		</ul>
+           	    </li>
+    <li class='investigations'><a href="/investigations/"><span class="story_tools_text">Investigations</span></a>
+        	        		<ul>
+            		<li><a href='/investigations/'>INVESTIGATIONS</a></li>        		</ul>
+           	    </li>
+</ul>
+
+            </div>
+        </div>
+
+        <div id="root_subfooter">
+            <div class="left"></div>
+            <div class="middle_left">
+                <ul>
+                    <li class="column1"><a href="http://blogs.alternet.org/about/">THE CASE FOR ALTERNET</a></li>
+                    <li class="column1"><a href="http://blogs.alternet.org/about/">OUR MISSION</a></li>
+                    <li class="column1"><a href="http://blogs.alternet.org/staff/">WHO WE ARE</a></li>
+                    <li class="column1"><a href="http://blogs.alternet.org/the-independent-media-institute/">ABOUT IMI</a></li>
+                    <li class="column1"><a href="http://blogs.alternet.org/alternets-supporting-foundations/">OUR FOUNDATIONS</a></li>
+                    <li class="column2 reset"><a href="http://blogs.alternet.org/press-information/">PRESS INFORMATION</a></li>
+                    <li class="column2"><a href="http://blogs.alternet.org/writer-guidelines/">WRITER GUIDELINES</a></li>
+                    <li class="column2"><a href="http://blogs.alternet.org/privacy-policy/">PRIVACY POLICY</a></li>
+                    <li class="column2"><a href="http://blogs.alternet.org/advertise/">ADVERTISE ON ALTERNET</a></li>
+                    <li class="column2"><a href="/feedback/">CONTACT US</a></li>
+                    <li class="column3 reset"><a href="https://www.alternet.org/donate/">DONATE</a></li>
+                    <li class="column3"><a href="/module/feed/mobile/">MOBILE</a></li>
+                    <li class="column3"><a href="http://blogs.alternet.org/alternet-signup.php">REGISTER</a></li>
+                    <li class="column3"><a href="http://blogs.alternet.org/wp-admin.php">LOGIN</a></li>
+                    <li class="column3"><a href="#">&nbsp;</a></li>
+                </ul>
+            </div>
+            <div class="middle_right">
+                <ul>
+                    <li class="rss"><a href="http://feeds.feedblitz.com/alternet"><span class="story_tools_text">RSS</span></a></li>
+                    <li class="facebook"><a href="http://www.facebook.com/pages/AlterNet/17108852506"><span class="story_tools_text">Facebook</span></a></li>
+                    <li class="twitter"><a href="http://twitter.com/AlterNet"><span class="story_tools_text">Twitter</span></a></li>
+                </ul>
+            </div>
+            <div class="right"></div>
+        </div>
+        <!-- end: footer -->
+                  
+
+                    
+                        <script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+            <script type="text/javascript">_qacct="p-44Kjy7lrEDP7I";quantserve();</script>
+            <noscript><img src="http://pixel.quantserve.com/pixel/p-44Kjy7lrEDP7I.gif" style="display: none" height="1" width="1" alt="Quantcast"/></noscript>
+                                    
+                        <script type="text/javascript">
+                var cbjspath = "static.chartbeat.com/js/chartbeat.js?uid=848&domain=alternet.org";
+                var cbjsprotocol = (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://");
+                document.write(unescape("%3Cscript src='"+cbjsprotocol+cbjspath+"' type='text/javascript'%3E%3C/script%3E"))
+            </script>               
+                        
+                        <script type="text/javascript">
+            
+                function load_reddit( div_name, width ){
+                    if( is_object( $( '#' + div_name ) ) ){
+                        $( '#' + div_name ).html( "<iframe src='http://files.alternet.org/givememydigg.php?code=reddit&width="+width+"' width='"+width+"' height='600' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #ccc;'></iframe>" );
+                    }                                      
+                }
+                function load_digg( div_name, width ){
+                    if( is_object( $( '#' + div_name ) ) ){
+                        $( '#' + div_name ).html( "<iframe src='http://files.alternet.org/givememydigg.php?code=tabs&width="+width+"' width='"+width+"' height='450' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #ccc;'></iframe>" );
+                    }
+                }
+                function load_digg_upcoming(){
+                    //if( is_object( $('#digg_upcoming_content') ) ){
+                    //    $('#digg_upcoming_content').html( "<iframe src='files.alternet.org/givememydigg.php?code=upcoming&width=310' width='300' height='160' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #ccc;'></iframe>" );
+                    //}
+                }
+                function load_most_disqus( div_name, width ){
+                    if( is_object( $( '#' + div_name ) ) ){
+                        $( '#' + div_name ).html( "<iframe src='http://files.alternet.org/givememydigg.php?code=most_disqus&width="+width+"' width='"+width+"' height='700' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #ccc;'></iframe>" );
+                    }
+                }
+            
+            </script>
+                                 
+                        <script type="text/javascript">
+            
+                $(function(){
+                    if( is_object( $('#facebook_like_box') ) ){
+                        $('#facebook_like_box').append( "<iframe id='facebook_like_box_frame' src='http://www.facebook.com/plugins/likebox.php?id=17108852506&amp;width=300&amp;connections=10&amp;stream=false&amp;header=false&amp;height=280' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:300px; height:280px;' allowTransparency='true'></iframe>" );
+                    }
+                });
+            
+            </script>
+                                                                      
+            
+                        <script type="text/javascript">
+            
+                $(function(){
+                    if( is_object( $('#btf_ad_slot') ) ){
+                        $('#btf_ad_slot').append( "<iframe src='http://files.alternet.org/givememygfp.php?code=AlterNet_728_BTF&profile=ca-pub-5155643920455169' class='topad' width='728' height='90' scrolling='no' style='margin: 0px auto; padding: 0px; border: 0px solid #fff;'></iframe>" );
+                    }
+                });
+            
+            </script>
+                        
+                        <script type="text/javascript">
+            
+                var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+                document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+            
+            </script>
+                                    
+            <script type="text/javascript">
+            
+                try {
+                    var pageTracker = _gat._getTracker("UA-289449-1");
+                    pageTracker._setDomainName(".alternet.org");
+                    pageTracker._trackPageview();
+                } catch(err) {}
+            
+            </script>
+            
+            <script language="JavaScript">
+                GA_googleFillSlot( "pop-under-controller" );
+                //GA_googleFillSlotWithSize("ca-pub-2202292528164382", "Pop_Over_Controller", 1, 1);
+                //GA_googleFillSlot( "Pop_Over_Controller" );
+            </script>
+                        
+            
+    </body>
+    
+</html>[w1]

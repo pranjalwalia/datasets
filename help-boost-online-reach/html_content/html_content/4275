@@ -1,0 +1,1569 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+   <title>The Physiology of Foie: Why Foie Gras is Not Unethical | Serious Eats</title>
+	<meta name="description" content=" [Photographs: Robyn Lee and J. Kenji Lopez-Alt] I haven't always been comfortable with foie gras, though I've spent a good chunk of my life working with it. At first, the discomfort was with the taste. I tried it first..." />
+	<meta name="keywords" content="Serious Eats, food, media, news, duck, Foie Gras, La Belle" />
+
+<!-- [2] including mt.js here -->
+    <script src="http://static.seriouseats.com/serious_eats/js/mt.js" type="text/javascript"></script>
+
+	<script src="http://static.seriouseats.com/js/jquery.min.js"></script>
+	<script src="http://static.seriouseats.com/js/jquery.tools.scroll.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="http://static.seriouseats.com/js/jquery.color.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://static.seriouseats.com/serious_eats/js/mt-site.js" type="text/javascript"></script>
+	<script src="http://static.seriouseats.com/js/jquery.accordion.min.js" type="text/javascript"></script>
+	<script src="http://static.seriouseats.com/js/accordion.js" type="text/javascript"></script>
+	<script src="http://static.seriouseats.com/js/new-home.js" type="text/javascript"></script>
+	<script type="text/javascript">
+var field_stars = new Array();
+function star_over(field, rating, on, off) {
+	for (var i = 1; i <= rating; i++) {
+		var star = document.getElementById(field + '_' + i);
+		star.src = on;
+	}
+	for (var i = rating + 1; i <= field_stars[field]; i++) {
+		var star = document.getElementById(field + '_' + i);
+		star.src = off;	
+	}
+}
+function star_out(field, rating, on, off) {
+	var val = document.getElementById(field).value;
+	if (val) {
+		val = parseInt(val);
+	} else {
+		val = 0;
+	}
+	for (var i = 1; i <= val; i++) {
+		var star = document.getElementById(field + '_' + i);
+		star.src = on;
+	}
+	for (var i = val + 1; i <= field_stars[field]; i++) {
+		var star = document.getElementById(field + '_' + i);
+		star.src = off;
+	}
+}
+function star_click(field, rating) {
+	document.getElementById(field).value = rating;
+}
+</script>
+
+    <script src="http://static.seriouseats.com/js/mobileRedirect.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/generalV2.css?v=20100728" media="screen" />
+
+    <link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/global-masthead.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="http://static.seriouseats.com/css/print.css" media="print" />
+
+	<!--[if gte IE 7]>
+	  <link rel="stylesheet" href="http://static.seriouseats.com/css/ie7.css" type="text/css" media="screen" charset="utf-8" />
+	<![endif]-->
+	<!--[if lt IE 7]>
+	  <link rel="stylesheet" href="http://static.seriouseats.com/css/ie6.css" type="text/css" media="screen" charset="utf-8" />
+	<![endif]-->
+
+	<meta name="copyright" content="Serious Eats 2011" />
+	<meta http-equiv="Content-Language" content="en-us" />
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta http-equiv="imagetoolbar" content="false" />
+        <meta property="fb:page_id" content="168926019255" />
+	<link rel="shortcut icon" href="/favicon.ico" />
+	<link rel="alternate" type="application/atom+xml" title="Serious Eats" href="http://feeds.seriouseats.com/seriouseatsfeaturesvideos" />
+
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    $(document).ready(function() {
+        mtUpdateScores();
+    });
+    //mtAttachEvent('load', mtUpdateScores);
+    mtAttachEvent('usersignin', mtUpdateScores);
+    /* ]]> */
+    </script>
+
+
+	
+	
+
+	<script src="http://static.seriouseats.com/js/individualPost.js?v=022408" type="text/javascript"></script>
+
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+	$("#emailThis").one("click", function(){
+		frames['emailIframe'].location.href = "http://www.seriouseats.com/cgi-bin/mte//plugins/SendEntry/mt-send-entry.cgi?__mode=create&entry_id=128741";
+		return false;	
+	});
+});	
+//-->
+</script>
+
+
+
+<script type="text/javascript">
+       federated_media_section = "SE_Sandwich";
+    </script> 
+
+
+
+
+<script src="http://static.seriouseats.com/js/date.js" type="text/javascript"></script>
+<script src="http://static.seriouseats.com/js/pagination.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+  $.get('http://www.seriouseats.com/2010/12/the-physiology-of-foie-why-foie-gras-is-not-u-comments.js?' + new Date().getTime());
+  var numCommentsPerPage = 100;
+  //100;
+
+  // For printing comments with Recipe posts   
+  var recipeCommentsToInclude = new Array(); 
+  var jumpToTopOfComments = true;   
+
+function handlePaginationClick(page_index, pagination_container) {
+    var max_num = Math.min((page_index+1) * numCommentsPerPage, numComments);
+    var commentContent = '';
+    var commentRange = '';
+    var regex = new RegExp("\n", "g"); 
+    if ((max_num < numComments) || (max_num > numCommentsPerPage)) {
+         commentRange += "(" + (page_index*numCommentsPerPage + 1) + " - " + max_num + ") of ";
+    }
+
+    for (var i = page_index*numCommentsPerPage;i < max_num;i++) {
+        commentContent += '<a name="' + commentJSON[i]["comment_id"] + '"></a>';
+    	if (i%2) {
+    		commentContent += '<div class="comment yellow">';
+    	} else {
+    		commentContent += '<div class="comment green">';
+    	}
+        commentContent += '<div class="comment-body">';
+        
+                commentContent += '<p>' + commentJSON[i]["text"].replace(regex, "<br />") + '</p><div class="comment-body-bottom"></div></div><p class="commenter postFooter"><a href="http://www.seriouseats.com/user/profile/' + commentJSON[i]["author_username"] + '">' + commentJSON[i]["author_nickname"] + '</a> at <a href="http://www.seriouseats.com/2010/12/the-physiology-of-foie-why-foie-gras-is-not-u.html#' + commentJSON[i]["comment_id"] + '">';
+        
+ 		
+ 		var date = commentJSON[i]["created_on"];
+ 		
+ 		var commentDate = new Date(date.substr(0,4), date.substr(4,2)-1, date.substr(6,2), date.substr(8,2), date.substr(10,2), date.substr(12,2));
+ 		
+ 		commentContent += commentDate.toString("h:mmtt on MM/dd/yy") + '</a></p></div>'; 		
+    }
+    $('#commentRange').html(commentRange);
+    $('#commentSection').html(commentContent);
+    
+        // Recipe post - checked comments for printing
+    $('input[name$="include-comment"]').change(function() {
+        if ($(this).is(':checked')) { 
+        	var arrayIndex = (jQuery.inArray($(this).attr('value'), recipeCommentsToInclude));
+        	if (arrayIndex < 0) {
+        		recipeCommentsToInclude.push($(this).attr('value'));
+        		comments_list = recipeCommentsToInclude.join();
+        	}
+        }
+        else {
+            var arrayIndex = (jQuery.inArray($(this).attr('value'), recipeCommentsToInclude));
+            if (arrayIndex >= 0) {
+        		recipeCommentsToInclude.splice(arrayIndex,1);
+        		comments_list = recipeCommentsToInclude.join();
+        	}
+        }
+	});
+
+        if (jumpToTopOfComments) {
+             document.getElementById('comments').scrollIntoView();
+	}
+    return false;
+}
+
+$(document).ready(function()
+{
+     // alert (numComments);
+     if (numComments > 0) {
+          var commentCount = numComments + " Comment";
+          if (numComments > 1) {
+              commentCount += "s";
+          }
+      } else {
+          var commentCount = "Post a Comment";
+      }
+      
+
+            var commentCountText = '<a href="http://www.seriouseats.com/2010/12/the-physiology-of-foie-why-foie-gras-is-not-u.html#comments"  class="commentCount">';
+             commentCountText += commentCount + '</a>';               
+
+
+        $("#postFooterCommentCount").html(commentCountText);
+        if($(".entryCommentCount").length > 0) {
+            $(".entryCommentCount").each(function() {
+                 $(this).html(commentCount);
+            });
+        }
+       
+        jumpToTopOfComments = false;
+	$(".pagination").pagination(numComments, {
+          	items_per_page:numCommentsPerPage,
+          	num_edge_entries:1,
+                num_display_entries:9,
+                next_show_always:false,
+                prev_show_always:false,
+                link_to:"#comments",
+        	callback:handlePaginationClick
+        });
+
+        if (numComments <= numCommentsPerPage) {
+             $(".pagination").hide();
+        }
+        jumpToTopOfComments = true;
+});
+</script>
+
+
+</head>
+	
+<body id="blog">
+
+<div id="topAdSpace">
+	<!-- FM Leaderboard 728x90 Top of Page Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/2385'></script>
+        <!-- FM Leaderboard 728x90 Top of Page Zone -->
+</div>
+
+<div id="container">
+
+<div class="clearfix familyTabs" id="SE">
+<ul> <!-- class="fmenu" id="familyLinks" -->
+<li><a href="http://www.seriouseats.com/" id="seTab" class="active">Serious Eats</a></li>
+<li><a href="http://slice.seriouseats.com" id="sliceTab" class="">Slice</a></li>
+<li><a href="http://aht.seriouseats.com" id="ahtTab" class="">A Hamburger Today</a></li>
+<li><a href="http://newyork.seriouseats.com/" id="senyTab" class="">New York</a></li>
+<li><a href="http://photograzing.seriouseats.com" id="photoTab" class="">Photograzing</a></li>
+<li><a href="http://www.seriouseats.com/talk/" id="talkTab" class="">Talk</a></li>
+<li><a href="http://www.seriouseats.com/recipes/" id="recipesTab" class="">Recipes</a></li>
+<li><a href="http://drinks.seriouseats.com" id="drinksTab" class="">Drinks</a></li>
+</ul>
+
+
+<div class="widget-sign-in widget">
+    <div id="signin-widget-content" class="widget-content"></div>
+</div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+function mtUpdateSignInWidget(u) {
+    var separator = '&nbsp;&nbsp;|&nbsp;&nbsp;';
+    var el = document.getElementById('signin-widget-content');
+    var content = '';
+    // alert (document.URL);
+    //alert (encodeURIComponent(document.URL));
+    if (!el) return;
+    if (u) {
+        if (u && u.is_authenticated) {
+            user = u;
+            mtSaveUser();
+        } else {
+            // user really isn't logged in; so let's do this!
+            return mtSignIn();
+        }
+    } else {
+        u = mtGetUser();
+    }
+    if (u && u.name) {
+        var url;
+		content += '<div id="login-tab" class="loggedIn"><div id="login-tab-inner">';
+        if (u.is_authenticated) {
+            if (u.is_author) {
+
+				url = 'http://www.seriouseats.com/user/profile/'; 
+
+
+            } else {
+                url = u.url;
+            }
+        } else if (u.url) {
+            url = u.url;
+        } else {
+            url = null;
+        }
+        if (url)
+            content += '<p><strong><a href="' + url + '">' + u.name + '</a></strong></p>';
+        else
+            content += '<p><strong>' + u.name + '</strong></p>';
+        if (u.is_author)
+            content += '<p><a href="http://www.seriouseats.com/cgi-bin/mte/mt-cp.cgi?__mode=edit&blog_id=30&return_to=' + encodeURIComponent(document.URL) + '">Account</a>';
+        
+        content += ' | <a href="javascript:void(0)" onclick="return mtSignOutOnClick()">Log out</a>.';
+        
+		content += '</div></div><div class="clearer"><!-- --></div>'
+    } else if (u && u.is_banned) {
+        content = 'You do not have permission to sign in to this blog.';
+    } else {
+		content = '<div id="login-tab" class="notLoggedIn"><div id="login-tab-inner"><a onclick="return mtSignInOnClick(\'login-tab-inner\')" href="javascript:void(0)" id="login-link">log in</a></div></div><div class="clearer"><!-- --></div>'
+    }
+    //alert ("content is: " + content);
+    el.innerHTML = content;
+}
+mtAttachEvent('usersignin', mtUpdateSignInWidget);
+mtUpdateSignInWidget();
+/* ]]> */
+</script>
+<script type="text/javascript">
+//mtAttachEvent('load', mtUpdateScores);
+//mtAttachEvent('usersignin', mtUpdateScores);
+</script>
+
+ 
+</div><!-- close familyNav -->
+
+<div id="header" class="SE-header">
+    <div id="topHeader">
+        <h1 id="logo" title="Serious Eats home"><a href="http://www.seriouseats.com/">Serious Eats - seriouseats.com</a></h1>    
+        <div id="skybox1" class="skybox">
+            <div class="dropshadow2">
+                <div class="innerbox">        
+                    <div class="skyboxBite"><!-- --></div>
+                    <div class="skybox-thumb">
+	<img src="http://www.seriouseats.com/images/20100215-bowl-and-whisk-thumb-220x132.jpg" alt="" />
+</div>
+<div class="skybox-text">
+	<p><a href="http://www.seriouseats.com/how-to/?ref=skybox1" class="linksrc">Techniques</a></p>
+	<p><a href="http://www.seriouseats.com/how-to/?ref=skybox1" class="linktitle">How-tos, Tips, Tricks</a></p>             
+</div>
+                </div>
+            </div>
+        </div><!--/#skybox1 -->
+        <div id="skybox2" class="skybox">
+            <div class="dropshadow2">
+                <div class="innerbox">
+                    <div class="skyboxBite"><!-- --></div>
+                    <div class="skybox-thumb">
+	<img src="http://www.seriouseats.com/images/201101-skybox-food-lab-220x132.jpg" alt="" />
+</div>
+<div class="skybox-text">
+	<p><a href="http://www.seriouseats.com/the-food-lab/?ref=skybox3" class="linksrc">Unraveling the Science of Cooking</a></p>
+	<p><a href="http://www.seriouseats.com/the-food-lab/?ref=skybox3" class="linktitle">The Food Lab</a></p>
+</div>
+                </div>
+            </div>
+        </div><!--/#skybox2 -->
+        <div id="skybox3" class="skybox">
+            <div class="dropshadow2">
+                <div class="innerbox">
+                
+                <div class="skyboxBite"><!-- --></div>
+                <div class="skyboxBite"><!-- --></div>
+<div class="skybox-thumb">
+	<img src="http://static.seriouseats.com/images/20110208-sandwich-a-day-skybox-220x132.jpg" alt="" />
+</div>
+<div class="skybox-text">
+	<p><a href="http://www.seriouseats.com/a_sandwich_a_day/?ref=skybox3" class="linksrc">A Different One Each Day</a></p>
+	<p><a href="http://www.seriouseats.com/a_sandwich_a_day/?ref=skybox3" class="linktitle">
+Sandwiches</a></p>             
+</div>
+
+                
+                </div>
+            </div>
+        </div><!--/#skybox3-->
+    </div><!--/#topHeader -->
+
+    
+
+
+
+    <div id="newNavBar">
+        
+        <ul id="navNew">
+            <li>
+                <a href="http://www.seriouseats.com/" id="nav-home" class="nav-item">Home</a>
+            </li>
+            <li>
+                <a href="http://www.seriouseats.com/eating-out/" id="nav-out" class="nav-item nav-menu">Eating Out</a>
+                <div class="navFlyout">
+	
+	<div class="home-column-excerpt first">
+		<div class="thumb-100x90">
+			<a href="http://www.seriouseats.com/2011/02/boston-bondir-jason-bond-central-square-cambridge-new-restaurant.html">
+			
+				<img src="http://www.seriouseats.com/assets_c/2011/01/20110124-bondir-primary-thumb-autox90-135449.jpg" alt="" />
+			
+			</a>
+		</div>
+		<h2 class="most-popular-head">Most Popular</h2>
+		
+		
+		
+		<p class="flyout-title"><a href="http://www.seriouseats.com/2011/02/boston-bondir-jason-bond-central-square-cambridge-new-restaurant.html">Boston: Bondir Sets High Standard For Seasonal New England Cuisine</a></p>
+	</div>
+	
+	
+	<div class="home-column-excerpt">
+		<div class="thumb-100x90">
+		<a href="http://www.seriouseats.com/2010/09/culinary-ambassadors-street-food-in-iceland--.html">
+		
+			<img src="http://www.seriouseats.com/assets_c/2010/09/20100904-ca-iceland-street-food-hot-dog-stand-thumb-autox90-109897.jpg" alt="" />
+		
+		</a>
+		</div>
+		<h2 class="featured-column-head">Featured</h2>
+		
+		
+		
+		<p class="flyout-title"><a href="http://www.seriouseats.com/2010/09/culinary-ambassadors-street-food-in-iceland--.html">Culinary Ambassadors: Street Food in Iceland - Hot Dogs from Bæjarins Beztu</a></p>
+	</div>
+	
+	<div class="recent-posts"><a href="/eating-out/" class="nav-more">Most Recent Posts &raquo;</a></div>
+	
+</div>
+
+            </li>
+            <li>
+                <a href="http://www.seriouseats.com/recipes/" id="nav-recipes" class="nav-item nav-menu">Recipes</a>
+                <div class="navFlyout">
+	
+	<div class="home-column-excerpt first">
+		<div class="thumb-100x90">
+			<a href="http://www.seriouseats.com/recipes/2011/02/time-for-a-drink-pisco-sour.html">
+			
+				<img src="http://www.seriouseats.com/recipes/assets_c/2011/02/20110222-139299-piscofriday-thumb-autox90-143069.jpg" alt="" />
+			
+			</a>
+		</div>
+		<h2 class="most-popular-head">Most Popular</h2>
+			
+				<p class="linksrc"><a href="http://www.seriouseats.com/recipes/" class="recipes_post" rel="nofollow">Recipes</a></p>
+		
+		<p class="flyout-title"><a href="http://www.seriouseats.com/recipes/2011/02/time-for-a-drink-pisco-sour.html">Time for a Drink: Pisco Sour</a></p>
+	</div>
+	
+	
+	<div class="home-column-excerpt">
+		<div class="thumb-100x90">
+		<a href="http://www.seriouseats.com/recipes/2010/12/easy-homemade-hot-chocolate-mix-recipe.html">
+		
+			<img src="http://www.seriouseats.com/recipes/assets_c/2010/12/20101215-hot-chocolate-primary-thumb-autox90-128570.jpg" alt="" />
+		
+		</a>
+		</div>
+		<h2 class="featured-column-head">Featured</h2>
+			
+				<p class="linksrc"><a href="http://www.seriouseats.com/recipes/" class="recipes_post" rel="nofollow">Recipes</a></p>
+		
+		<p class="flyout-title"><a href="http://www.seriouseats.com/recipes/2010/12/easy-homemade-hot-chocolate-mix-recipe.html">Easy Homemade Hot Chocolate Mix</a></p>
+	</div>
+	
+	<div class="recent-posts"><a href="/recipes/" class="nav-more">Most Recent Posts &raquo;</a></div>
+	
+</div>
+
+            </li>
+            <li>
+                <a href="http://www.seriouseats.com/columns/" id="nav-columns" class="nav-item nav-menu">Columns</a>
+                <div class="navFlyout">
+
+<div id="column-flyout">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/a_sandwich_a_day/?ref=flyout" class="column-title"><div>A Sandwich a Day</div></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/crisper_whisperer/?ref=flyout" class="column-title"><div>Crisper Whisperer</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/ed_levines_serious_diet/?ref=flyout" class="column-title"><div>Ed Levine's Serious Diet</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/edible_diy/?ref=flyout" class="column-title"><div>Edible DIY</div></a>
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/fast_food/?ref=flyout" class="column-title"><div>Fast Food</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/food_policy/?ref=flyout" class="column-title"><div>Food Policy</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/gadgets/?ref=flyout" class="column-title"><div>Gadgets</div></a>
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/hot_dog_of_the_week/?ref=flyout" class="column-title"><div>Hot Dog of the Week</div></a>
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/how-to/?ref=flyout" class="column-title"><div>How To</div></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/in-season/?ref=flyout" class="column-title"><div>In Season</div></a>
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/knife_skills/?ref=flyout" class="column-title"><div>Knife Skills</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/market-scene/?ref=flyout" class="column-title"><div>Market Scene</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/meet_and_eat/?ref=flyout" class="column-title"><div>Meet and Eat</div></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/mixed_review/?ref=flyout" class="column-title"><div>Mixed Review</div></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/scandinavian_street_food/?ref=flyout" class="column-title"><div>Scandinavian Street Food</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/serious-cheese/?ref=flyout" class="column-title"><div>Serious Cheese</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/serious-chocolate/?ref=flyout" class="column-title"><div>Serious Chocolate</div></a>
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/serious_entertaining/?ref=flyout" class="column-title"><div>Serious Entertaining</div></a>
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/serious-heat/?ref=flyout" class="column-title"><div>Serious Heat</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/serious_reads/?ref=flyout" class="column-title"><div>Serious Reads</div></a>
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/seriously_asian/?ref=flyout" class="column-title"><div>Seriously Asian</div></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/southern-belly/?ref=flyout" class="column-title"><div>Southern Belly</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/spice_hunting/?ref=flyout" class="column-title"><div>Spice Hunting</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/taste-tests/?ref=flyout" class="column-title"><div>Taste Tests</div></a>
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/thats_nuts/?ref=flyout" class="column-title"><div>That's Nuts</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/the-food-lab/?ref=flyout" class="column-title"><div>The Food Lab</div></a>
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/the_nasty_bits/?ref=flyout" class="column-title"><div>The Nasty Bits</div></a>
+
+
+
+
+
+
+
+
+
+
+
+   <!-- Entry is a subcategory -->
+	<a href="http://www.seriouseats.com/when_pigs_fly/?ref=flyout" class="column-title"><div>When Pigs Fly</div></a>
+
+
+ 
+
+	<div class="recent-posts"><a href="/columns/?ref=flyout" class="nav-more">See More Columns &raquo;</a></div>
+	
+</div>
+</div>
+
+            </li>
+                        <li>
+                <a href="http://www.cooking.com/aff/adredir.asp?CCAID=CBSEPTPH&Redir=%2Fseriouseats" id="nav-home" class="nav-item">Shop</a>        
+            </li>
+             <li>
+                <a href="http://videos.seriouseats.com" id="nav-videos" class="nav-item">Videos</a>        
+            </li>
+        </ul>
+        
+        <div id="search">
+
+<form id="SearchForm" method="get" action="http://www.seriouseats.com/cgi-bin/mte/mt-search.cgi">
+        <input type="hidden" id="IncludeBlogs" name="IncludeBlogs" value="30" />
+        <input type="hidden" name="limit" value="20" />
+        <input id="searchBox" class="query" name="search" value="" />
+
+
+
+		<input type="image" value="search" src="http://www.seriouseats.com/imagesV2/buttons/search.png" width="62" height="24" border="0" alt="search" id="searchButton" name="sa">
+    </form>
+
+<script type="text/javascript">
+// For blogs under Serious Eats, we want to use their blog ID for search
+if ($('#IncludeBlogs').val() == '31') {
+   if (document.location.href.indexOf('/talk/')>-1) {
+      $('#IncludeBlogs').val('32');
+   }else if (document.location.href.indexOf('/recipes/')>-1) {
+      $('#IncludeBlogs').val('34');
+   }else {
+      $('#IncludeBlogs').val('30');
+   }
+}
+
+</script>
+
+
+
+        </div>
+        <div class="clearer"></div>
+        
+    </div><!-- close navBar -->
+
+</div><!-- close header -->
+
+	<div id="content">
+		
+		<div id="threeColumn1">
+			
+		<!-- post include -->
+		
+			<div class="individualPost">
+
+				<div class="tools" id="blogTools">
+
+					<ul id="postTools" class="left">
+						<li><a href="http://www.seriouseats.com/2010/12/print/the-physiology-of-foie-why-foie-gras-is-not-u.html" title="Print" target="_blank"><img src="/imagesV2/transparent.gif" class="icon icon-print" alt="Print This" /></a></li>
+						<li><a class="addthis_button_email"></a></li>
+					</ul>
+					
+					<ul id="share" class="right">
+                                        <li><a class="addthis_button_tweetmeme" tm:style="compact"></a></li> 
+                   	                <li id="shareParent">Share:</li>
+                                        <li><a class="addthis_button_reddit"></a></li>
+                                        <li><a class="addthis_button_delicious"></a></li>
+                                        <li><a class="addthis_button_facebook"></a></li>
+                                        <li><a class="addthis_button_twitter"></a></li>                                        
+					<li><a class="addthis_button_stumbleupon"></a></li>
+					<li><a class="addthis_button_facebook_like"></a></li>
+					</ul><!-- close share --><div class="clearer"></div>
+				
+				
+					<div id="iframeContainer" style="background: #fff;">
+						<iframe id="emailIframe" name="emailIframe" width="489" height="465" background="#ffffff"  bgcolor="#ffffff" frameborder="0" scrolling="no" src="" ></iframe>
+					</div>
+
+				</div><!-- close blogTools -->  
+
+				<h3>The Physiology of Foie: Why Foie Gras is Not Unethical</h3>
+			
+				<p class="byline">Posted by <a href="http://www.seriouseats.com/user/profile/GoodEaterKenji">J. Kenji Lopez-Alt</a>, December 16, 2010 at  7:00 AM</p>     
+			
+
+				     
+<script type="text/javascript">
+        $(document).ready(function(){ 
+        	var entryRecipeAlert = '#' + $(this).attr('id') + ' .recipe-alert';
+            if (($('.individualPost .recipe-alert').length > 0) && ($('.individualPost .entry-main-image').length > 0)) {
+            	$('.individualPost .recipe-alert').insertAfter($('.individualPost .entry-main-image').parent());
+            }
+            if ($('.individualPost .breakoutbox').length > 0) {
+            	$('.individualPost .breakoutbox').insertAfter($('.individualPost .recipe-alert'));
+		$('.individualPost .breakoutbox').css('clear', 'right');
+            }
+        });
+    </script>
+
+    
+    
+    
+     
+
+
+				<p><br />
+<img alt="20101214-foie-16-cooked.jpg" src="http://www.seriouseats.com/images/20101214-foie-16-cooked.jpg" width="500" height="333" class="mt-image-none" style="" /><p class="caption">[Photographs: Robyn Lee and J. Kenji Lopez-Alt]</p></p>
+
+<p>I haven't always been comfortable with foie gras, though I've spent a good chunk of my life working with it. At first, the discomfort was with the taste. I tried it first as a teenager in the form of a cold terrine that tasted mostly of cat food to me. Then again, I also hated mayonnaise, brussels sprouts, and fish at the time, so my young opinion could hardly be trusted. Later on, as my culinary career expanded, I learned to love it.</p>
+
+<p><img alt="20101214-foie-15-old.jpg" src="http://www.seriouseats.com/images/20101214-foie-15-old.jpg" width="250" height="375" class="mt-image-right" style="float: right; margin: 0 0 20px 20px;" /><br />
+I learned to appreciate how it spreads like the world's most decadent and flavorful butter when served cold as a torchon. I learned to appreciate how when it's served hot, it's crisp, sweet, and savory, and melts in your mouth like no other food in the world. And then I learned how it's produced. How in order to get the liver to expand to a good 600% of its natural size, the ducks must be force-fed in a practice known as <em>gavage</em>, wherein a long metal tube (like the one on the right) is forcibly inserted into the duck's mouth up to three times a day and a large amount of food is crammed into its gullet until the liver becomes so large that it takes up the vast majority of the bird's body cavity.</p>
+
+<p>My immediate reaction was a slight gag, followed by revulsion, as I imagined the discomfort of having a tube shoved down my own throat. It's a fair and common reaction, though as I later learned, <strong>not the correct one.</strong> But we'll get to that.</p>
+				<a name="continued"></a>
+				<h4>A Case of Ethics</h4>
+
+<p>Even if you haven't eaten foie, pretty much everyone is familiar with the abhorrent images of mistreated ducks peddled by PETA and sites like <a href="http://www.nofoiegras.org">nofoiegras.org</a>, and indeed they are truly disturbing. Ducks crammed into wire cages just big enough to stand in with their filth-encrusted heads sticking out a hole in the front. Their feathers are scraggly and wiry (if present at all), there's often blood coming out of their nostrils, and their faces and feathers are caked with vomit and corn meal. A duck drinks scummy water out of a communal trough running in front of it while just upstream one of its less fortuitous bunkmates sits dead with its head lolling sideways, half submerged in the cloudy green water.</p>
+
+<p>I've no doubt that farms like this exist in the world, and it is a terrible, atrocious tragedy. If this is how all foie&mdash;or even all meat&mdash;is produced, I'd become a vegetarian today. But video or photographic footage of one badly managed farm or even a thousand badly managed farms does not prove that the production of foie gras, as a practice, is necessarily harmful to the health or mental well-being of a duck. <span class = "pullquote">Foie gras production should be judged not by the <em>worst</em> farms, but by the <em>best</em></span>, because those are the ones that I'm going to choose to buy my foie from if at all.</p>
+
+<p>So the real question is: <strong>is the production of foie gras torturous under even the best of conditions?</strong></p>
+
+<p>Those on one side would answer yes. How could force feeding an animal ever be considered anything but torture? On the other hand are those who claim that American foie farms are positively idyllic with ducks waddling around spacious pens, even queuing up for their <em>gavage</em>, that for a duck, none of the things we consider uncomfortable stress them out in the least. <strong>But who's right?</strong></p>
+
+<p>To answer this question, me and a few fellow Serious Eaters (yes, including Dumpling) set out on a brisk fall morning for <a href="http://La Bellefarms.com/">La Belle Farms</a> in the idyllic Hudson Valley in what was promised to us as a 100% full-access, bottom to top tour of the operation. We'd be free to see anything we liked, no doors would be locked, and we'd be taking cameras and notebooks with us.</p>
+
+<h4>On the Farm</h4>
+With a production of around 2,500 birds a week, <a href="http://La Bellefarms.com/">La Belle Farms</a> is the second largest of the three foie gras farms in the country (the others are Hudson Valley Foie Gras located a few miles away in Sullivan County, and Sonoma Artisan Foie in California). Despite its relatively large size, La Belle Farmss is still a vertically integrated farm. Unlike more industrialized chicken, pig, or cattle operations in the US or foie farms in Europe and Canada,  every step from breeding the ducklings, raising the chicks, performing the gavage, slaughtering, processing, packaging, and shipping takes place right on site.
+
+<p><img alt="20101214-foie-1-hanging ducks.jpg" src="http://www.seriouseats.com/images/20101214-foie-1-hanging%20ducks.jpg" width="500" height="333" class="mt-image-none" style="" /></p>
+
+<p>Owner Herman Lee, who immigrated from Hong Kong in 1973 to attend the Fashion Institute of Technology before going on to start Bella Poultry, one of the most well-respected chicken operations in the Northeast, began raising Moulard ducks for foie gras in 2000, after spending several years studying the industry both at home and abroad.</p>
+
+<p>In his office, he seems comfortable, almost eager to get started, to show us what his farm does. We waste no time in getting down to the fabrication room, where teams of workers are just beginning to pull ducks out of a walk-in cooler. Freshly killed and plucked the day before, they're now ready to be eviscerated and broken down into their various parts.</p>
+
+<p><img alt="20101214-foie-3-processing.jpg" src="http://www.seriouseats.com/images/20101214-foie-3-processing.jpg" width="500" height="333" class="mt-image-none" style="" /></p>
+
+<p>With a red-coated USDA inspector watching their every move (the USDA inspector is there every day), the crew gets to work.</p>
+
+<p>"We'll process about 500 ducks today," says Bob Ambrose, Herman's business partner and head of <a href="http://www.bellabellagourmet.com/">Bella Bella Gourmet</a>, La Belle's value-added line of prepared foods. "The ducks are all stunned in electrified water before we slaughter them, so they're completely unconscious, then we air-chill them and allow them to dry overnight," he explains. The stunning makes for a quick, painless death, while air-chilling and drying prevents them from taking on any extra water weight, diluting the flavor of their relatively lean meat.</p>
+
+<p>The animals are unloaded one at a time onto a conveyer belt where the skilled workers go at them, each one making a few vital cuts, assembly line-style. As the first liver is removed, <a href="http://www.seriouseats.com/user/profile/roboppy">Robyn</a>, our intrepid photographer, gives an audible gasp. "Whoah, that's big!"</p>
+
+<p><img alt="20101214-foie-2-livers.jpg" src="http://www.seriouseats.com/images/20101214-foie-2-livers.jpg" width="500" height="333" class="mt-image-none" style="" /></p>
+
+<p>Indeed, if you've never seen a whole lobe of foie gras before, the size of it can be a bit shocking. Weighing in at around a pound, each liver is roughly the size of a small football. <strong>That's close to 10% of the duck's total body weight</strong>, and it takes up the vast majority of the lower half of its body. The livers are passed to a woman who sorts them into two different grades, depending on the amount of bruises and blemishes they have. Large, clean livers get the "A" designation, while the rest are sorted into "B" and "Petite" trays.</p>
+
+<p>Bob is quick to point out that "any mishandling of the ducks&mdash;rough treatment, that kind of thing&mdash;will cause bruising, reducing its price," he explains. "So we've got a strong incentive to be gentle with the birds." Duck handlers, who are mostly female (apparently ducks take better to women) work on an bonus-based program where their pay is bumped for every "A" grade lobe one of their charge produces. It's the first time I've heard of a farm that offers workers a monetary incentive to be gentler with the animals. Bob insists that it works, and that the most experienced feeders can increase the number of A lobes from the normal 55% up to over 70%.</p>
+
+<p>At a wholesale price of around $30 a pound for A's, the liver is the most prized part of the duck, but it's hardly enough to sustain the business.</p>
+
+<p><img alt="20101214-foie-14-drumettes.jpg" src="http://www.seriouseats.com/images/20101214-foie-14-drumettes.jpg" width="500" height="333" class="mt-image-none" style="" /></p>
+
+<p>"We use and sell every part of the duck except the heads and feet," explains Bob. The breasts, known as <em>magret</em> are removed and individually packaged to be sold fresh to chefs and gourmet butchers. Some of them are cured and dried into duck prosciutto, or smoked to a sweet, ham-like flavor. The excess fat (of which there is plenty) gets rendered down and sold to restaurants. The legs are cooked in the traditional french <em>confit</em> style, while the wings are smoked and slow-cooked.</p>
+
+<p>The entire processing room gets sprayed down and disinfected every day. Next door is the killing room, where the ducks are zipped assembly-line style from the stunning station to the killing/bleeding station to the machines that pluck their feathers, which resemble industrial-sized washing machines lined with rubber fingers. The room is absolutely spotless, the countertops and conveyor belts a gleaming stainless steel.</p>
+
+<p><img alt="20101214-foie-4-on-farm.jpg" src="http://www.seriouseats.com/images/20101214-foie-4-on-farm.jpg" width="500" height="333" class="mt-image-none" style="" /></p>
+
+<p><strong>So far, so good.</strong> It's about as clean and organized an operation as I've ever seen in a farm. We put on full-length disposable jumpsuits to protect our street clothes along with face masks, hair nets, and rubber boots to protect the ducks from outside germs, and head towards the sheds where the ducks spend the bulk of their 3 1/2 month lives.*</p>
+
+<p><small>*That's significantly longer than the 4 1/2 weeks a normal chicken spends on this earth before slaughter.</small></p>
+
+<h4>In the Sheds</h4>
+
+<p>The real questions would be answered within the walls of these long, corrugated aluminum boxes. I'd consulted with a veterinarian and done some reading on the subject of illnesses in waterfowl, so even before we entered the shed, I had a good idea of what to look for to recognize sick or distressed birds. <strong>I wanted to be sure that I could judge for myself how well-off these ducks were.</strong></p>
+
+<p>Labored breathing, discharge from the nostrils, infected or cloudy eyes are all signs of sickness or stress. Bleeding beaks or feet and missing feathers would indicate rough treatment or fighting amongst themselves. I walked into the shed prepared for the worst, and instead was quite stunned.</p>
+
+<p><img alt="20101214-foie-7-shed-length.jpg" src="http://www.seriouseats.com/images/20101214-foie-7-shed-length.jpg" width="500" height="333" class="mt-image-none" style="" /></p>
+
+<p>Far from the cramped, cruel conditions shown in the videos and photographs I'd seen, here was an enormous shed, full of birds free to roam as they pleased.  They congregated in groups, quietly quacking at each other, roamed freely over the sawdust-strewn floor, even stretched their wings for a flap now and then. Granted, it <em>did</em> smell&mdash;a distinct barnyard aroma with a hint of ammonia (the chicken shed we visited afterwards had a much stronger ammonia smell to it), but as anyone who's worked on an animal farm will tell you, <em>all</em> farms smell, just as before the introduction of modern plumbing, all cities smelled as well.</p>
+
+<p>Incidentally, all the birds here are male. The female Moulards don't grow livers as well as males, and are therefore not as profitable. Like the other foie farms in this country, La Belle sends their female ducklings to Trinidad within weeks of hatching where they are raised for meat.</p>
+
+<p><embed src="http://blip.tv/play/heUygpTZNwA%2Em4v" type="application/x-shockwave-flash" width="500" height="297" allowscriptaccess="always" allowfullscreen="true"></embed></p>
+
+<p>It's true, there could have been more natural sunlight (a few large screened windows with fans in them were spaced along each side of the structure), and the air could have been fresher, but all in all, asides from the truly free-range chickens I've seen in backyards and a few small farms in New England and New York, and some of the boutique chef-run "education center" style farms, these were probably the most well-accommodated farm animals I'd ever seen. When asked about the light and air situation, Herman explained that "the animals are kept off of antibiotics, so we have to keep them minimally exposed to the outdoors." They'd let them out if they could, but wild bird populations can easily introduce deadly bacteria to domestic flocks, he says.</p>
+
+<p>The birds seemed to show a mild aversion to us, flocking together and giving us a wide berth as we walked through the shed. Chichi quickly spotted a single dead bird, which we inquired about. La Belle shows a mortality rate of around 1% in their ducks, which may seem large, but it's less than 1/5th the mortality of regular chicken or duck farms, and about 10 times lower than the mortality and injury rate of the backyard chickens I'm acquainted with.</p>
+
+<p><img alt="20101214-foie-8-ducks.jpg" src="http://www.seriouseats.com/images/20101214-foie-8-ducks.jpg" width="500" height="333" class="mt-image-none" style="" /></p>
+
+<p>Eventually the ducks became a little less edgy, and I was able to move in for a closer look. All signs pointed to completely healthy animals. Their beaks were clean, their eyes were bright, they had no trouble vocalizing, and their feathers were for the most part completely intact. They seemed to waddle around with a positive swagger, congregating at the water dripper and feeding stations.</p>
+
+<h4>Gavage</h4>
+
+<p>The facts so far: for at least the first 12 weeks of their lives, these ducks are sitting pretty in a stress-free, spacious environment. The next shed is where the ducks spend their last 25 days&mdash;where the gavage takes place.</p>
+
+<p>Before we went inside, we were told that this was the only part of the tour where we would not be allowed to take photographs or video. Ah, I thought&mdash;a sure sign that what we are about to see is going to put us off our lunches (or tasting menus, as the case may be). But Bob explains: It's not that they have anything to hide with the procedure itself, it's that they've recently began employing a new custom-designed piece of technology that they don't want the two competing farms to get their hands on. We'd see it in action in a moment.</p>
+
+<p>We entered another long shed, this one filled from end to end with 5-foot by 7-foot pens, each one holding about 10 ducks. Again, the ducks tended to congregate together, leaving more than half of the space in their pen empty. Occasionally, one would waddle out of the group for a stretch. Just as in the other sheds, these ducks seemed healthy, albeit much larger (these guys were on their third week of gavage, just a few days away from slaughter).</p>
+
+<p>We walked down row after row of pens until we got to one where a worker was just about to start feeding. At La Belle, the ducks are fed three times a day for a total of up to 240 grams of their custom-designed feed. As we watched, the worker&mdash;a petit woman&mdash;climbed into the pen and sat on an overturned box. <span class="pullquote">One at a time, she pulled a duck towards her and held it between her legs with its neck arched upwards.</span> She gently squeezed the base of the duck's neck ("checking to make sure that he's finished all his food from the last feeding," says Bob), then eases a flexible plastic tube down the ducks throat. A machine whirls, a small bulge forms where the food is deposited, and the duck walks off, giving its head one shake, but otherwise seemingly unaffected.</p>
+
+<p>While most other farms in the world still use metal tubes to feed their duck, La Belle has recently switched to a custom-made flexible plastic version. This is the piece of technology that they didn't want us filming.</p>
+
+<p>However, a quick search on YouTube turned up this video, which is not dissimilar from our own experience (this video shows geese in France):</p>
+
+<p><object width="500" height="296"><param name="movie" value="http://www.youtube.com/v/tQzH58WJt0Y?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/tQzH58WJt0Y?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="500" height="296"></embed></object></p>
+
+<p>According to Bob, when the feeder feels the duck's esophagus, if there's any food remaining, she'll skip that feeding. So while the ducks are technically force-fed, there is a level of built-in anatomical control so that the ducks can't take in any more food than they can physically handle. That's more respect than most fast food chains show for their human customers.</p>
+
+<p>La Belle has also started a program to reduce their workers' load. Many farms require that the same feeder work with the same ducks for the entire gavage process to reduce stress on the animal. For a worker, this means three long feeding shifts per day, every day, for 25 days.</p>
+
+<p>A few years ago, they discovered that <span class="pullquote">it's not the actual <em>worker</em> that the ducks grow accustomed to, it's just their sight and smell.</span> They found that by having two different workers wear the same set of clothes, the ducks would respond to the second as if they were still the first. In fact, after starting their workers on this split-shift system, production of A graded foie actually <em>increased</em>.</p>
+
+<p>I wouldn't exactly say that the ducks were <em>lining up</em> to be fed, as has been suggested by some foie advocates, but they certainly didn't seem stressed. By all activists accounts, these ducks should have been so fattened that they could barely stand under their own power. I didn't see one duck vomit, nor did I see any that couldn't stand or walk due to the weight of their livers.</p>
+
+<p><img alt="20101214-foie-10-foreman.jpg" src="http://www.seriouseats.com/images/20101214-foie-10-foreman.jpg" width="500" height="333" class="mt-image-none" style="" /></p>
+
+<p>After the walking tour, we stopped back at the office for a tasting of a few of Bella Bella's products, as well as some straight-up fresh foie, seared on a George Foreman griddle, of all things. Of all the foie I've cooked in the world (and it's a lot), La Belle's has the unique property of being able to hold its shape well without rendering off too much fat, making it an ideal candidate for searing.</p>
+
+<p>We finished the day eating our foie, talking to Herman and Bob about their business. Back home, I started doing some more research.</p>
+
+<p><br />
+<h4>Physiology</h4></p>
+
+<p>We'd seen the process from start to finish, and from all outward appearances, the ducks seem to live perfectly comfortable lives&mdash;at least as well as you can expect for any farm animal. Certainly far better lives than the millions of cows and pigs and billions of chickens that are raised every year for our consumption. But the question I had was, <strong>why aren't they more uncomfortable?</strong> Why doesn't a duck struggle with its large liver or having a tube forced down its throat?</p>
+
+<p>First off, the key to understanding this is to make a very conscious effort <em>not to anthropomorphize the animals</em>. As waterfowl, they are distinctly <em>not human</em>, and their physiology differs from ours in a few key ways. Let's take a look at the foie gras duck, shall we?</p>
+
+<p>In this country, foie gras is produced exclusively from Moulard ducks. The offspring of a male Muscovy and a female Pekin duck, Moulards offer many physiological and temperamental advantages that make them ideal for producing foie, and I believe an understanding of the breed can help clear up a lot of misconceptions.</p>
+
+<p><strong>Muscovies</strong> are an incredibly hardy species. Though native to the tropical regions of South America, they are nevertheless able to adapt to temperate climates, and are even comfortable living in sub-zero conditions. As such, they are non-migratory. This is important, because it means that unlike migratory species, they don't ever have the need to gorge themselves to put on extra fat to carry them through long periods with no food. They are an aggressive species; Males attack each other with their bills and sharp claws on their feet. Despite this, they are prized for their well-flavored, lean meat. Their robust nature and tolerance of many climates make them quite easy to farm.</p>
+
+<p><strong>Pekin ducks</strong> (also known as Long Island ducks) on the other hand were originally bred in China from wild mallards, and thus have many of the characteristics of that migratory species. They are relatively petite birds who are quite gregarious. They enjoy hanging out in groups and will naturally stand together in very tight quarters, whether or not they have the space to roam around. Years of breeding have shrunk their wings and increased their breast size. Because of their plump stature, <span class="pullquote">they can't jump much higher than your average womp-rat</span>, and thus no longer migrate (which isn't to say they wouldn't waddle south for the winter, given the opportunity), but their inner organs and basic metabolism are still that of a migratory waterfowl.</p>
+
+<p>When you cross a male Muscovy with a female Pekin, you get a Moulard, a hybrid that combines the more desirable behavioral features of the two species. First off, it's larger and more robust than either a Muscovy or Pekin, much in the way that a mule is bigger and stronger than either the horse or donkey it was bred from (Moulards are also sterile, like mules, and are often referred to as "mule ducks"). Like Pekins, they don't fly and are relatively gregarious, making group living and containment quite simple for farmers, and non-stressful and safe for the ducks. Their most important feature, however&mdash;<strong>and this is important</strong>&mdash;is that like Muscovies, they don't have the urge to migrate, but like Pekins, they retain all of the interior anatomy necessary for the gorging that migration requires.</p>
+
+<p>This is the <em>real</em> key to the safe and ethical production of foie gras.</p>
+
+<h4>The Liver</h4>
+
+<p>You see, migration depends upon gorging. The rapid intake and metabolism of large quantities of food in order to store enough energy to fly south for the winter. So while during the warm summer months, a duck may be content paddling around eating weeds, bugs, and the occasional minnow, when the weather starts getting colder, it begins to eat in earnest, stuffing itself more frequently, and with larger prey. Unlike in humans where excess fat builds up mostly in large deposits just under the skin, with migratory birds, this excess fat builds up both under the skin, <em>and</em> in the liver.</p>
+
+<p>Granted, the production of foie gras requires feeding a duck far more than it would naturally consume (though if you are to believe <a href="http://www.ted.com/index.php/talks/dan_barber_s_surprising_foie_gras_parable.html">Dan Barber's fantastic TED talk</a>, there are wild geese who would feed themselves to almost the same degree), but this is true of <em>all</em> farm animals. Cows, pigs, chickens, they <em>all</em> get far fatter from the rich feeds we give them than they'd ever get if left to their own devices. Does that make it cruel? I'd say no. As long as the animal shows no sign of stress or discomfort&mdash;and the ducks we saw today certainly did not&mdash;then <span class="pullquote">what harm is a few extra pounds?</span></p>
+
+<h4>The Esophagus</h4>
+
+<p>What about the act of feeding? Surely the duck feels discomfort when a tube is slid down its throat?</p>
+
+<p>Tony Bourdain likes to remind us that we see worse things committed against human beings on late night pay-per-view. And he's right: humans have a gag reflex. But ducks? <strong>Not so.</strong> I tried hard to find a good video online of a duck eating fish, but they are all too blurry or too annoying to watch. The closest I came is this video of a cormorant, another migratory waterfowl.</p>
+
+<p>Watch closely as it swallows a spiky fish several times wider than its neck.</p>
+
+<p><object width="500" height="400"><param name="movie" value="http://www.youtube.com/v/GeBZ3PKEATw?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/GeBZ3PKEATw?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="500" height="400"></embed></object></p>
+
+<p>Incredible, right? And <em>that</em>, folks, is the reason why ducks don't struggle when a feeding tube deposits food in its throat. Its body is built for <em>exactly the same type of stress</em> in the wild.</p>
+
+<p>Humans chew their food in their mouth until it breaks down into pieces small enough to swallow. Ducks, on the other hand, have no teeth in their mouth, and they don't chew. Instead, they swallow their food whole, storing it in the bottom of the esophagus in a stretchy pouch known as the crop. Eventually, the solid food works its way into a stomach and a sac-like organ called the gizzard. Throughout the day, a duck will swallow small rocks and pebbles, which get stored in the gizzard. Once food enters it, the muscular organ uses the pebbles as make-shift teeth, grinding up the food so the duck can digest it.</p>
+
+<p><img alt="20101214-foie-17-esophagus.jpeg" src="http://www.seriouseats.com/images/20101214-foie-17-esophagus.jpeg" width="500" height="333" class="mt-image-none" style="" /></p>
+
+<p>Because of this, their esophagi are custom-built for stretching. I had Bob send a few of them to the office where I tied off one end and filled it up, water-balloon style in order to see exactly how much a duck can hold in its crop. The four we tested stretched out to a little over a quart of liquid apiece, or around 950 grams&mdash;far more than the 80 grams of meal they were fed at each serving.</p>
+
+<p>Surely they'd have difficulty breathing with a tube down their throat though, right? <strong>Not so fast.</strong> Humans have a single passageway leading from their mouth down into their neck. From there, it divides into the esophagus, which leads to the stomach, and the trachea, which leads to the lungs. Separating these two passages is a little flap of muscle called the epiglottis. Try to force something past the epiglottis, and you trigger a gag reaction. It's intended to make sure that the wrong things don't end up in your stomach.</p>
+
+<p>Ducks, on the other hand, have completely independent tracheas and esophagi. Their esophagus goes straight from the mouth to the crop, while the trachea runs from the lungs and out the end of the tongue. That's right: <strong>Ducks breathe through their tongues</strong>. The cartilage that surrounds their trachea (called the tracheal ring) is also a complete circle, as opposed to ours, which is C-shaped, making their trachea much sturdier and less prone to collapse. What this means is that you can place a feeding tube in a ducks throat, and it can sit there indefinitely, neither gagging, nor suffocating.</p>
+
+<h4>For The Activists</h4>
+
+<p>So there it is. The evidence is out there, and from what Bob and Herman tell me, they are more than happy to be transparent with their operations, to let people see what goes on inside their farm. They believe they've got nothing to hide, and so do I. So why is it that activists are so zealous about destroying foie gras operations? I've worked in restaurants that have been picketed by protestors, and they aren't a particularly friendly bunch. Threats have even been made against the lives of chefs and their families for serving it in their restaurants.</p>
+
+<p>In large part, it's because foie gras is an easy target. There are only three foie farms in the country, and none of them have the money or government clout to defend themselves the way that the chicken or beef industry does. It's a food product that is marketed directly at the affluent, and <span class="pullquote">the rich are always an easy target.</span> As an occasional delicacy, it's also a food that's relatively easy for most people to give up.</p>
+
+<p>Personally, I find this kind of protesting abhorrent. If you are going to protest anything, it should be the industrial production of eggs, where chickens are routinely kept in cages so small that they can't even turn around for an entire year. The problem, of course, is that you tell people to stop eating cheap eggs, and nobody will listen. The leaders of the anti-foie movement know this and use it to their advantage, using video and photographs taken from the worst of the farms (none of the ones in this country, for the record), and making it seem like <em>all</em> foie production is as despicable.</p>
+
+<p>If you are against the confinement, slaughter, and eating of <em>all</em> animals, then that's a different argument to be had at a different time. But to single out foie as the worst of the worst is misguided at best, and downright manipulative at worst. Just as there are good eggs and bad eggs, good beef and bad beef, good chicken and bad chicken, so there is good foie and bad foie. We are especially lucky, because we happen to live in a country where <em>all</em> of the foie produced is good foie.</p>
+
+<p>The only question left for me is whether to serve it hot or cold.</p>
+				
+				
+
+				
+
+<p class="postFooter" id="commentsAndFavoritesFooter">
+
+<span id="postFooterCommentCount"><a href="http://www.seriouseats.com/2010/12/the-physiology-of-foie-why-foie-gras-is-not-u.html#comments" class="commentCount">Post a Comment</a></span>
+
+
+<span class="favorite">
+
+<!-- [1] new favorite code  -->
+<span class="entry-scoring">
+<a href="javascript:void(0);" onclick="return mtScore(128741);" id="scoring-id-128741" class="scoring">Favorite this!</a> &nbsp;(<span id="scoring-score-128741" class="scoring-score">59</span>)
+</span>
+
+
+</span>
+
+</p>
+<div class="clearer"></div>
+
+<p class="postFooter">Tags: <a href="/tags/duck">duck</a>, <a href="/tags/Foie Gras">Foie Gras</a>, <a href="/tags/La Belle">La Belle</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+					
+<div class="clearer"></div>
+
+
+
+
+<br/>
+
+<script language='JavaScript'>
+var OB_langJS = 'http://widgets.outbrain.com/lang_en.js'; var OBITm = '1296090325009';var OB_raterMode = 'none';var OB_recMode = 'strip'; 
+
+var OutbrainPermaLink='http://www.seriouseats.com/2010/12/the-physiology-of-foie-why-foie-gras-is-not-u.html'; 
+
+ if ( typeof(OB_Script)!='undefined' )OutbrainStart(); else { var OB_Script = true; var str = unescape("%3Cscript src=\'http://widgets.outbrain.com/OutbrainRater.js\' type=\'text/javascript\'%3E%3C/script%3E"); document.write(str); }
+ </script>
+
+
+<div id="adStrip">
+				
+<script type="text/javascript"><!--
+google_ad_client = "pub-8758429631178774";
+/* 468x60, created 4/18/08 */
+google_ad_slot = "2061107744";
+google_ad_width = 468;
+google_ad_height = 60;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+				
+				</div><!-- close adStrip -->
+					
+					
+			</div><!-- close individual post -->
+
+	<div id="comments">
+				
+					
+						
+						
+<h4 class="body"><span id="commentRange"></span>
+<span class="entryCommentCount">Comments are loading... </span>:</h4>
+
+					
+					
+	
+					
+        <div id="commentPagination" class="pagination">
+        </div>
+        <div style="clear:both;"></div>
+	<div id="commentSection" style="padding-top:10px;padding-bottom:10px;">
+	</div>
+        <div id="bottomCommentPagination" class="pagination"></div>
+        <div style="clear:both;"></div>
+                                        
+
+				</div><!-- end comments -->
+				
+				
+
+<a name="ihascommented"></a><div id="commented" style="display: none;"><p>Thanks for commenting!<br />Your comment has been accepted<br />and will appear in a moment.</p></div>
+
+ <h4 class="body addAComment">Add a comment:</h4>
+
+
+					<div id="add">
+						<script type="text/javascript">
+						user = mtGetUser();
+						if (user && user.is_authenticated) {
+							document.write("");
+						} else {
+							document.write("<div class=\"commentGuidelines\"><h3>Hello Eater!</h3><p>To start talking, please <a href=\"javascript:void(0)\" onclick=\"return mtSignInOnClick('signin-widget-content')\">log in</a> or <a href=\"http://www.seriouseats.com/cgi-bin/mte/mt-cp.cgi?__mode=register&blog_id=30&return_to=" + encodeURIComponent('http://www.seriouseats.com/welcome/') + "\">sign up</a> &mdash; it's fast and free!</p></div>");
+						}
+						</script>
+					</div>
+					
+				
+
+				
+
+
+					<div id="post-comment">
+						
+					
+						<a name="commentform"></a>
+						<div class="formSection">
+							<form method="post" action="http://www.seriouseats.com/cgi-bin/mte/mt-comments.cgi" name="comments_form" id="comments_form" onsubmit="setCookie('commented', 'true'); document.getElementById('comment-post').disabled=true; document.getElementById('comment-post').value = '&nbsp;&nbsp;&nbsp;Please wait...&nbsp;&nbsp;&nbsp;'; ">
+
+<input type="hidden" name="post" value="post" />
+								<input type="hidden" name="static" value="1" />
+								<input type="hidden" name="entry_id" value="128741" />
+								<textarea id="addComment" rows="5" cols="60" name="text" class="formText"></textarea>
+								<div style="float:left"><p class="requirements">Comments can take up to a minute to appear - please be patient!</p></div>
+
+<div style="float:right" class="formCommentPreview">
+									<input type="submit" value="Post a Comment!" name="post" id="comment-post" class="formButton"  />
+								</div><div class="clearer"></div>
+							</form>
+						</div>
+						
+						<div id="previewingComment">	
+							<h4 class="body">Previewing your comment:</h4>
+							<div class="comment preview">
+								<div class="comment-body" >
+									<p id="livePreview">&nbsp;</p>
+									<div class="comment-body-bottom"></div>
+								</div>
+							</div><!-- close comment preview -->
+						</div><!-- close previewing comment -->				
+			
+						<div class="tools" id="HTMLHints">
+							<p><strong>HTML Hints</strong></p>
+							<p>Some HTML is OK: &lt;a href="URL"&gt;link&lt;/a&gt;, &lt;strong&gt;<strong>strong</strong>&lt;/strong&gt;, &lt;em&gt;<em>em</em>&lt;/em&gt;</p>
+							
+							<p><strong>Comment Guidelines</strong></p>
+							<p>Post whatever you want, just keep it seriously about eats, seriously. We reserve the right to delete off-topic or inflammatory comments. Learn more at our <a href="http://www.seriouseats.com/comment-policy/">Comment Policy page</a>.</p>
+							
+							<p>If you see something not so nice, please, <a href="http://www.seriouseats.com/contact?selected=flag&url=http://www.seriouseats.com/2010/12/the-physiology-of-foie-why-foie-gras-is-not-u.html">report an inappropriate comment.</a></strong></p>
+						</div>
+						
+					
+					</div><!-- close post-comment -->
+			
+					 <script type="text/javascript">
+						 if (!user || !user.is_authenticated) { document.getElementById("post-comment").style.display = 'none'; }
+					 </script>
+ 
+ 
+				
+
+
+		</div><!-- end column 1 -->
+
+		<!-- SQUARE AD SPACE -->
+		<div id="featuredRight2Columns" class="indEntrySquare">
+		<div class="indEntrySquareAd" id="BIGBOX">
+			<!-- FM 300x250 ATF- Main Site Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/2386'></script>
+                       <!-- FM 300x250 ATF- Main Site Zone -->
+		</div>		
+	</div><!-- close featuredRight2Columns -->
+		<!-- /SQUARE AD SPACE -->
+
+		<div id="threeColumn2">
+			
+
+<div class="column2List2" id="multiview">
+
+<!-- HOT TOPICS -->	
+	<div id="hotTopics1">
+		<div class="heading">
+			<h4 title="The most active entries based on number of comments in the last 24 hours">Hot Topics</h4>
+		</div>
+
+<div>
+
+<p><a href="http://www.seriouseats.com/talk/2011/02/whats-your-cheat-day.html" rel="nofollow">What's your "cheat' day?</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/talk/2011/02/whats-your-cheat-day.html#comments" rel="nofollow">3 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/talk/2011/02/pizza-dough-for-in-laws.html" rel="nofollow">pizza dough (for in-laws!!!)</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/talk/2011/02/pizza-dough-for-in-laws.html#comments" rel="nofollow">0 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/talk/2011/02/perplexed.html" rel="nofollow">Perplexed</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/talk/2011/02/perplexed.html#comments" rel="nofollow">2 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/talk/2011/02/whats-yer-little-secret-for-keeping-an-herb-or-veggie-f.html" rel="nofollow">What's yer little secret for keeping an herb or veggie fresh??</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/talk/2011/02/whats-yer-little-secret-for-keeping-an-herb-or-veggie-f.html#comments" rel="nofollow">6 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/talk/2011/02/what-do-you-eat-that-comes-from-the-sea-do-you-share-or.html" rel="nofollow">What do you eat that comes from the sea? Do you share or hog it?</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/talk/2011/02/what-do-you-eat-that-comes-from-the-sea-do-you-share-or.html#comments" rel="nofollow">5 comments</a></p>
+
+<p><a href="http://www.seriouseats.com/talk/2011/02/speakeasies-of-the-prohibition-era-why-were-they-called.html" rel="nofollow">Speakeasies of the prohibition era. Why were they called such ?</a></p>
+<p class="postFooter"><a href="http://www.seriouseats.com/talk/2011/02/speakeasies-of-the-prohibition-era-why-were-they-called.html#comments" rel="nofollow">10 comments</a></p>
+
+</div>
+
+	</div><!-- /HOT TOPICS  -->
+
+</div><!-- /multiview  -->
+	
+			<!-- DAY OLD SPECIAL -->
+			<div id="dayOldSpecial" class="feature">
+
+		
+
+			<p class="linksrc"><a href="http://www.seriouseats.com/?ref=se-do1" class="serious_eats_post" rel="nofollow">
+
+
+
+From Serious Eats
+
+</a></p>
+
+			<a href="http://www.seriouseats.com/2010/11/airport-food-for-thanksgiving-travel.html?ref=se-do1" rel="nofollow"><img src="http://www.seriouseats.com/images/20101128-airportfood-thumbnail.jpg" alt="Travelers: What's Your Favorite Airport Food?" width="152" /></a>
+
+			<h4 id="f4"><a href="http://www.seriouseats.com/2010/11/airport-food-for-thanksgiving-travel.html?ref=se-do1" rel="nofollow">Travelers: What's Your Favorite Airport Food?</a></h4>
+
+		
+
+
+		
+
+			<p class="linksrc"><a href="http://www.seriouseats.com/?ref=se-do2" class="serious_eats_post" rel="nofollow">
+
+
+
+From Serious Eats
+
+</a></p>
+
+			<a href="http://www.seriouseats.com/2011/01/how-to-make-the-easiest-doughnuts-donuts-from-pillsbury-biscuits-homemade.html?ref=se-do2" rel="nofollow"><img src="http://www.seriouseats.com/images/20110131-donuts-175.jpg" alt="The World's Easiest Homemade Donuts" width="152" /></a>
+
+			<h4 id="f5"><a href="http://www.seriouseats.com/2011/01/how-to-make-the-easiest-doughnuts-donuts-from-pillsbury-biscuits-homemade.html?ref=se-do2" rel="nofollow">The World's Easiest Homemade Donuts</a></h4>
+
+		
+
+		
+
+			<p class="linksrc"><a href="http://www.seriouseats.com/?ref=se-do3" class="serious_eats_post" rel="nofollow">
+
+
+
+From Serious Eats
+
+</a></p>
+
+			<a href="http://www.seriouseats.com/2011/01/foods-we-keep-in-our-winter-pantry.html?ref=se-do3" rel="nofollow"><img src="http://www.seriouseats.com/images/20110203-winter-pantry-thumbnail.jpg" alt="Foods We Keep in Our Winter Pantry" width="152" /></a>
+
+			<h4 id="f6"><a href="http://www.seriouseats.com/2011/01/foods-we-keep-in-our-winter-pantry.html?ref=se-do3" rel="nofollow">Foods We Keep in Our Winter Pantry</a></h4>
+
+		
+
+<br/>
+
+		
+
+			<p class="linksrc"><a href="http://www.seriouseats.com/?ref=se-do4" class="serious_eats_post" rel="nofollow">
+
+
+
+From Serious Eats
+
+</a></p>
+
+			<a href="http://www.seriouseats.com/2011/01/paula-deens-homemade-kit-kat-bars-recipe-candy-from-scratch.html?ref=se-do2" rel="nofollow"><img src="http://www.seriouseats.com/images/20110120-paula-deen-kit-kat-thumbnail.jpg" alt="Edible DIY: Paula Deen's Homemade Kit Kat Bars" width="152" /></a>
+
+			<h4 id="f7"><a href="http://www.seriouseats.com/2011/01/paula-deens-homemade-kit-kat-bars-recipe-candy-from-scratch.html?ref=se-do4" rel="nofollow">Edible DIY: Paula Deen's Homemade Kit Kat Bars</a></h4>
+
+		
+
+</div><!-- close day old -->		
+
+
+			<!-- /DAY OLD SPECIAL -->
+			
+		
+		
+		</div><!-- end column 2 -->
+	
+			
+		<div id="threeColumn3">
+		
+			<div class="columnAdSpace">
+	<div class="columnAdTower">
+		<!-- FM 160x600 Right Sidebar MainSite Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/2388'></script>
+                <!-- FM 160x600 Right Sidebar MainSite Zone -->
+	</div>
+</div>
+
+			
+		</div><!-- end column 3 -->
+		<div class="clearer"></div>
+		
+	</div><!-- close content div -->
+
+<div id="bottomBucket" class="feature">
+
+	<div class="bbColumn" id="bbColumn1">
+
+		
+
+			<p class="linksrc"><a href="http://www.seriouseats.com/" class="serious_eats_post" rel="nofollow">From Serious Eats</a></p>
+
+		    
+		    <a href="http://www.seriouseats.com/2010/06/what-are-the-best-chocolate-chips-brands-for-baking-cookies.html?ref=1"><img src="http://www.seriouseats.com/assets_c/2010/06/20100628-chips-bags primary-thumb-autox133-96959.jpg" alt="Taste Test: The Best Chocolate Chips for Chocolate Chip Cookies" /></a>
+		    <h4><a href="http://www.seriouseats.com/2010/06/what-are-the-best-chocolate-chips-brands-for-baking-cookies.html?ref=1" rel="nofollow">Taste Test: The Best Chocolate Chips for Chocolate Chip Cookies</a></h4>
+
+		
+
+	</div><!-- close bbColumn1 -->
+
+
+	<div class="bbColumn" id="bbColumn2">
+
+		
+			<p class="linksrc"><a href="http://www.seriouseats.com/" class="serious_eats_post" rel="nofollow">From Serious Eats</a></p>
+
+		    
+		    <a href="http://www.seriouseats.com/2010/06/inside-the-serious-eats-office.html?ref=2"><img src="http://www.seriouseats.com/assets_c/2010/05/20100521Edbooks2-thumb-autox133-91882.jpg" alt="A Tour of Serious Eats Headquarters" /></a>
+
+			<h4><a href="http://www.seriouseats.com/2010/06/inside-the-serious-eats-office.html?ref=2" rel="nofollow">A Tour of Serious Eats Headquarters</a></h4>
+
+		
+
+	</div><!-- close bbColumn2 -->
+
+
+
+	<div class="bbColumn" id="bbColumn3">
+
+		
+			<p class="linksrc"><a href="http://www.seriouseats.com/" class="serious_eats_post" rel="nofollow">From Serious Eats</a></p>
+
+		    
+		    <a href="http://www.seriouseats.com/2011/02/30-course-modernist-cuisine-dinner-nathan-myhrvold-cooking-lab-seattle-bellevue-wa.html?ref=3"><img src="http://www.seriouseats.com/assets_c/2011/02/20110205-Modernist-Cuisine-slidewhow-primary-thumb-autox133-139348.jpg" alt="Photos of the 30-Course Dinner at the Modernist Cuisine's Cooking Lab" /></a>
+
+			<h4><a href="http://www.seriouseats.com/2011/02/30-course-modernist-cuisine-dinner-nathan-myhrvold-cooking-lab-seattle-bellevue-wa.html?ref=3" rel="nofollow">Photos of the 30-Course Dinner at the Modernist Cuisine's Cooking Lab</a></h4>
+
+		
+
+	</div><!-- close bbColumn3 -->
+
+
+
+	<div class="bbColumn" id="bbColumn4">
+
+		
+
+			<p class="linksrc"><a href="http://www.seriouseats.com/" class="serious_eats_post" rel="nofollow">From Serious Eats</a></p>
+
+		    
+		    <a href="http://www.seriouseats.com/2011/02/what-is-the-best-dark-chocolate-bars-brands-taste-test.html?ref=4"><img src="http://www.seriouseats.com/assets_c/2011/02/20110210-dark-choc-taste-primary-thumb-autox133-139637.jpg" alt="Taste Test: Dark Chocolate" /></a>
+
+			<h4><a href="http://www.seriouseats.com/2011/02/what-is-the-best-dark-chocolate-bars-brands-taste-test.html?ref=4" rel="nofollow">Taste Test: Dark Chocolate</a></h4>
+
+		
+
+	</div><!-- close bbColumn4 -->
+
+
+</div><!-- /bottom bucket -->
+
+<div id="footer" class="shortFooter">
+
+	<div id="footerColumn1" class="footer-column">
+		<h3 id="h-still-hungry">Still Hungry?</h3>
+		<ul>	
+			<li><a href="/?ref=footer">Home</a></li>
+			<li><a href="/talk/?ref=footer">Talk</a></li>
+			<li><a href="/recipes/?ref=footer">Recipes</a></li>
+			<li><a href="/eating_out/?ref=footer">Eating Out</a></li>
+			<li><a href="http://videos.seriouseats.com/?ref=footer">Videos</a></li>
+			<li><a href="/columns/?ref=footer">Columns</a></li>
+		</ul>
+	</div><!-- close footerColumn1 -->
+		
+	<div id="footerColumn2" class="footer-column">
+	   <h3 id="h-delivery">Delivery</h3>
+		<p>Subscribe to our email newsletters so you don't miss anything delicious!</p>
+
+   		<form action="http://www.seriouseats.com/cgi-bin/mte/plugins/ProfileMail/profilemail.cgi" enctype="multipart/form-data" id="profile_edit" method="post">
+   		    <input type="hidden" name="__mode" value="save">
+   		    <input type="hidden" name="blog_id" value="30">
+   			<input value="Your Email Address:" type="text" name="email" class="short" onblur="if(this.value==''){this.style.color=''; this.form.reset()}" onfocus="this.value = ''; this.style.color = '#000';" />
+   			<div class="formField">
+   				<input type="checkbox" name="serious_eats_weekly_newsletter" id="serious_eats_weekly_newsletter"  /><label for="serious_eats_weekly_newsletter"> Weekly Newsletter</label>
+   		 		<br />
+   				<input type="hidden" name="name" value="" />
+   				<input type="checkbox" name="serious_eats_recipe_newsletter" id="serious_eats_recipe_newsletter"  /><label for="serious_eats_recipe_newsletter"> Recipe Newsletter</label>
+   				<br />
+   				<input type="checkbox" name="serious_eats_new_york_newsletter" id="serious_eats_new_york_newsletter"  /><label for="serious_eats_new_york_newsletter"> New York Newsletter</label>
+   				<br />
+   				<input type="checkbox" name="serious_eats_drinks_newsletter" id="serious_eats_drinks_newsletter"  /><label for="serious_eats_drinks_newsletter"> Drinks Newsletter</label>
+   				
+   			</div>
+   			<input type="image" value="Subscribe" src="http://seriouseats.com/imagesV2/buttons/subscribe.png" width="82" height="24" border="0" alt="subscribe" />
+   		</form>
+
+
+	</div><!-- close footerColumn2 -->
+		
+	<div id="footerColumn3" class="footer-column">
+		<h3 id="h-kiss-the-chef">Kiss the Chef</h3>
+		<ul>	
+			<li><a href="/about/?ref=footer">About Us</a></li>
+			<li><a href="/contact/?ref=footer">Contact Us</a></li>
+			<li><a href="/advertise/?ref=footer">Advertise with Us</a></li>
+		</ul>
+		<h3 id="h-family-style">Family Style</h3>
+		<ul>
+			<li><a href="http://www.sliceny.com/?ref=sefooter">Slice</a></li>
+			<li><a href="http://www.ahamburgertoday.com/?ref=sefooter">A Hamburger Today</a></li>
+			<li><a href="http://newyork.seriouseats.com/?ref=sefooter">Serious Eats: New York</a></li>
+			<li><a href="http://photograzing.seriouseats.com/?ref=sefooter">Photograzing</a></li>
+		</ul>
+	</div><!-- close footerColumn3 -->
+
+	<div id="footerColumn4" class="footer-column">
+			<h3 id="h-feed-yourself">Feed Yourself</h3>
+			<p>Subscribe to our feeds:</p>
+			<p><a href="http://feeds.feedburner.com/seriouseatsfeaturesvideos">Serious Eats</a>, <a href="http://feeds.feedburner.com/seriouseatstalk">Talk</a>, <a href="http://feeds.feedburner.com/seriouseats/recipes">Recipes</a></p>
+			<br />
+			<p>Subscribe by email:</p>
+			<p><a href="http://www.feedburner.com/fb/a/emailverifySubmit?feedId=595294&amp;loc=en_US">All of Serious Eats</a></p>
+	</div><!-- close footerColumn4 --><div class="clearer"></div>
+
+	<a href="http://twitter.com/seriouseats" id="footer-twitter">Follow us on Twitter!</a>
+
+</div><!-- close footer div -->
+
+
+
+<!-- footer links module -->
+<div id="footerLinks">
+<ul>
+<li><a href="http://www.seriouseats.com/faq/">FAQ</a></li>
+<li><a href="http://www.seriouseats.com/advertise/">Advertise</a></li>
+<li><a href="http://www.seriouseats.com/sitemap/">Sitemap</a></li>
+<li><a href="http://www.seriouseats.com/terms/">Terms of Use</a></li>
+<li><a href="http://www.seriouseats.com/privacy/">Privacy Policy</a></li>
+<li>&copy; 2006-2011</li>
+</ul>
+</div>
+<!-- /footer links module -->
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js'; type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-962456-1");
+pageTracker._setDomainName(".seriouseats.com");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+<script type="text/javascript">
+function recordOutboundLink(link, category, action, outgoingPageviewLink) {
+  try {
+    pageTracker._trackEvent(category, action, outgoingPageviewLink);
+    pageTracker._trackPageview(outgoingPageviewLink);
+    //alert (outgoingPageviewLink);
+    //setTimeout('window.open(link.href)', 100); 
+    setTimeout('document.location = "' + link + '"', 100) 
+  }catch(err){}
+}
+</script>
+
+<!-- Start Amazon Impression Reporting Script -->
+<script type="text/javascript" src="http://www.assoc-amazon.com/s/impression-counter?tag=serieats-20&o=1"></script>
+<noscript><img src="http://www.assoc-amazon.com/s/noscript?tag=serieats-20" alt="" /></noscript>
+<!-- End Amazon Impression Reporting Script -->
+
+<!-- FM Tracking Pixel -->
+<script type='text/javascript' src='http://static.fmpub.net/site/seriouseats'></script>
+<!-- FM Tracking Pixel -->
+
+<!-- chartbeat -->
+<script type="text/javascript">
+var cbjspath = "static.chartbeat.com/js/chartbeat.js?uid=2384&domain=seriouseats.com";
+var cbjsprotocol = (("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://");
+document.write(unescape("%3Cscript src='"+cbjsprotocol+cbjspath+"' type='text/javascript'%3E%3C/script%3E"))
+</script>
+<!-- chartbeat -->
+
+<!-- Addthis -->
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=seriouseats"></script>
+<!-- Addthis -->
+
+<!-- SkimLinks -->
+<script type="text/javascript" src="http://s.skimresources.com/js/3781X630295.skimlinks.js"></script>
+<!-- SkimLinks -->
+
+<!-- FM Custom Video Egg Zone Zone -->
+<script type='text/javascript' src='http://static.fmpub.net/zone/3947'></script>
+<!-- FM Custom Video Egg Zone Zone -->
+
+</div><!-- close container div -->
+
+<script type="text/javascript">
+  try {
+    pageTracker._trackEvent('Serious Eats_Individual_Pages', 'Outbrain_Pageview', 'http://www.seriouseats.com/2010/12/the-physiology-of-foie-why-foie-gras-is-not-u.html');
+  }catch(err){}
+</script>
+
+</body>
+</html>

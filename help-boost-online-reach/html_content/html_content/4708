@@ -1,0 +1,2019 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script><script language='JavaScript' type='text/javascript' src='/common/checkauth.js?version=1.2'></script>	
+	<meta name="pagecaching" content="177"/>
+	<meta name="server_addr" content="192.155.49.210"/>
+	
+	   
+	   <script type="text/javascript" src="http://i.techweb.com/infoweek/detect.js"></script>
+	   
+	
+<script type="text/javascript">
+	var mfp_url='http://mobile.informationweek.com/';
+	var mfp_host_name=document.location.hostname;
+	var mfp_request_uri=document.location.pathname;
+	var mfp_no_mobile=location.search;
+	var mfp_cookie=document.cookie;
+	function mf_detect()
+	{
+		var mfp_ua=navigator.userAgent.toLowerCase();
+		var mfp_devices=['vnd.wap.xhtml+xml','sony','symbian','nokia','samsung','mobile','windows ce','epoc','opera mini','nitro','j2me','midp-','cldc-','netfront','mot','up.browser','up.link','audiovox','blackberry','ericsson','panasonic','philips','sanyo','sharp','sie-','portalmmm','blazer','avantgo','danger','palm','series60','palmsource','pocketpc','smartphone','rover','ipaq','au-mic','alcatel','ericy','vodafone','wap1','wap2','teleca','playstation','lge','lg-','iphone','ipod','android','htc','dream','webos','bolt','nintendo'];
+		var nottablet=true;
+		if((mfp_ua.indexOf('android')!=-1&&mfp_ua.indexOf('mobile')==-1)||mfp_ua.indexOf('ipad')!=-1)
+		{
+			nottablet=false				
+		}
+		for(var i in mfp_devices)
+		{
+			if(mfp_ua.indexOf(mfp_devices[i])!=-1&&!((mfp_ua.indexOf('android')!=-1&&mfp_ua.indexOf('mobile')==-1)||mfp_ua.indexOf('ipad')!=-1))
+				{						
+					return true
+				}
+		}
+	}
+	if(mfp_no_mobile!='?nomobile=1'&&mfp_cookie.indexOf('mfp_no_mobile')==-1)
+	{
+		mfp_is_mobile=mf_detect();
+		if(mfp_is_mobile)
+		{	
+			window.location=mfp_url;
+		}
+	}else
+	{
+		if(mfp_cookie.indexOf('mfp_no_mobile')!=-1)
+		{
+		
+		}else
+		{			
+			mfp_cookie_expires=new Date();
+			mfp_cookie_expires.setTime(mfp_cookie_expires.getTime()+1000*60*60*24);
+			document.cookie="mfp_no_mobile=-1; expires="+mfp_cookie_expires.toGMTString()+"; path=/;"
+			window.location=mfp_url+"?h="+mfp_host_name+"&r="+mfp_request_uri;
+		}
+	}
+</script>
+	<title>WikiLeaks 'Hactivists' Target Fax Machines - Security - Cyberterror - Informationweek</title><meta name="description" content="Anonymous collective turns to old-school spam as antivirus vendors and Internet providers block access to the the LOIC botnet application." />
+<meta name="headline" content="WikiLeaks 'Hactivists' Target Fax Machines" />
+<meta name="keywords" content="WikiLeaks, fax, security, hacktivist, Verizon, LOIC, Operation Payback, Amazon, MasterCard, Visa, Tableau, antivirus, botnet, Russian, IRC" />
+<meta name="created" content="December 14, 2010" />
+<meta name="y_key" content="15bba51c08c024d1" />
+<meta name="robots" content="index,follow" />
+<meta name="google-site-verification" content="0AR2TotTLaMmNGWUJJwZLPgbgJbcUHa-rYaIMRPch64" />
+<meta name="original-source" content="http://www.informationweek.com/news/security/cybercrime/228800563" /><link href="http://www.informationweek.com/news/security/cybercrime/228800563" rel="canonical" />
+<link href="http://twimgs.com/informationweek/css/relatedReading/tabs.css" media="screen" rel="stylesheet" type="text/css" />	
+    <link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/yui/2.8.0r4/build/reset-fonts-grids/reset-fonts-grids.css" /> 
+    <link rel="stylesheet" type="text/css" href="http://twimgs.com/infoweek/iwk_refresh/css/iw-base.css" />
+    <link rel="stylesheet" type="text/css" href="http://twimgs.com/infoweek/iwk_refresh/css/default.css" />
+    <link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/css/sidebar.css"/>    
+    <link rel="icon" href="http://twimgs.com/infoweek/favicon.ico" type="image/x-icon"/> 
+    <link rel="shortcut icon" href="http://twimgs.com/infoweek/favicon.ico" type="image/x-icon"/>
+    <link rel="apple-touch-icon" href="http://twimgs.com/infoweek/apple-touch-icon.png"/>  
+    <link rel="publisher" href="https://plus.google.com/108720492902396433722/" />
+    
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+    <script language="JavaScript" type="text/javascript" src="http://twimgs.com/informationweek/js/sidebar.js"></script>
+    <script language="JavaScript" type="text/javascript" src="http://twimgs.com/informationweek/nop/popup.js"></script>
+    <script type="text/javascript" src="http://twimgs.com/infoweek/iwk_refresh/js/tabbed-content.jquery.js"></script>
+    <link rel="image_src" href=" http://twimgs.com/infoweek/share_iwk_80.jpg" />
+    <script type="text/javascript" src="http://i.ubm-us.net/shared/omniture/h_s_code_remote.js" ></script>
+	 <script src="http://ar.voicefive.com/bmx3/node.pli?pub=ubm"></script>
+	<!-- newly added css and js files for header navigation changes -->
+    <link rel="stylesheet" type="text/css" href="http://i.cmpnet.com/infoweek/css/contentslider.css" />
+	<link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/iwk_refresh/css/iw-base-v1.css" />
+	<link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/iwk_refresh/css/iw-sidebar-v1.css" />
+	<link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/iwk_refresh/css/iwk-default-v1.css" />
+	<link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/iwk_refresh/css/iwk-nav.css" />
+
+	<!--[if lte IE 8]>
+    <link rel="stylesheet" type="text/css" href="http://twimgs.com/informationweek/iwk_refresh/css/iwk-nav.ie.css" />
+  	<![endif]-->    
+    <script type="text/javascript" src="http://twimgs.com/informationweek/iwk_refresh/js/iwk-nav.jquery.js"></script>
+	
+<style>
+
+#subnav li {
+	background:url("http://twimgs.com/infoweek/seo/bullet_round_4px_003bb0.gif") no-repeat scroll left center transparent;
+	line-height:1.6em;
+	margin-top:0;
+	padding-left:10px;
+	text-indent:0;
+}
+base.css (line 1346)
+.navLevel2 {
+	color:#971C10;
+	font:bold 11px arial,helvetica,sans-serif;
+}
+#videoBoxOuter {
+	float: left;
+	border: 0;
+	width: 200px;
+	padding-right: 0px;
+}
+
+#videoBox {
+	float: left;
+	border: solid .02em #D8D8D8;
+	width: 172px;
+}
+
+#videoBoxTitle {
+	background-color: #D8D8D8;
+	color: #C00000;
+	font-family: geneva, arial, helvetica;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 7px 10px 7px;
+}
+
+#videoBoxDisplayArea {
+	margin-left: 0px;
+	padding: 5px 5px 5px 5px;
+}
+
+#videoBoxDisplayArea img {
+	padding: 2px;
+	height: 40px;
+	width: 44px;
+	margin-right: 3px;
+}
+
+#videoBoxDisplayAreaText {
+	font-family: arial;
+	font-size: 11px;
+	color: #153E7E;
+}
+
+#videoBoxDisplayAreaSponsor {
+	font-family: geneva, arial, helvetica;
+	font-size: 0px;
+	text-align: right;
+}
+
+</style>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-5009925-16']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_trackEvent']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+	<script type="text/javascript" src="http://twimgs.com/informationweek/js/disqus/jquery.colorbox-min.js"></script>
+	<script type="text/javascript" src="http://twimgs.com/informationweek/js/disqus/disqusHints.js"></script>
+	<link rel="stylesheet" href="http://twimgs.com/infoweek/iwk_refresh/css/colorbox.css" type="text/css" />
+	<link rel="stylesheet" href="http://twimgs.com/informationweek/css/disqus/disqusHints.css" type="text/css" />
+
+</head>
+<body>
+		<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/2146744/0/0/ADTECH;alias=InformationWeek_Security_HP_Skin_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/2146744/0/0/ADTECH;alias=InformationWeek_Security_HP_Skin_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/2146744/0/0/ADTECH;alias=InformationWeek_Security_HP_Skin_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+	
+	<div id="custom-doc" class="container yui-t6">
+	<div id="hd">
+	<script language="JavaScript">
+<!--
+function ValidateNo(NumStr, String) 
+{ 
+    for(var Idx=0; Idx<NumStr.length; Idx++) 
+    { 
+        var Char = NumStr.charAt(Idx); 
+        var Match = false; 
+
+        for(var Idx1=0; Idx1<String.length; Idx1++) 
+        { 
+            if(Char == String.charAt (Idx1)) 
+                Match = true; 
+        } 
+
+        if (!Match) 
+            return false; 
+    } 
+    return true; 
+} 
+
+
+function ValidateDetail() 
+{
+    if(document.examplepost.mobilenumber.value == "") 
+    { 
+       alert("Please specify phone number"); 
+       document.examplepost.mobilenumber.focus(); 
+       return false; 
+    } 
+
+    if(!ValidateNo(document.examplepost.mobilenumber.value,"1234567890- ")) 
+    { 
+        alert("Please Enter Only Number"); 
+        document.examplepost.mobilenumber.focus(); 
+        return false; 
+    } 
+
+    return true; 
+} 
+
+//-->
+</script>
+<h1 class="security masthead">InformationWeek: The Business Value of Technology</h1>
+<a id="home-link" class="image-map" href="/security" title="InformationWeek: The Business Value of Technology">InformationWeek: The Business Value of Technology</a>
+<div class="meta-menu">
+	<!-- main section indicator -->
+	<ul class="sections">
+    <li class="first">
+        <a title="Home" href="/?itc=iwk-header-navbar-home"><span>Home</span></a>
+    </li>
+    <li>
+        <a title="News" href="/news?itc=iwk-header-navbar-news"><span>News</span></a>
+    </li>
+    <li>
+        <a title="Columns" href="/columns?itc=iwk-header-navbar-columns"><span>Commentary</span></a>
+    </li>
+    <li>
+        <a title="Video" href="/video?itc=iwk-rc-video"><span>Video</span></a>
+    </li>
+    <li>
+        <a title="Slideshows" href="/galleries?itc=iwk-header-navbar-slideshows"><span>Slideshows</span></a>
+    </li>
+    <li class="more">
+        <a title="Tech Centers" rel="dropmenuTC" href="#"><span>Tech Centers</span></a><ul class="sub-menu">    <li>
+        <a href="/government/cloud">Government Cloud Computing</a><span class="sponsor"> - Sponsored by Intel / HP</span>
+</li>    <li>
+        <a href="/tech-center/mobile-security">Mobile Security</a>
+</li>    <li>
+        <a href="/tech-center/collaboration-technology">UC Collaboration Technology</a><span class="sponsor"> - Sponsored by Avaya</span>
+</li>    <li>
+        <a href="/tech-center/storage-virtualization">Virtual Infrastructure</a>
+</li></ul>
+    </li>
+</ul>   
+	<!-- / main section indicator -->
+    <!-- right nav -->
+	<ul class="resources">
+	<li class="first"><a href="/ipad?cid=iwk-header-spot-ipad">IW Mobile</a></li>
+    <li><a href="/rss?itc=iwk-header-rss-feeds">RSS</a></li>
+	     		<li><a href="https://www.informationweeksubscriptions.com/ars/informationweekforward.do?mode=pageforward&forward=welcome" target="_blank">Subscribe</a></li>
+  	    <li><a href="/newsletters/index?itc=iwk-header-newsletter">Newsletters</a></li>
+    <li><a href="/events?itc=iwk-header-events">Events</a></li>
+    <li><a href="/whitepaper?itc=iwk-header-twdl" target="_blank" title="Digital White Papers, Case Studies, Webcasts, and Presentations">White Papers</a></li>
+</ul>	<!-- / right nav -->
+</div>
+
+<div class="main-menu">
+<ul>
+    <li class="first">
+        <a title="Software" href="/software?itc=iwk-header-navbar-software"><span>Software</span></a>
+    </li>
+    <li>
+        <a title="Security" class="current" href="/security?itc=iwk-header-navbar-security"><span>Security</span></a>
+    </li>
+    <li>
+        <a title="Cloud" href="/cloud-computing?itc=iwk-header-navbar-cloud"><span>Cloud</span></a>
+    </li>
+    <li>
+        <a title="Mobility" href="/mobility?itc=iwk-header-navbar-mobility"><span>Mobility</span></a>
+    </li>
+    <li>
+        <a title="Social Business" href="/social-business?itc=iwk-header-navbar-socialbusiness"><span>Social Business</span></a>
+    </li>
+    <li>
+        <a title="Personal Tech" href="/personal-tech?itc=iwk-header-navbar-personaltech"><span>Personal Tech</span></a>
+    </li>
+    <li>
+        <a title="Hardware" href="/hardware?itc=iwk-header-navbar-hardware"><span>Hardware</span></a>
+    </li>
+    <li>
+        <a title="Windows" href="/windows?itc=iwk-header-navbar-windows"><span>Windows</span></a>
+    </li>
+    <li class="highlight">
+        <a title="Global CIO" href="/global-cio?itc=iwk-header-navbar-globalcio"><span>Global CIO</span></a>
+    </li>
+    <li class="highlight">
+        <a title="Government" href="/government?itc=iwk-header-navbar-gov"><span>Government</span></a>
+    </li>
+    <li class="highlight">
+        <a title="Healthcare" href="/healthcare?itc=iwk-header-navbar-healthcare"><span>Healthcare</span></a>
+    </li>
+    <li class="highlight">
+        <a title="Financial" href="/financialservices?itc=iwk-header-navbar-financial"><span>Financial</span></a>
+    </li>
+    <li class="highlight">
+        <a title="SMB" href="/smb?itc=iwk-header-navbar-smb"><span>SMB</span></a>
+    </li>
+    <li class="more last">
+        <a href="#"><span>More</span></a><ul class="sub-menu">    <li>
+        <a title="Internet" class="c" href="/cloud-computing?itc=iwk-header-navbar-internet">Internet</a>
+</li></ul>
+    </li>
+</ul></div>
+
+<div class="account">
+	<div class="welcome">
+	<!-- dynamically loaded from /welcome.php -->
+	</div>
+</div>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
+<!-- This JQuery noConflict should apply other than the project edit pages -->
+	<script>jQuery.noConflict();</script>
+<script language="JavaScript" type="text/javascript" src="/common/welcome.js"></script><form class="site-search" action="/sitesearch" method="get" role="search">
+	<div class="overlabel-container">
+		<input type="hidden" name="sort" value="publishDate desc" />
+		<input type="hidden" name="site_id" value="300001" />
+		<label for="queryText" class="overlabel">Search</label>
+		<input id="queryText" type="text" class="text" name="queryText" value="" />
+	</div>
+	<input type="submit" value="" class="button" />
+</form>
+
+<!-- header promo area -->   
+<!-- IW iPad App Promo -->
+<div class="promo">
+	<a href="http://www.informationweek.com/ipad?cid=iwk-header-spot-ipad"><img class="ad" src="http://twimgs.com/informationweek/iwk_refresh/img/placeholder-ad-app.png" width="201" height="48" hspace="0" vspace="0" border="0" alt="InformationWeek - Our New iPad App" title="InformationWeek - Our New iPad App" /></a>
+</div>
+<!-- / IW iPad App Promo -->
+		
+	<div class="subnavSpacer"></div>
+	
+	<div id="subnav">
+				
+					<div style="margin: 0pt 0pt 0pt 15px; padding: 0pt; width: 140px; float: left;">
+				<ul>
+					<li class=""><a href="/security/app_security">Application Security</a></li>
+				
+		
+		
+					<li class=""><a href="/security/attacks">Attacks/Breaches</a></li>
+				
+		
+		
+					<li class=""><a href="/security/encryption">Encryption</a></li>
+						</ul>
+				</div><!-- END -->
+						
+		
+		
+					<div style="margin: 0pt 0pt 0pt 30px; padding: 0pt; width: 190px; float: left;">
+				<ul>
+					<li class=""><a href="/security/client">End User/Client Security</a></li>
+				
+		
+		
+					<li class=""><a href="/security/perimeter">Perimeter Security</a></li>
+				
+		
+		
+					<li class=""><a href="/security/privacy">Privacy</a></li>
+						</ul>
+				</div><!-- END -->
+						
+		
+		
+					<div style="margin: 0pt 0pt 0pt 30px; padding: 0pt; width: 270px; float: left;">
+				<ul>
+					<li class=""><a href="/security/management">Security Administration/Management</a></li>
+				
+		
+		
+					<li class=""><a href="/security/columns">Security Commentary</a></li>
+				
+		
+		
+					<li class=""><a href="/security/reviews">Security Reviews</a></li>
+						</ul>
+				</div><!-- END -->
+						
+		
+		
+					<div style="margin: 0pt 0pt 0pt 30px; padding: 0pt; width: 160px; float: left;">
+				<ul>
+					<li class=""><a href="/security/archives">Security Stories</a></li>
+				
+		
+		
+					<li class=""><a href="/security/storage">Storage Security</a></li>
+				
+		
+		
+					<li class=""><a href="/security/vulnerabilities">Vulnerabilities</a></li>
+						</ul>
+				</div><!-- END -->
+						
+		
+
+	</div><!--  End: subnav  -->
+	
+	<div class="subnavBottom"></div>
+<div class="banner-ad">
+	<p></p>
+	<center>
+		<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1200349/0/225/ADTECH;alias=InformationWeek_Security_HP_Top_728x90;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1200349/0/225/ADTECH;alias=InformationWeek_Security_HP_Top_728x90;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1200349/0/225/ADTECH;alias=InformationWeek_Security_HP_Top_728x90;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+	</center>
+</div>
+<div class="h_bannerBottom"></div>
+		</div>
+		<div id="bd" class="article content">
+		<script>
+function emailLauncher(filePath,storyURL) {
+	uri = filePath + encodeURIComponent(storyURL);		
+	window.open(uri,"","toolbar=no,scrollbars=auto,location=no,status=no,width=733,height=590,resizable=1");
+}
+</script>
+<div id="yui-main">
+<div class="main-content yui-b">
+<script language="javascript">
+<!--
+function launcher(art_id) {
+uri = "/email?articleUrl=" + '/news/security/cybercrime/' + art_id;
+window.open(uri,"","toolbar=no,scrollbars=auto,location=no,status=no,width=733,height=590,resizable=1")
+}
+//-->
+</script>
+
+<style type="text/css">
+<!--
+.share-facebook-likes {
+	display:inline;
+	width:75px;
+	position:relative;
+}
+
+.share-tweet {
+	display:inline;
+	width:60px;
+	position:relative;
+}
+
+.share-linkedin {
+	display:inline;
+	position:relative;
+}
+
+.share-googleplusone {
+    display: inline;
+    position: relative;
+    width: 75px;
+}
+
+.article .social-tools {
+	width: 600px;
+	margin-top:0px;
+	padding-left:4px;
+	float: left;
+}
+
+.article #IWK_IG .social-tools {
+	width: 590px;
+	margin-top:0px;
+	padding-left:0px;
+	float: left;
+}
+
+.FBConnectButton_Simple 
+.FBConnectButton_Text_Simple {
+    /* font-size: 0.8em; */
+    margin-bottom:0;
+    margin-left:15px;
+    margin-right:0;
+    margin-top:0;
+    padding-bottom:1px;
+} 
+
+.addthis_permalink {
+    float: left;
+    font-family: Verdana,Arial,Helvetica,sans-serif;
+    font-size: 0.8em; 
+    font-weight: bold;
+    margin-left: 6px;
+}
+
+.article .article-tools {
+    /* font-size: 93%; */
+    /* margin-top: -10px; */
+    float:left;
+}
+
+/*
+.article h1 {
+    color: #000000;
+    font-family: arial,helvetica,verdana,sans-serif !important;
+    font-size: 227%;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 18px;
+}
+*/
+
+#li_ui_li_gen_0 {
+    display:block;
+    overflow:visible;
+    position:relative;
+}
+
+#li_ui_li_gen_0 #li_ui_li_gen_0-link {
+    display:inline-block;
+    height:18px;
+    margin:0;
+    padding:0;
+    text-decoration:none;
+}
+
+* html #li_ui_li_gen_0-link {
+    height:1%;
+}
+
+#li_ui_li_gen_0 #li_ui_li_gen_0-link:after {
+    clear:both;
+    content:".";
+    display:block;
+    height:0;
+    line-height:0;
+    visibility:hidden;
+}
+
+#li_ui_li_gen_0 #li_ui_li_gen_0-logo {
+    background:url("http://static02.linkedin.com/scds/common/u/img/sprite/sprite_connect_v4.png?v=") no-repeat scroll 0 0 transparent;
+    border:0 none;
+    cursor:pointer;
+    display:block;
+    float:left;
+    height:18px;
+    left:0;
+    margin:0;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    text-indent:-9999em;
+    top:0;
+    width:18px;
+    z-index:1;
+}
+
+#li_ui_li_gen_0.hovered #li_ui_li_gen_0-logo {
+    background-position:-30px -40px;
+}
+
+#li_ui_li_gen_0.clicked #li_ui_li_gen_0-logo, #li_ui_li_gen_0.down #li_ui_li_gen_0-logo {
+    background-position:-50px -40px;
+}
+
+#li_ui_li_gen_0 #li_ui_li_gen_0-title {
+    -moz-border-radius:0 2px 2px 0;
+    background-color:#ECECEC;
+    background-image:-moz-linear-gradient(center top , #FEFEFE, #ECECEC);
+    border-color:#E2E2E2 #BFBFBF #B9B9B9 -moz-use-text-color;
+    border-style:solid solid solid none;
+    border-width:1px 1px 1px 0;
+    color:#333333;
+    cursor:pointer;
+    display:block;
+    float:left;
+    font-family:Arial,sans-serif;
+    font-size:10px;
+    font-weight:bold;
+    height:16px;
+    line-height:18px;
+    padding:0 4px 0 23px;
+    text-shadow:-1px 1px 0 #FFFFFF;
+}
+
+#li_ui_li_gen_0.hovered #li_ui_li_gen_0-title {
+    background-color:#DEDEDE;
+    background-image:-moz-linear-gradient(center top , #EDEDED, #DEDEDE);
+    border-color:#ABABAB #9A9A9A #787878 -moz-use-text-color;
+    border-style:solid solid solid none;
+    border-width:1px 1px 1px 0;
+    color:#000000;
+}
+
+#li_ui_li_gen_0.clicked #li_ui_li_gen_0-title, #li_ui_li_gen_0.down #li_ui_li_gen_0-title {
+    background-color:#DEDEDE;
+    background-image:-moz-linear-gradient(center top , #E3E3E3, #EDEDED);
+    border-color:#B6B6B6 #B3B3B3 #9D9D9D -moz-use-text-color;
+    border-style:solid solid solid none;
+    border-width:1px 1px 1px 0;
+    color:#666666;
+}
+-->
+</style>
+
+<div class="article-tools">
+<div class="social-tools">
+
+<div style="float: left; margin-right: 44px;" class="share-tweet">
+<!-- BEGIN TWEET BUTTON -->
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<iframe scrolling="no" frameborder="0" class="twitter-share-button twitter-count-horizontal" tabindex="0" allowtransparency="true" src="http://platform0.twitter.com/widgets/tweet_button.html?_=1294116450898&count=horizontal&lang=en&counturl=http://www.informationweek.com/news/security/cybercrime/228800563&text=WikiLeaks 'Hactivists' Target Fax Machines -- @InformationWeek&url=http://twb.io/kdm9En
+" style="width: 110px; height: 20px;" title="Twitter For Websites: Tweet Button"></iframe>
+<!-- END TWEET BUTTON -->	
+</div>	
+
+<!-- BEGIN FB LIKE -->
+<div style="float: left; margin-right: 6px;" class="share-facebook-likes"> 
+<iframe scrolling="no" frameborder="0" allowtransparency="true" style="border: medium none; overflow: hidden; width: 90px; padding-top: 0px; height: 25px;" src="http://www.facebook.com/plugins/like.php?href=http://www.informationweek.com/news/security/cybercrime/228800563&layout=button_count&show_faces=false&stream=false&width=90&action=like&font&colorscheme=light&height=35"></iframe>
+</div> 
+<!-- END FB LIKE -->
+
+<!-- BEGIN LINKEDIN -->
+<div style="float: left; margin-right: 7px;" class="share-linkedin">
+<script type="text/javascript" src="http://platform.linkedin.com/in.js"></script>
+<script type="in/share"></script>
+ </div><!-- END LINKEDIN -->
+
+<!-- BEGIN Google +1 -->
+<div style="float: left; margin-right:6px;" class="share-googleplusone">
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<g:plusone size="medium" count="true"></g:plusone>
+</div><!-- END Google +1 -->
+
+
+<div class="addthis_toolbox addthis_pill_combo_style">
+<!-- AddThis Button BEGIN -->
+<a style="cursor: pointer;" class="addthis_button_stumbleupon at300b" href="http://www.addthis.com/bookmark.php?v=250&winname=addthis&pub=InformationWeek&source=tbx-250&lng=en-US&s=stumbleupon&url=www.informationweek.com/news/security/cybercrime/228800563&title=WikiLeaks 'Hactivists' Target Fax Machines -- InformationWeek&ate=AT-InformationWeek/-/-/4d22a657185bdbc2/1&sms_ss=1&at_xt=1&CXNID=2000001.5215456080540439074NXC&pre=www.informationweek.com&tt=0" target="_blank" title="Send to StumbleUpon"><span class="at300bs at15t_stumbleupon"></span></a>
+<a href="http://www.facebook.com/sharer.php?u=http://www.informationweek.com/news/security/cybercrime/228800563&t=WikiLeaks 'Hactivists' Target Fax Machines -- InformationWeek&src=sp" share_url="" type="icon" name="fb_share" class="addthis_default_style" style="text-decoration: none;"><span class="FBConnectButton_Simple"><span class="FBConnectButton_Text_Simple">?</span></span></a><script type="text/javascript" src="http://static.ak.fbcdn.net/connect.php/js/FB.Share"></script> 
+<a title="Send as Email" href="javascript:launcher(228800563)" class="addthis_default_style"><img hspace="0" border="0" src="http://i.cmpnet.com/ddj/v2/images/share_email_icon.gif"></a> 
+<a title="Title" href="?printer_friendly=this-page" class="addthis_default_style"><img hspace="4" border="0" src="http://i.cmpnet.com/ddj/v2/images/share_print_icon.gif"></a>
+<a title="Title" href="#" class="addthis_permalink">Permalink</a>
+<span id="rss" style="float: right; margin-bottom: 3px;">
+<a title="Title" href="/rss" class="addthis_default_style"><img alt="RSS" src="http://i.cmpnet.com/informationweek/iwk_refresh/icon-rss-md.png"></a></span>
+
+<div class="atclear"></div>
+</div>
+	
+<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+<script src="http://s7.addthis.com/js/250/addthis_widget.js#pub=InformationWeek" type="text/javascript"></script>
+<!-- AddThis Button END -->
+
+</div><!-- END: social-tools -->
+</div><!-- END: article-tools -->
+
+<div style="clear: both;"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>WikiLeaks 'Hactivists' Target Fax Machines</h1>
+	<strong>Anonymous collective turns to old-school spam as antivirus vendors and Internet providers block access to the the LOIC botnet application.</strong>
+	<div class="article-byline">
+		<br>
+	By
+	<a href="/authors/6628"><strong>Mathew J. Schwartz</strong></a>
+	<a href="mailto:infosec@mathewschwartz.com"><img src="http://twimgs.com/infoweek/iwk_refresh/icon_email_10.gif" /></a>&nbsp; 
+	<!-- ,&nbsp; removed 3/11/11 JH per RN -->	
+	<a target="_blank" href="/">InformationWeek</a><br> 
+		
+	
+	December 14, 2010 12:36 PM 	</div>
+
+<!--body-->
+ 
+<span id="articleBody">
+<div class="IntelliTXT">
+<p class="firstP">Operation Payback, the "hacktivist" movement aiming to publicize organizations that have canceled business with WikiLeaks, is now encouraging participants to use free online fax services to inundate targeted fax machines with old-school spam.
+<p>
+"The Anonymous collective are being encouraged to send faxes of random WikiLeaks cables, letters from Anonymous, <a href="http://en.wikipedia.org/wiki/Guy_Fawkes">Guy Fawkes</a>, and the WikiLeaks logo to the target fax numbers all day long," according to Paul Mutton, Internet services director at research firm <a href="http://news.netcraft.com/archives/2010/12/13/operation-paybacks-next-ddos-target-fax-machines.html">Netcraft</a>. "It is not clear how many people are taking part in the attacks, but an IRC channel set up to provide information about the campaign contained 73 users just a few hours after the fax-attacks started."
+
+<div class="article-resources wrap">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br clear="all">
+<h2 class="first"><span>More Security Insights</span></h2>
+<!--cahe Key : e8d9a1ed9bd8b6377c01c0e634a5069e--><h3>White Papers</h3>		<ul class="archive">	
+				
+				<li>		
+				<a href="http://www.informationweek.com/whitepaper/Personal-Tech/Blackberry/creating-the-enterprise-class-tablet-environment-wp1327520580?articleID=191704118&cid=iwk_well_wp_Cyberterror&itc=iwk_well_wp_Cyberterror">
+				Creating the Enterprise-Class Tablet Environment - by Yankee Group				</a>
+				</li>
+				
+				<li>		
+				<a href="http://www.informationweek.com/whitepaper/Mobility/Wireless-Security/red-alert-why-tablet-security-matters-by-blackb-wp1327521016?articleID=191704138&cid=iwk_well_wp_Cyberterror&itc=iwk_well_wp_Cyberterror">
+				Red Alert: Why Tablet Security Matters - by BlackBerry				</a>
+				</li>
+						
+		</ul>
+		
+	<a title='More White Papers' href='http://informationweek.com/whitepaper?cid=iwk_well_wp_more&itc=iwk_well_wp_more' class='continue'>More <span>>></span></a><!--cahe Key : 11719256453c1592c58033480da30912--><h3>Reports</h3>		<ul class="archive">	
+				
+				<li>		
+				<a href="http://analytics.informationweek.com/abstract/21/7594/Security/research-state-of-the-it-service-desk.html?cid=iwk_well_Analytics_Cyberterror&itc=iwk_well_Analytics_Cyberterror">
+				Research: State of the IT Service Desk				</a>
+				</li>
+				
+				<li>		
+				<a href="http://analytics.informationweek.com/abstract/21/7616/Security/database-defenses.html?cid=iwk_well_Analytics_Cyberterror&itc=iwk_well_Analytics_Cyberterror">
+				Database Defenses				</a>
+				</li>
+						
+		</ul>
+		
+	<a title='More Reports' href='http://reports.informationweek.com/?cid=iwk_well_analytics_more&itc=iwk_well_analytics_more' class='continue'>More <span>>></span></a><!--cahe Key : 172f5281c51de60d4f304c74f70e0257--><h3>Webcasts</h3>		<ul class="archive">	
+				
+				<li>		
+				<a href="https://www.techwebonlineevents.com/ars/eventregistration.do?mode=eventreg&F=1003420&K=6WL&cid=iwk_well_Webcast_Cyberterror&itc=iwk_well_Webcast_Cyberterror">
+				Outsourcing Security: What Every Potential Cloud Security Customer Should Know 				</a>
+				</li>
+				
+				<li>		
+				<a href="https://www.techwebonlineevents.com/ars/eventregistration.do?mode=eventreg&F=1003942&K=6IK&cid=iwk_well_Webcast_Cyberterror&itc=iwk_well_Webcast_Cyberterror">
+				Maximize ROI with Database Consolidation onto Private Clouds				</a>
+				</li>
+						
+		</ul>
+		
+	<a title='More Webcast' href='http://informationweek.com/whitepaper/viewallasset?start=1&contentType=4&cid=iwk_well_webcasts_more&itc=iwk_well_webcasts_more' class='continue'>More <span>>></span></a></div>
+<p>
+A related target list released by the collective listed fax numbers for Amazon, MasterCard, MoneyBookers, PayPal, <a href="http://www.tableausoftware.com/blog/why-we-removed-wikileaks-visualizations">Tableau Software</a>, and Visa. The call to arms, however, also urges some restraint: "No porn. No gore. Be respectful." 
+<p>
+Meanwhile, <a href="http://www.informationweek.com/news/security/attacks/showArticle.jhtml?articleID=228800280">Operation Payback</a> is itself under attack. Beginning on Monday, unknown attackers began targeting the IRC servers used by the group, forcing them -- and chat participants -- offline. 
+<p>
+Many antivirus firms are also blocking the Operation Payback application -- known as Low Orbit Ion Cannon (LOIC) -- used to generate distributed denial of service (DDoS) attacks against targeted sites. According to security firm Imperva, "due to the disruptive nature of LOIC, the vast majority -- at least 72% -- of AV vendors have decided to block the program." 
+<p>
+Some Internet service providers are also blocking the IP addresses used by LOIC. For example, according to a <a href="http://verizonblocking.blogspot.com/2010/12/verizon-purposely-blocking-operation.html">blog</a>, Verizon has been blocking FiOS (fiber optic service) and DSL subscribers from numerous Web sites and IP addresses associated with Operation Payback. 
+<p>
+"Thursday evening Verizon pulled a dirty trick by silently blocking most all know IP addresses used by IRC, Web, and other server operated for Operation Payback," said a blog posted on Saturday. "This move was made without notice to Verizon's customers and without the ability to opt out of the blocking."
+<p>
+Six IP addresses were apparently being blocked, as confirmed to the blog writer by other Verizon subscribers. Later on Saturday, however, Verizon apparently unblocked one of the IP addresses. 
+<p>
+But not everything related to WikiLeaks or Operation Payback is being blocked. Indeed, the WikiLeaks Web site is once again being hosted in the United States. Since Friday night, the site has been hosted by Silicon Valley Web Hosting, "but does not appear to be serving any of the leaked cables or other content that it used to hold," said Netcraft's Mutton. "Instead, the site immediately redirects visitors to a WikiLeaks mirror hosted in Russia."<p>
+	<i>In this Dark Reading Tech Center report, we explain how your security and network teams can cooperate and use common tools to detect threats before your systems are compromised. <a href="http://darkreading.com/security_monitoring/util/download.jhtml?id=185900001&cat=whitepaper">Get it now</a> (registration required).</i><br clear="all"></p>
+</div>
+</span>
+<p/><div class="article-pagination">
+<div class="controls">
+	</div>
+</div>
+
+<!--  Related Reading Box -->
+           
+	<div class="article-meta-bottom" id="disqusCommentsBubble">
+    
+ <p class="comments">
+  <a href="http://www.informationweek.com/news/security/cybercrime/228800563#disqus_thread" data-disqus-identifier="article_228800563"></a>
+     , <a href="#comments">join the conversation</a> 
+	</div>
+       
+    <h3 class="resources">Related Reading</h3>
+    <div class="related-resources first tabs" style="margin-bottom:10px;">
+        <ul class="toc clearfix">
+            <li class="first"><a href="#toc-news" title="News">News</a></li>
+            <li><a href="#toc-most-popular" title="Most Popular">Most Popular</a></li>
+        </ul>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-news">News</a></h3>
+			<!--cahe Key : dca638c8f6ccf498ac02c44173df299d-->    <ul class="events">
+<li><a href="/news/security/attacks/232301022?cid=iwk_related_news_Cyberterror&itc=iwk_related_news_Cyberterror" title="U.S. Chamber Of Commerce Hit By Chinese Cyberspies">U.S. Chamber Of Commerce Hit By Chinese Cyberspies</a></li><li><a href="/news/security/attacks/232300897?cid=iwk_related_news_Cyberterror&itc=iwk_related_news_Cyberterror" title="Ransomware Attackers Pose As Police ">Ransomware Attackers Pose As Police </a></li><li><a href="/news/security/attacks/232300516?cid=iwk_related_news_Cyberterror&itc=iwk_related_news_Cyberterror" title="Kiss Off: Anonymous Hacker Took On Gene Simmons, Feds Say">Kiss Off: Anonymous Hacker Took On Gene Simmons, Feds Say</a></li><li><a href="/news/security/cybercrime/231902209?cid=iwk_related_news_Cyberterror&itc=iwk_related_news_Cyberterror" title="What Is Duqu Up To?">What Is Duqu Up To?</a></li>	</ul>
+<a class="continue" href="/news?cid=iwk_related_news_more&itc=iwk_related_news_more" title="More News">More News<span>&raquo;</span></a>                    
+        </div>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-most-popular">Most Popular</a></h3>
+			<!--cahe Key : c021c6b8d35472739456129b09484f27-->    <ul class="events">
+<li><a href="/video/personal-tech/gaming/232400223?cid=iwk_related_mostpopular_Cyberterror&itc=iwk_related_mostpopular_Cyberterror" title="CES 2012: Harrass Co-Workers With An iPhone-based Missile Launcher">CES 2012: Harrass Co-Workers With An iPhone-based Missile Launcher</a></li><li><a href="/news/government/security/221600499?cid=iwk_related_mostpopular_Cyberterror&itc=iwk_related_mostpopular_Cyberterror" title="Securing The Cyber Supply Chain">Securing The Cyber Supply Chain</a></li><li><a href="/news/security/attacks/231901577?cid=iwk_related_mostpopular_Cyberterror&itc=iwk_related_mostpopular_Cyberterror" title="Hackers Likely Have Japanese Warplane, Nuclear Data">Hackers Likely Have Japanese Warplane, Nuclear Data</a></li><li><a href="/news/security/attacks/231902484?cid=iwk_related_mostpopular_Cyberterror&itc=iwk_related_mostpopular_Cyberterror" title="Did Anonymous Crash Israeli Government Websites?">Did Anonymous Crash Israeli Government Websites?</a></li>	</ul>
+<a class="continue" href="/news/breakingnews?cid=iwk_related_mostpopular_more&itc=iwk_related_mostpopular_more" title="More Popular">More Popular<span>&raquo;</span></a>        </div>
+    </div>
+    <div class="related-resources tabs" style="margin-bottom:10px;">
+        <ul class="toc clearfix">
+            <li class="first"><a href="#toc-commentary" title="Commentary">Commentary</a></li>
+            <li><a href="#toc-web" title="On the Web">On the Web</a></li>
+        </ul>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-commentary">Commentary</a></h3>
+			<!--cahe Key : 047b7f1e6aef987457b8f86fde8aee83-->    <ul class="events">
+<li><a href="/news/security/vulnerabilities/231600829?cid=iwk_related_commentary_Cyberterror&itc=iwk_related_commentary_Cyberterror" title="Are Digital Certificates Doomed?">Are Digital Certificates Doomed?</a></li><li><a href="/news/security/privacy/229403203?cid=iwk_related_commentary_Cyberterror&itc=iwk_related_commentary_Cyberterror" title="Presidential Alerts Soon Mandatory On Your Phone">Presidential Alerts Soon Mandatory On Your Phone</a></li><li><a href="/news/security/vulnerabilities/229000930?cid=iwk_related_commentary_Cyberterror&itc=iwk_related_commentary_Cyberterror" title="Schwartz on Security: Bling Botnets Sell Gangster Lifestyle ">Schwartz on Security: Bling Botnets Sell Gangster Lifestyle </a></li><li><a href="/news/government/security/227800079?cid=iwk_related_commentary_Cyberterror&itc=iwk_related_commentary_Cyberterror" title="The Case For Wiretapping The Internet">The Case For Wiretapping The Internet</a></li>	</ul>
+<a class="continue" href="/news/columns?cid=iwk_related_commentary_more&itc=iwk_related_commentary_more" title="More Commentary">More Commentary<span>&raquo;</span></a>        </div>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-web">On the Web</a></h3>
+            <!--cahe Key : 76d293caf6e9a7464ab892e8055da201-->    <ul class="events">
+<li><a href="http://www.technologyreview.com/computing/39275/?p1=MstRcnt&cid=iwk_related_elsewhere_Cyberterror&itc=iwk_related_elsewhere_Cyberterror"target="_blank" title="Startup Turns Your Cell-Phone Number into a Location Fix">Startup Turns Your Cell-Phone Number into a Location Fix</a></li><li><a href="http://www.tmcnet.com/tmcnet/interop/articles/173814-interop-survey-takes-pulse-personal-pcs-devices-corporate.htm?cid=iwk_related_elsewhere_Cyberterror&itc=iwk_related_elsewhere_Cyberterror"target="_blank" title="Interop Survey Takes Pulse of Personal PCs, Devices on Corporate Networks">Interop Survey Takes Pulse of Personal PCs, Devices on Corporate Networks</a></li><li><a href="http://www.crn.com/news/cloud/229403156/interop-cloud-consumerization-create-it-sea-change.htm?cid=iwk_related_elsewhere_Cyberterror&itc=iwk_related_elsewhere_Cyberterror"target="_blank" title="Interop: Cloud, Consumerization Create IT Sea Change">Interop: Cloud, Consumerization Create IT Sea Change</a></li><li><a href="http://www.channelpartnersonline.com/news/2011/05/consumers-blast-at-t-t-mobile-merger.aspx?cid=iwk_related_elsewhere_Cyberterror&itc=iwk_related_elsewhere_Cyberterror"target="_blank" title="Consumers Blast AT&T/T-Mobile Merger">Consumers Blast AT&T/T-Mobile Merger</a></li>	</ul>
+<a class="continue" href="/archives/weblinks/223909?cid=iwk_related_elsewhere_more&itc=iwk_related_elsewhere_more" title="More On The Web">More On The Web<span>&raquo;</span></a>        </div>
+    </div>
+    <div class="related-resources tabs" style="margin-bottom:10px;">
+        <ul class="toc clearfix">
+            <li class="first"><a href="#toc-video" title="Video">Video</a></li>
+            <li><a href="#toc-slideshow" title="Slideshow">Slideshow</a></li>
+        </ul>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-video">Video</a></h3>
+			<!--cahe Key : f3a02c509bfe361db37a02b54613dd9a-->    <ul class="events">
+<li><a href="/video/personal-tech/gaming/232400223?cid=iwk_related_video_Cyberterror&itc=iwk_related_video_Cyberterror" title="CES 2012: Harrass Co-Workers With An iPhone-based Missile Launcher">CES 2012: Harrass Co-Workers With An iPhone-based Missile Launcher</a></li><li><a href="/video/security/government/232200014?cid=iwk_related_video_Cyberterror&itc=iwk_related_video_Cyberterror" title="Computer Crime Year In Review by Jennifer Granick">Computer Crime Year In Review by Jennifer Granick</a></li><li><a href="/video/security/mobile/232400124?cid=iwk_related_video_Cyberterror&itc=iwk_related_video_Cyberterror" title="ContentWatch To Partner With MokiMobility On Mobile Management">ContentWatch To Partner With MokiMobility On Mobile Management</a></li><li><a href="/video/storage/security/232400121?cid=iwk_related_video_Cyberterror&itc=iwk_related_video_Cyberterror" title="Rocstor's Ultra Secure SmartCard-Based Portable Hard Drive">Rocstor's Ultra Secure SmartCard-Based Portable Hard Drive</a></li>	</ul>
+<a class="continue" href="/archives/video/223909?cid=iwk_related_video_more&itc=iwk_related_video_more" title="More Videos">More Videos<span>&raquo;</span></a>        </div>
+        <div class="tab-content clearfix">
+            <h3 class="tab"><a name="toc-slideshow">Slideshow</a></h3>
+			<!--cahe Key : ea343b6c7298d97774b5331928050479-->    <ul class="events">
+<li><a href="/news/galleries/government/info-management/228800302?cid=iwk_related_slideshow_Cyberterror&itc=iwk_related_slideshow_Cyberterror" title="Top 10 Government Stories Of 2010">Top 10 Government Stories Of 2010</a></li><li><a href="/news/galleries/government/security/228400085?cid=iwk_related_slideshow_Cyberterror&itc=iwk_related_slideshow_Cyberterror" title="5 Airport Body Scanner Patents Stripped Down">5 Airport Body Scanner Patents Stripped Down</a></li><li><a href="/news/galleries/global-cio/trends/226300189?cid=iwk_related_slideshow_Cyberterror&itc=iwk_related_slideshow_Cyberterror" title="Slideshow: Top 10 Tech Newsmakers Of 2010">Slideshow: Top 10 Tech Newsmakers Of 2010</a></li><li><a href="/news/galleries/government/security/225702281?cid=iwk_related_slideshow_Cyberterror&itc=iwk_related_slideshow_Cyberterror" title="Slideshow: Next Generation Defense Technologies">Slideshow: Next Generation Defense Technologies</a></li>	</ul>
+<a class="continue" href="/galleries?cid=iwk_related_slideshow_more&itc=iwk_related_slideshow_more" title="More Slideshows">More Slideshows<span>&raquo;</span></a>        </div>
+    </div>
+    <hr style="margin-bottom:10px;"/>
+<!-- /  Related Reading Box -->
+
+<!--  Commenting -->
+<div id="mc_jive">
+	
+			<script type="text/javascript">
+	var brainyardDomain  = 'www.informationweek.com';
+</script>
+<script>
+	$(document).ready(function(){
+		$(".commentingPolicy").colorbox({width:"420px",height:"300px",inline:true,href:"#inlineCommenting"});//end .htmlTags
+	});
+</script>	
+<div style='display:none' align="left">
+	<div id='inlineModal' style='padding:10px;' align="left">
+    <div class="newsletterHeader"><img src="http://twimgs.com/informationweek/Disqus_art/IW_logo_disqus_popbox.jpg" /></div>
+    <br /><br /> 
+    <div class="markdown">
+      <h3>Currently we allow the following HTML tags in comments:</h3>
+<h3>Single tags</h3>
+<p><i>These tags can be used alone and don't need an ending tag. </i></p>
+<p><code>&lt;br&gt;</code> Defines a single line break <br /><br /> 
+<code>&lt;hr&gt;</code> Defines a horizontal line</p>
+
+<h3>Matching tags</h3>
+<p><i>These require an ending tag - e.g. <code>&lt;i&gt;italic text&lt;/i&gt;</code> </i></p>
+<p><code>&lt;a&gt;</code> Defines an anchor<br /><br />
+<code>&lt;b&gt;</code> Defines bold text<br /><br />
+<code>&lt;big&gt;</code> Defines big text<br /><br />
+
+<code>&lt;blockquote&gt;</code> Defines a long quotation<br /><br />
+<code>&lt;caption&gt;</code> Defines a table caption<br /><br />
+<code>&lt;cite&gt;</code> Defines a citation<br /><br />
+<code>&lt;code&gt;</code> Defines computer code text<br /><br />
+<code>&lt;em&gt;</code> Defines emphasized text<br /><br />
+
+<code>&lt;fieldset&gt;</code> Defines a border around elements in a form<br /><br />
+<code>&lt;h1&gt;</code> This is heading 1<br /><br />
+<code>&lt;h2&gt;</code> This is heading 2<br /><br />
+<code>&lt;h3&gt;</code> This is heading 3<br /><br />
+<code>&lt;h4&gt;</code> This is heading 4<br /><br />
+
+<code>&lt;h5&gt;</code> This is heading 5<br /><br />
+<code>&lt;h6&gt;</code> This is heading 6<br /><br />
+<code>&lt;i&gt;</code> Defines italic text<br /><br />
+<code>&lt;p&gt;</code> Defines a paragraph<br /><br />
+<code>&lt;pre&gt;</code> Defines preformatted text<br /><br />
+
+<code>&lt;q&gt;</code> Defines a short quotation<br /><br />
+<code>&lt;samp&gt;</code> Defines sample computer code text<br /><br />
+<code>&lt;small&gt;</code> Defines small text<br /><br />
+<code>&lt;span&gt;</code> Defines a section in a document<br /><br />
+<code>&lt;s&gt;</code> Defines strikethrough text<br /><br />
+
+<code>&lt;strike&gt;</code> Defines strikethrough text <br /><br />
+<code>&lt;strong&gt;</code> Defines strong text <br /><br />
+<code>&lt;sub&gt;</code> Defines subscripted text <br /><br />
+<code>&lt;sup&gt;</code> Defines superscripted text <br /><br />
+<code>&lt;u&gt;</code> Defines underlined text<br /><br /></p>
+    </div>  
+</div><!-- /end  inline_mailinglist-->
+<!--  Commenting Policy contents -->
+	<div id='inlineCommenting' style='padding:10px;text-align: justify;' class="markdown">
+		<p>InformationWeek encourages readers to engage in spirited, healthy debate, 
+		including taking us to task.  However, InformationWeek moderates all comments posted to our site, 
+		and reserves the right to modify or remove any content that it determines to be derogatory, offensive, 
+		inflammatory, vulgar, irrelevant/off-topic, racist or obvious marketing/SPAM.  
+		InformationWeek further reserves the right to disable the profile of any commenter participating in 
+		said activities.</p>
+	</div>
+</div>
+<table cellspacing="0" cellpadding="0" border="0" width="626px" bgcolor="#f3f3f3">
+	<tr>
+    	<td width="34"><img src="http://twimgs.com/informationweek/Disqus_art/hintbox_info.jpg" alt="Disqus Tips" border="0" align="left" height="34"></td> 
+		<td>
+			<font style="font-family: Arial, Helvetica, Geneva, SunSans-Regular, sans-serif; color: #000000; font-size: 11px;">
+				<strong>To upload an avatar photo,</strong> first <a href="http://disqus.com/dashboard/" style="font-family: Arial,Helvetica,Geneva,SunSans-Regular,sans-serif; color: #003bb0; font-size: 11px;" target="_blank">complete your Disqus profile.</a> | <a href="#" class="htmlTags" style="font-family: Arial,Helvetica,Geneva,SunSans-Regular,sans-serif; color: #003bb0; font-size: 11px;">View the list</a> of <strong>supported HTML tags</strong> you can use to style comments. | Please read our <a href="#" class="commentingPolicy" style="font-family: Arial,Helvetica,Geneva,SunSans-Regular,sans-serif; color: #003bb0; font-size: 11px;"><strong>commenting policy.</strong></a>
+			</font>
+		</td>
+	</tr>
+	<tr>
+    	<td></td> 
+    	<td></td>
+	</tr>
+	<tr>
+    	<td width="34">
+    		<img src="http://twimgs.com/informationweek/Disqus_art/hintbox_gift.jpg" alt="T-Shirt Giveaway" border="0" align="left" height="34">
+    	</td> 
+		<td>
+			<font style="font-family: Arial, Helvetica, Geneva, SunSans-Regular, sans-serif; color: #000000; font-size: 11px;">
+				<strong>T-Shirt Giveaway:</strong> Each week we're selecting one great comment from our readers.  The author of the comment will receive an InformaitonWeek Community t-shirt.  So get posting!
+			</font>
+		</td>
+	</tr>
+</table>
+
+<script language='JavaScript' type='text/javascript'>
+<!--
+var jmessage = '';
+	var jtimestamp = '';
+	var jhmac = '';
+	var jmessage = '';
+	$.ajax({
+	   type: "GET",
+	   url: "/disqussetting",
+	   data: "referer="+encodeURIComponent(window.location.href),
+	   success: function(data){		   
+		   if (data != null)
+			{
+			   jmessage = data.jmessage;
+			   jtimestamp = data.jtimestamp;
+			   jhmac = data.jhmac;					
+			}
+	   },
+	   dataType: "json",
+	   async: false,
+	   cache: false
+	 }	
+	 );
+	-->
+	 
+</script>
+
+<script type="text/javascript">
+var disqus_config = function () {
+
+	var hmac1 = jhmac;
+	var htimestamp = jtimestamp;
+	var hmessage = jmessage;	
+	if(hmac1 != null){		
+			this.page.remote_auth_s3 = hmessage + ' ' + hmac1 + ' ' + htimestamp;
+			this.page.api_key = "PZCFWiOQHimfoBuGrfHW2puPbtIC2kW5N1ep3fCBt9A9fIQWRLfAfWI21yUe1S9m";			
+	}
+	this.page.author_s3 = "eyJ1c2VybmFtZSI6Ik1hdGhld0pTY2h3YXJ0eiJ9 ffff5a7d0e951798b00543dad852b337fe1a3247 1328421521";		
+    this.sso = {
+          name:    "UBM TechWeb",
+          button:  "http://i.techweb.com/informationweek/images/ubm-techweb-logo.gif",
+          icon:    "http://i.cmpnet.com/brainyard/images/favicon.ico",
+          url:     "http://www.informationweek.com/login?url=http%3A%2F%2Fwww.informationweek.com%2Fnews%2Fsecurity%2Fcybercrime%2F228800563%3Fcid%3Dsem_edit_IWK_Security%26wc%3D4%26at%3Dvalidate%26actionType%3Dform1&actionType=form1",
+          logout:  "http://www.informationweek.com/logout?url=http%3A%2F%2Fwww.informationweek.com%2Fnews%2Fsecurity%2Fcybercrime%2F228800563%3Fcid%3Dsem_edit_IWK_Security%26wc%3D4",
+          width:   "800",
+          height:  "400"
+    };
+
+    this.callbacks.onNewComment = [function() {trackComment();}];
+};
+</script>
+
+<style type="text/css">
+.dsq-post-tools .dsq-post-as .dsq-button{
+	background: url(none);
+	background-color:#c90000;
+}
+
+.dsq-post-tools .dsq-post-as .dsq-button:active{
+	background: url(none);
+	background-color:#ed0404;
+}
+
+.dsq-post-tools .dsq-post-as .dsq-button:hover{
+	background: url(none);
+	background-color:#e00000;
+}
+.dsq-post-tools .dsq-post-as .dsq-button{
+text-shadow:none;
+color:white;
+}
+.dsq-comment-text blockquote{
+	border-left:1px solid #555555;
+	padding-left:15px;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-style:italic;
+	font-size:15px;
+	margin:15px;
+	color:#999999;
+	margin-bottom:10px;
+	padding-right:15px;
+	font-weight:bold;
+}
+</style>
+
+<a name="comments"></a>
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+		
+    var disqus_shortname = 'iwk';
+    var disqus_domain = 'disqus.com';
+    var disqus_identifier = 'article_228800563';
+	var disqus_url = 'http://www.informationweek.com/news/security/cybercrime/228800563?cid=sem_edit_IWK_Security&wc=4';
+		var disqus_title = '"WikiLeaks \'Hactivists\' Target Fax Machines"';
+		/* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+   
+    
+</script>
+							
+</div> 
+<!-- /  Commenting --><center>
+<a href="/rss/all"><img style="padding-right: 4px;" src="http://i.cmpnet.com/techweb/xml.gif"> Subscribe to RSS</a><br><br>
+<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1256092/0/0/ADTECH;alias=InformationWeek_Security_HP_IMU3_300x250_or_336x280;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1256092/0/0/ADTECH;alias=InformationWeek_Security_HP_IMU3_300x250_or_336x280;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1256092/0/0/ADTECH;alias=InformationWeek_Security_HP_IMU3_300x250_or_336x280;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+</center>
+<h2>Resource Links</h2>
+<ul class="resources">
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1200309/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_1_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1200309/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_1_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1200309/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_1_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1201178/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_2_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1201178/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_2_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1201178/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_2_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1201087/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_3_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1201087/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_3_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1201087/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_3_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1201129/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_4_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1201129/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_4_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1201129/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_4_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1200026/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_5_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1200026/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_5_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1200026/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_5_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1249703/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_6_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1249703/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_6_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1249703/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_6_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1250049/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_7_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1250049/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_7_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1250049/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_7_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1249881/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_8_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1249881/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_8_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1249881/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_8_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1249958/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_9_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1249958/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_9_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1249958/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_9_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+<li><strong><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1249838/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_10_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1249838/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_10_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1249838/0/16/ADTECH;alias=InformationWeek_Security_HP_Marketplace_link_10_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+</strong></li>
+</ul>
+<br>
+
+
+<p>
+<br>
+</p>
+</div></div>
+<div class="secondary-content yui-b">
+
+<!-- newsletter promo --> 
+
+
+
+<div id="newsletterPromo">	     
+ <h2 class="first"><span>Get InformationWeek Daily</span></h2>
+ <div class="resources">
+ 
+ <p>Don't miss each day's hottest technology news, sent directly to your inbox, including occasional breaking news alerts.</p>
+
+<div>
+  <a class="htmlTags subscribe1 button" href="#" title="Subscribe" onClick="var s=s_gi('cmpinformationweekcom'); s.evar26='InformationWeek Newsletter Subscription Short Promo Form'; s.products=';InformationWeek Newsletter Subscription;;'; s.events='event6'; s.tl(this,'o','InformationWeek Newsletter Subscription Subscribe Click');" id="subscribeNow">Subscribe Now</a> 
+</div>
+
+ </div>
+</div>      
+
+<script type="text/javascript" src="http://twimgs.com/brainyard/js/newsletter.js"></script>
+
+<link rel="stylesheet" href="http://twimgs.com/brainyard/css/newsletter.css" media="all" type="text/css" />
+<link rel="stylesheet" type="text/css" href="http://i.cmpnet.com/informationweek/css/footer.css"/>
+
+<link media="screen" rel="stylesheet" href="http://twimgs.com/infoweek/iwk_refresh/css/colorbox.css" type="text/css" />
+<link rel="stylesheet" href="http://twimgs.com/informationweek/newsletter_art/subscription_pages/newsletterPromoPopupForm.css" media="all" type="text/css" />
+<script type="text/javascript" src="http://twimgs.com/informationweek/js/jsoncall/newsletterpromo.js"></script>
+<script type="text/javascript">
+	var brainyardDomain  = 'www.informationweek.com';
+</script>
+<script>
+	$(document).ready(function(){
+		$("#subscribeNow").colorbox({width:"620px",height:"600px",inline:true,href:"#inlineModalNews"});//end .htmlTags
+	});
+</script>
+<div style='display:none'>
+<div id='inlineModalNews' style='padding:10px;'> 
+ 		<!--  Starts here -->
+ 		
+<div id='inline_mailinglist' style='padding:10px;'>
+<div id="newsletterHeader"><img src="http://twimgs.com/informationweek/newsletter_art/subscription_pages/NL_popup_daily_logo.gif" /></div>
+<div id='inline_mailinglist_body'>
+<h1>Sign up for the InformationWeek Daily email newsletter </h1>
+<div id="process_class"></div>
+<div id="mailingList">
+	<div id="mailingListTop"></div>
+	<div id="mailingListBody">
+	<form name="quickMailingList" id="quickMailingList" onsubmit="return false;">
+	<table class="formtable" id="mainnameaddress" cellspacing="0">
+			<tr class="formrow required">
+				<td class="label"><label for="First Name">First Name*:</label></td>
+				<td class="input"><input type="text" name="firstname" id="firstname" size="30" maxlength="20" value="" /></td>
+			</tr>
+			<tr class="formrow required">
+				<td class="label"><label for="Last Name">Last Name*:</label></td>
+				<td class="input"><input type="text" name="lastname" id="lastname" size="30" maxlength="25" value="" /></td>
+		   <tr class="formrow required">
+
+				<td class="label"><label for="EMAIL">Email Address*: </label></td>
+				<td class="input"><input name="email" id="email" type="text" size="30" maxlength="50" /></td>
+			</tr>
+			<tr class="formrow">
+				<td class="label"><label for="Job Title">Job Title:</label></td>
+				<td class="input"><input type="text" name="jobtitle" id="jobtitle" size="30" maxlength="50" value="" /></td>
+			</tr>
+			<tr class="formrow">
+
+				<td class="label"><label for="Employees in Organization">Company/Organization/Gov't Dept.:</label></td>
+				<td class="input"><input type="text" name="employeesinorganization" id="employeesinorganization" size="30" maxlength="50" value="" /></td>
+			</tr>
+			
+			<tr>
+				<td class="label required hint">
+					*Required field
+				</td>
+				<td  align="right">
+					<input type="image" src="http://twimgs.com/infoweek/iwk_refresh/button-subscribe-input.png" onClick="frmcheck();" value="subscribe" />					
+				</td>
+			</tr>
+			
+			<tr>
+				<td colspan="2" class="label">
+				<p class="fineText">
+				<a href="http://legal.us.ubm.com/privacy-notice-highlights/" target="_blank">Privacy Statement</a>
+				</p>            	
+				</td>
+			</tr>
+	</table>
+    </form> 
+	</div>
+	<div id="mailingListBottom"></div>
+</div><!-- /end  mailingList--> 
+</div><!-- /end  inline_mailinglist_body-->
+</div>
+ 		
+ 	</div>	
+</div>
+
+
+
+
+    
+    <div class="align-center padded">
+<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/2296942/0/0/ADTECH;alias=InformationWeek_Security_HP_Modal_336x70;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/2296942/0/0/ADTECH;alias=InformationWeek_Security_HP_Modal_336x70;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/2296942/0/0/ADTECH;alias=InformationWeek_Security_HP_Modal_336x70;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+</div>    
+    <div class="align-center padded">    	
+		<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1199253/0/0/ADTECH;alias=InformationWeek_Security_HP_IMU1_300x250_or_336x280;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1199253/0/0/ADTECH;alias=InformationWeek_Security_HP_IMU1_300x250_or_336x280;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1199253/0/0/ADTECH;alias=InformationWeek_Security_HP_IMU1_300x250_or_336x280;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+	</div>
+	<br/><br/>
+	<h2><span>This Week's Issue</span></h2>
+<div class="issue resources clearfix">
+	<div class="cover">
+    	<img src="http://twimgs.com/informationweek/1322/smallcov.jpg" alt="This Week's Issue" title="This Week's Issue" width="110" />
+		<div class="caption"><a href="/maindocs/archive.htm" title="Title">Back Issues</a></div>
+   	</div>
+	<ul class="assets">
+	  
+	  
+	 <li><a href="http://informationweek.com/gogreen/011612?cid=article_axxe_os&k=axxe" title="Title">Subscribe to Digital</a></li>
+	 <li><a href="http://www.informationweek.com/news/telecom/collaboration/232500086?ct=1022" title="Title">Read the Cover Story</a></li>
+	 <li><a href="/thisweek" title="Title">Read This Week's Issue</a></li>
+	<li><a href="http://reports.informationweek.com/abstract/7/8657/Enterprise-Software/informationweek-january-30-2012.html?cid=onedit_ds_iwright&k=axxe" title="Title">Download Current Issue</a></li> 
+    </ul>
+	<h5>Free Print Subscription</h5>
+    <a class="subscribe button" href="https://www.cmpadministration.com/ars/gettemplate.do?mode=gettemplate&P=1&F=1002296&K=WZIWRSB" title="Subscribe">Subscribe</a>
+</div>
+
+<!-- Current Healthcare Issue -->
+  <h2><span>Current Healthcare Issue</span></h2>
+
+    <div class="issue resources clearfix">
+
+	   <div class="cover">
+		  <a href="http://www.informationweek.com/gogreen/013012hc/?cid=article_axxe_os&k=axxe?k=iwka&cid=onedit_ds_iwka"><img src="http://i.cmpnet.com/infoweek/hc/010/smallcov.jpg" alt="InformationWeek Healthcare - Feb 2012" title="InformationWeek Healthcare - Nov 2011" width="106" height="106" border="0"/></a><!-- largecov cover WAS width="125" height="169" -->
+
+		  <div class="caption"><a href="/maindocs/archive.htm" title=">Back Issues">Back Issues</a></div>
+	   </div>
+
+	   <div class="issueInfo">
+	   <span class="inThisIssueText">In this issue:</span>
+	   <ul class="inThisIssue_assets">
+	   	<!-- list the 2 main features only -->
+	   	<li><strong>Pay For Performance:</strong> Healthcare providers must collect all sorts of performance data to meet emerging standards. We delve into the huge task ahead.</li>
+		<li><strong>Personal Health Records Flop:</strong> These patient-driven tools haven't taken off because most people don't really care about their health. </li>
+		<!-- END: list the 2 main features only -->
+
+		<li class="assets2"><a href="http://www.informationweek.com/gogreen/013012hc/?cid=article_axxe_os&k=axxe?k=iwka&cid=onedit_ds_iwka" title="Read the Current Issue" target="_blank">And much more!</a></li>
+				
+		<li class="assets2"><a href="http://www.informationweek.com/gogreen/013012hc/?k=axxe&cid=article_axxe_os" title="Read the Current Issue" target="_blank">Read the Current Issue</a></li>
+	   </ul>
+	  </div>
+	  
+	   <a class="subscribe button" href="https://www.cmpadministration.com/ars/gettemplate.do?mode=gettemplate&P=1&F=1002707&K=WZHCCGI&cid=dig_sub_WZHCCGI
+ " target="_blank" title="Subscribe">Subscribe Now</a>
+    </div>
+<!-- / Current Healthcare Issue -->
+
+
+
+
+
+	<!-- Technology Whitepapers displays Smart Box Content -->
+<h2><span>Technology Whitepapers</span></h2>
+<div class="resources">
+
+	<!-- <h3>Technology Whitepapers</h3> -->
+	<ul class="assets">
+	<!--cahe Key : 5acdd8cfb839a0802c0fc806b13fbb33-->		<ul class="archive">	
+				
+				<li>		
+				<a href="http://www.informationweek.com/whitepaper/Personal-Tech/Blackberry/creating-the-enterprise-class-tablet-environment-wp1327520580?articleID=191704118&cid=iwk_fture_wp_Cyberterror&itc=iwk_fture_wp_Cyberterror">
+				Creating the Enterprise-Class Tablet Environment - by Yankee Group				</a>
+				</li>
+				
+				<li>		
+				<a href="http://www.informationweek.com/whitepaper/Mobility/Wireless-Security/how-to-regain-it-control-in-an-increasingly-mobile-wp1327520765?articleID=191704137&cid=iwk_fture_wp_Cyberterror&itc=iwk_fture_wp_Cyberterror">
+				How To Regain IT Control In An Increasingly Mobile World - by BlackBerry				</a>
+				</li>
+				
+				<li>		
+				<a href="http://www.informationweek.com/whitepaper/Personal-Tech/Blackberry/the-blackberry-playbook-tablet-s-good-bones-by-b-wp1327520903?articleID=191704152&cid=iwk_fture_wp_Cyberterror&itc=iwk_fture_wp_Cyberterror">
+				The BlackBerry PlayBook tablet's Good Bones - by BlackBerry				</a>
+				</li>
+				
+				<li>		
+				<a href="http://www.informationweek.com/whitepaper/Mobility/Wireless-Security/red-alert-why-tablet-security-matters-by-blackb-wp1327521016?articleID=191704138&cid=iwk_fture_wp_Cyberterror&itc=iwk_fture_wp_Cyberterror">
+				Red Alert: Why Tablet Security Matters - by BlackBerry				</a>
+				</li>
+				
+				<li>		
+				<a href="http://www.informationweek.com/whitepaper/Business-Intelligence/Analytics/new-visual-and-wizard-driven-paradigms-for-explori-wp1313007019?articleID=191702971&cid=iwk_fture_wp_Cyberterror&itc=iwk_fture_wp_Cyberterror">
+				New Visual and Wizard-Driven Paradigms for Exploring Data and Developing Analytic Workflows				</a>
+				</li>
+						
+		</ul>
+		
+		</ul>
+</div>
+	<h2><span>Featured Resource</span></h2>
+<div class="resources">
+
+
+
+<a href="http://www.darkreading.com/tech-center/1/Authentication.html&cid=fture_wp__sec" target="_blank">
+<strong> Authentication Tech Center  </strong> </a><br>
+This is your portal to all the news, product information, technical data, and other information related to the topic of computer user authentication and certification.  Visit us to find out how to ensure that computer users are who they say they are. 
+
+
+
+
+<br /><a href="http://www.darkreading.com/tech-center/1/Authentication.html&cid=fture_wp__sec" target="_blank">Learn More</a>
+
+
+
+</div>
+
+	<h2 class="first"><span>Featured Reports</span></h2>
+<div class="resources clearfix">
+	<ul class="assets">
+		<!--cahe Key : c49d1849df53c80ec7974b546e664583-->		<ul class="archive">	
+				
+				<li>		
+				<a href="http://analytics.informationweek.com/abstract/21/7594/Security/research-state-of-the-it-service-desk.html?cid=iwk_fture_Analytics_Cyberterror&itc=iwk_fture_Analytics_Cyberterror">
+				Research: State of the IT Service Desk				</a>
+				</li>
+				
+				<li>		
+				<a href="http://analytics.informationweek.com/abstract/21/7375/Security/will-ipv6-make-us-unsafe*.html?cid=iwk_fture_Analytics_Cyberterror&itc=iwk_fture_Analytics_Cyberterror">
+				Will IPv6 Make Us Unsafe?				</a>
+				</li>
+				
+				<li>		
+				<a href="http://analytics.informationweek.com/abstract/21/7616/Security/database-defenses.html?cid=iwk_fture_Analytics_Cyberterror&itc=iwk_fture_Analytics_Cyberterror">
+				Database Defenses				</a>
+				</li>
+				
+				<li>		
+				<a href="http://reports.informationweek.com/abstract/21/7014/Security/strategy-stuxnet-reality-check.html?cid=iwk_fture_Analytics_Cyberterror&itc=iwk_fture_Analytics_Cyberterror">
+				Are You Prepared for a Stuxnet-Style Attack?				</a>
+				</li>
+				
+				<li>		
+				<a href="http://reports.informationweek.com/abstract/18/8597/Mobility-Wireless/it-pro-impact-top-5-mobile-security-threats-for-2012.html?cid=iwk_fture_Analytics_Cyberterror&itc=iwk_fture_Analytics_Cyberterror">
+				IT Pro Impact: Top 5 Mobile Security Threats for 2012				</a>
+				</li>
+						
+		</ul>
+		
+		
+	</ul>
+</div>
+	<script language="Javascript" src="http://www.enterpriseefficiency.com/e2_radio_ad_js.asp"></script> 
+<BR>
+<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1257924/0/16/ADTECH;alias=InformationWeek_Security_HP_Promo1_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1257924/0/16/ADTECH;alias=InformationWeek_Security_HP_Promo1_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1257924/0/16/ADTECH;alias=InformationWeek_Security_HP_Promo1_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+
+
+<BR><BR>
+
+<script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1257925/0/16/ADTECH;alias=InformationWeek_Security_HP_Promo2_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1257925/0/16/ADTECH;alias=InformationWeek_Security_HP_Promo2_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1257925/0/16/ADTECH;alias=InformationWeek_Security_HP_Promo2_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+
+<br clear="all" />
+	<br/><br/>
+	<h2><span>Video</span></h2>
+<div id="xc">
+<div id="xc2">
+<div class="box video">
+				
+			<div class="box_wrap"><div class="box_third">				<a href="/video/mastermix1324093291001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/d19/unsecured/media/1568176135/1568176135_1325634451001_ari-origin29-arc-176-1323797619570.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/1324093291001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>Box.net CEO Aaron Levie Takes On Microso ...</a><br>
+			</div>
+	<div class="box_third">				<a href="/video/mastermix1324073803001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/d19/unsecured/media/1568176135/1568176135_1325634472001_ari-origin29-arc-144-1323798100830.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/1324073803001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>HP Chairman Ray Lane: Focus On Innovatio ...</a><br>
+			</div>
+	<div class="last_float_third">				<a href="/video/mastermix1324071283001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/d19/unsecured/media/1568176135/1568176135_1325634466001_ari-origin29-arc-168-1323797971582.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/1324071283001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>How OpenFlow Changes Networking</a><br>
+			</div>
+	</div><div class="box_wrap" style="display: none;"><div class="box_third">				<a href="/video/mastermix1324135863001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/d19/unsecured/media/1568176135/1568176135_1325634469001_ari-origin29-arc-141-1323798051401.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/1324135863001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>Holiday Gift Guide For Tech Gadget Lover ...</a><br>
+			</div>
+	<div class="box_third">				<a href="/video/mastermix1322146125001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/d19/unsecured/media/1568176135/1568176135_1322359498001_ari-origin29-arc-148-1323660639403.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/1322146125001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>Valley View: Hot Trends, Cool Toys</a><br>
+			</div>
+	<div class="last_float_third">				<a href="/video/mastermix1231139458001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/d18/unsecured/media/1568176135/1568176135_1231173848001_th-1231161582001.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/1231139458001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>���Big Data, Big Decisions, Big Im ...</a><br>
+			</div>
+	</div><div class="box_wrap" style="display: none;"><div class="box_third">				<a href="/video/mastermix1229382657001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/d18/unsecured/media/1568176135/1568176135_1229460802001_ari-origin29-arc-130-1319141493851.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/1229382657001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>Solar-Powered Mobile Device Charging Goe ...</a><br>
+			</div>
+	<div class="box_third">				<a href="/video/mastermix1227292489001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/d18/unsecured/media/1568176135/1568176135_1227206446001_ari-origin29-arc-135-1319069740748.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/1227292489001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>Q&A: Reid Hoffman, Partner at Greylock,  ...</a><br>
+			</div>
+	<div class="last_float_third">				<a href="/video/mastermix1227328678001?cid=iwhome_vid__mast">
+				<img src ="http://brightcove.vo.llnwd.net/d18/unsecured/media/1568176135/1568176135_1227206444001_ari-origin29-arc-135-1319069726806.jpg?pubId=1568176135" width="95px" height="63px"></a><br>
+				<a href="/video/mastermix/1227328678001?cid=iwhome_vid__mast">	<span class="red">WATCH: </span>High Order Bit: PepsiCo Inc. -- Frank Co ...</a><br>
+			</div>
+	</div>
+				
+		
+<div class="slide_controls"><a href="/video/"><strong>View All Videos</strong></a>
+<div class="controls"><a href="#" class="slide_left"><span>Previous Page</span></a>
+<img src="http://i.cmpnet.com/informationweek/images/slide_dot_red.jpg"
+	alt="First Page" /> <img
+	src="http://i.cmpnet.com/informationweek/images/slide_dot_gray.jpg"
+	alt="Second Page" /> <img
+	src="http://i.cmpnet.com/informationweek/images/slide_dot_gray.jpg"
+	alt="Third Page" /> <a href="#" class="slide_right"><span>Next Page</span></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</div>	</div>
+</div>
+
+
+<style>
+#subnav #tw_superfooter_936 li {
+	background: none;
+	text-indent: 0;
+	padding-left: 0px;
+}
+</style>
+<!-- ========== -->
+<!-- = FOOTER = -->
+<!-- ========== -->
+
+<!-- research tag -->
+<script src="http://content.dl-rms.com/rms/mother/564/nodetag.js"></script>
+
+<!-- AD tag -->
+
+<div id="footer">
+	<div id="footer-ad" class="ad">
+		<!--  check cloud_footer == true in production then dont display this add -->
+		<p align="center"><br clear="all"><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1200449/0/225/ADTECH;alias=InformationWeek_Security_HP_Bottom_728x90;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1200449/0/225/ADTECH;alias=InformationWeek_Security_HP_Bottom_728x90;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1200449/0/225/ADTECH;alias=InformationWeek_Security_HP_Bottom_728x90;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+</p>
+	</div>
+	
+<link rel="stylesheet" type="text/css" href="http://twimgs.com/infoweek/footernav/august11/superfooter_936.css" />
+<div align="center">
+<div id="tw_superfooter_936">
+
+	<div id="tw_superfooter_top">
+		<div id="tw_superfooter_bottom_bg">
+		<div id="tw_superfooter_header">
+			<div id="tw_superfooter_left_header_logo">
+				<a href="http://www.techweb.com/aboutus?itc=footer" target="_blank"><img src="http://twimgs.com/infoweek/footernav/august11/ubmtechweb_logo_sm.gif"/></a>
+			</div>
+			<div id="tw_superfooter_tagline"><h3>Enabling People and Organizations to Harness the Transformative Power of Technology</h3></div>
+		</div>
+		<div id="tw_superfooter_mid">
+			<div id="tw_superfooter_links">
+			
+				<ul class="tw_superfooter_links_column">
+					<h4>CIOs &amp; IT Professionals</h4>
+					<li><a href="http://www.blackhat.com/" target="_blank">Black Hat</a></li>
+					<li><a href="http://www.byte.com/?itc=footer" target="_blank">BYTE</a></li>
+					<li><a href="http://www.cloudconnectevent.com/?itc=footer" target="_blank">Cloud Connect</a></li>
+					<li><a href="http://www.darkreading.com/?itc=footer" target="_blank">Dark Reading</a></li>
+					<li><a href="http://www.enterprise2conf.com/?itc=footer" target="_blank">Enterprise 2.0</a></li>
+					<li><a href="http://www.voicecon.com/?itc=footer" target="_blank">Enterprise Connect</a></li>
+					<li><a href="http://www.enterpriseefficiency.com/?itc=footer" target="_blank">Enterprise Efficiency</a></li>
+					<li><a href="http://www.thinkhdi.com/?itc=footer" target="_blank">HDI</a></li>
+					<li><a href="http://www.informationweek.com/?itc=footer" target="_blank">InformationWeek</a></li>
+					<li><a href="http://www.informationweek.com/iw500?itc=footer" target="_blank">InformationWeek 500</a></li>
+					<li><a href="http://www.informationweekconference.com/?itc=footer" target="_blank">InformationWeek 500 Conference</a></li>
+					<li><a href="http://www.informationweek.com/events/?itc=footer" target="_blank">InformationWeek Events</a></li>
+					<li><a href="http://www.informationweek.com/global-cio/?itc=footer" target="_blank">InformationWeek Global CIO</a></li>
+					<li><a href="http://www.informationweek.com/healthcare/?itc=footer" target="_blank">InformationWeek Healthcare</a></li>
+					<li><a href="http://www.informationweek.in/?itc=footer" target="_blank">InformationWeek India</a></li>
+					<li><a href="http://reports.informationweek.com/?itc=footer" target="_blank">InformationWeek Reports</a></li>
+					<li><a href="http://smb.informationweek.com/?itc=footer" target="_blank">InformationWeek SMB</a></li>
+					<li><a href="http://www.interop.com/?itc=footer" target="_blank">Interop</a></li>
+					<li><a href="http://www.mobileconnectevent.com/?itc=footer" target="_blank">Mobile Connect</a></li>
+					<li><a href="http://www.networkcomputing.com/?itc=footer" target="_blank">Network Computing</a></li>
+					<li><a href="http://www.nojitter.com/?itc=footer" target="_blank">No Jitter</a></li>
+					<li><a href="http://www.techweb.com/?itc=footer" target="_blank">TechWeb.com</a></li>
+					<li><a href="http://www.thebrainyard.com/?itc=footer" target="_blank">The BrainYard</a></li>
+				</ul>
+				<ul class="tw_superfooter_links_column">
+					<h4>Software Developers</h4>
+					<li><a href="http://drdobbs.com/?itc=footer" target="_blank">Dr. Dobb's</a></li>
+					<li><a href="http://drdobbs.com/windows/?itc=footer" target="_blank">Dr. Dobb's M-Dev</a></li>
+					<li><a href="http://www.drdobbs.com/digital?itc=footer" target="_blank">Dr. Dobb's Journal</a></li>
+					<li><a href="http://www.drdobbs.com/newsletters/?itc=footer" target="_blank">Dr. Dobb's Update</a></li>
+					<li><a href="http://www.techweb.com/?itc=footer" target="_blank">TechWeb.com</a></li>
+					<h4>Web &amp; Digital Professionals</h4>
+					<li><a href="http://www.internetevolution.com/?itc=footer" target="_blank">Internet Evolution</a></li>
+					<li><a href="http://www.onlinemarketingsummit.com/?itc=footer" target="_blank">Online Marketing Summit</a></li>
+					<li><a href="http://www.techweb.com/?itc=footer" target="_blank">TechWeb.com</a></li>
+					<h4>Government Officials</h4>
+					<li><a href="http://www.gtec.ca/?itc=footer" target="_blank">GTEC Ottawa</a></li>
+					<li><a href="http://www.informationweek.com/government/?itc=footer" target="_blank">InformationWeek Government</a></li>
+					<li><a href="http://www.techweb.com/?itc=footer" target="_blank">TechWeb.com</a></li>
+				</ul>
+				<ul class="tw_superfooter_links_column">
+					<h4>Vertical Markets</h4>
+					<li><a href="http://www.advancedtrading.com/?itc=footer" target="_blank">Advanced Trading</a></li>
+					<li><a href="http://www.banktech.com/?itc=footer" target="_blank">Bank Systems &amp; Technology</a></li>
+					<li><a href="http://www.createyournextcustomer.com/?itc=footer" target="_blank">CreateYourNextCustomer</a></li>
+					<li><a href="http://www.informationweek.com/government/?itc=footer" target="_blank">InformationWeek Government</a></li>
+					<li><a href="http://www.informationweek.com/healthcare/?itc=footer" target="_blank">InformationWeek Healthcare</a></li>
+					<li><a href="http://www.insurancetech.com/?itc=footer" target="_blank">Insurance &amp; Technology</a></li>
+					<li><a href="http://www.lightreading.com/?itc=footer" target="_blank">Light Reading / Telecom</a></li>
+					<li><a href="http://www.thecmosite.com/?itc=footer" target="_blank">The CMO Site</a></li>
+					<li><a href="http://www.wallstreetandtech.com/?itc=footer" target="_blank">Wall Street &amp; Technology</a></li>
+					<h4>Game Industry Professionals</h4>
+					<li><a href="http://gamasutra.com/?itc=footer" target="_blank">Gamasutra.com</a></li>
+					<li><a href="http://www.gdconf.com/?itc=footer" target="_blank">Game Developers Conference (GDC)</a></li>
+					<li><a href="http://www.igf.com/?itc=footer" target="_blank">Independent Games Festival</a></li>
+					<li><a href="http://www.gdmag.com/?itc=footer" target="_blank">Game Developer Magazine</a></li>
+					<li><a href="http://www.gdceurope.com/?itc=footer" target="_blank">GDC Europe</a></li>
+					<li><a href="http://www.china.gdconf.com/?itc=footer" target="_blank">GDC China</a></li>
+					<li><a href="http://www.gamecareerguide.com/?itc=footer" target="_blank">Game Career Guide</a></li>
+					<li><a href="http://www.game-advertising-online.com/?itc=footer" target="_blank">Game Advertising Online</a></li>
+				</ul>
+				<ul class="tw_superfooter_links_column">
+					<h4>Global Communications <br />Service Providers</h4>
+					<li><a href="http://www.heavyreading.com/?itc=footer" target="_blank">Heavy Reading</a></li>
+					<li><a href="http://www.heavyreading.com/research/?itc=footer" target="_blank">Heavy Reading Insiders</a></li>
+					<li><a href="http://www.pyr.com/" target="_blank">Pyramid Research</a></li>
+					<li><a href="http://www.lightreading.com/?itc=footer" target="_blank">Light Reading</a></li>	
+					<li><a href="http://www.lightreading.in/?itc=footer" target="_blank">Light Reading India</a></li>	
+					<li><a href="http://www.lightreading.com/lr-mobile/?itc=footer" target="_blank">Light Reading Mobile</a></li>
+					<li><a href="http://www.lightreading.com/lr-cable/?itc=footer" target="_blank">Light Reading Cable</a></li>
+					<li><a href="http://www.lightreading.com/europe/?itc=footer" target="_blank">Light Reading Europe</a></li>
+					<li><a href="http://www.lightreading.com/asia/?itc=footer" target="_blank">Light Reading Asia</a></li>
+					<li><a href="http://www.EthernetExpo.com" target="_blank">Ethernet Expo</a></li>
+					<li><a href="http://www.TelcoTVonline.com" target="_blank">TelcoTV</a></li>
+					<li><a href="http://www.towersummit.com" target="_blank">Tower Summit</a></li>
+					<li><a href="http://www.lightreading.com/live/?itc=footer" target="_blank">Light Reading Live &amp; Virtual Events</a></li>
+					<li><a href="http://www.lightreading.com/calendar_webinars.asp?site=lightreading?itc=footer" target="_blank">Webinars</a></li>
+				</ul>
+
+			<ul class="tw_superfooter_links_column">
+					<h4>Most Popular</h4>
+					<li><a href="http://www.lightreading.com/blog.asp?blog_sectionid=419&doc_id=180545&site=cdn&?itc=footer" target="_blank">Cable Catchup</a></li>
+					<li><a href="http://blog.cloudconnectevent.com/?itc=footer" target="_blank">Cloud Connect Blog</a></li>
+					<li><a href="http://www.informationweek.com/blogs/digital_life?itc=footer" target="_blank">Digital Life</a></li>
+					<li><a href="http://www.darkreading.com/blog/archives/evil_bytes/index.html?itc=footer" target="_blank">Evil Bytes</a></li>
+					<li><a href="http://reports.informationweek.com/?itc=footer" target="_blank">InformationWeek Reports</a></li>
+					<li><a href="http://blog.interop.com/?itc=footer" target="_blank">Interop Blog</a></li>
+					<li><a href="http://www.lightreading.com/archives.asp?section_id=222" target="_blank">Monkey Bidness</a></li>
+					<li><a href="http://www.informationweek.com/blogs/mobility?itc=footer" target="_blank">Over the Air</a></li>
+					<li><a href="http://www.informationweek.com/personal-tech/?itc=footer" target="_blank">Personal Tech</a></li>
+					<li><a href="http://www.lightreading.com/archives.asp?section_id=217" target="_blank">The Philter</a></li>
+					<li><a href="http://www.lightreading.com/archives.asp?section_id=388" target="_blank">Valley Wonk</a></li>
+				</ul>
+
+				<div style="clear: both;"></div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div id="tw_superfooter_bottom">
+		<div id="tw_superfooter_tw">
+						<h4>UBM TechWeb Reader Services</h4>
+			<ul>
+				<li><a href="http://www.techweb.com/aboutus/?itc=footer" target="_blank">About UBM TechWeb</a></li>
+				<li><a href="http://createyournextcustomer.com/contact-us/?itc=footer" target="_blank">Advertising Contacts</a></li>
+				<li><a href="http://www.createyournextcustomer.com/?itc=footer" target="_blank">Technology Marketing Solutions</a></li>
+				<li><a href="http://www.ubmtechweb.com/contact/?itc=footer" target="_blank">Contact Us</a></li>
+				<li><a href="mailto:feedback@techweb.com" target="_blank">Feedback</a></li>	
+			</ul>
+			<div style="clear:both;"></div>
+			<ul>
+				<li><a href="http://www.wrightsreprints.com/reprints/?magid=techweb" target="_blank">Reprints</a></li>	
+				<li><a href="http://www.informationweek.com/whitepaper/?itc=footer" target="_blank">TechWeb Digital Library / White Papers</a></li>	
+				<li><a href="http://events.techweb.com/?itc=footer" target="_blank">TechWeb Events Calendar</a></li>	
+				<li><a href="http://www.techweb.com/?itc=footer" target="_blank">TechWeb.com</a></li>	
+			</ul>
+
+		</div>
+	</div>
+	<div id="tw_superfooter_tos">
+				<ul>
+                      <li><a href="http://legal.us.ubm.com/terms-of-service/?itc=footer" target="_blank">Terms of Service</a></li>
+		      <li>|</li>
+                      <li><a href="http://legal.us.ubm.com/privacy-notice/?itc=footer" target="_blank">Privacy Statement</a></li>
+		      <li>|</li>
+                      <li><a href="http://legal.us.ubm.com/copyright-notice/?itc=footer" target="_blank">Copyright &copy; 2012 UBM TechWeb, All rights reserved.</a></li>
+                </ul>
+		<br />
+	</div>
+</div>
+</div>
+<br />
+
+
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://twimgs.com/informationweek/elqNow/elqCfg.js'></SCRIPT>
+<SCRIPT TYPE='text/javascript' LANGUAGE='JavaScript' SRC='http://twimgs.com/informationweek/elqNow/elqImg.js'></SCRIPT>
+<style>
+#footer #footer2 li{
+	background: none;
+}
+</style>
+<div id="footer2">
+      
+	<div id="footer-a">
+	  <center>
+      <ul>  
+        <li><a href="http://www.informationweek.com/" class="first">InformationWeek Home</a></li>
+        <li><a href="/news">News</a></li>
+        <li><a href="/columns">Commentary</a></li>
+        <li><a href="/video">Video</a></li>
+        <li><a href="/galleries">Slideshows</a></li>
+        <li><a href="/software">Software</a></li>
+        <li><a href="/security">Security</a></li>
+        <li><a href="/cloud-computing">Cloud</a></li>
+        <li><a href="/mobility">Mobility</a></li>
+        <li><a href="/social-business">Social Business</a></li><BR>
+        <li><a href="/personal-tech">Personal Tech</a></li>
+        <li><a href="/hardware">Hardware</a></li>
+        <li><a href="/windows">Windows</a></li>
+        <!-- <li><a href="/internet">Internet</a></li> -->
+        <li><a href="/global-cio">Global CIO</a></li>
+        <li><a href="/government">Government</a></li>
+        <li><a href="/healthcare">Healthcare</a></li>
+        <li><a href="/financialservices">Financial</a></li>
+        <li><a href="/smb">SMB</a></li>
+        <!-- <li><a href="http://www.techcareers.com/?affiliate=iwk">Careers</a></li> -->
+      </ul>
+	  </center>
+	</div>
+	  
+	<div id="footer-b">
+	  <center>
+      <ul> 
+        <!-- <li><a href="http://www.informationweek.com/GLOBAL/misc/member.jhtml" class="first">Become A Member/Membership Benefits</a></li> -->
+        <li><a href="/aboutus" class="first">About Us</a></li>
+        <li><a href="/contactus">Contact Us</a></li>
+        <li><a href="/thisweek">Current Issue</a></li>
+        <li><a href="/maindocs/archive.htm">Back Issues</a></li>
+        <li><a href="/sitemap/index.html">Site Map</a></li>
+        <li><a href="http://www.wrightsreprints.com/reprints/?magid=2196" target="_blank">Reprints</a></li>
+        <!-- <li><a href="http://briefingcenters.techweb.com/">Briefing Centers</a></li> -->
+        <li><a href="/edcal/default.html">Editorial Calendar</a></li>
+
+        <!-- <li><a href="http://www.informationweek.com/whitepaper/">White Papers</a></li> -->
+        <!-- <li><a href="http://createyournextcustomer.com/contact-us/" target="_blank">Advertising Contacts</a></li> -->
+        <!-- <li><a href="http://createyournextcustomer.com/" target="_blank">Technology Marketing Solutions</a></li> -->
+      </ul>
+	  </center>
+	</div>
+
+<!--   
+	<div id="footer-c">
+		<center>
+		<ul>
+	        <li><a href="http://www.cmp.com/onlinelist" class="first">Other Techweb Sites:</a></li>
+	        <li><a href="http://www.informationweek.de/">Informationweek Germany</a></li>
+	        <li><a href="http://www.networkcomputing.com/">Network Computing</a></li>
+	        <li><a href="http://www.techweb.com/">TechWeb</a></li>
+	        <li><a href="http://www.intelligententerprise.com/">Intelligent Enterprise</a></li><BR>
+	
+	
+	        <li><a href="http://www.darkreading.com/" class="first">Dark Reading</a></li>
+	        <li><a href="http://www.lightreading.com/">Light Reading</a></li>
+	        <li><a href="http://www.byteandswitch.com/">Byte & Switch</a></li>
+	        <li><a href="http://www.internetevolution.com/">Internet Evolution</a></li>
+	        <li><a href="http://www.bmighty.com/">bMighty</a></li>
+	<java>
+	out.println("<li><a href=\"http://www.smallbizresource.com/\" rel=\"cm8\">Small Biz Resource</a></li>");
+	</java>
+	<BR>
+	
+	        <li><a href="http://www.insuranceandtech.com/" class="first">Insurance & Technology</a></li>
+	        <li><a href="http://www.wallstreetandtech.com/">Wall Street & Technology</a></li>
+	        <li><a href="http://www.banktech.com/">Bank Systems & Technology</a></li>
+	        <li><a href="http://www.advancedtrading.com/">Advanced Trading</a></li>
+		
+		</ul>
+		</center>
+	</div> -->
+
+      <!-- <div id="copyright">
+        <p><a href="http://ubmtechnology.com/united-business-media-llc-terms-of-service/" rel="nofollow" target="_blank">Terms of Service</a> | <a href="http://ubmtechnology.com/united-business-media-llc-privacy-statement/" rel="nofollow" target="_blank">Privacy Statement</a> | <a href="http://www.cmp.com/delivery/copyright.html" rel="nofollow" target="_blank">Copyright &copy; 2010 United Business Media LLC, All rights reserved.</a></p>
+      </div> -->
+	  
+</div>
+<!-- END: Footer2 -->
+</div> 
+<!-- END: Footer -->
+
+</div>
+<!-- END: Footer --><script language="javascript">
+<!--
+document.write('<scr'+'ipt language="javascript1.1" charset="utf-8" src="http://adserver.adtechus.com/addyn/3.0/5242.1/1200533/0/16/ADTECH;alias=InformationWeek_Security_HP_Pagepeel_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=100;target=_blank;grp=225863960;misc='+new Date().getTime()+'"></scri'+'pt>');
+//-->
+</script><noscript><a href="http://adserver.adtechus.com/adlink/3.0/5242.1/1200533/0/16/ADTECH;alias=InformationWeek_Security_HP_Pagepeel_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" target="_blank"><img src="http://adserver.adtechus.com/adserv/3.0/5242.1/1200533/0/16/ADTECH;alias=InformationWeek_Security_HP_Pagepeel_1x1;key=wc4+228800563+security+/news/security/cybercrime/228800563;kvarticleid=228800563;kauthor=Mathew J. Schwartz;loc=300;grp=225863960;" border="0" width="" height=""></img></a></noscript>
+<IMG height=1 width=1 SRC="http://view.atdmt.com/action/MSFT_TechWeb_AE_ExtData/v3/atc1.informationweek/atc2.`request.getParameter("section")`/atc3./" />
+
+
+<!-- Default Insight Tag -->
+<script type="text/javascript">
+  var _bizo_data_partner_id = "590";
+  </script>
+<script type="text/javascript">
+  var _bizo_p = (("https:" == document.location.protocol) ? "https://sjs." : "http://js.");
+  document.write(unescape("%3Cscript src='" + _bizo_p + "bizographics.com/convert_data.js?partner_id=" + _bizo_data_partner_id + "' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+<!--   Disqus related changes.  -->             
+            
+<script type="text/javascript">
+                           
+                var disqus_shortname = 'iwk';
+                                /* * * DON'T EDIT BELOW THIS LINE * * */
+                 (function () {
+                var s = document.createElement('script'); s.async = true;
+                  s.type = 'text/javascript';
+                 s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+                 (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+                 }());
+</script>
+         
+
+<!-- SiteCatalyst code version: H.16.
+Copyright 1997-2008 Omniture, Inc. More info available at
+http://www.omniture.com -->
+<script type="text/javascript" src="http://i.ubm-us.net/shared/omniture/h_s_code_remote.js" ></script>
+
+<script language='JavaScript' type='text/javascript'>
+	var referer = '';
+	var eVar23 = '';
+	$.ajax({
+	   type: "GET",
+	   url: "/omniture",
+	   data: "referer="+encodeURIComponent(document.referrer),
+	   success: function(data){		   
+		   if (data != null)
+			{
+				referer = data.referer;
+				eVar23 = data.eVar23;					
+			}
+	   },
+	   dataType: "json",
+	   async: false,
+	   cache: false
+	 }	
+	 );
+	
+	 
+</script>
+
+<script language='JavaScript' type='text/javascript'>
+<!--	
+s.pageName="";
+s.referrer=referer;
+s.server="";
+s.channel="informationweek.com/news";
+s.pageType="";
+s.prop1="";
+s.prop2="228800563";
+s.prop3="InformationWeek | 228800563 | WikiLeaks 'Hactivists' Target Fax Machines";
+s.prop4="WikiLeaks 'Hactivists' Target Fax Machines";
+s.prop5="security";
+s.prop6="";
+s.prop7="Mathew J. Schwartz";
+s.prop8="38.99.102.229 | 3";
+s.prop9="";
+s.prop10="complete";
+s.prop11="News";
+s.prop12="";
+s.prop14="";
+s.prop15="";
+s.prop16="";
+s.prop19="False";
+s.prop20="20101214";
+s.prop21="";
+
+/* Conversion Variables */
+s.campaign="";
+s.state="";
+s.zip="";
+s.events="event5";
+s.products="";
+s.purchaseID="";
+s.eVar1="";
+s.eVar2="";
+s.eVar3="";
+s.eVar4="";
+s.eVar5="";
+s.eVar21="";
+s.eVar22="";
+s.eVar23=eVar23;
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//-->	
+</script>
+
+<script language="JavaScript" type="text/javascript">
+
+   function trackComment(){
+    	        var s=s_gi('cmpglobalvista'); 
+                s.evar24=s.prop7 +" | "+ s.prop4;  
+  			    s.events='event5,event9';
+  			    s.tl(this,'o','Article Comment Posted');
+          
+   }
+</script>
+
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img
+src="http://cmpglobalvista.112.2O7.net/b/ss/cmpglobalvista/1/H.16--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+
+
+<!-- End SiteCatalyst code version: H.16 -->			
+
+
+
+
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+  (function () {
+    var d = new Image(1, 1);
+    d.onerror = d.onload = function () {
+      d.onerror = d.onload = null;
+    };
+    d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-bpaww&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+  })();
+</script>
+<noscript>
+  <div>
+    <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-bpaww&amp;cg=0&amp;cc=1&amp;ts=noscript"
+    width="1" height="1" alt="" />
+  </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+
+</body>
+
+</html>

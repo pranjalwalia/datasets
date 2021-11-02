@@ -1,0 +1,843 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="mcontent-Type" content="text/html; charset=UTF-8" />
+	<title>See the Future with a Search - Technology Review</title>
+	<meta http-equiv="mcontent-Type" content="text/html; charset=utf-8" />
+	<meta content="Technology, Review, MIT, magazine, nanotechnology, nanotech, biotechnology, biotech, information technology, infotech, business, business technology, biz tech" name="keywords" />
+	<meta content="A Web startup demos a &quot;predictive&quot; search engine." name="description" />
+	<meta content="Technology Review Web Development Team" name="author" />
+	<meta content="See the Future with a Search - Technology Review" name="title" />
+	<meta content="" name="pages" />
+	<meta content="" name="collection" />
+	<meta content="Cambridge, MA" name="geo.placename" />
+	<meta content="US-MA" name="geo.region" />
+	<link rel="shortcut icon" href="/favicon.ico?634261995914320154" />
+	<link rel="icon" href="/favicon.ico?634261995914320154" />
+
+	<link rel="stylesheet" media="only screen and (device-width: 768px)" href="/css/ipad.css" type="text/css" />
+
+
+	<link href="/css/style.css?634342407204457110" rel="stylesheet" type="text/css" />
+	
+
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="http://www.technologyreview.com/rss/rss.aspx" />
+
+<!--[if IE]><link rel="stylesheet" href="/css/ie.css?634280969475877728" type="text/css" media="all" /><![endif]-->
+<!--[if lt IE 8]><link rel="stylesheet" href="/css/ie7.css?634296529933105922" type="text/css" media="all" /><![endif]-->
+<!-- JQuery Library -->
+<script type="text/javascript" src="/scripts/jquery-1.4.2.js?634177217785666350"></script>
+<script type="text/javascript" src="/scripts/scripts.js?634238772152187359"></script>
+<script type="text/javascript" src="/scripts/jsScroller.js?634176559459234440"></script>
+<script type="text/javascript" src="/scripts/jsScrollbar3.js?634176560155340124"></script>
+<script type="text/javascript">
+var scroller  = null;
+var scrollbar = null;
+window.onload = function () {
+	if (document.getElementById("Scroller-3")) {
+  scroller  = new jsScroller(document.getElementById("Scroller-3"), 330, 230);
+  scrollbar = new jsScrollbar (document.getElementById("Scrollbar-Container"), scroller, false);
+  	}
+}
+</script>
+
+<script type="text/javascript" src="/scripts/MobileCompatibilityScript.js?634093656220000000"></script>
+
+<script type="text/javascript" src="http://admin.brightcove.com/js/BrightcoveExperiences.js"></script> 
+<script type="text/javascript" src="http://admin.brightcove.com/js/APIModules_all.js"></script> 
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var randartnum = Math.random()*10000000000000000;
+//--><!]]>
+</script>
+</head>
+
+<body class="article-pg">
+<!-- search ignore begin -->
+
+
+
+<div class="container">
+	<div id="header">
+		<div id="topheader">
+
+		<div id="logo">
+			<a href="http://www.technologyreview.com/"><img src="/images/logo.png" width="197" height="63" alt="Technology Review" /></a>
+			<span class="tagline">Published by MIT</span>
+		</div>
+
+		
+		
+		<ul class="languages">
+			<li><a href="http://www.technologyreview.com/">English</a></li>
+			<li><a href="http://www.technologyreview.com/es" lang="es">en Español</a></li>
+			<li><a href="http://www.heise.de/tr/" lang="de">auf Deutsch</a></li>
+			<li><a href="http://www.technologyreview.it/" lang="it">in Italiano</a></li>
+			<!--<li><a href="#" lang="pt">Portugese</a></li>-->
+			<li><a href="http://www.mittrchinese.com/" lang="ar">中文</a></li>
+			<li><a href="http://www.technologyreview.in/" lang="hi">in India</a></li>
+		</ul>
+		
+		<ul id="myaccount">
+			<li class="first"><a href="https://subscribe.technologyreview.com/mit/">Subscribe</a></li>
+			<li>
+	
+				<a href="https://www.technologyreview.com/mytr/login.aspx?redirect=http%3A%2F%2Fwww.technologyreview.com%2Fcomputing%2F26452%2Fpage1%2F">Login</a>
+	
+			</li>
+		</ul>
+	
+		<div class="advert">
+			<div id="topbanneradspacer"></div>
+		</div>
+				
+		
+		<form action="/search.aspx" method="get" class="searchform">
+			<fieldset>
+
+				<label for="search" class="hide">Search</label>
+				<input id="search" name="s" class="text blink" value="search" onclick="if (!this.removedSearch) {this.value = ''; this.removedSearch = true;}"/>
+			</fieldset>
+			<fieldset class="submit">
+				<input type="image" src="/images/go.png" alt="search" class="button" />
+			</fieldset>
+			<input type="hidden" name="mod" value="search" />
+		</form><!--/.searchform-->
+		
+		
+		
+		<div class="clear"></div>
+		
+		</div>
+		
+		
+		<div class="navcontainer">
+			<div class="navs">
+			<ul class="nav" id="nav">
+				<li id="nav1"><a href="http://www.technologyreview.com/?mod=Nav_Home">Home</a></li>
+				<li id="nav2"><a href="http://www.technologyreview.com/computing/?mod=Nav_Computing">Computing</a></li>
+				<li id="nav3"><a href="http://www.technologyreview.com/web/?mod=Nav_Web">Web</a></li>
+				<li id="nav4"><a href="http://www.technologyreview.com/communications/?mod=Nav_Communications">Communications</a></li>
+				<li id="nav5"><a href="http://www.technologyreview.com/energy/?mod=Nav_Energy">Energy</a></li>
+				<li id="nav6"><a href="http://www.technologyreview.com/materials/?mod=Nav_Materials">Materials</a></li>
+				<li id="nav7"><a href="http://www.technologyreview.com/biomedicine/?mod=Nav_Biomedicine">Biomedicine</a></li>
+				<li id="nav8" class="here"><a href="http://www.technologyreview.com/business/?mod=Nav_Business">Business</a></li>
+			</ul>
+			
+			<ul class="nav nav2">
+			<li id="nav9"><a href="http://www.technologyreview.com/magazine/?mod=Nav_Magazine">Magazine</a></li>
+				<li id="nav10"><a href="http://www.technologyreview.com/blog/?mod=Nav_Blogs">Blogs</a></li>
+				<li id="nav11"><a href="http://www.technologyreview.com/video/?mod=Nav_Videos">Video</a></li>
+
+			</ul>
+			</div>
+			
+		
+		</div><!--/.navcontainer-->
+		
+		
+	</div>
+	<!--/.header-->
+
+	
+	<div class="contentwrap">	
+		<div class="mcontent">
+
+<!-- search ignore end -->
+
+
+
+	<div class="maincontent">
+	
+
+<div class="article">
+
+	
+
+
+	
+<div>
+
+	<div class="mainpic"> 
+		
+		<img src="/files/47140/futureA_x220.jpg" width="220" height="146" alt="" class="photo" />
+		
+		<p class="caption">
+			<b>Eye candy:</b> This visualization shows the connections between different places, companies, and people, following a search using Recorded Future.
+			
+			<br />
+			
+			Credit: Recorded Future 
+			
+		</p>
+		
+	</div>
+	
+	<h2>Business</h2>
+	
+	
+	<h3>See the Future with a Search</h3>
+	<ul class="info">
+		<li>Thursday, December 2, 2010</li>
+		
+		<li>By Tom Simonite</li>
+		
+	</ul>
+	
+	
+	<p class="intro">A Web startup demos a "predictive" search engine.</p>
+	
+	<div align="right" class="options optionsWithMainpic"> <a href="/email_a_friend.aspx?id=26452" target="_blank" class="email">E-mail</a>&nbsp;&nbsp;&nbsp;<!--<a href="http://www.audiodizer.com/technologyreview/business/26452.mp3" class="audio">Audio &raquo;</a> <a href="/printer_friendly_article.aspx?id=26452" target="_blank" class="print">Print</a> <span class="icons"> <a href="#"><img src="/images/smalltxt-icon.gif" alt="small text" /></a> <a href="#"><img src="/images/medtxt-icon.gif" alt="medium text" /></a> <a href="#"><img src="/images/largetxt-icon.gif" alt="large text" /></a> </span>--></div>
+	
+	
+	<div class="mainBody">
+	
+<p><span class="firstchar">A</span> startup called <a href="https://www.recordedfuture.com/" target="_blank">Recorded Future</a> has developed a tool that scrapes real-time data from the Internet to find hints of what will happen in the future. The company's search tool spits out results on a time line that stretches into the future as well as the past.</p>
+<p>The 18-month-old company gained attention earlier this year after receiving money from the venture capital arms of both <a href="http://www.google.com/ventures" target="_blank">Google</a> and the <a href="http://www.iqt.org/" target="_blank">CIA</a>. Now the company has offered a glimpse of how its technology works.</p>
+	
+
+
+</div>
+</div>
+
+<div style="margin:8px 5px 8px 15px; background:url(/images/divider_horiz.gif) top repeat-x;">&nbsp;</div>
+
+	<div class="loginbox">
+		<p><span><strong>To read the entire article you must log in:</strong></span></p>
+		<p><span style="font-size: 0.8em; line-height: 1.0em;">Most of our content &mdash; all daily news, blogs, and videos &mdash; is free.  Magazine stories are paid.  To read this story, you must have a subscription or you must use a reading credit. Registration to Technology Review is free and entitles registrants to three free reading credits.</span></p>
+		<form method="post" action="https://www.technologyreview.com/mytr/login.aspx?redirect=http://www.technologyreview.com/computing/26452/page1/">
+			<input type="hidden" name="loggingIn" value="true" />
+			<table style="width:400px">
+				<tr>
+					<td scope="row">Username</td>
+					<td align="right"><input type="text" id="usernamebox" class="ltext" name="username" /></td>
+					<td nowrap="nowrap">or <a href="https://www.technologyreview.com/mytr/createuser.aspx?redirect=http%3A%2F%2Fwww.technologyreview.com%2Fcomputing%2F26452%2Fpage1%2F%3Fpw7%3DT">REGISTER</a></td>
+				</tr>
+				<tr>
+					<td scope="row">Password</td>
+					<td align="right"><input type="password" id="passwordbox" class="ltext" name="password" /></td>
+					<td>&nbsp;</td>
+				</tr>
+				<tr>
+					<td>&nbsp;</td>
+					<td align="right"><input type="submit" class="submit" name="action" value="Submit" /></td>	
+					<td>&nbsp;</td>
+				</tr>
+			</table>
+		</form>
+	</div>	
+	<div style="margin:8px 5px 8px 15px; background:url(/images/divider_horiz.gif) top repeat-x;">&nbsp;</div>
+
+</div>
+
+	</div>
+	
+<div class="sidecontent">
+<!-- search ignore begin -->
+
+
+
+
+
+<div class="smod red magbox">
+	<h2><a href="/magazine/">MAGAZINE</a></h2>
+    <div class="navcontainer">
+		<ul class="nav">
+			<li id="magazineBoxTab_0" class="here"><a href="#" onclick="tabClick('magazineBox', 0); return false;">Our Pick</a></li>
+			<li id="magazineBoxTab_1"><a href="#" onclick="tabClick('magazineBox', 1); return false;">Most Viewed</a></li>
+			<li id="magazineBoxTab_2"><a href="#" onclick="tabClick('magazineBox', 2); return false;">Most Comments</a></li>
+			<li id="magazineBoxTab_3"><a href="#" onclick="tabClick('magazineBox', 3); return false;">Most E-mailed</a></li>
+		</ul>
+	</div>
+    <div class="mag-mod">
+    	<div class="box3 minimal" style="overflow: visible; height: auto; float: none; margin-left: 0;">	
+
+			<div id="magazineBox_0">
+	
+				<a href="http://www.technologyreview.com/biomedicine/32419/?mod=MagOur"><img src="/files/55125/0311-Q%26A_x296.jpg" width="296" height="196" style="margin-top: 0;" alt="" /></a>
+			
+				<h4><a href="http://www.technologyreview.com/biomedicine/32419/?mod=MagOur">Jonathan Rothberg</a></h4>
+			
+				<p>The founder of Ion Torrent says his DNA-sequencing technology will revolutionize genomics the way the microprocessor transformed computing.</p>
+			
+			</div>
+
+			<div id="magazineBox_1" style="display:none;">
+	
+				<a href="/computing/32360/?mod=MagMstVwd"><img src="/files/54886/0311-Square-A_x116.jpg" width="116" height="95" style="margin-top: 0; float: left; margin-right: 10px; margin-bottom: 10px;" alt="" /></a>
+		
+				<h4><a href="/computing/32360/?mod=MagMstVwd">The New Money</a></h4>
+		
+				<p>Square, founded by the creator of Twitter, lets people accept credit cards with their smart phones. That innovation could transform transactions in surprising ways.</p>
+			
+				<div class="divider divider-dk"></div>
+		
+				<h4><a href="/energy/32383/?mod=MagMstVwd">Praying  for an Energy  Miracle</a></h4>
+		
+				<p>Every clean-tech startup these days claims to have a breakthrough that will finally make renewable and clean energy sources cheap enough to compete with fossil fuels. But are we really on the brink of a clean-energy economy?</p>
+			
+				<div class="divider divider-dk"></div>
+		
+				<h4><a href="/web/32338/?mod=MagMstVwd">The Slow-Motion Internet</a></h4>
+		
+				<p>Google's growth plans depend in part on whether it can make the entire Web faster.</p>
+			
+			</div>
+
+			<div id="magazineBox_2" style="display:none;">
+	
+				<a href="/computing/32360/?mod=MagMstComm"><img src="/files/54886/0311-Square-A_x116.jpg" width="116" height="95" style="margin-top: 0; float: left; margin-right: 10px; margin-bottom: 10px;" alt="" /></a>
+		
+				<h4><a href="/computing/32360/?mod=MagMstComm">The New Money</a></h4>
+		
+				<p>Square, founded by the creator of Twitter, lets people accept credit cards with their smart phones. That innovation could transform transactions in surprising ways.</p>
+			
+				<div class="divider divider-dk"></div>
+		
+				<h4><a href="/energy/32383/?mod=MagMstComm">Praying  for an Energy  Miracle</a></h4>
+		
+				<p>Every clean-tech startup these days claims to have a breakthrough that will finally make renewable and clean energy sources cheap enough to compete with fossil fuels. But are we really on the brink of a clean-energy economy?</p>
+			
+				<div class="divider divider-dk"></div>
+		
+				<h4><a href="/communications/32421/?mod=MagMstComm">Is WikiLeaks a Good Thing?</a></h4>
+		
+				<p>By itself, perhaps not. But as an innovator, maybe. 
+
+</p>
+			
+			</div>
+
+			<div id="magazineBox_3" style="display:none;">
+	
+				<a href="/computing/32360/?mod=MagMstEml"><img src="/files/54886/0311-Square-A_x116.jpg" width="116" height="95" style="margin-top: 0; float: left; margin-right: 10px; margin-bottom: 10px;" alt="" /></a>
+		
+				<h4><a href="/computing/32360/?mod=MagMstEml">The New Money</a></h4>
+		
+				<p>Square, founded by the creator of Twitter, lets people accept credit cards with their smart phones. That innovation could transform transactions in surprising ways.</p>
+			
+				<div class="divider divider-dk"></div>
+		
+				<h4><a href="/business/32397/?mod=MagMstEml">Inventing New Technologies and Markets</a></h4>
+		
+				<p>Our second annual list of the world's most innovative technology companies highlights businesses whose work is changing industries and lives. </p>
+			
+				<div class="divider divider-dk"></div>
+		
+				<h4><a href="/energy/32383/?mod=MagMstEml">Praying  for an Energy  Miracle</a></h4>
+		
+				<p>Every clean-tech startup these days claims to have a breakthrough that will finally make renewable and clean energy sources cheap enough to compete with fossil fuels. But are we really on the brink of a clean-energy economy?</p>
+			
+			</div>
+            
+		</div>
+	</div>
+</div>
+
+
+
+
+         
+        
+<div class="smod">
+	<div class="ad">
+		<div class="adheader"><img src="/images/ad_legend_h.gif" width="79" height="17" alt="Advertisement" /></div>
+			<script type="text/javascript">
+			<!--//--><![CDATA[//><!--
+			var browser_type=navigator.appName
+									var browser_version=parseInt(navigator.appVersion)
+									document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="http://ad.doubleclick.net/adj/mk3.technologyreview.com/mediumrectangle;!category=businessexc;channel=business;section=;at=mediumrectangle;page=home;s=mediumrectangle;;tile=4;ord=' + randartnum + '?"><\/SCR' + 'IPT>')
+			//--><!]]>
+			</script><noscript>
+									<a href="http://ad.doubleclick.net/jump/mk3.technologyreview.com/mediumrectangle;!category=businessexc;channel=business;section=;at=mediumrectangle;page=home;s=mediumrectangle;tile=4;ord=?" target="_blank">
+										<img src="http://ad.doubleclick.net/ad/mk3.technologyreview.com/mediumrectangle;!category=businessexc;channel=business;section=;at=mediumrectangle;page=home;s=mediumrectangle;tile=4;ord=?" border="0" alt="click here..." />									</a>
+			</noscript>
+	</div>
+	<div class="clear"></div>
+</div>
+	
+<div class="calloutbox">
+	<blockquote><p>
+		<span class="quote lquote">&#8220;</span><!--
+		-->Getting to suborbital space is a lot cheaper than orbiting Earth; the rockets can be much smaller and don't need the heat shields required for reëntry from orbit. The trade-off is time.<!--
+		--><span class="quote rquote">&#8221;</span>
+	</p></blockquote>
+	
+	<p class="read">Read the full article: <a href="http://www.technologyreview.com/computing/32382/?a=f?p1=quote">To the Space Station and Beyond</a></p>
+	
+</div>
+
+ 
+<div class="smod gray">
+	<h2><a href="/blog/">Blogs</a></h2>
+	<div class="navcontainer">
+		<ul class="nav" id="topBlogsNav">
+			<li id="topBlogsNav_recent" class="here"><a href="#" onclick="topBlogsNavClick('recent'); return false;">Most Recent</a></li>
+			<li id="topBlogsNav_viewed"><a href="#" onclick="topBlogsNavClick('viewed'); return false;">Most Viewed</a></li>
+			<li id="topBlogsNav_comments"><a href="#" onclick="topBlogsNavClick('comments'); return false;">Most Comments</a></li>
+			<!--<li id="topBlogsNav_emailed"><a href="#" onclick="topBlogsNavClick('emailed'); return false;">Most Emailed</a></li>-->
+		</ul>
+	</div>
+	
+	<div class="blogs-mod" id="topBlogs_recent">
+		
+		<h4><a href="/blog/mimssbits/26449/">Advertisers Will Pay for Your Next Power Up</a></h4>
+		<ul class="info">
+			
+			<li><a href="/computing/">Computing</a></li>
+			
+			<li>By Christopher Mims </li>
+			
+		</ul>
+			
+		<div class="divider"></div>
+			
+		<h4><a href="/blog/arxiv/26448/">How To Turn A Laser Into A Tractor Beam</a></h4>
+		<ul class="info">
+			
+			<li><a href="/computing/">Computing</a></li>
+			
+			<li>By kfc</li>
+			
+			<li><a href="/blog/arxiv/26448/#comments">1 Comment</a></li>
+			
+		</ul>
+			
+		<div class="divider"></div>
+			
+		<h4><a href="/blog/editors/26441/">Google Aims To Take Out Content Farms</a></h4>
+		<ul class="info">
+			
+			<li><a href="/web/">Web</a></li>
+			
+			<li>By Erica Naone</li>
+			
+		</ul>
+			
+	</div>
+	
+	<div class="blogs-mod" id="topBlogs_viewed" style="display:none;">
+		
+		<h4><a href="/blog/arxiv/26333/">Cosmos At Least 250x Bigger Than Visible Universe, Say Cosmologists </a></h4>
+		<ul class="info">
+			
+			<li>By kfc</li>
+			
+			<li><a href="/blog/arxiv/26333/#comments">54 Comments</a></li>
+			
+		</ul>
+			
+		<div class="divider"></div>
+			
+		<h4><a href="/blog/arxiv/26421/">Physicists Discover Quantum Law of Protein Folding </a></h4>
+		<ul class="info">
+			
+			<li>By kfc</li>
+			
+			<li><a href="/blog/arxiv/26421/#comments">7 Comments</a></li>
+			
+		</ul>
+			
+		<div class="divider"></div>
+			
+		<h4><a href="/blog/arxiv/26316/">Black Holes Not Affected by Dark Matter, Say Astrophysicists</a></h4>
+		<ul class="info">
+			
+			<li>By kfc</li>
+			
+			<li><a href="/blog/arxiv/26316/#comments">18 Comments</a></li>
+			
+		</ul>
+			
+	</div>
+	
+	<div class="blogs-mod" id="topBlogs_comments" style="display:none;">
+		
+		<h4><a href="/blog/arxiv/26333/">Cosmos At Least 250x Bigger Than Visible Universe, Say Cosmologists </a></h4>
+		<ul class="info">
+			
+			<li>By kfc</li>
+			
+			<li><a href="/blog/arxiv/26333/#comments">54 Comments</a></li>
+			
+		</ul>
+			
+		<div class="divider"></div>
+			
+		<h4><a href="/blog/editors/26409/">Where Next for IBM's Watson?</a></h4>
+		<ul class="info">
+			
+			<li><a href="/computing/">Computing</a></li>
+			
+			<li>By Tom Simonite</li>
+			
+			<li><a href="/blog/editors/26409/#comments">14 Comments</a></li>
+			
+		</ul>
+			
+		<div class="divider"></div>
+			
+		<h4><a href="/blog/editors/26336/">Bing Is Copying Your Clicks, Not Google's Results</a></h4>
+		<ul class="info">
+			
+			<li><a href="/web/">Web</a></li>
+			
+			<li>By Tom Simonite</li>
+			
+			<li><a href="/blog/editors/26336/#comments">8 Comments</a></li>
+			
+		</ul>
+			
+	</div>
+	
+
+<!-- note: the display is broken when post headlines are more than 1 line -->
+
+</div><!--/.red-->
+            
+            
+
+
+
+
+
+
+
+
+
+<div class="tr-box">
+	<div class="sect">
+		<h5>TR50</h5>			
+		<p><a href="/companywatch/tr50/">Our list of the 50 most innovative companies.</a></p>
+		<a href="/companywatch/tr50/" class="list">Full List</a>
+	</div>
+	
+	 
+	<div class="sect">
+		<h5>TR35</h5>			
+		<p><a href="/tr35/">Our annual selection of the world’s top innovators under the age of 35.</a></p>
+		<a href="/tr35/" class="list">Full List</a>
+	</div>
+	 
+	<div class="sect">
+		<h5>TR10</h5>			 
+		<p><a href="/tr10/">Our annual list of the emerging technologies that will have the biggest impact on our world.</a></p>	
+		<a href="/tr10/" class="list">Full List</a>
+	</div>
+</div>
+    
+	                
+<div class="mitn-box">
+	<h5>MIT News</h5>
+	<div class="mitn-block">		
+	
+		<p><a href="http://web.mit.edu/newsoffice/2011/multicore-series-4-0228.html" target="_blank">No backtalk</a></p>
+	
+		<p><a href="http://web.mit.edu/newsoffice/2011/multicore-series-3-0225.html" target="_blank">Retooling algorithms</a></p>
+	
+		<p><a href="http://web.mit.edu/newsoffice/2011/multicore-series-2-0224.html" target="_blank">The next operating system</a></p>
+	
+		<p><a href="http://web.mit.edu/newsoffice/2011/multicore-series-1-0223.html" target="_blank">Designing the hardware</a></p>
+	
+		<p><a href="http://web.mit.edu/newsoffice/2011/itw-green-grease-0224.html" target="_blank">In The World: Turning old oil into new mileage</a></p>
+	
+		<p><a href="http://web.mit.edu/newsoffice/2011/wilkerson-event-0224.html" target="_blank">A migration that shaped a nation</a></p>
+	
+		<p><a href="http://web.mit.edu/newsoffice/2011/nano-sized-vaccines-0222.html" target="_blank">Nano-sized vaccines</a></p>
+	
+		
+		<p class="more"><a href="http://web.mit.edu/newsoffice/" class="pink">More</a></p> 
+	</div>
+	<div class="issue">
+		<p><a href="/mit_news/">MIT News Magazine</a></p>
+	</div>
+</div>
+
+	
+   <div class="smod">
+		<div class="ad">
+			<div class="adheader"><img src="/images/ad_legend_h.gif" width="79" height="17" alt="Advertisement" /></div>
+			<script type="text/javascript">
+			<!--//--><![CDATA[//><!--
+			var browser_type=navigator.appName
+									var browser_version=parseInt(navigator.appVersion)
+									document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="http://ad.doubleclick.net/adj/mk3.technologyreview.com/mediumrectangle2;!category=businessexc;channel=business;section=;at=mediumrectangle2;page=home;s=mediumrectangle2;;tile=7;ord=' + randartnum + '?"><\/SCR' + 'IPT>')
+			//--><!]]>
+			</script><noscript>
+									<a href="http://ad.doubleclick.net/jump/mk3.technologyreview.com/mediumrectangle2;!category=businessexc;channel=business;section=;at=mediumrectangle2;page=home;s=mediumrectangle2;tile=7;ord=?" target="_blank">
+										<img src="http://ad.doubleclick.net/ad/mk3.technologyreview.com/mediumrectangle2;!category=businessexc;channel=business;section=;at=mediumrectangle2;page=home;s=mediumrectangle2;tile=7;ord=?" border="0" alt="click here..." />									</a>
+			</noscript>
+		</div>
+		<div class="clear"></div>
+	</div>
+	                
+<div class="btm-blocks">
+<div class="rss-box gray">
+<h5>RSS Feeds</h5>
+<div class="rss-block">			
+	<p><a href="http://feeds.technologyreview.com/technology_review_top_stories">TR Top Stories</a></p>
+	<p><a href="http://feeds.technologyreview.com/technology_review_blog_editors">TR Editors' Blog</a></p> 
+	<p><a href="http://feeds.technologyreview.com/technology_review_video">TR Video</a></p>
+	
+</div>
+</div>
+
+	
+	<div class="ad">
+		<div class="adheader"><img src="/images/ad_legend_h.gif" width="79" height="17" alt="Advertisement" /></div>
+			<script type="text/javascript">
+			<!--//--><![CDATA[//><!--
+			var browser_type=navigator.appName
+									var browser_version=parseInt(navigator.appVersion)
+									document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="http://ad.doubleclick.net/adj/mk3.technologyreview.com/promoimg2b;!category=businessexc;channel=textadtest3;section=;at=promoimg2b;page=home;s=promoimg2b;;tile=10;ord=' + randartnum + '?"><\/SCR' + 'IPT>')
+			//--><!]]>
+			</script>
+			<noscript>
+									<a href="https://ad.doubleclick.net/jump/mk3.technologyreview.com/promoimg2b;!category=businessexc;channel=textadtest3;section=;at=promoimg2b;page=home;s=promoimg2b;tile=10;ord=?" target="_blank">
+										<img src="http://ad.doubleclick.net/ad/mk3.technologyreview.com/promoimg2b;!category=businessexc;channel=textadtest3;section=;at=promoimg2b;page=home;s=promoimg2b;tile=10;ord=?" border="0" alt="click here..." />									</a>
+			</noscript>
+	</div>
+	<div class="clear"></div>
+	
+</div><!--/.btm-blocks-->
+
+<div class="clear"></div>
+
+
+
+
+<!-- search ignore end -->                
+</div><!--/.sidecontent-->
+
+	
+<!-- search ignore begin -->
+<div class="clear"></div>
+<div id="topbannerad">
+	<div id="topbanneradwraper">
+		<a id="topbanneradhomelink" href="http://www.technologyreview.com/"></a>
+
+		<div class="adheader"><img src="/images/ad_legend_v.gif" width="18" height="90" alt="Advertisement" /></div>
+<div class="topbanneradtag">
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="//ad.doubleclick.net/adj/mk3.technologyreview.com/leaderboard1;!category=businessexc;channel=business;section=;at=leaderboard;page=home;s=leaderboard1;sz=728x90;;tile=1;ord=' + randartnum + '?"><\/SCR' + 'IPT>')
+//--><!]]>
+</script>
+<noscript><a href="https://ad.doubleclick.net/jump/mk3.technologyreview.com/leaderboard1;!category=businessexc;channel=business;section=;at=leaderboard;page=home;s=leaderboard1;sz=728x90;tile=1;ord=?" target="_blank"><img src="//ad.doubleclick.net/ad/mk3.technologyreview.com/leaderboard1;!category=businessexc;channel=business;section=;at=leaderboard;page=home;s=leaderboard1;sz=728x90;tile=1;ord=?" width="728" height="90" border="0" alt="click here..." /></a></noscript>
+</div>
+
+	</div>
+</div>
+
+<div class="advert-btm"> 
+	<div class="ad">
+
+		<div class="adheader"><img src="/images/ad_legend_h.gif" width="79" height="17" alt="Advertisement" /></div>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+	document.write('<SCR' + 'IPT LANGUAGE="JavaScript" SRC="//ad.doubleclick.net/adj/mk3.technologyreview.com/leaderboard2;!category=businessexc;channel=business;section=;at=leaderboard;page=home;s=leaderboard2;sz=728x90;;tile=13;ord=' + randartnum + '?"><\/SCR' + 'IPT>')
+//--><!]]>
+</script>
+<noscript><a href="https://ad.doubleclick.net/jump/mk3.technologyreview.com/leaderboard2;!category=businessexc;channel=business;section=;at=leaderboard;page=home;s=leaderboard2;sz=728x90;tile=13;ord=?" target="_blank"><img src="//ad.doubleclick.net/ad/mk3.technologyreview.com/leaderboard2;!category=businessexc;channel=business;section=;at=leaderboard;page=home;s=leaderboard2;sz=728x90;tile=13;ord=?" width="728" height="90" border="0" alt="click here..." /></a></noscript>
+
+	</div>
+	<div class="clear"></div>
+ </div>
+
+
+		</div>
+	</div>
+<div id="footer">
+		<div class="footerlogo">
+			<img src="/images/MIT-logo.gif" width="54" height="28" alt="MIT" />
+			<p>&copy; 2011 MIT<br />
+			Technology Review</p>
+
+		</div><!--/.footerlogo-->
+		
+        <ul class="footernav">
+			<li><a href="http://www.technologyreview.com/corp/about.aspx">About Us</a></li>
+            <li><a href="http://www.technologyreview.com/media">Advertise</a></li>
+			<li><a href="http://www.technologyreview.com/events">Events</a></li>
+			<li><a href="http://www.technologyreview.com/cust/permissions.aspx">Reprints &amp; Permissions</a></li>
+            <li><a href="http://www.technologyreview.com/corp/press.aspx">Press</a></li>
+            <li><a href="http://www.technologyreview.com/corp/jobs.aspx">Jobs</a></li>
+			<li><a href="http://www.technologyreview.com/careerresources">Resources</a></li>
+            <li><a href="http://www.technologyreview.com/corp/staff.aspx">Staff</a></li>
+            </ul>
+             <ul class="footernav">
+			<li>Help</li>
+            <li><a href="http://www.technologyreview.com/cust/index.aspx">Customer Service</a></li>
+            <li><a href="http://www.technologyreview.com/corp/contact.aspx">Contact Us</a></li>
+            <li><a href="http://www.technologyreview.com/corp/privacy.aspx">Privacy</a></li>
+            <li><a href="http://www.technologyreview.com/corp/terms.aspx">Terms of Use</a></li>
+            <li><a href="http://www.technologyreview.com/cust/sitemap.aspx">Site Map</a></li>
+            <li><a href="http://www.technologyreview.com/cust/feedback.aspx">Website Feedback</a></li>
+			</ul>
+             <ul class="footernav">
+			<li>Subscriptions</li>
+            <li><a href="https://subscribe.technologyreview.com/mit/">Subscribe</a></li>
+            <li><a href="https://subscribe.technologyreview.com/misubgift.aspx?PC=MT">Gift Subscription</a></li>
+			<li><a href="http://www.technologyreview.com/cust/newsletter.aspx">Free Newsletters</a></li>
+			<li><a href="https://subscribe.technologyreview.com/SubInfo.aspx?PC=MT&amp;do=R">Renew</a></li>
+            <li><a href="https://subscribe.technologyreview.com/backissue/subbi.aspx?PC=MT">Back Issues</a></li>
+            <li><a href="http://www.technologyreview.com/cust/">Customer Service</a></li>
+            <li><a href="http://www.technologyreview.com/apps/index.aspx">Apps</a></li>
+
+		</ul>
+		
+		<div class="feeds">
+			<h2>Follow Us</h2>
+			<p id="last"><a href="http://twitter.com/techreview"><img src="/images/Twitter-icon.png" width="16" height="16" alt=""/> On Twitter</a></p>
+			<p><a href="http://www.facebook.com/pages/Technology-Review/17043549797"><img src="/images/FaceBook-icon.png" width="16" height="16" alt="" /> Become a Fan on Facebook</a></p>
+			<p><a href="http://feeds.technologyreview.com/technology_review_top_stories"><img src="/images/Feed-icon.png" width="16" height="16" alt="" /> Subscribe to the Feed</a></p>
+		</div><!--/.feeds-->
+		
+	</div>
+
+</div>
+
+<script type="text/javascript" src="/scripts/omniture_s_code.js?634272320740740786"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+	
+s.pageName = "See the Future with a Search";
+	
+
+s.channel = "business";
+s.prop1 = "article";
+	
+
+s.prop3 = "article";
+	
+s.prop5 = "";
+
+	
+	
+s.prop7 = "http:\/\/www.technologyreview.com\/computing\/26452\/page1\/";
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<script type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><img src="https://techreview.112.2o7.net/b/ss/techreview/1/H.22.1--NS/0"
+height="1" width="1" border="0" alt="" /></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.22.1. -->
+
+
+<!-- Advertiser, Include user in segment 'TechnologyReview?: Homepage Remarketing' -->
+<script src="http://ad.advertise.com/pixel?id=1090410&amp;t=1" type="text/javascript"></script>
+<!-- End of segment tag -->
+<!-- Start Quantcast tag -->
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<script type="text/javascript">
+_qacct="p-ffE9vWW7lzZG-";
+if (window.quantserve)
+	quantserve();
+</script>
+<noscript><img src="http://pixel.quantserve.com/pixel/p-ffE9vWW7lzZG-.gif" style="display: none" height="1" width="1" alt="Quantcast"/></noscript>
+<!-- End Quantcast tag -->
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-7747898-5");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+<!-- START Nielsen Online SiteCensus V6.0 -->
+<!-- COPYRIGHT 2010 Nielsen Online -->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+  (function () {
+    var d = new Image(1, 1);
+    d.onerror = d.onload = function () {
+      d.onerror = d.onload = null;
+    };
+    d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-703343h&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+  })();
+//--><!]]>
+</script>
+<noscript>
+  <div>
+    <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-703343h&amp;cg=0&amp;cc=1&amp;ts=noscript"
+    width="1" height="1" alt="" />
+  </div>
+</noscript>
+<!-- END Nielsen Online SiteCensus V6.0 -->
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var MetrixLab_ChannelText = "MIT";
+
+var ML_img_ServerOnline=new Image();
+ML_img_ServerOnline.src='http://invitation.opinionbar.com/popups/ServerOnline.gif';
+ML_img_ServerOnline.onload=ML_ImageLoaded;
+ML_img_ServerOnline.onabort=ML_ImageLoaded;
+ML_img_ServerOnline.onerror=ML_ImageError;
+
+function ML_ImageLoaded()
+{
+    function metrixlab_onready(el, func){
+	this.args = new Array(el, func);
+	this.doTry = function(){
+		try{
+			var el = eval(this.args[0]);
+			el.onload = this.args[1];
+			el.onload();
+			clearInterval(this.args[2]);
+		}
+		catch(e){}
+	}
+	this.doTry.bind = function(object){
+		var method = this;
+		return function(){
+			method.apply(object);
+		}
+	}
+	this.args[2] = setInterval(this.doTry.bind(this), 250);
+	return this;
+    }
+
+    new metrixlab_onready("document", function(){
+	var metrixlab_body = top.document.getElementsByTagName('body').item(0);
+	var metrixlab_script = top.document.createElement('script');
+	metrixlab_script.setAttribute('defer','defer');
+	metrixlab_script.src='http://invitation.opinionbar.com/popups/p10833_master/overlay.js';
+	metrixlab_script.type='text/javascript';
+	metrixlab_body.insertBefore(metrixlab_script, metrixlab_body.childNodes[0]);
+    });
+}
+function ML_ImageAborted()
+{
+    
+}
+function ML_ImageError()
+{
+    
+}
+//--><!]]>
+</script>
+
+<script type="text/javascript">
+
+/*
+s.tl = function (){
+	alert("omniture called!");
+}
+*/
+
+</script>
+
+
+<!-- search ignore end -->
+
+</body>
+</html>

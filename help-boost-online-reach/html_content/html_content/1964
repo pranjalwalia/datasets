@@ -1,0 +1,580 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US">
+	<head profile="http://gmpg.org/xfn/11">
+		<title>
+			Siri Acts as a Home Automation Remote Thanks to Raspberry Pi - Mobile Magazine		</title>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		 <link rel="stylesheet" type="text/css" href="http://cdn11.mobilemag.com/wp-content/themes/m/style.css" />
+			<link rel="shortcut icon" href="http://cdn11.mobilemag.com/wp-content/themes/m/img/favicon.ico" type="image/x-icon" />
+						
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.2.8.7 - http://yoast.com/wordpress/seo/ -->
+<title>Siri Acts as a Home Automation Remote Thanks to Raspberry Pi - Mobile Magazine</title>
+<meta name="description" content="Wish Siri could act as a home automation remote? It can thanks to Youtube user &quot;Elvis Impersonator&quot; and his SiriProxy-loaded Raspberry Pi."/>
+<link rel="canonical" href="http://www.mobilemag.com/2013/02/11/siri-raspberry-pi/" />
+<meta name="robots" content="noodp"/>
+<!-- / Yoast WordPress SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="Mobile Magazine &raquo; Siri Acts as a Home Automation Remote Thanks to Raspberry Pi Comments Feed" href="http://www.mobilemag.com/2013/02/11/siri-raspberry-pi/feed/" />
+<link rel='stylesheet' id='nrelate-style-common-0-03-0-css'  href='http://static.nrelate.com/common_wp/0.03.0/nrelate-panels-common.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='author-page-views-css'  href='http://www.mobilemag.com?viewing-page=145514&#038;ver=3.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='nrelate-style-default-0-03-0-css'  href='http://static.nrelate.com/common_wp/0.03.0/nrelate-panels-default.min.css' type='text/css' media='all' />
+<!--[if IE 6]>
+<link rel='stylesheet' id='nrelate-ie6-0-03-0-css'  href='http://static.nrelate.com/common_wp/0.03.0/ie6-panels.min.css' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://cdn11.mobilemag.com/wp-includes/js/jquery/jquery.js?ver=1.7.2'></script>
+<script type='text/javascript' src='http://www.mobilemag.com/wp-content/plugins/nrelate-related-content/admin/common_frontend.min.js'></script>
+<script type='text/javascript' src='http://cdn11.mobilemag.com/wp-includes/js/comment-reply.js?ver=3.4.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.mobilemag.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://cdn11.mobilemag.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.4.2" />
+<link rel='shortlink' href='http://www.mobilemag.com/?p=145514' />
+			
+			
+		<link rel="alternate" type="application/rss+xml" href="http://www.mobilemag.com/feed/" title="Mobile Magazine latest posts" />
+		<link rel="alternate" type="application/rss+xml" href="http://mobilemagazine.disqus.com/latest.rss" title="Mobile Magazine latest comments" />
+		<link rel="stylesheet" type="text/css" href="http://cdn11.mobilemag.com/wp-content/themes/m/custom.css" />
+		<link rel="pingback" href="http://www.mobilemag.com/xmlrpc.php" />
+						                <script src="http://cdn11.mobilemag.com/slickbox.js"></script>
+<script src="http://cdn11.mobilemag.com/wp-content/themes/m/jquery.bt.min.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+ <body class="single single-post postid-145514 single-format-standard">
+	
+	
+	<div class="container">
+		<div class="hd_w">
+			<div class="hd">
+			
+				<div class="logo">
+										<a href="http://www.mobilemag.com"><img src="http://mmi.circumventures.com/wp-content/themes/m/img/logo.png" alt="Gadgets, Smartphones, Android Tablets, iPhone, iPad and all the latest tech you&#039;d expect." /></a>
+				</div>
+				
+				
+			   <div class="ad_728x90">
+<script type="text/javascript">
+document.write('<script type="text/javascript" src="http://ads.saymedia.com/ai0168e90345e8970c0168e91c77f7970c.js?ord='+ Math.random() + '"></sc'+'ript>')
+</script>
+</div>  
+
+			</div>
+		</div>
+		<div class="menu_w">
+			<div class="menu">
+			<center>					<div class="menu-nav1"><table><tr><td><a class="menutxt" href="http://www.mobilemag.com">Home</a> <a class="menutxtr" href="http://www.mobilemag.com/category/reviews">Reviews</a>  <a class="menutxtg" href="http://www.mobilemag.com/tag/android/">Android</a>  <a class="menutxt" href="http://www.mobilemag.com/tag/iPhone/">iPhone</a>  <a class="menutxt" href="http://www.mobilemag.com/tag/iPad/">iPad</a>  <a class="menutxtg" href="http://www.greenitall.com">Green</a>  <a class="menutxt" href="http://www.mobilemag.com/tag/jailbreak/">Jailbreak</a>  <a  class="menutxt" href="/advertise">Advertise</a>  <a  class="menutxt" href="/tips">Tips</a>
+</td><td width="370">
+<form method="get" action="http://www.mobilemag.com" class="search_form" id="searchForm">
+	<input type="text" onfocus="if (this.value == 'search here') {this.value = '';};" value="search here" name="s" id="s" class="text" />	<input type="image" class="search_btn" value="submit" id="searchsubmit" alt="Search" src="http://cdn11.mobilemag.com/wp-content/themes/m/img/blank.gif" class="btn" align="middle" />
+</form></td></tr></table></div>
+		</center>	</div>
+		</div>
+
+<div class="featuredeck">
+<div id="special_categories">
+    <ul class='featured-row'>
+          <li class='slide'>
+                <a href="http://www.mobilemag.com/2012/12/27/modern-combat-4-review/"><img src="http://www.mobilemag.com/wp-content/themes/m/scripts/timthumb.php?src=http://www.mobilemag.com/wp-content/uploads/2012/12/modern_combat_4_Review-640x312.jpg&amp;w=199&amp;h=118&amp;zc=1&amp;q=100" alt="Modern Combat 4 Game Review" class='slide-image'><div class='slide-background'></div><div class='slide-title'>Modern Combat 4 Review</div></a>
+      </li>
+          <li class='slide'>
+                <a href="http://www.mobilemag.com/2012/12/19/mobile-magazines-12th-anniversary-giveaway/"><img src="http://www.mobilemag.com/wp-content/themes/m/scripts/timthumb.php?src=http://www.mobilemag.com/wp-content/uploads/2012/12/mm12year.png&amp;w=199&amp;h=118&amp;zc=1&amp;q=100" alt="Mobile Magazine Turns 12 Contest: Win the Nexus 4 and More! [UPDATE]" class='slide-image'><div class='slide-background'></div><div class='slide-title'>Win the Nexus 4</div></a>
+      </li>
+          <li class='slide'>
+                <a href="http://www.mobilemag.com/2012/12/19/baseball-superstars-2013-review/"><img src="http://www.mobilemag.com/wp-content/themes/m/scripts/timthumb.php?src=http://www.mobilemag.com/wp-content/uploads/2012/12/0021.jpg&amp;w=199&amp;h=118&amp;zc=1&amp;q=100" alt="Baseball Superstars 2013 Review" class='slide-image'><div class='slide-background'></div><div class='slide-title'>Baseball Superstars 2013</div></a>
+      </li>
+          <li class='slide'>
+                <a href="http://www.mobilemag.com/2012/12/14/12-awesome-last-minute-gadget-deals-youll-still-get-by-christmas/"><img src="http://www.mobilemag.com/wp-content/themes/m/scripts/timthumb.php?src=http://www.mobilemag.com/wp-content/uploads/2012/12/home-alone.jpg&amp;w=199&amp;h=118&amp;zc=1&amp;q=100" alt="12 Awesome Last Minute Gadget Deals You&#8217;ll Still Get by Christmas" class='slide-image'><div class='slide-background'></div><div class='slide-title'>Last Minute Gadget Gifts</div></a>
+      </li>
+          <li class='slide'>
+                <a href="http://www.mobilemag.com/2012/12/12/biggest-mobile-tech-innovations-2012/"><img src="http://www.mobilemag.com/wp-content/themes/m/scripts/timthumb.php?src=http://www.mobilemag.com/wp-content/uploads/2012/12/topinnovations.png&amp;w=199&amp;h=118&amp;zc=1&amp;q=100" alt="Top Mobile Technology Innovations of 2012" class='slide-image'><div class='slide-background'></div><div class='slide-title'>Mobile Tech Innovations of 2012</div></a>
+      </li>
+        </ul>
+  </div>
+<div class="menu-nav2line"></div>
+
+<div class='special-clearfix'></div>
+
+</div>
+<div class="ad_text_w">
+			<div class="ad_text">
+				<div class="social">
+						
+																								</div>
+				<div class="ad"></div>
+			</div>
+		</div>
+ <div class="ct_w">
+	<div class="ct">
+		<div class="ct_article">				
+<div class="block_6">
+		        			                <div class="post-145514 post type-post status-publish format-standard hentry category-apple-stuff category-computers category-technology tag-home-automation tag-raspberry-pi tag-siri" id="post-145514">
+<table><tr><td><p class="titlemain"><a href="http://www.mobilemag.com/2013/02/11/siri-raspberry-pi/">Siri Acts as a Home Automation Remote Thanks to Raspberry Pi</a> </p></td><td> <div class="commentcount">
+<center><a href="#comments"><img src="http://cdn11.mobilemag.com/wp-content/themes/m/img/blank.gif"><span class="dsq-postid" rel="145514 http://www.mobilemag.com/?p=145514"><b>0</b></span></a>
+</center></div></td></tr></table>
+          <script type="text/javascript">var cid= 145514;</script>
+
+
+<div class="title-clearfix">
+<div class="datesub"><em>Filed in:</em> <a href="/category/apple-stuff">Apple</a> , <a href="/category/computers">Computers</a> , <a href="/category/technology">Technology</a></div><br>
+<div class="titlesub">
+
+<div class="author">By <b><a href="http://www.mobilemag.com/author/grushpike/" title="Posts by Andrew Grush" rel="author">Andrew Grush</a></b>, February 11, 2013 @ 11:26am</div>
+<div class="sharelinks">
+<table>
+<tr>
+<td>
+<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+
+<script type="text/javascript">
+(function() {
+var s = document.createElement('SCRIPT'), s1 = document.getElementsByTagName('SCRIPT')[0];
+s.type = 'text/javascript';
+s.async = true;
+s.src = 'http://widgets.digg.com/buttons.js';
+s1.parentNode.insertBefore(s, s1);
+})();
+</script>
+</td><td><script src="http://www.stumbleupon.com/hostedbadge.php?s=1"></script></td>
+</td><td width="125">
+<!-- Place this tag where you want the +1 button to render. -->
+<div class="g-plusone" data-size="small" data-href="http://www.mobilemag.com/2013/02/11/siri-raspberry-pi/"></div>
+
+<!-- Place this tag after the last +1 button tag. -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</td><td>
+<iframe src="http://www.facebook.com/plugins/like.php?href=http://www.mobilemag.com/2013/02/11/siri-raspberry-pi/&amp;layout=button_count&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:21px; margin-left:15px; float:right; width:78px;" allowTransparency="true"></iframe>
+</td></tr></table>
+</div>
+</div>
+
+</div>
+<div class="cleararticle"></div>
+<div class="article">
+			<div class="text">
+							<p><p class="img"><img class="aligncenter size-full wp-image-145515" title="raspberryphone" src="http://cdn11.mobilemag.com/wp-content/uploads/2013/02/raspberryphone.jpg" alt="Siri" width="640" height="360" /></p></p>
+<p>In its current form, Siri can certainly be quite useful as a digital assistant, but what if you want something even more amazing out of Apple&#8217;s assistant, like the ability to control your smart house? That&#8217;s exactly what Youtube user “Elvis Impersonator” set out to do using his iPhone and a SiriProxy-loaded <a title="Raspberry  Pi Gets An App Store of its Own" href="http://www.mobilemag.com/2012/12/17/raspberry-pi-app-store/">Raspberry Pi</a>.</p>
+<p>The results are that he can now control the thermostat at his home, shut off and dim lights, open/close the garage and even change TV channels, all from Siri.</p>
+<p>Here&#8217;s a quote from the man behind this project:</p>
+<blockquote><p><em>I have been following the development of SiriProxy since its initial appearance in November 2011 and even got it installed and working on an Marvell SheevaPlug ARM based plug computer. I spent countless nights dreaming of the day I could use voice commands to control my home, but I was still under a long term contract on my existing iPhone. I already had been experimenting with IP2IR control in various forms, but the controller I use in the video seemed to offer the most features which the manufacturer added a REST API in March 2012.</em></p></blockquote>
+<p><iframe src="http://www.youtube.com/embed/PXmCiaRc9XU?feature=player_detailpage" frameborder="0" width="640" height="360"></iframe></p>
+<p>Wishing you could do something like this yourself? You can. All of this user&#8217;s SiriProxy plugins are open sourced and available <a href="https://github.com/elvisimprsntr">via his GitHub page</a>. Pretty cool stuff, wouldn&#8217;t you say?</p>
+<p>[ <a href="http://gizmodo.com/5982171/watch-siri-turn-into-a-home-automation-master-with-the-help-of-raspberry-pi">source</a> ]</p>
+<script type="text/javascript" src="http://www.mobilemag.com/wp-content/plugins/top-10-single/top-10-addcount.js.php?top_ten_id=145514"></script><script type="text/javascript" src="http://www.mobilemag.com/wp-content/plugins/top-10/top-10-addcount.js.php?top_ten_id=145514"></script><br />
+<iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fmobilemag&amp;width=640&amp;colorscheme=light&amp;show_faces=true&amp;border_color=63badf&amp;stream=false&amp;header=false&amp;height=255" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:640px; height:255px;" allowTransparency="true"></iframe>
+
+</div>
+</div>
+<div style="margin-bottom:10px;">
+</div>
+
+<div style="margin-bottom:16px;">
+<table width="640"  BORDER="1" BORDERCOLOR="#63badf"><tr><td>
+<p style="margin:5px;">Tags: <a href="http://www.mobilemag.com/tag/home-automation/" rel="tag">home automation</a>, <a href="http://www.mobilemag.com/tag/raspberry-pi/" rel="tag">Raspberry Pi</a>, <a href="http://www.mobilemag.com/tag/siri/" rel="tag">siri</a><br /></p>
+</td></tr></table>
+</div>
+
+<table><tr><td width="315" valign="top">
+<script type="text/javascript"><!--
+google_ad_client = "pub-3926910091050603";
+/* 300x250, created 5/24/11 */
+google_ad_slot = "8600596548";
+google_ad_width = 300;
+google_ad_height = 250;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</td><td valign="top"><img src="http://cdn11.mobilemag.com/wp-content/themes/m/img/related-articles.png">
+					
+					<script type="text/javascript">
+					//<![CDATA[
+					nRelate.domain = "www.mobilemag.com";
+					//]]>
+					</script>
+<div class="nr_clear"></div>	
+	<div id="nrelate_related_1" class="nrelate nrelate_related nrelate_default nr_90"></div>
+	<!--[if IE 6]>
+		<script type="text/javascript">jQuery('.nrelate_default').removeClass('nrelate_default');</script>
+	<![endif]-->
+	
+	<script type="text/javascript">
+	//<![CDATA[
+		var entity_decoded_nr_url = jQuery('<span/>').html("http://api.nrelate.com/rcw_wp/0.49.5/?tag=nrelate_related&keywords=Siri+Acts+as+a+Home+Automation+Remote+Thanks+to+Raspberry+Pi&domain=www.mobilemag.com&url=http%3A%2F%2Fwww.mobilemag.com%2F2013%2F02%2F11%2Fsiri-raspberry-pi%2F&nr_div_number=1").text();
+		nRelate.getNrelatePosts(entity_decoded_nr_url);
+	//]]>
+	</script>
+<div class="nr_clear"></div></td></tr></table>
+
+
+
+		<div class="comments">
+
+		<a name="comments"></a>
+		<h3>
+				<span class="dsq-postid" rel="145514 http://www.mobilemag.com/?p=145514"><b>0</b> comments</span><a href="#top" class="back">back to post</a>
+			</h3> 
+			
+<div id="disqus_thread">
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://www.mobilemag.com/2013/02/11/siri-raspberry-pi/';
+    var disqus_identifier = '145514 http://www.mobilemag.com/?p=145514';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'mobilemagazine';
+    var disqus_title = "Siri Acts as a Home Automation Remote Thanks to Raspberry Pi";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=145514';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+    var facebookXdReceiverPath = 'http://www.mobilemag.com/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/www.mobilemag.com\/2013\/02\/11\/siri-raspberry-pi\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+        dsq.src = 'http' + '://' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.73';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+		</div>
+	</div>
+			
+	<div class="footer">
+		
+</div>
+</div>
+		<div class="block_7">
+<script type="text/javascript">
+document.write('<script type="text/javascript" src="http://ads.saymedia.com/ai0168e90345e8970c01630326bc68970d.js?ord='+ Math.random() + '"></sc'+'ript>')
+</script>
+<center><a href="/advertise">Advertise Here</a></center>
+
+<div id="recentcomments" class="dsq-widget"><img src="http://cdn11.mobilemag.com/images/have-your-say.png"><script type="text/javascript" src="http://mobilemagazine.disqus.com/recent_comments_widget.js?num_items=3&hide_avatars=0&avatar_size=32&excerpt_length=200"></script></div>
+
+<br><div class="single_top10">
+<div id="tptnts_related_daily"><img src=/wp-content/themes/m/img/todays-top.png><table id="top10" valign="top"><tr>
+                    <td class="img2" valign="top">
+                    <a href="http://www.mobilemag.com/2013/02/09/curiosity-metal-object-mars/" rel="bookmark">
+                    <img src="/wp-content/themes/m/scripts/timthumb.php?src=http://www.mobilemag.com/wp-content/uploads/2013/02/original1.jpg&w=90&h=60&zc=1&q=100" alt="Curiosity Finds Metal-Like Object on Mars" title="Curiosity Finds Metal-Like Object on Mars" border="0" class="tptnts_thumb" />
+                    </a>
+                    </td><td class="title" valign="top"><div><a href="http://www.mobilemag.com/2013/02/09/curiosity-metal-object-mars/" rel="bookmark" class="title">Curiosity Finds Metal-Like Object on Mars</a></div></td></tr><tr><td class="spacer" colspan="2"/></tr><tr>
+                    <td class="img2" valign="top">
+                    <a href="http://www.mobilemag.com/2013/02/10/microsoft-surface-pro-launched/" rel="bookmark">
+                    <img src="/wp-content/themes/m/scripts/timthumb.php?src=http://www.mobilemag.com/wp-content/uploads/2013/02/surface-por-640x360.jpg&w=90&h=60&zc=1&q=100" alt="Microsoft Surface Pro Now on Retail in US and Canada" title="Microsoft Surface Pro Now on Retail in US and Canada" border="0" class="tptnts_thumb" />
+                    </a>
+                    </td><td class="title" valign="top"><div><a href="http://www.mobilemag.com/2013/02/10/microsoft-surface-pro-launched/" rel="bookmark" class="title">Microsoft Surface Pro Now on Retail in US and Canada</a></div></td></tr><tr><td class="spacer" colspan="2"/></tr><tr>
+                    <td class="img2" valign="top">
+                    <a href="http://www.mobilemag.com/2013/02/09/future-1999-and-beyond/" rel="bookmark">
+                    <img src="/wp-content/themes/m/scripts/timthumb.php?src=http://www.mobilemag.com/wp-content/uploads/2013/02/future.jpg&w=90&h=60&zc=1&q=100" alt="A Look at the &#8220;Future of 1999 and Beyond&#8221; From A 1960s Perspective" title="A Look at the &#8220;Future of 1999 and Beyond&#8221; From A 1960s Perspective" border="0" class="tptnts_thumb" />
+                    </a>
+                    </td><td class="title" valign="top"><div><a href="http://www.mobilemag.com/2013/02/09/future-1999-and-beyond/" rel="bookmark" class="title">A Look at the &#8220;Future of 1999 and Beyond&#8221; From A 1960s Perspective</a></div></td></tr><tr><td class="spacer" colspan="2"/></tr><tr>
+                    <td class="img2" valign="top">
+                    <a href="http://www.mobilemag.com/2013/01/15/maximizing-your-samsung-galaxy-s3-improving-battery-life/" rel="bookmark">
+                    <img src="/wp-content/themes/m/scripts/timthumb.php?src=http://www.mobilemag.com/wp-content/uploads/2013/01/galaxy-s31.jpg&w=90&h=60&zc=1&q=100" alt="Maximizing Your Samsung Galaxy S3: Improving Battery Life" title="Maximizing Your Samsung Galaxy S3: Improving Battery Life" border="0" class="tptnts_thumb" />
+                    </a>
+                    </td><td class="title" valign="top"><div><a href="http://www.mobilemag.com/2013/01/15/maximizing-your-samsung-galaxy-s3-improving-battery-life/" rel="bookmark" class="title">Maximizing Your Samsung Galaxy S3: Improving Battery Life</a></div></td></tr><tr><td class="spacer" colspan="2"/></tr><tr>
+                    <td class="img2" valign="top">
+                    <a href="http://www.mobilemag.com/2013/02/10/amazon-kindle-fire-hd-ipad-ad/" rel="bookmark">
+                    <img src="/wp-content/themes/m/scripts/timthumb.php?src=http://www.mobilemag.com/wp-content/uploads/2013/02/kindle-fire-hd-89-review-image.jpg&w=90&h=60&zc=1&q=100" alt="Amazon Kindle Fire HD Ad Puts iPad In Its Place" title="Amazon Kindle Fire HD Ad Puts iPad In Its Place" border="0" class="tptnts_thumb" />
+                    </a>
+                    </td><td class="title" valign="top"><div><a href="http://www.mobilemag.com/2013/02/10/amazon-kindle-fire-hd-ipad-ad/" rel="bookmark" class="title">Amazon Kindle Fire HD Ad Puts iPad In Its Place</a></div></td></tr><tr><td class="spacer" colspan="2"/></tr></table></div></div>
+<div style="margin:5px 0 15px 0;">
+<div class="suwrap">
+<div class="sufeed">
+<form action="http://feedburner.google.com/fb/a/mailverify" target="_blank"><fieldset style="border:0;margin-bottom:5px;"> <label><p style="margin-bottom:7px;">Get the Mobile Magazine daily newsletter now!</p></label> <input type="hidden" name="uri" value="mobilemag"> <input type="hidden" name="loc" value="en_US"><input type="text" class="text" name="email" value="Email@Address" onblur="if (this.value == this.defaultValue || this.value == '') {this.value = this.defaultValue;this.style.color='#d9d9d9';}" onfocus="if (this.value == this.defaultValue) {this.value = '';this.style.color='#000';}"> <input type="submit"  value="Get Updates!" class="submit feedburner-sign-up"></fieldset></form>
+
+</div>
+
+<div style="background:#ffffff;">
+<table width="100" height="75"><tr><td><div class="sidefb"><iframe src="http://www.facebook.com/plugins/likebox.php?href=http://www.facebook.com/mobilemag&amp;width=200&amp;colorscheme=light&amp;connections=0&amp;stream=false&amp;header=true&amp;height=62" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:62px;" allowTransparency="true"></iframe></div><p class="more_subscribe_options">
+</div></td><td>
+<div class="siderss"><center>
+<a href="/feed"><img class="rss-icon" src="http://cdn11.mobilemag.com/wp-content/themes/m/img/blank.gif" border="0"></a><a href="/feed">RSS</a><br>
+</div></center></td>
+<td>
+<center><a href="http://www.twitter.com/mobilemag"><img class="twitter-icon" src="http://cdn11.mobilemag.com/wp-content/themes/m/img/blank.gif" border="0"></a><br><a href="http://www.twitter.com/mobilemag">Twitter</a>
+</td>
+</tr></table><div style="align:right;"></div>
+</div>
+</div>
+</div>
+
+<div style="margin:10px 0 30px 0;">
+        <img src="http://cdn11.mobilemag.com/wp-content/themes/m/img/latest-news.png">
+	        <ul id="news">
+
+		        				        					        <li>
+						        <a href="http://www.mobilemag.com/2013/02/11/siri-raspberry-pi/" rel="bookmark" title="Siri Acts as a Home Automation Remote Thanks to Raspberry Pi">
+							        <div class="image"><img style="border:#979797 solid 1px;" src="/wp-content/themes/m/scripts/timthumb.php?src=http://www.mobilemag.com/wp-content/uploads/2013/02/raspberryphone.jpg&amp;w=90&amp;h=60&amp;zc=1&amp;q=100" alt="Siri Acts as a Home Automation Remote Thanks to Raspberry Pi"/></div></a>
+								        <div class="heading"><a href="http://www.mobilemag.com/2013/02/11/siri-raspberry-pi/" rel="bookmark" title="Siri Acts as a Home Automation Remote Thanks to Raspberry Pi"> Siri Acts as a Home Automation Remote Thanks to Raspberry Pi </a><p class="date" >2 hours, 29 minutes ago.  </p></div>
+
+									        </li>
+										        				        					        <li>
+						        <a href="http://www.mobilemag.com/2013/02/11/susan-crawford-internet-service/" rel="bookmark" title="Susan Crawford: People in U.S. Pay Too Much for Internet Service">
+							        <div class="image"><img style="border:#979797 solid 1px;" src="/wp-content/themes/m/scripts/timthumb.php?src=http://www.mobilemag.com/wp-content/uploads/2013/02/susancrawford.jpg&amp;w=90&amp;h=60&amp;zc=1&amp;q=100" alt="Susan Crawford: People in U.S. Pay Too Much for Internet Service"/></div></a>
+								        <div class="heading"><a href="http://www.mobilemag.com/2013/02/11/susan-crawford-internet-service/" rel="bookmark" title="Susan Crawford: People in U.S. Pay Too Much for Internet Service"> Susan Crawford: People in U.S. Pay Too Much for Internet Service </a><p class="date" >2 hours, 43 minutes ago.  </p></div>
+
+									        </li>
+										        				        					        <li>
+						        <a href="http://www.mobilemag.com/2013/02/11/windows-store-merging/" rel="bookmark" title="Could Windows Store and Windows Phone Store Be Merging Soon?">
+							        <div class="image"><img style="border:#979797 solid 1px;" src="/wp-content/themes/m/scripts/timthumb.php?src=http://www.mobilemag.com/wp-content/uploads/2013/02/winstore.jpg&amp;w=90&amp;h=60&amp;zc=1&amp;q=100" alt="Could Windows Store and Windows Phone Store Be Merging Soon?"/></div></a>
+								        <div class="heading"><a href="http://www.mobilemag.com/2013/02/11/windows-store-merging/" rel="bookmark" title="Could Windows Store and Windows Phone Store Be Merging Soon?"> Could Windows Store and Windows Phone Store Be Merging Soon? </a><p class="date" >2 hours, 56 minutes ago.  </p></div>
+
+									        </li>
+										        				        					        <li>
+						        <a href="http://www.mobilemag.com/2013/02/11/home-depot-ditches-blackberry/" rel="bookmark" title="Home Depot Ditches BlackBerry For iPhone Prior to Z10 Release">
+							        <div class="image"><img style="border:#979797 solid 1px;" src="/wp-content/themes/m/scripts/timthumb.php?src=http://www.mobilemag.com/wp-content/uploads/2013/02/blackberry_10.jpg&amp;w=90&amp;h=60&amp;zc=1&amp;q=100" alt="Home Depot Ditches BlackBerry For iPhone Prior to Z10 Release"/></div></a>
+								        <div class="heading"><a href="http://www.mobilemag.com/2013/02/11/home-depot-ditches-blackberry/" rel="bookmark" title="Home Depot Ditches BlackBerry For iPhone Prior to Z10 Release"> Home Depot Ditches BlackBerry For iPhone Prior to Z10 Release </a><p class="date" >6 hours, 57 minutes ago.  </p></div>
+
+									        </li>
+										        				        					        <li>
+						        <a href="http://www.mobilemag.com/2013/02/11/injection-free-vaccination/" rel="bookmark" title="Injection-Free Vaccination Goes After HIV and Malaria Without the Needle">
+							        <div class="image"><img style="border:#979797 solid 1px;" src="/wp-content/themes/m/scripts/timthumb.php?src=http://www.mobilemag.com/wp-content/uploads/2013/02/injection-free.png&amp;w=90&amp;h=60&amp;zc=1&amp;q=100" alt="Injection-Free Vaccination Goes After HIV and Malaria Without the Needle"/></div></a>
+								        <div class="heading"><a href="http://www.mobilemag.com/2013/02/11/injection-free-vaccination/" rel="bookmark" title="Injection-Free Vaccination Goes After HIV and Malaria Without the Needle"> Injection-Free Vaccination Goes After HIV and Malaria Without the Needle </a><p class="date" >7 hours, 30 minutes ago.  </p></div>
+
+									        </li>
+										        </ul>
+											</div>
+
+
+</div>
+
+
+		<div class="ct_c3">
+	
+	
+		
+	
+	
+	
+		
+</div>
+	</div>
+</div>
+ <div class="clearft"></div>
+</div>
+<div class="ft_w">
+	<div class="t"></div>
+	<div class="c">
+		<table>
+			<tr>
+<td class="c1">
+ <h2>Mobile Magazine Team</h2>
+<table><tbody><tr>
+<td width="84" height="100">
+<div class="imgprofile">
+<a href="/author/fpilato/">
+<img src="http://cdn11.mobilemag.com/images/editor-fp.jpg" alt="Fabrizio Pilato">
+<span class="desc">
+&nbsp;Fabrizio Pilato
+</span></a></div>
+</td>
+<td width="84">
+<div class="imgprofile">
+<a href="/author/grushpike/">
+<img src="http://cdn11.mobilemag.com/images/editor-grush.jpg" alt="Andrew Grush">
+<span class="desc">
+&nbsp;Andrew Grush
+</span></a></div>
+</td>
+
+<td width="84">
+<div class="imgprofile">
+<a href="/author/mkwan/">
+<img src="http://cdn11.mobilemag.com/images/editor-mk.jpg" alt="Michael Kwan">
+<span class="desc">
+&nbsp;Michael Kwan
+</span></a></div>
+</td>
+
+<td width="84">
+<div class="imgprofile">
+<a href="/author/olliegreen/">
+<img src="http://cdn11.mobilemag.com/images/editor-ollie.jpg" alt="Ollie Green">
+<span class="desc">
+&nbsp;Ollie Green
+</span></a></div>
+</td>
+
+
+</tr><tr>
+<td></td>
+<td width="84">
+<div class="imgprofile">
+<a href="/author/bwidmer/">
+<img src="http://cdn11.mobilemag.com/images/editor-brett.jpg" alt="Brett Widmer">
+<span class="desc">
+&nbsp;Brett Widmer
+</td>
+
+<td width="84">
+<div class="imgprofile">
+<a href="/author/andi/">
+<img src="http://cdn11.mobilemag.com/images/editor-sikes.jpg" alt="Andi Sykes">
+<span class="desc">
+&nbsp;Andi Sykes
+</td>
+
+<td></td>
+</tr></tbody></table>
+
+
+				</td>
+				<td class="spacer_1"></td>
+				<td class="c2">
+					<h2>Social</h2>
+				                                        <ul>                                        <li><img src="/images/ico-rss.png" align-"absmiddle"> <a href="http://www.mobilem
+									ag.com/feed/">RSS Feed</a></li><li><img src="/images/ico-email.png" align="absmiddle"> <a href="http://feedburner.google.com/fb/a/mailverify?uri=mobilemag&loc=en_US">E-Mail Newsletter</a>
+
+									<li><img src="/images/facebook.png"align="absmiddle"> <a href="http://www.facebook.com/mobilemag">Facebook</a></li>
+									<li><img src="/images/twitter.png" align="absmiddle"> <a href="http://www.twitter.com/mobilemag">Twitter</a></li>
+
+
+									</ul>
+				
+				</td>
+				<td class="spacer_2"></td>
+				<td class="c3">
+				<h2>Important Links & Friends</h2>
+<ul>
+<li>Infrastructure as a Service by <a href="http://www.cloud2x.com">cloud2x</a></li>
+<li><a href="http://www.gadgetreview.com">Gadget Reviews</a></li>
+</ul>
+				</td>
+			</tr>
+		</table>
+		<div class="ft">
+			<div>
+				 
+				 
+					<a target="_blank" href=""></a>
+			</div>
+		<span>                © 2010 <a style="background: none; color: #1B1B1B; margin-left: 0px; padding-left: 0px;" href="http://www.mobilemag.com">Mobile Magazine</a> <u>All rights reserved.</u> 2 queries in 0.057 seconds.   <a href="http://www.mobilemag.com">Home</a>  <a href="/advertise">Advertise</a>  <a href="/about">About</a>  <a href="/tips/">Contact</a>  <a href="/tips/">Tips</a></span>
+
+		</div>
+	</div>
+</div>
+
+    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'mobilemagazine';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+                        s.src = 'http' + '://' + 'disqus.com/forums/' + disqus_shortname + '/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201307'></script>
+
+	<script src="http://stats.wordpress.com/e-201307.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:1.7',blog:'10582901',post:'145514'});
+	var load_cmc = function(){linktracker_init(10582901,145514,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script>
+
+</body>
+</html>
+
+
+
+
+<!-- Kontera(TM);-->
+<script type='text/javascript'>
+var dc_AdLinkColor = '#009600' ; 
+var dc_PublisherID = 538 ; 
+ </script> <script type='text/javascript' src='http://kona.kontera.com/javascript/lib/KonaLibInline.js'> </script>
+<!-- end Kontera(TM) --> 
+
+<script type="text/javascript">
+document.write('<script type="text/javascript" src="http://ads.saymedia.com/ai0168e90345e8970c0167641b9cd5970b.js?ord='+ Math.random() + '"></sc'+'ript>')
+</script>
+<script type="text/javascript" src="http://s.skimresources.com/js/42016X1092995.skimlinks.js"></script>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-135167-1']);
+  _gaq.push(['_setDomainName', 'mobilemag.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</body>
+</html>
+
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using apc
+Database Caching 6/8 queries in 0.001 seconds using apc
+Object Caching 896/899 objects using apc
+Content Delivery Network via cdn11.mobilemag.com
+
+Served from: www.mobilemag.com @ 2013-02-11 12:56:01 -->

@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head>
+	<title>Buy Ads | PublicityClerks</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="keywords" content="buy ads, sell ads, online advertising, advertising marketplace, banner advertising, sponsored tweets, advertising" />
+	<meta name="description" content="Buy &amp; Sell Ads through our online marketplace with the best websites online." />
+	<meta http-equiv="Content-Language" content="EN" />
+	<meta name="distribution" content="Global" />
+	<meta name="robots" content="FOLLOW,INDEX" />
+	<meta name="DC.Title" content="Buy Ads | PublicityClerks" />
+        <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+	<script src="include/js/jquery-1.4.2.min.js"></script>
+	<script type='text/javascript'>
+		function editResults(def) {
+			$('.searchResults').html('<p class=\'loader\'><img src=\'images/loader.gif\' / alt="loader"></p>');
+			var url = def;
+			var url = url + "&categories=";
+			// Parse Categories
+			$('input[name=chCat[]]').each(function() {    
+				if (this.checked == true) {
+					url = url + this.value + ",";
+				}
+			});
+			url = url + "&sizes=";
+			// Parse Sizes
+			$('input[name=chSize[]]').each(function() {    
+				if (this.checked == true) {
+					url = url + this.value + ",";
+				}
+			});
+			url = url + "&prices=";
+			// Parse Prices
+			$('input[name=chPrice[]]').each(function() {    
+				if (this.checked == true) {
+					url = url + this.value + ",";
+				}
+			});
+			$('.searchResults').load('editresults.php'+url);
+			$('.pageLinks').live("click", function() {
+				var page = this.title; 
+				editResults("?page="+page);
+			});
+		}
+		$(document).ready(function(){
+			editResults("?page=1");
+			// Check All Categories
+			$('input[name=chCat[0]]').click(function() {
+				check_status = $('input[name=chCat[0]]').attr("checked");
+				$('input[name=chCat[]]').each(function() {    
+					this.checked = check_status;    
+				});
+			});
+			// Check All Sizes
+			$('input[name=chSize[0]]').click(function() {
+				check_status = $('input[name=chSize[0]]').attr("checked");
+				$('input[name=chSize[]]').each(function() {    
+					this.checked = check_status;    
+				});
+			});
+			// Edit Results
+			$('.checkbox1').change(function() {
+				editResults("?page=1");
+			});
+			// Change Type
+		   $(".sort").change(function() {				
+				editResults("?page=1&sort="+$(this).val());
+		   });			
+		});
+	</script>
+</head>
+
+<body id="buyads">
+
+<div id="whole">
+
+	
+<div class="headtop">
+</div>
+<div class="pchead">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36914008-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+        <div class="wrap">
+        	<div class="logo-holder left">
+	        	
+					<a href="http://www.publicityclerks.com"><img class="logo left" src="../images/logo.png" alt="Buy & Sell Ads"></a>
+				
+				
+				<div class="clr"></div>
+			</div>
+			
+			<div class="right wswrap">
+				
+	            <div class="hholder right">
+	            
+	            					
+					
+				
+	            
+	            <a class="big-btn create-account left" href="../register.php">Create Account</a>
+	            <a class="big-btn signin left" href="javascript:void(0);">Sign In</a>
+	            <div class="login-box right"> 
+	            	<form method="post" action="http://www.publicityclerks.com/index.php">
+							<input type="submit"  tabindex="3" value="" style="display: none;" />
+							<input type="hidden" name="login" value="yes" />	
+							Username <br />					
+							<input type="text" name="login_username" tabindex="1" /><br />
+							Password <br />
+							<input type="password" name="login_password" tabindex="2" />
+							
+							<br />
+							<br />
+							<a href="javascript: void(0);" onclick="$(this).parent().submit();" title="" class="blue-btn">Login</a>
+						</form>
+	            </div>
+	            
+	            	          
+	            </div>
+	            
+	            
+	            
+	            <div class="clr"></div>
+	            
+            </div>
+            <div class="clr"></div>
+        </div><!--wrap-->
+
+    </div><!--top-line -->
+    	
+		
+		
+		
+		
+        <div class="wrap">
+        <div class="nav-line">
+
+        
+
+            <ul class="main-list">
+                        <li><a href="http://www.publicityclerks.com/" title="Home">Home</a></li>
+			<li><a href="http://www.publicityclerks.com/" title="Buy Ads">Buy Ads</a></li>
+                        <li><a href="http://www.publicityclerks.com/register.php" title="Sell Ads">Sell Ads</a></li>
+                        <li><a href="http://www.publicityclerks.com/soon.php" title="Sponsored Tweets">Sponsored Tweets</a></li>
+        	
+		       
+
+            </ul>
+      
+		<ul class="main-listr">
+		
+	
+</ul>
+			
+			
+        </div><!--wrap-->
+		
+    </div><!--top-line -->
+
+    <div class="clr"></div>
+
+
+<div class="clr"></div>
+	
+	
+	
+	<div id="main">
+	
+		<div id="main2">
+		
+		 <div id="search">
+		  
+		  
+		  
+		     <div id="searchb">
+			 
+			 <h5 style="margin-top: 5px !important">Sort By</h5>
+				
+			<div id='sortby'><select class="sort">
+			<option name="" value='0'>Newest</option>
+			<option name="" value='1'>Impressions</option>
+			<option name="" value='2'>Alphabetically</option>
+			<option name="" value='3'>Price High-Low</option>
+                        <option name="" value='4'>Price Low-High</option>
+			</select></div><br /><br />
+			<h5>By Category</h5>
+			<p class='sidecheck'><input class='checkbox1' type='checkbox' name='chCat[]' value='1'><p class='check2'>Art & Entertainment</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chCat[]' value='2'><p class='check2'>Automotive</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chCat[]' value='3'><p class='check2'>Business & Marketing</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chCat[]' value='6'><p class='check2'>Design & Development</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chCat[]' value='7'><p class='check2'>Gaming</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chCat[]' value='8'><p class='check2'>Humor</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chCat[]' value='9'><p class='check2'>Media & Technology</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chCat[]' value='16'><p class='check2'>Other</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chCat[]' value='17'><p class='check2'>Social Networking</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chCat[]' value='11'><p class='check2'>Sports</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chCat[]' value='10'><p class='check2'>Style & Beauty</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chCat[]' value='12'><p class='check2'>Travel</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chCat[]' value='15'><p class='check2'>Webmaster & SEO</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chCat[]' value='13'><p class='check2'>Weddings</p></p><div id='clear'></div>		     </div>
+			 
+			 
+			 
+			 
+			<div id="searchb">
+			<h5>By Ad Sizes</h5>
+			<p class='sidecheck'><input class='checkbox1' type='checkbox' name='chSize[]' value='14'><p class='check2'>120 x 600</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chSize[]' value='7'><p class='check2'>120 x 90</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chSize[]' value='1'><p class='check2'>125 x 125</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chSize[]' value='8'><p class='check2'>130 x 100</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chSize[]' value='12'><p class='check2'>160 x 600</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chSize[]' value='2'><p class='check2'>180 x 150</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chSize[]' value='10'><p class='check2'>200 x 200</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chSize[]' value='3'><p class='check2'>200 x 125</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chSize[]' value='9'><p class='check2'>250 x 250</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chSize[]' value='4'><p class='check2'>260 x 260</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chSize[]' value='5'><p class='check2'>300 x 250</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chSize[]' value='11'><p class='check2'>336 x 280</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chSize[]' value='13'><p class='check2'>468 x 60</p></p><div id='clear'></div><p class='sidecheck'><input class='checkbox1' type='checkbox' name='chSize[]' value='6'><p class='check2'>728 x 90</p></p><div id='clear'></div>			
+		    <p class="sidecheck"><input class="checkbox1" type="checkbox" name="chSize[]" value="0"><p class='check2'>Custom Sizes</p></p><div id="clear"></div>
+			</div>
+			
+			
+			
+			
+			<div id="searchb">
+			<h5>By Price</h5>
+			<p class="sidecheck"><input class="checkbox1" type="checkbox" name="chPrice[]" value="5-25"><p class='check2'>$5 - $25</p></p><div id="clear"></div>
+			<p class="sidecheck"><input class="checkbox1" type="checkbox" name="chPrice[]" value="25-50"><p class='check2'>$25 - $50</p></p><div id="clear"></div>
+			<p class="sidecheck"><input class="checkbox1" type="checkbox" name="chPrice[]" value="50-100"><p class='check2'>$50 - $100</p></p><div id="clear"></div>
+			<p class="sidecheck"><input class="checkbox1" type="checkbox" name="chPrice[]" value="100-250"><p class='check2'>$100 - $250</p></p><div id="clear"></div>
+			<p class="sidecheck"><input class="checkbox1" type="checkbox" name="chPrice[]" value="250-500"><p class='check2'>$250 - $500</p></p><div id="clear"></div>
+			<p class="sidecheck"><input class="checkbox1" type="checkbox" name="chPrice[]" value="500"><p class='check2'>$500 +</p></p><div id="clear"></div>
+			
+			</div>
+			
+			
+			
+			
+			
+			
+			
+				
+			<div id="clear"></div>
+			
+			</div>
+			
+			<div id="search2">
+			<div class="welcomeblock">Welcome to PublictyClerks, buy & sell ads in our marketplace with the best websites online quick and easy! We allow you to purchase ads directly from the publisher with no hassle at all! As a publisher, our process makes it simple for you to start making money from your website. Are you ready to get started? <a  href="http://www.publicityclerks.com/register.php">Sign up now!</a></div>
+				<div id="line3" class="adlisttop">Browse Ad Properties</div>
+				
+				<div class='searchResults'>
+				
+				</div>
+				
+			</div>
+			
+			<div id="clear"></div>
+							
+		</div>
+		
+	</div>
+	
+	<div class="wrap">
+<div class="copyright2">
+		
+           <p class="left"><a href="http://www.publicityclerks.com">Home</a> / <a href="http://blog.publicityclerks.com">Blog</a> / <a href="http://www.publicityclerks.com/user/help">Faq & Support</a> / <a href="http://www.publicityclerks.com/user/terms">Terms & Conditions</a></p>
+			
+			
+            
+           
+		      
+    </div>
+
+	
+    <div class="copyright">
+		
+           <p class="right">Copyright &copy; 2012 PublicityClerks.com. All Rights Reserved.<br>Get our latest news on our <a href="http://twitter.com/PublicityClerks"><strong>Twitter</strong></a> or <a href="http://facebook.com/PublicityClerks">Facebook</a></p>
+			
+			
+                  
+		      
+    </div>
+
+</div>
+
+
+<script type="text/javascript"> 
+	$(document).ready(function() {
+		 var position = '';
+		    $(".signin").click(function(e) {          
+			  e.preventDefault();
+			  if(!$(this).hasClass('active')) {
+			   position = $(".signin").css('position');
+			         $(".login-box").toggle();
+			   $(".signin").toggleClass("active");
+			   $(".signin").css({'z-index':9999, 'position':'relative'});
+			  }
+
+			  return false;
+		    });
+		 
+		 $(".login-box").mouseup(function() {
+		  return false;
+		 });
+		 $(document).mouseup(function(e) {
+		  if($(e.target).parent("a.signin").length==0) {
+		   $(".signin").removeClass("active");
+		   $(".login-box").hide();
+		   $(this).css('z-index','').css('position',position);
+		  }
+		 });   
+		 
+		});
+	</script>
+	
+	
+
+	<style type="text/css" media="screen, projection">
+  #help_tab {
+		/*border: solid 1px;*/
+		cursor: pointer;
+		height: 108px;
+		overflow: hidden;
+		position: fixed;
+		text-indent: -5000px;
+		top: 23%;
+		width: 45px;
+		z-index: 10000;
+	}
+	.HelpTabRight {
+		right: 0;
+		background-position: left 0;
+	}
+	
+	.HelpTabLeft {
+		left: 0;
+		background-position: right 0;
+	}
+</style>
+
+	
+</div>
+	
+</body>
+</html>

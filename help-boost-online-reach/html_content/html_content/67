@@ -1,0 +1,1858 @@
+<!DOCTYPE HTML><!--[if lt IE 7 ]><html class="ie6" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"  ng-app="cnapp"><![endif]-->
+<!--[if IE 7 ]><html class="ie7" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"  ng-app="cnapp"><![endif]-->
+<!--[if IE 8 ]><html class="ie8" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"  ng-app="cnapp"><![endif]-->
+<!--[if IE 9 ]><html class="ie9" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"  ng-app="cnapp"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"  ng-app="cnapp"><!--<![endif]-->
+  <head>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/etc/designs/vanityfair/favicon.ico"/>
+        <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="/etc/designs/vanityfair/favicon.ico"/> <link rel="stylesheet" href="/etc/designs/vanityfair/styles/global-min.155-1.css" type="text/css">
+<link rel="stylesheet" media="print" href="/etc/designs/vanityfair/styles/print.css"/> 
+
+
+
+<!--
+
+-->
+
+
+
+
+
+<script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
+<script type="text/javascript" src="/etc/designs/vanityfair/js/groupings/top.155-1.js"></script>
+<script type="text/javascript" src="/etc/designs/foundation/js/libraries/cn.external/angular/source/angular.min.js"></script>
+
+<script type="text/javascript">
+
+    CN.site.init({
+        env             : 'PROD',
+        code            : 'VYF',
+        title           : '',
+        tld             : 'vanityfair.com',
+        name            : 'vanityfair',
+        siteRoot        : 'vanityfair',
+        allowedDomains  : 'www.vanityfair.com',
+        pageId          : '2000000001071242',
+        userServiceUrl  : 'http://user-service.condenast.com',
+        userServiceKey  : 'yKAT1T7GGJNO6WQBd02KgmQQH7I=',
+        ecomUrl         : 'https://subscribe.vanityfair.com/api/circ/xml/Transaction'
+    });
+
+    CN.site.livefyre = 'true';
+    //sets shorten img url config for JS
+    CN.config.set({'shortenimgurl':true});
+
+    // Adds livefyre to the CN Namespace
+    CN.livefyre = CN.livefyre || {};
+
+    if(CN.site.livefyre != "true") {
+        CN.pluck.config.serverUrl = "http://sitelife.vanityfair.com/ver1.0/Direct/Process";
+        CN.pluck.config.photoUrl = "http://sitelife.vanityfair.com/ver1.0/Photo/Upload";
+        CN.pluck.config.siteUrl = "http://www.vanityfair.com/";
+        CN.pluck.config.hostUrl = "http://sitelife.vanityfair.com/ver1.0";
+        CN.pluck.config.mostpopularEntries = 5;
+        CN.pluck.config.domain = CN.url.domain();
+
+        if (typeof PluckSDK !== "undefined" && PluckSDK.SetEnv) {
+            PluckSDK.SetEnv(CN.pluck.config.hostUrl);
+        }
+
+        jQuery.noConflict();
+
+        CN.config.set({
+            reg     : {
+                urls : {
+                    login:    "/user/login",
+                    logout:   "/user/logout",
+                    reg  :    "/user/registration",
+                    profile : "/user/update",
+                    base :    "/"
+                }
+            },
+            pluckApps : {
+                swapCountDisplay   : false,
+                disableFriends     : true,
+                disableMiniPersona : true,
+                clickableAvatar    : false,
+                hideAbused         : true,
+                countComponent     : true,
+                personaSetup       : true,
+                useSlauth          : false,
+                useOmniture        : true,
+                disablePersonaLink : false
+            }
+        });
+    } else {
+        CN.config.set({
+            reg     : {
+                urls : {
+                    login:    "/user/login",
+                    logout:   "/user/logout",
+                    reg  :    "/user/registration",
+                    profile : "/user/update",
+                    base :    "/"
+                }
+            },
+            pluckApps : {
+                swapCountDisplay   : false,
+                disableFriends     : true,
+                disableMiniPersona : true,
+                clickableAvatar    : false,
+                hideAbused         : true,
+                countComponent     : false,
+                personaSetup       : true,
+                useSlauth          : false,
+                useOmniture        : false,
+                disablePersonaLink : true
+            }
+        });
+
+
+
+       if (typeof CN.livefyre === "undefined") {
+           CN.livefyre = {};
+       }
+
+       CN.livefyre.configOptions = {
+               network             :   "vanityfair.fyre.co",
+               userToken           :   'eyJhbGciOiAiSFMyNTYiLCAidHlwIjogIkpXVCJ9.eyJkb21haW4iOiAidmFuaXR5ZmFpci5meXJlLmNvIiwgImV4cGlyZXMiOiAxMzY4NjUxMTc3LjQ1MDc3NSwgInVzZXJfaWQiOiAic3lzdGVtIn0.zXpXLSiUKF0FovWmPdOt2kb-ReKXLdl-8MnzqBfUc5w',
+               lfCookieName        :   "lt",
+               mostpopularEntries  :   "5",
+               mostpopularAge      :   "15",
+               trendingServer      :   "http://bootstrap.vanityfair.fyre.co/api/v3.0/hottest/?site=",
+               moderatorFlagText   :   "Vanity Fair"
+       };
+
+       CN.livefyre.trendingUrl = "http://bootstrap.vanityfair.fyre.co/api/v3.0/hottest/?site=320166";
+       CN.livefyre.mostCommentedEntries = "5";
+    }
+
+
+
+    </script>
+
+<script type="text/javascript">
+        CN.livefyre.configOptions.pageConfig = {"siteId":"320166","el":"livefyre","collectionMeta":"eyJhbGciOiJIUzI1NiJ9.eyJ0YWdzIjoiZmFzaGlvbiwgc3R5bGUsIHN0eWxlLCBwYXJ0aWVzLCBwYXJ0aWVzLCAiLCJ0aXRsZSI6IldXRCYjODIxNztzIEZhYnVsb3VzIDEwMHRoIEZldGVkIFdpdGggQmVsbGluaXMgYW5kIEJlYXV0aWVzIiwiY2hlY2tzdW0iOiIyNTNkMWFmOWMyNTYzMDI2YTMzNmE4NzEwYTg4ZjVmZSIsImFydGljbGVJZCI6InZhbml0eWZhaXJfMjAwMDAwMDAwMTA3MTI0MiIsInVybCI6Imh0dHA6Ly93d3cudmFuaXR5ZmFpci5jb20vY29udGVudC92YW5pdHlmYWlyL29ubGluZS9kYWlseS8yMDEwLzExL3d3ZHMtZmFidWxvdXMtMTAwdGgtZmV0ZWQtd2l0aC1iZWxsaW5pcy1hbmQtYmVhdXRpZXMuaHRtbCJ9.o4n1xnDq9WEF07VlNQPv8l6ebx0rqycLvFvI1Z6UakA","checksum":"253d1af9c2563026a336a8710a88f5fe","articleId":"vanityfair_2000000001071242"};
+        CN.labjsLivefyre = $LAB.script('//zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js').script('//zor.livefyre.com/wjs/v1.0/javascripts/CommentCount.js')</script>
+<script type="text/javascript">
+    var _ghearst_vars = (function() {
+        var metaKeyWords = '', metaCollection;
+        metaCollection = document.getElementsByTagName('meta');
+        for (i = 0; i < metaCollection.length; i++) {
+            nameAttribute = metaCollection[i].name.search(/keywords/);
+            if (nameAttribute != -1) {
+                metaKeyWords = metaCollection[i].content;
+                metaKeyWords = metaKeyWords.replace(/,/g, '%2C'); // to replace ,
+                metaKeyWords = metaKeyWords.replace(/ /g, ''); // to replace space
+            }
+        }
+        if ( (navigator.userAgent.match(/iPad/i) !== null) && (CN.cookie.get('ipadTakeover') !== 'true') && 'null' !== 'null') {
+            positionList = 'AMS_VYF_GLOBAL_NAVBAR%2CAMS_VYF_GLOBAL_NAVBAR_ROLLOVER%2CAMS_VYF_MAGAZINE_SUBNAV%2CAMS_VYF_GLOBAL_HEADER%2CAMS_VYF_GLOBAL_HEADERCALLOUT%2CAMS_VYF_GLOBAL_ZRAIL%2CAMS_VYF_GLOBAL_RIGHTRAIL_A%2CAMS_VYF_POPUP_ENTRY%2CAMS_VYF_POPUP_EXIT%2CAMS_VYF_SITE_FOOTER_SUBSCRIBE%2CAMS_VYF_GLOBAL_RIGHTRAIL_MAGAZINE%2CAMS_VYF_GLOBAL_SLIDESHOW%2CAMS_VYF_POPUP_FLOATINGAD%2CAMS_VYF_LITEREG_SUBSCRIBE' + '%2Cnull';
+        } else {
+            positionList = 'AMS_VYF_GLOBAL_NAVBAR%2CAMS_VYF_GLOBAL_NAVBAR_ROLLOVER%2CAMS_VYF_MAGAZINE_SUBNAV%2CAMS_VYF_GLOBAL_HEADER%2CAMS_VYF_GLOBAL_HEADERCALLOUT%2CAMS_VYF_GLOBAL_ZRAIL%2CAMS_VYF_GLOBAL_RIGHTRAIL_A%2CAMS_VYF_POPUP_ENTRY%2CAMS_VYF_POPUP_EXIT%2CAMS_VYF_SITE_FOOTER_SUBSCRIBE%2CAMS_VYF_GLOBAL_RIGHTRAIL_MAGAZINE%2CAMS_VYF_GLOBAL_SLIDESHOW%2CAMS_VYF_POPUP_FLOATINGAD%2CAMS_VYF_LITEREG_SUBSCRIBE';
+        }
+
+        return {
+            'ams_ads_script_src' : 'http://subscribe.vanityfair.com/ams/page-ads.js?ad_category_prefix=content&browser_path=%2Fcontent%2Fvanityfair%2Fonline%2Fdaily%2F2010%2F11%2Fwwds-fabulous-100th-feted-with-bellinis-and-beauties.html&cat_prefixes=%2Ccontent%2Cvanityfair%2Conline%2Cdaily%2C2010%2C11%2Cwwds-fabulous-100th-feted-with-bellinis-and-beauties.html&keywords=' + metaKeyWords + '&position_list=' + positionList + '&site_prefix=vanityfair&subdomain=www&url_name=wwds-fabulous-100th-feted-with-bellinis-and-beauties'
+        };
+    })();
+
+    /***************************************
+     * Validate Registration URL
+     * and Show Popup when validated success
+     *
+     */
+    CN.validateRegistration = (function() {
+        var url_Param_ecomUpsellURL, url_window = window.location.href;
+        return {
+            checkSuccessURL : function() {
+                if (CN.url.params("ecomupsell", url_window) == "true") {
+                    url_Param_ecomUpsellURL = decodeURIComponent(decodeURIComponent(CN.url.params("ecomupsellurl", url_window)));
+                    url_Param_ecomUpsellURL = url_Param_ecomUpsellURL.replace(/^https*:\/\//g, window.location.protocol + "//");
+                    window.open(url_Param_ecomUpsellURL, "PaymentPage", "menubar=1,status=0,resizable=0,toolbar=0,scrollbars=0,width=910,height=560,left=" + ((screen.width) / 3) + ",top=" + ((screen.height) / 3));
+                }
+            }
+        };
+    })();
+
+    jQuery(document).ready(function() {
+        CN.validateRegistration.checkSuccessURL();
+    });
+
+    CN.labjsEcom = $LAB.script(_ghearst_vars.ams_ads_script_src);
+</script>
+<script type="text/javascript">
+CN.labjs = $LAB.setOptions({AlwaysPreserveOrder:true}).script("http://fonts.condenast.com/okl1mtk.js").wait(function(){CN.foundry.init(Typekit || {})});</script>
+
+
+<script type="text/javascript" src="/_jcr_content/ads_config.plugin_loader.js"></script>
+    <script type="text/javascript">
+        CN.dart.init({site:'vanityfair.dart', zone: 'online;', kws: ["online", "daily", "2010", "11", "wwds-fabulous-100th-feted-with-bellinis-and-beauties"],charmap: {' ' : '+', '-' : '_'} });
+    </script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+
+/*
+  //deprecated to allow a page level tracker object to be used from components during their events.
+  _gaq.push(['_setAccount', 'UA-8293713-15']);
+  _gaq.push(['_trackPageview']);
+*/
+  _gaq.push(function() {
+      //global page tracker object
+      var pageTracker = _gat._createTracker('UA-8293713-15', 'CNTracker');
+  });
+  _gaq.push(['CNTracker._trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">
+    CN.config.set({
+      facebook     : {pageid: "8810407571", appId: "", apiKey: ""}
+    });
+    </script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <meta name="description" content="From world affairs to entertainment, business to fashion, crime to society, Vanity Fair is a cultural catalyst that drives the popular dialogue globally." />
+    <meta name="keywords" content="Fashion, Style, Style, Parties, Parties" />
+    <meta name="Author" content="Vanity Fair Magazine" />
+    <meta name="Copyright" content="Copyright (c) Cond&#233;Net 2013" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+    <meta name="content-type" content="unknown"/>
+    <meta name="application-name" content="Vanity Fair"/>
+    <meta name="msapplication-TileImage" content="/etc/designs/vanityfair/images/icons/VYF.png"/>
+    <meta name="msapplication-TileColor" content="#ffffff"/>
+
+
+    <meta property="fb:admins" content="648235154" />
+    <meta property="fb:admins" content="688620285" />
+    <meta property="fb:admins" content="789168297" />
+    <meta property="og:image" content="http://www.vanityfair.com/online/daily/2010/11/wwds-fabulous-100th-feted-with-bellinis-and-beauties/jcr:content/cn_page_metadata/search.rendition.facebookThumbnail.wwd-100-thumbnail.jpg" />
+    <meta property="og:site_name" content="Vanity Fair" />
+
+
+    <meta property="og:title" content="WWD&amp;#8217;s Fabulous 100th Feted With Bellinis and Beauties" />
+                <meta property="og:description" content=" Fashons elite was on hand at Cipriani 42nd Street to ring in Womens Wear Dailys next century." />
+        <meta property="og:url" content="http://www.vanityfair.com/online/daily/2010/11/wwds-fabulous-100th-feted-with-bellinis-and-beauties" />
+    <meta property="og:type" content="article" />
+
+    <meta name="ROBOTS" content="NOARCHIVE" />
+        <link rel="canonical" href="http://www.vanityfair.com/online/daily/2010/11/wwds-fabulous-100th-feted-with-bellinis-and-beauties"/>
+<title>WWD&amp;#8217;s Fabulous 100th Feted With Bellinis and Beauties | Vanity Fair</title>
+
+</head>
+<body class="page cn_page " ng-controller="PageCtrl">
+    <div class="parbase cn_page_metadata">
+</div>
+<div class="cn_parsys parsys cn_ecom_placement"><div id="floatingAd" style="display:none;">
+                <div id="floatingAd_header">
+                    <a href="#">Close</a>
+                </div>
+                <div id="floatingAd_content">
+                    <div id="AMS_VYF_POPUP_FLOATINGAD" class="ecom-placement">
+                        <div id="layer_offer_link">
+                            <a href="https://w1.buysub.com/loc/VYF/ATGFailsafe" target="_blank"><img src="/etc/designs/vanityfair/images/ecom/VYF_floating_ad.gif" alt="Subscribe to Vanityfair" border="0"/></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+</div>
+<div class="cn_parsys parsys cn_ecom_placement"><div id="rolloverAd" class="rolloverAd"  data-timeout="" style="display:none;">
+                    <div id="rolloverAd_header" class="rolloverAd_header">
+                        <a href="#">Close</a>
+                    </div>
+                    <div id="rolloverAd_content" class="rolloverAd_content">
+                        <div id="AMS_VYF_GLOBAL_NAVBAR_ROLLOVER" class="ecom-placement"></div>
+                    </div>
+                    <div id="rolloverAd_footer" class="rolloverAd_footer"></div>
+                </div>
+            <script>
+                            CN.ecom.rolloverAd.init('rolloverAd');
+                        </script>
+                    
+</div>
+<div id="wrapper" class="Blog-Post section-online subsection-daily">
+
+        <div class="cn_parsys cn_page_header cn_iparsys"><div class="iparys_inherited">
+            <div class="cn_parsys cn_page_header cn_iparsys"><div class="section"><div class="cn_parsys cn_path_include"><link rel="stylesheet" href="/dam/css/force-interstitial.css"/>
+            </div>
+</div><div class="section"><div class="cn_parsys cn_path_include"><div class="cn_page_include"><header id="site-header" role="banner" class="snippet">
+    <div class="cn_parsys"><div class="parbase cn_site_logo"><hgroup>
+    <h2><a href="/?INTCID=VF_Logo" title="Go to Vanity Fair homepage">Vanity Fair</a></h2>
+        </hgroup>
+
+<div class="print-logo">
+    <img src="/etc/designs/vanityfair/images/shell/print-logo.png" alt=""/>
+</div>
+
+</div>
+<div class="parbase rollover-scroll-subnav cn_main_nav"><div class="cn_parsys header_ecom_placement parsys cn_ecom_placement"><div id="AMS_VYF_MAGAZINE_SUBNAV" class="ecom-placement">
+               <a href="https://w1.buysub.com/loc/VYF/ATGFailsafe" target="_blank" title="Subscribe to Vanityfair magazine"><span>Subscribe</span></a>
+            </div>
+        
+</div>
+<nav role="navigation" class="global-nav">
+    <ul class="gnav-list">
+        <li id="nav-subscribe">
+                <div class="cn_parsys parsys cn_ecom_placement"><div id="global_navBar">
+                        <div id="AMS_VYF_GLOBAL_NAVBAR">
+                            <a href="https://w1.buysub.com/loc/VYF/ATGFailsafe" target="_blank" title="Subscribe to Vanityfair magazine"><span>Subscribe</span></a>
+                        </div>
+                    </div>
+                
+</div>
+</li>
+        <li class="gnav-1 "><a href="/trending?intcid=nav_top_trending">Trending</a></li><li class="gnav-2 "><a href="/sections?intcid=nav_top_sections">Sections</a></li><li class="gnav-3 "><a href="/photos?intcid=nav_top_photos">Photos</a></li><li class="gnav-4 "><a href="/temporary-video-redirect">Video</a></li><li class="gnav-5 "><a href="/online/daily?intcid=nav_top_blogs">Blogs</a></li><li class="gnav-6 "><a href="/magazine?intcid=nav_top_magazine">Magazine</a></li><li class="gnav-7 "><a href="http://promotions.vf.com/?intcid=nav_top_promotions">Promotions</a></li><li class="gnav-8 "><a href="http://www.twitter.com/vanityfair?intcid=nav_top_twitter_logo">@vanityfair</a></li><li class="gnav-9 "><a href="/app">Vanity Fair iPad App</a></li></ul> <div class="sub-nav">
+            <ul class="snav-list snav-1 "><div class="menu-pointer-container"><div class="menu-pointer"></div></div><li class=""><a href="http://www.vanityfair.com/style/2013/07/kerry-washington-fashion-evolution">Kerry Washington</a></li><li class=""><a href="http://www.vanityfair.com/style/2013/07/best-dressed-soccer-players-photos">Best-Dressed Ballers</a></li><li class=""><a href="http://www.vanityfair.com/society/2013/07/photos-kate-middleton-royal-baby-surprise">Royal Baby Surprise</a></li><li class=""><a href="http://www.vanityfair.com/best-dressed-challenge#editors-choice?albumId=aeE8mqli">Best-Dressed</a></li></ul><ul class="snav-list snav-2 "><div class="menu-pointer-container"><div class="menu-pointer"></div></div><li class=""><a href="/hollywood?intcid=nav_top_sections_hollywood">Hollywood</a></li><li class=""><a href="/style?intcid=nav_top_sections_style">Style</a></li><li class=""><a href="/politics?intcid=nav_top_sections_politics">Politics</a></li><li class=""><a href="/culture?intcid=nav_top_sections_culture">Culture</a></li><li class=""><a href="/society?intcid=nav_top_sections_society">Society</a></li><li class=""><a href="/business?intcid=nav_top_sections_business">Business</a></li></ul><ul class="snav-list snav-3 "><div class="menu-pointer-container"><div class="menu-pointer"></div></div><li class=""><a href="http://www.vanityfair.com/hollywood/2013/04/photos-stars-audrey-hepburn-moment-miranda-kerr">Hepburn Style</a></li><li class=""><a href="http://www.vanityfair.com/style/2013/04/best-dressed-list-ballot-2013">Best-Dressed Ballot</a></li><li class=""><a href="http://www.vanityfair.com/society/2013/03/photos-kate-middleton-royal-baby-nursery">Royal Baby</a></li><li class=""><a href="http://www.vanityfair.com/culture/2013/04/best-holiday-magazine-covers"><i>Holiday</i> Classics</a></li></ul><ul class="snav-list snav-4 "><div class="menu-pointer-container"><div class="menu-pointer"></div></div><li class=""><a href="http://www.vanityfair.com/video/2012/02/hollywood-style-star--audrey-hepburn_1458574649001#page=2&plid=1464644842001">Audrey Hepburn</a></li><li class=""><a href="http://www.vanityfair.com/video/2013/03/mickey-sumner-poses-for-the-may-2013-vanities-opener_2240718096001?playlistid=2068888465001#page=1&plid=2068888465001">Mickey Sumner</a></li><li class=""><a href="http://www.vanityfair.com/video/2013/02/naomi-watts--awards-season-beauty-with-vanity-fair-s-sunhee-grinnell_2157471983001#page=1&plid=2134568127001">Makeup & Beauty</a></li><li class=""><a href="http://www.vanityfair.com/video/2013/02/2013-vanity-fair-oscar-party--a-look-inside_2187375667001#page=1&plid=10713949001">Oscar Party</a></li></ul><ul class="snav-list snav-5 "><div class="menu-pointer-container"><div class="menu-pointer"></div></div><li class=""><a href="/online/daily?intcid=nav_top_blogs_daily">VF Daily</a></li><li class=""><a href="/online/oscars?intcid=nav_top_blogs_hollywood">Hollywood Blog</a></li><li class=""><a href="/online/wolcott?intcid=nav_top_blogs_wolcott">James Wolcott's Blog</a></li><li class=""><a href="/online/beauty?intcid=nav_top_blogs_beauty">Beauty</a></li></ul><ul class="snav-list snav-6 "><div class="menu-pointer-container"><div class="menu-pointer"></div></div><li class=""><a href="/magazine/toc/contents-201307">Current Issue</a></li><li class=""><a href="/magazine/digital?intcid=nav_top_magazine_digital">Digital Edition</a></li><li class=""><a href="http://www.condenaststore.com/-se/vanity_fair.htm?intcid=nav_top_magazine_store">V.F. Store</a></li><li class=""><a id="mag_subnav_subscribe" href="https://w1.buysub.com/loc/VYF/ATGFailsafe?intcid=nav_top_magazine_subscribe">Subscribe</a></li></ul></div> </nav>
+</div>
+<div class="parbase cn_search_box"><section class="search-box">
+    <form name="search-box-form-par" id="search-box-form-par" action="/search" method="get" role="search">
+        <h4><label for="search-box-query-par">Search</label></h4>
+
+        <input type="search" name="query" id="search-box-query-par" placeholder="Search" value="" />
+        <input type="hidden" name="sort" value="score desc" />
+
+        <button type="submit" title="Search">Search</button>
+    </form>
+</section>
+
+</div>
+<div class="cn_parsys parsys cn_share_bar cn_componentContainer"><div class="utilities "> <div class="section">
+                <div class="parbase cn_share_facebook_like"><div class="share utility-fb"
+    data-fbcolorscheme="light"
+    data-fbfont="arial"
+    data-fblink="site"
+    data-fblayout="button_count"
+    id="34a0f822-3318-4eb7-87bb-9dbdec06bf5e"
+    data-fbshowfaces="false"
+    data-fbwidth="90"
+    data-fbheight="20"
+    data-fbaction="like"
+    data-fbtargetpath="http://www.facebook.com/vanityfairmagazine"
+    
+    data-fbtitle="">
+</div>
+</div>
+</div> </div>
+
+
+</div>
+<div class="cn_parsys parsys cn_ecom_placement"><!-- Added the class inside div because the css is depending in the class name -->
+            <div id="AMS_VYF_GLOBAL_HEADER" class="global_header ecom-placement">
+                <h2 id="subs-hdr"><a target="_blank" href="https://w1.buysub.com/loc/VYF/ATGFailsafe" rel="nofollow">Subscribe to Vanity Fair</a></h2>
+                <nav title="Subscription Resources" id="subs-nav-container">
+                    <ul id="subs-nav-menu">
+                        <li id="subs-nav-subscribe">
+                            <a title="Subscribe to Vanity Fair" target="_blank" href="https://w1.buysub.com/loc/VYF/ATGFailsafe">Subscribe</a>
+                        </li>
+                        <li id="subs-nav-gift">
+                            <a title="Give a Subscription to Vanity Fair as a Gift" target="_blank" href="https://w1.buysub.com/loc/VYF/ATGFailsafeGift">Give a gift</a>
+                        </li>
+                        <li id="subs-nav-renew">
+                            <a title="Renew your Subscription to Vanity Fair" target="_blank" href="https://w1.buysub.com/servlet/CSGateway?cds_mag_code=VYF">Renew</a>
+                        </li>
+                        <li id="subs-nav-questions">
+                            <a title="Subscription Questions and Answers for Vanity Fair" target="_blank" href="https://w1.buysub.com/servlet/CSGateway?cds_mag_code=VYF">Questions</a>
+                        </li>
+                        <li id="subs-nav-rewards">
+                            <a title="Vanity Fair subscribers get cash back for shopping" href="http://www.vanityfairrewards.com/?xmailerid=4883" target="_blank">Vanity Fair Rewards</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        
+</div>
+<div class="cn_parsys parsys cn_ecom_placement"><!-- Added the class inside div because the css is depending in the class name -->
+            <div id="AMS_VYF_GLOBAL_HEADERCALLOUT" class="global_headerCallout ecom-placement">
+                <div id="subs-teaser">
+                    <a href="https://w1.buysub.com/loc/VYF/ATGFailsafe" target="_blank" title="Subscribe to Vanityfair" rel="nofollow"><img src="/etc/designs/vanityfair/images/ecom/VYF_header_callout.png" alt="Subscribe to Vanityfair"/></a>
+                </div>
+                <div id="subs-cover">
+                    <a href="https://w1.buysub.com/loc/VYF/ATGFailsafe" target="_blank" title="Subscribe to Vanityfair" rel="nofollow">Subscribe to Vanityfair</a>
+                </div>
+           </div>
+        
+</div>
+<div class="parbase cn_text"><div class="body ">
+    <p><a class="homeBtn" href="/?INTCID=Home_Link">HOME</a></p></div>
+
+</div>
+<div class="parbase cn_login_bar"><div id="loginbar">
+            <div id="login"></div>
+        </div>
+
+        </div>
+<div class="cn_parsys cn_path_include"><link rel="stylesheet" href="/dam/css/5115_5127_override_07082013.css"/>
+            </div>
+</div>
+</header>
+</div>
+</div>
+</div><div class="section"><div class="parbase cn_subheader"><h2 class="subheader "><!-- HitTail Code -->
+<script type="text/javascript">
+	(function(){ var ht = document.createElement('script');ht.async = true;
+	  ht.type='text/javascript';ht.src = '//106242.hittail.com/mlt.js';
+	  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ht, s);})();
+</script></h2></div>
+</div><div class="section"><div class="cn_parsys cn_path_include"><link rel="stylesheet" href="/dam/css/vf-override-044.css"/>
+            </div>
+</div></div>
+</div> </div>
+<section id="site-body">
+    <div class="cn_parsys par"><div class="cn_parsys parsys cn_componentContainer cn_contentwell"><div id="page" class="standard">
+            <aside id="top-rail">
+                 <div class="cn_parsys par-top_rail cn_iparsys"><div class="iparys_inherited">
+            <div class="cn_parsys par-top_rail cn_iparsys"><div class="section"><div class="cn_parsys skyline parsys cn_features_container cn_componentContainer"><div class="parbase image cn_image"><figure class="media ">
+    <a href="/online/daily"> <img src="/online/daily/_jcr_content/par/cn_contentwell/par-top_rail/cn_features_containe/cn_image.size.vf-daily.png" alt="" title=""/></a> </figure>
+
+
+
+</div>
+<div class="title cn_title"><h2 class="headline ">
+    Featured Stories</h2>
+
+</div>
+<div class="cn_parsys cn_manual_feature parsys cn_componentContainer"><section class="feature "> <div class="title cn_title"><h3 class="headline ">
+    <a href="http://www.vanityfair.com/online/daily/2013/07/Wimbledon-photo-recap">Wimbledon Photo Recap</a>
+    </h3>
+
+</div>
+</section>
+</div>
+<div class="cn_parsys cn_manual_feature parsys cn_componentContainer"><section class="feature "> <div class="title cn_title"><h3 class="headline ">
+    <a href="http://www.vanityfair.com/online/daily/2013/07/eliot-spitzer-is-the-reason-the-new-york-comptroller-race-is-suddenly-more-interesting-than-the-mayoral-race">Spitzer Joins Comptroller Race</a>
+    </h3>
+
+</div>
+</section>
+</div>
+<div class="cn_parsys cn_manual_feature parsys cn_componentContainer"><section class="feature "> <div class="title cn_title"><h3 class="headline ">
+    <a href="http://www.vanityfair.com/online/daily/2013/07/cops-not-tolerant-citibike">NYPD Responds to Citi Bike</a>
+    </h3>
+
+</div>
+</section>
+</div>
+</div>
+</div><div class="section"><div class="parbase cn_ad_placement"><div id="topBanner728x90_frame" class="displayAd 728x90 displayAd728x90Js"></div>
+    <script type="text/javascript">
+        CN.dart.call('topBanner', {sz:'728x90', kws:["top"]});</script>
+
+</div>
+</div></div>
+</div> </div>
+</aside>
+
+            <div class="content-container">
+                <div id="content">
+                    <div id="main" role="main">
+                        <div class="cn_parsys par-main"><div class="cn_parsys parsys cn_blog_excerpt"></div>
+<div class="cn_parsys parsys cn_blogpost cn_componentContainer"><article class="cn_blogpost"> <div class="title cn_title"><h1 class="headline ">
+    <i>WWD</i>&#8217;s Fabulous 100th Feted With Bellinis and Beauties</h1>
+
+</div>
+<div class="cn_contributors parbase"><div class="byline">
+        <span class="contributor first last" data-contributor-type="writer"><label>By</label>
+        <span class="name"><a href="/contributors/bramble-trionfo">Bramble Trionfo</a></span></span></div>
+</div>
+<div class="parbase cn_date_time"><time datetime="2010-11-03T12:00:00.000-04:00">12:00 PM, November 3 2010</time>
+
+</div>
+<div class="cn_parsys parsys cn_share_bar cn_componentContainer"><div class="utilities "> <div class="section">
+                <div class="parbase cn_share_facebook_like"><div class="share utility-fb"
+    data-fbcolorscheme="light"
+    data-fbfont="arial"
+    data-fblink="page"
+    data-fblayout="button_count"
+    id="5fc392ff-2681-4282-a331-686b4f78bc09"
+    data-fbshowfaces="true"
+    data-fbwidth="90"
+    data-fbheight="20"
+    data-fbaction="like"
+    data-fbtargetpath=""
+    
+    data-fbtitle="">
+</div>
+</div>
+</div> <div class="section">
+                <div class="parbase cn_share_tweet"><div
+    class="share utility-tweet"
+    data-twlayout="horizontal"
+    data-twaction="tweet"
+    id="a0f30bf4-63a1-40b7-b0ed-51216aa42571"
+    data-show-count=""
+    
+            data-twurl="http://www.vanityfair.com/online/daily/2010/11/wwds-fabulous-100th-feted-with-bellinis-and-beauties"
+        
+    data-twtitle= "<i>WWD</i>&#8217;s Fabulous 100th Feted With Bellinis and Beauties"
+      data-twvia="VanityFair">
+</div>
+</div>
+</div> <div class="section">
+                <div class="parbase cn_share_email"><div class="share utility-email">
+
+     <a title="E-mail this page to a friend" onclick="if (typeof CN !== 'undefined' && CN.stats) { CN.stats.trackAction('emailAFriend',this); }" href="/user/emailfriend?referringPage=http://www.vanityfair.com/services/lookup/2000000001071242" rel="nofollow">EMail</a>
+
+</div>
+</div>
+</div> <div class="section">
+                <div class="parbase cn_share_comments_count"><div class="share comments-count">
+            <a href="#livefyre"><span class="livefyre-commentcount commentstotal" data-lf-site-id="320166" data-lf-article-id="vanityfair_2000000001071242"></span></a>
+        </div>
+
+
+        </div>
+</div> </div>
+
+
+</div>
+<div class="parbase cn_text"><div class="body ">
+    <ul class="slideshow"><li><img src="/dam/images/blogs/2010/11/wwd-100-01.jpg"><p class="photocaption"><em>Petra Nemcova.  From PatrickMcMullan.com.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-02.jpg"><p class="photocaption"><em>Mary-Kate and Ashley Olsen.  From PatrickMcMullan.com.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-03.jpg"><p class="photocaption"><em>Michael Kors.  From PatrickMcMullan.com.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-04.jpg"><p class="photocaption"><em>Stephen Gan and Diane von Furstenberg.  From PatrickMcMullan.com.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-05.jpg"><p class="photocaption"><em>Jack McCollough and Lazaro Hernadez.  From PatrickMcMullan.com.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-06.jpg"><p class="photocaption"><em>Coco Rocha and James Conrad.  From PatrickMcMullan.com.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-07.jpg"><p class="photocaption"><em>Tommy and Dee Hilfiger.  From PatrickMcMullan.com.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-08.jpg"><p class="photocaption"><em>Carolina Herrera and Patricia Herrera Lansing.  From PatrickMcMullan.com.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-09.jpg"><p class="photocaption"><em>Alber Elbaz.  From PatrickMcMullan.com.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-10.jpg"><p class="photocaption"><em>Betsey Johnson.  From PatrickMcMullan.com.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-11.jpg"><p class="photocaption"><em>Iman.  From PatrickMcMullan.com.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-12.jpg"><p class="photocaption"><em>Fabiola Beracasa and Alejandro Ingelmo.  From PatrickMcMullan.com.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-13.jpg"><p class="photocaption"><em>Vera Wang.  From PatrickMcMullan.com.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-14.jpg"><p class="photocaption"><em>Marc Jacobs.  From PatrickMcMullan.com.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-15.jpg"><p class="photocaption"><em>Rachel Roy.  From PatrickMcMullan.com.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-16.jpg"><p class="photocaption"><em>Stacey Bendet.  From PatrickMcMullan.com.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-17.jpg"><p class="photocaption"><em>Karen Elson.  By Kevin Mazur/WireImage.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-18.jpg"><p class="photocaption"><em>Jessica Szohr and Christian Siriano.  By Kevin Mazur/WireImage.</em></p></li><li><img src="/dam/images/blogs/2010/11/wwd-100-19.jpg"><p class="photocaption"><em>From PatrickMcMullan.com.</em></p></li></ul></div>
+
+</div>
+<div class="parbase cn_text"><div class="body ">
+    <p>How does <em>Women&#8217;s Wear Daily</em> look after a century of forecasting fashion trends, breaking industry news, and buzzing about the business of beauty?Just <em>ravishing</em>. Tuesday night, the fashion bible celebrated its 100th anniversary with a glamorous f&ecirc;te at Cipriani 42nd Street, in New York City. Industry insiders, P.R. mavens, mega-editors, &#8220;It&#8221; girls, and fashion&#8217;s elite spent the evening sipping Cip&#8217;s signature Bellinis, sampling crostini, greeting old friends, and reminiscing.  &#8220;My favorite <em>WWD </em>moments are waking up every morning and reading it&#8212;as long as the reviews are good!&#8221; Lanvin&#8217;s Alber Elbaz told VF Daily.  </p><p>Guests were also treated to a rendition of &#8220;Happy Birthday,&#8221; sung by model/musician Karen Elson, and a live showcase of <em>WWD</em>&#8217;s Online Charity Auction&#8212;<a href="http://www.wwd.com/auction" target="_blank">a collection of one-of-a-kind creations</a> from 21 of the world&#8217;s most iconic fashion designers, including Chanel, Marc Jacobs, and Oscar de la Renta. (Proceeds will benefit each designer&#8217;s charity of choice.) The preview had Tommy Hilfiger and Vera Wang whispering around the watercooler (no, seriously&#8212;there was a watercooler. But it was filled with spiked punch!) Perhaps <em>WWD</em> will be the first to report on a Hilfiger/Wang collaboration? Maybe in another hundred years.</p></div>
+
+</div>
+<div class="cn_script_include parbase"><script type="text/javascript" src="/clientlibs/blogSlideShow.js"></script>
+</div>
+</article>
+
+
+</div>
+<div class="cn_parsys parsys cn_share_bar cn_componentContainer border-bottom align-right utilities-bottom"><div class="utilities utilities-bottom  align-right border-bottom"> <div class="section">
+                <div class="cn_pagination_single_page parbase"><div class="pagination-single-page">
+    <a href="javascript:void(0)" title="Single Page" class="pagination-single-page">Single Page</a>
+</div>
+
+</div>
+</div> <div class="section">
+                <div class="parbase cn_share_print"><div class="share utility-print">
+        <a href="http://www.vanityfair.com/online/daily/2010/11/wwds-fabulous-100th-feted-with-bellinis-and-beauties.print.html" title="Print this page">Print</a>
+    </div>
+</div>
+</div> <div class="section">
+                <div class="parbase cn_share_comments_count"><div class="share comments-count">
+            <a href="#livefyre"><span class="livefyre-commentcount commentstotal" data-lf-site-id="320166" data-lf-article-id="vanityfair_2000000001071242"></span></a>
+        </div>
+
+
+        </div>
+</div> <div class="section">
+                <div class="parbase cn_share_email"><div class="share utility-email">
+
+     <a title="E-mail this page to a friend" onclick="if (typeof CN !== 'undefined' && CN.stats) { CN.stats.trackAction('emailAFriend',this); }" href="/user/emailfriend?referringPage=http://www.vanityfair.com/services/lookup/2000000001071242" rel="nofollow">EMail</a>
+
+</div>
+</div>
+</div> <div class="section">
+                <div class="parbase cn_share_tweet"><div
+    class="share utility-tweet"
+    data-twlayout="horizontal"
+    data-twaction="tweet"
+    id="31b7aacb-c1bb-472c-be93-0c97e3658e45"
+    data-show-count=""
+    
+            data-twurl="http://www.vanityfair.com/online/daily/2010/11/wwds-fabulous-100th-feted-with-bellinis-and-beauties"
+        
+    data-twtitle= "<i>WWD</i>&#8217;s Fabulous 100th Feted With Bellinis and Beauties"
+      data-twvia="VanityFair">
+</div>
+</div>
+</div> <div class="section">
+                <div class="parbase cn_share_facebook_like"><div class="share utility-fb"
+    data-fbcolorscheme="light"
+    data-fbfont="arial"
+    data-fblink="page"
+    data-fblayout="button_count"
+    id="e1604e0a-6054-418d-9f7c-41a99b47d9cf"
+    data-fbshowfaces="true"
+    data-fbwidth="90"
+    data-fbheight="20"
+    data-fbaction="like"
+    data-fbtargetpath=""
+    
+    data-fbtitle="">
+</div>
+</div>
+</div> </div>
+
+
+</div>
+<div class="cn_parsys parsys cn_features_container white-bg cn_componentContainer"><div class="cn_keywords"><dl class="keywords ">
+        <dt>Topics:</dt>
+        <dd class="tag0" title="631"><a class="tag0" href="/archive/fashion">Fashion</a></dd><dd class="tag0" title="1648"><a class="tag0" href="/archive/style">Style</a></dd><dd class="tag0" title="204"><a class="tag0" href="/archive/parties">Parties</a></dd></dl></div>
+</div>
+<div class="parbase cn_reactions_comments"><aside class="livefyre-comments">
+            <h4>Post a Comment</h4>
+            <div id="livefyre"></div>
+        </aside>
+
+
+    </div>
+<div class="cn_parsys parsys cn_features_container cn_componentContainer"></div>
+<div class="cn_blog_post_nav parbase"><ul class="blogNav bottomBlogNav">
+    <li class="blogNavNext">
+                    <span class="nextPrefix">NEXT: </span>
+                            <a href="/online/daily/2010/11/meanwhile-back-in-the-years-20002008" class="nextLinkText">Meanwhile, Back in the Years 2000&ndash;2008 &#133;</a>
+                    <div class="byline">
+        </div>
+</li>
+            <li class="blogNavPrev">
+                    <span class="prevPrefix">PREV: </span>
+                            <a href="/online/daily/2010/11/a-video-history-of-john-boehner-hammily-weeping" class="prevLinkText">A Video History of John Boehner Hammily Weeping   </a>
+                    <div class="byline">
+        </div>
+</li>
+            </ul>
+
+</div>
+</div>
+</div>
+
+                    <aside id="u-rail">
+                    </aside>
+                </div>
+
+                <aside id="y-rail">
+                    <div class="cn_parsys par-y_rail cn_iparsys"><div class="iparys_inherited">
+            <div class="cn_parsys par-y_rail cn_iparsys"><div class="section"><div class="cn_parsys parsys cn_features_container most-popular-features white-bg cn_componentContainer"><div class="title cn_title"><h2 class="headline ">
+    Most Popular</h2>
+
+</div>
+<div class="parbase cn_ad_placement"><div id="most-popular88x31_frame" class="displayAd 88x31 displayAd88x31Js"></div>
+    <script type="text/javascript">
+        CN.dart.call('most-popular', {sz:'88x31', kws:["top"]});</script>
+
+</div>
+<div class="parbase cn_mostpopular"><div class="most-viewed" data-cn_mostpopular-numresults="5" data-cn_mostpopular-age="1" data-cn_mostpopular-section=""></div>
+        </div>
+</div>
+</div><div class="section"><div class="parbase cn_ad_placement"><div id="rightrailTop300x250300x250_frame" class="displayAd 300x250 displayAd300x250Js"></div>
+    <script type="text/javascript">
+        CN.dart.call('rightrailTop300x250', {sz:'300x250', kws:["top"]});</script>
+
+</div>
+</div><div class="section"><div class="cn_parsys parsys cn_ecom_placement"><div id="AMS_VYF_GLOBAL_RIGHTRAIL_A" class="global_rightRail_A ecom-placement">
+                        <div id="global_rightRail_A">
+</div></div>
+                
+</div>
+</div><div class="section"><div class="parbase image cn_image"><figure class="media ">
+    <img src="/.i.6.spacer.gif" alt="" title=""/></figure>
+
+
+
+</div>
+</div><div class="section"><div class="cn_parsys parsys cn_features_container cn_componentContainer"><div class="title cn_title"><h2 class="headline ">
+    <a href="/magazine">The Magazine</a>
+    </h2>
+
+</div>
+<div class="cn_parsys cn_manual_feature parsys cn_componentContainer"><section class="feature "> <div class="parbase image cn_image"><figure class="media ">
+    <a href="/magazine/toc/contents-201307"> <img src="/.i.5.cover_vanityfair_300.jpg" alt="" title=""/></a> </figure>
+
+
+
+</div>
+<div class="parbase cn_text"><div class="body ">
+    <p></p>
+<ul>
+<li><a rel="null" href="/magazine/toc/contents-201307">Table of Contents</a></li>
+<li><a href="/archive?intcid=nav_rail_archive">Archive Stories</a></li>
+<li><a href="http://www.vanityfair.com/app?intcid=nav_rail_digital_editions">Digital Editions</a></li>
+<li><a href="/magazine?intcid=nav_rail_back_issues">Back Issues</a></li>
+<li><a href="http://www.vanityfair.com/services/newsletters/demographics?message=Error+subscribing+to+newsletters.&amp;email=&amp;newsletters=&amp;intcid=nav_rail_newsletter">Newsletter Signup</a></li>
+<li><a href="mailto:letters@vf.com?intcid=nav_rail_letters">Letters to the Editor</a></li>
+<li><a href="mailto:vfdaily@vf.com?intcid=nav_rail_tips">Tips for the Online Editors</a></li>
+<li><a href="https://w1.buysub.com/servlet/CSGateway?cds_mag_code=VYF&amp;intcid=nav_rail_sub_questions">Subscription Questions</a></li>
+</ul>
+<p></p></div>
+
+</div>
+<div class="cn_parsys parsys cn_ecom_placement"><div id="AMS_VYF_GLOBAL_RIGHTRAIL_MAGAZINE" class="global_rightRail_magazine ecom-placement">
+                        <div id="global_rightRail_magazine">
+            <a href="https://w1.buysub.com/loc/VYF/ATGFailsafe" target="_blank"><img src="/etc/designs/vanityfair/images/ecom/VYF_subscribe_btn.gif" alt="Subscribe to Vanityfair" border="0"/></a> </div></div>
+                
+</div>
+</section>
+</div>
+</div>
+</div><div class="section"><div class="cn_parsys align-left-georgia-16 parsys cn_features_container cn_componentContainer left-align"><!-- Solr Debug Query Explain: N/A --><div class="title cn_title"><h2 class="headline ">
+    <a href="/photos">Slide Shows</a>
+    </h2>
+
+</div>
+<div class="cn_search_features parbase"><section class="feature search-result odd ">
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <figure class="media ">
+    <a href="/style/2013/07/best-dressed-soccer-players-photos"> <img src="/style/2013/07/best-dressed-soccer-players-photos/_jcr_content/cn_page_metadata/search.rendition.thumb.s-best-dressed-soccer-players-ss.jpg" alt="" title=""/></a> </figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2 class="headline ">
+    <a href="/style/2013/07/best-dressed-soccer-players-photos">Photos: The Top 10 Best-Dressed Soccer Players</a>
+    </h2>
+
+
+
+
+
+
+</section>
+                                <section class="feature search-result even ">
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <figure class="media ">
+    <a href="/style/2013/07/kerry-washington-fashion-evolution"> <img src="/style/2013/07/kerry-washington-fashion-evolution/_jcr_content/cn_page_metadata/search.rendition.thumb.s-kerry-washington-style-evolution-ss.jpg" alt="" title=""/></a> </figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2 class="headline ">
+    <a href="/style/2013/07/kerry-washington-fashion-evolution">Photos: Kerry Washington’s Fashion Evolution</a>
+    </h2>
+
+
+
+
+
+
+</section>
+                                <section class="feature search-result odd ">
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <figure class="media ">
+    <a href="/society/2013/07/photos-kate-middleton-royal-baby-surprise"> <img src="/society/2013/07/photos-kate-middleton-royal-baby-surprise/_jcr_content/cn_page_metadata/search.rendition.thumb.s-kate-middleton-surprise-face-ss.jpg" alt="" title=""/></a> </figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2 class="headline ">
+    <a href="/society/2013/07/photos-kate-middleton-royal-baby-surprise">Photos: Kate Middleton’s 15 Best Surprised Faces Ahead of Surprise-Gender Birth</a>
+    </h2>
+
+
+
+
+
+
+</section>
+                                <section class="feature search-result even ">
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <figure class="media ">
+    <a href="/culture/food-porn/2013/06/july-fourth-grilling-food"> <img src="/culture/food-porn/2013/06/july-fourth-grilling-food/_jcr_content/cn_page_metadata/search.rendition.thumb.s-gourmet-grilling-july-4-ss.jpg" alt="" title=""/></a> </figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2 class="headline ">
+    <a href="/culture/food-porn/2013/06/july-fourth-grilling-food">Gourmet Grilling for July Fourth: Chefs Show Us Their Best Fire-Cooked Dishes</a>
+    </h2>
+
+
+
+
+
+
+</section>
+                                </div>
+</div>
+</div><div class="section"><div class="parbase image image-center cn_image"><figure class="media image-center">
+    <a href="http://www.vanityfair.com/best-dressed-challenge?intcid=nav_rail_bdchallenge"> <img src="/.i.17.bdlc-300x250.png" alt="" title=""/></a> </figure>
+
+
+
+</div>
+</div></div>
+</div> </div>
+</aside>
+            </div>
+
+            <div id="bottom-rail">
+                <div class="cn_parsys cn_iparsys par-bottom"><div class="iparys_inherited">
+            <div class="cn_parsys cn_iparsys par-bottom"><div class="section"><div class="cn_parsys parsys cn_componentContainer cn_colctrl count2-width66_33"><div class="cols count2-width66_33">
+    <div class="col c1">
+            <div class="cn_parsys par-col1"><div class="parbase cn_breadcrumb"><div id="bc"> &nbsp;&bull; &nbsp;&nbsp;</div>
+
+
+</div>
+<div class="cn_parsys align-left-georgia-16 parsys cn_features_container cn_componentContainer"><!-- Solr Debug Query Explain: N/A --><div class="title cn_title"><h2 class="headline ">
+    The Latest on VF.com</h2>
+
+</div>
+<div class="cn_search_features parbase"><section class="feature search-result odd ">
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <figure class="media ">
+    <a href="/hollywood/2013/08/dean-norris-breaking-bad"> <img src="/hollywood/2013/08/dean-norris-breaking-bad/_jcr_content/cn_page_metadata/search.rendition.thumb.s-dean-norris-breaking-bad.jpg" alt="" title=""/></a> </figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2 class="headline ">
+    <a href="/hollywood/2013/08/dean-norris-breaking-bad">Photo: A Film-Noir Dean Norris, Ahead of Breaking Bad and Under the Dome</a>
+    </h2>
+
+
+
+
+
+
+</section>
+                                <section class="feature search-result even ">
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <figure class="media ">
+    <a href="/magazine/2013/08/graydon-carter-column-benghazi"> <img src="/magazine/2013/08/graydon-carter-column-benghazi/_jcr_content/cn_page_metadata/search.rendition.thumb.s-graydon.jpg" alt="" title=""/></a> </figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2 class="headline ">
+    <a href="/magazine/2013/08/graydon-carter-column-benghazi">Graydon Carter on Changes in Washington, from Politics to Television</a>
+    </h2>
+
+
+
+
+
+
+</section>
+                                <section class="feature search-result odd ">
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <figure class="media ">
+    <a href="/politics/2013/08/Benghazi-book-fred-burton-samuel-m-katz"> <img src="/politics/2013/08/Benghazi-book-fred-burton-samuel-m-katz/_jcr_content/cn_page_metadata/search.rendition.thumb.s-benghazi-ambassador.jpg" alt="" title=""/></a> </figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2 class="headline ">
+    <a href="/politics/2013/08/Benghazi-book-fred-burton-samuel-m-katz">The Real Story of Benghazi, a “Landscape Littered with Murders and Betrayals”</a>
+    </h2>
+
+
+
+
+
+
+</section>
+                                </div>
+</div>
+<div class="divider3 cn_parsys parsys cn_features_container center-align cn_componentContainer"><!-- Solr Debug Query Explain: N/A --><div class="title cn_title"><h2 class="headline ">
+    <span>The Latest from</span> VF Daily</h2>
+
+</div>
+<div class="cn_search_features parbase"><section class="feature search-result odd ">
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2 class="headline ">
+    <a href="/online/daily/2013/07/battle-harper-lee-to-kill-a-mockingbird">The Epic Battle for <i>To Kill a Mockingbird:</i> Inside Harper Lee’s Courtroom Drama</a>
+    </h2>
+
+
+
+
+
+
+</section>
+                                <section class="feature search-result even ">
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2 class="headline ">
+    <a href="/online/daily/2013/07/amtrak-train-mercifully-delays-arrival-in-florida-for-13-hours">Amtrak Train Mercifully Delays Arrival in Florida for 13 Hours</a>
+    </h2>
+
+
+
+
+
+
+</section>
+                                <section class="feature search-result odd ">
+                                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2 class="headline ">
+    <a href="/online/daily/2013/07/rick-perry-to-secede-from-texas-governor-s-office">Rick Perry to Secede from Texas Governor’s Office</a>
+    </h2>
+
+
+
+
+
+
+</section>
+                                </div>
+<div class="parbase cn_search_view_all"><div class="view-all ">
+    <a href="/online/daily?queryString=sitename_s%3A%22vanityfair%22+AND+pagepath_s%3A%2Fcontent%2Fvanityfair%2Fonline%2Fdaily*">Go to VF Daily</a>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+    <div class="col c2">
+            <div class="cn_parsys par-col2"><div class="parbase cn_ad_placement"><div id="footerBottom300x250_frame" class="displayAd 300x250 displayAd300x250Js"></div>
+    <script type="text/javascript">
+        CN.dart.call('footerBottom', {sz:'300x250', kws:["bottom"]});</script>
+
+</div>
+</div>
+</div>
+    </div>
+
+
+</div>
+</div><div class="section"><div class="cn_parsys parsys cn_componentContainer count2-width33_66 black-bg cn_colctrl"><div class="cols count2-width33_66 black-bg">
+    <div class="col c1">
+            <div class="cn_parsys par-col1"><div class="cn_parsys parsys cn_ecom_placement"><div id="AMS_VYF_GLOBAL_ZRAIL" class="global_zRail ecom-placement">
+                        <div id="global_zRail">
+<img src="http://www.vanityfair.com/dam/ecom/failsafe/VYF_Footer_304x470_Failsafe.gif" width="304" height="470" border="0"/>
+</div></div>
+                
+</div>
+</div>
+</div>
+    <div class="col c2">
+            <div class="cn_parsys par-col2"><div class="cn_parsys thumbnail-grid parsys cn_features_container cn_componentContainer"><div class="title cn_title"><h2 class="headline ">
+    <a href="#">Featured on VF.com</a>
+    </h2>
+
+</div>
+<div class="cn_parsys cn_manual_feature parsys cn_componentContainer"><section class="feature "> <div class="parbase image cn_image"><figure class="media ">
+    <a href="http://www.vanityfair.com/hollywood/2013/04/mad-men-season-six-fashion-photos?intcid=nav_footer_madmen_season_six"> <img src="/.i.10.s-mad-men-season-6-1.jpg" alt="" title=""/></a> </figure>
+
+
+
+</div>
+<div class="title cn_title"><h3 class="headline ">
+    <a href="http://www.vanityfair.com/hollywood/2013/04/mad-men-season-six-fashion-photos?intcid=nav_footer_madmen_season_six"><i>Mad Men</i> Season Six Fashion Recaps, from Hawaiian Bikinis to Late-60s Suits</a>
+    </h3>
+
+</div>
+</section>
+</div>
+<div class="cn_parsys cn_manual_feature parsys cn_componentContainer"><section class="feature "> <div class="parbase image cn_image"><figure class="media ">
+    <a href="http://www.vanityfair.com/culture/2013/04/photos-bert-stern-scrapbook-marilyn-monroe?intcid=nav_footer_bert_stern"> <img src="/.i.8.s-bert-stern-photography-ss.png" alt="" title=""/></a> </figure>
+
+
+
+</div>
+<div class="title cn_title"><h3 class="headline ">
+    <a href="http://www.vanityfair.com/culture/2013/04/photos-bert-stern-scrapbook-marilyn-monroe?intcid=nav_footer_bert_stern">Pages from Bert Stern’s Guest Book Featuring Salvador Dalí, Marilyn Monroe, and More</a>
+    </h3>
+
+</div>
+</section>
+</div>
+<div class="cn_parsys cn_manual_feature parsys cn_componentContainer"><section class="feature "> <div class="parbase image cn_image"><figure class="media ">
+    <a href="http://www.vanityfair.com/culture/2013/04/best-holiday-magazine-covers?intcid=nav_footer_holiday_magazine"> <img src="/.i.15.s-holiday-magazine-covers-ss.png" alt="" title=""/></a> </figure>
+
+
+
+</div>
+<div class="title cn_title"><h3 class="headline ">
+    <a href="http://www.vanityfair.com/culture/2013/04/best-holiday-magazine-covers?intcid=nav_footer_holiday_magazine">The Jet-Setting Glamour of <i>Holiday</i> Magazine</a>
+    </h3>
+
+</div>
+</section>
+</div>
+<div class="cn_parsys cn_manual_feature parsys cn_componentContainer"><section class="feature "> <div class="parbase image cn_image"><figure class="media ">
+    <a href="http://www.vanityfair.com/culture/2013/04/katherine-webb-underwear-toned-body?intcid=nav_footer_webb"> <img src="/.i.16.s-katherine-webb.jpg" alt="" title=""/></a> </figure>
+
+
+
+</div>
+<div class="title cn_title"><h3 class="headline ">
+    <a href="http://www.vanityfair.com/culture/2013/04/katherine-webb-underwear-toned-body?intcid=nav_footer_webb">Katherine Webb Shows Off Toned Physique Ahead of Diving Competition</a>
+    </h3>
+
+</div>
+</section>
+</div>
+<div class="cn_parsys cn_manual_feature parsys cn_componentContainer"><section class="feature "> <div class="parbase image cn_image"><figure class="media ">
+    <a href="http://www.vanityfair.com/politics/2013/03/photos-best-dressed-world-leaders?intcid=nav_footer_worldleaders"> <img src="/.i.13.s-world-leaders.jpg" alt="" title=""/></a> </figure>
+
+
+
+</div>
+<div class="title cn_title"><h3 class="headline ">
+    <a href="http://www.vanityfair.com/politics/2013/03/photos-best-dressed-world-leaders?intcid=nav_footer_worldleaders">The Top 10 Best-Dressed World Leaders</a>
+    </h3>
+
+</div>
+</section>
+</div>
+<div class="cn_parsys cn_manual_feature parsys cn_componentContainer"><section class="feature "> <div class="parbase image cn_image"><figure class="media ">
+    <a href="http://www.vanityfair.com/hollywood/2013/03/photos-hotel-del-coronado-marilyn-monroe?intcid=nav_footer_hw_coronado"> <img src="/.i.7.s-hotel-del-coronado-ss.jpg" alt="" title=""/></a> </figure>
+
+
+
+</div>
+<div class="title cn_title"><h3 class="headline ">
+    <a href="http://www.vanityfair.com/hollywood/2013/03/photos-hotel-del-coronado-marilyn-monroe?intcid=nav_footer_hw_coronado">Spring Break! The Beachy Kitsch and <i>Some Like It Hot</i> Fame of the Hotel del Coronado</a>
+    </h3>
+
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+    </div>
+
+
+</div>
+</div></div>
+</div> </div>
+</div>
+        </div>
+    </div>
+</div>
+</section>
+<div class="cn_parsys parsys cn_componentContainer cn_site_footer"><footer id="site-footer">
+
+<div class="cn_parsys cn_iparsys"><div class="iparys_inherited">
+            <div class="cn_parsys cn_iparsys"><div class="section"><div class="parbase global-footer-section-1 cn_global_footer_text"><div class="global-footer global-footer-section-1">
+    <p>Vanity Fair Worldwide:</p>
+<ul>
+<li><a href="http://www.vanityfair.co.uk/">United Kingdom</a></li>
+<li><a href="http://www.vanityfair.it">Italy</a></li>
+<li><a href="http://www.revistavanityfair.es/">Spain</a></li>
+<li><a href="http://www.vanityfair.fr/">France</a></li>
+</ul>
+<p>VF On:</p>
+<ul>
+<li><a href="http://www.facebook.com/vanityfairmagazine">Facebook</a></li>
+<li><a href="https://twitter.com/VanityFair">Twitter</a></li>
+<li><a href="http://vanityfair.tumblr.com/">Tumblr</a></li>
+</ul></div>
+
+</div>
+</div><div class="section"><div class="cn_dropdown parbase"><div class="cn-dropdown cn-dropdown-standard">
+    <h3 class="cn-dropdown-standard-header">Visit our sister sites</h3><ul>
+                        <li><a href="http://www.allure.com">Allure</a></li>
+                        <li><a href="http://www.architecturaldigest.com">Architectural Digest</a></li>
+                        <li><a href="http://www.arstechnica.com">Ars Technica</a></li>
+
+                        <li><a href="http://www.bonappetit.com">Bon App&eacute;tit</a></li>
+                        <li><a href="http://www.brides.com">Brides.com</a></li>
+                        <li><a href="http://www.concierge.com/cntraveler">Cond&eacute; Nast Traveler</a></li>
+                        <li><a href="http://www.concierge.com">Concierge</a></li>
+                        <li><a href="http://www.details.com">Details</a></li>
+
+                        <li><a href="http://www.epicurious.com">Epicurious</a></li>
+                        <li><a href="http://www.glamour.com">Glamour</a></li>
+                        <li><a href="http://www.golfdigest.com">Golf Digest</a></li>
+                        <li><a href="http://www.golfworld.com">Golf World</a></li>
+                        <li><a href="http://www.gq.com">GQ</a></li>
+                        <li><a href="http://www.hotelchatter.com">Hotel Chatter</a></li>
+
+                        <li><a href="http://www.jaunted.com">Jaunted</a></li>
+                        <li><a href="http://www.luckymag.com">Lucky</a></li>
+                        <li><a href="http://www.nutritiondata.com">NutritionData</a></li>
+                        <li><a href="http://www.reddit.com">Reddit</a></li>
+                        <li><a href="http://www.self.com">Self</a></li>
+                        <li><a href="http://www.style.com">Style</a></li>
+
+                        <li><a href="http://www.teenvogue.com">Teen Vogue</a></li>
+                        <li><a href="http://www.newyorker.com">The New Yorker</a></li>
+                        <li><a href="http://www.vanityfair.com">Vanity Fair</a></li>
+                        <li><a href="http://www.vegaschatter.com">Vegas Chatter</a></li>
+                        <li><a href="http://www.vogue.com">Vogue</a></li>
+                        <li><a href="http://www.wmagazine.com">W</a></li>
+
+                        <li><a href="http://www.wired.com">Wired</a></li>
+                    </ul>
+                </div>
+</div>
+</div><div class="section"><div class="parbase global-footer-section-2 cn_global_footer_text"><div class="global-footer global-footer-section-2">
+    <ul>
+<li><a href="http://www.condenaststore.com/">Condé Nast Store</a></li>
+<li><a href="http://www.condenast.com/reprints-permissions" target="_blank">Reprint/Permissions</a></li>
+<li><a href="http://www.condenastmediakit.com/vf/">VF Media Kit</a></li>
+<li><a href="http://promotions.vf.com/">Promotions</a></li>
+</ul></div>
+
+</div>
+</div><div class="section"><div class="global-footer-section-3 parbase cn_global_footer_text"><div class="global-footer global-footer-section-3">
+    <ul>
+<li><a href="/services/sitemap">Site Map</a></li>
+<li><a href="/contact/contact-us">Contact VF</a></li>
+<li><a href="/services/newsletters/demographics">Newsletter Sign Up</a></li>
+<li><a href="#">Press Center</a></li>
+<li id="AMS_VYF_SITE_FOOTER_SUBSCRIBE"><a href="https://w1.buysub.com/loc/VYF/ATGFailsafe" target="_blank">Subscribe</a></li>
+<li><a href="http://w1.buysub.com/servlet/CSGateway?cds_mag_code=VYF">Subscription Customer Service</a></li>
+<li><a href="http://www.condenastdigital.com/vanityfair.html">Advertising</a></li>
+<li><a href="http://www.condenastcareers.com/">Conde Nast Careers</a></li>
+<li><a href="http://www.vanityfair.com/app">Digital Edition</a></li>
+</ul>
+<p></p></div>
+
+
+</div>
+</div><div class="section"><div class="parbase cn_subheader"></div>
+</div><div class="section"><div class="parbase global-footer-copyright cn_global_footer_text"><div class="global-footer global-footer-copyright">
+    <p style="text-align: center;">Registration on or use of this site constitutes acceptance of our <a target="_blank" style="color: rgb(224, 0, 0);" href="http://www.condenast.com/privacy-policy">User Agreement</a> (Effectve March 21, 2012) and <a target="_blank" style="color: rgb(224, 0, 0);" href="http://www.condenast.com/privacy-policy#privacypolicy">Privacy Policy</a> (Effective March 21, 2012).<br>
+Vanity Fair © Condé Nast Digital. <a href="http://www.condenast.com/privacy-policy#privacypolicy-california" target="_blank">Your California Privacy Rights</a>. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used,<br>
+except with the prior written permission of Condé Nast Digital.<br>
+<a class="ad_choices" target="_blank" style="color: rgb(224, 0, 0);" href="http://www.condenast.com/privacy-policy#privacypolicy-optout">Ad Choices</a></p></div>
+
+</div>
+</div><div class="section"><div class="cn_script_include parbase"><script type="text/javascript" src="//js.revsci.net/gateway/gw.js?csid=F09828&auto=t&bpid=condenast"></script>
+</div>
+</div></div>
+</div> </div>
+</footer>
+
+</div>
+</div>
+
+    <div class="lightreg-forms {{modalContext}}" ng-controller="LightRegCtrl">
+                <div id="modal-frame" modal-window="modal-window" class="ng-cloak {{title}}" backdrop="true">
+                    <div ng-view></div>
+                </div>
+            </div>
+        <script type="text/javascript">
+    CN.labjsBrightcove = $LAB.script(function(){
+        return jQuery('.cn_brightcove_video').length ? "http://admin.brightcove.com/js/BrightcoveExperiences.js" : null;
+    })
+    .script(function(){
+        return jQuery('.cn_brightcove_video').length ? "http://admin.brightcove.com/js/APIModules_all.js" : null;
+    });
+</script>
+
+<script type="text/javascript">
+    
+            CN.labjsEcom.wait(function() {
+                if (CN.url.params('nojoy') != 1) {
+                    (function(pageAds){
+    var
+        div = null;
+
+    if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_POPUP_FLOATINGAD !== 'undefined')) {
+        div = document.getElementById("AMS_VYF_POPUP_FLOATINGAD");
+
+        if (div !== null) {
+            div.innerHTML = "";
+
+            jQuery("#AMS_VYF_POPUP_FLOATINGAD").html(pageAds.AMS_VYF_POPUP_FLOATINGAD.replace(/document.write\(.*\)/gi,"/*filtered out because of document.write(...)*/"));
+        }
+    }
+    if ('AMS_VYF_POPUP_FLOATINGAD' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_POPUP_FLOATINGAD').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_POPUP_FLOATINGAD);
+                    jQuery('#AMS_VYF_POPUP_FLOATINGAD').hide();
+                }
+    }
+})(window.pageAds);
+(function(pageAds){
+    var
+        div = null;
+
+    if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_GLOBAL_NAVBAR_ROLLOVER !== 'undefined')) {
+        div = document.getElementById("AMS_VYF_GLOBAL_NAVBAR_ROLLOVER");
+
+        if (div !== null) {
+            div.innerHTML = "";
+
+            jQuery("#AMS_VYF_GLOBAL_NAVBAR_ROLLOVER").html(pageAds.AMS_VYF_GLOBAL_NAVBAR_ROLLOVER.replace(/document.write\(.*\)/gi,"/*filtered out because of document.write(...)*/"));
+        }
+    }
+    if ('AMS_VYF_GLOBAL_NAVBAR_ROLLOVER' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_GLOBAL_NAVBAR_ROLLOVER').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_GLOBAL_NAVBAR_ROLLOVER);
+                    jQuery('#AMS_VYF_GLOBAL_NAVBAR_ROLLOVER').hide();
+                }
+    }
+})(window.pageAds);
+(function(pageAds){
+    var
+        div = null;
+
+    if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_MAGAZINE_SUBNAV !== 'undefined')) {
+        div = document.getElementById("AMS_VYF_MAGAZINE_SUBNAV");
+
+        if (div !== null) {
+            div.innerHTML = "";
+
+            jQuery("#AMS_VYF_MAGAZINE_SUBNAV").html(pageAds.AMS_VYF_MAGAZINE_SUBNAV.replace(/document.write\(.*\)/gi,"/*filtered out because of document.write(...)*/"));
+        }
+    }
+    if ('AMS_VYF_MAGAZINE_SUBNAV' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_MAGAZINE_SUBNAV').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_MAGAZINE_SUBNAV);
+                    jQuery('#AMS_VYF_MAGAZINE_SUBNAV').hide();
+                }
+    }
+})(window.pageAds);
+(function(pageAds){
+    var
+        div = null;
+
+    if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_GLOBAL_NAVBAR !== 'undefined')) {
+        div = document.getElementById("AMS_VYF_GLOBAL_NAVBAR");
+
+        if (div !== null) {
+            div.innerHTML = "";
+
+            jQuery("#AMS_VYF_GLOBAL_NAVBAR").html(pageAds.AMS_VYF_GLOBAL_NAVBAR.replace(/document.write\(.*\)/gi,"/*filtered out because of document.write(...)*/"));
+        }
+    }
+    if ('AMS_VYF_GLOBAL_NAVBAR' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_GLOBAL_NAVBAR').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_GLOBAL_NAVBAR);
+                    jQuery('#AMS_VYF_GLOBAL_NAVBAR').hide();
+                }
+    }
+})(window.pageAds);
+(function(pageAds){
+    var
+        div = null;
+
+    if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_GLOBAL_HEADER !== 'undefined')) {
+        div = document.getElementById("AMS_VYF_GLOBAL_HEADER");
+
+        if (div !== null) {
+            div.innerHTML = "";
+
+            jQuery("#AMS_VYF_GLOBAL_HEADER").html(pageAds.AMS_VYF_GLOBAL_HEADER.replace(/document.write\(.*\)/gi,"/*filtered out because of document.write(...)*/"));
+        }
+    }
+    if ('AMS_VYF_GLOBAL_HEADER' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_GLOBAL_HEADER').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_GLOBAL_HEADER);
+                    jQuery('#AMS_VYF_GLOBAL_HEADER').hide();
+                }
+    }
+})(window.pageAds);
+(function(pageAds){
+    var
+        div = null;
+
+    if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_GLOBAL_HEADERCALLOUT !== 'undefined')) {
+        div = document.getElementById("AMS_VYF_GLOBAL_HEADERCALLOUT");
+
+        if (div !== null) {
+            div.innerHTML = "";
+
+            jQuery("#AMS_VYF_GLOBAL_HEADERCALLOUT").html(pageAds.AMS_VYF_GLOBAL_HEADERCALLOUT.replace(/document.write\(.*\)/gi,"/*filtered out because of document.write(...)*/"));
+        }
+    }
+    if ('AMS_VYF_GLOBAL_HEADERCALLOUT' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_GLOBAL_HEADERCALLOUT').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_GLOBAL_HEADERCALLOUT);
+                    jQuery('#AMS_VYF_GLOBAL_HEADERCALLOUT').hide();
+                }
+    }
+})(window.pageAds);
+(function(pageAds){
+    var
+        div = null;
+
+    if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_GLOBAL_RIGHTRAIL_A !== 'undefined')) {
+        div = document.getElementById("AMS_VYF_GLOBAL_RIGHTRAIL_A");
+
+        if (div !== null) {
+            div.innerHTML = "";
+
+            jQuery("#AMS_VYF_GLOBAL_RIGHTRAIL_A").html(pageAds.AMS_VYF_GLOBAL_RIGHTRAIL_A.replace(/document.write\(.*\)/gi,"/*filtered out because of document.write(...)*/"));
+        }
+    }
+    if ('AMS_VYF_GLOBAL_RIGHTRAIL_A' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_GLOBAL_RIGHTRAIL_A').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_GLOBAL_RIGHTRAIL_A);
+                    jQuery('#AMS_VYF_GLOBAL_RIGHTRAIL_A').hide();
+                }
+    }
+})(window.pageAds);
+(function(pageAds){
+    var
+        div = null;
+
+    if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_GLOBAL_RIGHTRAIL_MAGAZINE !== 'undefined')) {
+        div = document.getElementById("AMS_VYF_GLOBAL_RIGHTRAIL_MAGAZINE");
+
+        if (div !== null) {
+            div.innerHTML = "";
+
+            jQuery("#AMS_VYF_GLOBAL_RIGHTRAIL_MAGAZINE").html(pageAds.AMS_VYF_GLOBAL_RIGHTRAIL_MAGAZINE.replace(/document.write\(.*\)/gi,"/*filtered out because of document.write(...)*/"));
+        }
+    }
+    if ('AMS_VYF_GLOBAL_RIGHTRAIL_MAGAZINE' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_GLOBAL_RIGHTRAIL_MAGAZINE').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_GLOBAL_RIGHTRAIL_MAGAZINE);
+                    jQuery('#AMS_VYF_GLOBAL_RIGHTRAIL_MAGAZINE').hide();
+                }
+    }
+})(window.pageAds);
+(function(pageAds){
+    var
+        div = null;
+
+    if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_GLOBAL_ZRAIL !== 'undefined')) {
+        div = document.getElementById("AMS_VYF_GLOBAL_ZRAIL");
+
+        if (div !== null) {
+            div.innerHTML = "";
+
+            jQuery("#AMS_VYF_GLOBAL_ZRAIL").html(pageAds.AMS_VYF_GLOBAL_ZRAIL.replace(/document.write\(.*\)/gi,"/*filtered out because of document.write(...)*/"));
+        }
+    }
+    if ('AMS_VYF_GLOBAL_ZRAIL' === 'AMS_VYF_MAGAZINE_SUBNAV') {
+                if (jQuery('#AMS_VYF_GLOBAL_ZRAIL').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_GLOBAL_ZRAIL);
+                    jQuery('#AMS_VYF_GLOBAL_ZRAIL').hide();
+                }
+    }
+})(window.pageAds);
+(function(pageAds){
+    var
+        div = null;
+
+    if ((typeof pageAds !== 'undefined') && (typeof pageAds.AMS_VYF_SITE_FOOTER_SUBSCRIBE !== 'undefined')) {
+        div = document.getElementById("AMS_VYF_SITE_FOOTER_SUBSCRIBE");
+
+        if (div !== null) {
+            div.innerHTML = "";
+
+            jQuery("#AMS_VYF_SITE_FOOTER_SUBSCRIBE").html(pageAds.AMS_VYF_SITE_FOOTER_SUBSCRIBE.replace(/document.write\(.*\)/gi,"/*filtered out because of document.write(...)*/"));
+        }
+    }
+    if ('AMS_VYF_SITE_FOOTER_SUBSCRIBE' === '') {
+                if (jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').length > 0) {
+                    jQuery('#mag_subnav_subscribe').parent().html(pageAds.AMS_VYF_SITE_FOOTER_SUBSCRIBE);
+                    jQuery('#AMS_VYF_SITE_FOOTER_SUBSCRIBE').hide();
+                }
+    }
+})(window.pageAds);
+                }
+                CN.ecom.show();
+            });
+            setTimeout(CN.ecom.show, 10 * 1000);
+        </script>
+<script type="text/javascript">
+/* CONFIGURATION
+ * For objects, components, and features that require configuration before invocation.
+ * This will be dumped into a script element just before the inclusion of cn.bottom
+*/</script>
+
+<script type="text/javascript" src="/etc/designs/vanityfair/js/groupings/bottom.155-2.js"></script>
+<script type="text/javascript">
+
+CN.features.render({
+    features : (function() {
+        var
+            i,
+            feature = null,
+            render = [],
+            featuresOnPage = "skyline  whitebg mostviewed  whitebg  mostpopularfeatures leftalign   alignleftgeorgia16  alignleftgeorgia16 centeralign   divider3 thumbnailgrid".replace(/\s{2,}/g, ' ').split(' '),
+            len = featuresOnPage.length,
+            cssClass;
+
+        featuresOnPage = jQuery.grep(featuresOnPage,function(el,idx){
+            return jQuery.inArray(el, featuresOnPage) === idx;
+        });
+        for(i = 0; i < len; i++){
+            cssClass = featuresOnPage[i];
+            if (CN.features.types.hasOwnProperty(cssClass)) {
+                render.push(cssClass);
+            }
+        }
+        return render;
+    }())
+});
+
+
+    CN.labjsLivefyre.wait(function(){
+        CN.livefyre.main.loader().loadLivefyre();
+    });
+/* INITIALIZATION
+ * Call init and render functions here, or attach DOM.ready handlers.
+ * (You can also call Stowe's momma here, too.)
+*/
+        CN.mainnav.render();
+
+        // CN Share Facebook Like
+        CN.facebook.init();
+            // CN.login_bar start
+            CN.login.init();
+
+        // CN Twitter
+        CN.twitter.init();
+            CN.labjsLivefyre.wait(function(){
+                CN.livefyre.commentCountStyle();
+            });
+    CN.dropdown.init();</script>
+
+<script type="text/javascript">
+ jQuery(document).ready(function () {
+     if(typeof CN.popups !== 'undefined' && !CN.popups.isExecuted()){
+         CN.popups.setArriving(true).setExiting(false).setLayer(true).setForceLayer(false).setCookieLife(24).setPopDelay(3).init();
+     }
+ });
+ </script>
+ <script>
+        CN.labjsEventTracker = $LAB.script("http://event.vanityfair.com/js/eventTracker.js");
+    </script>
+<div id="eventListHolder" style="display:none;"></div>
+<script type="text/javascript">
+    CN.labjsEventTracker.wait(function(){
+        var
+            i   = 0,
+            ns  = CN,
+            len = 0,
+            absoluteUrl    = false,
+            trackingUrl    = "/services/lookup/2000000001071242",
+            allowedDomains = [],
+            domain         = location.protocol + "//" + location.host;
+
+        if (CN.site && CN.site.allowedDomains) {
+            allowedDomains = CN.site.allowedDomains.split(",");
+            len            = allowedDomains.length
+        }
+
+        for(; i < len; i++) {
+            if (domain.indexOf(allowedDomains[i]) >= 0) {
+                absoluteUrl = true;
+            }
+        }
+
+        if (absoluteUrl) {
+
+            trackingUrl = domain + trackingUrl;
+            ns.site     = ns.site || {};
+
+            ns.site.eventTrackingList   = new EventList("eventListHolder");
+            ns.site.eventTrackingList.setBaseUrl("http://event.vanityfair.com/");
+            ns.site.eventTrackingEvent  = new EventObject("VYF", "most_viewed");
+            ns.site.eventTrackingEvent.setEnvironment("PROD");
+            ns.site.eventTrackingEvent.setSection(CN.utils.getSection());
+
+            if (CN.site.pageId && CN.site.pageId !== "null") {
+                ns.site.eventTrackingEvent.setContentId(CN.site.pageId);
+            }
+
+            ns.site.eventTrackingEvent.setFullUrl(trackingUrl);
+            ns.site.eventTrackingEvent.setContentTitle(CN.utils.trim("&lt;i&gt;WWD&lt;/i&gt;&amp;#8217;s Fabulous 100th Feted With Bellinis and Beauties"));
+
+            
+                ns.site.eventTrackingEvent.setProperty("pd","2010/11/03 00:00:00");
+            
+
+            ns.site.eventTrackingList.addEvent(ns.site.eventTrackingEvent);
+            ns.site.eventTrackingList.writeImageTags();
+        }
+    });
+</script>
+<div id="stats">
+        <div class="clickstreamcloud">
+<script type="text/javascript" src="/etc/clientlibs/foundation/librarymanager.js"></script>
+<script type="text/javascript">
+CQClientLibraryManager.write([{"p":"/etc/clientlibs/foundation/shared.js","c":[]},{"p":"/libs/cq/personalization/clientlib.js","c":[]},{"p":"/libs/cq/personalization/clientlib/themes/default.css","c":[]},{"p":"/libs/cq/personalization/clientlib/ie6/themes/default.css","c":["ie6"]}],false);
+</script>
+<script type="text/javascript" src="/etc/segmentation.segment.js"></script>
+
+<script type="text/javascript">
+CQ_Analytics.PageDataMgr.addInitProperty('sitesection', 'online');
+CQ_Analytics.PageDataMgr.addInitProperty('url', 'http://www.vanityfair.com/online/daily/2010/11/wwds-fabulous-100th-feted-with-bellinis-and-beauties');
+CQ_Analytics.PageDataMgr.addInitProperty('urlType', 'standard');
+</script>
+
+<div id="clickstreamcloud-gui"></div></div>
+<div class="analytics">
+
+<!-- SiteCatalyst code version: H.22.1.
+Copyright 1996-2010 Adobe, Inc. All Rights Reserved
+More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="/_jcr_content/analytics.sitecatalyst.js"></script>
+<script language="JavaScript" type="text/javascript"><!--
+/* You may give each page an identifying name, server, and channel on
+the next lines. */
+CQ_Analytics.Sitecatalyst.updateEvars = function() {
+    // user defined mappings
+     
+}
+
+CQ_Analytics.ClickstreamcloudMgr.addListener("storesloaded", function(e) {
+    // set page name
+    s.pageName="online:daily:2010:11:wwds-fabulous-100th-feted-with-bellinis-and-beauties";
+    // collect component events
+    CQ_Analytics.Sitecatalyst.collect();
+    // base mappings
+    CQ_Analytics.Sitecatalyst.getBaseMappings();	
+ 	// set basic variables
+    
+ 	// update 
+    CQ_Analytics.Sitecatalyst.updateEvars();
+    /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+    var s_code=s.t();if(s_code)document.write(s_code)
+});
+
+//--></script>
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script>
+
+<noscript><img src="http://stats2.vanityfair.com/b/ss/conde-vanityfair/1/H.22.1--NS/1373361862927?cdp=0&gn=online%3Adaily%3A2010%3A11%3Awwds-fabulous-100th-feted-with-bellinis-and-beauties" height="1" width="1" border="0" alt=""/></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.22.1. -->
+
+
+</div>
+</div>
+<!--<cn:pi>vf-publish-app-918159.prd.aws.conde-dev.net</cn:pi>-->
+    </body>
+</html>

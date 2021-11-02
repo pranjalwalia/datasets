@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="feature_chompcommentimages feature_s3upload feature_mobileinterview feature_expandnode feature_switch feature_newcomments feature_disablecomments feature_newprofile feature_realavatarnode" xmlns:fb="http://www.facebook.com/2008/fbml">
+
+	<head>
+		<script type="text/javascript">
+			if ((function(a,b){return /android.+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|meego.+mobile|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(di|rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))})(navigator.userAgent||navigator.vendor||window.opera)
+				&& !(function(a,b){return /ipad|gt-p1000|sgh-t849|gt-i9000|shw-m180S|playbook|hp-tablet/i.test(a.substr(0,4))})(navigator.userAgent||navigator.vendor||window.opera)
+				&& !document.cookie.match(/____forcefullsite=true/) && !navigator.userAgent.match('FBDV/iPad')) {
+				location.href = location.href.replace(location.host, "m." + location.host.replace(/^(blog|m)./,""));
+			}
+		</script>
+		<title>How QR Codes Work and Why They Suck So Hard</title>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="en" />
+<meta http-equiv="refresh" content="86400" />
+<meta name="robots" content="all" />
+	
+	<meta name="keywords" content="giz explains, qr codes, scanners, readers, malware, shopping, marketing, core, Gizmodo" />
+	<meta name="news_keywords" content="giz explains, qr codes, scanners, readers, malware, shopping, marketing, core" />
+
+
+
+	<meta property="fb:admins" content="800832"/>
+	<meta property="fb:admins" content="3600537"/>
+	<meta property="fb:app_id" content="44615671688"/>
+	<meta name="description" content="QR codes are a technology that desperately wants our attention. They appear everywhere from supermarket shelves and magazines to hiking trails and tombstones. Never heard of a QR code? You&#039;re looking at one right now. Scan the image at the top of this article, and it&#039;ll open a link to the mobile version...of this article. Very meta." />
+			<link rel="image_src" href="http://img.gawkerassets.com/img/188paaisqkcmzjpg/fb.jpg" />
+		<meta property="og:image" content="http://img.gawkerassets.com/img/188paaisqkcmzjpg/fb.jpg" />
+		<meta property="og:site_name" content="Gizmodo"/>
+	<meta property="og:title" content="How QR Codes Work and Why They Suck So Hard" />
+	<meta property="og:description" content="QR codes are a technology that desperately wants our attention. They appear everywhere from supermarket shelves and magazines to hiking trails and tombstones." />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard"/>
+
+	<meta name="twitter:card" content="summary">
+	
+
+
+	<meta name="twitter:site" content="@gizmodo">
+
+		<link rel="apple-touch-icon" sizes="144x144" href="http://ganja.gawkerassets.com/assets/v10.gizmodo.com/img/apple-touch-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="http://ganja.gawkerassets.com/assets/v10.gizmodo.com/img/apple-touch-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="http://ganja.gawkerassets.com/assets/v10.gizmodo.com/img/apple-touch-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="57x57" href="http://ganja.gawkerassets.com/assets/v10.gizmodo.com/img/apple-touch-icon-57x57.png" />
+		<link rel="apple-touch-icon" href="http://ganja.gawkerassets.com/assets/v10.gizmodo.com/img/apple-touch-icon.png" />
+		<link rel="shortcut icon" href="/assets/base/img/favicon/gizmodo.ico" />
+
+		<link rel="alternate" type="application/rss+xml" title="Gizmodo - All stories" href="http://feeds.gawker.com/gizmodo/full" />
+		<link rel="alternate" type="application/rss+xml" title="Gizmodo - Top stories only (fewer posts)" href="http://gizmodo.com/top/index.xml" />
+
+
+		<link rel="canonical" href="http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard" />
+		<meta name="viewport" content="width=1024" />
+
+
+
+<!--[if gte IE 9]>
+	<meta http-equiv="X-UA-Compatible" content="IE=8" />
+				<meta name="application-name" content="Gizmodo, the Gadget Guide" /> 		 <meta name="msapplication-tooltip" content="Gizmodo, the Gadget Guide" /> 		<meta name="msapplication-starturl" content="http://gizmodo.com" />
+	
+						<meta name="msapplication-task" content="name=Giz Explains;action-uri=http://gizmodo.com/gizexplains;icon-uri=http://cache.gawker.com/assets/base/img/favicon/gizmodo.ico" />
+					<meta name="msapplication-task" content="name=Dealzmodo;action-uri=http://gizmodo.com/Dealzmodo;icon-uri=http://cache.gawker.com/assets/base/img/favicon/gizmodo.ico" />
+					<meta name="msapplication-task" content="name=Desired;action-uri=http://gizmodo.com/Desired;icon-uri=http://cache.gawker.com/assets/base/img/favicon/gizmodo.ico" />
+					<meta name="msapplication-task" content="name=Shooting Challenge;action-uri=http://gizmodo.com/ShootingChallenge;icon-uri=http://cache.gawker.com/assets/base/img/favicon/gizmodo.ico" />
+			<![endif]-->	<script type="text/javascript">
+		var featureAliases = {"ssologin":"switch","powwow-comments":"newcomments","disablecomments":"disablecomments","newprofile":"newprofile","disablesso":"disablesso"};
+	</script>
+	<!-- runScript --><script type="text/javascript">
+		window.hyperionOptions = {"enabled":true,"api_url":"http:\/\/api.gawker.com\/hyperion\/api\/v1","is_frontpage":false,"site_id":4,"post_id":5969312,"view":"open","skin_search_params":{"tags":["gizexplains","qrcodes","scanners","readers","malware","shopping","marketing","core","top"],"posts":["5969312"]}};
+		if (window.jQuery !== undefined) {
+			jQuery(window).trigger('ad.hyperion.configured');
+		}
+	</script>
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+		<link rel="stylesheet" type="text/css" href="http://ganja.gawkerassets.com/assets/base.v10.static/css/../static/base.v10.static.20121203.css" />
+		<link rel="stylesheet" type="text/css" href="http://ganja.gawkerassets.com/assets/v10.gizmodo.com/css/static.css?rev=20121203" />
+
+		<script type="text/javascript" src="http://ganja.gawkerassets.com/assets/base.v10.static/js/../static/base.v10.static.jquery.20121203.js"></script>
+		<script type="text/javascript" src="http://ganja.gawkerassets.com/assets/base.v10.static/js/../static/base.v10.static.jqueryplugin.20121203.js"></script>
+		<script type="text/javascript" src="http://ganja.gawkerassets.com/assets/base.v10.static/js/../static/base.v10.static.framework.20121203.js"></script>
+		<script type="text/javascript" src="http://ganja.gawkerassets.com/assets/base.v10.static/js/../static/base.v10.static.misc.20121203.js"></script>
+		<script type="text/javascript" src="http://ganja.gawkerassets.com/assets/base.v10.static/js/../static/base.v10.static.widget.20121203.js"></script>
+<script type="text/javascript">
+	window.Hyperion.bootstrap();
+</script>
+		
+		<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+					<!-- Begin comScore Tag -->
+<script>
+	var comscore_script = gawker_getScript('http://b.scorecardresearch.com/beacon.js');
+	var comscore_beacon = { c1:2, c2:"6770184", c3:"", c4:"http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard", c5:"", c6:"", c15:"754d3b148df7a597947f5556cbe06628" };
+</script>
+<!-- End comScore Tag -->
+			<script type="text/javascript">
+		(function() {
+			var tk = document.createElement('script');
+			tk.src = 'http://fonts.gawker.com/zvc4iwz.js';
+			tk.type = 'text/javascript';
+			tk.async = 'true';
+			tk.onload = tk.onreadystatechange = function() {
+				var rs = this.readyState;
+				if (rs && rs != 'complete' && rs != 'loaded') return;
+				try { Typekit.load(); } catch (e) {}
+			};
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(tk, s);
+		})();
+	</script>
+		<script id="adrobotcontainer" type="text/javascript"></script>
+		<script type="text/javascript">
+				var ssoOptions = {
+					'ssoHost': 'https://login.gawker.com/sso/api',
+					'consumerId': '17dgfsfa513jr',
+					'cookieSuffix': 'powwow',
+					'recaptchaKey': '6LfSor8SAAAAAKQnBZMKP3wYxbQWb_sjCvAaFxos'
+				};
+		</script>
+		<script>
+			window.adRobot = jQuery('#adrobotcontainer').AdRobot({
+				'takeover_css_name': 'static_style.css'
+			}).data('AdRobot');
+			jQuery(window).trigger('ad.adrobot.ready');
+		</script>
+
+		<script type="text/javascript">
+			var sponge_client = {
+				sponge_host: 'api.gawker.com/sponge',
+				update_interval: '60',
+				views_limit: 10000,
+				comments_limit: 100,
+				forDomain: true,
+				stats_enabled: true			};
+		</script>
+
+
+		<script type="text/javascript" src="http://ganja.gawkerassets.com/assets/base.v10.static/js/scripts.js?rev=20121203"></script>
+		<script type="text/javascript">
+			window.pageType = 'post';
+			var has_hybrid_widget = false;
+			var presence_options = {'isReloading':false};
+			var chartbeat_options = {'host' : 'dev.gawker.com:8888','interval' : 10,'runChartbeat' : true};
+			var republishOptions = { 'sites' : {"43":"advertising","11":"deadspin","7":"gawker","4":"gizmodo","8":"io9","12":"jalopnik","39":"jezebel","9":"kotaku","17":"lifehacker","37":"artists","42":"gawkershop","30":"sploid"}, 'siteIds'	: [43,11,7,4,8,12,39,9,17,37,42,30] };
+			var forumTagList = ["tips","whitenoise","broken","lifechanger","trollpatrol","redesign","tuesdaytunesmodo","wednesdaybookclub","drunkmodo","rosarocks","saturdaymovienight","commentoftheweek","fakerumorthursday","wotd","wordoftheday","comicmodo","birthdaymodo","broken"];
+			var siteConfig = {"id":"4","title":"Gizmodo","imgBasePath":"http:\/\/ganja.gawkerassets.com\/assets\/base.v10\/img\/","jsBasePath":"http:\/\/ganja.gawkerassets.com\/assets\/base.v10\/js\/","canonicalHost":"gizmodo.com","powwowBasePath":"http:\/\/api.gawker.com\/powwow\/"};
+		</script>
+
+
+							<script type="text/javascript" src="http://api.gawker.com/powwow/bootstrap/bootstrap-ganja.js?rev=20121203"></script>
+			</head>
+
+	<body id="gizmodo" class="rightbar-no-scroll post legacy">
+
+		<div id="header">
+				<div id="site" class="marked marked-head ui-border">
+				<h2 class="brand">
+					<a href="/" id="frontpage"><span>Gizmodo</span></a>
+				</h2>
+
+				<ul id="switch_view" class="modfont">
+					<li><a id="switch_topstories" title="Switch to top stories" href="http://gizmodo.com">Top Stories</a></li>
+				</ul>
+			</div>
+
+
+			<div class="gawkerwidget spongestatsclient_area" style="display: none;"></div>
+
+			<script type="text/javascript" charset="utf-8">
+				GawkerClientside.pushWidget('spongestatsclient', jQuery('.gawkerwidget.spongestatsclient_area').spongestatsclient(sponge_client).data('spongestatsclient'));
+			</script>
+
+			<div id="fb-root"></div>
+</div>
+
+		<div id="page">
+
+			<div class="post permalink top mainContent nodeview">
+				<script type="text/javascript">
+	window.postId = 5969312;
+	window.originalPostId = 5969312;
+	window.google_hints = '';
+
+
+	window.post = {"id":"5969312","originalPostId":"5969312","tags":["gizexplains","qrcodes","scanners","readers","malware","shopping","marketing","core","top"],"sponsored":"false"};
+</script>
+
+<div class="ad_foreplay default"><!-- widget container -->
+<div id="ad_container_91630148" class="ad_container 660x300 default" style="display: none;">
+	<iframe id="ad_iframe_91630148" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="640" height="360"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_91630148').HyperionAd_660x300_default({"hyperion_class":"HyperionAd_660x300_default","mode":"iframe","width":640,"height":360,"foreplay_frequency":4,"size":"660x300","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":91630148,"variant":"default","tags":["gizexplains","qrcodes","scanners","readers","malware","shopping","marketing","core","top"],"headline":"How QR Codes Work and Why They Suck So Hard","issued":"Tue, 18 Dec 2012 19:20:00 +0000","post_id":"5969312","sponsored":false,"fallback_zone":"value from GED","iframe_attributes":{"id":"ad_iframe_91630148","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":640,"height":360}});
+</script>
+<div id="foreplay_bottom" class="gmgrid" style="display: none;">
+	<div id="foreplay_skip"><button class="ui-light">continue to story</button></div>
+	<div id="foreplay_countdown_container">This story will display in <span class="foreplay_countdown"></span>...</div>
+</div></div><div class="ad_marquee default"><div id="marquee-frame" style="display: none;"></div>
+<span style="width: 1px; height: 1px; overflow: hidden; text-indent: -10000em; margin: 0; position: absolute;">
+<!-- widget container -->
+<div id="ad_container_67140389" class="ad_container 1x1 marquee" style="display: none;">
+	<iframe id="ad_iframe_67140389" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="1" height="1"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_67140389').HyperionAd({"height":1,"width":1,"mode":"iframe","run_ad":false,"variant":"marquee","size":"1x1","hyperion_class":"HyperionAd","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":67140389,"tags":["gizexplains","qrcodes","scanners","readers","malware","shopping","marketing","core","top"],"headline":"How QR Codes Work and Why They Suck So Hard","issued":"Tue, 18 Dec 2012 19:20:00 +0000","post_id":"5969312","sponsored":false,"fallback_zone":"value from GED","iframe_attributes":{"id":"ad_iframe_67140389","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":1,"height":1}});
+</script>
+</span>
+<!-- runScript --><script type="text/javascript">
+	if (GawkerClientside.widgets.marquee === undefined) {
+		GawkerClientside.pushWidget('marquee', jQuery('#marquee-frame').Marquee({}).data('Marquee'));
+	}
+</script></div>
+
+<div id="snippet_items_widgets_agegate"></div><script type="text/javascript">Snippets.push("snippet_items_widgets_agegate", "\r\n\t\t\t\t<div id=\"agegate_container\" style=\"display: none;\">\r\n\t\t\t\t\t<div id=\"agegate_IDHERE\" class=\"agegate_container\">\r\n\t\t\t\t\t\t<div class=\"roundbox\">\r\n\t\t\t\t\t\t\t<b class=\"rtop\"><b class=\"rb1\"><\/b><b class=\"rb2\"><\/b><b class=\"rb3\"><\/b><b class=\"rb4\"><\/b><\/b>\r\n\t\t\t\t\t\t\t<div class=\"roundcontent\">\r\n\t\t\t\t\t\t\t\t<form class=\"agegate_control cn_agegate_form\" action=\"#\">\r\n\t\t\t\t\t\t\t\t\t<div class=\"ageconfirm\"><div class=\"exclamation\"><\/div>Please confirm your birth date:<\/div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"fields\">\r\n\t\t\t\t\t\t\t\t\t\t<input class=\"agegate_control cn_month validate valid_minmax-1_12\" type=\"text\" size=\"2\" maxlength=\"2\" name=\"month\" value=\"mm\" \/>\r\n\t\t\t\t\t\t\t\t\t\t<input class=\"agegate_control cn_day validate valid_minmax-1_31\" type=\"text\" size=\"2\" maxlength=\"2\" name=\"day\" value=\"dd\" \/>\r\n\t\t\t\t\t\t\t\t\t\t<input class=\"agegate_control cn_year validate valid_minmax-1900_2012\" type=\"text\" size=\"4\" maxlength=\"4\" name=\"year\" value=\"yyyy\" \/>\r\n\t\t\t\t\t\t\t\t\t\t<br style=\"clear: both;\" \/>\r\n\t\t\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t\t\t<input type=\"submit\" value=\"Submit\" class=\"agesubmit\" \/>\r\n\t\t\t\t\t\t\t\t\t<div class=\"validationmessage month_validmsg day_validmsg msg_valid_minmax\" style=\"display: none;\">Please enter a valid date<\/div>\r\n\t\t\t\t\t\t\t\t\t<div class=\"validationmessage year_validmsg msg_valid_minmax\" style=\"display: none;\">Please enter your full birth year<\/div>\r\n\t\t\t\t\t\t\t\t<\/form>\r\n\r\n\t\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t\t\t<b class=\"rbottom\"><b class=\"rb4\"><\/b><b class=\"rb3\"><\/b><b class=\"rb2\"><\/b><b class=\"rb1\"><\/b><\/b>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/div>\r\n\r\n\t\t\t\t<div id=\"agegate_container_rejected\" style=\"display: none;\">\r\n\t\t\t\t\t<div id=\"agegate_IDHERE\" class=\"agegate_container denied\">\r\n\t\t\t\t\t\t<div class=\"roundbox\">\r\n\t\t\t\t\t\t\t<b class=\"rtop\"><b class=\"rb1\"><\/b><b class=\"rb2\"><\/b><b class=\"rb3\"><\/b><b class=\"rb4\"><\/b><\/b>\r\n\t\t\t\t\t\t\t<div class=\"roundcontent\"><div class=\"ageconfirm\"><div class=\"exclamation\"><\/div>This content is restricted.<\/div><\/div>\r\n\t\t\t\t\t\t\t<b class=\"rbottom\"><b class=\"rb4\"><\/b><b class=\"rb3\"><\/b><b class=\"rb2\"><\/b><b class=\"rb1\"><\/b><\/b>\r\n\t\t\t\t\t\t<\/div>\r\n\t\t\t\t\t<\/div>\r\n\t\t\t\t<\/div>\r\n\r\n");</script>				<div class="illustration top" title="How QR Codes Work and Why They Suck So Hard">
+					<img src="http://img.gawkerassets.com/img/188paaisqkcmzjpg/xlarge.jpg"width="640" height="360" title="How QR Codes Work and Why They Suck So Hard" alt="How QR Codes Work and Why They Suck So Hard" class="wide" />				</div>
+
+
+				<div class="content illustrated">
+
+				<div class="presence_control_external">
+					<div id="snippet_items_widgets_editorcontrols_post"></div><script type="text/javascript">Snippets.push("snippet_items_widgets_editorcontrols_post", "\n<span class=\"editorControlsWidget_external popup_anchor ui-light modfont\">\n\t<a title=\"Edit in GED\" class=\"pm_link edit_link editor_control cn_for_editors cn_edit_link noHrefOverride\" href=\"https:\/\/publish.gizmodo.com\/ged\/5969312\" target=\"_blank\" style=\"display:none;\">Edit<\/a>\n\t<a class=\"pm_link republish_control cn_republish_link postId_5969312 issued_1355858400 pubstatus_PUBLISHED\" href=\"#\" title=\"Copy this whole post to an other site\" style=\"display:none;\">Republish<\/a>\n\t<a class=\"pm_link roundup_control cn_roundup_link postId_5969312\" href=\"#\" title=\"Click to get roundup snippet\" style=\"display:none;\">Roundup<\/a>\n\t<div class=\"popup_menu left editorControlsWidget\" id=\"editorControlsWidget\" style=\"display: none;\">\n\t\t<div class=\"popup_menu_title site-bg-color\">\n\t\t\tAdmin <span class=\"closeButton editor_control cn_toggleadminlinks\">&times;<\/span>\n\t\t<\/div>\n\t\t<span class=\"editor_control cn_for_editors republish_external\" style=\"display: none;\">\n\t\t\t<a class=\"pm_link edit_link editor_control cn_edit_link noHrefOverride\" href=\"https:\/\/publish.gizmodo.com\/ged\/5969312\" target=\"_new\" title=\"edit this post\">Edit<\/a>\n\t\t\t<a class=\"pm_link draft_link editor_control cn_draft_link postId_5969312\" href=\"#\" title=\"Make this post DRAFT\">Set to Draft<\/a>\n\t\t\t<a class=\"pm_link slurp_toggle republish_control cn_edit_link postId_5969312 issued_1355858400 pubstatus_PUBLISHED\" href=\"#\" title=\"Copy this whole post to an other site\" style=\"display: none;\" >Edit syndicated post<\/a>\n\t\t\t<!--a class=\"pm_link republish_control cn_debug_info\" href=\"#\" onclick=\"jQuery('#debug_pane').slideToggle(200); var dh=jQuery(this).html(); jQuery(this).html( dh.indexOf('Display') != -1 ? dh.replace( 'Display', 'Hide' ) : dh.replace( 'Hide', 'Display' ) ); return false;\">Display Debug Info<\/a-->\n\t\t<\/span>\n\t\t<a class=\"pm_link editor_control cn_starinvite_link postId_5969312 limitstar_7 limitnormal_7 epoch_1258524000 timeframe_604800\" href=\"#\" title=\"Invite someone to comment on this post\" style=\"display: none;\">Invite<\/a>\n\n\t\t<div class=\"modal dialog slurp_dialog editor_control cn_slurp_dialog\" style=\"display: none;\">\n\t\t\t<div class=\"inner\">\n\t\t\t\t<h1>Syndicate<\/h1>\n\t\t\t\t<img class=\"siteIcon\" src=\"http:\/\/ganja.gawkerassets.com\/assets\/v10.gizmodo.com\/img\/apple-touch-icon.png\"\/>\n\t\t\t\t<div class=\"text\">\n\t\t\t\t\t<form class=\"slurp_form editor_control cn_slurp_form\" method=\"GET\">\n\t\t\t\t\t\t<p>Syndicate this post<\/p><br \/>\n\t\t\t\t\t\t<div id=\"formelements\">\n\t\t\t\t\t\t\tSite:\n\t\t\t\t\t\t\t<select class=\"site_select editor_control cn_slurp_select\" name=\"siteId\">\n\t\t\t\t\t\t\t\t<option value=\"-1\">select site<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"43\">advertising<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"11\">deadspin<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"7\">gawker<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"4\">gizmodo<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"8\">io9<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"12\">jalopnik<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"39\">jezebel<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"9\">kotaku<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"17\">lifehacker<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"37\">artists<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"42\">gawkershop<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<option value=\"30\">sploid<\/option>\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t<\/select><br \/>\n\t\t\t\t\t\t\tMode:\n\t\t\t\t\t\t\t<select name=\"syndicate\" class=\"editor_control cn_slurp_syndicate\">\n\t\t\t\t\t\t\t\t<option value=\"republish\">republish<\/option>\n\t\t\t\t\t\t\t\t<option value=\"promote\">promote<\/option>\n\t\t\t\t\t\t\t\t<option value=\"export\">export<\/option>\n\t\t\t\t\t\t\t<\/select><br \/><br \/>\n\t\t\t\t\t\t\t<input type=\"button\" class=\"slurp_bttn slurp_button editor_control cn_slurp_cancel slurp_cancel\" value=\"Cancel\"\/>\n\t\t\t\t\t\t\t<input type=\"button\" class=\"slurp_bttn slurp_button editor_control cn_slurp_button\" value=\"Submit\" \/>\n\t\t\t\t\t\t\t<div class=\"slurp_indicator editor_control cn_slurp_indicator right\" style=\"display: none;\"><img width=\"16\" height=\"16\" alt=\"sending request\" src=\"http:\/\/ganja.gawkerassets.com\/assets\/base.v10\/img\/indicator\/progressIndicator_roller.gif\" \/><\/div>\n\t\t\t\t\t\t\t<input type=\"hidden\" name=\"op\" value=\"addsitetag\" \/>\n\t\t\t\t\t\t\t<input type=\"hidden\" name=\"postId\" value=\"5969312\" \/>\n\t\t\t\t\t\t\t<div class=\"slurp_message editor_control cn_slurp_message small\"><\/div>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t<\/form>\n\t\t\t\t<\/div>\n\t\t\t<\/div>\n\t\t<\/div>\n\n\t<\/div>\n\n<\/span>\n");</script>				</div>
+
+				<div class="alternates modfont">
+										<a href="http://gizmodo.com/giz-explains/" class="taglink">giz explains</a> 															<span class="tag-more">
+																													<a class="taglink alternate" href="http://gizmodo.com/qr-codes/">qr codes</a>
+																								<a class="taglink alternate" href="http://gizmodo.com/scanners/">scanners</a>
+																								<a class="taglink alternate" href="http://gizmodo.com/readers/">readers</a>
+																								<a class="taglink alternate" href="http://gizmodo.com/malware/">malware</a>
+																								<a class="taglink alternate" href="http://gizmodo.com/shopping/">shopping</a>
+																								<a class="taglink alternate" href="http://gizmodo.com/marketing/">marketing</a>
+																								<a class="taglink alternate" href="http://gizmodo.com/core/">core</a>
+																											</span>
+									</div>
+
+									<div class="post-supp">
+	<div class="post-meta presence_control_external ui-shade ui-light marked ui-border modfont" data-permalink="http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard">
+
+		<span class="line">
+							
+			<span class="date">
+				Dec 18, 2012  2:20 PM			</span>
+					</span>
+
+		<span class="data" title=""  alt="">
+			<span class="total_views">&nbsp;</span><img class="icon flame" src="http://ganja.gawkerassets.com/assets/base.v10/img/icons/rightbar.flame.png">
+			<span class="comments">&nbsp;</span><img class="icon comment" src="http://ganja.gawkerassets.com/assets/base.v10/img/icons/rightbar.comment.png">
+		</span>
+
+					<div class="share">
+						<button class="button ui-light share_button">Share</button>
+						<div class="share_menu box">
+							<ul>
+								<li class="share_facebook">
+									<a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fgizmodo.com%2F5969312%2Fhow-qr-codes-work-and-why-they-suck-so-hard" target="_blank" onClick="_gaq.push(['_trackEvent', 'share', 'facebook', 'http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard']);window.open(this.href,'sharefb','toolbar=0,status=0,width=480,height=420');jQuery('.share_menu').hide();return false;"><span>Facebook</span></a>
+								</li>
+								<li class="share_twitter">
+									<a href="http://twitter.com/share?url=http%3A%2F%2Fgizmodo.com%2F5969312%2Fhow-qr-codes-work-and-why-they-suck-so-hard&text=Giz+Explains%3A+How+QR+Codes+Work+and+Why+They+Suck+So+Hard+-+%40Gizmodo" target="_blank" onClick="_gaq.push(['_trackEvent', 'share', 'twitter', 'http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard']);window.open(this.href,'sharetwitter','toolbar=0,status=0,width=480,height=360');jQuery('.share_menu').hide();return false;"><span>Twitter</span></a>
+								</li>
+								<li class="share_linkedin">
+									<a href="http://www.linkedin.com/cws/share?url=http%3A%2F%2Fgizmodo.com%2F5969312%2Fhow-qr-codes-work-and-why-they-suck-so-hard" target="_blank" onClick="_gaq.push(['_trackEvent', 'share', 'linkedin', 'http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard']);window.open(this.href,'sharelinkedin','toolbar=0,status=0,width=600,height=200,top=100');jQuery('.share_menu').hide();return false;"><span>LinkedIn</span></a>
+								</li>
+								<li class="share_tumblr">
+									<a href="http://www.tumblr.com/share/link?url=http%3A%2F%2Fgizmodo.com%2F5969312%2Fhow-qr-codes-work-and-why-they-suck-so-hard&name=Giz+Explains%3A+How+QR+Codes+Work+and+Why+They+Suck+So+Hard%28via+%40Gizmodo%29&description=QR+codes+are+a+technology+that+desperately+wants+our+attention.+They+appear+everywhere+from+supermarket+shelves+and+magazines+to+hiking+trails+and+tombstones." target="_blank" title="Share on Tumblr" onClick="_gaq.push(['_trackEvent', 'share', 'tumblr', 'http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard']);window.open(this.href,'sharetumblr','toolbar=0,status=0,width=450,height=430');jQuery('.share_menu').hide();return false;"><span>Tumblr</span></a>
+								</li>
+								<li class="share_instapaper">
+									<a href="http://www.instapaper.com/hello2?url=http%3A%2F%2Fgizmodo.com%2F5969312%2Fhow-qr-codes-work-and-why-they-suck-so-hard&amp;title=Giz+Explains%3A+How+QR+Codes+Work+and+Why+They+Suck+So+Hard+-+%40Gizmodo" target="_blank" onClick="_gaq.push(['_trackEvent', 'share', 'instapaper', 'http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard']);jQuery('.share_menu').hide();"><span>Instapaper</span></a>
+								</li>
+								<li class="pm_tool presence_control_external share_email">
+									<a class="pm_tool mail2control cn_toggle" rel="nofollow" title="Send to friend" href="#" onClick="_gaq.push(['_trackEvent', 'share', 'email', 'http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard']);jQuery('.share_menu').hide();"><span>Email this post</span></a>
+								</li>
+							</ul>
+						</div>
+
+<div id="gplus"><g:plusone size="medium" count="false" recommendations="false" href="http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard"></g:plusone></div>
+	<div id="socialbuttons">
+		<div class="facebook">
+			<fb:like style="z-index: 20000;" href="http%3A%2F%2Fgizmodo.com%2F5969312%2Fhow-qr-codes-work-and-why-they-suck-so-hard" send="false" layout="button_count" width="126" show_faces="false" font="lucida grande"></fb:like>
+		</div>
+		<div class="twitter">
+			<a href="https://twitter.com/share" class="twitter-share-button"
+				data-url="http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard"
+				data-text="Giz Explains: How QR Codes Work and Why They Suck So Hard - @Gizmodo">Tweet</a>
+		</div>
+		<div class="stumbleupon">
+			<su:badge layout="1" location="http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard"></su:badge>
+		</div>
+		<div class="linkedin">
+		</div>
+	</div>
+					</div>
+
+		<span class="clear"></span>
+	</div>
+<div class="ad_300x600 default"><!-- widget container -->
+<div id="ad_container_76492914" class="ad_container 300x600 inpost" style="display: none;">
+	<iframe id="ad_iframe_76492914" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="300" height="600"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_76492914').HyperionAd_300x600_inpost({"hyperion_class":"HyperionAd_300x600_inpost","mode":"iframe","width":300,"height":600,"variant":"inpost","run_ad":false,"size":"300x600","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":76492914,"tags":["gizexplains","qrcodes","scanners","readers","malware","shopping","marketing","core","top"],"headline":"How QR Codes Work and Why They Suck So Hard","issued":"Tue, 18 Dec 2012 19:20:00 +0000","post_id":"5969312","sponsored":false,"fallback_zone":"value from GED","iframe_attributes":{"id":"ad_iframe_76492914","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":300,"height":600}});
+</script></div>				<div id="fb_300x250">
+					<style>
+	#subscribeRect {
+		width: 300px;
+		min-height: 125px;
+		clear: both;
+		float: none;
+		position: relative;
+		margin-bottom: 1em;
+		-webkit-border-bottom-right-radius: 6px;
+		-webkit-border-bottom-left-radius: 6px;
+		-moz-border-radius-bottomright: 6px;
+		-moz-border-radius-bottomleft: 6px;
+		border-bottom-right-radius: 6px;
+		border-bottom-left-radius: 6px;
+		}
+
+	#subscribeRect .top {
+		height: 63px;
+		position: relative;
+		-webkit-border-top-left-radius: 6px;
+		-webkit-border-top-right-radius: 6px;
+		-moz-border-radius-topleft: 6px;
+		-moz-border-radius-topright: 6px;
+		border-top-left-radius: 6px;
+		border-top-right-radius: 6px;
+		}
+
+	#subscribeRect .top .logo {
+		margin-top: 1em;
+		}
+
+	#subscribeRect ul.interface {
+		display: block;
+		width: 99px;
+		position: absolute;
+		top: 35px;
+		right: 10px;
+		}
+	#subscribeRect ul.interface li {
+		display: block;
+		float: left;
+		width: 33px;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: bold;
+		}
+
+	.ie7 #subscribeRect ul.interface,
+	.ie7 #subscribeRect ul.interface li {
+		display: block;
+		float: left;
+	}
+
+	.ie7 #subscribeRect ul.interface{
+		position: static;
+	}
+
+	#subscribeRect ul.interface li {
+		color: #474956;
+		text-decoration: none;
+		cursor: pointer;
+		padding-top: 24px;
+		opacity: .75;
+		transition: opacity .2s ease-in;
+		-moz-transition: opacity .2s ease-in;
+		-webkit-transition: opacity .2s ease-in;
+		}
+
+		#subscribeRect ul.interface li:hover { opacity: 1; }
+
+		#subscribeRect ul.interface li.newsletter { background: url('http://ganja.gawkerassets.com/assets/base/img/subscribe/icon-newsletter.png') center top no-repeat; }
+		#subscribeRect ul.interface li.facebook { background: url('http://ganja.gawkerassets.com/assets/base/img/subscribe/icon-facebook.png') center top no-repeat; }
+		#subscribeRect ul.interface li.googleplus { background: url('http://ganja.gawkerassets.com/assets/base/img/subscribe/icon-gplus.png') center top no-repeat; }
+		#subscribeRect ul.interface li.twitter { background: url('http://ganja.gawkerassets.com/assets/base/img/subscribe/icon-twitter.png') center top no-repeat; }
+		#subscribeRect ul.interface li.stumbleupon { display: none; background: url('http://ganja.gawkerassets.com/assets/base/img/subscribe/icon-stumbleupon.png') center top no-repeat; float: right; }
+
+	#subscribeRect .carrot {
+		position: absolute;
+		top: 63px;
+		transition: left .25s ease-in;
+		-moz-transition: left .25s ease-in;
+		-webkit-transition: left .25s ease-in;
+		}
+
+	#subscribeRect.select_facebook .carrot { left: 199px; }
+	#subscribeRect.select_facebook .panel.facebook { display: block; opacity: 1; }
+	#subscribeRect.select_facebook .panel.facebook iframe { margin-top: 5px; }
+	#subscribeRect.select_facebook ul.interface li.facebook { opacity: 1; }
+
+	#subscribeRect.select_googleplus .carrot { left: 199px; }
+	#subscribeRect.select_googleplus .panel.googleplus { display: block; opacity: 1; }
+	#subscribeRect.select_googleplus .panel.googleplus iframe { margin-top: 5px; }
+	#subscribeRect.select_googleplus ul.interface li.googleplus { opacity: 1; }
+
+	#subscribeRect.select_newsletter .carrot { left: 265px; }
+	#subscribeRect.select_newsletter .panel.newsletter { display: block; opacity: 1;  }
+	#subscribeRect.select_newsletter ul.interface li.newsletter { opacity: 1; }
+
+	#subscribeRect.select_twitter .carrot { left: 232px; }
+	#subscribeRect.select_twitter .panel.twitter { display: block; opacity: 1; }
+	#subscribeRect.select_twitter .panel.twitter iframe { margin-top: 5px; }
+	#subscribeRect.select_twitter ul.interface li.twitter { opacity: 1; }
+
+	#subscribeRect.select_stumbleupon .carrot { left: 265px; }
+	#subscribeRect.select_stumbleupon .panel.stumbleupon { display: block; opacity: 1; padding-top: 3px; }
+
+	 #subscribeRect .bottom {
+	 	margin: 16px 16px 0 16px;
+	 	font-size: 13px;
+	 	line-height: 19px;
+	 }
+
+	/* le havre font size fix */
+	#gawker #subscribeRect .bottom,
+	#jezebel #subscribeRect .bottom,
+	#deadspin #subscribeRect .bottom{ font-size: 15px; line-height: 20px; }
+
+
+		#subscribeRect .bottom .panel {
+			-moz-transition: opacity .25s ease;
+			display: none;
+			opacity: 0;
+			}
+
+	.html5 #subscribeRect .panel.twitter .label { display: block; }
+
+	.html5 #subscribeRect .panel.newsletter .signup {
+		display: box;
+		display: -moz-box;
+		display: -webkit-box;
+		box-orient: horizontal;
+		-moz-box-orient: horizontal;
+		-webkit-box-orient: horizontal;
+		width: 270px;
+		margin: 3px 0px;
+	}
+
+	.html5 #subscribeRect .panel.newsletter .newsletter_signup input#newsletter_email {
+		box-flex: 1;
+		-moz-box-flex: 1;
+		-webkit-box-flex: 1;
+		width: 180px;
+		height: 22px;
+		color: #999;
+	}
+
+	#subscribeRect.select_newsletter .panel.newsletter .button { margin-left: .5em;margin-top:-3px; }
+
+	#subscribeRect label { padding:0 0 3px 0; display: block; }
+
+	/** site specific **/
+
+	#subscribeRect { background-color: #EBEEDD; color: #474956; }
+	#subscribeRect .top { background-color: #CAD2A7; }
+
+	#gawker #subscribeRect { background-color: #F2F4F7; }
+	#gawker #subscribeRect .top { background-color: #8C93A9;}
+
+	#gizmodo #subscribeRect { background-color: #F2F4F8; }
+	#gizmodo #subscribeRect .top { background-color: #3697B3;}
+	#gizmodo #subscribeRect ul.interface li { color: #F2F4F8; }
+
+	#deadspin #subscribeRect { background-color: #F0F0F0; }
+	#deadspin #subscribeRect .top { background-color: #2CD5C7;}
+
+	#jezebel #subscribeRect { background-color: #E2F2F0; }
+	#jezebel #subscribeRect .top { background-color: #ABBABA;}
+
+	#io9 #subscribeRect { background-color: #F2F2F2; }
+	#io9 #subscribeRect .top { background-color: #AF8F9D;}
+
+	#kotaku #subscribeRect { background-color: #FAFCFF; }
+	#kotaku #subscribeRect .top { background-color: #C0CDDB;}
+
+	#jalopnik #subscribeRect { background-color: #DBE0E4; }
+	#jalopnik #subscribeRect .top { background-color: #417FB9;}
+	#jalopnik #subscribeRect ul.interface li { color: #DBE0E4; }
+
+	.newsletter_signup .validationmessage, .newsletter_signup .cn_message {
+		background-color: #000;
+		background-color: rgba(0, 0, 0, 0.75);
+		border-radius: 5px 5px 5px 5px;
+		color: #FFFFFF;
+		padding: 5px;
+		position: absolute;
+		text-align: center;
+		width: 176px;
+		top: 110px;
+	}
+
+	.newsletter_signup .validationmessage, .newsletter_signup .cn_message:empty  { display: none; }
+
+	#subscribeRect .top h4{
+		padding: 0;
+		margin: 0;
+		position: relative;
+		top: 10px;
+		left: 10px;
+		text-transform: uppercase;
+		font-size: 18px;
+		color: #FFF;
+		opacity: 0.8;
+	}
+
+	#subscribeRect .top h4.followsite{ font-weight: bold; opacity: 1; }
+	#subscribeRect .cn_message{ display:none; }
+
+	/* stumbleupon link */
+	.panel.stumbleupon a {
+		display: block;
+		width: 179px;
+		height: 22px;
+		background: url('http://ganja.gawkerassets.com/assets/base/img/subscribe/badge-stumbleupon.png?11042012') left top no-repeat;
+		margin: 0 auto;
+	}
+
+	.panel.stumbleupon a span {
+		display: none;
+	}
+
+ </style>
+<div id="subscribeRect" class="select_facebook">
+	<div class="top">
+		<h4 class="modfont">Get our top stories</h4>
+		<h4 class="followsite modfont">follow gizmodo</h4>
+		<ul class="interface modfont">
+						<li class="googleplus" title="Follow Gizmodo on Google+" style="display:none"></li>
+						<li class="facebook" title="Like Gizmodo on Facebook"></li>
+			<li class="twitter" title="Follow Gizmodo on Twitter"></li>
+			<li class="newsletter" title="Subscribe to Gizmodo Daily"></li>
+			<li class="stumbleupon" title="Visit Gizmodo channel on Stumbleupon"></li>
+		</ul>
+		<img src="http://ganja.gawkerassets.com/assets/base/img/subscribe/gizmodo.com/carrot.png" class="carrot"/>
+	</div>
+	<div class="bottom modfont">
+		<div class="panel googleplus">
+			<g:plus href="https://plus.google.com/104903796944242132513" width="268" height="69" theme="light"></g:plus>
+		</div>
+		<div class="panel stumbleupon">
+			<a href="http://www.stumbleupon.com/channel/gizmodo" target="_blank"><span>Stumbleupon</span></a>
+		</div>
+		<div class="panel facebook">
+			<iframe src="http://www.facebook.com/plugins/like.php?app_id=241120799258524&amp;href=https%3A%2F%2Fwww.facebook.com%2Fgizmodo&amp;send=false&amp;layout=standard&amp;width=270&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=45" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:275px; height:45px;" allowTransparency="true"></iframe>
+		</div>
+		<div class="panel twitter">
+			<a href="http://twitter.com/Gizmodo" class="twitter-follow-button">Follow @Gizmodo</a>
+		</div>
+		<div class="panel newsletter">
+				<div class="newsletter_signup" id="newsletter_signup_sidebar">
+					<form class="newsletter_control cn_form">
+						<input type="hidden" name="op" value="newsletter_signup" />
+
+						<div class="validationmessage email_validmsg msg_valid_nonempty">Please enter your email address.</div>
+						<div class="validationmessage email_validmsg msg_valid_email">Please enter a valid email address.</div>
+						<div class="cn_message true">Please check your inbox for a confirmation email.</div>
+						<div class="cn_message false">An error occured, please try again later.</div>
+						<div class="newsletter_control cn_message"></div>
+
+						<div class="signup">
+							<input type="text" id="newsletter_email" name="email" maxlength="255" class="validate valid_nonempty valid_email newsletter_control cn_newsletter_signup" onfocus="if ( this.value == 'Get the top story in your inbox' ) { this.value=''; this.style.color = 'black';}" onblur="if ( this.value == '') { this.value = 'Get the top story in your inbox'; this.style.color = '#999'; }" value="Get the top story in your inbox" />
+							<input type="hidden" id="SIGNUP" name="SIGNUP" value="sidebar">
+							<input type="submit" class="button" value="Subscribe" />
+							<img class="newsletter_control cn_indicator" style="border: none; display: none;position:absolute;right:2px;margin-top:-22px" width="16" height="16" alt="sending request" src="http://ganja.gawkerassets.com/assets/base.v10/img/indicator/progressIndicator_roller.gif" />
+						</div>
+					</form>
+				</div>
+				<!-- runScript -->
+				<script type="text/javascript" charset="utf-8">
+					GawkerClientside.pushWidget( 'newsletter_signup', jQuery('#newsletter_signup_sidebar').SimpleFormWidget( settings.widgets.simpleform.byselector['.newsletter_signup'].options ).data('SimpleFormWidget') );
+					jQuery( function() {
+						var subscriber = jQuery('#subscribeRect');
+						// show plus instead of fb for g+ referrers
+						if(SocialButtons.referrerDomain === 'plus.url.google.com'/* || location.hash === '#googleplus'*/) {
+							subscriber.find('.interface li.googleplus').show();
+							subscriber.find('.interface li.facebook').hide();
+							subscriber
+								.addClass('select_googleplus')
+								.removeClass('select_facebook');
+							SocialButtons.googleplusScript().then(function() {
+								window.gapi.plus.go(subscriber.find('.panel.googleplus')[0]);
+							});
+						} else if ( SocialButtons.referrerDomain === 'www.stumbleupon.com' && subscriber.find('.panel.stumbleupon').length ) {
+							subscriber.find('.interface li').hide();
+							subscriber.find('.interface li.stumbleupon').show();
+							subscriber
+								.addClass('select_stumbleupon')
+								.removeClass('select_facebook');
+						}
+						// switcher
+						jQuery('.interface li').click(function() {
+							//google analytics event tracker
+							_gaq.push(['_trackEvent', 'edit_marketing', this.className ]);
+							subscriber
+								.removeClass()
+								.addClass('select_'+this.className);
+							// lazy-load twitter
+							if(this.className === 'twitter') {
+								SocialButtons.twitterScript();
+							}
+						});
+						jQuery('.panel.newsletter .signup .button').click(function(){
+							_gaq.push(['_trackEvent', 'edit_marketing', 'newsletter_subscribe']);
+						});
+					});
+				</script>
+		</div>
+	</div>
+</div>
+				</div>			
+		</div>
+
+<script type="text/javascript">
+addAuthorDropdownClick();
+</script>
+				
+
+					<h1>How QR Codes Work and Why They Suck So Hard</h1>
+					<div class="post-body">
+																					<div class="nodebyline modfont">
+																															<img src="http://img.gawkerassets.com/img/17rzt6hzzddb1jpg/avt-small.jpg" border="0" width="14" class="avatar" />
+												<strong>
+													<a class="plus-icon modfont">Andrew Tarantola</a>										</strong>
+																						<div class="ui-dropdown modfont" id="author-menu">
+						<ul>
+							<li><a href="/people/ATarantola/" rel="author" class="noHrefOverride profile gaqtrack" data-gaqevent="author_links" data-gaqid="byline_view_profile"><img src="http://img.gawkerassets.com/img/17rzt6hzzddb1jpg/avt-small.jpg" border="0" width="14" /><span>View Profile</span></a></li>
+							<li><a href="mailto:&#97;&#116;&#97;&#114;&#97;&#110;&#116;&#111;&#108;&#97;&#64;&#103;&#105;&#122;&#109;&#111;&#100;&#111;&#46;&#99;&#111;&#109;" class="email gaqtrack" data-gaqevent="author_links" data-gaqid="byline_email"><span>Email</span></a></li>
+							<li><a href="http://twitter.com/terrortola" class="twitter gaqtrack" data-gaqevent="author_links" data-gaqid="byline_twitter"><span>Twitter</span></a></li>
+							<li><a href="https://plus.google.com/104474227941534479648?rel=author" class="gplus gaqtrack" data-gaqevent="author_links" data-gaqid="byline_google_plus"><span>Google Plus</span></a></li>
+							<li><a href="/author/17h1a2ukhr6if.xml" class="rss gaqtrack" data-gaqevent="author_links" data-gaqid="byline_rss" target="_blank"><span>RSS</span></a></li>
+						</ul>
+					</div>
+								</div>
+																			<p><a rel="lytebox" href="http://img.gawkerassets.com/img/188paaisqkcmzjpg/original.jpg"><img src="http://img.gawkerassets.com/img/188paaisqkcmzjpg/medium.jpg" width="300" class="image_0 v10_medium" alt="How QR Codes Work and Why They Suck So Hard"  title="How QR Codes Work and Why They Suck So Hard" /></a>QR codes are a technology that desperately wants our attention. They appear everywhere from supermarket shelves and magazines to hiking trails and tombstones. Never heard of a QR code? You're looking at one right now. Scan the image at the top of this article, and it'll open a link to the mobile version...of this article. Very meta.</p> <p>That's a pretty typical example of a QR code&mdash;occasionally <a href="http://us.gizmodo.com/5948579/whoa-an-actually-useful-way-to-use-qr-codes-or-a-lazy-parents-list-of-the-20-most-popular-christmas-toys">useful</a>, but often <a href="http://gizmodo.com/5942150/worlds-largest-qr-code-is-stupidly-pointless?tag=qr-codes">pointless</a>. Either way, these plucky information sources are routinely ignored, and usually reviled. Here's where the next big thing in scannable coding went so horribly wrong.<!-- %JUMP:More &raquo;% --></p> <p>QR (Quick Response) code is the trademark name for the two dimensional barcode system. It was originally invented in 1994 by Denso Wave, a Toyota subsidiary, as a way to track vehicles as they were assembled, and to scan components at high speeds. While Denso Wave does hold the patent on the technology, it has granted free licence on it, going so far as to publish the spec online, and allowing anyone to use it.</p> <p>The conventional one dimensional barcodes used on virtually every consumer product are mechanically scanned. That is, they're read by physically bouncing a narrow beam of light onto the code, which can be interpreted using the pattern of light reflected off the white gaps between the lines.</p> <p><img src="http://img.gawkerassets.com/img/188p9iogzzw1ypng/medium.png" width="300" class="image_1 v10_medium" alt="How QR Codes Work and Why They Suck So Hard"  title="How QR Codes Work and Why They Suck So Hard" />QR codes, on the other hand, can not only hold 100 times more data than 1D barcodes&mdash;they can also be digitally scanned. The block of smaller black and white squares is read by a smart phone's image sensor, then interpreted by the system processor. The three large squares act as alignment targets, while the smaller square in the remaining corner acts to normalize the size and angle of the shot. As you can see from the image on the left, the blue strips near the alignment squares contain formatting information, and the remaining yellow area is the actual data that's converted into binary code and checked for errors before being displayed. The encoded data can be interpreted as one of four primary modes&mdash;numeric, alphanumeric, byte/binary, and Kanji. Other forms of data can also be displayed with the appropriate extensions.</p> <p>As QR code technology evolved, it began to contain more and more information. The initial version was 21 x 27 pixels and held just 4 characters worth of data. The most recent version is 177 pixels square, and it holds 1852 characters&mdash;enough for a few pages of information.</p> <p>QR codes have long since expanded their usefulness beyond the automotive industry. They're used today in everything from inventory tracking, to shipping and logistics, to online ticketing (Fandango is a big fan). Bands put them on fliers to link to their videos on YouTube or set reminders for upcoming shows. Businesses use it to put Google Maps directions on a business card, automatically load a web page, or send a text/email to the company helpline. One enterprising wildlife refuge in Sanibel, Florida has installed the codes on signs along hiking trails and programmed them with information about the local fauna.</p> <p>So with all these new and interesting ways to use this burgeoning technology&mdash;which, coincidentally, got a boost recently, when it was announced that the iPhone 5 would not include the competing NFC system&mdash;why aren't they more popular? According to Comscore, as of December 2011, only 20 percent of Americans, 16 percent of Canadians, and 12 percent of Spanish and UK smartphone owners actually <em>use</em> QR codes at all.</p> <p>In part, it's because advertisers have attached themselves to QR like it's a golden teat. The rate of QR codes in magazine ads rose by five percent last year&mdash;from 3.6 to 8.4 percent, according to marketing firm Nellymoser. You can find QR codes in stores, billboards, subway ads, posters, and magazines. "It's an effort to convey the appearance of being tech savvy," Thaddeus Kromelis, a strategist at WPP's (WPPGY) Blue State Digital, told Business Insider. Unfortunately, most consumers aren't buying it.</p> <p>"Advertisers are looking at every way possible that they can connect with consumers," said Forrester Research analyst Patti Freeman Evans. "Consumers aren't saying, ‘Oh, I really want to be able to connect with companies and brands.'" As such, the primary use of QR codes last year was actually for product scanning&mdash;either to recieve further information on a product or a coupon/reward&mdash;and was primarily done at home.</p> <p>This is due largely to the inherent limitations that QR suffers from. The system needs a steady hand to take the shot, the proper QR app to interpret it, and a data connection to load the webpage and content. So when advertisers put QR codes on freeway billboards, or on subway ads where there is little cell reception, and expect users to then go through the trouble of installing an app just to be taken to the desktop version of the corporate website, it's little wonder why nobody bothers with it.</p> <p>Thick-headed advertisers aren't the only drawbacks to QR codes, though. The codes can also be used to transmit malicious code, in what's known as "attagging." Since anyone can create the codes, it's easy to write a bit of malware, put it in a QR code, and slap that code over a legitimate tag. Some sap scans the bad code and, if his permissions are set too loosely, the code could give itself access to everything from the camera to the contacts to the GPS data. Or it could connect to an infection site loaded with browser exploits. The phone an become part of a bot net, or be used to send unauthorized texts&mdash;hackers in Russia once used QR to commandeer phones to send $6 international SMS messages.</p> <p>And of course there's the open source issue&mdash;great for developers, but not so terrific for the end users just trying to read the things. There are multitudes of QR readers in every app store, and all of them offer a slightly different user experience. None of the big three (iOS, Android, or WP7) offer a native app. Plus, there is no dominant brand of reader. So users are stuck picking QR readers essentially at random, hoping for the best.</p> <p>All that hassle to (hopefully) look at a company's website or (possibly) have your security compromised? It's a combination of factors that doesn't do much to spur confidence in the technology&mdash;or enhance its adoption rate.</p> <p>[<a href="http://en.wikipedia.org/wiki/QR_code">Wikipedia</a> - <a href="http://www.forbes.com/sites/ciocentral/2012/08/03/why-qr-codes-dont-work/">Forbes</a> - <a href="http://www.qrme.co.uk/qr-codes-explained.html">QR Me</a> - <a href="http://www.statesman.com/news/lifestyles/how-qr-codes-work-1/nRcwN/">Statesman</a> - <a href="http://2d-code.co.uk/qr-code-insights/?goback=%2Egde_62503_member_96977684">2D Code</a> - <a href="http://www.businessweek.com/articles/2012-06-28/qr-code-fatigue">Business Insider</a> - <em>Yellow Image: <a href="http://www.swetake.com/qr/qr1_en.html">Swetake</a></em> ]</p>
+
+						
+					</div>
+				<div id="ads">
+				<div class="ad_perma-panorama default"><div class="ad panorama">
+<!-- widget container -->
+<div id="ad_container_20489094" class="ad_container 640x360 default" style="display: none;">
+	<iframe id="ad_iframe_20489094" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="640" height="360"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_20489094').HyperionAd({"mode":"iframe","width":640,"height":360,"size":"640x360","hyperion_class":"HyperionAd","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":20489094,"variant":"default","tags":["gizexplains","qrcodes","scanners","readers","malware","shopping","marketing","core","top"],"headline":"How QR Codes Work and Why They Suck So Hard","issued":"Tue, 18 Dec 2012 19:20:00 +0000","post_id":"5969312","sponsored":false,"fallback_zone":"value from GED","iframe_attributes":{"id":"ad_iframe_20489094","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":640,"height":360}});
+</script>
+</div></div>				</div>
+
+	
+<div id="comments">
+<div class="comment-loader"></div>
+<div id="thread_navigation"></div>
+<iframe id="pw-comments" width="680" height="0" frameborder="0"scrolling="no" style="border: 0;" data-src="http://api.gawker.com/powwow/"></iframe>
+<!--runScript-->
+<script type="text/javascript" charset="utf-8">
+	Powwow.init({
+		iframe_id: 'pw-comments',
+		type: 'featured',
+		hidden: false,
+		nouser_disabled_form: false,
+		config: {"root_details_url":"http:\/\/gawker.com\/index.php","domain":"gizmodo.com","host":"gizmodo.com","features":{"nodebrowser":false,"nosnippet":false,"readonly":false,"realavatarnode":true,"expandnode":true,"expanded":false}},
+		params: {
+			url: 'http://gizmodo.com/5969312/',
+			comment_id: '',
+									author: 'Andrew Tarantola',
+						closed: false		},
+		css: 'http://ganja.gawkerassets.com/assets/v10.gizmodo.com/css/powwow.css?rev=20121203'
+	});
+</script>
+</div>				</div>
+				<!-- /content -->
+<script type="text/javascript">
+jQuery( function() {
+	var fade;
+	if( (pageType == 'post' || pageType == 'frontpage' || pageType == 'tagpage') && jQuery('.alternates').length > 0 ){
+		jQuery('.alternates .taglink').mouseenter(function(){jQuery('.tag-more').fadeIn(100)});
+		jQuery('.alternates .topspan').mouseenter(function(){jQuery('.tag-more').fadeIn(100)});
+		jQuery('.alternates').hover(function(){clearTimeout(fade);}, function(){fade = setTimeout("jQuery('.tag-more').fadeOut(100)",2000)});
+	}
+}
+);
+</script>
+
+	<a name="comments"></a>
+<div id="sitetags">
+			<div class="site site-gizmodo first">
+				<a class="marked-head gizmodo-head gizmodo-border heading nocapture" href="http://gizmodo.com/" ><img src="http://ganja.gawkerassets.com/assets/base.v10/img/footer/logos/gizmodo.png"/></a>
+				<a href="http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard?utm_source=gizmodo.com&utm_medium=recirculation&utm_campaign=recirculation" class="nocapture"><img width="130" height="72" src="http://img.gawkerassets.com/img/188paaisqkcmzjpg/micro.jpg" title="How QR Codes Work and Why They Suck So Hard" class="editorial"></a>
+				<p><a href="http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard?utm_source=gizmodo.com&utm_medium=recirculation&utm_campaign=recirculation">How QR Codes Work and Why They Suck So Hard</a></p>
+			</div>
+			<div class="site site-gawker">
+				<a class="marked-head gawker-head gawker-border heading nocapture" href="http://gawker.com/" ><img src="http://ganja.gawkerassets.com/assets/base.v10/img/footer/logos/gawker.png"/></a>
+				<a href="http://gawker.com/5968000/gifts-of-frankincense-and-myrrh-and-guac-how-to-get-guests-to-stock-your-holiday-party?utm_source=gizmodo.com&utm_medium=recirculation&utm_campaign=recirculation" class="nocapture"><img width="130" height="72" src="http://img.gawkerassets.com/img/188qxpg8wuyvppng/micro.png" title="Gifts of Frankincense and Myrrh (and Guac): How to Get Guests to Stock Your Holiday Party" class="editorial"></a>
+				<p><a href="http://gawker.com/5968000/gifts-of-frankincense-and-myrrh-and-guac-how-to-get-guests-to-stock-your-holiday-party?utm_source=gizmodo.com&utm_medium=recirculation&utm_campaign=recirculation">Gifts of Frankincense and Myrrh (and Guac): How to Get Guests to Stock Your Holiday Party</a></p>
+			</div>
+			<div id="ad_placeholder_300x250_footer" style="display: none;"></div>
+			<div class="site site-lifehacker">
+				<a class="marked-head lifehacker-head lifehacker-border heading nocapture" href="http://lifehacker.com/" ><img src="http://ganja.gawkerassets.com/assets/base.v10/img/footer/logos/lifehacker.png"/></a>
+				<a href="http://lifehacker.com/5969427/whats-the-best-way-to-keep-my-gadgets-charged-at-all-times?utm_source=gizmodo.com&utm_medium=recirculation&utm_campaign=recirculation" class="nocapture"><img width="130" height="72" src="http://img.gawkerassets.com/img/188qzlitezp2pjpg/micro.jpg" title="What's the Best Way to Keep My Gadgets Charged at All Times?" class="editorial"></a>
+				<p><a href="http://lifehacker.com/5969427/whats-the-best-way-to-keep-my-gadgets-charged-at-all-times?utm_source=gizmodo.com&utm_medium=recirculation&utm_campaign=recirculation">What's the Best Way to Keep My Gadgets Charged at All Times?</a></p>
+			</div>
+			<div class="site site-deadspin last">
+				<a class="marked-head deadspin-head deadspin-border heading nocapture" href="http://deadspin.com/" ><img src="http://ganja.gawkerassets.com/assets/base.v10/img/footer/logos/deadspin.png"/></a>
+				<a href="http://deadspin.com/5969485/what-were-your-favorite-sports-stories-from-this-year?utm_source=gizmodo.com&utm_medium=recirculation&utm_campaign=recirculation" class="nocapture"><img width="130" height="72" src="http://img.gawkerassets.com/img/188r5jrl5t2z9jpg/micro.jpg" title="What Were Your Favorite Sports Stories From This Year?" class="editorial"></a>
+				<p><a href="http://deadspin.com/5969485/what-were-your-favorite-sports-stories-from-this-year?utm_source=gizmodo.com&utm_medium=recirculation&utm_campaign=recirculation">What Were Your Favorite Sports Stories From This Year?</a></p>
+			</div>
+			<div class="site site-kotaku first">
+				<a class="marked-head kotaku-head kotaku-border heading nocapture" href="http://kotaku.com/" ><img src="http://ganja.gawkerassets.com/assets/base.v10/img/footer/logos/kotaku.png"/></a>
+				<a href="http://kotaku.com/5969396/the-best-gaming-gifs-of-2012?utm_source=gizmodo.com&utm_medium=recirculation&utm_campaign=recirculation" class="nocapture"><img width="130" height="72" src="http://img.gawkerassets.com/img/188qmfbpypwj7gif/micro.gif" title="The Best Gaming GIFs of 2012" class="editorial"></a>
+				<p><a href="http://kotaku.com/5969396/the-best-gaming-gifs-of-2012?utm_source=gizmodo.com&utm_medium=recirculation&utm_campaign=recirculation">The Best Gaming GIFs of 2012</a></p>
+			</div>
+			<div class="site site-jezebel">
+				<a class="marked-head jezebel-head jezebel-border heading nocapture" href="http://jezebel.com/" ><img src="http://ganja.gawkerassets.com/assets/base.v10/img/footer/logos/jezebel.png"/></a>
+				<a href="http://jezebel.com/5969399/just-because-youre-hot-doesnt-mean-he-wont-cheat?utm_source=gizmodo.com&utm_medium=recirculation&utm_campaign=recirculation" class="nocapture"><img width="130" height="72" src="http://img.gawkerassets.com/img/188r2gu2kjh0bjpg/micro.jpg" title="Just Because You’re Hot Doesn’t Mean He Won’t Cheat" class="editorial"></a>
+				<p><a href="http://jezebel.com/5969399/just-because-youre-hot-doesnt-mean-he-wont-cheat?utm_source=gizmodo.com&utm_medium=recirculation&utm_campaign=recirculation">Just Because You’re Hot Doesn’t Mean He Won’t Cheat</a></p>
+			</div>
+			<div class="site site-io9">
+				<a class="marked-head io9-head io9-border heading nocapture" href="http://io9.com/" ><img src="http://ganja.gawkerassets.com/assets/base.v10/img/footer/logos/io9.png"/></a>
+				<a href="http://io9.com/5969204/could-nuclear-disarmament-actually-increase-our-chance-of-an-apocalypse?utm_source=gizmodo.com&utm_medium=recirculation&utm_campaign=recirculation" class="nocapture"><img width="130" height="72" src="http://img.gawkerassets.com/img/188qxu3ym8f8qjpg/micro.jpg" title="Could nuclear disarmament actually increase our chance of an apocalypse?" class="editorial"></a>
+				<p><a href="http://io9.com/5969204/could-nuclear-disarmament-actually-increase-our-chance-of-an-apocalypse?utm_source=gizmodo.com&utm_medium=recirculation&utm_campaign=recirculation">Could nuclear disarmament actually <em>increase</em> our chance of an apocalypse?</a></p>
+			</div>
+			<div class="site site-jalopnik last">
+				<a class="marked-head jalopnik-head jalopnik-border heading nocapture" href="http://jalopnik.com/" ><img src="http://ganja.gawkerassets.com/assets/base.v10/img/footer/logos/jalopnik.png"/></a>
+				<a href="http://jalopnik.com/5968290/318-corners-in-11-miles-driving-americas-wildest-road?utm_source=gizmodo.com&utm_medium=recirculation&utm_campaign=recirculation" class="nocapture"><img width="130" height="72" src="http://img.gawkerassets.com/img/188qkire8c4bajpg/micro.jpg" title="318 Corners In 11 Miles: Driving America's Wildest Road" class="editorial"></a>
+				<p><a href="http://jalopnik.com/5968290/318-corners-in-11-miles-driving-americas-wildest-road?utm_source=gizmodo.com&utm_medium=recirculation&utm_campaign=recirculation">318 Corners In 11 Miles: Driving America's Wildest Road</a></p>
+			</div>
+</div>
+			</div>
+			<script type="text/javascript">
+				var post_data = {
+					img_data: {"data":[{"original":{"url":"http:\/\/img.gawkerassets.com\/img\/188paaisqkcmzjpg\/original.jpg","width":960,"height":540},"ooriginal":{"url":"http:\/\/img.gawkerassets.com\/post\/4\/2012\/12\/metaqr.jpg","width":960,"height":540},"bigpic":{"url":"http:\/\/img.gawkerassets.com\/img\/188paaisqkcmzjpg\/bigpic.jpg","width":960,"height":540},"medium":{"url":"http:\/\/img.gawkerassets.com\/img\/188paaisqkcmzjpg\/medium.jpg","width":300,"height":169},"xlarge":{"url":"http:\/\/img.gawkerassets.com\/img\/188paaisqkcmzjpg\/xlarge.jpg","width":640,"height":360}},{"original":{"url":"http:\/\/img.gawkerassets.com\/img\/188p9iogzzw1ypng\/original.png","width":560,"height":379},"ooriginal":{"url":"http:\/\/img.gawkerassets.com\/post\/4\/2012\/12\/qr3-2.png","width":560,"height":379},"medium":{"url":"http:\/\/img.gawkerassets.com\/img\/188p9iogzzw1ypng\/medium.png","width":300,"height":203}}],"lookup":{"\/img\/188paaisqkcmzjpg\/original.jpg":{"transform":"original","pos":0},"\/post\/4\/2012\/12\/metaqr.jpg":{"transform":"ooriginal","pos":0},"\/img\/188paaisqkcmzjpg\/bigpic.jpg":{"transform":"bigpic","pos":0},"\/img\/188paaisqkcmzjpg\/medium.jpg":{"transform":"medium","pos":0},"\/img\/188paaisqkcmzjpg\/xlarge.jpg":{"transform":"xlarge","pos":0},"\/img\/188p9iogzzw1ypng\/original.png":{"transform":"original","pos":1},"\/post\/4\/2012\/12\/qr3-2.png":{"transform":"ooriginal","pos":1},"\/img\/188p9iogzzw1ypng\/medium.png":{"transform":"medium","pos":1}}}				};
+				GawkerClientside.pushWidget('post', jQuery('div.post').PostWidget(post_data).data('PostWidget'));
+			</script>
+
+	<div id="rightwrapper">
+		<div id="rightcontainer">
+			<div id="hidescroll" style="display: block; "></div>
+			<div id="rightbar-header" class="modfont marked marked-head ui-border">
+	<div id="auth">
+	<div id="user" class="user_control cn_profile_panel">
+		<a href="#" class="user_control cn_profile_link"></a>
+		<div id="userMenu" class="user_control cn_user_menu box">
+			<div id="userNotificationContainer" class="notifications modfont"></div>
+			<div id="clearNotifications" style="display: none">Clear notifications &times;</div>
+			<ul id="profile_actions">
+				<li><a href="/me" class="user_control cn_goto_profile">Profile</a></li>
+				<li><a class="user_control cn_logout_link" href="#">Logout</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="login" class="user_control cn_login_panel">
+		<a class="user_control cn_togglelogindialog" href="#">Sign in</a>
+	</div>
+</div>    <div id="rightbar_pin_container">
+        <a href="#" id="rightbar_pin" class="modfont viewSelector cn_eye" title="Change the layout of the page"></a>
+        					<div class="ui-dropdown modfont site-bg-color">
+						<ul>
+							<li id="onepane"><a href="#" class="viewSelector cn_traditional"><span>Traditional</span><small>Entire page scrolls</small></a></li>
+							<li id="twopane"><a href="#" class="viewSelector cn_twopane"><span>Two panes</span><small>Sidebar scrolls independently</small></a></li>
+							<li id="blog"><a class="viewSelector" href="http://blog.gizmodo.com"><span>Blog view</span><small>Listing of stories by date</small></a></li>
+						</ul>
+					</div>    </div>
+
+    <a href="/search" class="search tool rightBarControl cn_search_open"></a>
+
+    <span class="date modfont">Tuesday, Dec 18, 2012</span>
+
+    <div class="ui-dropdown modfont site-bg-color" id="sidebarmode">
+        <span class="selected">Latest Stories</span><span class="downarrow"></span>
+        <ul>
+            <li id="switch_latest">
+				<a href="#" class="tool home rightBarControl cn_home"><span>Latest Stories</span></a>
+            </li>
+            <li id="switch_popular">
+				<a href="#" class="tool popular rightBarControl cn_popular"><span>Most Popular</span></a>
+            </li>
+            <li id="switch_commented">
+				<a href="#" class="tool commented rightBarControl cn_commented"><span>Most Discussed</span></a>
+            </li>
+                    </ul>
+    </div>
+
+    <div id="notifications">
+        				<div id="rightbar_notification_container" class="inner">
+					<div id="user_notification" style="display: none;">
+						<div class="cn_user_header notificationControl notifbadge" style="display: none;"></div>
+						<div class="cn_user_list notificationControl"></div>
+					</div>
+					<div id="breaking_notification" style="display: none;"></div>
+					<div id="post_notification" class="notifbadge" style="display: none;">
+						<div class="cn_wrap notificationControl"></div>
+					</div>
+					<div id="post_notification_overlay" style="display: none;"></div>
+					<div style="clear: both;"></div>
+				</div>
+    </div>
+</div>			<div class="scrollwrap">
+				<div class="wrap">
+					<div class="innerWrap">
+						
+
+
+				<div id="tomorrowsnews"><span class="site-forecolor modfont">The Gadget Guide</span></div>
+				<div class="ad_300x250 rightbar"><!-- widget container -->
+<div id="ad_container_33748335" class="ad_container 300x250 rightbar" style="display: none;">
+	<iframe id="ad_iframe_33748335" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="300" height="250"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_33748335').HyperionAd_300x250_rightbar({"hyperion_class":"HyperionAd_300x250_rightbar","mode":"iframe","width":300,"height":250,"refreshable":false,"size":"300x250","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":33748335,"variant":"rightbar","tags":["gizexplains","qrcodes","scanners","readers","malware","shopping","marketing","core","top"],"headline":"How QR Codes Work and Why They Suck So Hard","issued":"Tue, 18 Dec 2012 19:20:00 +0000","post_id":"5969312","sponsored":false,"fallback_zone":"value from GED","iframe_attributes":{"id":"ad_iframe_33748335","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":300,"height":250}});
+</script></div>
+				<a href="" id="load_previous" class="stories modfont">Newer Stories…</a>
+
+				<ul id="post_list">
+				<li id="rbpost_5969312" class="postid_5969312 issued_1355858400 current ui-border ui-shade">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard">
+								<img class="thumb" src="http://img.gawkerassets.com/img/188paaisqkcmzjpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_60912599" class="ad_container 80x45 default" style="display: none;">
+	<iframe id="ad_iframe_60912599" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="80" height="45"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_60912599').HyperionAd_80x45_default({"hyperion_class":"HyperionAd_80x45_default","mode":"iframe","width":80,"height":45,"size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":60912599,"variant":"default","tags":["gizexplains","qrcodes","scanners","readers","malware","shopping","marketing","core","top"],"headline":"How QR Codes Work and Why They Suck So Hard","issued":"Tue, 18 Dec 2012 19:20:00 +0000","post_id":"5969312","sponsored":false,"fallback_zone":"collapse","iframe_attributes":{"id":"ad_iframe_60912599","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":80,"height":45}});
+</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://gizmodo.com/giz-explains/" class="tag modfont">
+										<span class="taglink">giz explains</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont highlight">2:20 PM</span>
+																																				<span class="views ui-light airport modfont" style="display: none">0</span>
+																	
+														<a class="headline" href="http://gizmodo.com/5969312/how-qr-codes-work-and-why-they-suck-so-hard">
+							<span class="headline-txt">How QR Codes Work and Why They Suck So Hard<span class="broughtby"></span></span></a>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+
+				<li id="rbpost_5969497" class="postid_5969497 issued_1355857768 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://gizmodo.com/5969497/report-automatic-video-ads-with-sound-coming-to-your-facebook-feed">
+								<img class="thumb" src="http://img.gawkerassets.com/img/188r6j866kr9pjpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_66983205" class="ad_container 80x45 default" style="display: none;">
+	<iframe id="ad_iframe_66983205" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="80" height="45"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_66983205').HyperionAd_80x45_default({"hyperion_class":"HyperionAd_80x45_default","mode":"iframe","width":80,"height":45,"size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":66983205,"variant":"default","tags":["facebook","advertising"],"headline":"Report: Automatic Video Ads (With SOUND?) Coming To Your Facebook Feed","issued":"Tue, 18 Dec 2012 19:09:28 +0000","post_id":"5969497","sponsored":false,"fallback_zone":"facebook","iframe_attributes":{"id":"ad_iframe_66983205","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":80,"height":45}});
+</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://gizmodo.com/facebook/" class="tag modfont">
+										<span class="taglink">facebook</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont highlight">2:09 PM</span>
+																																				<span class="views ui-light airport modfont" style="display: none">0</span>
+																	
+														<a class="headline" href="http://gizmodo.com/5969497/report-automatic-video-ads-with-sound-coming-to-your-facebook-feed">
+							<span class="headline-txt">Report: Automatic Video Ads (With SOUND?) Coming To Your Facebook Feed<span class="broughtby"></span></span></a>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+
+				<li id="rbpost_5969351" class="postid_5969351 issued_1355857200 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://gizmodo.com/5969351/24-photographs-of-your-most-treasured-ornaments">
+								<img class="thumb" src="http://img.gawkerassets.com/img/188qbdsyq35xqjpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_36877474" class="ad_container 80x45 default" style="display: none;">
+	<iframe id="ad_iframe_36877474" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="80" height="45"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_36877474').HyperionAd_80x45_default({"hyperion_class":"HyperionAd_80x45_default","mode":"iframe","width":80,"height":45,"size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":36877474,"variant":"default","tags":["shootingchallenge","photography","art","culture","christmas","ornaments","christmasornaments","top"],"headline":"24 Photographs Of Your Most Treasured Ornaments","issued":"Tue, 18 Dec 2012 19:00:00 +0000","post_id":"5969351","sponsored":false,"fallback_zone":"shootingchallenge","iframe_attributes":{"id":"ad_iframe_36877474","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":80,"height":45}});
+</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://gizmodo.com/shooting-challenge/" class="tag modfont">
+										<span class="taglink">shooting challenge</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont highlight">2:00 PM</span>
+																																				<span class="views ui-light airport modfont" style="display: none">0</span>
+																	
+														<a class="headline" href="http://gizmodo.com/5969351/24-photographs-of-your-most-treasured-ornaments">
+							<span class="headline-txt">24 Photographs Of Your Most Treasured Ornaments<span class="broughtby"></span></span></a>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+
+				<li id="rbpost_5969453" class="postid_5969453 issued_1355857130 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://gizmodo.com/5969453/whoa-is-this-polaroid-mirrorless-camera-real">
+								<img class="thumb" src="http://img.gawkerassets.com/img/188qz0d7f0bj1jpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_16012928" class="ad_container 80x45 default" style="display: none;">
+	<iframe id="ad_iframe_16012928" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="80" height="45"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_16012928').HyperionAd_80x45_default({"hyperion_class":"HyperionAd_80x45_default","mode":"iframe","width":80,"height":45,"size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":16012928,"variant":"default","tags":["cameras","polaroid","mirrorless","photography","mirrorlesscameras","android","core"],"headline":"Whoa, Is This Polaroid Mirrorless Camera Real?","issued":"Tue, 18 Dec 2012 18:58:50 +0000","post_id":"5969453","sponsored":false,"fallback_zone":"cameras","iframe_attributes":{"id":"ad_iframe_16012928","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":80,"height":45}});
+</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://gizmodo.com/cameras/" class="tag modfont">
+										<span class="taglink">cameras</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont highlight">1:58 PM</span>
+																																				<span class="views ui-light airport modfont" style="display: none">0</span>
+																	
+														<a class="headline" href="http://gizmodo.com/5969453/whoa-is-this-polaroid-mirrorless-camera-real">
+							<span class="headline-txt">Whoa, Is This Polaroid Mirrorless Camera Real?<span class="broughtby"></span></span></a>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+
+				<li id="rbpost_5969481" class="postid_5969481 issued_1355856108 noThumb blip ">
+					<div class="wrapper">
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_64016074" class="ad_container 80x45 default" style="display: none;">
+	<iframe id="ad_iframe_64016074" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="80" height="45"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_64016074').HyperionAd_80x45_default({"hyperion_class":"HyperionAd_80x45_default","mode":"iframe","width":80,"height":45,"size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":64016074,"variant":"default","tags":[],"headline":"iPhone 5 and iPad mini owners, iOS 6.0.2","issued":"Tue, 18 Dec 2012 18:41:48 +0000","post_id":"5969481","sponsored":false,"fallback_zone":"collapse","iframe_attributes":{"id":"ad_iframe_64016074","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":80,"height":45}});
+</script></div>						</div>
+
+						<div class="text">
+
+
+														<span class="headline-txt">
+<p><a href="http://gizmodo.com/5969481/" class="headline" style="display: inline; text-decoration: none;">iPhone 5 and iPad mini owners, iOS 6.0.2 is now available via iTunes to fix any and hopefully all Wi-Fi issues.</a></p>							</span>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+
+				<li id="rbpost_5969425" class="postid_5969425 issued_1355856045 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://gizmodo.com/5969425/is-it-ok-to-propose-on-twitter">
+								<img class="thumb" src="http://img.gawkerassets.com/img/188qtmeh2ys7yjpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_97541071" class="ad_container 80x45 default" style="display: none;">
+	<iframe id="ad_iframe_97541071" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="80" height="45"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_97541071').HyperionAd_80x45_default({"hyperion_class":"HyperionAd_80x45_default","mode":"iframe","width":80,"height":45,"size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":97541071,"variant":"default","tags":["chatroom","deadmau5"],"headline":"Is it OK to Propose on Twitter?","issued":"Tue, 18 Dec 2012 18:40:45 +0000","post_id":"5969425","sponsored":false,"fallback_zone":"collapse","iframe_attributes":{"id":"ad_iframe_97541071","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":80,"height":45}});
+</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://gizmodo.com/chatroom/" class="tag modfont">
+										<span class="taglink">chatroom</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont highlight">1:40 PM</span>
+																																				<span class="views ui-light airport modfont" style="display: none">0</span>
+																	
+														<a class="headline" href="http://gizmodo.com/5969425/is-it-ok-to-propose-on-twitter">
+							<span class="headline-txt">Is it OK to Propose on Twitter?<span class="broughtby"></span></span></a>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+
+				<li id="rbpost_5969480" class="postid_5969480 issued_1355855460 noThumb blip ">
+					<div class="wrapper">
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_94362710" class="ad_container 80x45 default" style="display: none;">
+	<iframe id="ad_iframe_94362710" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="80" height="45"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_94362710').HyperionAd_80x45_default({"hyperion_class":"HyperionAd_80x45_default","mode":"iframe","width":80,"height":45,"size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":94362710,"variant":"default","tags":[],"headline":"Google's new music matching service is basically","issued":"Tue, 18 Dec 2012 18:31:00 +0000","post_id":"5969480","sponsored":false,"fallback_zone":"collapse","iframe_attributes":{"id":"ad_iframe_94362710","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":80,"height":45}});
+</script></div>						</div>
+
+						<div class="text">
+
+
+														<span class="headline-txt">
+<p><a href="http://gizmodo.com/5969480/" class="headline" style="display: inline; text-decoration: none;">Google's </a><a href="https://play.google.com/music/listen?u=0#start">new music matching service</a><a href="http://gizmodo.com/5969480/" class="headline" style="display: inline; text-decoration: none;"> is basically iTunes Match streaming playback for free. [</a><a href="http://allthingsd.com/20121218/googles-music-locker-now-works-like-apples-and-amazons-except-its-free/">ATD</a><a href="http://gizmodo.com/5969480/" class="headline" style="display: inline; text-decoration: none;">]</a></p>							</span>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+
+				<li id="rbpost_5969371" class="postid_5969371 issued_1355855400 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://gizmodo.com/5969371/need-holiday-shopping-help-were-here-to-helplive">
+								<img class="thumb" src="http://img.gawkerassets.com/img/188qgpun29ruejpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_88687267" class="ad_container 80x45 default" style="display: none;">
+	<iframe id="ad_iframe_88687267" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="80" height="45"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_88687267').HyperionAd_80x45_default({"hyperion_class":"HyperionAd_80x45_default","mode":"iframe","width":80,"height":45,"size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":88687267,"variant":"default","tags":["giftguide2012","qa","santa"],"headline":"Need Holiday Shopping Help? We're Here to Help&mdash;Live","issued":"Tue, 18 Dec 2012 18:30:00 +0000","post_id":"5969371","sponsored":false,"fallback_zone":"giftguide2012","iframe_attributes":{"id":"ad_iframe_88687267","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":80,"height":45}});
+</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://gizmodo.com/gift-guide-2012/" class="tag modfont">
+										<span class="taglink">Gift Guide 2012</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">1:30 PM</span>
+																																				<span class="views ui-light airport modfont" style="display: none">0</span>
+																	
+														<a class="headline" href="http://gizmodo.com/5969371/need-holiday-shopping-help-were-here-to-helplive">
+							<span class="headline-txt">Need Holiday Shopping Help? We&#8217;re Here to Help&mdash;Live<span class="broughtby"></span></span></a>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+
+				<li id="rbpost_5969436" class="postid_5969436 issued_1355852430 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://gizmodo.com/5969436/beats-by-dre-headphones-are-going-in-helmets-now">
+								<img class="thumb" src="http://img.gawkerassets.com/img/188qw93ye2w7fjpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_97383062" class="ad_container 80x45 default" style="display: none;">
+	<iframe id="ad_iframe_97383062" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="80" height="45"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_97383062').HyperionAd_80x45_default({"hyperion_class":"HyperionAd_80x45_default","mode":"iframe","width":80,"height":45,"size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":97383062,"variant":"default","tags":["gear","helmets","skiing","snowboarding","wintersports"],"headline":"Beats By Dre Headphones Are Going in Helmets Now","issued":"Tue, 18 Dec 2012 17:40:30 +0000","post_id":"5969436","sponsored":false,"fallback_zone":"collapse","iframe_attributes":{"id":"ad_iframe_97383062","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":80,"height":45}});
+</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://gizmodo.com/gear/" class="tag modfont">
+										<span class="taglink">gear</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">12:40 PM</span>
+																																				<span class="views ui-light airport modfont" style="display: none">0</span>
+																	
+														<a class="headline" href="http://gizmodo.com/5969436/beats-by-dre-headphones-are-going-in-helmets-now">
+							<span class="headline-txt">Beats By Dre Headphones Are Going in Helmets Now<span class="broughtby"></span></span></a>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+
+				<li id="rbpost_5969445" class="postid_5969445 issued_1355851874 video ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink autoplay" href="http://gizmodo.com/5969445/go-on-a-mission-with-your-nike-fuelband-wait-what">
+								<img class="thumb" src="http://img.gawkerassets.com/img/188qxlaan14lajpg/xsmall.jpg" width="80" height="45" alt="" />
+																	<img src="http://ganja.gawkerassets.com/assets/base.v10/img/ui/icon-video.png" class="icon video">
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_87445202" class="ad_container 80x45 default" style="display: none;">
+	<iframe id="ad_iframe_87445202" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="80" height="45"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_87445202').HyperionAd_80x45_default({"hyperion_class":"HyperionAd_80x45_default","mode":"iframe","width":80,"height":45,"size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":87445202,"variant":"default","tags":["nike","nikefuelband","core","ios"],"headline":"Go On a \"Mission\" With Your Nike FuelBand. Wait, What?","issued":"Tue, 18 Dec 2012 17:31:14 +0000","post_id":"5969445","sponsored":false,"fallback_zone":"collapse","iframe_attributes":{"id":"ad_iframe_87445202","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":80,"height":45}});
+</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://gizmodo.com/nike/" class="tag modfont">
+										<span class="taglink">nike</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">12:31 PM</span>
+																																				<span class="views ui-light airport modfont" style="display: none">0</span>
+																	
+														<a class="headline autoplay" href="http://gizmodo.com/5969445/go-on-a-mission-with-your-nike-fuelband-wait-what">
+							<span class="headline-txt">Go On a &#8220;Mission&#8221; With Your Nike FuelBand. Wait, What?<span class="broughtby"></span></span></a>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+
+				<li id="rbpost_5969443" class="postid_5969443 issued_1355851806 noThumb blip ">
+					<div class="wrapper">
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_85815613" class="ad_container 80x45 default" style="display: none;">
+	<iframe id="ad_iframe_85815613" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="80" height="45"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_85815613').HyperionAd_80x45_default({"hyperion_class":"HyperionAd_80x45_default","mode":"iframe","width":80,"height":45,"size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":85815613,"variant":"default","tags":[],"headline":"Now you can watch all of Vimeo's lovely short","issued":"Tue, 18 Dec 2012 17:30:06 +0000","post_id":"5969443","sponsored":false,"fallback_zone":"collapse","iframe_attributes":{"id":"ad_iframe_85815613","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":80,"height":45}});
+</script></div>						</div>
+
+						<div class="text">
+
+
+														<span class="headline-txt">
+<p><a href="http://gizmodo.com/5969443/" class="headline" style="display: inline; text-decoration: none;">Now you can watch all of Vimeo's lovely short films on Xbox through a brand new app. Start with </a><a href="http://gizmodo.com/5943165/caines-arcade-2-that-awesome-kids-arcade-gets-a-sequel?tag=caine.s-arcade">this video</a><a href="http://gizmodo.com/5969443/" class="headline" style="display: inline; text-decoration: none;">.</a></p>							</span>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+
+				<li id="rbpost_5969408" class="postid_5969408 issued_1355851200 gallery video ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://gizmodo.com/5969408/18-adorable-videos-of-kids-being-incredibly-excited-about-christmas-gadgets/gallery/">
+								<img class="thumb" src="http://img.gawkerassets.com/img/188qr00tprriljpg/xsmall.jpg" width="80" height="45" alt="" />
+																	<img src="http://ganja.gawkerassets.com/assets/base.v10/img/ui/icon-gallery.png" class="icon gallery">
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_69290491" class="ad_container 80x45 default" style="display: none;">
+	<iframe id="ad_iframe_69290491" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="80" height="45"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_69290491').HyperionAd_80x45_default({"hyperion_class":"HyperionAd_80x45_default","mode":"iframe","width":80,"height":45,"size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":69290491,"variant":"default","tags":["winterbreak","watchthis"],"headline":"18 Adorable Videos of Kids Being Incredibly Excited About Christmas Gadgets","issued":"Tue, 18 Dec 2012 17:20:00 +0000","post_id":"5969408","sponsored":false,"fallback_zone":"watchthis","iframe_attributes":{"id":"ad_iframe_69290491","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":80,"height":45}});
+</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://gizmodo.com/winter-break/" class="tag modfont">
+										<span class="taglink">winter break</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">12:20 PM</span>
+																																				<span class="views ui-light airport modfont" style="display: none">0</span>
+																	
+														<a class="headline" href="http://gizmodo.com/5969408/18-adorable-videos-of-kids-being-incredibly-excited-about-christmas-gadgets/gallery/">
+							<span class="headline-txt">18 Adorable Videos of Kids Being Incredibly Excited About Christmas Gadgets<span class="broughtby"></span></span></a>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+
+				<li id="rbpost_5969431" class="postid_5969431 issued_1355850901 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://gizmodo.com/5969431/digital-comics-finally-let-you-pick-up-where-you-left-off">
+								<img class="thumb" src="http://img.gawkerassets.com/img/188quzq8yq32bjpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_75407046" class="ad_container 80x45 default" style="display: none;">
+	<iframe id="ad_iframe_75407046" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="80" height="45"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_75407046').HyperionAd_80x45_default({"hyperion_class":"HyperionAd_80x45_default","mode":"iframe","width":80,"height":45,"size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":75407046,"variant":"default","tags":["comicbooks","comics","comixology"],"headline":"Digital Comics Finally Let You Pick Up Where You Left Off","issued":"Tue, 18 Dec 2012 17:15:01 +0000","post_id":"5969431","sponsored":false,"fallback_zone":"collapse","iframe_attributes":{"id":"ad_iframe_75407046","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":80,"height":45}});
+</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://gizmodo.com/comic-books/" class="tag modfont">
+										<span class="taglink">comic books</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">12:15 PM</span>
+																																				<span class="views ui-light airport modfont" style="display: none">0</span>
+																	
+														<a class="headline" href="http://gizmodo.com/5969431/digital-comics-finally-let-you-pick-up-where-you-left-off">
+							<span class="headline-txt">Digital Comics Finally Let You Pick Up Where You Left Off<span class="broughtby"></span></span></a>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+
+				<li id="rbpost_5969401" class="postid_5969401 issued_1355850000 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://gizmodo.com/5969401/how-much-would-it-cost-to-gift-wrap-an-entire-house">
+								<img class="thumb" src="http://img.gawkerassets.com/img/188qn9yoapnufjpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_44192756" class="ad_container 80x45 default" style="display: none;">
+	<iframe id="ad_iframe_44192756" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="80" height="45"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_44192756').HyperionAd_80x45_default({"hyperion_class":"HyperionAd_80x45_default","mode":"iframe","width":80,"height":45,"size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":44192756,"variant":"default","tags":["calculators","wrappingpaper","winterbreak"],"headline":"How Much Would It Cost To Gift Wrap an Entire House?","issued":"Tue, 18 Dec 2012 17:00:00 +0000","post_id":"5969401","sponsored":false,"fallback_zone":"collapse","iframe_attributes":{"id":"ad_iframe_44192756","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":80,"height":45}});
+</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://gizmodo.com/calculators/" class="tag modfont">
+										<span class="taglink">calculators</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">12:00 PM</span>
+																																				<span class="views ui-light airport modfont" style="display: none">0</span>
+																	
+														<a class="headline" href="http://gizmodo.com/5969401/how-much-would-it-cost-to-gift-wrap-an-entire-house">
+							<span class="headline-txt">How Much Would It Cost To Gift Wrap an Entire House?<span class="broughtby"></span></span></a>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+
+				<li id="rbpost_5969442" class="postid_5969442 issued_1355848740 ">
+					<div class="wrapper">
+						<div class="thumb_container">
+							<a class="thumbLink" href="http://gizmodo.com/5969442/the-only-place-on-earth-where-you-will-be-safe-from-the-apocalypse">
+								<img class="thumb" src="http://img.gawkerassets.com/img/188qzcl7dyagzjpg/xsmall.jpg" width="80" height="45" alt="" />
+															</a>
+						</div>
+
+						<div class="stamp_container" style="display: none;">
+							<div class="ad_80x45 default"><!-- widget container -->
+<div id="ad_container_77040131" class="ad_container 80x45 default" style="display: none;">
+	<iframe id="ad_iframe_77040131" frameBorder="0" scrolling="no" vspace="0" marginWidth="0" marginHeight="0" hspace="0" allowTransparency="true" width="80" height="45"></iframe>
+</div>
+
+<!-- widget startup -->
+<!-- runScript --><script type="text/javascript">
+	jQuery('#ad_container_77040131').HyperionAd_80x45_default({"hyperion_class":"HyperionAd_80x45_default","mode":"iframe","width":80,"height":45,"size":"80x45","adserver_host":"hyperion.gawker.com","request_ad":true,"hide":true,"run_ad":true,"site":"gm.gizmodo","site_id":"4","keywords":["mtfIFPath=\/assets\/vendor\/doubleclick\/"],"random":77040131,"variant":"default","tags":["apocalypse","rtanj","winterbreak","top"],"headline":"The Only Place on Earth Where You Will Be Safe From the Apocalypse","issued":"Tue, 18 Dec 2012 16:39:00 +0000","post_id":"5969442","sponsored":false,"fallback_zone":"collapse","iframe_attributes":{"id":"ad_iframe_77040131","frameBorder":0,"scrolling":"no","vspace":0,"marginWidth":0,"marginHeight":0,"hspace":0,"allowTransparency":"true","width":80,"height":45}});
+</script></div>						</div>
+
+						<div class="text">
+
+									<a href="http://gizmodo.com/apocalypse/" class="tag modfont">
+										<span class="taglink">apocalypse</span>
+								</a>
+
+																											<span class="timestamp ui-light airport modfont">11:39 AM</span>
+																																				<span class="views ui-light airport modfont" style="display: none">0</span>
+																	
+														<a class="headline" href="http://gizmodo.com/5969442/the-only-place-on-earth-where-you-will-be-safe-from-the-apocalypse">
+							<span class="headline-txt">The Only Place on Earth Where You Will Be Safe From the Apocalypse<span class="broughtby"></span></span></a>
+							
+						</div>
+						<div class="clear"></div>
+					</div>
+				</li>
+
+				</ul>
+
+				<a href="" id="load_more" class="stories modfont">More Stories…</a>
+
+				<ul id="post_list_cache" style="display: none;"><li></li></ul>
+
+				<ul id="sponsored_posts" style="display: none;">
+					<li></li>
+				</ul>
+				<script type="text/javascript">
+					jQuery('#sponsored_posts').load('/index.php?op=rightbar_sponsored&mode=headline&prev=', function() {
+						if (window.sponsored !== undefined && 1 ) {
+							window.sponsored.displaySponsoredPost();
+							window.sponsored.displayOldSponsoredPosts();
+							if (GawkerClientside !== undefined && GawkerClientside.widgets !== undefined && GawkerClientside.widgets.minirightbar !== undefined) {
+								GawkerClientside.widgets.minirightbar[0].refreshPostlist();
+							}
+						}
+					});
+				</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+			<div id="footer">
+				<div class="ad_640x90 default"></div>				<ul id="about_gawker_media">
+					<li><a rel="nofollow" href="/about/" title="Click here to go to About">About</a></li>
+					<li><a rel="nofollow" href="http://help.gawker.com/home/" title="Click here to go to Help">Help</a></li>
+					<li><a rel="nofollow" href="http://gawker.com/jobsatgawker" title="Jobs">Jobs</a></li>
+					<li><a title="Click here to go to Legal" href="http://advertising.gawker.com/legal/" rel="nofollow">Legal</a></li>
+					<li><a title="Click here to go to Legal" href="http://advertising.gawker.com/legal/privacy-policy/" rel="nofollow">Privacy</a></li>
+					<li><a title="Click here to go to Permissions" href="http://advertising.gawker.com/legal/permissions/" rel="nofollow">Permissions</a></li>
+					<li><a title="Click here to go to Advertising" href="http://advertising.gawker.com/" rel="nofollow">Advertising</a></li>
+					<li><a title="RSS Feed" href="/about/#subscribe">Subscribe</a></li>
+					<li><a title="Email a tip" href="mailto:&#116;&#105;&#112;&#98;&#111;&#120;&#64;&#103;&#105;&#122;&#109;&#111;&#100;&#111;&#46;&#99;&#111;&#109;">Send a tip</a></li>
+				</ul>
+
+<div id="snippet_rightbar_notification_templates"></div><script type="text/javascript">Snippets.push("snippet_rightbar_notification_templates", "\t\t\t\t<div id=\"notif_templates\" style=\"display: none;\">\n\t\t\t\t\t<span class=\"star\">%userName% starred %you%<\/span>\n\t\t\t\t\t<span class=\"unstar\">%userName% took away %your% star<\/span>\n\t\t\t\t\t<span class=\"promote\">%userName% promoted <a href=\"|commentLink|\" rel=\"nofollow\">%your% comment<\/a><\/span>\n\t\t\t\t\t<span class=\"demote\">%userName% demoted <a href=\"|commentLink|\" rel=\"nofollow\">%your% comment<\/a><\/span>\n\t\t\t\t\t<span class=\"reply\">%userName% replied to <a href=\"|commentLink|\" rel=\"nofollow\">%your% comment<\/a><\/span>\n\t\t\t\t\t<span class=\"approve\">%userName% approved %you%<\/span>\n\t\t\t\t\t<span class=\"pending\">%userName% took away %your% approval<\/span>\n\t\t\t\t\t<span class=\"removed\">%userName% has banned %you%<\/span>\n\t\t\t\t\t<span class=\"message\">%userName% sent you <a href=\"#messageLink#\" rel=\"nofollow\">a message<\/a><\/span>\n\t\t\t\t\t<span class=\"ssomigrate\">Convert your account. <a href=\"#\" rel=\"nofollow\" class=\"presence_control cn_ssousermigrate_link\">More info &raquo;<\/a><\/span>\n\t\t\t\t\t<div id=\"notif_container\">\n\t\t\t\t\t\t<div class=\"post notification\">\n\t\t\t\t\t\t\t<h6 class=\"headline\">%text%<\/h6>\n\t\t\t\t\t\t<\/div>\n\t\t\t\t\t<\/div>\n\t\t\t\t\t<div id=\"notif_header\">\n\t\t\t\t\t\t<strong>You have %count% new notification%notifplural%<\/strong>, click to view\n\t\t\t\t\t<\/div>\n\t\t\t\t<\/div>");</script>
+<script>
+	var ganjaHost = 'Host: GM27<br/>Generated on: 2012-12-18 14:37:43';
+</script>
+			</div>
+
+		</div>
+
+		<div id="trackers">
+								<script type="text/javascript">
+				var _gaq = _gaq || [];
+				_gaq.push(['_setAccount', 'UA-142218-3']);
+				_gaq.push(['_setDomainName', '.gizmodo.com']);
+				_gaq.push(['_trackPageview']);
+				_qoptions = { tags:"Gawker Geek" };
+				_qacct="p-d4P3FpSypJrlA";
+				gawker_getScript(('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js');
+			</script>
+
+			<script type="text/javascript">
+				var quant_script = gawker_getScript("http://edge.quantserve.com/quant.js", function() {
+					window.quantcastRun = 1;
+				});
+			</script>
+
+			<div class="ad_chartbeat_end default"><script type="text/javascript">
+			var _sf_async_config={
+				uid: 3012,
+				domain: 'gizmodo.com',
+				path: '/5969312/how-qr-codes-work-and-why-they-suck-so-hard'
+			};
+			_sf_async_config.sections = "giz explains,qr codes,scanners,readers,malware,shopping,marketing,core";
+			_sf_async_config.authors = "Andrew Tarantola";
+		</script></div>
+			<div id="tracker_loader"></div>
+			<img id="gawker_tracker_image" style="display: none;" height="0" width="0" class="track" alt="track" />
+
+			
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <a id="parsely-cfg" data-parsely-site="gizmodo.com"
+       href="http://parsely.com">Powered by the Parse.ly Publisher Platform (P3).</a>
+</div>
+				</div>
+
+		<div id="presence_external_templates" class="presence_control_external instapaper_ignore"></div>
+
+
+<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"d1ros97qkrwjf5.cloudfront.net/42/eum/rum.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-3.newrelic.com","a62ec163c8","148134","ZwdVMkZSDxFVUkAKWF5NdBNHRw4PG2F8Mw1ADUQS",0,68,new Date().getTime(),"","","","",""]);</script>
+		<script type="text/javascript" src="http://s.skimresources.com/js/33330X911642.skimlinks.js">skimlinks();</script>
+
+	</body>
+
+</html>

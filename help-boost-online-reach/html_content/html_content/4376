@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	 
+	<!-- Meta Data -->
+		<meta name="generator" content="Simple PHP Blog" />
+	<link rel="alternate" type="application/rss+xml" title="Get RSS 2.0 Feed" href="rss.php" />
+	<link rel="alternate" type="application/rdf+xml" title="Get RDF 1.0 Feed" href="rdf.php" />
+	<link rel="alternate" type="application/atom+xml" title="Get Atom 0.3 Feed" href="atom.php" />
+	
+	<!-- Meta Data -->
+	<!-- http://dublincore.org/documents/dces/ -->
+	<meta name="dc.title"       content="School Jokes Humor and Satire" />
+	<meta name="author"         content="Information Resource Network sc@informationresourcenetwork.com" />
+	<meta name="dc.creator"     content="Information Resource Network sc@informationresourcenetwork.com" />
+	<meta name="dc.subject"     content="school jokes,school,jokes,joke,humor,satire,college,university,high,junior,middle,elementary" />
+	<meta name="keywords"       content="school jokes,school,jokes,joke,humor,satire,college,university,high,junior,middle,elementary" />
+	<meta name="dc.description" content="School Jokes, Humor and Satire. Have some fun. Read a funny school joke. Better yet read a few dozen school jokes." />
+	<meta name="description"    content="School Jokes, Humor and Satire. Have some fun. Read a funny school joke. Better yet read a few dozen school jokes." />
+	<meta name="dc.type"        content="weblog" />
+	<meta name="dc.type"        content="blog" />
+	<meta name="resource-type"  content="document" />
+	<meta name="dc.format"      scheme="IMT" content="text/html" />
+	<meta name="dc.source"      scheme="URI" content="http://schooljokes.informationresourcenetwork.com/index.php" />
+	<meta name="dc.language"    scheme="RFC1766" content="Array" />
+	<meta name="dc.coverage"    content="global" />
+	<meta name="distribution"   content="GLOBAL" /> 
+	<meta name="dc.rights"      content="Copyright Information Resource Network" />
+	<meta name="copyright"      content="Copyright Information Resource Network" />
+	
+	<!-- Robots -->
+	<meta name="robots" content="ALL,INDEX,FOLLOW,ARCHIVE" />
+	<meta name="revisit-after" content="7 days" />
+	
+	<!-- Fav Icon -->
+	<link rel="shortcut icon" href="interface/favicon.ico" />
+	
+	<link rel="stylesheet" type="text/css" href="themes/modern/style.css" />
+	<style type="text/css">
+  /* OVERRIDE COLORS */
+
+  /* GENERAL SETTINGS */
+  body {
+    background-color: #F7F7F7;
+    color: #4D4D4D;
+  }
+
+  hr  
+  {
+    color: #E6E6E6;
+    background-color: #E6E6E6;
+  }
+  
+  /* TYPEOGRAPHY */
+  
+  a:link, a:visited { color: #000000; }
+  a:hover { color: #829FD9; }
+  a:active { color: #0000FF; }
+  
+  pre {
+    width: 480px;
+    border-color: #E6E6E6;
+  }
+  
+  /* HEADERS */
+  
+  h1, h2, h3, h4, h5, h6 {
+    /* color: #000000; */
+  }
+  
+  blockquote {
+    color: #4D4D4D;
+    border-color: #E6E6E6;
+  }
+  
+  /* LAYOUT / PLACEMENT */
+  
+  #page {
+    background-color: #FFFFFF;
+    border-color: #CCCCCC;
+  }
+  
+  #popup {
+    background-color: #FFFFFF;
+    border-color: #CCCCCC;
+  }
+  
+  #header {
+    border-color: #CCCCCC;
+  }
+  
+  #title {
+    color: #000000;
+    border-color: #CCCCCC;
+    background-color: #F2F2F2;
+  }
+  
+  #footer {
+    color: #000000;
+    border-color: #CCCCCC;
+    background: #F2F2F2;
+  }
+  
+  /* CONTENT */
+  
+  /* REGULAR ENTRY */
+  #content .entry .blog_title
+  {
+    border-color: #CCCCCC;
+    color: #000000;
+    background-color: #F2F2F2;
+  }
+  
+  #content .entry .blog_body
+  {
+    border-color: #CCCCCC;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+
+  #content .entry .blog_body_solid  {
+    border-color: #CCCCCC;
+    color: #000000;
+    background-color: #CCCCCC;
+  }
+  
+  #content .entry .blog_comment
+  {
+    border-color: #CCCCCC;
+    color: #000000;
+    background-color: #FFFFFF;
+  }
+  
+  #content .entry .blog_date,
+  #content .static .blog_date,
+  #content .comment .blog_date
+  {
+    color: #000000;
+  }
+  
+  /* STATIC ENTRY */
+  #content .static .blog_title
+  {
+    border-color: #95958C;
+    color: #000000;
+    background-color: #BEBEB5;
+  }
+  
+  #content .static .blog_body
+  {
+    border-color: #95958C;
+    color: #000000;
+    background-color: #F2F2EB;
+  }
+  
+  #content .static .blog_comment
+  {
+    border-color: #95958C;
+    color: #000000;
+    background-color: #F2F2EB;
+  }
+  
+  /* COMMENT ENTRY */
+  #content .comment .blog_title
+  {
+    border-color: #95958C;
+    color: #000000;
+    background-color: #BEBEB5;
+  }
+  
+  #content .comment .blog_body
+  {
+    border-color: #95958C;
+    color: #000000;
+    background-color: #F2F2EB;
+  }
+  
+  #content .comment .blog_comment
+  {
+    border-color: #95958C;
+    color: #000000;
+    background-color: #F2F2EB;
+  }
+  
+  /* SIDEBAR */
+  
+  #sidebar {
+    border-color: #E6E6E6;
+    background-color: #d7f4fa;
+  }
+  
+  #sidebar .menu_body a:link { color: #0000FF; }
+  #sidebar .menu_body a:visited { color: #0000FF; }
+  #sidebar .menu_body a:hover { color: #829FD9; }
+  #sidebar .menu_body a:active { color: #829FD9; }
+  
+  #sidebar .menu_title {
+    border-color: #CCCCCC;
+    color: #000000;
+    background-color: #7d6858;
+  }
+  
+  #sidebar .menu_body {
+    border-color: #CCCCCC;
+    color: #4D4D4D;
+    background-color: #FFFFFF;
+  }
+</style>
+	
+<script type="text/javascript">
+	<!--
+	// BLOG SETTINGS
+	var blogSettings = Array();
+	blogSettings['theme'] = 'modern';
+	blogSettings['img_path'] = 'themes/modern/images/';
+	blogSettings['content_width'] = 550;
+	blogSettings['menu_width'] = 200;
+	-->
+</script>
+	<script language="javascript" src="scripts/sb_javascript.js" type="text/javascript"></script>
+	
+	<title>School Jokes Humor and Satire - Extra Money</title>    <style type="text/css">@import "addto/addto.css";
+</style>
+</head>
+	    <body>
+    
+<P>
+<center><a href="http://www.nationallawyersdirectory.com" target="noframes"><img src="http://www.resourcesforattorneys.com/national-lawyers-directory.jpg" width="468" height="60"></a><br />
+National <a href="http://www.nationallawyersdirectory.com" target="noframes">Lawyers</a> Directory</center>         
+<P>
+    
+<center><script type="text/javascript"><!--
+google_ad_client = "pub-9363496469772843";
+google_ad_width = 728;
+google_ad_height = 90;
+google_ad_format = "728x90_as";
+google_ad_channel ="";
+google_ad_type = "text";
+google_color_border = "ffffff";
+google_color_bg = "ffffff";
+google_color_link = "0000FF";
+google_color_url = "0000FF";
+google_color_text = "000000";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js"> 
+</script></center><br />
+			
+      <div id="page">
+        <div id="header"><img src="themes/modern/images/header750x100.jpg" alt="" border="0" /></div>
+        <div id="title">School Jokes Humor and Satire</div>        <div id="innerpage">
+          <div id="content">
+            
+<!-- BLOG ENTRY BEGIN -->
+<div class="entry">
+
+<!-- BLOG TITLE BEGIN -->
+<div class="blog_title">Extra Money<a name="entry080226-235300">&nbsp;</a><br />
+</div>
+<!-- BLOG TITLE END -->
+
+<!-- BLOG BODY BEGIN -->
+<div class="blog_body">
+	<div class="blog_date">Tuesday, February 26, 2008, 09:53 PM - <a href="index.php?category=1">University - College</a><br />Posted by Administrator</div>
+		A student called up his Mom one evening from his college and asked her for some money, because he was broke.<br /><br />His Mother said, &quot;Sure, sweetie. I will send you some money. You also left your economics book here when you visited two weeks ago. Do you want me to send that up too?&quot;<br /><br />&quot;Uhh, oh yeah, O.K.&quot; responded the kid.<br /><br />So his Mom wrapped the book along with the checks up in a package, kissed Dad goodbye, and went to the post office to mail the money and the book. When she gets back, Dad asked, &quot;Well how much did you give the boy this time?&quot;<br /><br />&quot;Oh, I wrote two checks, one for $20, and the other for $1,000.&quot;<br /><br />&quot;That&#039;s $1020!!!&quot; yelled Dad, &quot;Are you going crazy???&quot;<br /><br />&quot;Don&#039;t worry hon,&quot; Mom said, kissed Dad on the on top of his head, &quot;I taped the $20 check to the cover of his book, but I put the $1,000 one somewhere between the pages in chapter 15!&quot;<br clear="all" />
+	</div>
+<!-- BLOG BODY END -->
+
+<!-- BLOG FOOTER BEGIN -->
+
+	<div class="blog_comment"><a href="comments.php?y=08&amp;m=02&amp;entry=entry080226-235300"><img src="themes/modern/images/box_add.png" alt="" width="14" height="14" align="top"/> 1 comment </a>
+ ( 511 views )
+</div>
+
+<!-- BLOG FOOTER END -->
+</div>
+
+<!-- BLOG ENTRY END -->
+<br /><center><b><span><a href="index.php?m=05&amp;y=08&amp;d=24&amp;entry=entry080524-192956">&#60;&#60;First&#32;&#32;</a></span><span><a href="index.php?m=02&amp;y=08&amp;d=27&amp;entry=entry080227-101440"> &#60;Back&#32;&#32;</a></span>  <span><a href="index.php?m=02&amp;y=08&amp;d=24&amp;entry=entry080224-090612">Next&#62;&#32;&#32;</a></span> <span><a href="index.php?m=01&amp;y=08&amp;d=24&amp;entry=entry080121-204622">&#32;&#32;Last&#62;&#62;</a></span></b></center><br />          </div>
+          <div id="sidebar">
+          
+          <!-- Search Google -->
+<center>
+<style type="text/css">
+@import url(http://www.google.com/cse/api/branding.css);
+</style>
+<div class="cse-branding-left" style="background-color:#d7f4fa;color:#000000">
+  <div class="cse-branding-form">
+    <form action="http://www.google.com/cse" id="cse-search-box" target="_blank">
+      <div>
+        <input type="hidden" name="cx" value="partner-pub-9363496469772843:fr341lytykq" />
+        <input type="hidden" name="ie" value="ISO-8859-1" />
+        <input type="text" name="q" size="26" />
+        <input type="submit" name="sa" value="Search" />
+      </div>
+    </form>
+  </div>
+  <div class="cse-branding-logo">
+    <img src="http://www.google.com/images/poweredby_transparent/poweredby_FFFFFF.gif" alt="Google" />
+  </div>
+  <div class="cse-branding-text">
+    Custom Search
+  </div>
+</div>
+</center>
+<!-- Search Google -->		
+          
+<br />
+
+
+<!-- SIDEBAR MENU BEGIN -->
+
+<!-- SEARCH -->
+<div class="menu_title">
+	<a id="linkSidebarSearch" href="javascript:toggleBlock('SidebarSearch');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Search this Site</a>
+</div>
+<div id="toggleSidebarSearch" class="menu_body">
+	<form method="get" action="search.php"><input type="text" size="16" name="q" />&nbsp;<input type="submit" value="Go" /></form>
+</div>
+<br />
+
+<!-- LINKS -->
+<div class="menu_title">
+Links
+</div>
+<div class="menu_body">
+	<a href="index.php">Home</a><br /><a href="contact.php">Contact Me</a><br /><a href="http://animaljokes.resourcesforattorneys.com/index.php" target="_blank">Animal Jokes and Humor</a><br /><a href="http://barjokes.resourcesforattorneys.com/index.php" target="_blank">Bar Jokes and Humor</a><br /><a href="http://blondjokes.informationresourcenetwork.com/index.php" target="_blank">Blonde Jokes and Humor</a><br /><a href="http://lifestyle.resourcesforattorneys.com/campingjokes.html" target="_blank">Camping Jokes and Humor</a><br /><a href="http://computerjokes.searchenginedirectory.net/index.php" target="_blank">Computer Jokes and Humor</a><br /><a href="http://lifestyle.resourcesforattorneys.com/datingjokes.html" target="_blank">Dating Jokes and Humor</a><br /><a href="http://doctorjokes.resourcesforattorneys.com/index.php" target="_blank">Doctor Jokes and Humor</a><br /><a href="http://stupidcrooks.criminallawlawyer.net/index.php" target="_blank">Dumb Crooks Stories and Jokes</a><br /><a href="http://lifestyle.resourcesforattorneys.com/fishingjokes.html" target="_blank">Fishing Jokes and Humor</a><br /><a href="http://genderjokes.resourcesforattorneys.com/index.php" target="_blank">Gender Jokes and Humor</a><br /><a href="http://lifestyle.resourcesforattorneys.com/golfjokes.html" target="_blank">Golf Jokes and Humor</a><br /><a href="http://lifestyle.resourcesforattorneys.com/jokeindex.html" target="_blank">Humor and Jokes</a><br /><a href="http://www.resourcesforattorneys.com/lawyerjokesdirectory.html" target="_blank">Lawyer Jokes and Humor</a><br /><a href="http://www.californiapersonalinjuryattorneys.us/legalhumor/index.php" target="_blank">Legal Jokes and Humor</a><br /><a href="http://militaryjokes.informationresourcenetwork.com/index.php" target="_blank">Military Jokes and Humor</a><br /><a href="http://officejokes.resourcesforattorneys.com/index.php" target="_blank">Office Jokes and Humor</a><br /><a href="http://policejokes.resourcesforattorneys.com/index.php" target="_blank">Police Jokes and Humor</a><br /><a href="http://politicaljokes.resourcesforattorneys.com/index.php" target="_blank">Political Jokes and Humor</a><br /><a href="http://realestatejokes.nationalrealtorsdirectory.com/index.php" target="_blank">Real Estate Jokes and Humor</a><br /><a href="http://redneckjokes.informationresourcenetwork.com/index.php" target="_blank">Redneck Jokes and Humor</a><br /><a href="http://sportsjokes.resourcesforattorneys.com/index.php" target="_blank">Sports Jokes and Humor</a><br /><a href="http://traveljokes.resourcesforattorneys.com/index.php" target="_blank">Travel Jokes and Humor</a><br /><a href="http://www.resourcesforattorneys.com/reversedirectories.html" target="_blank">Free Reverse Directories</a><br /><a href="http://www.informationresourcenetwork.com/index.php" target="_blank">Information Resource Network</a><br /><a href="http://www.resourcesforattorneys.com" target="_blank">Legal Resources</a><br /><a href="http://travel.resourcesforattorneys.com/mexico/index.php" target="_blank">Mexico Travel Destinations</a><br /><a href="http://www.nationallawyersdirectory.com/" target="_blank">National Lawyer Directory</a><br /><a href="http://forums.resourcesforattorneys.com/index.php" target="_blank">Political Legal And Lifestyle Forum</a><br /><a href="http://www.findrealtors.net/" target="_blank">Real Estate Brokers</a><br /><a href="http://www.usacitydirectories.com/travelamerica/index.php" target="_blank">Travel America</a><br /><a href="http://travel.resourcesforattorneys.com/index.php" target="_blank">Travel Destinations</a><br /><a href="http://traveleurope.findairlines.net/index.php" target="_blank">Travel Europe</a><br /><hr /><a href="login.php">Login</a>
+</div>
+<br />
+
+<!-- RANDOM ENTRY -->
+<div class="menu_title">
+	<a id="linkSidebarRandomEntry" href="javascript:toggleBlock('SidebarRandomEntry');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> </a>
+</div>
+<div id="toggleSidebarRandomEntry" class="menu_body">
+	<a href="index.php?entry=entry080222-164101">School One Liners #2</a>
+</div>
+<br />
+
+<!-- CATEGORIES -->
+<div class="menu_title">
+	<a id="linkSidebarCategories" href="javascript:toggleBlock('SidebarCategories');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Categories</a>
+</div>
+<div id="toggleSidebarCategories" class="menu_body">
+	<a href="index.php?d=24&amp;m=05&amp;y=08&amp;category=2">Elementary School</a><br />
+<a href="index.php?d=24&amp;m=05&amp;y=08&amp;category=4">High School</a><br />
+<a href="index.php?d=24&amp;m=05&amp;y=08&amp;category=3">Middle School</a><br />
+<a href="index.php?d=24&amp;m=05&amp;y=08&amp;category=1">University - College</a>
+
+</div>
+<br />
+
+<!-- ARCHIVE TREE -->
+<div class="menu_title">
+	<a id="linkSidebarArchives" href="javascript:toggleBlock('SidebarArchives');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Archives</a>
+</div>
+<div id="toggleSidebarArchives" class="menu_body">
+	<a href="archives.php">View Archives</a><br />
+<div id="archive_tree_menu"><ul><li>
+2008
+<ul>
+<li>
+<a href="index.php?m=05&amp;y=08">May</a>
+<ul>
+<li>
+<a href="index.php?m=05&amp;y=08&amp;entry=entry080524-192956">Three Wishes</a><br />
+<b>05/24/08</b></li>
+<li>
+<a href="index.php?m=05&amp;y=08&amp;entry=entry080512-191905">Teacher Questions and Student Answers</a><br />
+<b>05/12/08</b></li>
+
+</ul>
+</li>
+<li>
+<a href="index.php?m=04&amp;y=08">April</a>
+</li>
+<li>
+<a href="index.php?m=03&amp;y=08">March</a>
+</li>
+<li>
+<a href="index.php?m=02&amp;y=08">February</a>
+</li>
+<li>
+<a href="index.php?m=01&amp;y=08">January</a>
+</li>
+
+</ul>
+</li>
+</ul></div>
+</div>
+<br />
+
+<!-- RECENT ENTRIES -->
+<div class="menu_title">
+	<a id="linkSidebarRecentEntries" href="javascript:toggleBlock('SidebarRecentEntries');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Most Recent Entries</a>
+</div>
+<div id="toggleSidebarRecentEntries" class="menu_body">
+	<a href="http://schooljokes.informationresourcenetwork.com/index.php?entry=entry080524-192956">Three Wishes</a><br /><a href="http://schooljokes.informationresourcenetwork.com/index.php?entry=entry080512-191905">Teacher Questions and Student Answers</a><br /><a href="http://schooljokes.informationresourcenetwork.com/index.php?entry=entry080426-181030">Teacher Q and A</a><br /><a href="http://schooljokes.informationresourcenetwork.com/index.php?entry=entry080405-212247">You Know You&#039;ve Finished College When</a><br /><a href="http://schooljokes.informationresourcenetwork.com/index.php?entry=entry080321-165407">Math Problem Solving</a><br /><a href="http://schooljokes.informationresourcenetwork.com/index.php?entry=entry080314-025604">History Questions</a><br /><a href="http://schooljokes.informationresourcenetwork.com/index.php?entry=entry080313-222712">Take What You Want</a><br /><a href="http://schooljokes.informationresourcenetwork.com/index.php?entry=entry080306-221838">Internet Reseach</a><br /><a href="http://schooljokes.informationresourcenetwork.com/index.php?entry=entry080303-221610">Anything To Pass</a><br /><a href="http://schooljokes.informationresourcenetwork.com/index.php?entry=entry080228-213627">You might be a college student if #3</a><br />
+</div>
+<br />
+
+<!-- RECENT COMMENTS -->
+<div class="menu_title">
+	<a id="linkSidebarRecentComments" href="javascript:toggleBlock('SidebarRecentComments');"><img src="themes/modern/images/minus.gif" name="twisty" alt="" /> Most Recent Comments</a>
+</div>
+<div id="toggleSidebarRecentComments" class="menu_body">
+	<a href="comments.php?y=08&amp;m=04&amp;entry=entry080426-181030">Greg Hall</a><br />Tuesday, February 14, 2012, 02:12 AM<br />I agree with you Krystle. Those answers...<p />
+</div>
+<br />
+<p /><div align="center">
+<a href="http://sourceforge.net/projects/sphpblog/"><img style="margin-bottom: 5px;" src="interface/button_sphpblog.png" alt="Powered by Simple PHP Blog" title="Powered by Simple PHP Blog" border="0" /></a> <a href="rss.php"><img style="margin-bottom: 5px;" src="interface/button_rss20.png" alt="Get RSS 2.0 Feed" title="Get RSS 2.0 Feed" border="0" /></a><br /><a href="http://php.net/"><img style="margin-bottom: 5px;" src="interface/button_php.png" alt="Powered by PHP 4.3.9" title="Powered by PHP 4.3.9" border="0" /></a> <a href="atom.php"><img style="margin-bottom: 5px;" src="interface/button_atom03.png" alt="Get Atom 0.3 Feed" title="Get Atom 0.3 Feed" border="0" /></a><br /><img style="margin-bottom: 5px;" src="interface/button_txt.png" alt="Powered by Plain text files" title="Powered by Plain Text Files" border="0" /> <a href="rdf.php"><img style="margin-bottom: 5px;" src="interface/button_rdf10.png" alt="Get RDF 1.0 Feed" title="Get RDF 1.0 Feed" border="0" /></a><br /></div>
+<center>
+<!-- AddThis Button BEGIN -->
+<a href="http://www.addthis.com/bookmark.php" onClick="window.open('http://www.addthis.com/bookmark.php?wt=nw&pub=lawstud&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no,screenX=200,screenY=100,left=200,top=100'); return false;" title="Bookmark and Share" target="_blank"><img src="http://s9.addthis.com/button1-bm.gif" width="125" height="16" border="0" alt="Bookmark and Share" /></a>
+<!-- AddThis Button END -->		
+
+<br />
+
+</td></tr></table></center>
+										</div>
+        </div>
+        <div id="footer">
+          School Jokes, Humor and Satire. Have some fun. Read a funny school joke. Better yet read a few dozen school jokes. - Page Generated in 0.073 seconds        </div>
+      </div>
+    </body>
+    </html>
